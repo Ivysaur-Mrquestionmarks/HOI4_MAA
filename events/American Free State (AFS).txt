@@ -515,6 +515,11 @@ country_event = {
 				remove_idea = AFS_vermins_black_army_idea
 				add_idea = AFS_vermins_black_army_weakened
 			}
+			set_party_name = {
+                ideology = libertarian_left
+                long_name = AFS_post_civil_war_vermin_long
+                name = AFS_post_civil_war_vermin
+            }
 	    }
 		if = {
 			limit = {
@@ -527,6 +532,11 @@ country_event = {
 				remove_idea = AFS_the_green_army
 				add_idea = AFS_the_green_army_weakened
 			}
+			set_party_name = {
+                ideology = authoritarian_left
+                long_name = AFS_post_civil_war_hawkins_long
+                name = AFS_post_civil_war_hawkins
+            }
 	    }
 		if = {
 			limit = {
@@ -539,6 +549,11 @@ country_event = {
 				remove_idea = AFS_strength_and_might
 				add_idea = AFS_strength_and_might_weakened
 			}
+			set_party_name = {
+                ideology = autocratic
+                long_name = AFS_post_civil_war_mattis_long
+                name = AFS_post_civil_war_mattis
+            }
 	    }
 		add_ideas = AFS_ruins_of_the_triumvirate
 		add_ideas = AFS_a_scarred_population
