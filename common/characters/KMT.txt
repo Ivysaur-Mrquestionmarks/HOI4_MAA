@@ -207,6 +207,7 @@ characters={
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/KMT/Paul_Nehlen.dds"
+				small = "GFX_idea_advisor_Paul_Nehlen"
 			}
 		}
 		country_leader = {
@@ -214,6 +215,34 @@ characters={
 			ideology = neonazism
 			expire = "2060.1.1.1"
 			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Paul_Nehlen
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+					has_country_leader = {
+						name = "Paul Ryan"
+						ruling_only = yes
+					}
+				}
+				OR = {
+					has_government = republican
+					has_completed_focus = KMT_start_the_counter_revolution
+				}
+			}
+			traits = { KMT_advisor_fringe_politician }
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 
@@ -303,7 +332,7 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = advisor_Paul_Ryan
+			idea_token = advisor_Bill_Ayers
 			cost = 150
 			allowed = {
 				tag = KMT
@@ -330,11 +359,11 @@ characters={
 
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/KMT/Bernardine_Dorhn.dds"
+				large = "gfx/leaders/KMT/Bernardine_Dohrn.dds"
 				small = "GFX_idea_advisor_Bernardine_Dohrn"
 			}
 			army = {
-				large = "gfx/leaders/KMT/Bernardine_Dorhn.dds"
+				large = "gfx/leaders/KMT/Bernardine_Dohrn.dds"
 			}
 		}
 		country_leader = {
@@ -353,7 +382,7 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = advisor_Paul_Ryan
+			idea_token = advisor_Bernardine_Dohrn
 			cost = 150
 			allowed = {
 				tag = KMT

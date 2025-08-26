@@ -5167,7 +5167,13 @@ leader_traits = {
 		stability_factor = 0.05
 		war_support_factor = 0.1
 	}
-	
+	KMT_advisor_fringe_politician = {
+		random = no
+		autocratic_drift = 0.01
+		stability_factor = -0.1
+		war_support_factor = 0.05
+		consumer_goods_factor = -0.1
+	}
 	
 	
 	

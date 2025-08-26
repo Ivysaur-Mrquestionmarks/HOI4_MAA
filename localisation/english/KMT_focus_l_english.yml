@@ -424,6 +424,29 @@
  wisconsin.35.a:0 "Kill them now!"
  wisconsin.35.b:0 "And history repeats itself again"
 
+ #event 36: new capital
+ wisconsin.36.t:0 "A New Capital for the Revolution?"
+ wisconsin.36.d:0 "With the revolution consolidating its hold, the question of where the heart of our new state should lie has arisen. Madison, the old seat of power, still stands as a symbol of continuity. Yet Milwaukee, the industrial engine of Wisconsin, offers the strength of the working class. Some even argue for Chicago, whose size and influence could redefine our future."
+ wisconsin.36.a:0 "Keep Madison as the capital"
+ wisconsin.36.b:0 "Move the capital to Milwaukee"
+ wisconsin.36.c:0 "Shift power to Chicago"
+
+ #event 37: annex det (det prespective)
+ wisconsin.37.t:0 "The [KMT.GetName] demands Annexation"
+ wisconsin.37.d:0 "The [KMT.Getname] have issued us an ultimatum: submit peacefully to annexation, or face war. Some argue for us to join them while others insist [DET.GetName] must stand strong against their revolutionary aggression. Shall we join the revolution or resist?"
+ wisconsin.37.a:0 "We will never surrender!"
+ wisconsin.37.b:0 "Let us join the Revolution!"
+
+ #event 38: DET rejects annexation
+ wisconsin.38.t:0 "[DET.GetName] Resists!"
+ wisconsin.38.d:0 "[DET.GetName] has refused our demands and chosen the path of war. The revolutionary struggle must continue until the Lakes are firmly under our control."
+ wisconsin.38.a:0 "Then we take them by force!"
+
+ ###event 39: DET accepts annexation
+ wisconsin.39.t:0 "[DET.GetName] Submits to the Revolution"
+ wisconsin.39.d:0 "Under pressure, [DET.GetName] has agreed to join our revolutionary state. Their resources and population are now integrated into the Revolution!"
+ wisconsin.39.a:0 "The revolution grows stronger!"
+
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 
 ##     ##  ##   ##  ##     ##    ##     ##  ##       ##          ####  ##  ##   ##  #### #### ##       ##       
@@ -576,6 +599,12 @@
  KMT_socialize_healthcare_desc:0 "Healthcare is not a privilege but a right. By introducing socialized healthcare, we will prove to the people that the revolution brings not only struggle, but also dignity, equality, and security for all. This should also strengthen support for our government and extend our survival against reactionary enemies."
  KMT_black_power:0 "Black Power"
  KMT_black_power_desc:0 "The African-American communities of the Great Lakes are no strangers to struggle. By supporting the Black Power movement, we can both empower marginalized groups and expand our revolutionary coalition. With their militias armed and organized, the fight against oppression grows stronger every day."
+ KMT_fund_left_wing_universities:0 "Fund Left-Wing Universities"
+ KMT_fund_left_wing_universities_desc:0 "The revolutionary movement depends on a new generation of educated activists. By funding universities that embrace marxist ideals, we will not only expand our research capacity but also secure the loyalty of students who will form the intellectual backbone of our state."
+ KMT_great_lakes_culture:0 "Great Lakes Culture"
+ KMT_great_lakes_culture_desc:0 "Our revolution must be more than politics, to truly distance ourselves from Americanism, it must become a culture. By embracing the unique spirit of the Great Lakes, from its music to its art, we will spread our ideology in a form that resonates deeply with the people. We shall convince public figures to endorse us in order to cultivate the new cultural identity we wish."
+ KMT_annex_michigan:0 "Annex [DET.GetName]"
+ KMT_annex_michigan_desc:0 "The revolution cannot remain confined to Wisconsin. [DET.GetName], with its factories, workers, and resources, must join our cause. Whether through political maneuvering or force of arms, the time has come to bring them into our fold and unite the Great Lakes under one banner."
 
  # Army
  KMT_upgrade_fort_mccoy:0 "Upgrade Fort McCoy"

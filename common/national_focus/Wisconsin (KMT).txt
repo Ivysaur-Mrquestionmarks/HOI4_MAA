@@ -2390,7 +2390,7 @@ focus_tree = {
 		x = 40
 		y = 7
 
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2419,7 +2419,7 @@ focus_tree = {
 			focus = KMT_great_lakes_culture
 		}
 		mutually_exclusive = {
-			focus = KMT_counter_revolution_path_TODO
+			focus = KMT_start_the_counter_revolution
 		}
 	}
 
@@ -2835,7 +2835,7 @@ focus_tree = {
 	# Counter revolution
 
 	focus = {
-		id = KMT_counter_revolution_path_TODO
+		id = KMT_start_the_counter_revolution
 		icon = TODO
 		x = 44
 		y = 7

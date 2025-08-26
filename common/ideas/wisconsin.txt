@@ -948,9 +948,13 @@ ideas = {
 		KMT_socialized_healthcare = {
 			allowed = {
 				original_tag = KMT
-				OR = {
-					has_government = libertarian_left
-					has_government = authoritarian_left
+			}
+			cancel = {
+				NOT = {
+					OR = {
+						has_government = authoritarian_left
+						has_government = libertarian_left
+					}
 				}
 			}
 			allowed_civil_war = { always = yes }		

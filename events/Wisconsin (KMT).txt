@@ -1336,7 +1336,14 @@ country_event = {
 						division_template = "Interforce Rapid Division"
 						disband = no
 					}
-					complete_national_focus = KMT_counter_revolution_path_TODO			
+					complete_national_focus = KMT_start_the_counter_revolution
+					
+					set_popularities = {
+						autocratic = 45
+						libertarian_right = 30
+						republican = 15
+						democrat = 10
+					}
 				}
 			}
 		}
@@ -1377,7 +1384,14 @@ country_event = {
 				#### HAVE TO TRANSFER CHARACTERS ####		
 			}
 
-			complete_national_focus = KMT_counter_revolution_path_TODO
+			set_popularities = {
+				autocratic = 45
+				libertarian_right = 30
+				republican = 15
+				democrat = 10
+			}
+
+			complete_national_focus = KMT_start_the_counter_revolution
 			set_stability = 0.4
 			set_war_support = 0.6	
 			load_oob = "KMT_counter_revolution"
@@ -1421,15 +1435,26 @@ country_event = {
 		ai_chance = {
 			factor = 40
 		}
-		set_capital = {
-			state = 195
-			remember_old_capital = no
-		}
 		add_stability = 0.05
 	}
 
 	option = {
 		name = wisconsin.36.b
+		ai_chance = {
+			factor = 40
+		}
+		trigger = {
+			owns_state = 195
+		}
+		set_capital = {
+			state = 195
+			remember_old_capital = no
+		}
+		add_political_power = 50
+	}
+
+	option = {
+		name = wisconsin.36.c
 		ai_chance = {
 			factor = 60
 		}
@@ -1440,7 +1465,7 @@ country_event = {
 			state = 198
 			remember_old_capital = no
 		}
-		add_stability = 0.05
+		add_war_support = 0.05
 	}
 }
 
