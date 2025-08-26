@@ -138,7 +138,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				id = Hollywood.50
+				id = Hollywood.1
 			}
 		}
 	}
@@ -942,7 +942,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = HLY_Private_Security
+		id = HLY_Founding_Milicorps
 		icon = placeholder
 		
 		cost = 4
@@ -970,9 +970,9 @@ focus_tree = {
 		
 		x = 0
 		y = 1
-		relative_position_id = HLY_Private_Security
+		relative_position_id = HLY_Founding_Milicorps
 		prerequisite = {
-			focus = HLY_Private_Security
+			focus = HLY_Founding_Milicorps
 		}
 		available = {
 			has_country_leader = {
@@ -1045,7 +1045,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				id = Hollywood.60
+				id = Hollywood.2
 			}
 		}
 	}
@@ -1113,7 +1113,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				id = Hollywood.70
+				id = Hollywood.3
 			}
 		}
 	}
@@ -1779,7 +1779,7 @@ focus_tree = {
 		
 		cost = 5
 		
-		x = -4
+		x = -5
 		y = 1
 		relative_position_id = HLY_Next_Scene
 		prerequisite = {
@@ -1799,6 +1799,151 @@ focus_tree = {
 				name = HLY_libertarian_right_party_tarantino
 			}
 			promote_character = HLY_quentin_tarantino
+		}
+	}
+	focus = {
+		id = HLY_Unworthy_Work
+		icon = placeholder
+		
+		cost = 4
+		
+		x = -2
+		y = 1
+		relative_position_id = HLY_Tarantino
+		prerequisite = {
+			focus = HLY_Tarantino
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Reservoir_Dogs
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = HLY_Tarantino
+		prerequisite = {
+			focus = HLY_Tarantino
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_AIT
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 2
+		y = 1
+		relative_position_id = HLY_Tarantino
+		prerequisite = {
+			focus = HLY_Tarantino
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Inglorious_Basterds
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = HLY_Reservoir_Dogs
+		prerequisite = {
+			focus = HLY_Unworthy_Work
+		}
+		prerequisite = {
+			focus = HLY_Reservoir_Dogs
+		}
+		prerequisite = {
+			focus = HLY_AIT
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Keeping_Happy
+		icon = placeholder
+		
+		cost = 4
+		
+		x = -1
+		y = 1
+		relative_position_id = HLY_Inglorious_Basterds
+		prerequisite = {
+			focus = HLY_Inglorious_Basterds
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Closest_Confidants
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = HLY_Keeping_Happy
+		prerequisite = {
+			focus = HLY_Keeping_Happy
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Hangman
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 1
+		y = 1
+		relative_position_id = HLY_Inglorious_Basterds
+		prerequisite = {
+			focus = HLY_Inglorious_Basterds
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Bullet
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = HLY_Hangman
+		prerequisite = {
+			focus = HLY_Hangman
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Gallows
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 1
+		y = 1
+		relative_position_id = HLY_Closest_Confidants
+		prerequisite = {
+			focus = HLY_Closest_Confidants
+		}
+		prerequisite = {
+			focus = HLY_Bullet
+		}
+		completion_reward = {
 		}
 	}
 	focus = {
@@ -1823,12 +1968,141 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = HLY_Only_Best
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = HLY_nolan
+		prerequisite = {
+			focus = HLY_nolan
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Odysseus
+		icon = placeholder
+		
+		cost = 4
+		
+		x = -2
+		y = 1
+		relative_position_id = HLY_Only_Best
+		prerequisite = {
+			focus = HLY_Only_Best
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Dark_Knight
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = HLY_Only_Best
+		prerequisite = {
+			focus = HLY_Only_Best
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Oppenheimer
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 2
+		y = 1
+		relative_position_id = HLY_Only_Best
+		prerequisite = {
+			focus = HLY_Only_Best
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Interstellar
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = HLY_Dark_Knight
+		prerequisite = {
+			focus = HLY_Odysseus
+		}
+		prerequisite = {
+			focus = HLY_Dark_Knight
+		}
+		prerequisite = {
+			focus = HLY_Oppenheimer
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_CGI_Free
+		icon = placeholder
+		
+		cost = 4
+		
+		x = -1
+		y = 1
+		relative_position_id = HLY_Interstellar
+		prerequisite = {
+			focus = HLY_Interstellar
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Detonation
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 1
+		y = 1
+		relative_position_id = HLY_Interstellar
+		prerequisite = {
+			focus = HLY_Interstellar
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Ambition
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 1
+		y = 1
+		relative_position_id = HLY_CGI_Free
+		prerequisite = {
+			focus = HLY_CGI_Free
+		}
+		prerequisite = {
+			focus = HLY_Detonation
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = HLY_spielberg
 		icon = placeholder
 		
 		cost = 5
 		
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = HLY_Next_Scene
 		prerequisite = {
@@ -1848,5 +2122,149 @@ focus_tree = {
 				name = HLY_autocratic_party_spielberg
 			}
 			promote_character = HLY_stephen_spielberg
+		}
+	}
+	focus = {
+		id = HLY_Titanium_Park
+		icon = placeholder
+		
+		cost = 4
+		
+		x = -2
+		y = 1
+		relative_position_id = HLY_spielberg
+		prerequisite = {
+			focus = HLY_spielberg
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Creation
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = HLY_spielberg
+		prerequisite = {
+			focus = HLY_spielberg
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Brains_Tank
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 2
+		y = 1
+		relative_position_id = HLY_spielberg
+		prerequisite = {
+			focus = HLY_spielberg
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Evading_Jaws
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = HLY_Creation
+		prerequisite = {
+			focus = HLY_Titanium_Park
+		}
+		prerequisite = {
+			focus = HLY_Creation
+		}
+		prerequisite = {
+			focus = HLY_Brains_Tank
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Knowing_Own
+		icon = placeholder
+		
+		cost = 4
+		
+		x = -1
+		y = 1
+		relative_position_id = HLY_Evading_Jaws
+		prerequisite = {
+			focus = HLY_Evading_Jaws
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Fusing_Reality
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = HLY_Knowing_Own
+		prerequisite = {
+			focus = HLY_Knowing_Own
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_BFG
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 1
+		y = 1
+		relative_position_id = HLY_Evading_Jaws
+		prerequisite = {
+			focus = HLY_Evading_Jaws
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Clinics
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 0
+		y = 1
+		relative_position_id = HLY_BFG
+		prerequisite = {
+			focus = HLY_BFG
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HLY_Future
+		icon = placeholder
+		
+		cost = 4
+		
+		x = 1
+		y = 1
+		relative_position_id = HLY_Fusing_Reality
+		prerequisite = {
+			focus = HLY_Fusing_Reality
+		}
+		prerequisite = {
+			focus = HLY_Clinics
+		}
+		completion_reward = {
 		}
 	}
