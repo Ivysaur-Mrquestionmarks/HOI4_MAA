@@ -6358,10 +6358,13 @@ focus_tree = {
 		#}
 		
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
+			OR = {
+				NOT = {
+					any_neighbor_country = {
+						has_war_with = ROOT
+					}
 				}
+				has_war_with = FRA
 			}
 			has_army_manpower = {
 				size > 300000
