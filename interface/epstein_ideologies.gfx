@@ -26,6 +26,10 @@ spriteTypes = {
 		name = "GFX_ideology_APA_conservative"
 		texturefile = "gfx/interface/ideologies/APA_conservative.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_NYC_republican_group"
+		texturefile = "gfx/interface/ideologies/NYC_republican.dds"
+	}
 	
 
 	#Autocracy
@@ -213,6 +217,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_Religious_Anarchism"
 		texturefile = "gfx/interface/ideologies/Christian_Anarchism.tga"
+	}
+	spriteType = {
+		name = "GFX_ideology_NYC_democratic_socialism"
+		texturefile = "gfx/interface/ideologies/NYC_demsoc.dds"
 	}
 	
 	#libright
