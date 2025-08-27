@@ -1854,6 +1854,21 @@ CSA_SCA_influence = {
 				value = -1
 				tooltip = SCA_bidenist_influence_decreases_tt
 			}
+				clamp_variable = {
+					var = SCA.support_level_var
+					min = 0
+					max = 6
+				}
+				clamp_variable = {
+					var = SCA.influence_expanded
+					min = 0
+					max = 6
+				}
+				clamp_variable = {
+					var = SCA.influence
+					min = 60
+					max = 190
+				}
 		}
 		
 	}

@@ -5499,6 +5499,10 @@ focus_tree = {
 				value = 1
 				tooltip  = SCA_bidenist_influence_increases_tt
 			}
+			add_to_variable = {
+				var = SCA.influence
+				value = 43
+			}
 			clamp_variable = {
 				var = SCA.support_level_var
 				min = 0
