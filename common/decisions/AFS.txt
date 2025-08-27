@@ -4727,14 +4727,6 @@ AFS_mattis_economic_decisions = {
 				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
 				add_extra_state_shared_building_slots = 1
 			}
-			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
-				add_extra_state_shared_building_slots = 1
-			}
-			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
-				add_extra_state_shared_building_slots = 1
-			}
 			modify_country_flag = {
                 flag = AFS_mattis_economic_decision_4
                 value = 1
@@ -4789,16 +4781,7 @@ AFS_mattis_economic_decisions = {
 				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-    					type = 	synthetic_refinery
-    					level = 1
-    					instant_build = yes
-				}
-			}
-			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    					type = 	synthetic_refinery
+    					type = 	fuel_silo
     					level = 1
     					instant_build = yes
 				}

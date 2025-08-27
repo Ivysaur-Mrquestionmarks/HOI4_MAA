@@ -1931,6 +1931,30 @@ focus_tree = {
 			    remove_idea = AFS_a_stateless_economy_6
 			    add_idea = AFS_a_stateless_economy_7
 		    }
+			add_victory_points = {
+	            province = 9049
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 8774
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 8686
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 1824
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 2092
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 3560
+	            value = 5
+            }
 		    add_to_variable = {
 				var = AFS.var_research_level
 				value = 0.05
@@ -4241,6 +4265,30 @@ focus_tree = {
     				instant_build = yes
 				}
 			}
+			add_victory_points = {
+	            province = 9049
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 8774
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 8686
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 1824
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 2092
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 3560
+	            value = 5
+            }
 		}
 	}
 
@@ -6002,6 +6050,26 @@ focus_tree = {
 			    add_idea = AFS_the_new_american_industrial_age_4
 		    }
 			remove_ideas = Ruins_of_the_Rust_Belt_4
+			add_victory_points = {
+	            province = 8774
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 8686
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 1824
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 2092
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 3560
+	            value = 5
+            }
 		}
 	}
 
@@ -8139,6 +8207,30 @@ focus_tree = {
     					instant_build = yes
 				}
 			}
+			add_victory_points = {
+	            province = 9049
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 8774
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 8686
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 1824
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 2092
+	            value = 5
+            }
+			add_victory_points = {
+	            province = 3560
+	            value = 5
+            }
 		}
 	}
 
