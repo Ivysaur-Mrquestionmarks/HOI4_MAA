@@ -2,7 +2,7 @@ AFS_vermin_balance_of_power_category = {
 
     AFS_civil_war_soon = {
 	
-		icon = #decision_eng_trade_unions_support
+		#icon = #decision_eng_trade_unions_support
 
 		priority = 10
 
@@ -60,7 +60,7 @@ AFS_vermin_balance_of_power_category = {
 
 	AFS_enemy_sabatoge_vermin = {
 	
-		icon = #decision_eng_trade_unions_support
+		#icon = #decision_eng_trade_unions_support
 
 		priority = 10
 
@@ -109,7 +109,7 @@ AFS_vermin_balance_of_power_category = {
 
 	AFS_gain_support_vermin = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -151,7 +151,7 @@ AFS_vermin_balance_of_power_category = {
 
 	AFS_turn_the_people_againist_hawkins = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -200,7 +200,7 @@ AFS_vermin_balance_of_power_category = {
 
 	AFS_turn_the_people_againist_mattis = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -249,7 +249,7 @@ AFS_vermin_balance_of_power_category = {
 
 	AFS_sabotage_vermin = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -293,7 +293,7 @@ AFS_hawkins_balance_of_power_category = {
 
     AFS_civil_war_soon_hawkins = {
 	
-		icon = #decision_eng_trade_unions_support
+		#icon = #decision_eng_trade_unions_support
 
 		priority = 10
 
@@ -348,7 +348,7 @@ AFS_hawkins_balance_of_power_category = {
 
 	AFS_enemy_sabatoge_hawkins = {
 	
-		icon = #decision_eng_trade_unions_support
+		#icon = #decision_eng_trade_unions_support
 
 		priority = 10
 
@@ -397,7 +397,7 @@ AFS_hawkins_balance_of_power_category = {
 
 	AFS_gain_support_hawkins = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -439,7 +439,7 @@ AFS_hawkins_balance_of_power_category = {
 
 	AFS_gain_more_control_hawkins = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -481,7 +481,7 @@ AFS_hawkins_balance_of_power_category = {
 
 	AFS_gain_intel_on_vermin_hawkins = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -532,7 +532,7 @@ AFS_hawkins_balance_of_power_category = {
 
 	AFS_sabotage_hawkins = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -576,7 +576,7 @@ AFS_mattis_balance_of_power_category = {
 
     AFS_civil_war_soon_mattis = {
 	
-		icon = #decision_eng_trade_unions_support
+		#icon = #decision_eng_trade_unions_support
 
 		priority = 10
 
@@ -631,7 +631,7 @@ AFS_mattis_balance_of_power_category = {
 
 	AFS_enemy_sabatoge_mattis = {
 	
-		icon = #decision_eng_trade_unions_support
+		#icon = #decision_eng_trade_unions_support
 
 		priority = 10
 
@@ -680,7 +680,7 @@ AFS_mattis_balance_of_power_category = {
 
 	AFS_gain_support_mattis = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -722,7 +722,7 @@ AFS_mattis_balance_of_power_category = {
 
 	AFS_gain_more_control_mattis = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -764,7 +764,7 @@ AFS_mattis_balance_of_power_category = {
 
 	AFS_gain_intel_on_vermin_mattis = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -815,7 +815,7 @@ AFS_mattis_balance_of_power_category = {
 
 	AFS_sabotage_mattis = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -858,7 +858,7 @@ AFS_mattis_balance_of_power_category = {
 AFS_individualist_collectivist_balance_of_power_category = {
 	AFS_empower_the_individual = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -900,7 +900,7 @@ AFS_individualist_collectivist_balance_of_power_category = {
 
 	AFS_individual_will = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -942,7 +942,7 @@ AFS_individualist_collectivist_balance_of_power_category = {
 
 	AFS_perpetuate_individual_liberty = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -984,7 +984,7 @@ AFS_individualist_collectivist_balance_of_power_category = {
 
 	AFS_unite_the_people = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1026,7 +1026,7 @@ AFS_individualist_collectivist_balance_of_power_category = {
 
 	AFS_bring_unity_in_anarchism = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1068,7 +1068,7 @@ AFS_individualist_collectivist_balance_of_power_category = {
 
 	AFS_anarchism_without_adjectives = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1112,7 +1112,7 @@ AFS_individualist_collectivist_balance_of_power_category = {
 AFS_vermin_political_decisions = {
 	#Autonomous Decisions
 	AFS_set_up_autonomous_zone = {
-		icon = hol_draw_up_staff_plans
+		#icon = hol_draw_up_staff_plans
 
 		allowed = {
 			original_tag = AFS
@@ -1168,7 +1168,7 @@ AFS_vermin_political_decisions = {
 	#Political Decisions
 	AFS_helping_the_poor = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1222,7 +1222,7 @@ AFS_vermin_political_decisions = {
 
 	AFS_meet_with_the_common_people = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1277,7 +1277,7 @@ AFS_vermin_political_decisions = {
 
 	AFS_meet_with_the_lgbtq_community = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1331,7 +1331,7 @@ AFS_vermin_political_decisions = {
 
 	AFS_promote_equality = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1391,7 +1391,7 @@ AFS_vermin_political_decisions = {
 	#Military Decisions
 	AFS_spreading_the_anarchist_cause = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1441,7 +1441,7 @@ AFS_vermin_political_decisions = {
 
 	AFS_fight_for_the_anarchist_cause = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1493,7 +1493,7 @@ AFS_vermin_political_decisions = {
 AFS_saving_terra_decisions = {
 	AFS_eliminate_the_oil_barons = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1652,7 +1652,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_eliminate_the_wealthly = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1818,7 +1818,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_eliminate_larry_fink = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -1984,7 +1984,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_begin_a_terror_attack_in_trump = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -2148,7 +2148,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_begin_a_terror_attack_in_biden = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -2312,7 +2312,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_begin_a_terror_attack_in_the_great_lakes = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -2476,7 +2476,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_begin_a_terror_attack_in_paris = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -2641,7 +2641,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_destory_the_three_gorges_dam = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -2806,7 +2806,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_take_down_the_big_ben = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -2971,7 +2971,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_take_down_the_taj_mahal = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3136,7 +3136,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_begin_a_terror_attack_in_sydney = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3301,7 +3301,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_build_the_ai = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3351,7 +3351,7 @@ AFS_saving_terra_decisions = {
 
 	AFS_release_the_pandemic = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3399,7 +3399,7 @@ AFS_saving_terra_decisions = {
 AFS_hawkins_political_decisions = {
 	AFS_create_our_own_firewall = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3443,7 +3443,7 @@ AFS_hawkins_political_decisions = {
 
 	AFS_shut_down_unloyal_news_stations = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3493,7 +3493,7 @@ AFS_hawkins_political_decisions = {
 
 	AFS_ban_anti_green_media = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3551,7 +3551,7 @@ AFS_hawkins_political_decisions = {
 
 	AFS_expand_the_surveillance_state = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3609,7 +3609,7 @@ AFS_hawkins_political_decisions = {
 
 	AFS_watch_through_their_electronics = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3667,7 +3667,7 @@ AFS_hawkins_political_decisions = {
 
 	AFS_crackdown_on_unlawful_activities = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3728,7 +3728,7 @@ AFS_hawkins_political_decisions = {
 AFS_hawkins_economic_decisions = {
 	AFS_clean_the_waters = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3771,7 +3771,7 @@ AFS_hawkins_economic_decisions = {
 
 	AFS_levie_high_carbon_taxes = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3814,7 +3814,7 @@ AFS_hawkins_economic_decisions = {
 
 	AFS_install_more_environmental_protections = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3857,7 +3857,7 @@ AFS_hawkins_economic_decisions = {
 
 	AFS_protect_wildlife = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3900,7 +3900,7 @@ AFS_hawkins_economic_decisions = {
 
 	AFS_invest_in_renewable_energy = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -3950,7 +3950,7 @@ AFS_hawkins_economic_decisions = {
 
 	AFS_allow_limited_capitalism = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4020,7 +4020,7 @@ AFS_hawkins_economic_decisions = {
 
 	AFS_transition_to_electric_cars = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4097,7 +4097,7 @@ AFS_hawkins_economic_decisions = {
 AFS_mattis_political_decisions = {
 	AFS_crush_dissidents = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4138,7 +4138,7 @@ AFS_mattis_political_decisions = {
 
 	AFS_watch_their_every_move = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4188,7 +4188,7 @@ AFS_mattis_political_decisions = {
 
 	AFS_american_media_only = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4237,7 +4237,7 @@ AFS_mattis_political_decisions = {
 
 	AFS_education_indoctrination = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4287,7 +4287,7 @@ AFS_mattis_political_decisions = {
 
 	AFS_revise_the_constitution = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4331,7 +4331,7 @@ AFS_mattis_political_decisions = {
 
 	AFS_government_centralization = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4380,7 +4380,7 @@ AFS_mattis_political_decisions = {
 
 	AFS_purge_the_unpariotic = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4438,7 +4438,7 @@ AFS_mattis_political_decisions = {
 AFS_mattis_economic_decisions = {
 	AFS_resource_mining = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4506,7 +4506,7 @@ AFS_mattis_economic_decisions = {
 
 	AFS_make_state_owned_corporations = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4583,7 +4583,7 @@ AFS_mattis_economic_decisions = {
 
 	AFS_heavy_industrial_investments = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4660,7 +4660,7 @@ AFS_mattis_economic_decisions = {
 
 	AFS_get_rid_of_economic_dependencies = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4736,7 +4736,7 @@ AFS_mattis_economic_decisions = {
 
 	AFS_expand_energy_production = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4813,7 +4813,7 @@ AFS_mattis_economic_decisions = {
 
 	AFS_infrastructure_investments = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4889,7 +4889,7 @@ AFS_mattis_economic_decisions = {
 
 	AFS_all_roads_lead_to_columbus = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -4963,7 +4963,7 @@ AFS_decaying_savior = {
 
 	AFS_death = {
 	
-		icon = #decision_eng_trade_unions_support
+		#icon = #decision_eng_trade_unions_support
 
 		priority = 10
 
@@ -4998,7 +4998,7 @@ AFS_decaying_savior = {
 
     AFS_cybernetic_implants = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5044,7 +5044,7 @@ AFS_decaying_savior = {
 
 	AFS_biological_modifications = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5090,7 +5090,7 @@ AFS_decaying_savior = {
 
 	AFS_achieve_eternity = {
 		priority = 100
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5143,7 +5143,7 @@ AFS_decaying_savior = {
 AFS_vance_political_decisions = {
 	AFS_work_with_democrats = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5194,7 +5194,7 @@ AFS_vance_political_decisions = {
 
 	AFS_work_with_libertarian_and_centrist_parties = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5245,7 +5245,7 @@ AFS_vance_political_decisions = {
 
 	AFS_ban_vaping = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5289,7 +5289,7 @@ AFS_vance_political_decisions = {
 
 	AFS_social_media_age_verification = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5340,7 +5340,7 @@ AFS_vance_political_decisions = {
 
 	AFS_anti_obesity_psas = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5396,7 +5396,7 @@ AFS_vance_political_decisions = {
 
 	AFS_ban_abortion = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5440,7 +5440,7 @@ AFS_vance_political_decisions = {
 
 	AFS_trendy_traditionalism = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5491,7 +5491,7 @@ AFS_vance_political_decisions = {
 
 	AFS_make_schools_teach_again = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5544,7 +5544,7 @@ AFS_vance_political_decisions = {
 AFS_ohio_republican_government_balance_of_power_category = {
 	AFS_the_right_to_speak_out = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5586,7 +5586,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 
 	AFS_gather_loyal_allies = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5628,7 +5628,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 
 	AFS_promote_bipartisanship = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5670,7 +5670,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 
 	AFS_political_unity_in_the_government = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5712,7 +5712,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 
 	AFS_fire_unloyal_government_employees = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5754,7 +5754,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 
 	AFS_enforce_cooporation_and_order = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5798,7 +5798,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 AFS_enlighten_vance_political_decisions = {
 	AFS_show_them_truth = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5855,7 +5855,7 @@ AFS_enlighten_vance_political_decisions = {
 
 	AFS_who_we_oppose_is_your_enemy = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5912,7 +5912,7 @@ AFS_enlighten_vance_political_decisions = {
 
 	AFS_trust_the_ecclesiasticall = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -5969,7 +5969,7 @@ AFS_enlighten_vance_political_decisions = {
 
 	AFS_eradicate_sin = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -6026,7 +6026,7 @@ AFS_enlighten_vance_political_decisions = {
 
 	AFS_service_to_the_duke = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -6088,7 +6088,7 @@ AFS_enlighten_vance_political_decisions = {
 
 	AFS_spread_catholic_teachings = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -6145,7 +6145,7 @@ AFS_enlighten_vance_political_decisions = {
 
 	AFS_expell_the_remaining_rebels = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -6211,7 +6211,7 @@ AFS_enlighten_vance_political_decisions = {
 
 	AFS_the_duke_knows_your_every_move = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -6272,7 +6272,7 @@ AFS_enlighten_vance_political_decisions = {
 
 	AFS_keep_the_serfs_under_control = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -6333,7 +6333,7 @@ AFS_enlighten_vance_political_decisions = {
 
 	AFS_power_to_the_wealthy = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -6399,7 +6399,7 @@ AFS_enlighten_vance_political_decisions = {
 
 	AFS_normalize_aristocratic_rule = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
@@ -6461,7 +6461,7 @@ AFS_enlighten_vance_political_decisions = {
 
 	AFS_return_to_the_old_ways_of_governance = {
 		priority = 25
-		icon = #GFX_decision_hol_attract_foreign_investors
+		#icon = #GFX_decision_hol_attract_foreign_investors
 
 		allowed = {
 			original_tag = AFS
