@@ -293,14 +293,38 @@ characters={
 
 		portraits = {
 			civilian = {
-				large = #TODO
+				large = "gfx/leaders/KMT/Brandon_Johnson.dds"
+				small = "GFX_idea_advisor_Brandon_Johnson"
 			}
 		}
 		country_leader = {
-			traits = {}
+			traits = { KMT_puppet_figure KMT_teachers_union_organizer }
 			ideology = democratic_socialism
 			expire = "2060.1.1.1"
 			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Brandon_Johnson
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+					has_completed_focus = KMT_join_the_loyalists
+					has_completed_focus = KMT_wsc_coup
+					has_completed_focus = KMT_let_him_cook
+				}	
+			}
+			traits = { KMT_advisor_teachers_union_organizer }
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 
@@ -485,6 +509,68 @@ characters={
 				has_completed_focus = KMT_great_lakes_culture
 			}
 			traits = { KMT_advisor_progressive_actor }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Callista_Gingrich = {
+		name = KMT_Callista_Gingrich
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Callista_Gingrich
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				NOT = { 
+					has_completed_focus = KMT_weathermen_coup
+					has_completed_focus = KMT_join_the_legitimists
+				}
+			}
+			traits = { KMT_advisor_ambassador_to_the_holy_see }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Sean_Duffy = {
+		name = KMT_Sean_Duffy
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Sean_Duffy
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				NOT = { 
+					has_completed_focus = KMT_weathermen_coup
+					has_completed_focus = KMT_join_the_legitimists
+				}
+			}
+			traits = { KMT_advisor_conservative_media_figure }
 			ai_will_do = {
 				factor = 1
 			}

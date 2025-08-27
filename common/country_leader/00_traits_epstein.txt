@@ -5109,6 +5109,15 @@ leader_traits = {
 		stability_factor = -0.15
 		construction_speed_factor = 0.05
 	}
+	KMT_puppet_figure = {
+		random = no
+		political_power_factor = -0.05
+	}
+	KMT_teachers_union_organizer = {
+		random = no
+		stability_factor = 0.05
+		conscription = 0.005
+	}
 
 	#advisors
 	KMT_advisor_shrewd_politician = {
@@ -5174,8 +5183,26 @@ leader_traits = {
 		war_support_factor = 0.05
 		consumer_goods_factor = -0.1
 	}
-	
-	
+	KMT_advisor_ambassador_to_the_holy_see = {
+		random = no
+		stability_factor = 0.05
+		political_power_factor = 0.05
+	}
+	KMT_advisor_conservative_media_figure = {
+		random = no
+		republican_drift = 0.01
+		drift_defence_factor = 0.15
+		production_speed_buildings_factor = 0.05
+	}
+	KMT_advisor_teachers_union_organizer = {
+		random = no
+		political_power_cost = 0.05
+		democrat_acceptance = 50
+		authoritarian_left_acceptance = 50
+		libertarian_left_acceptance = 50
+		libertarian_left_drift = 0.02
+		conscription = 0.005
+	}
 	
 	
 }

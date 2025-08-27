@@ -965,6 +965,79 @@ ideas = {
 			}
 		}
 
+
+		KMT_permanent_revolution_idea = {
+			allowed = {
+				original_tag = KMT
+			}
+			cancel = {
+				NOT = {
+					OR = {
+						has_government = authoritarian_left
+						has_government = libertarian_left
+					}
+				}
+			}
+			allowed_civil_war = { always = yes }		
+			modifier = {
+				authoritarian_left_drift = 0.05
+				war_support_factor = 0.1
+				political_power_gain = 0.3
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+
+		KMT_weather_underground_militia_3 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { has_government = authoritarian_left }
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = -0.15
+				modifier_army_sub_unit_militia_attack_factor = 0.15
+				modifier_army_sub_unit_militia_defence_factor = 0.15
+				modifier_army_sub_unit_militia_speed_factor = 0.15
+				authoritarian_left_drift = 0.05
+			}
+		}
+
+
+		KMT_weather_underground_militia_4 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { has_government = libertarian_left }
+			modifier = {
+				war_support_factor = 0.05
+				modifier_army_sub_unit_militia_attack_factor = 0.15
+				modifier_army_sub_unit_militia_defence_factor = 0.15
+				modifier_army_sub_unit_militia_speed_factor = 0.15
+			}
+		}
+
+		KMT_permanent_revolution_idea_1 = {
+			allowed = {
+				original_tag = KMT
+			}
+			cancel = {
+				NOT = {
+					OR = {
+						has_government = authoritarian_left
+						has_government = libertarian_left
+					}
+				}
+			}
+			allowed_civil_war = { always = yes }		
+			modifier = {
+				libertarian_left_drift = 0.05
+				stability_factor = 0.1
+				political_power_gain = 0.3
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
 	}
 
 

@@ -940,6 +940,16 @@ focus_tree = {
 			else = {
 				country_event = wisconsin.23
 			}
+			hidden_effect = {	
+				KMT_Paul_Nehlen = { 
+					promote_character = yes
+				}
+				set_party_name = {
+					ideology = autocratic
+					long_name = KMT_autocratic_party_couter_revolution_long
+					name = KMT_autocratic_party_couter_revolution
+				}
+			}
 		}
 		prerequisite = {
             focus = KMT_disband_the_trouble_makers
@@ -954,7 +964,7 @@ focus_tree = {
 	focus = {
 		id = KMT_weathermen_coup
 		icon = TODO
-		x = 40
+		x = 42
 		y = 3
 
 		cost = 2
@@ -1006,6 +1016,10 @@ focus_tree = {
 			
 			activate_mission = KMT_counter_revolution
 			retire_character = KMT_Paul_Ryan
+
+			set_division_force_allow_recruiting = {
+				division_template = "Weathermen Militia"
+			}
 		}
 		prerequisite = {
 			focus = KMT_integrate_the_militia
@@ -2108,7 +2122,7 @@ focus_tree = {
 	focus = {
 		id = KMT_new_identity_on_the_lakes
 		icon = TODO
-		x = 40
+		x = 42
 		y = 4
 
 		cost = 7
@@ -2139,7 +2153,7 @@ focus_tree = {
 	focus = {
 		id = KMT_revolutionary_student_movement
 		icon = TODO
-		x = 37
+		x = 39
 		y = 5
 
 		cost = 6
@@ -2171,7 +2185,7 @@ focus_tree = {
 	focus = {
 		id = KMT_raid_weapon_storages
 		icon = TODO
-		x = 39
+		x = 41
 		y = 5
 
 		cost = 5
@@ -2199,7 +2213,7 @@ focus_tree = {
 	focus = {
 		id = KMT_socialize_healthcare
 		icon = TODO
-		x = 41
+		x = 43
 		y = 5
 
 		cost = 7
@@ -2231,7 +2245,7 @@ focus_tree = {
 	focus = {
 		id = KMT_black_power
 		icon = TODO
-		x = 43
+		x = 45
 		y = 5
 
 		cost = 3
@@ -2261,7 +2275,7 @@ focus_tree = {
 	focus = {
 		id = KMT_fund_left_wing_universities
 		icon = TODO
-		x = 38
+		x = 40
 		y = 6
 
 		cost = 5
@@ -2279,7 +2293,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_research_slot = 1
 			add_days_mission_timeout = {
 				mission = KMT_counter_revolution
 				days = 50
@@ -2300,7 +2313,7 @@ focus_tree = {
 	focus = {
 		id = KMT_great_lakes_culture
 		icon = TODO
-		x = 42
+		x = 44
 		y = 6
 
 		cost = 5
@@ -2337,7 +2350,7 @@ focus_tree = {
 	focus = {
 		id = KMT_annex_michigan
 		icon = TODO
-		x = 40
+		x = 42
 		y = 6
 
 		cost = 8
@@ -2387,7 +2400,7 @@ focus_tree = {
 	focus = {
 		id = KMT_permanent_revolution
 		icon = TODO
-		x = 40
+		x = 42
 		y = 7
 
 		cost = 3
@@ -2408,6 +2421,8 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = KMT_poorly_organized_state
 			custom_effect_tooltip = KMT_end_counter_revolution_tt
+			add_ideas = KMT_permanent_revolution_idea
+			add_research_slot = 1
 		}
 		prerequisite = {
 			focus = KMT_annex_michigan
@@ -2426,10 +2441,10 @@ focus_tree = {
 	focus = {
 		id = KMT_keep_the_militias_in_charge
 		icon = TODO
-		x = 39
+		x = 43
 		y = 8
 
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -2442,7 +2457,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KMT_weather_underground_militia_1
+				add_idea = KMT_weather_underground_militia_3
+			}
 		}
 		prerequisite = {
 			focus = KMT_permanent_revolution
@@ -2458,7 +2476,7 @@ focus_tree = {
 		x = 41
 		y = 8
 
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -2471,7 +2489,27 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			KMT_Brandon_Johnson = { 
+				promote_character = yes
+			}
+			set_politics = {
+    			ruling_party = libertarian_left
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = libertarian_left
+				popularity = 0.15
+			}
+
+			swap_ideas = {
+				remove_idea = KMT_weather_underground_militia_1
+				add_idea = KMT_weather_underground_militia_4
+			}
+
+			swap_ideas = {
+				remove_idea = KMT_permanent_revolution_idea
+				add_idea = KMT_permanent_revolution_idea_1
+			}
 		}
 		prerequisite = {
 			focus = KMT_permanent_revolution
@@ -2484,7 +2522,7 @@ focus_tree = {
 	focus = {
 		id = KMT_into_minnesota
 		icon = TODO
-		x = 40
+		x = 42
 		y = 9
 
 		cost = 2
@@ -2511,7 +2549,7 @@ focus_tree = {
 	focus = {
 		id = KMT_lake_superior
 		icon = TODO
-		x = 39
+		x = 41
 		y = 10
 
 		cost = 2
@@ -2537,7 +2575,7 @@ focus_tree = {
 	focus = {
 		id = KMT_lake_eirie
 		icon = TODO
-		x = 41
+		x = 43
 		y = 10
 
 		cost = 2
@@ -2563,7 +2601,7 @@ focus_tree = {
 	focus = {
 		id = KMT_lake_ontario
 		icon = TODO
-		x = 40
+		x = 42
 		y = 11
 
 		cost = 2
@@ -2592,7 +2630,7 @@ focus_tree = {
 	focus = {
 		id = KMT_prepare_for_the_onslaught
 		icon = TODO
-		x = 40
+		x = 42
 		y = 12
 
 		cost = 2
@@ -2618,7 +2656,7 @@ focus_tree = {
 	focus = {
 		id = KMT_dark_stain_of_mccarthysm
 		icon = TODO
-		x = 40
+		x = 42
 		y = 13
 
 		cost = 2
@@ -2648,7 +2686,7 @@ focus_tree = {
 	focus = {
 		id = KMT_equity_solidarity_socialism
 		icon = TODO
-		x = 40
+		x = 42
 		y = 14
 
 		cost = 2
@@ -2675,7 +2713,7 @@ focus_tree = {
 	focus = {
 		id = KMT_state_defense
 		icon = TODO
-		x = 38
+		x = 44
 		y = 9
 
 		cost = 2
@@ -2700,9 +2738,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = KMT_militia_training
+		icon = TODO
+		x = 45
+		y = 10
+
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			set_division_template_lock = {
+				division_template = "Weathermen Militia"
+				is_locked = no
+			}
+		}
+		prerequisite = {
+			focus = KMT_state_defense
+		}		
+	}
+
+	focus = {
 		id = KMT_abolish_private_proprety
 		icon = TODO
-		x = 38
+		x = 44
 		y = 11
 
 		cost = 2
@@ -2729,7 +2796,7 @@ focus_tree = {
 	focus = {
 		id = KMT_supremacy_over_the_state
 		icon = TODO
-		x = 38
+		x = 44
 		y = 12
 
 		cost = 2
@@ -2756,7 +2823,7 @@ focus_tree = {
 	focus = {
 		id = KMT_feed_the_poor
 		icon = TODO
-		x = 42
+		x = 40
 		y = 9
 
 		cost = 2
@@ -2780,9 +2847,67 @@ focus_tree = {
 	}
 
 	focus = {
+		id = KMT_join_bernie
+		icon = TODO
+		x = 37
+		y = 10
+
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = KMT_feed_the_poor
+		}
+		mutually_exclusive = { 
+			focus = KMT_loyalty_to_the_cause
+		}	
+	}
+
+	focus = {
+		id = KMT_loyalty_to_the_cause
+		icon = TODO
+		x = 39
+		y = 10
+
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = KMT_feed_the_poor
+		}
+		mutually_exclusive = { 
+			focus = KMT_join_bernie
+		}	
+	}
+
+	focus = {
 		id = KMT_relief_middle_class
 		icon = TODO
-		x = 42
+		x = 40
 		y = 11
 
 		cost = 2
@@ -2808,7 +2933,7 @@ focus_tree = {
 	focus = {
 		id = KMT_inspire_the_people
 		icon = TODO
-		x = 42
+		x = 40
 		y = 12
 
 		cost = 2
@@ -2837,7 +2962,7 @@ focus_tree = {
 	focus = {
 		id = KMT_start_the_counter_revolution
 		icon = TODO
-		x = 44
+		x = 47
 		y = 7
 
 		cost = 10
@@ -5186,7 +5311,7 @@ focus_tree = {
 	focus = {
 		id = KMT_upgrade_fort_mccoy
 		icon = TODO
-		x = 47
+		x = 51
 		y = 0
 		
 		cost = 7
@@ -5227,7 +5352,7 @@ focus_tree = {
 	focus = {
 		id = KMT_keep_guerrilla_warfare
 		icon = TODO
-		x = 46
+		x = 50
 		y = 1
 
 		cost = 8
@@ -5262,7 +5387,7 @@ focus_tree = {
 	focus = {
 		id = KMT_army_reform
 		icon = TODO
-		x = 48
+		x = 52
 		y = 1
 
 		cost = 8
@@ -5293,7 +5418,7 @@ focus_tree = {
 	focus = {
 		id = KMT_urban_assault_tactics
 		icon = TODO
-		x = 47
+		x = 51
 		y = 2
 
 		cost = 5
@@ -5326,7 +5451,7 @@ focus_tree = {
 	focus = {
 		id = KMT_state_patrol
 		icon = TODO
-		x = 47
+		x = 51
 		y = 3
 
 		cost = 5
@@ -5379,7 +5504,7 @@ focus_tree = {
 	focus = {
 		id = KMT_mountain_training
 		icon = TODO
-		x = 46
+		x = 50
 		y = 4
 
 		cost = 5
@@ -5410,7 +5535,7 @@ focus_tree = {
 	focus = {
 		id = KMT_military_infraestructure
 		icon = TODO
-		x = 48
+		x = 52
 		y = 4
 
 		cost = 5
@@ -5436,7 +5561,7 @@ focus_tree = {
 	focus = {
 		id = KMT_mass_produce_basic_guns
 		icon = TODO
-		x = 43
+		x = 47
 		y = 2
 
 		cost = 8
@@ -5468,7 +5593,7 @@ focus_tree = {
 	focus = {
 		id = KMT_vietnam_lesson
 		icon = TODO
-		x = 45
+		x = 49
 		y = 2
 
 		cost = 8
@@ -5501,7 +5626,7 @@ focus_tree = {
 	focus = {
 		id = KMT_logistical_training
 		icon = TODO
-		x = 44
+		x = 48
 		y = 3
 
 		cost = 5
@@ -5535,7 +5660,7 @@ focus_tree = {
 	focus = {
 		id = KMT_patience_is_key
 		icon = TODO
-		x = 44
+		x = 48
 		y = 4
 
 		cost = 8
@@ -5565,7 +5690,7 @@ focus_tree = {
 	focus = {
 		id = KMT_national_guard
 		icon = TODO
-		x = 49
+		x = 53
 		y = 2
 
 		cost = 8
@@ -5622,7 +5747,7 @@ focus_tree = {
 	focus = {
 		id = KMT_artillery_investment
 		icon = TODO
-		x = 51
+		x = 55
 		y = 2
 
 		cost = 8
@@ -5653,7 +5778,7 @@ focus_tree = {
 	focus = {
 		id = KMT_manoverability_exercices
 		icon = TODO
-		x = 50
+		x = 54
 		y = 3
 
 		cost = 5
@@ -5688,7 +5813,7 @@ focus_tree = {
 	focus = {
 		id = KMT_shoot_to_kill
 		icon = TODO
-		x = 50
+		x = 54
 		y = 4
 
 		cost = 8
@@ -5717,7 +5842,7 @@ focus_tree = {
 	focus = {
 		id = KMT_our_motto_is_forward
 		icon = TODO
-		x = 47
+		x = 51
 		y = 5
 
 		cost = 7
@@ -5745,7 +5870,7 @@ focus_tree = {
 	focus = {
 		id = KMT_glory_to_the_army
 		icon = TODO
-		x = 47
+		x = 51
 		y = 6
 
 		cost = 7
@@ -5773,7 +5898,7 @@ focus_tree = {
 	focus = {
 		id = KMT_drone_investments
 		icon = TODO
-		x = 50 
+		x = 54 
 		y = 1
 
 		cost = 4
@@ -5805,7 +5930,7 @@ focus_tree = {
 	focus = {
 		id = KMT_rocket_investments
 		icon = TODO
-		x = 52
+		x = 56
 		y = 1
 
 		cost = 4
@@ -5837,7 +5962,7 @@ focus_tree = {
 	focus = {
 		id = KMT_brand_new_airforce
 		icon = TODO
-		x = 54
+		x = 58
 		y = 1
 
 		cost = 6
@@ -5864,7 +5989,7 @@ focus_tree = {
 	focus = {
 		id = KMT_airplane_production
 		icon = TODO
-		x = 53
+		x = 57
 		y = 2
 
 		cost = 5
@@ -5908,7 +6033,7 @@ focus_tree = {
 	focus = {
 		id = KMT_airport_construction
 		icon = TODO
-		x = 55
+		x = 59
 		y = 2
 
 		cost = 5
@@ -5948,7 +6073,7 @@ focus_tree = {
 	focus = {
 		id = KMT_cloud_training
 		icon = TODO
-		x = 54
+		x = 58
 		y = 3
 
 		cost = 6
@@ -5980,7 +6105,7 @@ focus_tree = {
 	focus = {
 		id = KMT_paratrooper_forces
 		icon = TODO
-		x = 52
+		x = 56
 		y = 4
 
 		cost = 5
@@ -6015,7 +6140,7 @@ focus_tree = {
 	focus = {
 		id = KMT_proud_airforce
 		icon = TODO
-		x = 54
+		x = 58
 		y = 4
 
 		cost = 8
@@ -6046,7 +6171,7 @@ focus_tree = {
 	focus = {
 		id = KMT_great_lakes_shipbuilding
 		icon = TODO
-		x = 57
+		x = 61
 		y = 1
 
 		cost = 6
@@ -6084,7 +6209,7 @@ focus_tree = {
 	focus = {
 		id = KMT_reacall_the_admirals
 		icon = TODO
-		x = 57
+		x = 61
 		y = 2
 
 		cost = 6
@@ -6117,7 +6242,7 @@ focus_tree = {
 	focus = {
 		id = KMT_naval_skill
 		icon = TODO
-		x = 56
+		x = 60
 		y = 3
 
 		cost = 5
@@ -6148,7 +6273,7 @@ focus_tree = {
 	focus = {
 		id = KMT_naval_speed
 		icon = TODO
-		x = 58
+		x = 62
 		y = 3
 
 		cost = 5
@@ -6177,7 +6302,7 @@ focus_tree = {
 	focus = {
 		id = KMT_train_marines
 		icon = TODO
-		x = 58
+		x = 62
 		y = 4
 
 		cost = 5
@@ -6212,7 +6337,7 @@ focus_tree = {
 	focus = {
 		id = KMT_rulling_the_lakes
 		icon = TODO
-		x = 56
+		x = 60
 		y = 4
 
 		cost = 8
@@ -6246,7 +6371,7 @@ focus_tree = {
 	focus = {
 		id = KMT_carrier_focus
 		icon = TODO
-		x = 55
+		x = 59
 		y = 5
 
 		cost = 7
@@ -6281,7 +6406,7 @@ focus_tree = {
 	focus = {
 		id = KMT_sea_and_air
 		icon = TODO
-		x = 55
+		x = 59
 		y = 6
 
 		cost = 7
@@ -6326,7 +6451,7 @@ focus_tree = {
 	focus = {
 		id = KMT_dairy_industry
 		icon = TODO
-		x = 63
+		x = 67
 		y = 0
 
 		cost = 5
@@ -6359,7 +6484,7 @@ focus_tree = {
 	focus = {
 		id = KMT_logistical_reconfiguration
 		icon = TODO
-		x = 59
+		x = 63
 		y = 1
 
 		cost = 5
@@ -6409,7 +6534,7 @@ focus_tree = {
 	focus = {
 		id = KMT_transportation_effort
 		icon = TODO
-		x = 59
+		x = 63
 		y = 2
 
 		cost = 5
@@ -6444,7 +6569,7 @@ focus_tree = {
 	focus = {
 		id = KMT_badger_army_ammo
 		icon = TODO
-		x = 61
+		x = 65
 		y = 1
 
 		cost = 8
@@ -6486,7 +6611,7 @@ focus_tree = {
 	focus = {
 		id = KMT_industry_kick
 		icon = TODO
-		x = 63
+		x = 67
 		y = 1
 
 		cost = 8
@@ -6519,7 +6644,7 @@ focus_tree = {
 	focus = {
 		id = KMT_resource_effort
 		icon = TODO
-		x = 66
+		x = 70
 		y = 1
 
 		cost = 5
@@ -6555,7 +6680,7 @@ focus_tree = {
 	focus = {
 		id = KMT_military_industry_expansion
 		icon = TODO
-		x = 61
+		x = 65
 		y = 2
 
 		cost = 5
@@ -6601,7 +6726,7 @@ focus_tree = {
 	focus = {
 		id = KMT_rust_belt_military_industry
 		icon = TODO
-		x = 61
+		x = 65
 		y = 3
 
 		cost = 7
@@ -6659,7 +6784,7 @@ focus_tree = {
 	focus = {
 		id = KMT_great_lakes_military_industrial_complex
 		icon = TODO
-		x = 61
+		x = 65
 		y = 4
 
 		cost = 8
@@ -6695,7 +6820,7 @@ focus_tree = {
 	focus = {
 		id = KMT_cheese_production
 		icon = TODO
-		x = 63
+		x = 67
 		y = 2
 
 		cost = 5
@@ -6733,7 +6858,7 @@ focus_tree = {
 	focus = {
 		id = KMT_lumber_production
 		icon = TODO
-		x = 63
+		x = 67
 		y = 3
 
 		cost = 7
@@ -6776,7 +6901,7 @@ focus_tree = {
 	focus = {
 		id = KMT_national_civilian_industry
 		icon = TODO
-		x = 63
+		x = 67
 		y = 4
 
 		cost = 8
@@ -6808,7 +6933,7 @@ focus_tree = {
 	focus = {
 		id = KMT_rust_belt_back_on_work
 		icon = TODO
-		x = 62
+		x = 66
 		y = 5
 
 		cost = 9
@@ -6836,7 +6961,7 @@ focus_tree = {
 	focus = {
 		id = KMT_manufactoring_industry
 		icon = TODO
-		x = 65
+		x = 69
 		y = 2
 
 		cost = 5
@@ -6883,7 +7008,7 @@ focus_tree = {
 	focus = {
 		id = KMT_tech_revolution
 		icon = TODO
-		x = 67
+		x = 71
 		y = 2
 
 		cost = 7
@@ -6914,7 +7039,7 @@ focus_tree = {
 	focus = {
 		id = KMT_alice_in_dairyland
 		icon = TODO
-		x = 65
+		x = 69
 		y = 3
 
 		cost = 7
@@ -6946,7 +7071,7 @@ focus_tree = {
 	focus = {
 		id = KMT_software_investments
 		icon = TODO
-		x = 67
+		x = 71
 		y = 3
 
 		cost = 4
@@ -6976,7 +7101,7 @@ focus_tree = {
 	focus = {
 		id = KMT_second_chicago_world_fair
 		icon = TODO
-		x = 68
+		x = 72
 		y = 4
 
 		cost = 20
@@ -7008,7 +7133,7 @@ focus_tree = {
 	focus = {
 		id = KMT_restore_focus_on_energy_plan
 		icon = TODO
-		x = 66
+		x = 70
 		y = 4
 
 		cost = 6
@@ -7043,7 +7168,7 @@ focus_tree = {
 	focus = {
 		id = KMT_nuclear_energy
 		icon = TODO
-		x = 64
+		x = 68
 		y = 5
 
 		cost = 5
@@ -7078,7 +7203,7 @@ focus_tree = {
 	focus = {
 		id = KMT_solar_and_wind
 		icon = TODO
-		x = 66
+		x = 70
 		y = 5
 
 		cost = 5
@@ -7119,7 +7244,7 @@ focus_tree = {
 	focus = {
 		id = KMT_natural_gas
 		icon = TODO
-		x = 68
+		x = 72
 		y = 5
 
 		cost = 5
@@ -7160,7 +7285,7 @@ focus_tree = {
 	focus = {
 		id = KMT_greatest_industry_in_the_world
 		icon = TODO
-		x = 63
+		x = 67
 		y = 6
 
 		cost = 7
@@ -7235,7 +7360,7 @@ focus_tree = {
 	focus = {
 		id = KMT_real_american_spirit
 		icon = TODO
-		x = 53
+		x = 57
 		y = 7
 
 		cost = 7
@@ -7275,7 +7400,7 @@ focus_tree = {
 	focus = {
 		id = KMT_great_lakes_unbound
 		icon = TODO
-		x = 57
+		x = 61
 		y = 7
 
 		cost = 7
