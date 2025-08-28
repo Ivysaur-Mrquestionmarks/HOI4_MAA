@@ -1,0 +1,743 @@
+focus_tree = {
+	id = islamik_state
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 30
+			tag = ISA	
+		}
+	}
+	
+	continuous_focus_position = { x = 200 y = 1250 }
+	default = no
+	
+	
+	focus = {
+		id = ISA_a_holy_war
+		icon = GFX
+		cost = 5.00
+		x = 15
+		y = 0
+		available = {
+			#always = no
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_mobilize_the_believers
+		icon = GFX
+		cost = 5.00
+		x = 13
+		y = 1
+		available = {
+			is_ai = no
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_secure_the_caliphate
+		icon = GFX
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ISA_a_holy_war
+		prerequisite = {
+			focus = ISA_a_holy_war
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_behead_infidels
+		icon = GFX
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ISA_secure_the_caliphate
+		prerequisite = {
+			focus = ISA_secure_the_caliphate
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_imprison_kafirs
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_secure_the_caliphate
+		prerequisite = {
+			focus = ISA_secure_the_caliphate
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_public_executions
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_behead_infidels
+		prerequisite = {
+			focus = ISA_behead_infidels
+		}
+		prerequisite = {
+			focus = ISA_imprison_kafirs
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = ISA_martyrdom_operations
+		icon = GFX
+		cost = 5.00
+		x = -7
+		y = 1
+		relative_position_id = ISA_public_executions
+		prerequisite = {
+			focus = ISA_public_executions
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_increase_aircraft_production
+		icon = GFX
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ISA_martyrdom_operations
+		prerequisite = {
+			focus = ISA_martyrdom_operations
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_explosive_jet_fuel
+		icon = GFX
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ISA_increase_aircraft_production
+		prerequisite = {
+			focus = ISA_increase_aircraft_production
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_recruit_prisoners_into_jihad
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_martyrdom_operations
+		prerequisite = {
+			focus = ISA_martyrdom_operations
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_suicide_bomber_training
+		icon = GFX
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ISA_recruit_prisoners_into_jihad
+		prerequisite = {
+			focus = ISA_recruit_prisoners_into_jihad
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_deploy_the_martyrs
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_suicide_bomber_training
+		prerequisite = {
+			focus = ISA_suicide_bomber_training
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_begin_attacks
+		icon = GFX
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ISA_suicide_bomber_training
+		prerequisite = {
+			focus = ISA_suicide_bomber_training
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ISA_islamic_banking
+		icon = GFX
+		cost = 5.00
+		x = 6
+		y = 1
+		relative_position_id = ISA_public_executions
+		prerequisite = {
+			focus = ISA_public_executions
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_a_scholar_council
+		icon = GFX
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ISA_islamic_banking
+		prerequisite = {
+			focus = ISA_islamic_banking
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_halal_markets
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 2
+		relative_position_id = ISA_islamic_banking
+		prerequisite = {
+			focus = ISA_islamic_banking
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = ISA_enforce_sharia_law
+		icon = GFX
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ISA_public_executions
+		prerequisite = {
+			focus = ISA_public_executions
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ISA_rebuild_mosques
+		icon = GFX
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ISA_enforce_sharia_law
+		prerequisite = {
+			focus = ISA_enforce_sharia_law
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_destroy_infidel_infrastructure
+		icon = GFX
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ISA_rebuild_mosques
+		prerequisite = {
+			focus = ISA_rebuild_mosques
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_de_americanize_our_lands
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_rebuild_mosques
+		prerequisite = {
+			focus = ISA_rebuild_mosques
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_tear_down_relics_of_past
+		icon = GFX
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ISA_de_americanize_our_lands
+		prerequisite = {
+			focus = ISA_destroy_infidel_infrastructure
+		}
+		prerequisite = {
+			focus = ISA_de_americanize_our_lands
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_islamic_architecture
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_de_americanize_our_lands
+		prerequisite = {
+			focus = ISA_de_americanize_our_lands
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_new_holy_cities
+		icon = GFX
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ISA_islamic_architecture
+		prerequisite = {
+			focus = ISA_islamic_architecture
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ISA_morality_police
+		icon = GFX
+		cost = 5.00
+		x = -2
+		y = 2
+		relative_position_id = ISA_enforce_sharia_law
+		prerequisite = {
+			focus = ISA_enforce_sharia_law
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_introduce_the_emni
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_morality_police
+		prerequisite = {
+			focus = ISA_morality_police
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_forced_conversions
+		icon = GFX
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ISA_introduce_the_emni
+		prerequisite = {
+			focus = ISA_introduce_the_emni
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_ban_all_music_except_nasheeds
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_introduce_the_emni
+		prerequisite = {
+			focus = ISA_introduce_the_emni
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_the_world_must_be_cleansed
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_forced_conversions
+		prerequisite = {
+			focus = ISA_forced_conversions
+		}
+		prerequisite = {
+			focus = ISA_ban_all_music_except_nasheeds
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_islamic_high_council
+		icon = GFX
+		cost = 5.00
+		x = -2
+		y = 2
+		relative_position_id = ISA_morality_police
+		prerequisite = {
+			focus = ISA_morality_police
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_supreme_imam
+		icon = GFX
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ISA_islamic_high_council
+		prerequisite = {
+			focus = ISA_islamic_high_council
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_the_islamic_emirate_of_amerika
+		icon = GFX
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ISA_supreme_imam
+		prerequisite = {
+			focus = ISA_supreme_imam
+		}
+		prerequisite = {
+			focus = ISA_the_world_must_be_cleansed
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_ban_western_education
+		icon = GFX
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ISA_the_islamic_emirate_of_amerika
+		prerequisite = {
+			focus = ISA_the_islamic_emirate_of_amerika
+		}
+		
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_eradicate_the_apostates
+		icon = GFX
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ISA_the_islamic_emirate_of_amerika
+		prerequisite = {
+			focus = ISA_the_islamic_emirate_of_amerika
+		}
+		
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_a_takfiri_state
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_eradicate_the_apostates
+		prerequisite = {
+			focus = ISA_eradicate_the_apostates
+		}
+		prerequisite = {
+			focus = ISA_ban_western_education
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_formalize_the_caliphate
+		icon = GFX
+		cost = 5.00
+		x = 3
+		y = 1
+		relative_position_id = ISA_a_takfiri_state
+		prerequisite = {
+			focus = ISA_a_takfiri_state
+		}
+		prerequisite = {
+			focus = ISA_new_holy_cities
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_denounce_the_apostate_states
+		icon = GFX
+		cost = 5.00
+		x = 3
+		y = 1
+		relative_position_id = ISA_formalize_the_caliphate
+		prerequisite = {
+			focus = ISA_formalize_the_caliphate
+		}
+		
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_year_zero
+		icon = GFX
+		cost = 5.00
+		x = -3
+		y = 1
+		relative_position_id = ISA_formalize_the_caliphate
+		prerequisite = {
+			focus = ISA_formalize_the_caliphate
+		}
+		
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_jihadi_salafism
+		icon = GFX
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ISA_year_zero
+		prerequisite = {
+			focus = ISA_year_zero
+		}
+		
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_reintroduce_human_sacrifices
+		icon = GFX
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ISA_year_zero
+		prerequisite = {
+			focus = ISA_year_zero
+		}
+		
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_preparing_for_judgement_day
+		icon = GFX
+		cost = 5.00
+		x = 3
+		y = 2
+		relative_position_id = ISA_year_zero
+		prerequisite = {
+			focus = ISA_year_zero
+		}
+		
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_look_out_for_romes_infidel_armies
+		icon = GFX
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ISA_preparing_for_judgement_day
+		prerequisite = {
+			focus = ISA_preparing_for_judgement_day
+		}
+		
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_searching_for_the_apocolypse
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_preparing_for_judgement_day
+		prerequisite = {
+			focus = ISA_preparing_for_judgement_day
+		}
+		
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_search_in_americas_rome
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_look_out_for_romes_infidel_armies
+		prerequisite = {
+			focus = ISA_searching_for_the_apocolypse
+		}
+		prerequisite = {
+			focus = ISA_look_out_for_romes_infidel_armies
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_southern_jihad
+		icon = GFX
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ISA_search_in_americas_rome
+		prerequisite = {
+			focus = ISA_search_in_americas_rome
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_pacific_jihad
+		icon = GFX
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ISA_search_in_americas_rome
+		prerequisite = {
+			focus = ISA_search_in_americas_rome
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ISA_emir_of_all_amerika
+		icon = GFX
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ISA_southern_jihad
+		prerequisite = {
+			focus = ISA_pacific_jihad
+		}
+		prerequisite = {
+			focus = ISA_southern_jihad
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	
+	
+}
