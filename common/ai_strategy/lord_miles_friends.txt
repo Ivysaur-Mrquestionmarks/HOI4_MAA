@@ -25,10 +25,13 @@ lord_mormon_war = {
 		original_tag = HCI
 	}
 	enable = {
-		SIN = { has_government = libertarian_right }
+		SIN = { 
+			has_government = libertarian_right 
+			has_war_with = UTA
+		}
 	}
 	abort = {
-		NOT = { SIN = { has_government = libertarian_right } }
+		NOT = { SIN = { has_war_with = UTA } }
 	}
 	
 	ai_strategy = {
