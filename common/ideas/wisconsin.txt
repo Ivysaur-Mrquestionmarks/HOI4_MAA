@@ -1015,6 +1015,7 @@ ideas = {
 			}
 		}
 
+
 		KMT_permanent_revolution_idea_1 = {
 			allowed = {
 				original_tag = KMT
@@ -1035,6 +1036,85 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+
+		KMT_prepared_for_an_invasion = {
+			allowed = {
+				original_tag = KMT
+			}
+			allowed_civil_war = { always = yes }		
+			modifier = {
+				army_morale_factor = 0.05
+				recon_factor_while_entrenched = 0.1
+				army_core_defence_factor = 0.1
+				army_defence_against_major_factor = 0.05
+				army_attack_against_major_factor = 0.05
+			}
+		}
+
+
+		KMT_state_defense_idea = {
+			allowed = {	original_tag = KMT }
+			allowed_civil_war = { always = yes }		
+			modifier = {
+				drift_defence_factor = 0.2
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_defence_factor = 0.1
+			}
+		}
+
+
+		KMT_state_defense_idea_1 = {
+			allowed = {	original_tag = KMT }
+			allowed_civil_war = { always = yes }		
+			modifier = {
+				drift_defence_factor = 0.2
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				army_defence_factor = 0.1
+				authoritarian_left_drift = 0.05
+			}
+		}
+
+
+		KMT_weather_underground_militia_5 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { has_government = authoritarian_left }
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = -0.10
+				modifier_army_sub_unit_militia_attack_factor = 0.2
+				modifier_army_sub_unit_militia_defence_factor = 0.2
+				modifier_army_sub_unit_militia_speed_factor = 0.2
+				authoritarian_left_drift = 0.05
+			}
+		}
+
+
+		KMT_feeding_the_poor = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = 0.002
+				political_power_cost = 0.05
+				libertarian_left_drift = 0.05
+				weekly_manpower = 1000
+			}
+		}
+
+
+		KMT_reliefing_the_middle_class = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = 0.002
+				consumer_goods_factor = 0.1
+				libertarian_left_drift = 0.05
+				production_speed_buildings_factor = 0.2
+				research_speed_factor = 0.25			
 			}
 		}
 

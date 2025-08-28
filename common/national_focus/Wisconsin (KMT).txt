@@ -2140,6 +2140,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			add_state_core = 197
+			add_state_core = 198
+			add_state_core = 209
+			add_state_core = 152
 			set_cosmetic_tag = KMT_great_lakes_soviet
 			add_political_power = 100
 			country_event = wisconsin.36
@@ -2423,6 +2427,18 @@ focus_tree = {
 			custom_effect_tooltip = KMT_end_counter_revolution_tt
 			add_ideas = KMT_permanent_revolution_idea
 			add_research_slot = 1
+			add_state_core = 160
+			add_state_core = 161
+			add_state_core = 162
+			add_state_core = 190
+			add_state_core = 157
+			add_state_core = 165
+			add_state_core = 153
+			add_state_core = 130
+			add_state_core = 208
+			add_state_core = 206
+			add_state_core = 204
+			add_state_core = 560
 		}
 		prerequisite = {
 			focus = KMT_annex_michigan
@@ -2492,6 +2508,11 @@ focus_tree = {
 			KMT_Brandon_Johnson = { 
 				promote_character = yes
 			}
+			set_party_name = {
+				ideology = libertarian_left
+				long_name = KMT_libertarian_left_party_revolution_long
+				name = KMT_libertarian_left_party_revolution
+			}
 			set_politics = {
     			ruling_party = libertarian_left
 				elections_allowed = no
@@ -2525,11 +2546,14 @@ focus_tree = {
 		x = 42
 		y = 9
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			has_army_manpower = {
+				size > 60000
+			}
 		}
 		
 		bypass = {
@@ -2538,7 +2562,21 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = MIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MNS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MIL
+			}
+			add_state_core = 111
+			add_state_core = 23
+			add_state_core = 25
 		}
 		prerequisite = {
 			focus = KMT_keep_the_militias_in_charge
@@ -2552,11 +2590,14 @@ focus_tree = {
 		x = 41
 		y = 10
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			has_army_manpower = {
+				size > 70000
+			}
 		}
 		
 		bypass = {
@@ -2565,7 +2606,42 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			42 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 42 }
+						}
+					}
+				}
+			}
+			102 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 102 }
+						}
+					}
+				}
+			}
+			110 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 110 }
+						}
+					}
+				}
+			}
+			add_state_core = 42
+			add_state_core = 102
+			add_state_core = 110
 		}
 		prerequisite = {
 			focus = KMT_into_minnesota
@@ -2578,11 +2654,14 @@ focus_tree = {
 		x = 43
 		y = 10
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			has_army_manpower = {
+				size > 70000
+			}
 		}
 		
 		bypass = {
@@ -2591,7 +2670,162 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			559 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 559 }
+						}
+					}
+				}
+			}
+			205 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 205 }
+						}
+					}
+				}
+			}
+			396 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 396 }
+						}
+					}
+				}
+			}
+			672 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 672 }
+						}
+					}
+				}
+			}
+			360 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 360 }
+						}
+					}
+				}
+			}
+			357 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 357 }
+						}
+					}
+				}
+			}
+			361 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 361 }
+						}
+					}
+				}
+			}
+			555 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 555 }
+						}
+					}
+				}
+			}
+			556 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 556 }
+						}
+					}
+				}
+			}
+			276 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 276 }
+						}
+					}
+				}
+			}
+			183 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 183 }
+						}
+					}
+				}
+			}
+			399 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 399 }
+						}
+					}
+				}
+			}
+			358 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 358 }
+						}
+					}
+				}
+			}
+			add_state_core = 559
+			add_state_core = 205
+			add_state_core = 396
+			add_state_core = 672
+			add_state_core = 360
+			add_state_core = 357
+			add_state_core = 361
+			add_state_core = 555
+			add_state_core = 556
+			add_state_core = 276
+			add_state_core = 183
+			add_state_core = 399
+			add_state_core = 358
 		}
 		prerequisite = {
 			focus = KMT_into_minnesota
@@ -2604,7 +2838,7 @@ focus_tree = {
 		x = 42
 		y = 11
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2617,7 +2851,126 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			670 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 670 }
+						}
+					}
+				}
+			}
+			557 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 557 }
+						}
+					}
+				}
+			}
+			189 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 189 }
+						}
+					}
+				}
+			}
+			167 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 167 }
+						}
+					}
+				}
+			}
+			647 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 647 }
+						}
+					}
+				}
+			}
+			648 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 648 }
+						}
+					}
+				}
+			}
+			140 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 140 }
+						}
+					}
+				}
+			}
+			650 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 650 }
+						}
+					}
+				}
+			}
+			177 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 177 }
+						}
+					}
+				}
+			}
+			649 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 649 }
+						}
+					}
+				}
+			}
+			add_state_core = 670
+			add_state_core = 557
+			add_state_core = 189
+			add_state_core = 167
+			add_state_core = 647
+			add_state_core = 648
+			add_state_core = 140
+			add_state_core = 650
+			add_state_core = 177
+			add_state_core = 649
 		}
 		prerequisite = {
 			focus = KMT_lake_superior
@@ -2633,7 +2986,7 @@ focus_tree = {
 		x = 42
 		y = 12
 
-		cost = 2
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -2646,7 +2999,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_ideas = KMT_prepared_for_an_invasion
 		}
 		prerequisite = {
 			focus = KMT_lake_ontario
@@ -2659,7 +3014,7 @@ focus_tree = {
 		x = 42
 		y = 13
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2672,7 +3027,19 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = republican
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = autocratic
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = libertarian_right
+				popularity = -1
+			}
+			add_stability = 0.15
 		}
 		prerequisite = {
 			focus = KMT_prepare_for_the_onslaught
@@ -2689,7 +3056,7 @@ focus_tree = {
 		x = 42
 		y = 14
 
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2702,12 +3069,28 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 100
+			if = {
+				limit = {
+					has_government = libertarian_left
+				}
+				add_popularity = {
+					ideology = libertarian_left
+					popularity = 0.15
+				}
+			}
+			else = {
+				add_popularity = {
+					ideology = authoritarian_left
+					popularity = 0.15
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_dark_stain_of_mccarthysm
-		}
-		
+		}		
 	}
 
 	focus = {
@@ -2716,7 +3099,7 @@ focus_tree = {
 		x = 44
 		y = 9
 
-		cost = 2
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -2729,7 +3112,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_ideas = KMT_state_defense_idea
 		}
 		prerequisite = {
 			focus = KMT_keep_the_militias_in_charge
@@ -2743,7 +3126,7 @@ focus_tree = {
 		x = 45
 		y = 10
 
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -2756,10 +3139,25 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = KMT_weather_underground_militia_3
+				add_idea = KMT_weather_underground_militia_5
+			}
 			set_division_template_lock = {
 				division_template = "Weathermen Militia"
 				is_locked = no
 			}
+			add_units_to_division_template = {
+				template_name = "Weathermen Militia"
+				regiments = {
+					militia = 0
+					militia = 1
+				}
+				support = {
+					artillery = 0
+				}
+			}
+			army_experience = 50
 		}
 		prerequisite = {
 			focus = KMT_state_defense
@@ -2772,7 +3170,7 @@ focus_tree = {
 		x = 44
 		y = 11
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2785,7 +3183,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = authoritarian_left
+				popularity = 0.1
+			}
+			add_stability = -0.05
+			add_political_power = 200
 		}
 		prerequisite = {
 			focus = KMT_state_defense
@@ -2799,7 +3202,7 @@ focus_tree = {
 		x = 44
 		y = 12
 
-		cost = 2
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -2812,7 +3215,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KMT_state_defense_idea
+				add_idea = KMT_state_defense_idea_1
+			}
 		}
 		prerequisite = {
 			focus = KMT_abolish_private_proprety
@@ -2826,7 +3232,7 @@ focus_tree = {
 		x = 40
 		y = 9
 
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -2839,7 +3245,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = KMT_feeding_the_poor
+				days = 250
+			}
 		}
 		prerequisite = {
 			focus = KMT_political_puppet
@@ -2852,11 +3261,16 @@ focus_tree = {
 		x = 37
 		y = 10
 
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			PRA = {
+				exists = yes
+				has_country_leader = { name = "Bernie Sanders" }
+				is_faction_leader = yes
+			}
 		}
 		
 		bypass = {
@@ -2865,7 +3279,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			PRA = { country_event = wisconsin.40 }
 		}
 		prerequisite = {
 			focus = KMT_feed_the_poor
@@ -2881,7 +3295,7 @@ focus_tree = {
 		x = 39
 		y = 10
 
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -2894,7 +3308,16 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_political_power = 100
+			add_popularity = {
+				ideology = libertarian_left
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = authoritarian_left
+				popularity = 0.10
+			}
 		}
 		prerequisite = {
 			focus = KMT_feed_the_poor
@@ -2910,7 +3333,7 @@ focus_tree = {
 		x = 40
 		y = 11
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2923,7 +3346,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = KMT_reliefing_the_middle_class
+				days = 250
+			}
 		}
 		prerequisite = {
 			focus = KMT_feed_the_poor
@@ -2936,7 +3362,7 @@ focus_tree = {
 		x = 40
 		y = 12
 
-		cost = 2
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
@@ -2949,7 +3375,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+			add_popularity = {
+				ideology = libertarian_left
+				popularity = 0.1
+			}
 		}
 		prerequisite = {
 			focus = KMT_relief_middle_class

@@ -5203,6 +5203,11 @@ leader_traits = {
 		libertarian_left_drift = 0.02
 		conscription = 0.005
 	}
+	KMT_advisor_anti_war_activist = {
+		random = no
+		war_support_factor = -0.15
+		stability_factor = 0.15
+	}
 	
 	
 }

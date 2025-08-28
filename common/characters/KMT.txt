@@ -427,13 +427,15 @@ characters={
 		}
 	}
 
+	# Advisors Only
+
 	KMT_Gwen_Moore = {
 		name = KMT_Gwen_Moore
 		gender = female
 
 		portraits = {
 			civilian = {
-				small = TODO
+				small = "GFX_idea_advisor_Gwen_Moore"
 			}
 		}
 		advisor = {
@@ -464,7 +466,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = TODO
+				small = "GFX_idea_advisor_Bob_Dylan"
 			}
 		}
 		advisor = {
@@ -492,7 +494,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = TODO
+				small = "GFX_idea_advisor_Mark_Ruffalo"
 			}
 		}
 		advisor = {
@@ -520,7 +522,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = TODO
+				small = "GFX_idea_advisor_Callista_Gingrich"
 			}
 		}
 		advisor = {
@@ -537,6 +539,7 @@ characters={
 				NOT = { 
 					has_completed_focus = KMT_weathermen_coup
 					has_completed_focus = KMT_join_the_legitimists
+					has_completed_focus = KMT_wsc_coup
 				}
 			}
 			traits = { KMT_advisor_ambassador_to_the_holy_see }
@@ -551,7 +554,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = TODO
+				small = "GFX_idea_advisor_Sean_Duffy"
 			}
 		}
 		advisor = {
@@ -568,9 +571,41 @@ characters={
 				NOT = { 
 					has_completed_focus = KMT_weathermen_coup
 					has_completed_focus = KMT_join_the_legitimists
+					has_completed_focus = KMT_wsc_coup
 				}
 			}
 			traits = { KMT_advisor_conservative_media_figure }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Ron_Kovic = {
+		name = KMT_Ron_Kovic
+
+		portraits = {
+			civilian = {
+				small = "GFX_idea_advisor_Ron_Kovic"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Ron_Kovic
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				NOT = { 
+					has_completed_focus = KMT_hold_elections
+					has_completed_focus = KMT_wsc_coup
+				}
+			}
+			traits = { KMT_advisor_anti_war_activist }
 			ai_will_do = {
 				factor = 1
 			}

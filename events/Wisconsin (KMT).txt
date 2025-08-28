@@ -1008,13 +1008,6 @@ country_event = {
 		ai_chance = { factor = 200 }
 		add_to_faction = FROM
 		puppet = KMT
-		FROM = {
-			add_ai_strategy = {
-				type = alliance
-				id = "USA"
-				value = 200
-			}
-		}
 		FROM = { country_event = { id = wisconsin.26 } }
 
 	}
@@ -1547,5 +1540,83 @@ country_event = {
 			factor = 1
 		}
 		add_stability = 0.05
+	}
+}
+
+# KMT wants to join bern (bern prespective)
+country_event = {
+	id = wisconsin.40
+	title = wisconsin.40.t
+	desc = wisconsin.40.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+    	days = 2
+	}
+	option = {
+		name = wisconsin.40.a
+		ai_chance = {
+			factor = 200
+		}
+		add_to_faction = FROM
+		FROM = { country_event = { id = wisconsin.41 } }
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = "PRA"
+				value = 200
+			}
+		}
+
+	}
+	option = {
+		name = wisconsin.40.b
+		ai_chance = {
+			factor = 1
+		}
+		FROM = { country_event = { id = wisconsin.42 } }
+	}
+}
+
+# bern wants us
+country_event = {
+	id = wisconsin.41
+	title = wisconsin.41.t
+	desc = wisconsin.41.d
+	picture = TBD
+
+	is_triggered_only = yes
+
+	option = {
+		name = wisconsin.41.a
+		ai_chance = {
+			factor = 1
+		}
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = "KMT"
+				value = 200
+			}
+		}
+	}
+}
+
+# bern dont wants us
+country_event = {
+	id = wisconsin.41
+	title = wisconsin.41.t
+	desc = wisconsin.41.d
+	picture = TBD
+
+	is_triggered_only = yes
+
+	option = {
+		name = wisconsin.41.a
+		ai_chance = {
+			factor = 1
+		}
+		add_war_support = 0.1
 	}
 }

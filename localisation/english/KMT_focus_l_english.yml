@@ -241,6 +241,24 @@
  KMT_permanent_revolution_idea_1:0 "Progressive Revolution"
  KMT_permanent_revolution_idea_1_desc:0 "The revolution has transitioned from the streets into the halls of power. No longer a chaotic uprising, it is now embedded in the state itself. Bureaucracy replaces direct action, stability replaces fervor, but the ideals remain safeguarded under political leadership."
 
+ KMT_prepared_for_an_invasion:0 "Prepared for an Invasion"
+ KMT_prepared_for_an_invasion_desc:0 "Expecting retaliation, the movement has organized defensive lines, stockpiled arms, and prepared the army for guerrilla warfare. This vigilance shall make the revolution resilient to any outside assault."
+
+ KMT_state_defense_idea:0 "State Defense Committees"
+ KMT_state_defense_idea_desc:0 "Through vigilance and discipline, the state organizes its defenses against both external invasion and internal subversion. Local defense committees ensure ideological purity, civil unity, and a permanent readiness for battle."
+
+ KMT_state_defense_idea_1:0 "Supreme Defense Authority"
+ KMT_state_defense_idea_1_desc:0 "The State Defense Committees have transcended their original purpose, becoming the supreme organs of authority. Their grip ensures unity, suppresses dissent, and mobilizes the nation with unparalleled efficiency in pursuit of the revolutionary cause."
+
+ KMT_weather_underground_militia_5:0 "Weather Underground Militia in the Lead"
+ KMT_weather_underground_militia_5_desc:0 "The Weather Underground has consolidated control over the Revolution. Our leadership, our militias and our uncompromising ideals now form the backbone of the armed forces, bringing relentless zeal and battlefield effectiveness."
+
+ KMT_feeding_the_poor:0 "Feeding the Poor"
+ KMT_feeding_the_poor_desc:0 "Communal kitchens and redistribution programs ensure that the poorest of society receive food and support. While costly, these efforts build trust and legitimacy for the revolutionary cause."
+
+ KMT_reliefing_the_middle_class:0 "Reliefing the Middle Class"
+ KMT_reliefing_the_middle_class_desc:0 "By addressing the economic struggles of the middle class through subsidies, relief programs, and debt forgiveness, the revolution gains broader support across society."
+
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
 ##       ##     ## ##       ####  ##    ##    ##       
@@ -454,10 +472,26 @@
  wisconsin.38.d:0 "[DET.GetName] has refused our demands and chosen the path of war. The revolutionary struggle must continue until the Lakes are firmly under our control."
  wisconsin.38.a:0 "Then we take them by force!"
 
- ###event 39: DET accepts annexation
+ #event 39: DET accepts annexation
  wisconsin.39.t:0 "[DET.GetName] Submits to the Revolution"
  wisconsin.39.d:0 "Under pressure, [DET.GetName] has agreed to join our revolutionary state. Their resources and population are now integrated into the Revolution!"
  wisconsin.39.a:0 "The revolution grows stronger!"
+
+ #event 40: kmt wnats to join pra (pra prespective)
+ wisconsin.40.t:0 "The [KMT.GetAdjective] Request"
+ wisconsin.40.d:0 "[KMT.GetNameDef] has approached us with a request to formally join our movement. Their leaders see in our cause the same struggle for justice and equality."
+ wisconsin.40.a:0 "Welcome them into the fold!"
+ wisconsin.40.b:0 "We must decline"
+
+ #event 41: bern accepts
+ wisconsin.41.t:0 "Bernie Welcomes Us"
+ wisconsin.41.d:0 "Bernie Sanders has accepted our request to join his movement. We are now part of a larger revolutionary struggle across the nation, united under a common banner of solidarity and progress."
+ wisconsin.41.a:0 "Together, we are stronger!"
+
+ #event 41: bern rejects
+ wisconsin.42.t:0 "Bernie Declines"
+ wisconsin.42.d:0 "Bernie Sanders has rejected our request to join his faction. While his movement may continue on without us, this rejection has only strengthened our resolve to pursue our own path toward revolution."
+ wisconsin.42.a:0 "We will forge ahead regardless!"
 
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 
@@ -468,8 +502,8 @@
 ##        ##     ## ##     ##    ##    #### ########  ######     ##    ## ##     ## ##     ## ########  ######  
  KMT_libertarian_right_party_long:0 "National Liberal Party"
  KMT_libertarian_right_party:0 "NLP"
- KMT_libertarian_left_party_long:0 "Wiscosnin Progressive Party"
- KMT_libertarian_left_party:0 "WPP"
+ KMT_libertarian_left_party_long:0 "Progressive Dane"
+ KMT_libertarian_left_party:0 "ProDane"
  KMT_republican_party_long:0 "Republican Party of Wisconsin"
  KMT_republican_party:0 "W-GOP"
  KMT_democrat_party_long:0 "Democratic Party of Wisconin"
@@ -481,6 +515,8 @@
 
  KMT_autocratic_party_couter_revolution_long:0 "American White Party"
  KMT_autocratic_party_couter_revolution:0 "AWP"
+ KMT_libertarian_left_party_revolution_long:0 "Great Lakes Progressive Revolutionary Party"
+ KMT_autocratic_party_revolution:0 "ProRev"
 
 ########  #######   ######  ##     ##  ######  ########  ######  
 ##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
@@ -623,6 +659,38 @@
  KMT_keep_the_militias_in_charge_desc:0 "The Weather Underground militias are the heart of the revolution. Rather than hand power to bureaucrats or politicians, we will entrust the future of the movement to those who carried it forward with rifles in their hands. Stability may suffer, but the revolution remains alive in the streets."
  KMT_political_puppet:0 "Install a Political Puppet"
  KMT_political_puppet_desc:0 "The revolution cannot survive through endless militancy alone. A political face must lead the state, someone who can placate the masses while ensuring the party remains firmly in control. By elevating a loyal figurehead like Brandon Johnson, the militias will be restrained, and the revolution can transition into governance."
+ KMT_into_minnesota:0 "Push Into Minnesota"
+ KMT_into_minnesota_desc:0 "Minnesota stands at the frontier of our revolutionary expansion. By striking decisively, we can bring the Twin Cities and surrounding lands under our control, consolidating our power in the Upper Midwest."
+ KMT_lake_superior:0 "Secure Lake Superior"
+ KMT_lake_superior_desc:0 "The northern shorelines of Lake Superior hold strategic ports and industries vital to our war effort. Controlling them ensures dominance over shipping and prevents enemies from cutting us off."
+ KMT_lake_eirie:0 "Advance on Lake Erie"
+ KMT_lake_eirie_desc:0 "By pushing eastward into the industrial heartland around Lake Erie, we can capture factories, shipping hubs, and key infrastructure that will fuel the revolution’s growth."
+ KMT_lake_ontario:0 "Control Lake Ontario"
+ KMT_lake_ontario_desc:0 "Lake Ontario represents the final gateway into the Northeast. With it under our control, the revolution secures its spot in the world."
+ KMT_prepare_for_the_onslaught:0 "Prepare for the Onslaught"
+ KMT_prepare_for_the_onslaught_desc:0 "Our enemies will not sit idly by while we consolidate power across the Great Lakes. We must prepare defenses, rally militias, and fortify our positions for the inevitable counterattack."
+ KMT_dark_stain_of_mccarthysm:0 "Erase the Dark Stain of McCarthyism"
+ KMT_dark_stain_of_mccarthysm_desc:0 "The Red Scare left deep scars on the workers’ movement, branding solidarity as treason and silencing voices of dissent. By openly healing the McCarthyist ideals as a betrayal of liberty and justice, we can restore trust among the people and discredit reactionary forces."
+ KMT_equity_solidarity_socialism:0 "Equity, Solidarity, Socialism"
+ KMT_equity_solidarity_socialism_desc:0 "Our cause is not only about seizing power, but about building a just society rooted in equality and collective strength. By emphasizing solidarity and socialist values, we will rally the masses and ensure the revolution’s legitimate place in the world!"
+ KMT_state_defense:0 "Form the State Defense Committees"
+ KMT_state_defense_desc:0 "To protect the revolution from reactionaries and foreign threats, we must establish State Defense Committees. These bodies will coordinate security, mobilization, and ideological discipline, ensuring unity in the face of danger."
+ KMT_militia_training:0 "Militia Training"
+ KMT_militia_training_desc:0 "The Weathermen Militias must be more than political volunteers, they must become a disciplined fighting force. By formalizing their training and expanding their numbers, we will strengthen the backbone of our armed struggle."
+ KMT_abolish_private_proprety:0 "Abolish Private Property"
+ KMT_abolish_private_proprety_desc:0 "The foundations of capitalism still linger in the form of private ownership. By abolishing private property, we take a decisive step toward collective ownership of all resources, further consolidating our socialist state."
+ KMT_supremacy_over_the_state:0 "Supremacy Over the State"
+ KMT_supremacy_over_the_state_desc:0 "The defense committees must evolve from auxiliary organs into the supreme authority of the nation. By placing the revolution above the state itself, we ensure that every institution serves the cause without compromise."
+ KMT_feed_the_poor:0 "Feed the Poor"
+ KMT_feed_the_poor_desc:0 "The people are starving while the old order hoards its wealth. By organizing communal kitchens and directing resources to the most vulnerable, we prove that the revolution cares for its people first and foremost."
+ KMT_join_bernie:0 "Join Bernie"
+ KMT_join_bernie_desc:0 "Bernie Sanders leads a national movement for social democracy. Aligning ourselves with his struggle could provide legitimacy, allies, and protection on the national stage."
+ KMT_loyalty_to_the_cause:0 "Loyalty to the Cause"
+ KMT_loyalty_to_the_cause_desc:0 "Our revolution is our own and we shall not compromise with moderates. By rallying all leftists behind our cause, we ensure our movement’s independence and ideological purity."
+ KMT_relief_middle_class:0 "Relief for the Middle Class"
+ KMT_relief_middle_class_desc:0 "To truly consolidate popular support, we must extend our programs beyond the poor and provide relief to the working middle class. Affordable housing, debt relief, and subsidies will prove that no one is left behind."
+ KMT_inspire_the_people:0 "Inspire the People"
+ KMT_inspire_the_people_desc:0 "Through powerful speeches, bold reforms, and mass mobilization, we will ignite a flame of hope in the hearts of the people. A united and inspired populace is the strongest weapon of any revolution."
 
  # Army
  KMT_upgrade_fort_mccoy:0 "Upgrade Fort McCoy"
