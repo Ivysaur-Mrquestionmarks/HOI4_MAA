@@ -59,6 +59,15 @@ AFS_vermin_political_decisions = {
 
 }
 
+AFS_vermin_economic_decisions = {
+	icon = GFX_decision_category_AFS_vermin_economic_decisions
+	
+	allowed = {
+    original_tag = AFS
+	}
+
+}
+
 AFS_saving_terra_decisions = {
 	icon = GFX_decision_category_AFS_saving_terra_decisions
 	

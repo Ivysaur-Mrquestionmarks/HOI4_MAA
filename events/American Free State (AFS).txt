@@ -1391,7 +1391,7 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = hawkins.26
+				id = hawkins.27
 				days = 70
 			}
 		}
@@ -1607,6 +1607,7 @@ country_event = {
 		}
 		unlock_decision_tooltip = AFS_build_the_ai
 		set_country_flag = AFS_building_ai
+		set_country_flag = AFS_ai_building_decision
 	}
 }
 

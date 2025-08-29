@@ -538,15 +538,15 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			swap_ideas = {
+			    remove_idea = AFS_a_scarred_population
+			    add_idea = AFS_a_scarred_population_2
+		    }
 			add_power_balance_value = {
 				id = individualist_collectivist_bop
 				value = 0.1
 				tooltip_side = collectivist
 			}
-			swap_ideas = {
-			    remove_idea = AFS_a_scarred_population
-			    add_idea = AFS_a_scarred_population_2
-		    }
 		    add_to_variable = {
 				var = AFS.var_war_support_level
 				value = 0.05
@@ -1404,6 +1404,14 @@ focus_tree = {
 			    add_idea = Ruins_of_the_Rust_Belt_2
 		    }
 			add_ideas = AFS_a_stateless_economy
+			unlock_decision_tooltip = AFS_meet_with_farmers
+			unlock_decision_tooltip = AFS_meet_with_families
+			unlock_decision_tooltip = AFS_meet_with_educators
+			hidden_effect = {
+			    set_country_flag = AFS_vermin_economic_decision_1
+			    set_country_flag = AFS_vermin_economic_decision_2
+				set_country_flag = AFS_vermin_economic_decision_5
+			}
 		}
 	}
 
@@ -1527,6 +1535,10 @@ focus_tree = {
     				level = 1
     				instant_build = yes
 				}
+			}
+			unlock_decision_tooltip = AFS_rebuild_ohio
+			hidden_effect = {
+			    set_country_flag = AFS_vermin_economic_decision_4
 			}
 		}
 	}
@@ -1812,6 +1824,10 @@ focus_tree = {
 				id = individualist_collectivist_bop
 				value = -0.1
 				tooltip_side = individualist
+			}
+			unlock_decision_tooltip = AFS_promote_economic_independence
+			hidden_effect = {
+			    set_country_flag = AFS_vermin_economic_decision_3
 			}
 		}
 	}

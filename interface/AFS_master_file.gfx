@@ -7979,32 +7979,38 @@ spriteTypes = {
 
     ### Other ###
 	spriteType = {
-    	name = "GFX_texticon_AFS_vermin_political_decisions_pic"
+    	name = "GFX_AFS_vermin_political_decisions_pic"
     	texturefile = "gfx/interface/texticons/AFS/AFS_vermin_political_decisions_pic.dds"
+        legacy_lazy_load = no
     }
 
     spriteType = {
-    	name = "GFX_texticon_AFS_enlighten_vance_political_decisions_pic"
+    	name = "GFX_AFS_enlighten_vance_political_decisions_pic"
     	texturefile = "gfx/interface/texticons/AFS/AFS_enlighten_vance_political_decisions_pic.dds"
+        legacy_lazy_load = no
     }
 
     spriteType = {
-    	name = "GFX_texticon_AFS_hawkins_political_decisions_pic"
+    	name = "GFX_AFS_hawkins_political_decisions_pic"
     	texturefile = "gfx/interface/texticons/AFS/AFS_hawkins_political_decisions_pic.dds"
+        legacy_lazy_load = no
     }
 
     spriteType = {
-    	name = "GFX_texticon_AFS_mattis_political_decisions_pic"
+    	name = "GFX_AFS_mattis_political_decisions_pic"
     	texturefile = "gfx/interface/texticons/AFS/AFS_mattis_political_decisions_pic.dds"
+        legacy_lazy_load = no
     }
 
     spriteType = {
-    	name = "GFX_texticon_AFS_saving_terra_decisions_pic"
+    	name = "GFX_AFS_saving_terra_decisions_pic"
     	texturefile = "gfx/interface/texticons/AFS/AFS_saving_terra_decisions_pic.dds"
+        legacy_lazy_load = no
     }
 
     spriteType = {
-    	name = "GFX_texticon_AFS_vance_political_decisions_pic_pic"
+    	name = "GFX_AFS_vance_political_decisions_pic_pic"
     	texturefile = "gfx/interface/texticons/AFS/AFS_vance_political_decisions_pic_pic.dds"
+        legacy_lazy_load = no
     }
 }

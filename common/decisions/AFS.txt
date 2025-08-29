@@ -1490,6 +1490,304 @@ AFS_vermin_political_decisions = {
 	}
 }
 
+AFS_vermin_economic_decisions = {
+    AFS_meet_with_farmers = {
+		priority = 25
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_promote_mutual_aid
+			has_country_flag = {
+                flag = AFS_vermin_economic_decision_1
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 20
+
+		days_remove = 25
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 25
+				value = 1
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+                ideology = libertarian_left
+                popularity = 0.01
+            }
+			add_to_variable = {
+				var = AFS.var_monthly_population_level
+				value = 0.02
+				tooltip = AFS_increase_monthly_population_var_tt
+			}
+			modify_country_flag = {
+                flag = AFS_vermin_economic_decision_1
+                value = 1
+            }
+		}
+	}
+
+	AFS_meet_with_families = {
+		priority = 25
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_promote_mutual_aid
+			has_country_flag = {
+                flag = AFS_vermin_economic_decision_2
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 20
+
+		days_remove = 25
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 25
+				value = 1
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+                ideology = libertarian_left
+                popularity = 0.01
+            }
+			add_to_variable = {
+				var = AFS.var_monthly_population_level
+				value = 0.02
+				tooltip = AFS_increase_monthly_population_var_tt
+			}
+			modify_country_flag = {
+                flag = AFS_vermin_economic_decision_2
+                value = 1
+            }
+		}
+	}
+
+	AFS_promote_economic_independence = {
+		priority = 25
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_economic_self_management
+			has_country_flag = {
+                flag = AFS_vermin_economic_decision_3
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 50
+		
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 50
+				value = 1
+			}
+		}
+		modifier = {
+			production_speed_buildings_factor = -0.05
+			production_factory_max_efficiency_factor = 0.05
+		}
+		remove_effect = {
+			add_popularity = {
+                ideology = libertarian_left
+                popularity = 0.01
+            }
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			add_power_balance_value = {
+				id = individualist_collectivist_bop
+				value = -0.05
+				tooltip_side = individualist
+			}
+			modify_country_flag = {
+                flag = AFS_vermin_economic_decision_3
+                value = 1
+            }
+		}
+	}
+
+	AFS_rebuild_ohio = {
+		priority = 25
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_communal_rebuilding_projects
+			has_country_flag = {
+                flag = AFS_vermin_economic_decision_4
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 30
+
+		days_remove = 60
+		
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 60
+				value = 1
+			}
+		}
+		modifier = {
+			production_speed_buildings_factor = 0.05
+			industry_free_repair_factor = 0.25
+			industry_repair_factor = 0.2
+		}
+		remove_effect = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			add_power_balance_value = {
+				id = individualist_collectivist_bop
+				value = 0.05
+				tooltip_side = collectivist
+			}
+			modify_country_flag = {
+                flag = AFS_vermin_economic_decision_4
+                value = 1
+            }
+		}
+	}
+
+	AFS_meet_with_educators = {
+		priority = 25
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_promote_mutual_aid
+			has_country_flag = {
+                flag = AFS_vermin_economic_decision_5
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 20
+
+		days_remove = 25
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 25
+				value = 1
+			}
+		}
+		modifier = {
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = AFS.var_research_level
+				value = 0.03
+				tooltip = AFS_increase_research_var_tt
+			}
+			modify_country_flag = {
+                flag = AFS_vermin_economic_decision_5
+                value = 1
+            }
+		}
+	}
+}
+
 AFS_saving_terra_decisions = {
 	AFS_eliminate_the_oil_barons = {
 		priority = 25
@@ -4448,7 +4746,7 @@ AFS_mattis_economic_decisions = {
 			has_completed_focus = AFS_rust_belt_rejuvenation
 			has_country_flag = {
                 flag = AFS_mattis_economic_decision_1
-                value < 10
+                value < 5
             }
 		}
 
