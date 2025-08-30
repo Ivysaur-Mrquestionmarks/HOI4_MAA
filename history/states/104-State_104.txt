@@ -3,9 +3,9 @@ state={
 	id=104
 	name="STATE_104"
 	provinces={
-		219 273 382 550 845 888 1316 1872 1905 1951 2030 2059 2359 2491 2500 2635 2709 2800 3501 3657 3923 3953 4000 4020 4185 4421 4718 4883 4945 4984 4997 5016 5133 5676 5900 6021 6145 6198 6282 7349 7351 7365 7377 7412 7426 7427 7437 7476 7477 7508 7509 7518 7530 7559 7565 7581 7592 7599 7600 7601 7609 7621 7631 7645 7654 7659 7660 7661 7667 7682 7689 7690 7699 7700 7733 7749 7755 7788 7805 7806 7812 7830 7873 7883 7889 7910 7929 7961 7985 8005 8059 8064 8107 7452 1012 5546 7538 7570
+		219 550 845 888 1316 1872 1905 1951 2030 2491 2709 2800 3501 3923 3953 4185 4421 4718 4883 4945 4984 5016 5676 6021 7349 7351 7365 7377 7412 7426 7427 7437 7476 7477 7508 7509 7518 7530 7559 7581 7599 7600 7609 7631 7659 7660 7689 7690 7699 7749 7755 7788 7830 7873 7889 7929 7452
 	}
-		history={
+	history={
 		owner = MIL
 		add_core_of = FRA
 		add_core_of = MNS
@@ -14,25 +14,13 @@ state={
 		add_core_of = MIL
 
 		victory_points = {
-			7910 8 #Eau Claire
-		}
-		victory_points = {
 			7351 2 #Superior
-		}
-		victory_points = {
-			7733 1 #Rice Lake
 		}
 		victory_points = {
 			2709 1 #StCroixFalls
 		}
 		victory_points = {
-			4000 1 #ChippewaFalls
-		}
-		victory_points = {
 			7600 1 #Spooner
-		}
-		victory_points = {
-			8005 1 #Osseo
 		}
 		victory_points = {
 			4883 1 #Ashland
@@ -40,12 +28,12 @@ state={
 
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 2
-			arms_factory = 4
+			industrial_complex = 1
+			arms_factory = 3
 		}
 	}
 
- state_category=city
- manpower=782300
+ state_category=town
+ manpower=459240
 	buildings_max_level_factor=1.000
 }

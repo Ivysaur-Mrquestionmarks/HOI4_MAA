@@ -1,0 +1,36 @@
+state={
+	id=676
+	name="STATE_676"
+	provinces={
+		273 382 1012 2059 2359 2500 2635 3657 4000 4020 4997 5133 5546 5900 6145 6198 6282 7538 7565 7570 7592 7601 7621 7645 7654 7661 7667 7682 7700 7733 7805 7806 7812 7883 7910 7961 7985 8005 8059 8064 8107
+	}
+	history={
+		owner = MIL
+		add_core_of = FRA
+		add_core_of = MNS
+		add_core_of = MIN
+		add_core_of = KMT
+		add_core_of = MIL
+
+		victory_points = {
+			7910 8 #Eau Claire
+		}
+		victory_points = {
+			7733 1 #Rice Lake
+		}
+		victory_points = {
+			4000 1 #ChippewaFalls
+		}
+		victory_points = {
+			8005 1 #Osseo
+		}
+
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	manpower=284900
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
