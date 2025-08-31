@@ -918,7 +918,7 @@ PixelShader =
 		float vAlpha2 = 0.0f;
 		
 		//if ((gradientColor.x > 0.01f, gradientColor.y > 0.01f, gradientColor.z > 0.01f) || (colorTest.x < 0.01f, colorTest.y < 0.01f, colorTest.z < 0.01f)) {
-		if ((colorTest.x > 0.605f, colorTest.y > 0.605f, colorTest.z > 0.605f) ) {
+		if ((colorTest.x > 0.98f, colorTest.y > 0.98f, colorTest.z > 0.98f) ) {
 			vColor.x = -0.3;
 			}
 			vAlpha1 = gradient_border_process_channel( vGradMix, vColor, vGBCamDistCh1, vNormal, vUV, TexCh1, TexCh2, vOutlineMult, vOutlineCutoff.x, GB_STRENGTH_CH1 );

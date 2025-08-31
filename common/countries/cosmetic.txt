@@ -1147,8 +1147,8 @@ NAV_turtle_island_empire_ct = {
 }
 
 FLA_FX = {
-	color = rgb { 258 258 258 }
-	color_ui = rgb { 255 255 255 }
+	color = hsv { 0 0 1.25 }
+	color_ui = hsv { 0 0 1.25 }
 }
 
 LAS_wizard_aids = {
