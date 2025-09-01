@@ -1426,6 +1426,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			unlock_decision_category_tooltip = SCA_hurricane_proofing_cat
+			set_country_flag = SCA_unlocked_hurricane_decisions_flag
 	    }
 	}
 	focus = {

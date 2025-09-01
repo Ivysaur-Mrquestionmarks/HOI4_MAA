@@ -339,7 +339,7 @@ SCA_hurricane_proofing_cat = {
 		on_map_mode = map_and_decisions_view 
 		days_remove = 30
 		visible = {
-			has_completed_focus = SCA_hurricane_proofing
+			has_country_flag = SCA_unlocked_hurricane_decisions_flag
 		}
 		target_trigger = {
 		 	FROM = {
