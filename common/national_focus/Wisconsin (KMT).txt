@@ -616,7 +616,7 @@ focus_tree = {
 
 	focus = {
 		id = KMT_the_war
-		icon = TODO
+		icon = GFX_goal_KMT_War_with_GLA
 		x = 4
 		y = 0
 
@@ -642,7 +642,7 @@ focus_tree = {
 
 	focus = {
 		id = KMT_morale
-		icon = TODO
+		icon = GFX_goal_KMT_Boost_Morale
 		x = 3
 		y = 1
 
@@ -674,7 +674,7 @@ focus_tree = {
 
     focus = {
 		id = KMT_raid_libertarian_weapons
-		icon = TODO
+		icon = GFX_goal_KMT_Raid_Libertarian_Stockpiles
 		x = 5
 		y = 1
 
@@ -708,7 +708,7 @@ focus_tree = {
 
 	focus = {
 		id = KMT_final_push
-		icon = TODO
+		icon = GFX_goal_KMT_Final_Push
 		x = 4
 		y = 2
 
