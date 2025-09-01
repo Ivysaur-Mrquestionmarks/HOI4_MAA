@@ -8449,14 +8449,11 @@ focus_tree = {
 
 	focus = {
 		id = AFS_no_one_to_trust
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_no_one_to_trust
 		cost = 1
 		x = 0
 		y = 8
 		relative_position_id = AFS_mattiss_victory
-		mutually_exclusive = { 
-			focus = AFS_pence
-		}
 		select_effect = {  }
 		allow_branch = {
 			NOT = {
@@ -8483,7 +8480,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_the_fried_chicken_fanatic
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_the_fried_chicken_fanatic
 		cost = 2
 		x = 2
 		y = 1
@@ -8514,7 +8511,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_the_false_savior
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_the_false_savior
 		cost = 2
 		x = 0
 		y = 1
@@ -8545,7 +8542,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_bloody_virginia
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_bloody_virginia
 		cost = 2
 		x = -2
 		y = 1
@@ -8596,7 +8593,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_libertarian_degenerates
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_libertarian_degenerates
 		cost = 2
 		x = 0
 		y = 1
@@ -8648,7 +8645,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_one_final_battle
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_one_final_battle
 		cost = 2
 		x = -1
 		y = 1
@@ -8694,7 +8691,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_taking_back_whats_ours
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_taking_back_whats_ours
 		cost = 2
 		x = 1
 		y = 1
@@ -8724,7 +8721,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_unification_or_extinction
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_unification_or_extinction
 		cost = 1
 		x = -1
 		y = 1
@@ -8776,7 +8773,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_southern_hell
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_southern_hell
 		cost = 2
 		x = -2
 		y = 1
@@ -8852,7 +8849,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_the_end_of_texan_independence
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_the_end_of_texan_independence
 		cost = 2
 		x = 1
 		y = 1
@@ -8882,7 +8879,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_teach_the_child_a_lesson
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_teach_the_child_a_lesson
 		cost = 2
 		x = 0
 		y = 2
@@ -8946,7 +8943,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_extremist_childern
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_extremist_childern
 		cost = 2
 		x = 0
 		y = 1
@@ -9031,7 +9028,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_the_mountains_wont_save_you
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_the_mountains_wont_save_you
 		cost = 2
 		x = 2
 		y = 1
