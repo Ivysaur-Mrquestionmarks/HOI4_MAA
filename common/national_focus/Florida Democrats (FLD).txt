@@ -1728,6 +1728,13 @@
 		x = -3
 		y = 2
 		completion_reward = {
+			unlock_decision_category_tooltip = FLD_hurricane_proofing_cat
+			set_country_flag = FLD_unlocked_hurricane_decisions_flag
+			unlock_decision_tooltip = {
+				decision = FLD_support_education_on_hurricanes_decision
+				show_effect_tooltip = yes
+				show_modifiers = yes
+			}
 		}
 	}
 	focus = {
@@ -1741,6 +1748,12 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			set_country_flag = FLD_unlocked_hurricane_decisions_2_flag
+			unlock_decision_tooltip = {
+				decision = FLD_open_department_of_disaster_relief_decision
+				show_effect_tooltip = yes
+				show_modifiers = yes
+			}
 		}
 	}
 	focus = {
@@ -1754,6 +1767,12 @@
 		x = 0
 		y = 2
 		completion_reward = {
+			set_country_flag = FLD_unlocked_hurricane_decisions_3_flag
+			unlock_decision_tooltip = {
+				decision = FLD_set_up_government_subsidized_hurricane_insurance_decision
+				show_effect_tooltip = yes
+				show_modifiers = yes
+			}
 		}
 	}
 	focus = {
@@ -1767,6 +1786,8 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			unlock_decision_category_tooltip = FLD_hurricane_proofing_cat_sehlter
+			set_country_flag = FLD_unlocked_hurricane_shelters_decisions_flag
 		}
 	}
 	focus = {
@@ -1780,6 +1801,8 @@
 		x = 0
 		y = 2
 		completion_reward = {
+			unlock_decision_category_tooltip = FLD_hurricane_proofing_cat_infra
+			set_country_flag = FLD_unlocked_hurricane_infra_decisions_flag
 		}
 	}
 	

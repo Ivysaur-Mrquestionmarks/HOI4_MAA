@@ -67,3 +67,31 @@ FLD_american_unification_cat = {
 		has_country_flag = FLD_unlock_unification_cat
 	}
 }
+
+FLD_hurricane_proofing_cat = {
+	icon = generic_propaganda
+		priority = 95
+	
+	allowed = {
+		OR = {
+			original_tag = FLO
+			original_tag = FLD
+		}
+	}
+	visible = {
+		has_country_flag = FLD_unlocked_hurricane_decisions_flag
+	}
+
+}
+
+# DO NOT REMOVE THE FOLLOWING BELOW
+FLD_hurricane_proofing_cat_infra = {
+	allowed = {
+		always = no
+	}
+}
+FLD_hurricane_proofing_cat_sehlter = {
+	allowed = {
+		always = no
+	}
+}

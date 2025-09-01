@@ -256,17 +256,43 @@
  FLD_leading_america:0 "Leading America"
  FLD_leading_america_desc:0 "We must guide our fellow Americans and show them the light that Florida has achieved."
  
+ #Mutual Policy
+ FLD_expand_anti_hurricane_measures:0 "Anti-Hurricane Measures"
+ FLD_expand_anti_hurricane_measures_desc:0 "Hurricanes have harmed too many Floridian lives until now. We must ensure that we are prepared to prevent or mitigate future harm that may come from hurricanes."
+ FLD_strengthen_relief_programs:0 "Strengthen Relief Programs"
+ FLD_strengthen_relief_programs_desc:0 "People can lose everything due to a Hurricane. To mitigate this loss, we will be pre-emptively setting up relief centers to aid people that have lost their livelihoods.*
+ FLD_government_mandated_hurrican_insurance:0 "Government Mandated Hurricane Insurance"
+ FLD_government_mandated_hurrican_insurance_desc:0 "Expanding upon the initiative that was started when we strengthened relief centers, mandating insurance will result in people's finances being protected in the event of a hurricane, as well as ensuring minimal material loss for the average Floridian."
+ FLD_expand_hurricane_shelters:0 "Expand Hurricane Shelters"
+ FLD_expand_hurricane_shelters_desc:0 "As people lose their homes due to the hurricanes, they will need somewhere to stay. We can provide them shelter as they recover from the hurricane."
+ FLD_invest_in_underground_supply_chains:0 "Invest in Underground Supply Chains"
+ FLD_invest_in_underground_supply_chains_desc:0 "Our supply chains are too vulnerable to hurricanes above ground. Investing in the essential infrastructure to ensure that supply stays steady during hurricanes will be crucial."
+ 
  #Decisions
  FLD_american_unification_cat:0 "Unifying America"
  FLD_unification_wars_decision:0 "Declare War on [FROM.GetName]"
+ FLD_hurricane_proofing_cat:0 "Hurricane Proofing Measures"
+ FLD_strengthen_infrastructure_decision:0 "Reinforce Infrastructure in [FROM.GetName]"
+ FLD_build_shelters_decision:0 "Build Hurricane Shelters in [FROM.GetName]"
+ FLD_support_education_on_hurricanes_decision:0 "Expand Education Initiatives on Hurricanes"
+ FLD_open_department_of_disaster_relief_decision:0 "Create the Department of Disaster Relief"
+ FLD_set_up_government_subsidized_hurricane_insurance_decision:0 "Set Up Government Subsidized Hurricane Insurance"
+ 
  
  #Flags/tooltips
  FLD_preparing_for_war_flag:0 "Preparing for War"
+ FLD_hurricane_proofing_cat_infra:0 "Bolster Infrastructure"
+ FLD_hurricane_proofing_cat_sehlter:0 "Building Shelters"
+ FLD_set_up_hurricane_education_flag:0 "Set up education on hurricanes"
+ FLD_has_opened_department_of_disaster_relief_flag:0 "Created the Department of Disaster Relief"
  
  
  #ideas 
  FLD_starting:0 "Remains of Floridian Goverment"
  FLD_starting_desc:0 "After the collapse of Jeb Bush's Florida, the state quickly flung inself into chaos. The City of Miami was able to remain in command of its nearby area and continued to uphold the values that the United States was built on."
+ FLD_hurricane_measure_1:0 "Anti-Hurricane Measures"
+ FLD_hurricane_measure_2:0 "Anti-Hurricane Measures"
+ FLD_hurricane_measure_3:0 "Anti-Hurricane Measures"
  
  #events
  fld.1.d:0 "Miami was in ruins. Smoke filled the air as police struggled to maintain control over a panicked populace. Years earlier, Jeb's Revolution was put down, making the area a virtual police state. After the sudden rise and fall of Jeb's second reign, the area was forgotten and saw a steep drop in population. Now, upon the brink of annihilation, Miami was held by a loosely strung together government led by [FLD.GetLeader]. [FLD.GetLeader] was no military mastermind but she knew how to speak to the masses. Soon her voice was playing over every single radio and TV in the area. \n\n"My fellow Floridians. We must during this trying time come together as one. The forces of evil and destruction lie at our gates and if we continue to fight, we will become only a distant memory in the pages of history. I need you all to fight for your civil liberties and freedoms you hold so dear, for the battle upcoming depends on it. In the coming weeks, you will be tested in your strength, mind, and soul, but take heart, for we hold the legitimate power in Florida. Long live Florida! Long live Democracy!"

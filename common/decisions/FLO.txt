@@ -1171,3 +1171,164 @@ FLD_american_unification_cat = {
 		}
 	}
 }
+
+
+FLD_hurricane_proofing_cat = {
+	FLD_support_education_on_hurricanes_decision = {
+		state_target = yes
+		fire_only_once = yes
+		cost = 30
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 30
+		visible = {
+			has_country_flag = FLD_unlocked_hurricane_decisions_flag
+		}
+		remove_effect = {
+			add_ideas = FLD_hurricane_measure_1
+			set_country_flag = FLD_set_up_hurricane_education_flag
+		}
+	}
+	FLD_open_department_of_disaster_relief_decision = {
+		state_target = yes
+		fire_only_once = yes
+		cost = 30
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 30
+		visible = {
+			has_country_flag = FLD_unlocked_hurricane_decisions_2_flag
+		}
+		available = {
+			has_country_flag = FLD_set_up_hurricane_education_flag
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = FLD_hurricane_measure_1
+				add_idea = FLD_hurricane_measure_2
+			}
+			set_country_flag = FLD_has_opened_department_of_disaster_relief_flag
+		}
+	}
+	FLD_set_up_government_subsidized_hurricane_insurance_decision = {
+		state_target = yes
+		fire_only_once = yes
+		cost = 30
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 30
+		visible = {
+			has_country_flag = FLD_unlocked_hurricane_decisions_3_flag
+		}
+		available = {
+			has_country_flag = FLD_has_opened_department_of_disaster_relief_flag
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = FLD_hurricane_measure_2
+				add_idea = FLD_hurricane_measure_3
+			}
+		}
+	}
+	FLD_strengthen_infrastructure_decision = {
+		state_target = yes
+		fire_only_once = yes
+		cost = 15
+		ai_will_do = {
+			base = 5
+		}
+		on_map_mode = map_and_decisions_view 
+		days_remove = 30
+		visible = {
+			has_country_flag = FLD_unlocked_hurricane_infra_decisions_flag
+		}
+		target_trigger = {
+		 	FROM = {
+				OR = {
+					is_core_of = SCA
+					is_core_of = NCA
+					is_core_of = GEO
+					is_core_of = APA
+					is_core_of = ZIO
+					is_core_of = ARK
+					is_core_of = ABM
+					is_core_of = MIS
+					is_core_of = LGB
+					is_core_of = TEX
+					is_core_of = CSB
+					is_core_of = FLO
+					is_core_of = VIR
+					is_core_of = CSA
+					is_core_of = KKK
+					is_core_of = AFR
+				}
+				OR = {
+					is_owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	FLD_build_shelters_decision = {
+		state_target = yes
+		fire_only_once = yes
+		cost = 30
+		ai_will_do = {
+			base = 5
+		}
+		on_map_mode = map_and_decisions_view 
+		days_remove = 60
+		visible = {
+			has_country_flag = FLD_unlocked_hurricane_shelters_decisions_flag
+		}
+		target_trigger = {
+		 	FROM = {
+				OR = {
+					is_core_of = SCA
+					is_core_of = NCA
+					is_core_of = GEO
+					is_core_of = APA
+					is_core_of = ZIO
+					is_core_of = ARK
+					is_core_of = ABM
+					is_core_of = MIS
+					is_core_of = LGB
+					is_core_of = TEX
+					is_core_of = CSB
+					is_core_of = FLO
+					is_core_of = VIR
+					is_core_of = CSA
+					is_core_of = KKK
+					is_core_of = AFR
+				}
+				OR = {
+					is_owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
