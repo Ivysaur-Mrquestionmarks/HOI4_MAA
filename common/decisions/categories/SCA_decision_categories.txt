@@ -37,6 +37,9 @@ SCA_hurricane_proofing_cat = {
 			original_tag = SCA
 		}
 	}
+	visible = {
+		has_country_flag = SCA_unlocked_hurricane_decisions_flag
+	}
 
 }
 SCA_reconstruction_BOP_cat = {
@@ -49,7 +52,7 @@ SCA_reconstruction_BOP_cat = {
 		}
 	}
 	visible = {
-		has_country_flag = SCA_unlocked_hurricane_decisions_flag
+		has_completed_focus = SCA_organizing_reconstruction
 	}
 
 }
