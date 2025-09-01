@@ -64,11 +64,12 @@ focus_tree = {
 
 		cost = 5
 		ai_will_do = {
-			factor = 0			#prolly change after map update
+			factor = 3
 		}
         available = {
 			MIL = {
                 has_war = yes
+				controls_state = 676
 			}
 			GLA = {
             	exists = yes
@@ -83,6 +84,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			MIL = { country_event = { id = wisconsin.43 days = 1 } }
         }
 		prerequisite = {
             focus = KMT_the_state_of_wisconsin
@@ -455,7 +457,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {						### ONCE THE ICE LEGION STATE IS SPLIT ADD TO THIS FOCUS!!!!
+		completion_reward = {
 			106 = {
 				add_building_construction = {
 			    	type = bunker
@@ -467,7 +469,23 @@ focus_tree = {
     				}
 				}
 			}
-        }
+			if = {
+				limit = {
+					owns_state = 676
+				}
+				676 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = GLA
+						}
+					}
+				}
+			}
+		}
 		prerequisite = {
             focus = KMT_guerrilla_warfare
         }
@@ -1267,8 +1285,10 @@ focus_tree = {
 					AND = {
 						has_government = republican
 						USA = {
-							controls_state = 104
-							#controls_state = 			# add after map update
+							OR = {
+								controls_state = 104
+								controls_state = 676
+							}
 						}
 					}
 				}
@@ -1283,8 +1303,10 @@ focus_tree = {
 					AND = {
 						has_government = democrat
 						FRA = {
-							controls_state = 104
-							#controls_state = 			# add after map update
+							OR = {
+								controls_state = 104
+								controls_state = 676
+							}
 						}
 					}
 				}
@@ -1295,7 +1317,7 @@ focus_tree = {
 			OR = {
 				AND = {
 					controls_state = 104
-					#controls_state = 			# add after map update
+					controls_state = 676
 				}
 				AND = {
 					MIL = { exists = no }
@@ -2639,9 +2661,21 @@ focus_tree = {
 					}
 				}
 			}
+			158 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 158 }
+						}
+					}
+				}
+			}
 			add_state_core = 42
 			add_state_core = 102
 			add_state_core = 110
+			add_state_core = 158
 		}
 		prerequisite = {
 			focus = KMT_into_minnesota
@@ -3394,7 +3428,7 @@ focus_tree = {
 	focus = {
 		id = KMT_start_the_counter_revolution
 		icon = TODO
-		x = 47
+		x = 46
 		y = 7
 
 		cost = 10
@@ -3412,6 +3446,9 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			
+		}
+		prerequisite = {
+			focus = KMT_weathermen_coup
 		}
 		mutually_exclusive = {
 			focus = KMT_permanent_revolution

@@ -268,7 +268,7 @@
 ########    ###    ######## ##    ##    ##     ######  
  #event 1: KMT_the_state_of_wiscosnin focus reward
  wisconsin.1.t:0 "The State of our State"
- wisconsin.1.d:0 "As a new era rises over America, we must address the situation Wisconsin now finds itself in. Having been created by an almost exclusively anti-GLAR coalition, we must decide how this Coalition of the Willing should lead. The traditional answer would be to focus on political stability—keeping our people secure and well-fed. However, exceptional times call for exceptional measures: even though they may lack military experience, should our political class lead from the front, inspiring morale in the troops and hope in the people?"
+ wisconsin.1.d:0 "As a new era rises over America, we must address the situation Wisconsin now finds itself in. Having been created by an almost exclusively anti-GLAR coalition, we must decide how this Coalition of the Willing should lead. The traditional answer would be to focus on political stability, keeping our people secure and well-fed. However, exceptional times call for exceptional measures: even though they may lack military experience, should our political class lead from the front, inspiring morale in the troops and hope in the people?"
  wisconsin.1.a:0 "Our leadership will be political"
  wisconsin.1.b:0 "We must lead from the front"
 
@@ -492,6 +492,33 @@
  wisconsin.42.t:0 "Bernie Declines"
  wisconsin.42.d:0 "Bernie Sanders has rejected our request to join his faction. While his movement may continue on without us, this rejection has only strengthened our resolve to pursue our own path toward revolution."
  wisconsin.42.a:0 "We will forge ahead regardless!"
+
+ #event 42: ice legioin ultimatum (mil prespective)
+ wisconsin.43.t:0 "The [KMT.GetAdjective] Ultimatum"
+ wisconsin.43.d:0 "The [KMT.GetName] has issued an ultimatum to us: surrender the Wisconsinite state territory or face the consequences. Their demands are clear either we give back some territory peacefully, or risk a bloody border conflict. However they clearly are not strong enough to enforce their will on all Wisconsinite territory we control, so we could just retreat to the riverline and avoid conflict."
+ wisconsin.43.a:0 "We will never yield to their threats!"
+ wisconsin.43.b:0 "Give them [676.GetName], retreat to the riverline and avoid bloodshed."
+
+ # event 46: rejects
+ wisconsin.44.t:0 "Ultimatum Rejected"
+ wisconsin.44.d:0 "We have refused the Ice Legion's demands. Their response did not even left room for negotiations. Armies are now gathering along the border. A confrontation seems inevitable, and only one side will emerge victorious."
+ wisconsin.44.a:0 "Prepare for the fight!"
+ wisconsin.44.b:0 "Perhaps we should reconsider…"
+
+ # event 46: mil accepts our demands
+ wisconsin.45.t:0 "The [MIL.GetName] Accepts Our Demands"
+ wisconsin.45.d:0 "Our ultimatum has been accepted. [MIL.GetNameDef] has surrendered some of the contested territory to us without bloodshed, strengthening our position in the region."
+ wisconsin.45.a:0 "A bloodless victory!"
+
+ # event 46: victory
+ wisconsin.46.t:0 "Victory in the Border War"
+ wisconsin.46.d:0 "Our forces have triumphed in the border conflict against the enemy. They has been driven back, and the disputed land is firmly under our control."
+ wisconsin.46.a:0 "The border is secure!"
+
+ # event 47: Defeat
+ wisconsin.47.t:0 "Defeat in the Border War"
+ wisconsin.47.d:0 "Our forces have been overwhelmed in the border war against the enemy. They has seized the contested territory, and our failure has dealt a heavy blow to our prestige."
+ wisconsin.47.a:0 "We will reclaim it one day."
 
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 

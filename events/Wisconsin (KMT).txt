@@ -1040,7 +1040,7 @@ country_event = {
 		name = wisconsin.27.a
 		KMT = {
 			transfer_state = 104
-			#controls_state = 			# add after map update
+			transfer_state = 676
 		}
 	}
 }
@@ -1298,14 +1298,47 @@ country_event = {
 				states_filter = {
 					OR = {
 						state = 106
-						# add other after map update
+						state = 676
 					}
 					is_controlled_by = ROOT
 				}
 				
 				#load_focus_tree = generic_focus
 
-				#### HAVE TO TRANSFER CHARACTERS ####		
+				PREV = {  # Original country
+					KMT_steven_m_anderson = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway	
+					}
+					KMT_micheal_hagee = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+					KMT_hope_skibitsky = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+					KMT_Mark_E_Anderson = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+					KMT_Sandra_A_Gregory = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+					KMT_Robert_Neller = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+					KMT_James_Cartwright = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+					KMT_Daniel_P_Leaf = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+				}		
 			}
 
 			hidden_effect = {
@@ -1369,12 +1402,41 @@ country_event = {
 				states_filter = {
 					NOT = {
 						state = 106
-						# add other after map update
+						state = 676
 					}
 					is_controlled_by = ROOT
 				}
 				
-				#### HAVE TO TRANSFER CHARACTERS ####		
+				PREV = {  # Original country
+					KMT_Satya_Rhodes_Conway = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway	
+					}
+					KMT_Brandon_Johnson = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+					KMT_Bill_Ayers = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+					KMT_Bernardine_Dohrn = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+					KMT_Gwen_Moore = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+					KMT_Bob_Dylan = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+					KMT_Mark_Ruffalo = { # Character
+						set_nationality = PREV.PREV
+						# Transfers to breakaway
+					}
+				}		
 			}
 
 			set_popularities = {
@@ -1605,18 +1667,143 @@ country_event = {
 
 # bern dont wants us
 country_event = {
-	id = wisconsin.41
-	title = wisconsin.41.t
-	desc = wisconsin.41.d
+	id = wisconsin.42
+	title = wisconsin.42.t
+	desc = wisconsin.42.d
 	picture = TBD
 
 	is_triggered_only = yes
 
 	option = {
-		name = wisconsin.41.a
+		name = wisconsin.42.a
 		ai_chance = {
 			factor = 1
 		}
 		add_war_support = 0.1
+	}
+}
+
+# Ice Legion ultimatum
+country_event = {
+	id = wisconsin.43
+	title = wisconsin.43.t
+	desc = wisconsin.43.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = wisconsin.43.a
+		ai_chance = {
+			factor = 1
+		}
+		KMT = { country_event = { id = wisconsin.44 days = 1 } }
+	}
+	option = {
+		name = wisconsin.43.b
+		ai_chance = {
+			factor = 50
+		}
+		676 = { transfer_state_to = KMT }
+		KMT = { country_event = { id = wisconsin.45 days = 1 } }
+	}
+}
+
+# mil rejects ultimatum
+country_event = {
+	id = wisconsin.44
+	title = wisconsin.44.t
+	desc = wisconsin.44.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = wisconsin.44.a
+		ai_chance = {
+			factor = 1
+		}
+		start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 106
+				num_provinces = 1
+				on_win = wisconsin.45
+				on_lose = wisconsin.46
+				modifier = 0.1
+			}	
+			defender = {
+				state = 676
+				num_provinces = 1
+				on_win = wisconsin.46
+				on_lose = wisconsin.45
+			}
+		}
+	}
+	option = {
+		name = wisconsin.44.b
+		ai_chance = {
+			factor = 1
+		}
+		add_stability = -0.05
+	}
+}
+
+# mil accepts ultimatum
+country_event = {
+	id = wisconsin.45
+	title = wisconsin.45.t
+	desc = wisconsin.45.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = wisconsin.45.a
+		ai_chance = {
+			factor = 1
+		}
+		
+	}
+}
+
+# wisconsin vicorry
+country_event = {
+	id = wisconsin.46
+	title = wisconsin.46.t
+	desc = wisconsin.46.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = wisconsin.46.a
+		ai_chance = {
+			factor = 1
+		}
+		
+	}
+}
+
+# wisconsin defeat
+country_event = {
+	id = wisconsin.47
+	title = wisconsin.47.t
+	desc = wisconsin.47.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = wisconsin.47.a
+		ai_chance = {
+			factor = 1
+		}
+		
 	}
 }
