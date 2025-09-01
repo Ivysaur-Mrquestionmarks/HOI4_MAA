@@ -2300,7 +2300,7 @@ focus_tree = {
 			hidden_effect = {
 				country_event = {
 				    id = mattis.13
-				    days = 350
+				    days = 650
 			    }
 			}
 		}
@@ -5179,10 +5179,6 @@ focus_tree = {
 				    id = mattis.12
 				    days = 50
 			    }
-				country_event = {
-				    id = mattis.13
-				    days = 350
-			    }
 			}
 		}
 	}
@@ -5629,6 +5625,10 @@ focus_tree = {
 				var = AFS.var_resistance_growth_level
 				value = -0.05
 				tooltip = AFS_decrease_resistance_growth_var_tt
+			}
+			country_event = {
+				id = mattis.23
+				days = 0
 			}
 		}
 	}
