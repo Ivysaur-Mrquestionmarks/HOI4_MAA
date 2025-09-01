@@ -102,6 +102,7 @@ GKJ_civil_war_effect = {
 				}
 			}
 			inherit_technology = GKJ
+			set_research_slots = 3
 			add_ideas = {
 				FLO_fcw_idea
 				FLA_florida_civil_war_army
