@@ -1953,6 +1953,20 @@
 		prerequisite = { 
 			focus = FLD_the_libertarian_cause
 		}
+		available = {
+			has_global_flag = Dixie_Collapse_Global
+			country_exists = CSB
+		}
+		bypass = {
+			OR = {
+				has_global_flag = Confederate_Collapse_ended
+				AND = {
+					NOT = { country_exists = CSB }
+					has_global_flag = Dixie_Collapse_Global
+				}
+				has_global_flag = no_crisis
+			}
+		}
 		relative_position_id = FLD_the_libertarian_cause
 		x = 2
 		y = 1
@@ -1986,6 +2000,9 @@
 			focus = FLD_support_CSB
 		}
 		relative_position_id = FLD_secure_corporate_donations
+		bypass = {
+			NOT = { country_exists = GLA }
+		}
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2065,6 +2082,66 @@
 		x = 0
 		y = 2
 		completion_reward = {
+		}
+	}
+	focus = {
+		id = FLD_declare_independence
+		icon = GFX
+		cost = 7
+		prerequisite = { 
+			focus = FLD_welcome_to_florida
+		}
+		relative_position_id = FLD_welcome_to_florida
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FLD_leading_america
+		}
+		completion_reward = {
+			for_each_scope_loop = {
+    			array = global.part_of_USA
+				if = {
+					limit = { is_owned_by = FLD }
+					remove_from_array = global.part_of_USA
+				}
+    		}
+			news_event = fld.4
+		}
+	}
+	focus = {
+		id = FLD_leading_america
+		icon = GFX
+		cost = 7
+		prerequisite = { 
+			focus = FLD_welcome_to_florida
+		}
+		relative_position_id = FLD_welcome_to_florida
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FLD_declare_independence
+		}
+		completion_reward = {
+			hidden_effect = { 
+				set_country_flag = FLD_unlock_unification_cat
+				for_each_scope_loop = { #This loops declare the wars
+					array = global.part_of_USA
+						owner = {
+							if = {
+								limit = {
+									NOT = { is_in_array = global.country_owns_American_State }
+								}
+								add_to_array = {
+									array = global.country_owns_American_State
+									value = THIS.id
+								}
+							}
+						}
+				}
+			}
+			
+			unlock_decision_category_tooltip = FLD_american_unification_cat
+			
 		}
 	}
 

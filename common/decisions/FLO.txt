@@ -1102,3 +1102,72 @@ FLO_caribbean_unification_cat = {
 	}
 
 }
+
+FLD_american_unification_cat = {
+	FLD_unification_wars_decision = { 
+
+		icon = generic_form_nation
+		
+		allowed = {
+			OR = {
+				original_tag = FLO
+				original_tag = FLD
+			}
+		}
+		available = {
+			has_war = no
+			NOT = { has_country_flag = FLD_preparing_for_war_flag }
+		}
+		
+		days_remove = 15
+		fire_only_once = yes
+
+		target_array = global.country_owns_American_State
+		
+		war_with_target_on_remove = yes
+		
+		complete_effect = {
+			set_country_flag = FLD_preparing_for_war_flag
+		}
+		
+		remove_effect = {
+			clr_country_flag = FLD_preparing_for_war_flag
+			declare_war_on = {
+    			target = FROM
+    			type = annex_everything
+			}
+			FROM = {
+				remove_from_array = {
+					array = global.country_owns_American_State
+					value = THIS.id
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 25
+				strength_ratio = {
+    				tag = FROM
+    				ratio > 2
+				}
+			}
+			modifier = {
+				factor = 0.25
+				strength_ratio = {
+    				tag = FROM
+    				ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					ROOT = {
+						is_neighbor_of = FROM
+					}
+				}
+			}
+		}
+	}
+}

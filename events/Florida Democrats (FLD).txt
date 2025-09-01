@@ -4,7 +4,7 @@ country_event = {
 	id = fld.1
 	title = fld.1.t
 	desc = fld.1.d
-	picture = suarez_1
+	picture = event_Miami_city_hall
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -30,7 +30,7 @@ country_event = {
 	id = fld.2
 	title = fld.2.t
 	desc = fld.2.d
-	picture = fld_wins_image
+	picture = event_Miami_city_hall
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -50,13 +50,26 @@ country_event = {
 	option = {
 		name = fld.3.a
 	}
-	option = {
-		name = fld.3.b
-		set_politics = { ruling_party = democrat }
-	}
+	#option = {
+	#	name = fld.4.b
+	#	set_politics = { ruling_party = democrat }
+	#}
 	option = {
 		name = fld.3.c
 		FLD_val_demings = { promote_character = yes }
 		set_politics = { ruling_party = democrat }
+	}
+}
+
+#FLD declares independence from america
+news_event = {
+	id = fld.4
+	title = fld.4.t
+	desc = fld.4.d
+	picture = event_news_fld_wins
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = fld.4.a
 	}
 }

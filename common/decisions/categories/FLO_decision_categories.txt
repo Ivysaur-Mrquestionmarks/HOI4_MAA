@@ -47,3 +47,23 @@ FLO_caribbean_unification_cat = {
 	}
 	visible_when_empty = yes
 }
+
+FLD_american_unification_cat = {
+
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
+	#picture = GFX_caribbean_unificaiton_lol
+	
+	#priority = 9
+	
+	allowed = {
+		OR = {
+			original_tag = FLO
+			original_tag = FLD
+		}
+	}
+	
+	visible = {
+		has_country_flag = FLD_unlock_unification_cat
+	}
+}

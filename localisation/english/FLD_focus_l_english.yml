@@ -243,6 +243,25 @@
  FLD_the_libertarian_cause_desc:0 "We have managed to guide Florida away from the destructive forces of extremism. Unfortunately, only few in the former United States see liberty in the same way as us. We must stick close with them to ensure our goals are achieved."
  FLD_strengthen_the_militia:0 "Strengthen the Militia"
  FLD_strengthen_the_militia_desc:0 "The militia will be vital in protecting our country. Ensuring they get the proper equipment needed may be crucial in our defense."
+ FLD_support_CSB:0 "Support the Third Confederacy"
+ FLD_support_CSB_desc:0 "The Third Confederacy share a similar viewpoint on how America should be run with us. Strengthening our libertarian allies will help secure Florida's prosperous future."
+ FLD_secure_corporate_donations:0 "Secure Corporate Donations"
+ FLD_secure_corporate_donations_desc:0 "Donations from the private sector will be instrumental in ensuring the stability of our state. By protecting our -and their- interests, we will have a mutually beneficial partnership"
+ FLD_ally_the_gla:0 "Ally the [GLA.GetName]"
+ FLD_ally_the_gla_desc:0 "The [GLA.GetName] is the leader of the libertarian cause in America! Aligning with them will bring our mutual goals to fruition!"
+ FLD_for_a_free_america:0 "For a Free America"
+ FLD_for_a_free_america_desc:0 "America was founded on the principles of liberty and freedom. We are the guardians of those ideals and will uphold them at all costs!"
+ FLD_declare_independence:0 "Declare Independence"
+ FLD_declare_independence_desc:0 "Our path has diverged from the rest of America's long ago, and it is now time to face that reality."
+ FLD_leading_america:0 "Leading America"
+ FLD_leading_america_desc:0 "We must guide our fellow Americans and show them the light that Florida has achieved."
+ 
+ #Decisions
+ FLD_american_unification_cat:0 "Unifying America"
+ FLD_unification_wars_decision:0 "Declare War on [FROM.GetName]"
+ 
+ #Flags/tooltips
+ FLD_preparing_for_war_flag:0 "Preparing for War"
  
  
  #ideas 
@@ -250,17 +269,20 @@
  FLD_starting_desc:0 "After the collapse of Jeb Bush's Florida, the state quickly flung inself into chaos. The City of Miami was able to remain in command of its nearby area and continued to uphold the values that the United States was built on."
  
  #events
- fld.1.d:0 "Miami was in ruins. Smoke filled the air as police struggled to maintain control over a panicked populace. Years earlier, Jeb's Revolution was put down, making the area a virtual police state. After the sudden rise and fall of Jeb's second reign, the area was forgotten and saw a steep drop in population. Now, upon the brink of annihilation, Miami was held by a loosely strung together government led by the moderate Republican Francis X. Suarez. Suarez was no military mastermind but he knew how to speak to the masses. Soon his voice was playing over every single radio and TV in the area. \n\n"My fellow Floridians. We must during this trying time come together as one. The forces of evil and destruction lie at our gates and if we continue to fight, we will become only a distant memory in the pages of history. I need you all to fight for your civil liberties and freedoms you hold so dear, for the battle upcoming depends on it. In the coming weeks, you will be tested in your strength, mind, and soul, but take heart, for we hold the legitimate power in Florida. Long live Florida! Long live Democracy!"
+ fld.1.d:0 "Miami was in ruins. Smoke filled the air as police struggled to maintain control over a panicked populace. Years earlier, Jeb's Revolution was put down, making the area a virtual police state. After the sudden rise and fall of Jeb's second reign, the area was forgotten and saw a steep drop in population. Now, upon the brink of annihilation, Miami was held by a loosely strung together government led by [FLD.GetLeader]. [FLD.GetLeader] was no military mastermind but she knew how to speak to the masses. Soon her voice was playing over every single radio and TV in the area. \n\n"My fellow Floridians. We must during this trying time come together as one. The forces of evil and destruction lie at our gates and if we continue to fight, we will become only a distant memory in the pages of history. I need you all to fight for your civil liberties and freedoms you hold so dear, for the battle upcoming depends on it. In the coming weeks, you will be tested in your strength, mind, and soul, but take heart, for we hold the legitimate power in Florida. Long live Florida! Long live Democracy!"
  fld.1.a:0 "For Democracy!"
  fld.1.t:0 "The Floridian Civil War"
- fld.2.t:0 "Suarez Proclaims Victory"
- fld.2.d:0 "Francis Suarez moved towards to podium. It was odd. The room he broadcasted from in the past months of the bloody Floridian Civil War was usually empty. Now it was alive with reporters and camera crews from around the globe. As he slowly set his papers on the podium and adjusted his tie, he though of all the men, women and children that had died for the cause. He owed their familes a brighter future. Suarez slowly looked up, fixed the microphone so it was right at the edge of his lips and said... \n\n"The bright future of Florida starts today.""
+ fld.2.t:0 "[FLD.GetName] Proclaims Victory"
+ fld.2.d:0 "[FLD.GetLeader] moved towards to podium. It was odd, the room broadcasted from in the past months of the bloody Floridian Civil War was usually empty. Now it was alive with reporters and camera crews from around the globe. As [FLD.GetLeader] slowly set her papers on the podium, she thought of all the men, women and children that had died for the cause. She owed their familes a brighter future. [FLD.GetLeader] slowly looked up, fixed the microphone so it was right at the edge of his lips and said... \n\n"The bright future of Florida starts today.""
  fld.2.a:0 "Thank God it's over"
  fld.3.t:0 "New Florida Elections"
- fld.3.d:0 "In the highly contested race for the Presidency of a newly independent Florida, three prominent politicians have emerged as front-runners, each bringing unique ideologies and visions. Francis X. Suarez, the innovative Miami mayor, presents moderate politics with an emphasis on technology, and aims to transform Florida into a global tech hub. Nikki Fried, the former Agriculture Commissioner, leans towards liberal policies, focusing on issues such as environmental protection and healthcare reform. Val Demings, a former congresswoman, champions progressive values, advocating for transformative changes in areas like criminal justice and income inequality. Floridians face a crucial decision that will shape the trajectory of their state, as these candidates engage in spirited campaigns across the diverse region."
+ fld.3.d:0 "In the highly contested race for the Presidency of a newly independent Florida, three prominent politicians have emerged as front-runners, each bringing unique ideologies and visions. Francis X. Suarez, the innovative Miami mayor, presents moderate politics with an emphasis on technology, and aims to transform Florida into a global tech hub. Val Demings, a former congresswoman, champions progressive values, advocating for transformative changes in areas like criminal justice and income inequality. Floridians face a crucial decision that will shape the trajectory of their state, as these candidates engage in spirited campaigns across the diverse region."
  fld.3.a:0 "Francis X. Suarez"
  fld.3.b:0 "Nikki Fried"
  fld.3.c:0 "Val Demings"
+ fld.4.t:0 "Florida Declares Independence!"
+ fld.4.d:0 "Breaking news from Miami today as [FLD.GetLeader] announces that the [FLD.GetName] is declaring independence from the former United States and will look to foreign powers for guarantees of safety. \n\n[FLD.GetLeader] declared that [FLD.GetName] will be applying to join the UN and other international organizations in the coming weeks. While [FLD.GetName] is one of the first former American states to declare independence, they may not be the last some analysts warn."
+ fld.4.a:0 "A future without America?"
  News_Events.104.a:0 "Stability for Florida"
  News_events.104.t:0 "Miami Goverment Survives Floridian Civil War"
  News_events.104.d:0 "Today in Miami, provisional President of now a united Florida, Francis X. Suarez addressed the media. This comes in the wake of the Miami Goverment emerging victorious in the Floridian Civil War. Suarez is now declaring that there will be free elections starting quite soon with himself and a few other democratic candidates on the ballot. He was also deeply remorseful at the lives lost during the war and vowed to help restabilize the nation. Much work is needed to be done as the conflict raged from Orlando to Miami, and everywhere inbetween. It seems that Florida is in good hands."
