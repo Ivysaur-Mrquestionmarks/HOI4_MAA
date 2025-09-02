@@ -9026,7 +9026,7 @@ focus_tree = {
 		x = 24
 		y = 8
 		allow_branch = {
-			always = no
+			#always = no
 		}
 		completion_reward = {
 			add_ideas = { 
