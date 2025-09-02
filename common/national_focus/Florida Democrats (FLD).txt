@@ -1019,12 +1019,23 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.05
+				tooltip = libertarian_right_drift_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.05
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_miami_doctrine
 		icon = GFX
-		cost = 4
+		cost = 2
 		prerequisite = { 
 			focus = FLD_suarez
 		}
@@ -1032,6 +1043,12 @@
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.05
+				tooltip = libertarian_right_drift_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1045,6 +1062,14 @@
 		x = 6
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.1
+				tooltip = stability_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -1058,6 +1083,19 @@
 		x = 3
 		y = 1
 		completion_reward = {
+			country_event = fld.6
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_war_support_factor
+				value = 0.1
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_gain
+				value = 0.05
+				tooltip = political_power_gain_tt
+			}
 		}
 	}
 	focus = {
@@ -1074,13 +1112,28 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_pp_gain
+				value = 0.05
+				tooltip = political_power_gain_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = democrat
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = libertarian_right
+				popularity = 0.15
+			}
 		}
 	}
 
 	focus = {
 		id = FLD_strengthen_the_executive
 		icon = GFX
-		cost = 4
+		cost = 3
 		prerequisite = { 
 			focus = FLD_digital_democracy
 		}
@@ -1088,6 +1141,12 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.1
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 
@@ -1102,6 +1161,17 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1115,6 +1185,27 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_nuclear_production_factor
+				value = 0.15
+				tooltip = nuclear_production_factor_tt
+			}
+			add_to_variable = {
+				var = var_max_fuel_factor
+				value = 0.15
+				tooltip = max_fuel_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_speed_nuclear_reactor_factor
+				value = 0.15
+				tooltip = production_speed_nuclear_reactor_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1131,6 +1222,33 @@
 		x = -1
 		y = 2
 		completion_reward = {
+			random_owned_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1147,6 +1265,30 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1163,6 +1305,33 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = 50000
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = 50000
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = 50000
+			}
 		}
 	}
 	focus = {
@@ -1179,6 +1348,17 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_operative_slot
+				value = 2
+				tooltip = operative_slot_tt
+			}
+			add_to_variable = {
+				var = var_resistance_growth
+				value = -0.2
+				tooltip = resistance_growth_tt
+			}
 		}
 	}
 	focus = {
@@ -1198,6 +1378,12 @@
 		x = 2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.1
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1211,6 +1397,13 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.1
+				tooltip = libertarian_right_drift_factor_tt
+			}
 		}
 	}
 
@@ -1225,6 +1418,17 @@
 		x = -3
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.08
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1238,6 +1442,54 @@
 		x = 1
 		y = 2
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1254,6 +1506,22 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.01
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_factor
+				value = -0.05
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1267,6 +1535,22 @@
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.01
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = -0.05
+				tooltip = stability_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1283,6 +1567,27 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.01
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_max_efficiency_factor
+				value = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_efficiency_gain_factor
+				value = 0.05
+				tooltip = production_factory_efficiency_gain_factor
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = -0.05
+				tooltip = stability_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1311,6 +1616,12 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.04
+				tooltip = research_speed_factor_tt
+			}
 		}
 
 	}
@@ -1328,6 +1639,14 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.1
+				tooltip = libertarian_right_drift_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 75
 		}
 	}
 
