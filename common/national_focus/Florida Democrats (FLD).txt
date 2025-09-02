@@ -1004,13 +1004,14 @@
 				ideology = libertarian_right
 				popularity = 0.1
 			}
+			add_dynamic_modifier = { modifier = FLD_libertarian_government }
 		}
 
 	}
 	focus = {
 		id = FLD_digital_democracy
 		icon = GFX_goal_FLD_Digital_Democracy
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_suarez
 		}
@@ -1018,12 +1019,23 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.05
+				tooltip = libertarian_right_drift_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.05
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_miami_doctrine
 		icon = GFX
-		cost = 7
+		cost = 2
 		prerequisite = { 
 			focus = FLD_suarez
 		}
@@ -1031,12 +1043,18 @@
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.05
+				tooltip = libertarian_right_drift_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_reconciliation_with_moderates
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_suarez
 		}
@@ -1044,12 +1062,20 @@
 		x = 6
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.1
+				tooltip = stability_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 25
 		}
 	}
 	focus = {
 		id = FLD_meet_with_themepark_corporations
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_suarez
 		}
@@ -1057,12 +1083,25 @@
 		x = 3
 		y = 1
 		completion_reward = {
+			country_event = fld.6
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_war_support_factor
+				value = 0.1
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_gain
+				value = 0.05
+				tooltip = political_power_gain_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_move_past_culture_war_poltiics
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_reconciliation_with_moderates
 		}
@@ -1073,13 +1112,28 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_pp_gain
+				value = 0.05
+				tooltip = political_power_gain_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = democrat
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = libertarian_right
+				popularity = 0.15
+			}
 		}
 	}
 
 	focus = {
 		id = FLD_strengthen_the_executive
 		icon = GFX
-		cost = 7
+		cost = 3
 		prerequisite = { 
 			focus = FLD_digital_democracy
 		}
@@ -1087,13 +1141,19 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.1
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 
 	focus = {
 		id = FLD_completely_digitize_bureaucracy
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_digital_democracy
 		}
@@ -1101,12 +1161,23 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_addressing_climate_change
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_completely_digitize_bureaucracy
 		}
@@ -1114,12 +1185,33 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_nuclear_production_factor
+				value = 0.15
+				tooltip = nuclear_production_factor_tt
+			}
+			add_to_variable = {
+				var = var_max_fuel_factor
+				value = 0.15
+				tooltip = max_fuel_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_speed_nuclear_reactor_factor
+				value = 0.15
+				tooltip = production_speed_nuclear_reactor_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_flood_barriers
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_addressing_climate_change
 		}
@@ -1130,12 +1222,39 @@
 		x = -1
 		y = 2
 		completion_reward = {
+			random_owned_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { is_coastal = yes }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = FLD_affordable_sustainable_housing
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_addressing_climate_change
 		}
@@ -1146,12 +1265,36 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = FLD_expand_urban_development
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_affordable_sustainable_housing
 		}
@@ -1162,12 +1305,39 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = 50000
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = 50000
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = 50000
+			}
 		}
 	}
 	focus = {
 		id = FLD_strengthen_law_enforcement
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_expand_urban_development
 		}
@@ -1178,12 +1348,23 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_operative_slot
+				value = 2
+				tooltip = operative_slot_tt
+			}
+			add_to_variable = {
+				var = var_resistance_growth
+				value = -0.2
+				tooltip = resistance_growth_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_department_of_marketing #marketing the nation
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_completely_digitize_bureaucracy
 		}
@@ -1197,12 +1378,18 @@
 		x = 2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.1
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_switzerland_of_america
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_department_of_marketing
 		}
@@ -1210,13 +1397,20 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.1
+				tooltip = libertarian_right_drift_factor_tt
+			}
 		}
 	}
 
 	focus = {
 		id = FLD_invite_tech_companies
 		icon = GFX_goal_Ally_Big_Tech
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_digital_democracy
 		}
@@ -1224,12 +1418,23 @@
 		x = -3
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.08
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_smart_plan
 		icon = GFX_goal_FLO_high_speed_rail
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_invite_tech_companies
 		}
@@ -1237,12 +1442,60 @@
 		x = 1
 		y = 2
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = FLD_crypto_economy
 		icon = GFX_goal_FLD_CryptoEconomy
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_invite_tech_companies
 		}
@@ -1253,12 +1506,28 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.01
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_factor
+				value = -0.05
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_miamicoin
 		icon = GFX_goal_FLD_Miamicoin
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_invite_tech_companies
 		}
@@ -1266,12 +1535,28 @@
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.01
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = -0.05
+				tooltip = stability_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_abolish_taxes
 		icon = GFX_goal_FLD_Abolish_Taxes
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_miamicoin
 		}
@@ -1282,12 +1567,33 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.01
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_max_efficiency_factor
+				value = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_efficiency_gain_factor
+				value = 0.05
+				tooltip = production_factory_efficiency_gain_factor
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = -0.05
+				tooltip = stability_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_silicon_valley_of_the_east
 		icon = GFX_goal_FLD_Silicon_Valley_of_The_East
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_abolish_taxes
 		}
@@ -1302,7 +1608,7 @@
 	focus = {
 		id = FLD_dominate_the_ai_market
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_silicon_valley_of_the_east
 		}
@@ -1310,6 +1616,12 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.04
+				tooltip = research_speed_factor_tt
+			}
 		}
 
 	}
@@ -1327,6 +1639,14 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_libertarian_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.1
+				tooltip = libertarian_right_drift_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 75
 		}
 	}
 
@@ -1361,13 +1681,14 @@
 				ideology = democrat
 				popularity = 0.25
 			}
+			add_dynamic_modifier = { modifier = FLD_democrat_government }
 		}
 
 	}
 	focus = {
 		id = FLD_bastion_of_the_establishment
 		icon = GFX_goal_TEX_Work_With_Moderate_Democrats
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_demings
 		}
@@ -1375,12 +1696,23 @@
 		x = -5
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.05
+				tooltip = democrat_drift_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_gain
+				value = 0.05
+				tooltip = political_power_gain_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_focus_on_agriculture
 		icon = GFX_focus_NPA_Upgrade_Of_The_Agricultural_Sector_2
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_bastion_of_the_establishment
 		}
@@ -1388,12 +1720,35 @@
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = FLD_female_stem_education
 		icon = GFX_goal_FRA_free_higher_education
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_focus_on_agriculture
 		}
@@ -1408,7 +1763,7 @@
 	focus = {
 		id = FLD_funding_for_abortion
 		icon = GFX_goal_TEX_protect_abortions
-		cost = 7
+		cost = 3
 		prerequisite = { 
 			focus = FLD_bastion_of_the_establishment
 		}
@@ -1416,10 +1771,16 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.07
+				tooltip = stability_factor_tt
+			}
 		}
 	}
 	focus = {
-		id = FLD_woman_of_the_people
+		id = FLD_woman_of_the_people #LGB protections
 		icon = GFX_goal_TEX_continue_progressive_policies
 		cost = 10
 		prerequisite = {
@@ -1429,6 +1790,14 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_compliance_growth
+				value = 0.1
+				tooltip = compliance_growth_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1445,6 +1814,17 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.05
+				tooltip = democrat_drift_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_gain
+				value = 0.05
+				tooltip = political_power_gain_tt
+			}
 		}
 	}
 	
@@ -1461,12 +1841,23 @@
 		x = 5
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.05
+				tooltip = democrat_drift_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_gain
+				value = 0.05
+				tooltip = political_power_gain_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_ban_firearms
 		icon = GFX_goal_VIR_stricter_gun_laws
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_progressive_movement
 		}
@@ -1474,12 +1865,17 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+			}
+			add_political_power = -25
 		}
 	}
 	focus = {
 		id = FLD_defund_the_police
 		icon = GFX_focus_defund_police
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_ban_firearms
 		}
@@ -1487,12 +1883,23 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.07
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = -0.1
+				tooltip = stability_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_universal_healthcare
 		icon = GFX_goal_Obamacare
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_progressive_movement
 		}
@@ -1500,12 +1907,28 @@
 		x = 2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.1
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.05
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 	focus = {
-		id = FLD_legalize_marijuana
-		icon = GFX_goal_OBX_recreational_drug_usage
-		cost = 7
+		id = FLD_forgive_tuition_debt
+		icon = GFX
+		cost = 4
 		prerequisite = { 
 			focus = FLD_universal_healthcare
 		}
@@ -1513,14 +1936,25 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.08
+				tooltip = research_speed_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_expand_voting_rights
 		icon = GFX_goal_Allow_Mail_in_Votes
-		cost = 7
+		cost = 4
 		prerequisite = { 
-			focus = FLD_legalize_marijuana
+			focus = FLD_forgive_tuition_debt
 		}
 		prerequisite = { 
 			focus = FLD_defund_the_police
@@ -1529,13 +1963,29 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.08
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_gain
+				value = 0.05
+				tooltip = political_power_gain_tt
+			}
 		}
 	}
 	
 	focus = {
 		id = FLD_close_the_wage_gap
 		icon = GFX_goal_Stimulus_Check_Stubs
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_progressive_movement
 			focus = FLD_bastion_of_the_establishment
@@ -1544,12 +1994,23 @@
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_production_speed_buildings_factor
+				value = 0.05
+				tooltip = production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				var = var_industrial_capacity_factory
+				value = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_enhance_union_protections
 		icon = GFX_goal_FRA_Bolster_Private_Unions
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_close_the_wage_gap
 		}
@@ -1560,13 +2021,24 @@
 		x = -1
 		y = 2
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_production_factory_max_efficiency_factor
+				value = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_efficiency_gain_factor
+				value = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
 		}
 	}
 	
 	focus = {
 		id = FLD_purge_altright_and_extremists_from_military
 		icon = GFX_goal_FRA_Permanently_Purge_Trumpists
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_progressive_movement
 			focus = FLD_bastion_of_the_establishment
@@ -1575,12 +2047,32 @@
 		x = 2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_org_army
+				value = 0.08
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				var = var_breakthrough_army
+				value = 0.05
+				tooltip = breakthrough_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = republican
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = libertarian_right
+				popularity = -0.2
+			}
 		}
 	}
 	focus = {
 		id = FLD_woke_propaganda
 		icon = GFX_goal_FRA_use_disney
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_purge_altright_and_extremists_from_military
 		}
@@ -1591,6 +2083,22 @@
 		x = 1
 		y = 2
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_org_army
+				value = 0.08
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.1
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_war_support_factor
+				value = 0.1
+				tooltip = war_support_factor_tt
+			}
 		}
 	}
 	
@@ -1610,6 +2118,17 @@
 		x = -4
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_pp_factor
+				value = -0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.1
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1623,6 +2142,27 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_pp_factor
+				value = -0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_gain
+				value = 0.1
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				var = var_war_support_factor
+				value = 0.1
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1640,6 +2180,17 @@
 		x = 4
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.1
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1653,13 +2204,29 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
 		}
 	}
 	
 	focus = {
 		id = FLD_limit_offshore_drilling
 		icon = GFX_goal_FRA_Conservation_Conservatism
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_progressive_movement
 			focus = FLD_bastion_of_the_establishment
@@ -1668,12 +2235,23 @@
 		x = 0
 		y = 4
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_max_fuel_factor
+				value = -0.05
+				tooltip = max_fuel_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.1
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = FLD_reduce_carbon_emissions
 		icon = GFX_goal_FRA_fund_offshore_wind
-		cost = 7
+		cost = 2
 		prerequisite = { 
 			focus = FLD_limit_offshore_drilling
 		}
@@ -1681,12 +2259,13 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 	focus = {
 		id = FLD_incentivize_electric_cars
 		icon = GFX_goal_FRA_VIR_economy
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_limit_offshore_drilling
 		}
@@ -1694,12 +2273,28 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = FLD_floridian_green_new_deal
 		icon = GFX_goal_FRA_restructure_economy
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_reduce_carbon_emissions
 		}
@@ -1710,6 +2305,27 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_democrat_government_modify_tt
+			add_to_variable = {
+				var = var_nuclear_production_factor
+				value = 0.15
+				tooltip = nuclear_production_factor_tt
+			}
+			add_to_variable = {
+				var = var_max_fuel_factor
+				value = 0.15
+				tooltip = max_fuel_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_speed_nuclear_reactor_factor
+				value = 0.15
+				tooltip = production_speed_nuclear_reactor_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 
@@ -1949,7 +2565,7 @@
 	focus = {
 		id = FLD_floridas_place_in_america
 		icon = GFX_goal_FLD_our_new_nation
-		cost = 7
+		cost = 4
 		prerequisite = {
 			focus = FLD_demings
 			focus = FLD_suarez
@@ -1964,7 +2580,7 @@
 	focus = {
 		id = FLD_the_libertarian_cause
 		icon = GFX
-		cost = 7
+		cost = 4
 		mutually_exclusive = {
 			focus = FLD_meeting_in_washington
 			focus = FLD_the_florida_way
@@ -1987,7 +2603,7 @@
 	focus = {
 		id = FLD_strengthen_the_militia
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_the_libertarian_cause
 		}
@@ -2000,7 +2616,7 @@
 	focus = {
 		id = FLD_support_CSB
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_the_libertarian_cause
 		}
@@ -2027,7 +2643,7 @@
 	focus = {
 		id = FLD_secure_corporate_donations
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_the_libertarian_cause
 		}
@@ -2040,7 +2656,7 @@
 	focus = {
 		id = FLD_ally_the_gla
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_secure_corporate_donations
 		}
@@ -2062,7 +2678,7 @@
 	focus = {
 		id = FLD_for_a_free_america
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_ally_the_gla
 		}
@@ -2076,7 +2692,7 @@
 	focus = {
 		id = FLD_the_florida_way
 		icon = GFX_goal_FLO_floridian_economy
-		cost = 7
+		cost = 4
 		mutually_exclusive = {
 			focus = FLD_meeting_in_washington
 			focus = FLD_the_libertarian_cause
@@ -2096,7 +2712,7 @@
 	focus = {
 		id = FLD_beacon_of_democracy
 		icon = GFX_goal_FLO_citizenship
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_the_florida_way
 		}
@@ -2109,7 +2725,7 @@
 	focus = {
 		id = FLD_guarantee_freedoms
 		icon = GFX_goal_Fight_for_Freedom
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_the_florida_way
 		}
@@ -2122,7 +2738,7 @@
 	focus = {
 		id = FLD_welcome_to_florida
 		icon = GFX_goal_FLO_sunshine
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_beacon_of_democracy
 		}
@@ -2138,7 +2754,7 @@
 	focus = {
 		id = FLD_declare_independence
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_welcome_to_florida
 		}
@@ -2157,12 +2773,16 @@
 				}
     		}
 			news_event = fld.4
+			every_owned_state = {
+				limit = { has_state_flag = part_of_america }
+				clr_state_flag = part_of_america
+			}
 		}
 	}
 	focus = {
 		id = FLD_leading_america
 		icon = GFX
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_welcome_to_florida
 		}
@@ -2201,7 +2821,7 @@
 	focus = {
 		id = FLD_meeting_in_washington
 		icon = GFX_focus_NPA_One_Nation_One_Goal
-		cost = 7
+		cost = 4
 		mutually_exclusive = {
 			focus = FLD_the_libertarian_cause
 			focus = FLD_the_florida_way
@@ -2224,7 +2844,7 @@
 	focus = {
 		id = FLD_prepare_to_fight
 		icon = GFX_goal_FLO_Speed_And_Strength
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_meeting_in_washington
 		}
@@ -2237,7 +2857,7 @@
 	focus = {
 		id = FLD_funding_from_washington
 		icon = GFX_goal_GKJ_invade_dc
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_meeting_in_washington
 		}
@@ -2250,7 +2870,7 @@
 	focus = {
 		id = FLD_encourage_the_people
 		icon = GFX_goal_icon_Foundation_of_the_Blue_Army
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_meeting_in_washington
 		}
@@ -2263,7 +2883,7 @@
 	focus = {
 		id = FLD_join_the_legitimists
 		icon = GFX_goal_The_Federal_Republic
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_prepare_to_fight
 		}
@@ -2282,7 +2902,7 @@
 	focus = {
 		id = FLD_loyal_to_dc
 		icon = GFX_goal_Biden_Handshake
-		cost = 7
+		cost = 4
 		prerequisite = { 
 			focus = FLD_join_the_legitimists
 		}

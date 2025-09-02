@@ -62,6 +62,160 @@ set_popularities = {
 	libertarian_left = 20
 }
 
+
+# Vars for Dynamic Modifiers #
+set_variable = {
+	var = FLD.var_stability_factor
+	value = 0.0
+}
+set_variable = {
+	var = FLD.var_pp_factor
+	value = 0.0
+}
+set_variable = {
+	var = FLD.var_resistance_growth
+	value = 0.0
+}
+set_variable = {
+	var = FLD.var_war_support_factor
+	value = 0.0
+}
+set_variable = {
+	var = FLD.var_conscription
+	value = 0
+}
+set_variable = {
+	var = FLD.var_operative_slot
+	value = 0
+}
+set_variable = {
+	var = FLD.var_compliance_growth
+	value = 0
+}
+set_variable = {
+	var = FLD.var_pp_gain
+	value = 0
+}
+set_variable = {
+	var = FLD.var_cg_factor
+	value = 0
+}
+set_variable = {
+	var = FLD.var_org_army
+	value = 0
+}
+set_variable = {
+	var = FLD.var_morale_army
+	value = 0
+}
+set_variable = {
+	var = FLD.var_breakthrough_army
+	value = 0
+}
+set_variable = {
+	var = FLD.var_attack_army
+	value = 0
+}
+set_variable = {
+	var = FLD.var_defence_army
+	value = 0
+}
+
+set_variable = {
+	var = FLD.var_stability_factor_foreign_policy
+	value = 0.0
+}
+set_variable = {
+	var = FLD.var_pp_factor_foreign_policy
+	value = 0.0
+}
+set_variable = {
+	var = FLD.var_resistance_growth_foreign_policy
+	value = 0.0
+}
+set_variable = {
+	var = FLD.var_war_support_factor_foreign_policy
+	value = 0.0
+}
+set_variable = {
+	var = FLD.var_conscription_foreign_policy
+	value = 0
+}
+set_variable = {
+	var = FLD.var_operative_slot_foreign_policy
+	value = 0
+}
+set_variable = {
+	var = FLD.var_compliance_growth_foreign_policy
+	value = 0
+}
+set_variable = {
+	var = FLD.var_pp_gain_foreign_policy
+	value = 0
+}
+set_variable = {
+	var = FLD.var_cg_factor_foreign_policy
+	value = 0
+}
+set_variable = {
+	var = FLD.var_org_army_foreign_policy
+	value = 0
+}
+set_variable = {
+	var = FLD.var_morale_army_foreign_policy
+	value = 0
+}
+set_variable = {
+	var = FLD.var_breakthrough_army_foreign_policy
+	value = 0
+}
+set_variable = {
+	var = FLD.var_attack_army_foreign_policy
+	value = 0
+}
+set_variable = {
+	var = FLD.var_defence_army_foreign_policy
+	value = 0
+}
+
+set_variable = {
+	var = FLD.var_ideology_drift
+	value = 0
+}
+set_variable = {
+	var = FLD.var_research_speed_factor
+	value = 0
+}
+set_variable = {
+	var = FLD.var_production_speed_buildings_factor
+	value = 0
+}
+set_variable = {
+	var = FLD.var_industrial_capacity_factory
+	value = 0
+}
+set_variable = {
+	var = FLD.var_production_factory_max_efficiency_factor
+	value = 0
+}
+set_variable = {
+	var = FLD.var_production_factory_efficiency_gain_factor
+	value = 0
+}
+set_variable = {
+	var = FLD.var_max_fuel_factor
+	value = 0
+}
+set_variable = {
+	var = FLD.var_production_speed_nuclear_reactor_factor
+	value = 0
+}
+set_variable = {
+	var = FLD.var_nuclear_production_factor
+	value = 0
+}
+
+
 ### Country Leaders ###
 recruit_character = FLD_val_demings
 recruit_character = FLD_francis_x_suarez

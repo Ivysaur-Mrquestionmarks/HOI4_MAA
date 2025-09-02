@@ -1,0 +1,92 @@
+FLD_democrat_government = { #NATIONAL SPIRIT, balls.
+	enable = { always = yes }
+
+	icon = ast_volunteer_defence_corps
+	
+	stability_factor = FLD.var_stability_factor
+	war_support_factor = FLD.var_war_support_factor
+	political_power_factor = FLD.var_pp_factor
+	political_power_gain = FLD.var_pp_gain
+	resistance_growth = FLD.var_resistance_growth
+	
+	conscription = FLD.var_conscription
+	operative_slot = FLD.var_operative_slot
+	compliance_growth = FLD.var_compliance_growth
+	
+	consumer_goods_factor = FLD.var_cg_factor
+	army_org_factor = FLD.var_org_army
+	army_morale_factor = FLD.var_morale_army
+	
+	army_attack_factor = FLD.var_attack_army
+	army_defence_factor = FLD.var_defence_army
+	breakthrough_factor = FLD.var_breakthrough_army
+	
+	democrat_drift = FLD.var_ideology_drift
+	research_speed_factor = FLD.var_research_speed_factor
+	production_speed_buildings_factor = FLD.var_production_speed_buildings_factor
+	industrial_capacity_factory = FLD.var_industrial_capacity_factory
+	production_factory_max_efficiency_factor = FLD.var_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = FLD.var_production_factory_efficiency_gain_factor
+	max_fuel_factor = FLD.var_max_fuel_factor
+	production_speed_nuclear_reactor_factor = FLD.var_production_speed_nuclear_reactor_factor
+	nuclear_production_factor = FLD.var_nuclear_production_factor
+
+}
+FLD_libertarian_government = { #NATIONAL SPIRIT, balls.
+	enable = { always = yes }
+
+	icon = ast_volunteer_defence_corps
+	
+	stability_factor = FLD.var_stability_factor
+	war_support_factor = FLD.var_war_support_factor
+	political_power_factor = FLD.var_pp_factor
+	political_power_gain = FLD.var_pp_gain
+	resistance_growth = FLD.var_resistance_growth
+	
+	conscription = FLD.var_conscription
+	operative_slot = FLD.var_operative_slot
+	compliance_growth = FLD.var_compliance_growth
+	
+	consumer_goods_factor = FLD.var_cg_factor
+	army_org_factor = FLD.var_org_army
+	army_morale_factor = FLD.var_morale_army
+	
+	army_attack_factor = FLD.var_attack_army
+	army_defence_factor = FLD.var_defence_army
+	breakthrough_factor = FLD.var_breakthrough_army
+	
+	libertarian_right_drift = FLD.var_ideology_drift
+	research_speed_factor = FLD.var_research_speed_factor
+	production_speed_buildings_factor = FLD.var_production_speed_buildings_factor
+	industrial_capacity_factory = FLD.var_industrial_capacity_factory
+	production_factory_max_efficiency_factor = FLD.var_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = FLD.var_production_factory_efficiency_gain_factor
+	max_fuel_factor = FLD.var_max_fuel_factor
+	production_speed_nuclear_reactor_factor = FLD.var_production_speed_nuclear_reactor_factor
+	nuclear_production_factor = FLD.var_nuclear_production_factor
+
+}
+FLD_looking_out_spirit = { #NATIONAL SPIRIT, balls.
+	enable = { always = yes }
+
+	icon = ast_volunteer_defence_corps
+	
+	stability_factor = FLD.var_stability_factor_foreign_policy
+	war_support_factor = FLD.var_war_support_factor_foreign_policy
+	political_power_factor = FLD.var_pp_factor_foreign_policy
+	political_power_gain = FLD.var_pp_gain_foreign_policy
+	resistance_growth = FLD.var_resistance_growth_foreign_policy
+	
+	conscription = FLD.var_conscription_foreign_policy
+	operative_slot = FLD.var_operative_slot_foreign_policy
+	compliance_growth = FLD.var_compliance_growth_foreign_policy
+	
+	consumer_goods_factor = FLD.var_cg_factor_foreign_policy
+	army_org_factor = FLD.var_org_army_foreign_policy
+	army_morale_factor = FLD.var_morale_army_foreign_policy
+	
+	army_attack_factor = FLD.var_attack_army_foreign_policy
+	army_defence_factor = FLD.var_defence_army_foreign_policy
+	breakthrough_factor = FLD.var_breakthrough_army_foreign_policy
+
+}
