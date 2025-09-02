@@ -485,25 +485,18 @@ country_event = {
 		name = stonetoss.18.a
     	add_political_power = -100
     	add_stability = -0.1
-    	effect_tooltip = {
-    		remove_trait = {
-			     character = FAL_stonetoss
-			     trait = stonetoss
-			}
-    		add_trait = {
-			     character = FAL_stonetoss
-			     trait = punished_stonetoss
-			}
-    	}
+    	remove_trait = {
+			character = FAL_stonetoss
+			trait = stonetoss
+		}
+    	add_trait = {
+			character = FAL_stonetoss
+			trait = punished_stonetoss
+		}
+
     	hidden_effect = {
-    		kill_country_leader = yes
-    		create_country_leader = {
-				name = "Hans Kristian Graebener"
-				picture = "gfx/leaders/FAL/punished_toss.dds"
-				ideology = fascism
-				traits = {
-					punished_stonetoss
-				}
+    		set_country_leader_portrait = {
+				portrait = "gfx/leaders/FAL/punished_toss.dds"
 			}
     	}
 		ai_chance = {

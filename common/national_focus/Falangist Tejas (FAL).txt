@@ -4952,6 +4952,8 @@ focus_tree = {
 			every_state = {
 				limit = {
 					OR = {
+						state = 610
+						state = 312
 						state = 611
 						state = 505
 						state = 315
@@ -4986,6 +4988,8 @@ focus_tree = {
 						state = 581
 						state = 345
 						state = 578
+						state = 397
+						state = 577
 					}
 					#owns_or_subject_of = yes
 				}
@@ -5028,6 +5032,8 @@ focus_tree = {
 						state = 581
 						state = 345
 						state = 578
+						state = 397
+						state = 577
 					}
 					owns_or_subject_of = yes
 				}
@@ -5191,6 +5197,9 @@ focus_tree = {
 							OR = {
 								is_core_of = FAL
 								is_core_of = CAS
+								is_core_of = OKL
+								is_core_of = CAN
+								is_core_of = LOU
 							}
 						}
 						is_owned_by = FAL
@@ -5198,6 +5207,7 @@ focus_tree = {
 					
 				}
 				transfer_state_to = NPA
+				add_compliance = 50
 			}
 			NPA = {
 				set_cosmetic_tag = NPA_aztlan_puppet
