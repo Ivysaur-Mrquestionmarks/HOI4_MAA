@@ -5148,11 +5148,6 @@ focus_tree = {
 			focus = USA_end_socialism
 		}
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-			}
 			has_army_manpower = {
 				size > 100000
 			}
@@ -5470,11 +5465,6 @@ focus_tree = {
 		#}
 		
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-			}
 			has_army_manpower = {
 				size > 100000
 			}
@@ -5504,11 +5494,6 @@ focus_tree = {
 		#}
 		
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-			}
 			has_army_manpower = {
 				size > 150000
 			}
@@ -5551,11 +5536,6 @@ focus_tree = {
 		#}
 		
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-			}
 			owns_state = 242
 			has_army_manpower = {
 				size > 250000
@@ -5587,11 +5567,6 @@ focus_tree = {
 		#}
 		
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-			}
 			owns_state = 242
 		}
 		will_lead_to_war_with = VAN
@@ -5625,11 +5600,6 @@ focus_tree = {
 		#}
 		
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-			}
 			owns_state = 242
 			has_army_manpower = {
 				size > 200000
@@ -5968,11 +5938,6 @@ focus_tree = {
 		#}
 		
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-			}
 			has_army_manpower = {
 				size > 250000
 			}
@@ -6015,11 +5980,6 @@ focus_tree = {
 		#}
 		
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-			}
 			owns_state = 242
 			has_army_manpower = {
 				size > 250000
@@ -6059,11 +6019,6 @@ focus_tree = {
 		#}
 		
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-			}
 			has_army_manpower = {
 				size > 300000
 			}
@@ -6399,11 +6354,6 @@ focus_tree = {
 		#}
 		
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-			}
 			has_army_manpower = {
 				size > 300000
 			}
@@ -6436,11 +6386,6 @@ focus_tree = {
 			}
 		}
 		available = {
-			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-			}
 			has_army_manpower = {
 				size > 350000
 			}
