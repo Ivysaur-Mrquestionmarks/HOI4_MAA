@@ -2574,6 +2574,7 @@
 		x = 0
 		y = 5
 		completion_reward = {
+			add_dynamic_modifier = { modifier = FLD_looking_out_spirit }
 		}
 	}
 
@@ -2598,6 +2599,10 @@
 		x = -7
 		y = 1
 		completion_reward = {
+			add_popularity = {
+				ideology = libertarian_right
+				popularity = 0.2
+			}
 		}
 	}
 	focus = {
@@ -2611,6 +2616,17 @@
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_looking_out_spirit_modify_tt
+			add_to_variable = {
+				var = var_industrial_capacity_factory_foreign_policy
+				value = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				var = var_conscription_foreign_policy
+				value = 0.02
+				tooltip = conscription_tt
+			}
 		}
 	}
 	focus = {
@@ -2638,6 +2654,12 @@
 		x = 2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_looking_out_spirit_modify_tt
+			add_to_variable = {
+				var = var_send_volunteer_size_foreign_policy
+				value = 4
+				tooltip = send_volunteer_size_tt
+			}
 		}
 	}
 	focus = {
@@ -2651,6 +2673,12 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_looking_out_spirit_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.15
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -2673,6 +2701,9 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			GLA = {
+				country_event = fld.7
+			}
 		}
 	}
 	focus = {
@@ -2686,6 +2717,22 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_looking_out_spirit_modify_tt
+			add_to_variable = {
+				var = var_attack_army_foreign_policy
+				value = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				var = var_defence_army_foreign_policy
+				value = 0.05
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				var = var_breakthrough_army_foreign_policy
+				value = 0.05
+				tooltip = breakthrough_factor_tt
+			}
 		}
 	}
 
@@ -2707,6 +2754,7 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			add_war_support = 0.25
 		}
 	}
 	focus = {
@@ -2720,6 +2768,7 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			add_political_power = 75
 		}
 	}
 	focus = {
@@ -2733,6 +2782,17 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_looking_out_spirit_modify_tt
+			add_to_variable = {
+				var = var_industrial_capacity_factory_foreign_policy
+				value = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				var = var_conscription_foreign_policy
+				value = 0.02
+				tooltip = conscription_tt
+			}
 		}
 	}
 	focus = {
@@ -2749,6 +2809,22 @@
 		x = 0
 		y = 2
 		completion_reward = {
+			custom_effect_tooltip = FLD_looking_out_spirit_modify_tt
+			add_to_variable = {
+				var = var_attack_army_foreign_policy
+				value = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				var = var_defence_army_foreign_policy
+				value = 0.05
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				var = var_breakthrough_army_foreign_policy
+				value = 0.05
+				tooltip = breakthrough_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -2839,6 +2915,10 @@
 		x = 9
 		y = 1
 		completion_reward = {
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.2
+			}
 		}
 	}
 	focus = {
@@ -2852,6 +2932,12 @@
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_looking_out_spirit_modify_tt
+			add_to_variable = {
+				var = var_industrial_capacity_factory_foreign_policy
+				value = 0.1
+				tooltip = industrial_capacity_factory_tt
+			}
 		}
 	}
 	focus = {
@@ -2865,6 +2951,12 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_looking_out_spirit_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.15
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -2878,6 +2970,12 @@
 		x = 2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_looking_out_spirit_modify_tt
+			add_to_variable = {
+				var = var_conscription_foreign_policy
+				value = 0.05
+				tooltip = conscription_tt
+			}
 		}
 	}
 	focus = {
@@ -2897,6 +2995,9 @@
 		x = 0
 		y = 2
 		completion_reward = {
+			FRA = {
+				country_event = fld.7
+			}
 		}
 	}
 	focus = {
@@ -2910,6 +3011,22 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = FLD_looking_out_spirit_modify_tt
+			add_to_variable = {
+				var = var_attack_army_foreign_policy
+				value = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				var = var_defence_army_foreign_policy
+				value = 0.05
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				var = var_breakthrough_army_foreign_policy
+				value = 0.05
+				tooltip = breakthrough_factor_tt
+			}
 		}
 	}
 }

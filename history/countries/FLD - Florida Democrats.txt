@@ -127,7 +127,7 @@ set_variable = {
 }
 set_variable = {
 	var = FLD.var_pp_factor_foreign_policy
-	value = 0.0
+	value = 0.04
 }
 set_variable = {
 	var = FLD.var_resistance_growth_foreign_policy
@@ -135,11 +135,11 @@ set_variable = {
 }
 set_variable = {
 	var = FLD.var_war_support_factor_foreign_policy
-	value = 0.0
+	value = 0.04
 }
 set_variable = {
 	var = FLD.var_conscription_foreign_policy
-	value = 0
+	value = 0.02
 }
 set_variable = {
 	var = FLD.var_operative_slot_foreign_policy
@@ -175,6 +175,14 @@ set_variable = {
 }
 set_variable = {
 	var = FLD.var_defence_army_foreign_policy
+	value = 0
+}
+set_variable = {
+	var = FLD.var_industrial_capacity_factory_foreign_policy
+	value = 0
+}
+set_variable = {
+	var = FLD.var_send_volunteer_size_foreign_policy
 	value = 0
 }
 

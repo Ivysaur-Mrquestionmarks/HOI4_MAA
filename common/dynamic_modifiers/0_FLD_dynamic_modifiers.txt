@@ -88,5 +88,7 @@ FLD_looking_out_spirit = { #NATIONAL SPIRIT, balls.
 	army_attack_factor = FLD.var_attack_army_foreign_policy
 	army_defence_factor = FLD.var_defence_army_foreign_policy
 	breakthrough_factor = FLD.var_breakthrough_army_foreign_policy
+	industrial_capacity_factory = FLD.var_industrial_capacity_factory_foreign_policy
+	send_volunteer_size = FLD.var_send_volunteer_size_foreign_policy
 
 }
