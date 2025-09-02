@@ -35,5 +35,57 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
+		FLD_drug_crisis = {
+			modifier = {
+				research_speed_factor = -0.05
+				political_power_gain = -0.15
+				stability_factor = -0.3
+				consumer_goods_factor = 0.15
+				army_morale_factor = -0.2
+			}
+		}
+		FLD_drug_crisis_crack_down_1 = {
+			modifier = {
+				research_speed_factor = -0.05
+				political_power_gain = -0.1
+				stability_factor = -0.15
+				consumer_goods_factor = 0.1
+				army_morale_factor = -0.1
+			}
+		}
+		FLD_drug_crisis_crack_down_2 = {
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.1
+				consumer_goods_factor = 0.05
+				army_morale_factor = -0.05
+			}
+		}
+		FLD_drug_crisis_reform_1 = {
+			modifier = {
+				research_speed_factor = -0.05
+				political_power_gain = -0.1
+				stability_factor = -0.2
+				consumer_goods_factor = 0.1
+				army_morale_factor = -0.1
+			}
+		}
+		FLD_drug_crisis_reform_2 = {
+			modifier = {
+				research_speed_factor = -0.05
+				political_power_gain = -0.05
+				stability_factor = -0.15
+				#consumer_goods_factor = 0.1
+				army_morale_factor = -0.05
+			}
+		}
+		FLD_drug_crisis_reform_3 = {
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.1
+				consumer_goods_factor = -0.1
+				research_speed_factor = 0.02
+			}
+		}
 	}	
 }

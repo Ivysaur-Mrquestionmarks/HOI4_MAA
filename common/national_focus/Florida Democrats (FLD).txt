@@ -964,6 +964,12 @@
 			country_event = {
 				id = fld.3
 			}
+			hidden_effect = {
+				country_event = {
+					id = fld.5
+					days = 10
+				}
+			}
 		}
 
 	}
@@ -1821,6 +1827,10 @@
 		x = 4
 		y = 2
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FLD_drug_crisis
+				add_idea = FLD_drug_crisis_reform_1
+			}
 		}
 	}
 	focus = {
@@ -1837,6 +1847,10 @@
 		x = 0
 		y = 2
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FLD_drug_crisis_reform_1
+				add_idea = FLD_drug_crisis_reform_2
+			}
 		}
 	}
 	focus = {
@@ -1850,6 +1864,10 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FLD_drug_crisis_reform_2
+				add_idea = FLD_drug_crisis_reform_3
+			}
 		}
 	}
 	
@@ -1868,6 +1886,10 @@
 		x = 2
 		y = 2
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FLD_drug_crisis
+				add_idea = FLD_drug_crisis_crack_down_1
+			}
 		}
 	}
 	
@@ -1883,6 +1905,7 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	
@@ -1900,6 +1923,10 @@
 		x = -0
 		y = 2
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FLD_drug_crisis_crack_down_1
+				add_idea = FLD_drug_crisis_crack_down_2
+			}
 		}
 	}
 	focus = {
@@ -1913,6 +1940,7 @@
 		x = 0
 		y = 1
 		completion_reward = {
+			remove_ideas = FLD_drug_crisis_crack_down_2
 		}
 	}
 	
