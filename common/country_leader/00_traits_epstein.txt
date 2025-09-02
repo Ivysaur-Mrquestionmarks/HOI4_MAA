@@ -2258,6 +2258,13 @@ leader_traits = {
 		stability_factor = 0.05
 		monthly_population = -0.33
 	}
+	USA_big_balls_trait = {
+		random = no
+		sprite = 10
+		consumer_goods_factor = -0.15
+		stability_factor = 0.05
+		political_power_cost = 0.10
+	}
 
 	#American Free State (AFS)
 	auth_left_advisor_trait = {

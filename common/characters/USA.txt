@@ -655,6 +655,45 @@ characters={
 			}
 		}
 	}
+	USA_edward_coristine = {
+		name = "Edward Coristine" #note- should we move this guy to Elon Musk's Silicon Republic? discuss.
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/USA/Edward_Coristine_Advisor.dds"
+			}
+			civilian = {
+				small = "gfx/interface/ideas/USA/Edward_Coristine_Advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_edward_coristine_advisor
+			cost = 150
+			allowed = {
+				OR = {
+					tag = USA
+					tag = BJC #in case we decide to move him to Elon
+				}
+			}
+			visible = {
+				OR = {
+					tag = USA
+					tag = BJC
+				}
+			}
+			available = {
+				OR = {
+					has_government = republican
+					has_government = autocratic
+					has_government = libertarian_right
+				}
+				date > 2024.1.1
+			}
+			traits = {
+				USA_big_balls_trait
+			}
+		}
+	}
 	USA_ben_shapiro = {
 		name = USA_ben_shapiro
 		portraits = {
