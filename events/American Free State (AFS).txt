@@ -1131,6 +1131,86 @@ country_event = {
 	}
 }
 
+#Welcome to Our Commune!
+country_event = {
+	id = vermin.18
+	title = vermin.18.t
+	desc = vermin.18.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = vermin.18.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Protecting Our Homes
+country_event = {
+	id = vermin.19
+	title = vermin.19.t
+	desc = vermin.19.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = vermin.19.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Tearing Down
+country_event = {
+	id = vermin.20
+	title = vermin.20.t
+	desc = vermin.20.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = vermin.20.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Anarchism And The Rust Belt
+country_event = {
+	id = vermin.21
+	title = vermin.21.t
+	desc = vermin.21.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = vermin.21.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
 add_namespace = hawkins
 
 #Annihilationism Spreads in The Green Army

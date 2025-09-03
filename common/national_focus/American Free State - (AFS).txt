@@ -383,6 +383,12 @@ focus_tree = {
 				id = vermin.8
 				days = 0
 			}
+			hidden_effect = {
+			    country_event = {
+				    id = vermin.20
+				    days = 5
+			    }
+		    }
 		}
 	}
 
@@ -717,6 +723,10 @@ focus_tree = {
 				tooltip = AFS_increase_compliance_var_tt
 			}
 			unlock_decision_tooltip = AFS_set_up_autonomous_zone
+			country_event = {
+				id = vermin.18
+				days = 0
+			}
 		}
 	}
 
@@ -753,6 +763,10 @@ focus_tree = {
 				var = AFS.var_war_support_level
 				value = 0.05
 				tooltip = AFS_increase_war_support_var_tt
+			}
+			country_event = {
+				id = vermin.19
+				days = 0
 			}
 		}
 	}
@@ -1975,6 +1989,10 @@ focus_tree = {
 				var = AFS.var_research_level
 				value = 0.05
 				tooltip = AFS_increase_research_var_tt
+			}
+			country_event = {
+				id = vermin.21
+				days = 0
 			}
 		}
 	}
