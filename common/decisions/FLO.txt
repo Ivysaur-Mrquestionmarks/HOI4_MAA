@@ -1241,32 +1241,16 @@ FLD_hurricane_proofing_cat = {
 		days_remove = 30
 		visible = {
 			has_country_flag = FLD_unlocked_hurricane_infra_decisions_flag
-		}
-		target_trigger = {
-		 	FROM = {
-				OR = {
-					is_core_of = SCA
-					is_core_of = NCA
-					is_core_of = GEO
-					is_core_of = APA
-					is_core_of = ZIO
-					is_core_of = ARK
-					is_core_of = ABM
-					is_core_of = MIS
-					is_core_of = LGB
-					is_core_of = TEX
-					is_core_of = CSB
-					is_core_of = FLO
-					is_core_of = VIR
-					is_core_of = CSA
-					is_core_of = KKK
-					is_core_of = AFR
-				}
+			FROM = {
 				OR = {
 					is_owned_by = ROOT
-					owner = { is_subject_of = ROOT }
+					owner = { is_ally_with = ROOT }
 				}
 			}
+		}
+		target_array = global.hurricane_affectable_states
+		modifier = {
+			consumer_goods_factor = 0.02
 		}
 		remove_effect = {
 			FROM = {
@@ -1276,13 +1260,19 @@ FLD_hurricane_proofing_cat = {
 					level = 1
 					instant_build = yes
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_to_variable = {
+					var = state_hurricane_protection_level_var
+					value = 1
+					tooltip = state_will_be_more_protected_from_hurricane_tt
+				}
 			}
 		}
 	}
 	FLD_build_shelters_decision = {
 		state_target = yes
 		fire_only_once = yes
-		cost = 30
+		cost = 50
 		ai_will_do = {
 			base = 5
 		}
@@ -1290,32 +1280,16 @@ FLD_hurricane_proofing_cat = {
 		days_remove = 60
 		visible = {
 			has_country_flag = FLD_unlocked_hurricane_shelters_decisions_flag
-		}
-		target_trigger = {
-		 	FROM = {
-				OR = {
-					is_core_of = SCA
-					is_core_of = NCA
-					is_core_of = GEO
-					is_core_of = APA
-					is_core_of = ZIO
-					is_core_of = ARK
-					is_core_of = ABM
-					is_core_of = MIS
-					is_core_of = LGB
-					is_core_of = TEX
-					is_core_of = CSB
-					is_core_of = FLO
-					is_core_of = VIR
-					is_core_of = CSA
-					is_core_of = KKK
-					is_core_of = AFR
-				}
+			FROM = {
 				OR = {
 					is_owned_by = ROOT
-					owner = { is_subject_of = ROOT }
+					owner = { is_ally_with = ROOT }
 				}
 			}
+		}
+		target_array = global.hurricane_affectable_states
+		modifier = {
+			consumer_goods_factor = 0.03
 		}
 		remove_effect = {
 			FROM = {
@@ -1324,6 +1298,12 @@ FLD_hurricane_proofing_cat = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_to_variable = {
+					var = state_hurricane_protection_level_var
+					value = 1
+					tooltip = state_will_be_more_protected_from_hurricane_tt
 				}
 			}
 		}

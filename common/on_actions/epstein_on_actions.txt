@@ -211,6 +211,31 @@ on_actions = {
 					value = THIS.id
 				}
 			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = TEX
+						is_core_of = FLO
+						is_core_of = VIR
+						is_core_of = CSA
+						is_core_of = MEX
+						is_core_of = CUB
+						is_core_of = DOM
+						is_core_of = HAI
+						is_core_of = BAH
+						is_core_of = JAM
+						is_core_of = PUE
+					}
+				}
+				add_to_array = {
+					array = global.hurricane_affectable_states
+					value = THIS.id
+				}
+				set_variable = {
+					var = state_hurricane_protection_level_var
+					value = 0
+				}
+			}
 			USA = {
 				random_list = {
 					1 ={
