@@ -328,7 +328,7 @@
 		x = -28
 		y = 1
 		completion_reward = {
-			
+			army_experience = 50
 		}
 	}
 	focus = {
@@ -342,7 +342,7 @@
 		x = -5
 		y = 1
 		completion_reward = {
-			
+			add_ideas = FLD_depoliticized_military_1
 		}
 	}
 	focus = {
@@ -356,7 +356,7 @@
 		x = 0
 		y = 1
 		completion_reward = {
-			
+			navy_experience = 50
 		}
 	}
 	focus = {
@@ -370,7 +370,7 @@
 		x = 5
 		y = 1
 		completion_reward = {
-			
+			air_experience = 50
 		}
 	}
 	focus = {
@@ -384,21 +384,11 @@
 		x = -1
 		y = 1
 		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FLD_artillery_investment
-		icon = GFX_goal_Generic_Artillery_Shells
-		cost = 5
-		prerequisite = { 
-			focus = FLD_formal_milita_training
-		}
-		relative_position_id = FLD_formal_milita_training
-		x = 1
-		y = 1
-		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
@@ -408,11 +398,18 @@
 		prerequisite = { 
 			focus = FLD_improved_small_arms
 		}
+		prerequisite = { 
+			focus = FLD_tank_upgrades
+		}
 		relative_position_id = FLD_improved_small_arms
-		x = 0
+		x = 1
 		y = 1
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -420,13 +417,22 @@
 		icon = GFX_goal_FLO_Trump_Tank
 		cost = 5
 		prerequisite = { 
-			focus = FLD_artillery_investment
+			focus = FLD_formal_milita_training
 		}
-		relative_position_id = FLD_artillery_investment
-		x = 0
+		relative_position_id = FLD_formal_milita_training
+		x = 1
 		y = 1
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_heavy_armor
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_medium_armor
+			}
 		}
 	}
 	focus = {
@@ -437,24 +443,25 @@
 			focus = FLD_improved_small_arms
 		}
 		relative_position_id = FLD_improved_small_arms
-		x = -4
+		x = -1
 		y = 1
 		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FLD_fortify_northern_border
-		icon = GFX_goal_FLD_internal_matters
-		cost = 5
-		prerequisite = { 
-			focus = FLD_improved_small_arms
-		}
-		relative_position_id = FLD_improved_small_arms
-		x = -2
-		y = 1
-		completion_reward = {
-			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -468,21 +475,30 @@
 		x = 0
 		y = 1
 		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FLD_coastal_forts
-		icon = GFX_goal_FLO_by_land
-		cost = 5
-		prerequisite = { 
-			focus = FLD_fortify_northern_border
-		}
-		relative_position_id = FLD_fortify_northern_border
-		x = 0
-		y = 1
-		completion_reward = {
-			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -496,21 +512,11 @@
 		x = -1
 		y = 1
 		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FLD_lurking_beneath_the_waves
-		icon = GFX_goal_FLD_internal_matters
-		cost = 5
-		prerequisite = { 
-			focus = FLD_coastal_patrol_vessels
-		}
-		relative_position_id = FLD_coastal_patrol_vessels
-		x = 0
-		y = 1
-		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = dd_tech
+			}
 		}
 	}
 	focus = {
@@ -523,8 +529,23 @@
 		relative_position_id = FLD_sea_power
 		x = 1
 		y = 1
+		available = {
+			controls_state = 353
+		}
 		completion_reward = {
-			
+			353 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+				type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -532,12 +553,20 @@
 		icon = GFX_goal_FLO_Cruisers
 		cost = 5
 		prerequisite = { 
+			focus = FLD_coastal_patrol_vessels
+		}
+		prerequisite = { 
 			focus = FLD_tampa_bay_naval_yard
 		}
 		relative_position_id = FLD_tampa_bay_naval_yard
-		x = 0
+		x = -1
 		y = 1
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 2
+				category = naval_doctrine
+			}
 			
 		}
 	}
@@ -552,7 +581,14 @@
 		x = -1
 		y = 1
 		completion_reward = {
-			
+			580 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+			air_experience = 25
 		}
 	}
 	focus = {
@@ -566,7 +602,11 @@
 		x = 1
 		y = 1
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = light_air
+			}
 		}
 	}
 	focus = {
@@ -583,7 +623,17 @@
 		x = 0
 		y = 2
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				ahead_reduction = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 3
+				category = cat_strategic_bomber
+			}
 		}
 	}
 	focus = {
@@ -597,7 +647,11 @@
 		x = 0
 		y = 1
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 3
+				category = air_doctrine
+			}
 		}
 	}
 	focus = {
@@ -606,12 +660,6 @@
 		cost = 5
 		prerequisite = { 
 			focus = FLD_florida_war_tactics
-		}
-		prerequisite = { 
-			focus = FLD_tank_upgrades
-		}
-		prerequisite = { 
-			focus = FLD_lurking_beneath_the_waves
 		}
 		prerequisite = { 
 			focus = FLD_blue_water_navy_capabilities
@@ -623,7 +671,10 @@
 		x = 0
 		y = 4
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = FLD_depoliticized_military_1
+				add_idea = FLD_depoliticized_military_2
+			}
 		}
 	}
 	
@@ -641,12 +692,10 @@
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1.0
-				uses = 1
-				category = construction_tech
+				uses = 3
+				category = industry
 			}
-
 		}
-
 	}
 	
 	focus = {

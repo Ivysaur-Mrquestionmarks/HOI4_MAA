@@ -87,5 +87,22 @@ ideas = {
 				research_speed_factor = 0.02
 			}
 		}
+		FLD_depoliticized_military_1 = {
+			modifier = {
+				political_power_gain = 0.05
+				army_org_factor = 0.05
+				experience_gain_army = 0.03
+			}
+		}
+		FLD_depoliticized_military_2 = {
+			modifier = {
+				political_power_gain = 0.05
+				army_org_factor = 0.1
+				experience_gain_army = 0.07
+				army_defence_factor = 0.1
+				breakthrough_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		}
 	}	
 }
