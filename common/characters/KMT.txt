@@ -422,6 +422,83 @@ characters={
 			}
 			traits = { KMT_advisor_militia_ideologue }
 			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Zack_Snyder = {
+		name = KMT_Zack_Snyder
+
+		portraits = {
+			civilian = {
+				large = TODO
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Zack_Snyder
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				NOT = {
+					has_government = authoritarian_left
+				}
+			}
+			traits = {  }
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+
+	KMT_Selena_Fox = {
+		name = KMT_Selena_Fox
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = TODO
+				small = TODO
+			}
+		}
+		country_leader = {
+			traits = { KMT_wiccan_elder }
+			ideology = anarchism
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Selena_Fox
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				NOT = {
+					has_government = authoritarian_left
+					has_government = republican
+					has_government = autocratic
+				}
+			}
+			traits = {  }
+			ai_will_do = {
 				factor = 100
 			}
 		}

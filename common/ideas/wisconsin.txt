@@ -1118,6 +1118,21 @@ ideas = {
 			}
 		}
 
+
+		KMT_unholy_coalition = {
+			allowed_civil_war = { always = yes }
+			allowed = { original_tag = KMT }
+			modifier = {
+				political_power_factor = -0.15
+				war_support_factor = 0.15
+				stability_factor = -0.10
+				conscription_factor = 0.05
+				libertarian_right_acceptance = 10
+				libertarian_left_acceptance = 10
+				autocratic_acceptance = 10
+			}
+		}
+
 	}
 
 

@@ -3445,7 +3445,31 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			set_party_name = {
+				ideology = libertarian_left
+				long_name = KMT_libertarian_left_party_couter_revolution_long
+				name = KMT_libertarian_left_party_couter_revolution
+			}
+			set_party_name = {
+				ideology = libertarian_right
+				long_name = KMT_libertarian_right_party_couter_revolution_long
+				name = KMT_libertarian_right_party_couter_revolution
+			}
+			KMT_Selena_Fox = { 
+				promote_character = yes
+			}
+			KMT_Zack_Snyder = {
+				add_country_leader_role = {
+					country_leader = {
+						expire = "2060.1.1.1"
+						ideology = libertarian_ideology
+						traits = { KMT_acclaimed_filmmaker }
+					}
+					promote_leader = yes
+				}
+			}
+
+			add_ideas = KMT_unholy_coalition
 		}
 		prerequisite = {
 			focus = KMT_weathermen_coup
@@ -3466,7 +3490,6 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3493,7 +3516,6 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3520,7 +3542,6 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3548,7 +3569,6 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3576,7 +3596,6 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3604,7 +3623,6 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3631,7 +3649,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3662,7 +3679,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3693,7 +3709,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3724,7 +3739,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3751,7 +3765,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3778,7 +3791,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3805,7 +3817,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3835,7 +3846,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3865,7 +3875,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3895,7 +3904,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3922,7 +3930,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3953,7 +3960,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -3980,7 +3986,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4007,7 +4012,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4034,7 +4038,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4061,7 +4064,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4088,7 +4090,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4115,7 +4116,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4151,7 +4151,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4187,7 +4186,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4215,7 +4213,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4243,7 +4240,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4270,7 +4266,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4297,7 +4292,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4327,7 +4321,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4357,7 +4350,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4387,7 +4379,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4414,7 +4405,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4442,7 +4432,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4469,7 +4458,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4496,7 +4484,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4520,7 +4507,6 @@ focus_tree = {
 
 		cost = 10
 		ai_will_do = {
-			factor = 1
 		}
 		available = {
 			always = no
@@ -4550,7 +4536,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4577,7 +4562,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4607,7 +4591,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4634,7 +4617,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4661,7 +4643,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4680,7 +4661,7 @@ focus_tree = {
 	focus = {
 		id = KMT_texas
 		icon = TODO
-		x = 62
+		x = 64
 		y = 13
 
 		cost = 10
@@ -4688,7 +4669,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4700,7 +4680,7 @@ focus_tree = {
 			
 		}
 		prerequisite = {
-			focus = KMT_the_west
+			focus = KMT_the_south
 		}
 	}
 
@@ -4715,7 +4695,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4742,7 +4721,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4769,7 +4747,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4791,7 +4768,7 @@ focus_tree = {
 	focus = {
 		id = KMT_the_pacific
 		icon = TODO
-		x = 64
+		x = 62
 		y = 13
 
 		cost = 10
@@ -4799,7 +4776,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4811,7 +4787,7 @@ focus_tree = {
 			
 		}
 		prerequisite = {
-			focus = KMT_the_south
+			focus = KMT_the_west
 		}
 	}
 
@@ -4826,7 +4802,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
@@ -4853,7 +4828,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			always = no
 		}
 		
 		bypass = {
