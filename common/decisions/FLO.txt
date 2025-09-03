@@ -1175,7 +1175,6 @@ FLD_american_unification_cat = {
 
 FLD_hurricane_proofing_cat = {
 	FLD_support_education_on_hurricanes_decision = {
-		state_target = yes
 		fire_only_once = yes
 		cost = 30
 		ai_will_do = {
@@ -1191,7 +1190,6 @@ FLD_hurricane_proofing_cat = {
 		}
 	}
 	FLD_open_department_of_disaster_relief_decision = {
-		state_target = yes
 		fire_only_once = yes
 		cost = 30
 		ai_will_do = {
@@ -1213,7 +1211,6 @@ FLD_hurricane_proofing_cat = {
 		}
 	}
 	FLD_set_up_government_subsidized_hurricane_insurance_decision = {
-		state_target = yes
 		fire_only_once = yes
 		cost = 30
 		ai_will_do = {
