@@ -2691,6 +2691,10 @@ focus_tree = {
 			hidden_effect = {
 			    set_country_flag = AFS_annihilationist_kill_people_decision_1
 			    set_country_flag = AFS_annihilationist_kill_people_decision_2
+				country_event = {
+				    id = hawkins.33
+				    days = 0
+			    }
 			}
 		}
 	}
@@ -2875,6 +2879,10 @@ focus_tree = {
 				var = AFS.var_war_support_level
 				value = 0.05
 				tooltip = AFS_increase_war_support_var_tt
+			}
+			country_event = {
+				id = hawkins.32
+				days = 0
 			}
 		}
 	}
@@ -6093,7 +6101,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_againist_the_triumvirate
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_againist_the_triumvirate
 		cost = 1
 		x = 100
 		y = 0
@@ -6117,7 +6125,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_anti_triumvirate_action
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_anti_triumvirate_action
 		cost = 5
 		x = 1
 		y = 1
@@ -6140,7 +6148,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_establish_our_government
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_establish_our_government
 		cost = 5
 		x = -1
 		y = 1
@@ -6176,7 +6184,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_the_fate_of_ohio
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_the_fate_of_ohio
 		cost = 3
 		x = 1
 		y = 1
@@ -7113,7 +7121,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_follow_mike_dewines_path
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_follow_mike_dewines_path
 		cost = 1
 		x = -7
 		y = 1
@@ -7150,7 +7158,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_reestablish_democracy
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_reestablish_democracy
 		cost = 5
 		x = -2
 		y = 1
@@ -7173,7 +7181,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_who_to_follow
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_who_to_follow
 		cost = 3
 		x = -1
 		y = 1
@@ -7196,7 +7204,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_stabilize_ohio
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_stabilize_ohio
 		cost = 5
 		x = 1
 		y = 1
@@ -7219,7 +7227,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_legitimize_the_government
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_legitimize_the_government
 		cost = 5
 		x = -1
 		y = 1
@@ -7248,7 +7256,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_building_a_new_and_fresh_government
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_building_a_new_and_fresh_government
 		cost = 5
 		x = 3
 		y = 1
@@ -7268,7 +7276,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_replicate_the_united_states_government
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_replicate_the_united_states_government
 		cost = 5
 		x = 1
 		y = 1
@@ -7291,7 +7299,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_cooporation_with_third_parties
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_cooporation_with_third_parties
 		cost = 5
 		x = -1
 		y = 1
@@ -7325,7 +7333,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_government_unity
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_government_unity
 		cost = 5
 		x = -1
 		y = 1

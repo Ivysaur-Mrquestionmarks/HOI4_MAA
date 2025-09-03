@@ -1909,6 +1909,45 @@ country_event = {
 	}
 }
 
+#Green Army Generals and Commanders Officially Accept Our Rule
+country_event = {
+	id = hawkins.32
+	title = hawkins.32.t
+	desc = hawkins.32.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = hawkins.32.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Canadian Bastards
+country_event = {
+	id = hawkins.33
+	title = hawkins.33.t
+	desc = hawkins.33.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = hawkins.33.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
 add_namespace = mattis
 
 #Meditations
