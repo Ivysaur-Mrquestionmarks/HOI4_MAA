@@ -104,5 +104,38 @@ ideas = {
 				army_attack_factor = 0.1
 			}
 		}
+		FLD_international_economy_1 = {
+			modifier = {
+				consumer_goods_factor = -0.05
+				trade_laws_cost_factor = -1
+				economy_cost_factor = -0.5
+			}
+		}
+		FLD_international_economy_2 = {
+			modifier = {
+				consumer_goods_factor = -0.1
+				trade_laws_cost_factor = -1
+				economy_cost_factor = -0.5
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		FLD_international_economy_3 = {
+			modifier = {
+				consumer_goods_factor = -0.15
+				trade_laws_cost_factor = -1
+				economy_cost_factor = -0.5
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		FLD_international_economy_4 = {
+			modifier = {
+				consumer_goods_factor = -0.2
+				trade_laws_cost_factor = -1
+				economy_cost_factor = -0.5
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
 	}	
 }

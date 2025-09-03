@@ -706,9 +706,10 @@
 			focus = FLD_what_we_once_had
 		}
 		relative_position_id = FLD_what_we_once_had
-		x = 2
+		x = 4
 		y = 1
 		completion_reward = {
+			add_ideas = FLD_international_economy_1
 		}
 	}
 	focus = {
@@ -722,12 +723,16 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FLD_international_economy_1
+				add_idea = FLD_international_economy_2
+			}
 		}
 	}
 	focus = {
 		id = FLD_rebuild_themeparks
 		icon = GFX_goal_FLO_expand_entirtainment
-		cost = 5
+		cost = 4
 		prerequisite = { 
 			focus = FLD_reestablish_international_trade
 		}
@@ -735,6 +740,21 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -751,61 +771,10 @@
 		x = -1
 		y = 1
 		completion_reward = {
-		}
-	}
-	focus = {
-		id = FLD_expand_miami_manufacturing
-		icon = GFX_goal_FLO_trade
-		cost = 5
-		prerequisite = { 
-			focus = FLD_what_we_once_had
-		}
-		relative_position_id = FLD_what_we_once_had
-		x = 5
-		y = 2
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FLD_expand_networks
-		icon = GFX_goal_FLO_expand_entirtainment
-		cost = 5
-		prerequisite = { 
-			focus = FLD_expand_miami_manufacturing
-		}
-		relative_position_id = FLD_expand_miami_manufacturing
-		x = 1
-		y = 1
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FLD_employment_for_migrants
-		icon = GFX_goal_FLO_expand_entirtainment
-		cost = 5
-		prerequisite = { 
-			focus = FLD_expand_miami_manufacturing
-		}
-		relative_position_id = FLD_expand_miami_manufacturing
-		x = -1
-		y = 1
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = FLD_support_small_businesses
-		icon = GFX_goal_FLO_expand_entirtainment
-		cost = 5
-		prerequisite = { 
-			focus = FLD_employment_for_migrants
-		}
-		prerequisite = { 
-			focus = FLD_expand_networks
-		}
-		relative_position_id = FLD_expand_networks
-		x = -1
-		y = 1
-		completion_reward = {
+			swap_ideas = {
+				remove_idea = FLD_international_economy_2
+				add_idea = FLD_international_economy_3
+			}
 		}
 	}
 	focus = {
@@ -816,9 +785,10 @@
 			focus = FLD_what_we_once_had
 		}
 		relative_position_id = FLD_what_we_once_had
-		x = -2
+		x = 0
 		y = 1
 		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -832,6 +802,7 @@
 		x = 1
 		y = 1
 		completion_reward = {
+			add_political_power = 150
 		}
 	}
 	focus = {
@@ -845,6 +816,36 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 	focus = {
@@ -889,8 +890,8 @@
 			focus = FLD_what_we_once_had
 		}
 		relative_position_id = FLD_what_we_once_had
-		x = -5
-		y = 2
+		x = -4
+		y = 1
 		completion_reward = {
 			build_railway = {
 				path = { 5033 11162 11143 880 11157 11144 6018 }
@@ -972,6 +973,36 @@
 		x = -1
 		y = 1
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -989,13 +1020,14 @@
 		prerequisite = { 
 			focus = FLD_regrant_special_tax_zones
 		}
-		prerequisite = { 
-			focus = FLD_support_small_businesses
-		}
 		relative_position_id = FLD_water_management
-		x = 2
-		y = 2
+		x = 0
+		y = 1
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = FLD_international_economy_3
+				add_idea = FLD_international_economy_4
+			}
 		}
 	}
 	
