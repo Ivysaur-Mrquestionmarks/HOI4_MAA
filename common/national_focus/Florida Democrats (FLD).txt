@@ -320,6 +320,10 @@
 			country_event = {
 				id = fld.2
 			}
+			hidden_effect = {
+				set_stability = 0.4
+				set_war_support = 0.1
+			}
 		}
 
 	}
