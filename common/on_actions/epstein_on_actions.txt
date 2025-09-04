@@ -460,6 +460,58 @@ on_actions = {
 					}
 				}			
 			}
+			every_possible_country = {
+				if = {
+					
+					limit = {
+						NOT = {
+							tag = CAN
+							tag = MEX
+							tag = BAH
+							tag = CUB
+							tag = BER
+							tag = GUA
+							tag = BLZ
+							tag = ELS
+							tag = HON
+							tag = JAM
+							tag = HAI
+							tag = DOM
+							tag = PUE
+							tag = ENG
+							tag = FFR
+							tag = TAT
+							tag = VEN
+							tag = HOL
+							tag = COL
+							tag = PAN
+							tag = COS
+							tag = NIC
+							tag = BEF
+							tag = PAC
+							tag = GTB
+							tag = CAY
+							tag = GRL
+							tag = CHI
+							tag = CUC
+							tag = HBI
+							tag = MRT
+							tag = ONT
+							tag = PTR
+							tag = WPC
+							tag = BRC
+							tag = NUN
+							tag = VAN
+							is_in_array = { global.caribbean_countries = THIS }
+							is_in_array = { global.mexican_collapse_countries = THIS }
+						}
+					}
+					add_to_array = {
+						array = global.country_owns_American_State
+						value = THIS.id
+					}
+				}
+			}
 			every_state = { #Give each country 2 trains per owned state
 				owner = {
 					add_equipment_to_stockpile = {
