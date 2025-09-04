@@ -1,0 +1,45 @@
+add_namespace = markwayne_mullin_portraits
+country_event = {
+	id = markwayne_mullin_portraits.1
+	title = markwayne_mullin_portraits.1.t
+	desc = markwayne_mullin_portraits.1.d
+	picture = event_markwayne_mullin_portraits
+	is_triggered_only = yes
+	fire_only_once = yes
+	#default
+	option = {
+		name = markwayne_mullin_portraits.1.a
+		set_portraits = {
+		    character = OKL_markwayne_mullin
+		    army = { large ="GFX_portrait_markwayne_1" }
+		    civilian = { large ="GFX_portrait_markwayne_1" }
+		}
+	}
+	#suit
+	option = {
+		name = markwayne_mullin_portraits.1.b
+		set_portraits = {
+		    character = OKL_markwayne_mullin
+		    army = { large ="GFX_portrait_markwayne_2" }
+		    civilian = { large ="GFX_portrait_markwayne_2" }
+		}
+	}
+	#cowboy hat
+	option = {
+		name = markwayne_mullin_portraits.1.c
+		set_portraits = {
+		    character = OKL_markwayne_mullin
+		    army = { large ="GFX_portrait_markwayne_3" }
+		    civilian = { large ="GFX_portrait_markwayne_3" }
+		}
+	}
+	#happy!
+	option = {
+		name = markwayne_mullin_portraits.1.e
+		set_portraits = {
+		    character = OKL_markwayne_mullin
+		    army = { large ="GFX_portrait_markwayne_4" }
+		    civilian = { large ="GFX_portrait_markwayne_4" }
+		}
+	}
+}

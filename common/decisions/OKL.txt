@@ -1,0 +1,30 @@
+GEN_Political_Allignment = {
+
+
+	OKL_change_markwayne_portrait = {
+		icon = GFX_decision_politics_republican
+
+		allowed = {
+			original_tag = OKL
+		}
+		available = {
+			has_country_leader = {
+				character = OKL_markwayne_mullin
+				ruling_only = yes
+			}
+		}
+		visible = {
+			has_government = republican
+		}
+
+		complete_effect = {
+			country_event = markwayne_mullin_portraits.1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+}

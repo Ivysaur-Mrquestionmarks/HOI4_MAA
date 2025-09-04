@@ -147,4 +147,21 @@ spriteTypes = {
 		name = "GFX_portrait_flynn"
 		texturefile = "gfx/leaders/USA/flynn.dds"
 	}
+	#THE MARKWAYNES (this nigga think he drumpf!)
+	spriteType = {
+		name = "GFX_portrait_markwayne_1"
+		texturefile = gfx/leaders/OKL/markwayne_mullin_1.tga
+	}
+	spriteType = {
+		name = "GFX_portrait_markwayne_2"
+		texturefile = gfx/leaders/OKL/markwayne_mullin_2.tga
+	}
+	spriteType = {
+		name = "GFX_portrait_markwayne_3"
+		texturefile = gfx/leaders/OKL/markwayne_mullin_3.tga
+	}
+	spriteType = {
+		name = "GFX_portrait_markwayne_4"
+		texturefile = gfx/leaders/OKL/markwayne_mullin_4.tga
+	}
 }

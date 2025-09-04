@@ -29,4 +29,18 @@ characters={
 			id = -1
 		}
 	}
+	OKL_markwayne_mullin = {
+		name = "Markwayne Mullin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OKL/markwayne_mullin_1.tga"
+			}
+		}
+		country_leader = {
+			ideology = trumpist
+			traits = {
+				stout_defender
+			}
+		}
+	}
 }
