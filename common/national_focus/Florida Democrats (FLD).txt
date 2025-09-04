@@ -2249,7 +2249,7 @@
 			add_to_variable = {
 				var = var_pp_gain
 				value = 0.1
-				tooltip = political_power_factor_tt
+				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
 				var = var_war_support_factor

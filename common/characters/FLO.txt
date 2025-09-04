@@ -58,7 +58,7 @@ characters={
 				original_tag = FLO
 			}
 			visible = {
-			
+				NOT = { has_country_flag = FLO_fuentes_unavailable_flag }
 			}
 			available = {
 				OR = { has_country_leader = { name = "Barron Trump" ruling_only = yes } has_completed_focus = FLO_work_with_fuentes }
@@ -278,7 +278,7 @@ characters={
 				original_tag = FLO
 			}
 			visible = {
-			
+				NOT = { has_country_flag = FLO_many_char_unavailable_flag }
 			}
 			available = {
 				OR = { has_completed_focus = FLO_absorb_klan has_completed_focus = FLO_invite_other_radicals } 
@@ -304,7 +304,7 @@ characters={
 				original_tag = FLO
 			}
 			visible = {
-			
+				NOT = { has_country_flag = FLO_many_char_unavailable_flag }
 			}
 			available = {
 				OR = { has_completed_focus = FLO_absorb_klan has_completed_focus = FLO_invite_other_radicals } 
@@ -330,7 +330,7 @@ characters={
 				original_tag = FLO
 			}
 			visible = {
-			
+				NOT = { has_country_flag = FLO_many_char_unavailable_flag }
 			}
 			available = {
 				OR = { has_completed_focus = FLO_absorb_klan has_completed_focus = FLO_invite_other_radicals } 
@@ -360,7 +360,7 @@ characters={
 				original_tag = FLO
 			}
 			visible = {
-			
+				NOT = { has_country_flag = FLO_many_char_unavailable_flag }
 			}
 			available = {
 				OR = {
@@ -424,7 +424,7 @@ characters={
 				original_tag = FLO
 			}
 			visible = {
-			
+				NOT = { has_country_flag = FLO_many_char_unavailable_flag }
 			}
 			available = { 
 			}

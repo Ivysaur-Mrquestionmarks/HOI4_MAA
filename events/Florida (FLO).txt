@@ -760,11 +760,15 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = florida.40.a
-		remove_ideas = FLO_sam_hyde_advisor 
-		remove_ideas = FLO_ashley_moody_advisor
-		remove_ideas = FLO_black_panther_guy_advisor
-		remove_ideas = FLO_kkk_guy_advisor
-		remove_ideas = FLO_neo_nazi_guy_advisor
+		hidden_effect = {
+			remove_ideas = FLO_sam_hyde_advisor 
+			remove_ideas = FLO_ashley_moody_advisor
+			remove_ideas = FLO_black_panther_guy_advisor
+			remove_ideas = FLO_kkk_guy_advisor
+			remove_ideas = FLO_neo_nazi_guy_advisor
+			set_country_flag = FLO_many_char_unavailable_flag
+		}
+		add_manpower = -5
 	}	
 }
 
@@ -777,7 +781,11 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = florida.41.a
-		remove_ideas = FLO_nick_fuentes_advisor
+		hidden_effect = { 
+			remove_ideas = FLO_nick_fuentes_advisor 
+			set_country_flag = FLO_fuentes_unavailable_flag
+		}
+		add_manpower = -1
 	}	
 }
 
@@ -834,6 +842,9 @@ country_event = {
                 }
                 add_core_of = GKJ
             }
+			every_country_division = {
+				destroy_unit = yes
+			}
             annex_country = {
                 target = FLO
                 transfer_troops = yes
