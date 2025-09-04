@@ -15,21 +15,18 @@ ideas = {
 			}
 		}
 		FLA_florida_civil_war_army = {
-			allowed = { original_tag = FLA }
 			modifier = {
-				army_attack_factor = -0.05
-				army_defence_factor = -0.05
+				army_attack_factor = -0.4
+				army_defence_factor = 0.1
 			}
 		}
 		FLA_florida_civil_war_industry= {
-			allowed = { original_tag = FLA }
 			modifier = {
-				consumer_goods_factor = 0.10
-				production_speed_buildings_factor = -0.25
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.4
 			}
 		}
 		FLA_florida_civil_war_power= {
-			allowed = { original_tag = FLA }
 			modifier = {
 				political_power_factor = -0.15
 				stability_factor = -0.20
