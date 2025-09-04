@@ -24,6 +24,9 @@ country_event = {
 	immediate = { 
 		hidden_effect = {
 			GKJ_civil_war_effect = yes
+			every_country_division = {
+				destroy_unit = yes
+			}
 		}
 	}
 	option = { 
