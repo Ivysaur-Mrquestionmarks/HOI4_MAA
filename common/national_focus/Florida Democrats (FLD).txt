@@ -72,8 +72,12 @@
 		prerequisite = {
 			focus = FLD_the_state_of_our_nation
 		}
+		bypass = {
+			has_war = no
+		}
 		relative_position_id = FLD_the_state_of_our_nation
 		completion_reward = {
+			add_command_power = 50
 		}
 	}
 	focus = {
@@ -89,8 +93,11 @@
 			}
 		}
 		bypass = {
-			FLA = {
-				exists = no
+			OR = {
+				NOT = {
+					country_exists = FLA
+				}
+				has_war = no
 			}
 		}
 		prerequisite = {
@@ -115,8 +122,11 @@
 			}
 		}
 		bypass = {
-			SEM = {
-				country_exists = NO
+			OR = {
+				NOT = {
+					country_exists = SEM
+				}
+				has_war = no
 			}
 		}
 		prerequisite = {
@@ -145,8 +155,11 @@
 			}
 		}
 		bypass = {
-			NSA = {
-				country_exists = NO
+			OR = {
+				NOT = {
+					country_exists = NSA
+				}
+				has_war = no
 			}
 		}
 		completion_reward = {

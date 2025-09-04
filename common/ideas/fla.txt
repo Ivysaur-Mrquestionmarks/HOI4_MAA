@@ -35,24 +35,55 @@ ideas = {
 				stability_factor = -0.20
 			}
 		}
+		
 		FLA_attack_nasa_idea = {
-			allowed = { original_tag = FLA }
+			cancel = {
+				OR = {
+					NOT = {
+						country_exists = NSA
+					}
+					has_war = NO
+				}
+			}
 			targeted_modifier = { tag = NSA attack_bonus_against = 0.15 }
 		}
 		FLA_attack_democrats_idea = {
-			allowed = { original_tag = FLA }
+			cancel = {
+				OR = {
+					NOT = {
+						country_exists = FLD
+					}
+					has_war = NO
+				}
+			}
 			targeted_modifier = { tag = FLD attack_bonus_against = 0.15 }
 		}
 		FLA_attack_seminoles_idea = {
-			allowed = { original_tag = FLA }
+			cancel = {
+				OR = {
+					NOT = {
+						country_exists = SEM
+					}
+					has_war = NO
+				}
+			}
 			targeted_modifier = { tag = SEM attack_bonus_against = 0.15 }
 		}
 		FLA_final_push_idea = {
-			allowed = { original_tag = FLA }
+			cancel = {
+				has_war = NO
+			}
 			modifier = { army_attack_factor = 0.10 army_defence_factor = 0.10 }
 		}
 		FLA_attack_anarchists_idea = {
-			allowed = { original_tag = FLA }
+			cancel = {
+				OR = {
+					NOT = {
+						country_exists = FLA
+					}
+					has_war = NO
+				}
+			}
 			targeted_modifier = { tag = FLA attack_bonus_against = 0.15 }
 		}
 	}	
