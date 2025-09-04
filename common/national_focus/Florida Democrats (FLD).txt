@@ -2969,20 +2969,6 @@
 		completion_reward = {
 			hidden_effect = { 
 				set_country_flag = FLD_unlock_unification_cat
-				for_each_scope_loop = { #This loops declare the wars
-					array = global.part_of_USA
-						owner = {
-							if = {
-								limit = {
-									NOT = { is_in_array = global.country_owns_American_State }
-								}
-								add_to_array = {
-									array = global.country_owns_American_State
-									value = THIS.id
-								}
-							}
-						}
-				}
 			}
 			
 			unlock_decision_category_tooltip = FLD_american_unification_cat
