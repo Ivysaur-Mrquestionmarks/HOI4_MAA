@@ -1118,7 +1118,14 @@ FLD_american_unification_cat = {
 			has_war = no
 			NOT = { has_country_flag = FLD_preparing_for_war_flag }
 		}
-		
+		visible = {
+			FROM = {
+				NOT = {
+					tag = ROOT
+				}
+				is_neighbor_of = ROOT
+			}
+		}
 		days_remove = 15
 		fire_only_once = yes
 
