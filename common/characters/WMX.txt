@@ -10,9 +10,9 @@ characters={
 		}
 		country_leader = {
 			ideology = fundamentalism
-			traits = {}
-			expire = "2060.1.1.1"
-			id = -1
+			traits = {
+				WMX_el_bronco
+			}
 		}
 	}
 }

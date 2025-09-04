@@ -1901,6 +1901,13 @@ leader_traits = {
 		military_factory_donations = 3
 	}
 
+	WMX_el_bronco = {
+		random = no
+		war_stability_factor = 0.10
+		max_command_power = 20
+		targeted_modifier = { tag = CAR attack_bonus_against = 0.1 }
+	}
+
 
 ####################ADVISOR TRAITS
 
