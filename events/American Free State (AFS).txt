@@ -2027,6 +2027,111 @@ country_event = {
 	}
 }
 
+#New And Green Ideals
+country_event = {
+	id = hawkins.34
+	title = hawkins.34.t
+	desc = hawkins.34.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = hawkins.34.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#The Minds of The Youth
+country_event = {
+	id = hawkins.35
+	title = hawkins.35.t
+	desc = hawkins.35.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = hawkins.35.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Life Under The Social Credit
+country_event = {
+	id = hawkins.36
+	title = hawkins.36.t
+	desc = hawkins.36.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = hawkins.36.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#The Nuclear Question
+country_event = {
+	id = hawkins.37
+	title = hawkins.37.t
+	desc = hawkins.37.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = hawkins.37.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = hawkins.37.b
+		ai_chance = {
+			factor = 100
+		}
+		add_tech_bonus = {
+            bonus = 0.5
+            uses = 2
+            category = nuclear
+        }
+	}
+}
+
+#Green Economic Transition Complete
+country_event = {
+	id = hawkins.38
+	title = hawkins.38.t
+	desc = hawkins.38.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = hawkins.38.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
 
 add_namespace = mattis
 
