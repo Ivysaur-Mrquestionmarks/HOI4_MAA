@@ -3,13 +3,12 @@ state={
 	id=1
 	name="STATE_1"
 	resources={
-		chromium=312.000
+		chromium=312
 	}
 
 	history={
 		owner = CAN
 		add_core_of = CAN
-		add_core_of = ARY
 		victory_points = {
 			6581 1 
 		}
@@ -30,5 +29,5 @@ state={
 	manpower=1115
 	buildings_max_level_factor=1.000
 	state_category=pastoral
-	local_supplies=0.000
+	local_supplies=1.000
 }

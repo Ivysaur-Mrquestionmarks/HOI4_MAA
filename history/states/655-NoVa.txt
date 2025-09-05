@@ -1,6 +1,13 @@
 state={
 	id=655
 	name="STATE_655"
+	provinces={
+		5752 6065 9222 9291 
+	}
+	manpower=2398182
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
 
 	history={
 		owner = VIR
@@ -15,12 +22,6 @@ state={
 			5752 20 
 		}
 		victory_points = {
-			9299 7 
-		}
-		victory_points = {
-			4690 8 
-		}
-		victory_points = {
 			9222 7 
 		}
 		buildings = {
@@ -33,12 +34,4 @@ state={
 
 		}
 	}
-
-	provinces={
-		5752 9222 6065 9291 4690 9299 9263
-	}
-	manpower=2398182
-	buildings_max_level_factor=1.000
-	state_category=megalopolis
-	local_supplies=0.000
 }
