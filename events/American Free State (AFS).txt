@@ -3540,3 +3540,43 @@ country_event = {
         }
 	}
 }
+
+#The Columbus Address
+country_event = {
+	id = vance.30
+	title = vance.30.t
+	desc = vance.30.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = vance.30.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Meeting of The Aristocrats
+country_event = {
+	id = vance.31
+	title = vance.31.t
+	desc = vance.31.d
+	#picture = event_
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = vance.31.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

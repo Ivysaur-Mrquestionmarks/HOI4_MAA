@@ -6406,6 +6406,10 @@ focus_tree = {
 			add_dynamic_modifier = {
 				modifier = AFS_the_leviathans_ecclesiasticall_dynamic_modifier
 			}
+			country_event = {
+				id = vance.30
+				days = 0
+			}
 		}
 	}
 
@@ -6753,6 +6757,10 @@ focus_tree = {
 			unlock_decision_tooltip = AFS_power_to_the_wealthy
 			unlock_decision_tooltip = AFS_normalize_aristocratic_rule
 			unlock_decision_tooltip = AFS_return_to_the_old_ways_of_governance
+			country_event = {
+				id = vance.31
+				days = 0
+			}
 			hidden_effect = {
 			    set_country_flag = AFS_dark_vance_political_decision_10
 			    set_country_flag = AFS_dark_vance_political_decision_11
