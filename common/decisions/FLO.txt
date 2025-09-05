@@ -1240,12 +1240,12 @@ FLD_hurricane_proofing_cat = {
 	FLD_strengthen_infrastructure_decision = {
 		state_target = yes
 		fire_only_once = yes
-		cost = 15
+		cost = 30
 		ai_will_do = {
 			base = 5
 		}
 		on_map_mode = map_and_decisions_view 
-		days_remove = 30
+		days_remove = 60
 		visible = {
 			has_country_flag = FLD_unlocked_hurricane_infra_decisions_flag
 			FROM = {
@@ -1279,12 +1279,12 @@ FLD_hurricane_proofing_cat = {
 	FLD_build_shelters_decision = {
 		state_target = yes
 		fire_only_once = yes
-		cost = 50
+		cost = 100
 		ai_will_do = {
 			base = 5
 		}
 		on_map_mode = map_and_decisions_view 
-		days_remove = 60
+		days_remove = 150
 		visible = {
 			has_country_flag = FLD_unlocked_hurricane_shelters_decisions_flag
 			FROM = {
@@ -1296,7 +1296,7 @@ FLD_hurricane_proofing_cat = {
 		}
 		target_array = global.hurricane_affectable_states
 		modifier = {
-			consumer_goods_factor = 0.03
+			consumer_goods_factor = 0.05
 		}
 		remove_effect = {
 			FROM = {
