@@ -4021,6 +4021,254 @@ AFS_hawkins_political_decisions = {
             }
 		}
 	}
+
+	AFS_rewards_for_gardeners = {
+		priority = 25
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_eco_socialist_ideals
+			has_country_flag = {
+                flag = AFS_hawkins_political_decision_6
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 20
+
+		days_remove = 25
+		
+		cost = 25
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 25
+				value = 1
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.1
+			stability_weekly = 0.02
+			monthly_population = 0.02
+		}
+		remove_effect = {
+			modify_country_flag = {
+                flag = AFS_hawkins_political_decision_6
+                value = 1
+            }
+		}
+	}
+
+	AFS_enforce_green_ideals = {
+		priority = 25
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_eco_socialist_ideals
+			has_country_flag = {
+                flag = AFS_hawkins_political_decision_7
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 35
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 25
+				value = 1
+			}
+		}
+		modifier = {
+			authoritarian_left_drift = 0.03
+			stability_weekly = 0.02
+		}
+		remove_effect = {
+			modify_country_flag = {
+                flag = AFS_hawkins_political_decision_7
+                value = 1
+            }
+		}
+	}
+
+	AFS_environmental_education = {
+		priority = 25
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_entreach_our_ideology
+			has_country_flag = {
+                flag = AFS_hawkins_political_decision_8
+                value < 4
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 35
+		
+		cost = 25
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 25
+				value = 1
+			}
+		}
+		modifier = {
+			authoritarian_left_drift = 0.06
+			research_speed_factor = 0.05
+		}
+		remove_effect = {
+			modify_country_flag = {
+                flag = AFS_hawkins_political_decision_8
+                value = 1
+            }
+		}
+	}
+
+	AFS_glorify_our_leader = {
+		priority = 25
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_entreach_our_ideology
+			has_country_flag = {
+                flag = AFS_hawkins_political_decision_9
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 20
+
+		days_remove = 30
+		
+		cost = 25
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 25
+				value = 1
+			}
+		}
+		modifier = {
+			authoritarian_left_drift = 0.03
+			war_support_weekly = 0.02
+		}
+		remove_effect = {
+			modify_country_flag = {
+                flag = AFS_hawkins_political_decision_9
+                value = 1
+            }
+		}
+	}
+
+	AFS_cultural_control = {
+		priority = 25
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_entreach_our_ideology
+			has_country_flag = {
+                flag = AFS_hawkins_political_decision_10
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 20
+
+		days_remove = 30
+		
+		cost = 25
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 25
+				value = 1
+			}
+		}
+		modifier = {
+			authoritarian_left_drift = 0.03
+			stability_weekly = 0.02
+			war_support_weekly = 0.02
+			resistance_growth = -0.05
+		}
+		remove_effect = {
+			modify_country_flag = {
+                flag = AFS_hawkins_political_decision_10
+                value = 1
+            }
+		}
+	}
 }
 
 AFS_hawkins_economic_decisions = {
@@ -5396,7 +5644,7 @@ AFS_decaying_savior = {
 
 		visible = {
 			has_country_flag = AFS_mattis_is_gonna_die
-			has_completed_focus = AFS_unrestricted_research
+			has_completed_focus = AFS_the_future_is_present
 		}
 
 		available = {

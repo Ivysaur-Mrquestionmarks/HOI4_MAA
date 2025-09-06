@@ -3957,9 +3957,15 @@ focus_tree = {
 			    remove_idea = AFS_a_scarred_population_2
 			    add_idea = AFS_a_scarred_population_3
 		    }
+			unlock_decision_tooltip = AFS_rewards_for_gardeners
+		    unlock_decision_tooltip = AFS_enforce_green_ideals
 			country_event = {
 				id = hawkins.34
 				days = 0
+			}
+			hidden_effect = {
+			    set_country_flag = AFS_hawkins_political_decision_6
+			    set_country_flag = AFS_hawkins_political_decision_7
 			}
 		}
 	}
@@ -4195,9 +4201,17 @@ focus_tree = {
 			    remove_idea = AFS_a_scarred_population_3
 			    add_idea = AFS_a_scarred_population_4
 		    }
+			unlock_decision_tooltip = AFS_environmental_education
+		    unlock_decision_tooltip = AFS_glorify_our_leader
+			unlock_decision_tooltip = AFS_cultural_control
 			country_event = {
 				id = hawkins.35
 				days = 0
+			}
+			hidden_effect = {
+			    set_country_flag = AFS_hawkins_political_decision_8
+			    set_country_flag = AFS_hawkins_political_decision_9
+				set_country_flag = AFS_hawkins_political_decision_10
 			}
 		}
 	}
