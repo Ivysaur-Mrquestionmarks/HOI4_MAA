@@ -1391,8 +1391,11 @@ country_event = {
 		}
 		add_stability = -0.05
 		add_war_support = -0.05
-		add_manpower = -10000
-		add_command_power = -15
+		add_manpower = -20000
+		add_command_power = -35
+		AFS_venn = {
+            remove_unit_leader = yes
+		}
 	}
 }
 

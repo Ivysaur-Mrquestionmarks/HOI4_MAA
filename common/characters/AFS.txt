@@ -266,37 +266,6 @@ characters={
 	}
 
     ### DeWine/Vance Advisors ###
-	AFS_margaret_flowers = {
-		name = AFS_margaret_flowers
-		gender = female
-		portraits = {
-			army={
-				small = "gfx/interface/ideas/AFS/AFS_margaret_flowers_advisor.dds"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = AFS_flowers_advisor
-			cost = 150
-			removal_cost = 0
-			allowed = {
-				tag = AFS
-			}
-			visible = {
-				tag = AFS
-			}
-			available = {
-				has_government = authoritarian_left
-			}
-			traits = {
-				AFS_public_health_minister
-			}
-			ai_will_do = {
-				factor = 5
-			}
-		}
-	}
-
 	AFS_jim_tressel = {
 		name = AFS_jim_tressel
 		gender = male
@@ -505,12 +474,33 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={ old_guard inflexible_strategist mattis_loyalist_trait organisational_leader } 
+			traits={ old_guard politically_connected inflexible_strategist mattis_loyalist_trait organisational_leader } 
 			skill = 4
 			attack_skill = 3
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 3
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AFS_mcchrystal_advisor
+			cost = 150
+			removal_cost = 0
+			allowed = {
+				tag = AFS
+			}
+			visible = {
+				tag = AFS
+			}
+			available = {
+				has_government = autocratic
+			}
+			traits = {
+				AFS_mattis_second_in_command
+			}
+			ai_will_do = {
+				factor = 5
+			}
 		}
 	}
 	AFS_michael_akey = {
@@ -613,7 +603,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={ supreme_loyalist_trait } 
+			traits={ supreme_loyalist_trait politically_connected } 
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -649,7 +639,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={ supreme_loyalist_trait } 
+			traits={ supreme_loyalist_trait politically_connected } 
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1
@@ -688,7 +678,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={ hawkins_loyalist_trait } 
+			traits={ hawkins_loyalist_trait politically_connected } 
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1
@@ -727,7 +717,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={ hawkins_loyalist_trait } 
+			traits={ hawkins_loyalist_trait politically_connected } 
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1
@@ -766,7 +756,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={ hawkins_loyalist_trait } 
+			traits={ hawkins_loyalist_trait politically_connected } 
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1

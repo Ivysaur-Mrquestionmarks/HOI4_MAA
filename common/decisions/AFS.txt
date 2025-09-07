@@ -5923,7 +5923,7 @@ AFS_vance_political_decisions = {
 		}
 		modifier = {
 			republican_drift = 0.05
-			monthly_population = 0.07
+			monthly_population = 0.02
 		}
 		remove_effect = {
 			every_owned_state = {
