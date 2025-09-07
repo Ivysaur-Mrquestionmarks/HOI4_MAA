@@ -10434,6 +10434,487 @@ spriteTypes = {
 
 	}
 
+    SpriteType = {
+        name = "GFX_goal_AFS_trumps_eastern_extension"
+        texturefile = "gfx/interface/goals/AFS_trumps_eastern_extension.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_trumps_eastern_extension_shine"
+        texturefile = "gfx/interface/goals/AFS_trumps_eastern_extension.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_trumps_eastern_extension.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_trumps_eastern_extension.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_bidens_western_extension"
+        texturefile = "gfx/interface/goals/AFS_bidens_western_extension.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_bidens_western_extension_shine"
+        texturefile = "gfx/interface/goals/AFS_bidens_western_extension.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_bidens_western_extension.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_bidens_western_extension.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_free_the_people_of_kentucky"
+        texturefile = "gfx/interface/goals/AFS_free_the_people_of_kentucky.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_free_the_people_of_kentucky_shine"
+        texturefile = "gfx/interface/goals/AFS_free_the_people_of_kentucky.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_free_the_people_of_kentucky.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_free_the_people_of_kentucky.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_commies_and_corporate_extremists"
+        texturefile = "gfx/interface/goals/AFS_commies_and_corporate_extremists.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_commies_and_corporate_extremists_shine"
+        texturefile = "gfx/interface/goals/AFS_commies_and_corporate_extremists.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_commies_and_corporate_extremists.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_commies_and_corporate_extremists.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_push_east"
+        texturefile = "gfx/interface/goals/AFS_push_east.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_push_east_shine"
+        texturefile = "gfx/interface/goals/AFS_push_east.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_push_east.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_push_east.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_libertarians_are_our_enemies"
+        texturefile = "gfx/interface/goals/AFS_libertarians_are_our_enemies.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_libertarians_are_our_enemies_shine"
+        texturefile = "gfx/interface/goals/AFS_libertarians_are_our_enemies.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_libertarians_are_our_enemies.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_libertarians_are_our_enemies.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_the_final_step"
+        texturefile = "gfx/interface/goals/AFS_the_final_step.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_the_final_step_shine"
+        texturefile = "gfx/interface/goals/AFS_the_final_step.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_the_final_step.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_the_final_step.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_the_east_is_secured"
+        texturefile = "gfx/interface/goals/AFS_the_east_is_secured.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_the_east_is_secured_shine"
+        texturefile = "gfx/interface/goals/AFS_the_east_is_secured.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_the_east_is_secured.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_the_east_is_secured.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_embrace_american_separatism"
+        texturefile = "gfx/interface/goals/AFS_embrace_american_separatism.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_embrace_american_separatism_shine"
+        texturefile = "gfx/interface/goals/AFS_embrace_american_separatism.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_embrace_american_separatism.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_embrace_american_separatism.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_west_virginia_is_ohio"
+        texturefile = "gfx/interface/goals/AFS_west_virginia_is_ohio.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_west_virginia_is_ohio_shine"
+        texturefile = "gfx/interface/goals/AFS_west_virginia_is_ohio.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_west_virginia_is_ohio.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_west_virginia_is_ohio.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_virginia_is_ohio"
+        texturefile = "gfx/interface/goals/AFS_virginia_is_ohio.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_virginia_is_ohio_shine"
+        texturefile = "gfx/interface/goals/AFS_virginia_is_ohio.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_virginia_is_ohio.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_virginia_is_ohio.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_kentucky_is_ohio"
+        texturefile = "gfx/interface/goals/AFS_kentucky_is_ohio.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_kentucky_is_ohio_shine"
+        texturefile = "gfx/interface/goals/AFS_kentucky_is_ohio.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_kentucky_is_ohio.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_kentucky_is_ohio.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_defend_againist_biden_and_trump"
+        texturefile = "gfx/interface/goals/AFS_defend_againist_biden_and_trump.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_defend_againist_biden_and_trump_shine"
+        texturefile = "gfx/interface/goals/AFS_defend_againist_biden_and_trump.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_defend_againist_biden_and_trump.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_defend_againist_biden_and_trump.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
 	### National Spirits ###
 	# Starting Spirits #
 	spriteType = {
