@@ -1,0 +1,103 @@
+KFC_labor_government = { #NATIONAL SPIRIT, balls.
+	enable = { always = yes }
+
+	icon = ast_volunteer_defence_corps
+	
+	stability_factor = KFC.var_stability_factor
+	war_support_factor = KFC.var_war_support_factor
+	political_power_factor = KFC.var_pp_factor
+	political_power_gain = KFC.var_pp_gain
+	resistance_growth = KFC.var_resistance_growth
+	
+	conscription = KFC.var_conscription
+	operative_slot = KFC.var_operative_slot
+	compliance_growth = KFC.var_compliance_growth
+	
+	consumer_goods_factor = KFC.var_cg_factor
+	army_org_factor = KFC.var_org_army
+	army_morale_factor = KFC.var_morale_army
+	
+	army_attack_factor = KFC.var_attack_army
+	army_defence_factor = KFC.var_defence_army
+	breakthrough_factor = KFC.var_breakthrough_army
+	
+	democrat_drift = KFC.var_ideology_drift
+	research_speed_factor = KFC.var_research_speed_factor
+	production_speed_buildings_factor = KFC.var_production_speed_buildings_factor
+	industrial_capacity_factory = KFC.var_industrial_capacity_factory
+	production_factory_max_efficiency_factor = KFC.var_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = KFC.var_production_factory_efficiency_gain_factor
+	max_fuel_factor = KFC.var_max_fuel_factor
+	production_speed_nuclear_reactor_factor = KFC.var_production_speed_nuclear_reactor_factor
+	nuclear_production_factor = KFC.var_nuclear_production_factor
+
+}
+KFC_tea_party_government = { #NATIONAL SPIRIT, balls.
+	enable = { always = yes }
+
+	icon = ast_volunteer_defence_corps
+	
+	stability_factor = KFC.var_stability_factor
+	war_support_factor = KFC.var_war_support_factor
+	political_power_factor = KFC.var_pp_factor
+	political_power_gain = KFC.var_pp_gain
+	resistance_growth = KFC.var_resistance_growth
+	
+	conscription = KFC.var_conscription
+	operative_slot = KFC.var_operative_slot
+	compliance_growth = KFC.var_compliance_growth
+	
+	consumer_goods_factor = KFC.var_cg_factor
+	army_org_factor = KFC.var_org_army
+	army_morale_factor = KFC.var_morale_army
+	
+	army_attack_factor = KFC.var_attack_army
+	army_defence_factor = KFC.var_defence_army
+	breakthrough_factor = KFC.var_breakthrough_army
+	
+	libertarian_right_drift = KFC.var_ideology_drift_l
+	republican_drift = KFC.var_ideology_drift
+	research_speed_factor = KFC.var_research_speed_factor
+	production_speed_buildings_factor = KFC.var_production_speed_buildings_factor
+	industrial_capacity_factory = KFC.var_industrial_capacity_factory
+	production_factory_max_efficiency_factor = KFC.var_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = KFC.var_production_factory_efficiency_gain_factor
+	max_fuel_factor = KFC.var_max_fuel_factor
+	production_speed_nuclear_reactor_factor = KFC.var_production_speed_nuclear_reactor_factor
+	nuclear_production_factor = KFC.var_nuclear_production_factor
+
+}
+KFC_nazbol_government = { #NATIONAL SPIRIT, balls.
+	enable = { always = yes }
+
+	icon = ast_volunteer_defence_corps
+	
+	stability_factor = KFC.var_stability_factor
+	war_support_factor = KFC.var_war_support_factor
+	political_power_factor = KFC.var_pp_factor
+	political_power_gain = KFC.var_pp_gain
+	resistance_growth = KFC.var_resistance_growth
+	
+	conscription = KFC.var_conscription
+	operative_slot = KFC.var_operative_slot
+	compliance_growth = KFC.var_compliance_growth
+	
+	consumer_goods_factor = KFC.var_cg_factor
+	army_org_factor = KFC.var_org_army
+	army_morale_factor = KFC.var_morale_army
+	
+	army_attack_factor = KFC.var_attack_army
+	army_defence_factor = KFC.var_defence_army
+	breakthrough_factor = KFC.var_breakthrough_army
+	
+	autocratic_drift = KFC.var_ideology_drift
+	research_speed_factor = KFC.var_research_speed_factor
+	production_speed_buildings_factor = KFC.var_production_speed_buildings_factor
+	industrial_capacity_factory = KFC.var_industrial_capacity_factory
+	production_factory_max_efficiency_factor = KFC.var_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = KFC.var_production_factory_efficiency_gain_factor
+	max_fuel_factor = KFC.var_max_fuel_factor
+	production_speed_nuclear_reactor_factor = KFC.var_production_speed_nuclear_reactor_factor
+	nuclear_production_factor = KFC.var_nuclear_production_factor
+
+}

@@ -23,7 +23,7 @@ joint_focus = {
 	}
 	offset = {
 		x = -20
-		y = 17
+		y = 6
 		trigger = {
 			tag = KFC
 		}
@@ -39,27 +39,19 @@ joint_focus = {
 		}
 	}
 	allow_branch = {
-		VIR = {
-			exists = yes
-		}
-		NRA = {
-			exists = yes
-		}
-		KFC = {
-			exists = yes
+		ROOT = {
+			OR = {
+				#has_country_flag = KFC_charleston_pact_flag
+				AND = {
+					#tag = KFC
+					#has_country_flag = KFC_nazbol_coup_flag
+				}
+			}
 		}
 	}
 	available = {
-		VIR = {
-			exists = yes
-		}
-		NRA = {
-			exists = yes
-			has_government = authoritarian_left
-		}
-		KFC = {
-			exists = yes
-			is_in_faction_with = NRA
+		ROOT = {
+			has_country_flag = KFC_charleston_pact_flag
 		}
 	}
 

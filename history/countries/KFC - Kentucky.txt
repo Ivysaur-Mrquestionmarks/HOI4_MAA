@@ -91,3 +91,103 @@ recruit_character = KFC_Dwight_Harlan
 recruit_character = KFC_Jesse_Withers
 recruit_character = KFC_Charles_Walker
 #recruit_character = KFC_Arnold_Farr 
+
+
+# Vars for Dynamic Modifiers #
+set_variable = {
+	var = KFC.var_stability_factor
+	value = 0.0
+}
+set_variable = {
+	var = KFC.var_pp_factor
+	value = 0.0
+}
+set_variable = {
+	var = KFC.var_resistance_growth
+	value = 0.0
+}
+set_variable = {
+	var = KFC.var_war_support_factor
+	value = 0.0
+}
+set_variable = {
+	var = KFC.var_conscription
+	value = 0
+}
+set_variable = {
+	var = KFC.var_operative_slot
+	value = 0
+}
+set_variable = {
+	var = KFC.var_compliance_growth
+	value = 0
+}
+set_variable = {
+	var = KFC.var_pp_gain
+	value = 0
+}
+set_variable = {
+	var = KFC.var_cg_factor
+	value = 0
+}
+set_variable = {
+	var = KFC.var_org_army
+	value = 0
+}
+set_variable = {
+	var = KFC.var_morale_army
+	value = 0
+}
+set_variable = {
+	var = KFC.var_breakthrough_army
+	value = 0
+}
+set_variable = {
+	var = KFC.var_attack_army
+	value = 0
+}
+set_variable = {
+	var = KFC.var_defence_army
+	value = 0
+}
+
+set_variable = {
+	var = KFC.var_ideology_drift
+	value = 0.05
+}
+set_variable = {
+	var = KFC.var_research_speed_factor
+	value = 0
+}
+set_variable = {
+	var = KFC.var_production_speed_buildings_factor
+	value = 0
+}
+set_variable = {
+	var = KFC.var_industrial_capacity_factory
+	value = 0
+}
+set_variable = {
+	var = KFC.var_production_factory_max_efficiency_factor
+	value = 0
+}
+set_variable = {
+	var = KFC.var_production_factory_efficiency_gain_factor
+	value = 0
+}
+set_variable = {
+	var = KFC.var_max_fuel_factor
+	value = 0
+}
+set_variable = {
+	var = KFC.var_production_speed_nuclear_reactor_factor
+	value = 0
+}
+set_variable = {
+	var = KFC.var_nuclear_production_factor
+	value = 0
+}
+set_variable = {
+	var = KFC.var_ideology_drift_l
+	value = 0
+}

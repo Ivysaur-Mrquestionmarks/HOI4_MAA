@@ -622,5 +622,15 @@
 				political_power_gain = 0.02
 			}
 		}
+		
+		# Turk ideas
+		KFC_airforce_idea = {
+			allowed = { original_tag = KFC }
+			modifier = {
+				air_range_factor = 0.1
+				air_mission_efficiency = 0.05
+				experience_gain_air_factor = 0.05
+			}
+		}
 	}
 }

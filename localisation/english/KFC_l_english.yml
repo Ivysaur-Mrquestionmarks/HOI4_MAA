@@ -380,8 +380,15 @@
  KFC_high_police_support:0 "High Police Support"
  KFC_low_police_support:0 "Police Opposition"
  KFC_volunteers:0 "Kentuckian War Volunteers"
+ KFC_airforce_idea:0 "A [KFC.GetName] Airforce"
  
- 
+ #Dynamic modifier stuff
+ KFC_nazbol_government:0 "The Traditionalist Workers' Party Government"
+ KFC_nazbol_government_modify_tt: "Modify §Y$KFC_nazbol_government$§! by:"
+ KFC_tea_party_government:0 "The Tea Party Government"
+ KFC_tea_party_government_modify_tt: "Modify §Y$KFC_tea_party_government$§! by:"
+ KFC_labor_government:0 "The Tea Party Government"
+ KFC_labor_government_modify_tt: "Modify §Y$KFC_labor_government$§! by:"
  
  
  

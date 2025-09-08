@@ -666,7 +666,7 @@ focus_tree = {
 	focus = {
 		id = KFC_time_is_right
 		icon = GFX_goal_Time_Is_Right
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_donors_from_fra
 			focus = KFC_utilise_connections
@@ -691,7 +691,7 @@ focus_tree = {
 	focus = {
 		id = KFC_second_constitutional_convention
 		icon = GFX_goal_Second_Constitutional_Convention
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_time_is_right
 		}
@@ -718,6 +718,105 @@ focus_tree = {
 			country_event = { id = kentucky.8 days = 45 }
 			country_event = { id = kentucky.9 days = 50 }
 			country_event = { id = kentucky.10 days = 55 }
+			hidden_effect = {
+				set_variable = {
+					var = KFC.var_stability_factor
+					value = 0.0
+				}
+				set_variable = {
+					var = KFC.var_pp_factor
+					value = 0.0
+				}
+				set_variable = {
+					var = KFC.var_resistance_growth
+					value = 0.0
+				}
+				set_variable = {
+					var = KFC.var_war_support_factor
+					value = 0.0
+				}
+				set_variable = {
+					var = KFC.var_conscription
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_operative_slot
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_compliance_growth
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_pp_gain
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_cg_factor
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_org_army
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_morale_army
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_breakthrough_army
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_attack_army
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_defence_army
+					value = 0
+				}
+
+				set_variable = {
+					var = KFC.var_ideology_drift
+					value = 0.05
+				}
+				set_variable = {
+					var = KFC.var_research_speed_factor
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_production_speed_buildings_factor
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_industrial_capacity_factory
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_production_factory_max_efficiency_factor
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_production_factory_efficiency_gain_factor
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_max_fuel_factor
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_production_speed_nuclear_reactor_factor
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_nuclear_production_factor
+					value = 0
+				}
+				set_variable = {
+					var = KFC.var_ideology_drift_l
+					value = 0
+				}
+			}
 		}
 		completion_reward = {
 			country_event = { id = kentucky.11 }
@@ -731,16 +830,28 @@ focus_tree = {
 		icon = GFX_goal_unkown
 		cost = 1.00
 		prerequisite = {
-			focus = KFC_second_constitutional_convention
+			#focus = KFC_second_constitutional_convention
 		}
-		relative_position_id = KFC_second_constitutional_convention
-		x = -35
-		y = 1
+		#relative_position_id = KFC_second_constitutional_convention
+		x = -25
+		y = 0
 		available = {
 			has_country_leader = { name = "Matthew Parrott" ruling_only = yes }
 		}
 		bypass = {
 			has_country_leader = { name = "Matthew Parrott" ruling_only = yes }
+		}
+		bypass_effect = {
+			set_country_flag = KFC_nazbol_coup_flag
+			add_dynamic_modifier = {
+				modifier = KFC_nazbol_government
+			}
+		}
+		completion_reward = {
+			set_country_flag = KFC_nazbol_coup_flag
+			add_dynamic_modifier = {
+				modifier = KFC_nazbol_government
+			}
 		}
 	}
 	
@@ -758,10 +869,30 @@ focus_tree = {
 			add_ideas = KFC_storm_troopers
 		}
 	}
+	
+	focus = {
+		id = KFC_groundwork_for_a_navy
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_kentucky_stormtroopers
+		}
+		relative_position_id = KFC_kentucky_stormtroopers
+		x = -4
+		y = 1
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
 	focus = {
 		id = KFC_awaken_white_working_class
 		icon = GFX_focus_KFC_Awaken_the_White_Working_Class
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_kentucky_stormtroopers
 		}
@@ -780,24 +911,83 @@ focus_tree = {
 				    instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					is_owned_by = KFC
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-				    type = arms_factory
-				    level = 3
-				    instant_build = yes
-				}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = KFC_integrate_nationalist_militias
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_awaken_white_working_class
+		}
+		relative_position_id = KFC_awaken_white_working_class
+		x = 0
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_conscription
+				value = 0.03
+				tooltip = conscription_tt
 			}
-			add_stability = -0.20
+			add_stability = -0.05
 		}
 	}
 	focus = {
 		id = KFC_conscript_coloureds
 		icon = GFX_focus_KFC_Conscript_the_Colored
-		cost = 8.00
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_awaken_white_working_class
+		}
+		relative_position_id = KFC_awaken_white_working_class
+		x = -2
+		y = 1
+		completion_reward = {
+			add_ideas = KFC_conscript_coloureds
+		}
+	}
+	focus = {
+		id = KFC_adapting_from_the_cw
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_integrate_nationalist_militias
+		}
+		prerequisite = {
+			focus = KFC_conscript_coloureds
+		}
+		relative_position_id = KFC_integrate_nationalist_militias
+		x = -1
+		y = 1
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = KFC_follow_guderians_doctrine
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_adapting_from_the_cw
+		}
+		relative_position_id = KFC_adapting_from_the_cw
+		x = 0
+		y = 1
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = KFC_dominate_the_skies
+		icon = GFX
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_kentucky_stormtroopers
 		}
@@ -805,7 +995,79 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			add_ideas = KFC_conscript_coloureds
+			add_ideas = KFC_airforce_idea
+		}
+	}
+	focus = {
+		id = KFC_accelerate_fighter_research
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_dominate_the_skies
+		}
+		relative_position_id = KFC_dominate_the_skies
+		x = 0
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 3
+				category = light_fighter
+			}
+		}
+	}
+	focus = {
+		id = KFC_drone_innovations
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_dominate_the_skies
+		}
+		relative_position_id = KFC_dominate_the_skies
+		x = 2
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 3
+				category = drones
+			}
+		}
+	}
+	focus = {
+		id = KFC_enhancing_flight_doctrine
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_drone_innovations
+		}
+		prerequisite = {
+			focus = KFC_accelerate_fighter_research
+		}
+		relative_position_id = KFC_drone_innovations
+		x = -1
+		y = 1
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 3
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = KFC_pride_of_the_white_race_the_airforce
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_enhancing_flight_doctrine
+		}
+		relative_position_id = KFC_enhancing_flight_doctrine
+		x = 0
+		y = 1
+		completion_reward = {
+			air_experience = 50
+			add_war_support = 0.05
 		}
 	}
 	
@@ -826,7 +1088,7 @@ focus_tree = {
 	focus = {
 		id = KFC_invade_appalachia
 		icon = GFX_focus_KFC_We_Need_those_Coal_Mines
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			#focus = KFC_kentucky_stormtroopers
 			focus = KFC_american_legion
@@ -859,7 +1121,7 @@ focus_tree = {
 	focus = {
 		id = KFC_a_possible_ally
 		icon = GFX_focus_KFC_A_Possible_Ally
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_american_legion
 			#focus = KFC_kentucky_stormtroopers
@@ -1358,7 +1620,7 @@ focus_tree = {
 	focus = {
 		id = KFC_state_orthodoxy
 		icon = GFX_focus_KFC_Christian_Orthodoxy
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_peace_socialism
 		}
@@ -1415,7 +1677,7 @@ focus_tree = {
 	focus = {
 		id = KFC_stalinism
 		icon = GFX_focus_KFC_Stalinism
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_root_out_opposition
 		}
@@ -1443,7 +1705,7 @@ focus_tree = {
 	focus = {
 		id = KFC_strasserism
 		icon = GFX_focus_KFC_Strasserism
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_seize_the_means
 		}
@@ -1608,7 +1870,7 @@ focus_tree = {
 	focus = {
 		id = KFC_industrial_support
 		icon = GFX_goal_Icon_Industrial_Support_MAA
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_red_blot
 		}
@@ -1648,7 +1910,7 @@ focus_tree = {
 	focus = {
 		id = KFC_military_support
 		icon = GFX_goal_Icon_Military_Support_MAA
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_red_blot
 		}
@@ -1685,7 +1947,7 @@ focus_tree = {
 	focus = {
 		id = KFC_request_trumpist_advisors
 		icon = GFX_goal_KFC_Request_Loyalist_Advisors
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_military_support
 		}
@@ -1812,7 +2074,7 @@ focus_tree = {
 	focus = {
 		id = KFC_military_industrial_assistance
 		icon = GFX_goal_Icon_Military_Industrial_Assistance_MAA
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_tea_party_rallies
 		}
@@ -2019,7 +2281,7 @@ focus_tree = {
 	focus = {
 		id = KFC_concealed_carry
 		icon = GFX_goal_Icon_Concealed_Carry_BGB
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_blue_lives_matter
 		}
@@ -2059,7 +2321,7 @@ focus_tree = {
 	focus = {
 		id = KFC_enemies_all_around_us
 		icon = GFX_goal_KFC_Enemies_Among_Us
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_blue_lives_matter
 		}
@@ -2073,7 +2335,7 @@ focus_tree = {
 	focus = {
 		id = KFC_blitz_afs
 		icon = GFX_goal_KFC_Blitz_the_AFS
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_enemies_all_around_us
 		}
@@ -2089,7 +2351,7 @@ focus_tree = {
 	focus = {
 		id = KFC_rustbelt_formable
 		icon = GFX_goal_KFC_Trumpist_Rust_Belt
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_blitz_afs
 		}
@@ -2102,7 +2364,7 @@ focus_tree = {
 	focus = {
 		id = KFC_integrate_the_institutions #education
 		icon = GFX_goal_KFC_Integrate_Educational_Institutions
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_rustbelt_formable
 		}
@@ -2115,7 +2377,7 @@ focus_tree = {
 	focus = {
 		id = KFC_support_southern_trumpists
 		icon = GFX_goal_KFC_Support_Southern_Loyalists
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_blitz_afs
 		}
@@ -2129,7 +2391,7 @@ focus_tree = {
 	focus = {
 		id = KFC_move_the_capital
 		icon = GFX_goal_KFC_Move_the_Capital
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_enemies_all_around_us
 		}
@@ -2145,7 +2407,7 @@ focus_tree = {
 	focus = {
 		id = KFC_ally_the_gla_question
 		icon = GFX_goal_KFC_Ally_with_GLA_Question_Mark
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_move_the_capital
 		}
@@ -2158,7 +2420,7 @@ focus_tree = {
 	focus = {
 		id = KFC_dont_tread_on_kentucky
 		icon = GFX_goal_KFC_Dont_Tread_on_Kentucky
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_ally_the_gla_question
 		}
@@ -2171,7 +2433,7 @@ focus_tree = {
 	focus = {
 		id = KFC_secure_tennessee_border #Intervene in csa collapse
 		icon = GFX_goal_KFC_Fortify_the_South
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_move_the_capital
 		}
@@ -2185,7 +2447,7 @@ focus_tree = {
 	focus = {
 		id = KFC_host_appalachian_nra
 		icon = GFX_goal_KFC_Host_the_NRA
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_enemies_all_around_us
 		}
@@ -2199,7 +2461,7 @@ focus_tree = {
 	focus = {
 		id = KFC_use_colonels_mercs
 		icon = GFX_goal_KFC_Use_the_Colonels_Mercenaries
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_enemies_all_around_us
 		}
@@ -2250,7 +2512,7 @@ focus_tree = {
 	focus = {
 		id = KFC_defend_our_democracy
 		icon = GFX_goal_Icon_Defend_our_Democracy_MAA
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_a_true_democracy
 		}
@@ -2473,7 +2735,7 @@ focus_tree = {
 	focus = {
 		id = KFC_bourbonism
 		icon = GFX_goal_KFC_Bourbonism
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_fischer_in_command
 		}
@@ -2548,7 +2810,7 @@ focus_tree = {
 	focus = {
 		id = KFC_build_whisky_distilleries
 		icon = GFX_goal_KFC_Build_Whiskey_Distilleries
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_bourbonism
 		}
@@ -2608,7 +2870,7 @@ focus_tree = {
 	focus = {
 		id = KFC_bourbon_tourism
 		icon = GFX_goal_KFC_Bourbon_Tourism
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_build_whisky_distilleries
 		}
@@ -2621,7 +2883,7 @@ focus_tree = {
 	focus = {
 		id = KFC_protect_alcohol_from_sales_Tax
 		icon = GFX_goal_KFC_Protect_Alcohol_from_Sales_Tax
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_beshear_government
 			focus = KFC_fischer_in_command
@@ -2638,7 +2900,7 @@ focus_tree = {
 	focus = {
 		id = KFC_whisky_for_washington
 		icon = GFX_goal_KFC_Whiskey_for_Washington
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_join_coalition
 		}
@@ -2700,7 +2962,7 @@ focus_tree = {
 	focus = {
 		id = KFC_great_retreat
 		icon = GFX_goal_KFC_The_Great_Retreat
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_fischer_in_command
 		}
@@ -2782,7 +3044,7 @@ focus_tree = {
 	focus = {
 		id = KFC_nationalize_kfc
 		icon = GFX_goal_KFC_Nationalize_Kentucky_Fried_Chicken
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_beshear_government
 		}
