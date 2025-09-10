@@ -16,4 +16,44 @@ characters={
 			id = -1
 		}
 	}
+
+	NMX_donald_slydell = {
+		name = "Donald Slydell"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TEX/donald_slydell.tga"
+			}
+		}
+		country_leader = {
+			ideology = corporatocracy
+			traits = {
+				TEX_schizophrenic
+				trait_terrifying_presence
+			}
+		}
+	}
+
+	NMX_greg_seeley = {
+		name = "Greg Seeley"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TEX/greg_seeley.tga"
+			}
+		}
+		country_leader = {
+			ideology = eco_fascism
+			traits = {
+				trait_terrifying_presence
+			}
+		}
+		field_marshal = {
+			traits={ politically_connected brilliant_strategist harsh_leader trickster guerilla_fighter } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = { has_government = authoritarian_left }
+		}
+	}
 }
