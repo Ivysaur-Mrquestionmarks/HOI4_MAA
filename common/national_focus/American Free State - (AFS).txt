@@ -12291,7 +12291,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_american_conquest
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_american_conquest
 		cost = 1
 		x = 0
 		y = 9
@@ -12314,7 +12314,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_reestablish_corporate_rule
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_reestablish_corporate_rule
 		cost = 2
 		x = 0
 		y = 1
@@ -12344,7 +12344,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_conquest_of_kentucky
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_conquest_of_kentucky
 		cost = 2
 		x = 2
 		y = 1
@@ -12374,7 +12374,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_virginian_enlightenment
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_virginian_enlightenment
 		cost = 2
 		x = -2
 		y = 1
@@ -12424,7 +12424,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_join_with_yarvin
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_join_with_yarvin
 		cost = 1
 		x = 1
 		y = 1
@@ -12441,7 +12441,6 @@ focus_tree = {
 		allow_branch = {
 		}
 		available = {
-			country_exists = GLA
 		    GLA = { 
 				has_country_leader = {
 				    name = "Curtis Yarvin"
@@ -12452,6 +12451,7 @@ focus_tree = {
 			    has_war_with = GLA
 			}
 		}
+		bypass = { NOT = { country_exists = GLA } }
 		completion_reward = {
 			GLA = {
 				country_event = {
@@ -12464,7 +12464,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_operation_lakewalk
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_operation_lakewalk
 		cost = 2
 		x = 3
 		y = 1
@@ -12481,6 +12481,14 @@ focus_tree = {
 		allow_branch = {
 		}
 		available = {
+			NOT = {
+			    GLA = { 
+				    has_country_leader = {
+				        name = "Curtis Yarvin"
+                        ruling_only = yes
+				    }
+		        }
+			}
 			if = {
 				limit = { is_ai = yes }
 			    has_war = no
@@ -12519,7 +12527,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_work_with_the_founder
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_work_with_the_founder
 		cost = 1
 		x = -3
 		y = 1
@@ -12568,7 +12576,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_trumps_failed_mission
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_trumps_failed_mission
 		cost = 2
 		x = -1
 		y = 1
@@ -12612,7 +12620,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_the_end_of_liberal_degeneracy
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_the_end_of_liberal_degeneracy
 		cost = 2
 		x = 1
 		y = 1
@@ -12643,7 +12651,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_unite_our_enlightenment
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_unite_our_enlightenment
 		cost = 2
 		x = 0
 		y = 1
@@ -12698,7 +12706,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_conquest_of_the_mormons
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_conquest_of_the_mormons
 		cost = 2
 		x = 0
 		y = 1
@@ -12783,7 +12791,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_marching_to_the_mountains
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_marching_to_the_mountains
 		cost = 2
 		x = 2
 		y = 1
@@ -12825,7 +12833,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_enlighten_california
-		icon = GFX_goal_AFS_triumvirate_rule
+		icon = GFX_goal_AFS_enlighten_california
 		cost = 2
 		x = -1
 		y = 1
