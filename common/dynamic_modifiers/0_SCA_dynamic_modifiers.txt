@@ -1,7 +1,7 @@
 SCA_army_with_a_state_idea = { #NATIONAL SPIRIT, balls.
 	enable = { always = yes }
 
-	icon = ast_volunteer_defence_corps
+	icon = GFX_idea_SCA_army_with_a_state_idea
 	
 	stability_factor = SCA.var_stability_factor
 	war_support_factor = SCA.var_war_support_factor

@@ -2844,6 +2844,135 @@ spriteTypes = {
         name = "GFX_idea_CSA_white_focus_army"
         texturefile = "gfx/interface/ideas/CSA/CSA_white_focus_army.dds"
     }
+	#South Carolina
+	spriteType = {
+        name = "GFX_idea_SCA_fuel_reserves_idea"
+        texturefile = "gfx/interface/ideas/SCA/SCA_fuel_reserves_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_aiken"
+        texturefile = "gfx/interface/ideas/SCA/SCA_aiken.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_army_with_a_state_idea"
+        texturefile = "gfx/interface/ideas/SCA/SCA_army_with_a_state_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_bentonville"
+        texturefile = "gfx/interface/ideas/SCA/SCA_bentonville.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_averasborough"
+        texturefile = "gfx/interface/ideas/SCA/SCA_averasborough.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_cashcrops_idea"
+        texturefile = "gfx/interface/ideas/SCA/SCA_cashcrops_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_Cash_Crop_Exports"
+        texturefile = "gfx/interface/ideas/SCA/SCA_Cash_Crop_Exports.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_conservative_reconstructionists_victorious_idea"
+        texturefile = "gfx/interface/ideas/SCA/SCA_conservative_reconstructionists_victorious_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_different_red_scare_idea"
+        texturefile = "gfx/interface/ideas/SCA/SCA_different_red_scare_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_FRA_Economic_Support"
+        texturefile = "gfx/interface/ideas/SCA/SCA_FRA_Economic_Support.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_Restocking_Factories1"
+        texturefile = "gfx/interface/ideas/SCA/SCA_Restocking_Factories1.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_guerrilla_army"
+        texturefile = "gfx/interface/ideas/SCA/SCA_guerrilla_army.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_intelligence_idea"
+        texturefile = "gfx/interface/ideas/SCA/SCA_intelligence_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_legitimist_army_idea"
+        texturefile = "gfx/interface/ideas/SCA/SCA_legitimist_army_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_mcartys_march"
+        texturefile = "gfx/interface/ideas/SCA/SCA_mcartys_march.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_mcartys_march_south"
+        texturefile = "gfx/interface/ideas/SCA/SCA_mcartys_march_south.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_moderate_reconstructionists_victorious_idea"
+        texturefile = "gfx/interface/ideas/SCA/SCA_moderate_reconstructionists_victorious_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_Monroes_Crossroads"
+        texturefile = "gfx/interface/ideas/SCA/SCA_Monroes_Crossroads.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_radical_reconstructionists_victorious_idea"
+        texturefile = "gfx/interface/ideas/SCA/SCA_radical_reconstructionists_victorious_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_Rebuilding_Factories"
+        texturefile = "gfx/interface/ideas/SCA/SCA_Rebuilding_Factories.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_wyse_fork"
+        texturefile = "gfx/interface/ideas/SCA/SCA_wyse_fork.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_river_bridge"
+        texturefile = "gfx/interface/ideas/SCA/SCA_river_bridge.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_Southern_Separatism"
+        texturefile = "gfx/interface/ideas/SCA/SCA_Southern_Separatism.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_sped_up_training"
+        texturefile = "gfx/interface/ideas/SCA/SCA_sped_up_training.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_tennessee_energy_idea"
+        texturefile = "gfx/interface/ideas/SCA/SCA_tennessee_energy_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_uniting_the_south_idea"
+        texturefile = "gfx/interface/ideas/SCA/SCA_uniting_the_south_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_War_Recovery"
+        texturefile = "gfx/interface/ideas/SCA/SCA_War_Recovery.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_War_Recovery0"
+        texturefile = "gfx/interface/ideas/SCA/SCA_War_Recovery.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_War_Recovery1"
+        texturefile = "gfx/interface/ideas/SCA/SCA_War_Recovery.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_War_Recovery2"
+        texturefile = "gfx/interface/ideas/SCA/SCA_War_Recovery.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_War_Recovery3"
+        texturefile = "gfx/interface/ideas/SCA/SCA_War_Recovery.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_SCA_War_Recovery4"
+        texturefile = "gfx/interface/ideas/SCA/SCA_War_Recovery.dds"
+    }
 	#South GUI
 	spriteType = {
         name = "GFX_empty_bar_CSA"
