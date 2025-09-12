@@ -13010,6 +13010,9 @@ spriteTypes = {
 	}
 
     ### Other ###
+
+    #Decision Pics
+
 	spriteType = {
     	name = "GFX_AFS_vermin_political_decisions_pic"
     	texturefile = "gfx/texticons/AFS/AFS_vermin_political_decisions_pic.dds"
@@ -13035,6 +13038,12 @@ spriteTypes = {
     }
 
     spriteType = {
+    	name = "GFX_AFS_decaying_savior_decisions_pic"
+    	texturefile = "gfx/texticons/AFS/AFS_decaying_savior_decisions_pic.dds"
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
     	name = "GFX_AFS_saving_terra_decisions_pic"
     	texturefile = "gfx/texticons/AFS/AFS_saving_terra_decisions_pic.dds"
         legacy_lazy_load = no
@@ -13045,6 +13054,8 @@ spriteTypes = {
     	texturefile = "gfx/texticons/AFS/AFS_vance_political_decisions_pic.dds"
         legacy_lazy_load = no
     }
+
+    #BoP
 
     spriteType = {
         name = "GFX_bop_AFS_vermin_powerless"
@@ -13064,5 +13075,35 @@ spriteTypes = {
     spriteType = {
         name = "GFX_bop_AFS_collectivist"
         texturefile = "gfx/interface/bop/bop_AFS_collectivist.dds"
+    }
+
+    spriteType = {
+        name = "GFX_bop_AFS_cooperative_democracy"
+        texturefile = "gfx/interface/bop/bop_AFS_cooperative_democracy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_bop_AFS_republican_control"
+        texturefile = "gfx/interface/bop/bop_AFS_republican_control.dds"
+    }
+
+    spriteType = {
+        name = "GFX_bop_AFS_hawkins_powerful"
+        texturefile = "gfx/interface/bop/bop_AFS_hawkins_powerful.dds"
+    }
+
+    spriteType = {
+        name = "GFX_bop_AFS_hawkins_powerless"
+        texturefile = "gfx/interface/bop/bop_AFS_hawkins_powerless.dds"
+    }
+
+    spriteType = {
+        name = "GFX_bop_AFS_mattis_powerful"
+        texturefile = "gfx/interface/bop/bop_AFS_mattis_powerful.dds"
+    }
+
+    spriteType = {
+        name = "GFX_bop_AFS_mattis_powerless"
+        texturefile = "gfx/interface/bop/bop_AFS_mattis_powerless.dds"
     }
 }
