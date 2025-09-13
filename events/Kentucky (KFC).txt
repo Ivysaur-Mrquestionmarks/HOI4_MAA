@@ -758,14 +758,14 @@ country_event = {
 			factor = 100
 		}
 		KFC = {
-	    add_popularity = {
-			ideology = authoritarian_left
-			popularity = -0.5
-		}
-		add_popularity = {
-			ideology = libertarian_left
-			popularity = -0.5
-		}
+			add_popularity = {
+				ideology = authoritarian_left
+				popularity = -0.5
+			}
+			add_popularity = {
+				ideology = libertarian_left
+				popularity = -0.5
+			}
 		}
 	}
 	option = {	
@@ -787,6 +787,7 @@ country_event = {
   			limit = {has_cosmetic_tag = SKY}
 			change_tag_from = KFC
 		}
+		custom_effect_tooltip = unfinished_content_warning_tooltip
 	}
 }
 country_event = {
