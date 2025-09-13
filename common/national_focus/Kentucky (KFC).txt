@@ -890,6 +890,28 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = KFC_our_own_gestapo
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_kentucky_stormtroopers
+		}
+		relative_position_id = KFC_kentucky_stormtroopers
+		x = 4
+		y = 1
+		available = {
+			has_intelligence_agency = yes
+		}
+		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_operative_slot
+				value = 1
+				tooltip = operative_slot_tt
+			}
+		}
+	}
+	focus = {
 		id = KFC_awaken_white_working_class
 		icon = GFX_focus_KFC_Awaken_the_White_Working_Class
 		cost = 5.00
@@ -1071,6 +1093,7 @@ focus_tree = {
 		}
 	}
 	
+	
 	focus = {
 		id = KFC_american_legion
 		icon = GFX_focus_KFC_The_American_Legion
@@ -1079,7 +1102,7 @@ focus_tree = {
 			focus = KFC_rise_of_evil
 		}
 		relative_position_id = KFC_rise_of_evil
-		x = -9
+		x = -10
 		y = 1
 		completion_reward = {
 			add_ideas = KFC_american_legion
@@ -1611,10 +1634,32 @@ focus_tree = {
 			focus = KFC_rise_of_evil
 		}
 		relative_position_id = KFC_rise_of_evil
-		x = 9
+		x = 10
 		y = 1
 		completion_reward = {
 			add_ideas = KFC_warriors_for_peace
+		}
+	}
+	focus = {
+		id = KFC_the_future_is_now
+		icon = GFX_focus_KFC_The_Future_is_Now
+		cost = 9.00
+		prerequisite = {
+			focus = KFC_peace_socialism
+		}
+		relative_position_id = KFC_peace_socialism
+		x = 1
+		y = 2
+		available = {
+			NOT = {
+				OR = {
+					has_completed_focus = KFC_code_kentucky
+					has_completed_focus = KFC_right_to_exist
+				}
+			}
+		}
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1625,11 +1670,140 @@ focus_tree = {
 			focus = KFC_peace_socialism
 		}
 		relative_position_id = KFC_peace_socialism
-		x = -2
+		x = -3
 		y = 1
 		completion_reward = {
 			add_stability = 0.10
 			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = KFC_protect_christian_identity
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_state_orthodoxy
+		}
+		relative_position_id = KFC_state_orthodoxy
+		x = -1
+		y = 2
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_the_west_has_fallen
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_protect_christian_identity
+		}
+		prerequisite = {
+			focus = KFC_white_welfare
+		}
+		relative_position_id = KFC_protect_christian_identity
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_seize_the_means
+		icon = GFX_focus_KFC_Seize_the_Means_of_Production
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_peace_socialism
+		}
+		relative_position_id = KFC_peace_socialism
+		x = 0
+		y = 1
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = KFC_strasserism
+		icon = GFX_focus_KFC_Strasserism
+		cost = 6.00
+		prerequisite = {
+			focus = KFC_seize_the_means
+		}
+		prerequisite = {
+			focus = KFC_state_orthodoxy
+		}
+		relative_position_id = KFC_seize_the_means
+		x = -1
+		y = 1
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+				    type = infrastructure
+				    level = 3
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+				    type = infrastructure
+				    level = 3
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+				    type = infrastructure
+				    level = 3
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+				    type = infrastructure
+				    level = 3
+				    instant_build = yes
+				}
+			}
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = KFC_white_welfare
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_strasserism
+		}
+		relative_position_id = KFC_strasserism
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_erasing_poverty
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_strasserism
+		}
+		relative_position_id = KFC_strasserism
+		x = 1
+		y = 1
+		completion_reward = {
 		}
 	}
 	focus = {
@@ -1651,41 +1825,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = KFC_seize_the_means
-		icon = GFX_focus_KFC_Seize_the_Means_of_Production
-		cost = 6.00
-		prerequisite = {
-			focus = KFC_peace_socialism
-		}
-		relative_position_id = KFC_peace_socialism
-		x = 0
-		y = 1
-		completion_reward = {
-			random_state = {
-				limit = {
-					is_owned_by = KFC
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-				    type = industrial_complex
-				    level = 1
-				    instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
 		id = KFC_stalinism
 		icon = GFX_focus_KFC_Stalinism
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_root_out_opposition
 		}
-		prerequisite = {
-			focus = KFC_seize_the_means
-		}
 		relative_position_id = KFC_root_out_opposition
-		x = -1
+		x = 1
 		y = 1
 		completion_reward = {
 			random_state = {
@@ -1699,56 +1846,342 @@ focus_tree = {
 				    instant_build = yes
 				}
 			}
+			add_manpower = -20000
 			add_stability = -0.05
 		}
 	}
 	focus = {
-		id = KFC_strasserism
-		icon = GFX_focus_KFC_Strasserism
+		id = KFC_the_real_reparations_for_crime
+		icon = GFX
 		cost = 5.00
 		prerequisite = {
-			focus = KFC_seize_the_means
+			focus = KFC_stalinism
 		}
 		prerequisite = {
-			focus = KFC_state_orthodoxy
+			focus = KFC_erasing_poverty
 		}
-		relative_position_id = KFC_seize_the_means
+		relative_position_id = KFC_stalinism
 		x = -1
-		y = 1
+		y = 2
 		completion_reward = {
-			every_state = {
-				limit = {
-					is_owned_by = KFC
-				}
-				set_building_level = {
-				    type = infrastructure
-				    level = 10
-				    instant_build = yes
-				}
-			}
 		}
 	}
 	focus = {
-		id = KFC_the_future_is_now
-		icon = GFX_focus_KFC_The_Future_is_Now
-		cost = 9.00
+		id = KFC_cultural_protection_laws
+		icon = GFX
+		cost = 5.00
 		prerequisite = {
-			focus = KFC_stalinism
-			focus = KFC_strasserism
+			focus = KFC_the_real_reparations_for_crime
 		}
-		relative_position_id = KFC_stalinism
+		prerequisite = {
+			focus = KFC_the_west_has_fallen
+		}
+		relative_position_id = KFC_the_real_reparations_for_crime
+		x = -2
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_combat_drug_use
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_cultural_protection_laws
+		}
+		relative_position_id = KFC_cultural_protection_laws
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_a_new_querfront
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_combat_drug_use
+		}
+		relative_position_id = KFC_combat_drug_use
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_rewrite_history_books
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_a_new_querfront
+		}
+		relative_position_id = KFC_a_new_querfront
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_a_new_national_dish
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_a_new_querfront
+		}
+		relative_position_id = KFC_a_new_querfront
 		x = 1
 		y = 1
-		available = {
-			NOT = {
-				OR = {
-					has_completed_focus = KFC_code_kentucky
-					has_completed_focus = KFC_right_to_exist
-				}
-			}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_patrol_the_cities
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_a_new_national_dish
+		}
+		prerequisite = {
+			focus = KFC_rewrite_history_books
+		}
+		relative_position_id = KFC_a_new_national_dish
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_combat_demographic_issue
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_cultural_protection_laws
+		}
+		relative_position_id = KFC_cultural_protection_laws
+		x = 2
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_close_nonwhite_immigration
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_combat_demographic_issue
+		}
+		relative_position_id = KFC_combat_demographic_issue
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_sterilize_those_who_arent_needed
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_combat_demographic_issue
+		}
+		prerequisite = {
+			focus = KFC_combat_drug_use
+		}
+		relative_position_id = KFC_combat_demographic_issue
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_outlaw_abortion
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_sterilize_those_who_arent_needed
+		}
+		relative_position_id = KFC_sterilize_those_who_arent_needed
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_guarantee_childcare
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_close_nonwhite_immigration
+		}
+		prerequisite = {
+			focus = KFC_outlaw_abortion
+		}
+		relative_position_id = KFC_outlaw_abortion
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_white_workers_paradise
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_patrol_the_cities
+		}
+		prerequisite = {
+			focus = KFC_guarantee_childcare
+		}
+		relative_position_id = KFC_guarantee_childcare
+		x = -2
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_a_new_beginnning
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_white_workers_paradise
+		}
+		prerequisite = {
+			focus = KFC_traditional_america_for_the_white_working_class
+		}
+		relative_position_id = KFC_white_workers_paradise
+		x = -10
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_assessing_what_we_have
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_a_new_beginnning
+		}
+		relative_position_id = KFC_a_new_beginnning
+		x = -3
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_setting_up_reservations
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_assessing_what_we_have
+		}
+		relative_position_id = KFC_assessing_what_we_have
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_nationalize_nonwhite_property
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_assessing_what_we_have
+		}
+		relative_position_id = KFC_assessing_what_we_have
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_a_white_ethnostate
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_setting_up_reservations
+		}
+		prerequisite = {
+			focus = KFC_nationalize_nonwhite_property
+		}
+		relative_position_id = KFC_nationalize_nonwhite_property
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_looking_outwards
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_a_new_beginnning
+		}
+		relative_position_id = KFC_a_new_beginnning
+		x = 3
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_retreat_into_isolation
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_looking_outwards
+		}
+		relative_position_id = KFC_looking_outwards
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = KFC_saving_canada
 		}
 		completion_reward = {
-			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = KFC_saving_canada
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_looking_outwards
+		}
+		relative_position_id = KFC_looking_outwards
+		x = 2
+		y = 1
+		mutually_exclusive = {
+			focus = KFC_retreat_into_isolation
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_end_the_flow_of_drugs_for_good
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_saving_canada
+		}
+		relative_position_id = KFC_saving_canada
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_kick_globalists_out_of_north_america
+		icon = GFX
+		cost = 5.00
+		prerequisite = {
+			focus = KFC_saving_canada
+		}
+		relative_position_id = KFC_saving_canada
+		x = -1
+		y = 1
+		will_lead_to_war_with = PUE
+		completion_reward = {
+			create_wargoal = {
+				target = PUE
+				type = annex_everything
+			}
 		}
 	}
 	
