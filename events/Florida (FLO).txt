@@ -836,20 +836,21 @@ country_event = {
         name = florida.44.a
 			GKJ = { change_tag_from = FLO }
 			GKJ = {
-            every_state = {
-                limit = {
-                    is_core_of = FLO
-                }
-                add_core_of = GKJ
-            }
-			every_country_division = {
-				destroy_unit = yes
+				inherit_technology = FLO
+				every_state = {
+					limit = {
+						is_core_of = FLO
+					}
+					add_core_of = GKJ
+				}
+				every_country_division = {
+					destroy_unit = yes
+				}
+				annex_country = {
+					target = FLO
+					transfer_troops = yes
+				}
 			}
-            annex_country = {
-                target = FLO
-                transfer_troops = yes
-            }
-        }
     }
 }
 
