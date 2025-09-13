@@ -1,0 +1,38 @@
+state={
+	id=677
+	name="STATE_677"
+	provinces={
+		5195 7811 1110 3195 2925 7775
+	}
+	history={
+		owner = MIN
+		add_core_of = FRA
+		add_core_of = MNS
+		add_core_of = MIN
+		add_core_of = KMT
+		add_core_of = MIL
+		
+		victory_points = {
+		 	5195 25 #Minneapolis
+		}
+		victory_points = {
+		 	7811 8 #Coon Rapids
+		}
+		victory_points = {
+		 	1110 9 #MapleGrove
+		}
+		victory_points = {
+		 	3195 3 #Chaska
+		}
+
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			arms_factory = 2
+		}
+	}
+	manpower=1370284
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

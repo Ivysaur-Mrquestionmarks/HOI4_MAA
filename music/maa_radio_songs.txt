@@ -244,6 +244,25 @@ music = {
 	}
 }
 music = {
+	song = "we_didnt_start_the_fire"
+	
+	chance = {
+		modifier = {
+			factor = 6
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "sweet_child_o_mine"
+	
+	chance = {
+		modifier = {
+			factor = 4
+		}
+	}
+}
+music = {
 	song = "well_have_our_home"
 	
 	chance = {
@@ -285,6 +304,15 @@ music = {
 	chance = {
 		modifier = {
 			factor = 8
+		}
+	}
+}
+music = {
+	song = "welcome_to_the_jungle"
+	
+	chance = {
+		modifier = {
+			factor = 5
 		}
 	}
 }
@@ -396,6 +424,24 @@ music = {
 	}
 }
 music = {
+	song = "all_within_my_hands"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}
+	}
+}
+music = {
+	song = "highway_to_hell"
+	
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
 	song = the_kids_need_guns
 	
 	chance = {
@@ -437,6 +483,16 @@ music = {
 	chance = {
 		modifier = {
 			factor = 8
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = eye_of_the_tiger
+	
+	chance = {
+		modifier = {
+			factor = 5
 			has_war = yes
 		}
 	}

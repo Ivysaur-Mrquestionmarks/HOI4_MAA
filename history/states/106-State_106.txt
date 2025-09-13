@@ -11,16 +11,19 @@ state={
 		add_claim_by = GLA
 
 		victory_points = {
-			8140 3 #La Crosse
+			8140 5 #La Crosse
 		}
 		victory_points = {
-			5128 3 #Wisconsin Rapids
+			5128 2 #Wisconsin Rapids
 		}
 		victory_points = {
 			7930 1 #Marshfield
 		}
 		victory_points = {
 			8108 1 #Tomah
+		}
+		victory_points = {
+			8251 1 #Baraboo
 		}
 		buildings = {
 			infrastructure = 5
