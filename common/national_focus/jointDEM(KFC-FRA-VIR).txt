@@ -8,7 +8,7 @@ joint_focus = {
 	Y = 0
 
 	offset = {
-		x = -90
+		x = -77
 		y = 0
 		trigger = {
 			tag = FRA
@@ -39,30 +39,19 @@ joint_focus = {
 		}
 	}
 	allow_branch = {
-		VIR = {
-			exists = yes
-			NOT = {
-				has_completed_focus = VIR_The_Revolution_has_Begun
-				#has_country_flag = VIR_stayed_loyal_to_biden_flag
-			}
-		}
 		FRA = {
 			exists = yes
 		}
-		KFC = {
-			exists = yes
-			#has_completed_focus = KFC_labor_government
+		if = {
+			limit = {
+				tag = KFC
+			}
+			NOT = {
+				has_country_flag = KFC_nazbol_coup_flag
+			}
 		}
 	}
 	available = {
-		VIR = {
-			#has_country_flag = VIR_stayed_loyal_to_biden_flag
-			exists = yes
-			NOT = {
-				has_completed_focus = VIR_The_Revolution_has_Begun
-				#has_country_flag = VIR_stayed_loyal_to_biden_flag
-			}
-		}
 		FRA = {
 			exists = yes
 		}

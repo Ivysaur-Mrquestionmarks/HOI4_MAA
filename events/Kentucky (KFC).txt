@@ -465,6 +465,8 @@ country_event = {
 			ruling_party = authoritarian_left
 		        elections_allowed = no
 		}
+		set_country_flag = KFC_nazbol_coup_flag
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 #election

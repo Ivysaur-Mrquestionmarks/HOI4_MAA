@@ -24,6 +24,7 @@ focus_tree = {
 			NOT = {tag = KFC}
 			has_government = libertarian_right
 		}
+		bypass_effect = { mark_focus_tree_layout_dirty = yes}
 		cost = 4.40
 		x = 30
 		y = 0
@@ -32,6 +33,7 @@ focus_tree = {
 		}
 		allow_branch = {			
 			NOT = { has_completed_focus = KFC_state_beneath_his_feet }
+			NOT = { has_country_flag = KFC_nazbol_coup_flag }
 		}
 		completion_reward = {
 			activate_mission = KFC_uprising_mission2
@@ -42,15 +44,13 @@ focus_tree = {
 			}
 			hidden_effect = {
 			    KFC = {
-			      country_event = {
-    		      id = kentucky.24
-    			  days = 10
-		          }
+					country_event = {
+						id = kentucky.24
+						days = 10
+					}
 	            }
 			}
-		}
-		ai_will_do = {
-			factor = 0
+			custom_effect_tooltip = unfinished_content_warning_tooltip
 		}
 	}
 	focus = {
@@ -339,11 +339,13 @@ focus_tree = {
 			NOT = {tag = KFC}
 			has_government = libertarian_right 
 		}
+		bypass_effect = { mark_focus_tree_layout_dirty = yes }
 		cost = 4.40
 		x = 8
 		y = 0
 		allow_branch = {
 			NOT = { has_completed_focus = KFC_a_state_untamed }
+			NOT = { has_country_flag = KFC_nazbol_coup_flag }
 		}
 		completion_reward = {
 			activate_mission = KFC_uprising_mission

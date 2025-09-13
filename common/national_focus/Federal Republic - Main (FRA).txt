@@ -18,7 +18,7 @@ focus_tree = {
 	id = biden_rework
 	continuous_focus_position = { x = 0 y = 5000 } 
 	shared_focus = FRA_VIR_connect_capitals
-	#shared_focus = KFC_FRA_VIR_legitimists_in_kentucky
+	shared_focus = KFC_FRA_VIR_legitimists_in_kentucky
 	shared_focus = SCA_FRA_southern_reconstruction
 	country = {
 		factor = 0

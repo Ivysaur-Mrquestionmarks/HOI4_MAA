@@ -42,12 +42,13 @@ joint_focus = {
 		ROOT = {
 			OR = {
 				#has_country_flag = KFC_charleston_pact_flag
-				AND = {
-					#tag = KFC
-					#has_country_flag = KFC_nazbol_coup_flag
-				}
+				always = yes
 			}
 		}
+		#if = {
+			#limit = { tag = KFC }
+			#has_country_flag = KFC_nazbol_coup_flag
+		#}
 	}
 	available = {
 		ROOT = {
