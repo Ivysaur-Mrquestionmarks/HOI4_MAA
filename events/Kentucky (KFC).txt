@@ -1026,7 +1026,7 @@ country_event = {
 			unlock_national_focus = KFC_louisville_pd
 			unlock_national_focus = KFC_utilise_connections
 			unlock_national_focus = KFC_time_is_right
-			set_country_flag = Fischer_Dead
+			#set_country_flag = Fischer_Dead
 		}
 	}
 }
@@ -1234,7 +1234,7 @@ country_event = { #something political assasinations
 		}
 		news_event = {
     		id = kentucky.28
-    		days = 0
+    		days = 8
 		}
 	}
 }
@@ -1253,128 +1253,20 @@ news_event = { #something political assasinations
 		ai_chance = {
 			factor = 100
 		}
-	}
-}
-
-#ex gov
-country_event = { #something political assasinations
-	id = kentucky.29
-	title = kentucky.29.t
-	desc = kentucky.29.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		#assassin
-		name = kentucky.29.a
-		ai_chance = {
-			factor = 100
-		}
-		hidden_effect = {
-		country_event = {
-    		id = kentucky.30
-    	    days = 21
-		}
-		}
-	}
-	option = {
-		#bomb
-		name = kentucky.29.b
-		ai_chance = {
-			factor = 100
-		}
-		hidden_effect = {
-		country_event = {
-    		id = kentucky.31
-    	    days = 20
-		}
+		if = {
+			limit = {
+				tag = KFC
+			}
+			swap_ideas = {
+				remove_idea = KFC_growing_resistance3
+				add_idea = KFC_growing_resistance4
+			}
 		}
 	}
 }
 
-#bomb did it
-country_event = { #something political assasinations
-	id = kentucky.30
-	title = kentucky.30.t
-	desc = kentucky.30.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		#bruh
-		name = kentucky.30.a
-		ai_chance = {
-			factor = 100
-		}
-		news_event = {
-    		id = kentucky.32
-    		days = 0
-		}
-		swap_ideas = {
-			remove_idea = KFC_growing_resistance3
-			add_idea = KFC_growing_resistance4
-		}
-	}
-}
 
-#asassin fail
-country_event = { #something political assasinations
-	id = kentucky.31
-	title = kentucky.31.t
-	desc = kentucky.31.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		#bruh
-		name = kentucky.31.a
-		ai_chance = {
-			factor = 100
-		}
-		news_event = {
-    		id = kentucky.33
-    		days = 0
-		}
-		swap_ideas = {
-			remove_idea = KFC_growing_resistance3
-			add_idea = KFC_growing_resistance41
-		}
-	}
-}
-
-#succeeded
-news_event = { #something political assasinations
-	id = kentucky.32
-	title = kentucky.32.t
-	desc = kentucky.32.d
-	#picture =
-	major = yes
-	is_triggered_only = yes
-	option = {
-		#bruh
-		name = kentucky.32.a
-		ai_chance = {
-			factor = 100
-		}
-	}
-}
-
-#failed
-news_event = { #something political assasinations
-	id = kentucky.33
-	title = kentucky.33.t
-	desc = kentucky.33.d
-	#picture =
-	major = yes
-	is_triggered_only = yes
-	option = {
-		#bruh
-		name = kentucky.33.a
-		ai_chance = {
-			factor = 100
-		}
-	}
-}
+#.29-33 are free
 
 country_event = { #I assume this is for Parrott
 	id = kentucky.34
@@ -1685,5 +1577,10 @@ unit_leader_event = {
 		remove_unit_leader_trait = glutton
 	}
 }
+
+
+
+add_namespace = fried_chicken
+
 
 

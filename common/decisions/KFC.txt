@@ -78,7 +78,7 @@ KFC_heimbachs_raids_category = {
 			always = no
 		}
 		available = {
-			has_country_flag = KFC_No_More_Raiding
+			has_war = yes
 		}
 		visible = {
 		    AND = {

@@ -30,6 +30,7 @@ focus_tree = {
 		y = 0
 		available = {
 			#always = no 
+			hidden_trigger = { is_ai = no }
 		}
 		allow_branch = {			
 			NOT = { has_completed_focus = KFC_state_beneath_his_feet }
@@ -143,10 +144,6 @@ focus_tree = {
     		    id = kentucky.26
     			days = 0
 		    }
-			country_event = {
-    		    id = kentucky.29
-    			days = 7
-		    }
 		}
 	}
 	focus = {
@@ -235,6 +232,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			set_country_flag = KFC_Mercenaries
+			custom_effect_tooltip = KFC_mercenaries_cw_tt
 		}
 	}
 	focus = {
@@ -253,6 +251,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			set_country_flag = KFC_Foreign_Arms
+			custom_effect_tooltip = KFC_arms_deleveries_cw_tt
 		}
 	}
 	focus = {
