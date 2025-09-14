@@ -1052,7 +1052,7 @@
 	#### Elections ####
 	focus = {
 		id = FLD_florida_election
-		icon = GFX_goal_generic_elections
+		icon = GFX_goal_FLD_florida_election
 		cost = 2
 		prerequisite = { focus = FLD_a_new_florida }
 		relative_position_id = FLD_a_new_florida
@@ -1080,7 +1080,7 @@
 	### Suarez ###
 	focus = {
 		id = FLD_suarez
-		icon = GFX_goal_FLD_Suarez
+		icon = GFX_goal_FLD_suarez2
 		cost = 1
 		mutually_exclusive = {
 			focus = FLD_demings
@@ -1108,7 +1108,7 @@
 	}
 	focus = {
 		id = FLD_digital_democracy
-		icon = GFX_goal_FLD_Digital_Democracy
+		icon = GFX_goal_FLD_digital_democracy2
 		cost = 4
 		prerequisite = { 
 			focus = FLD_suarez
@@ -1132,7 +1132,7 @@
 	}
 	focus = {
 		id = FLD_miami_doctrine
-		icon = GFX
+		icon = GFX_goal_FLD_miami_doctrine
 		cost = 2
 		prerequisite = { 
 			focus = FLD_suarez
@@ -1151,7 +1151,7 @@
 	}
 	focus = {
 		id = FLD_reconciliation_with_moderates
-		icon = GFX
+		icon = GFX_goal_FLD_reconciliation_with_moderates
 		cost = 4
 		prerequisite = { 
 			focus = FLD_suarez
@@ -1172,7 +1172,7 @@
 	}
 	focus = {
 		id = FLD_meet_with_themepark_corporations
-		icon = GFX
+		icon = GFX_goal_FLD_meet_with_themepark_corporations
 		cost = 4
 		prerequisite = { 
 			focus = FLD_suarez
@@ -1198,7 +1198,7 @@
 	}
 	focus = {
 		id = FLD_move_past_culture_war_poltiics
-		icon = GFX
+		icon = GFX_goal_FLD_move_past_culture_war_poltiics
 		cost = 4
 		prerequisite = { 
 			focus = FLD_reconciliation_with_moderates
@@ -1230,7 +1230,7 @@
 
 	focus = {
 		id = FLD_strengthen_the_executive
-		icon = GFX
+		icon = GFX_goal_FLD_strengthen_the_executive
 		cost = 3
 		prerequisite = { 
 			focus = FLD_digital_democracy
@@ -1250,7 +1250,7 @@
 
 	focus = {
 		id = FLD_completely_digitize_bureaucracy
-		icon = GFX
+		icon = GFX_goal_FLD_completely_digitize_bureaucracy
 		cost = 4
 		prerequisite = { 
 			focus = FLD_digital_democracy
@@ -1274,7 +1274,7 @@
 	}
 	focus = {
 		id = FLD_addressing_climate_change
-		icon = GFX
+		icon = GFX_goal_FLD_addressing_climate_change
 		cost = 4
 		prerequisite = { 
 			focus = FLD_completely_digitize_bureaucracy
@@ -1308,7 +1308,7 @@
 	}
 	focus = {
 		id = FLD_flood_barriers
-		icon = GFX
+		icon = GFX_goal_FLD_flood_barriers
 		cost = 4
 		prerequisite = { 
 			focus = FLD_addressing_climate_change
@@ -1351,7 +1351,7 @@
 	}
 	focus = {
 		id = FLD_affordable_sustainable_housing
-		icon = GFX
+		icon = GFX_goal_FLD_affordable_sustainable_housing
 		cost = 4
 		prerequisite = { 
 			focus = FLD_addressing_climate_change
@@ -1391,7 +1391,7 @@
 	}
 	focus = {
 		id = FLD_expand_urban_development
-		icon = GFX
+		icon = GFX_goal_FLD_expand_urban_development
 		cost = 4
 		prerequisite = { 
 			focus = FLD_affordable_sustainable_housing
