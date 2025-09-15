@@ -78,7 +78,7 @@ AFS_saving_terra_decisions = {
 }
 
 AFS_hawkins_political_decisions = {
-	icon = GFX_decision_category_AFS_vermin_political_decisions
+	icon = GFX_decision_category_AFS_hawkins_political_decisions
 	
 	allowed = {
     original_tag = AFS
@@ -87,7 +87,7 @@ AFS_hawkins_political_decisions = {
 }
 
 AFS_hawkins_economic_decisions = {
-	icon = GFX_decision_category_AFS_vermin_political_decisions
+	icon = GFX_decision_category_AFS_hawkins_economic_decisions
 	
 	allowed = {
     original_tag = AFS
@@ -96,7 +96,7 @@ AFS_hawkins_economic_decisions = {
 }
 
 AFS_mattis_political_decisions = {
-	icon = GFX_decision_category_AFS_vermin_political_decisions
+	icon = GFX_decision_category_AFS_mattis_political_decisions
 	
 	allowed = {
     original_tag = AFS
@@ -105,7 +105,7 @@ AFS_mattis_political_decisions = {
 }
 
 AFS_mattis_economic_decisions = {
-	icon = GFX_decision_category_AFS_vermin_political_decisions
+	icon = GFX_decision_category_AFS_mattis_economic_decisions
 	
 	allowed = {
     original_tag = AFS
@@ -114,7 +114,7 @@ AFS_mattis_economic_decisions = {
 }
 
 AFS_decaying_savior = {
-	icon = GFX_decision_category_AFS_vermin_political_decisions
+	icon = GFX_decision_category_AFS_decaying_savior
 	
 	allowed = {
     original_tag = AFS
@@ -123,7 +123,7 @@ AFS_decaying_savior = {
 }
 
 AFS_vance_political_decisions = {
-	icon = GFX_decision_category_AFS_vermin_political_decisions
+	icon = GFX_decision_category_AFS_vance_political_decisions
 	
 	allowed = {
     original_tag = AFS
@@ -145,7 +145,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 }
 
 AFS_enlighten_vance_political_decisions = {
-	icon = GFX_decision_category_AFS_vermin_political_decisions
+	icon = GFX_decision_category_AFS_enlighten_vance_political_decisions
 	
 	allowed = {
     original_tag = AFS

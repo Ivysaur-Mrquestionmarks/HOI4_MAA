@@ -13055,6 +13055,58 @@ spriteTypes = {
         legacy_lazy_load = no
     }
 
+    #Decisions Categories
+
+    spriteType = {
+        name = "GFX_decision_category_AFS_decaying_savior"
+        texturefile = "gfx/interface/decisions/AFS/decision_category_AFS_decaying_savior.dds"
+    }
+
+    spriteType = {
+        name = "GFX_decision_category_AFS_enlighten_vance_political_decisions"
+        texturefile = "gfx/interface/decisions/AFS/decision_category_AFS_enlighten_vance_political_decisions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_decision_category_AFS_hawkins_economic_decisions"
+        texturefile = "gfx/interface/decisions/AFS/decision_category_AFS_hawkins_economic_decisions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_decision_category_AFS_hawkins_political_decisions"
+        texturefile = "gfx/interface/decisions/AFS/decision_category_AFS_hawkins_political_decisions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_decision_category_AFS_mattis_economic_decisions"
+        texturefile = "gfx/interface/decisions/AFS/decision_category_AFS_mattis_economic_decisions.dds"
+    }
+    
+    spriteType = {
+        name = "GFX_decision_category_AFS_mattis_political_decisions"
+        texturefile = "gfx/interface/decisions/AFS/decision_category_AFS_mattis_political_decisions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_decision_category_AFS_saving_terra_decisions"
+        texturefile = "gfx/interface/decisions/AFS/decision_category_AFS_saving_terra_decisions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_decision_category_AFS_vance_political_decisions"
+        texturefile = "gfx/interface/decisions/AFS/decision_category_AFS_vance_political_decisions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_decision_category_AFS_vermin_economic_decisions"
+        texturefile = "gfx/interface/decisions/AFS/decision_category_AFS_vermin_economic_decisions.dds"
+    }
+
+    spriteType = {
+        name = "GFX_decision_category_AFS_vermin_political_decisions"
+        texturefile = "gfx/interface/decisions/AFS/decision_category_AFS_vermin_political_decisions.dds"
+    }
+
     #BoP
 
     spriteType = {

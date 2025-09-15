@@ -337,6 +337,14 @@ focus_tree = {
 		}
 		completion_reward = {
 		    custom_effect_tooltip = AFS_this_will_weaken_mattis_and_hawkins
+
+			custom_effect_tooltip = AFS_civil_war_begins_tooltip
+			hidden_effect = {
+			    add_days_mission_timeout = {
+				    mission = AFS_civil_war_soon
+				    days = -500
+			    }
+			}
 		}
 	}
 
@@ -2254,6 +2262,24 @@ focus_tree = {
 		}
 		completion_reward = {
 		    custom_effect_tooltip = AFS_this_will_weaken_vermin
+
+			custom_effect_tooltip = AFS_civil_war_begins_tooltip
+			hidden_effect = {
+			    if = {
+			        limit = { has_country_flag = AFS_hawkins_side }
+			        add_days_mission_timeout = {
+			            mission = AFS_civil_war_soon_hawkins
+			            days = -500
+		            }
+		        }
+		        if = {
+			        limit = { has_country_flag = AFS_mattis_side }
+			        add_days_mission_timeout = {
+			            mission = AFS_civil_war_soon_mattis
+			            days = -500
+		            }
+		        }
+			}
 		}
 	}
 
