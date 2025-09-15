@@ -2599,6 +2599,7 @@ focus_tree = {
 			add_state_core = 111
 			add_state_core = 23
 			add_state_core = 25
+			add_state_core = 677
 		}
 		prerequisite = {
 			focus = KMT_keep_the_militias_in_charge
@@ -3485,11 +3486,12 @@ focus_tree = {
 		x = 45
 		y = 8
 
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 100
 		}
 		available = {
+			has_civil_war = yes
 		}
 		
 		bypass = {
@@ -3498,7 +3500,50 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			division_template = {
+    			name = "Infiltrators"
+    			division_names_group = TODO
+    			priority = 0
+    			template_counter = 5
+    			regiments = {
+        			infantry = { x = 0 y = 0 }
+       				infantry = { x = 0 y = 1 }
+        			infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+    			}
+			}
+			155 = {
+				create_unit = {
+    				division = "name = \"Infiltrators\" division_template = \"Infiltrators\" start_experience_factor = 0.15"
+    				owner = KMT
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 8419
+				}
+			}
+			155 = {
+				create_unit = {
+    				division = "name = \"Infiltrators\" division_template = \"Infiltrators\" start_experience_factor = 0.15"
+    				owner = KMT
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 1125
+				}
+			}
+			155 = {
+				create_unit = {
+    				division = "name = \"Infiltrators\" division_template = \"Infiltrators\" start_experience_factor = 0.15"
+    				owner = KMT
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 2375
+				}
+			}
+			155 = {
+				create_unit = {
+    				division = "name = \"Infiltrators\" division_template = \"Infiltrators\" start_experience_factor = 0.15"
+    				owner = KMT
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 8352
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_start_the_counter_revolution
@@ -3511,11 +3556,12 @@ focus_tree = {
 		x = 47
 		y = 8
 
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 100
 		}
 		available = {
+			has_civil_war = yes
 		}
 		
 		bypass = {
@@ -3524,7 +3570,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = -0.1
+			random_other_country = {
+				limit = {
+					original_tag = KMT
+				}
+				add_timed_idea = { idea = KMT_sabotage days = 200 }
+			}
 		}
 		prerequisite = {
 			focus = KMT_start_the_counter_revolution
@@ -3537,11 +3589,12 @@ focus_tree = {
 		x = 45
 		y = 9
 
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 100
 		}
 		available = {
+			has_civil_war = yes
 		}
 		
 		bypass = {
@@ -3550,7 +3603,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_manpower = 20000
 		}
 		prerequisite = {
 			focus = KMT_infiltrate_the_backline
@@ -3564,11 +3618,12 @@ focus_tree = {
 		x = 47
 		y = 9
 
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 100
 		}
 		available = {
+			has_civil_war = yes
 		}
 		
 		bypass = {
@@ -3577,7 +3632,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_political_power = 100
 		}
 		prerequisite = {
 			focus = KMT_infiltrate_the_backline
@@ -3591,11 +3647,12 @@ focus_tree = {
 		x = 46
 		y = 10
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}
 		available = {
+			has_civil_war = yes
 		}
 		
 		bypass = {
@@ -3604,7 +3661,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_timed_idea = { idea = KMT_push days = 50 }
 		}
 		prerequisite = {
 			focus = KMT_mobilize_the_sport_fans
