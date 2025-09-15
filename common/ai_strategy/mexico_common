@@ -1,3 +1,31 @@
-retake_paso = {
+MEX_retake_paso = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+	  is_in_array = {
+      array = global.mexican_collapse_countries
+      value = THIS.id
+    }
+	}
+	
+	ai_strategy = {
+
+		type = antagonize
+		id = RIO			
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = RIO
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = RIO			
+		value = 250
+	}
 
 }
+
