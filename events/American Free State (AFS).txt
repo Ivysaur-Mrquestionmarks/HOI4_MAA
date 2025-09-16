@@ -1518,15 +1518,16 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 		add_to_variable = {
 			var = AFS.var_war_support_level
 			value = 0.01
-			tooltip = AFS_increase_war_support_var_tt
+			tooltip = war_support_factor_tt
 		}
 		add_to_variable = {
 			var = AFS.var_morale_level
 			value = 0.01
-			tooltip = AFS_increase_morale_var_tt
+			tooltip = army_morale_factor_tt
 		}
 	}
 }
@@ -2386,25 +2387,26 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		custom_effect_tooltip = AFS_renewal_modify_tt
 		add_to_variable = {
 			var = AFS.var_autocratic_level
 			value = 0.01
-			tooltip = AFS_increase_autocratic_var_tt
+			tooltip = autocratic_drift_tt
 		}
 		add_to_variable = {
 			var = AFS.var_pp_level
 			value = 0.03
-			tooltip = AFS_increase_pp_var_tt
+			tooltip = political_power_gain_tt
 		}
 		add_to_variable = {
 			var = AFS.var_war_support_level
 			value = 0.03
-			tooltip = AFS_increase_war_support_var_tt
+			tooltip = war_support_factor_tt
 		}
 		add_to_variable = {
 			var = AFS.var_stability_level
 			value = 0.03
-			tooltip = AFS_increase_stability_var_tt
+			tooltip = stability_factor_tt
 		}
 	}
 }
@@ -2602,6 +2604,7 @@ country_event = {
 	#picture = event_
 	is_triggered_only = no
 	trigger = {
+		tag = AFS
 		NOT = {
 			country_exists = USA
 		}
@@ -2628,6 +2631,7 @@ country_event = {
 	#picture = event_
 	is_triggered_only = no
 	trigger = {
+		tag = AFS
 		NOT = {
 			country_exists = FRA
 		}
@@ -2654,6 +2658,7 @@ country_event = {
 	#picture = event_
 	is_triggered_only = no
 	trigger = {
+		tag = AFS
 		NOT = {
 			country_exists = FLO
 		}

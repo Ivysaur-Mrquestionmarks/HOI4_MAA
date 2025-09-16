@@ -1208,10 +1208,11 @@ AFS_vermin_political_decisions = {
                 ideology = libertarian_left
                 popularity = 0.02
             }
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
 				value = 0.01
-				tooltip = AFS_increase_monthly_population_var_tt
+				tooltip = monthly_population_tt
 			}
 			modify_country_flag = {
                 flag = AFS_vermin_political_decision_1
@@ -1258,15 +1259,16 @@ AFS_vermin_political_decisions = {
 			}
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_libertarian_left_level
 				value = 0.01
-				tooltip = AFS_increase_libertarian_left_var_tt
+				tooltip = libertarian_left_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_compliance_level
 				value = 0.01
-				tooltip = AFS_increase_compliance_var_tt
+				tooltip = compliance_growth_tt
 			}
 			modify_country_flag = {
                 flag = AFS_vermin_political_decision_2
@@ -1317,10 +1319,11 @@ AFS_vermin_political_decisions = {
                 ideology = libertarian_left
                 popularity = 0.02
             }
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_stability_level
 				value = 0.01
-				tooltip = AFS_increase_stability_var_tt
+				tooltip = stability_factor_tt
 			}
 			modify_country_flag = {
                 flag = AFS_vermin_political_decision_3
@@ -1371,15 +1374,16 @@ AFS_vermin_political_decisions = {
                 ideology = libertarian_left
                 popularity = 0.02
             }
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_stability_level
 				value = 0.01
-				tooltip = AFS_increase_stability_var_tt
+				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_compliance_level
 				value = 0.01
-				tooltip = AFS_increase_compliance_var_tt
+				tooltip = compliance_growth_tt
 			}
 			modify_country_flag = {
                 flag = AFS_vermin_political_decision_4
@@ -1427,10 +1431,11 @@ AFS_vermin_political_decisions = {
 			}
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_war_support_level
 				value = 0.01
-				tooltip = AFS_increase_war_support_var_tt
+				tooltip = war_support_factor_tt
 			}
 			modify_country_flag = {
                 flag = AFS_vermin_military_decision_1
@@ -1477,10 +1482,11 @@ AFS_vermin_political_decisions = {
 			}
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_defense_level
 				value = 0.01
-				tooltip = AFS_increase_defense_var_tt
+				tooltip = army_defence_factor_tt
 			}
 			modify_country_flag = {
                 flag = AFS_vermin_military_decision_2
@@ -1533,10 +1539,11 @@ AFS_vermin_economic_decisions = {
                 ideology = libertarian_left
                 popularity = 0.01
             }
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
 				value = 0.02
-				tooltip = AFS_increase_monthly_population_var_tt
+				tooltip = monthly_population_tt
 			}
 			modify_country_flag = {
                 flag = AFS_vermin_economic_decision_1
@@ -1587,10 +1594,11 @@ AFS_vermin_economic_decisions = {
                 ideology = libertarian_left
                 popularity = 0.01
             }
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
 				value = 0.02
-				tooltip = AFS_increase_monthly_population_var_tt
+				tooltip = monthly_population_tt
 			}
 			modify_country_flag = {
                 flag = AFS_vermin_economic_decision_2
@@ -1775,10 +1783,11 @@ AFS_vermin_economic_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_research_level
 				value = 0.03
-				tooltip = AFS_increase_research_var_tt
+				tooltip = research_speed_factor_tt
 			}
 			modify_country_flag = {
                 flag = AFS_vermin_economic_decision_5
@@ -4911,15 +4920,16 @@ AFS_mattis_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_renewal_modify_tt
             add_to_variable = {
 				var = AFS.var_pp_level
 				value = 0.05
-				tooltip = AFS_increase_pp_var_tt
+				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
 				var = AFS.var_resistance_growth_level
 				value = -0.03
-				tooltip = AFS_decrease_resistance_growth_var_tt
+				tooltip = resistance_growth_tt
 			}
 		}
 	}
@@ -4962,20 +4972,21 @@ AFS_mattis_political_decisions = {
 			political_power_gain = -0.25
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_renewal_modify_tt
             add_to_variable = {
 				var = AFS.var_pp_level
 				value = 0.02
-				tooltip = AFS_increase_pp_var_tt
+				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = AFS_increase_autocratic_var_tt
+				tooltip = autocratic_drift_tt
 			}
 			add_to_variable = {
 				var = AFS.var_stability_level
 				value = 0.03
-				tooltip = AFS_increase_stability_var_tt
+				tooltip = stability_factor_tt
 			}
 		}
 	}
@@ -6382,10 +6393,11 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = AFS_increase_autocratic_var_tt
+				tooltip = autocratic_drift_tt
 			}
 			add_to_variable = {
 				var = AFS.var_morale_level
@@ -6439,15 +6451,16 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = AFS_increase_autocratic_var_tt
+				tooltip = autocratic_drift_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
 				value = 0.02
-				tooltip = AFS_increase_war_support_var_tt
+				tooltip = war_support_factor_tt
 			}
 			modify_country_flag = {
                 flag = AFS_dark_vance_political_decision_2
@@ -6496,15 +6509,16 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = AFS_increase_autocratic_var_tt
+				tooltip = autocratic_drift_tt
 			}
 			add_to_variable = {
 				var = AFS.var_stability_level
 				value = 0.02
-				tooltip = AFS_increase_stability_var_tt
+				tooltip = stability_factor_tt
 			}
 			modify_country_flag = {
                 flag = AFS_dark_vance_political_decision_3
@@ -6553,15 +6567,16 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = AFS_increase_autocratic_var_tt
+				tooltip = autocratic_drift_tt
 			}
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
 				value = 0.03
-				tooltip = AFS_increase_monthly_population_var_tt
+				tooltip = monthly_population_tt
 			}
 			modify_country_flag = {
                 flag = AFS_dark_vance_political_decision_4
@@ -6610,15 +6625,16 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = AFS_increase_autocratic_var_tt
+				tooltip = autocratic_drift_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
 				value = 0.02
-				tooltip = AFS_increase_war_support_var_tt
+				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_morale_level
@@ -6672,15 +6688,16 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = AFS_increase_autocratic_var_tt
+				tooltip = autocratic_drift_tt
 			}
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
 				value = 0.03
-				tooltip = AFS_increase_monthly_population_var_tt
+				tooltip = monthly_population_tt
 			}
 			modify_country_flag = {
                 flag = AFS_dark_vance_political_decision_6
@@ -6729,6 +6746,7 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_stability_level
 				value = -0.03
@@ -6737,7 +6755,7 @@ AFS_enlighten_vance_political_decisions = {
 			add_to_variable = {
 				var = AFS.var_resistance_growth_level
 				value = -0.03
-				tooltip = AFS_decrease_resistance_growth_var_tt
+				tooltip = resistance_growth_tt
 			}
 			every_owned_state = {
 			    add_state_modifier = {
@@ -6795,10 +6813,11 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_resistance_growth_level
 				value = -0.03
-				tooltip = AFS_decrease_resistance_growth_var_tt
+				tooltip = resistance_growth_tt
 			}
 			every_owned_state = {
 			    add_state_modifier = {
@@ -6856,10 +6875,11 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_resistance_growth_level
 				value = -0.03
-				tooltip = AFS_decrease_resistance_growth_var_tt
+				tooltip = resistance_growth_tt
 			}
 			every_owned_state = {
 			    add_state_modifier = {
@@ -6917,15 +6937,16 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_stability_level
 				value = 0.03
-				tooltip = AFS_increase_stability_var_tt
+				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = AFS_increase_autocratic_var_tt
+				tooltip = autocratic_drift_tt
 			}
 			random_controlled_state = {
 				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
@@ -6983,20 +7004,21 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_stability_level
 				value = 0.02
-				tooltip = AFS_increase_stability_var_tt
+				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_stability_level
 				value = 0.03
-				tooltip = AFS_increase_war_stability_var_tt
+				tooltip = war_stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = AFS_increase_autocratic_var_tt
+				tooltip = autocratic_drift_tt
 			}
 			modify_country_flag = {
                 flag = AFS_dark_vance_political_decision_11
@@ -7045,20 +7067,21 @@ AFS_enlighten_vance_political_decisions = {
 		modifier = {
 		}
 		remove_effect = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_stability_level
 				value = 0.02
-				tooltip = AFS_increase_stability_var_tt
+				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_pp_level
 				value = 0.03
-				tooltip = AFS_increase_pp_var_tt
+				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = AFS_increase_autocratic_var_tt
+				tooltip = autocratic_drift_tt
 			}
 			modify_country_flag = {
                 flag = AFS_dark_vance_political_decision_12
