@@ -1,0 +1,1001 @@
+focus_tree = {
+	id = BRA_Boston_Republican_Army
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+	}
+	default = no
+	focus = {
+		id = BRA_no_popery
+		icon = GFX_goal_unknown
+		cost = 3.00
+		mutually_exclusive = {
+			focus = BRA_the_boston_republican_army
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = BRA_the_boston_republican_army
+		icon = GFX_goal_unknown
+		cost = 4.00
+		mutually_exclusive = {
+			focus = BRA_no_popery
+		}
+		x = 26
+		y = 1
+
+	}
+	focus = {
+		id = BRA_wrath_of_kali
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = BRA_no_popery
+		}
+		mutually_exclusive = {
+			focus = BRA_institute_conspiracy
+		}
+		x = 8
+		y = 1
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_devaccination
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = BRA_wrath_of_kali
+		}
+		x = 5
+		y = 2
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_institute_conspiracy
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = BRA_no_popery
+		}
+		mutually_exclusive = {
+			focus = BRA_wrath_of_kali
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = BRA_friendly_face
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_institute_conspiracy
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = BRA_soviet_aesthetics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_friendly_face
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = BRA_comrade_fridman
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_friendly_face
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = BRA_embrace_kek
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = BRA_wrath_of_kali
+		}
+		x = 7
+		y = 2
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_stuff_the_ballots
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = BRA_wrath_of_kali
+		}
+		x = 11
+		y = 2
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_infinity_indians
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = BRA_wrath_of_kali
+		}
+		x = 9
+		y = 2
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_to_end_the_world
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_stuff_the_ballots
+		}
+		prerequisite = {
+			focus = BRA_infinity_indians
+		}
+		prerequisite = {
+			focus = BRA_embrace_kek
+		}
+		prerequisite = {
+			focus = BRA_devaccination
+		}
+		x = 8
+		y = 3
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_blueprint_for_new_world
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = BRA_to_end_the_world
+		}
+		x = 6
+		y = 4
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_hindu_constitution
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_blueprint_for_new_world
+		}
+		x = 5
+		y = 5
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_new_england_unification
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_to_end_the_world
+		}
+		x = 8
+		y = 4
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_pagan_alliance
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = BRA_new_england_unification
+		}
+		x = 8
+		y = 5
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_mission_to_modi
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_to_end_the_world
+		}
+		x = 10
+		y = 4
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_elephant_cavalry
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = BRA_mission_to_modi
+		}
+		x = 11
+		y = 5
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_slay_canadian_asura
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_pagan_alliance
+		}
+		prerequisite = {
+			focus = BRA_elephant_cavalry
+		}
+		prerequisite = {
+			focus = BRA_hindu_constitution
+		}
+		x = 8
+		y = 6
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_saviour_of_the_world
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_slay_canadian_asura
+		}
+		mutually_exclusive = {
+			focus = BRA_false_prophet
+		}
+		x = 7
+		y = 7
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_false_prophet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_slay_canadian_asura
+		}
+		mutually_exclusive = {
+			focus = BRA_saviour_of_the_world
+		}
+		x = 9
+		y = 7
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_saraswati_pajeets
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_blueprint_for_new_world
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = BRA_dropkick_murphys
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_the_boston_republican_army
+		}
+		mutually_exclusive = {
+			focus = FRA_federalist_veteran
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = BRA_decree_on_land
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_dropkick_murphys
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = BRA_decree_on_heritage
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = BRA_dropkick_murphys
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = BRA_punk_rock_bolshevism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_dropkick_murphys
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = BRA_socialism_with_irish_characteristics
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = BRA_punk_rock_bolshevism
+		}
+		prerequisite = {
+			focus = BRA_decree_on_heritage
+		}
+		prerequisite = {
+			focus = BRA_decree_on_land
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = BRA_revolution_never_ends
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = BRA_punk_rock_bolshevism
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = FRA_federalist_veteran
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_the_boston_republican_army
+		}
+		mutually_exclusive = {
+			focus = BRA_dropkick_murphys
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = BRA_heirs_of_lincoln
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_dropkick_murphys
+			focus = FRA_federalist_veteran
+		}
+		mutually_exclusive = {
+			focus = BRA_republican_is_a_dirty_word
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = BRA_republican_is_a_dirty_word
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_federalist_veteran
+			focus = BRA_dropkick_murphys
+		}
+		mutually_exclusive = {
+			focus = BRA_heirs_of_lincoln
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = BRA_fortress_boston
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_republican_is_a_dirty_word
+			focus = BRA_heirs_of_lincoln
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = BRA_exile_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_federalist_veteran
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = BRA_push_for_new_england
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_socialism_with_irish_characteristics
+			focus = BRA_exile_army
+		}
+		prerequisite = {
+			focus = BRA_fortress_boston
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = BRA_fenian_brotherhood
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_push_for_new_england
+		}
+		prerequisite = {
+			focus = BRA_socialism_with_irish_characteristics
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = BRA_quebecois_liberation_front
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = BRA_fenian_brotherhood
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = BRA_decree_on_democracy
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = BRA_push_for_new_england
+		}
+		prerequisite = {
+			focus = BRA_revolution_never_ends
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = BRA_ban_counterrevolutionary_actors
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_fenian_brotherhood
+		}
+		prerequisite = {
+			focus = BRA_decree_on_democracy
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = BRA_decree_on_bread
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_push_for_new_england
+		}
+		prerequisite = {
+			focus = BRA_socialism_with_irish_characteristics
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = BRA_nationalise_mit
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_push_for_new_england
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = BRA_accept_legitimist_refugees
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_federalist_veteran
+			focus = BRA_dropkick_murphys
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = BRA_this_is_fine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_federalist_veteran
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = BRA_appeal_to_europe
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_push_for_new_england
+		}
+		prerequisite = {
+			focus = BRA_this_is_fine
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = BRA_settling_in
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = BRA_this_is_fine
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = BRA_new_ireland
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_push_for_new_england
+		}
+		prerequisite = {
+			focus = BRA_settling_in
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = BRA_president_in_absentia
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_federalist_veteran
+		}
+		mutually_exclusive = {
+			focus = BRA_suspend_natural_born_citizen_clause
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = BRA_search_for_the_president
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_president_in_absentia
+		}
+		prerequisite = {
+			focus = BRA_push_for_new_england
+		}
+		mutually_exclusive = {
+			focus = BRA_assume_complete_responsibility
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = BRA_kali_is_our_leader
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = BRA_false_prophet
+		}
+		mutually_exclusive = {
+			focus = BRA_fear_the_american_rajah
+		}
+		x = 9
+		y = 8
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_fear_the_american_rajah
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = BRA_false_prophet
+			focus = BRA_saviour_of_the_world
+		}
+		mutually_exclusive = {
+			focus = BRA_kali_is_our_leader
+		}
+		x = 7
+		y = 8
+		relative_position_id = BRA_no_popery
+
+	}
+	focus = {
+		id = BRA_begin_the_experiments
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_friendly_face
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = BRA_freedom_is_slavery
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_friendly_face
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = BRA_techno_mladorossy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_comrade_fridman
+		}
+		prerequisite = {
+			focus = BRA_soviet_aesthetics
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = BRA_mobilise_the_morons
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_freedom_is_slavery
+		}
+		prerequisite = {
+			focus = BRA_begin_the_experiments
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = BRA_our_new_jerusalem
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_mobilise_the_morons
+		}
+		prerequisite = {
+			focus = BRA_techno_mladorossy
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = BRA_dissolve_council_of_admins
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_techno_mladorossy
+		}
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = BRA_boston_stormtroopers
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_mobilise_the_morons
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = BRA_the_institute
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_dissolve_council_of_admins
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = BRA_synthetic_people
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_the_institute
+		}
+		x = 2
+		y = 8
+
+	}
+	focus = {
+		id = BRA_tame_the_wild_north
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_our_new_jerusalem
+		}
+		prerequisite = {
+			focus = BRA_boston_stormtroopers
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = BRA_lysensko
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_soviet_aesthetics
+		}
+		x = 2
+		y = 5
+
+	}
+	focus = {
+		id = BRA_secret_police
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_boston_stormtroopers
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = BRA_perfect_technocracy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_secret_police
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = BRA_improve_synth_production
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_perfect_technocracy
+		}
+		prerequisite = {
+			focus = BRA_synthetic_people
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = {
+		id = BRA_total_ascendancy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_improve_synth_production
+		}
+		x = 5
+		y = 10
+
+	}
+	focus = {
+		id = BRA_suspend_natural_born_citizen_clause
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = FRA_federalist_veteran
+		}
+		mutually_exclusive = {
+			focus = BRA_president_in_absentia
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = BRA_inauguration
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = BRA_suspend_natural_born_citizen_clause
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = BRA_assume_complete_responsibility
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_inauguration
+			focus = BRA_president_in_absentia
+		}
+		prerequisite = {
+			focus = BRA_push_for_new_england
+		}
+		mutually_exclusive = {
+			focus = BRA_search_for_the_president
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = BRA_more_funding_MIT
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_begin_the_experiments
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = BRA_rig_ballots
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_search_for_the_president
+			focus = BRA_assume_complete_responsibility
+		}
+		prerequisite = {
+			focus = BRA_new_ireland
+		}
+		x = 31
+		y = 7
+
+	}
+	focus = {
+		id = BRA_push_to_dc
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = BRA_rig_ballots
+			focus = BRA_ban_counterrevolutionary_actors
+		}
+		prerequisite = {
+			focus = BRA_nationalise_mit
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = BRA_a_new_election
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_push_to_dc
+		}
+		prerequisite = {
+			focus = BRA_ban_counterrevolutionary_actors
+		}
+		mutually_exclusive = {
+			focus = BRA_suspend_elections
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = BRA_suspend_elections
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = BRA_push_to_dc
+		}
+		prerequisite = {
+			focus = BRA_ban_counterrevolutionary_actors
+		}
+		mutually_exclusive = {
+			focus = BRA_a_new_election
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = BRA_bright_new_horizon
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = BRA_rig_ballots
+		}
+		prerequisite = {
+			focus = BRA_push_to_dc
+		}
+		x = 31
+		y = 9
+
+	}
+	focus = {
+		id = BRA_decree_on_unity
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_a_new_election
+			focus = BRA_suspend_elections
+		}
+		x = 20
+		y = 10
+
+	}
+	focus = {
+		id = BRA_carry_torch_of_legitimism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_bright_new_horizon
+		}
+		x = 32
+		y = 10
+
+	}
+	focus = {
+		id = BRA_make_america_again
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = BRA_carry_torch_of_legitimism
+			focus = BRA_decree_on_unity
+		}
+		x = 26
+		y = 11
+
+	}
+}
