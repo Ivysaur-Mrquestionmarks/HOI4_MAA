@@ -175,32 +175,6 @@ characters={
 			id = -1
 		}
 	}
-	AFS_venn = {
-		name = AFS_venn
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/AFS/AFS_venn.dds"
-			}
-			army={
-				small = "GFX_idea_AFS_venn_advisor"
-				large = "gfx/leaders/AFS/AFS_venn.dds"
-			}
-		}
-		country_leader = {
-			ideology = misanthropic_dictatorship
-			traits = {  }
-			expire = "2060.1.1.1"
-			id = -1
-		}
-		corps_commander = {
-			traits={ politically_connected hawkins_loyalist_trait AFS_annihilationist } 
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 1
-		}
-	}
 	### Military Staff and Political Advisors ###
 	# Political Advisors #
 	AFS_angela_walker = {
@@ -465,95 +439,6 @@ characters={
 	}
 	### Military Leaders ###
 	# Army #
-	AFS_stanley_mcchrystal = {
-		name = AFS_stanley_mcchrystal
-		portraits = {
-			army={
-				small = "gfx/interface/ideas/AFS/Stanley_McChrystal_General.dds"
-				large= "gfx/leaders/AFS/mcchrystal.dds"
-			}
-		}
-		corps_commander = {
-			traits={ old_guard politically_connected inflexible_strategist mattis_loyalist_trait organisational_leader } 
-			skill = 4
-			attack_skill = 3
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 3
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = AFS_mcchrystal_advisor
-			cost = 150
-			removal_cost = 0
-			allowed = {
-				tag = AFS
-			}
-			visible = {
-				tag = AFS
-			}
-			available = {
-				has_government = autocratic
-			}
-			traits = {
-				AFS_mattis_second_in_command
-			}
-			ai_will_do = {
-				factor = 5
-			}
-		}
-	}
-	AFS_michael_akey = {
-		name = AFS_michael_akey
-		portraits = {
-			army={
-				small = "gfx/interface/ideas/AFS/Michael_Akey_General.dds"
-				large= "gfx/leaders/AFS/Michael_Akey.png"
-			}
-		}
-		corps_commander = {
-			traits={ old_guard mattis_loyalist_trait } 
-			skill = 3
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 3
-		}
-	}
-	AFS_tommy_ray_franks = {
-		name = "Tommy Franks"
-		portraits = {
-			army={
-				small = "gfx/interface/ideas/AFS/Tommy_Franks_General.dds"
-				large= "gfx/leaders/AFS/tommy_franks.png"
-			}
-		}
-		corps_commander = {
-			traits={ old_guard mattis_loyalist_trait bearer_of_artillery desert_fox } 
-			skill = 3
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 4
-			logistics_skill = 3
-		}
-	}
-	AFS_charles_a_flynn = {
-		name = "Charles Flynn"
-		portraits = {
-			army={
-				small = "gfx/interface/ideas/AFS/Charles_A_Flynn_General.dds"
-				large= "gfx/leaders/AFS/charles_a_flynn.tga"
-			}
-		}
-		corps_commander = {
-			traits={ career_officer mattis_loyalist_trait infantry_leader commando } 
-			skill = 4
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 1
-		}
-	}
 	AFS_barry_croft = {
 		name = AFS_barry_croft
 		portraits = {
@@ -762,6 +647,123 @@ characters={
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 2
+		}
+	}
+
+	AFS_venn = {
+		name = AFS_venn
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AFS/AFS_venn.dds"
+			}
+			army={
+				small = "GFX_idea_AFS_venn_advisor"
+				large = "gfx/leaders/AFS/AFS_venn.dds"
+			}
+		}
+		country_leader = {
+			ideology = misanthropic_dictatorship
+			traits = {  }
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits={ politically_connected hawkins_loyalist_trait AFS_annihilationist } 
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	AFS_stanley_mcchrystal = {
+		name = AFS_stanley_mcchrystal
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/AFS/Stanley_McChrystal_General.dds"
+				large= "gfx/leaders/AFS/mcchrystal.dds"
+			}
+		}
+		corps_commander = {
+			traits={ old_guard politically_connected inflexible_strategist mattis_loyalist_trait organisational_leader } 
+			skill = 4
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AFS_mcchrystal_advisor
+			cost = 150
+			removal_cost = 0
+			allowed = {
+				tag = AFS
+			}
+			visible = {
+				tag = AFS
+			}
+			available = {
+				has_government = autocratic
+			}
+			traits = {
+				AFS_mattis_second_in_command
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	AFS_michael_akey = {
+		name = AFS_michael_akey
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/AFS/Michael_Akey_General.dds"
+				large= "gfx/leaders/AFS/Michael_Akey.png"
+			}
+		}
+		corps_commander = {
+			traits={ old_guard mattis_loyalist_trait } 
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	AFS_tommy_ray_franks = {
+		name = "Tommy Franks"
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/AFS/Tommy_Franks_General.dds"
+				large= "gfx/leaders/AFS/tommy_franks.png"
+			}
+		}
+		corps_commander = {
+			traits={ old_guard mattis_loyalist_trait bearer_of_artillery desert_fox } 
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	AFS_charles_a_flynn = {
+		name = "Charles Flynn"
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/AFS/Charles_A_Flynn_General.dds"
+				large= "gfx/leaders/AFS/charles_a_flynn.tga"
+			}
+		}
+		corps_commander = {
+			traits={ career_officer mattis_loyalist_trait infantry_leader commando } 
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
 		}
 	}
 
