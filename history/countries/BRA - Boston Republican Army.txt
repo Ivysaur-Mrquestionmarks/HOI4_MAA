@@ -48,6 +48,12 @@ if = {
 	}
 }
 
+add_ideas = {
+	BRA_unstable_city_state
+
+	#laws
+}
+
 set_politics = {
 	ruling_party = authoritarian_left
 	last_election = "2020.11.3"
@@ -65,3 +71,7 @@ set_popularities = {
 
 ### Country Leaders ###
 recruit_character = BRA_ken_casey
+recruit_character = BRA_matthew_colligan
+recruit_character = BRA_salvation_council
+recruit_character = BRA_gabriel_megahey
+recruit_character = BRA_marty_walsh

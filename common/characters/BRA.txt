@@ -8,11 +8,55 @@ characters={
 				large = "gfx/leaders/BRA/Ken_Casey.png"
 			}
 		}
+		#country_leader = {
+		#	ideology = nazbol
+		#	traits = {}
+		#	expire = "2060.1.1.1"
+		#	id = -1
+		#}
+	}
+
+	BRA_gabriel_megahey = {
+		name = "Gabriel Megahey"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/gabriel_megahey.tga"
+			}
+		}
 		country_leader = {
 			ideology = nazbol
 			traits = {}
-			expire = "2060.1.1.1"
-			id = -1
+		}
+	}
+
+	BRA_matthew_colligan = {
+		name = "Matthew Colligan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/matt_colligan.tga"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			traits = {}
+		}
+	}
+
+	BRA_salvation_council = {
+		name = "Salvation Council"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/knownothing_duumvirate.tga"
+			}
+		}
+	}
+
+	BRA_marty_walsh = {
+		name = "Marty Walsh"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/marty_walsh.tga"
+			}
 		}
 	}
 }

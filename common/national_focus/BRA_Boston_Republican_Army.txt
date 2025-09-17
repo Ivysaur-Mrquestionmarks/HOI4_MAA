@@ -17,6 +17,37 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
+		completion_reward = {
+			remove_ideas = BRA_unstable_city_state
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.10
+			}
+			set_politics = {
+			    ruling_party = autocratic
+			    elections_allowed = no
+			}
+			BRA_salvation_council = {
+				add_country_leader_role = {
+				    promote_leader = yes
+				    country_leader = {
+				        ideology = technocracy
+				        traits = { divided_interests }
+				    }
+				}
+			}
+			hidden_effect = {
+				BRA_ken_casey = {
+					add_country_leader_role = {
+					    promote_leader = yes
+					    country_leader = {
+					        ideology = communism
+					        traits = {  }
+					    }
+					}
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -852,7 +883,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BRA_suspend_natural_born_citizen_clause
 		}
-		x = 34
+		x = 35
 		y = 4
 
 	}
