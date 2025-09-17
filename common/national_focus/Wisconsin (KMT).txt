@@ -3675,7 +3675,7 @@ focus_tree = {
 		x = 54
 		y = 8
 
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 100
 		}
@@ -3688,7 +3688,15 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			hidden_effect = {
+				set_capital = {
+					state = 155
+					remember_old_capital = no
+				}
+			}
+			add_political_power = 100
+			add_stability = 0.15
+			add_research_slot = 1
 		}
 		prerequisite = {
 			focus = KMT_start_the_counter_revolution
@@ -3701,7 +3709,7 @@ focus_tree = {
 		x = 49
 		y = 9
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3714,7 +3722,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_country_leader_trait = KMT_alt_right_figure
+			add_stability = 0.05
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.05
+			}
+			add_political_power = 50	
+			remove_ideas = KMT_unholy_coalition
 		}
 		prerequisite = {
 			focus = KMT_the_second_victory_over_chaos
@@ -3731,7 +3746,7 @@ focus_tree = {
 		x = 54
 		y = 9
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3744,7 +3759,17 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			set_politics = {
+    			ruling_party = libertarian_right
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = libertarian_right
+				popularity = 0.05
+			}
+			add_stability = -0.05
+			add_political_power = 75
+			remove_ideas = KMT_unholy_coalition
 		}
 		prerequisite = {
 			focus = KMT_the_second_victory_over_chaos
@@ -3761,7 +3786,7 @@ focus_tree = {
 		x = 59
 		y = 9
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3774,7 +3799,16 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			set_politics = {
+    			ruling_party = libertarian_left
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = libertarian_left
+				popularity = 0.05
+			}
+			add_war_support = -0.2
+			remove_ideas = KMT_unholy_coalition
 		}
 		prerequisite = {
 			focus = KMT_the_second_victory_over_chaos
@@ -4025,7 +4059,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
 		}
 		prerequisite = {
 			focus = KMT_the_snyder_coup
