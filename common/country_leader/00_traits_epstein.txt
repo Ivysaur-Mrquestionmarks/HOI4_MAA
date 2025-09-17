@@ -5153,6 +5153,12 @@ leader_traits = {
 		libertarian_left_drift = 0.05
 		intel_network_gain_factor = 0.2
 	}
+	KMT_alt_right_figure = {
+		random = no
+		autocratic_drift = 0.05
+		war_support_factor = 0.1
+		consumer_goods_factor = -0.1
+	}
 
 	#advisors
 	KMT_advisor_shrewd_politician = {
