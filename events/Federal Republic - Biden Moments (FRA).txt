@@ -3629,3 +3629,775 @@ country_event = {
 		name = bidone_pathguides.6.a
 	}
 }
+
+
+add_namespace = postwar_election_fra #post war elections done by Merfipoos :)
+
+#unification has happened- notifying you that elections will happen in November
+country_event = {
+	id = postwar_election_fra.1
+	title = postwar_election_fra.1.t
+	desc = postwar_election_fra.1.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = postwar_election_fra.1.a
+		set_country_flag = fra_holding_post_war_elections
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = democrat
+				}
+				set_politics = {
+				    ruling_party = democrat
+				    elections_allowed = yes
+				    last_election = "2024.11.5"
+				    election_frequency = 48
+				}
+			}
+			if = {
+				limit = {
+					has_government = libertarian_left
+				}
+				set_politics = {
+				    ruling_party = libertarian_left
+				    elections_allowed = yes
+				    last_election = "2024.11.5"
+				    election_frequency = 48
+				}
+			}
+			if = {
+				limit = {
+					has_government = republican
+				}
+				set_politics = {
+				    ruling_party = republican
+				    elections_allowed = yes
+				    last_election = "2024.11.5"
+				    election_frequency = 48
+				}
+			}
+		}
+	}
+}
+#2028 election
+country_event = {
+	id = postwar_election_fra.2
+	title = postwar_election_fra.2.t
+	desc = postwar_election_fra.2.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#keep the current president
+	option = {
+		name = postwar_election_fra.2.a
+		add_political_power = 100
+	}
+	#moderate democrats win back power - President Buttplug
+	option = {
+		name = post_war_election_fra.2.b
+		trigger = {
+			NOT = { has_government = democrat }
+		}
+		add_country_leader_role = {
+		    character = FRA_pete_buttigieg
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = liberal
+		        traits = { railroad_enthusiast }
+		    }
+		}
+		set_politics = {
+		    ruling_party = democrat
+		    elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = democrat
+			popularity = 0.25
+		}
+	}
+}
+#2032 election
+country_event = {
+	id = postwar_election_fra.3
+	title = postwar_election_fra.3.t
+	desc = postwar_election_fra.3.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#keep the current president
+	option = {
+		name = postwar_election_fra.3.a
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = FRA_theodore_roosevelt_IV #RFK is too old now
+					ruling_only = yes
+				}
+			}
+		}
+		add_political_power = 100
+		if = {
+			limit = {
+				has_government = libertarian_left
+			}
+			country_event = {
+				id = postwar_election_fra.4
+				days = 70
+			}
+		}
+	}
+	#moderate democrats win back power - President Buttplug
+	option = {
+		name = post_war_election_fra.3.b
+		trigger = {
+			NOT = { has_government = democrat }
+		}
+		add_country_leader_role = {
+		    character = FRA_pete_buttigieg
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = liberal
+		        traits = { railroad_enthusiast }
+		    }
+		}
+		set_politics = {
+		    ruling_party = democrat
+		    elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = democrat
+			popularity = 0.25
+		}
+	}
+	#Kennedy Republican successor
+	option = {
+		name = postwar_election_fra.3.c
+		trigger = {
+			has_country_leader = {
+				character = FRA_theodore_roosevelt_IV #RFK is too old now
+				ruling_only = yes
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_amaryllis_fox_kennedy
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = Progressive_Republicans
+		        traits = { SWI_intelligence_officer }
+		    }
+		}
+	}
+}
+#Remove the natural born citizen clause?
+country_event = {
+	id = postwar_election_fra.4
+	title = postwar_election_fra.4.t
+	desc = postwar_election_fra.4.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#yes!
+	option = {
+		name = postwar_election_fra.4.a
+		add_political_power = -50
+		add_stability = -0.01
+		set_country_flag = fra_natural_born_citizen_clause_removed
+		custom_effect_tooltip = fra_mamdani_can_run_for_president_tt
+	}	
+	#no!
+	option = {
+		name = postwar_election_fra.4.b
+		set_country_flag = fra_natural_born_citizen_clause_kept
+	}
+}
+#2036 election
+country_event = {
+	id = postwar_election_fra.5
+	title = postwar_election_fra.5.t
+	desc = postwar_election_fra.5.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#keep the current president
+	option = {
+		name = postwar_election_fra.5.a
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = FRA_theodore_roosevelt_IV #RFK is too old now
+					ruling_only = yes
+				}
+			}
+		}
+		add_political_power = 100
+		if = {
+			limit = {
+				has_government = libertarian_left
+				NOT = {
+					has_country_flag = fra_natural_born_citizen_clause_kept
+				}
+			}
+			country_event = {
+				id = postwar_election_fra.4
+				days = 70
+			}
+		}
+	}
+	#moderate democrats win back power - President Ossoff
+	option = {
+		name = post_war_election_fra.5.b
+		trigger = {
+			NOT = { has_government = democrat }
+		}
+		add_country_leader_role = {
+		    character = FRA_jon_ossoff
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = neoliberal
+		        traits = { liberal_journalist }
+		    }
+		}
+		set_politics = {
+		    ruling_party = democrat
+		    elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = democrat
+			popularity = 0.25
+		}
+	}
+	#Kennedy Republican successor
+	option = {
+		name = postwar_election_fra.5.c
+		trigger = {
+			has_country_leader = {
+				character = FRA_theodore_roosevelt_IV #RFK is too old now
+				ruling_only = yes
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_amaryllis_fox_kennedy
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = Progressive_Republicans
+		        traits = { SWI_intelligence_officer }
+		    }
+		}
+	}
+	#Don't Mess with the Zohran
+	option = {
+		name = postwar_election_fra.5.e
+		trigger = {
+			has_country_flag = fra_natural_born_citizen_clause_removed
+			NOT = {
+				has_country_leader = {
+					character = FRA_zohran_mamdani
+					ruling_only = yes
+				}
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_zohran_mamdani
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = syndicalism
+		        traits = { GER_staunch_socialist GER_militant_communist }
+		    }
+		}
+	}
+}
+#2040 election - this is where things start getting weird
+country_event = {
+	id = postwar_election_fra.6
+	title = postwar_election_fra.6.t
+	desc = postwar_election_fra.6.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#keep the current president
+	option = {
+		name = postwar_election_fra.6.a
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = FRA_theodore_roosevelt_IV #RFK is too old now
+					ruling_only = yes
+				}
+			}
+		}
+		add_political_power = 100
+		if = {
+			limit = {
+				has_country_leader = {
+					character = FRA_kamala_harris
+					ruling_only = yes
+				}
+			}
+			set_portraits = {
+			    character = FRA_kamala_harris
+			    civilian = { large ="GFX_portrait_old_kamala" }
+			}
+			set_country_flag = FRA_old_kamala
+		}
+		if = {
+			limit = {
+				has_government = libertarian_left
+				NOT = {
+					has_country_flag = fra_natural_born_citizen_clause_kept
+				}
+			}
+			country_event = {
+				id = postwar_election_fra.4
+				days = 70
+			}
+		}
+	}
+	#moderate democrats win back power - President Withers
+	option = {
+		name = post_war_election_fra.6.b
+		trigger = {
+			NOT = { has_government = democrat }
+		}
+		add_country_leader_role = {
+		    character = FRA_dean_withers
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = progressive
+		        traits = { GER_staunch_social_democrat }
+		    }
+		}
+		set_politics = {
+		    ruling_party = democrat
+		    elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = democrat
+			popularity = 0.25
+		}
+	}
+	#Kennedy Republican successor
+	option = {
+		name = postwar_election_fra.6.c
+		trigger = {
+			has_country_leader = {
+				character = FRA_theodore_roosevelt_IV #RFK is too old now
+				ruling_only = yes
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_amaryllis_fox_kennedy
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = Progressive_Republicans
+		        traits = { SWI_intelligence_officer }
+		    }
+		}
+	}
+	#Don't Mess with the Zohran
+	option = {
+		name = postwar_election_fra.6.e
+		trigger = {
+			has_country_flag = fra_natural_born_citizen_clause_removed
+			NOT = {
+				has_country_leader = {
+					character = FRA_zohran_mamdani
+					ruling_only = yes
+				}
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_zohran_mamdani
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = syndicalism
+		        traits = { GER_staunch_socialist GER_militant_communist }
+		    }
+		}
+	}
+	#a primary challenge from the youth!
+	option = {
+		name = postwar_election_fra.6.f
+		trigger = {
+			has_government = democrat
+			NOT = {
+				has_country_leader = {
+					character = FRA_dean_withers
+					ruling_only = yes
+				}
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_dean_withers
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = progressive
+		        traits = { GER_staunch_social_democrat }
+		    }
+		}
+		add_popularity = {
+			ideology = libertarian_left
+			popularity = 0.01
+		}
+	}
+	#a primary challenge from the youth! - KENNEDY REPUBLICANS
+	option = {
+		name = postwar_election_fra.6.f #intentionally the same
+		trigger = {
+			has_government = republican
+			NOT = {
+				has_country_leader = {
+					character = FRA_logan_paul
+					ruling_only = yes
+				}
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_logan_paul
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = Progressive_Republicans
+		        traits = { GER_hess_fuhrer }
+		    }
+		}
+		add_popularity = {
+			ideology = autocratic
+			popularity = 0.01
+		}
+	}
+}
+#2044 election
+country_event = {
+	id = postwar_election_fra.7
+	title = postwar_election_fra.7.t
+	desc = postwar_election_fra.7.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#keep the current president
+	option = {
+		name = postwar_election_fra.7.a
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = FRA_theodore_roosevelt_IV #RFK is too old now
+					ruling_only = yes
+				}
+			}
+		}
+		add_political_power = 100
+		if = {
+			limit = {
+				has_country_leader = {
+					character = FRA_kamala_harris
+					ruling_only = yes
+				}
+				NOT = {
+					has_country_flag = FRA_old_kamala
+				}
+			}
+			set_portraits = {
+			    character = FRA_kamala_harris
+			    civilian = { large ="GFX_portrait_old_kamala" }
+			}
+			set_country_flag = FRA_old_kamala
+		}
+		if = {
+			limit = {
+				has_government = libertarian_left
+				NOT = {
+					has_country_flag = fra_natural_born_citizen_clause_kept
+				}
+			}
+			country_event = {
+				id = postwar_election_fra.4
+				days = 70
+			}
+		}
+	}
+	#moderate democrats win back power - President Withers
+	option = {
+		name = post_war_election_fra.7.b
+		trigger = {
+			NOT = { has_government = democrat }
+		}
+		add_country_leader_role = {
+		    character = FRA_dean_withers
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = progressive
+		        traits = { GER_staunch_social_democrat }
+		    }
+		}
+		set_politics = {
+		    ruling_party = democrat
+		    elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = democrat
+			popularity = 0.25
+		}
+	}
+	#Kennedy Republican successor
+	option = {
+		name = postwar_election_fra.7.c
+		trigger = {
+			has_country_leader = {
+				character = FRA_theodore_roosevelt_IV #RFK is too old now
+				ruling_only = yes
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_logan_paul
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = Progressive_Republicans
+		        traits = { GER_hess_fuhrer }
+		    }
+		}
+	}
+	#Don't Mess with the Zohran
+	option = {
+		name = postwar_election_fra.7.e
+		trigger = {
+			has_country_flag = fra_natural_born_citizen_clause_removed
+			NOT = {
+				has_country_leader = {
+					character = FRA_zohran_mamdani
+					ruling_only = yes
+				}
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_zohran_mamdani
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = syndicalism
+		        traits = { GER_staunch_socialist GER_militant_communist }
+		    }
+		}
+	}
+	#a primary challenge from the youth!
+	option = {
+		name = postwar_election_fra.7.f
+		trigger = {
+			has_government = democrat
+			NOT = {
+				has_country_leader = {
+					character = FRA_dean_withers
+					ruling_only = yes
+				}
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_dean_withers
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = progressive
+		        traits = { GER_staunch_social_democrat }
+		    }
+		}
+		add_popularity = {
+			ideology = libertarian_left
+			popularity = 0.01
+		}
+	}
+	#a primary challenge from the youth! - KENNEDY REPUBLICANS
+	option = {
+		name = postwar_election_fra.7.f #intentionally the same
+		trigger = {
+			has_government = republican
+			NOT = {
+				has_country_leader = {
+					character = FRA_logan_paul
+					ruling_only = yes
+				}
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_logan_paul
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = Progressive_Republicans
+		        traits = { GER_hess_fuhrer }
+		    }
+		}
+		add_popularity = {
+			ideology = autocratic
+			popularity = 0.01
+		}
+	}
+}
+#2048 election - final one for now
+country_event = {
+	id = postwar_election_fra.8
+	title = postwar_election_fra.8.t
+	desc = postwar_election_fra.8.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			set_portraits = {
+			    character = FRA_dean_withers
+			    civilian = { large ="GFX_portrait_old_dean_withers" }
+			}
+			set_portraits = {
+			    character = FRA_logan_paul
+			    civilian = { large ="GFX_portrait_old_logan_paul" }
+			}
+			set_portraits = {
+			    character = FRA_zohran_mamdani
+			    civilian = { large ="GFX_portrait_old_zohran_mamdani" }
+			}
+		}
+	}
+	#keep current president
+	option = {
+		name = postwar_election_fra.8.a
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = FRA_theodore_roosevelt_IV #RFK is too old now
+					ruling_only = yes
+				}
+			}
+		}
+		add_political_power = 100
+		if = {
+			limit = {
+				has_country_leader = {
+					character = FRA_kamala_harris
+					ruling_only = yes
+				}
+				NOT = {
+					has_country_flag = FRA_old_kamala
+				}
+			}
+			set_portraits = {
+			    character = FRA_kamala_harris
+			    civilian = { large ="GFX_portrait_old_kamala" }
+			}
+			set_country_flag = FRA_old_kamala
+		}
+	}
+	#President Withers
+	option = {
+		name = postwar_election_fra.8.b
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = FRA_dean_withers
+					ruling_only = yes
+				}
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_dean_withers
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = progressive
+		        traits = { GER_staunch_social_democrat }
+		    }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_government = democrat
+				}
+			}
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.45
+			}
+			set_politics = {
+			    ruling_party = democrat
+			    elections_allowed = yes
+			}
+		}
+	}
+	#President Paul
+	option = {
+		name = postwar_election_fra.8.c
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = FRA_logan_paul
+					ruling_only = yes
+				}
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_logan_paul
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = Progressive_Republicans
+		        traits = { GER_hess_fuhrer }
+		    }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_government = republican
+				}
+			}
+			add_popularity = {
+				ideology = republican
+				popularity = 0.45
+			}
+			set_politics = {
+			    ruling_party = republican
+			    elections_allowed = yes
+			}
+		}
+	}
+	#Don't Mess with the Zohran
+	option = {
+		name = postwar_election_fra.8.e
+		trigger = {
+			has_country_flag = fra_natural_born_citizen_clause_removed
+			NOT = {
+				has_country_leader = {
+					character = FRA_zohran_mamdani
+					ruling_only = yes
+				}
+			}
+		}
+		add_country_leader_role = {
+		    character = FRA_zohran_mamdani
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = syndicalism
+		        traits = { GER_staunch_socialist GER_militant_communist }
+		    }
+		}
+	}
+	#President Jimmy Beast
+	option = {
+		name = postwar_election_fra.8.f
+		add_country_leader_role = {
+		    character = FRA_MRBEAST
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = democratic_socialism
+		        traits = { GER_film_director }
+		    }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_government = libertarian_left
+				}
+			}
+			add_popularity = {
+				ideology = libertarian_left
+				popularity = 0.45
+			}
+			set_politics = {
+			    ruling_party = libertarian_left
+			    elections_allowed = yes
+			}
+		}
+	}
+}

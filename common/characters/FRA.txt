@@ -364,6 +364,46 @@ characters={
 			id = -1
 		}
 	}
+	FRA_amaryllis_fox_kennedy = { 
+		name = "Amaryllis Fox Kennedy"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/amaryllis_fox_kennedy.tga"
+			}
+		}
+	}
+	FRA_jon_ossoff = { 
+		name = "Jon Ossoff"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/jon_ossoff.tga"
+			}
+		}
+	}
+	FRA_dean_withers = { 
+		name = "Dean Withers"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/dean_withers.tga"
+			}
+		}
+	}
+	FRA_logan_paul = { 
+		name = "Logan Paul"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/logan_paul.tga"
+			}
+		}
+	}
+	FRA_MRBEAST = { 
+		name = "Jimmy Donaldson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/james_donaldson.tga"
+			}
+		}
+	}
 	### Military Staff and Political Advisors ###
 	## Political Advisors ##
 	# Vice Presidents #
@@ -680,6 +720,9 @@ characters={
 		portraits = {
 			army = {
 				small = "GFX_idea_FRA_Pete_Buttigieg"
+			}
+			civilian = {
+				large = "gfx/leaders/FRA/pete_buttigieg.dds"
 			}
 		}
 		advisor = {

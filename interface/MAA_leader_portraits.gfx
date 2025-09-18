@@ -122,6 +122,22 @@ spriteTypes = {
 		name = "GFX_portrait_chudjak_real"
 		texturefile = "gfx/leaders/HOP/Portrait_Obergruppenfuhrer_Chud_von_Crusius_Vanilla_MAA_copy.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_old_kamala"
+		texturefile = "gfx/leaders/FRA/KAMALA_OLDHEAD.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_old_dean_withers"
+		texturefile = "gfx/leaders/FRA/DEAN_WITHERS_OLD.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_old_logan_paul"
+		texturefile = "gfx/leaders/FRA/LOGAN_PAUL_OLD.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_old_zohran_mamdani"
+		texturefile = "gfx/leaders/FRA/ZOHRAN_MAMDANI_OLD.tga"
+	}
 	#THE DONALDS
 	spriteType = {
 		name = "GFX_portrait_dark_maga_donald"
