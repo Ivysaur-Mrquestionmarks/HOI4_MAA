@@ -1754,7 +1754,7 @@
 	### Demings ###
 	focus = {
 		id = FLD_demings
-		icon = GFX_goal_FLD_Demings
+		icon = GFX_goal_FLD_demings2
 		cost = 1
 		mutually_exclusive = {
 			focus = FLD_suarez
@@ -1785,7 +1785,7 @@
 	}
 	focus = {
 		id = FLD_bastion_of_the_establishment
-		icon = GFX_goal_TEX_Work_With_Moderate_Democrats
+		icon = GFX_goal_FLD_bastion_of_the_establishment
 		cost = 4
 		prerequisite = { 
 			focus = FLD_demings
@@ -1809,7 +1809,7 @@
 	}
 	focus = {
 		id = FLD_focus_on_agriculture
-		icon = GFX_focus_NPA_Upgrade_Of_The_Agricultural_Sector_2
+		icon = GFX_goal_FLD_focus_on_agriculture
 		cost = 4
 		prerequisite = { 
 			focus = FLD_bastion_of_the_establishment
@@ -1845,7 +1845,7 @@
 	}
 	focus = {
 		id = FLD_female_stem_education
-		icon = GFX_goal_FRA_free_higher_education
+		icon = GFX_goal_FLD_female_stem_education
 		cost = 4
 		prerequisite = { 
 			focus = FLD_focus_on_agriculture
@@ -1860,7 +1860,7 @@
 	}
 	focus = {
 		id = FLD_funding_for_abortion
-		icon = GFX_goal_TEX_protect_abortions
+		icon = GFX_goal_FLD_funding_for_abortion
 		cost = 3
 		prerequisite = { 
 			focus = FLD_bastion_of_the_establishment
@@ -1879,7 +1879,7 @@
 	}
 	focus = {
 		id = FLD_woman_of_the_people #LGB protections
-		icon = GFX_goal_TEX_continue_progressive_policies
+		icon = GFX_goal_FLD_woman_of_the_people
 		cost = 10
 		prerequisite = {
 			focus = FLD_funding_for_abortion
@@ -1900,7 +1900,7 @@
 	}
 	focus = {
 		id = FLD_entrench_the_democrats
-		icon = GFX_goal_VIR_reunite_the_left
+		icon = GFX_goal_FLD_entrench_the_democrats
 		cost = 10
 		prerequisite = {
 			focus = FLD_female_stem_education
@@ -1930,7 +1930,7 @@
 	
 	focus = {
 		id = FLD_progressive_movement
-		icon = GFX_goal_TEX_reconcile_progressives
+		icon = GFX_goal_FLD_progressive_movement
 		cost = 10.00
 		prerequisite = { 
 			focus = FLD_demings
@@ -1954,7 +1954,7 @@
 	}
 	focus = {
 		id = FLD_ban_firearms
-		icon = GFX_goal_VIR_stricter_gun_laws
+		icon = GFX_goal_FLD_ban_firearms
 		cost = 4
 		prerequisite = { 
 			focus = FLD_progressive_movement
@@ -1972,7 +1972,7 @@
 	}
 	focus = {
 		id = FLD_defund_the_police
-		icon = GFX_focus_defund_police
+		icon = GFX_goal_FLD_defund_the_police
 		cost = 4
 		prerequisite = { 
 			focus = FLD_ban_firearms
@@ -1996,7 +1996,7 @@
 	}
 	focus = {
 		id = FLD_universal_healthcare
-		icon = GFX_goal_Obamacare
+		icon = GFX_goal_FLD_universal_healthcare
 		cost = 4
 		prerequisite = { 
 			focus = FLD_progressive_movement
@@ -2025,7 +2025,7 @@
 	}
 	focus = {
 		id = FLD_forgive_tuition_debt
-		icon = GFX
+		icon = GFX_goal_FLD_forgive_tuition_debt
 		cost = 4
 		prerequisite = { 
 			focus = FLD_universal_healthcare
@@ -2049,7 +2049,7 @@
 	}
 	focus = {
 		id = FLD_expand_voting_rights
-		icon = GFX_goal_Allow_Mail_in_Votes
+		icon = GFX_goal_FLD_expand_voting_rights
 		cost = 4
 		prerequisite = { 
 			focus = FLD_forgive_tuition_debt
