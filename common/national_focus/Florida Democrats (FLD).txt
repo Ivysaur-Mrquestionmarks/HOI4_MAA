@@ -1434,7 +1434,7 @@
 	}
 	focus = {
 		id = FLD_strengthen_law_enforcement
-		icon = GFX
+		icon = GFX_goal_FLD_strengthen_law_enforcement
 		cost = 4
 		prerequisite = { 
 			focus = FLD_expand_urban_development
@@ -1461,7 +1461,7 @@
 	}
 	focus = {
 		id = FLD_department_of_marketing #marketing the nation
-		icon = GFX
+		icon = GFX_goal_FLD_department_of_marketing
 		cost = 4
 		prerequisite = { 
 			focus = FLD_completely_digitize_bureaucracy
@@ -1486,7 +1486,7 @@
 	}
 	focus = {
 		id = FLD_switzerland_of_america
-		icon = GFX
+		icon = GFX_goal_FLD_switzerland_of_america
 		cost = 4
 		prerequisite = { 
 			focus = FLD_department_of_marketing
@@ -1507,7 +1507,7 @@
 
 	focus = {
 		id = FLD_invite_tech_companies
-		icon = GFX_goal_Ally_Big_Tech
+		icon = GFX_goal_FLD_invite_tech_companies
 		cost = 4
 		prerequisite = { 
 			focus = FLD_digital_democracy
@@ -1531,7 +1531,7 @@
 	}
 	focus = {
 		id = FLD_smart_plan
-		icon = GFX_goal_FLO_high_speed_rail
+		icon = GFX_goal_FLD_smart_plan
 		cost = 4
 		prerequisite = { 
 			focus = FLD_invite_tech_companies
@@ -1592,7 +1592,7 @@
 	}
 	focus = {
 		id = FLD_crypto_economy
-		icon = GFX_goal_FLD_CryptoEconomy
+		icon = GFX_goal_FLD_crypto_economy
 		cost = 4
 		prerequisite = { 
 			focus = FLD_invite_tech_companies
@@ -1624,7 +1624,7 @@
 	}
 	focus = {
 		id = FLD_miamicoin
-		icon = GFX_goal_FLD_Miamicoin
+		icon = GFX_goal_FLD_miamicoin
 		cost = 4
 		prerequisite = { 
 			focus = FLD_invite_tech_companies
@@ -1653,7 +1653,7 @@
 	}
 	focus = {
 		id = FLD_abolish_taxes
-		icon = GFX_goal_FLD_Abolish_Taxes
+		icon = GFX_goal_FLD_abolish_taxes
 		cost = 4
 		prerequisite = { 
 			focus = FLD_miamicoin
@@ -1690,7 +1690,7 @@
 	}
 	focus = {
 		id = FLD_silicon_valley_of_the_east
-		icon = GFX_goal_FLD_Silicon_Valley_of_The_East
+		icon = GFX_goal_FLD_silicon_valley_of_the_east
 		cost = 4
 		prerequisite = { 
 			focus = FLD_abolish_taxes
@@ -1705,7 +1705,7 @@
 	}
 	focus = {
 		id = FLD_dominate_the_ai_market
-		icon = GFX
+		icon = GFX_goal_FLD_dominate_the_ai_market
 		cost = 4
 		prerequisite = { 
 			focus = FLD_silicon_valley_of_the_east
@@ -1725,7 +1725,7 @@
 	}
 	focus = {
 		id = FLD_an_independent_politician
-		icon = GFX_goal_FLD_A_New_Age_in_Politics
+		icon = GFX_goal_FLD_an_independent_politician
 		cost = 10.00
 		prerequisite = { 
 			focus = FLD_dominate_the_ai_market

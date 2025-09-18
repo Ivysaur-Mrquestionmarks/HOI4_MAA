@@ -429,6 +429,40 @@ scripted_gui = {
 					value = 52
 				}
 			}
+
+			52_1_vermin_reunification_visible  = {
+				has_country_flag = {
+					flag = super_event
+					value = 521
+				}
+			}
+
+			53_hawkins_reunification_visible  = {
+				has_country_flag = {
+					flag = super_event
+					value = 53
+				}
+			}
+
+			54_green_death_cult_reunification_visible  = {
+				has_country_flag = {
+					flag = super_event
+					value = 54
+				}
+			}
+			55_mattis_reunification_visible  = {
+				has_country_flag = {
+					flag = super_event
+					value = 55
+				}
+			}
+
+			56_dark_vance_reunification_visible  = {
+				has_country_flag = {
+					flag = super_event
+					value = 56
+				}
+			}
 		}
 	}
 	

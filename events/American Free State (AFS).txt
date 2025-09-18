@@ -1108,6 +1108,22 @@ news_event = {
 		ai_chance = {
 			factor = 100
 		}
+		if = {
+			limit = {NOT = {is_ai = yes}}
+			set_country_flag = {
+    			flag = super_event
+    			value = 521
+			}
+			hidden_effect = {
+				if = { 
+					limit = { has_global_flag = SuperEventsWillBePlayed_flag }
+			    	if = { limit = { NOT = { any_other_country = { has_country_flag = super_event } } }
+				    	sound_effect = "AFS_vermin_unification"
+				    	play_song = "one_minute_of_silence"
+			    	}
+				}
+			}
+		}
 	}
 }
 
@@ -1932,6 +1948,22 @@ news_event = {
 		ai_chance = {
 			factor = 100
 		}
+		if = {
+			limit = {NOT = {is_ai = yes}}
+			set_country_flag = {
+    			flag = super_event
+    			value = 53
+			}
+			hidden_effect = {
+				if = { 
+					limit = { has_global_flag = SuperEventsWillBePlayed_flag }
+			    		if = { limit = { NOT= { any_other_country = {has_country_flag = super_event}}}
+				    		sound_effect = "AFS_hawkins_unification"
+				    		play_song = "one_minute_of_silence"
+			    		}
+				}
+		    }
+		}
 	}
 }
 
@@ -1950,6 +1982,22 @@ news_event = {
 		name = hawkins.29.a
 		ai_chance = {
 			factor = 100
+		}
+		if = {
+			limit = {NOT = {is_ai = yes}}
+			set_country_flag = {
+    			flag = super_event
+    			value = 54
+			}
+			hidden_effect = {
+				if = { 
+					limit = { has_global_flag = SuperEventsWillBePlayed_flag }
+			    		if = { limit = { NOT= { any_other_country = {has_country_flag = super_event}}}
+				    		sound_effect = "AFS_green_death_cult"
+				    		play_song = "one_minute_of_silence"
+			    		}
+				}
+		    }
 		}
 	}
 }
@@ -2532,6 +2580,22 @@ news_event = {
 		name = mattis.16.a
 		ai_chance = {
 			factor = 100
+		}
+		if = {
+			limit = {NOT = {is_ai = yes}}
+			set_country_flag = {
+    			flag = super_event
+    			value = 55
+			}
+			hidden_effect = {
+				if = { 
+					limit = { has_global_flag = SuperEventsWillBePlayed_flag }
+			    		if = { limit = { NOT= { any_other_country = {has_country_flag = super_event}}}
+				    		sound_effect = "AFS_mattis_unification"
+				    		play_song = "one_minute_of_silence"
+			    		}
+				}
+		    }
 		}
 	}
 }
@@ -3451,6 +3515,22 @@ news_event = {
 		name = vance.26.a
 		ai_chance = {
 			factor = 100
+		}
+		if = {
+			limit = {NOT = {is_ai = yes}}
+			set_country_flag = {
+    			flag = super_event
+    			value = 56
+			}
+			hidden_effect = {
+				if = { 
+					limit = { has_global_flag = SuperEventsWillBePlayed_flag }
+			    		if = { limit = { NOT= { any_other_country = {has_country_flag = super_event}}}
+				    		sound_effect = "AFS_dark_vance"
+				    		play_song = "one_minute_of_silence"
+			    		}
+				}
+		    }
 		}
 	}
 }

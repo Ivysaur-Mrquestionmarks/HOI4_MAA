@@ -597,6 +597,55 @@ defined_text = {
 		localization_key = button_52
 	}
 
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 521
+			}
+		}
+		localization_key = button_52_1
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 53
+			}
+		}
+		localization_key = button_53
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 54
+			}
+		}
+		localization_key = button_54
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 55
+			}
+		}
+		localization_key = button_55
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 56
+			}
+		}
+		localization_key = button_56
+	}
 }
 
 defined_text = {
@@ -1196,6 +1245,56 @@ defined_text = {
 			}
 		}
 		localization_key = war_super_52
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 521
+			}
+		}
+		localization_key = war_super_52_1
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 53
+			}
+		}
+		localization_key = war_super_53
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 54
+			}
+		}
+		localization_key = war_super_54
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 55
+			}
+		}
+		localization_key = war_super_55
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 56
+			}
+		}
+		localization_key = war_super_56
 	}
 }
 
@@ -1802,5 +1901,55 @@ defined_text = {
 			}
 		}
 		localization_key = quote_52
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 521
+			}
+		}
+		localization_key = quote_52_1
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 53
+			}
+		}
+		localization_key = quote_53
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 54
+			}
+		}
+		localization_key = quote_54
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 55
+			}
+		}
+		localization_key = quote_55
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 56
+			}
+		}
+		localization_key = quote_56
 	}
 }
