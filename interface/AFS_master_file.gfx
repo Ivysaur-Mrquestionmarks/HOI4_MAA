@@ -12994,6 +12994,56 @@ spriteTypes = {
     	texturefile = "gfx/interface/ideas/AFS/triumvirate_idea.dds"
     }
 
+    spriteType = {
+    	name = "GFX_idea_AFS_triumvirate_broken"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_triumvirate_broken.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_peoples_support"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_peoples_support.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_vermin_sabotage"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_vermin_sabotage.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_vermins_black_army_idea"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_vermins_black_army_idea.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_legitimate_government"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_legitimate_government.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_the_unpopular_vermin"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_the_unpopular_vermin.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_the_green_army"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_the_green_army.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_strength_and_might"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_strength_and_might.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_ruins_of_the_triumvirate"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_ruins_of_the_triumvirate.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_a_scarred_population"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_a_scarred_population.dds"
+    }
+
 	### Events ###
 	#News Events
 	spriteType = { name = "event_AFS_eco_terror_unification" texturefile = "gfx/events/AFS_events/AFS_eco_terror_unification.dds" }

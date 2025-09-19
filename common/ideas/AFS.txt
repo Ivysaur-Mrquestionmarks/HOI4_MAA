@@ -32,7 +32,7 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
-			#picture = 
+			picture = AFS_triumvirate_broken
 			modifier = {
 				authoritarian_left_drift = 0.05
 				libertarian_left_drift = 0.15
@@ -46,7 +46,7 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
-			#picture = 
+			picture = AFS_triumvirate_broken
 			modifier = {
 				authoritarian_left_drift = 0.15
 				libertarian_left_drift = 0.05
@@ -70,7 +70,7 @@ ideas = {
 			}
 		}
 		AFS_peoples_support_2 = {
-			#picture = 
+			picture = AFS_peoples_support
 			modifier = {
 				political_power_gain = 0.15
 				surrender_limit = 0.25
@@ -92,7 +92,7 @@ ideas = {
 			}
 		}
 		AFS_vermin_sabotage_2 = {
-			#picture = 
+			picture = AFS_vermin_sabotage
 			modifier = {
 				political_power_gain = -0.15
 				stability_factor = -0.1
@@ -102,7 +102,7 @@ ideas = {
 			}
 		}
 		AFS_vermin_sabotage_3 = {
-			#picture = 
+			picture = AFS_vermin_sabotage
 			modifier = {
 				political_power_gain = -0.25
 				stability_factor = -0.15
@@ -130,7 +130,7 @@ ideas = {
 			}
 		}
 		AFS_legitimate_government_2 = {
-			#picture = 
+			picture = AFS_legitimate_government
 			modifier = {
 				political_power_gain = 0.25
 				war_support_factor = 0.15
@@ -149,7 +149,7 @@ ideas = {
 			}
 		}
 		AFS_the_unpopular_vermin_2 = {
-			#picture = 
+			picture = AFS_the_unpopular_vermin
 			modifier = {
 				political_power_gain = -0.15
 				stability_factor = -0.1
@@ -159,7 +159,7 @@ ideas = {
 			}
 		}
 		AFS_the_unpopular_vermin_3 = {
-			#picture = 
+			picture = AFS_the_unpopular_vermin
 			modifier = {
 				political_power_gain = -0.25
 				stability_factor = -0.15
@@ -201,7 +201,7 @@ ideas = {
 			}
 		}
 		AFS_ruins_of_the_triumvirate_2 = {
-			#picture = 
+			picture = AFS_ruins_of_the_triumvirate
 			modifier = {
 				political_power_gain = -0.35
 				drift_defence_factor = -0.2
@@ -209,7 +209,7 @@ ideas = {
 			}
 		}
 		AFS_ruins_of_the_triumvirate_3 = {
-			#picture = 
+			picture = AFS_ruins_of_the_triumvirate
 			modifier = {
 				political_power_gain = -0.25
 				drift_defence_factor = -0.15
@@ -217,7 +217,7 @@ ideas = {
 			}
 		}
 		AFS_ruins_of_the_triumvirate_4 = {
-			#picture = 
+			picture = AFS_ruins_of_the_triumvirate
 			modifier = {
 				political_power_gain = -0.15
 				drift_defence_factor = -0.1
@@ -225,7 +225,7 @@ ideas = {
 			}
 		}
 		AFS_ruins_of_the_triumvirate_5 = {
-			#picture = 
+			picture = AFS_ruins_of_the_triumvirate
 			modifier = {
 				political_power_gain = -0.1
 				drift_defence_factor = -0.05
@@ -244,7 +244,7 @@ ideas = {
 			}
 		}
 		AFS_a_scarred_population_2 = {
-			#picture = 
+			picture = AFS_a_scarred_population
 			modifier = {
 				political_power_gain = -0.1
 				war_support_factor = -0.45
@@ -255,7 +255,7 @@ ideas = {
 			}
 		}
 		AFS_a_scarred_population_3 = {
-			#picture = 
+			picture = AFS_a_scarred_population
 			modifier = {
 				political_power_gain = -0.05
 				war_support_factor = -0.25
@@ -266,7 +266,7 @@ ideas = {
 			}
 		}
 		AFS_a_scarred_population_4 = {
-			#picture = 
+			picture = AFS_a_scarred_population
 			modifier = {
 				political_power_gain = -0.05
 				war_support_factor = -0.1
@@ -274,17 +274,6 @@ ideas = {
 				monthly_population = -0.1
 				conscription = -0.05
 				army_morale_factor = -0.05
-			}
-		}
-		AFS_strength_and_might_weakened = {
-			#picture = 
-			modifier = {
-				surrender_limit = -0.1
-				army_attack_factor = 0.05
-				army_defence_factor = 0.03
-				army_morale_factor = 0.03
-				army_org_factor = -0.05
-				breakthrough_factor = -0.05
 			}
 		}
 
