@@ -71,6 +71,11 @@ country_event = {
 		        ideology = Authoritarian_Liberalism
 		        traits = {  }
 		    }
+		}
+		hidden_effect = {
+			FRA = {
+				retire_character = FRA_marty_walsh
+			}
 		}		
 	}
 }
