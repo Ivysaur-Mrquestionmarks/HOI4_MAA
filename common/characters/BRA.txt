@@ -7,6 +7,10 @@ characters={
 			civilian = {
 				large = "gfx/leaders/BRA/Ken_Casey.png"
 			}
+			army = {
+				large = "gfx/leaders/BRA/Ken_Casey.png"
+				small = "gfx/interface/ideas/BRA/ken_casey_advisor.dds"
+			}
 		}
 		#country_leader = {
 		#	ideology = nazbol
@@ -14,6 +18,15 @@ characters={
 		#	expire = "2060.1.1.1"
 		#	id = -1
 		#}
+		field_marshal = {
+			traits={ media_personality trait_reckless trickster guerilla_fighter } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = { has_government = authoritarian_left }
+		}
 	}
 
 	BRA_gabriel_megahey = {
@@ -65,6 +78,81 @@ characters={
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BRA/bra_council.tga"
+			}
+		}
+	}
+
+
+
+
+
+	###### GENERALS!!!! ######
+	BRA_dennis_white = {
+		name = "Dennis White"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/dennis_white.tga"
+				small = "gfx/interface/ideas/BRA/dennis_white_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits={ trait_reckless substance_abuser urban_assault_specialist } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BRA_robert_ciccolo_jr = {
+		name = "Robert Ciccolo Jr."
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/rob_w_ciccolo.tga"
+				small = "gfx/interface/ideas/BRA/rob_ciccolo_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits={ organizer urban_assault_specialist } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BRA_paul_mclaughlin = {
+		name = "Paul McLaughlin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/paul_mclaughlin.tga"
+				small = "gfx/interface/ideas/BRA/paul_mclaughlin_advisor.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/BRA/paul_mclaughlin.tga"
+				small = "gfx/interface/ideas/BRA/paul_mclaughlin_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits={ brilliant_strategist urban_assault_specialist } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_paul_mclaughlin_advisor
+			cost = 150
+			available  = {
+				has_intelligence_agency  = yes 
+			}
+			allowed  = {
+				has_dlc = "La Resistance"
+			}
+			traits = {
+				 head_of_intelligence
 			}
 		}
 	}
