@@ -2082,7 +2082,7 @@
 	
 	focus = {
 		id = FLD_close_the_wage_gap
-		icon = GFX_goal_Stimulus_Check_Stubs
+		icon = GFX_goal_FLD_close_the_wage_gap
 		cost = 4
 		prerequisite = { 
 			focus = FLD_progressive_movement
@@ -2107,7 +2107,7 @@
 	}
 	focus = {
 		id = FLD_enhance_union_protections
-		icon = GFX_goal_FRA_Bolster_Private_Unions
+		icon = GFX_goal_FLD_enhance_union_protections
 		cost = 4
 		prerequisite = { 
 			focus = FLD_close_the_wage_gap
@@ -2135,7 +2135,7 @@
 	
 	focus = {
 		id = FLD_purge_altright_and_extremists_from_military
-		icon = GFX_goal_FRA_Permanently_Purge_Trumpists
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
 		cost = 4
 		prerequisite = { 
 			focus = FLD_progressive_movement
@@ -2169,7 +2169,7 @@
 	}
 	focus = {
 		id = FLD_woke_propaganda
-		icon = GFX_goal_FRA_use_disney
+		icon = GFX_goal_FLD_woke_propaganda
 		cost = 4
 		prerequisite = { 
 			focus = FLD_purge_altright_and_extremists_from_military
@@ -2203,7 +2203,7 @@
 	
 	focus = {
 		id = FLD_denounce_corporate_influence
-		icon = GFX_goal_FRA_Antitrust_Laws
+		icon = GFX_goal_FLD_denounce_corporate_influence
 		cost = 5
 		mutually_exclusive = {
 			focus = FLD_era_of_woke_corporations
@@ -2231,7 +2231,7 @@
 	}
 	focus = {
 		id = FLD_ban_corporate_donations
-		icon = GFX_goal_FRA_Anti_Corruption_Programs
+		icon = GFX_goal_FLD_ban_corporate_donations
 		cost = 5
 		prerequisite = { 
 			focus = FLD_denounce_corporate_influence
@@ -2265,7 +2265,7 @@
 	}
 	focus = {
 		id = FLD_era_of_woke_corporations
-		icon = GFX_goal_FRA_meet_with_lgbt
+		icon = GFX_goal_FLD_era_of_woke_corporations
 		cost = 5
 		mutually_exclusive = {
 			focus = FLD_denounce_corporate_influence
@@ -2293,7 +2293,7 @@
 	}
 	focus = {
 		id = FLD_mandatory_corporate_diversity
-		icon = GFX_goal_Icon_Gay_Shit_Protection
+		icon = GFX_goal_FLD_mandatory_corporate_diversity
 		cost = 5
 		prerequisite = { 
 			focus = FLD_era_of_woke_corporations
@@ -2323,7 +2323,7 @@
 	
 	focus = {
 		id = FLD_limit_offshore_drilling
-		icon = GFX_goal_FRA_Conservation_Conservatism
+		icon = GFX_goal_FLD_limit_offshore_drilling
 		cost = 4
 		prerequisite = { 
 			focus = FLD_progressive_movement
@@ -2348,7 +2348,7 @@
 	}
 	focus = {
 		id = FLD_reduce_carbon_emissions
-		icon = GFX_goal_FRA_fund_offshore_wind
+		icon = GFX_goal_FLD_reduce_carbon_emissions
 		cost = 2
 		prerequisite = { 
 			focus = FLD_limit_offshore_drilling
@@ -2362,7 +2362,7 @@
 	}
 	focus = {
 		id = FLD_incentivize_electric_cars
-		icon = GFX_goal_FRA_VIR_economy
+		icon = GFX_goal_FLD_incentivize_electric_cars
 		cost = 4
 		prerequisite = { 
 			focus = FLD_limit_offshore_drilling
@@ -2391,7 +2391,7 @@
 	}
 	focus = {
 		id = FLD_floridian_green_new_deal
-		icon = GFX_goal_FRA_restructure_economy
+		icon = GFX_goal_FLD_floridian_green_new_deal
 		cost = 4
 		prerequisite = { 
 			focus = FLD_reduce_carbon_emissions
