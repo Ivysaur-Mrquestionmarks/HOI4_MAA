@@ -1,0 +1,76 @@
+add_namespace = boston
+
+#Megahey rallies the people!
+country_event = {
+	id = boston.1
+	title = boston.1.t
+	desc = boston.1.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = boston.1.a
+		add_stability = 0.10
+		add_political_power = 50
+	}
+}
+#Megahey assassinated!
+country_event = {
+	id = boston.2
+	title = boston.2.t
+	desc = boston.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = boston.2.a
+		add_stability = -0.10
+		add_political_power = -150
+		kill_ideology_leader = authoritarian_left
+		hidden_effect = {
+			add_country_leader_role = {
+			    character = BRA_boston_republican_army
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = communism
+			        traits = { divided_interests }
+			    }
+			}
+		}
+	}
+	#picture =
+}
+#who to succeed Megahey?
+country_event = {
+	id = boston.3
+	title = boston.3.t
+	desc = boston.3.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#Casey
+	option = {
+		name = boston.3.a
+		add_war_support = 0.10
+		add_country_leader_role = {
+		    character = BRA_ken_casey
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = nazbol
+		        traits = {  }
+		    }
+		}		
+	}
+	#Walsh
+	option = {
+		name = boston.3.b
+		add_stability = 0.10
+		add_country_leader_role = {
+		    character = BRA_marty_walsh 
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = Authoritarian_Liberalism
+		        traits = {  }
+		    }
+		}		
+	}
+}

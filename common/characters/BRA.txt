@@ -59,4 +59,13 @@ characters={
 			}
 		}
 	}
+
+	BRA_boston_republican_army = {
+		name = "B.R.A. Commando" #BRA Army Council
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/bra_council.tga"
+			}
+		}
+	}
 }

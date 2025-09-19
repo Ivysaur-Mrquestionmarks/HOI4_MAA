@@ -59,6 +59,20 @@ focus_tree = {
 		}
 		x = 26
 		y = 1
+		select_effect = {
+			country_event = {
+				id = boston.1
+				days = 7
+			}
+			country_event = {
+				id = boston.2
+				days = 14
+			}
+		}
+		completion_reward = {
+			remove_ideas = BRA_unstable_city_state
+			country_event = boston.3
+		}
 
 	}
 	focus = {
