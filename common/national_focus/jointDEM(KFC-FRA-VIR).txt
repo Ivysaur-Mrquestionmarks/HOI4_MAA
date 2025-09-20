@@ -96,10 +96,13 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
+		KFC = {
+			add_offsite_building = { type = industrial_complex level = 2 }
+		}
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		add_political_power = 50
 	}
 }
 joint_focus = {
@@ -136,7 +139,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -173,7 +176,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -209,7 +212,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -242,7 +245,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -282,7 +285,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 
@@ -321,7 +324,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -358,7 +361,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -395,7 +398,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -435,7 +438,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 
@@ -472,7 +475,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -508,7 +511,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -544,7 +547,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -581,7 +584,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -618,7 +621,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -658,6 +661,6 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
