@@ -1157,6 +1157,16 @@ ideas = {
 			}
 		}
 
+
+		KMT_its_ok_to_be_white_idea = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { has_government = autocratic }
+			modifier = {
+				stability_factor = 0.2
+   				political_power_factor = 0.25
+			}
+		}
+
 	}
 
 

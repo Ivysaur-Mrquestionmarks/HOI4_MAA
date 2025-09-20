@@ -175,3 +175,93 @@ KMT_counter_revolution_mission = {
 	}
 
 }
+
+KMT_nehlen_missions = {
+
+	KMT_natalism = {
+		icon = GFX_decision_gre_paying_ifc_debt
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 50
+		fire_only_once = no
+		ai_will_do = {
+			base = 5
+		}
+		visible = {
+			has_completed_focus = KMT_our_platform
+		}
+		available = {
+		}
+		complete_effect = {
+			add_manpower = 10000
+		}
+	}
+
+	KMT_white_supremacy = {
+		icon = GFX_decision_generic_confiscation
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 50
+		fire_only_once = no
+		ai_will_do = {
+			base = 5
+		}
+		visible = {
+			has_completed_focus = KMT_our_platform
+		}
+		available = {
+		}
+		complete_effect = {
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.05
+			}
+		}
+	}
+
+	KMT_protectionism = {
+		icon = GFX_decision_generic_break_treaty
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 50
+		fire_only_once = no
+		ai_will_do = {
+			base = 5
+		}
+		visible = {
+			has_completed_focus = KMT_our_platform
+		}
+		available = {
+		}
+		complete_effect = {
+			add_stability = 0.05
+		}
+	}
+
+	KMT_anti_semitism = {
+		icon = GFX_decision_ger_reichskommissariats
+		allowed = {
+			original_tag = KMT
+		}
+		custom_cost_trigger = {
+			command_power > 44
+		}
+		custom_cost_text = decision_cost_CP_50
+		fire_only_once = no
+		ai_will_do = {
+			base = 5
+		}
+		visible = {
+			has_completed_focus = KMT_destroy_the_jewish_conspiracy
+		}
+		available = {
+		}
+		complete_effect = {
+			add_political_power = 50
+		}
+	}
+
+}

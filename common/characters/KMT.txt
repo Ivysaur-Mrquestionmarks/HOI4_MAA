@@ -680,9 +680,38 @@ characters={
 				NOT = { 
 					has_completed_focus = KMT_hold_elections
 					has_completed_focus = KMT_wsc_coup
+					has_completed_focus = KMT_in_nehlen_we_trust
 				}
 			}
 			traits = { KMT_advisor_anti_war_activist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Andrew_Anglin = {
+		name = KMT_Andrew_Anglin
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Andrew_Anglin
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				has_completed_focus = KMT_control_the_media
+			}
+			traits = { KMT_advisor_daily_stormer_editor }
 			ai_will_do = {
 				factor = 1
 			}

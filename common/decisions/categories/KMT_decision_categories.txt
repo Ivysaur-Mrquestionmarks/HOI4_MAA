@@ -14,3 +14,18 @@ KMT_counter_revolution_mission = {
 	priority = 90
 
 }
+
+
+KMT_nehlen_missions = {
+	icon = GFX_decision_category_SWI_imperial_council
+	allowed = {
+    	original_tag = KMT
+	}
+
+	visible = {
+		has_completed_focus = KMT_our_platform
+	}
+
+	priority = 90
+
+}
