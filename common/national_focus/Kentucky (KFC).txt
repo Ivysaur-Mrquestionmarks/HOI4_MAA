@@ -420,7 +420,7 @@ focus_tree = {
 			focus = KFC_the_governor
 		}
 		relative_position_id = KFC_organising_dissidence
-		x = -4
+		x = -3
 		y = 1
 		completion_reward = {
 			add_popularity = {
@@ -482,7 +482,7 @@ focus_tree = {
 			focus = KFC_the_mayor
 		}
 		relative_position_id = KFC_organising_dissidence
-		x = -2
+		x = -1
 		y = 1
 		completion_reward = {
 			add_popularity = {
@@ -541,7 +541,7 @@ focus_tree = {
 			has_government = libertarian_right 
 		}
 		relative_position_id = KFC_organising_dissidence
-		x = 0
+		x = 1
 		y = 1
 		completion_reward = {
 			add_popularity = {
@@ -683,7 +683,7 @@ focus_tree = {
 			has_government = libertarian_right 
 		}
 		relative_position_id = KFC_buy_time
-		x = 0
+		x = -1
 		y = 2
 		completion_reward = {
 			country_event = { id = kentucky.1 }
