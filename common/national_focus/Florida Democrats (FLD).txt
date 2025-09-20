@@ -2438,7 +2438,7 @@
 	
 	focus = {
 		id = FLD_expand_anti_hurricane_measures
-		icon = GFX
+		icon = GFX_goal_FLD_expand_anti_hurricane_measures
 		cost = 5
 		prerequisite = { 
 			focus = FLD_demings
@@ -2459,7 +2459,7 @@
 	}
 	focus = {
 		id = FLD_strengthen_relief_programs
-		icon = GFX
+		icon = GFX_goal_FLD_strengthen_relief_programs
 		cost = 5
 		prerequisite = { 
 			focus = FLD_expand_anti_hurricane_measures
@@ -2478,7 +2478,7 @@
 	}
 	focus = {
 		id = FLD_government_mandated_hurrican_insurance
-		icon = GFX
+		icon = GFX_goal_FLD_government_mandated_hurrican_insurance
 		cost = 5
 		prerequisite = { 
 			focus = FLD_strengthen_relief_programs
@@ -2497,7 +2497,7 @@
 	}
 	focus = {
 		id = FLD_expand_hurricane_shelters
-		icon = GFX
+		icon = GFX_goal_FLD_expand_hurricane_shelters
 		cost = 5
 		prerequisite = { 
 			focus = FLD_expand_anti_hurricane_measures
@@ -2512,7 +2512,7 @@
 	}
 	focus = {
 		id = FLD_invest_in_underground_supply_chains
-		icon = GFX
+		icon = GFX_goal_FLD_invest_in_underground_supply_chains
 		cost = 5
 		prerequisite = { 
 			focus = FLD_expand_hurricane_shelters
@@ -2528,7 +2528,7 @@
 	
 	focus = {
 		id = FLD_slow_normalization_of_drugs
-		icon = GFX_goal_OBX_recreational_drug_usage
+		icon = GFX_goal_FLD_slow_normalization_of_drugs
 		cost = 5
 		mutually_exclusive = {
 			focus = FLD_take_on_the_cartels
@@ -2549,7 +2549,7 @@
 	}
 	focus = {
 		id = FLD_legalize_illicit_substances
-		icon = GFX_goal_FLO_drug_test
+		icon = GFX_goal_FLD_legalize_illicit_substances
 		cost = 5
 		prerequisite = { 
 			focus = FLD_slow_normalization_of_drugs
@@ -2569,7 +2569,7 @@
 	}
 	focus = {
 		id = FLD_regulate_the_trade
-		icon = GFX_goal_focus_drug_money
+		icon = GFX_goal_FLD_regulate_the_trade
 		cost = 5
 		prerequisite = { 
 			focus = FLD_legalize_illicit_substances
@@ -2587,7 +2587,7 @@
 	
 	focus = {
 		id = FLD_take_on_the_cartels
-		icon = GFX_goal_USA_Continue_War_On_Drugs
+		icon = GFX_goal_FLD_take_on_the_cartels
 		cost = 5
 		mutually_exclusive = {
 			focus = FLD_slow_normalization_of_drugs
@@ -2609,7 +2609,7 @@
 	
 	focus = {
 		id = FLD_the_root_of_the_problem
-		icon = GFX_goal_FLD_internal_matters
+		icon = GFX_goal_FLD_the_root_of_the_problem
 		cost = 5
 		prerequisite = { 
 			focus = FLD_take_on_the_cartels
@@ -2625,7 +2625,7 @@
 	
 	focus = {
 		id = FLD_crack_down_on_illegal_activities
-		icon = GFX_goal_FLD_internal_matters
+		icon = GFX_goal_FLD_crack_down_on_illegal_activities
 		cost = 5
 		prerequisite = { 
 			focus = FLD_take_on_the_cartels
@@ -2645,7 +2645,7 @@
 	}
 	focus = {
 		id = FLD_end_the_cartels_for_good
-		icon = GFX_goal_FLD_internal_matters
+		icon = GFX_goal_FLD_end_the_cartels_for_good
 		cost = 5
 		prerequisite = { 
 			focus = FLD_crack_down_on_illegal_activities
