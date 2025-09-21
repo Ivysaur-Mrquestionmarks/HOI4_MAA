@@ -5262,6 +5262,21 @@ leader_traits = {
 		political_power_gain = 0.05
 		research_speed_factor = 0.05
 	}
+	KMT_advisor_great_cinematographer = {
+		random = no
+		stability_factor = 0.05
+		democrat_acceptance = 20
+		libertarian_right_acceptance = 20
+		political_power_gain = 0.1
+		consumer_goods_factor = 0.05
+	}
+	KMT_advisor_interfaith_minister = {
+		random = no
+		libertarian_left_drift = 0.02
+		libertarian_left_acceptance = 20
+		intel_network_gain_factor = 0.2
+		opinion_gain_monthly_factor = 0.3
+	}
 	
 	
 }
