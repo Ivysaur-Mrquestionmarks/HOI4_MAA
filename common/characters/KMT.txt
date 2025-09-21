@@ -717,6 +717,34 @@ characters={
 			}
 		}
 	}
+
+	KMT_Kevin_MacDonald = {
+		name = KMT_Kevin_MacDonald
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Kevin_MacDonald
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				has_completed_focus = KMT_destroy_the_jewish_conspiracy
+			}
+			traits = { KMT_advisor_antisemite_psychologist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 	
 
 	### Military Leaders ###

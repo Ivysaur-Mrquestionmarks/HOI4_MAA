@@ -3893,6 +3893,8 @@ focus_tree = {
 			unlock_decision_tooltip = KMT_anti_semitism
 			add_stability = 0.1
 			add_war_support = 0.1
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = advisor_Kevin_MacDonald
 		}
 		prerequisite = {
 			focus = KMT_our_platform
