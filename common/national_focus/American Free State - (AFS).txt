@@ -13475,7 +13475,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_pp_level
 				value = -0.05
-				tooltip = AFS_decrease_pp_var_tt
+				tooltip = political_power_gain_tt
 			}
             random_controlled_state = {
 				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
@@ -14019,6 +14019,18 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_war_support = 0.05
+			every_state = {
+			    limit = { is_core_of = VIR }
+			    add_core_of = AFS
+		    }
+			every_state = {
+			    limit = { is_core_of = NRA }
+			    add_core_of = AFS
+		    }
+			every_state = {
+			    limit = { is_core_of = KFC }
+			    add_core_of = AFS
+		    }
 			add_ideas = AFS_securing_our_nation
 		}
 	}
