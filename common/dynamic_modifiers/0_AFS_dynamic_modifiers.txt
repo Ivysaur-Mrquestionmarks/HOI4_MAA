@@ -2,7 +2,7 @@
 AFS_anarchist_paradise_dynamic_modifier = { #NATIONAL SPIRIT, balls.
 	enable = { always = yes }
 
-	icon = generic_air_research
+	icon = GFX_idea_AFS_anarchist_paradise_dynamic_modifier
 	
 	political_power_gain = AFS.var_pp_level
 	drift_defence_factor = AFS.var_drift_defence_level
@@ -31,7 +31,7 @@ AFS_autonomous_zone_state_modifier = {
 AFS_anything_and_everything_dynamic_modifier = { #NATIONAL SPIRIT, balls.
 	enable = { always = yes }
 
-	icon = generic_air_research
+	icon = GFX_idea_AFS_anything_and_everything_dynamic_modifier
 	
 	political_power_gain = AFS.var_pp_level
 	drift_defence_factor = AFS.var_drift_defence_level

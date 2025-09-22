@@ -12988,6 +12988,7 @@ spriteTypes = {
 	}
 
 	### National Spirits ###
+
 	# Starting Spirits #
 	spriteType = {
     	name = "GFX_idea_triumvirate_idea"
@@ -12999,6 +13000,27 @@ spriteTypes = {
     	texturefile = "gfx/interface/ideas/AFS/AFS_triumvirate_broken.dds"
     }
 
+    spriteType = {
+    	name = "GFX_idea_AFS_legitimate_government"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_legitimate_government.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_the_unpopular_vermin"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_the_unpopular_vermin.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_ruins_of_the_triumvirate"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_ruins_of_the_triumvirate.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_a_scarred_population"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_a_scarred_population.dds"
+    }
+
+    # Vermin Spirits #
     spriteType = {
     	name = "GFX_idea_AFS_peoples_support"
     	texturefile = "gfx/interface/ideas/AFS/AFS_peoples_support.dds"
@@ -13015,34 +13037,108 @@ spriteTypes = {
     }
 
     spriteType = {
-    	name = "GFX_idea_AFS_legitimate_government"
-    	texturefile = "gfx/interface/ideas/AFS/AFS_legitimate_government.dds"
+    	name = "GFX_idea_AFS_an_internationale_of_freedom_fighters"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_an_internationale_of_freedom_fighters.dds"
     }
 
     spriteType = {
-    	name = "GFX_idea_AFS_the_unpopular_vermin"
-    	texturefile = "gfx/interface/ideas/AFS/AFS_the_unpopular_vermin.dds"
+    	name = "GFX_idea_AFS_anarchist_internationale"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_anarchist_internationale.dds"
     }
 
+    spriteType = {
+    	name = "GFX_idea_AFS_for_father_anarchy"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_for_father_anarchy.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_a_stateless_economy"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_a_stateless_economy.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_anarchist_paradise_dynamic_modifier"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_anarchist_paradise_dynamic_modifier.dds"
+    }
+
+    # Hawkins Spirits #
     spriteType = {
     	name = "GFX_idea_AFS_the_green_army"
     	texturefile = "gfx/interface/ideas/AFS/AFS_the_green_army.dds"
     }
 
     spriteType = {
+    	name = "GFX_idea_AFS_the_green_army_terror_1"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_the_green_army_terror_1.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_anything_and_everything_dynamic_modifier"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_anything_and_everything_dynamic_modifier.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_green_terror_state"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_green_terror_state.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_terra_weapons"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_terra_weapons.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_death_infrastructure"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_death_infrastructure.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_twilight_idea"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_twilight_idea.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_green_internationale"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_green_internationale.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_ecological_dictatorship"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_ecological_dictatorship.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_environmentalist_socitey"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_environmentalist_socitey.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_eco_socialist_economics"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_eco_socialist_economics.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_extreme_environmentalist_regulation"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_extreme_environmentalist_regulation.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_solar_infrastructure"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_solar_infrastructure.dds"
+    }
+
+    spriteType = {
+    	name = "GFX_idea_AFS_energy_of_the_future"
+    	texturefile = "gfx/interface/ideas/AFS/AFS_energy_of_the_future.dds"
+    }
+
+    # Mattis Spirits #
+    spriteType = {
     	name = "GFX_idea_AFS_strength_and_might"
     	texturefile = "gfx/interface/ideas/AFS/AFS_strength_and_might.dds"
     }
 
-    spriteType = {
-    	name = "GFX_idea_AFS_ruins_of_the_triumvirate"
-    	texturefile = "gfx/interface/ideas/AFS/AFS_ruins_of_the_triumvirate.dds"
-    }
-
-    spriteType = {
-    	name = "GFX_idea_AFS_a_scarred_population"
-    	texturefile = "gfx/interface/ideas/AFS/AFS_a_scarred_population.dds"
-    }
+    # Vance Spirits #
 
 	### Events ###
 	#News Events

@@ -291,7 +291,7 @@ ideas = {
 			}
 		}
 		AFS_an_internationale_of_freedom_fighters_2 = {
-			#picture = 
+			picture = AFS_an_internationale_of_freedom_fighters
 			modifier = {
 				political_power_gain = 0.05
 				acclimatization_cold_climate_gain_factor = 0.2
@@ -315,7 +315,7 @@ ideas = {
 			}
 		}
 		AFS_vermins_black_army_weakened = {
-			#picture = 
+			picture = AFS_vermins_black_army_idea
 			modifier = {
 				cavalry_attack_factor = -0.05
 				army_org_factor = -0.1
@@ -323,7 +323,7 @@ ideas = {
 			}
 		}
 		AFS_vermins_black_army_2 = {
-			#picture = 
+			picture = AFS_vermins_black_army_idea
 			modifier = {
 				cavalry_attack_factor = 0.05
 				army_org_factor = 0.05
@@ -333,7 +333,7 @@ ideas = {
 			}
 		}
 		AFS_vermins_black_army_3 = {
-			#picture = 
+			picture = AFS_vermins_black_army_idea
 			modifier = {
 				cavalry_attack_factor = 0.1
 				army_org_factor = 0.1
@@ -344,7 +344,7 @@ ideas = {
 			}
 		}
 		AFS_vermins_black_army_4 = {
-			#picture = 
+			picture = AFS_vermins_black_army_idea
 			modifier = {
 				cavalry_attack_factor = 0.15
 				army_org_factor = 0.15
@@ -355,7 +355,7 @@ ideas = {
 			}
 		}
 		AFS_vermins_black_army_5 = {
-			#picture = 
+			picture = AFS_vermins_black_army_idea
 			modifier = {
 				cavalry_attack_factor = 0.25
 				army_org_factor = 0.2
@@ -366,7 +366,7 @@ ideas = {
 			}
 		}
 		AFS_vermins_black_army_6 = {
-			#picture = 
+			picture = AFS_vermins_black_army_idea
 			modifier = {
 				cavalry_attack_factor = 0.3
 				army_org_factor = 0.25
@@ -384,7 +384,7 @@ ideas = {
 			}
 		}
 		AFS_for_father_anarchy_2 = {
-			#picture = 
+			picture = AFS_for_father_anarchy
 			modifier = {
 				conscription_factor = 0.2
                 training_time_factor = -0.45
@@ -403,7 +403,7 @@ ideas = {
 			}
 		}
 		AFS_a_stateless_economy_2 = {
-			#picture = 
+			picture = AFS_a_stateless_economy
 			modifier = {
 				production_speed_buildings_factor = -0.15
 				consumer_goods_factor = -0.15
@@ -415,7 +415,7 @@ ideas = {
 			}
 		}
 		AFS_a_stateless_economy_3 = {
-			#picture = 
+			picture = AFS_a_stateless_economy
 			modifier = {
 				production_speed_buildings_factor = -0.1
 				consumer_goods_factor = -0.2
@@ -427,7 +427,7 @@ ideas = {
 			}
 		}
 		AFS_a_stateless_economy_4 = {
-			#picture = 
+			picture = AFS_a_stateless_economy
 			modifier = {
 				production_speed_buildings_factor = -0.1
 				consumer_goods_factor = -0.25
@@ -439,7 +439,7 @@ ideas = {
 			}
 		}
 		AFS_a_stateless_economy_5 = {
-			#picture = 
+			picture = AFS_a_stateless_economy
 			modifier = {
 				production_speed_buildings_factor = -0.05
 				consumer_goods_factor = -0.3
@@ -451,7 +451,7 @@ ideas = {
 			}
 		}
 		AFS_a_stateless_economy_6 = {
-			#picture = 
+			picture = AFS_a_stateless_economy
 			modifier = {
 				production_speed_buildings_factor = 0.05
 				consumer_goods_factor = -0.35
@@ -463,7 +463,7 @@ ideas = {
 			}
 		}
 		AFS_a_stateless_economy_7 = {
-			#picture = 
+			picture = AFS_a_stateless_economy
 			modifier = {
 				production_speed_buildings_factor = 0.1
 				consumer_goods_factor = -0.4
@@ -501,7 +501,7 @@ ideas = {
 		}
 
 		AFS_the_green_army_terror_2 = {
-			#picture = 
+			picture = AFS_the_green_army_terror_1
 			modifier = {
 				surrender_limit = 0.05
 				army_attack_factor = 0.1
@@ -515,7 +515,7 @@ ideas = {
 		}
 
 		AFS_the_green_army_terror_3 = {
-			#picture = 
+			picture = AFS_the_green_army_terror_1
 			modifier = {
 				surrender_limit = 0.1
 				army_attack_factor = 0.15
@@ -530,7 +530,7 @@ ideas = {
 		}
 
 		AFS_the_green_army_terror_4 = {
-			#picture = 
+			picture = AFS_the_green_army_terror_1
 			modifier = {
 				surrender_limit = 0.15
 				army_attack_factor = 0.2
@@ -545,7 +545,7 @@ ideas = {
 		}
 
 		AFS_the_green_army_1 = {
-			#picture = 
+			picture = AFS_the_green_army
 			modifier = {
 				surrender_limit = -0.05
 				army_attack_factor = 0.05
@@ -560,7 +560,7 @@ ideas = {
 		}
 
 		AFS_the_green_army_2 = {
-			#picture = 
+			picture = AFS_the_green_army
 			modifier = {
 				surrender_limit = -0.1
 				army_attack_factor = 0.1
@@ -575,7 +575,7 @@ ideas = {
 		}
 
 		AFS_the_green_army_3 = {
-			#picture = 
+			picture = AFS_the_green_army
 			modifier = {
 				surrender_limit = -0.15
 				army_attack_factor = 0.15
@@ -590,7 +590,7 @@ ideas = {
 		}
 
 		AFS_the_green_army_4 = {
-			#picture = 
+			picture = AFS_the_green_army
 			modifier = {
 				surrender_limit = -0.15
 				army_attack_factor = 0.15
@@ -605,7 +605,7 @@ ideas = {
 		}
 
 		AFS_green_terror_state = {
-			#picture = 
+			picture = AFS_green_terror_state
 			modifier = {
 				monthly_population = -0.15	
 				stability_factor = -0.25
@@ -629,7 +629,7 @@ ideas = {
 		}
 
 		AFS_green_terror_state_2 = {
-			#picture = 
+			picture = AFS_green_terror_state
 			modifier = {
 				monthly_population = -0.15
 				stability_factor = -0.2
@@ -669,7 +669,7 @@ ideas = {
 		}
 
 		AFS_terra_weapons_2 = {
-			#picture = 
+			picture = AFS_terra_weapons
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.15
 				production_factory_max_efficiency_factor = 0.15
@@ -685,7 +685,7 @@ ideas = {
 		}
 
 		AFS_terra_weapons_3 = {
-			#picture = 
+			picture = AFS_terra_weapons
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.2
 				production_factory_max_efficiency_factor = 0.2
@@ -701,7 +701,7 @@ ideas = {
 		}
 
 		AFS_terra_weapons_4 = {
-			#picture = 
+			picture = AFS_terra_weapons
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.25
 				production_factory_max_efficiency_factor = 0.25
@@ -726,7 +726,7 @@ ideas = {
 		}
 
 		AFS_death_infrastructure_2 = {
-			#picture = 
+			picture = AFS_death_infrastructure
 			modifier = {
 				monthly_population = -0.2
 				production_speed_infrastructure_factor = 0.25
@@ -735,7 +735,7 @@ ideas = {
 		}
 
 		AFS_twilight_idea = {
-			#picture = 
+			picture = AFS_twilight_idea
 			modifier = {
 				monthly_population = -1.0
 				stability_weekly = -0.75
@@ -744,7 +744,7 @@ ideas = {
 		}
 
 		AFS_howie_hawkins_figurehead = {
-			picture = AFS_howie_advisor
+			picture = howie
 			modifier = {
 				political_power_gain = 0.05
 				stability_factor = 0.05
@@ -778,7 +778,7 @@ ideas = {
 		}
 
 		AFS_ecological_dictatorship_2 = {
-			#picture = 
+			picture = AFS_ecological_dictatorship
 			modifier = {
 				political_power_gain = 0.1
 				drift_defence_factor = 0.1
@@ -789,7 +789,7 @@ ideas = {
 		}
 
 		AFS_ecological_dictatorship_3 = {
-			#picture = 
+			picture = AFS_ecological_dictatorship
 			modifier = {
 				political_power_gain = 0.15
 				drift_defence_factor = 0.15
@@ -800,7 +800,7 @@ ideas = {
 		}
 
 		AFS_ecological_dictatorship_4 = {
-			#picture = 
+			picture = AFS_ecological_dictatorship
 			modifier = {
 				political_power_gain = 0.2
 				drift_defence_factor = 0.2
@@ -811,7 +811,7 @@ ideas = {
 		}
 
 		AFS_ecological_dictatorship_5 = {
-			#picture = 
+			picture = AFS_ecological_dictatorship
 			modifier = {
 				political_power_gain = 0.25
 				drift_defence_factor = 0.25
@@ -822,7 +822,7 @@ ideas = {
 		}
 
 		AFS_ecological_dictatorship_6 = {
-			#picture = 
+			picture = AFS_ecological_dictatorship
 			modifier = {
 				political_power_gain = 0.3
 				drift_defence_factor = 0.3
@@ -833,7 +833,7 @@ ideas = {
 		}
 
 		AFS_ecological_peoples_republic = {
-			#picture = 
+			picture = AFS_ecological_dictatorship
 			modifier = {
 				political_power_gain = 0.25
 				drift_defence_factor = 0.3
@@ -855,7 +855,7 @@ ideas = {
 		}
 
 		AFS_environmentalist_socitey_2 = {
-			#picture = 
+			picture = AFS_environmentalist_socitey
 			modifier = {
 				party_popularity_stability_factor = 0.1
 				authoritarian_left_drift = 0.02
@@ -866,7 +866,7 @@ ideas = {
 		}
 
 		AFS_environmentalist_socitey_3 = {
-			#picture = 
+			picture = AFS_environmentalist_socitey
 			modifier = {
 				party_popularity_stability_factor = 0.15
 				authoritarian_left_drift = 0.03
@@ -877,7 +877,7 @@ ideas = {
 		}
 
 		AFS_environmentalist_socitey_4 = {
-			#picture = 
+			picture = AFS_environmentalist_socitey
 			modifier = {
 				party_popularity_stability_factor = 0.15
 				authoritarian_left_drift = 0.04
@@ -888,7 +888,7 @@ ideas = {
 		}
 
 		AFS_environmentalist_socitey_5 = {
-			#picture = 
+			picture = AFS_environmentalist_socitey
 			modifier = {
 				party_popularity_stability_factor = 0.2
 				authoritarian_left_drift = 0.06
@@ -910,7 +910,7 @@ ideas = {
 		}
 
 		AFS_eco_socialist_economics_2 = {
-			#picture = 
+			picture = AFS_eco_socialist_economics
 			modifier = {
 				consumer_goods_factor = 0.15
 				production_speed_buildings_factor = 0.1
@@ -921,7 +921,7 @@ ideas = {
 		}
 
 		AFS_eco_socialist_economics_3 = {
-			#picture = 
+			picture = AFS_eco_socialist_economics
 			modifier = {
 				consumer_goods_factor = 0.2
 				production_speed_buildings_factor = 0.15
@@ -932,7 +932,7 @@ ideas = {
 		}
 
 		AFS_eco_socialist_economics_4 = {
-			#picture = 
+			picture = AFS_eco_socialist_economics
 			modifier = {
 				consumer_goods_factor = 0.3
 				production_speed_buildings_factor = 0.2
@@ -943,7 +943,7 @@ ideas = {
 		}
 
 		AFS_eco_socialist_economics_5 = {
-			#picture = 
+			picture = AFS_eco_socialist_economics
 			modifier = {
 				consumer_goods_factor = 0.35
 				production_speed_buildings_factor = 0.2
@@ -954,7 +954,7 @@ ideas = {
 		}
 
 		AFS_green_market_socialism = {
-			#picture = 
+			picture = AFS_eco_socialist_economics
 			modifier = {
 				consumer_goods_factor = 0.2
 				production_speed_buildings_factor = 0.3
@@ -975,7 +975,7 @@ ideas = {
 		}
 
 		AFS_extreme_environmentalist_regulations_2 = {
-			#picture = 
+			picture = AFS_extreme_environmentalist_regulation
 			modifier = {
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.1
@@ -985,7 +985,7 @@ ideas = {
 		}
 
 		AFS_extreme_environmentalist_regulations_3 = {
-			#picture = 
+			picture = AFS_extreme_environmentalist_regulation
 			modifier = {
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
@@ -1003,7 +1003,7 @@ ideas = {
 		}
 
 		AFS_solar_infrastructure_2 = {
-			#picture = 
+			picture = AFS_solar_infrastructure
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
 				consumer_goods_factor = -0.1
@@ -1011,7 +1011,7 @@ ideas = {
 		}
 
 		AFS_solar_infrastructure_3 = {
-			#picture = 
+			picture = AFS_solar_infrastructure
 			modifier = {
 				production_speed_infrastructure_factor = 0.25
 				consumer_goods_factor = -0.2
@@ -1028,7 +1028,7 @@ ideas = {
 		}
 
 		AFS_energy_of_the_future_2 = {
-			#picture = 
+			picture = AFS_energy_of_the_future
 			modifier = {
 				consumer_goods_factor = 0.1
 				base_fuel_gain_factor = 0.15
