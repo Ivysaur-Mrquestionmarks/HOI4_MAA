@@ -175,6 +175,62 @@ characters={
 			id = -1
 		}
 	}
+	AFS_jd_vance = {
+		name = AFS_jd_vance
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AFS/AFS_jd_vance.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservative
+			traits = {}
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
+	AFS_charlie_earl = {
+		name = AFS_charlie_earl
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AFS/AFS_charlie_earl.dds"
+			}
+		}
+		country_leader = {
+			ideology = libertarian_ideology
+			traits = {}
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
+	AFS_nickie_antonio = {
+		name = AFS_nickie_antonio
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AFS/AFS_nickie_antonio.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberal
+			traits = {}
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
+	AFS_alex_triantafilou = {
+		name = AFS_alex_triantafilou
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AFS/AFS_alex_triantafilou.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservative
+			traits = {}
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
 	### Military Staff and Political Advisors ###
 	# Political Advisors #
 	AFS_angela_walker = {
@@ -276,6 +332,9 @@ characters={
 			army={
 				small = "gfx/interface/ideas/AFS/AFS_jim_tressel_advisor.dds"
 			}
+			civilian = {
+				large = "gfx/leaders/AFS/AFS_jim_tressel.dds"
+			}
 		}
 		advisor = {
 			slot = political_advisor
@@ -292,6 +351,12 @@ characters={
                     name = "J.D Vance"
                     ruling_only = yes
                 }
+				NOT = {
+					has_country_leader = {
+                        name = "Jim Tressel"
+                        ruling_only = yes
+                    }
+				}
 			}
 			available = {
 				has_government = republican
