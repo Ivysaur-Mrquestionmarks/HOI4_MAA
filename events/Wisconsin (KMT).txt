@@ -1807,3 +1807,81 @@ country_event = {
 		
 	}
 }
+
+# join trump?
+country_event = {
+	id = wisconsin.48
+	title = wisconsin.48.t
+	desc = wisconsin.48.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+    	days = 2
+	}
+	option = {
+		name = wisconsin.48.a
+		ai_chance = {
+			factor = 200
+		}
+		add_to_faction = FROM
+		FROM = { country_event = { id = wisconsin.49 } }
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = "USA"
+				value = 200
+			}
+		}
+
+	}
+	option = {
+		name = wisconsin.48.b
+		ai_chance = {
+			factor = 1
+		}
+		FROM = { country_event = { id = wisconsin.50 } }
+	}
+}
+
+# pb wants us
+country_event = {
+	id = wisconsin.49
+	title = wisconsin.49.t
+	desc = wisconsin.49.d
+	picture = TBD
+
+	is_triggered_only = yes
+
+	option = {
+		name = wisconsin.49.a
+		ai_chance = {
+			factor = 1
+		}
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = "KMT"
+				value = 200
+			}
+		}
+	}
+}
+
+# pb dont wants us
+country_event = {
+	id = wisconsin.50
+	title = wisconsin.50.t
+	desc = wisconsin.50.d
+	picture = TBD
+
+	is_triggered_only = yes
+
+	option = {
+		name = wisconsin.50.a
+		ai_chance = {
+			factor = 1
+		}
+		add_war_support = 0.1
+	}
+}

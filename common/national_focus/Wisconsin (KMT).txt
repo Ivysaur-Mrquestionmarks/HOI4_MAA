@@ -3939,11 +3939,12 @@ focus_tree = {
 		x = 47
 		y = 13
 
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			USA = { has_completed_focus = USA_PB_path }
 		}
 		
 		bypass = {
@@ -3952,7 +3953,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			USA = { country_event = wisconsin.48 }
+			add_stability = 0.05
 		}
 		prerequisite = {
 			focus = KMT_control_the_media
@@ -3968,7 +3970,7 @@ focus_tree = {
 		x = 49
 		y = 13
 
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -3981,7 +3983,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_war_support = 0.2
+			add_political_power = 100
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.05
+			}
 		}
 		prerequisite = {
 			focus = KMT_control_the_media

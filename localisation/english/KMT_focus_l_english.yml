@@ -497,24 +497,24 @@
  wisconsin.41.d:0 "Bernie Sanders has accepted our request to join his movement. We are now part of a larger revolutionary struggle across the nation, united under a common banner of solidarity and progress."
  wisconsin.41.a:0 "Together, we are stronger!"
 
- #event 41: bern rejects
+ #event 42: bern rejects
  wisconsin.42.t:0 "Bernie Declines"
  wisconsin.42.d:0 "Bernie Sanders has rejected our request to join his faction. While his movement may continue on without us, this rejection has only strengthened our resolve to pursue our own path toward revolution."
  wisconsin.42.a:0 "We will forge ahead regardless!"
 
- #event 42: ice legioin ultimatum (mil prespective)
+ #event 43: ice legioin ultimatum (mil prespective)
  wisconsin.43.t:0 "The [KMT.GetAdjective] Ultimatum"
  wisconsin.43.d:0 "The [KMT.GetName] has issued an ultimatum to us: surrender the Wisconsinite state territory or face the consequences. Their demands are clear either we give back some territory peacefully, or risk a bloody border conflict. However they clearly are not strong enough to enforce their will on all Wisconsinite territory we control, so we could just retreat to the riverline and avoid conflict."
  wisconsin.43.a:0 "We will never yield to their threats!"
  wisconsin.43.b:0 "Give them [676.GetName], retreat to the riverline and avoid bloodshed."
 
- # event 46: rejects
+ # event 44: rejects
  wisconsin.44.t:0 "Ultimatum Rejected"
  wisconsin.44.d:0 "We have refused the Ice Legion's demands. Their response did not even left room for negotiations. Armies are now gathering along the border. A confrontation seems inevitable, and only one side will emerge victorious."
  wisconsin.44.a:0 "Prepare for the fight!"
  wisconsin.44.b:0 "Perhaps we should reconsider…"
 
- # event 46: mil accepts our demands
+ # event 45: mil accepts our demands
  wisconsin.45.t:0 "The [MIL.GetName] Accepts Our Demands"
  wisconsin.45.d:0 "Our ultimatum has been accepted. [MIL.GetNameDef] has surrendered some of the contested territory to us without bloodshed, strengthening our position in the region."
  wisconsin.45.a:0 "A bloodless victory!"
@@ -528,6 +528,22 @@
  wisconsin.47.t:0 "Defeat in the Border War"
  wisconsin.47.d:0 "Our forces have been overwhelmed in the border war against the enemy. They has seized the contested territory, and our failure has dealt a heavy blow to our prestige."
  wisconsin.47.a:0 "We will reclaim it one day."
+
+ #event 48: kmt wnats to join usa (usa prespective)
+ wisconsin.48.t:0 "The [KMT.GetAdjective] Request"
+ wisconsin.48.d:0 "[KMT.GetNameDef] has approached us with a request to formally join the fight. Paul hehlen sees in the Proud Boys the same struggle for a new and better America."
+ wisconsin.48.a:0 "Welcome them into the fold!"
+ wisconsin.48.b:0 "We must decline"
+
+ #event 49: pb accepts
+ wisconsin.49.t:0 "The Proud Boys Welcomes Us"
+ wisconsin.49.d:0 "The Loyalist government has accepted our request to join the fight. We are now part of a larger ethno-religious struggle across this nation, united under a common banner of strength and order."
+ wisconsin.49.a:0 "Together, we are stronger!"
+
+ #event 50: pb rejects
+ wisconsin.50.t:0 "The Proud Boys Declines"
+ wisconsin.50.d:0 "The Loyalist government has rejected our request to join their faction. This rejection has only strengthened our resolve to pursue our own path toward a new America."
+ wisconsin.50.a:0 "They are weak"
 
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 
@@ -753,6 +769,18 @@
  KMT_the_snyder_coup_desc:0 "Zack Snyder steps forward to seize the reins of power. Framed as a grand, cinematic struggle between order and chaos, his takeover is justified as the only way to bring clarity to a movement with a dangerous leader.\n\n#ReleaseTheSnyderCut"
  KMT_wicca:0 "The Wicca Ascendancy"
  KMT_wicca_desc:0 "A spiritual revolution follows the political one. Guided by esoteric belief, the movement reshapes politics into a chaotic but vibrant new order."
+ KMT_our_platform:0 "Our Platform"
+ KMT_our_platform_desc:0 "With the Counter-Revolution victorious, it is time to formalize Nehlen’s vision into a platform to revive this fallen land. The principles of ethno-nationalism, authoritarian order, and militant loyalty to the state are no longer just slogans: they are the foundation of the new regime."
+ KMT_its_ok_to_be_white:0 "It's OK to Be White"
+ KMT_its_ok_to_be_white_desc:0 "What began as a slogan is now transformed into a guiding principle of state policy. The new America shall openly embrace the notion of white identity as the cornerstone of political legitimacy, silencing critics while rallying true believers."
+ KMT_destroy_the_jewish_conspiracy:0 "Destroy the Jewish Conspiracy"
+ KMT_destroy_the_jewish_conspiracy_desc:0 "The new regime is in a spititual war on the shadowy jewish elites in order to end every ill that plagues the nation. Intellectuals are empowered to root out perceived subversives, and propaganda paints the struggle as an existential crusade."
+ KMT_control_the_media:0 "Control the Media"
+ KMT_control_the_media_desc:0 "To secure power, Nehlen’s regime must dominate the flow of information. By empowering media like the Daily Stormer, dissident voices shall be silenced, hostile outlets will be purged and state propaganda must flood the airwaves. With full control of the narrative, Nehlen transforms from a controversial figure into the unchallenged voice of truth."
+ KMT_loyalty_to_the_base:0 "Loyalty to the Base"
+ KMT_loyalty_to_the_base_desc:0 "Nehlen’s regime owes much to its core supporters in other parts of America. The Proud Boys in Denver empowered by Trump, can be closely aligned with our movement. To strengthen our hold at home and ensure that our ideas take place in America as a whole we must bend the knee to the Base."
+ KMT_better_alone:0 "Better Alone"
+ KMT_better_alone_desc:0 "Allies bring compromise. Nehlen refuses to dilute his platform for the sake of international approval. By turning inward, the regime presents itself as the sole defender of national purity and sovereignty, gaining strength through defiance rather than partnership."
 
  # Army
  KMT_upgrade_fort_mccoy:0 "Upgrade Fort McCoy"
@@ -899,6 +927,11 @@
 
  KMT_nehlen_missions:0 "Nehlen's Political Platform"
  KMT_nehlen_missions_desc:0 "We did it! Nehlen is firmly in power. Now we move on to reshape America, this fallen nation!"
+
+ KMT_natalism:0 "Natlism"
+ KMT_white_supremacy:0 "White Supremacy"
+ KMT_protectionism:0 "Protectionism"
+ KMT_anti_semitism:0 "Antisemitism"
 
  #######  ######## ##     ## ######## ########      ######  ######## ##     ## ######## ######## 
 ##     ##    ##    ##     ## ##       ##     ##    ##    ##    ##    ##     ## ##       ##       

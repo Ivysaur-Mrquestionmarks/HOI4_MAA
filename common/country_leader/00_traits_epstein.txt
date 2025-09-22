@@ -4927,6 +4927,14 @@ leader_traits = {
 		resistance_activity = -0.15
 	}
 
+	AFS_green_judge = {
+		random = no
+		stability_factor = 0.10
+		resistance_activity = -0.10
+		authoritarian_left_drift = 0.05
+		political_power_cost = 0.05
+	}
+
 	LGB_furry_nazi_trait = {
 		random = no
 		production_factory_efficiency_gain_factor = 0.05

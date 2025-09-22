@@ -239,6 +239,35 @@ characters={
 		}
 	}
 
+	AFS_ted_berry = {
+		name = "Ted Berry"
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/AFS/AFS_ted_berry_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AFS_berry_advisor
+			cost = 150
+			allowed = {
+				tag = AFS
+			}
+			visible = {
+				tag = AFS
+			}
+			available = {
+				has_government = authoritarian_left
+			}
+			traits = {
+				AFS_green_judge
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
     ### DeWine/Vance Advisors ###
 	AFS_jim_tressel = {
 		name = AFS_jim_tressel
