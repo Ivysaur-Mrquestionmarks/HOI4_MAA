@@ -1,0 +1,52 @@
+western_loyalists_hate_npa = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		original_tag = IDA
+		NOT = {
+			country_exists = USA
+		}
+	}
+	abort = {
+		NOT = { country_exists = NPA }
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "NPA"
+		value = 500
+	}
+	ai_strategy = {
+	    type = contain
+	    id = "NPA"
+	    value = 100
+	}
+}
+npa_hates_western_loyalists = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		original_tag = NPA
+		IDA = {
+			is_faction_leader = yes
+		}
+	}
+	abort = {
+		IDA = {
+			is_faction_leader = no
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "IDA"
+		value = 500
+	}
+	ai_strategy = {
+	    type = consider_weak
+	    id = "IDA"
+	    value = 75
+	}
+}
