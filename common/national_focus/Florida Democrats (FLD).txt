@@ -2662,7 +2662,7 @@
 	
 	focus = {
 		id = FLD_floridas_place_in_america
-		icon = GFX_goal_FLD_our_new_nation
+		icon = GFX_goal_FLD_floridas_place_in_america
 		cost = 4
 		prerequisite = {
 			focus = FLD_demings
@@ -2678,7 +2678,7 @@
 
 	focus = {
 		id = FLD_the_libertarian_cause
-		icon = GFX
+		icon = GFX_goal_FLD_the_libertarian_cause
 		cost = 4
 		mutually_exclusive = {
 			focus = FLD_meeting_in_washington
@@ -2705,7 +2705,7 @@
 	}
 	focus = {
 		id = FLD_strengthen_the_militia
-		icon = GFX
+		icon = GFX_goal_FLD_strengthen_the_militia
 		cost = 4
 		prerequisite = { 
 			focus = FLD_the_libertarian_cause
@@ -2729,7 +2729,7 @@
 	}
 	focus = {
 		id = FLD_support_CSB
-		icon = GFX
+		icon = GFX_goal_FLD_support_CSB
 		cost = 4
 		prerequisite = { 
 			focus = FLD_the_libertarian_cause
@@ -2762,7 +2762,7 @@
 	}
 	focus = {
 		id = FLD_secure_corporate_donations
-		icon = GFX
+		icon = GFX_goal_FLD_secure_corporate_donations
 		cost = 4
 		prerequisite = { 
 			focus = FLD_the_libertarian_cause
@@ -2781,7 +2781,7 @@
 	}
 	focus = {
 		id = FLD_ally_the_gla
-		icon = GFX
+		icon = GFX_goal_FLD_ally_the_gla
 		cost = 4
 		prerequisite = { 
 			focus = FLD_secure_corporate_donations
@@ -2806,7 +2806,7 @@
 	}
 	focus = {
 		id = FLD_for_a_free_america
-		icon = GFX
+		icon = GFX_goal_FLD_for_a_free_america
 		cost = 4
 		prerequisite = { 
 			focus = FLD_ally_the_gla
@@ -2836,7 +2836,7 @@
 
 	focus = {
 		id = FLD_the_florida_way
-		icon = GFX_goal_FLO_floridian_economy
+		icon = GFX_goal_FLD_the_florida_way
 		cost = 4
 		mutually_exclusive = {
 			focus = FLD_meeting_in_washington
@@ -2857,7 +2857,7 @@
 	}
 	focus = {
 		id = FLD_beacon_of_democracy
-		icon = GFX_goal_FLO_citizenship
+		icon = GFX_goal_FLD_beacon_of_democracy
 		cost = 4
 		prerequisite = { 
 			focus = FLD_the_florida_way
@@ -2871,7 +2871,7 @@
 	}
 	focus = {
 		id = FLD_guarantee_freedoms
-		icon = GFX_goal_Fight_for_Freedom
+		icon = GFX_goal_FLD_guarantee_freedoms
 		cost = 4
 		prerequisite = { 
 			focus = FLD_the_florida_way
@@ -2895,7 +2895,7 @@
 	}
 	focus = {
 		id = FLD_welcome_to_florida
-		icon = GFX_goal_FLO_sunshine
+		icon = GFX_goal_FLD_welcome_to_florida
 		cost = 4
 		prerequisite = { 
 			focus = FLD_beacon_of_democracy
@@ -2927,7 +2927,7 @@
 	}
 	focus = {
 		id = FLD_declare_independence
-		icon = GFX
+		icon = GFX_goal_FLD_declare_independence
 		cost = 4
 		prerequisite = { 
 			focus = FLD_welcome_to_florida
@@ -2955,7 +2955,7 @@
 	}
 	focus = {
 		id = FLD_leading_america
-		icon = GFX
+		icon = GFX_goal_FLD_leading_america
 		cost = 4
 		prerequisite = { 
 			focus = FLD_welcome_to_florida
