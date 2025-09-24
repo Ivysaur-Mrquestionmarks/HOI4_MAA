@@ -264,4 +264,90 @@ KMT_nehlen_missions = {
 		}
 	}
 
+	KMT_help_the_klan = {
+		icon = GFX_decision_generic_industry
+		allowed = {
+			original_tag = KMT
+		}
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 1999 }
+		}
+		custom_cost_text = decision_cost_IE_2000
+		fire_only_once = no
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 50
+		visible = {
+			has_completed_focus = KMT_support_some_allies
+		}
+		available = {
+			KKK = { exists = yes }
+			has_equipment = {
+				infantry_equipment > 1999
+			}
+		}
+		remove_effect = {
+			KKK = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+					producer = KMT
+				}
+			}
+			KMT = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -2000
+					producer = KMT
+				}
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+		}
+	}
+
+	KMT_help_the_nazis = {
+		icon = GFX_decision_generic_industry
+		allowed = {
+			original_tag = KMT
+		}
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 1999 }
+		}
+		custom_cost_text = decision_cost_IE_2000
+		fire_only_once = no
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 50
+		visible = {
+			has_completed_focus = KMT_support_some_allies
+		}
+		available = {
+			HOP = { exists = yes }
+			has_equipment = {
+				infantry_equipment > 1999
+			}
+		}
+		remove_effect = {
+			HOP = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+					producer = KMT
+				}
+			}
+			KMT = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -2000
+					producer = KMT
+				}
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+		}
+	}
+
 }

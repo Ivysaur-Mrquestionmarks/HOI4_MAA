@@ -932,6 +932,8 @@
  KMT_white_supremacy:0 "White Supremacy"
  KMT_protectionism:0 "Protectionism"
  KMT_anti_semitism:0 "Antisemitism"
+ KMT_help_the_klan:0 "Help the Klan"
+ KMT_help_the_nazis:0 "Help the Nazis"
 
  #######  ######## ##     ## ######## ########      ######  ######## ##     ## ######## ######## 
 ##     ##    ##    ##     ## ##       ##     ##    ##    ##    ##    ##     ## ##       ##       
@@ -951,3 +953,6 @@
  decision_cost_CP_50: "£command_power  §Y50§!"
  decision_cost_CP_50_blocked: "£command_power  §R50§!"
  decision_cost_CP_50_tooltip: "It costs £command_power  §Y50§! to take the decision"
+ decision_cost_IE_2000: "£infantry_equipment_text_icon  §Y2000§!"
+ decision_cost_IE_2000_blocked: "£infantry_equipment_text_icon  §R2000§!"
+ decision_cost_IE_2000_tooltip: "It costs £infantry_equipment_text_icon  §Y2000§! to take the decision"
