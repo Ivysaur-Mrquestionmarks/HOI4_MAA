@@ -1624,7 +1624,7 @@
 	}
 	focus = {
 		id = FLD_miamicoin
-		icon = GFX_goal_FLD_miamicoin
+		icon = GFX_goal_FLD_miamicoin2
 		cost = 4
 		prerequisite = { 
 			focus = FLD_invite_tech_companies
@@ -1653,7 +1653,7 @@
 	}
 	focus = {
 		id = FLD_abolish_taxes
-		icon = GFX_goal_FLD_abolish_taxes
+		icon = GFX_goal_FLD_abolish_taxes2
 		cost = 4
 		prerequisite = { 
 			focus = FLD_miamicoin
@@ -1690,7 +1690,7 @@
 	}
 	focus = {
 		id = FLD_silicon_valley_of_the_east
-		icon = GFX_goal_FLD_silicon_valley_of_the_east
+		icon = GFX_goal_FLD_silicon_valley_of_the_east2
 		cost = 4
 		prerequisite = { 
 			focus = FLD_abolish_taxes
