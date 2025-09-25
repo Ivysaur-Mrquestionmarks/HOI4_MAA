@@ -2980,7 +2980,7 @@
 	## Dem
 	focus = {
 		id = FLD_meeting_in_washington
-		icon = GFX_focus_NPA_One_Nation_One_Goal
+		icon = GFX_goal_FLD_meeting_in_washington
 		cost = 4
 		mutually_exclusive = {
 			focus = FLD_the_libertarian_cause
@@ -3007,7 +3007,7 @@
 	}
 	focus = {
 		id = FLD_prepare_to_fight
-		icon = GFX_goal_FLO_Speed_And_Strength
+		icon = GFX_goal_FLD_prepare_to_fight
 		cost = 4
 		prerequisite = { 
 			focus = FLD_meeting_in_washington
@@ -3026,7 +3026,7 @@
 	}
 	focus = {
 		id = FLD_funding_from_washington
-		icon = GFX_goal_GKJ_invade_dc
+		icon = GFX_goal_FLD_funding_from_washington
 		cost = 4
 		prerequisite = { 
 			focus = FLD_meeting_in_washington
@@ -3045,7 +3045,7 @@
 	}
 	focus = {
 		id = FLD_encourage_the_people
-		icon = GFX_goal_icon_Foundation_of_the_Blue_Army
+		icon = GFX_goal_FLD_encourage_the_people
 		cost = 4
 		prerequisite = { 
 			focus = FLD_meeting_in_washington
@@ -3064,7 +3064,7 @@
 	}
 	focus = {
 		id = FLD_join_the_legitimists
-		icon = GFX_goal_The_Federal_Republic
+		icon = GFX_goal_FLD_join_the_legitimists
 		cost = 4
 		prerequisite = { 
 			focus = FLD_prepare_to_fight
@@ -3086,7 +3086,7 @@
 	}
 	focus = {
 		id = FLD_loyal_to_dc
-		icon = GFX_goal_Biden_Handshake
+		icon = GFX_goal_FLD_loyal_to_dc
 		cost = 4
 		prerequisite = { 
 			focus = FLD_join_the_legitimists
