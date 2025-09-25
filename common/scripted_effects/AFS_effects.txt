@@ -192,6 +192,70 @@ AFS_civil_war_script_effect = {
 			    }
 		    }
 			set_country_flag = AFS_mattis_side
+			set_variable = {
+	            var = AFS.var_pp_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_research_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_compliance_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_drift_defence_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_stability_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_war_support_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_libertarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_authoritarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_autocratic_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_defense_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_attack_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_morale_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_conscription_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_equipment_capture_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_monthly_population_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_resistance_growth_level
+	            value = 0.00
+            }
         }
 		reserve_dynamic_country = yes
 		create_dynamic_country = {
@@ -361,6 +425,70 @@ AFS_civil_war_script_effect = {
 			    }
 		    }
 			set_country_flag = AFS_hawkins_side
+			set_variable = {
+	            var = AFS.var_pp_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_research_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_compliance_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_drift_defence_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_stability_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_war_support_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_libertarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_authoritarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_autocratic_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_defense_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_attack_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_morale_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_conscription_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_equipment_capture_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_monthly_population_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_resistance_growth_level
+	            value = 0.00
+            }
         }	
 		set_global_flag = ohio_civil_war_global
 	}
@@ -536,6 +664,70 @@ AFS_civil_war_script_effect_hawkins = {
             }
 			add_ideas = Ruins_of_the_Rust_Belt
 			set_country_flag = AFS_mattis_side
+			set_variable = {
+	            var = AFS.var_pp_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_research_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_compliance_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_drift_defence_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_stability_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_war_support_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_libertarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_authoritarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_autocratic_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_defense_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_attack_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_morale_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_conscription_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_equipment_capture_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_monthly_population_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_resistance_growth_level
+	            value = 0.00
+            }
         }
 		reserve_dynamic_country = yes
 		create_dynamic_country = {
@@ -725,6 +917,70 @@ AFS_civil_war_script_effect_hawkins = {
 			    }
 		    }
 			set_country_flag = AFS_vermin_side
+			set_variable = {
+	            var = AFS.var_pp_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_research_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_compliance_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_drift_defence_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_stability_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_war_support_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_libertarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_authoritarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_autocratic_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_defense_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_attack_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_morale_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_conscription_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_equipment_capture_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_monthly_population_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_resistance_growth_level
+	            value = 0.00
+            }
         }
 		set_global_flag = ohio_civil_war_global	
 	}
@@ -865,6 +1121,70 @@ AFS_civil_war_script_effect_mattis = {
             }
 			add_ideas = Ruins_of_the_Rust_Belt
 			set_country_flag = AFS_hawkins_side
+			set_variable = {
+	            var = AFS.var_pp_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_research_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_compliance_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_drift_defence_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_stability_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_war_support_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_libertarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_authoritarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_autocratic_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_defense_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_attack_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_morale_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_conscription_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_equipment_capture_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_monthly_population_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_resistance_growth_level
+	            value = 0.00
+            }
         }
 		reserve_dynamic_country = yes
 		create_dynamic_country = {
@@ -1054,6 +1374,70 @@ AFS_civil_war_script_effect_mattis = {
 			    }
 		    }
 			set_country_flag = AFS_vermin_side
+			set_variable = {
+	            var = AFS.var_pp_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_research_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_compliance_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_drift_defence_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_stability_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_war_support_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_libertarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_authoritarian_left_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_autocratic_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_defense_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_attack_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_morale_level
+	            value = 0.05
+            }
+            set_variable = {
+	            var = AFS.var_conscription_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_equipment_capture_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_monthly_population_level
+	            value = 0.00
+            }
+            set_variable = {
+	            var = AFS.var_resistance_growth_level
+	            value = 0.00
+            }
         }
 		set_global_flag = ohio_civil_war_global	
 	}
