@@ -9,6 +9,72 @@ ideas = {
 			}
 		}
 
+		BRA_devaccination = { #no locals required
+			picture = International_Vaccines
+			modifier = {
+				political_power_factor = 0.15
+				monthly_population = -0.20
+			}
+		}
+
+		BRA_council_of_administrators = {
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				political_power_factor = 0.15
+				research_speed_factor = -0.05
+			}
+		}
+
+		BRA_soviet_brutalism = {
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				war_support_factor = -0.15
+			}
+		}
+
+		BRA_shrines_to_kek = {
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				stability_factor = -0.35
+				army_attack_factor = 0.20
+			}
+		}
+
+		BRA_h1b = {
+			picture = raj_all_india_forward_bloc
+			modifier = {
+				monthly_population = 1.45
+				conscription_factor = 0.10
+				stability_factor = -0.15
+			}
+		}
+
+		BRA_nuclear_programme = {
+			picture = ast_volunteer_defence_corps
+			available = {
+				has_government = autocratic
+			}
+			modifier = {
+				specialization_nuclear_speed_factor = 0.15
+				special_project_facility_supply_consumption_factor = -0.10
+				justify_war_goal_time = -0.33
+			}
+		}
+
+		BRA_ayyadurai_constitution = {
+			picture = ast_volunteer_defence_corps
+			available = {
+				has_government = autocratic
+			}
+			modifier = {
+				autocratic_drift = 0.05
+				conscription = 0.05
+				resistance_growth = 0.20
+			}
+		}
+
 
 
 	}

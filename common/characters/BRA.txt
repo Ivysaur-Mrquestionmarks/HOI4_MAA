@@ -82,6 +82,23 @@ characters={
 		}
 	}
 
+	BRA_shiva_ayyadurai = {
+		name = "Shiva Ayyadurai"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/shiva_1.tga"
+			}
+		}
+	}
+	BRA_lex_fridman = {
+		name = "Lex Fridman"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/fridman_1.tga"
+			}
+		}
+	}
+
 
 
 

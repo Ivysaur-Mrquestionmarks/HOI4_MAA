@@ -1910,6 +1910,26 @@ leader_traits = {
 	}
 
 
+	BRA_inventor_of_internet = {
+		random = no
+		research_speed_factor = -0.01
+	}
+	BRA_fridman_trait = {
+		random = no
+		research_speed_factor = 0.02
+		specialization_land_speed_factor = 0.1
+		specialization_air_speed_factor = 0.1
+		specialization_naval_speed_factor = 0.1
+		specialization_nuclear_speed_factor = 0.1
+		special_project_facility_supply_consumption_factor = -0.075
+		political_power_cost = 0.10	
+	}
+	BRA_american_rajah = {
+		random = no
+		research_speed_factor = 0.09
+	}
+
+
 ####################ADVISOR TRAITS
 
 	CUB_head_of_gaesa = {
