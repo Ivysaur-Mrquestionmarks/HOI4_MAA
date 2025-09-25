@@ -327,6 +327,42 @@ characters={
 			}
 		}
 	}
+	NAV_chief_nick = { #EASTER EGG GENERAL
+		name = "Chief Nick"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/NAV/Chief_Nick_General.dds"
+				large = "gfx/leaders/NAV/hoya_heya_fuentes.tga"
+			}
+		}
+		corps_commander  = {
+			traits = { media_personality politically_connected brilliant_strategist brave } 
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			visible = {
+				NOT = {
+					country_exists = FLO
+				}
+				owns_state = 580
+				if = {
+					limit = {
+						country_exists = LGB
+					}
+					NOT = {
+						LGB = {
+							has_country_leader = {
+								character = LGB_gay_nick_fuentes
+								ruling_only = yes
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 	#NATIONAL GUARD GENERALS
 	NAV_jamison_herrera = {
