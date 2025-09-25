@@ -51,7 +51,7 @@ AFS_anything_and_everything_dynamic_modifier = { #NATIONAL SPIRIT, balls.
 AFS_renewal_dynamic_modifier = { #NATIONAL SPIRIT, balls.
 	enable = { always = yes }
 
-	icon = generic_air_research
+	icon = GFX_idea_AFS_renewal_dynamic_modifier
 	
 	political_power_gain = AFS.var_pp_level
 	stability_factor = AFS.var_stability_level
@@ -70,7 +70,7 @@ AFS_renewal_dynamic_modifier = { #NATIONAL SPIRIT, balls.
 AFS_the_leviathans_ecclesiasticall_dynamic_modifier = { #NATIONAL SPIRIT, balls.
 	enable = { always = yes }
 
-	icon = generic_air_research
+	icon = GFX_idea_AFS_the_leviathans_ecclesiasticall_dynamic_modifier
 	
 	political_power_gain = AFS.var_pp_level
 	stability_factor = AFS.var_stability_level
