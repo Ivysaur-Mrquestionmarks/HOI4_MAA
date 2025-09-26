@@ -3944,6 +3944,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			USA = { exists = yes }
 			USA = { has_completed_focus = USA_PB_path }
 		}
 		
@@ -4049,6 +4050,7 @@ focus_tree = {
 			set_cosmetic_tag = KMT_nehlens_america
 			add_stability = 0.1
 			add_political_power = 200
+			unlock_decision_tooltip = KMT_remember_yockey
 		}
 		prerequisite = {
 			focus = KMT_loyalty_to_the_base

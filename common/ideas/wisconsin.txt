@@ -1162,8 +1162,20 @@ ideas = {
 			allowed = { original_tag = KMT }
 			allowed_civil_war = { has_government = autocratic }
 			modifier = {
-				stability_factor = 0.2
+				stability_factor = 0.1
    				political_power_factor = 0.25
+			}
+		}
+
+
+		KMT_yockey_imperium = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { has_government = autocratic }
+			modifier = {
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+				offensive_war_stability_factor = 0.25
+				justify_war_goal_time = -0.5
 			}
 		}
 

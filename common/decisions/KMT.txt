@@ -350,4 +350,28 @@ KMT_nehlen_missions = {
 		}
 	}
 
+	KMT_remember_yockey = {
+		icon = GFX_decision_generic_speech
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 200
+		fire_only_once = yes
+		ai_will_do = {
+			base = 5
+		}
+		visible = {
+			has_completed_focus = KMT_america_as_it_should_be
+		}
+		available = {
+			OR = {
+				any_allied_country = { controls_state = 242 }
+				KMT = { controls_state = 242 }
+			}
+		}
+		complete_effect = {
+			add_ideas = KMT_yockey_imperium
+		}
+	}
+
 }

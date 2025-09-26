@@ -268,6 +268,9 @@
  KMT_push:0 "Final Push"
  KMT_push_desc:0 "Morale has reached its peak and our forces are ready for the decisive blow. This surge of energy will not last forever—we must seize victory before it fades."
 
+ KMT_yockey_imperium:0 "Yockey’s Imperium"
+ KMT_yockey_imperium_desc:0 "Francis Parker Yockey’s vision of an imperium: a unified, authoritarian order that transcends petty borders and weak liberal institutions. This doctrine justifies our essence to exist: expansionism, fortifies our resolve in war, and rallies the nation around a destiny of conquest and permanence."
+
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
 ##       ##     ## ##       ####  ##    ##    ##       
@@ -779,8 +782,12 @@
  KMT_control_the_media_desc:0 "To secure power, Nehlen’s regime must dominate the flow of information. By empowering media like the Daily Stormer, dissident voices shall be silenced, hostile outlets will be purged and state propaganda must flood the airwaves. With full control of the narrative, Nehlen transforms from a controversial figure into the unchallenged voice of truth."
  KMT_loyalty_to_the_base:0 "Loyalty to the Base"
  KMT_loyalty_to_the_base_desc:0 "Nehlen’s regime owes much to its core supporters in other parts of America. The Proud Boys in Denver empowered by Trump, can be closely aligned with our movement. To strengthen our hold at home and ensure that our ideas take place in America as a whole we must bend the knee to the Base."
- KMT_better_alone:0 "Better Alone"
+ KMT_better_alone:0 "Better Alone Than in Bad Company"
  KMT_better_alone_desc:0 "Allies bring compromise. Nehlen refuses to dilute his platform for the sake of international approval. By turning inward, the regime presents itself as the sole defender of national purity and sovereignty, gaining strength through defiance rather than partnership."
+ KMT_support_some_allies:0 "Support Some Allies"
+ KMT_support_some_allies_desc:0 "Our struggle is not fought in isolation. Across the country, kindred movements rally under different banners but share our disdain for the same scum. By discreetly assisting these like-minded organizations, we strengthen our position at home while sowing chaos among our foes. Every ounce of support we give will return to us in loyalty and power."
+ KMT_america_as_it_should_be:0 "America As It Should Be"
+ KMT_america_as_it_should_be_desc:0 "The counter-revolution has triumphed, and at last we can mold this nation into the America it was always meant to be. Unified, pure, and resolute, our state now marches in lockstep toward its destiny. This is more than victory, it is the rebirth of a nation."
 
  # Army
  KMT_upgrade_fort_mccoy:0 "Upgrade Fort McCoy"
@@ -934,6 +941,7 @@
  KMT_anti_semitism:0 "Antisemitism"
  KMT_help_the_klan:0 "Help the Klan"
  KMT_help_the_nazis:0 "Help the Nazis"
+ KMT_remember_yockey:0 "Remember Yockey"
 
  #######  ######## ##     ## ######## ########      ######  ######## ##     ## ######## ######## 
 ##     ##    ##    ##     ## ##       ##     ##    ##    ##    ##    ##     ## ##       ##       
