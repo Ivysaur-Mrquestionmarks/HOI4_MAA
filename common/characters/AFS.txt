@@ -755,12 +755,6 @@ characters={
 				large = "gfx/leaders/AFS/AFS_venn.dds"
 			}
 		}
-		country_leader = {
-			ideology = misanthropic_dictatorship
-			traits = {  }
-			expire = "2060.1.1.1"
-			id = -1
-		}
 		corps_commander = {
 			traits={ politically_connected hawkins_loyalist_trait AFS_annihilationist } 
 			skill = 2
@@ -768,6 +762,12 @@ characters={
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 1
+		}
+		country_leader = {
+			ideology = misanthropic_dictatorship
+			traits = {  }
+			expire = "2060.1.1.1"
+			id = -1
 		}
 	}
 
