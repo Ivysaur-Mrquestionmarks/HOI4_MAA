@@ -632,5 +632,41 @@
 				experience_gain_air_factor = 0.05
 			}
 		}
+		KFC_funds_for_rebuilding_idea = {
+			modifier = {
+				consumer_goods_factor = -0.15
+				political_power_cost = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		KFC_prepared_against_trump_idea = {
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.1
+			}
+		}
+		KFC_lessons_from_war_shared_dem_idea = {
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = CSA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		KFC_espionage_integration_idea = {
+			modifier = {
+				agency_upgrade_time = -0.2
+				civilian_intel_factor = 0.2
+				army_intel_factor = 0.2
+				navy_intel_factor = 0.2
+				airforce_intel_factor = 0.2
+				new_operative_slot_bonus = 1
+				boost_resistance_factor = 0.2
+			}
+		}
 	}
 }

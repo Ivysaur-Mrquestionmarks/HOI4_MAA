@@ -32,6 +32,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -50,8 +51,12 @@ joint_focus = {
 				has_country_flag = KFC_nazbol_coup_flag
 			}
 		}
+		KFC = {
+			exists = yes
+		}
 	}
 	available = {
+		is_in_faction_with = FRA
 		FRA = {
 			exists = yes
 		}
@@ -82,6 +87,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -89,6 +95,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = KFC
@@ -121,6 +128,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -128,6 +136,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = KFC
@@ -139,7 +148,11 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = industry
+		}
 	}
 }
 joint_focus = {
@@ -158,6 +171,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -165,6 +179,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = KFC
@@ -176,7 +191,10 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		
+		add_timed_idea = {
+			idea = KFC_funds_for_rebuilding_idea
+			days = 180
+		}
 	}
 }
 joint_focus = {
@@ -195,6 +213,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -202,17 +221,18 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = KFC
 		}
 	}
-
+		# democrat_kentucky_research
 	completion_reward_joint_originator = {
 	}
 
 	completion_reward = {
-		
+		add_to_tech_sharing_group = democrat_kentucky_research
 	}
 }
 joint_focus = {
@@ -231,6 +251,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -238,10 +259,12 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
 		tag = KFC
 	}
 
 	completion_reward_joint_originator = {
+		add_research_slot = 1
 	}
 
 	completion_reward = {
@@ -267,6 +290,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -274,6 +298,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -285,7 +310,51 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		
+        random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+        random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+        random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -306,6 +375,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -313,6 +383,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = KFC
@@ -324,7 +395,30 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		
+        random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+        random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+        random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 joint_focus = {
@@ -343,6 +437,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -350,6 +445,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = KFC
@@ -361,7 +457,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = KFC_espionage_integration_idea
 	}
 }
 joint_focus = {
@@ -380,6 +476,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -387,6 +484,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = KFC
@@ -394,11 +492,16 @@ joint_focus = {
 		}
 	}
 
-	completion_reward_joint_originator = {
+	completion_reward_joint_originator = { #cat_fortification
 	}
 
 	completion_reward = {
-		
+		army_experience = 25
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 3
+			category = cat_fortification
+		}
 	}
 }
 joint_focus = {
@@ -420,6 +523,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -427,6 +531,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = KFC
@@ -438,7 +543,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = KFC_prepared_against_trump_idea
 	}
 }
 
@@ -458,6 +563,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -465,6 +571,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = VIR
 			tag = KFC
@@ -472,6 +579,30 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
+		371 = {
+			add_resource = {
+				type = tungsten
+				amount = 10
+			}
+		}
+		477 = {
+			add_resource = {
+				type = aluminium
+				amount = 8
+			}
+		}
+		375 = {
+			add_resource = {
+				type = aluminium
+				amount = 8
+			}
+		}
+		261 = {
+			add_resource = {
+				type = tungsten
+				amount = 10
+			}
+		}
 	}
 
 	completion_reward = {
@@ -494,6 +625,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -501,13 +633,19 @@ joint_focus = {
 		}
 	}
 	available = {
-  		OR = {
-			tag = KFC
-			tag = VIR
+		is_in_faction_with = FRA
+		tag = KFC
+	}
+	bypass = {
+		OR = {
+			NOT = { VIR = { is_in_faction_with = FRA } }
+			NOT = { country_exists = VIR }
 		}
 	}
-
 	completion_reward_joint_originator = {
+		VIR = { transfer_state = 375 }
+		KFC = { remove_core = 375 }
+		add_offsite_building = { type = industrial_complex level = 4 }
 	}
 
 	completion_reward = {
@@ -530,13 +668,14 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
-			tag = FRA
 			tag = VIR
 			tag = KFC
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = KFC
 			tag = VIR
@@ -547,7 +686,29 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		
+		if = {
+			limit = { is_in_faction_with = FRA }
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 3
+				category = ifv
+			}
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 3
+				category = cat_heavy_armor
+			}
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 2
+				category = industry
+			}
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 3
+				category = infantry_weapons
+			}
+		}
 	}
 }
 joint_focus = {
@@ -566,6 +727,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -573,6 +735,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = KFC
@@ -584,7 +747,11 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.75
+			uses = 3
+			category = land_doctrine
+		}
 	}
 }
 joint_focus = {
@@ -603,6 +770,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -610,6 +778,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = KFC
@@ -621,7 +790,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = KFC_lessons_from_war_shared_dem_idea 
 	}
 }
 joint_focus = {
@@ -643,6 +812,7 @@ joint_focus = {
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = VIR
@@ -650,6 +820,7 @@ joint_focus = {
 		}
 	}
 	available = {
+		is_in_faction_with = FRA
   		OR = {
 			tag = FRA
 			tag = KFC
@@ -658,6 +829,10 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
+		create_wargoal = {
+			target = NRA
+			type = annex_everything
+		}
 	}
 
 	completion_reward = {

@@ -22,7 +22,7 @@ technology_sharing_group = {
 	id = democrat_research
 	name = democrat_research_name
 	desc = democrat_research_desc
-	picture = GFX_republican_research
+	picture = GFX_technology_sharing_default
     
 	research_sharing_per_country_bonus = 0.15
 
@@ -36,10 +36,31 @@ technology_sharing_group = {
 }
 technology_sharing_group = {
 
+	id = democrat_kentucky_research
+	name = democrat_research_name
+	desc = democrat_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.15
+
+    available = {
+        OR = {
+             tag = FRA
+             tag = VIR
+             tag = KFC
+        }
+		KFC = {
+			has_government = democrat
+		}
+    }
+
+}
+technology_sharing_group = {
+
 	id = southern_democrat_research
 	name = democrat_research_name
 	desc = democrat_research_desc
-	picture = GFX_republican_research
+	picture = GFX_technology_sharing_default
     
 	research_sharing_per_country_bonus = 0.25
 
