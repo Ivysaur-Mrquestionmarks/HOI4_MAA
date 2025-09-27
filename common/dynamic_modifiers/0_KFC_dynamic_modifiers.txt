@@ -65,6 +65,8 @@ KFC_tea_party_government = { #NATIONAL SPIRIT, balls.
 	max_fuel_factor = KFC.var_max_fuel_factor
 	production_speed_nuclear_reactor_factor = KFC.var_production_speed_nuclear_reactor_factor
 	nuclear_production_factor = KFC.var_nuclear_production_factor
+	
+	resistance_growth_on_our_occupied_states = KFC.var_resistance_growth_on_our_occupied_states
 
 }
 KFC_nazbol_government = { #NATIONAL SPIRIT, balls.

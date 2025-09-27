@@ -786,6 +786,10 @@ focus_tree = {
 					value = 0
 				}
 				set_variable = {
+					var = KFC.var_resistance_growth_on_our_occupied_states
+					value = 0
+				}
+				set_variable = {
 					var = KFC.var_production_speed_buildings_factor
 					value = 0
 				}
