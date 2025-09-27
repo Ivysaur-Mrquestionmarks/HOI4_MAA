@@ -2947,9 +2947,11 @@
 				}
     		}
 			news_event = fld.4
-			every_owned_state = {
-				limit = { has_state_flag = part_of_america }
-				clr_state_flag = part_of_america
+			hidden_effect = {
+				every_owned_state = {
+					limit = { has_state_flag = part_of_america }
+					clr_state_flag = part_of_america
+				}
 			}
 		}
 	}
