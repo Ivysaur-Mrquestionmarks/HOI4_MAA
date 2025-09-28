@@ -59,6 +59,12 @@ if = {
 	}
 }
 
+#russell nelson death event
+country_event = {
+	id = utah.58
+	days = 1639
+}
+
 oob = "UTA_2021"
 set_cosmetic_tag = UTA_PGT
 
@@ -91,6 +97,7 @@ recruit_character = UTA_gay_lynn_bennion
 recruit_character = UTA_brian_king
 recruit_character = UTA_allen_glines
 recruit_character = UTA_russell_nelson
+recruit_character = UTA_dallin_h_oaks
 recruit_character = UTA_military_junta
 recruit_character = UTA_jefferson_s_burton
 recruit_character = UTA_charlene_dalto

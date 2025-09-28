@@ -124,6 +124,18 @@ characters={
 			id = -1
 		}
 	}
+	UTA_dallin_h_oaks = { #succeeds Nelson on 28/09/25
+		name = "Dallin Oaks"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UTA/dallin_oaks.tga"
+			}
+		}
+		country_leader = {
+			traits = {}
+			ideology = theocracy
+		}
+	}
 	UTA_military_junta = {
 		name = UTA_military_junta
 		portraits = {

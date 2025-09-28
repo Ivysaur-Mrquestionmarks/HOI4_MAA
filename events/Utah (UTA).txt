@@ -1788,3 +1788,85 @@ country_event = {
         }
 	}
 }
+
+### RUSSELL NELSON DIES! ###
+country_event = {
+	id = utah.58
+	title = utah.58.t
+	desc = utah.58.d
+	picture = event_last_election
+	is_triggered_only = yes
+	trigger = {
+		has_character = UTA_russell_nelson
+	}
+	fire_only_once = yes
+	#Nelson is in power
+	option = {
+		name = utah.58.a
+		trigger = {
+			has_country_leader = {
+				character = UTA_russell_nelson
+				ruling_only = yes
+			}
+		}
+		kill_country_leader = yes
+		UTA_dallin_h_oaks = {
+			promote_character = yes
+		}
+		if = {
+			limit = {
+				has_government = authoritarian_left #I'm pretty sure Nelson can go commie, right?
+			}
+			hidden_effect = {
+				add_country_leader_role = {
+				    character = UTA_dallin_h_oaks
+				    promote_leader = yes
+				    country_leader = {
+				        ideology = christian_communism
+				        traits = {  }
+				    }
+				}
+			}
+		}
+		hidden_effect = {
+			news_event = utah.59
+		}
+	}
+	#Nelson is not in power
+	option = {
+		name = utah.58.b
+		trigger = {
+			NOT = { 
+				has_country_leader = {
+					character = UTA_russell_nelson
+					ruling_only = yes
+				}
+			}
+		}
+		retire_character = UTA_russell_nelson
+		#hidden_effect = { #if Nelson is not in power, this isn't significant enough to have a news event for.
+		#	news_event = utah.59
+		#}
+	}
+}
+#news for above
+news_event = {
+	id = utah.59
+	title = utah.59.t
+	desc = utah.59.d
+	picture = event_news_mormons_03
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = utah.59.a
+		trigger = {
+			original_tag = UTA
+		}
+	}
+	option = {
+		name = utah.59.b
+		trigger = {
+			original_tag = UTA
+		}
+	}
+}
