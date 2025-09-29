@@ -569,10 +569,14 @@ focus_tree = {
 		bypass = {
 			is_subject = yes
 		}
+		bypass_effect = {
+			set_cosmetic_tag = BRA_hindutva_new_england
+		}
 		completion_reward = {
 			#TODO
 			#ADD CORES ON ONTARIO, TORONTO AND VANCOUVER
 			#ADD WAR GOALS ON ALL CANADIAN TAGS
+			set_cosmetic_tag = BRA_hindutva_new_england
 		}
 
 	}
