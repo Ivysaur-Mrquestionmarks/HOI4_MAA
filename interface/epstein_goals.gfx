@@ -216036,6 +216036,635 @@ SpriteType = {
 
 	}
 
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_legitimists_in_kentucky"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_legitimists_in_kentucky.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_legitimists_in_kentucky_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_legitimists_in_kentucky.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_legitimists_in_kentucky.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_legitimists_in_kentucky.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_receive_dc_funding"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_receive_dc_funding.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_receive_dc_funding_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_receive_dc_funding.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_receive_dc_funding.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_receive_dc_funding.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_request_assistance_with_faring_mechanization"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_request_assistance_with_faring_mechanization.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_request_assistance_with_faring_mechanization_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_request_assistance_with_faring_mechanization.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_request_assistance_with_faring_mechanization.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_request_assistance_with_faring_mechanization.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_rebuild_factories"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_rebuild_factories.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_rebuild_factories_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_rebuild_factories.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_rebuild_factories.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_rebuild_factories.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_join_research_sharing"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_join_research_sharing.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_join_research_sharing_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_join_research_sharing.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_join_research_sharing.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_join_research_sharing.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_fourth_research_slot_locked_behind_state_control"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_fourth_research_slot_locked_behind_state_control.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_fourth_research_slot_locked_behind_state_control_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_fourth_research_slot_locked_behind_state_control.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_fourth_research_slot_locked_behind_state_control.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_fourth_research_slot_locked_behind_state_control.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_industrial_revitalization"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_industrial_revitalization.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_industrial_revitalization_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_industrial_revitalization.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_industrial_revitalization.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_industrial_revitalization.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_expand_infrastructure"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_expand_infrastructure.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_expand_infrastructure_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_expand_infrastructure.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_expand_infrastructure.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_expand_infrastructure.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_espionage_integration"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_espionage_integration.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_espionage_integration_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_espionage_integration.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_espionage_integration.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_espionage_integration.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_fortify_the_borders"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_fortify_the_borders.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_fortify_the_borders_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_fortify_the_borders.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_fortify_the_borders.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_fortify_the_borders.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_scare_trump"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_scare_trump.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_scare_trump_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_scare_trump.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_scare_trump.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_scare_trump.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_increase_resource_extraction_efforts"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_increase_resource_extraction_efforts.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_increase_resource_extraction_efforts_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_increase_resource_extraction_efforts.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_increase_resource_extraction_efforts.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_increase_resource_extraction_efforts.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_solve_border_dispute_with_vir"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_solve_border_dispute_with_vir.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_solve_border_dispute_with_vir_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_solve_border_dispute_with_vir.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_solve_border_dispute_with_vir.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_solve_border_dispute_with_vir.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_the_best_of_friends"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_the_best_of_friends.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_the_best_of_friends_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_the_best_of_friends.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_the_best_of_friends.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_the_best_of_friends.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_joint_training"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_joint_training.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_joint_training_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_joint_training.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_joint_training.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_joint_training.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_provide_reports_from_kfc_civil_war"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_provide_reports_from_kfc_civil_war.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_provide_reports_from_kfc_civil_war_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_provide_reports_from_kfc_civil_war.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_provide_reports_from_kfc_civil_war.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_provide_reports_from_kfc_civil_war.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_invade_west_virginia"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_invade_west_virginia.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_FRA_VIR_invade_west_virginia_shine"
+        texturefile = "gfx/interface/goals/KFC_FRA_VIR_invade_west_virginia.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_invade_west_virginia.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_FRA_VIR_invade_west_virginia.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
 
 
 
