@@ -79,3 +79,27 @@ country_event = {
 		}		
 	}
 }
+
+#Schizo Hindus want to join Drumpf
+country_event = {
+	id = boston.4
+	title = boston.4.t
+	desc = boston.4.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	#picture =
+	option = {
+		name = boston.4.a
+		ai_chance = {
+			factor = 1
+		}
+		add_to_faction = FROM
+	}
+	option = {
+		name = boston.4.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -25
+	}
+}

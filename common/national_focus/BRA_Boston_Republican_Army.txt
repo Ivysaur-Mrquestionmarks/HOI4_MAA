@@ -411,6 +411,19 @@ focus_tree = {
 		x = 8
 		y = 4
 		relative_position_id = BRA_no_popery
+		available = {
+			is_subject = no
+			has_war = no
+		}
+		bypass = {
+			is_subject = yes
+		}
+		bypass_effect = {
+			#ADD CORES
+		}
+		completion_reward = {
+			#TODO - CORES & WARGOALS
+		}
 
 	}
 	focus = {
@@ -423,6 +436,36 @@ focus_tree = {
 		x = 8
 		y = 5
 		relative_position_id = BRA_no_popery
+		completion_reward = {
+			add_manpower = 25000
+			add_war_support = 0.10
+			if = {
+				limit = {
+					NOT = {
+						country_exists = HOP
+					}
+				}
+				HOP = {
+					HOP_augustus_sol_invictus = {
+						set_nationality = ROOT
+						add_advisor_role = {
+						    advisor = {
+						        slot = political_advisor
+        						cost = 125
+        						idea_token = BRA_augustus_sol_invictus_advisor
+        						traits = {
+        						    JUNO_fascist_theologian
+        						}
+								available = { has_government = autocratic }
+    						}
+						}
+					}
+				}
+				else = {
+					custom_effect_tooltip = BRA_pagan_leaders_join_us_tt
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -435,6 +478,44 @@ focus_tree = {
 		x = 10
 		y = 4
 		relative_position_id = BRA_no_popery
+		available = {
+			is_subject = no
+		}
+		bypass = {
+			is_subject = yes
+		}
+		completion_reward = {
+			add_ideas = BRA_indian_american_attache
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Dalbir Suhag"
+				}
+			}
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Manjinder Singh"
+				}
+			}
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Vikas Lakhera"
+				}
+			}
+			effect_tooltip = {
+				add_advisor_role = {
+				    character = BRA_vikas_lakhera
+				    advisor = {
+				        slot = political_advisor
+    				    cost = 150
+        				idea_token = BRA_vikas
+        				traits = {
+        				    prince_of_terror
+        				}
+    				}
+				}
+			}
+			load_oob = "BRA_indian_army"
+		}
 
 	}
 	focus = {
@@ -447,6 +528,10 @@ focus_tree = {
 		x = 11
 		y = 5
 		relative_position_id = BRA_no_popery
+		completion_reward = {
+			add_ideas = BRA_elephantry
+			load_oob = "BRA_the_elephant"
+		}
 
 	}
 	focus = {
@@ -465,6 +550,17 @@ focus_tree = {
 		x = 8
 		y = 6
 		relative_position_id = BRA_no_popery
+		available = {
+			is_subject = no
+		}
+		bypass = {
+			is_subject = yes
+		}
+		completion_reward = {
+			#TODO
+			#ADD CORES ON ONTARIO, TORONTO AND VANCOUVER
+			#ADD WAR GOALS ON ALL CANADIAN TAGS
+		}
 
 	}
 	focus = {
@@ -480,6 +576,23 @@ focus_tree = {
 		x = 7
 		y = 7
 		relative_position_id = BRA_no_popery
+		available = {
+			country_exists = USA
+			USA = {
+				is_faction_leader = yes
+			}
+			NOT = {
+				has_war_with = USA
+			}
+		}
+		bypass = {
+			is_subject = yes
+		}
+		completion_reward = {
+			USA = {
+				country_event = boston.4
+			}
+		}
 
 	}
 	focus = {
@@ -495,6 +608,31 @@ focus_tree = {
 		x = 9
 		y = 7
 		relative_position_id = BRA_no_popery
+		available = {
+			is_subject = no
+			has_war = no
+			NOT = {
+				is_in_faction_with = USA
+			}
+		}
+		will_lead_to_war_with = USA
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = USA
+				}
+				add_claim_by = ROOT
+			}
+			if = {
+				limit = {
+					country_exists = USA
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = UTA
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -506,6 +644,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 7
+		completion_reward = {
+			add_research_slot = 1
+		}
 
 	}
 	focus = {

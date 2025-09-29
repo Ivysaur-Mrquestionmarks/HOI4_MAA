@@ -109,7 +109,12 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 1489
-			visible = { has_country_flag = hop_nazis_are_here }
+			visible = { 
+				OR = {
+					has_country_flag = hop_nazis_are_here
+					has_completed_focus = BRA_pagan_alliance
+				}
+			}
 		}
 	}
 	HOP_paul_miller = {

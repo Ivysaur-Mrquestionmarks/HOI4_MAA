@@ -945,6 +945,30 @@ on_actions = {
 						HOP_joshua_caleb_sutter = { unit_leader_event = { id = tribal.32 } }
 					}
 				}
+				if = {
+					limit = {
+						BRA = {
+							has_completed_focus = BRA_pagan_alliance
+						}
+					}
+					HOP_augustus_sol_invictus = {
+						set_nationality = BRA
+						add_advisor_role = {
+						    advisor = {
+						        slot = political_advisor
+        						cost = 125
+        						idea_token = BRA_augustus_sol_invictus_advisor
+        						traits = {
+        						    JUNO_fascist_theologian
+        						}
+							available = { has_government = autocratic }
+    						    }
+						}
+					}
+					BRA = {
+						HOP_augustus_sol_invictus= { unit_leader_event = { id = tribal.25 } }
+					}
+				}
 			}
 		}
 	}

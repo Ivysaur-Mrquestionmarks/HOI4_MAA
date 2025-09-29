@@ -75,6 +75,25 @@ ideas = {
 			}
 		}
 
+		BRA_indian_american_attache = {
+			picture = raj_all_india_forward_bloc
+			available = {
+				has_government = autocratic
+			}
+			modifier = {
+				army_org_factor = 0.05
+				experience_gain_army_factor = 0.15
+			}
+		}
+
+		BRA_elephantry = {
+			picture = raj_all_india_forward_bloc
+			modifier = {
+				cavalry_attack_factor = 0.20
+				cavalry_defence_factor = 0.15
+			}
+		}
+
 
 
 	}

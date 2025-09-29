@@ -173,4 +173,87 @@ characters={
 			}
 		}
 	}
+
+	#The Indians are coming...
+	BRA_dalbir_singh_suhag = {
+		name = "Dalbir Suhag"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/dalbir_singh.tga"
+				small = "gfx/interface/ideas/BRA/dalbir_singh_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits={ brilliant_strategist trait_reckless trait_mountaineer } 
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 5
+			visible = {
+				has_completed_focus = BRA_mission_to_modi
+			}
+		}
+	}
+	BRA_manjinder_singh = {
+		name = "Manjinder Singh"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/manjinder_singh.tga"
+				small = "gfx/interface/ideas/BRA/manjinder_singh_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits={ war_hero brave infantry_leader } 
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				has_completed_focus = BRA_mission_to_modi
+			}
+		}
+	}
+	BRA_vikas_lakhera = {
+		name = "Vikas Lakhera"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/vikas_lakhera.tga"
+				small = "gfx/interface/ideas/BRA/vikas_lakhera_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits={ harsh_leader militias_officer trickster } 
+			skill = 2
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+			visible = {
+				has_completed_focus = BRA_mission_to_modi
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_vikas_lakhera
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			visible = {
+				has_completed_focus = BRA_no_popery
+			}
+			available = {
+				has_completed_focus = BRA_mission_to_modi
+				is_subject = no
+			}
+			traits = {
+				prince_of_terror
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
 }

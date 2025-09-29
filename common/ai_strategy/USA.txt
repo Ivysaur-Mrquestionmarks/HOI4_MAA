@@ -151,3 +151,53 @@ USA_support_ELS = {
 		value = 200
 	}
 }
+
+#Drumpf and Boston are fwends!
+USA_support_BRA = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		BRA = { has_completed_focus = BRA_saviour_of_the_world }
+	}
+	abort = {
+		NOT = {
+			country_exists = BRA
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "BRA"
+		value = 500
+	}
+	ai_strategy = {
+	    type = befriend
+	    id = "BRA"
+	    value = 500
+	}
+}
+BRA_support_USA = {
+	allowed = {
+		original_tag = BRA
+	}
+	enable = {
+		has_completed_focus = BRA_saviour_of_the_world
+	}
+	abort = {
+		NOT = {
+			country_exists = USA
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "USA"
+		value = 500
+	}
+	ai_strategy = {
+	    type = befriend
+	    id = "USA"
+	    value = 500
+	}
+}

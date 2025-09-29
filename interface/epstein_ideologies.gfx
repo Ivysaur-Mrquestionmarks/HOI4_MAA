@@ -112,6 +112,11 @@ spriteTypes = {
 		name = "GFX_ideology_GTB_theocracy"
 		texturefile = "gfx/interface/ideologies/islam_theocracy.tga"
 	}
+	#Boston Hindutva
+	spriteType = {
+		name = "GFX_ideology_BRA_neonazism"
+		texturefile = "gfx/interface/ideologies/BRA_neonazism.dds"
+	}
 	#enclave here
 	spriteType = {
 		name = "GFX_ideology_PAC_establishment"

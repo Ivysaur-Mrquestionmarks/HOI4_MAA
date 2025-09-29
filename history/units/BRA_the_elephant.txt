@@ -1,0 +1,41 @@
+division_template = {
+    name = "Elephantry"
+#    division_names_group =
+	regiments = {
+		elephantry = { x = 0 y = 0 }
+		elephantry = { x = 0 y = 1 }
+		elephantry = { x = 0 y = 2 }
+		elephantry = { x = 1 y = 0 }
+		elephantry = { x = 1 y = 1 }
+		elephantry = { x = 1 y = 2 }
+		elephantry = { x = 1 y = 3 }
+		elephantry = { x = 2 y = 0 }
+		elephantry = { x = 2 y = 1 }
+		elephantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 3 #feel free to tweak as balance demands.
+}
+
+
+#####################################
+
+
+units = {
+
+	division = {
+		name = "The Elephant"
+		location = 8497
+		division_template = "Elephantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+
+
+}
