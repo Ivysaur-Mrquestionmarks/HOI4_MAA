@@ -264,4 +264,27 @@ characters={
 			}
 		}
 	}
+
+	###SCIENTISTS ####
+	BRA_rajagopala_chidambaram = {
+		name = "Rajagopala Chidambaram"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/rajagopala_chidambaram.tga"
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_warfare_expert }
+			skills = {
+				specialization_nuclear = 4
+			}
+
+			visible = {
+				owner = {
+					has_completed_focus = BRA_mission_to_modi
+				}
+			}
+		}
+	}
 }

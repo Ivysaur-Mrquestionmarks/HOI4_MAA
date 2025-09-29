@@ -478,7 +478,7 @@ focus_tree = {
 	focus = {
 		id = BRA_mission_to_modi
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 6.00
 		prerequisite = {
 			focus = BRA_to_end_the_world
 		}
@@ -522,6 +522,12 @@ focus_tree = {
 				}
 			}
 			load_oob = "BRA_indian_army"
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = {
+				localization_key = available_scientist_one_line_tt
+				CHARACTER = BRA_rajagopala_chidambaram
+			}
 		}
 
 	}
