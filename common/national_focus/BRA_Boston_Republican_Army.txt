@@ -378,6 +378,13 @@ focus_tree = {
     				ideology = neonazism
 				}
 			}
+			hidden_effect = { #should this be moved down to "The American Rajah"? discuss.
+				set_portraits = {
+				    character = BRA_shiva_ayyadurai
+				    army = { large ="GFX_portrait_rajah_shiva" }
+				    civilian = { large ="GFX_portrait_rajah_shiva" }
+				}
+			}
 		}
 
 	}
@@ -990,6 +997,20 @@ focus_tree = {
 		x = 9
 		y = 8
 		relative_position_id = BRA_no_popery
+		available = {
+			is_subject = no
+		}
+		completion_reward = {
+			add_country_leader_role = {
+			    character = BRA_KALI
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = neonazism
+			        traits = { BRA_goddess_of_death BRA_venerated_icon }
+			    }
+			}
+			set_cosmetic_tag = BRA_kali_yuga_ct
+		}
 
 	}
 	focus = {
@@ -1006,6 +1027,24 @@ focus_tree = {
 		x = 7
 		y = 8
 		relative_position_id = BRA_no_popery
+		completion_reward = {
+			BRA_shiva_ayyadurai = {
+				swap_country_leader_traits = {
+    				remove = BRA_american_rajah 
+    				add = BRA_american_rajah_1 
+    				ideology = neonazism
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = BRA_saviour_of_the_world
+						is_subject = yes
+					}
+				}
+				set_cosmetic_tag = BRA_AMERICAN_RAJ
+			}			
+		}
 
 	}
 	focus = {

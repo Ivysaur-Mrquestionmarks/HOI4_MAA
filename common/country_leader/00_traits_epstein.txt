@@ -1928,6 +1928,27 @@ leader_traits = {
 		random = no
 		research_speed_factor = 0.09
 	}
+	BRA_american_rajah_1 = {
+		random = no
+		research_speed_factor = 0.10
+		justify_war_goal_time = -0.15
+		consumer_goods_factor = -0.10
+		recruitable_population_factor = 0.33
+		offensive_war_stability_factor = 0.40
+	}
+	BRA_goddess_of_death = {
+		random = no
+		stability_factor = -1.0
+		war_support_factor = 1.0
+		offensive_war_stability_factor = 0.60
+		army_morale_factor = 0.15
+	}
+	BRA_venerated_icon = {
+		random = no
+		political_power_factor = 0.10
+		political_power_cost = 0.10
+		research_speed_factor = 0.05
+	}
 
 
 ####################ADVISOR TRAITS
