@@ -1179,6 +1179,37 @@ ideas = {
 			}
 		}
 
+		KMT_rallying_the_snyder_bros = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes
+			modifier = {
+				weekly_manpower = 1500
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				political_power_factor = 0.15
+			}
+		}
+
+		KMT_the_spartans = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes
+			modifier = {
+				army_core_defence_factor = 0.15
+				surrender_limit = 0.1
+				production_lack_of_resource_penalty_factor = -0.25
+			}
+		}
+
+		KMT_the_persians = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes
+			modifier = {
+				conscription = 0.05
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+
 	}
 
 

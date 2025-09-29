@@ -271,6 +271,9 @@
  KMT_yockey_imperium:0 "Yockey’s Imperium"
  KMT_yockey_imperium_desc:0 "Francis Parker Yockey’s vision of an imperium: a unified, authoritarian order that transcends petty borders and weak liberal institutions. This doctrine justifies our essence to exist: expansionism, fortifies our resolve in war, and rallies the nation around a destiny of conquest and permanence."
 
+ KMT_its_ok_to_be_white_idea:0 "It's OK to Be White"
+ KMT_its_ok_to_be_white_idea_desc:0 "A rallying cry for the movement, this slogan has been adopted as an affirmation of the new order, it has unified supporters and strengthened their resolve, providing a sense of ethno-nationalism to the regime."
+
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
 ##       ##     ## ##       ####  ##    ##    ##       
@@ -534,7 +537,7 @@
 
  #event 48: kmt wnats to join usa (usa prespective)
  wisconsin.48.t:0 "The [KMT.GetAdjective] Request"
- wisconsin.48.d:0 "[KMT.GetNameDef] has approached us with a request to formally join the fight. Paul hehlen sees in the Proud Boys the same struggle for a new and better America."
+ wisconsin.48.d:0 "[KMT.GetNameDef] has approached us with a request to formally join the fight. Paul Nehlen sees in the Proud Boys the same struggle for a new and better America."
  wisconsin.48.a:0 "Welcome them into the fold!"
  wisconsin.48.b:0 "We must decline"
 
@@ -547,6 +550,22 @@
  wisconsin.50.t:0 "The Proud Boys Declines"
  wisconsin.50.d:0 "The Loyalist government has rejected our request to join their faction. This rejection has only strengthened our resolve to pursue our own path toward a new America."
  wisconsin.50.a:0 "They are weak"
+
+ #event 51: kmt wnats to join fra (fra prespective)
+ wisconsin.51.t:0 "The [KMT.GetAdjective] Request"
+ wisconsin.51.d:0 "[KMT.GetNameDef] has approached us with a request to formally join the fight. Zack Snyder sees the Legitimists as the true America and share the same goal for a better, more fair and equal nation."
+ wisconsin.51.a:0 "Welcome them into the fold!"
+ wisconsin.51.b:0 "We must decline"
+
+ #event 52: fra accepts
+ wisconsin.52.t:0 "The [FRA.GetName] Welcomes Us"
+ wisconsin.52.d:0 "The Legitimist government has accepted our request to join the fight. We are now part of the legitimate fight to unite this nation under a common banner of liberty."
+ wisconsin.52.a:0 "Together, we are stronger!"
+
+ #event 53: fra rejects
+ wisconsin.53.t:0 "The [FRA.GetName] Declines"
+ wisconsin.53.d:0 "The Legitimist government has rejected our request to join their faction. This rejection has only strengthened our resolve to pursue our own path toward a new America."
+ wisconsin.53.a:0 "A shame"
 
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 

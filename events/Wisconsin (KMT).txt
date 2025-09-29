@@ -1885,3 +1885,86 @@ country_event = {
 		add_war_support = 0.1
 	}
 }
+
+# join fra?
+country_event = {
+	id = wisconsin.51
+	title = wisconsin.51.t
+	desc = wisconsin.51.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+    	days = 2
+	}
+	option = {
+		name = wisconsin.51.a
+		ai_chance = {
+			factor = 200
+		}
+		add_to_faction = FROM
+		FROM = { country_event = { id = wisconsin.52 } }
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = "FRA"
+				value = 200
+			}
+		}
+
+	}
+	option = {
+		name = wisconsin.51.b
+		ai_chance = {
+			factor = 1
+		}
+		FROM = { country_event = { id = wisconsin.53 } }
+	}
+}
+
+# fra wants us
+country_event = {
+	id = wisconsin.52
+	title = wisconsin.52.t
+	desc = wisconsin.52.d
+	picture = TBD
+
+	is_triggered_only = yes
+
+	option = {
+		name = wisconsin.52.a
+		ai_chance = {
+			factor = 1
+		}
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = "KMT"
+				value = 200
+			}
+		}
+	}
+}
+
+# fra dont wants us
+country_event = {
+	id = wisconsin.53
+	title = wisconsin.53.t
+	desc = wisconsin.53.d
+	picture = TBD
+
+	is_triggered_only = yes
+
+	option = {
+		name = wisconsin.53.a
+		ai_chance = {
+			factor = 1
+		}
+		add_war_support = 0.1
+		uncomplete_national_focus = {
+			focus = KMT_join_fra
+			refund_political_power = no
+		}
+		complete_national_focus = KMT_cinematic_states_of_america
+	}
+}

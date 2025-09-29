@@ -3946,6 +3946,7 @@ focus_tree = {
 		available = {
 			USA = { exists = yes }
 			USA = { has_completed_focus = USA_PB_path }
+			USA = { is_faction_leader = yes }
 		}
 		
 		bypass = {
@@ -4067,7 +4068,7 @@ focus_tree = {
 		x = 54
 		y = 10
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -4080,6 +4081,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			add_timed_idea = { idea = KMT_rallying_the_snyder_bros days = 200 }
+			add_political_power = 50
 		}
 		prerequisite = {
 			focus = KMT_the_snyder_coup
@@ -4092,7 +4095,7 @@ focus_tree = {
 		x = 53
 		y = 11
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -4105,7 +4108,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_ideas = KMT_the_spartans
 		}
 		prerequisite = {
 			focus = KMT_rally_the_snyder_bros
@@ -4118,7 +4121,7 @@ focus_tree = {
 		x = 52
 		y = 12
 
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -4131,7 +4134,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 		prerequisite = {
 			focus = KMT_lessons_of_the_spartans
@@ -4144,7 +4149,7 @@ focus_tree = {
 		x = 55
 		y = 11
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -4157,7 +4162,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_ideas = KMT_the_persians
 		}
 		prerequisite = {
 			focus = KMT_rally_the_snyder_bros
@@ -4170,7 +4175,7 @@ focus_tree = {
 		x = 56
 		y = 12
 
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -4183,7 +4188,15 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_popularity = {
+				ideology = autocratic
+				popularity = -0.5
+			}
+			add_popularity = {
+				ideology = authoritarian_left
+				popularity = -0.5
+			}
 		}
 		prerequisite = {
 			focus = KMT_lessons_of_the_persians
@@ -4196,7 +4209,7 @@ focus_tree = {
 		x = 54
 		y = 12
 
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -4209,7 +4222,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ruler_traits = { remove = KMT_acclaimed_filmmaker add = KMT_great_cinematographer }
 		}
 		prerequisite = {
 			focus = KMT_rally_the_snyder_bros
@@ -4222,11 +4235,14 @@ focus_tree = {
 		x = 53
 		y = 13
 
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			FRA = { exists = yes }
+			FRA = { has_government = democrat }
+			FRA = { is_faction_leader = yes }
 		}
 		
 		bypass = {
@@ -4235,7 +4251,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			FRA = { country_event = wisconsin.51 }
+			add_stability = 0.05
 		}
 		prerequisite = {
 			focus = KMT_slow_motion_innovations
@@ -4257,7 +4274,7 @@ focus_tree = {
 		x = 55
 		y = 13
 
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -4270,7 +4287,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			set_cosmetic_tag = KMT_snyders_america
+			add_war_support = 0.05
+			add_political_power = 50
 		}
 		prerequisite = {
 			focus = KMT_slow_motion_innovations
