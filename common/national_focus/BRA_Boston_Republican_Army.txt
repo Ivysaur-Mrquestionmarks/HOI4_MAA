@@ -1006,7 +1006,7 @@ focus_tree = {
 			    promote_leader = yes
 			    country_leader = {
 			        ideology = neonazism
-			        traits = { BRA_goddess_of_death BRA_venerated_icon }
+			        traits = { BRA_goddess_of_death BRA_venerated_icon trait_terrifying_presence }
 			    }
 			}
 			set_cosmetic_tag = BRA_kali_yuga_ct
