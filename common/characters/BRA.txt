@@ -265,6 +265,209 @@ characters={
 		}
 	}
 
+	#ADVISORS
+	BRA_ben_j_weber = {
+		name = "Benjamin Weber"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRA/ben_weber_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_ben_weber
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			available = {
+				has_government = authoritarian_left
+			}
+			traits = {
+				leftist_intellectual
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}	
+	BRA_john_fitzgerald = {
+		name = "John FitzGerald"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRA/john_fitzgerald_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_john_fitzgerald
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			available = {
+				
+			}
+			traits = {
+				captain_of_industry
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	BRA_edward_m_flynn = {
+		name = "Edward Flynn"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRA/edward_flynn_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_edward_flynn
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			available = {
+				
+			}
+			traits = {
+				war_industrialist
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	BRA_gabriela_coletta_zapata = {
+		name = "Gigi Zapata"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRA/gigi_zapata_advisor.dds"
+			}
+		}
+		gender = female
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_gigi_zapata
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			available = {
+				
+			}
+			traits = {
+				fortification_engineer 
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	BRA_brian_j_worrell = {
+		name = "Brian Worrell"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRA/brian_worrell_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_brian_worrell
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			available = {
+				
+			}
+			traits = {
+				genial_anti_revolutionary
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}	
+	BRA_henry_santana = {
+		name = "Henry Santana"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRA/henry_santana_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_henry_santana
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			available = {
+				has_government = authoritarian_left
+			}
+			traits = {
+				patriotic_socialist
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	BRA_frank_baker = {
+		name = "Frank Baker"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRA/frank_baker_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_frank_baker
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			available = {
+				
+			}
+			traits = {
+				silent_workhorse
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}	
+	BRA_matt_omalley = {
+		name = "Matt O'Malley"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRA/matt_omalley_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_matt_omalley
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			available = {
+				
+			}
+			traits = {
+				veteran_minister
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}	
+
 	###SCIENTISTS ####
 	BRA_rajagopala_chidambaram = {
 		name = "Rajagopala Chidambaram"
