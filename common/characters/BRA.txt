@@ -701,4 +701,19 @@ characters={
 			}
 		}
 	}
+	BRA_marc_raibert = {
+		name = "Marc Raibert"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/marc_raibert.tga"
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_gifted_engineer }
+			skills = {
+				specialization_land = 3
+			}
+		}
+	}
 }
