@@ -27,6 +27,25 @@ characters={
 			logistics_skill = 1
 			visible = { has_government = authoritarian_left }
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = BRA_ken_casey_chief
+			cost = 100
+			allowed = {
+				original_tag = BRA
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = BRA_no_popery
+				}
+			}
+			available = {
+				has_government = authoritarian_left
+			}
+			traits = {
+				 red_army_organizer
+			}
+		}
 	}
 
 	BRA_gabriel_megahey = {
@@ -47,11 +66,33 @@ characters={
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BRA/matt_colligan.tga"
+				small = "gfx/interface/ideas/BRA/matt_colligan_advisor.dds"
+			}
+			army = {
+				large = "gfx/leaders/BRA/matt_colligan.tga"
+				small = "gfx/interface/ideas/BRA/matt_colligan_advisor.dds"
 			}
 		}
 		country_leader = {
 			ideology = fascism
 			traits = {}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BRA_matt_colligan_chief
+			cost = 100
+			allowed = {
+				original_tag = BRA
+			}
+			visible = {
+				has_completed_focus = BRA_no_popery
+			}
+			available = {
+				has_government = autocratic
+			}
+			traits = {
+				 army_chief_maneuver_2
+			}
 		}
 	}
 
@@ -127,6 +168,23 @@ characters={
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+		}
+		advisor = {
+			slot = army_chief #this guy is just a failsafe, really, as the other two chiefs require an ideology
+			idea_token = BRA_dennis_white_chief
+			cost = 105
+			allowed = {
+				original_tag = BRA
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				 army_chief_old_guard
+			}
 		}
 	}
 	BRA_robert_ciccolo_jr = {
@@ -468,7 +526,160 @@ characters={
 		}
 	}	
 
+	#ADMIRALS
+	BRA_jamie_c_frederick = {
+		name = "Jamie Frederick"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/jamie_c_frederick.tga"
+				small = "gfx/interface/ideas/BRA/jamie_frederick_advisor.dds"
+			}
+		}
+		navy_leader = {
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 4
+			traits = {
+				chief_engineer blue_water_expert safety_first crisis_magician 
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = BRA_jamie_frederick_advisor
+			cost = 150
+			traits = {
+				 navy_chief_maneuver_3
+			}
+		}
+	}
+	BRA_james_j_schlock = {
+		name = "J.J. Schock"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/jj_schlock.tga"
+				small = "gfx/interface/ideas/BRA/jj_schlock_advisor.dds"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			traits = {
+				ironside safety_first ground_pounder
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BRA_jj_schock_advisor
+			cost = 100
+			traits = {
+				 navy_submarine_2
+			}
+		}
+	}
+
+	#military staff!
+	BRA_joshua_p_williams = {
+		name = "Joshua Williams"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/BRA/joshua_williams_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BRA_josh_williams_advisor
+			cost = 100
+			traits = {
+				 VIR_drone_man
+			}
+		}
+	}
+	BRA_jorge_jimenez = {
+		name = "Jorge Jimenez"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/BRA/jorge_jimenez_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = BRA_jorge_jimenez_advisor
+			cost = 100
+			traits = {
+				 air_chief_safety_2
+			}
+		}
+	}
+	BRA_steve_collela = {
+		name = "Steve Collela"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/BRA/steve_collela_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BRA_steve_collela_advisor
+			cost = 200
+			traits = {
+				 army_regrouping_3
+			}
+		}
+	}
+	BRA_michael_wabrek = {
+		name = "Michael Wabrek"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/BRA/michael_wabrek_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BRA_michael_wabrek_advisor
+			cost = 100
+			traits = {
+				 army_artillery_2
+			}
+		}
+	}
+	BRA_ron_barnes = {
+		name = "Ron Barnes"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/BRA/ron_barnes_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BRA_michael_wabrek_advisor
+			cost = 50
+			traits = {
+				 army_concealment_1
+			}
+		}
+	}
+
 	###SCIENTISTS ####
+	BRA_scott_c_hardiman = {
+		name = "Scott Hardiman"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/scott_hardiman.tga"
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_warfare_expert }
+			skills = {
+				specialization_nuclear = 1
+			}
+		}
+	}
 	BRA_rajagopala_chidambaram = {
 		name = "Rajagopala Chidambaram"
 		portraits = {

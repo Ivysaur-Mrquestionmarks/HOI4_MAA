@@ -232,7 +232,13 @@ focus_tree = {
 		completion_reward = {
 			BRA_lex_fridman = {
 				add_country_leader_trait = dictator
-				#CHANGE PORTRAIT TO COOL UNIFORM VERSION! TO BE MADE. ARTISTS PLZ
+			}
+			hidden_effect = {
+				set_portraits = {
+				    character = BRA_lex_fridman 
+				    army = { large ="GFX_portrait_technocrat_lex_fridman" }
+				    civilian = { large ="GFX_portrait_technocrat_lex_fridman" }
+				}
 			}
 		}
 
