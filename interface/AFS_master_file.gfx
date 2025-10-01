@@ -13220,6 +13220,25 @@ spriteTypes = {
 	spriteType = { name = "event_AFS_vermin_unification" texturefile = "gfx/events/AFS_events/AFS_vermin_unification.dds" }
 	spriteType = { name = "event_AFS_twilight" texturefile = "gfx/events/AFS_events/AFS_twilight.dds" }
 
+    #Beginning/Generic Event Pics
+	spriteType = { name = "event_AFS_assassination" texturefile = "gfx/events/AFS_events/AFS_assassination.dds" }
+    spriteType = { name = "event_AFS_attack" texturefile = "gfx/events/AFS_events/AFS_attack.dds" }
+    spriteType = { name = "event_AFS_civil_war_over" texturefile = "gfx/events/AFS_events/AFS_civil_war_over.dds" }
+    spriteType = { name = "event_AFS_rust_belt" texturefile = "gfx/events/AFS_events/AFS_rust_belt.dds" }
+    spriteType = { name = "event_AFS_the_triumvirate" texturefile = "gfx/events/AFS_events/AFS_the_triumvirate.dds" }
+
+    #Vermin Event Pics
+	spriteType = { name = "event_AFS_anarchism_1" texturefile = "gfx/events/AFS_events/AFS_anarchism_1.dds" }
+    spriteType = { name = "event_AFS_anarchism_2" texturefile = "gfx/events/AFS_events/AFS_anarchism_2.dds" }
+    spriteType = { name = "event_AFS_anarchist_militia" texturefile = "gfx/events/AFS_events/AFS_anarchist_militia.dds" }
+    spriteType = { name = "event_AFS_meeting_with_other_anarchists" texturefile = "gfx/events/AFS_events/AFS_meeting_with_other_anarchists.dds" }
+    spriteType = { name = "event_AFS_pinkie_rave" texturefile = "gfx/events/AFS_events/AFS_pinkie_rave.dds" }
+    spriteType = { name = "event_AFS_spike" texturefile = "gfx/events/AFS_events/AFS_spike.dds" }
+    spriteType = { name = "event_AFS_vermin_1" texturefile = "gfx/events/AFS_events/AFS_vermin_1.dds" }
+    spriteType = { name = "event_AFS_vermin_2" texturefile = "gfx/events/AFS_events/AFS_vermin_2.dds" }
+    spriteType = { name = "event_AFS_vermin_3" texturefile = "gfx/events/AFS_events/AFS_vermin_3.dds" }
+    spriteType = { name = "event_AFS_vermin_4" texturefile = "gfx/events/AFS_events/AFS_vermin_4.dds" }
+
 	### Portraits ###
 	spriteType = {
 		name = "GFX_portrait_AFS_evil_jd_vance"

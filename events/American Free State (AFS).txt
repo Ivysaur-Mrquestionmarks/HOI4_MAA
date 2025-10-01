@@ -5,7 +5,7 @@ country_event = {
 	id = AFS.1
 	title = AFS.1.t
 	desc = AFS.1.d
-	#picture = event_
+	picture = event_AFS_the_triumvirate
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -35,7 +35,7 @@ country_event = {
 	id = AFS.2
 	title = AFS.2.t
 	desc = AFS.2.d
-	#picture = event_
+	picture = event_AFS_the_triumvirate
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -77,7 +77,7 @@ country_event = {
 	id = AFS.3
 	title = AFS.3.t
 	desc = AFS.3.d
-	#picture = event_
+	picture = event_AFS_the_triumvirate
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -136,7 +136,7 @@ country_event = {
 	id = AFS.4
 	title = AFS.4.t
 	desc = AFS.4.d
-	#picture = event_
+	picture = event_AFS_the_triumvirate
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -178,7 +178,7 @@ country_event = {
 	id = AFS.5
 	title = AFS.5.t
 	desc = AFS.5.d
-	#picture = event_
+	picture = event_AFS_the_triumvirate
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -234,7 +234,7 @@ country_event = {
 	id = AFS.6
 	title = AFS.6.t
 	desc = AFS.6.d
-	#picture = event_
+	picture = event_AFS_the_triumvirate
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -382,7 +382,7 @@ country_event = {
 	id = AFS.7
 	title = AFS.7.t
 	desc = AFS.7.d
-	#picture = event_
+	picture = event_AFS_assassination
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -406,7 +406,7 @@ country_event = {
 	id = AFS.8
 	title = AFS.8.t
 	desc = AFS.8.d
-	#picture = event_
+	picture = event_AFS_assassination
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -450,7 +450,7 @@ country_event = {
 	id = AFS.9
 	title = AFS.9.t
 	desc = AFS.9.d
-	#picture = event_
+	picture = event_AFS_civil_war_over
 	is_triggered_only = no
 	trigger = {
 		OR = {
@@ -586,7 +586,7 @@ country_event = {
 	id = AFS.10
 	title = AFS.10.t
 	desc = AFS.10.d
-	#picture = event_
+	picture = event_AFS_assassination
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -606,7 +606,7 @@ country_event = {
 	id = AFS.11
 	title = AFS.11.t
 	desc = AFS.11.d
-	#picture = event_
+	picture = event_GLA_handshake
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = no
@@ -669,7 +669,7 @@ country_event = {
 	id = AFS.12
 	title = AFS.12.t
 	desc = AFS.12.d
-	#picture = event_
+	picture = event_GLA_handshake
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = no
@@ -718,7 +718,7 @@ country_event = {
 	id = vermin.1
 	title = vermin.1.t
 	desc = vermin.1.d
-	#picture = event_
+	picture = event_AFS_vermin_1
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -744,7 +744,7 @@ country_event = {
 	id = vermin.2
 	title = vermin.2.t
 	desc = vermin.2.d
-	#picture = event_
+    picture = event_AFS_vermin_2
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -770,7 +770,7 @@ country_event = {
 	id = vermin.3
 	title = vermin.3.t
 	desc = vermin.3.d
-	#picture = event_
+	picture = event_AFS_vermin_2
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -808,7 +808,7 @@ country_event = {
 	id = vermin.4
 	title = vermin.4.t
 	desc = vermin.4.d
-	#picture = event_
+	picture = event_AFS_vermin_2
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -834,7 +834,7 @@ country_event = {
 	id = vermin.5
 	title = vermin.5.t
 	desc = vermin.5.d
-	#picture = event_
+	picture = event_AFS_vermin_2
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -860,7 +860,7 @@ country_event = {
 	id = vermin.6
 	title = vermin.6.t
 	desc = vermin.6.d
-	#picture = event_
+	picture = event_AFS_anarchist_militia
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -880,7 +880,7 @@ country_event = {
 	id = vermin.7
 	title = vermin.7.t
 	desc = vermin.7.d
-	#picture = event_
+	picture = event_AFS_attack
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -900,7 +900,7 @@ country_event = {
 	id = vermin.8
 	title = vermin.8.t
 	desc = vermin.8.d
-	#picture = event_
+	picture = event_AFS_anarchism_1
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -925,7 +925,7 @@ country_event = {
 	id = vermin.9
 	title = vermin.9.t
 	desc = vermin.9.d
-	#picture = event_
+	picture = event_AFS_meeting_with_other_anarchists
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -945,7 +945,7 @@ country_event = {
 	id = vermin.10
 	title = vermin.10.t
 	desc = vermin.10.d
-	#picture = event_
+	picture = event_AFS_vermin_3
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -965,7 +965,7 @@ country_event = {
 	id = vermin.11
 	title = vermin.11.t
 	desc = vermin.11.d
-	#picture = event_
+	picture = event_GLA_the_border
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -985,7 +985,7 @@ country_event = {
 	id = vermin.12
 	title = vermin.12.t
 	desc = vermin.12.d
-	#picture = event_
+	picture = event_AFS_civil_war_over
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1005,7 +1005,7 @@ country_event = {
 	id = vermin.13
 	title = vermin.13.t
 	desc = vermin.13.d
-	#picture = event_
+	picture = event_AFS_vermin_4
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1025,7 +1025,7 @@ country_event = {
 	id = vermin.14
 	title = vermin.14.t
 	desc = vermin.14.d
-	#picture = event_
+	picture = event_AFS_pinkie_rave
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1045,7 +1045,7 @@ country_event = {
 	id = vermin.15
 	title = vermin.15.t
 	desc = vermin.15.d
-	#picture = event_
+	picture = event_AFS_spike
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1132,7 +1132,7 @@ country_event = {
 	id = vermin.17
 	title = vermin.17.t
 	desc = vermin.17.d
-	#picture = event_
+	picture = event_AFS_meeting_with_other_anarchists
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1152,7 +1152,7 @@ country_event = {
 	id = vermin.18
 	title = vermin.18.t
 	desc = vermin.18.d
-	#picture = event_
+	picture = event_AFS_anarchism_2
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1172,7 +1172,7 @@ country_event = {
 	id = vermin.19
 	title = vermin.19.t
 	desc = vermin.19.d
-	#picture = event_
+	picture = event_AFS_anarchist_militia
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1192,7 +1192,7 @@ country_event = {
 	id = vermin.20
 	title = vermin.20.t
 	desc = vermin.20.d
-	#picture = event_
+	picture = event_AFS_anarchism_1
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1212,7 +1212,7 @@ country_event = {
 	id = vermin.21
 	title = vermin.21.t
 	desc = vermin.21.d
-	#picture = event_
+	picture = event_AFS_rust_belt
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
