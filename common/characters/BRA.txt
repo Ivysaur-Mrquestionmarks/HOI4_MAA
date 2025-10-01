@@ -663,6 +663,32 @@ characters={
 			}
 		}
 	}
+#theorist
+	BRA_john_woodward = {
+		name = "John Woodward"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/BRA/john_woodward_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = BRA_john_woodward_theorist
+			cost = 100
+			allowed = {
+				original_tag = BRA
+			}
+			visible = {
+				original_tag = BRA
+			}
+			available = {
+				
+			}
+			traits = {
+				 military_theorist 
+			}
+		}
+	}
 
 	###SCIENTISTS ####
 	BRA_scott_c_hardiman = {

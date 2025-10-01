@@ -52,21 +52,9 @@ add_ideas = {
 	BRA_unstable_city_state
 
 	#laws
-}
-
-set_politics = {
-	ruling_party = authoritarian_left
-	last_election = "2020.11.3"
-	election_frequency = 12
-	elections_allowed = no
-}
-set_popularities = {
-	autocratic = 5
-	republican = 3
-	democrat = 25
-	authoritarian_left = 43
-	libertarian_right = 1
-	libertarian_left = 23
+	limited_exports
+	low_economic_mobilisation
+	
 }
 
 ### Country Leaders ###
@@ -96,6 +84,7 @@ recruit_character = BRA_jorge_jimenez
 recruit_character = BRA_steve_collela 
 recruit_character = BRA_michael_wabrek 
 recruit_character = BRA_ron_barnes 
+recruit_character = BRA_john_woodward
 #advisors
 recruit_character = BRA_henry_santana
 recruit_character = BRA_ben_j_weber
@@ -109,3 +98,19 @@ recruit_character = BRA_john_fitzgerald
 recruit_character = BRA_rajagopala_chidambaram
 recruit_character = BRA_scott_c_hardiman
 recruit_character = BRA_marc_raibert
+
+set_politics = {
+	ruling_party = authoritarian_left
+	last_election = "2020.11.3"
+	election_frequency = 12
+	elections_allowed = no
+}
+set_popularities = {
+	autocratic = 5
+	republican = 3
+	democrat = 25
+	authoritarian_left = 43
+	libertarian_right = 1
+	libertarian_left = 23
+}
+
