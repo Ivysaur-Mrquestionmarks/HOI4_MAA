@@ -1234,7 +1234,7 @@ country_event = {
 	id = hawkins.1
 	title = hawkins.1.t
 	desc = hawkins.1.d
-	#picture = event_
+	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1279,7 +1279,7 @@ country_event = {
 	id = hawkins.2
 	title = hawkins.2.t
 	desc = hawkins.2.d
-	#picture = event_
+	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1324,7 +1324,7 @@ country_event = {
 	id = hawkins.3
 	title = hawkins.3.t
 	desc = hawkins.3.d
-	#picture = event_
+	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1350,7 +1350,7 @@ country_event = {
 	id = hawkins.4
 	title = hawkins.4.t
 	desc = hawkins.4.d
-	#picture = event_
+	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1393,7 +1393,7 @@ country_event = {
 	id = hawkins.5
 	title = hawkins.5.t
 	desc = hawkins.5.d
-	#picture = event_
+	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1420,7 +1420,7 @@ country_event = {
 	id = hawkins.6
 	title = hawkins.6.t
 	desc = hawkins.6.d
-	#picture = event_
+	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1454,7 +1454,7 @@ country_event = {
 	id = hawkins.7
 	title = hawkins.7.t
 	desc = hawkins.7.d
-	#picture = event_
+	picture = event_AFS_attack
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1474,7 +1474,7 @@ country_event = {
 	id = hawkins.8
 	title = hawkins.8.t
 	desc = hawkins.8.d
-	#picture = event_
+	picture = event_AFS_hawkins_1
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1502,7 +1502,7 @@ country_event = {
 	id = hawkins.9
 	title = hawkins.9.t
 	desc = hawkins.9.d
-	#picture = event_
+	picture = event_AFS_dissidents_purged
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1522,7 +1522,7 @@ country_event = {
 	id = hawkins.10
 	title = hawkins.10.t
 	desc = hawkins.10.d
-	#picture = event_
+	picture = event_AFS_terror_attack
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1553,7 +1553,7 @@ country_event = {
 	id = hawkins.11
 	title = hawkins.11.t
 	desc = hawkins.11.d
-	#picture = event_
+	picture = event_AFS_terror_attack
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1573,7 +1573,7 @@ news_event = {
 	id = hawkins.12
 	title = hawkins.12.t
 	desc = hawkins.12.d
-	#picture = event_
+	picture = event_AFS_larry_fink_dies
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1593,7 +1593,7 @@ news_event = {
 	id = hawkins.13
 	title = hawkins.13.t
 	desc = hawkins.13.d
-	#picture = event_
+	picture = event_AFS_paris_terror_attack
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1613,7 +1613,7 @@ news_event = {
 	id = hawkins.14
 	title = hawkins.14.t
 	desc = hawkins.14.d
-	#picture = event_
+	picture = event_AFS_three_gorges_dam_attack
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1633,7 +1633,7 @@ news_event = {
 	id = hawkins.15
 	title = hawkins.15.t
 	desc = hawkins.15.d
-	#picture = event_
+	picture = event_AFS_big_ben_attack
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1653,7 +1653,7 @@ news_event = {
 	id = hawkins.16
 	title = hawkins.16.t
 	desc = hawkins.16.d
-	#picture = event_
+	picture = event_AFS_taj_mahal_attack
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1673,7 +1673,7 @@ news_event = {
 	id = hawkins.17
 	title = hawkins.17.t
 	desc = hawkins.17.d
-	#picture = event_
+	picture = event_AFS_sydney_terror_attack
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1693,7 +1693,7 @@ country_event = {
 	id = hawkins.18
 	title = hawkins.18.t
 	desc = hawkins.18.d
-	#picture = event_
+	picture = event_AFS_ai
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1716,7 +1716,7 @@ country_event = {
 	id = hawkins.19
 	title = hawkins.19.t
 	desc = hawkins.19.d
-	#picture = event_
+	picture = event_AFS_release
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1766,7 +1766,7 @@ country_event = {
 	id = hawkins.21
 	title = hawkins.21.t
 	desc = hawkins.21.d
-	#picture = event_
+	picture = event_AFS_death
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1809,7 +1809,7 @@ country_event = {
 	id = hawkins.22
 	title = hawkins.22.t
 	desc = hawkins.22.d
-	#picture = event_
+	picture = event_AFS_hawkins_1
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1830,7 +1830,7 @@ country_event = {
 	id = hawkins.23
 	title = hawkins.23.t
 	desc = hawkins.23.d
-	#picture = event_
+	picture = event_AFS_hawkins_government
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1841,7 +1841,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_political_power = -40
+		add_political_power = -50
 		add_stability = -0.05
 	}
 	option = {
@@ -1849,7 +1849,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_political_power = -100
+		add_political_power = -200
 	}
 }
 
@@ -1858,7 +1858,7 @@ country_event = {
 	id = hawkins.24
 	title = hawkins.24.t
 	desc = hawkins.24.d
-	#picture = event_
+	picture = event_AFS_environmental
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1877,7 +1877,7 @@ country_event = {
 	id = hawkins.25
 	title = hawkins.25.t
 	desc = hawkins.25.d
-	#picture = event_
+	picture = event_AFS_hawkins_government
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1896,7 +1896,7 @@ country_event = {
 	id = hawkins.26
 	title = hawkins.26.t
 	desc = hawkins.26.d
-	#picture = event_
+	picture = event_GLA_xi
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -1915,7 +1915,7 @@ country_event = {
 	id = hawkins.27
 	title = hawkins.27.t
 	desc = hawkins.27.d
-	#picture = event_
+	picture = event_AFS_hawkins_government
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -2007,7 +2007,7 @@ country_event = {
 	id = hawkins.30
 	title = hawkins.30.t
 	desc = hawkins.30.d
-	#picture = event_
+	picture = event_GLA_xi
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -2026,7 +2026,7 @@ country_event = {
 	id = hawkins.31
 	title = hawkins.31.t
 	desc = hawkins.31.d
-	#picture = event_
+	picture = event_AFS_united_nations
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -2046,7 +2046,7 @@ country_event = {
 	id = hawkins.32
 	title = hawkins.32.t
 	desc = hawkins.32.d
-	#picture = event_
+	picture = event_AFS_hawkins_government
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -2065,7 +2065,7 @@ country_event = {
 	id = hawkins.33
 	title = hawkins.33.t
 	desc = hawkins.33.d
-	#picture = event_
+	picture = event_AFS_dissidents_purged
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -2084,7 +2084,7 @@ country_event = {
 	id = hawkins.34
 	title = hawkins.34.t
 	desc = hawkins.34.d
-	#picture = event_
+	picture = event_AFS_environmental
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -2103,7 +2103,7 @@ country_event = {
 	id = hawkins.35
 	title = hawkins.35.t
 	desc = hawkins.35.d
-	#picture = event_
+	picture = event_AFS_hawkins_government
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -2122,7 +2122,7 @@ country_event = {
 	id = hawkins.36
 	title = hawkins.36.t
 	desc = hawkins.36.d
-	#picture = event_
+	picture = event_AFS_social_credit
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -2141,7 +2141,7 @@ country_event = {
 	id = hawkins.37
 	title = hawkins.37.t
 	desc = hawkins.37.d
-	#picture = event_
+    picture = event_AFS_nuclear_power
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -2171,7 +2171,7 @@ country_event = {
 	id = hawkins.38
 	title = hawkins.38.t
 	desc = hawkins.38.d
-	#picture = event_
+	picture = event_AFS_environmental_2
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes

@@ -13220,6 +13220,13 @@ spriteTypes = {
 	spriteType = { name = "event_AFS_vermin_unification" texturefile = "gfx/events/AFS_events/AFS_vermin_unification.dds" }
 	spriteType = { name = "event_AFS_twilight" texturefile = "gfx/events/AFS_events/AFS_twilight.dds" }
 
+    spriteType = { name = "event_AFS_larry_fink_dies" texturefile = "gfx/events/AFS_events/AFS_larry_fink_dies.dds" }
+    spriteType = { name = "event_AFS_paris_terror_attack" texturefile = "gfx/events/AFS_events/AFS_paris_terror_attack.dds" }
+    spriteType = { name = "event_AFS_three_gorges_dam_attack" texturefile = "gfx/events/AFS_events/AFS_three_gorges_dam_attack.dds" }
+    spriteType = { name = "event_AFS_big_ben_attack" texturefile = "gfx/events/AFS_events/AFS_big_ben_attack.dds" }
+    spriteType = { name = "event_AFS_taj_mahal_attack" texturefile = "gfx/events/AFS_events/AFS_taj_mahal_attack.dds" }
+    spriteType = { name = "event_AFS_sydney_terror_attack" texturefile = "gfx/events/AFS_events/AFS_sydney_terror_attack.dds" }
+
     #Beginning/Generic Event Pics
 	spriteType = { name = "event_AFS_assassination" texturefile = "gfx/events/AFS_events/AFS_assassination.dds" }
     spriteType = { name = "event_AFS_attack" texturefile = "gfx/events/AFS_events/AFS_attack.dds" }
@@ -13238,6 +13245,21 @@ spriteTypes = {
     spriteType = { name = "event_AFS_vermin_2" texturefile = "gfx/events/AFS_events/AFS_vermin_2.dds" }
     spriteType = { name = "event_AFS_vermin_3" texturefile = "gfx/events/AFS_events/AFS_vermin_3.dds" }
     spriteType = { name = "event_AFS_vermin_4" texturefile = "gfx/events/AFS_events/AFS_vermin_4.dds" }
+
+    #Vermin Event Pics
+	spriteType = { name = "event_AFS_ai" texturefile = "gfx/events/AFS_events/AFS_ai.dds" }
+    spriteType = { name = "event_AFS_annihilationist_1" texturefile = "gfx/events/AFS_events/AFS_annihilationist_1.dds" }
+    spriteType = { name = "event_AFS_death" texturefile = "gfx/events/AFS_events/AFS_death.dds" }
+    spriteType = { name = "event_AFS_dissidents_purged" texturefile = "gfx/events/AFS_events/AFS_dissidents_purged.dds" }
+    spriteType = { name = "event_AFS_environmental" texturefile = "gfx/events/AFS_events/AFS_environmental.dds" }
+    spriteType = { name = "event_AFS_environmental_2" texturefile = "gfx/events/AFS_events/AFS_environmental_2.dds" }
+    spriteType = { name = "event_AFS_hawkins_1" texturefile = "gfx/events/AFS_events/AFS_hawkins_1.dds" }
+    spriteType = { name = "event_AFS_hawkins_government" texturefile = "gfx/events/AFS_events/AFS_hawkins_government.dds" }
+    spriteType = { name = "event_AFS_nuclear_power" texturefile = "gfx/events/AFS_events/AFS_nuclear_power.dds" }
+    spriteType = { name = "event_AFS_release" texturefile = "gfx/events/AFS_events/AFS_release.dds" }
+    spriteType = { name = "event_AFS_social_credit" texturefile = "gfx/events/AFS_events/AFS_social_credit.dds" }
+    spriteType = { name = "event_AFS_terror_attack" texturefile = "gfx/events/AFS_events/AFS_terror_attack.dds" }
+    spriteType = { name = "event_AFS_united_nations" texturefile = "gfx/events/AFS_events/AFS_united_nations.dds" }
 
 	### Portraits ###
 	spriteType = {
