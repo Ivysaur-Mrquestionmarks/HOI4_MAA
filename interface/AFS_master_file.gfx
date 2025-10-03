@@ -13246,7 +13246,7 @@ spriteTypes = {
     spriteType = { name = "event_AFS_vermin_3" texturefile = "gfx/events/AFS_events/AFS_vermin_3.dds" }
     spriteType = { name = "event_AFS_vermin_4" texturefile = "gfx/events/AFS_events/AFS_vermin_4.dds" }
 
-    #Vermin Event Pics
+    #Hawkins Event Pics
 	spriteType = { name = "event_AFS_ai" texturefile = "gfx/events/AFS_events/AFS_ai.dds" }
     spriteType = { name = "event_AFS_annihilationist_1" texturefile = "gfx/events/AFS_events/AFS_annihilationist_1.dds" }
     spriteType = { name = "event_AFS_death" texturefile = "gfx/events/AFS_events/AFS_death.dds" }
@@ -13260,6 +13260,28 @@ spriteTypes = {
     spriteType = { name = "event_AFS_social_credit" texturefile = "gfx/events/AFS_events/AFS_social_credit.dds" }
     spriteType = { name = "event_AFS_terror_attack" texturefile = "gfx/events/AFS_events/AFS_terror_attack.dds" }
     spriteType = { name = "event_AFS_united_nations" texturefile = "gfx/events/AFS_events/AFS_united_nations.dds" }
+
+    #Mattis Event Pics
+	spriteType = { name = "event_AFS_capitol_taken" texturefile = "gfx/events/AFS_events/AFS_capitol_taken.dds" }
+    spriteType = { name = "event_AFS_columbia" texturefile = "gfx/events/AFS_events/AFS_columbia.dds" }
+    spriteType = { name = "event_AFS_golden_age" texturefile = "gfx/events/AFS_events/AFS_golden_age.dds" }
+    spriteType = { name = "event_AFS_herd_sheep" texturefile = "gfx/events/AFS_events/AFS_herd_sheep.dds" }
+    spriteType = { name = "event_AFS_mattis_1" texturefile = "gfx/events/AFS_events/AFS_mattis_1.dds" }
+    spriteType = { name = "event_AFS_mattis_2" texturefile = "gfx/events/AFS_events/AFS_mattis_2.dds" }
+    spriteType = { name = "event_AFS_mattis_biden" texturefile = "gfx/events/AFS_events/AFS_mattis_biden.dds" }
+    spriteType = { name = "event_AFS_mattis_cyborg" texturefile = "gfx/events/AFS_events/AFS_mattis_cyborg.dds" }
+    spriteType = { name = "event_AFS_mattis_death" texturefile = "gfx/events/AFS_events/AFS_mattis_death.dds" }
+    spriteType = { name = "event_AFS_mattis_ill" texturefile = "gfx/events/AFS_events/AFS_mattis_ill.dds" }
+    spriteType = { name = "event_AFS_mattis_military" texturefile = "gfx/events/AFS_events/AFS_mattis_military.dds" }
+    spriteType = { name = "event_AFS_mattis_revised_constitution" texturefile = "gfx/events/AFS_events/AFS_mattis_revised_constitution.dds" }
+    spriteType = { name = "event_AFS_mattis_speech" texturefile = "gfx/events/AFS_events/AFS_mattis_speech.dds" }
+    spriteType = { name = "event_AFS_mattis_trump" texturefile = "gfx/events/AFS_events/AFS_mattis_trump.dds" }
+    spriteType = { name = "event_AFS_mattis_trump_2" texturefile = "gfx/events/AFS_events/AFS_mattis_trump_2.dds" }
+    spriteType = { name = "event_AFS_mattis_washington" texturefile = "gfx/events/AFS_events/AFS_mattis_washington.dds" }
+    spriteType = { name = "event_AFS_mattis_washington_2" texturefile = "gfx/events/AFS_events/AFS_mattis_washington_2.dds" }
+    spriteType = { name = "event_AFS_mattis_washington_3" texturefile = "gfx/events/AFS_events/AFS_mattis_washington_3.dds" }
+    spriteType = { name = "event_AFS_stability" texturefile = "gfx/events/AFS_events/AFS_stability.dds" }
+    spriteType = { name = "event_AFS_the_boy_ruler" texturefile = "gfx/events/AFS_events/AFS_the_boy_ruler.dds" }
 
 	### Portraits ###
 	spriteType = {
