@@ -1378,6 +1378,11 @@ leader_traits = {
 				attack = 0.1
 				defence = 0.1
 			}
+			suburban = { #maybe tweak this slightly to represent the less built up nature of suburban? eg more movement/attack, less defence?
+				movement = 0.05
+				attack = 0.1
+				defence = 0.1
+			}
 		}
 		
 		ai_will_do = {
