@@ -700,6 +700,18 @@ focus_tree = {
 		}
 		x = 22
 		y = 2
+		available = {
+			has_country_leader = {
+				character = BRA_ken_casey
+				ruling_only = yes
+			}
+		}
+		bypass = {
+			has_country_leader = {
+				character = BRA_ken_casey
+				ruling_only = yes
+			}
+		}
 
 	}
 	focus = {
@@ -711,6 +723,19 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
+		available = {
+			controls_state = 221
+		}
+		bypass = {
+			NOT = {
+				owns_state = 221
+			}
+		}
+		completion_reward = {
+			221 = {
+				add_extra_state_shared_building_slots = 3
+			}
+		}
 
 	}
 	focus = {
@@ -722,6 +747,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
+		completion_reward = {
+			add_stability = 0.10
+		}
 
 	}
 	focus = {
@@ -733,6 +761,17 @@ focus_tree = {
 		}
 		x = 22
 		y = 3
+		available = {
+			has_government = authoritarian_left
+		}
+		bypass = {
+			NOT = {
+				has_government = authoritarian_left
+			}
+		}
+		completion_reward = {
+			add_ideas = BRA_punk_rock_bolshevism
+		}
 
 	}
 	focus = {
@@ -750,6 +789,20 @@ focus_tree = {
 		}
 		x = 20
 		y = 4
+		available = {
+			has_government = authoritarian_left
+		}
+		bypass = {
+			NOT = {
+				has_government = authoritarian_left
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = BRA_punk_rock_bolshevism_1
+				remove_idea = BRA_punk_rock_bolshevism
+			}
+		}
 
 	}
 	focus = {
@@ -761,6 +814,25 @@ focus_tree = {
 		}
 		x = 22
 		y = 4
+		available = {
+			has_country_leader = {
+				character = BRA_ken_casey
+				ruling_only = yes
+			}
+		}
+		bypass = {
+			NOT = {
+			has_country_leader = {
+				character = BRA_ken_casey
+				ruling_only = yes
+			}
+			}
+		}
+		completion_reward = {
+			BRA_ken_casey = {
+				add_country_leader_trait = permanent_revolutionary
+			}
+		}
 
 	}
 	focus = {
@@ -775,6 +847,18 @@ focus_tree = {
 		}
 		x = 30
 		y = 2
+		available = {
+			has_country_leader = {
+				character = BRA_marty_walsh 
+				ruling_only = yes
+			}
+		}
+		bypass = {
+			has_country_leader = {
+				character = BRA_marty_walsh 
+				ruling_only = yes
+			}
+		}
 
 	}
 	focus = {
@@ -790,6 +874,29 @@ focus_tree = {
 		}
 		x = 24
 		y = 3
+		completion_reward = {
+			add_political_power = 150
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = republican
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = libertarian_left
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = libertarian_right
+				popularity = 0.02
+			}
+		}
 
 	}
 	focus = {
@@ -805,6 +912,42 @@ focus_tree = {
 		}
 		x = 26
 		y = 3
+		available = {
+			has_government = authoritarian_left
+		}
+		completion_reward = {
+			add_war_support = 0.10
+			add_popularity = {
+				ideology = authoritarian_left
+				popularity = 0.05
+			}
+			set_party_name = {
+    			ideology = authoritarian_left
+    			long_name = BRA_democrat_army_party
+    			name = BRA_democrat_army_party
+			}
+			set_cosmetic_tag = BRA_democratic_army_ct
+		}
+
+	}
+	focus = {
+		id = BRA_rossa_palestina
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BRA_heirs_of_lincoln
+			focus = BRA_republican_is_a_dirty_word
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+			load_oob = "BRA_PLO"
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Izz al-Din al-Haddad"
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -817,6 +960,19 @@ focus_tree = {
 		}
 		x = 26
 		y = 4
+		completion_reward = {
+			221 = {
+				add_building_construction = {
+				    type = bunker
+				    level = 3
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_victory_point > 1
+				    }
+				}
+			}
+		}
 
 	}
 	focus = {

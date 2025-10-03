@@ -322,6 +322,48 @@ characters={
 			}
 		}
 	}
+	#Palestinian
+	BRA_izz_al_haddad = {
+		name = "Izz al-Din al-Haddad"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRA/izzaldin.tga"
+				small = "gfx/interface/ideas/BRA/izzaldin_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits={ inflexible_strategist militias_officer urban_assault_specialist desert_fox trickster guerilla_fighter } 
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+			visible = {
+				has_completed_focus = BRA_rossa_palestina
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_izzaldin
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			visible = {
+				has_completed_focus = BRA_the_boston_republican_army
+			}
+			available = {
+				has_completed_focus = BRA_rossa_palestina
+				has_government = authoritarian_left
+			}
+			traits = {
+				prince_of_terror
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
 
 	#ADVISORS
 	BRA_ben_j_weber = {

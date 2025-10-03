@@ -96,5 +96,38 @@ ideas = {
 
 
 
+
+		BRA_punk_rock_bolshevism = { #no locals needed
+			picture = ast_volunteer_defence_corps
+			available = {
+				has_government = authoritarian_left
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.03
+				production_lack_of_resource_penalty_factor = -0.02
+				conscription = 0.03
+				authoritarian_left_drift = 0.03
+			}
+		}
+		BRA_punk_rock_bolshevism_1 = {
+			name = BRA_punk_rock_bolshevism
+			picture = ast_volunteer_defence_corps
+			available = {
+				has_government = authoritarian_left
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.03
+				production_lack_of_resource_penalty_factor = -0.02
+				conscription = 0.03
+				authoritarian_left_drift = 0.04
+				war_support_factor = 0.10
+				war_stability_factor = 0.10
+			}
+		}
+
+
+
 	}
 }
