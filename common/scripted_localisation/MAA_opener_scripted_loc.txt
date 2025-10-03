@@ -311,6 +311,12 @@ defined_text = { #Shouldve been overview
 	}
 	text = {
 		trigger = {
+			tag = AFS
+		}
+		localization_key = "AFS_opener_country_paths"
+	}
+	text = {
+		trigger = {
 			NOT = {
 				tag = NRA
 				tag = USA
@@ -336,6 +342,7 @@ defined_text = { #Shouldve been overview
 				tag = UTA
 				tag = IDA
 				tag = PAC
+				tag = AFS
 			}
 		}
 		localization_key = "ZZZ_opener_country_paths"
