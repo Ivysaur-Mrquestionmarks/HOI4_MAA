@@ -35,7 +35,7 @@ country_event = {
     				days = 0
 				}
 			}
-			every_country = { limit = {OR = {tag = AFS tag = USA tag = FRA}}
+			every_country = { limit = {OR = {tag = USA tag = FRA}}
 				country_event = {
     					id = kentucky.13
     					days = 0
