@@ -169,6 +169,20 @@ bookmarks = {
 				CAS_new_order
 			}
 		}
+		"AFS"={
+			history = "AFS_GOOD_FRIDAY_DESC"
+			ideology = libertarian_left
+			minor = yes
+			ideas = {
+				triumvirate_idea
+				Ruins_of_the_Rust_Belt
+			}
+			focuses = {
+				AFS_vermins_anarchist_dreams
+			    AFS_hawkins_victory
+				AFS_mattiss_victory
+			}
+		}
 		"NRA"={
 			history = "NRA_GOOD_FRIDAY_DESC"
 			ideology = autocratic
