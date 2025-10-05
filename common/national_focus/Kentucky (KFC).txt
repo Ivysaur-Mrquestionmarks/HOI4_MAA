@@ -2100,6 +2100,13 @@ focus_tree = {
 		x = -1
 		y = 2
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_morale_army
+				value = 0.03
+				tooltip = army_morale_factor_tt
+			}
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -2116,6 +2123,13 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_war_support_factor
+				value = 0.1
+				tooltip = war_support_factor_tt
+			}
+			country_event = fried_chicken.1
 		}
 	}
 	focus = {
@@ -2189,7 +2203,7 @@ focus_tree = {
 				    instant_build = yes
 				}
 			}
-			add_political_power = -50
+			add_political_power = -25
 		}
 	}
 	focus = {
@@ -2203,19 +2217,30 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-		}
-	}
-	focus = {
-		id = KFC_erasing_poverty
-		icon = GFX
-		cost = 5.00
-		prerequisite = {
-			focus = KFC_strasserism
-		}
-		relative_position_id = KFC_strasserism
-		x = 1
-		y = 1
-		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = arms_factory
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = arms_factory
+				    level = 1
+				    instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -2269,13 +2294,16 @@ focus_tree = {
 		prerequisite = {
 			focus = KFC_stalinism
 		}
-		prerequisite = {
-			focus = KFC_erasing_poverty
-		}
 		relative_position_id = KFC_stalinism
 		x = -1
 		y = 2
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.15
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -2292,12 +2320,23 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.15
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.05
+				tooltip = authoritarian_left_drift_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_combat_drug_use
 		icon = GFX
-		cost = 5.00
+		cost = 3.00
 		prerequisite = {
 			focus = KFC_cultural_protection_laws
 		}
@@ -2305,6 +2344,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -2318,6 +2358,13 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			country_event = fried_chicken.2
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.15
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -2331,6 +2378,17 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_compliance_growth
+				value = 0.05
+				tooltip = compliance_growth_tt
+			}
+			add_to_variable = {
+				var = var_breakthrough_army
+				value = 0.08
+				tooltip = breakthrough_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -2344,6 +2402,13 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			country_event = fried_chicken.3
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_compliance_growth
+				value = 0.05
+				tooltip = compliance_growth_tt
+			}
 		}
 	}
 	focus = {
@@ -2360,6 +2425,12 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_conscription
+				value = 0.01
+				tooltip = conscription_tt
+			}
 		}
 	}
 	focus = {
@@ -2373,12 +2444,18 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.1
+				tooltip = stability_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_close_nonwhite_immigration
 		icon = GFX
-		cost = 5.00
+		cost = 2.00
 		prerequisite = {
 			focus = KFC_combat_demographic_issue
 		}
@@ -2386,6 +2463,17 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_monthly_population
+				value = -0.05
+				tooltip = monthly_population_tt
+			}
 		}
 	}
 	focus = {
@@ -2402,6 +2490,17 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_monthly_population
+				value = -0.05
+				tooltip = monthly_population_tt
+			}
 		}
 	}
 	focus = {
@@ -2415,6 +2514,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_monthly_population
+				value = 0.2
+				tooltip = monthly_population_tt
+			}
 		}
 	}
 	focus = {
@@ -2431,6 +2536,17 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_monthly_population
+				value = 0.2
+				tooltip = monthly_population_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_max_efficiency_factor
+				value = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -2447,6 +2563,27 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_nazbol_government_modify_tt
+			add_to_variable = {
+				var = var_production_factory_max_efficiency_factor
+				value = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				var = var_industrial_capacity_factory
+				value = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				var = var_production_speed_buildings_factor
+				value = 0.05
+				tooltip = production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_efficiency_gain_factor
+				value = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -2463,6 +2600,7 @@ focus_tree = {
 		x = -10
 		y = 1
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -2476,6 +2614,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		completion_reward = {
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -2489,6 +2628,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			add_stability = 0.15
 		}
 	}
 	focus = {
@@ -2502,6 +2642,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -2518,6 +2659,13 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			add_war_support = 0.25 
+			hidden_effect = {
+				country_event = {
+					id = fried_chicken.4
+					days = 100
+				}
+			}
 		}
 	}
 	focus = {
@@ -2531,6 +2679,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -2547,6 +2696,7 @@ focus_tree = {
 			focus = KFC_saving_canada
 		}
 		completion_reward = {
+			add_stability = 1
 		}
 	}
 	focus = {
@@ -2562,7 +2712,37 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = KFC_retreat_into_isolation
 		}
+		will_lead_to_war_with = CAN
+		will_lead_to_war_with = VAN
+		will_lead_to_war_with = QUE
+		will_lead_to_war_with = ONT
+		will_lead_to_war_with = MRT
+		will_lead_to_war_with = WPC
 		completion_reward = {
+			create_wargoal = {
+				target = CAN
+				type = annex_everything 
+			}
+			create_wargoal = {
+				target = QUE
+				type = annex_everything 
+			}
+			create_wargoal = {
+				target = VAN
+				type = annex_everything 
+			}
+			create_wargoal = {
+				target = ONT
+				type = annex_everything 
+			}
+			create_wargoal = {
+				target = MRT
+				type = annex_everything 
+			}
+			create_wargoal = {
+				target = WPC
+				type = annex_everything 
+			}
 		}
 	}
 	focus = {
@@ -2573,27 +2753,10 @@ focus_tree = {
 			focus = KFC_saving_canada
 		}
 		relative_position_id = KFC_saving_canada
-		x = 1
+		x = 0
 		y = 1
 		completion_reward = {
-		}
-	}
-	focus = {
-		id = KFC_kick_globalists_out_of_north_america
-		icon = GFX
-		cost = 5.00
-		prerequisite = {
-			focus = KFC_saving_canada
-		}
-		relative_position_id = KFC_saving_canada
-		x = -1
-		y = 1
-		will_lead_to_war_with = PUE
-		completion_reward = {
-			create_wargoal = {
-				target = PUE
-				type = annex_everything
-			}
+			effect_kill_mexico = yes
 		}
 	}
 	

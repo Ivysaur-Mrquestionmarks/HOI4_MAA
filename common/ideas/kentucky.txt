@@ -196,9 +196,9 @@
 				has_government = authoritarian_left
 			}
 			modifier = {
-				stability_factor = 0.20
-				political_power_factor = 0.15
-				production_speed_industrial_complex_factor = 0.20
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 		KFC_purges_spirit = {
@@ -210,11 +210,11 @@
 				has_government = authoritarian_left
 			}
 			modifier = {
-				stability_factor = -0.30
-				political_power_factor = -0.15
-				production_speed_industrial_complex_factor = -0.30
-				production_speed_arms_factory_factor = -0.20
-				monthly_population = -0.65
+				stability_factor = -0.15
+				political_power_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				monthly_population = -0.1
 			}
 		}
 		KFC_conscript_coloureds = { #no locals
