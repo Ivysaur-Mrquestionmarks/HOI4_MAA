@@ -1147,6 +1147,16 @@ leader_traits = {
 		political_power_factor = -0.25
 		consumer_goods_factor = 0.1
 	}
+	KFC_unpopular_governor = {
+		random = no
+		political_power_factor = -0.1
+		stability_factor = -0.15
+	}
+	KFC_popular_governor = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.1
+	}
 	#Mike Pence
 	NPA_insane = {
 		stability_factor = 0.50
