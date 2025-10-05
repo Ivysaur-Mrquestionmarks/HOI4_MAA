@@ -105,35 +105,16 @@ KFC_nazbol_government = { #NATIONAL SPIRIT, balls.
 }
 KFC_joint_nazbol_union = { #NATIONAL SPIRIT, balls.
 	enable = { always = yes }
-
 	#icon = ast_volunteer_defence_corps
 	
 	stability_factor = global.nazbol_var_stability_factor #
 	war_support_factor = global.nazbol_var_war_support_factor #
 	political_power_factor = global.nazbol_var_pp_factor #
-	political_power_gain = global.nazbol_var_pp_gain
 	resistance_growth = global.nazbol_var_resistance_growth #
-	
-	conscription = global.nazbol_var_conscription
-	operative_slot = global.nazbol_var_operative_slot
-	compliance_growth = global.nazbol_var_compliance_growth
-	
-	consumer_goods_factor = global.nazbol_var_cg_factor
-	army_org_factor = global.nazbol_var_org_army
 	army_morale_factor = global.nazbol_var_morale_army #
-	
-	army_attack_factor = global.nazbol_var_attack_army
-	army_defence_factor = global.nazbol_var_defence_army
-	breakthrough_factor = global.nazbol_var_breakthrough_army
-	
 	authoritarian_left_drift = global.nazbol_var_ideology_drift #
 	research_speed_factor = global.nazbol_var_research_speed_factor #
-	production_speed_buildings_factor = global.nazbol_var_production_speed_buildings_factor
 	industrial_capacity_factory = global.nazbol_var_industrial_capacity_factory #
 	production_factory_max_efficiency_factor = global.nazbol_var_production_factory_max_efficiency_factor #
-	production_factory_efficiency_gain_factor = global.nazbol_var_production_factory_efficiency_gain_factor
-	max_fuel_factor = global.nazbol_var_max_fuel_factor
-	production_speed_nuclear_reactor_factor = global.nazbol_var_production_speed_nuclear_reactor_factor
-	nuclear_production_factor = global.nazbol_var_nuclear_production_factor
 
 }
