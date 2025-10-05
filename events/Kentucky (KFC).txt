@@ -1740,3 +1740,25 @@ country_event = {
 	}
 }
 
+#Kentucky requests return of jackson purchase
+country_event = {
+	id = fried_chicken.8
+	title = fried_chicken.8.t
+	desc = fried_chicken.8.d
+	#picture = event_louisville
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = fried_chicken.8.a #yes
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = fried_chicken.8.b #no
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
