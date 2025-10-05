@@ -5,7 +5,7 @@ country_event = {
 	id = boston.1
 	title = boston.1.t
 	desc = boston.1.d
-	#picture =
+	picture = event_gabriel_megahey
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -37,7 +37,7 @@ country_event = {
 			}
 		}
 	}
-	#picture =
+	picture = event_gabriel_megahey
 }
 #who to succeed Megahey?
 country_event = {
