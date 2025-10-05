@@ -94,6 +94,8 @@ leader_traits = {
 		defensive_war_stability_factor = 0.1
 		experience_gain_army = 0.05
 	}
+
+	#Virginia Traits
 	VIR_terry_mcauliffe_advisor_trait = {
 		war_support_factor = 0.2
 		production_factory_max_efficiency_factor = 0.1
@@ -122,6 +124,8 @@ leader_traits = {
 		war_support_factor = 0.10
 		autocratic_acceptance = 50
 	}
+
+	#Dixie Traits
 	DIX_Decorated_Soldier = {
 		war_support_factor = 0.15
 		conscription = 0.03
@@ -1146,6 +1150,16 @@ leader_traits = {
 		targeted_modifier = { tag = USA attack_bonus_against = 0.1 }
 		political_power_factor = -0.25
 		consumer_goods_factor = 0.1
+	}
+	KFC_unpopular_governor = {
+		random = no
+		political_power_factor = -0.1
+		stability_factor = -0.15
+	}
+	KFC_popular_governor = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.1
 	}
 	#Mike Pence
 	NPA_insane = {
