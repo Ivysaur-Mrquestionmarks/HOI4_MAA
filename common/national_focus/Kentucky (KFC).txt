@@ -1438,6 +1438,7 @@ focus_tree = {
 				has_government = authoritarian_left
 			}
 			always = no
+			has_completed_focus = KFC_nazbol_confederacy
 		}
 		completion_reward = {
 			VIR = {
@@ -2005,7 +2006,10 @@ focus_tree = {
 				is_faction_leader = yes
 			}
 			is_subject = no
-			has_completed_focus = KFC_NRA_VIR_reunification
+			OR = {
+				has_completed_focus = KFC_NRA_VIR_reunification
+				has_completed_focus = KFC_hegemony
+			}
 		}
 		completion_reward = {
 			set_cosmetic_tag = NRA_Nazbol_America
@@ -2975,22 +2979,6 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {
-		id = KFC_promote_nuclear_family
-		icon = GFX_goal_KFC_Promote_the_Nuclear_Family
-		cost = 9.00
-		prerequisite = {
-			focus = KFC_expand_charter_schools
-		}
-		prerequisite = {
-			focus = KFC_abortion_question
-		}
-		relative_position_id = KFC_abortion_question
-		x = -1
-		y = 1
-		completion_reward = {
-		}
-	}
 	
 	focus = {
 		id = KFC_eliminate_inheritance_and_corporate_tax
@@ -3017,22 +3005,6 @@ focus_tree = {
 			focus = KFC_fortif_the_west
 		}
 		relative_position_id = KFC_eliminate_inheritance_and_corporate_tax
-		x = 1
-		y = 1
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = KFC_guerilla_training_of_the_civilian_population
-		icon = GFX_goal_KFC_Guerilla_Training
-		cost = 9.00
-		prerequisite = {
-			focus = KFC_fortify_the_east
-		}
-		prerequisite = {
-			focus = KFC_local_weapon_stashes
-		}
-		relative_position_id = KFC_fortify_the_east
 		x = 1
 		y = 1
 		completion_reward = {
@@ -3076,6 +3048,22 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = KFC_guerilla_training_of_the_civilian_population
+		icon = GFX_goal_KFC_Guerilla_Training
+		cost = 9.00
+		prerequisite = {
+			focus = KFC_fortify_the_east
+		}
+		prerequisite = {
+			focus = KFC_local_weapon_stashes
+		}
+		relative_position_id = KFC_fortify_the_east
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = KFC_year_of_the_bible
 		icon = GFX_goal_Icon_Year_of_the_Bible_MAA
 		cost = 4.40
@@ -3098,6 +3086,22 @@ focus_tree = {
 			focus = KFC_year_of_the_bible
 		}
 		relative_position_id = KFC_year_of_the_bible
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KFC_promote_nuclear_family
+		icon = GFX_goal_KFC_Promote_the_Nuclear_Family
+		cost = 9.00
+		prerequisite = {
+			focus = KFC_expand_charter_schools
+		}
+		prerequisite = {
+			focus = KFC_abortion_question
+		}
+		relative_position_id = KFC_abortion_question
 		x = -1
 		y = 1
 		completion_reward = {

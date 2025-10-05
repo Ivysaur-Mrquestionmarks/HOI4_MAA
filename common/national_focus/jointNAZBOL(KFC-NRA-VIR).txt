@@ -37,6 +37,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	allow_branch = {
 		ROOT = {
@@ -57,7 +58,9 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
+		add_dynamic_modifier = { modifier = KFC_joint_nazbol_union }
+		set_global_flag = global_nazbols_united_flag 
 	}
 }
 
@@ -82,6 +85,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -89,13 +93,29 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
+		hidden_effect = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_war_support_factor
+				value = 0.1
+				tooltip = war_support_factor_tt
+			}
+		}
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		effect_tooltip = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_war_support_factor
+				value = 0.1
+				tooltip = war_support_factor_tt
+			}
+		}
 	}
 }
 joint_focus = {
@@ -119,6 +139,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -126,13 +147,15 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
+		army_experience = 25
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		manpower = 20000
 	}
 }
 joint_focus = {
@@ -156,6 +179,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -163,13 +187,39 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
+		hidden_effect = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_stability_factor
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = global.nazbol_var_pp_factor
+				value = 0.05
+				tooltip = political_power_factor_tt
+			}
+		}
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		effect_tooltip = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_stability_factor
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = global.nazbol_var_pp_factor
+				value = 0.05
+				tooltip = political_power_factor_tt
+			}
+		}
 	}
 }
 joint_focus = {
@@ -193,6 +243,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -200,13 +251,29 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
+		hidden_effect = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_morale_army
+				value = 0.05
+				tooltip = army_morale_factor_tt
+			}
+		}
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		effect_tooltip = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_morale_army
+				value = 0.05
+				tooltip = army_morale_factor_tt
+			}
+		}
 	}
 }
 
@@ -231,6 +298,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -238,13 +306,29 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
+		hidden_effect = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_research_speed_factor
+				value = 0.05
+				tooltip = research_speed_factor_tt
+			}
+		}
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		effect_tooltip = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_research_speed_factor
+				value = 0.05
+				tooltip = research_speed_factor_tt
+			}
+		}
 	}
 }
 joint_focus = {
@@ -268,6 +352,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -275,13 +360,29 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
+		hidden_effect = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_research_speed_factor
+				value = 0.05
+				tooltip = research_speed_factor_tt
+			}
+		}
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		effect_tooltip = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_research_speed_factor
+				value = 0.05
+				tooltip = research_speed_factor_tt
+			}
+		}
 	}
 }
 joint_focus = {
@@ -305,6 +406,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -312,13 +414,14 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		add_political_power = 50
 	}
 }
 joint_focus = {
@@ -342,6 +445,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -349,13 +453,15 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		add_political_power = -25
+		add_stability = 0.1
 	}
 }
 
@@ -384,6 +490,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -391,13 +498,14 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		add_war_support = 0.1
 	}
 }
 joint_focus = {
@@ -421,6 +529,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -428,13 +537,29 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
+		hidden_effect = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_production_factory_max_efficiency_factor
+				value = 0.04
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+		}
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		effect_tooltip = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_production_factory_max_efficiency_factor
+				value = 0.04
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+		}
 	}
 }
 joint_focus = {
@@ -458,6 +583,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -465,13 +591,39 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
+		hidden_effect = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_industrial_capacity_factory
+				value = 0.04
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				var = global.nazbol_var_resistance_growth
+				value = 0.04
+				tooltip = resistance_growth_tt
+			}
+		}
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		effect_tooltip = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_industrial_capacity_factory
+				value = 0.04
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				var = global.nazbol_var_resistance_growth
+				value = 0.04
+				tooltip = resistance_growth_tt
+			}
+		}
 	}
 }
 joint_focus = {
@@ -498,6 +650,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -505,13 +658,39 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
+		hidden_effect = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_industrial_capacity_factory
+				value = 0.04
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				var = global.nazbol_var_resistance_growth
+				value = 0.04
+				tooltip = resistance_growth_tt
+			}
+		}
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		effect_tooltip = {
+			custom_effect_tooltip = KFC_joint_nazbol_union_modify_tt
+			add_to_variable = {
+				var = global.nazbol_var_industrial_capacity_factory
+				value = 0.04
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				var = global.nazbol_var_resistance_growth
+				value = 0.04
+				tooltip = resistance_growth_tt
+			}
+		}
 	}
 }
 joint_focus = {
@@ -527,7 +706,6 @@ joint_focus = {
 		focus = KFC_NRA_VIR_send_minorities_to_the_mines
 	}
 	mutually_exclusive = { focus = KFC_NRA_VIR_a_union_of_equals }
-
 	cost = 3
 	text_icon = NORDIC_focus_style
 	joint_trigger = {
@@ -536,6 +714,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -543,13 +722,76 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		NOT = { is_ai = yes }
+		custom_trigger_tooltip = {
+			tooltip = generic_we_control_all_american_states_tt
+			all_of_scopes = {
+    				array = global.part_of_USA
+				OR = {
+					is_owned_by = ROOT
+					owner = { is_ally_with = ROOT }
+				}
+			}
+		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 
 	completion_reward_joint_originator = {
+		if = {
+			limit = { 
+				is_in_faction_with = NRA
+				NOT = { tag = NRA }
+			}
+			annex_country = {
+				target = NRA
+				transfer_troops = yes
+			}
+		}
+		if = {
+			limit = { 
+				is_in_faction_with = KFC
+				NOT = { tag = KFC }
+			}
+			annex_country = {
+				target = KFC
+				transfer_troops = yes
+			}
+		}
+		if = {
+			limit = { 
+				is_in_faction_with = VIR
+				NOT = { tag = VIR }
+			}
+			annex_country = {
+				target = VIR
+				transfer_troops = yes
+			}
+		}
+		if = {
+			limit = { 
+				is_in_faction_with = MON
+				NOT = { tag = MON }
+			}
+			annex_country = {
+				target = MON
+				transfer_troops = yes
+			}
+		}
+		if = {
+			limit = { 
+				is_in_faction_with = HOP
+				NOT = { tag = HOP }
+			}
+			annex_country = {
+				target = HOP
+				transfer_troops = yes
+			}
+		}
+				
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		
 	}
 }
 joint_focus = {
@@ -573,6 +815,7 @@ joint_focus = {
 			tag = VIR
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
 	}
 	available = {
   		OR = {
@@ -580,12 +823,14 @@ joint_focus = {
 			tag = NRA
 			tag = KFC
 		}
+		has_country_flag = KFC_charleston_pact_flag
+		ROOT = { is_ai = no }
 	}
 
 	completion_reward_joint_originator = {
 	}
 
 	completion_reward = {
-		add_stability = 0.05
+		add_political_power = 50
 	}
 }

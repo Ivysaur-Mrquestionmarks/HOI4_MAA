@@ -388,7 +388,37 @@
  KFC_FRA_VIR_invade_west_virginia:0 "Invade West Virginia"
  KFC_FRA_VIR_invade_west_virginia_desc:0 ""
  
- 
+ #Nazbol Joint Tree
+ KFC_NRA_VIR_joint_nazbol:0 "A National-Bolshevik Union"
+ KFC_NRA_VIR_joint_nazbol_desc:0 "Being realistic, there is no way to unite the United States of America on our own. We must gather allies for our victory."
+ KFC_NRA_VIR_the_pact_of_blood:0 "The Pact of Blood"
+ KFC_NRA_VIR_the_pact_of_blood_desc:0 "We are brothers in arms, bound by blood. Our struggle is one."
+ KFC_NRA_VIR_train_new_storm_troopers:0 "Train Storm Troopers"
+ KFC_NRA_VIR_train_new_storm_troopers_desc:0 "Our ideology needs a paramilitary wing to enforce our policies domestically and secure the party itself."
+ KFC_NRA_VIR_sponsor_military_parades:0 "Sponsor Military Parades"
+ KFC_NRA_VIR_sponsor_military_parades_desc:0 "The best way to show our collective success is through military parades!"
+ KFC_NRA_VIR_indoctrinate_the_army:0 "Indoctrinate Our Armies"
+ KFC_NRA_VIR_indoctrinate_the_army_desc:0 "Collectively indoctrinating our militaries using a standard method will bolster the loyalty of all soldiers who fight for the Charleston Pact."
+ KFC_NRA_VIR_pool_research_funds:0 "Pool Research Brains"
+ KFC_NRA_VIR_pool_research_funds_desc:0 "We are currently very lacking individually in terms of technological expertise. Working with our brothers in arms will aid in our research and development."
+ KFC_NRA_VIR_the_wonder_weapons:0 "Wunderwaffen"
+ KFC_NRA_VIR_the_wonder_weapons_desc:0 "Yes that's it! There's the weapon that will give us our ultimate victory!"
+ KFC_NRA_VIR_embrace_eugenics:0 "Embrace Eugenics"
+ KFC_NRA_VIR_embrace_eugenics_desc:0 ""
+ KFC_NRA_VIR_adopting_pseudoscience:0 "Adopt Pseudoscience"
+ KFC_NRA_VIR_adopting_pseudoscience_desc:0 ""
+ KFC_NRA_VIR_the_minority_question:0 "The 'Minority Question'"
+ KFC_NRA_VIR_the_minority_question_desc:0 "Hmmmm..."
+ KFC_NRA_VIR_increase_pay_for_white_workers:0 "Increase Pay for White Workers"
+ KFC_NRA_VIR_increase_pay_for_white_workers_desc:0 "White workers have been robbed for decades through policies like Affirmative Action. Time for compensation!"
+ KFC_NRA_VIR_strip_minority_worker_protection:0 "Strip Minority Labor Rights"
+ KFC_NRA_VIR_strip_minority_worker_protection_desc:0 ""
+ KFC_NRA_VIR_send_minorities_to_the_mines:0 "Send Minorities to the Mines!"
+ KFC_NRA_VIR_send_minorities_to_the_mines_desc:0 "The MINERities are miners now."
+ KFC_NRA_VIR_reunification:0 "Unification"
+ KFC_NRA_VIR_reunification_desc:0 "It is time to let the world know the American White working class stands united together!"
+ KFC_NRA_VIR_a_union_of_equals:0 "A Union of Equals"
+ KFC_NRA_VIR_a_union_of_equals_desc:0 "We have all done our work in fighting for the White Working Class and deserve our on slice of the pie."
  
  
  ##KFC DECISIONS
@@ -432,6 +462,8 @@
  #Dynamic modifier stuff
  KFC_nazbol_government:0 "The Traditionalist Workers' Party Government"
  KFC_nazbol_government_modify_tt: "Modify §Y$KFC_nazbol_government$§! by:"
+ KFC_joint_nazbol_union:0 "Union for a White America"
+ KFC_joint_nazbol_union_modify_tt: "Modify §Y$KFC_joint_nazbol_union$§! by:"
  KFC_tea_party_government:0 "The Tea Party Government"
  KFC_tea_party_government_modify_tt: "Modify §Y$KFC_tea_party_government$§! by:"
  KFC_labor_government:0 "The Tea Party Government"
@@ -451,6 +483,7 @@
  KFC_gain_logistics_generals_cw_tt:0 "§YWhen the Revolt begins, our logistics managers will become generals§!"
  KFC_future_content_tt:0 "§RFuture Content!§!"
  KFC_core_appalachia_tt:0 "§CWe will core all Appalachian states!§!"
+ KFC_charleston_pact_flag:0 "Signed the §YCharleston Pact§!"
  
  
  

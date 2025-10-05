@@ -195,3 +195,104 @@ set_variable = {
 	var = KFC.var_resistance_growth_on_our_occupied_states
 	value = 0
 }
+
+
+#Nazbol stuff
+
+set_variable = {
+	var = global.nazbol_var_stability_factor
+	value = 0.0
+}
+set_variable = {
+	var = global.nazbol_var_pp_factor
+	value = 0.0
+}
+set_variable = {
+	var = global.nazbol_var_resistance_growth
+	value = 0.0
+}
+set_variable = {
+	var = global.nazbol_var_war_support_factor
+	value = 0.0
+}
+set_variable = {
+	var = global.nazbol_var_conscription
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_operative_slot
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_compliance_growth
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_pp_gain
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_cg_factor
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_org_army
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_morale_army
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_breakthrough_army
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_attack_army
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_defence_army
+	value = 0
+}
+
+set_variable = {
+	var = global.nazbol_var_ideology_drift
+	value = 0.05
+}
+set_variable = {
+	var = global.nazbol_var_research_speed_factor
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_production_speed_buildings_factor
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_industrial_capacity_factory
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_production_factory_max_efficiency_factor
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_production_factory_efficiency_gain_factor
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_max_fuel_factor
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_production_speed_nuclear_reactor_factor
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_nuclear_production_factor
+	value = 0
+}
+set_variable = {
+	var = global.nazbol_var_resistance_growth_on_our_occupied_states
+	value = 0
+}
