@@ -4311,20 +4311,25 @@ focus_tree = {
 		x = 53
 		y = 14
 
-		cost = 10
+		cost = 9
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			controls_state = 302
+			has_war = no
 		}
 		
 		bypass = {
 		}
 		cancel_if_invalid = no
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_war_support = 0.5
+			add_political_power = 200
+			swap_ruler_traits = { remove = KMT_great_cinematographer add = KMT_american_director }
 		}
 		prerequisite = {
 			focus = KMT_join_fra
@@ -4338,7 +4343,7 @@ focus_tree = {
 		x = 55
 		y = 14
 
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -4351,7 +4356,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_ideas = KMT_affsp
 		}
 		prerequisite = {
 			focus = KMT_join_fra

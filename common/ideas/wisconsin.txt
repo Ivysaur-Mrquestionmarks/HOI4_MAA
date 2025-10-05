@@ -1210,6 +1210,17 @@ ideas = {
 			}
 		}
 
+		KMT_affsp = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes
+			modifier = {
+				stability_weekly = 0.001
+				monthly_population = 0.1
+				political_power_cost = 0.1
+			}
+		}
+
+
 	}
 
 
