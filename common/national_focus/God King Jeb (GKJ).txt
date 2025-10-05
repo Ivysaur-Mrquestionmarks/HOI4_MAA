@@ -1017,8 +1017,14 @@ focus_tree = {
 		completion_reward = {
 			every_state = {
 				limit = {
-					is_core_of = CSA
-					is_owned_by = CSA
+					OR = {
+						is_core_of = CSA
+						is_core_of = AFR
+						is_core_of = LGB
+						is_core_of = KKK
+						is_core_of = ZIO
+						is_core_of = APA
+					}
 				}
 				add_core_of = GKJ
 			}
