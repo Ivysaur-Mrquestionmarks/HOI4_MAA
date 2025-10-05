@@ -35,6 +35,7 @@ focus_tree = {
 		allow_branch = {			
 			NOT = { has_completed_focus = KFC_state_beneath_his_feet }
 			NOT = { has_country_flag = KFC_nazbol_coup_flag }
+			always = no
 		}
 		completion_reward = {
 			activate_mission = KFC_uprising_mission2
@@ -1360,7 +1361,12 @@ focus_tree = {
 		relative_position_id = KFC_hegemony
 		x = 1
 		y = 1
+		will_lead_to_war_with = AFS
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = AFS
+			}
 		}
 	}
 	
@@ -1377,7 +1383,41 @@ focus_tree = {
 		relative_position_id = KFC_hegemony
 		x = -3
 		y = 1
+		will_lead_to_war_with = VIR
+		will_lead_to_war_with = OBX
+		will_lead_to_war_with = RVR
 		completion_reward = {
+			if = {
+				limit = { country_exists = VIR }
+				create_wargoal = {
+					type = annex_everything
+					target = VIR
+				}
+			}
+			if = {
+				limit = { country_exists = RVR }
+				create_wargoal = {
+					type = annex_everything
+					target = RVR
+				}
+			}
+			if = {
+				limit = { country_exists = OBX }
+				create_wargoal = {
+					type = annex_everything
+					target = OBX
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = VIR
+						is_owned_by = RVR
+						is_owned_by = OBX
+					}
+				}
+				add_claim_by = KFC
+			}
 		}
 	}
 	focus = {
@@ -1393,7 +1433,20 @@ focus_tree = {
 		relative_position_id = KFC_hegemony
 		x = -1
 		y = 1
+		available = {
+			VIR = {
+				has_government = authoritarian_left
+			}
+			always = no
+		}
 		completion_reward = {
+			VIR = {
+				country_event = {
+					id = kentucky.15
+					days = 1
+				}
+			}
+			custom_effect_tooltip = KFC_future_content_tt
 		}
 	}
 	focus = {
@@ -1407,9 +1460,31 @@ focus_tree = {
 			focus = KFC_nazbol_confederacy
 		}
 		relative_position_id = KFC_we_are_appalachia
+		available = {
+			has_global_flag = Dixie_Collapse_Global
+		}
 		x = -1
 		y = 1
+		will_lead_to_war_with = ZIO
+		will_lead_to_war_with = APA
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ZIO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = APA
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = ZIO
+						is_owned_by = APA
+					}
+				}
+				add_claim_by = KFC
+			}
 		}
 	}
 	focus = {
@@ -1429,29 +1504,67 @@ focus_tree = {
 		relative_position_id = KFC_another_ally
 		x = -1
 		y = 1
+		available = {
+			OR = {
+				is_in_faction_with = VIR
+				NOT = {
+					country_exists = VIR
+				}
+			}
+			OR = {
+				is_in_faction_with = NRA
+				NOT = {
+					country_exists = NRA
+				}
+			}
+			NOT = {
+				country_exists = AFS
+				country_exists = RVR
+				country_exists = ZIO
+				country_exists = APA
+			}
+		}
 		completion_reward = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_claimed_by = KFC
+					}
+					add_core_of = KFC
+				}
+			}
+			custom_effect_tooltip = KFC_core_appalachia_tt
 		}
 	}
 	
 	focus = {
 		id = KFC_on_the_road_to_reunification
 		icon = GFX_goal_NRA_Liberate_America
-		cost = 2.00
+		cost = 3.00
 		prerequisite = {
 			focus = KFC_hegemony
 			focus = KFC_nazbol_confederacy
 		}
 		relative_position_id = KFC_nazbol_confederacy
+		available = {
+			OR = {
+				is_in_faction_with = NRA
+				NOT = {
+					country_exists = NRA
+				}
+			}
+		}
 		x = 1
 		y = 1
 		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 	
 	focus = {
 		id = KFC_utilize_new_resources
 		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
-		cost = 2.00
+		cost = 6.00
 		prerequisite = {
 			focus = KFC_on_the_road_to_reunification
 		}
@@ -1462,6 +1575,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	
@@ -1475,7 +1589,35 @@ focus_tree = {
 		relative_position_id = KFC_utilize_new_resources
 		x = 1
 		y = 2
+		bypass = {
+			NOT = {
+				country_exists = FRA
+				country_exists = WBK
+				country_exists = NEW
+				country_exists = NAB
+			}
+		}
+		will_lead_to_war_with = FRA
+		will_lead_to_war_with = NEW
+		will_lead_to_war_with = NAB
+		will_lead_to_war_with = WBK
 		completion_reward = {
+			create_wargoal = {
+				target = FRA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NEW
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NAB
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = WBK
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -1491,7 +1633,41 @@ focus_tree = {
 		relative_position_id = KFC_turn_our_attention_northeast
 		x = -1
 		y = 2
+		will_lead_to_war_with = GLA
+		will_lead_to_war_with = KMT
+		will_lead_to_war_with = MIL
+		will_lead_to_war_with = MNS
+		will_lead_to_war_with = MIN
+		will_lead_to_war_with = DET
 		completion_reward = {
+			create_wargoal = {
+				target = GLA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KMT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MIL
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MNS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MIN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ISA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = DET
+				type = annex_everything
+			}
 		}
 	}
 	
@@ -1505,7 +1681,17 @@ focus_tree = {
 		relative_position_id = KFC_utilize_new_resources
 		x = -5
 		y = 1
+		will_lead_to_war_with = NPA
+		will_lead_to_war_with = USA
 		completion_reward = {
+			create_wargoal = {
+				target = USA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NPA
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -1518,7 +1704,36 @@ focus_tree = {
 		relative_position_id = KFC_the_true_maga_movement
 		x = 0
 		y = 1
+		will_lead_to_war_with = IDA
+		will_lead_to_war_with = MON
 		completion_reward = {
+			create_wargoal = {
+				target = IDA
+				type = annex_everything
+			}
+			IF = {
+				limit = { 
+					MON = {
+						has_completed_focus = MON_Northwest_Front_Initiative
+						NOT = {
+							is_in_faction_with = KFC
+						}
+					}
+				}
+				create_wargoal = {
+					target = MON
+					type = annex_everything
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					MON = { NOT = { has_completed_focus = MON_Northwest_Front_Initiative } }
+				}
+				create_wargoal = {
+					target = MON
+					type = annex_everything
+				}
+			}
 		}
 	}
 	focus = {
@@ -1530,13 +1745,18 @@ focus_tree = {
 			focus = KFC_save_the_border_texas
 		}
 		available = {
-			has_completed_focus = KFC_reign_in_north_rockies
 			country_exists = HOP
 		}
 		relative_position_id = KFC_reign_in_north_rockies
 		x = 1
 		y = 1
 		completion_reward = {
+			HOP = {
+				country_event = {
+					id = kentucky.15
+					days = 1
+				}
+			}
 		}
 	}
 	focus = {
@@ -1547,9 +1767,19 @@ focus_tree = {
 			focus = KFC_the_true_maga_movement
 		}
 		relative_position_id = KFC_the_true_maga_movement
+		available = {
+			MON = { has_completed_focus = MON_Northwest_Front_Initiative }
+			country_exists = MON
+		}
 		x = -2
 		y = 1
 		completion_reward = {
+			MON = {
+				country_event = {
+					id = kentucky.15
+					days = 1
+				}
+			}
 		}
 	}
 	focus = {
@@ -1562,14 +1792,62 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				has_completed_focus = KFC_support_the_northwest_front_initiative
+				has_completed_focus = KFC_ally_awd
 				NOT = { country_exists = HOP }
 			}
 		}
 		relative_position_id = KFC_support_the_northwest_front_initiative
 		x = 1
 		y = 1
+		will_lead_to_war_with = MOL
+		will_lead_to_war_with = AFO
+		will_lead_to_war_with = NAV
+		will_lead_to_war_with = SIN
+		will_lead_to_war_with = UTA
+		will_lead_to_war_with = HAM
+		will_lead_to_war_with = LAS
 		completion_reward = {
+			create_wargoal = {
+				target = MOL
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = AFO
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NAV
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = UTA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SIN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = HAM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LAS
+				type = annex_everything
+			}
+			IF = {
+				limit = { 
+					HOP = {
+						NOT = {
+							is_in_faction_with = KFC
+						}
+					}
+				}
+				create_wargoal = {
+					target = HOP
+					type = annex_everything
+				}
+			}
 		}
 	}
 	focus = {
@@ -1583,7 +1861,32 @@ focus_tree = {
 		relative_position_id = KFC_crush_suth_rocky_degenerates
 		x = 1
 		y = 1
+		will_lead_to_war_with = PRA
+		will_lead_to_war_with = JFR
+		will_lead_to_war_with = CAS
+		will_lead_to_war_with = LIB
+		will_lead_to_war_with = PAC
+		will_lead_to_war_with = ALA
+		will_lead_to_war_with = PRC
+		will_lead_to_war_with = HOL
 		completion_reward = {
+			effect_kill_the_PRA = yes
+			create_wargoal = {
+				target = CAS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PAC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LIB
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ALA	
+				type = annex_everything
+			}
 		}
 	}
 	
@@ -1598,6 +1901,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
+			RVR_kill_the_CSA = yes
 		}
 	}
 	focus = {
@@ -1612,6 +1916,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			War_on_texas_collapse_tags = yes
 		}
 	}
 	focus = {
@@ -1624,7 +1929,48 @@ focus_tree = {
 		relative_position_id = KFC_finish_the_confederacy
 		x = 0
 		y = 2
+		will_lead_to_war_with = FLO
+		will_lead_to_war_with = GKJ
 		completion_reward = {
+			create_wargoal = {
+				target = FLO
+				type = annex_everything
+			}
+			if = { 
+				limit = { country_exists = NSA }
+				create_wargoal = {
+					target = NSA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = GKJ }
+				create_wargoal = {
+					target = GKJ
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FLD }
+				create_wargoal = {
+					target = FLD
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FLA }
+				create_wargoal = {
+					target = FLA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = SEM }
+				create_wargoal = {
+					target = SEM
+					type = annex_everything
+				}
+			}
 		}
 	}
 	
@@ -1641,7 +1987,49 @@ focus_tree = {
 		relative_position_id = KFC_end_the_great_replacement
 		x = -2
 		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = generic_we_control_all_american_states_tt
+				all_of_scopes = {
+    					array = global.part_of_USA
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_ally_with = ROOT }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction = yes
+				}
+				is_faction_leader = yes
+			}
+			is_subject = no
+			has_completed_focus = KFC_NRA_VIR_reunification
+		}
 		completion_reward = {
+			set_cosmetic_tag = NRA_Nazbol_America
+			for_each_scope_loop = {
+    				array = global.part_of_USA
+    				add_core_of = ROOT
+    		}
+			custom_effect_tooltip = generic_unification_tt
+
+			add_stability = 0.10
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_country_flag = winner_of_the_2ACW } }
+					set_country_flag = winner_of_the_2ACW
+				}
+				if = {
+					limit = { NOT = { has_country_flag = generic_american_unifier } }
+					set_country_flag = generic_american_unifier
+				}
+			}
+			news_event = {
+    			id = News_events.92
+			}
+
 		}
 	}
 	

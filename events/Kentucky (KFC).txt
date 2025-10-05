@@ -610,9 +610,13 @@ country_event = {
 		add_war_support = 0.15
 		every_state = {
 			limit = {
-				is_core_of = NRA
+				is_core_of = FROM
 			}
 			add_claim_by = KFC
+		}
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
 		}
 	}
 }
