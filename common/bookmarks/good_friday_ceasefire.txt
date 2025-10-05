@@ -110,21 +110,18 @@ bookmarks = {
 			history = "OTHER_GOOD_FRIDAY_DESC"
 		}
 		#MINORS	
-		"VIR"={
-			history = "VIR_GOOD_FRIDAY_DESC"
-			ideology = democrat
+		"AFS"={
+			history = "AFS_GOOD_FRIDAY_DESC"
+			ideology = libertarian_left
 			minor = yes
 			ideas = {
-				VIR_Virginias_Bloody_Soil
-				VIR_Crossroad_of_America
+				triumvirate_idea
+				Ruins_of_the_Rust_Belt
 			}
 			focuses = {
-				#VIR_Replace_Northam
-				#RVR_Sic_Semper_Tyrannis
-				#VIR_The_Donkey_Holds_Firm
-				FRA_VIR_connect_capitals
-				FRA_VIR_expand_operations_into_west_va
-				FRA_VIR_unify_covert_ops
+				AFS_vermins_anarchist_dreams
+			    AFS_hawkins_victory
+				AFS_mattiss_victory
 			}
 		}	
 		"FLO"={
@@ -140,6 +137,23 @@ bookmarks = {
 				FLO_funeral_for_eric
 				FLO_Strike_At_Jeb
 				FLO_two_trumps
+			}
+		}
+		"VIR"={
+			history = "VIR_GOOD_FRIDAY_DESC"
+			ideology = democrat
+			minor = yes
+			ideas = {
+				VIR_Virginias_Bloody_Soil
+				VIR_Crossroad_of_America
+			}
+			focuses = {
+				#VIR_Replace_Northam
+				#RVR_Sic_Semper_Tyrannis
+				#VIR_The_Donkey_Holds_Firm
+				FRA_VIR_connect_capitals
+				FRA_VIR_expand_operations_into_west_va
+				FRA_VIR_unify_covert_ops
 			}
 		}
 		"PAC"={
@@ -167,20 +181,6 @@ bookmarks = {
 				CAS_surviving_a_coup
 				CAS_american_cromwell
 				CAS_new_order
-			}
-		}
-		"AFS"={
-			history = "AFS_GOOD_FRIDAY_DESC"
-			ideology = libertarian_left
-			minor = yes
-			ideas = {
-				triumvirate_idea
-				Ruins_of_the_Rust_Belt
-			}
-			focuses = {
-				AFS_vermins_anarchist_dreams
-			    AFS_hawkins_victory
-				AFS_mattiss_victory
 			}
 		}
 		"NRA"={
