@@ -54,7 +54,7 @@ AFS_vermin_balance_of_power_category = {
 				    days = 0
 			    }
 			}
-			remove_country_flag = AFS_civil_war_flag
+			clr_country_flag = AFS_civil_war_flag
 		}
 	}
 
@@ -342,7 +342,7 @@ AFS_hawkins_balance_of_power_category = {
 				    days = 0
 			    }
 			}
-			remove_country_flag = AFS_civil_war_flag_hawkins
+			clr_country_flag = AFS_civil_war_flag_hawkins
 		}
 	}
 
@@ -625,7 +625,7 @@ AFS_mattis_balance_of_power_category = {
 				    days = 0
 			    }
 			}
-			remove_country_flag = AFS_civil_war_flag_mattis
+			clr_country_flag = AFS_civil_war_flag_mattis
 		}
 	}
 
