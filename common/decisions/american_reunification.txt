@@ -172,16 +172,21 @@ American_reunification = {
 				OR = {
 					original_tag = DOM
 					original_tag = HAI
+					original_tag = KFC
 				}
 			}
 		}
 		
 		available = {
-			all_of_scopes = {
-    				array = global.part_of_USA
-				OR = {
-					is_owned_by = ROOT
-					owner = { is_ally_with = ROOT }
+
+			custom_trigger_tooltip = {
+				tooltip = generic_we_control_all_american_states_tt
+				all_of_scopes = {
+    					array = global.part_of_USA
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_ally_with = ROOT }
+					}
 				}
 			}
 
@@ -225,7 +230,7 @@ American_reunification = {
 						days = 3
 					}
 				}
-				country_event = {
+				news_event = {
     					id = News_events.92
 				}
 			}
