@@ -644,7 +644,7 @@ joint_focus = {
 	}
 	completion_reward_joint_originator = {
 		VIR = { transfer_state = 375 }
-		KFC = { remove_core = 375 }
+		KFC = { remove_state_core = 375 }
 		add_offsite_building = { type = industrial_complex level = 4 }
 	}
 
