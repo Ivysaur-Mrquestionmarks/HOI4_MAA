@@ -46,7 +46,7 @@ focus_tree = {
 		id = AFS_againist_tyranny
 		icon = GFX_goal_AFS_againist_tyranny
 		cost = 0
-		x = -27
+		x = -3
 		y = 1
 		relative_position_id = AFS_triumvirate_rule
 		mutually_exclusive = { 
@@ -66,7 +66,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = 27
+			x = 3
 			y = 0
 			trigger = {
 				has_completed_focus = AFS_againist_tyranny
@@ -84,7 +84,7 @@ focus_tree = {
 		id = AFS_againist_lawlessness
 		icon = GFX_goal_AFS_againist_lawlessness
 		cost = 0
-		x = 27
+		x = 3
 		y = 1
 		relative_position_id = AFS_triumvirate_rule
 		mutually_exclusive = { 
@@ -104,7 +104,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = -27
+			x = -3
 			y = 0
 			trigger = {
 				has_completed_focus = AFS_againist_lawlessness
@@ -337,7 +337,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		    custom_effect_tooltip = AFS_this_will_weaken_mattis_and_hawkins
-
 			custom_effect_tooltip = AFS_civil_war_begins_tooltip
 			hidden_effect = {
 			    add_days_mission_timeout = {
@@ -360,6 +359,7 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_country_flag = AFS_civil_war_over
 		}
 		available = {
 			has_country_flag = {
@@ -666,7 +666,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_libertarian_left_level
 				value = 0.02
-				tooltip = libertarian_left_drift_tt
+				tooltip = libertarian_left_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_stability_level
@@ -724,7 +724,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_libertarian_left_level
 				value = 0.02
-				tooltip = libertarian_left_drift_tt
+				tooltip = libertarian_left_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_stability_level
@@ -1432,6 +1432,7 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_country_flag = AFS_civil_war_over
 		}
 		available = {
             has_completed_focus = AFS_vermins_anarchist_dreams
@@ -2284,7 +2285,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		    custom_effect_tooltip = AFS_this_will_weaken_vermin
-
 			custom_effect_tooltip = AFS_civil_war_begins_tooltip
 			hidden_effect = {
 			    if = {
@@ -2320,6 +2320,9 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_country_flag = {
+                flag = AFS_civil_war_over
+            }
 			NOT = {
 			    OR = {
 					has_country_flag = AFS_hawkins_side
@@ -2387,6 +2390,9 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_country_flag = {
+                flag = AFS_civil_war_over
+            }
 			NOT = {
 				OR = {
 					has_country_flag = AFS_mattis_side
@@ -2519,7 +2525,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_authoritarian_left_level
 				value = 0.02
-				tooltip = authoritarian_left_drift_tt
+				tooltip = authoritarian_left_drift_factor_tt
 			}
 		}
 	}
@@ -2563,7 +2569,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_authoritarian_left_level
 				value = 0.01
-				tooltip = authoritarian_left_drift_tt
+				tooltip = authoritarian_left_drift_factor_tt
 			}
 			country_event = {
 				id = hawkins.9
@@ -2615,7 +2621,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_authoritarian_left_level
 				value = 0.02
-				tooltip = authoritarian_left_drift_tt
+				tooltip = authoritarian_left_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_conscription_level
@@ -2697,7 +2703,7 @@ focus_tree = {
 		    add_to_variable = {
 				var = AFS.var_authoritarian_left_level
 				value = 0.03
-				tooltip = authoritarian_left_drift_tt
+				tooltip = authoritarian_left_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_conscription_level
@@ -2881,7 +2887,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_authoritarian_left_level
 				value = 0.01
-				tooltip = authoritarian_left_drift_tt
+				tooltip = authoritarian_left_drift_factor_tt
 			}
 		}
 	}
@@ -2920,7 +2926,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_authoritarian_left_level
 				value = 0.02
-				tooltip = authoritarian_left_drift_tt
+				tooltip = authoritarian_left_drift_factor_tt
 			}
 		}
 	}
@@ -2995,7 +3001,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_authoritarian_left_level
 				value = 0.01
-				tooltip = authoritarian_left_drift_tt
+				tooltip = authoritarian_left_drift_factor_tt
 			}
 		}
 	}
@@ -3593,7 +3599,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_authoritarian_left_level
 				value = 0.02
-				tooltip = authoritarian_left_drift_tt
+				tooltip = authoritarian_left_drift_factor_tt
 			}
 		}
 	}
@@ -5358,7 +5364,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			unlock_decision_tooltip = AFS_watch_their_every_move
 			unlock_decision_tooltip = AFS_american_media_only
@@ -5414,7 +5420,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 		}
 	}
@@ -5449,7 +5455,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 		}
 	}
@@ -5497,7 +5503,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.03
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			country_event = {
 				id = mattis.8
@@ -5545,7 +5551,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 		}
 	}
@@ -5654,7 +5660,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			country_event = {
 				id = mattis.9
@@ -6246,6 +6252,7 @@ focus_tree = {
 		y = 0
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_againist_the_triumvirate
 		}
 		offset = {
 			x = -80
@@ -6336,6 +6343,10 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_country_leader = {
+				name = "J.D Vance"
+                ruling_only = yes
+			}
 		}
 		available = {
 		}
@@ -6374,6 +6385,14 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_enlightenment
+		}
+		offset = {
+			x = -7
+			y = 0
+			trigger = {
+				has_completed_focus = AFS_enlightenment
+			}
 		}
 		available = {
 			always = no
@@ -6403,6 +6422,7 @@ focus_tree = {
 	            portrait = "GFX_portrait_AFS_evil_jd_vance"
             }
 			set_cosmetic_tag = AFS_enlightenment_vance_cosmetic
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -6542,7 +6562,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			country_event = {
 				id = vance.24
@@ -6606,7 +6626,7 @@ focus_tree = {
 		    add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			unlock_decision_tooltip = AFS_show_them_truth
 			unlock_decision_tooltip = AFS_who_we_oppose_is_your_enemy
@@ -6680,7 +6700,7 @@ focus_tree = {
 		    add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
@@ -6719,7 +6739,7 @@ focus_tree = {
 		    add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_stability_level
@@ -6757,7 +6777,7 @@ focus_tree = {
 		    add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_resistance_growth_level
@@ -6861,7 +6881,7 @@ focus_tree = {
 		    add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			unlock_decision_tooltip = AFS_power_to_the_wealthy
 			unlock_decision_tooltip = AFS_normalize_aristocratic_rule
@@ -6954,7 +6974,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 		}
 	}
@@ -7018,7 +7038,7 @@ focus_tree = {
 		    add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 		}
 	}
@@ -7296,6 +7316,14 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_follow_mike_dewines_path
+		}
+		offset = {
+			x = 7
+			y = 0
+			trigger = {
+				has_completed_focus = AFS_follow_mike_dewines_path
+			}
 		}
 		available = {
 			always = no
@@ -7314,6 +7342,7 @@ focus_tree = {
 			        id = vance.17
 		            days = 25
 		        }
+				mark_focus_tree_layout_dirty = yes
 			}
 		}
 	}
@@ -7900,6 +7929,13 @@ focus_tree = {
 		select_effect = {  }
 		allow_branch = {
 		}
+		offset = {
+			x = 7
+			y = 0
+			trigger = {
+				has_completed_focus = AFS_follow_mike_dewines_path
+			}
+		}
 		available = {
 		}
 		completion_reward = {
@@ -7919,6 +7955,14 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_follow_mike_dewines_path
+		}
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_completed_focus = AFS_follow_mike_dewines_path
+			}
 		}
 		available = {
 			has_completed_focus = AFS_follow_mike_dewines_path
@@ -8066,6 +8110,14 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_enlightenment
+		}
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				has_completed_focus = AFS_enlightenment
+			}
 		}
 		available = {
 			has_completed_focus = AFS_enlightenment
@@ -8223,6 +8275,20 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+		}
+		offset = {
+			x = 2
+			y = -2
+			trigger = {
+				has_completed_focus = AFS_follow_mike_dewines_path
+			}
+		}
+		offset = {
+			x = -2
+			y = -2
+			trigger = {
+				has_completed_focus = AFS_enlightenment
+			}
 		}
 		available = {
 		}
@@ -8626,6 +8692,9 @@ focus_tree = {
 		relative_position_id = AFS_mattiss_victory
 		select_effect = {  }
 		allow_branch = {
+			has_country_flag = {
+                flag = AFS_civil_war_over
+            }
 			NOT = {
 			    OR = {
 					has_country_flag = AFS_hawkins_side
@@ -8645,6 +8714,10 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_war_support = 0.01
+			set_country_flag = {
+                flag = reunification_start
+                value = 2
+            }
 		}
 	}
 
@@ -8657,7 +8730,6 @@ focus_tree = {
 		relative_position_id = AFS_no_one_to_trust
 		prerequisite = {
 			focus = AFS_no_one_to_trust
-			focus = AFS_pence
 		}
 		select_effect = {  }
 		allow_branch = {
@@ -8688,7 +8760,6 @@ focus_tree = {
 		relative_position_id = AFS_no_one_to_trust
 		prerequisite = {
 			focus = AFS_no_one_to_trust
-			focus = AFS_pence
 		}
 		select_effect = {  }
 		allow_branch = {
@@ -8719,7 +8790,6 @@ focus_tree = {
 		relative_position_id = AFS_no_one_to_trust
 		prerequisite = {
 			focus = AFS_no_one_to_trust
-			focus = AFS_pence
 		}
 		select_effect = {  }
 		allow_branch = {
@@ -9722,7 +9792,7 @@ focus_tree = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.05
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 		}
 	}
@@ -9893,6 +9963,7 @@ focus_tree = {
 		relative_position_id = AFS_take_them_down
 		select_effect = {  }
 		allow_branch = {
+			has_country_flag = AFS_civil_war_over
 			NOT = {
 				OR = {
 					has_completed_focus = AFS_againist_lawlessness
@@ -9911,6 +9982,10 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_war_support = 0.01
+			set_country_flag = {
+                flag = reunification_start
+                value = 2
+            }
 		}
 	}
 
@@ -11064,6 +11139,9 @@ focus_tree = {
 		relative_position_id = AFS_hawkins_victory
 		select_effect = {  }
 		allow_branch = {
+			has_country_flag = {
+                flag = AFS_civil_war_over
+            }
 			NOT = {
 				OR = {
 					has_country_flag = AFS_mattis_side
@@ -11084,6 +11162,10 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_war_support = 0.01
+			set_country_flag = {
+                flag = reunification_start
+                value = 2
+            }
 		}
 	}
 
@@ -12398,6 +12480,7 @@ focus_tree = {
 		relative_position_id = AFS_enlightenment
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_enlightenment
 		}
 		available = {
 			has_completed_focus = AFS_enlightenment
@@ -12409,6 +12492,10 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_war_support = 0.01
+			set_country_flag = {
+                flag = reunification_start
+                value = 2
+            }
 		}
 	}
 
@@ -13564,6 +13651,7 @@ focus_tree = {
 		relative_position_id = AFS_follow_mike_dewines_path
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_follow_mike_dewines_path
 		}
 		available = {
 			has_completed_focus = AFS_follow_mike_dewines_path
@@ -13588,6 +13676,7 @@ focus_tree = {
 		relative_position_id = AFS_follow_mike_dewines_path
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_follow_mike_dewines_path
 		}
 		available = {
 			has_completed_focus = AFS_follow_mike_dewines_path
@@ -13870,6 +13959,7 @@ focus_tree = {
 		relative_position_id = AFS_follow_mike_dewines_path
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_follow_mike_dewines_path
 		}
 		available = {
 			has_completed_focus = AFS_follow_mike_dewines_path

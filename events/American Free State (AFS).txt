@@ -577,6 +577,7 @@ country_event = {
 			remove_mission = AFS_enemy_sabatoge_vermin
 		    remove_mission = AFS_enemy_sabatoge_hawkins
 		    remove_mission = AFS_enemy_sabatoge_mattis
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }
@@ -2872,6 +2873,11 @@ country_event = {
 				id = vance.4
 				days = 1
 			}
+			country_event = {
+			    id = vance.6
+			    days = 10
+		    }
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }
@@ -3055,6 +3061,7 @@ country_event = {
 				id = vance.32
 				days = 1460
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }
@@ -3081,6 +3088,7 @@ country_event = {
 			add_idea = AFS_choas_and_disorder_3
 		}
 		complete_national_focus = AFS_enlightenment
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 
@@ -3706,7 +3714,12 @@ country_event = {
 	option = {
 		name = vance.32.b
 		ai_chance = {
-			factor = 100
+			factor = 0
+		}
+		trigger = {
+			NOT = {
+                is_ally_with = USA
+			}
 		}
 		add_popularity = {
             ideology = democrat
@@ -3726,7 +3739,15 @@ country_event = {
 	option = {
 		name = vance.32.c
 		ai_chance = {
-			factor = 100
+			factor = 0
+		}
+		trigger = {
+			NOT = {
+				OR = {
+                    is_ally_with = FRA
+					is_ally_with = USA
+				}
+			}
 		}
 		add_popularity = {
             ideology = libertarian_right
@@ -3760,7 +3781,7 @@ country_event = {
 	option = {
 		name = vance.33.a
 		ai_chance = {
-			factor = 100
+			factor = 75
 		}
 		set_country_flag = AFS_picked_tressel
 		hidden_effect = {
@@ -3773,7 +3794,7 @@ country_event = {
 	option = {
 		name = vance.33.b
 		ai_chance = {
-			factor = 100
+			factor = 25
 		}
 		set_country_flag = AFS_picked_triantafilou
 		hidden_effect = {
@@ -3830,7 +3851,12 @@ country_event = {
 	option = {
 		name = vance.34.b
 		ai_chance = {
-			factor = 100
+			factor = 0
+		}
+		trigger = {
+			NOT = {
+                is_ally_with = USA
+			}
 		}
 		if = {
 			limit = { NOT = { has_government = democrat } }
@@ -3854,7 +3880,15 @@ country_event = {
 	option = {
 		name = vance.34.c
 		ai_chance = {
-			factor = 100
+			factor = 0
+		}
+		trigger = {
+			NOT = {
+				OR = {
+                    is_ally_with = FRA
+					is_ally_with = USA
+				}
+			}
 		}
 		if = {
 			limit = { NOT = { has_government = libertarian_right } }

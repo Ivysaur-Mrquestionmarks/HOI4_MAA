@@ -1530,11 +1530,7 @@ AFS_mike_dewine_coup_script_effect = {
 		deactivate_advisor = AFS_laura_jane_grace
 		country_event = {
 			id = vance.3
-			days = 18
-		}
-		country_event = {
-			id = vance.6
-			days = 6
+			days = 35
 		}
 	}
 }
