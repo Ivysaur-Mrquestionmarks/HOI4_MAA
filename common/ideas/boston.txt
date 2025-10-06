@@ -127,6 +127,14 @@ ideas = {
 			}
 		}
 
+		BRA_federalist_exile_army = {
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				conscription = 0.02
+				production_speed_arms_factory_factor = 0.07
+			}
+		}
+
 
 
 	}

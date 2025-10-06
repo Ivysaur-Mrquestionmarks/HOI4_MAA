@@ -984,6 +984,9 @@ focus_tree = {
 		}
 		x = 29
 		y = 4
+		completion_reward = {
+			add_ideas = BRA_federalist_exile_army
+		}
 
 	}
 	focus = {
@@ -999,6 +1002,7 @@ focus_tree = {
 		}
 		x = 26
 		y = 5
+		#TODO WAR GOALS CLAIMS CORES
 
 	}
 	focus = {
@@ -1013,6 +1017,8 @@ focus_tree = {
 		}
 		x = 20
 		y = 6
+		#TODO CLAIMS AND WARGOALS ON CANADA
+		#COSMETIC TAG RENAME TO THE SECOND FENIAN BROTHERHOOD
 
 	}
 	focus = {
@@ -1024,6 +1030,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 7
+		#TODO - RELEASE QUEBEC AS PUPPET. QUEBEC CAN'T BE EXISTING TAG. BYPASS IF QUEBEC IS ALREADY SUBJECT
+		#LOAD A POWERFUL OOB.
+		#BYPASS EFFECT SPAWNS THE OOB ANYWAY
 
 	}
 	focus = {
@@ -1038,6 +1047,26 @@ focus_tree = {
 		}
 		x = 22
 		y = 6
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+			add_popularity = {
+				ideology = republican
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = libertarian_left
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = libertarian_right
+				popularity = 0.05
+			}
+		}
 
 	}
 	focus = {
@@ -1052,6 +1081,20 @@ focus_tree = {
 		}
 		x = 21
 		y = 7
+		completion_reward = {
+			add_popularity = {
+				ideology = republican
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = libertarian_right
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = autocratic
+				popularity = -0.10
+			}
+		}
 
 	}
 	focus = {
