@@ -359,6 +359,7 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_againist_tyranny
 			has_country_flag = AFS_civil_war_over
 		}
 		available = {
@@ -1432,6 +1433,7 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_againist_tyranny
 			has_country_flag = AFS_civil_war_over
 		}
 		available = {

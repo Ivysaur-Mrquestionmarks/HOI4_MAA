@@ -721,6 +721,11 @@ country_event = {
 	desc = vermin.1.d
 	picture = event_AFS_vermin_1
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -747,6 +752,11 @@ country_event = {
 	desc = vermin.2.d
     picture = event_AFS_vermin_2
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -773,6 +783,11 @@ country_event = {
 	desc = vermin.3.d
 	picture = event_AFS_vermin_2
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -811,6 +826,11 @@ country_event = {
 	desc = vermin.4.d
 	picture = event_AFS_vermin_2
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -837,6 +857,11 @@ country_event = {
 	desc = vermin.5.d
 	picture = event_AFS_vermin_2
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -863,6 +888,11 @@ country_event = {
 	desc = vermin.6.d
 	picture = event_AFS_anarchist_militia
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -1237,6 +1267,11 @@ country_event = {
 	desc = hawkins.1.d
 	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -1282,6 +1317,11 @@ country_event = {
 	desc = hawkins.2.d
 	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -1327,6 +1367,11 @@ country_event = {
 	desc = hawkins.3.d
 	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -1353,6 +1398,11 @@ country_event = {
 	desc = hawkins.4.d
 	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -1396,6 +1446,11 @@ country_event = {
 	desc = hawkins.5.d
 	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -1423,6 +1478,11 @@ country_event = {
 	desc = hawkins.6.d
 	picture = event_AFS_annihilationist_1
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -2195,6 +2255,11 @@ country_event = {
 	desc = mattis.1.d
 	picture = event_AFS_mattis_1
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -2221,6 +2286,11 @@ country_event = {
 	desc = mattis.2.d
 	picture = event_AFS_mattis_speech
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -2248,6 +2318,11 @@ country_event = {
 	desc = mattis.3.d
 	picture = event_AFS_mattis_trump
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -2274,6 +2349,11 @@ country_event = {
 	desc = mattis.4.d
 	picture = event_AFS_mattis_biden
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -2300,6 +2380,11 @@ country_event = {
 	desc = mattis.5.d
 	picture = event_AFS_mattis_washington
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
@@ -2648,6 +2733,11 @@ country_event = {
 	desc = mattis.19.d
 	picture = event_AFS_mattis_washington_3
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+		    has_completed_focus = AFS_againist_the_triumvirate
+		}
+	}
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
