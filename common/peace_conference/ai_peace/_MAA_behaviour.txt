@@ -22,6 +22,18 @@ peace_ai_desires = {
 	}
 }
 
+peace_ai_desires = {
+	PRA_annex_SIL  = {
+        	peace_action_type = { liberate force_government puppet }
+        	enable = {
+       	    	 	ROOT = { tag = PRA}
+       	    	 	FROM = {tag = SIL}           		
+                }
+
+        	ai_desire = -2000
+	}
+}
+
 peace_ai_desires = {  # some vanilla ones
     doesnt_control_no_claim = {
         peace_action_type = { take_states }
