@@ -1753,6 +1753,10 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		246 = {
+			transfer_state_to = KFC
+			remove_core_of = ROOT
+		}
 	}
 	option = {
 		name = fried_chicken.8.b #no
