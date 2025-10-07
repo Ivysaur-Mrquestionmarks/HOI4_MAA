@@ -5236,6 +5236,20 @@ leader_traits = {
 		political_power_factor = 0.15
 		weekly_manpower = 300
 	}
+	KMT_wiccan_elder_1 = {
+		random = no
+		stability_factor = 0.05
+		conscription = 0.01
+		libertarian_left_drift = 0.05
+		intel_network_gain_factor = 0.25
+	}
+	KMT_religious_figure_for_atheist_state = {
+		random = no
+		stability_factor = 0.15
+		war_support_factor = 0.1
+		libertarian_left_drift = 0.1
+		political_power_factor = -0.05
+	}
 
 	#advisors
 	KMT_advisor_shrewd_politician = {
