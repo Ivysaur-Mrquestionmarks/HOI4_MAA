@@ -27,7 +27,7 @@ peace_ai_desires = {
         	peace_action_type = { liberate force_government puppet }
         	enable = {
        	    	 	ROOT = { tag = PRA}
-       	    	 	FROM = {tag = BJC}           		
+       	    	 	FROM.FROM = {tag = BJC}           		
                 }
 
         	ai_desire = -2000
