@@ -8,7 +8,7 @@ buildings = {
 		}
 		#spawn_point = nuclear_reactor_spawn 
 		show_on_map = 1
-		base_cost = 35000
+		base_cost = 6000
 		icon_frame = 2 #will be change later ofc.
 		value = 10
 		infrastructure_construction_effect = yes
@@ -28,7 +28,6 @@ buildings = {
 		level_cap = {
 			state_max = 10
 			shares_slots = yes
-			#group_by = reactors
 		}
 	}
 }
