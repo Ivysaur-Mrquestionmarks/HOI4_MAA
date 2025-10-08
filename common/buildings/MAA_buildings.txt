@@ -20,6 +20,7 @@ buildings = {
 				monthly_population = 0.01
 				fuel_gain_from_states = -1.0 #per hour
     #The actual buff/mechanic it plays with will be a variable in desicions.
+				custom_modifier_tooltip = water_desalination_gain_1
 			}
 		}
 
