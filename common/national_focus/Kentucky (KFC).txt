@@ -867,12 +867,14 @@ focus_tree = {
 			add_dynamic_modifier = {
 				modifier = KFC_nazbol_government
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		completion_reward = {
 			set_country_flag = KFC_nazbol_coup_flag
 			add_dynamic_modifier = {
 				modifier = KFC_nazbol_government
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	
@@ -2777,6 +2779,16 @@ focus_tree = {
 		bypass = {
 			has_country_leader = { name = "Matt Bevin" ruling_only = yes }
 		}
+		bypass_effect = {
+			add_dynamic_modifier = {
+				modifier = KFC_tea_party_government
+			}
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = KFC_tea_party_government
+			}
+		}
 	}
 	focus = {
 		id = KFC_contact_trump
@@ -3864,6 +3876,16 @@ focus_tree = {
 				has_country_leader = { name = "Andy Beshear" ruling_only = yes }
 			}
 		}
+		bypass_effect = {
+			add_dynamic_modifier = {
+				modifier = KFC_labor_government_modifier
+			}
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = KFC_labor_government_modifier
+			}
+		}
 	}
 	focus = {
 		id = KFC_beshear_government
@@ -3888,7 +3910,7 @@ focus_tree = {
 	focus = {
 		id = KFC_legalize_recreational_cannabis
 		icon = GFX_goal_KFC_Legalize_Recreational_Cannabis
-		cost = 1.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_beshear_government
 		}
@@ -3899,12 +3921,18 @@ focus_tree = {
 			has_country_leader = { name = "Andy Beshear" ruling_only = yes }
 		}
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.15
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_healthcare_is_a_human_right
 		icon = GFX_goal_KFC_Healthcare_is_a_Right
-		cost = 1.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_legalize_recreational_cannabis
 		}
@@ -3915,12 +3943,33 @@ focus_tree = {
 			has_country_leader = { name = "Andy Beshear" ruling_only = yes }
 		}
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.2
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_monthly_population
+				value = 0.1
+				tooltip = monthly_population_tt
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_max_efficiency_factor
+				value = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_guarantee_state_pensions
 		icon = GFX_goal_KFC_Guarantee_State_Pensions
-		cost = 1.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_healthcare_is_a_human_right
 		}
@@ -3934,12 +3983,33 @@ focus_tree = {
 			has_country_leader = { name = "Andy Beshear" ruling_only = yes }
 		}
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.15
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.1
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_max_efficiency_factor
+				value = 0.1
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_speed_buildings_factor
+				value = 0.1
+				tooltip = production_speed_buildings_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_protect_lgbt_rights
 		icon = GFX_goal_KFC_Protect_Child_Predators
-		cost = 1.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_beshear_government
 		}
@@ -3950,12 +4020,23 @@ focus_tree = {
 			has_country_leader = { name = "Andy Beshear" ruling_only = yes }
 		}
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.05
+				tooltip = democrat_drift_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.08
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_replace_coal_with_clean_energy_jobs
 		icon = GFX_goal_KFC_Replace_Coal_with_Clean_Energy_Jobs
-		cost = 1.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_beshear_government
 		}
@@ -3966,12 +4047,23 @@ focus_tree = {
 			has_country_leader = { name = "Andy Beshear" ruling_only = yes }
 		}
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_max_fuel_factor
+				value = 0.15
+				tooltip = base_fuel_gain_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_gain
+				value = -0.05
+				tooltip = political_power_gain_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_increase_workers_rights
 		icon = GFX_goal_KFC_Safeguard_Workers_Rights
-		cost = 1.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_protect_lgbt_rights
 		}
@@ -3985,12 +4077,38 @@ focus_tree = {
 			has_country_leader = { name = "Andy Beshear" ruling_only = yes }
 		}
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_max_efficiency_factor
+				value = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_speed_buildings_factor
+				value = 0.05
+				tooltip = production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_efficiency_gain_factor
+				value = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				var = var_industrial_capacity_factory
+				value = 0.1
+				tooltip = industrial_capacity_factory_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_legalize_gambling
 		icon = GFX_goal_KFC_Legalize_Gambling
-		cost = 1.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_increase_workers_rights
 		}
@@ -4001,13 +4119,14 @@ focus_tree = {
 			has_country_leader = { name = "Andy Beshear" ruling_only = yes }
 		}
 		completion_reward = {
+			country_event = fried_chicken.10
 		}
 	}
 	
 	focus = {
 		id = KFC_take_in_fra_workers
 		icon = GFX_goal_KFC_Invite_Workers_to_the_FRA
-		cost = 1.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_increase_workers_rights
 		}
@@ -4021,6 +4140,38 @@ focus_tree = {
 			has_country_leader = { name = "Andy Beshear" ruling_only = yes }
 		}
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -4070,6 +4221,17 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.05
+				tooltip = democrat_drift_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.08
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -4118,6 +4280,22 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_max_efficiency_factor
+				value = 0.06
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_speed_buildings_factor
+				value = 0.06
+				tooltip = production_speed_buildings_factor_tt
+			}
 		}
 	}
 	focus = {

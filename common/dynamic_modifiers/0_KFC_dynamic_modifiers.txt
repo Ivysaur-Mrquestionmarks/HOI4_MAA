@@ -1,7 +1,7 @@
-KFC_labor_government = { #NATIONAL SPIRIT, balls.
+KFC_labor_government_modifier = { #NATIONAL SPIRIT, balls.
 	enable = { always = yes }
 
-	#icon = ast_volunteer_defence_corps
+	icon = ast_volunteer_defence_corps
 	
 	stability_factor = KFC.var_stability_factor
 	war_support_factor = KFC.var_war_support_factor
@@ -27,15 +27,17 @@ KFC_labor_government = { #NATIONAL SPIRIT, balls.
 	industrial_capacity_factory = KFC.var_industrial_capacity_factory
 	production_factory_max_efficiency_factor = KFC.var_production_factory_max_efficiency_factor
 	production_factory_efficiency_gain_factor = KFC.var_production_factory_efficiency_gain_factor
-	max_fuel_factor = KFC.var_max_fuel_factor
+	base_fuel_gain_factor = KFC.var_max_fuel_factor
 	production_speed_nuclear_reactor_factor = KFC.var_production_speed_nuclear_reactor_factor
 	nuclear_production_factor = KFC.var_nuclear_production_factor
+	
+	custom_modifier_tooltip = KFC_gambling_funds_modifier_tt
 
 }
 KFC_tea_party_government = { #NATIONAL SPIRIT, balls.
 	enable = { always = yes }
 
-	#icon = ast_volunteer_defence_corps
+	icon = ast_volunteer_defence_corps
 	
 	stability_factor = KFC.var_stability_factor
 	war_support_factor = KFC.var_war_support_factor
@@ -73,7 +75,7 @@ KFC_tea_party_government = { #NATIONAL SPIRIT, balls.
 KFC_nazbol_government = { #NATIONAL SPIRIT, balls.
 	enable = { always = yes }
 
-	#icon = ast_volunteer_defence_corps
+	icon = ast_volunteer_defence_corps
 	
 	stability_factor = KFC.var_stability_factor
 	war_support_factor = KFC.var_war_support_factor
@@ -107,7 +109,7 @@ KFC_nazbol_government = { #NATIONAL SPIRIT, balls.
 }
 KFC_joint_nazbol_union = { #NATIONAL SPIRIT, balls.
 	enable = { always = yes }
-	#icon = ast_volunteer_defence_corps
+	icon = ast_volunteer_defence_corps
 	
 	stability_factor = global.nazbol_var_stability_factor #
 	war_support_factor = global.nazbol_var_war_support_factor #

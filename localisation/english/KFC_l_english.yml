@@ -530,8 +530,14 @@
  KFC_joint_nazbol_union_modify_tt: "Modify §Y$KFC_joint_nazbol_union$§! by:"
  KFC_tea_party_government:0 "The Tea Party Government"
  KFC_tea_party_government_modify_tt: "Modify §Y$KFC_tea_party_government$§! by:"
- KFC_labor_government:0 "The Tea Party Government"
- KFC_labor_government_modify_tt: "Modify §Y$KFC_labor_government$§! by:"
+ KFC_labor_government_modifier:0 "The Labor Government"
+ KFC_labor_government_modify_tt: "Modify §Y$KFC_labor_government_modifier$§! by:"
+ 
+ KFC_gambling_funds_tt: "Gambling Funds"
+ KFC_gambling_funds_modifier_tt: " [KFC_gambling_status]"
+ KFC_gambling_funds_modifier1_tt: ""
+ KFC_gambling_funds_modifier2_tt: " $KFC_gambling_funds_tt$: [?var_gambling_funds|=+*]"
+ KFC_gambling_funds_modify_tt: " $KFC_gambling_funds_tt$: $RIGHT|+=*$"
  
  
  #Tooltips
@@ -681,4 +687,7 @@
  fried_chicken.9.a:0 "Sure"
  fried_chicken.9.b:0 "Screw off"
  
+ fried_chicken.10.t:0 "Gambling the Fiscal Year [GetYear] Budget" 
+ fried_chicken.10.d:0 "dem gov. beshear legalized gambling, describe revenue from taxes lol"
+ fried_chicken.10.a:0 "Massive win!"
  

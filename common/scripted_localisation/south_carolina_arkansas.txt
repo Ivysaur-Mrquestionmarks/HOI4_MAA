@@ -94,3 +94,21 @@ defined_text = {
 	}
 
 }
+
+
+defined_text = {
+	name = KFC_gambling_status
+	text = {
+		trigger = {
+			check_variable = { var_gambling_funds = 0 }
+		}
+		localization_key = KFC_gambling_funds_modifier1_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { var_gambling_funds > 0 }
+		}
+		localization_key = KFC_gambling_funds_modifier2_tt
+	}
+
+}
