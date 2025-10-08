@@ -945,10 +945,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			random_state = {
-				limit = {
-					is_owned_by = KFC
-				}
+			random_owned_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 				    type = arms_factory
@@ -1463,11 +1460,11 @@ focus_tree = {
 			focus = KFC_nazbol_confederacy
 		}
 		relative_position_id = KFC_we_are_appalachia
+		x = -1
+		y = 1
 		available = {
 			has_global_flag = Dixie_Collapse_Global
 		}
-		x = -1
-		y = 1
 		will_lead_to_war_with = ZIO
 		will_lead_to_war_with = APA
 		completion_reward = {
@@ -2274,10 +2271,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			random_state = {
-				limit = {
-					is_owned_by = KFC
-				}
+			random_owned_state = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 				    type = industrial_complex
@@ -4312,10 +4306,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			random_state = {
-				limit = {
-					is_owned_by = KFC
-				}
+			random_owned_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 				    type = industrial_complex
@@ -4323,10 +4314,7 @@ focus_tree = {
 				    instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					is_owned_by = KFC
-				}
+			random_owned_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 				    type = industrial_complex
@@ -4334,10 +4322,7 @@ focus_tree = {
 				    instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					is_owned_by = KFC
-				}
+			random_owned_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 				    type = industrial_complex
@@ -4345,10 +4330,7 @@ focus_tree = {
 				    instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					is_owned_by = KFC
-				}
+			random_owned_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 				    type = industrial_complex
@@ -4369,6 +4351,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.15
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_gain
+				value = 0.1
+				tooltip = political_power_gain_tt
+			}
 		}
 	}
 	focus = {
@@ -4386,6 +4379,17 @@ focus_tree = {
 			is_in_faction_with = FRA
 		}
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.1
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_max_efficiency_factor
+				value = 0.1
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -4494,7 +4498,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_war_support = 0.15
-			add_political_power = -100
 		}
 	}
 	
@@ -4529,7 +4532,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_stability = 0.15
-			add_political_power = -100
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -4549,6 +4552,13 @@ focus_tree = {
 			has_government = democrat
 		}
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.2
+				tooltip = consumer_goods_factor_tt
+			}
+			add_stability = -0.3
 		}
 	}
 	focus = {
@@ -4562,6 +4572,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.2
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.08
+				tooltip = research_speed_factor_tt
+			}
 		}
 	}
 
@@ -4580,6 +4601,13 @@ focus_tree = {
 		x = 5
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_morale_army
+				value = 0.08
+				tooltip = army_morale_factor_tt
+			}
+			add_stability = 0.15
 		}
 	}
 	focus = {
@@ -4593,6 +4621,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_attack_army
+				value = 0.1
+				tooltip = army_attack_factor_tt
+			}
+			add_war_support = 0.1
 		}
 	}
 	
@@ -4609,12 +4644,6 @@ focus_tree = {
 		x = 4
 		y = 3
 		available = {
-			NOT = {
-				OR = {
-					has_completed_focus = KFC_right_to_exist
-					has_completed_focus = KFC_the_future_is_now
-				}
-			}
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -4634,6 +4663,27 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.1
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_speed_buildings_factor
+				value = 0.1
+				tooltip = production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_efficiency_gain_factor
+				value = 0.1
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				var = var_industrial_capacity_factory
+				value = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
 		}
 	}
 	focus = {
@@ -4650,6 +4700,38 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -4667,6 +4749,12 @@ focus_tree = {
 			has_government = democrat
 		}
 		completion_reward = {
+			custom_effect_tooltip = KFC_labor_government_modify_tt
+			add_to_variable = {
+				var = var_org_army
+				value = 0.1
+				tooltip = army_org_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -4680,9 +4768,23 @@ focus_tree = {
 		x = -1
 		y = 1
 		available = {
-			has_government = democrat
+			has_global_flag = Dixie_Collapse_Global
 		}
+		will_lead_to_war_with = APA
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = APA
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = ZIO
+						is_owned_by = APA
+					}
+				}
+				add_claim_by = KFC
+			}
 		}
 	}
 	focus = {
@@ -4697,8 +4799,28 @@ focus_tree = {
 		y = 1
 		available = {
 			has_government = democrat
+			NOT = {
+				country_exists = APA
+			}
 		}
+		will_lead_to_war_with = ZIO
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ZIO
+			}
+			every_state = {
+				limit = {
+					is_core_of = APA
+				}
+				add_core_of = KFC
+			}
+			every_state = {
+				limit = {
+					is_core_of = ZIO
+				}
+				add_core_of = KFC
+			}
 		}
 	}
 	focus = {
@@ -4714,7 +4836,21 @@ focus_tree = {
 		available = {
 			has_government = democrat
 		}
+		will_lead_to_war_with = AFS
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = AFS
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = AFS
+						is_core_of = AFS
+					}
+				}
+				add_claim_by = KFC
+			}
 		}
 	}
 	focus = {
@@ -4729,8 +4865,17 @@ focus_tree = {
 		y = 1
 		available = {
 			has_government = democrat
+			NOT = {
+				country_exists = AFS
+			}
 		}
 		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = AFS
+				}
+				add_core_of = KFC
+			}
 		}
 	}
 	focus = {
@@ -4749,10 +4894,22 @@ focus_tree = {
 				OR = {
 					country_exists = VIR
 					VIR = { has_government = democrat }
+					VIR = { is_in_faction_with = FRA }
+					VIR = { is_in_faction_with = KFC }
 				}
 			}
 		}
+		will_lead_to_war_with = RVR
+		will_lead_to_war_with = VIR
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = VIR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = RVR
+			}
 		}
 	}
 	focus = {
@@ -4767,8 +4924,21 @@ focus_tree = {
 		y = 1
 		available = {
 			has_government = democrat
+			NOT = {
+				country_exists = VIR
+				country_exists = RVR
+			}
 		}
 		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = VIR
+						is_core_of = RVR
+					}
+				}
+				add_core_of = KFC
+			}
 		}
 	}
 	focus = {
@@ -4783,8 +4953,13 @@ focus_tree = {
 		y = 1
 		available = {
 			has_government = democrat
+			NOT = {
+				country_exists = VIR
+				country_exists = RVR
+			}
 		}
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -4801,6 +4976,62 @@ focus_tree = {
 			has_government = democrat
 		}
 		completion_reward = {
+			random_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = RVR
+						is_core_of = VIR
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = RVR
+						is_core_of = VIR
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = RVR
+						is_core_of = VIR
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = RVR
+						is_core_of = VIR
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -4816,7 +5047,18 @@ focus_tree = {
 		available = {
 			has_government = democrat
 		}
+		will_lead_to_war_with = NRA
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NRA
+			}
+			every_state = {
+				limit = {
+					is_core_of = NRA
+				}
+				add_core_of = KFC
+			}
 		}
 	}
 	
