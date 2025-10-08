@@ -668,5 +668,12 @@
 				boost_resistance_factor = 0.2
 			}
 		}
+		KFC_NRA_in_exile_idea = {
+			targeted_modifier = {
+				tag = NRA
+				attack_bonus_against = 0.1
+				compliance_gain = 0.25
+			}
+		}
 	}
 }

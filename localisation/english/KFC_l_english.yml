@@ -521,6 +521,7 @@
  KFC_prepared_against_trump_idea:0 "Preparations Against Trump"
  KFC_espionage_integration_idea:0 "Espionage Integration"
  KFC_lessons_from_war_shared_dem_idea:0 "Lessons From the Kentucky War"
+ KFC_NRA_in_exile_idea:0 "Hosting the NRA in Exile"
  
  #Dynamic modifier stuff
  KFC_nazbol_government:0 "The Traditionalist Workers' Party Government"
@@ -674,5 +675,10 @@
  fried_chicken.8.d:0 "[KFC.GetName] kindly requests that we return the Jackson Purchase now that they have aligned with us. This area was a part of the former state of Kentucky, and they want to prove their loyalty as a Loyalist Kentucky that is fully united."
  fried_chicken.8.a:0 "Sure"
  fried_chicken.8.b:0 "Better under our management"
+ 
+ fried_chicken.9.t:0 "[KFC.GetName] Wants to Join Our Faction!"
+ fried_chicken.9.d:0 ""
+ fried_chicken.9.a:0 "Sure"
+ fried_chicken.9.b:0 "Screw off"
  
  

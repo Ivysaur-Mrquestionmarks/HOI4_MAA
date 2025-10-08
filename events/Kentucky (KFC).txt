@@ -1766,3 +1766,37 @@ country_event = {
 	}
 }
 
+#loyalist kentucky wants to join GLA
+country_event = {
+	id = fried_chicken.9
+	title = fried_chicken.9.t
+	desc = fried_chicken.9.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#of course
+		name = fried_chicken.9.a
+		add_to_faction = KFC
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		#no chance buckaroo
+		name = fried_chicken.9.b
+		ai_chance = {
+			factor = 0
+		}
+		KFC = {
+			add_stability = -0.15
+			hidden_effect = {
+				add_popularity = {
+					ideology = authoritarian_left
+					popularity = 0.175
+				} 
+			}
+		}
+	}
+}
+

@@ -3539,7 +3539,21 @@ focus_tree = {
 		relative_position_id = KFC_enemies_all_around_us
 		x = -4
 		y = 1
+		will_lead_to_war_with = AFS
 		completion_reward = {
+			create_wargoal = {
+				target = AFS
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = AFS
+						is_core_of = AFS
+					}
+				}
+				add_claim_by = KFC
+			}
 		}
 	}
 	focus = {
@@ -3552,7 +3566,25 @@ focus_tree = {
 		relative_position_id = KFC_blitz_afs
 		x = -1
 		y = 1
+		available = {
+			NOT = {
+				country_exists = AFS
+			}
+		}
 		completion_reward = {
+			every_state = {
+				limit = { is_core_of = AFS }
+				add_core_of = KFC
+			}
+			every_state = {
+				limit = { is_core_of = NRA }
+				add_core_of = KFC
+			}
+			every_state = {
+				limit = { is_core_of = VIR }
+				add_core_of = KFC
+			}
+		
 		}
 	}
 	focus = {
@@ -3566,6 +3598,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -3578,7 +3611,31 @@ focus_tree = {
 		relative_position_id = KFC_blitz_afs
 		x = 1
 		y = 1
+		available = {
+			has_global_flag = Dixie_Collapse_Global
+		}
+		will_lead_to_war_with = ZIO
+		will_lead_to_war_with = APA
 		completion_reward = {
+			create_wargoal = {
+				target = ZIO
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = APA
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = ZIO
+						is_core_of = ZIO
+						is_owned_by = APA
+						is_core_of = APA
+					}
+				}
+				add_claim_by = KFC
+			}
 		}
 	}
 	
@@ -3596,6 +3653,11 @@ focus_tree = {
 		x = 4
 		y = 1
 		completion_reward = {
+			set_capital = { state = 574 }
+			add_victory_points = {
+				province = 9635
+				value = 15
+			}
 		}
 	}
 	focus = {
@@ -3609,6 +3671,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			GLA = {
+				country_event = fried_chicken.9
+			}
 		}
 	}
 	focus = {
@@ -3622,6 +3687,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			add_war_support = 0.25
+			add_political_power = 150
 		}
 	}
 	focus = {
@@ -3634,7 +3701,31 @@ focus_tree = {
 		relative_position_id = KFC_move_the_capital
 		x = -1
 		y = 1
+		available = {
+			has_global_flag = Dixie_Collapse_Global
+		}
+		will_lead_to_war_with = ZIO
+		will_lead_to_war_with = APA
 		completion_reward = {
+			create_wargoal = {
+				target = ZIO
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = APA
+				type = annex_everything
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = ZIO
+						is_core_of = ZIO
+						is_owned_by = APA
+						is_core_of = APA
+					}
+				}
+				add_core_of = KFC
+			}
 		}
 	}
 	
@@ -3648,7 +3739,24 @@ focus_tree = {
 		relative_position_id = KFC_enemies_all_around_us
 		x = -1
 		y = 1
+		available = {
+			NRA = {
+				NOT = {
+					has_government = republican
+				}
+			}
+		}
 		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = NRA
+						is_core_of = NRA
+					}
+				}
+				add_claim_by = KFC
+			}
+			add_ideas = KFC_NRA_in_exile_idea
 		}
 	}
 	
@@ -3663,6 +3771,17 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_attack_army
+				value = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				var = var_breakthrough_army
+				value = 0.1
+				tooltip = breakthrough_factor_tt
+			}
 		}
 	}
 	
