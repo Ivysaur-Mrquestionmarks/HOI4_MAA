@@ -158,28 +158,19 @@ set_politics = {
 set_popularities = {
 	autocratic = 0
 	republican = 5
-	democrat = 5
-	authoritarian_left = 15
+	democrat = 20
+	authoritarian_left = 35
 	libertarian_right = 0
-	libertarian_left = 75
+	libertarian_left = 40
 }
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
+
 	set_autonomy = {
 		target = LAS
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.8
 	}
-	else = {
-		puppet = LAS
-	}
-}
+
 LAS = { #I believe I need to do this or LAS will start LibLeft?
 
 	set_politics = {
