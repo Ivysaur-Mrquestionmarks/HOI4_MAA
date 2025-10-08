@@ -1038,7 +1038,7 @@ ideas = {
 
         #Mattis Post-Civil War Ideas
 		AFS_strength_and_might_weakened = {
-			#picture = 
+			picture = AFS_strength_and_might
 			modifier = {
 				surrender_limit = -0.1
 				army_attack_factor = 0.05
@@ -1050,7 +1050,7 @@ ideas = {
 		}
 
 		AFS_strength_and_might_1 = {
-			#picture = 
+			picture = AFS_strength_and_might
 			modifier = {
 				surrender_limit = -0.05
 				army_attack_factor = 0.05
@@ -1064,7 +1064,7 @@ ideas = {
 		}
 
 		AFS_strength_and_might_2 = {
-			#picture = 
+			picture = AFS_strength_and_might
 			modifier = {
 				surrender_limit = 0.1
 				army_attack_factor = 0.1
@@ -1078,7 +1078,7 @@ ideas = {
 		}
 
 		AFS_strength_and_might_3 = {
-			#picture = 
+			picture = AFS_strength_and_might
 			modifier = {
 				surrender_limit = 0.15
 				army_attack_factor = 0.15
@@ -1093,7 +1093,7 @@ ideas = {
 		}
 
 		AFS_strength_and_might_4 = {
-			#picture = 
+			picture = AFS_strength_and_might
 			modifier = {
 				surrender_limit = 0.15
 				army_attack_factor = 0.2

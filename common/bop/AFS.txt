@@ -367,6 +367,10 @@ individualist_collectivist_bop = {
 				army_morale_factor = 0.05
 				army_org_factor = -0.05
 				army_speed_factor = 0.05
+				planning_speed = -0.05
+				no_supply_grace = 15
+				production_speed_buildings_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
 			}
 			on_activate = {
 			}
@@ -380,6 +384,10 @@ individualist_collectivist_bop = {
 				army_morale_factor = 0.1
 				army_org_factor = -0.07
 				army_speed_factor = 0.1
+				planning_speed = -0.07
+				no_supply_grace = 20
+				production_speed_buildings_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.1
 			}
 			on_activate = {
 			}
@@ -393,6 +401,10 @@ individualist_collectivist_bop = {
 				army_morale_factor = 0.15
 				army_org_factor = -0.07
 				army_speed_factor = 0.15
+				planning_speed = -0.07
+				no_supply_grace = 30
+				production_speed_buildings_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.15
 			}
 			on_activate = {
 			}
@@ -410,6 +422,10 @@ individualist_collectivist_bop = {
 				army_morale_factor = 0.05
 				army_org_factor = 0.05
 				army_speed_factor = -0.05
+				planning_speed = 0.05
+				no_supply_grace = -5
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
 			}
 			on_activate = {
 			}
@@ -423,6 +439,10 @@ individualist_collectivist_bop = {
 				army_morale_factor = 0.1
 				army_org_factor = 0.07
 				army_speed_factor = -0.1
+				planning_speed = 0.1
+				no_supply_grace = -10
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.1
 			}
 			on_activate = {
 			}
@@ -436,6 +456,10 @@ individualist_collectivist_bop = {
 				army_morale_factor = 0.15
 				army_org_factor = 0.1
 				army_speed_factor = -0.1
+				planning_speed = 0.15
+				no_supply_grace = -10
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = -0.1
 			}
 			on_activate = {
 			}
@@ -444,7 +468,7 @@ individualist_collectivist_bop = {
 }
 
 ohio_republican_government_bop = {
-	initial_value = 4
+	initial_value = 5
 	left_side = republican_control
 	right_side = cooperative_democracy
 	decision_category = AFS_ohio_republican_government_balance_of_power_category
