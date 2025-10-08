@@ -1,0 +1,16 @@
+defined_text = {
+	#name = lowcountry_status_sca
+	#text = {
+	#	trigger = {
+	#		check_variable = { 532.has_expanded_influence_in_state = 1 }
+	#	}
+	#	localization_key = lowcountry_no_influence_sca
+	#}
+	#text = {
+	#	trigger = {
+	#		check_variable = { 532.has_expanded_influence_in_state = 2 }
+	#	}
+	#	localization_key = lowcountry_influence_sca
+	#}
+
+}

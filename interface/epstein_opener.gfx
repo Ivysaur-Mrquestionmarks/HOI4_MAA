@@ -36,6 +36,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/Zepstein_Opener/text_box_opener.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_indicator_being_reworked"
+		texturefile = "gfx/interface/Zepstein_Opener/being_reworked.dds"
+	}
+	spriteType = {
+		name = "GFX_indicator_new_content"
+		texturefile = "gfx/interface/Zepstein_Opener/new_content.dds"
+	}
+	spriteType = {
+		name = "GFX_indicator_new_reworked_content"
+		texturefile = "gfx/interface/Zepstein_Opener/new_reworked_content.dds"
+	}
+	spriteType = {
+		name = "GFX_indicator_old_content"
+		texturefile = "gfx/interface/Zepstein_Opener/old_content.dds"
+	}
+	
 	
 	
 	
