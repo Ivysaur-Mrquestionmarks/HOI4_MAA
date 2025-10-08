@@ -7,12 +7,12 @@
  tech_inf_AA:0 "Our infantry batalions will require 5 §Yshoulder launched AA equipment§!"
  tech_inf_AT:0 "Our infantry batalions will require 5 §Yshoulder launched AT equipment§!"
  tech_urban:0 "The above units will recieve an §YUrban combat§! §Cbonus.§Y"
- authoritarian_left_drift_factor_tt: "$authoritarian_left_drift$: $RIGHT|+=2$"
- democrat_drift_factor_tt: "$democrat_drift$: $RIGHT|+=2$"
- libertarian_left_drift_factor_tt: "$libertarian_left_drift$: $RIGHT|+=2$"
- libertarian_right_drift_factor_tt: "$libertarian_right_drift$: $RIGHT|+=2$"
- autocratic_drift_factor_tt: "$autocratic_drift$: $RIGHT|+=2$"
- republican_drift_factor_tt: "$republican_drift$: $RIGHT|+=2$"
+ authoritarian_left_drift_factor_tt: " $authoritarian_left_drift$: $RIGHT|+=2$"
+ democrat_drift_factor_tt: " $democrat_drift$: $RIGHT|+=2$"
+ libertarian_left_drift_factor_tt: " $libertarian_left_drift$: $RIGHT|+=2$"
+ libertarian_right_drift_factor_tt: " $libertarian_right_drift$: $RIGHT|+=2$"
+ autocratic_drift_factor_tt: " $autocratic_drift$: $RIGHT|+=2$"
+ republican_drift_factor_tt: " $republican_drift$: $RIGHT|+=2$"
  
  
  nuclear_production_factor_tt: " $MODIFIER_NUCLEAR_PRODUCTION_FACTOR$: $RIGHT|+=%1$"
