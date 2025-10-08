@@ -2055,7 +2055,7 @@ focus_tree = {
 	focus = {
 		id = KFC_the_future_is_now
 		icon = GFX_focus_KFC_The_Future_is_Now
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_peace_socialism
 		}
@@ -2812,7 +2812,7 @@ focus_tree = {
 	focus = {
 		id = KFC_request_return_of_jackson_purchase
 		icon = GFX_goal_KFC_Request_Return_of_Jackson_Purchase
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_contact_trump
 		}
@@ -2828,7 +2828,7 @@ focus_tree = {
 	focus = {
 		id = KFC_privatize_medicare_and_medicaid
 		icon = GFX_goal_KFC_Privatise_Medicare_and_Medicaid
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_contact_trump
 		}
@@ -2836,12 +2836,23 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_stability_factor
+				value = -0.07
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.15
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_ban_sanctuary_cities
 		icon = GFX_goal_KFC_End_Sanctuary_Cities
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_privatize_medicare_and_medicaid
 		}
@@ -2849,12 +2860,14 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
 		}
 	}
 	focus = {
 		id = KFC_red_blot
 		icon = GFX_goal_KFC_Red_Blot
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_contact_trump
 		}
@@ -2862,19 +2875,11 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-			every_state = {
-				limit = {
-					is_controlled_by = KFC
-				}
-				add_building_construction = {
-				    type = bunker
-				    level = 2
-				    instant_build = yes
-				    province = {
-				        all_provinces = yes
-				        limit_to_border = yes
-				    }
-				}
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift
+				value = 0.1
+				tooltip = republican_drift_factor_tt
 			}
 		}
 	}
@@ -2958,7 +2963,7 @@ focus_tree = {
 	focus = {
 		id = KFC_request_trumpist_advisors
 		icon = GFX_goal_KFC_Request_Loyalist_Advisors
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = KFC_military_support
 		}
@@ -2969,6 +2974,12 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_org_army
+				value = 0.1
+				tooltip = army_org_factor_tt
+			}
 		}
 	}
 	
@@ -3010,6 +3021,17 @@ focus_tree = {
     			name = "Tea Party"
 			}
 			set_cosmetic_tag = KFC_tea_party_libertarians
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift_l
+				value = var_ideology_drift
+				tooltip = libertarian_right_drift_factor_tt
+			}
+			set_variable = {
+				var = var_ideology_drift
+				value = 0
+				tooltip = republican_drift_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -3023,12 +3045,31 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					OR = {
+						state = 250
+						state = 571
+						state = 576
+						state = 246
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = KFC_reconciliation_with_the_opposition
 		icon = GFX_goal_KFC_Reconcile_the_Opposition
-		cost = 3.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_independence
 		}
@@ -3036,6 +3077,22 @@ focus_tree = {
 		x = -0
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_ideology_drift_l
+				value = 0.05
+				tooltip = libertarian_right_drift_factor_tt
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.03
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_pp_factor
+				value = 0.08
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -3049,6 +3106,17 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_morale_army
+				value = 0.05
+				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.03
+				tooltip = stability_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -3093,8 +3161,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = -1 }
-			add_offsite_building = { type = arms_factory level = 6 }
+			add_offsite_building = { type = arms_factory level = 3 }
 		}
 	}
 	focus = {
@@ -3111,6 +3178,12 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_org_army
+				value = 0.08
+				tooltip = army_org_factor_tt
+			}
 		}
 	}
 	
@@ -3118,7 +3191,7 @@ focus_tree = {
 	focus = {
 		id = KFC_reduce_state_employees
 		icon = GFX_goal_KFC_Reduce_State_Employees
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_contact_trump
 			focus = KFC_independence
@@ -3127,12 +3200,23 @@ focus_tree = {
 		x = 4
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = -0.15
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_efficiency_gain_factor
+				value = -0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_expand_charter_schools
 		icon = GFX_goal_KFC_Expand_Charter_Schools
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_reduce_state_employees
 		}
@@ -3143,13 +3227,24 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_research_speed_factor
+				value = 0.08
+				tooltip = research_speed_factor_tt
+			}
 		}
 	}
 	
 	focus = {
 		id = KFC_eliminate_inheritance_and_corporate_tax
 		icon = GFX_goal_KFC_Remove_Taxes
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_contact_trump
 			focus = KFC_independence
@@ -3158,12 +3253,28 @@ focus_tree = {
 		x = -4
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_cg_factor
+				value = 0.1
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_factory_max_efficiency_factor
+				value = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_speed_buildings_factor
+				value = 0.1
+				tooltip = production_speed_buildings_factor_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_local_weapon_stashes
 		icon = GFX_goal_KFC_Local_Weapon_Stashes
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_eliminate_inheritance_and_corporate_tax
 		}
@@ -3174,13 +3285,18 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = KFC
+			}
 		}
 	}
 	
 	focus = {
 		id = KFC_right_to_exist
 		icon = GFX_goal_Icon_Kentuckys_Right_to_Exist_MAA
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_contact_trump
 			focus = KFC_independence
@@ -3189,12 +3305,6 @@ focus_tree = {
 		x = -6
 		y = 1
 		available = {
-			NOT = {
-				OR = {
-					has_completed_focus = KFC_code_kentucky
-					has_completed_focus = KFC_the_future_is_now
-				}
-			}
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -3203,7 +3313,7 @@ focus_tree = {
 	focus = {
 		id = KFC_fortify_the_east
 		icon = GFX_goal_KFC_Fortify_the_East
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_right_to_exist
 		}
@@ -3211,12 +3321,30 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					OR = {
+						state = 330
+						state = 575
+						state = 375
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = KFC_guerilla_training_of_the_civilian_population
 		icon = GFX_goal_KFC_Guerilla_Training
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_fortify_the_east
 		}
@@ -3227,6 +3355,17 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_morale_army
+				value = 0.05
+				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				var = var_defence_army
+				value = 0.1
+				tooltip = army_defence_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -3255,12 +3394,23 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_stability_factor
+				value = -0.1
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_monthly_population
+				value = 0.15
+				tooltip = monthly_population_tt
+			}
 		}
 	}
 	focus = {
 		id = KFC_promote_nuclear_family
 		icon = GFX_goal_KFC_Promote_the_Nuclear_Family
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_expand_charter_schools
 		}
@@ -3271,6 +3421,22 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_stability_factor
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = var_monthly_population
+				value = 0.1
+				tooltip = monthly_population_tt
+			}
+			add_to_variable = {
+				var = var_compliance_growth
+				value = 0.05
+				tooltip = compliance_growth_tt
+			}
 		}
 	}
 	
@@ -3326,6 +3492,17 @@ focus_tree = {
 				ideology = authoritarian_left
 				popularity = -0.20
 			}
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_production_factory_efficiency_gain_factor
+				value = 0.1
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				var = var_production_speed_buildings_factor
+				value = 0.05
+				tooltip = production_speed_buildings_factor_tt
+			}
 		}
 	}
 	
@@ -3340,6 +3517,12 @@ focus_tree = {
 		x = 0
 		y = 2
 		completion_reward = {
+			custom_effect_tooltip = KFC_tea_party_government_modify_tt
+			add_to_variable = {
+				var = var_conscription
+				value = 0.03
+				tooltip = conscription_tt
+			}
 		}
 	}
 	
@@ -3791,7 +3974,7 @@ focus_tree = {
 	focus = {
 		id = KFC_give_a_day
 		icon = GFX_goal_KFC_Give_a_Day
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_breonnas_law
 		}
@@ -3805,7 +3988,7 @@ focus_tree = {
 	focus = {
 		id = KFC_reverse_rustbel_misfortunes
 		icon = GFX_goal_KFC_Reverse_Rustbelt_Misfortunes
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_build_whisky_distilleries
 		}
@@ -4120,7 +4303,7 @@ focus_tree = {
 	focus = {
 		id = KFC_code_kentucky
 		icon = GFX_goal_KFC_Code_Kentucky
-		cost = 9.00
+		cost = 5.00
 		prerequisite = {
 			focus = KFC_fischer_in_command
 			focus = KFC_beshear_government
