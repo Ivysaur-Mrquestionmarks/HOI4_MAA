@@ -13,7 +13,8 @@ buildings = {
   only_costal = yes
 		value = 4
 		infrastructure_construction_effect = yes
-		
+		show_modifier = yes
+
 		country_modifiers = {
 			modifiers = {
 				monthly_population = 0.01
