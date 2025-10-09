@@ -848,7 +848,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_rise_of_evil
-		icon = GFX_goal_unkown
+		icon = GFX_goal_KFC_rise_of_evil2
 		cost = 1.00
 		prerequisite = {
 			#focus = KFC_second_constitutional_convention
@@ -880,7 +880,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_kentucky_stormtroopers
-		icon = GFX_focus_KFC_Kentucky_Stormtroopers
+		icon = GFX_goal_KFC_kentucky_stormtroopers2
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_rise_of_evil
@@ -895,7 +895,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_groundwork_for_a_navy
-		icon = GFX
+		icon = GFX_goal_KFC_groundwork_for_a_navy
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_kentucky_stormtroopers
@@ -914,7 +914,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_our_own_gestapo
-		icon = GFX
+		icon = GFX_goal_KFC_our_own_gestapo
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_kentucky_stormtroopers
@@ -936,7 +936,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_awaken_white_working_class
-		icon = GFX_focus_KFC_Awaken_the_White_Working_Class
+		icon = GFX_goal_KFC_awaken_white_working_class
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_kentucky_stormtroopers
@@ -958,7 +958,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_integrate_nationalist_militias
-		icon = GFX
+		icon = GFX_goal_KFC_integrate_nationalist_militias
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_awaken_white_working_class
@@ -978,7 +978,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_conscript_coloureds
-		icon = GFX_focus_KFC_Conscript_the_Colored
+		icon = GFX_goal_KFC_conscript_coloureds
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_awaken_white_working_class
@@ -992,7 +992,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_adapting_from_the_cw
-		icon = GFX
+		icon = GFX_goal_KFC_adapting_from_the_cw
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_integrate_nationalist_militias
@@ -1009,7 +1009,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_follow_guderians_doctrine
-		icon = GFX
+		icon = GFX_goal_KFC_follow_guderians_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_adapting_from_the_cw
@@ -1028,7 +1028,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_dominate_the_skies
-		icon = GFX
+		icon = GFX_goal_KFC_dominate_the_skies
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_kentucky_stormtroopers
@@ -1042,7 +1042,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_accelerate_fighter_research
-		icon = GFX
+		icon = GFX_goal_KFC_accelerate_fighter_research
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_dominate_the_skies
@@ -1060,7 +1060,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_drone_innovations
-		icon = GFX
+		icon = GFX_goal_KFC_drone_innovations
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_dominate_the_skies
@@ -1078,7 +1078,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_enhancing_flight_doctrine
-		icon = GFX
+		icon = GFX_goal_KFC_enhancing_flight_doctrine
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_drone_innovations
@@ -1099,7 +1099,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_pride_of_the_white_race_the_airforce
-		icon = GFX
+		icon = GFX_goal_KFC_pride_of_the_white_race_the_airforce
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_enhancing_flight_doctrine
