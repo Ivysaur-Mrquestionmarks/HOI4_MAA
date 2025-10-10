@@ -88,7 +88,10 @@ AFS_vermin_balance_of_power_category = {
 		fire_only_once = no
 
 		activation = {
-			has_country_flag = AFS_civil_war_flag
+			OR = {
+			    has_completed_focus = AFS_againist_tyranny
+				has_completed_focus = AFS_againist_lawlessness
+			}
 		}
 
 		is_good = no
@@ -376,7 +379,10 @@ AFS_hawkins_balance_of_power_category = {
 		fire_only_once = no
 
 		activation = {
-			has_country_flag = AFS_civil_war_flag_hawkins
+			OR = {
+			    has_completed_focus = AFS_againist_tyranny
+				has_completed_focus = AFS_againist_lawlessness
+			}
 		}
 
 		is_good = no
@@ -659,7 +665,10 @@ AFS_mattis_balance_of_power_category = {
 		fire_only_once = no
 
 		activation = {
-			has_country_flag = AFS_civil_war_flag_mattis
+			OR = {
+			    has_completed_focus = AFS_againist_tyranny
+				has_completed_focus = AFS_againist_lawlessness
+			}
 		}
 
 		is_good = no
@@ -895,6 +904,17 @@ AFS_individualist_collectivist_balance_of_power_category = {
 				value = -0.1
 				tooltip_side = individualist
 			}
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
+			add_to_variable = {
+				var = AFS.var_stability_level
+				value = 0.01
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = AFS.var_compliance_level
+				value = 0.01
+				tooltip = compliance_growth_tt
+			}
 		}
 	}
 
@@ -930,6 +950,11 @@ AFS_individualist_collectivist_balance_of_power_category = {
 				days = 25
 				value = 1
 			}
+		}
+		modifier = {
+			libertarian_left_drift = 0.03
+			army_attack_speed_factor = 0.1
+			breakthrough_factor = 0.05
 		}
 		remove_effect = {
 			add_power_balance_value = {
@@ -1021,6 +1046,17 @@ AFS_individualist_collectivist_balance_of_power_category = {
 				value = 0.1
 				tooltip_side = collectivist
 			}
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
+			add_to_variable = {
+				var = AFS.var_war_support_level
+				value = 0.01
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = AFS.var_defense_level
+				value = 0.01
+				tooltip = army_defence_factor_tt
+			}
 		}
 	}
 
@@ -1098,6 +1134,11 @@ AFS_individualist_collectivist_balance_of_power_category = {
 				days = 25
 				value = 1
 			}
+		}
+		modifier = {
+			libertarian_left_drift = 0.03
+			stability_weekly = 0.03
+			army_org_factor = 0.3
 		}
 		remove_effect = {
 		    add_power_balance_value = {
@@ -6132,6 +6173,11 @@ AFS_ohio_republican_government_balance_of_power_category = {
 				value = 1
 			}
 		}
+		modifier = {
+			republican_drift = -0.04
+			stability_weekly = 0.03
+			drift_defence_factor = -0.1
+		}
 		remove_effect = {
 			add_power_balance_value = {
 				id = ohio_republican_government_bop
@@ -6173,6 +6219,11 @@ AFS_ohio_republican_government_balance_of_power_category = {
 				days = 45
 				value = 1
 			}
+		}
+		modifier = {
+			republican_drift = 0.03
+			stability_weekly = 0.03
+			political_power_gain = 0.05
 		}
 		remove_effect = {
 			add_power_balance_value = {
@@ -6216,6 +6267,11 @@ AFS_ohio_republican_government_balance_of_power_category = {
 				value = 1
 			}
 		}
+		modifier = {
+			republican_drift = 0.03
+			stability_weekly = 0.03
+			political_power_gain = 0.05
+		}
 		remove_effect = {
 			add_power_balance_value = {
 				id = ohio_republican_government_bop
@@ -6257,6 +6313,11 @@ AFS_ohio_republican_government_balance_of_power_category = {
 				days = 50
 				value = 1
 			}
+		}
+		modifier = {
+			republican_drift = 0.05
+			drift_defence_factor = 0.1
+			political_power_gain = 0.1
 		}
 		remove_effect = {
 			add_power_balance_value = {
@@ -6300,6 +6361,11 @@ AFS_ohio_republican_government_balance_of_power_category = {
 				value = 1
 			}
 		}
+		modifier = {
+			republican_drift = 0.05
+			stability_weekly = -0.04
+			political_power_gain = 0.1
+		}
 		remove_effect = {
 			add_power_balance_value = {
 				id = ohio_republican_government_bop
@@ -6341,6 +6407,12 @@ AFS_ohio_republican_government_balance_of_power_category = {
 				days = 45
 				value = 1
 			}
+		}
+		modifier = {
+			republican_drift = 0.05
+			stability_weekly = -0.04
+			political_power_gain = 0.05
+			drift_defence_factor = 0.05
 		}
 		remove_effect = {
 			add_power_balance_value = {

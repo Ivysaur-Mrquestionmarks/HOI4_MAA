@@ -825,6 +825,27 @@ characters={
 			planning_skill = 2
 			logistics_skill = 3
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AFS_akey_advisor
+			cost = 150
+			removal_cost = 0
+			allowed = {
+				tag = AFS
+			}
+			visible = {
+				tag = AFS
+			}
+			available = {
+				has_government = autocratic
+			}
+			traits = {
+				AFS_resistance_crusher
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
 	}
 	AFS_tommy_ray_franks = {
 		name = "Tommy Franks"
@@ -842,6 +863,27 @@ characters={
 			planning_skill = 4
 			logistics_skill = 3
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AFS_franks_advisor
+			cost = 150
+			removal_cost = 0
+			allowed = {
+				tag = AFS
+			}
+			visible = {
+				tag = AFS
+			}
+			available = {
+				has_government = autocratic
+			}
+			traits = {
+				AFS_ensurer_of_the_stratocracy
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
 	}
 	AFS_charles_a_flynn = {
 		name = "Charles Flynn"
@@ -858,6 +900,27 @@ characters={
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AFS_mcchrystal_advisor
+			cost = 150
+			removal_cost = 0
+			allowed = {
+				tag = AFS
+			}
+			visible = {
+				tag = AFS
+			}
+			available = {
+				has_government = autocratic
+			}
+			traits = {
+				AFS_mattis_second_in_command
+			}
+			ai_will_do = {
+				factor = 5
+			}
 		}
 	}
 

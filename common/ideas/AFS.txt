@@ -11,6 +11,7 @@ ideas = {
 				libertarian_left_drift = 0.1
 				autocratic_drift = 0.1
 				political_power_gain = -0.35
+				stability_factor = -0.1
 			}
 		}
 		AFS_triumvirate_broken = {
@@ -24,7 +25,7 @@ ideas = {
 				libertarian_left_drift = 0.1
 				autocratic_drift = 0.1
 				political_power_gain = -0.2
-				stability_factor = -0.15
+				stability_factor = -0.45
 			}
 		}
 		AFS_triumvirate_broken_vermin = {
@@ -38,7 +39,7 @@ ideas = {
 				libertarian_left_drift = 0.15
 				autocratic_drift = 0.05
 				political_power_gain = -0.1
-				stability_factor = -0.15
+				stability_factor = -0.45
 			}
 		}
 		AFS_triumvirate_broken_hawkins_and_mattis = {
@@ -52,7 +53,7 @@ ideas = {
 				libertarian_left_drift = 0.05
 				autocratic_drift = 0.15
 				political_power_gain = -0.1
-				stability_factor = -0.2
+				stability_factor = -0.45
 			}
 		}
 
@@ -86,9 +87,9 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.1
 				stability_factor = -0.05
-				army_attack_factor = -0.05
+				army_attack_factor = -0.1
 				army_defence_factor = -0.05
-				army_speed_factor = -0.05
+				army_speed_factor = -0.1
 			}
 		}
 		AFS_vermin_sabotage_2 = {
@@ -96,9 +97,9 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.15
 				stability_factor = -0.1
-				army_attack_factor = -0.1
+				army_attack_factor = -0.15
 				army_defence_factor = -0.1
-				army_speed_factor = -0.1
+				army_speed_factor = -0.15
 			}
 		}
 		AFS_vermin_sabotage_3 = {
@@ -106,9 +107,9 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.25
 				stability_factor = -0.15
-				army_attack_factor = -0.15
+				army_attack_factor = -0.2
 				army_defence_factor = -0.15
-				army_speed_factor = -0.15
+				army_speed_factor = -0.2
 			}
 		}
 		AFS_vermins_black_army_idea = {
@@ -143,9 +144,9 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.1
 				stability_factor = -0.05
-				army_attack_factor = -0.05
+				army_attack_factor = -0.1
 				army_defence_factor = -0.05
-				army_speed_factor = -0.05
+				army_speed_factor = -0.1
 			}
 		}
 		AFS_the_unpopular_vermin_2 = {
@@ -153,9 +154,9 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.15
 				stability_factor = -0.1
-				army_attack_factor = -0.1
+				army_attack_factor = -0.15
 				army_defence_factor = -0.1
-				army_speed_factor = -0.1
+				army_speed_factor = -0.15
 			}
 		}
 		AFS_the_unpopular_vermin_3 = {
@@ -163,9 +164,9 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.25
 				stability_factor = -0.15
-				army_attack_factor = -0.15
+				army_attack_factor = -0.2
 				army_defence_factor = -0.15
-				army_speed_factor = -0.15
+				army_speed_factor = -0.2
 			}
 		}
 		AFS_the_green_army = {
@@ -174,7 +175,7 @@ ideas = {
 				surrender_limit = 0.25
 				army_attack_factor = 0.1
 				army_defence_factor = 0.1
-				army_morale_factor = 0.05
+				army_morale_factor = 0.1
 				army_org_factor = 0.05
 				breakthrough_factor = 0.05
 			}
@@ -185,7 +186,7 @@ ideas = {
 				surrender_limit = 0.15
 				army_attack_factor = 0.15
 				army_defence_factor = 0.05
-				army_morale_factor = 0.05
+				army_morale_factor = 0.1
 				army_org_factor = 0.05
 				breakthrough_factor = 0.08
 			}

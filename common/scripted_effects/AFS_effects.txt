@@ -70,6 +70,14 @@ AFS_civil_war_script_effect = {
             character = "AFS_ted_berry"
             slot = political_advisor
         }
+		remove_advisor_role = {
+            character = "AFS_stanley_mcchrystal"
+            slot = political_advisor
+        }
+		remove_advisor_role = {
+            character = "AFS_michael_akey"
+            slot = political_advisor
+        }
 		deactivate_advisor = AFS_angela_walker
 		deactivate_advisor = AFS_david_goldfein
 		deactivate_advisor = AFS_margaret_flowers
@@ -77,6 +85,7 @@ AFS_civil_war_script_effect = {
 		deactivate_advisor = AFS_roger_hallam
 		deactivate_advisor = AFS_stanley_mcchrystal
 		deactivate_advisor = AFS_ted_berry
+		deactivate_advisor = AFS_michael_akey
 	    reserve_dynamic_country = yes
 		create_dynamic_country = {
             original_tag = AFS
@@ -564,9 +573,19 @@ AFS_civil_war_script_effect_hawkins = {
             character = "AFS_andrea_ritchie"
             slot = political_advisor
         }
+		remove_advisor_role = {
+            character = "AFS_stanley_mcchrystal"
+            slot = political_advisor
+        }
+		remove_advisor_role = {
+            character = "AFS_michael_akey"
+            slot = political_advisor
+        }
 		deactivate_advisor = AFS_david_goldfein
 		deactivate_advisor = AFS_laura_jane_grace
 		deactivate_advisor = AFS_andrea_ritchie
+		deactivate_advisor = AFS_stanley_mcchrystal
+		deactivate_advisor = AFS_michael_akey
 	    reserve_dynamic_country = yes
 		create_dynamic_country = {
             original_tag = AFS
@@ -1536,6 +1555,14 @@ AFS_mike_dewine_coup_script_effect = {
             character = "AFS_ted_berry"
             slot = political_advisor
         }
+		remove_advisor_role = {
+            character = "AFS_stanley_mcchrystal"
+            slot = political_advisor
+        }
+		remove_advisor_role = {
+            character = "AFS_michael_akey"
+            slot = political_advisor
+        }
 		deactivate_advisor = AFS_angela_walker
 		deactivate_advisor = AFS_david_goldfein
 		deactivate_advisor = AFS_margaret_flowers
@@ -1543,6 +1570,8 @@ AFS_mike_dewine_coup_script_effect = {
 		deactivate_advisor = AFS_roger_hallam
 		deactivate_advisor = AFS_laura_jane_grace
 		deactivate_advisor = AFS_ted_berry
+		deactivate_advisor = AFS_stanley_mcchrystal
+		deactivate_advisor = AFS_michael_akey
 		country_event = {
 			id = vance.3
 			days = 35

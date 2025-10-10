@@ -4978,8 +4978,8 @@ leader_traits = {
 	AFS_mattis_second_in_command = {
 		random = no
 		political_power_factor = 0.05
-		stability_factor = 0.05
-		resistance_activity = -0.15
+		stability_factor = 0.1
+		resistance_activity = -0.1
 	}
 
 	AFS_green_judge = {
@@ -4988,6 +4988,20 @@ leader_traits = {
 		resistance_activity = -0.10
 		authoritarian_left_drift = 0.05
 		political_power_cost = 0.05
+	}
+
+	AFS_ensurer_of_the_stratocracy = {
+		random = no
+		political_power_factor = 0.05
+		war_stability_factor = 0.05
+		drift_defence_factor = 0.1
+		autocratic_drift = 0.03
+	}
+
+	AFS_resistance_crusher = {
+		random = no
+		resistance_activity = -0.15
+        resistance_target = 0.15
 	}
 
 	LGB_furry_nazi_trait = {
