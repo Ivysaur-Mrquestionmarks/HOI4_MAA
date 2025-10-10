@@ -1229,6 +1229,63 @@ ideas = {
 			}
 		}
 
+		KMT_ecospiritualism_idea_1 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = 0.1
+				libertarian_left_drift = 0.05
+			}
+		}
+
+		KMT_caring_state = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes
+			modifier = {
+				stability_weekly = 0.001
+				political_power_cost = 0.1
+				research_speed_factor = 0.25
+			}
+		}
+
+		KMT_ecospiritualism_idea_2 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				political_power_factor = 0.15
+				libertarian_left_drift = 0.05
+				experience_gain_army = 0.05
+				experience_gain_navy = 0.02
+				experience_gain_air = 0.02
+			}
+		}
+
+		KMT_interfaith_dialogue_idea = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes
+			modifier = {
+				stability_factor = 0.2
+				political_power_factor = 0.1
+				libertarian_left_drift = 0.03
+			}
+		}
+
+		KMT_interfaith_dialogue_idea_1 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.1
+				political_power_factor = 0.15
+				libertarian_left_drift = 0.05
+				army_attack_factor = 0.2
+			}
+		}
+
 
 	}
 

@@ -4526,7 +4526,7 @@ focus_tree = {
 		x = 58
 		y = 13
 
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -4539,7 +4539,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KMT_ecospiritualism_idea
+				add_idea = KMT_ecospiritualism_idea_1
+			}
+			add_political_power = 50
+			add_stability = 0.05
 		}
 		prerequisite = {
 			focus = KMT_pagan_spirit_gathering
@@ -4552,11 +4557,12 @@ focus_tree = {
 		x = 59
 		y = 14
 
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			has_war = no
 		}
 		
 		bypass = {
@@ -4565,7 +4571,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_political_power = 100
+			add_ideas = KMT_caring_state
 		}
 		prerequisite = {
 			focus = KMT_wiccan_rede
@@ -4579,7 +4587,7 @@ focus_tree = {
 		x = 57
 		y = 14
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -4592,7 +4600,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KMT_ecospiritualism_idea_1
+				add_idea = KMT_ecospiritualism_idea_2
+			}
+			add_political_power = 50
 		}
 		prerequisite = {
 			focus = KMT_wiccan_rede
@@ -4605,7 +4617,7 @@ focus_tree = {
 		x = 60
 		y = 13
 
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -4618,7 +4630,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KMT_ecospiritualism_idea
+				add_idea = KMT_interfaith_dialogue_idea
+			}
+			add_political_power = 100
 		}
 		prerequisite = {
 			focus = KMT_separate_church_and_state
@@ -4631,7 +4647,7 @@ focus_tree = {
 		x = 61
 		y = 14
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -4644,7 +4660,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KMT_interfaith_dialogue_idea
+				add_idea = KMT_interfaith_dialogue_idea_1
+			}
+			add_popularity = {
+				ideology = autocratic
+				popularity = -1
+			}
 		}
 		prerequisite = {
 			focus = KMT_interfaith_dialogue
@@ -4661,16 +4684,23 @@ focus_tree = {
 		ai_will_do = {
 		}
 		available = {
-			always = no
+			DET = { exists = yes }
 		}
 		
 		bypass = {
+			DET = { exists = no }
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = { 
+				limit = { country_exists = DET }
+				create_wargoal = {
+					target = DET
+					type = annex_everything
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_the_second_victory_over_chaos
@@ -4688,15 +4718,43 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			OR = {
+				MNS = { exists = yes }
+				MIL = { exists = yes }
+				MIN = { exists = yes }
+			}
 		}
 		
 		bypass = {
+			MNS = { exists = no }
+			MIL = { exists = no }
+			MIN = { exists = no }
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = { 
+				limit = { country_exists = MNS }
+				create_wargoal = {
+					target = MNS
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = MIL }
+				create_wargoal = {
+					target = MIL
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = MIN }
+				create_wargoal = {
+					target = MIN
+					type = annex_everything
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_the_second_victory_over_chaos
@@ -4713,16 +4771,32 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+		available = {	
+			any_country_with_original_tag = {
+				original_tag_to_check = AFS
+				exists = yes
+			}
 		}
 		
 		bypass = {
+			any_country_with_original_tag = {
+				original_tag_to_check = AFS
+				exists = no
+			}
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			every_country_with_original_tag = {
+				original_tag_to_check = AFS
+				ROOT = {
+					create_wargoal = {
+						target = PREV 
+						type = annex_everything
+					}
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_into_michigan
@@ -4742,16 +4816,32 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+		available = {	
+			any_country_with_original_tag = {
+				original_tag_to_check = KFC
+				exists = yes
+			}
 		}
 		
 		bypass = {
+			any_country_with_original_tag = {
+				original_tag_to_check = KFC
+				exists = no
+			}
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			every_country_with_original_tag = {
+				original_tag_to_check = KFC
+				ROOT = {
+					create_wargoal = {
+						target = PREV 
+						type = annex_everything
+					}
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_invade_afs
@@ -4768,16 +4858,32 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+		available = {	
+			any_country_with_original_tag = {
+				original_tag_to_check = NRA
+				exists = yes
+			}
 		}
 		
 		bypass = {
+			any_country_with_original_tag = {
+				original_tag_to_check = NRA
+				exists = no
+			}
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			every_country_with_original_tag = {
+				original_tag_to_check = NRA
+				ROOT = {
+					create_wargoal = {
+						target = PREV 
+						type = annex_everything
+					}
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_invade_afs
@@ -4799,11 +4905,73 @@ focus_tree = {
 		
 		bypass = {
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = { 
+				limit = { country_exists = USA }
+				create_wargoal = {
+					target = USA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = NPA }
+				create_wargoal = {
+					target = NPA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = MON }
+				create_wargoal = {
+					target = MON
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = IDA }
+				create_wargoal = {
+					target = IDA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = SIN }
+				create_wargoal = {
+					target = SIN
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = HOP }
+				create_wargoal = {
+					target = HOP
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = NAV }
+				create_wargoal = {
+					target = NAV
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = TOH }
+				create_wargoal = {
+					target = TOH
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = UTA }
+				create_wargoal = {
+					target = UTA
+					type = annex_everything
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_invade_kentucky
@@ -4820,16 +4988,92 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+		available = {	
 		}
 		
 		bypass = {
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = { 
+				limit = { country_exists = TEX }
+				create_wargoal = {
+					target = TEX
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = SAN }
+				create_wargoal = {
+					target = SAN
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = RED }
+				create_wargoal = {
+					target = RED
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = RIO }
+				create_wargoal = {
+					target = RIO
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FTA }
+				create_wargoal = {
+					target = FTA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FAL }
+				create_wargoal = {
+					target = FAL
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = CRN }
+				create_wargoal = {
+					target = CRN
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = CRU }
+				create_wargoal = {
+					target = CRU
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = BSH }
+				create_wargoal = {
+					target = BSH
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = BLA }
+				create_wargoal = {
+					target = BLA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = BET }
+				create_wargoal = {
+					target = BET
+					type = annex_everything
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_the_south
@@ -4851,11 +5095,59 @@ focus_tree = {
 		
 		bypass = {
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = { 
+				limit = { country_exists = FRA }
+				create_wargoal = {
+					target = FRA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = NEW }
+				create_wargoal = {
+					target = NEW
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = WBK }
+				create_wargoal = {
+					target = WBK
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = NAB }
+				create_wargoal = {
+					target = NAB
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = TIM }
+				create_wargoal = {
+					target = TIM
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = VIR }
+				create_wargoal = {
+					target = VIR
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = RVR }
+				create_wargoal = {
+					target = RVR
+					type = annex_everything
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_invade_west_virginia
@@ -4877,7 +5169,7 @@ focus_tree = {
 		
 		bypass = {
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
@@ -4903,7 +5195,7 @@ focus_tree = {
 		
 		bypass = {
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
@@ -4932,7 +5224,7 @@ focus_tree = {
 		
 		bypass = {
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
@@ -9380,10 +9672,12 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_completed_focus = KMT_claim_america
-			has_completed_focus = KMT_betray_npa
-			has_completed_focus = KMT_better_alone
-			has_completed_focus = KMT_cinematic_states_of_america
+			OR = {
+				has_completed_focus = KMT_claim_america
+				has_completed_focus = KMT_betray_npa
+				has_completed_focus = KMT_better_alone
+				has_completed_focus = KMT_cinematic_states_of_america
+			}
 		}
 		
 		bypass = {
@@ -9422,11 +9716,14 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_completed_focus = KMT_gl_reconstruction_zone
-			has_completed_focus = KMT_hold_elections
-			has_completed_focus = KMT_permanent_revolution
-			has_completed_focus = KMT_loyalty_to_the_base
-			has_completed_focus = KMT_join_fra
+			OR = {
+				has_completed_focus = KMT_gl_reconstruction_zone
+				has_completed_focus = KMT_hold_elections
+				has_completed_focus = KMT_permanent_revolution
+				has_completed_focus = KMT_loyalty_to_the_base
+				has_completed_focus = KMT_join_fra
+			}
+			
 		}
 		
 		bypass = {
