@@ -147,6 +147,14 @@ characters={
 			}
 		}
 	}
+	BRA_ira_biden = {
+		name = "Uncle Joe"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/Portrait_Joseph_Long_Live_the_Irish_Biden_Vanilla_MAA_copy.dds"
+			}
+		}
+	}
 
 
 
@@ -362,6 +370,32 @@ characters={
 			ai_will_do = {
 				factor = 5
 			}
+		}
+	}
+	#Irish
+	BRA_justin_barrett = {
+		name = "Justin Barrett"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/justin_barrett.tga"
+			}
+			army = {
+				large = "gfx/leaders/BRA/justin_barrett_alt_1.tga"
+				small = "gfx/interface/ideas/BRA/justin_barrett_advisor.dds"
+			}
+		}
+		#country_leader = {
+		#	ideology = neonazism
+		#	traits = {}
+		#}
+		field_marshal = {
+			traits={ politically_connected trait_reckless harsh_leader trickster guerilla_fighter } 
+			skill = 4
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			visible = { has_country_flag = BRA_right_wing_irish_nationalism }
 		}
 	}
 

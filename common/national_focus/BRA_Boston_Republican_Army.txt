@@ -55,6 +55,10 @@ focus_tree = {
     				instant_build = yes
 				}
 			}
+			unlock_decision_tooltip = {
+			    decision = BRA_co_opt_right_wing_irish_nationalism
+			    show_effect_tooltip = yes
+			}
 		}
 
 	}
