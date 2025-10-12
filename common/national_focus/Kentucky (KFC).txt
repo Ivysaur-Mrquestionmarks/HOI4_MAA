@@ -1116,7 +1116,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_american_legion
-		icon = GFX_focus_KFC_The_American_Legion
+		icon = GFX_goal_KFC_american_legion2
 		cost = 4.40
 		prerequisite = {
 			focus = KFC_rise_of_evil
@@ -1130,7 +1130,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_invade_appalachia
-		icon = GFX_focus_KFC_We_Need_those_Coal_Mines
+		icon = GFX_goal_KFC_invade_appalachia
 		cost = 5.00
 		prerequisite = {
 			#focus = KFC_kentucky_stormtroopers
@@ -1163,7 +1163,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_a_possible_ally
-		icon = GFX_focus_KFC_A_Possible_Ally
+		icon = GFX_goal_KFC_a_possible_ally
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_american_legion
@@ -1192,7 +1192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_we_are_appalachia
-		icon = GFX_focus_KFC_We_Are_Appalachia_Now
+		icon = GFX_goal_KFC_we_are_appalachia
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_invade_appalachia
@@ -1220,7 +1220,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_the_empire_of_kentucky
-		icon = GFX_focus_KFC_Our_New_Empire
+		icon = GFX_goal_KFC_the_empire_of_kentucky
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_invade_appalachia
@@ -1269,7 +1269,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_hegemony
-		icon = GFX_goal_unkown
+		icon = GFX_goal_KFC_hegemony
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_a_possible_ally
@@ -1311,7 +1311,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_nazbol_confederacy
-		icon = GFX_focus_KFC_A_Nazbol_Confederacy
+		icon = GFX_goal_KFC_nazbol_confederacy
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_a_possible_ally
@@ -1349,7 +1349,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_crush_free_state
-		icon = GFX_goal_NRA_Destroy_Northern_Anarchism
+		icon = GFX_goal_KFC_crush_free_state
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_hegemony
@@ -1371,7 +1371,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_crush_virginia
-		icon = GFX_goal_NRA_Integrate_Virginia_2
+		icon = GFX_goal_KFC_crush_virginia
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_hegemony
@@ -1421,7 +1421,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_another_ally
-		icon = GFX_goal_NRA_Invite_Virginia_to_the_Pact
+		icon = GFX_goal_KFC_another_ally
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_hegemony
@@ -1451,7 +1451,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_intervene_in_tennesee
-		icon = GFX_goal_NRA_Integrate_Tennessee
+		icon = GFX_goal_KFC_intervene_in_tennesee
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_hegemony
@@ -1489,7 +1489,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_a_stranglehold_over_appalachia
-		icon = GFX_goal_NRA_Proclaim_Greater_Appalachia
+		icon = GFX_goal_KFC_a_stranglehold_over_appalachia
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_another_ally
@@ -1539,7 +1539,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_on_the_road_to_reunification
-		icon = GFX_goal_NRA_Liberate_America
+		icon = GFX_goal_KFC_on_the_road_to_reunification
 		cost = 3.00
 		prerequisite = {
 			focus = KFC_hegemony
