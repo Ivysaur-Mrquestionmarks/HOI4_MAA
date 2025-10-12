@@ -725,7 +725,22 @@ entity = {
 
 	entity = {
 		clone = "BRA_elephantry_2_entity"
-		name = "RAJ_elephantry_3_entity"
+		name = "BRA_elephantry_3_entity"
+	}
+
+
+	#exile and puppet units could break if I don't do this.
+	entity = {
+		clone = "BRA_elephantry_2_entity"
+		name = "elephantry_3_entity"
+	}
+	entity = {
+		clone = "BRA_elephantry_2_entity"
+		name = "elephantry_2_entity"
+	}
+	entity = {
+		clone = "BRA_elephantry_entity"
+		name = "elephantry_entity"
 	}
 
 
