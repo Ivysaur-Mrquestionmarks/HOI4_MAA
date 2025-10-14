@@ -1276,6 +1276,11 @@ focus_tree = {
 			        traits = { BRA_rightful_king_of_france }
 			    }
 			}
+			set_party_name = {
+			    ideology = autocratic
+			    long_name = BRA_bourbon_bhopal_party_long
+			    name = BRA_bourbon_bhopal_party
+			}
 			set_cosmetic_tag = BRA_bourbon_bhopal_ct
 			if = {
 				limit = {
