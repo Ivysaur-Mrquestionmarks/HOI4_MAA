@@ -217184,15 +217184,15 @@ SpriteType = {
 	}
 
     SpriteType = {
-        name = "GFX_goal_KFC_american_legion2"
-        texturefile = "gfx/interface/goals/KFC_american_legion2.dds"
+        name = "GFX_goal_KFC_american_legion"
+        texturefile = "gfx/interface/goals/KFC_american_legion.dds"
     }
     SpriteType = {
-        name = "GFX_goal_KFC_american_legion2_shine"
-        texturefile = "gfx/interface/goals/KFC_american_legion2.dds"
+        name = "GFX_goal_KFC_american_legion_shine"
+        texturefile = "gfx/interface/goals/KFC_american_legion.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KFC_american_legion2.dds"
+            animationmaskfile = "gfx/interface/goals/KFC_american_legion.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -217205,7 +217205,7 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KFC_american_legion2.dds"
+            animationmaskfile = "gfx/interface/goals/KFC_american_legion.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -217258,15 +217258,15 @@ SpriteType = {
 	}
 
     SpriteType = {
-        name = "GFX_goal_KFC_a_possible_ally"
-        texturefile = "gfx/interface/goals/KFC_a_possible_ally.dds"
+        name = "GFX_goal_KFC_a_possible_ally2"
+        texturefile = "gfx/interface/goals/KFC_a_possible_ally2.dds"
     }
     SpriteType = {
-        name = "GFX_goal_KFC_a_possible_ally_shine"
-        texturefile = "gfx/interface/goals/KFC_a_possible_ally.dds"
+        name = "GFX_goal_KFC_a_possible_ally2_shine"
+        texturefile = "gfx/interface/goals/KFC_a_possible_ally2.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KFC_a_possible_ally.dds"
+            animationmaskfile = "gfx/interface/goals/KFC_a_possible_ally2.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -217279,7 +217279,7 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KFC_a_possible_ally.dds"
+            animationmaskfile = "gfx/interface/goals/KFC_a_possible_ally2.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no

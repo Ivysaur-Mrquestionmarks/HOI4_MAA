@@ -1116,7 +1116,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_american_legion
-		icon = GFX_goal_KFC_american_legion2
+		icon = GFX_goal_KFC_american_legion
 		cost = 4.40
 		prerequisite = {
 			focus = KFC_rise_of_evil
@@ -1163,7 +1163,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_a_possible_ally
-		icon = GFX_goal_KFC_a_possible_ally
+		icon = GFX_goal_KFC_a_possible_ally2
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_american_legion
