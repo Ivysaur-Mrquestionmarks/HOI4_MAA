@@ -1963,6 +1963,15 @@ leader_traits = {
 		political_power_cost = 0.10
 		research_speed_factor = 0.05
 	}
+	BRA_rightful_king_of_france = {
+		random = no
+		research_speed_factor = 0.05
+		justify_war_goal_time = -0.15
+		consumer_goods_factor = -0.15
+		production_speed_buildings_factor = 0.10
+		production_speed_infrastructure_factor = 0.15
+		recruitable_population_factor = 0.30
+	}
 
 
 ####################ADVISOR TRAITS

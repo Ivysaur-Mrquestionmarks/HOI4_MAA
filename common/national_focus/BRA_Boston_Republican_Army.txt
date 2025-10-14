@@ -1228,6 +1228,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = BRA_fear_the_american_rajah
+			focus = BRA_a_king_for_our_people
 		}
 		x = 9
 		y = 8
@@ -1249,6 +1250,61 @@ focus_tree = {
 
 	}
 	focus = {
+		id = BRA_a_king_for_our_people
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = BRA_false_prophet
+		}
+		mutually_exclusive = {
+			focus = BRA_fear_the_american_rajah
+			focus = BRA_kali_is_our_leader
+		}
+		x = 11
+		y = 8
+		relative_position_id = BRA_no_popery
+		available = {
+			is_subject = no
+		}
+		will_lead_to_war_with = FFR
+		completion_reward = {
+			add_country_leader_role = {
+			    character = BRA_balthazar_napoleon_iv_de_bourbon_bhopal
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = despotism
+			        traits = { BRA_rightful_king_of_france }
+			    }
+			}
+			set_cosmetic_tag = BRA_bourbon_bhopal_ct
+			if = {
+				limit = {
+					country_exists = FFR
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = FFR
+				}				
+			}
+			every_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_core_of = ROOT
+			}
+			if = {
+				limit = {
+					owns_state = 663
+				}
+				set_capital = {
+				  state = 663
+				  remember_old_capital = no
+				}
+			}
+		}
+
+	}
+	focus = {
 		id = BRA_fear_the_american_rajah
 		icon = GFX_goal_unknown
 		cost = 3.00
@@ -1258,6 +1314,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = BRA_kali_is_our_leader
+			focus = BRA_a_king_for_our_people
 		}
 		x = 7
 		y = 8
