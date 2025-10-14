@@ -1276,6 +1276,15 @@ focus_tree = {
 			        traits = { BRA_rightful_king_of_france }
 			    }
 			}
+			add_field_marshal_role = {
+			  character = BRA_balthazar_napoleon_iv_de_bourbon_bhopal
+			  skill = 2
+			  attack_skill = 2
+			  defense_skill = 1
+			  planning_skill = 3
+			  logistics_skill = 3
+				traits = { politically_connected war_hero bearer_of_artillery }
+			}
 			set_party_name = {
 			    ideology = autocratic
 			    long_name = BRA_bourbon_bhopal_party_long

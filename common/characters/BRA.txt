@@ -159,7 +159,12 @@ characters={
 		name = "Balthazar Napoleon IV"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BRA/balthazar_napoleon.tga"
+				large = "gfx/leaders/BRA/Portrait_Saaar_Napoleon_IV_Vanilla_MAA_copy.dds"
+				small = "gfx/interface/ideas/BRA/balthazar_napoleon.dds"
+			}
+			army = {
+				large = "gfx/leaders/BRA/Portrait_Saaar_Napoleon_IV_Vanilla_MAA_copy.dds"
+				small = "gfx/interface/ideas/BRA/balthazar_napoleon.dds"
 			}
 		}
 	}
