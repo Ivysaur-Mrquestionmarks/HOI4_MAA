@@ -1563,7 +1563,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_utilize_new_resources
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_utilize_new_resources
 		cost = 6.00
 		prerequisite = {
 			focus = KFC_on_the_road_to_reunification
@@ -1581,7 +1581,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_turn_our_attention_northeast
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_turn_our_attention_northeast
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_utilize_new_resources
@@ -1622,7 +1622,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_end_the_great_replacement
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_end_the_great_replacement
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_turn_our_attention_northeast
@@ -1673,7 +1673,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_the_true_maga_movement
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_the_true_maga_movement
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_utilize_new_resources
@@ -1696,7 +1696,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_reign_in_north_rockies
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_reign_in_north_rockies
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_the_true_maga_movement
@@ -1738,7 +1738,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_ally_awd
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_ally_awd
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_reign_in_north_rockies
@@ -1761,7 +1761,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_support_the_northwest_front_initiative
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_support_the_northwest_front_initiative
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_the_true_maga_movement
@@ -1784,7 +1784,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_crush_suth_rocky_degenerates
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_crush_suth_rocky_degenerates
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_support_the_northwest_front_initiative
@@ -1852,7 +1852,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_reject_the_social_revolution_invade_west_coast
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_reject_the_social_revolution_invade_west_coast
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_crush_suth_rocky_degenerates
@@ -1892,7 +1892,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_finish_the_confederacy
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_finish_the_confederacy
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_utilize_new_resources
@@ -1906,7 +1906,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_save_the_border_texas
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_save_the_border_texas
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_the_true_maga_movement
@@ -1921,7 +1921,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_save_florida_from_illegals
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_save_florida_from_illegals
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_finish_the_confederacy
@@ -1976,7 +1976,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_traditional_america_for_the_white_working_class
-		icon = GFX_goal_NRA_Embrace_Industrial_Revolution
+		icon = GFX_goal_KFC_traditional_america_for_the_white_working_class
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_end_the_great_replacement
