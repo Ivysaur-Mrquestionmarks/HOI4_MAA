@@ -183,6 +183,20 @@ bookmarks = {
 				CAS_new_order
 			}
 		}
+		"KFC"={
+			history = "KFC_GOOD_FRIDAY_DESC"
+			ideology = autocratic
+			minor = yes
+			ideas = {
+				KFC_colonels_rule
+				KFC_divided_resistance
+			}
+			focuses = {
+				KFC_rise_of_evil
+				KFC_labor_government
+				KFC_washington_of_kentucky
+			}
+		}
 		"NRA"={
 			history = "NRA_GOOD_FRIDAY_DESC"
 			ideology = autocratic
@@ -367,19 +381,19 @@ bookmarks = {
 			}
 		}
 
-		"LAS"={
-			history = "LAS_GOOD_FRIDAY_DESC"
-			ideology = democrat
-			minor = yes
-			ideas = {
-				LAS_tributary_status
-			}
-			focuses = {
-				LAS_fear_and_loathing
-				LAS_viva_las_vegas
-				LAS_twenty_two_years
-			}
-		}
+		#"LAS"={
+		#	history = "LAS_GOOD_FRIDAY_DESC"
+		#	ideology = democrat
+		#	minor = yes
+		#	ideas = {
+		#		LAS_tributary_status
+		#	}
+		#	focuses = {
+		#		LAS_fear_and_loathing
+		#		LAS_viva_las_vegas
+		#		LAS_twenty_two_years
+		#	}
+		#}
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
