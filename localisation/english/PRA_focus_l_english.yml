@@ -3,8 +3,11 @@
  water_desalination:0 "Desalination Plant"
  water_desalination_plural:0 "Desalination Plants" 
  water_desalination_desc:0 "The Civil War has cut our much needed access to the Colorado river and other water sources.\nWe will need to eventually regain control of the Colorado if we want to prevent a crisis in the future, but for the time being we will need to create our own water supply for our people.\n\nThis building is meant to be exclusive for the Californian tags with the §Cwater§! §Ymanagement§! mechanic such as @PRA \n\nWater Units: §C+1§!" 
-#Tool tips
- Unfinished_California_Content:0 "Unfinished Californian Content"
+#Desicions (rework)
+ PRA_water_management:0 "Water Management"
+ PRA_water_management_desc:0 "The civil war has cut off California from our much needed water supply. Making an already bad water crisis into a potential nation ending one.\nWhile we regain control of §Ykey rivers§!, we will need to make §Ydeals§! with their current occupiers and §Ybuild§! §Cdesalination infrastructure§! to reduce the impacts of the crisis.\n\nCurrently [?requirements|%-] of our population doesn't has their water related needs met\n\nTotal water production: [?total_water|C0] units.\nFrom deals and rivers: [?base_water|C0]\n From buildings: [?facilities|C0]\n\nAn unit of water is enough to provide [?water_per_pop|Y0] thousand people with water related needs\nOur current population is: [?max_manpower_k|Y0] thousand" 
+# ideas
+
 #Focus tree
  PRA_Workers_Congress:0 "Assemble the Workers Congress"
  PRA_Workers_Congress_desc:0 "Ever since the American collapse, we have not been in the best of places. The people are angry, and the nation is unstable. The first and most crucial step towards stability and prosperity is establishing legitimacy in our government."
@@ -665,3 +668,4 @@
  pra_loose_anarchist_generals:0 "We will loose all generals with the §GDevout Anarchist§! trait."
  pra_californian_collapse_generals:0 "§RA large amount of our generals will leave us!§!"
  pra_chinese_generals:0 "We will gain a various amount of generals from China."
+ Unfinished_California_Content:0 "Unfinished Californian Content"
