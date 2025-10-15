@@ -2529,3 +2529,17 @@ news_event = {
 		}
 	}
 }
+
+#Water system update (debug)
+country_event = {
+	id = California.75
+	title = California.75.t
+	desc = California.75.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = California.5.a
+		PRA_water_update = yes
+	}
+}

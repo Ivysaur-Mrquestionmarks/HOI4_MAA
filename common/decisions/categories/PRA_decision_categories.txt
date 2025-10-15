@@ -85,3 +85,16 @@ PRA_Free_Our_Neighbors = { #Anarchist puppet Canada, Mexico, and Yucatan
 		}
 	}
 }
+
+PRA_water_management = { #Anarchist puppet Canada, Mexico, and Yucatan
+	
+	allowed = {
+		original_tag = PRA
+	}
+
+	visible = {
+		always = yes
+	}
+	visible_when_empty = yes
+	priority = 199
+}

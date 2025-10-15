@@ -1,0 +1,60 @@
+PRA_water_update = {
+	set_variable = {
+    		var = requirements
+    		value = max_manpower_k
+	}
+	divide_variable = {
+    		var = requirements
+    		value = water_per_pop
+	}
+	set_variable = {
+    		var = facilities
+    		value = 0
+	}
+	every_controlled_state = {
+		add_to_variable = {
+    			var = ROOT.facilities
+    			value = building_level@water_desalination 
+		}
+	}
+	set_variable = {
+    		var = total_water
+    		value = facilities
+	}
+	add_to_variable = {
+   	 	var = total_water
+    		value = base_water
+	}
+	subtract_from_variable = {
+    		var = requirements
+    		value = total_water
+	}
+	set_variable = { #Unsimplified math (1/(population/water_per_pop))*requirements -> simplified (water_per_pop/population)*requirements
+	       	var = pop
+	    	value = water_per_pop
+	}
+	divide_variable = {
+    		var = pop
+    		value = max_manpower_k
+	}
+	multiply_variable = {
+    		var = requirements
+    		value = pop
+	}
+
+	clamp_variable = {
+    		var = requirements
+    		min = 0
+		max = 1
+	}
+
+	set_variable = { 
+	       	var = pop
+	    	value = requirements
+	}
+
+	multiply_variable = {
+    		var = pop
+    		value = -1
+	}
+}
