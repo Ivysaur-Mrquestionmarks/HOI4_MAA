@@ -44,7 +44,7 @@ characters={
 				large = "gfx/leaders/BLA/bushnell.png" #IK McKay is in TEX, just wanna do this for ORG purposes.
 			}
 			army = {
-				#small = "gfx/interface/ideas/TEX/"
+				small = "gfx/interface/ideas/BLA/aaron_bushnell_general.dds"
 				large = "gfx/leaders/BLA/bushnell.png"
 			}
 		}
@@ -64,7 +64,7 @@ characters={
 				large = "gfx/leaders/BLA/tortuguita.png"
 			}
 			army = {
-				#small = "gfx/interface/ideas/TEX/"
+				small = "gfx/interface/ideas/BLA/manuel_teran_general.dds"
 				large = "gfx/leaders/BLA/tortuguita.png"
 			}
 		}
@@ -78,6 +78,476 @@ characters={
 			visible = {
 				has_completed_focus = BLA_international_divisions
 			}
+		}
+	}
+
+	#ADVISORS - Amarillo City Council
+	BLA_cole_stanley = {
+		name = "Cole Stanley"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BLA/cole_stanley.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLA_cole_stanley_advisor
+			cost = 150
+			allowed = {
+				original_tag = BLA
+			}
+			available = {
+				OR = {
+					owns_state = 274
+					has_government = autocratic
+				}
+			}
+			traits = {
+				 popular_figurehead
+			}
+		}
+	}
+	BLA_david_prescott = {
+		name = "David Prescott"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BLA/david_prescott.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLA_david_prescott_advisor
+			cost = 150
+			allowed = {
+				original_tag = BLA
+			}
+			available = {
+				OR = {
+					owns_state = 274
+					has_government = autocratic
+				}
+			}
+			traits = {
+				 captain_of_industry
+			}
+		}
+	}
+	BLA_tim_reid = {
+		name = "Tim Reid"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BLA/tim_reid.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLA_tim_reid_advisor
+			cost = 150
+			allowed = {
+				original_tag = BLA
+			}
+			available = {
+				OR = {
+					owns_state = 274
+					has_government = autocratic
+				}
+			}
+			traits = {
+				 war_industrialist
+			}
+		}
+	}
+	BLA_les_simpson = {
+		name = "Les Simpson"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BLA/les_simpson.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLA_les_simpson_advisor
+			cost = 150
+			allowed = {
+				original_tag = BLA
+			}
+			available = {
+				OR = {
+					owns_state = 274
+					has_government = autocratic
+				}
+			}
+			traits = {
+				 tenacious_negotiator
+			}
+		}
+	}
+	BLA_don_tipps = {
+		name = "Don Tipps"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BLA/don_tipps.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLA_don_tipps_advisor
+			cost = 150
+			allowed = {
+				original_tag = BLA
+			}
+			available = {
+				OR = {
+					owns_state = 274
+					has_government = autocratic
+				}
+			}
+			traits = {
+				 fortification_engineer
+			}
+		}
+	}
+	BLA_grayson_path = {
+		name = "Grayson Path"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BLA/grayson_path.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLA_grayson_path_advisor
+			cost = 150
+			allowed = {
+				original_tag = BLA
+			}
+			available = {
+				OR = {
+					owns_state = 274
+					has_government = autocratic
+				}
+			}
+			traits = {
+				 armaments_organizer
+			}
+		}
+	}
+	BLA_jimmy_johnson = {
+		name = "Jimmy Johnson"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BLA/jimmy_johnson.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLA_jimmy_johnson_advisor
+			cost = 150
+			allowed = {
+				original_tag = BLA
+				has_dlc = "La Resistance"
+			}
+			available = {
+				OR = {
+					owns_state = 274
+					has_government = autocratic
+				}
+				has_intelligence_agency  = yes 
+			}
+			traits = {
+				 intelligence_service_deputy
+			}
+		}
+	}
+
+	#army advisors
+	BLA_council_of_theorists = { # Anarchists
+		name= "Council of Theorists"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = BLA_council_of_theorists
+			ledger = military
+			allowed = {
+				original_tag = BLA
+			}
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { council_of_theorists }
+		}
+	}
+	BLA_defensive_military_council = { # Anarchist
+		name= "Defensive Military Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = BLA_defensive_military_council
+			ledger = army
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { army_chief_defensive_2 }
+			cost = 100
+		}
+	}
+
+	BLA_offensive_military_council = { # Anarchist
+		name= "Offensive Military Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = BLA_offensive_military_council
+			ledger = army
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { army_chief_offensive_2 }
+			cost = 100
+		}
+	}
+
+	BLA_organizational_military_council = { # Anarchist
+		name= "Organizational Military Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = BLA_organizational_military_council
+			ledger = army
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { army_chief_organizational_2 }
+			cost = 100
+		}
+	}
+
+	BLA_air_safety_aviation_council = { # Anarchist
+		name= "Air Safety Aviation Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={	
+			slot = air_chief
+			idea_token = BLA_air_safety_aviation_council
+			ledger = air
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { air_chief_safety_2 }
+			cost = 100
+		}
+	}
+
+	BLA_all_weather_aviation_council = { # Anarchist
+		name= "All Weather Aviation Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = BLA_all_weather_aviation_council
+			ledger = air
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { air_chief_all_weather_2 }
+			cost = 100
+		}
+	}
+
+
+	BLA_commerce_raiding_naval_council = { # Anarchist
+		name= "Commerce Raiding Naval Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = BLA_commerce_raiding_naval_council
+			ledger = navy
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { navy_chief_commerce_raiding_2 }
+			cost = 100
+		}
+	}
+
+	BLA_reform_naval_council = { # Anarchist
+		name= "Reform Naval Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = BLA_reform_naval_council
+			ledger = navy
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { navy_chief_reform_2 }
+			cost = 100
+		}
+	}
+
+
+
+	BLA_infantry_military_council = { # Anarchist
+		name= "Infantry Military Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BLA_infantry_military_council
+			ledger = army
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { army_infantry_3 }
+			cost = 200
+		}
+	}
+
+	BLA_army_regrouping_military_council = { # Anarchist
+		name= "Army Regrouping Military Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BLA_army_regrouping_military_council
+			ledger = army
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { army_regrouping_2 }
+			cost = 100
+		}
+	}
+
+	BLA_concealment_military_council = { # Anarchist
+		name= "Concealment Military Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BLA_concealment_military_council
+			ledger = army
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { army_concealment_2 }
+			cost = 100
+		}
+	}
+
+	BLA_naval_strike_aviation_council = { # Anarchist
+		name= "Naval Strike Aviation Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BLA_naval_strike_aviation_council
+			ledger = navy
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { air_naval_strike_2 }
+			cost = 100
+		}
+	}
+
+	BLA_close_air_support_aviation_council = { # Anarchist
+		name= "Close Air Support Aviation Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BLA_close_air_support_aviation_council
+			ledger = air
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { air_close_air_support_2 }
+			cost = 100
+		}
+	}
+
+	BLA_logistics_naval_council = { # Anarchist
+		name= "Logistics Naval Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BLA_logistics_naval_council
+			ledger = navy
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { navy_fleet_logistics_2 }
+			cost = 100
+		}
+	}
+
+	BLA_anti_submarine_naval_council = { # Anarchist
+		name= "Anti-Submarine Naval Council"
+		portraits={
+			army={
+				small="GFX_idea_SPR_anarchist_council"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BLA_anti_submarine_naval_council
+			ledger = navy
+			available = {
+				has_government = libertarian_left
+			}
+			traits = { navy_anti_submarine_2 }
+			cost = 100
 		}
 	}
 }

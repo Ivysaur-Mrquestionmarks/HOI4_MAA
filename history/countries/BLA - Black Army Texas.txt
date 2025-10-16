@@ -56,6 +56,38 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
+### Country Leaders ###
+recruit_character = BLA_david_mckay
+recruit_character = BLA_paul_harpole
+
+#generals
+recruit_character = BLA_aaron_bushnell
+recruit_character = BLA_manuel_teran
+
+#ADVISORS
+recruit_character = BLA_anti_submarine_naval_council 
+recruit_character = BLA_logistics_naval_council 
+recruit_character = BLA_close_air_support_aviation_council 
+recruit_character = BLA_naval_strike_aviation_council 
+recruit_character = BLA_concealment_military_council 
+recruit_character = BLA_army_regrouping_military_council 
+recruit_character = BLA_infantry_military_council 
+recruit_character = BLA_reform_naval_council 
+recruit_character = BLA_commerce_raiding_naval_council 
+recruit_character = BLA_all_weather_aviation_council 
+recruit_character = BLA_air_safety_aviation_council 
+recruit_character = BLA_organizational_military_council 
+recruit_character = BLA_offensive_military_council 
+recruit_character = BLA_defensive_military_council 
+recruit_character = BLA_council_of_theorists 
+recruit_character = BLA_jimmy_johnson 
+recruit_character = BLA_grayson_path 
+recruit_character = BLA_don_tipps 
+recruit_character = BLA_les_simpson 
+recruit_character = BLA_tim_reid 
+recruit_character = BLA_david_prescott 
+recruit_character = BLA_cole_stanley 
+
 set_politics = {
 	ruling_party = libertarian_left
 	last_election = "2020.11.3"
@@ -71,10 +103,4 @@ set_popularities = {
 	libertarian_left = 86
 }
 
-### Country Leaders ###
-recruit_character = BLA_david_mckay
-recruit_character = BLA_paul_harpole
 
-#generals
-recruit_character = BLA_aaron_bushnell
-recruit_character = BLA_manuel_teran
