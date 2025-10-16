@@ -2039,7 +2039,7 @@ focus_tree = {
 	
 	focus = {
 		id = KFC_peace_socialism
-		icon = GFX_focus_KFC_Peace_and_Socialism
+		icon = GFX_focus_KFC_peace_socialism
 		cost = 6.00
 		prerequisite = {
 			focus = KFC_rise_of_evil
@@ -2053,7 +2053,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_the_future_is_now
-		icon = GFX_focus_KFC_The_Future_is_Now
+		icon = GFX_focus_KFC_the_future_is_now2
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_peace_socialism
@@ -2075,7 +2075,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_state_orthodoxy
-		icon = GFX_focus_KFC_Christian_Orthodoxy
+		icon = GFX_focus_KFC_state_orthodoxy
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_peace_socialism
@@ -2090,7 +2090,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_protect_christian_identity
-		icon = GFX
+		icon = GFX_goal_KFC_protect_christian_identity
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_state_orthodoxy
@@ -2110,7 +2110,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_the_west_has_fallen
-		icon = GFX
+		icon = GFX_goal_KFC_the_west_has_fallen
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_protect_christian_identity
@@ -2133,7 +2133,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_seize_the_means
-		icon = GFX_focus_KFC_Seize_the_Means_of_Production
+		icon = GFX_focus_KFC_seize_the_means
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_peace_socialism
@@ -2162,7 +2162,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_strasserism
-		icon = GFX_focus_KFC_Strasserism
+		icon = GFX_focus_KFC_strasserism2
 		cost = 6.00
 		prerequisite = {
 			focus = KFC_seize_the_means
@@ -2207,7 +2207,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_white_welfare
-		icon = GFX
+		icon = GFX_goal_KFC_white_welfare
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_strasserism
@@ -2244,7 +2244,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_root_out_opposition
-		icon = GFX_focus_KFC_Root_Out_Opposition
+		icon = GFX_focus_KFC_root_out_opposition2
 		cost = 4.00
 		prerequisite = {
 			focus = KFC_peace_socialism
@@ -2262,7 +2262,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_stalinism
-		icon = GFX_focus_KFC_Stalinism
+		icon = GFX_focus_KFC_stalinism2
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_root_out_opposition
@@ -2285,7 +2285,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_the_real_reparations_for_crime
-		icon = GFX
+		icon = GFX_goal_KFC_the_real_reparations_for_crime
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_stalinism
@@ -2304,7 +2304,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_cultural_protection_laws
-		icon = GFX
+		icon = GFX_goal_KFC_cultural_protection_laws
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_the_real_reparations_for_crime
