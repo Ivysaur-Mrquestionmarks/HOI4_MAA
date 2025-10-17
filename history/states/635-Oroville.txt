@@ -4,7 +4,7 @@ state={
 	history={
 		owner = ORO
 		add_core_of = ORO
-		add_core_of = PRA
+		#add_core_of = PRA
 		add_claim_by = PRA #hopefully this will fix the white peace issue
 		
 		victory_points = { #Oroville (victory point is scaled this way to make it the capital)
