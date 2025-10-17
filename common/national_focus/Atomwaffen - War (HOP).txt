@@ -25,6 +25,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 7
+			hidden_effect = {
+				PRA = {
+					country_event = { 
+						id = California.76
+						days = 3
+					}
+				}
+			}
 		}
 	}
 
@@ -235,6 +243,14 @@ focus_tree = {
 				add_ideas = extensive_conscription
 			}
 			load_focus_tree = atomwaffen_true
+			hidden_effect = {
+				PRA = {
+					country_event = { 
+						id = California.78
+						days = 7
+					}
+				}
+			}
 		}
 	}
     focus = {
