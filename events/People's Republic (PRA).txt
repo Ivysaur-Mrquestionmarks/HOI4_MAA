@@ -2738,3 +2738,39 @@ country_event = {
 		}
 	}
 }
+
+#Event chain ends here.
+#Draught events:
+#Major draught
+country_event = {
+	id = California.84
+	title = California.84.t
+	desc = California.84.d
+	#picture =
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = California.84.a
+		add_timed_idea = {
+    			idea = PRA_major_draught 
+    			days = 27
+		}
+	}
+}
+#Minor draught
+country_event = {
+	id = California.85
+	title = California.85.t
+	desc = California.85.d
+	#picture =
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = California.85.a
+		add_timed_idea = {
+    			idea = PRA_minor_draught  
+    			days = 27 
+		}
+	}
+}
+#Draught events end here.

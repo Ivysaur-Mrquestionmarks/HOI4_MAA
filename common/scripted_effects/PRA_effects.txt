@@ -57,4 +57,52 @@ PRA_water_update = {
     		var = pop
     		value = -1
 	}
+	if = {
+		limit = {
+			check_variable = {
+    				var = requirements
+    				value = 0.75
+    				compare = greater_than_or_equals
+			}			
+		}
+		country_event = { 
+			id = California.84
+			days = 0
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+    				var = requirements
+    				value = 0.5
+    				compare = greater_than_or_equals
+			}			
+		}
+		random_list = {
+    			2 = {
+        			country_event = { 
+					id = California.84
+					days = 0
+				}	
+    			}
+    			3 = {
+        			country_event = { 
+					id = California.85
+					days = 0
+				}        			
+			}
+
+		}
+	}
+	else = {
+    		2 = {
+        		country_event = { 
+				id = California.85
+				days = 0
+			}	
+    		}
+    		3 = {
+      			#owo
+		}
+	}
 }
