@@ -222,7 +222,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 	name = utah.9.a
-	drop_cosmetic_tag = UTA_PGT
+		drop_cosmetic_tag = yes
 	}
 }
 
