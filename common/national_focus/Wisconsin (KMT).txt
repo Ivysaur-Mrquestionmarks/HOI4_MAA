@@ -5165,6 +5165,8 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			has_completed_focus = KMT_wicca
+			owns_state = 181
 		}
 		
 		bypass = {
@@ -5173,7 +5175,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			set_capital = 181
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 		prerequisite = {
 			focus = KMT_the_east
@@ -5199,7 +5203,69 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = { 
+				limit = { country_exists = CSA }
+				create_wargoal = {
+					target = CSA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = KKK }
+				create_wargoal = {
+					target = KKK
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = LGB }
+				create_wargoal = {
+					target = LGB
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = CSB }
+				create_wargoal = {
+					target = CSB
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = ZIO }
+				create_wargoal = {
+					target = ZIO
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = AFR }
+				create_wargoal = {
+					target = AFR
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FLO }
+				create_wargoal = {
+					target = FLO
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = GKJ }
+				create_wargoal = {
+					target = GKJ
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FLD }
+				create_wargoal = {
+					target = FLD
+					type = annex_everything
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_invade_west_virginia
@@ -5228,7 +5294,48 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = { 
+				limit = { country_exists = PRA }
+				create_wargoal = {
+					target = PRA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = CAS }
+				create_wargoal = {
+					target = CAS
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = LIB }
+				create_wargoal = {
+					target = LIB
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FIR }
+				create_wargoal = {
+					target = FIR
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = ORO }
+				create_wargoal = {
+					target = ORO
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = ORO }
+				create_wargoal = {
+					target = ORO
+					type = annex_everything
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_the_west

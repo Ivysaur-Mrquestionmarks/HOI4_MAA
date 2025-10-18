@@ -5391,6 +5391,13 @@ leader_traits = {
 		intel_network_gain_factor = 0.2
 		opinion_gain_monthly_factor = 0.3
 	}
+	KMT_advisor_president_of_american_atheists = {
+		random = no
+		libertarian_left_acceptance = 20
+		democrat_acceptance = 20
+		stability_factor = 0.05
+		consumer_goods_factor = -0.1
+	}
 	
 	
 }

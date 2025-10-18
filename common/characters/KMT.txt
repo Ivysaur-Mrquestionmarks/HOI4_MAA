@@ -745,6 +745,39 @@ characters={
 			}
 		}
 	}
+
+	KMT_Ellen_Johnson = {
+		name = KMT_Ellen_Johnson
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Ellen_Johnson
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				OR = {
+					has_completed_focus = KMT_separate_church_and_state
+					has_completed_focus = KMT_permanent_revolution
+					has_government = democrat
+				}
+				
+			}
+			traits = { KMT_advisor_president_of_american_atheists }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 	
 
 	### Military Leaders ###
