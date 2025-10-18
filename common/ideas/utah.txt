@@ -1,5 +1,17 @@
 ideas = {
 	country = {
+		UTA_Pioneer_Spirit = {
+			allowed = { original_tag = UTA }
+			allowed_civil_war = {
+			}
+			
+			picture = PAC_let_hunters
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				supply_consumption_factor = -0.05
+			}	
+		}
 		UTA_God_On_Our_Side = {
 			allowed = { original_tag = UTA }
 			allowed_civil_war = {
@@ -34,7 +46,7 @@ ideas = {
 			}	
 		}
 		UTA_Seize_Factories = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -45,7 +57,7 @@ ideas = {
 			}	
 		}
 		UTA_Flame_Thrower_Divisions = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -56,7 +68,7 @@ ideas = {
 			}
 		}
 		UTA_Counter_Intelligence = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -192,7 +204,7 @@ ideas = {
 			}	
 		}
 		UTA_reconsruction = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -361,7 +373,7 @@ ideas = {
 			}	
 		}
 		UTA_Trumps_Infastructure = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -373,7 +385,7 @@ ideas = {
 			}	
 		}
 		UTA_Farmers_To_Factories = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -521,18 +533,6 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 			}	
 		}
-		UTA_Pioneer_Spirit = {
-			allowed = { original_tag = UTA }
-			allowed_civil_war = {
-			}
-			
-			picture = PAC_let_hunters
-			modifier = {
-				army_core_defence_factor = 0.05
-				army_core_attack_factor = 0.05
-				supply_consumption_factor = -0.05
-			}	
-		}
 		UTA_Laying_Down_The_Law = {
 			allowed = { original_tag = UTA }
 			allowed_civil_war = {
@@ -664,7 +664,7 @@ ideas = {
 			}
 		}
 		UTA_Secessionist_Intel = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -687,7 +687,7 @@ ideas = {
 			}
 		}
 		UTA_Tax_Corporations = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -815,7 +815,7 @@ ideas = {
 			}	
 		}
 		UTA_Increase_Mining = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -1512,7 +1512,7 @@ ideas = {
 			}	
 		}
 			UTA_Radar = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -1692,7 +1692,7 @@ ideas = {
 			}	
 		}
 		UTA_Marxian_Economics = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -1743,7 +1743,7 @@ ideas = {
 			}	
 		}
 		UTA_Bread_Basket = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -2194,7 +2194,7 @@ ideas = {
 			}	
 		}
 		UTA_Military_Spending_Increase = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -2205,7 +2205,7 @@ ideas = {
 			}
 		}
 		UTA_Operation_Burning_Torchs = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
@@ -2217,7 +2217,7 @@ ideas = {
 			}
 		}
 		UTA_Working_Class_Appeal = {
-		allowed = { original_tag = UTA }
+			allowed = { original_tag = UTA }
 			allowed_civil_war = {
 			}
 			
