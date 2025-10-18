@@ -1,6 +1,8 @@
 characters={
 
 	### Country Leaders ###
+	
+	# GOP
 	UTA_spencer_cox = {
 		name = UTA_spencer_cox
 		portraits = {
@@ -64,6 +66,30 @@ characters={
 			}
 		}
 	}
+	
+	# 
+	UTA_unitary_govt = {
+		name = "Utahan Unitary Government"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UTA/unitarygov.dds"
+			}
+		}
+		country_leader = {
+			traits = {}
+			ideology = liberal
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			traits = {}
+			ideology = conservative
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
+	
+	# Dems
 	UTA_gay_lynn_bennion = {
 		name = UTA_gay_lynn_bennion
 		gender = female
@@ -79,7 +105,7 @@ characters={
 			id = -1
 		}
 	}
-	UTA_brian_king = {
+	UTA_brian_king = { #set_cosmetic_tag = UTA_UTO
 		name = UTA_brian_king
 		portraits = {
 			civilian = {
@@ -89,6 +115,12 @@ characters={
 		country_leader = {
 			traits = {}
 			ideology = liberal
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			traits = {}
+			ideology = christian_communism
 			expire = "2060.1.1.1"
 			id = -1
 		}
@@ -107,6 +139,8 @@ characters={
 			id = -1
 		}
 	}
+	
+	# Mormons
 	UTA_russell_nelson = {
 		name = UTA_russell_nelson
 		portraits = {
@@ -117,6 +151,18 @@ characters={
 		country_leader = {
 			traits = {}
 			ideology = theocracy
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			traits = {}
+			ideology = conservative
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			traits = {}
+			ideology = christian_communism
 			expire = "2060.1.1.1"
 			id = -1
 		}
@@ -132,7 +178,122 @@ characters={
 			traits = {}
 			ideology = theocracy
 		}
+		country_leader = {
+			traits = {}
+			ideology = conservative
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			traits = {}
+			ideology = christian_communism
+			expire = "2060.1.1.1"
+			id = -1
+		}
 	}
+	UTA_quorum_of_the_12_apostles = {
+		name = "Quorum of the 12 Apostles"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UTA/council.dds"
+			}
+		}
+		country_leader = {
+			traits = {}
+			ideology = theocracy
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			traits = {}
+			ideology = conservative
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			traits = {}
+			ideology = christian_communism
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
+	UTA_john_curtis = { #conservative successor
+		name = "John Curtis"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UTA/curtis.dds"
+			}
+		}
+		country_leader = {
+			traits = {}
+			ideology = theocracy
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			traits = {}
+			ideology = conservative
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
+	UTA_blake_moore = { #conservative successor
+		name = "Blake Moore"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UTA/moore.dds"
+			}
+		}
+		country_leader = {
+			traits = {}
+			ideology = theocracy
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			traits = {}
+			ideology = conservative
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
+	UTA_burgess_owens = { #conservative successor
+		name = UTA_burgess_owens
+		portraits = {
+			army = {
+				small = "GFX_idea_UTA_Owens_Advisor"
+			}
+			civilian = {
+				large = "gfx/leaders/UTA/owens.dds"
+			}
+		}
+		country_leader = {
+			traits = {}
+			ideology = conservative
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UTA_burgess_owens_advisor
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				tag = UTA	
+			}
+			available = {
+				
+			}
+			traits = {
+				Trumps_Bitch 
+			}
+			ai_will_do = {
+				factor = 4
+			}
+		}
+	}
+	
+	
 	UTA_military_junta = {
 		name = UTA_military_junta
 		portraits = {
@@ -162,6 +323,14 @@ characters={
 			ideology = despotism
 			expire = "2060.1.1.1"
 			id = -1
+		}
+		field_marshal = {
+			traits = { old_guard infantry_officer trickster desert_fox }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
 		}
 		advisor = {
 			slot = army_chief
@@ -197,6 +366,14 @@ characters={
 			ideology = fascism
 			expire = "2060.1.1.1"
 			id = -1
+		}
+		field_marshal = {
+			traits = { old_guard career_officer desert_fox }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
 		}
 		advisor = {
 			slot = high_command
@@ -241,32 +418,6 @@ characters={
 	}
 	### Military Staff and Political Advisors ###
 	# Political Advisors #
-	UTA_burgess_owens = {
-		name = UTA_burgess_owens
-		portraits = {
-			army = {
-				small = "GFX_idea_UTA_Owens_Advisor"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = UTA_burgess_owens_advisor
-			cost = 150
-			removal_cost = -1
-			allowed = {
-				tag = UTA	
-			}
-			available = {
-				
-			}
-			traits = {
-				Trumps_Bitch 
-			}
-			ai_will_do = {
-				factor = 4
-			}
-		}
-	}
 	UTA_deidre_henderson = {
 		name = UTA_deidre_henderson
 		gender = female
