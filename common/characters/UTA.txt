@@ -1073,4 +1073,53 @@ characters={
 			logistics_skill = 2
 		}
 	}
+	UTA_andrew_van_leeuwen = {
+		name = "Andrea Van Leeuwen"
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/UTA/vanleeuwen.dds"
+			}
+		}
+		corps_commander = {
+			traits={ career_officer trait_cautious } 
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 5
+		}
+	}
+	UTA_john_etheridge = {
+		name = "John Etheridge"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UTA/etheridge.dds"
+			}
+		}
+		corps_commander = {
+			traits={ infantry_officer } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	UTA_darwin_craig = {
+		name = "Darwin Craig"
+		portraits = {
+			army = {
+				large = "gfx/leaders/UTA/craig.dds"
+			}
+		}
+		corps_commander = {
+			traits={ harsh_leader career_officer } 
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
 }
