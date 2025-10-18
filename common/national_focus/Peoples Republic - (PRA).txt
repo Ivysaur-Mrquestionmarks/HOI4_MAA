@@ -9,6 +9,9 @@ focus_tree = {
 	}
 	default = no
 	continuous_focus_position = { x = 0 y = 15000 }
+
+	shared_focus = PRA_water_infra
+
 	focus = {
 		id = PRA_Workers_Congress
 		icon = GFX_focus_generic_soviet_politics
