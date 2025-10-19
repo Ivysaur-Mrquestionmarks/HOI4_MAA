@@ -2331,7 +2331,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_combat_drug_use
-		icon = GFX
+		icon = GFX_goal_KFC_combat_drug_use
 		cost = 3.00
 		prerequisite = {
 			focus = KFC_cultural_protection_laws
@@ -2345,7 +2345,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_a_new_querfront
-		icon = GFX
+		icon = GFX_goal_KFC_a_new_querfront
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_combat_drug_use
@@ -2365,7 +2365,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_rewrite_history_books
-		icon = GFX
+		icon = GFX_goal_KFC_rewrite_history_books
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_a_new_querfront
@@ -2389,7 +2389,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_a_new_national_dish
-		icon = GFX
+		icon = GFX_goal_KFC_a_new_national_dish
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_a_new_querfront
@@ -2409,7 +2409,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_patrol_the_cities
-		icon = GFX
+		icon = GFX_goal_KFC_patrol_the_cities
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_a_new_national_dish
@@ -2431,7 +2431,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_combat_demographic_issue
-		icon = GFX
+		icon = GFX_goal_KFC_combat_demographic_issue
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_cultural_protection_laws
@@ -2450,7 +2450,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_close_nonwhite_immigration
-		icon = GFX
+		icon = GFX_goal_KFC_close_nonwhite_immigration
 		cost = 2.00
 		prerequisite = {
 			focus = KFC_combat_demographic_issue
@@ -2474,7 +2474,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_sterilize_those_who_arent_needed
-		icon = GFX
+		icon = GFX_goal_KFC_sterilize_those_who_arent_needed
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_combat_demographic_issue
@@ -2501,7 +2501,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_outlaw_abortion
-		icon = GFX
+		icon = GFX_goal_KFC_outlaw_abortion
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_sterilize_those_who_arent_needed
@@ -2520,7 +2520,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_guarantee_childcare
-		icon = GFX
+		icon = GFX_goal_KFC_guarantee_childcare
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_close_nonwhite_immigration
@@ -2547,7 +2547,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_white_workers_paradise
-		icon = GFX
+		icon = GFX_goal_KFC_white_workers_paradise
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_patrol_the_cities
@@ -2584,7 +2584,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_a_new_beginnning
-		icon = GFX
+		icon = GFX_goal_KFC_a_new_beginnning
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_white_workers_paradise

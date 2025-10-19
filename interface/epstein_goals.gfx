@@ -218368,15 +218368,15 @@ SpriteType = {
 	}
 
     SpriteType = {
-        name = "GFX_goal_KFC_strasserism"
-        texturefile = "gfx/interface/goals/KFC_strasserism.dds"
+        name = "GFX_goal_KFC_strasserism2"
+        texturefile = "gfx/interface/goals/KFC_strasserism2.dds"
     }
     SpriteType = {
-        name = "GFX_goal_KFC_strasserism_shine"
-        texturefile = "gfx/interface/goals/KFC_strasserism.dds"
+        name = "GFX_goal_KFC_strasserism2_shine"
+        texturefile = "gfx/interface/goals/KFC_strasserism2.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KFC_strasserism.dds"
+            animationmaskfile = "gfx/interface/goals/KFC_strasserism2.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -218389,7 +218389,7 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KFC_strasserism.dds"
+            animationmaskfile = "gfx/interface/goals/KFC_strasserism2.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -218442,15 +218442,15 @@ SpriteType = {
 	}
 
     SpriteType = {
-        name = "GFX_goal_KFC_root_out_opposition"
-        texturefile = "gfx/interface/goals/KFC_root_out_opposition.dds"
+        name = "GFX_goal_KFC_root_out_opposition2"
+        texturefile = "gfx/interface/goals/KFC_root_out_opposition2.dds"
     }
     SpriteType = {
-        name = "GFX_goal_KFC_root_out_opposition_shine"
-        texturefile = "gfx/interface/goals/KFC_root_out_opposition.dds"
+        name = "GFX_goal_KFC_root_out_opposition2_shine"
+        texturefile = "gfx/interface/goals/KFC_root_out_opposition2.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KFC_root_out_opposition.dds"
+            animationmaskfile = "gfx/interface/goals/KFC_root_out_opposition2.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -218463,7 +218463,7 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KFC_root_out_opposition.dds"
+            animationmaskfile = "gfx/interface/goals/KFC_root_out_opposition2.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -218479,15 +218479,15 @@ SpriteType = {
 	}
 
     SpriteType = {
-        name = "GFX_goal_KFC_stalinism"
-        texturefile = "gfx/interface/goals/KFC_stalinism.dds"
+        name = "GFX_goal_KFC_stalinism2"
+        texturefile = "gfx/interface/goals/KFC_stalinism2.dds"
     }
     SpriteType = {
-        name = "GFX_goal_KFC_stalinism_shine"
-        texturefile = "gfx/interface/goals/KFC_stalinism.dds"
+        name = "GFX_goal_KFC_stalinism2_shine"
+        texturefile = "gfx/interface/goals/KFC_stalinism2.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KFC_stalinism.dds"
+            animationmaskfile = "gfx/interface/goals/KFC_stalinism2.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -218500,7 +218500,7 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KFC_stalinism.dds"
+            animationmaskfile = "gfx/interface/goals/KFC_stalinism2.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -218575,6 +218575,450 @@ SpriteType = {
 
         animation = {
             animationmaskfile = "gfx/interface/goals/KFC_cultural_protection_laws.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_combat_drug_use"
+        texturefile = "gfx/interface/goals/KFC_combat_drug_use.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_combat_drug_use_shine"
+        texturefile = "gfx/interface/goals/KFC_combat_drug_use.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_combat_drug_use.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_combat_drug_use.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_a_new_querfront"
+        texturefile = "gfx/interface/goals/KFC_a_new_querfront.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_a_new_querfront_shine"
+        texturefile = "gfx/interface/goals/KFC_a_new_querfront.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_a_new_querfront.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_a_new_querfront.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_rewrite_history_books"
+        texturefile = "gfx/interface/goals/KFC_rewrite_history_books.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_rewrite_history_books_shine"
+        texturefile = "gfx/interface/goals/KFC_rewrite_history_books.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_rewrite_history_books.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_rewrite_history_books.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_a_new_national_dish"
+        texturefile = "gfx/interface/goals/KFC_a_new_national_dish.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_a_new_national_dish_shine"
+        texturefile = "gfx/interface/goals/KFC_a_new_national_dish.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_a_new_national_dish.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_a_new_national_dish.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_patrol_the_cities"
+        texturefile = "gfx/interface/goals/KFC_patrol_the_cities.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_patrol_the_cities_shine"
+        texturefile = "gfx/interface/goals/KFC_patrol_the_cities.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_patrol_the_cities.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_patrol_the_cities.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_combat_demographic_issue"
+        texturefile = "gfx/interface/goals/KFC_combat_demographic_issue.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_combat_demographic_issue_shine"
+        texturefile = "gfx/interface/goals/KFC_combat_demographic_issue.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_combat_demographic_issue.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_combat_demographic_issue.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_close_nonwhite_immigration"
+        texturefile = "gfx/interface/goals/KFC_close_nonwhite_immigration.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_close_nonwhite_immigration_shine"
+        texturefile = "gfx/interface/goals/KFC_close_nonwhite_immigration.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_close_nonwhite_immigration.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_close_nonwhite_immigration.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_sterilize_those_who_arent_needed"
+        texturefile = "gfx/interface/goals/KFC_sterilize_those_who_arent_needed.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_sterilize_those_who_arent_needed_shine"
+        texturefile = "gfx/interface/goals/KFC_sterilize_those_who_arent_needed.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_sterilize_those_who_arent_needed.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_sterilize_those_who_arent_needed.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_outlaw_abortion"
+        texturefile = "gfx/interface/goals/KFC_outlaw_abortion.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_outlaw_abortion_shine"
+        texturefile = "gfx/interface/goals/KFC_outlaw_abortion.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_outlaw_abortion.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_outlaw_abortion.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_guarantee_childcare"
+        texturefile = "gfx/interface/goals/KFC_guarantee_childcare.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_guarantee_childcare_shine"
+        texturefile = "gfx/interface/goals/KFC_guarantee_childcare.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_guarantee_childcare.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_guarantee_childcare.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_white_workers_paradise"
+        texturefile = "gfx/interface/goals/KFC_white_workers_paradise.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_white_workers_paradise_shine"
+        texturefile = "gfx/interface/goals/KFC_white_workers_paradise.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_white_workers_paradise.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_white_workers_paradise.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_KFC_a_new_beginnning"
+        texturefile = "gfx/interface/goals/KFC_a_new_beginnning.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_KFC_a_new_beginnning_shine"
+        texturefile = "gfx/interface/goals/KFC_a_new_beginnning.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_a_new_beginnning.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KFC_a_new_beginnning.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
