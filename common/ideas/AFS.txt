@@ -478,7 +478,7 @@ ideas = {
 
 		#Hawkins Post-Civil War Ideas
 		AFS_the_green_army_weakened = {
-			#picture = 
+			picture = AFS_the_green_army
 			modifier = {
 				surrender_limit = -0.1
 				army_attack_factor = 0.05
@@ -745,7 +745,7 @@ ideas = {
 		}
 
 		AFS_howie_hawkins_figurehead = {
-			picture = howie
+			picture = "GFX_idea_AFS_howie_advisor"
 			modifier = {
 				political_power_gain = 0.05
 				stability_factor = 0.05

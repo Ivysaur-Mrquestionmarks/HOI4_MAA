@@ -54,7 +54,6 @@ AFS_vermin_balance_of_power_category = {
 				    days = 0
 			    }
 			}
-			clr_country_flag = AFS_civil_war_flag
 		}
 	}
 
@@ -75,23 +74,15 @@ AFS_vermin_balance_of_power_category = {
 		}
 
 		available = {
-			hidden_trigger = {
-				OR = {
-				    has_country_flag = AFS_civil_war_over
-				    has_completed_focus = AFS_againist_the_triumvirate
-				}
-			}
+			has_country_flag = AFS_civil_war_over
 		}
 
-		days_mission_timeout = 35
+		days_mission_timeout = 55
 
 		fire_only_once = no
 
 		activation = {
-			OR = {
-			    has_completed_focus = AFS_againist_tyranny
-				has_completed_focus = AFS_againist_lawlessness
-			}
+			has_country_flag = AFS_civil_war_flag
 		}
 
 		is_good = no
@@ -102,7 +93,7 @@ AFS_vermin_balance_of_power_category = {
 		timeout_effect = {
 			add_power_balance_value = {
 				id = vermin_bop
-				value = -0.1
+				value = -0.05
 				tooltip_side = vermin_powerless
 			}
 			add_manpower = -1000
@@ -345,7 +336,6 @@ AFS_hawkins_balance_of_power_category = {
 				    days = 0
 			    }
 			}
-			clr_country_flag = AFS_civil_war_flag_hawkins
 		}
 	}
 
@@ -366,23 +356,15 @@ AFS_hawkins_balance_of_power_category = {
 		}
 
 		available = {
-			hidden_trigger = {
-			    OR = {
-				    has_country_flag = AFS_civil_war_over_hawkins
-				    has_completed_focus = AFS_againist_the_triumvirate
-			    }
-			}
+			has_country_flag = AFS_civil_war_over
 		}
 
-		days_mission_timeout = 35
+		days_mission_timeout = 55
 
 		fire_only_once = no
 
 		activation = {
-			OR = {
-			    has_completed_focus = AFS_againist_tyranny
-				has_completed_focus = AFS_againist_lawlessness
-			}
+			has_country_flag = AFS_civil_war_flag_hawkins
 		}
 
 		is_good = no
@@ -393,7 +375,7 @@ AFS_hawkins_balance_of_power_category = {
 		timeout_effect = {
 			add_power_balance_value = {
 				id = hawkins_bop
-				value = -0.1
+				value = -0.05
 				tooltip_side = hawkins_powerless
 			}
 			add_manpower = -1000
@@ -631,7 +613,6 @@ AFS_mattis_balance_of_power_category = {
 				    days = 0
 			    }
 			}
-			clr_country_flag = AFS_civil_war_flag_mattis
 		}
 	}
 
@@ -652,23 +633,15 @@ AFS_mattis_balance_of_power_category = {
 		}
 
 		available = {
-			hidden_trigger = {
-			    OR = {
-				    has_country_flag = AFS_civil_war_over_mattis
-				    has_completed_focus = AFS_againist_the_triumvirate
-			    }
-			}
+			has_country_flag = AFS_civil_war_over
 		}
 
-		days_mission_timeout = 35
+		days_mission_timeout = 55
 
 		fire_only_once = no
 
 		activation = {
-			OR = {
-			    has_completed_focus = AFS_againist_tyranny
-				has_completed_focus = AFS_againist_lawlessness
-			}
+			has_country_flag = AFS_civil_war_flag_mattis
 		}
 
 		is_good = no
@@ -679,7 +652,7 @@ AFS_mattis_balance_of_power_category = {
 		timeout_effect = {
 			add_power_balance_value = {
 				id = mattis_bop
-				value = -0.1
+				value = -0.05
 				tooltip_side = mattis_powerless
 			}
 			add_manpower = -1000
@@ -3664,7 +3637,7 @@ AFS_saving_terra_decisions = {
 		}
 
 		available = {	
-            amount_research_slots > 4
+            amount_research_slots > 3
 			num_of_owned_factories > 100
 			NOT = {
 				has_country_flag = AFS_doing_political_action
@@ -5703,7 +5676,7 @@ AFS_decaying_savior = {
 			NOT = {
 				has_country_flag = AFS_doing_mattis_action
 			}
-			amount_research_slots > 5
+			amount_research_slots > 3
 			OR = {
 				nuclear_facility > 1
 				land_facility > 1

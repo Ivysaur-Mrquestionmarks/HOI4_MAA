@@ -55,7 +55,7 @@ characters={
 		}
 		country_leader = {
 			ideology = eco_authoritarianism
-			traits = { AFS_leader_of_a_green_america }
+			traits = { AFS_leading_the_green_front }
 			expire = "2060.1.1.1"
 			id = -1
 		}
@@ -76,7 +76,7 @@ characters={
 				}
 			}
 			traits = {
-				
+				AFS_leading_the_green_front
 			}
 			ai_will_do = {
 				factor = 5

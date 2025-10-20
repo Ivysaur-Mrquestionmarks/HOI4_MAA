@@ -3,7 +3,7 @@
  ################################ EVENTS ################################
 
  AFS.1.t:0 "The Triumvirate Meeting Starts"
- AFS.1.d:0 ""
+ AFS.1.d:0 "vermin, hawkins, and mattis meet in columbus to decide on what policies to do in order to keep the american free state running"
  AFS.1.a:0 "Maybe We Can Still Be Friends?"
  
  AFS.2.t:0 "Triumvirate: Economic Plans?"
@@ -47,7 +47,7 @@
  AFS.9.a:0 "Time to Rebuild."
 
  AFS.10.t:0 "Jon Husted Killed By Anarchists"
- AFS.10.d:0 "jon husted (who was mike dewine's lieutenant governor and is dewines top guy in this world) gets killed by vermin anarchists"
+ AFS.10.d:0 "jon husted (who was mike dewine's lieutenant governor before 2025) gets killed by vermin anarchists"
  AFS.10.a:0 "Who Will Ever Replace Him?"
 
  AFS.11.t:0 "[AFS.GetLeader] Invites Us to Their Faction"
@@ -63,6 +63,10 @@
  AFS.13.d:0 ""
  AFS.13.a:0 "..."
 
+ AFS.14.t:0 "The Ohio Republican Party Grows"
+ AFS.14.d:0 "people are starting to not like the triumvirate and are now supporting the republicans"
+ AFS.14.a:0 "They Can't Be A Threat, Right?"
+
  #Vermin Events
 
  vermin.1.t:0 "Vermin Meets With His Allies"
@@ -70,7 +74,7 @@
  vermin.1.a:0 "Hawkins And Mattis Must Be Defeated!"
 
  vermin.2.t:0 "Vermin Rally At Columbus"
- vermin.2.d:0 ""
+ vermin.2.d:0 "vermin does a rally to get support against hawkins and mattis"
  vermin.2.a:0 "The New Capital of Anarchism!"
 
  vermin.3.t:0 "Where To Rally at Next?"
@@ -135,7 +139,7 @@
  vermin.17.a:0 "Anarchism Can Only Succeed If We Work Together!"
 
  vermin.18.t:0 "Welcome to Our Commune!"
- vermin.18.d:0 "(this event popups after doing the autonomous regions focus) vermin visits a commune and meets with the locals there (the people in the commune are the average twitter artist leftists)"
+ vermin.18.d:0 "(this event popups after doing the autonomous regions focus) vermin visits a commune and meets with the locals there"
  vermin.18.a:0 "What A Nice Visit."
 
  vermin.19.t:0 "Protecting Our Homes"
@@ -420,16 +424,16 @@
  vance.3.d:0 "mike dewine gets assassinated by a hawkins loyalist while mike was in the capital building (columbus, ohio statehouse) making orders"
  vance.3.a:0 "We Will Get Those Extremists!"
 
- vance.4.t:0 "J.D Vance Sworn In As President of Ohio"
+ vance.4.t:0 "JD Vance Sworn In As President of Ohio"
  vance.4.d:0 ""
  vance.4.a:0 "He Will Continue DeWine's Mission!"
 
  vance.5.t:0 "Triumvirate Strongholds Captured"
- vance.5.d:0 "after mike dewine's assassination, j.d vance orders to arrest more triumvirate loyalists and puts the nation into martial law"
+ vance.5.d:0 "after mike dewine's assassination, JD vance orders to arrest more triumvirate loyalists and puts the nation into martial law"
  vance.5.a:0 "This is For DeWine!"
 
  vance.6.t:0 "Thiel's Request"
- vance.6.d:0 "(pre dewine assassination event) peter thiel (who has been funding vance and helping him out to be mike dewine's vice president) wants j.d vance to rule with an iron fist and bring the dark enlightenment to ohio"
+ vance.6.d:0 "(pre dewine assassination event) peter thiel (who has been funding vance and helping him out to be mike dewine's vice president) wants JD vance to rule with an iron fist and bring the dark enlightenment to ohio"
  vance.6.a:0 "I'm Not Becoming an Autocrat!"
  vance.6.b:0 "I Will Listen to Your Request Peter."
 
@@ -515,7 +519,7 @@
  vance.25.a:0 "Degenerates Have No Place in The Duchy!"
 
  vance.26.t:0 "A New Enlightened, and Catholic America"
- vance.26.d:0 "Today, J.D Vance, Former Duke and now "King of America" has announced in a speech outside the former capital building, now known as the "Grand Court of The Monarch" with Curtis Yarvin and Peter Theil next to him, that the "last warlords of America have surrendered to us" and that stability and order has been fully established across America. In this same speech, J.D Vance has also said that he has already begun talks with countries, and international organizations."
+ vance.26.d:0 "Today, JD Vance, Former Duke and now "King of America" has announced in a speech outside the former capital building, now known as the "Grand Court of The Monarch" with Curtis Yarvin and Peter Theil next to him, that the "last warlords of America have surrendered to us" and that stability and order has been fully established across America. In this same speech, JD Vance has also said that he has already begun talks with countries, and international organizations."
  vance.26.a:0 "Has America Really been Enlightened?"
 
  vance.27.t:0 "Rumors from Springfield"
@@ -697,7 +701,7 @@
  AFS_virginian_cooporation:0 "Virginian Cooperation"
  AFS_virginian_cooporation_desc:0 "To our delight it seems the Anarchists have managed to revolt against their oppressors in Virginia and have managed to set up an Anarchist state like ours. It is very good for us and we will reach out to them and invite them to join us in our revolution against tyranny."
  AFS_riding_to_richmond:0 "Riding to Richmond"
- AFS_riding_to_richmond_desc:0 "It is time that the people of Virginia be free from their chains and for their statist government to be overthrown. To Richmond! my little ponies!"
+ AFS_riding_to_richmond_desc:0 "Once again oppression dwells in the halls of Richmond Virginia, like the olden days of the civil war where chattel slavers held the state at bayonet’s point. We will ride through Virginia to Richmond like General Grant once done. For as he freed men from bondage to slavers, we will free all from the bondage of the state."
  AFS_freedom_to_the_coal_miners:0 "Freedom to the Coal Miners"
  AFS_freedom_to_the_coal_miners_desc:0 "The greedy corporations in West Virginia have sucked the state dry and have unapologetically enslaved its workers. These coal miners work day and night breaking their backs just for corporate fiends to line their pockets. But do not worry fellow workers. We are here to free you from your indentured servitude."
  AFS_resist_againist_the_cornel:0 "Resist Against the Colonel"
@@ -713,7 +717,7 @@
  AFS_the_dawn_of_anarchism_desc:0 "The main contenders of the American Civil War have been conquered and now we stand as the biggest and the strongest state within the former US. Many have said we would fail, we have proved them wrong once again!"
 
  AFS_the_ride_into_the_desert:0 "The Ride Into the Desert"
- AFS_the_ride_into_the_desert_desc:0 "To the west lie the worst of the worst: Nazis, Theocrats, and crazed Luddites. They must be stopped if we want to make America free!"
+ AFS_the_ride_into_the_desert_desc:0 "Out here there are only 2 things: sand and insanity. From Nazis, to Commies, to Crazed Mormons this barren land has fell victim to the worst the statists have to bring against the people. We will cross the Mojave like a legion of old, to free the land from the statist yesmen and their corrupt system where the house always wins. Its time to watch the house burn."
  AFS_rocky_mountains_liberation:0 "Rocky Mountain's Liberation"
  AFS_rocky_mountains_liberation_desc:0 "The last of Trump's followers are now fortifying in the mountains. But that won't do anything against our liberation of the Rockies! even if our little ponies may not handle these mountains."
  AFS_communist_oppressors:0 "Communist Oppressors"
@@ -1116,7 +1120,7 @@
  AFS_cooporation_with_third_parties_desc:0 ""
  AFS_government_unity:0 "Government Unity"
  AFS_government_unity_desc:0 ""
- AFS_enforce_vances_government_policies:0 "Reinforce DeWine's Polices"
+ AFS_enforce_vances_government_policies:0 "Reinforce DeWine's Policies"
  AFS_enforce_vances_government_policies_desc:0 ""
  AFS_the_question_of_power:0 "The Question of Power"
  AFS_the_question_of_power_desc:0 ""
@@ -1799,7 +1803,7 @@
 
  #Saving Terra Decisions
  AFS_saving_terra_decisions:0 "Saving Terra"
- AFS_saving_terra_decisions_desc:0 "\n\n\n\n£AFS_saving_terra_decisions_pic\n\n\n\n\n\n\n\n"
+ AFS_saving_terra_decisions_desc:0 "\n\n\n\n£AFS_saving_terra_decisions_pic\n\n\n\n\n\n\n\nMother Nature is dying. Humanity's years and years of destruction have put her in a very critical state, and we must save Mother Nature from her demise and rid humanity from Terra, For Terra! For Mother!"
 
  AFS_eliminate_the_oil_barons:0 "Eliminate The Oil Barons"
  AFS_eliminate_the_wealthly:0 "Eliminate The Wealthly"
@@ -1814,6 +1818,7 @@
  AFS_take_down_the_taj_mahal:0 "Take Down The Taj Mahal"
  AFS_begin_a_terror_attack_in_sydney:0 "Begin a Terror Attack in Sydney"
  AFS_build_the_ai:0 "Build The A.I"
+ AFS_build_the_ai_desc:0 "With every step we take into improving our A.I, is a step closer to it making the perfect disease to wipe terra clean of it's oppressers."
  AFS_release_the_pandemic:0 "Release The Pandemic "
 
  #Hawkins Political Decisions
@@ -1901,7 +1906,7 @@
 
  #Dark Enlightenment Vance Political Decisions
  AFS_enlighten_vance_political_decisions:0 "The Duke's Duchy"
- AFS_enlighten_vance_political_decisions_desc:0 "\n\n\n\n£AFS_enlighten_vance_political_decisions_pic\n\n\n\n\n\n\n\n"
+ AFS_enlighten_vance_political_decisions_desc:0 "\n\n\n\n£AFS_enlighten_vance_political_decisions_pic\n\n\n\n\n\n\n\nJD Vance has established his duchy and now has complete control over Ohio. Unfortunately, the people of Ohio still don't accept our rule, and with that, we must transform society into a loyal and traditional society."
 
  AFS_show_them_truth:0 "Show Them Truth"
  AFS_who_we_oppose_is_your_enemy:0 "Who We Oppose is You're Enemy"
@@ -2065,7 +2070,7 @@
  #Characters
  AFS_environmental_salvation_council:0 "Environmental Salvation Council"
  AFS_venn:0 "Venn"
- AFS_jd_vance:0 "J.D Vance"
+ AFS_jd_vance:0 "JD Vance"
  AFS_charlie_earl:0 "Charlie Earl"
  AFS_nickie_antonio:0 "Nickie Antonio" 
  AFS_alex_triantafilou:0 "Alex Triantafilou"

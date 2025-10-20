@@ -375,7 +375,7 @@ focus_tree = {
 				}
 			    power_balance_value = {
                     id = vermin_bop
-                    value > 0.7
+                    value > 0.5
                 }
 			}
 		}
@@ -2357,7 +2357,7 @@ focus_tree = {
 				}
 			    power_balance_value = {
                     id = mattis_bop
-                    value > 0.7
+                    value > 0.5
                 }
 			}
 		}
@@ -2427,7 +2427,7 @@ focus_tree = {
 				}
 			    power_balance_value = {
                     id = hawkins_bop
-                    value > 0.7
+                    value > 0.5
                 }
 			}
 		}

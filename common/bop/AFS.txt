@@ -44,6 +44,10 @@ vermin_bop = {
 			}
 			on_activate = {
 				set_country_flag = AFS_mike_dewine_coup_available
+				country_event = {
+				    id = AFS.14
+				    days = 0
+			    }
 			}
 		}
 		range = {
@@ -156,6 +160,10 @@ hawkins_bop = {
 			}
 			on_activate = {
 				set_country_flag = AFS_mike_dewine_coup_available
+				country_event = {
+				    id = AFS.14
+				    days = 0
+			    }
 			}
 		}
 		range = {
@@ -269,6 +277,10 @@ mattis_bop = {
 			}
 			on_activate = {
 				set_country_flag = AFS_mike_dewine_coup_available
+				country_event = {
+				    id = AFS.14
+				    days = 0
+			    }
 			}
 		}
 		range = {

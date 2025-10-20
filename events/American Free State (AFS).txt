@@ -571,8 +571,10 @@ country_event = {
 			remove_mission = AFS_enemy_sabatoge_vermin
 			remove_mission = AFS_enemy_sabatoge_hawkins
 			remove_mission = AFS_enemy_sabatoge_mattis
-			remove_country_flag = AFS_civil_war_flag
-		    remove_global_flag = ohio_civil_war_global
+			clr_country_flag = AFS_civil_war_flag
+			clr_country_flag = AFS_civil_war_flag_hawkins
+			clr_country_flag = AFS_civil_war_flag_mattis
+		    clr_global_flag = ohio_civil_war_global
 		    set_country_flag = AFS_civil_war_over
 			remove_mission = AFS_enemy_sabatoge_vermin
 		    remove_mission = AFS_enemy_sabatoge_hawkins
@@ -708,6 +710,26 @@ country_event = {
 			    id = vance.11
 		        days = 0
 		    }
+		}
+	}
+}
+
+#The Ohio Republican Party Grows
+country_event = {
+	id = AFS.14
+	title = AFS.14.t
+	desc = AFS.14.d
+	picture = event_AFS_mike_dewine_1
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = AFS.14.a
+		ai_chance = {
+			factor = 100
 		}
 	}
 }
@@ -1586,7 +1608,7 @@ country_event = {
 	picture = event_AFS_terror_attack
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
-	fire_only_once = yes
+	fire_only_once = no
 	immediate = {
     
 	}
@@ -1617,7 +1639,7 @@ country_event = {
 	picture = event_AFS_terror_attack
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
-	fire_only_once = yes
+	fire_only_once = no
 	immediate = {
     
 	}
