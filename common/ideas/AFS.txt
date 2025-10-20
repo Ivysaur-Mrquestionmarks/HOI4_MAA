@@ -297,7 +297,7 @@ ideas = {
 				political_power_gain = 0.05
 				acclimatization_cold_climate_gain_factor = 0.2
 				acclimatization_hot_climate_gain_factor = 0.2
-				experience_gain_army_unit = 0.2
+				experience_gain_army_unit = 0.15
 				special_forces_cap = 0.2
 				army_org_factor = -0.05
 				weekly_manpower = 15
@@ -310,7 +310,7 @@ ideas = {
 				war_support_factor = 0.1
 				acclimatization_cold_climate_gain_factor = 0.35
 				acclimatization_hot_climate_gain_factor = 0.35
-				experience_gain_army_unit = 0.4
+				experience_gain_army_unit = 0.3
 				special_forces_cap = 0.25
 				weekly_manpower = 125
 			}
@@ -327,7 +327,7 @@ ideas = {
 			picture = AFS_vermins_black_army_idea
 			modifier = {
 				cavalry_attack_factor = 0.05
-				army_org_factor = 0.05
+				army_org_factor = -0.05
 				breakthrough_factor = 0.05
 				army_defence_factor = 0.05
 				surrender_limit = 0.1
@@ -337,19 +337,19 @@ ideas = {
 			picture = AFS_vermins_black_army_idea
 			modifier = {
 				cavalry_attack_factor = 0.1
-				army_org_factor = 0.1
-				breakthrough_factor = 0.1
+				army_org_factor = 0.05
+				breakthrough_factor = 0.05
 				army_defence_factor = 0.1
 				army_morale_factor = 0.1
-				surrender_limit = 0.15
+				surrender_limit = 0.1
 			}
 		}
 		AFS_vermins_black_army_4 = {
 			picture = AFS_vermins_black_army_idea
 			modifier = {
 				cavalry_attack_factor = 0.15
-				army_org_factor = 0.15
-				breakthrough_factor = 0.15
+				army_org_factor = 0.1
+				breakthrough_factor = 0.1
 				army_defence_factor = 0.15
 				army_morale_factor = 0.15
 				surrender_limit = 0.2
@@ -359,8 +359,8 @@ ideas = {
 			picture = AFS_vermins_black_army_idea
 			modifier = {
 				cavalry_attack_factor = 0.25
-				army_org_factor = 0.2
-				breakthrough_factor = 0.15
+				army_org_factor = 0.15
+				breakthrough_factor = 0.1
 				army_defence_factor = 0.2
 				army_morale_factor = 0.15
 				surrender_limit = 0.2
@@ -370,9 +370,9 @@ ideas = {
 			picture = AFS_vermins_black_army_idea
 			modifier = {
 				cavalry_attack_factor = 0.3
-				army_org_factor = 0.25
-				breakthrough_factor = 0.2
-				army_defence_factor = 0.25
+				army_org_factor = 0.15
+				breakthrough_factor = 0.15
+				army_defence_factor = 0.2
 				army_morale_factor = 0.2
 				surrender_limit = 0.25
 			}
@@ -380,15 +380,15 @@ ideas = {
 		AFS_for_father_anarchy = {
 			#picture = 
 			modifier = {
-				conscription_factor = 0.15
+				conscription_factor = 0.05
                 training_time_factor = -0.25
 			}
 		}
 		AFS_for_father_anarchy_2 = {
 			picture = AFS_for_father_anarchy
 			modifier = {
-				conscription_factor = 0.2
-                training_time_factor = -0.45
+				conscription_factor = 0.15
+                training_time_factor = -0.35
 			}
 		}
 		AFS_a_stateless_economy = {
@@ -412,7 +412,7 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 				industry_repair_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 		AFS_a_stateless_economy_3 = {
@@ -421,10 +421,10 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 				consumer_goods_factor = -0.2
 				consumer_goods_expected_value = -0.2
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
-				industry_repair_factor = 0.15
-				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				industry_repair_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
 		AFS_a_stateless_economy_4 = {
@@ -433,10 +433,10 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 				consumer_goods_factor = -0.25
 				consumer_goods_expected_value = -0.25
-				industrial_capacity_factory = 0.2
-				industrial_capacity_dockyard = 0.2
-				industry_repair_factor = 0.2
-				production_factory_efficiency_gain_factor = 0.2
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				industry_repair_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
 			}
 		}
 		AFS_a_stateless_economy_5 = {
@@ -445,10 +445,10 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 				consumer_goods_factor = -0.3
 				consumer_goods_expected_value = -0.3
-				industrial_capacity_factory = 0.25
-				industrial_capacity_dockyard = 0.25
-				industry_repair_factor = 0.25
-				production_factory_efficiency_gain_factor = 0.25
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				industry_repair_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
 			}
 		}
 		AFS_a_stateless_economy_6 = {
@@ -457,10 +457,10 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 				consumer_goods_factor = -0.35
 				consumer_goods_expected_value = -0.35
-				industrial_capacity_factory = 0.3
-				industrial_capacity_dockyard = 0.3
-				industry_repair_factor = 0.3
-				production_factory_efficiency_gain_factor = 0.3
+				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.25
+				industry_repair_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
 			}
 		}
 		AFS_a_stateless_economy_7 = {
@@ -469,10 +469,10 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				consumer_goods_factor = -0.4
 				consumer_goods_expected_value = -0.4
-				industrial_capacity_factory = 0.35
-				industrial_capacity_dockyard = 0.35
-				industry_repair_factor = 0.35
-				production_factory_efficiency_gain_factor = 0.35
+				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.25
+				industry_repair_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.3
 			}
 		}
 
@@ -519,9 +519,9 @@ ideas = {
 			picture = AFS_the_green_army_terror_1
 			modifier = {
 				surrender_limit = 0.1
-				army_attack_factor = 0.15
+				army_attack_factor = 0.1
 				army_defence_factor = 0.1
-				army_morale_factor = 0.15
+				army_morale_factor = 0.1
 				army_org_factor = -0.1
 				army_speed_factor = 0.1
 				breakthrough_factor = 0.1
@@ -534,9 +534,9 @@ ideas = {
 			picture = AFS_the_green_army_terror_1
 			modifier = {
 				surrender_limit = 0.15
-				army_attack_factor = 0.2
-				army_defence_factor = 0.15
-				army_morale_factor = 0.2
+				army_attack_factor = 0.15
+				army_defence_factor = 0.1
+				army_morale_factor = 0.15
 				army_org_factor = -0.15
 				army_speed_factor = 0.2
 				breakthrough_factor = 0.15
@@ -760,7 +760,7 @@ ideas = {
 				political_power_gain = 0.05
 				acclimatization_cold_climate_gain_factor = 0.2
 				acclimatization_hot_climate_gain_factor = 0.2
-				experience_gain_army_unit = 0.2
+				experience_gain_army_unit = 0.15
 				special_forces_cap = 0.2
 				army_org_factor = -0.05
 				weekly_manpower = 15
@@ -893,7 +893,7 @@ ideas = {
 			modifier = {
 				party_popularity_stability_factor = 0.2
 				authoritarian_left_drift = 0.06
-				monthly_population = 0.3
+				monthly_population = 0.25
 				research_speed_factor = 0.2
                 compliance_growth = 0.2
 			}
@@ -1055,6 +1055,19 @@ ideas = {
 			modifier = {
 				surrender_limit = -0.05
 				army_attack_factor = 0.05
+				army_defence_factor = 0.03
+				army_morale_factor = 0.03
+				army_org_factor = 0.05
+				army_strength_factor = 0.05
+				breakthrough_factor = 0.05
+			}
+		}
+
+		AFS_strength_and_might_2 = {
+			picture = AFS_strength_and_might
+			modifier = {
+				surrender_limit = 0.1
+				army_attack_factor = 0.05
 				army_defence_factor = 0.05
 				army_morale_factor = 0.05
 				army_org_factor = 0.05
@@ -1064,30 +1077,16 @@ ideas = {
 			}
 		}
 
-		AFS_strength_and_might_2 = {
-			picture = AFS_strength_and_might
-			modifier = {
-				surrender_limit = 0.1
-				army_attack_factor = 0.1
-				army_defence_factor = 0.05
-				army_morale_factor = 0.1
-				army_org_factor = 0.08
-				army_strength_factor = 0.1
-				breakthrough_factor = 0.1
-				army_leader_start_attack_level = 1
-			}
-		}
-
 		AFS_strength_and_might_3 = {
 			picture = AFS_strength_and_might
 			modifier = {
 				surrender_limit = 0.15
-				army_attack_factor = 0.15
-				army_defence_factor = 0.1
-				army_morale_factor = 0.15
-				army_org_factor = 0.1
-				army_strength_factor = 0.15
-				breakthrough_factor = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = 0.05
+				army_strength_factor = 0.1
+				breakthrough_factor = 0.1
 				army_leader_start_attack_level = 1
 				army_leader_start_planning_level = 1
 			}
@@ -1097,12 +1096,12 @@ ideas = {
 			picture = AFS_strength_and_might
 			modifier = {
 				surrender_limit = 0.15
-				army_attack_factor = 0.2
+				army_attack_factor = 0.1
 				army_defence_factor = 0.1
-				army_morale_factor = 0.2
-				army_org_factor = 0.15
-				army_strength_factor = 0.2
-				breakthrough_factor = 0.2
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+				army_strength_factor = 0.1
+				breakthrough_factor = 0.1
 				army_leader_start_attack_level = 2
 				army_leader_start_planning_level = 2
 			}
@@ -1192,9 +1191,9 @@ ideas = {
 		AFS_the_new_american_industrial_age_4 = {
 			picture = AFS_the_new_american_industrial_age
 			modifier = {
-				consumer_goods_factor = -0.3
+				consumer_goods_factor = -0.25
 				production_speed_buildings_factor = 0.2
-				production_factory_max_efficiency_factor = 0.25
+				production_factory_max_efficiency_factor = 0.2
 				production_factory_efficiency_gain_factor = 0.2
 				global_building_slots = 2
 			}
@@ -1203,9 +1202,9 @@ ideas = {
 		AFS_the_new_american_industrial_age_5 = {
 			picture = AFS_the_new_american_industrial_age
 			modifier = {
-				consumer_goods_factor = -0.4
+				consumer_goods_factor = -0.3
 				production_speed_buildings_factor = 0.2
-				production_factory_max_efficiency_factor = 0.3
+				production_factory_max_efficiency_factor = 0.25
 				production_factory_efficiency_gain_factor = 0.25
 				global_building_slots = 2
 			}
@@ -1218,7 +1217,7 @@ ideas = {
 				puppet_cost_factor = -0.65
 				annex_cost_factor = -0.35
 				send_volunteer_size = 25
-				justify_war_goal_time = -0.75
+				justify_war_goal_time = -0.5
 				embargo_cost_factor = -0.65
 			}
 		}
@@ -1460,7 +1459,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.35
 				production_speed_buildings_factor = 0.2
-				production_factory_max_efficiency_factor = 0.25
+				production_factory_max_efficiency_factor = 0.2
 				production_factory_efficiency_gain_factor = 0.2
 				local_resources_factor = 0.2
 			}
@@ -1481,8 +1480,8 @@ ideas = {
 		AFS_national_army_of_ohio_2 = {
 			picture = AFS_national_army_of_ohio
 			modifier = {
-				army_attack_factor = 0.1
-				army_defence_factor = 0.15
+				army_attack_factor = 0.05
+				army_defence_factor = 0.1
 				army_morale_factor = 0.1
 				army_org_factor = 0.1
 				army_strength_factor = 0.1
@@ -1493,12 +1492,12 @@ ideas = {
 		AFS_national_army_of_ohio_3 = {
 			picture = AFS_national_army_of_ohio
 			modifier = {
-				army_attack_factor = 0.2
-				army_defence_factor = 0.3
+				army_attack_factor = 0.1
+				army_defence_factor = 0.2
 				army_morale_factor = 0.15
-				army_org_factor = 0.2
-				army_strength_factor = 0.2
-				experience_gain_army_unit = 0.3
+				army_org_factor = 0.1
+				army_strength_factor = 0.1
+				experience_gain_army_unit = 0.2
 			}
 		}
 
@@ -1544,7 +1543,7 @@ ideas = {
 				political_power_gain = 0.15
 				drift_defence_factor = 0.2
 				production_factory_start_efficiency_factor = 0.1
-				global_building_slots = 2
+				global_building_slots = 1
 				compliance_growth_on_our_occupied_states = -0.05
 			}
 		}
@@ -1564,24 +1563,24 @@ ideas = {
 		AFS_the_army_of_the_duke_2 = {
 			picture = AFS_the_army_of_the_duke
 			modifier = {
-				army_attack_factor = 0.15
+				army_attack_factor = 0.1
 				army_defence_factor = 0.08
 				army_morale_factor = 0.1
-				army_org_factor = 0.1
-				army_strength_factor = 0.15
-				breakthrough_factor = 0.1
+				army_org_factor = 0.05
+				army_strength_factor = 0.08
+				breakthrough_factor = 0.08
 			}
 		}
 
 		AFS_the_army_of_the_duke_3 = {
 			picture = AFS_the_army_of_the_duke
 			modifier = {
-				army_attack_factor = 0.25
+				army_attack_factor = 0.15
 				army_defence_factor = 0.1
 				army_morale_factor = 0.15
-				army_org_factor = 0.15
-				army_strength_factor = 0.15
-				breakthrough_factor = 0.15
+				army_org_factor = 0.1
+				army_strength_factor = 0.1
+				breakthrough_factor = 0.1
 			}
 		}
 
@@ -1628,7 +1627,7 @@ ideas = {
 				production_speed_buildings_factor = 0.15
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = -0.15
-				local_resources_factor = 0.25
+				local_resources_factor = 0.2
 				research_speed_factor = 0.25
 			}
 		}
@@ -1640,7 +1639,7 @@ ideas = {
 				production_speed_buildings_factor = 0.2
 				production_factory_max_efficiency_factor = 0.15
 				production_factory_efficiency_gain_factor = -0.15
-				local_resources_factor = 0.3
+				local_resources_factor = 0.25
 				research_speed_factor = 0.25
 			}
 		}
@@ -1681,7 +1680,7 @@ ideas = {
 			#picture = 
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				production_factory_max_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				research_speed_factor = 0.1
 			}
@@ -1692,7 +1691,7 @@ ideas = {
 			modifier = {
                 army_attack_speed_factor = 0.05
 				army_speed_factor = 0.05
-				army_org_factor = -0.05
+				army_org_factor = 0.05
 				breakthrough_factor = 0.05
 			}
 		}
@@ -1702,7 +1701,7 @@ ideas = {
 			modifier = {
                 army_attack_speed_factor = 0.1
 				army_speed_factor = 0.1
-				army_org_factor = -0.1
+				army_org_factor = 0.1
 				breakthrough_factor = 0.05
 			}
 		}
@@ -1712,7 +1711,7 @@ ideas = {
 			modifier = {
                 army_attack_speed_factor = 0.15
 				army_speed_factor = 0.15
-				army_org_factor = -0.1
+				army_org_factor = 0.1
 				breakthrough_factor = 0.1
 			}
 		}
