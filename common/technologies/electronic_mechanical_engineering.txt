@@ -1387,6 +1387,259 @@ technologies = {
 			base = 1
 		}
 	}
+
+	PRA_desalination_upgrade = {
+		production_speed_water_desalination_factor = 0.15
+		allow_branch = {
+			tag = PRA
+		}
+		
+		start_year = 2021
+		research_cost = 1
+
+		path = {
+			leads_to_tech = PRA_basic_irregation 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = PRA_improved_extraction 
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 2 }
+		}
+		categories = {
+			nuclear
+		}
+		special_project_specialization = { specialization_nuclear }
+		
+
+
+		on_research_complete = {
+			#custom_effect_tooltip = {
+			#	localization_key = SP_UNLOCK_PROJECT
+			#	PROJECT = sp_nuclear_reactor	
+			#}
+
+			hidden_effect = {
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	PRA_improved_extraction = {
+
+		
+		start_year = 2022
+		research_cost = 1
+
+		path = {
+			leads_to_tech = PRA_industrial_dehumidifiers 
+			research_cost_coeff = 1
+		}
+
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 4 }
+		}
+		categories = {
+			nuclear
+		}
+		special_project_specialization = { specialization_nuclear }
+		
+
+
+		on_research_complete = {			
+
+			add_to_variable = {
+				var = base_water
+    				value = 3
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	PRA_industrial_dehumidifiers  = {
+
+		
+		start_year = 2026
+		research_cost = 1
+
+		path = {
+			leads_to_tech = PRA_advanced_desalination
+			research_cost_coeff = 1
+		}
+
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+		categories = {
+			nuclear
+		}
+		special_project_specialization = { specialization_nuclear }
+		
+
+
+		on_research_complete = {			
+
+			add_to_variable = {
+				var = base_water
+    				value = 5
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	PRA_advanced_desalination= {
+		production_speed_water_desalination_factor = 0.2
+		
+		start_year = 2028
+		research_cost = 1
+
+
+
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 8 }
+		}
+		categories = {
+			nuclear
+		}
+		special_project_specialization = { specialization_nuclear }
+		
+
+
+		on_research_complete = {			
+
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	PRA_basic_irregation = {
+
+		
+		start_year = 2022
+		research_cost = 1
+
+		path = {
+			leads_to_tech = PRA_improved_irregation 
+			research_cost_coeff = 1
+		}
+
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 4 }
+		}
+		categories = {
+			nuclear
+		}
+		special_project_specialization = { specialization_nuclear }
+		
+
+
+		on_research_complete = {			
+
+			add_to_variable = {
+				var = water_per_pop
+    				value = 100
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	PRA_improved_irregation = {
+
+
+		
+		start_year = 2026
+		research_cost = 1
+
+		path = {
+			leads_to_tech = PRA_advanced_irregation 
+			research_cost_coeff = 1
+		}
+
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 6 }
+		}
+		categories = {
+			nuclear
+		}
+		special_project_specialization = { specialization_nuclear }
+		
+
+
+		on_research_complete = {			
+
+			add_to_variable = {
+				var = water_per_pop
+    				value = 150
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+
+	PRA_advanced_irregation = {
+
+
+		
+		start_year = 2028
+		research_cost = 1
+
+
+
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 8 }
+		}
+		categories = {
+			nuclear
+		}
+		special_project_specialization = { specialization_nuclear }
+		
+
+
+		on_research_complete = {			
+
+			add_to_variable = {
+				var = water_per_pop
+    				value = 200
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
 	
 	nuclear_reactor = {
 

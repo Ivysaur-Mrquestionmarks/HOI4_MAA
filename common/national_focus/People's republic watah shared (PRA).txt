@@ -1,6 +1,6 @@
 shared_focus = {
 	id = PRA_water_infra
-	search_filters = { joint }
+	search_filters = { water }
 	icon = GFX_goal_USA_IDA_Industrial_Efforts
 	#Temporal position until the rwork proper starts
 	X = 25
@@ -17,10 +17,15 @@ shared_focus = {
 
 	cost = 5
 	ai_will_do = {
-		factor = 5
+		factor = 20
 	}
 
 	completion_reward = {
+		
+		country_event = { 
+			id = California.86
+			days = 3 
+		}
 		304 = {
 			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
@@ -29,5 +34,45 @@ shared_focus = {
     				instant_build = yes
 			}
 		}
+		PRA_water_update = yes
+	}
+}
+
+shared_focus = {
+	id = PRA_desalination_north
+	search_filters = { water }
+	icon = GFX_goal_USA_IDA_Industrial_Efforts
+	#Temporal position until the rwork proper starts
+	X = -2
+	Y = 1
+
+	relative_position_id = PRA_water_infra
+
+
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	prerequisite = { 
+		focus = PRA_water_infra
+        }
+
+	completion_reward = {
+
+		country_event = { 
+			id = California.87
+			days = 3 
+		}
+		289 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+    				type = water_desalination
+    				level = 2
+    				instant_build = yes
+			}
+		}
+		add_ideas = PRA_desalination_construction 
+		PRA_water_update = yes
 	}
 }

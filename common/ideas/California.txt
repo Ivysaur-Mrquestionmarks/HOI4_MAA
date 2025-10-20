@@ -838,26 +838,33 @@ ideas = {
 				resistance_growth = -0.10
 			}
 		}
-PRA_major_draught = {
+		PRA_major_draught = {
 			#picture = FRA_national_mobilization_focus
 			modifier = {
-      war_support_factor = -0.3
-      stability_weekly_factor = -0.02
-      stability_factor = -0.1
-      consumer_goods_expected_value = 0.1
-      production_speed_buildings_factor = -0.4
-      industrial_capacity_factory = -0.4
+      				war_support_factor = -0.3
+      				stability_weekly_factor = -0.02
+      				stability_factor = -0.1
+      				consumer_goods_expected_value = 0.1
+      				production_speed_buildings_factor = -0.4
+      				industrial_capacity_factory = -0.4
 			}
-	}
-PRA_minor_draught = {
+		}
+		PRA_minor_draught = {
 			#picture = FRA_national_mobilization_focus
 			modifier = {
-      stability_factor = -0.15
-      consumer_goods_expected_value = 0.05
-      production_speed_buildings_factor = -0.15
-      industrial_capacity_factory = -0.25
+ 		     		stability_factor = -0.15
+      				consumer_goods_expected_value = 0.05
+      				production_speed_buildings_factor = -0.15
+      				industrial_capacity_factory = -0.25
 			}
-	}
+		}
+		PRA_desalination_construction = {
+			#picture = 
 
-}
+			modifier = {
+				production_speed_water_desalination_factor = 0.1
+				global_building_slots_factor = 0.10
+			}
+		}
+	}
 }

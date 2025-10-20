@@ -4001,6 +4001,15 @@ guiTypes = {
 
 			}
 			
+			gridboxtype = {
+				name = "PRA_desalination_upgrade_tree"
+				position = { x=920 y=0 }
+				size = { width = 680 height = 500 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+
+			}			
+			
 		}
 
 		containerWindowType = {
