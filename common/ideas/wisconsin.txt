@@ -1286,6 +1286,26 @@ ideas = {
 			}
 		}
 
+		KMT_revenge = {
+			allowed = { original_tag = KMT }
+			targeted_modifier = {
+				tag = HLY
+				attack_bonus_against = 2
+   				breakthrough_bonus_against = 1
+			}
+		}
+
+		KMT_border_turret_initiative = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes
+			modifier = {
+				war_support_factor = 0.1
+				army_defence_factor = 0.2
+				production_speed_bunker_factor = 0.75
+				production_speed_anti_air_building_factor = 0.5
+			}
+		}
+
 
 	}
 
