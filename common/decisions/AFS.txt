@@ -4995,7 +4995,7 @@ AFS_mattis_political_decisions = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_stability_level
@@ -6442,7 +6442,7 @@ AFS_enlighten_vance_political_decisions = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_morale_level
@@ -6500,7 +6500,7 @@ AFS_enlighten_vance_political_decisions = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
@@ -6558,7 +6558,7 @@ AFS_enlighten_vance_political_decisions = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_stability_level
@@ -6616,7 +6616,7 @@ AFS_enlighten_vance_political_decisions = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
@@ -6674,7 +6674,7 @@ AFS_enlighten_vance_political_decisions = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
@@ -6737,7 +6737,7 @@ AFS_enlighten_vance_political_decisions = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.01
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
@@ -6991,7 +6991,7 @@ AFS_enlighten_vance_political_decisions = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			random_controlled_state = {
 				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
@@ -7063,7 +7063,7 @@ AFS_enlighten_vance_political_decisions = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			modify_country_flag = {
                 flag = AFS_dark_vance_political_decision_11
@@ -7126,7 +7126,7 @@ AFS_enlighten_vance_political_decisions = {
 			add_to_variable = {
 				var = AFS.var_autocratic_level
 				value = 0.02
-				tooltip = autocratic_drift_tt
+				tooltip = autocratic_drift_factor_tt
 			}
 			modify_country_flag = {
                 flag = AFS_dark_vance_political_decision_12

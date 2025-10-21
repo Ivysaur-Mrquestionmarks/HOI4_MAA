@@ -2547,7 +2547,7 @@ country_event = {
 		add_to_variable = {
 			var = AFS.var_autocratic_level
 			value = 0.01
-			tooltip = autocratic_drift_tt
+			tooltip = autocratic_drift_factor_tt
 		}
 		add_to_variable = {
 			var = AFS.var_pp_level
