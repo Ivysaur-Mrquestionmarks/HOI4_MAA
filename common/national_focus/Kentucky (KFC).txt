@@ -2601,7 +2601,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_assessing_what_we_have
-		icon = GFX
+		icon = GFX_goal_KFC_assessing_what_we_have
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_a_new_beginnning
@@ -2615,7 +2615,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_setting_up_reservations
-		icon = GFX
+		icon = GFX_goal_KFC_setting_up_reservations
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_assessing_what_we_have
@@ -2629,7 +2629,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_nationalize_nonwhite_property
-		icon = GFX
+		icon = GFX_goal_KFC_nationalize_nonwhite_property
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_assessing_what_we_have
@@ -2643,7 +2643,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_a_white_ethnostate
-		icon = GFX
+		icon = GFX_goal_KFC_a_white_ethnostate
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_setting_up_reservations
@@ -2666,7 +2666,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_looking_outwards
-		icon = GFX
+		icon = GFX_goal_KFC_looking_outwards
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_a_new_beginnning
@@ -2680,7 +2680,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_retreat_into_isolation
-		icon = GFX
+		icon = GFX_goal_KFC_retreat_into_isolation
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_looking_outwards
@@ -2697,7 +2697,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_saving_canada
-		icon = GFX
+		icon = GFX_goal_KFC_saving_canada
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_looking_outwards
@@ -2743,7 +2743,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KFC_end_the_flow_of_drugs_for_good
-		icon = GFX
+		icon = GFX_goal_KFC_end_the_flow_of_drugs_for_good
 		cost = 5.00
 		prerequisite = {
 			focus = KFC_saving_canada
