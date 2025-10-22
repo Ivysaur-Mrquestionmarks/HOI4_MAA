@@ -2667,6 +2667,11 @@ country_event = {
             ideology = military_dictatorship
             trait = AFS_immortal_cyborg
         }
+		remove_trait = {
+            character = AFS_james_mattis
+            ideology = military_dictatorship
+            trait = AFS_ill
+        }
 		remove_country_flag = AFS_mattis_is_gonna_die
 		set_country_flag = AFS_mattis_cyborg
 	}
