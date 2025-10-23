@@ -8774,6 +8774,10 @@ focus_tree = {
 			    target = NRA
 			    type = annex_everything
 		    }
+			create_wargoal = {
+			    target = TIM
+			    type = annex_everything
+		    }
 		}
 	}
 
@@ -10105,6 +10109,10 @@ focus_tree = {
 			    target = NRA
 			    type = annex_everything
 		    }
+			create_wargoal = {
+			    target = TIM
+			    type = annex_everything
+		    }
 		}
 	}
 
@@ -11193,6 +11201,10 @@ focus_tree = {
 		completion_reward = {
 		    create_wargoal = {
 			    target = NRA
+			    type = annex_everything
+		    }
+			create_wargoal = {
+			    target = TIM
 			    type = annex_everything
 		    }
 		}
@@ -12525,6 +12537,10 @@ focus_tree = {
 			    target = NRA
 			    type = annex_everything
 		    }
+			create_wargoal = {
+			    target = TIM
+			    type = annex_everything
+		    }
 		}
 	}
 
@@ -13750,6 +13766,10 @@ focus_tree = {
 			    target = NRA
 			    type = annex_everything
 		    }
+			create_wargoal = {
+			    target = TIM
+			    type = annex_everything
+		    }
 		}
 	}
 
@@ -14004,6 +14024,10 @@ focus_tree = {
 		completion_reward = {
 		    create_wargoal = {
 			    target = NRA
+			    type = annex_everything
+		    }
+			create_wargoal = {
+			    target = TIM
 			    type = annex_everything
 		    }
 		}
