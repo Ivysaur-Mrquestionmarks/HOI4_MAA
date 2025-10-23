@@ -242,4 +242,183 @@ characters={
 			}
 		}
 	}
+
+	#advisors added by MERF THE GREAT
+	GKJ_james_cloudis_smith = {
+		name = "James C. Smith"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/james_smith_advisor.dds" #only photo of him I can find is in black & white, annoyingly. someone sort this out for me cheers
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GKJ_james_smith_advisor
+			cost = 150
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				fortification_engineer
+			}
+		}
+	}
+	GKJ_chase_tramont = {
+		name = "Chase Tramont"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/chase_tramont_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GKJ_chase_tramont_advisor
+			cost = 150
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = { #note for future reference- this dude is an unironic theocrat LOL
+				war_industrialist
+			}
+		}
+	}
+	GKJ_paula_dockery = {
+		name = "Paula Dockery"
+		gender = female
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/paula_dockery_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GKJ_paula_dockery_advisor
+			cost = 150
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				armaments_organizer
+			}
+		}
+	}
+	GKJ_manny_diaz_jr = {
+		name = "Manny Díaz Jr."
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/manny_diaz_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GKJ_manny_diaz_advisor
+			cost = 150
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				technocrat
+			}
+		}
+	}
+	GKJ_joseph_abiodun_ladapo = {
+		name = "Joseph Ladapo"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/joseph_ladapo_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GKJ_joseph_ladapo_advisor
+			cost = 150
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				propaganda_expert
+			}
+		}
+	}
+	GKJ_alberto_remigio_cardenas_pardo = {
+		name = "Al Cárdenas"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/alberto_cardenas_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GKJ_alberto_cardenas_advisor
+			cost = 150
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	GKJ_manuel_a_morales = {
+		name = "Manuel Morales"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/manuel_morales_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GKJ_manuel_morales_advisor
+			cost = 150
+			allowed = {
+				original_tag = GKJ
+				has_dlc = "La Resistance"
+			}
+			visible = {
+				
+			}
+			available = { 
+				has_intelligence_agency  = yes
+			}
+			traits = {
+				head_of_intelligence
+			}
+		}
+	}
 }
