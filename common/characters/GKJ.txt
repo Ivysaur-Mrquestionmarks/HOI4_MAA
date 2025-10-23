@@ -421,4 +421,256 @@ characters={
 			}
 		}
 	}
+	#army
+	GKJ_rosie_cordero_stutz = {
+		name = "Rosie Cordero-Stutz"
+		gender = female
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/rosie_stutz_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = GKJ_rosie_stutz_advisor
+			cost = 200
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_chief_drill_3
+			}
+		}
+	}
+	GKJ_mark_thieme = {
+		name = "Mark Thieme"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/mark_thieme_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = GKJ_rosie_stutz_advisor
+			cost = 100
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_chief_old_guard
+			}
+		}
+	}
+	GKJ_joe_sanchez = {
+		name = "Joe Sanchez"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/joe_sanchez_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = GKJ_joe_sanchez_advisor
+			cost = 100
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_infantry_2
+			}
+		}
+	}
+	GKJ_mario_knapp = {
+		name = "Mario Knapp"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/mario_knapp_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = GKJ_mario_knapp_advisor
+			cost = 50
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_entrenchment_1
+			}
+		}
+	}
+	GKJ_gary_l_howze = {
+		name = "Gary L. Howze"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/gary_howze_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = GKJ_gary_howze_advisor
+			cost = 150
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_CombinedArms_3 
+			}
+		}
+	}
+	GKJ_robert_chandler = {
+		name = "Bob Chandler"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/bob_chandler_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = GKJ_bob_chandler_advisor
+			cost = 100
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				army_armored_2
+			}
+		}
+	}
+	GKJ_mark_brown = {
+		name = "Mark Brown"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/mark_brown_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = GKJ_mark_brown_advisor
+			cost = 50
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				air_close_air_support_1
+			}
+		}
+	}
+	GKJ_anthony_restaino = {
+		name = "Tony Restaino"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/tony_restaino_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = GKJ_tony_restaino_advisor
+			cost = 100
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				air_chief_safety_2
+			}
+		}
+	}
+	GKJ_clay_d_mckinney = {
+		name = "Clay D. McKinney"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/clay_mckinney_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = GKJ_clay_mckinney_advisor
+			cost = 150
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+		}
+	}
+	GKJ_dennis_j_maher = {
+		name = "Dennis J. Maher"
+		portraits= {
+			army = {
+				small = "gfx/interface/ideas/GKJ/dennis_maher_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = GKJ_dennis_maher_advisor
+			cost = 100
+			allowed = {
+				original_tag = GKJ
+			}
+			visible = {
+				
+			}
+			available = { 
+				
+			}
+			traits = {
+				military_theorist 
+			}
+		}
+	}
 }
