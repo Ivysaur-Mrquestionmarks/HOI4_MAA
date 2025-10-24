@@ -428,6 +428,7 @@ characters={
 		portraits= {
 			army = {
 				small = "gfx/interface/ideas/GKJ/rosie_stutz_advisor.dds"
+				large = "gfx/leaders/GKJ/rosie_stutz.tga"
 			}
 		}
 		advisor = {
@@ -446,6 +447,14 @@ characters={
 			traits = {
 				army_chief_drill_3
 			}
+		}
+		field_marshal = {
+			traits = { politically_connected brilliant_strategist urban_assault_specialist }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
 		}
 	}
 	GKJ_mark_thieme = {
@@ -528,6 +537,7 @@ characters={
 		portraits= {
 			army = {
 				small = "gfx/interface/ideas/GKJ/gary_howze_advisor.dds"
+				large = "gfx/leaders/GKJ/gary_howze.tga"
 			}
 		}
 		advisor = {
@@ -546,6 +556,14 @@ characters={
 			traits = {
 				army_CombinedArms_3 
 			}
+		}
+		corps_commander = {
+			traits = { armor_officer cavalry_leader combined_arms_expert }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
 		}
 	}
 	GKJ_robert_chandler = {
@@ -628,6 +646,7 @@ characters={
 		portraits= {
 			army = {
 				small = "gfx/interface/ideas/GKJ/clay_mckinney_advisor.dds"
+				large = "gfx/leaders/GKJ/clay_mckinney.tga"
 			}
 		}
 		advisor = {
@@ -647,12 +666,23 @@ characters={
 				navy_chief_commerce_raiding_3
 			}
 		}
+		navy_leader = {
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 4
+			traits = {
+				chief_engineer blue_water_expert safety_first crisis_magician 
+			}
+		}
 	}
 	GKJ_dennis_j_maher = {
 		name = "Dennis J. Maher"
 		portraits= {
 			army = {
 				small = "gfx/interface/ideas/GKJ/dennis_maher_advisor.dds"
+				large = "gfx/leaders/GKJ/dennis_maher.tga"
 			}
 		}
 		advisor = {
@@ -671,6 +701,14 @@ characters={
 			traits = {
 				military_theorist 
 			}
+		}
+		corps_commander = {
+			traits = { infantry_officer career_officer inflexible_strategist }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
 		}
 	}
 }
