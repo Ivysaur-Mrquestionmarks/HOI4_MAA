@@ -5598,6 +5598,48 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/KMT/military_Margaret_A_Rykowski.dds"
     }
 
+    ### Black Army of Texas (BLA) ###
+    spriteType = {
+        name = "GFX_idea_BLA_international_divisions"
+        texturefile = "gfx/interface/ideas/BLA/BLA_international_divisions.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_BLA_abolished_command_structures"
+        texturefile = "gfx/interface/ideas/BLA/BLA_abolished_command_structures.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_BLA_shock_and_awe"
+        texturefile = "gfx/interface/ideas/BLA/BLA_shock_and_awe.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_BLA_reconciliation_with_locals"
+        texturefile = "gfx/interface/ideas/BLA/BLA_reconciliation_with_locals.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_BLA_fire_and_fury"
+        texturefile = "gfx/interface/ideas/BLA/BLA_fire_and_fury.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_BLA_mother_anarchy_loves_her_sons"
+        texturefile = "gfx/interface/ideas/BLA/BLA_mother_anarchy_loves_her_sons.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_BLA_revolution_to_utmost"
+        texturefile = "gfx/interface/ideas/BLA/BLA_revolution_to_utmost.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_BLA_black_khanate_rising"
+        texturefile = "gfx/interface/ideas/BLA/BLA_black_khanate_rising.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_BLA_anarchist_education"
+        texturefile = "gfx/interface/ideas/BLA/BLA_anarchist_education.tga"
+    }
+    spriteType = {
+        name = "GFX_idea_BLA_unconventional_army"
+        texturefile = "gfx/interface/ideas/BLA/BLA_unconventional_army.tga"
+    }
+
     #companies
     spriteType = {
         name = "GFX_idea_john_deere"
