@@ -506,6 +506,27 @@ characters={
 			}
 		}
 	}
+	HOP_kenneth_leland_morgan = {
+		name = "Kenneth Morgan"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HOP/Kenneth_Morgan_General.dds"
+				large = "gfx/leaders/HOP/kenneth_morgan.tga"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer media_personality trait_reckless }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = { 
+				#has_completed_focus = HOP_For_Aryans #this will make him disappear when new tree is loaded
+				has_country_flag = HOP_kenneth_morgan_recruited
+			}
+		}
+	}
 	
 	#ADVISORS
 	HOP_erich_gliebe = {

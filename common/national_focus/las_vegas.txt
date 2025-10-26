@@ -315,7 +315,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_fear_and_loathing
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_fear_and_loathing
 		cost = 5.00
 		prerequisite = {
 			focus = LAS_viva_las_vegas
@@ -337,7 +337,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_assemble_families
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_call_the_families
 		cost = 4.00
 		prerequisite = {
 			focus = LAS_fear_and_loathing
@@ -391,7 +391,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_fortify_southern_border
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_fortify_border
 		cost = 5.00
 		prerequisite = {
 			focus = LAS_viva_las_vegas
@@ -443,7 +443,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_twenty_two_years
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_goodman_rule
 		cost = 5.00
 		prerequisite = {
 			focus = LAS_viva_las_vegas
@@ -467,7 +467,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_orthodox_approach
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_orthodox_approach
 		cost = 4.00
 		prerequisite = {
 			focus = LAS_twenty_two_years
@@ -524,7 +524,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_covert_loyalism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_covert_loyalty
 		cost = 4.00
 		prerequisite = {
 			focus = LAS_orthodox_approach
@@ -609,7 +609,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_safeguard_democracy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_safeguard_democracy
 		cost = 5.00
 		prerequisite = {
 			focus = LAS_orthodox_approach
@@ -643,7 +643,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_anti_mob_raids
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_mob_raids
 		cost = 2.00
 		prerequisite = {
 			focus = LAS_safeguard_democracy
@@ -817,7 +817,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_purple_star
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_purple_star
 		cost = 4.00
 		prerequisite = {
 			focus = LAS_twenty_two_years
@@ -948,7 +948,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_business_as_usual
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_business_as_usual
 		cost = 5.00
 		prerequisite = {
 			focus = LAS_entertainment_industry
@@ -1020,7 +1020,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_calling_in_a_favour
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_favor
 		cost = 4.00
 		prerequisite = {
 			focus = LAS_groom_the_successor
@@ -1077,7 +1077,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_prepare_the_coup
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_ocean_11
 		cost = 3.00
 		prerequisite = {
 			focus = LAS_gangster_army
@@ -1105,7 +1105,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_honouring_elvis
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_elvis
 		cost = 4.00
 		prerequisite = {
 			focus = LAS_business_as_usual
@@ -1154,7 +1154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_entrench_goodmanism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_entrench_goodman
 		cost = 4.00
 		prerequisite = {
 			focus = LAS_calling_in_a_favour
@@ -1289,7 +1289,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_force_election
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_force_elections
 		cost = 5.00
 		prerequisite = {
 			focus = LAS_overt_loyalism

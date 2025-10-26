@@ -93,6 +93,14 @@ focus_tree = {
 			    amount = 750
 			    producer = HOP
 			}
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Kenneth Morgan"
+				}
+			}
+			hidden_effect = {
+				set_country_flag = HOP_kenneth_morgan_recruited
+			}
 		}
 	}
 
