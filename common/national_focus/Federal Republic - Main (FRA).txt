@@ -3097,7 +3097,7 @@ focus_tree = {
 		}
 		allow_branch = { 
 			NOT = { has_country_flag = FRA_2024_election }
-			#has_country_flag = FRA_biden_removed_from_office_flag
+			has_country_flag = FRA_biden_removed_from_office_flag
 		}
 		available = { has_country_leader = { name = "Kamala Harris" ruling_only = yes } }
 		relative_position_id = FRA_biden_admin
