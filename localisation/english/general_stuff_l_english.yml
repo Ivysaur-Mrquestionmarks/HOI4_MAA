@@ -32,12 +32,6 @@
  tt_resource_cost_40:0 "Modify §YResource Importation Costs§! by:\nPolitical Power Cost: §R+0.50§!\nConsumer Goods Factories: §Y+10.0%§!\n "
  tt_resource_return_cost_40:0 "Modify §YResource Importation Costs§! by:\nPolitical Power Cost: §G-0.50§!\nConsumer Goods Factories: §Y-10.0%§!\n "
  
- effect_kill_TEX_tt:0 "Gains §YAnnex§! war goal against §YTexas§! and §YTexas collapse states§!"
- effect_kill_the_PRA_tt:0 "Gains §YAnnex§! war goal against §Y[PRA.GetName]§! and §Y[PRA.GetName] Collapse States§!"
- effect_kill_mexico_tt:0 "Gains §YAnnex§! war goal against §Y[MEX.GetName]§! and §Y[MEX.GetName] Collapse States§!"
- effect_kill_central_america_tt:0 "Gains §YAnnex§! war goal against all §YCentral American States§!"
- effect_kill_caribbean_tt:0 "Gains §YAnnex§! war goal against all §YCaribbean States§!"
- 
  generic_we_control_all_american_states_tt:0 "We and our allies control §Call§! states in the §Ylower 48§! states of America."
  
  # Reource Importation Events #

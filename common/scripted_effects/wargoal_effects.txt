@@ -1,6 +1,20 @@
 ### This is meant for countries that have collapses or regional wargoals and if u want to have these wargoals streamlined instead of cluttering code :)
 # From Turklander
 
+### Kentucky Wargoals
+effect_kill_kentucky = {
+	custom_effect_tooltip = effect_kill_KFC_tt
+	every_country_with_original_tag = {
+		original_tag_to_check = KFC
+		ROOT = {
+			create_wargoal = {
+    			target = PREV
+    			type = annex_everything
+			}
+		}
+	}
+}
+
 ## Texas and Texas Collapse
 War_on_texas_collapse_tags = { #using global.texas_collapse
 	for_each_scope_loop = { #This loops declare the wars
