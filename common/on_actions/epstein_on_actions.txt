@@ -855,6 +855,9 @@ on_actions = {
     					    }
 					}
 				}
+				HOP_kenneth_leland_morgan = {
+					set_nationality = KKK
+				}
 				if = {
 					limit = {
 						country_exists = KKK

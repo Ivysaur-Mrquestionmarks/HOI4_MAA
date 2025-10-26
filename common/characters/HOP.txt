@@ -523,7 +523,7 @@ characters={
 			logistics_skill = 1
 			visible = { 
 				#has_completed_focus = HOP_For_Aryans #this will make him disappear when new tree is loaded
-				has_country_flag = HOP_kenneth_morgan_recruited
+				OR = { has_country_flag = HOP_kenneth_morgan_recruited original_tag = KKK }
 			}
 		}
 	}
