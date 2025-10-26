@@ -862,6 +862,9 @@ focus_tree = {
 		bypass = {
 			has_country_leader = { name = "Matthew Parrott" ruling_only = yes }
 		}
+		allow_branch = {
+			has_country_flag = KFC_nazbol_coup_flag
+		}
 		bypass_effect = {
 			set_country_flag = KFC_nazbol_coup_flag
 			add_dynamic_modifier = {
