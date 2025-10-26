@@ -2675,6 +2675,9 @@ focus_tree = {
 		relative_position_id = KFC_a_new_beginnning
 		x = 3
 		y = 1
+		available = {
+			has_completed_focus = KFC_a_white_ethnostate
+		}
 		completion_reward = {
 			add_political_power = 50
 		}
