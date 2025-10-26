@@ -8,8 +8,8 @@ joint_focus = {
 	Y = 0
 
 	offset = {
-		x = 40
-		y = 20
+		x = 60
+		y = 3
 		trigger = {
 			tag = NRA
 		}
@@ -46,14 +46,34 @@ joint_focus = {
 				always = yes
 			}
 		}
-		#if = {
-			#limit = { tag = KFC }
-			#has_country_flag = KFC_nazbol_coup_flag
-		#}
+		if = {
+			limit = { tag = KFC }
+			has_country_flag = KFC_nazbol_coup_flag
+		}
+		if = {
+			limit = { tag = NRA }
+			has_completed_focus = NRA_The_Appalachian_Revolution
+		}
 	}
 	available = {
 		ROOT = {
 			has_country_flag = KFC_charleston_pact_flag
+			OR = {
+				AND = {
+					tag = KFC
+					is_in_faction_with = NRA
+				}
+				AND = {
+					tag = NRA
+					is_in_faction_with = KFC
+				}
+				AND = {
+					tag = VIR
+					is_in_faction_with = KFC
+					is_in_faction_with = NRA
+				}
+			}
+				
 		}
 	}
 

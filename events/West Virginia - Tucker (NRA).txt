@@ -371,7 +371,22 @@ country_event = {
 		ai_chance = {
 			factor = 75
 		}
-		NRA = { add_to_faction = ROOT } 
+		NRA = { 
+			add_to_faction = ROOT
+			if = {
+				limit = { NOT = { has_country_flag = KFC_charleston_pact_flag } }
+				set_country_flag = KFC_charleston_pact_flag
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = global_nazbols_united_flag
+				NOT = { tag = AFS }
+				NOT = { tag = DET }
+			}
+			add_dynamic_modifier = { modifier = KFC_joint_nazbol_union }
+		}
+		set_country_flag = KFC_charleston_pact_flag
 	}	
 	option = {
 		name = tucker.20.b

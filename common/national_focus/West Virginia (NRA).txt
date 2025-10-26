@@ -10,7 +10,7 @@ focus_tree = {
 			original_tag = NRA
 		}
 	}
-	
+	shared_focus = KFC_NRA_VIR_joint_nazbol
 	continuous_focus_position = { x = 50 y = 5000 }
 	
 	default = no
@@ -4038,6 +4038,8 @@ focus_tree = {
                     country_event = { id = tucker.20 hours = 2 }
                 }
             }
+			set_country_flag = KFC_charleston_pact_flag
+			custom_effect_tooltip = generic_joint_focus_unlock
 			
 		}
 		
