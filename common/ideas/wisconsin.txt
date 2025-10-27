@@ -1306,6 +1306,16 @@ ideas = {
 			}
 		}
 
+		KMT_coalition_of_the_willing_2 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { NOT = { has_government = authoritarian_left } }		
+			modifier = {
+				political_power_factor = 0.05
+				war_support_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+
 
 	}
 

@@ -1,0 +1,94 @@
+KMT_judicial_bop = {
+    intial_value = 0.1
+    left_side = executive_authority
+    right_side = judicial_authority
+    decision_category = KMT_judicial_balance_of_power_category
+    side = {
+        id = executive_authority
+        icon = GFX_bop_SWI_centralization_council_side
+        range = {
+            id = imperial_presidency
+            min = -1
+            max = -0.85
+            modifier = {
+                stability_factor = -0.15
+				political_power_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				war_support_factor = 0.05
+            }
+            on_activate = {
+                
+            }
+            on_deactivate = {
+                
+            }
+        }
+		range = {
+            id = great_executive_power
+            min = -0.85
+            max = -0.30
+            modifier = {
+                stability_factor = -0.05
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.1
+            }
+            on_activate = {
+                
+            }
+            on_deactivate = {
+                
+            }
+        }
+		range = {
+            id = influential_president
+            min = -0.30
+            max = 0
+            modifier = {
+                stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+            }
+            on_activate = {
+                
+            }
+            on_deactivate = {
+                
+            }
+        }
+    }
+    side = {
+        id = judicial_authority
+        icon = GFX_bop_SWI_centralization_canton_side
+		range = {
+            id = meddling_judicial
+            min = 0
+            max = 0.6
+            modifier = {
+                stability_factor = 0.1
+				political_power_factor = -0.05
+				resistance_activity = -0.1
+            }
+        }
+		range = {
+            id = influential_judicial
+            min = 0.6
+            max = 0.9
+            modifier = {
+                stability_factor = 0.05
+				political_power_factor = -0.1
+				resistance_activity = -0.2
+				war_support_factor = 0.05
+            }
+        }
+        range = {
+            id = supreme_judicial
+            min = 0.9
+            max = 1
+            modifier = {
+                stability_factor = -0.2
+				political_power_factor = -0.2
+				resistance_activity = -0.5
+				war_support_factor = 0.15
+            }
+        }
+    }
+}

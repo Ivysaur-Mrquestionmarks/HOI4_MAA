@@ -29,3 +29,17 @@ KMT_nehlen_missions = {
 	priority = 90
 
 }
+
+
+KMT_judicial_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
+	
+	allowed = {
+	original_tag = KMT
+	}
+	
+	priority = 90
+	
+	visible = {
+	}
+}

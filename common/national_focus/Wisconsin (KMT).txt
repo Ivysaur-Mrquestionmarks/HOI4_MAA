@@ -6089,6 +6089,10 @@ focus_tree = {
 		completion_reward = {
 			set_cosmetic_tag = KMT_ryans_america
 			add_country_leader_trait = KMT_low_legitimacy
+			set_power_balance = {
+				id = KMT_judicial_bop
+				set_value = 0.05
+			}
 		}
 		prerequisite = {
 			focus = KMT_keep_a_tight_grip
@@ -6104,7 +6108,7 @@ focus_tree = {
 		x = 14
 		y = 5
 
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -6117,7 +6121,15 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KMT_coalition_of_the_willing_1
+				add_idea = KMT_coalition_of_the_willing_2
+			}
+			add_power_balance_value = {
+				id = KMT_judicial_bop
+				value = 0.05
+				tooltip_side = judiciary_authority
+			}
 		}
 		prerequisite = {
 			focus = KMT_claim_america
@@ -6157,11 +6169,15 @@ focus_tree = {
 		x = 13
 		y = 6
 
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			has_country_leader = {
+				character = KMT_Paul_Ryan
+				ruling_only = yes
+			}
 		}
 		
 		bypass = {
@@ -6170,7 +6186,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			custom_effect_tooltip = KMT_invite_the_pope_tt
+			add_power_balance_value = {
+				id = KMT_judicial_bop
+				value = -0.05
+				tooltip_side = executive_authority
+			}
 		}
 		prerequisite = {
 			focus = KMT_consolidate_coalition
@@ -6225,7 +6246,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_power_balance_value = {
+				id = KMT_judicial_bop
+				value = -0.15
+				tooltip_side = executive_authority
+			}
+			add_political_power = 50
+			add_war_support = 0.05
 		}
 		prerequisite = {
 			focus = KMT_consolidate_coalition
@@ -6254,7 +6281,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_power_balance_value = {
+				id = KMT_judicial_bop
+				value = 0.1
+				tooltip_side = judiciary_authority
+			}
+			add_stability = 0.1
 		}
 		prerequisite = {
 			focus = KMT_consolidate_coalition
@@ -6275,6 +6307,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			has_power_balance = {
+				id = KMT_judicial_bop
+			}
 		}
 		
 		bypass = {
@@ -6304,6 +6339,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			has_power_balance = {
+				id = KMT_judicial_bop
+			}
 		}
 		
 		bypass = {

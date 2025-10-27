@@ -26,6 +26,7 @@
  KMT_play_as_revolution_tt:0 "§YKeep playing as the Weathermen§!"
  KMT_play_as_counter_revolution_tt:0 "§YPlay as the Counter-Revolution§!"
  KMT_end_counter_revolution_tt:0 "§GThis will end the Counter-Revolution!§!"
+ KMT_invite_the_pope_tt:0 "§GPope Francis will be invited for an Humanitarian Visit!§!"
 
 #### ########  ########    ###     ######  
  ##  ##     ## ##         ## ##   ##    ## 
@@ -1079,3 +1080,13 @@
  decision_cost_IE_2000: "£infantry_equipment_text_icon  §Y2000§!"
  decision_cost_IE_2000_blocked: "£infantry_equipment_text_icon  §R2000§!"
  decision_cost_IE_2000_tooltip: "It costs £infantry_equipment_text_icon  §Y2000§! to take the decision"
+ KMT_judicial_bop:0 "Executive-Judicial Influence Conflict"
+ imperial_presidency:0 "Imperial Presidency"
+ great_executive_power:0 "Great Executive Power"
+ influential_president:0 "Influential President"
+ meddling_judicial:0 "Meddling Judicial"
+ influential_judicial:0 "Powerful Judicial"
+ supreme_judicial:0 "Supreme Judicial Power"
+ judicial_authority:0 "Judicial Authority"
+ executive_authority:0 "Executive Authority"
+ 
