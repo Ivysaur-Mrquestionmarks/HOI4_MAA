@@ -731,6 +731,37 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		if = {
+			limit = { has_country_flag = AFS_vermin_side }
+			add_power_balance_value = {
+				id = vermin_bop
+				value = -0.05
+				tooltip_side = vermin_powerless
+			}
+		}
+		if = {
+			limit = { has_country_flag = AFS_hawkins_side }
+			add_power_balance_value = {
+				id = hawkins_bop
+				value = -0.05
+				tooltip_side = hawkins_powerless
+			}
+		}
+		if = {
+			limit = { has_country_flag = AFS_mattis_side }
+			add_power_balance_value = {
+				id = mattis_bop
+				value = -0.05
+				tooltip_side = mattis_powerless
+			}
+		}
+		set_country_flag = AFS_mike_dewine_coup_available
+	}
+	option = {
+		name = AFS.14.b
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 
@@ -2671,6 +2702,10 @@ country_event = {
             character = AFS_james_mattis
             ideology = military_dictatorship
             trait = AFS_ill
+        }
+		set_country_leader_portrait = {
+	        ideology = military_dictatorship
+	        portrait = "GFX_portrait_Portrait_Eternal_James_Mattis_Vanilla_MAA_copy"
         }
 		remove_country_flag = AFS_mattis_is_gonna_die
 		set_country_flag = AFS_mattis_cyborg
