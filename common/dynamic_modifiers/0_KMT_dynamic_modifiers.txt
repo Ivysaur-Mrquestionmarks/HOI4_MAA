@@ -1,7 +1,7 @@
 kmt_claimed_state = {
 	enable = { always = yes }
 
-	icon = TODO
+	icon = GFX_idea_kmt_claimed_state
 	remove_trigger = {
     		NOT = {
        			OR = {
@@ -15,7 +15,7 @@ kmt_claimed_state = {
 det_claimed_state = {
 	enable = { always = yes }
 
-	icon = TODO
+	icon = GFX_idea_det_claimed_state
 	remove_trigger = { 
 		NOT = {
        			OR = {

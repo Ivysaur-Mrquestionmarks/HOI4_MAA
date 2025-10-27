@@ -467,8 +467,8 @@ characters={
 
 		portraits = {
 			civilian = {
-				large = TODO
-				small = TODO
+				large = "gfx/leaders/KMT/Selena_Fox.dds"
+				small = "GFX_idea_advisor_Selena_Fox"
 			}
 		}
 		country_leader = {
@@ -585,7 +585,10 @@ characters={
 				tag = KMT
 			}
 			available = {
-				has_completed_focus = KMT_great_lakes_culture
+				OR = {
+					has_completed_focus = KMT_great_lakes_culture
+					has_completed_focus = KMT_individual_freedoms
+				}
 			}
 			traits = { KMT_advisor_progressive_actor }
 			ai_will_do = {
@@ -695,7 +698,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = TODO
+				small = "GFX_idea_advisor_Andrew_Anglin"
 			}
 		}
 		advisor = {
@@ -723,7 +726,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = TODO
+				small = "GFX_idea_advisor_Kevin_MacDonald"
 			}
 		}
 		advisor = {
@@ -751,7 +754,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = TODO
+				small = "GFX_idea_advisor_Ellen_Johnson"
 			}
 		}
 		advisor = {
@@ -1052,8 +1055,8 @@ characters={
 		name = KMT_Jay_L_Johnson
 		portraits = {
 			navy = {
-				small = TODO
-				large = TODO
+				small = "GFX_idea_military_Jay_L_Johnson"
+				large = "gfx/leaders/KMT/Jay_L_Johnson.dds"
 			}
 		}
 		navy_leader = {

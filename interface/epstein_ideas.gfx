@@ -5496,7 +5496,18 @@ spriteTypes = {
 
 ### WISCONSIN (KMT) ###
     #ideas
-
+    spriteType = {
+        name = "GFX_idea_KMT_treaty_with_det"
+        texturefile = "gfx/interface/ideas/KMT/KMT_queso_productivo.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_kmt_claimed_state"
+        texturefile = "gfx/interface/ideas/KMT/KMT_queso.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_det_claimed_state"
+        texturefile = "gfx/interface/ideas/KMT/KMT_productivo.dds"
+    }
 
     #advisors
     spriteType = {
@@ -5555,6 +5566,22 @@ spriteTypes = {
         name = "GFX_idea_advisor_Ron_Kovic"
         texturefile = "gfx/interface/ideas/KMT/advisor_Ron_Kovic.dds"
     }
+    spriteType = {
+        name = "GFX_idea_advisor_Selena_Fox"
+        texturefile = "gfx/interface/ideas/KMT/advisor_Selena_Fox.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_advisor_Andrew_Anglin"
+        texturefile = "gfx/interface/ideas/KMT/advisor_Andrew_Anglin.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_advisor_Kevin_MacDonald"
+        texturefile = "gfx/interface/ideas/KMT/advisor_Kevin_MacDonald.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_advisor_Ellen_Johnson"
+        texturefile = "gfx/interface/ideas/KMT/advisor_Ellen_Johnson.dds"
+    }
 
     #militaty leaders
     spriteType = {
@@ -5596,6 +5623,10 @@ spriteTypes = {
     spriteType = {
         name = "GFX_idea_military_Margaret_A_Rykowski"
         texturefile = "gfx/interface/ideas/KMT/military_Margaret_A_Rykowski.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_military_Jay_L_Johnson"
+        texturefile = "gfx/interface/ideas/KMT/military_Jay_L_Johnson.dds"
     }
 
     ### Black Army of Texas (BLA) ###

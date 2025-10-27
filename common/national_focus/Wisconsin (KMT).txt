@@ -912,7 +912,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_political_power = 50
+			add_stability = 0.05
 		}
 		prerequisite = {
             focus = KMT_disband_the_trouble_makers
@@ -2461,6 +2462,8 @@ focus_tree = {
 			add_state_core = 206
 			add_state_core = 204
 			add_state_core = 560
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = advisor_Ellen_Johnson
 		}
 		prerequisite = {
 			focus = KMT_annex_michigan
@@ -4197,6 +4200,8 @@ focus_tree = {
 				ideology = authoritarian_left
 				popularity = -0.5
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = advisor_Mark_Ruffalo
 		}
 		prerequisite = {
 			focus = KMT_lessons_of_the_persians
@@ -4511,6 +4516,8 @@ focus_tree = {
 			set_cosmetic_tag = KMT_atheist_america
 			add_stability = 0.1
 			swap_ruler_traits = { remove = KMT_wiccan_elder add = KMT_religious_figure_for_atheist_state }
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = advisor_Ellen_Johnson
 		}
 		prerequisite = {
 			focus = KMT_open_religious_debate
@@ -5399,7 +5406,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.75
 				uses = 2
-				category = anti_air
+				category = cat_anti_air
 			}
 		}
 		prerequisite = {
@@ -6067,7 +6074,7 @@ focus_tree = {
 		x = 18
 		y = 4
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -6080,7 +6087,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			set_cosmetic_tag = KMT_ryans_america
+			add_country_leader_trait = KMT_low_legitimacy
 		}
 		prerequisite = {
 			focus = KMT_keep_a_tight_grip
@@ -6122,7 +6130,7 @@ focus_tree = {
 		x = 22
 		y = 5
 
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -6135,7 +6143,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			remove_ideas = { KMT_poorly_organized_state }
+			add_political_power = 50
 		}
 		prerequisite = {
 			focus = KMT_claim_america
