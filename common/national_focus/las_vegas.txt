@@ -555,7 +555,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_overt_loyalism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_overt_loyalism
 		cost = 4.00
 		prerequisite = {
 			focus = LAS_covert_loyalism
@@ -851,7 +851,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_casino_monarchism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_casino_monarchism
 		cost = 4.00
 		prerequisite = {
 			focus = LAS_purple_star
@@ -1211,7 +1211,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAS_the_coup
-		icon = GFX_goal_unknown
+		icon = GFX_goal_LAS_coup
 		cost = 5.00
 		prerequisite = {
 			focus = LAS_prepare_the_coup
