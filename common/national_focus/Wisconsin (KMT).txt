@@ -6192,6 +6192,9 @@ focus_tree = {
 				value = -0.05
 				tooltip_side = executive_authority
 			}
+			hidden_effect = {
+				country_event = wisconsin.54
+			}
 		}
 		prerequisite = {
 			focus = KMT_consolidate_coalition
@@ -6220,7 +6223,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			country_event = wisconsin.55
 		}
 		prerequisite = {
 			focus = KMT_invite_the_pope
@@ -6302,7 +6305,7 @@ focus_tree = {
 		x = 18
 		y = 7
 
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -6318,7 +6321,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_power_balance_value = {
+				id = KMT_judicial_bop
+				value = -0.4
+				tooltip_side = executive_authority
+			}
+			add_political_power = 50
+			add_war_support = 0.05
+			add_stability = -0.05
 		}
 		prerequisite = {
 			focus = KMT_biden_weakness
@@ -6334,7 +6344,7 @@ focus_tree = {
 		x = 23
 		y = 7
 
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -6350,7 +6360,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_power_balance_value = {
+				id = KMT_judicial_bop
+				value = 0.4
+				tooltip_side = judiciary_authority
+			}
+			add_stability = 0.1
 		}
 		prerequisite = {
 			focus = KMT_trump_mistakes
@@ -6373,6 +6388,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			NOT = { has_country_flag = KMT_papal_plan_accepted }
 		}
 		
 		bypass = {
@@ -6381,7 +6397,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+
 		}
 		prerequisite = {
 			focus = KMT_empower_the_courts
@@ -6722,6 +6738,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			NOT = { has_country_flag = KMT_papal_plan_accepted }
 		}
 		
 		bypass = {
@@ -7092,6 +7109,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			has_country_flag = KMT_papal_plan_accepted
 		}
 		
 		bypass = {

@@ -305,6 +305,12 @@
  KMT_caring_state:0 "The Caring State"
  KMT_caring_state_desc:0 "In service to both the gods and the people, the state now embodies compassion as a political principle. From healthcare to education, every policy seeks to uplift the spirit as well as the body."
 
+ KMT_border_turret_initiative:0 "Border Turret Initiative"
+ KMT_border_turret_initiative_desc:0 "Any immigrant who approaches the American border should "be treated as an enemy combatant. Man, woman or child."\n\n  - Paul Nehlen, 2018"
+
+ KMT_revenge:0 "Sweet Revenge"
+ KMT_revenge_desc:0 "The SnyderBros are pumped up to avenge the Great Director! To Hollywood we march!"
+
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
 ##       ##     ## ##       ####  ##    ##    ##       
@@ -597,6 +603,17 @@
  wisconsin.53.t:0 "The [FRA.GetName] Declines"
  wisconsin.53.d:0 "The Legitimist government has rejected our request to join their faction. This rejection has only strengthened our resolve to pursue our own path toward a new America."
  wisconsin.53.a:0 "A shame"
+
+ #event 54: pope visit
+ wisconsin.54.t:0 "The Pope Arrives in America"
+ wisconsin.54.d:0 "In a ceremony broadcast nationwide, the Holy Father, Pope Francis, has stepped onto Wisconsinite soil. Crowds gather in celebration as Paul Ryan’s coalition proudly welcomes this unprecedented endorsement from the Vatican. For many, this signals a moral renewal, a turning point toward a purified and united United States.\n\nDuring his Humanitarian Visit, the Pope traveled through Madison, Milwaukee, and Green Bay. Before his departure, His Holiness handed Paul Ryan a sealed letter, instructing him to open it only when "the time is right." What could this mean?"
+ wisconsin.54.a:0 "A blessing upon our nation."
+
+ #event 55: papal plan
+ wisconsin.55.t:0 "The Papal Restoration Plan"
+ wisconsin.55.d:0 "The Holy Father has presented a bold proposal to guide America toward a righteous future. The plan calls not only for deeper reliance on religious authority, but for direct subordination to the Vatican and a full Theocratic regime in the United States.\n\nAccepting this Papal Restoration Plan would bring the support of the largest sect of the largest religion in the world: investment, volunteers, and international recognition. But such divine favor would come at the cost of secular power and American sovereignty. The future identity of our reborn nation lies in this decision."
+ wisconsin.55.a:0 "We accept the Church’s guidance."
+ wisconsin.55.b:0 "Is he insane?"
 
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 
@@ -905,6 +922,28 @@
  KMT_border_turrets:0 "Border Turrets"
  KMT_border_turrets_desc:0 "Nehlen once said that the Trump Border Wall should include automatic turrets. Any Mexican immigrant who approaches the border will be treated as an enemy combatant. Man, woman or child."
 
+ # tight grip
+ KMT_keep_a_tight_grip:0 "Keep a Tight Grip"
+ KMT_keep_a_tight_grip_desc:0 "The militia is disbanded and Ryan is in power. Now we can begin shaping the nation into his vision. The government must reinforce its authority, suppress radicalism, and ensure unity under firm and disciplined leadership. Let us begin."
+ KMT_claim_america:0 "Claim America"
+ KMT_claim_america_desc:0 "The nation has fallen into chaos, misrule, and the hands of opportunists. Paul Ryan, once Speaker of the House and nearly Vice President, must bear the burden of restoring authority across America. One decree at a time, if necessary."
+ KMT_consolidate_coalition:0 "Consolidate the Coalition"
+ KMT_consolidate_coalition_desc:0 "Those who stood with us through the fire must now be rewarded. A strengthened coalition will be the foundation for a new American future."
+ KMT_recovery_effort:0 "Recovery Effort"
+ KMT_recovery_effort_desc:0 "As we emerge from the turmoil of the conflict against the [GLA.GetName], urgent measures must be taken to restore our state and rebuild what was lost."
+ KMT_invite_the_pope:0 "Invite the Pope for a Humanitarian Visit"
+ KMT_invite_the_pope_desc:0 "Our position remains fragile, but opportunities arise even in weakness. The Pope has taken interest in our struggle. Through Paul Ryan’s Catholic faith, we can convince His Holiness to visit our State. Such a blessing would greatly enhance our legitimacy and moral authority."
+ KMT_papal_plan:0 "The Papal Plan"
+ KMT_papal_plan_desc:0 "Before leaving America, Pope Francis handed Paul Ryan a sealed document: a supposed plan to restore the nation. He warned it should be opened only when divine guidance is truly needed."
+ KMT_biden_weakness:0 "Expose Biden’s Weakness"
+ KMT_biden_weakness_desc:0 "A frail and ineffective President stands before us. Every misstep and every failure must be laid bare so the public learns what real leadership looks like."
+ KMT_trump_mistakes:0 "Acknowledge Trump’s Mistakes"
+ KMT_trump_mistakes_desc:0 "The Trump era must finally be confronted. His leadership brought many costly errors ones we must learn from if we’re to rebuild smarter and stronger."
+ KMT_hinder_the_courts:0 "Hinder the Courts"
+ KMT_hinder_the_courts_desc:0 "Judicial obstruction threatens our progress. Unelected judges cannot be permitted to hinder the restoration of order. Their power must be restrained."
+ KMT_empower_the_courts:0 "Empower the Courts"
+ KMT_empower_the_courts_desc:0 "A strong judiciary can serve as a righteous bulwark against tyranny and corruption. We will bolster the courts so they may safeguard the republic."
+
  # Army
  KMT_upgrade_fort_mccoy:0 "Upgrade Fort McCoy"
  KMT_upgrade_fort_mccoy_desc:0 "Originally established in 1909, Fort McCoy has been a 60,000 acre U.S. Army Reserve installation. Now we shall make it our base of operations, giving it a much needed upgrade and readying it for the coming wars."
@@ -1089,4 +1128,4 @@
  supreme_judicial:0 "Supreme Judicial Power"
  judicial_authority:0 "Judicial Authority"
  executive_authority:0 "Executive Authority"
- 
+ KMT_papal_plan_accepted:0 "The Papal Restoration Plan has been accepted"
