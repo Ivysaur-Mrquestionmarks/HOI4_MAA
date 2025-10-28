@@ -5,7 +5,7 @@ characters={
 		name = FLO_barron_trump
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/FLO/barron_legacy2.dds"
+				large = "gfx/leaders/FLO/barron_legacy.dds"
 			}
 		}
 		country_leader = {
@@ -19,11 +19,11 @@ characters={
 		name = FLO_nick_fuentes
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/FLO/Fuentes2.dds"
+				large = "gfx/leaders/FLO/Untitled-4.dds" #he doesn't even look like Fuentes2.dds lol it's so obviously an edited image. makes him look retarded.
 			}
 			army = {
 				small = "GFX_idea_nick_fuentes_advisor"
-				large = "gfx/leaders/FLO/Fuentes2.dds"
+				large = "gfx/leaders/FLO/Untitled-4.dds"
 			}
 		}
 		country_leader = {
