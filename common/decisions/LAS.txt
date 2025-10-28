@@ -998,6 +998,7 @@ LAS_orange_young_guard_coup = {
 		
 		complete_effect = {
 			set_country_flag = morrows_resistance_quelled
+			custom_effect_tooltip = my_good_friend_tristan_morrow_is_dead_sadface
 		}
 		remove_effect = {
 			add_manpower = -750
@@ -1031,6 +1032,7 @@ LAS_orange_young_guard_coup = {
 
 		timeout_effect = {
 			add_stability = -0.20
+			hidden_effect = {
 			if = {
 				limit = {
 					has_completed_focus = LAS_2_protector_of_the_realm
@@ -1058,6 +1060,7 @@ LAS_orange_young_guard_coup = {
 			    ideology = libertarian_left
 			    long_name = LAS_ni_people_long
 			    name = LAS_ni_people
+			}
 			}
 			country_event = viva_las_vegas.19
 		}
