@@ -1405,6 +1405,7 @@ news_event = {
 		if = {
 			limit = { NOT = { has_global_flag = GKJ_killed_pope_francis_flag } }
 			news_event = News_events.38
+			set_global_flag = global_pope_killed_flag
 		}
 	}
 	option = {
