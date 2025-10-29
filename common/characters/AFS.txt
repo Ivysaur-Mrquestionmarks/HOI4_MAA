@@ -251,6 +251,7 @@ characters={
 			}
 			visible = {
 				tag = AFS
+				has_government = authoritarian_left
 			}
 			available = {
 				has_government = authoritarian_left
@@ -282,6 +283,7 @@ characters={
 			}
 			visible = {
 				tag = AFS
+				has_government = authoritarian_left
 			}
 			available = {
 				has_government = authoritarian_left
@@ -311,6 +313,7 @@ characters={
 			}
 			visible = {
 				tag = AFS
+				has_government = authoritarian_left
 			}
 			available = {
 				has_government = authoritarian_left
@@ -515,13 +518,10 @@ characters={
 				tag = AFS
 			}
 			visible = {
-				
+				has_government = autocratic
 			}
 			available = {
-				OR = {
-					has_government = autocratic
-					has_idea = AFS_mattis_advisor
-				}
+				has_government = autocratic
 			}
 			traits = {
 				air_chief_reform_3
@@ -569,6 +569,7 @@ characters={
 			}
 			visible = {
 				tag = AFS
+				has_government = libertarian_left
 			}
 			available = {
 				has_government = libertarian_left
@@ -635,6 +636,7 @@ characters={
 			}
 			visible = {
 				tag = AFS
+				has_government = libertarian_left
 			}
 			available = {
 				has_government = libertarian_left
@@ -674,6 +676,7 @@ characters={
 			}
 			visible = {
 				tag = AFS
+				has_government = authoritarian_left
 			}
 			available = {
 				has_government = authoritarian_left
@@ -713,6 +716,7 @@ characters={
 			}
 			visible = {
 				tag = AFS
+				has_government = authoritarian_left
 			}
 			available = {
 				has_government = authoritarian_left
@@ -797,6 +801,11 @@ characters={
 			}
 			visible = {
 				tag = AFS
+				has_government = autocratic
+				has_country_leader = {
+                    name = "James Mattis"
+                    ruling_only = yes
+                }
 			}
 			available = {
 				has_government = autocratic
@@ -835,6 +844,17 @@ characters={
 			}
 			visible = {
 				tag = AFS
+				has_government = autocratic
+				OR = {
+				    has_country_leader = {
+                        name = "James Mattis"
+                        ruling_only = yes
+                    }
+					has_country_leader = {
+                        name = "Stanley McChrystal"
+                        ruling_only = yes
+                    }
+				}
 			}
 			available = {
 				has_government = autocratic
@@ -873,6 +893,17 @@ characters={
 			}
 			visible = {
 				tag = AFS
+				has_government = autocratic
+				OR = {
+				    has_country_leader = {
+                        name = "James Mattis"
+                        ruling_only = yes
+                    }
+					has_country_leader = {
+                        name = "Stanley McChrystal"
+                        ruling_only = yes
+                    }
+				}
 			}
 			available = {
 				has_government = autocratic
@@ -911,6 +942,17 @@ characters={
 			}
 			visible = {
 				tag = AFS
+				has_government = autocratic
+				OR = {
+				    has_country_leader = {
+                        name = "James Mattis"
+                        ruling_only = yes
+                    }
+					has_country_leader = {
+                        name = "Stanley McChrystal"
+                        ruling_only = yes
+                    }
+				}
 			}
 			available = {
 				has_government = autocratic

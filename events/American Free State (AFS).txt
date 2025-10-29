@@ -762,6 +762,9 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		add_political_power = -50
+		add_command_power = -10
+		add_stability = -0.05
 	}
 }
 
@@ -1865,7 +1868,9 @@ news_event = {
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
 	immediate = {
-        every_country = { add_ideas = AFS_twilight_idea }
+		hidden_effect = {
+            every_country = { add_ideas = AFS_twilight_idea }
+		}
 	}
 	option = {
 		name = hawkins.20.a
@@ -1910,9 +1915,16 @@ country_event = {
 				    traits = {}
 			    }
 			    set_cosmetic_tag = empty
+				add_ideas = AFS_twilight_idea
+				add_stability = -1
+				add_war_support = -1	
+                set_political_power = 0
+				add_manpower = -100000000000000000000000
 		    }
 		    every_state = { 
-				transfer_state_to = wild 
+				transfer_state_to = wild
+				add_manpower = -100000000000000000
+				set_demilitarized_zone = yes
 			}
 		}
 	}
@@ -2663,7 +2675,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		kill_ideology_leader = autocratic
+		clr_country_flag = AFS_mattis_is_gonna_die
 		add_country_leader_role = {
             character = AFS_stanley_mcchrystal
             promote_leader = yes
@@ -2693,6 +2705,10 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		promote_character = {
+            character = AFS_james_mattis
+            ideology = military_dictatorship
+        }
 		add_trait = {
             character = AFS_james_mattis
             ideology = military_dictatorship
@@ -2707,7 +2723,6 @@ country_event = {
 	        ideology = military_dictatorship
 	        portrait = "GFX_portrait_Portrait_Eternal_James_Mattis_Vanilla_MAA_copy"
         }
-		remove_country_flag = AFS_mattis_is_gonna_die
 		set_country_flag = AFS_mattis_cyborg
 	}
 }
@@ -2949,7 +2964,7 @@ country_event = {
         }
 		complete_national_focus = AFS_againist_the_triumvirate
 		AFS_mike_dewine_coup_script_effect = yes
-		remove_country_flag = AFS_mike_dewine_coup_available
+		clr_country_flag = AFS_mike_dewine_coup_available
 	}
 }
 
@@ -3563,16 +3578,6 @@ country_event = {
 		add_stability = -0.1
 		add_command_power = -15
 		add_political_power = -50
-        add_popularity = {
-            ideology = autocratic
-            popularity = -0.05
-        }
-		hidden_effect = {
-			country_event = {
-				id = vance.22
-				days = 20
-			}
-		}
 	}
 }
 

@@ -5543,7 +5543,13 @@ AFS_decaying_savior = {
 		}
 
 		available = {
-            has_country_flag = AFS_mattis_cyborg
+            #has_country_flag = AFS_mattis_cyborg
+			custom_trigger_tooltip = {
+				tooltip = AFS_mattis_cyborg_tooltip
+				NOT = {
+                    has_country_flag = AFS_mattis_is_gonna_die
+				}
+			}
 		}
 
 		days_mission_timeout = 500
@@ -5703,10 +5709,17 @@ AFS_decaying_savior = {
 			research_speed_factor = 0.1
 		}
 		remove_effect = {
-			country_event = {
-				id = mattis.15
-				days = 0
-			}
+			custom_effect_tooltip = AFS_he_will_live
+			hidden_effect = {
+				country_event = {
+				    id = mattis.14
+				    days = 0
+			    }
+			    country_event = {
+				    id = mattis.15
+				    days = 10
+			    }
+		    }
 		}
 	}
 }

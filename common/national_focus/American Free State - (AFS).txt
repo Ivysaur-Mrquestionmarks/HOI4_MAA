@@ -6238,7 +6238,7 @@ focus_tree = {
 		}
 	}
 
-	###J.D Vance Path
+	###JD vance Path
 
 	focus = {
 		id = AFS_againist_the_triumvirate
@@ -6340,7 +6340,7 @@ focus_tree = {
 		select_effect = {  }
 		allow_branch = {
 			has_country_leader = {
-				name = "J.D Vance"
+				name = "JD Vance"
                 ruling_only = yes
 			}
 		}
@@ -6398,26 +6398,6 @@ focus_tree = {
                 ideology = autocratic
                 popularity = 0.15
             }
-		    set_politics = {
-                ruling_party = autocratic
-                elections_allowed = no
-				long_name = AFS_nrx_vance_party_long
-			    name = AFS_nrx_vance_party
-            }
-			add_country_leader_role = {
-                character = AFS_jd_vance
-                promote_leader = yes
-                country_leader = {
-                    ideology = dark_enlightenment
-                    expire = "2060.1.1.1"
-                    traits = {  }
-                }
-            }
-			set_country_leader_portrait = {
-	            ideology = dark_enlightenment
-	            portrait = "GFX_portrait_AFS_evil_jd_vance"
-            }
-			set_cosmetic_tag = AFS_enlightenment_vance_cosmetic
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -6494,6 +6474,10 @@ focus_tree = {
 			    remove_idea = AFS_choas_and_disorder_3
 			    add_idea = AFS_choas_and_disorder_4
 		    }
+			country_event = {
+				id = vance.22
+				days = 20
+			}
 		}
 	}
 
@@ -6516,11 +6500,31 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			set_politics = {
+                ruling_party = autocratic
+                elections_allowed = no
+				long_name = AFS_nrx_vance_party_long
+			    name = AFS_nrx_vance_party
+            }
+			add_country_leader_role = {
+                character = AFS_jd_vance
+                promote_leader = yes
+                country_leader = {
+                    ideology = dark_enlightenment
+                    expire = "2060.1.1.1"
+                    traits = {  }
+                }
+            }
+			set_country_leader_portrait = {
+	            ideology = dark_enlightenment
+	            portrait = "GFX_portrait_AFS_evil_jd_vance"
+            }
 		    remove_ideas = AFS_triumvirate_rebels_4
 			remove_ideas = AFS_choas_and_disorder_4
 			add_dynamic_modifier = {
 				modifier = AFS_the_leviathans_ecclesiasticall_dynamic_modifier
 			}
+			set_cosmetic_tag = AFS_enlightenment_vance_cosmetic
 			country_event = {
 				id = vance.30
 				days = 0
@@ -7116,6 +7120,7 @@ focus_tree = {
 		allow_branch = {
 		}
 		available = {
+			has_completed_focus = AFS_vances_rulership
 		}
 		completion_reward = {
 		    add_ideas = AFS_the_army_of_the_duke
@@ -7933,6 +7938,10 @@ focus_tree = {
 			}
 		}
 		available = {
+			OR = {
+				has_completed_focus = AFS_legitimize_the_government
+                has_completed_focus = AFS_vances_rulership
+			}
 		}
 		completion_reward = {
 		
@@ -8496,6 +8505,7 @@ focus_tree = {
 		allow_branch = {
 		}
 		available = {
+			has_completed_focus = AFS_legitimize_the_government
 		}
 		completion_reward = {
 		    add_ideas = AFS_national_army_of_ohio
@@ -12480,7 +12490,7 @@ focus_tree = {
 		}
 	}
 
-	###War Focuses ("enlightened" j.d vance)
+	###War Focuses ("enlightened" jd vance)
 
 	focus = {
 		id = AFS_american_conquest
@@ -13498,6 +13508,7 @@ focus_tree = {
 			    remove_idea = AFS_techno_feudalist_economics_4
 			    add_idea = AFS_techno_feudalist_economics_5
 		    }
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
             add_to_variable = {
 				var = AFS.var_pp_level
 				value = 0.05
@@ -13542,6 +13553,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
             add_to_variable = {
 				var = AFS.var_stability_level
 				value = 0.05
@@ -13637,6 +13649,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_pp_level
 				value = 0.05
@@ -13655,7 +13668,7 @@ focus_tree = {
 		}
 	}
 
-	###War Focuses (normal j.d vance)
+	###War Focuses (normal jd vance)
 
 	focus = {
 		id = AFS_trumps_eastern_extension
