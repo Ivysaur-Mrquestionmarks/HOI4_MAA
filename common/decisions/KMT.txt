@@ -375,3 +375,159 @@ KMT_nehlen_missions = {
 	}
 
 }
+
+KMT_judicial_balance_of_power_category = {
+
+	KMT_appoint_loyal_judge = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 75
+		fire_only_once = no
+		days_remove = 100
+		ai_will_do = {
+			base = 50
+		}
+		visible = {
+			has_completed_focus = KMT_claim_america
+		}
+		available = {
+			NOT = {
+				has_country_flag = KMT_doing_jud
+			}
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = KMT_doing_jud
+				days = 100
+				value = 1
+			}
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = KMT_judicial_bop
+				value = -0.15
+				tooltip_side = executive_authority
+			}
+		}
+	}
+
+	KMT_give_power_to_executive = {
+		icon = GFX_decision_generic_confiscation
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 50
+		fire_only_once = no
+		days_remove = 50
+		ai_will_do = {
+			base = 50
+		}
+		visible = {
+			has_completed_focus = KMT_claim_america
+		}
+		available = {
+			NOT = {
+				has_country_flag = KMT_doing_jud
+			}
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = KMT_doing_jud
+				days = 50
+				value = 1
+			}
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = KMT_judicial_bop
+				value = -0.05
+				tooltip_side = executive_authority
+			}
+		}
+	}
+
+	KMT_give_power_to_judicial = {
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 50
+		fire_only_once = no
+		days_remove = 50
+		ai_will_do = {
+			base = 50
+		}
+		visible = {
+			has_completed_focus = KMT_claim_america
+		}
+		available = {
+			NOT = {
+				has_country_flag = KMT_doing_jud
+			}
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = KMT_doing_jud
+				days = 50
+				value = 1
+			}
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = KMT_judicial_bop
+				value = 0.05
+				tooltip_side = judiciary_authority
+			}
+		}
+	}
+
+	KMT_send_constitucional_questions = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 200
+		ai_will_do = {
+			base = 50
+		}
+		visible = {
+			has_completed_focus = KMT_claim_america
+		}
+		available = {
+			NOT = {
+				has_country_flag = KMT_doing_jud
+			}
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = KMT_doing_jud
+				days = 200
+				value = 1
+			}
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = KMT_judicial_bop
+				value = 0.2
+				tooltip_side = judiciary_authority
+			}
+		}
+	}
+
+}

@@ -4840,15 +4840,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			every_country_with_original_tag = {
-				original_tag_to_check = KFC
-				ROOT = {
-					create_wargoal = {
-						target = PREV 
-						type = annex_everything
-					}
-				}
-			}
+			effect_kill_kentucky = yes
 		}
 		prerequisite = {
 			focus = KMT_invade_afs
@@ -5004,83 +4996,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			if = { 
-				limit = { country_exists = TEX }
-				create_wargoal = {
-					target = TEX
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = SAN }
-				create_wargoal = {
-					target = SAN
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = RED }
-				create_wargoal = {
-					target = RED
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = RIO }
-				create_wargoal = {
-					target = RIO
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = FTA }
-				create_wargoal = {
-					target = FTA
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = FAL }
-				create_wargoal = {
-					target = FAL
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = CRN }
-				create_wargoal = {
-					target = CRN
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = CRU }
-				create_wargoal = {
-					target = CRU
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = BSH }
-				create_wargoal = {
-					target = BSH
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = BLA }
-				create_wargoal = {
-					target = BLA
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = BET }
-				create_wargoal = {
-					target = BET
-					type = annex_everything
-				}
-			}
+			War_on_texas_collapse_tags = yes
 		}
 		prerequisite = {
 			focus = KMT_the_south
@@ -5213,48 +5129,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			if = { 
-				limit = { country_exists = CSA }
-				create_wargoal = {
-					target = CSA
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = KKK }
-				create_wargoal = {
-					target = KKK
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = LGB }
-				create_wargoal = {
-					target = LGB
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = CSB }
-				create_wargoal = {
-					target = CSB
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = ZIO }
-				create_wargoal = {
-					target = ZIO
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = AFR }
-				create_wargoal = {
-					target = AFR
-					type = annex_everything
-				}
-			}
+			RVR_kill_the_CSA = yes
 			if = { 
 				limit = { country_exists = FLO }
 				create_wargoal = {
@@ -5304,13 +5179,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			if = { 
-				limit = { country_exists = PRA }
-				create_wargoal = {
-					target = PRA
-					type = annex_everything
-				}
-			}
+			effect_kill_the_PRA = yes
+
 			if = { 
 				limit = { country_exists = CAS }
 				create_wargoal = {
@@ -5329,13 +5199,6 @@ focus_tree = {
 				limit = { country_exists = FIR }
 				create_wargoal = {
 					target = FIR
-					type = annex_everything
-				}
-			}
-			if = { 
-				limit = { country_exists = ORO }
-				create_wargoal = {
-					target = ORO
 					type = annex_everything
 				}
 			}
@@ -6178,6 +6041,7 @@ focus_tree = {
 				character = KMT_Paul_Ryan
 				ruling_only = yes
 			}
+			pope_hasnt_been_killed = yes
 		}
 		
 		bypass = {
@@ -6389,6 +6253,10 @@ focus_tree = {
 		}
 		available = {
 			NOT = { has_country_flag = KMT_papal_plan_accepted }
+			is_power_balance_in_range = {
+				id = KMT_judicial_bop
+				range = supreme_judicial
+			}
 		}
 		
 		bypass = {
@@ -6739,6 +6607,10 @@ focus_tree = {
 		}
 		available = {
 			NOT = { has_country_flag = KMT_papal_plan_accepted }
+			is_power_balance_in_range = {
+				id = KMT_judicial_bop
+				range < meddling_judicial
+			}
 		}
 		
 		bypass = {
@@ -6747,7 +6619,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+
 		}
 		prerequisite = {
 			focus = KMT_hinder_the_courts
@@ -7110,6 +6982,10 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = KMT_papal_plan_accepted
+			is_power_balance_in_range = {
+				id = KMT_judicial_bop
+				range = great_executive_power
+			}
 		}
 		
 		bypass = {
