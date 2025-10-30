@@ -359,7 +359,7 @@ focus_tree = {
 		x = 8
 		y = 0
 		allow_branch = {
-			NOT = { has_completed_focus = KFC_a_state_untamed }
+			#NOT = { has_completed_focus = KFC_a_state_untamed }
 			NOT = { has_country_flag = KFC_nazbol_coup_flag }
 		}
 		completion_reward = {
@@ -377,9 +377,6 @@ focus_tree = {
 		bypass = {
 			NOT = {tag = KFC}
 			has_government = libertarian_right 
-		}
-		allow_branch = {
-				#has_completed_focus = KFC_state_beneath_his_feet
 		}
 		relative_position_id = KFC_state_beneath_his_feet
 		x = 0
