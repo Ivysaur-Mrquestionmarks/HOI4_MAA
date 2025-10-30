@@ -50,7 +50,7 @@ characters={
 		}
 		corps_commander = {
 			traits={ trait_reckless air_force_ties guerilla_fighter } 
-			skill = 1
+			skill = 2
 			attack_skill = 2
 			defense_skill = 1
 			planning_skill = 1
@@ -78,6 +78,189 @@ characters={
 			visible = {
 				has_completed_focus = BLA_international_divisions
 			}
+		}
+	}
+	BLA_jamie_connatser = {
+		name = "Jamie Connatser"
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLA/jamie_connatser.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/BLA/jamie_connatser_general.dds"
+				large = "gfx/leaders/BLA/jamie_connatser.tga"
+			}
+		}
+		corps_commander = {
+			traits={ media_personality organizer } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BLA_marius_mason = {
+		name = "Marius Mason"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLA/marius_mason.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/BLA/marius_mason_general.dds"
+				large = "gfx/leaders/BLA/marius_mason.tga"
+			}
+		}
+		corps_commander = {
+			traits={ war_hero old_guard } 
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BLA_nathan_baumann = {
+		name = "Nathan Baumann"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLA/nathan_baumann.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/BLA/nathan_baumann_general.dds"
+				large = "gfx/leaders/BLA/nathan_baumann.tga"
+			}
+		}
+		corps_commander = {
+			traits={ politically_connected trait_reckless inflexible_strategist } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BLA_zachary_evetts = {
+		name = "Zachary Evetts"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLA/zachary_evetts.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/BLA/zachary_evetts_general.dds"
+				large = "gfx/leaders/BLA/zachary_evetts.tga"
+			}
+		}
+		corps_commander = {
+			traits={ trait_reckless trickster guerilla_fighter } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BLA_cameron_arnold = {
+		name = "Autumn Hill"
+		gender = female #tranny
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLA/cameron_arnold.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/BLA/cameron_arnold_general.dds"
+				large = "gfx/leaders/BLA/cameron_arnold.tga"
+			}
+		}
+		corps_commander = {
+			traits={ inflexible_strategist brilliant_strategist substance_addict } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BLA_samuel_miller = {
+		name = "Samuel Miller"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLA/samuel_miller.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/BLA/samuel_miller_general.dds"
+				large = "gfx/leaders/BLA/samuel_miller.tga"
+			}
+		}
+		corps_commander = {
+			traits={ harsh_leader trickster } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BLA_skye_elder = {
+		name = "Skye Elder"
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLA/skye_elder.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/BLA/skye_elder_general.dds"
+				large = "gfx/leaders/BLA/skye_elder.tga"
+			}
+		}
+		corps_commander = {
+			traits={ cavalry_officer trait_cautious } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BLA_chris_guillot = {
+		name = "Christopher Guillot"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLA/christopher_guillot.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/BLA/chris_guillot_general.dds"
+				large = "gfx/leaders/BLA/christopher_guillot.tga"
+			}
+		}
+		corps_commander = {
+			traits={ infantry_officer } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BLA_dillon_alexander_steele = {
+		name = "Dillon Steele"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLA/dillon_steele.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/BLA/dillon_steele_general.dds"
+				large = "gfx/leaders/BLA/dillon_steele.tga"
+			}
+		}
+		corps_commander = {
+			traits={ trait_reckless harsh_leader substance_addict } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 
