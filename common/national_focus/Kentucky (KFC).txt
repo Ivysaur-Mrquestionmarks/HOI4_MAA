@@ -715,13 +715,6 @@ focus_tree = {
 		available = {
 			has_war = no
 		}
-		bypass = {
-			OR = {
-				has_government = authoritarian_left
-				has_government = republican
-				has_government = democrat
-			}
-		}
 		select_effect = {
 			country_event = { id = kentucky.2 days = 5 }
 			country_event = { id = kentucky.3 days = 10 }
@@ -836,8 +829,15 @@ focus_tree = {
 				}
 			}
 		}
+		cancel = {
+			has_country_flag = KFC_nazbol_coup_flag
+		}
+		cancel_if_invalid = yes
 		completion_reward = {
-			country_event = { id = kentucky.11 }
+			if = {
+				limit = { NOT = { has_country_flag = KFC_nazbol_coup_flag } }
+				country_event = { id = kentucky.11 }
+			}
 			remove_ideas = KFC_Proxy_War
 		}
 	}
@@ -874,6 +874,7 @@ focus_tree = {
 			add_dynamic_modifier = {
 				modifier = KFC_nazbol_government
 			}
+			remove_ideas = KFC_Proxy_War
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
