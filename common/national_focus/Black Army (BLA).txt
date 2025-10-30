@@ -1289,6 +1289,16 @@ focus_tree = {
 		y = 7
 		relative_position_id = BLA_wow_this_is_war
 		completion_reward = {
+			add_country_leader_role = {
+			    character = BLA_anarchist_commune
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = anarcho_communism
+			        traits = {
+					anarcho_communist_council
+				}
+			    }
+			}
 			every_owned_state = {
 				add_building_construction = {
     				type = infrastructure

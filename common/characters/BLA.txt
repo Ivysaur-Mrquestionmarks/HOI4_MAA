@@ -35,6 +35,14 @@ characters={
 			}
 		}
 	}
+	BLA_anarchist_commune = {
+		name = "Anarchist Commune"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLA/portrait_spr_anarchist_commune.dds"
+			}
+		}
+	}
 	
 	#Generals
 	BLA_aaron_bushnell = {
