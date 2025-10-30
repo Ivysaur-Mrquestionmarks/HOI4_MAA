@@ -8,12 +8,3 @@ no_custom_air_techs = {
 	NOT = { has_game_rule = { rule = custom_air option = Custom } }
 }
 
-pope_hasnt_been_killed = {
-	custom_trigger_tooltip = {
-		tooltip = global_pope_killed_tt
-		NOT = {
-			has_global_flag = global_pope_killed_flag
-			has_global_flag = GKJ_killed_pope_francis_flag
-		}
-	}
-}
