@@ -5034,6 +5034,13 @@ focus_tree = {
 						state = 578
 						state = 397
 						state = 577
+						state = 571
+						state = 576
+						state = 250
+						state = 574
+						state = 572
+						state = 573
+						state = 575
 					}
 					owns_or_subject_of = yes
 				}
@@ -5126,6 +5133,19 @@ focus_tree = {
 							state = 65
 							state = 66
 							state = 99
+							state = 206
+							state = 204
+							state = 209
+							state = 198
+							state = 197
+							state = 224
+							state = 571
+							state = 576
+							state = 250
+							state = 574
+							state = 572
+							state = 573
+							state = 575
 						}
 					}
 				}
@@ -5165,6 +5185,19 @@ focus_tree = {
 							state = 65
 							state = 66
 							state = 99
+							state = 206
+							state = 204
+							state = 209
+							state = 198
+							state = 197
+							state = 224
+							state = 571
+							state = 576
+							state = 250
+							state = 574
+							state = 572
+							state = 573
+							state = 575
 						}
 					}
 				}
@@ -5183,6 +5216,8 @@ focus_tree = {
 						OR = {
 							state = 253
 							state = 254
+							state = 259
+							state = 256
 							state = 255
 							state = 257
 						}
@@ -5207,7 +5242,7 @@ focus_tree = {
 					
 				}
 				transfer_state_to = NPA
-				add_compliance = 50
+				add_compliance = 75
 			}
 			NPA = {
 				set_cosmetic_tag = NPA_aztlan_puppet
