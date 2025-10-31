@@ -657,6 +657,7 @@ country_event = {
 		any_owned_state = {
 			is_core_of = CAN
 		}
+		has_war = no
 	}
 	fire_only_once = yes
 	#release a puppet
