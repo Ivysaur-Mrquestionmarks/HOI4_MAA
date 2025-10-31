@@ -31,6 +31,68 @@ characters={
 			id = -1
 		}
 	}
+
+	GKJ_charlie_crist = {
+		name = "Charlie Crist"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GKJ/charlie_crist.tga"
+			}
+		}
+		country_leader = {
+			ideology = establishment
+			traits = { sharp_tongued_lawyer JUNO_unpopular }
+		}
+	}
+	GKJ_laura_loomer = {
+		name = "Laura Loomer"
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GKJ/laura_loomer.tga" #this woman is fucking scary
+			}
+		}
+		country_leader = {
+			ideology = trumpist
+			traits = { JUNO_unpopular }
+		}
+	}
+	GKJ_alfred_adrian_wyllie = {
+		name = "Adrian Wyllie"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GKJ/adrian_wyllie.tga"
+			}
+		}
+		country_leader = {
+			ideology = anarcho_capitalism
+			traits = { }
+		}
+	}
+	GKJ_black_rose_federation = {
+		name = "Black Rose Federation"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLA/portrait_spr_anarchist_commune.dds"
+			}
+		}
+		country_leader = {
+			ideology = anarchism
+			traits = { }
+		}
+	}
+	GKJ_josh_leclair = {
+		name = "Josh Leclair"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GKJ/josh_leclair.tga"
+			}
+		}
+		country_leader = {
+			ideology = communism
+			traits = { left_trade_unionist }
+		}
+	}
 	
 	GKJ_greg_locke = {
 		name = GKJ_greg_locke
