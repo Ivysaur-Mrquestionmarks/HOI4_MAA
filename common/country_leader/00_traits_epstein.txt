@@ -5404,6 +5404,24 @@ leader_traits = {
 		stability_factor = 0.05
 		consumer_goods_factor = -0.1
 	}
-	
+	KMT_advisor_chief_justice_of_wsc = {
+		random = no
+		democrat_acceptance = 10
+		political_power_cost = 0.1
+		stability_factor = 0.05
+	}
+	KMT_advisor_traditionalist_cardinal = {
+		random = no
+		republican_acceptance = 10
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		army_defence_factor = 0.05
+	}
+	KMT_advisor_bergolian_cardinal = {
+		random = no
+		stability_factor = 0.15
+		war_support_factor = -0.05
+		political_power_gain = 0.1
+	}
 	
 }

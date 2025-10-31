@@ -142,7 +142,8 @@ characters={
 
 		portraits = {
 			civilian = {
-				large = #TODO
+				large = "gfx/leaders/KMT/Annette_Ziegler.dds"
+				small = "GFX_idea_advisor_Annette_Ziegler"
 			}
 		}
 		country_leader = {
@@ -150,6 +151,28 @@ characters={
 			ideology = Oligarchy
 			expire = "2060.1.1.1"
 			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Annette_Ziegler
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+					has_completed_focus = KMT_weathermen_coup
+					has_completed_focus = KMT_let_him_cook
+				}	
+			}	
+			traits = { KMT_advisor_chief_justice_of_wsc }
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 
@@ -174,7 +197,8 @@ characters={
 
 		portraits = {
 			civilian = {
-				large = #TODO
+				large = "gfx/leaders/KMT/Raymond_Leo_Burke.dds"
+				small = "GFX_idea_advisor_Raymond_Leo_Burke"
 			}
 		}
 		country_leader = {
@@ -182,15 +206,39 @@ characters={
 			ideology = theocracy
 			expire = "2060.1.1.1"
 			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Raymond_Leo_Burke
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+					has_government = authoritarian_left
+					has_government = libertarian_left
+					has_completed_focus = KMT_wsc_coup
+				}	
+			}
+			traits = { KMT_advisor_traditionalist_cardinal }
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 
-	KMT_Robert_Prevhost = {			# if anyone wants to make him cannonically the pope KMT can just have Raymond
-		name = KMT_Robert_Prevhost
+	KMT_Robert_Prevost = {
+		name = KMT_Robert_Prevost
 
 		portraits = {
 			civilian = {
-				large = #TODO
+				large = "gfx/leaders/KMT/Robert_Prevost.dds"
+				small = "GFX_idea_advisor_Robert_Prevost"
 			}
 		}
 		country_leader = {
@@ -199,6 +247,28 @@ characters={
 			expire = "2060.1.1.1"
 			id = -1
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Robert_Prevost
+			cost = 150
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+					has_completed_focus = KMT_wsc_coup
+				}
+				has_country_flag = KMT_papal_plan_accepted
+			}	
+			traits = { KMT_advisor_bergolian_cardinal }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
 	}
 
 	KMT_Paul_Nehlen = {
