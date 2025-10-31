@@ -5282,30 +5282,35 @@ leader_traits = {
 
 	#advisors
 	KMT_advisor_shrewd_politician = {
+		sprite = 13
 		random = no
 		political_power_factor = 0.15
 		stability_factor = 0.1
 		war_support_factor = 0.1
 	}
 	KMT_advisor_republican_senator = {
+		sprite = 13
 		random = no
 		political_power_gain = 0.05
 		production_factory_efficiency_gain_factor = 0.1
 		republican_acceptance = 50
 	}
 	KMT_advisor_democrat_senator = {
+		sprite = 13
 		random = no
 		political_power_gain = 0.05
 		production_speed_buildings_factor = 0.1
 		democrat_acceptance = 50
 	}
 	KMT_advisor_progressive_dane = {
+		sprite = 13
 		random = no
 		stability_factor = 0.1
 		libertarian_left_drift = 0.01
 		libertarian_left_acceptance = 50
 	}
 	KMT_advisor_black_progressive = {
+		sprite = 13
 		random = no
 		stability_factor = 0.05
 		consumer_goods_factor = 0.1
@@ -5314,17 +5319,20 @@ leader_traits = {
 		libertarian_left_acceptance = 20
 	}
 	KMT_advisor_humanist_figure = {
+		sprite = 13
 		random = no
 		stability_factor = 0.1
 		war_support_factor = -0.1
 		political_power_factor = 0.05
 	}
 	KMT_advisor_progressive_actor = {
+		sprite = 13
 		random = no
 		stability_factor = 0.05
 		libertarian_left_drift = 0.02		
 	}
 	KMT_advisor_militia_leader = {
+		sprite = 12
 		random = no
 		modifier_army_sub_unit_militia_attack_factor = 0.05
 		modifier_army_sub_unit_militia_defence_factor = 0.05
@@ -5332,12 +5340,14 @@ leader_traits = {
 		authoritarian_left_drift = 0.02
 	}
 	KMT_advisor_militia_ideologue = {
+		sprite = 12
 		random = no
 		authoritarian_left_drift = 0.05
 		stability_factor = 0.05
 		war_support_factor = 0.1
 	}
 	KMT_advisor_fringe_politician = {
+		sprite = 13
 		random = no
 		autocratic_drift = 0.01
 		stability_factor = -0.1
@@ -5345,17 +5355,20 @@ leader_traits = {
 		consumer_goods_factor = -0.1
 	}
 	KMT_advisor_ambassador_to_the_holy_see = {
+		sprite = 13
 		random = no
 		stability_factor = 0.05
 		political_power_factor = 0.05
 	}
 	KMT_advisor_conservative_media_figure = {
+		sprite = 10
 		random = no
 		republican_drift = 0.01
 		drift_defence_factor = 0.15
 		production_speed_buildings_factor = 0.05
 	}
 	KMT_advisor_teachers_union_organizer = {
+		sprite = 12
 		random = no
 		political_power_cost = 0.05
 		democrat_acceptance = 50
@@ -5365,17 +5378,20 @@ leader_traits = {
 		conscription = 0.005
 	}
 	KMT_advisor_anti_war_activist = {
+		sprite = 13
 		random = no
 		war_support_factor = -0.15
 		stability_factor = 0.15
 	}
 	KMT_advisor_daily_stormer_editor = {
+		sprite = 13
 		random = no
 		war_support_factor = 0.15
 		autocratic_drift = 0.05
 		resistance_activity = -0.2
 	}
 	KMT_advisor_antisemite_psychologist = {
+		sprite = 13
 		random = no
 		stability_factor = 0.05
 		autocratic_drift = 0.02
@@ -5383,6 +5399,7 @@ leader_traits = {
 		research_speed_factor = 0.05
 	}
 	KMT_advisor_great_cinematographer = {
+		sprite = 10
 		random = no
 		stability_factor = 0.05
 		democrat_acceptance = 20
@@ -5391,6 +5408,7 @@ leader_traits = {
 		consumer_goods_factor = 0.05
 	}
 	KMT_advisor_interfaith_minister = {
+		sprite = 13
 		random = no
 		libertarian_left_drift = 0.02
 		libertarian_left_acceptance = 20
@@ -5398,6 +5416,7 @@ leader_traits = {
 		opinion_gain_monthly_factor = 0.3
 	}
 	KMT_advisor_president_of_american_atheists = {
+		sprite = 13
 		random = no
 		libertarian_left_acceptance = 20
 		democrat_acceptance = 20
@@ -5405,12 +5424,16 @@ leader_traits = {
 		consumer_goods_factor = -0.1
 	}
 	KMT_advisor_chief_justice_of_wsc = {
+		sprite = 15
 		random = no
 		democrat_acceptance = 10
 		political_power_cost = 0.1
 		stability_factor = 0.05
+		intelligence_agency_defense = 0.1
+		operative_slot = 1
 	}
 	KMT_advisor_traditionalist_cardinal = {
+		sprite = 13
 		random = no
 		republican_acceptance = 10
 		stability_factor = 0.05
@@ -5418,6 +5441,7 @@ leader_traits = {
 		army_defence_factor = 0.05
 	}
 	KMT_advisor_bergolian_cardinal = {
+		sprite = 13
 		random = no
 		stability_factor = 0.15
 		war_support_factor = -0.05
