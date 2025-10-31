@@ -134,6 +134,16 @@ characters={
 			id = -1
 		}
 	}
+
+	#quebecois puppet leader
+	CAN_steve_guilbeault = {
+		name = "Steven Guilbeault"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAN/steve_guilbeault.tga"
+			}
+		}
+	}
 	### Military Leaders ###
 	# Army #
 	CAN_brenda_lucki = {

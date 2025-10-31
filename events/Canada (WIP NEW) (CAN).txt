@@ -642,3 +642,144 @@ country_event = {
 		
 	}
 }
+
+#Victorious Quebec will release a puppet
+country_event = {
+	id = canada_collapse.11
+	title = canada_collapse.11.t
+	desc = canada_collapse.11.d
+	#picture =
+	trigger = {
+		original_tag = QUE
+		NOT = {
+			country_exists = CAN
+		}
+		any_owned_state = {
+			is_core_of = CAN
+		}
+	}
+	fire_only_once = yes
+	#release a puppet
+	option = {
+		name = canada_collapse.11.a
+		effect_tooltip = {
+			release_puppet = CAN
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = CAN
+					NOT = {
+						is_core_of = QUE
+					}
+				}
+				transfer_state_to = CAN
+			}
+			set_autonomy = {
+		    	    target = CAN
+			    autonomous_state = autonomy_colony
+			    end_wars = no
+			    end_civil_wars = no
+			}
+			CAN = {
+				if = {
+					limit = {
+						QUE = {
+							has_government = libertarian_left
+						}
+					}
+					add_country_leader_role = {
+					    character = CAN_steve_guilbeault
+					    promote_leader = yes
+					    country_leader = {
+					        ideology = democratic_socialism
+					        traits = { aloof_authority_alt }
+					    }
+					}
+					else_if = {
+						limit = {
+							QUE = {
+								has_government = authoritarian_left
+							}
+						}
+						add_country_leader_role = {
+						    character = CAN_steve_guilbeault
+						    promote_leader = yes
+						    country_leader = {
+						        ideology = communism
+						        traits = { aloof_authority_alt }
+						    }
+						}
+					}
+					else_if = {
+						limit = {
+							QUE = {
+								has_government = libertarian_right
+							}
+						}
+						add_country_leader_role = {
+						    character = CAN_steve_guilbeault
+						    promote_leader = yes
+						    country_leader = {
+						        ideology = populist_conservatism
+						        traits = { aloof_authority_alt }
+						    }
+						}
+					}
+					else_if = {
+						limit = {
+							QUE = {
+								has_government = autocratic
+							}
+						}
+						add_country_leader_role = {
+						    character = CAN_steve_guilbeault
+						    promote_leader = yes
+						    country_leader = {
+						        ideology = military_dictatorship
+						        traits = { aloof_authority_alt }
+						    }
+						}
+					}
+					else_if = {
+						limit = {
+							QUE = {
+								has_government = democrat
+							}
+						}
+						add_country_leader_role = {
+						    character = CAN_steve_guilbeault
+						    promote_leader = yes
+						    country_leader = {
+						        ideology = legitimist_military_dictatorship
+						        traits = { aloof_authority_alt }
+						    }
+						}
+					}
+					else_if = {
+						limit = {
+							QUE = {
+								has_government = republican
+							}
+						}
+						add_country_leader_role = {
+						    character = CAN_steve_guilbeault
+						    promote_leader = yes
+						    country_leader = {
+						        ideology = canadian_conservative
+						        traits = { aloof_authority_alt }
+						    }
+						}
+					}
+				}
+			}
+		}
+	}
+	#continue military occupation
+	option = {
+		name = canada_collapse.11.b
+		add_stability = -0.10
+		add_war_support = -0.25
+		add_political_power = -50
+	}
+}
