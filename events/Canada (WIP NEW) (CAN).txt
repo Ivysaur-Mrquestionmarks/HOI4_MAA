@@ -663,6 +663,7 @@ country_event = {
 	#release a puppet
 	option = {
 		name = canada_collapse.11.a
+		ai_chance = { factor = 100 }
 		effect_tooltip = {
 			release_puppet = CAN
 		}
@@ -779,6 +780,7 @@ country_event = {
 	#continue military occupation
 	option = {
 		name = canada_collapse.11.b
+		ai_chance = { factor = 0 }
 		add_stability = -0.10
 		add_war_support = -0.25
 		add_political_power = -50
