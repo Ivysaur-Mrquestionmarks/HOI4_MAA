@@ -5640,8 +5640,30 @@ spriteTypes = {
         name = "GFX_idea_military_Jay_L_Johnson"
         texturefile = "gfx/interface/ideas/KMT/military_Jay_L_Johnson.dds"
     }
+    spriteType = {
+        name = "GFX_idea_military_John_T_Dunlap"
+        texturefile = "gfx/interface/ideas/KMT/military_John_T_Dunlap.dds"
+    }
 
-    ### Black Army of Texas (BLA) ###
+    #companies
+    spriteType = {
+        name = "GFX_idea_john_deere"
+        texturefile = "gfx/interface/ideas/KMT/concern_john_deere.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_kohler"
+        texturefile = "gfx/interface/ideas/KMT/concern_kohler.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_milwaukee_tool"
+        texturefile = "gfx/interface/ideas/KMT/concern_milwaukee_tool.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_wec_energy"
+        texturefile = "gfx/interface/ideas/KMT/concern_wec_energy.dds"
+    }
+
+### Black Army of Texas (BLA) ###
     spriteType = {
         name = "GFX_idea_BLA_international_divisions"
         texturefile = "gfx/interface/ideas/BLA/BLA_international_divisions.tga"
@@ -5683,23 +5705,6 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/BLA/BLA_unconventional_army.tga"
     }
 
-    #companies
-    spriteType = {
-        name = "GFX_idea_john_deere"
-        texturefile = "gfx/interface/ideas/KMT/concern_john_deere.dds"
-    }
-    spriteType = {
-        name = "GFX_idea_kohler"
-        texturefile = "gfx/interface/ideas/KMT/concern_kohler.dds"
-    }
-    spriteType = {
-        name = "GFX_idea_milwaukee_tool"
-        texturefile = "gfx/interface/ideas/KMT/concern_milwaukee_tool.dds"
-    }
-    spriteType = {
-        name = "GFX_idea_wec_energy"
-        texturefile = "gfx/interface/ideas/KMT/concern_wec_energy.dds"
-    }
 
 
 }
