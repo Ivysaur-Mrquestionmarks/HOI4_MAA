@@ -202,7 +202,7 @@ characters={
 			}
 		}
 		country_leader = {
-			traits = {}
+			traits = { KMT_secundum_cor_tuum }
 			ideology = theocracy
 			expire = "2060.1.1.1"
 			id = -1
@@ -242,7 +242,7 @@ characters={
 			}
 		}
 		country_leader = {
-			traits = {}
+			traits = { KMT_in_illo_uno_unum }
 			ideology = theocracy
 			expire = "2060.1.1.1"
 			id = -1
@@ -1179,6 +1179,41 @@ characters={
 				has_completed_focus = KMT_reacall_the_admirals
 			}
 			traits = { navy_chief_maneuver_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+	KMT_John_T_Dunlap = {
+		name = KMT_John_T_Dunlap
+		portraits = {
+			navy = {
+				small = TODO
+				large = TODO
+			}
+		}
+		field_marshal = {
+			traits = { inflexible_strategist unyielding_defender expert_delegator commando skilled_staffer }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
+			visible = {
+				has_country_flag = KMT_smom
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = chief_John_T_Dunlap
+			ledger = army
+			cost = 50
+			available = {
+				has_completed_focus = KMT_american_crusade
+			}
+			traits = { army_chief_defensive_2 }
 			ai_will_do = {
 				factor = 1
 			}

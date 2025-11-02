@@ -2036,3 +2036,39 @@ country_event = {
 		}		
 	}
 }
+
+# papal leadership
+country_event = {
+	id = wisconsin.56
+	title = wisconsin.56.t
+	desc = wisconsin.56.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+    	days = 2
+	}
+	option = {
+		name = wisconsin.56.a
+		KMT_Raymond_Leo_Burke = { 
+					promote_character = yes
+				}
+		set_politics = {
+    		ruling_party = autocratic
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = wisconsin.56.b
+		ai_chance = {
+			factor = 1
+		}
+		KMT_Robert_Prevost = { 
+					promote_character = yes
+				}
+		set_politics = {
+    		ruling_party = autocratic
+			elections_allowed = no
+		}
+	}
+}

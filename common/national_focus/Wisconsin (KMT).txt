@@ -914,7 +914,11 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.05
+			add_stability = 0.05			
+			add_state_core = 197
+			add_state_core = 198
+			add_state_core = 209
+			add_state_core = 152
 		}
 		prerequisite = {
             focus = KMT_disband_the_trouble_makers
@@ -3812,7 +3816,8 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_war_support = -0.2
-			remove_ideas = KMT_unholy_coalition
+			remove_ideas = KMT_unholy_coalition			
+			set_country_flag = reunification_start
 		}
 		prerequisite = {
 			focus = KMT_the_second_victory_over_chaos
@@ -4055,7 +4060,8 @@ focus_tree = {
 			set_cosmetic_tag = KMT_nehlens_america
 			add_stability = 0.1
 			add_political_power = 200
-			unlock_decision_tooltip = KMT_remember_yockey
+			unlock_decision_tooltip = KMT_remember_yockey		
+			set_country_flag = reunification_start
 		}
 		prerequisite = {
 			focus = KMT_loyalty_to_the_base
@@ -4296,6 +4302,7 @@ focus_tree = {
 			set_cosmetic_tag = KMT_snyders_america
 			add_war_support = 0.05
 			add_political_power = 50
+			set_country_flag = reunification_start
 		}
 		prerequisite = {
 			focus = KMT_slow_motion_innovations
@@ -5610,6 +5617,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			set_country_flag = reunification_start
 			
 		}
 		prerequisite = {
@@ -5957,6 +5965,7 @@ focus_tree = {
 				id = KMT_judicial_bop
 				set_value = 0.05
 			}
+			set_country_flag = reunification_start
 		}
 		prerequisite = {
 			focus = KMT_keep_a_tight_grip
@@ -6827,7 +6836,6 @@ focus_tree = {
 		prerequisite = {
 			focus = KMT_sane_republicanism
 			focus = KMT_deus_vult
-			focus = KMT_and_the_truth_shall_set_you_free
 		}
 	}
 
@@ -6977,7 +6985,7 @@ focus_tree = {
 		x = 13
 		y = 8
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -6995,7 +7003,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			set_party_name = {
+				ideology = autocratic
+				long_name = KMT_autocratic_party_papal_long
+				name = KMT_autocratic_party_papal
+			}
+			country_event = wisconsin.56
+			set_cosmetic_tag = KMT_catholic_america
 		}
 		prerequisite = {
 			focus = KMT_papal_plan
@@ -7025,7 +7039,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.1
+			}
+			add_ideas = KMT_rallying_the_faithful
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 3 }
 		}
 		prerequisite = {
 			focus = KMT_let_him_cook
@@ -7038,7 +7058,7 @@ focus_tree = {
 		x = 12
 		y = 9
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -7051,7 +7071,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_political_power = 50
+			add_ideas = KMT_catholic_america_idea
+			add_offsite_building = { type = arms_factory level = 1 }
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 		prerequisite = {
 			focus = KMT_let_him_cook
@@ -7064,7 +7087,7 @@ focus_tree = {
 		x = 14
 		y = 10
 
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -7077,6 +7100,75 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.05
+			}
+			add_war_support = 0.15
+			random_owned_state = {
+				limit = { is_core_of = KMT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+			    	type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { is_core_of = KMT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+			    	type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { is_core_of = KMT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+			    	type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			division_template = {
+    			name = "Knights of Malta"
+    			division_names_group = TODO
+    			priority = 2
+    			template_counter = 48
+    			regiments = {
+        			light_armor = { x = 0 y = 0 }
+       				motorized = { x = 1 y = 0 }
+        			motorized = { x = 1 y = 1 }
+        			motorized = { x = 1 y = 2 }
+					motorized = { x = 1 y = 3 }
+					mot_artillery_brigade = { x = 2 y = 0 }
+    			}
+    			support = {
+					engineer = { x = 0 y = 0 }
+					field_hospital = { x = 0 y = 1 }
+					maintenance_company = { x = 0 y = 2 }
+    			}
+			}
+			106 = {
+				create_unit = {
+    				division = "name = \"Jerusalem\" division_template = \"Knights of Malta\" start_experience_factor = 0.9"
+    				owner = KMT
+				}
+				create_unit = {
+    				division = "name = \"Rome\" division_template = \"Knights of Malta\" start_experience_factor = 0.9"
+    				owner = KMT
+				}
+				create_unit = {
+    				division = "name = \"Rhodes\" division_template = \"Knights of Malta\" start_experience_factor = 0.9"
+    				owner = KMT
+				}
+			}
+			set_country_flag = KMT_smom
+			custom_effect_tooltip = KMT_smom_tt
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = chief_John_T_Dunlap
 			
 		}
 		prerequisite = {
@@ -7089,11 +7181,12 @@ focus_tree = {
 		x = 12
 		y = 10
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			autocratic > 0.25
 		}
 		
 		bypass = {
@@ -7102,7 +7195,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.1
+			swap_ideas = {
+				remove_idea = KMT_catholic_america_idea
+				add_idea = KMT_catholic_america_idea_1
+			}
 		}
 		prerequisite = {
 			focus = KMT_hotline_to_the_vatican
@@ -7115,7 +7212,7 @@ focus_tree = {
 		x = 14
 		y = 11
 
-		cost = 2
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
@@ -7128,7 +7225,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_ideas = KMT_deus_vult_idea
+			add_offsite_building = { type = arms_factory level = 1 }
 		}
 		prerequisite = {
 			focus = KMT_american_crusade
@@ -7141,11 +7239,12 @@ focus_tree = {
 		x = 12
 		y = 11
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			autocratic > 0.5
 		}
 		
 		bypass = {
@@ -7154,7 +7253,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_manpower = 100000
+			swap_ideas = {
+				remove_idea = KMT_catholic_america_idea_1
+				add_idea = KMT_catholic_america_idea_2
+			}
 		}
 		prerequisite = {
 			focus = KMT_you_shall_know_the_truth
@@ -7210,9 +7313,6 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			
-		}
-		prerequisite = {
-			focus = KMT_deus_vult
 		}
 		prerequisite = {
 			focus = KMT_and_the_truth_shall_set_you_free
