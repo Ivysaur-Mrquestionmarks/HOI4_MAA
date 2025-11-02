@@ -7010,6 +7010,7 @@ focus_tree = {
 			}
 			country_event = wisconsin.56
 			set_cosmetic_tag = KMT_catholic_america
+			remove_ideas = KMT_coalition_of_the_willing_2
 		}
 		prerequisite = {
 			focus = KMT_papal_plan
@@ -7195,7 +7196,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_stability = 0.1
+			add_research_slot = 1
 			swap_ideas = {
 				remove_idea = KMT_catholic_america_idea
 				add_idea = KMT_catholic_america_idea_1
@@ -7225,6 +7226,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.05
+			}
 			add_ideas = KMT_deus_vult_idea
 			add_offsite_building = { type = arms_factory level = 1 }
 		}
@@ -7253,7 +7258,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_manpower = 100000
+			add_stability = 0.1
 			swap_ideas = {
 				remove_idea = KMT_catholic_america_idea_1
 				add_idea = KMT_catholic_america_idea_2
@@ -7270,7 +7275,7 @@ focus_tree = {
 		x = 14
 		y = 12
 
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -7283,7 +7288,25 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			division_template = {
+				name = "Popemobile"
+				regiments = {
+					bus = { x = 0 y = 0 }
+				}
+				is_locked = yes
+				override_model = SWE_bus_vehicle_entity
+			}
+			capital_scope = {
+				create_unit = {
+			    	division = "name = \"Popemobile\" division_template = \"Popemobile\" start_equipment_factor = 1 start_experience_factor = 1 "
+		 	   		owner = KMT
+				}
+			}
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+			add_manpower = 50000
+			add_war_support = 0.1
 		}
 		prerequisite = {
 			focus = KMT_deus_vult
@@ -7299,7 +7322,7 @@ focus_tree = {
 		x = 10
 		y = 12
 
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -7312,7 +7335,27 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = KMT
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 300
+				producer = KMT
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = KMT
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis
+				amount = 500
+				producer = KMT
+			}
+			add_political_power = 50
 		}
 		prerequisite = {
 			focus = KMT_and_the_truth_shall_set_you_free
@@ -7325,7 +7368,7 @@ focus_tree = {
 		x = 12
 		y = 12
 
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -7338,7 +7381,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.15
+			add_war_support = 0.15
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.05
+			}
 		}
 		prerequisite = {
 			focus = KMT_deus_vult
@@ -7354,11 +7402,12 @@ focus_tree = {
 		x = 13
 		y = 13
 
-		cost = 2
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			autocratic > 0.75
 		}
 		
 		bypass = {
@@ -7367,7 +7416,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KMT_catholic_america_idea_2
+				add_idea = KMT_catholic_america_idea_3
+			}
 		}
 		prerequisite = {
 			focus = KMT_forgive_sinners_heretics_traitors
@@ -7389,7 +7441,7 @@ focus_tree = {
 		x = 12
 		y = 14
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -7402,7 +7454,16 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = {
+				limit = {
+					any_character = {
+						has_trait = KMT_meant_for_something_greater
+					}
+				}
+				remove_country_leader_trait = KMT_meant_for_something_greater
+			}
+			add_country_leader_trait = KMT_patriarch_of_the_new_world
+			set_cosmetic_tag = KMT_patriarchy_of_america
 		}
 		prerequisite = {
 			focus = KMT_one_nation_under_god_undivisible
@@ -7418,11 +7479,15 @@ focus_tree = {
 		x = 14
 		y = 14
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			has_country_leader = {
+				character = KMT_Robert_Prevost
+				ruling_only = yes
+			}
 		}
 		
 		bypass = {
@@ -7431,7 +7496,28 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = {
+				limit = {
+					any_character = {
+						has_trait = KMT_meant_for_something_greater
+					}
+				}
+				remove_country_leader_trait = KMT_meant_for_something_greater
+			}
+			swap_ideas = {
+				remove_idea = KMT_catholic_america_idea_3
+				add_idea = KMT_catholic_america_idea_4
+			}
+			set_country_leader_portrait = {
+				ideology = autocratic
+				portrait = "gfx/leaders/KMT/Robert_Prevost_2.dds"
+			}
+			set_cosmetic_tag = KMT_american_catholic_state
+			set_party_name = {
+				ideology = autocratic
+				long_name = KMT_autocratic_cdp_long
+				name = KMT_autocratic_cdp_papal
+			}
 		}
 		prerequisite = {
 			focus = KMT_one_nation_under_god_undivisible
@@ -7439,6 +7525,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = KMT_submition_to_the_pope
 		}
+		
 	}
 
 	# i don want peace i want problems always

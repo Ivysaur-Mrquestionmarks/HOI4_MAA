@@ -1376,6 +1376,30 @@ ideas = {
 			}
 		}
 
+		KMT_catholic_america_idea_3 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { has_government = autocratic }	
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = 0.15
+				autocratic_drift = 0.1
+				resistance_growth_on_our_occupied_states = 0.15
+				conscription_factor = 0.1
+				compliance_gain = 0.05
+			}
+		}
+		KMT_catholic_america_idea_4 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes	
+			modifier = {
+				war_support_factor = 0.2
+				stability_factor = 0.2
+				resistance_growth_on_our_occupied_states = 0.2
+				conscription_factor = 0.2
+				compliance_gain = 0.1
+			}
+		}
+
 
 	}
 

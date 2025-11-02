@@ -5295,6 +5295,18 @@ leader_traits = {
 		production_speed_buildings_factor = 0.25
 		democrat_acceptance = 50
 	}
+	KMT_meant_for_something_greater = {
+		random = no
+		stability_factor = -0.05
+		political_power_factor = -0.1
+	}
+	KMT_patriarch_of_the_new_world = {
+		random = no
+		stability_weekly = 0.005
+		consumer_goods_factor = -0.1
+		political_power_factor = 0.25
+		compliance_gain = 0.05
+	}
 
 	#advisors
 	KMT_advisor_shrewd_politician = {

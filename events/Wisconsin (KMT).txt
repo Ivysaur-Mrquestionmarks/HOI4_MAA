@@ -2070,5 +2070,25 @@ country_event = {
     		ruling_party = autocratic
 			elections_allowed = no
 		}
+		hidden_effect = {
+			country_event = { id = wisconsin.57 days = 220 }
+		}
+	}
+}
+
+# prevost someone else
+country_event = {
+	id = wisconsin.57
+	title = wisconsin.57.t
+	desc = wisconsin.57.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+    	days = 2
+	}
+	option = {
+		name = wisconsin.57.a
+		add_country_leader_trait = KMT_meant_for_something_greater
 	}
 }

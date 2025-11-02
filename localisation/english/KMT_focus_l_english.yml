@@ -315,6 +315,27 @@
  KMT_coalition_of_the_willing_2:0 "Coalition Consolidated"
  KMT_coalition_of_the_willing_2_desc:0 "Against all odds, Paul Ryan has managed to keep the Coalition of the Willing intact even after the fall of their common enemy. Whether this fragile unity can endure in peace remains to be seen."
 
+ KMT_catholic_america_idea:0 "Catholic America"
+ KMT_catholic_america_idea_desc:0 "The Vatican's influence seeps deep into American life. The Church offers not just moral guidance, but structure: an orderly faith to mend a fractured nation. Bishops advise the cabinet, priests bless the troops, and the rosary is now as common as the flag. Religious institutions shall flourish, morality will define governance, and the faithful rally around the belief that their nation is chosen to lead the world toward divine order. Guided by divine mandate, America stands as the sword and shield of the faithful. Its people march not for conquest, but for salvation!"
+
+ KMT_catholic_america_idea_1:0 "Catholic America"
+ KMT_catholic_america_idea_1_desc:0 "The Vatican's influence seeps deep into American life. The Church offers not just moral guidance, but structure: an orderly faith to mend a fractured nation. Bishops advise the cabinet, priests bless the troops, and the rosary is now as common as the flag. Religious institutions shall flourish, morality will define governance, and the faithful rally around the belief that their nation is chosen to lead the world toward divine order. Guided by divine mandate, America stands as the sword and shield of the faithful. Its people march not for conquest, but for salvation!"
+
+ KMT_catholic_america_idea_2:0 "Catholic America"
+ KMT_catholic_america_idea_2_desc:0 "The Vatican's influence seeps deep into American life. The Church offers not just moral guidance, but structure: an orderly faith to mend a fractured nation. Bishops advise the cabinet, priests bless the troops, and the rosary is now as common as the flag. Religious institutions shall flourish, morality will define governance, and the faithful rally around the belief that their nation is chosen to lead the world toward divine order. Guided by divine mandate, America stands as the sword and shield of the faithful. Its people march not for conquest, but for salvation!"
+
+ KMT_deus_vult_idea:0 "Deus Vult"
+ KMT_deus_vult_idea_desc:0 "Faith burns hotter than fire, and in its flame the weak are tested, and the strong are sanctified. The new crusaders of America rise in glory. Soldiers and patriots united under the will of God, ready to bring holy order to a chaotic nation."
+
+ KMT_rallying_the_faithful:0 "Rallying the Faithful"
+ KMT_rallying_the_faithful_desc:0 "A new spiritual awakening grips the nation. Churches act as recruitment halls, pulpits as platforms for unity, and every prayer as a vow to defend the reborn holy state. The faithful gather not in fear, but in strength, forging a movement that transcends politics: a crusade of the soul."
+
+ KMT_catholic_america_idea_3:0 "Catholic America"
+ KMT_catholic_america_idea_3_desc:0 "The Vatican's influence seeps deep into American life. The Church offers not just moral guidance, but structure: an orderly faith to mend a fractured nation. Bishops advise the cabinet, priests bless the troops, and the rosary is now as common as the flag. Religious institutions shall flourish, morality will define governance, and the faithful rally around the belief that their nation is chosen to lead the world toward divine order. Guided by divine mandate, America stands as the sword and shield of the faithful. Its people march not for conquest, but for salvation!"
+
+ KMT_catholic_america_idea_4:0 "Catholic America"
+ KMT_catholic_america_idea_4_desc:0 "The Vatican's influence seeps deep into American life. The Church offers not just moral guidance, but structure: an orderly faith to mend a fractured nation. Bishops advise the cabinet, priests bless the troops, and the rosary is now as common as the flag. Religious institutions shall flourish, morality will define governance, and the faithful rally around the belief that their nation is chosen to lead the world toward divine order. Guided by divine mandate, America stands as the sword and shield of the faithful. Its people march not for conquest, but for salvation!"
+
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
 ##       ##     ## ##       ####  ##    ##    ##       
@@ -625,6 +646,11 @@
  wisconsin.56.a:0 "The voice of Traditionalism - Raymond Leo Burke"
  wisconsin.56.b:0 "The Bergoglian faithful - Robert Prevost"
 
+ #event 57: prevost dream
+ wisconsin.57.t:0 "The Dream of Leo"
+ wisconsin.57.d:0 "In a restless night, Cardinal Robert Prevost dreamt of standing before a great light. From the radiance came a voice - gentle, sorrowful - calling not 'Robert', but 'Leo'. In that moment, he felt the weight of a crown that was never his, and a destiny that slipped quietly into another world. As dawn broke, he awoke with tears in his eyes, unsure whether he had been blessed... or reminded of what could have been."
+ wisconsin.57.a:0 ""In another life, I was meant for something greater.""
+
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 
 ##     ##  ##   ##  ##     ##    ##     ##  ##       ##          ####  ##  ##   ##  #### #### ##       ##       
@@ -656,6 +682,8 @@
 
  KMT_autocratic_party_papal_long:0 "Catholic Conference"
  KMT_autocratic_party_papal:0 "Catholic Conference"
+ KMT_autocratic_cdp_long:0 "Catholic Democratic Party"
+ KMT_autocratic_cdp:0 "CDP"
 
 ########  #######   ######  ##     ##  ######  ########  ######  
 ##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
@@ -960,6 +988,18 @@
  #papal
  KMT_let_him_cook:0 "Let Him Cook"
  KMT_let_him_cook_desc:0 "The Holy Father's visit has culminated in a bold plan: a divine blueprint for America's moral rebirth. Paul Ryan, a catholic in his own right, has accepted to withdraw from leadership to give the Vatican's vision room to develop and along with it, access to the Church's resources. Let the Pope cook and perhaps divine providence will reveal a new destiny for this nation."
+ KMT_hotline_to_the_vatican:0 "Hotline to the Vatican"
+ KMT_hotline_to_the_vatican_desc:0 "With the Papal Plan in motion, communication between our Capital and Rome has never been stronger. A direct channel has been established for matters both spiritual and temporal. Guidance from the Vatican now shapes our policies, and offshore factories have been established with the Vatican's resources. America begins to look ever more like the shining bastion of faith it was destined to be."
+ KMT_american_crusade:0 "The American Crusade"
+ KMT_american_crusade_desc:0 "Faith and steel shall march as one. The enemies of the Church and of America whether they dwell in heresy or corruption will face the fire of divine justice. With God's will, and [KMT.GetLeader] command, the Knights of Malta shall once again ride forth into battle."
+ KMT_you_shall_know_the_truth:0 "You Shall Know the Truth..."
+ KMT_you_shall_know_the_truth_desc:0 "Through devotion, education, and guidance from the Holy See, the American people are being reshaped into a nation of faith and moral clarity. The truth of divine law illuminates every facet of society, revealing what was once hidden by decadence and deceit."
+ KMT_deus_vult:0 "Deus Vult"
+ KMT_deus_vult_desc:0 "God wills it!\n\nThe cry that once echoed through the Holy Lands now returns, reborn in the heart of America. The faithful rise to answer the call, factories produce weapons of righteousness, and the banners of Christendom are raised high once more. This time, the crusade begins not in Jerusalem, but in the New World and not to reconquer, but to unify a God-fearing Nation once again."
+ KMT_and_the_truth_shall_set_you_free:0 "...and the Truth Shall Set You Free"
+ KMT_and_the_truth_shall_set_you_free_desc:0 "A purified America stands tall, united under faith and strength. The lies of the old world are gone and replaced by divine truth and moral certainty. With God's truth as our weapon, and our people as His soldiers, the nation is reborn into holy freedom."
+ KMT_rally_the_faithful:0 "Rally the Faithful"
+ KMT_rally_the_faithful_desc:0 "The time for doubt has ended. Across the nation, catholics fill churches once again with those seeking purpose in divine truth, abroad, thousands of volunteers prepare to come and fight in America. Priests, monks, and lay believers alike pledge themselves to the holy cause of rebuilding America under the One True Church's law. The faithful no longer whisper. They march."
 
  # Army
  KMT_upgrade_fort_mccoy:0 "Upgrade Fort McCoy"
