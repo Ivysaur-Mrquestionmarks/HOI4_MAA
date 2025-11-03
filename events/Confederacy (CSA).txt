@@ -256,6 +256,12 @@ country_event = {
 		release = CSB
 		release = ZIO
 		release = KKK
+		KKK = {
+			country_event = {
+				id = kkk.14
+				days = 28
+			}
+		}
 		release = LGB
 		release = AFR
 		every_subject_country = {

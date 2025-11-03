@@ -274,3 +274,52 @@ country_event = {
 
 }
 
+#David Duke takes over the KKK from Thom Robb (fires 28 days into Dixie Crisis)
+country_event = {
+	id = kkk.14
+	title = kkk.14.t
+	desc = kkk.14.d
+	picture = event_fascists_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kkk.14.a
+		add_country_leader_role = {
+		    character = KKK_david_duke
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = theocracy
+		        traits = { Grand_Wizard }
+		    }
+		}
+		hidden_effect = {
+			KKK_thom_robb = {
+				unit_leader_event = {
+					id = kkk.15
+					days = 390
+				}
+			}
+		}
+	}
+}
+#Thom Robb fucking dies
+unit_leader_event = {
+	id = kkk.15
+	title = kkk.15.t
+	desc = kkk.15.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	#good riddance
+	option = {
+		name = kkk.15.a
+		add_stability = 0.01
+		retire_character = KKK_thom_robb
+	}
+	#he will be rememred
+	option = {
+		name = kkk.15.b
+		add_war_support = 0.01
+		retire_character = KKK_thom_robb
+	}
+}
+

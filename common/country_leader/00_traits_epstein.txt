@@ -1973,6 +1973,16 @@ leader_traits = {
 		recruitable_population_factor = 0.30
 	}
 
+	KKK_national_director = {
+		random = no
+		stability_factor = 0.05
+		research_speed_factor = -0.10
+		army_core_defence_factor = 0.05
+		army_attack_factor = -0.10
+		autocratic_drift = 0.10
+		ai_focus_defense_factor = 0.20
+	}
+
 
 ####################ADVISOR TRAITS
 

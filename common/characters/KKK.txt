@@ -12,12 +12,12 @@ characters={
 				large = "gfx/leaders/KKK/duke.dds"
 			}
 		}
-		country_leader = {
-			traits = { Grand_Wizard }
-			ideology = theocracy
-			expire = "2060.1.1.1"
-			id = -1
-		}
+		#country_leader = {
+		#	traits = { Grand_Wizard }
+		#	ideology = theocracy
+		#	expire = "2060.1.1.1"
+		#	id = -1
+		#}
 		field_marshal = {
 			traits = { politically_connected old_guard aggressive_assaulter organisational_leader }
 			skill = 2
@@ -26,6 +26,30 @@ characters={
 			planning_skill = 1
 			logistics_skill = 2
 			legacy_id = 651224 #day klan was created
+		}
+	}
+	KKK_thom_robb = {
+		name = "Thom Robb"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KKK/thom_robb.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/KKK/Thom_Robb_General.dds"
+				large = "gfx/leaders/KKK/thom_robb.tga"
+			}
+		}
+		country_leader = {
+			traits = { KKK_national_director old }
+			ideology = fascism
+		}
+		field_marshal = {
+			traits = { old_guard aggressive_assaulter }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 	KKK_richard_spencer = {
