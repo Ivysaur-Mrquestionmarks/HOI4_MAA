@@ -23,6 +23,9 @@ ideas = {
 				conscription = 0.05
 				army_speed_factor = 0.05
 				attrition = 0.10
+				grant_medal_cost_factor = -0.33
+				field_officer_promotion_penalty = -0.10
+				female_divisional_commander_chance = 0.1 #10% Chance
 			}
 		}	
 
@@ -124,6 +127,7 @@ ideas = {
 				max_dig_in_factor = -0.33
 				dig_in_speed_factor = 0.10
 				dont_lose_dig_in_on_attack = 1
+				female_divisional_commander_chance = 0.1
 			}
 			rule = {
 				can_join_factions = no
