@@ -64,7 +64,7 @@ ideas = {
 			#allowed = {
 			#}
 			modifier = {
-				
+				terrain_trait_xp_gain_factor = 0.10
 			}
 			targeted_modifier = { tag = TEX attack_bonus_against = 0.1 }
 			targeted_modifier = { tag = BET attack_bonus_against = 0.05 }
