@@ -50,13 +50,14 @@ characters={
 			expire = "2060.1.1.1"
 			id = -1
 		}
-		corps_commander = {
-			traits = { politically_connected brilliant_strategist guerilla_fighter urban_assault_specialist } 
+		field_marshal = {
+			traits = { militias_officer politically_connected brilliant_strategist guerilla_fighter urban_assault_specialist } 
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
+			#should he only be visible if Republican? thoughts?
 		}
 	}
 	NYC_jordan_belfort = {
@@ -163,6 +164,62 @@ characters={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 2
+		}
+	}
+	#guardian angels
+	NYC_smoker = {
+		name = "Smoker" #real name unknown
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/NYC/Smoker_General.dds"
+				large = "gfx/leaders/NYC/smoker.tga"
+			}
+		}
+		corps_commander = {
+			traits = { militias_officer politically_connected urban_assault_specialist trickster } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			#should he only be visible if Republican? thoughts?
+		}
+	}
+	NYC_valerie_clark = {
+		name = "Valerie Clark"
+		gender = female
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/NYC/Valerie_Clark_General.dds"
+				large = "gfx/leaders/NYC/valerie_clark.tga"
+			}
+		}
+		corps_commander = {
+			traits = { militias_officer politically_connected urban_assault_specialist trickster } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			#should she only be visible if Republican? thoughts?
+		}
+	}
+	NYC_josh_penner = {
+		name = "Josh Penner"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/NYC/Josh_Penner_General.dds"
+				large = "gfx/leaders/NYC/josh_penner.tga"
+			}
+		}
+		corps_commander = {
+			traits = { militias_officer politically_connected urban_assault_specialist trickster } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			#should he only be visible if Republican? thoughts?
 		}
 	}
 }
