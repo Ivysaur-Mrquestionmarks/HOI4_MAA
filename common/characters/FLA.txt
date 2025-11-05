@@ -226,6 +226,43 @@ characters={
 			}
 		}
 	}
+	FLA_randy_constan = {
+		name = "Randy Constan" #this guy is nucking futs
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/FLA/randy_constan.dds"
+				large = "gfx/leaders/FLA/randy_constan.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FLA_randy_constan
+			cost = 150
+			allowed = {
+				tag = FLA
+			}
+			visible = {
+				tag = FLA
+			}
+			available = {
+				tag = FLA
+			}
+			traits = {
+				FLA_peter_pan
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = { media_personality trickster substance_abuser }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 	# Military Staff (Some double as military leaders) #
 	FLA_william_d_mcclish = {
 		name = FLA_william_d_mcclish

@@ -2061,6 +2061,14 @@ leader_traits = {
 		production_factory_max_efficiency_factor = 0.1
 		stability_factor = 0.05
 	}
+	FLA_peter_pan = {
+		random = no
+		sprite = 12
+		stability_factor = 0.025
+		war_support_factor = 0.025
+		political_power_factor = 0.025
+		conscription_factor = 0.025
+	}
 
 	#Molossia
 
