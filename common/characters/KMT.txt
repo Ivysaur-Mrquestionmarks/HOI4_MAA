@@ -851,6 +851,96 @@ characters={
 			}
 		}
 	}
+
+	KMT_Rick_Snyder = {
+		name = KMT_Rick_Snyder
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Rick_Snyder
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				has_idea = advisor_Rick_Snyder				
+			}
+			traits = { KMT_advisor_rs_vp }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_John_Boehner = {
+		name = KMT_John_Boehner
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_John_Boehner
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				has_idea = advisor_John_Boehner				
+			}
+			traits = { KMT_advisor_jb_vp }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Scott_Walker = {
+		name = KMT_Scott_Walker
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Scott_Walker
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			allowed = {
+				tag = KMT
+			}
+			visible = {
+				tag = KMT
+			}
+			available = {
+				has_idea = advisor_Scott_Walker				
+			}
+			traits = { KMT_advisor_sw_vp }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 	
 
 	### Military Leaders ###

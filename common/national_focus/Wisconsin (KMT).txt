@@ -6630,7 +6630,7 @@ focus_tree = {
 		x = 18
 		y = 8
 
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -6640,6 +6640,9 @@ focus_tree = {
 				id = KMT_judicial_bop
 				range < meddling_judicial
 			}
+			GLA = { exists = no }
+			ISA = { exists = no }
+			DET = { exists = no }
 		}
 		
 		bypass = {
@@ -6648,7 +6651,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-
+			remove_country_leader_trait = KMT_low_legitimacy
+			add_political_power = 150
+			add_war_support = 0.1
 		}
 		prerequisite = {
 			focus = KMT_hinder_the_courts
@@ -7030,6 +7035,9 @@ focus_tree = {
 			country_event = wisconsin.56
 			set_cosmetic_tag = KMT_catholic_america
 			remove_ideas = KMT_coalition_of_the_willing_2
+			remove_power_balance = {
+				id = KMT_judicial_bop
+			}
 		}
 		prerequisite = {
 			focus = KMT_papal_plan
@@ -7536,6 +7544,9 @@ focus_tree = {
 				ideology = autocratic
 				long_name = KMT_autocratic_cdp_long
 				name = KMT_autocratic_cdp_papal
+			}
+			set_politics = {
+				elections_allowed = yes
 			}
 		}
 		prerequisite = {
