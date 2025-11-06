@@ -201,6 +201,14 @@ spriteTypes = {
 		name = "GFX_ideology_misanthropic_dictatorship"
 		texturefile = "gfx/interface/ideologies/misanthropic_dictatorship.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_UTC_eco_fascism"
+		texturefile = "gfx/interface/ideologies/NYC_demsoc.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_UTC_communism"
+		texturefile = "gfx/interface/ideologies/NYC_demsoc.dds"
+	}
 	
 	#libleft
 	spriteType = {
@@ -229,6 +237,14 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_NYC_democratic_socialism"
+		texturefile = "gfx/interface/ideologies/NYC_demsoc.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_UTC_democratic_socialism"
+		texturefile = "gfx/interface/ideologies/NYC_demsoc.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_UTC_syndicalism"
 		texturefile = "gfx/interface/ideologies/NYC_demsoc.dds"
 	}
 	

@@ -30,14 +30,20 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	autocratic = 30
-	republican = 70
-	democrat = 0
-	authoritarian_left = 0
-	libertarian_right = 0
-	libertarian_left = 0
+	autocratic = 5
+	republican = 64
+	democrat = 25
+	authoritarian_left = 1
+	libertarian_right = 2
+	libertarian_left = 3
 }
 
 ### Country Leaders ###
 recruit_character = UTC_lee_zeldin
 recruit_character = UTC_george_curbelo
+recruit_character = UTC_cuomontang
+recruit_character = UTC_diane_sare
+recruit_character = UTC_dan_cantor
+recruit_character = UTC_duane_whitmer
+
+

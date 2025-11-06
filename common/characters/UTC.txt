@@ -29,4 +29,90 @@ characters={
 			id = -1
 		}
 	}
+
+	UTC_cuomontang = {
+		name = "Andrew Cuomo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UTC/evil_andrew_cuomo_aka_regular_andrew_cuomo.dds"
+				small = "gfx/interface/ideas/UTC/cuomo.dds" 
+			}
+			army = {
+				large = "gfx/leaders/UTC/evil_andrew_cuomo_aka_regular_andrew_cuomo.dds"
+				small = "gfx/interface/ideas/UTC/cuomo.dds" 
+			}
+		}
+		country_leader = {
+			ideology = liberal
+			traits = {
+				generallissimo 
+			}
+		}
+		field_marshal = {
+			traits = { politically_connected inflexible_strategist organizer logistics_wizard  } 
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+			visible = {
+				OR = {
+				has_government = democrat
+				has_government = autocratic #LAROUCHE CUOMO WTF?!
+				}
+			}
+		}
+	}
+
+	UTC_diane_sare = {
+		name = "Diane Sare"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UTC/diane_sare.tga"
+			}
+		}
+		gender = female
+		country_leader = {
+			ideology = social_nationalism
+			traits = {
+				###
+			}
+		}
+	}
+
+	UTC_dan_cantor = {
+		name = "Dan Cantor"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UTC/dan_cantor.tga"
+			}
+		}
+		country_leader = {
+			ideology = eco_fascism
+			traits = {
+				###
+			}
+		}
+		country_leader = {
+			ideology = syndicalism
+			traits = {
+				###
+			}
+		}
+	}
+
+	UTC_duane_whitmer = {
+		name = "Duane Whitmer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UTC/duane_whitmer.tga"
+			}
+		}
+		country_leader = {
+			ideology = libertarian_ideology
+			traits = {
+				###
+			}
+		}
+	}
 }
