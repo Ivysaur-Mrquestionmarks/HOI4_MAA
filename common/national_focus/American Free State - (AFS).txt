@@ -8966,6 +8966,27 @@ focus_tree = {
 			    target = FRA
 			    type = annex_everything
 		    }
+            if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = NEW
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = N }
+                create_wargoal = {
+			        target = NAB
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = WAB
+			        type = annex_everything
+		        }
+			}
 		}
 	}
 
@@ -10277,6 +10298,27 @@ focus_tree = {
 			    target = FRA
 			    type = annex_everything
 		    }
+			if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = NEW
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = N }
+                create_wargoal = {
+			        target = NAB
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = WAB
+			        type = annex_everything
+		        }
+			}
 		}
 	}
 
@@ -11423,6 +11465,27 @@ focus_tree = {
 			    target = FRA
 			    type = annex_everything
 		    }
+			if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = NEW
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = N }
+                create_wargoal = {
+			        target = NAB
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = WAB
+			        type = annex_everything
+		        }
+			}
 		}
 	}
 
@@ -12858,6 +12921,27 @@ focus_tree = {
 			    target = FRA
 			    type = annex_everything
 		    }
+			if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = NEW
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = N }
+                create_wargoal = {
+			        target = NAB
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = WAB
+			        type = annex_everything
+		        }
+			}
 		}
 	}
 
