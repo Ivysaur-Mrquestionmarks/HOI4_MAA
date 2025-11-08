@@ -126,6 +126,27 @@ country_event = {
 #THE PROVISIONAL GOVERNMENT
 set_cosmetic_tag = FRA_prov_govt_ct
 
+diplomatic_relation = {
+    country = USA
+    relation = embargo
+    active = yes
+}
+diplomatic_relation = {
+    country = CSA
+    relation = embargo
+    active = yes
+}
+diplomatic_relation = {
+    country = AFS
+    relation = embargo
+    active = yes
+}
+diplomatic_relation = {
+    country = GLA
+    relation = embargo
+    active = yes
+}
+
 
 set_politics = {
 	ruling_party = democrat

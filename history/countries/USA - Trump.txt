@@ -98,6 +98,32 @@ add_opinion_modifier = {
     modifier = aligned_administration
 }
 
+diplomatic_relation = {
+    country = FRA
+    relation = embargo
+    active = yes
+}
+diplomatic_relation = {
+    country = CSA
+    relation = embargo
+    active = yes
+}
+diplomatic_relation = {
+    country = AFS
+    relation = embargo
+    active = yes
+}
+diplomatic_relation = {
+    country = GLA
+    relation = embargo
+    active = yes
+}
+diplomatic_relation = {
+    country = PRA
+    relation = embargo
+    active = yes
+}
+
 set_research_slots = 4
 set_country_flag = {
     flag = reunification_start
