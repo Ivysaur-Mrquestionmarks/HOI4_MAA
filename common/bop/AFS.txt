@@ -144,6 +144,10 @@ hawkins_bop = {
 				army_org_factor = -0.05
 			}
 			on_activate = {
+				country_event = {
+				    id = AFS.14
+				    days = 0
+			    }
 			}
 		}
 		range = {
@@ -158,11 +162,6 @@ hawkins_bop = {
 				army_org_factor = -0.1
 			}
 			on_activate = {
-				set_country_flag = AFS_mike_dewine_coup_available
-				country_event = {
-				    id = AFS.14
-				    days = 0
-			    }
 			}
 		}
 		range = {
@@ -260,6 +259,10 @@ mattis_bop = {
 				army_org_factor = -0.05
 			}
 			on_activate = {
+				country_event = {
+				    id = AFS.14
+				    days = 0
+			    }
 			}
 		}
 		range = {
@@ -275,11 +278,6 @@ mattis_bop = {
 				army_org_factor = -0.1
 			}
 			on_activate = {
-				set_country_flag = AFS_mike_dewine_coup_available
-				country_event = {
-				    id = AFS.14
-				    days = 0
-			    }
 			}
 		}
 		range = {
