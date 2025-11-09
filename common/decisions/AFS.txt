@@ -1110,7 +1110,7 @@ AFS_individualist_collectivist_balance_of_power_category = {
 		}
 		modifier = {
 			libertarian_left_drift = 0.03
-			stability_weekly = 0.03
+			stability_weekly = 0.003
 			army_org_factor = 0.3
 		}
 		remove_effect = {
@@ -4084,7 +4084,7 @@ AFS_hawkins_political_decisions = {
 		}
 		modifier = {
 			consumer_goods_factor = 0.1
-			stability_weekly = 0.02
+			stability_weekly = 0.002
 			monthly_population = 0.02
 		}
 		remove_effect = {
@@ -4134,7 +4134,7 @@ AFS_hawkins_political_decisions = {
 		}
 		modifier = {
 			authoritarian_left_drift = 0.03
-			stability_weekly = 0.02
+			stability_weekly = 0.002
 		}
 		remove_effect = {
 			modify_country_flag = {
@@ -4281,7 +4281,7 @@ AFS_hawkins_political_decisions = {
 		}
 		modifier = {
 			authoritarian_left_drift = 0.03
-			stability_weekly = 0.02
+			stability_weekly = 0.002
 			war_support_weekly = 0.02
 			resistance_growth = -0.05
 		}
@@ -4331,7 +4331,7 @@ AFS_hawkins_economic_decisions = {
 		modifier = {
 			monthly_population = 0.1
 			research_speed_factor = 0.01
-			stability_weekly = 0.02
+			stability_weekly = 0.002
 		}
 		remove_effect = {
 			
@@ -4374,7 +4374,7 @@ AFS_hawkins_economic_decisions = {
 		modifier = {
 			monthly_population = 0.1
 			research_speed_factor = 0.01
-			stability_weekly = 0.02
+			stability_weekly = 0.002
 		}
 		remove_effect = {
 			
@@ -4417,7 +4417,7 @@ AFS_hawkins_economic_decisions = {
 		modifier = {
 			monthly_population = 0.1
 			research_speed_factor = 0.01
-			stability_weekly = 0.02
+			stability_weekly = 0.002
 		}
 		remove_effect = {
 			
@@ -4460,7 +4460,7 @@ AFS_hawkins_economic_decisions = {
 		modifier = {
 			#monthly_population = 0.1
 			research_speed_factor = 0.01
-			stability_weekly = 0.03
+			stability_weekly = 0.003
 		}
 		remove_effect = {
 			
@@ -4507,7 +4507,7 @@ AFS_hawkins_economic_decisions = {
 		modifier = {
 			base_fuel_gain_factor = 0.15
 			research_speed_factor = 0.01
-			stability_weekly = 0.03
+			stability_weekly = 0.003
 		}
 		remove_effect = {
 			modify_country_flag = {
@@ -4554,7 +4554,7 @@ AFS_hawkins_economic_decisions = {
 			production_speed_buildings_factor = 0.1
 			consumer_goods_factor = 0.1
 			industrial_capacity_factory = 0.1
-			stability_weekly = 0.03
+			stability_weekly = 0.003
 		}
 		remove_effect = {
 			random_controlled_state = {
@@ -5763,7 +5763,7 @@ AFS_vance_political_decisions = {
 			}
 		}
 		modifier = {
-			stability_weekly = 0.01
+			stability_weekly = 0.001
 			democrat_drift = 0.05
 			republican_drift = 0.03
 			political_power_cost = -0.1
@@ -5814,7 +5814,7 @@ AFS_vance_political_decisions = {
 			}
 		}
 		modifier = {
-			stability_weekly = 0.01
+			stability_weekly = 0.001
 			libertarian_right_drift = 0.05
 			republican_drift = 0.03
 			political_power_cost = -0.1
@@ -6161,7 +6161,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 		}
 		modifier = {
 			republican_drift = -0.04
-			stability_weekly = 0.03
+			stability_weekly = 0.003
 			drift_defence_factor = -0.1
 		}
 		remove_effect = {
@@ -6208,7 +6208,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 		}
 		modifier = {
 			republican_drift = 0.03
-			stability_weekly = 0.03
+			stability_weekly = 0.003
 			political_power_gain = 0.05
 		}
 		remove_effect = {
@@ -6255,7 +6255,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 		}
 		modifier = {
 			republican_drift = 0.03
-			stability_weekly = 0.03
+			stability_weekly = 0.003
 			political_power_gain = 0.05
 		}
 		remove_effect = {
@@ -6349,7 +6349,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 		}
 		modifier = {
 			republican_drift = 0.05
-			stability_weekly = -0.04
+			stability_weekly = -0.004
 			political_power_gain = 0.1
 		}
 		remove_effect = {
@@ -6396,7 +6396,7 @@ AFS_ohio_republican_government_balance_of_power_category = {
 		}
 		modifier = {
 			republican_drift = 0.05
-			stability_weekly = -0.04
+			stability_weekly = -0.004
 			political_power_gain = 0.05
 			drift_defence_factor = 0.05
 		}
