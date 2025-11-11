@@ -500,6 +500,42 @@ characters={
 			}
 		}
 	}
+
+	AFS_charles_cornish_dale = {
+		name = AFS_charles_cornish_dale
+		gender = male
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/AFS/AFS_charles_cornish_dale_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AFS_cornish_advisor
+			cost = 150
+			removal_cost = 0
+			allowed = {
+				tag = AFS
+			}
+			visible = {
+				tag = AFS
+				has_government = autocratic
+				has_country_leader = {
+                    name = "JD Vance"
+                    ruling_only = yes
+                }
+			}
+			available = {
+				has_government = autocratic
+			}
+			traits = {
+				secretary_of_the_treasury
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
 	
 	# Military Staff #
 	AFS_david_goldfein = {

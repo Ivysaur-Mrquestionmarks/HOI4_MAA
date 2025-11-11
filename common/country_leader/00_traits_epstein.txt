@@ -5032,6 +5032,19 @@ leader_traits = {
         resistance_target = -0.15
 	}
 
+	AFS_raw_egg_nationalist = {
+		random = no
+		monthly_population = 0.05
+		drift_defence_factor = 0.05
+		autocratic_drift = 0.03
+	}
+
+	AFS_hates_fajitas = {
+		random = no
+		custom_modifier_tooltip = AFS_white_relations
+		custom_modifier_tooltip = AFS_hispanic_relations
+	}
+
 	LGB_furry_nazi_trait = {
 		random = no
 		production_factory_efficiency_gain_factor = 0.05

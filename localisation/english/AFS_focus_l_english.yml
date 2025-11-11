@@ -1937,26 +1937,6 @@
  AFS_this_will_weaken_mattis:0 "§CThis Will Weaken Mattis When The Civil War Starts!§!"
  AFS_this_will_strengthen_us:0 "§CThis Will Strengthen Us When The Civil War Starts!§!"
 
- #AFS_increase_war_support_var_tt:0 "§CWar Support§! Will Be Increased!"
- #AFS_increase_libertarian_left_var_tt:0 "§CLibertarian Left Drift§! Will Be Increased!"
- #AFS_increase_drift_defence_var_tt:0 "§CDrift Defence§! Will Be Increased!"
- #AFS_increase_pp_var_tt:0 "§CPolitical Power Gain§! Will Be Increased!"
- #AFS_increase_stability_var_tt:0 "§CStability§! Will Be Increased!"
- #AFS_decrease_stability_var_tt:0 "§CStability§! Will Be §RDecreased!§!"
- #AFS_increase_compliance_var_tt:0 "§CCompliance Growth§! Will Be Increased!"
- #AFS_decrease_pp_var_tt:0 "§CPolitical Power Gain§! Will Be §RDecreased!§!"
- #AFS_increase_defense_var_tt:0 "§CArmy Defense§! Will Be Increased!"
- #AFS_increase_monthly_population_var_tt:0 "§CMonthly Population§! Will Be Increased!"
- #AFS_increase_research_var_tt:0 "§CResearch Speed§! Will Be Increased!"
- #AFS_increase_attack_var_tt:0 "§CArmy Attack§! Will Be Increased!"
- #AFS_increase_morale_var_tt:0 "§CArmy Morale§! Will Be Increased!"
- #AFS_increase_conscription_var_tt:0 "§CConscription§! Will Be Increased!"
- #AFS_increase_equipment_capture_var_tt:0 "§CEquipment Capture§! Will Be Increased!"
- #AFS_increase_authoritarian_left_var_tt:0 "§CAuthoritarian Left Drift§! Will Be Increased!"
- #AFS_increase_autocratic_var_tt:0 "§CAutocratic Drift§! Will Be Increased!"
- #AFS_decrease_resistance_growth_var_tt:0 "§CResistance Growth§! Will Be Decreased!"
- #AFS_increase_war_stability_var_tt:0 "§CWar Stability Drift§! Will Be Increased!"
-
  AFS_anarchist_paradise_modify_tt: "Modify §Y$AFS_anarchist_paradise_dynamic_modifier$§! by"
 
  AFS_anything_and_everything_modify_tt: "Modify §Y$AFS_anything_and_everything_dynamic_modifier$§! by"
@@ -1979,6 +1959,9 @@
  AFS_he_will_live:0 "§0I Must Live, For Columbia Needs Me, Forever...§!"
 
  AFS_mattis_cyborg_tooltip:0 "James Mattis Has Been Immortalized..."
+
+ AFS_white_relations:0 "  - Relations With Whites §R-25%§!"
+ AFS_hispanic_relations:0 "  - Relations With Hispanics §R-15%§!"
 
  #BOPs
  vermin_bop:0 "Vermin's Power"
@@ -2100,6 +2083,8 @@
  AFS_keith_faber:0 "Keith Faber"
  AFS_robert_sprague:0 "Robert Sprague"
 
+ AFS_charles_cornish_dale:0 "Charles Cornish Dale"
+
  #Character Traits
  AFS_extinction_rebellion_founder:0 "Extinction Rebellion Founder"
  AFS_extinction_rebellion_co_founder:0 "Extinction Rebellion Co-Founder"
@@ -2121,11 +2106,13 @@
  AFS_green_judge:0 "Communist Judge"
  AFS_ensurer_of_the_stratocracy:0 "Ensurer of The Stratocracy"
  AFS_resistance_crusher:0 "Resistance Crusher"
+ AFS_raw_egg_nationalist:0 "Raw Egg Nationalist"
+ AFS_hates_fajitas:0 "Hates Fajitas"
 
  hawkins_loyalist_trait:0 "Hawkins Loyalist"
  hawkins_loyalist_trait_desc:0 "§LThis commander is a member of Howie Hawkins's Green Army, dedicated to the ideals of Green Socialism and the vanguardist revolution in the Free State.§!"
  AFS_annihilationist:0 "Green Annihilationist"
- AFS_annihilationist_desc:0 "§LThis commander is a Green Annihilationist, someone believes that the only way to save earth is by ending humanity. this commander will also use exterme measures to ensure victory for mother nature.§!"
+ AFS_annihilationist_desc:0 "§LThis commander is a Green Annihilationist, a person who believes that the only way to save earth is by ending humanity. this commander will also use exterme measures to ensure victory for mother nature.§!"
  
 
  
