@@ -1529,7 +1529,7 @@ AFS_vermin_economic_decisions = {
 
 		available = {
 			NOT = {
-				has_country_flag = AFS_doing_political_action
+				has_country_flag = AFS_doing_economic_action
 			}
 		}
 		
@@ -1543,7 +1543,7 @@ AFS_vermin_economic_decisions = {
 
 		complete_effect = {
 			set_country_flag = {
-				flag = AFS_doing_political_action
+				flag = AFS_doing_economic_action
 				days = 25
 				value = 1
 			}
@@ -1584,7 +1584,7 @@ AFS_vermin_economic_decisions = {
 
 		available = {
 			NOT = {
-				has_country_flag = AFS_doing_political_action
+				has_country_flag = AFS_doing_economic_action
 			}
 		}
 		
@@ -1598,7 +1598,7 @@ AFS_vermin_economic_decisions = {
 
 		complete_effect = {
 			set_country_flag = {
-				flag = AFS_doing_political_action
+				flag = AFS_doing_economic_action
 				days = 25
 				value = 1
 			}
@@ -1639,7 +1639,7 @@ AFS_vermin_economic_decisions = {
 
 		available = {
 			NOT = {
-				has_country_flag = AFS_doing_political_action
+				has_country_flag = AFS_doing_economic_action
 			}
 		}
 		
@@ -1653,7 +1653,7 @@ AFS_vermin_economic_decisions = {
 
 		complete_effect = {
 			set_country_flag = {
-				flag = AFS_doing_political_action
+				flag = AFS_doing_economic_action
 				days = 50
 				value = 1
 			}
@@ -1706,7 +1706,7 @@ AFS_vermin_economic_decisions = {
 
 		available = {
 			NOT = {
-				has_country_flag = AFS_doing_political_action
+				has_country_flag = AFS_doing_economic_action
 			}
 		}
 		
@@ -1720,7 +1720,7 @@ AFS_vermin_economic_decisions = {
 
 		complete_effect = {
 			set_country_flag = {
-				flag = AFS_doing_political_action
+				flag = AFS_doing_economic_action
 				days = 60
 				value = 1
 			}
@@ -1775,7 +1775,7 @@ AFS_vermin_economic_decisions = {
 
 		available = {
 			NOT = {
-				has_country_flag = AFS_doing_political_action
+				has_country_flag = AFS_doing_economic_action
 			}
 		}
 		
@@ -1789,7 +1789,7 @@ AFS_vermin_economic_decisions = {
 
 		complete_effect = {
 			set_country_flag = {
-				flag = AFS_doing_political_action
+				flag = AFS_doing_economic_action
 				days = 25
 				value = 1
 			}
