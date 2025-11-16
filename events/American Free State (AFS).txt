@@ -2769,8 +2769,13 @@ country_event = {
 	title = mattis.17.t
 	desc = mattis.17.d
 	picture = event_AFS_golden_age
-	is_triggered_only = yes
-	#mean_time_to_happen = { days = 30 }
+	is_triggered_only = no
+	trigger = {
+		tag = AFS
+		has_completed_focus = AFS_an_eternal_golden_age
+		has_country_flag = AFS_mattis_cyborg
+	}
+	mean_time_to_happen = { days = 10 }
 	fire_only_once = yes
 	immediate = {
     
@@ -2789,8 +2794,12 @@ country_event = {
 	title = mattis.18.t
 	desc = mattis.18.d
 	picture = event_AFS_columbia
-	is_triggered_only = yes
-	#mean_time_to_happen = { days = 30 }
+	trigger = {
+		tag = AFS
+		has_completed_focus = AFS_never_again
+		has_country_flag = AFS_mattis_cyborg
+	}
+	mean_time_to_happen = { days = 20 }
 	fire_only_once = yes
 	immediate = {
     
