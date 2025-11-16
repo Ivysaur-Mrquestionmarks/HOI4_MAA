@@ -159,6 +159,47 @@ spriteTypes = {
         name = "GFX_idea_Supply_Trucks_Raided"
         texturefile = "gfx/interface/ideas/KFC/Supply_Trucks_Raided.dds"
     }
+
+    spriteType = {
+        name = "GFX_idea_KFC_airforce_idea"
+        texturefile = "gfx/interface/ideas/KFC/KFC_airforce_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KFC_espionage_integration_idea"
+        texturefile = "gfx/interface/ideas/KFC/KFC_espionage_integration_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KFC_funds_for_rebuilding_idea"
+        texturefile = "gfx/interface/ideas/KFC/KFC_funds_for_rebuilding_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KFC_joint_nazbol_union"
+        texturefile = "gfx/interface/ideas/KFC/KFC_joint_nazbol_union.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KFC_labor_government_modifier"
+        texturefile = "gfx/interface/ideas/KFC/KFC_labor_government_modifier.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KFC_lessons_from_war_shared_dem_idea"
+        texturefile = "gfx/interface/ideas/KFC/KFC_lessons_from_war_shared_dem_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KFC_nazbol_government"
+        texturefile = "gfx/interface/ideas/KFC/KFC_nazbol_government.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KFC_NRA_in_exile_idea"
+        texturefile = "gfx/interface/ideas/KFC/KFC_NRA_in_exile_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KFC_prepared_against_trump_idea"
+        texturefile = "gfx/interface/ideas/KFC/KFC_prepared_against_trump_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KFC_tea_party_government"
+        texturefile = "gfx/interface/ideas/KFC/KFC_tea_party_government.dds"
+    }
 	
 ### Turkish Stuff ###
 	spriteType = {
