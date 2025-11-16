@@ -623,10 +623,10 @@ focus_tree = {
 				value = 0.05
 				tooltip = drift_defence_factor_tt
 			}
-			country_event = {
-				id = vermin.12
-				days = 0
-			}
+			#country_event = {
+			#	id = vermin.12
+			#	days = 0
+			#}
 		}
 	}
 
@@ -2017,10 +2017,10 @@ focus_tree = {
 				value = 0.02
 				tooltip = research_speed_factor_tt
 			}
-			country_event = {
-				id = vermin.21
-				days = 0
-			}
+			#country_event = {
+			#	id = vermin.21
+			#	days = 0
+			#}
 		}
 	}
 
@@ -2765,10 +2765,10 @@ focus_tree = {
 			hidden_effect = {
 			    set_country_flag = AFS_annihilationist_kill_people_decision_1
 			    set_country_flag = AFS_annihilationist_kill_people_decision_2
-				country_event = {
-				    id = hawkins.33
-				    days = 0
-			    }
+				#country_event = {
+				#    id = hawkins.33
+				#    days = 0
+			    #}
 			}
 		}
 	}
@@ -4082,10 +4082,10 @@ focus_tree = {
 			        add_idea = AFS_ruins_of_the_triumvirate_3
 		        }
 			}
-			country_event = {
-				id = hawkins.36
-				days = 0
-			}
+			#country_event = {
+			#	id = hawkins.36
+			#	days = 0
+			#}
 		}
 	}
 
@@ -4307,10 +4307,10 @@ focus_tree = {
 			    add_idea = AFS_environmentalist_socitey_4
 		    }
 			remove_ideas = AFS_a_scarred_population_4
-			country_event = {
-				id = hawkins.24
-				days = 0
-			}
+			#country_event = {
+			#	id = hawkins.24
+			#	days = 0
+			#}
 		}
 	}
 
