@@ -823,6 +823,11 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		add_popularity = {
+            ideology = libertarian_left
+            popularity = 0.03
+        }
+		add_war_support = 0.02
 		hidden_effect = {
 			country_event = {
 				id = vermin.3
@@ -897,11 +902,18 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		add_popularity = {
+            ideology = libertarian_left
+            popularity = 0.03
+        }
+		add_war_support = 0.03
+		custom_effect_tooltip = AFS_this_will_weaken_hawkins
 		hidden_effect = {
 			country_event = {
 				id = vermin.6
 				days = 65
 			}
+			set_country_flag = AFS_weakened_hawkins_event_flag
 		}
 	}
 }
@@ -928,11 +940,18 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		add_popularity = {
+            ideology = libertarian_left
+            popularity = 0.03
+        }
+		add_war_support = 0.03
+		custom_effect_tooltip = AFS_this_will_weaken_mattis
 		hidden_effect = {
 			country_event = {
 				id = vermin.6
 				days = 65
 			}
+			set_country_flag = AFS_weakened_mattis_event_flag
 		}
 	}
 }
@@ -2850,6 +2869,10 @@ country_event = {
 			country_exists = USA
 		}
 		has_owned_state = 416
+		has_country_leader = {
+            name = "James Mattis"
+            ruling_only = yes
+        }
 	}
 	mean_time_to_happen = { days = 0 }
 	fire_only_once = yes
@@ -2877,6 +2900,10 @@ country_event = {
 			country_exists = FRA
 		}
 		has_owned_state = 242
+	    has_country_leader = {
+            name = "James Mattis"
+            ruling_only = yes
+        }
 	}
 	mean_time_to_happen = { days = 0 }
 	fire_only_once = yes
@@ -2904,6 +2931,10 @@ country_event = {
 			country_exists = FLO
 		}
 		has_owned_state = 580
+		has_country_leader = {
+            name = "James Mattis"
+            ruling_only = yes
+        }
 	}
 	mean_time_to_happen = { days = 0 }
 	fire_only_once = yes
