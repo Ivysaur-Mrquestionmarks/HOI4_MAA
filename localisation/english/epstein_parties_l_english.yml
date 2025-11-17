@@ -1185,14 +1185,17 @@
  #UTC - Upstate New York
  UTC_republican_party:0 "CPNYS"
  UTC_republican_party_long:0 "Conservative Party of New York State"
- UTC_democrat_party:0 "Cuomintang"
- UTC_autocratic_party:0 "LaRouche Movement"
- UTC_libertarian_left_party:0 "WFP/M"
- UTC_libertarian_left_party_long:0 "Working Families Party - Moderates"
- UTC_authoritarian_left_party:0 "WFP/R"
- UTC_authoritarian_left_party_long:0 "Working Families Party - Radicals"
- UTC_libertarian_right_party:0 "Libertarian Party"
-
+ 
+ 
+ #TNY - New York Feds
+ TNY_libertarian_left_party:0 "WFP/M"
+ TNY_libertarian_left_party_long:0 "Working Families Party - Moderates"
+ TNY_authoritarian_left_party:0 "WFP/R"
+ TNY_authoritarian_left_party_long:0 "Working Families Party - Radicals"
+ TNY_libertarian_right_party:0 "Libertarian Party"
+ TNY_autocratic_party:0 "Cuomintang"
 
  #Finally fixing that stupid GTB thing
  GTB_islamic_party:0 "New Caliphate"
+ 
+ 
