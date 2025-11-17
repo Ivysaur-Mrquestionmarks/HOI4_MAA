@@ -56,7 +56,10 @@ characters={
 			planning_skill = 5
 			logistics_skill = 4
 			visible = {
-				has_government = autocratic #LAROUCHE CUOMO WTF?!
+				OR = {
+					has_government = autocratic #LAROUCHE CUOMO WTF?!
+					has_government = democrat
+				}
 			}
 		}
 	}
