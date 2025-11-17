@@ -189,6 +189,16 @@
  CAS_attack_ida:0 "Conquer the WCZ"
  CAS_attack_ida_desc:0 "The Western Command Zone is nothing but a Trumpist puppet state and it must the conquered for the Glory of Cascadia."
  
+ #Starting branch
+ CAS_rally_anti_communists:0 "Rally the Anti-Communists"
+ CAS_rally_anti_communists_desc:0 "As of right now, we are the only significant faction standing up to the Red Menace on the West Coast. If we fall, the west will fall to communism. We must work together to defend our values!"
+ CAS_curtail_nazis:0 "Curtail the Militias"
+ CAS_curtail_nazis_desc:0 "The Nazi militias have obtained too much influence in our armed forces. If we keep associating with them, aid for our cause from foreign powers against communism may be withdrawn!"
+ CAS_purge_nazis_from_military:0 "Purge the Nazi Militias"
+ CAS_purge_nazis_from_military_desc:0 "Now that the West Coast War is over, we can deal with the other extreme. The failed coup and this purge will show every nazi how we deal with them in Cascadia."
+ CAS_expand_militia_autonomy:0 "Expand Militia Autonomy"
+ CAS_expand_militia_autonomy_desc:0 "Whether we like it or not, we are too dependent on these militias to fight the red scum. Further integration and expansion will help us in our conflict and push us towards victory."
+ 
  #Military branch
  CAS_the_cascadian_military:0 "The Cascadian Military"
  CAS_the_cascadian_army:0 "The Cascadian Army"
@@ -264,9 +274,23 @@
  CAS_did_not_get_seattle:0 "Unable to take Seattle"
  
  
+ #Tooltips
+ CAS_weakens_nazis_moderate_tt:0 "§CThis will weaken Nazi influence by a moderate amount§!"
+ CAS_strengthens_nazis_moderate_tt:0 "§YThis will strengthen Nazi influence by a moderate amount§!"
  
+ CAS_angers_nazis_little_tt:0 "§RThis will anger the Nazis by a little amount§!"
+ CAS_please_nazis_little_tt:0 "§GThis will please the Nazis by a little amount§!"
+ CAS_angers_nazis_moderate_tt:0 "§RThis will anger the Nazis by a moderate amount§!"
+ CAS_please_nazis_moderate_tt:0 "§GThis will please the Nazis by a moderate amount§!"
+ CAS_angers_nazis_large_tt:0 "§RThis will anger the Nazis by a large amount§!"
+ CAS_please_nazis_large_tt:0 "§GThis will please the Nazis by a large amount§!"
  
- 
+ #Ideas
+ CAS_nazi_militias_in_military_idea:0 "Nazi Military Influence: §CModerate§!"
+ CAS_nazi_militias_in_military_weak_idea:0 "Nazi Military Influence: §GWeak§!"
+ CAS_nazi_militias_in_military_stronger_idea:0 "Nazi Military Influence: §RStrong§!"
+ CAS_big_tent_against_socialism_idea:0 "Big Tent Against Socialism"
+ CAS_big_tent_against_socialism_idea_2:0 "Big Tent Against Socialism"
  
  
  # Events

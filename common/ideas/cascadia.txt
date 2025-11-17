@@ -1,19 +1,5 @@
 ideas = {
 	country = {
-		CAS_unpopular_government_war = {
-			picture = HOP_ss_divisions
-			allowed = { original_tag = CAS }
-			available = { has_war = yes }
-			#picture = 
-			modifier = {
-				army_attack_factor = -0.30
-				army_speed_factor = -0.15
-				army_defence_factor = -0.20
-				army_core_defence_factor = 0.05
-				stability_factor = -0.10
-			}
-		}
-
 		CAS_guerilla_warfare_1 = {
 			picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS }
@@ -249,6 +235,19 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
+		CAS_unpopular_government_war = {
+			picture = HOP_ss_divisions
+			allowed = { original_tag = CAS }
+			available = { has_war = yes }
+			#picture = 
+			modifier = {
+				army_attack_factor = -0.30
+				army_speed_factor = -0.15
+				army_defence_factor = -0.20
+				army_core_defence_factor = 0.05
+				stability_factor = -0.10
+			}
+		}
 
 		CAS_cheap_mechs = { 
 			#picture =
@@ -346,5 +345,56 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
+		
+		
+		
+		# New Shit Part 2
+		
+		CAS_nazi_militias_in_military_idea = {
+			#picture = 
+			modifier = {
+				stability_factor = -0.25
+				autocratic_drift = 0.03
+				army_morale_factor = 0.1
+				army_speed_factor = -0.1
+				political_power_factor = -0.15
+			}
+		}
+		CAS_nazi_militias_in_military_stronger_idea = {
+			#picture = 
+			modifier = {
+				stability_factor = -0.3
+				autocratic_drift = 0.05
+				army_morale_factor = 0.15
+				army_speed_factor = -0.15
+				army_org_factor = -0.02
+				political_power_factor = -0.1
+			}
+		}
+		CAS_nazi_militias_in_military_weak_idea = {
+			#picture = 
+			modifier = {
+				stability_factor = -0.1
+				autocratic_drift = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = 0.02
+				army_speed_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+		CAS_big_tent_against_socialism_idea = {
+			#picture = 
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+		CAS_big_tent_against_socialism_idea_2 = {
+			#picture = 
+			modifier = {
+				war_support_factor = 0.15
+				conscription_factor = 0.01
+			}
+		}
+		
 	}
 }

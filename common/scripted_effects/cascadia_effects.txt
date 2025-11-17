@@ -56,7 +56,7 @@ CAS_up_guerilla_war_idea = {
 		}
 		swap_ideas = {
 			remove_idea = CAS_guerilla_warfare_1
-			add_idea = CAS_guerilla_warfare_2
+			add_idea = CAS_guerilla_warfare_3
 		}
 	}
 }
@@ -145,3 +145,14 @@ CAS_ss_fail_up = {
 				remove_ideas = CAS_SS_coup_failed_6
 			}
 }
+
+
+CAS_weaken_nazis_moderate_effect = { #Add var stuff later
+	custom_effect_tooltip = CAS_weakens_nazis_moderate_tt
+	custom_effect_tooltip = CAS_angers_nazis_moderate_tt
+}
+CAS_strengthen_nazis_moderate_effect = { #Add var stuff later
+	custom_effect_tooltip = CAS_strengthens_nazis_moderate_tt
+	custom_effect_tooltip = CAS_please_nazis_moderate_tt
+}
+
