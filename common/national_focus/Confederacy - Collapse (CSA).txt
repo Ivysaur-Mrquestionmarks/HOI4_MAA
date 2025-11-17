@@ -167,18 +167,81 @@ focus_tree = {
 	}
 
 	focus = {
+		id = CSA_finnish_the_job
+		icon =  GFX_goal_USA_CSA_Clashes
+
+		prerequisite = { focus = CSA_propaganda_effort}
+		prerequisite = { focus = CSA_trucks}
+
+		available = {
+			NOT = {
+				has_war = yes
+				all_of_scopes = {
+    					array = global.south_collapse
+    					tooltip = CSA_won_dixe_crisi
+    					OR = { 
+        					tag = ROOT
+        					exists = no    
+					}
+				}
+			}
+			
+			
+		}
+
+		x = 8
+		y = 6
+		cost = 7
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.05
+			effect_tooltip = {
+    				create_wargoal = {
+    					type = annex_everything
+    					target = CSA
+				}
+    				
+			}
+			add_to_variable = {
+				var = csa_exhaustion
+				value = -10
+			}				
+			for_each_scope_loop = {
+    				array = global.south_collapse
+    				if = {
+        				limit = {
+            					NOT = { tag = ROOT } # Not the country where the for_each_scope_loop is executed
+        				}
+        				ROOT = { create_wargoal = {
+    						type = annex_everything
+    						target = PREV
+					}}
+    				}
+			}			
+		}
+	}
+
+	focus = {
 		id = CSA_victory
 		icon = GFX_goal_CSA_vcitory
 
 		available = {
-			all_country = { OR = { NOT = {
-				is_in_array = {
-					array = global.south_collapse
-					value = THIS.id
-				}}
-					tag = ROOT
-				}		
+			all_of_scopes = {
+    				array = global.south_collapse
+    				tooltip = CSA_won_dixe_crisi
+    				OR = { 
+        				tag = ROOT
+        				exists = no    
+				}
 			}
+			
+			
 		}
 
 		x = 15
