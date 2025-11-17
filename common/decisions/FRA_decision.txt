@@ -251,8 +251,8 @@ FRA_biden_sickness_category = {
 				if = {
 					limit = { 
 						NOT = { has_country_flag = FRA_biden_project_chocolate_chocolate_chip_flag }
-						country_event = { id = biden.11 hours = 6 }
 					}
+					country_event = { id = biden.11 hours = 6 }
 				}
 				else = {
 								# Wait and see :3
