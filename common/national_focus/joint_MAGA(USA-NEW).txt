@@ -32,7 +32,14 @@ joint_focus = {
 			is_in_faction_with = USA
 		}
 	}
-
+	#TEMPORARY EFFECT TO MAKE THINGS WORK, remove when NEW gets a tree.
+	completion_reward_joint_originator = {
+		NEW = {
+			declare_war_on = {
+        			target = WBK
+    			}
+		}
+	}
 
 	completion_reward = {
 		country_event = {
@@ -839,6 +846,7 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
+		custom_effect_tooltip = USA_NEW_revolt
 		NEW = {
 			country_event = {
     				id = maga.270

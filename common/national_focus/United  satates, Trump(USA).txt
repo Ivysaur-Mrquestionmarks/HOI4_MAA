@@ -5458,6 +5458,9 @@ focus_tree = {
 		prerequisite = {
 			focus =USA_MON_conflict
 		}
+		bypass = {
+			NOT = {country_exists = MON}
+		}
 		x = 63
 		y = 5
 		#mutually_exclusive = {
@@ -5486,6 +5489,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = USA_MON_invade
+		}
+		bypass = {
+			NOT = {country_exists = CAS}
 		}
 		x = 63
 		y = 7
@@ -5528,6 +5534,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = USA_CAS_inavde
+		}
+		bypass = {
+			NOT = {country_exists = PRA}
 		}
 		x = 63
 		y = 8
@@ -5707,6 +5716,9 @@ focus_tree = {
 		#mutually_exclusive = {
 		#	focus = 
 		#}
+		bypass = {
+			NOT = {country_exists = TEX}
+		}
 		
 		available = {
 			has_country_flag = USA_TEX_dislike
@@ -5786,6 +5798,9 @@ focus_tree = {
 		#available = {
 			
 		#}
+		bypass = {
+			NOT = {country_exists = FLO}
+		}
 
 		completion_reward = {
 			country_event = {
@@ -5931,6 +5946,7 @@ focus_tree = {
 			focus = USA_aid_FLO
 			focus = USA_deal_with_CSA
 		}
+
 		x = 68
 		y = 6
 		#mutually_exclusive = {
@@ -5945,6 +5961,7 @@ focus_tree = {
 		
 		bypass = {
 			OR = {
+				NOT = {country_exists = TEX}
 				is_in_faction_with = TEX
 				TEX = {
 					OR = {
@@ -5972,6 +5989,11 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = USA_TEX_invade
+		}
+		bypass = {
+			NOT = {country_exists = KKK}
+			NOT = {country_exists = CSA}
+			NOT = {country_exists = AFR}
 		}
 		x = 68
 		y = 8
@@ -6311,6 +6333,9 @@ focus_tree = {
 		#mutually_exclusive = {
 		#	focus = 
 		#}
+		bypass = {
+			NOT = {country_exists = AFS}
+		}
 		
 		available = {
 			OR = {
@@ -6375,16 +6400,15 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_AFS_invade
 		}
+		bypass = {
+			NOT = {country_exists = FRA}
+		}
 		x = 77
 		y = 6
 		#mutually_exclusive = {
 		#	focus = 
 		#}
-		bypass = {
-			FRA = {
-				exists = no
-			}
-		}
+
 		available = {
 			has_army_manpower = {
 				size > 350000
