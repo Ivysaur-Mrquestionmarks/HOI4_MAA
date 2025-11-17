@@ -1977,10 +1977,10 @@ leader_traits = {
 		random = no
 		stability_factor = 0.05
 		research_speed_factor = -0.10
-		army_core_defence_factor = 0.05
-		army_attack_factor = -0.10
+		army_defence_factor = -0.05
+		army_attack_factor = 0.05
 		autocratic_drift = 0.10
-		ai_focus_defense_factor = 0.20
+		ai_focus_aggressive_factor = 0.20
 	}
 
 
