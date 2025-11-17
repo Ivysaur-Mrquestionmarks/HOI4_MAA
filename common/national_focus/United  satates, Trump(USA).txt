@@ -2,7 +2,7 @@ focus_tree = {
 	id = Truwump
 	country = {
 		factor = 0
-		modifier = {
+		modifier = { 
 			tag =USA
 			add = 100
 		}
@@ -6597,10 +6597,14 @@ focus_tree = {
     				type = annex_everything
     				target = CAN
 			}
+			custom_effect_tooltip = CORE_CAN
 			CAN ={
 				every_core_state = {
-
 					set_state_flag = part_of_america
+					add_to_array = {
+    						array = global.part_of_USA
+    						value = THIS
+					}
 
 				}
 			}
