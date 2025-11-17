@@ -72,6 +72,19 @@ add_ideas = {
 	CAS_big_tent_against_socialism_idea
 }
 
+
+set_variable = {
+    var = CAS.var_nazi_influence
+    value = 30
+}
+set_variable = {
+    var = CAS.var_nazi_satisfaction
+    value = 56
+}
+
+CAS_nazi_anger_calculation_effect = yes
+
+
 ### Country Leaders ###
 recruit_character = CAS_resistance_council
 recruit_character = CAS_national_social_directorate

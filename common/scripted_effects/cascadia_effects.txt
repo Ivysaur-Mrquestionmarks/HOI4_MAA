@@ -147,12 +147,274 @@ CAS_ss_fail_up = {
 }
 
 
+CAS_weaken_nazis_large_effect = { #Add var stuff later
+	custom_effect_tooltip = CAS_weakens_nazis_large_tt
+	custom_effect_tooltip = CAS_angers_nazis_large_tt
+	add_to_variable = {
+		var = CAS.var_nazi_influence
+		value = -10
+	}
+	add_to_variable = {
+		var = CAS.var_nazi_satisfaction
+		value = -10
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_influence
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_satisfaction
+		min = 0
+		max = 100
+	}
+	CAS_nazi_anger_calculation_effect = yes
+}
+CAS_strengthen_nazis_large_effect = { #Add var stuff later
+	custom_effect_tooltip = CAS_strengthens_nazis_large_tt
+	custom_effect_tooltip = CAS_please_nazis_large_tt
+	add_to_variable = {
+		var = CAS.var_nazi_influence
+		value = 10
+	}
+	add_to_variable = {
+		var = CAS.var_nazi_satisfaction
+		value = 10
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_influence
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_satisfaction
+		min = 0
+		max = 100
+	}
+	CAS_nazi_anger_calculation_effect = yes
+}
 CAS_weaken_nazis_moderate_effect = { #Add var stuff later
 	custom_effect_tooltip = CAS_weakens_nazis_moderate_tt
 	custom_effect_tooltip = CAS_angers_nazis_moderate_tt
+	add_to_variable = {
+		var = CAS.var_nazi_influence
+		value = -5
+	}
+	add_to_variable = {
+		var = CAS.var_nazi_satisfaction
+		value = -5
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_influence
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_satisfaction
+		min = 0
+		max = 100
+	}
+	CAS_nazi_anger_calculation_effect = yes
 }
 CAS_strengthen_nazis_moderate_effect = { #Add var stuff later
 	custom_effect_tooltip = CAS_strengthens_nazis_moderate_tt
 	custom_effect_tooltip = CAS_please_nazis_moderate_tt
+	add_to_variable = {
+		var = CAS.var_nazi_influence
+		value = 5
+	}
+	add_to_variable = {
+		var = CAS.var_nazi_satisfaction
+		value = 5
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_influence
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_satisfaction
+		min = 0
+		max = 100
+	}
+	CAS_nazi_anger_calculation_effect = yes
+}
+CAS_weaken_nazis_little_effect = { #Add var stuff later
+	custom_effect_tooltip = CAS_weakens_nazis_little_tt
+	custom_effect_tooltip = CAS_angers_nazis_little_tt
+	add_to_variable = {
+		var = CAS.var_nazi_influence
+		value = -3
+	}
+	add_to_variable = {
+		var = CAS.var_nazi_satisfaction
+		value = -3
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_influence
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_satisfaction
+		min = 0
+		max = 100
+	}
+	CAS_nazi_anger_calculation_effect = yes
+}
+CAS_strengthen_nazis_little_effect = { #Add var stuff later
+	custom_effect_tooltip = CAS_strengthens_nazis_little_tt
+	custom_effect_tooltip = CAS_please_nazis_little_tt
+	add_to_variable = {
+		var = CAS.var_nazi_influence
+		value = 3
+	}
+	add_to_variable = {
+		var = CAS.var_nazi_satisfaction
+		value = 3
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_influence
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_satisfaction
+		min = 0
+		max = 100
+	}
+	CAS_nazi_anger_calculation_effect = yes
 }
 
+
+
+CAS_nazi_anger_calculation_effect = {
+	set_variable = {
+		var = CAS.var_nazi_rebellion_indicator
+		value = 0
+	}
+	if = {
+		limit = {
+			check_variable = { var_nazi_influence > 24 }
+		}
+		if = {
+			limit = {
+				check_variable = { var_nazi_influence < 55 }
+			}
+			set_variable = {
+				var = CAS.var_nazi_influence_rebellion_level
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { var_nazi_influence < 80 }
+			}
+			set_variable = {
+				var = CAS.var_nazi_influence_rebellion_level
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { var_nazi_influence > 79 }
+			}
+			set_variable = {
+				var = CAS.var_nazi_influence_rebellion_level
+				value = 3
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_nazi_influence < 26 }
+		}
+		if = {
+			limit = {
+				check_variable = { var_nazi_influence < 6 }
+			}
+			set_variable = {
+				var = CAS.var_nazi_influence_rebellion_level_anti
+				value = 3
+			}
+		}
+		else = {
+			set_variable = {
+				var = CAS.var_nazi_influence_rebellion_level_anti
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_nazi_satisfaction < 55 }
+		}
+		if = {
+			limit = {
+				check_variable = { var_nazi_satisfaction > 30 }
+			}
+			set_variable = {
+				var = CAS.var_nazi_satisfaction_rebellion_level
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { var_nazi_satisfaction > 10 }
+			}
+			set_variable = {
+				var = CAS.var_nazi_satisfaction_rebellion_level
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { var_nazi_satisfaction < 11 }
+			}
+			set_variable = {
+				var = CAS.var_nazi_satisfaction_rebellion_level
+				value = 3
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_nazi_satisfaction > 54 }
+		}
+		if = {
+			limit = {
+				check_variable = { var_nazi_satisfaction > 79 }
+			}
+			set_variable = {
+				var = CAS.var_nazi_satisfaction_rebellion_level_anti
+				value = 2
+			}
+		}
+		else = {
+			set_variable = {
+				var = CAS.var_nazi_satisfaction_rebellion_level_anti
+				value = 1
+			}
+		}
+	}
+	add_to_variable = {
+		var = CAS.var_nazi_rebellion_indicator
+		value = CAS.var_nazi_satisfaction_rebellion_level
+	}
+	add_to_variable = {
+		var = CAS.var_nazi_rebellion_indicator
+		value = CAS.var_nazi_influence_rebellion_level
+	}
+	subtract_from_variable = {
+		var = CAS.var_nazi_rebellion_indicator
+		value = CAS.var_nazi_influence_rebellion_level_anti
+	}
+	subtract_from_variable = {
+		var = CAS.var_nazi_rebellion_indicator
+		value = CAS.var_nazi_satisfaction_rebellion_level_anti
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_rebellion_indicator
+		min = 0
+	}
+}

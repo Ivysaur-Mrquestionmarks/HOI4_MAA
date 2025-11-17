@@ -265,6 +265,35 @@
  CAS_cheap_mechs:0 "Cheaper Mechanized"
  
  
+ 
+ 
+ # Decisions
+ CAS_nazi_influence_decision_category:0 "Dealing With the Nazis"
+ CAS_nazi_influence_decision_category_desc:0 "To aid in our war of independence and the fight against Bolshevism, we were forced to make a deal with the devil.\n\nCurrent influence of the Nazi Militias: [CAS_NAZI_INFL_SCRLOC] \n\nCurrent happiness of the Nazi Militias: [CAS_NAZI_STSF_SCRLOC] \n\n\nCoup Risk Level: [CAS_NAZI_COUPLVL_SCRLOC]"
+ CAS_nazi_purge_decision:0 "Purge the Nazis"
+ 
+ 
+ 
+ 
+ #Nazi Scripted Loc
+ CAS_nazis_influence_level_5:0 "§RVery Powerful ([?CAS.var_nazi_influence]).§!"
+ CAS_nazis_influence_level_4:0 "§OPowerful ([?CAS.var_nazi_influence]).§!"
+ CAS_nazis_influence_level_3:0 "§YModerate ([?CAS.var_nazi_influence]).§!"
+ CAS_nazis_influence_level_2:0 "§GWeak ([?CAS.var_nazi_influence]).§!"
+ CAS_nazis_influence_level_1:0 "§CInsignificant ([?CAS.var_nazi_influence]).§!"
+ 
+ CAS_nazis_satisfaction_level_5:0 "§RRebellious ([?CAS.var_nazi_satisfaction]).§!"
+ CAS_nazis_satisfaction_level_4:0 "§OAngered ([?CAS.var_nazi_satisfaction]).§!"
+ CAS_nazis_satisfaction_level_3:0 "§YContent ([?CAS.var_nazi_satisfaction]).§!"
+ CAS_nazis_satisfaction_level_2:0 "§GPleased ([?CAS.var_nazi_satisfaction]).§!"
+ CAS_nazis_satisfaction_level_1:0 "§CVery Pleased ([?CAS.var_nazi_satisfaction]).§!"
+ 
+ CAS_nazis_coup_risk_4:0 "§RHigh ([?CAS.var_nazi_rebellion_indicator]).§!"
+ CAS_nazis_coup_risk_3:0 "§OMedium ([?CAS.var_nazi_rebellion_indicator]).§!"
+ CAS_nazis_coup_risk_2:0 "§YLow ([?CAS.var_nazi_rebellion_indicator]).§!"
+ CAS_nazis_coup_risk_1:0 "§GVery Low ([?CAS.var_nazi_rebellion_indicator]).§!"
+ CAS_nazis_coup_risk_0:0 "§CNone ([?CAS.var_nazi_rebellion_indicator]).§!"
+ 
  #country flags
  nazi_coup:0 "§RDer Neu Ordung!§!"
  rees_coup:0 "§GRees Has Assumed Control!§!"

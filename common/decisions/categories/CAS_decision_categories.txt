@@ -10,3 +10,15 @@ CAS_unstable_politics = {
 	}
 
 }
+CAS_nazi_influence_decision_category = {
+	icon = usa_congress
+	
+	allowed = {
+		original_tag = CAS
+	}
+	
+	visible = {
+		NOT = { has_country_flag = CAS_nazis_purged_flag }
+	}
+
+}

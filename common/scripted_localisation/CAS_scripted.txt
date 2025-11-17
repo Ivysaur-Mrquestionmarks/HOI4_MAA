@@ -1,0 +1,204 @@
+defined_text = {
+	name = CAS_NAZI_INFL_SCRLOC
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_influence
+				value = 80
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = CAS_nazis_influence_level_5
+	}
+	text = {
+		trigger = {
+			tag = CAS
+			check_variable = {
+				var = var_nazi_influence
+				value = 55
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = var_nazi_influence
+				value = 80
+				compare = less_than
+			}
+		}
+		localization_key = CAS_nazis_influence_level_4
+	}
+	text = {
+		trigger = {
+			tag = CAS
+			check_variable = {
+				var = var_nazi_influence
+				value = 25
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = var_nazi_influence
+				value = 55
+				compare = less_than
+			}
+		}
+		localization_key = CAS_nazis_influence_level_3
+	}
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_influence
+				value = 5
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = var_nazi_influence
+				value = 25
+				compare = less_than
+			}
+		}
+		localization_key = CAS_nazis_influence_level_2
+	}
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_influence
+				value = 5
+				compare = less_than
+			}
+		}
+		localization_key = CAS_nazis_influence_level_1
+	}
+}
+defined_text = {
+	name = CAS_NAZI_STSF_SCRLOC
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_satisfaction
+				value = 80
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = CAS_nazis_satisfaction_level_1
+	}
+	text = {
+		trigger = {
+			tag = CAS
+			check_variable = {
+				var = var_nazi_satisfaction
+				value = 55
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = var_nazi_satisfaction
+				value = 80
+				compare = less_than
+			}
+		}
+		localization_key = CAS_nazis_satisfaction_level_2
+	}
+	text = {
+		trigger = {
+			tag = CAS
+			check_variable = {
+				var = var_nazi_satisfaction
+				value = 30
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = var_nazi_satisfaction
+				value = 55
+				compare = less_than
+			}
+		}
+		localization_key = CAS_nazis_satisfaction_level_3
+	}
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_satisfaction
+				value = 10
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = var_nazi_satisfaction
+				value = 30
+				compare = less_than
+			}
+		}
+		localization_key = CAS_nazis_satisfaction_level_4
+	}
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_satisfaction
+				value = 10
+				compare = less_than
+			}
+		}
+		localization_key = CAS_nazis_satisfaction_level_5
+	}
+}
+defined_text = {
+	name = CAS_NAZI_COUPLVL_SCRLOC
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_rebellion_indicator
+				value = 4
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = CAS_nazis_coup_risk_4
+	}
+	text = {
+		trigger = {
+			tag = CAS
+			check_variable = {
+				var = var_nazi_rebellion_indicator
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = CAS_nazis_coup_risk_3
+	}
+	text = {
+		trigger = {
+			tag = CAS
+			check_variable = {
+				var = var_nazi_rebellion_indicator
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = CAS_nazis_coup_risk_2
+	}
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_rebellion_indicator
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = CAS_nazis_coup_risk_1
+	}
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_rebellion_indicator
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = CAS_nazis_coup_risk_0
+	}
+}

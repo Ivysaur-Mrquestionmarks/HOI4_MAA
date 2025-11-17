@@ -26,3 +26,19 @@ CAS_unstable_politics = {
 		}
 	}
 }
+CAS_nazi_influence_decision_category = {
+	CAS_nazi_purge_decision = {
+		icon = usa_congress
+		
+		available = {
+			always = no
+		}
+		
+		cost = 30
+		
+		complete_effect = {
+			
+		}
+	}
+
+}
