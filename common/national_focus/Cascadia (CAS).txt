@@ -198,10 +198,27 @@ focus_tree = {
 		prerequisite = {
 			focus = CAS_guerilla_warfare
 		}
+		available = {
+			has_war = yes
+			NOT = { has_country_flag = CAS_nazis_purged_flag }
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = CAS_big_tent_against_socialism_idea
 				add_idea = CAS_big_tent_against_socialism_idea_2
+			}
+			custom_effect_tooltip = CAS_weakens_nazis_little_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = CAS.var_nazi_influence
+					value = -3
+				}
+				clamp_variable = {
+					var = CAS.var_nazi_influence
+					min = 0
+					max = 100
+				}
+				CAS_nazi_anger_calculation_effect = yes
 			}
 		}
 	}
