@@ -4957,6 +4957,7 @@ focus_tree = {
 		}
 		available = {
 			has_army_manpower = { size > 55000 }
+			DET = { NOT = { is_guaranteed_by = CAN } }
 		}
 		will_lead_to_war_with = DET
 		will_lead_to_war_with = KMT
