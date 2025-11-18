@@ -28,6 +28,8 @@
  KMT_end_counter_revolution_tt:0 "§GThis will end the Counter-Revolution!§!"
  KMT_invite_the_pope_tt:0 "§GPope Francis will be invited for an Humanitarian Visit!§!"
  KMT_smom_tt:0 "§Y$KMT_John_T_Dunlap$§! becomes available as a Field Marshal"
+ KMT_coalition_angry_tt:0 "§RThe Coalition will be somewhat displeased!§!"
+ KMT_sane_republicanism_tt:0 "§GThe outcome of this focus will depend on whether we moderated on the fiscal issues, the social issues, both or neither!§!"
 
 #### ########  ########    ###     ######  
  ##  ##     ## ##         ## ##   ##    ## 
@@ -335,6 +337,18 @@
 
  KMT_catholic_america_idea_4:0 "Catholic America"
  KMT_catholic_america_idea_4_desc:0 "The Vatican's influence seeps deep into American life. The Church offers not just moral guidance, but structure: an orderly faith to mend a fractured nation. Bishops advise the cabinet, priests bless the troops, and the rosary is now as common as the flag. Religious institutions shall flourish, morality will define governance, and the faithful rally around the belief that their nation is chosen to lead the world toward divine order. Guided by divine mandate, America stands as the sword and shield of the faithful. Its people march not for conquest, but for salvation!"
+
+ KMT_tea_party_movement:0 "Tea Party Revival"
+ KMT_tea_party_movement_desc:0 "The fiery rhetoric and grassroots energy of the Tea Party movement have returned to the national stage. Though its presence strains alliances and tests Ryan's ability to govern, it injects a renewed spirit of anti-establishment determination into the heart of the administration."
+
+ KMT_reformed_social_policy:0 "Reformed Social Policy"
+ KMT_reformed_social_policy_desc:0 "A series of sweeping social reforms promises to reshape the fabric of American society. These policies aim to increase national vitality and modernize institutions without abandoning conservative principles. A careful balance in turbulent times."
+
+ KMT_coalition_of_the_willing_3:0 "Coalition Strengthened"
+ KMT_coalition_of_the_willing_3_desc:0 "Despite internal disagreements, the Coalition of the Willing has emerged more unified than before. With reformists and traditionalists finding common ground, the government enjoys renewed authority, stability, and the ability to mobilize the nation more effectively."
+
+ KMT_interventionism_idea:0 "Renewed Interventionism"
+ KMT_interventionism_idea_desc:0 "With America in crisis and global stability at risk, Ryan's administration embraces an assertive foreign policy. Increased military readiness and strategic planning signal the return of a nation willing to shape the world rather than be shaped by it."
 
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
@@ -651,6 +665,25 @@
  wisconsin.57.d:0 "In a restless night, Cardinal Robert Prevost dreamt of standing before a great light. From the radiance came a voice - gentle, sorrowful - calling not 'Robert', but 'Leo'. In that moment, he felt the weight of a crown that was never his, and a destiny that slipped quietly into another world. As dawn broke, he awoke with tears in his eyes, unsure whether he had been blessed... or reminded of what could have been."
  wisconsin.57.a:0 ""In another life, I was meant for something greater.""
 
+ #event 58: vp choice
+ wisconsin.58.t:0 "The Choice of a Vice President"
+ wisconsin.58.d:0 "Paul Ryan sits alone in the quiet of the temporary executive office, a place that still doesn't feel like it belongs to him. A man can seize power, but legitimacy must be invited in. To steady the nation, and perhaps himself, Ryan must choose a Vice President, someone who can reassure the doubtful and bind legitimacy to his administration. Three names lie before him, each carrying a different past and a different shade of conservatism. Whoever he chooses, history will remember this moment as the hour he tried to turn improvisation into authority.\n\nThe first options, Rick Snyder, is a businessman-turned-politician who served as the Governor of Michigan. Known for his technocratic, managerial approach, he built a reputation as a calm, data-driven administrator. While criticized for several crises under his tenure, many see him as a stabilizing figure capable of restoring order in chaotic times.\n\nSecondly, John Boehner was the  Speaker of the House of Representatives before Ryan, long associated with the Republican Party's establishment wing. Once one of the most influential legislators in Washington, he carries the weight of experience, institutional memory, and a deep understanding of politicking, even if that past makes him a symbol of the old political order.\n\nFinally, Scott Walker is the former Governor of Wisconsin, remembered for his hardline conservative reforms and combative battles against organized labor. A figure beloved by ideological purists and distrusted by moderates, he is a loyal crusader whose political career was forged in culture-war conflict and relentless partisanship.\n\nWho shall it be?"
+ wisconsin.58.a:0 "Rick Snyder"
+ wisconsin.58.b:0 "John Boehner"
+ wisconsin.58.c:0 "Scott Walker"
+
+ #event 59: tea party - fiscal
+ wisconsin.59.t:0 "The Tea Party Question of Fiscal Policy"
+ wisconsin.59.d:0 "The winds of crisis have stirred old banners. Many within Ryan's circle argue that resurrecting the Tea Party movement will energize the base and reaffirm conservative identity in a moment of national uncertainty. Others warn that bringing back such a polarizing force could fracture the coalition beyond repair.\n\nRyan must decide whether to return to a brand associated with both fervor and polarization."
+ wisconsin.59.a:0 "Revive the Tea Party Fiscal Policy"
+ wisconsin.59.b:0 "This is not the moment for old grudges"
+
+ #event 59: social policy
+ wisconsin.60.t:0 "The Question of Social Policy"
+ wisconsin.60.d:0 "Social questions like Abortion, the Draft, LGBT rights, etc. long left to simmer have resurfaced within th epublic debate. Conservatives push for a bold, sweeping reform package to reassure the base and cement Ryan's authority over the party. Yet librals within the coalition fear that such a move may deepen existing divisions.\n\nRyan faces a choice between ideological purity and political stability."
+ wisconsin.60.a:0 "Push the conservative reforms through"
+ wisconsin.60.b:0 "Seek moderation and unity"
+
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 
 ##     ##  ##   ##  ##     ##    ##     ##  ##       ##          ####  ##  ##   ##  #### #### ##       ##       
@@ -684,6 +717,13 @@
  KMT_autocratic_party_papal:0 "Catholic Conference"
  KMT_autocratic_cdp_long:0 "Catholic Democratic Party"
  KMT_autocratic_cdp:0 "CDP"
+
+ KMT_republican_tea_party_long:0 "Tea Party Movement - Conservative Faction"
+ KMT_republican_tea_party:0 "Tea Party - C"
+ KMT_libertarian_right_tea_party_long:0 "Tea Party Movement - Libertarian Faction"
+ KMT_libertarian_right_tea_party:0 "Tea Party - L"
+ KMT_democrat_tea_party_long:0 "Liberal Party"
+ KMT_democrat_tea_party:0 "LIB"
 
 ########  #######   ######  ##     ##  ######  ########  ######  
 ##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
@@ -1012,6 +1052,22 @@
  KMT_submition_to_the_pope_desc:0 "The time has come to yield fully to the authority of the Holy Father. America's salvation depends on it. The Vatican shall guide our hand, and in doing so, our nation will become the beating heart of Christendom renewed."
  KMT_new_catholic_state:0 "The New Catholic State"
  KMT_new_catholic_state_desc:0 "Under the leadership of Cardinal Robert Prevost, America takes its place not as a vassal of Rome, but as a sovereign Holy State: devout, proud, and distinctly American. The age of secular empires is over; the era of the faithful republic has begun."
+
+ # ryan
+ KMT_president_ryan:0 "President Ryan"
+ KMT_president_ryan_desc:0 "With the courts under control and his internal rivals nowhere to be found, Paul Ryan proclaims himself the rightful President of the United States. His authority is fragile, questioned by many, yet the nation may accept any hand steady enough to guide it. By consolidating power and asserting control over a new rival government, Ryan takes the first true step towards unifying America."
+ KMT_choose_a_vp:0 "Choose a Vice President"
+ KMT_choose_a_vp_desc:0 "Paul Ryan's claim to the presidency will be solidified with a loyal administration at his side. To ensure a veneer of constitutional legitimacy, a Vice President must be selected from among his remaining allies. Each choice carries its own political benefits."
+ KMT_address_america:0 "Address the Nation"
+ KMT_address_america_desc:0 "The country waits for a clear voice to explain what has happened and what will come next. Like Cato, the Younger, Ryan must be a moral purist who opposes the Hegemons of America out of ideology, not ambition. Ryan prepares to step before the cameras and deliver speeches that will steady a shaken nation."
+ KMT_revive_tea_party:0 "Revive the Tea Party"
+ KMT_revive_tea_party_desc:0 "The old Tea Party brand still holds resonance among disaffected conservatives. Reviving it may unify the fractured right but it may also reawaken the same ideological battles that once defined it."
+ KMT_interventionism:0 "Return to Interventionism"
+ KMT_interventionism_desc:0 "America will not retreat from itself nor the world. In the name of stability and security, the administration embraces a renewed willingness to project power. First at Home and then arround the Globe."
+ KMT_reform_social_politics:0 "Reform Social Policy"
+ KMT_reform_social_politics_desc:0 "Amid chaos, Americans turn inward, demanding clarity on social questions long deferred. Ryan's administration set a goal on announcing new positions that may unify the coalition, but also reawaken the same deep ideological differences."
+ KMT_sane_republicanism:0 "Sane Republicanism"
+ KMT_sane_republicanism_desc:0 "A pragmatic, stabilizing form of governance is ideal. Unlike MAGA, we will temper ideological zeal with sober responsibility. Whether this course strengthens the Coalition or breaks it remains to be seen."
 
  # Army
  KMT_upgrade_fort_mccoy:0 "Upgrade Fort McCoy"

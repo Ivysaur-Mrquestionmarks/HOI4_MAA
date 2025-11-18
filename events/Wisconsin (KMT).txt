@@ -2051,8 +2051,8 @@ country_event = {
 	option = {
 		name = wisconsin.56.a
 		KMT_Raymond_Leo_Burke = { 
-					promote_character = yes
-				}
+			promote_character = yes
+		}
 		set_politics = {
     		ruling_party = autocratic
 			elections_allowed = no
@@ -2064,8 +2064,8 @@ country_event = {
 			factor = 1
 		}
 		KMT_Robert_Prevost = { 
-					promote_character = yes
-				}
+			promote_character = yes
+		}
 		set_politics = {
     		ruling_party = autocratic
 			elections_allowed = no
@@ -2090,5 +2090,72 @@ country_event = {
 	option = {
 		name = wisconsin.57.a
 		add_country_leader_trait = KMT_meant_for_something_greater
+	}
+}
+
+# vp pick
+country_event = {
+	id = wisconsin.58
+	title = wisconsin.58.t
+	desc = wisconsin.58.d
+	picture = TBD
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wisconsin.58.a
+		activate_advisor = advisor_Rick_Snyder
+	}
+	option = {
+		name = wisconsin.58.b
+		activate_advisor = advisor_John_Boehner
+	}
+	option = {
+		name = wisconsin.58.c
+		activate_advisor = advisor_Scott_Walker
+	}
+}
+
+# tea party
+country_event = {
+	id = wisconsin.59
+	title = wisconsin.59.t
+	desc = wisconsin.59.d
+	picture = TBD
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wisconsin.59.a
+		custom_effect_tooltip = KMT_coalition_angry_tt
+		add_ideas = KMT_tea_party_movement
+	}
+	option = {
+		name = wisconsin.59.b
+		add_stability = 0.05
+		add_political_power = 50
+		set_country_flag = KMT_moderate_fiscal
+	}
+}
+
+# social policy
+country_event = {
+	id = wisconsin.60
+	title = wisconsin.60.t
+	desc = wisconsin.60.d
+	picture = TBD
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wisconsin.60.a
+		custom_effect_tooltip = KMT_coalition_angry_tt
+		add_ideas = KMT_reformed_social_policy
+	}
+	option = {
+		name = wisconsin.60.b
+		add_stability = 0.05
+		add_political_power = 50
+		set_country_flag = KMT_moderate_social
 	}
 }

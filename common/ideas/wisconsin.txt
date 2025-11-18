@@ -1388,6 +1388,7 @@ ideas = {
 				compliance_gain = 0.05
 			}
 		}
+
 		KMT_catholic_america_idea_4 = {
 			allowed = { original_tag = KMT }
 			allowed_civil_war = yes	
@@ -1397,6 +1398,50 @@ ideas = {
 				resistance_growth_on_our_occupied_states = 0.2
 				conscription_factor = 0.2
 				compliance_gain = 0.1
+			}
+		}
+
+		KMT_tea_party_movement = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes	
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.1
+				political_power_gain = 0.1
+				libertarian_right_acceptance = 75
+			}
+		}
+
+		KMT_reformed_social_policy = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes	
+			modifier = {
+				monthly_population = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+
+		KMT_coalition_of_the_willing_3 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { NOT = { has_government = authoritarian_left } }		
+			modifier = {
+				political_power_factor = 0.1
+				war_support_factor = 0.15
+				stability_factor = 0.15
+				conscription = 0.05
+			}
+		}
+
+		KMT_interventionism_idea = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = yes
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_morale_factor = 0.05
+				planning_speed = 0.2
+				conscription_factor = 0.05
+				justify_war_goal_time = -0.5
 			}
 		}
 
