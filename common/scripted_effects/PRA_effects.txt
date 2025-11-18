@@ -111,6 +111,10 @@ PRA_change_vanguardist_down = {
     			keep_political_leader = yes
     			keep_political_party_members = yes
 		}
+add_popularity = {
+    ideology = authoritarian_left
+    popularity = -1
+}
 
 	}
 	else = {
