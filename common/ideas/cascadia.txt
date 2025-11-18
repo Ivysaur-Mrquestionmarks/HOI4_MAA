@@ -396,5 +396,24 @@ ideas = {
 			}
 		}
 		
+		CAS_altright_military_infiltration_modifier_high_idea = {
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_factor = -0.1
+				compliance_growth = -0.1
+				breakthrough_factor = -0.1
+			}
+		}
+		CAS_altright_military_infiltration_modifier_low_idea = {
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				political_power_factor = -0.05
+				compliance_growth = -0.05
+				breakthrough_factor = -0.05
+			}
+		}
+		
 	}
 }

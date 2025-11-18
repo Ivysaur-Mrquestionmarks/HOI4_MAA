@@ -135,6 +135,8 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = CAS_expand_militia_autonomy }
 		completion_reward = {
+			unlock_decision_tooltip = CAS_secure_high_command_loyalties_decision
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = CAS_nazi_militias_in_military_idea
 				add_idea = CAS_nazi_militias_in_military_weak_idea
@@ -159,9 +161,19 @@ focus_tree = {
 				has_war = yes
 			}
 			has_idea = CAS_nazi_militias_in_military_weak_idea
+			custom_trigger_tooltip = {
+				tooltip = CAS_influence_of_nazis_needs_weak_tt
+				check_variable = {
+					var = var_nazi_influence
+					value = 26
+					compare = less_than
+				}
+			}
 		}
 		completion_reward = {
+			unlock_decision_tooltip = CAS_nazi_purge_decision
 			remove_ideas = CAS_nazi_militias_in_military_weak_idea
+			
 		}
 	}
 	focus = {
@@ -191,7 +203,7 @@ focus_tree = {
 	focus = {
 		id = CAS_rally_anti_communists
 		icon = GFX_goal_unknown
-		cost = 4.00
+		cost = 2.00
 		x = 3
 		y = 1
 		relative_position_id = CAS_guerilla_warfare
@@ -199,7 +211,6 @@ focus_tree = {
 			focus = CAS_guerilla_warfare
 		}
 		available = {
-			has_war = yes
 			NOT = { has_country_flag = CAS_nazis_purged_flag }
 		}
 		completion_reward = {
@@ -207,6 +218,36 @@ focus_tree = {
 				remove_idea = CAS_big_tent_against_socialism_idea
 				add_idea = CAS_big_tent_against_socialism_idea_2
 			}
+			custom_effect_tooltip = CAS_weakens_nazis_little_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = CAS.var_nazi_influence
+					value = -3
+				}
+				clamp_variable = {
+					var = CAS.var_nazi_influence
+					min = 0
+					max = 100
+				}
+				CAS_nazi_anger_calculation_effect = yes
+			}
+		}
+	}
+	focus = {
+		id = CAS_reach_out_to_the_center_left
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 0
+		y = 1
+		relative_position_id = CAS_rally_anti_communists
+		prerequisite = {
+			focus = CAS_rally_anti_communists
+		}
+		available = {
+			NOT = { has_country_flag = CAS_nazis_purged_flag }
+		}
+		completion_reward = {
+			unlock_decision_tooltip = CAS_big_city_recruitment
 			custom_effect_tooltip = CAS_weakens_nazis_little_tt
 			hidden_effect = {
 				add_to_variable = {

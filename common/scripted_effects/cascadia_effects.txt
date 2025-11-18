@@ -288,7 +288,89 @@ CAS_strengthen_nazis_little_effect = { #Add var stuff later
 
 
 
+CAS_strengthen_nazis_moderate_mission_effect = { 
+	custom_effect_tooltip = CAS_strengthens_nazis_moderate_tt
+	custom_effect_tooltip = CAS_angers_nazis_little_tt
+	add_to_variable = {
+		var = CAS.var_nazi_influence
+		value = 5
+	}
+	add_to_variable = {
+		var = CAS.var_nazi_satisfaction
+		value = -3
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_influence
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_satisfaction
+		min = 0
+		max = 100
+	}
+	CAS_nazi_anger_calculation_effect = yes
+}
+CAS_placate_nazis_moderate_decision_effect = { 
+	custom_effect_tooltip = CAS_strengthens_nazis_little_tt
+	custom_effect_tooltip = CAS_please_nazis_moderate_tt
+	add_to_variable = {
+		var = CAS.var_nazi_influence
+		value = 2
+	}
+	add_to_variable = {
+		var = CAS.var_nazi_satisfaction
+		value = 5
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_influence
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = CAS.var_nazi_satisfaction
+		min = 0
+		max = 100
+	}
+	CAS_nazi_anger_calculation_effect = yes
+}
+CAS_nazi_coup_trigger_mission_effect = { 
+	if = {
+		limit = { NOT = { has_war_with = PRA } }
+		if = {
+			limit = {
+				AND = {
+					NOT = { 
+						AND = { 
+							has_country_flag = CAS_coup_progressing_flag 
+							has_country_flag = CAS_nazis_purged_flag 
+						} 
+					}
+					check_variable = { var_nazi_rebellion_indicator > 1 }
+				} 
+			}
+			country_event = {
+				id = cascadia_rework.5
+				days = 3
+			}
+			set_var = {
+				var = CAS.var_nazi_days_mission_coup_reduction
+				value = CAS.var_nazi_rebellion_indicator
+			}
+			multiply_variable = {
+				var = CAS.var_nazi_days_mission_coup_reduction
+				value = -20
+			}
+		}
+	}
+}
+
+
 CAS_nazi_anger_calculation_effect = {
+	set_variable = {
+		var = CAS.var_nazi_rebellion_indicator_prev
+		value = CAS.var_nazi_rebellion_indicator
+	}
 	set_variable = {
 		var = CAS.var_nazi_rebellion_indicator
 		value = 0
@@ -405,6 +487,10 @@ CAS_nazi_anger_calculation_effect = {
 		var = CAS.var_nazi_rebellion_indicator
 		value = CAS.var_nazi_influence_rebellion_level
 	}
+	add_to_variable = {
+		var = CAS.var_nazi_rebellion_indicator
+		value = CAS.var_extra_negative_risk_coup
+	}
 	subtract_from_variable = {
 		var = CAS.var_nazi_rebellion_indicator
 		value = CAS.var_nazi_influence_rebellion_level_anti
@@ -416,5 +502,66 @@ CAS_nazi_anger_calculation_effect = {
 	clamp_variable = {
 		var = CAS.var_nazi_rebellion_indicator
 		min = 0
+	}
+	
+	if = {
+		limit = {
+			check_variable = { var_nazi_rebellion_indicator = 0 }
+		}
+		set_variable = {
+			var = CAS.var_nazi_modifier_negatives
+			value = -0.05
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_nazi_rebellion_indicator = 1 }
+		}
+		set_variable = {
+			var = CAS.var_nazi_modifier_negatives
+			value = -0.1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_nazi_rebellion_indicator = 2 }
+		}
+		set_variable = {
+			var = CAS.var_nazi_modifier_negatives
+			value = -0.15
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_nazi_rebellion_indicator = 3 }
+		}
+		set_variable = {
+			var = CAS.var_nazi_modifier_negatives
+			value = -0.2
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_nazi_rebellion_indicator > 3 }
+		}
+		set_variable = {
+			var = CAS.var_nazi_modifier_negatives
+			value = -0.25
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { CAS.var_nazi_rebellion_indicator_prev < CAS.var_nazi_rebellion_indicator }
+				check_variable = { 5 > CAS.var_nazi_rebellion_indicator }
+			}
+		}
+		hidden_effect = { country_event = cascadia_rework.6 }
+	}
+	if = {
+		limit = {
+			check_variable = { CAS.var_nazi_rebellion_indicator_prev > CAS.var_nazi_rebellion_indicator }
+		}
+		hidden_effect = { country_event = cascadia_rework.7 }
 	}
 }

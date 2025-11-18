@@ -369,6 +369,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = { #sus
+		CAS_strengthen_nazis_moderate_mission_effect = yes
 		name = cascadia.10.a
 		add_manpower = 5000
 		add_popularity = {
@@ -724,6 +725,128 @@ country_event = {
 		}
 		CAS_kshama_sawant = {
 			promote_character = yes
+		}
+	}
+}
+
+
+
+#New Stuff From Turk
+
+add_namespace = cascadia_rework
+
+#Nazis make their move...
+country_event = {
+	id = cascadia_rework.1
+	title = cascadia_rework.1.t
+	desc = cascadia_rework.1.d
+	picture = event_fascists_01
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = cascadia_rework.1.a
+		activate_mission = CAS_nazis_scheming_mission
+		hidden_effect = {
+			CAS_nazi_coup_trigger_mission_effect = yes
+		}
+	}
+}
+
+#Mike Ma Joins the Nazis
+country_event = {
+	id = cascadia_rework.2
+	title = cascadia_rework.2.t
+	desc = cascadia_rework.2.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = cascadia_rework.2.a
+		CAS_strengthen_nazis_little_effect = yes
+	}
+}
+
+#The New Awakening
+country_event = {
+	id = cascadia_rework.3
+	title = cascadia_rework.3.t
+	desc = cascadia_rework.3.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = cascadia_rework.3.a
+		CAS_strengthen_nazis_moderate_effect = yes
+	}
+}
+
+#Exiled Nevada Free Army units
+country_event = {
+	id = cascadia_rework.4
+	title = cascadia_rework.4.t
+	desc = cascadia_rework.4.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = cascadia_rework.4.a
+		CAS_strengthen_nazis_little_effect = yes
+	}
+}
+
+#Nazis plan coup
+country_event = {
+	id = cascadia_rework.5
+	title = cascadia_rework.5.t
+	desc = cascadia_rework.5.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = cascadia_rework.5.a
+		set_country_flag = CAS_coup_progressing_flag
+		activate_mission = CAS_imminent_nazi_coup_mission
+		add_days_mission_timeout = {
+			mission = CAS_imminent_nazi_coup_mission
+			days = CAS.var_nazi_days_mission_coup_reduction
+		}
+	}
+}
+
+#Nazis grow infiltration
+country_event = {
+	id = cascadia_rework.6
+	title = cascadia_rework.6.t
+	desc = cascadia_rework.6.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = cascadia_rework.6.a
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = CAS_altright_military_infiltration_modifier_low_idea
+				add_idea = CAS_altright_military_infiltration_modifier_high_idea
+			}
+		}
+	}
+}
+
+#Nazis shrink infiltration
+country_event = {
+	id = cascadia_rework.7
+	title = cascadia_rework.7.t
+	desc = cascadia_rework.7.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = cascadia_rework.7.a
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = CAS_altright_military_infiltration_modifier_high_idea
+				add_idea = CAS_altright_military_infiltration_modifier_low_idea
+			}
 		}
 	}
 }

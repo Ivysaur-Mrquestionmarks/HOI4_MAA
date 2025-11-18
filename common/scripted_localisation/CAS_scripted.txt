@@ -202,3 +202,61 @@ defined_text = {
 		localization_key = CAS_nazis_coup_risk_0
 	}
 }
+defined_text = {
+	name = CAS_NAZI_MIL_INFL_SCRLOC
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_rebellion_indicator
+				value = 4
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = CAS_nazis_mil_inf_4
+	}
+	text = {
+		trigger = {
+			tag = CAS
+			check_variable = {
+				var = var_nazi_rebellion_indicator
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = CAS_nazis_mil_inf_3
+	}
+	text = {
+		trigger = {
+			tag = CAS
+			check_variable = {
+				var = var_nazi_rebellion_indicator
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = CAS_nazis_mil_inf_2
+	}
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_rebellion_indicator
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = CAS_nazis_mil_inf_1
+	}
+	text = {
+		trigger = {
+			tag = CAS
+            check_variable = {
+				var = var_nazi_rebellion_indicator
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = CAS_nazis_mil_inf_0
+	}
+}

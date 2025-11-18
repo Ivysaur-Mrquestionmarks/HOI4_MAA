@@ -1,44 +1,186 @@
-CAS_unstable_politics = {
-	CAS_secure_the_north = {
-		
-		activation = {
-			has_global_flag = war_independence_over
-		}
-		
-		available = {
-			has_country_flag = CAS_remilitarized_the_north
-		}
-		
-		cancel_trigger = {
-			has_country_flag = CAS_remilitarized_the_north
-		}
-		
-		icon = mission_icon     # For GFX_decision_mission_icon
-		
-		is_good = yes
-		#war_with_on_timeout = SOV
-		days_mission_timeout = 100
-		selectable_mission = yes
-		
-		complete_effect = {
-		}
-		timeout_effect = {
-		}
-	}
-}
+
 CAS_nazi_influence_decision_category = {
 	CAS_nazi_purge_decision = {
 		icon = usa_congress
 		
 		available = {
-			always = no
+			has_completed_focus = CAS_purge_nazis_from_military
+			has_war = no
 		}
 		
-		cost = 30
+		cost = 50
 		
 		complete_effect = {
-			
+			set_country_flag = CAS_nazis_purged_flag
+			remove_dynamic_modifier = {
+				modifier = CAS_altright_military_infiltration_modifier
+			}
+			add_popularity = {
+				ideology = autocratic
+				popularity = -0.5
+			}
 		}
+	}
+	CAS_nazis_scheming_mission = {
+		
+		available = {
+			has_country_flag = CAS_nazis_purged_flag
+		}
+		is_good = no
+		cancel_trigger = {
+			has_country_flag = CAS_nazis_purged_flag
+		}
+		
+		icon = mission_icon    
+		
+		#is_good = yes
+		days_mission_timeout = 25
+		
+		complete_effect = {
+		}
+		timeout_effect = {
+			CAS_strengthen_nazis_moderate_mission_effect = yes
+			hidden_effect = {
+				country_event = {
+					id = cascadia_rework.1
+					days = 5
+				}
+			}
+		}
+	}
+	CAS_imminent_nazi_coup_mission = {
+		
+		available = {
+			has_country_flag = CAS_nazis_purged_flag
+		}
+		allowed = {
+			always = no
+		}
+		is_good = no
+		cancel_trigger = {
+			OR = {
+				has_country_flag = CAS_nazis_purged_flag
+				#NOT = { has_country_flag = CAS_coup_progressing_flag }
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = CAS_influence_of_nazis_needs_weak_tt
+						check_variable = {
+							var = var_nazi_influence
+							value = 26
+							compare = less_than
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = CAS_happiness_of_nazis_needs_good_tt
+						check_variable = {
+							var = var_nazi_influence
+							value = 79
+							compare = greater_than
+						}
+					}
+				}
+			}
+		}
+		
+		icon = mission_icon    
+		
+		days_mission_timeout = 200
+		remove_effect = {
+			clr_country_flag = CAS_coup_progressing_flag
+		}
+		complete_effect = {
+			clr_country_flag = CAS_coup_progressing_flag
+		}
+		timeout_effect = {
+			CAS_strengthen_nazis_moderate_mission_effect = yes
+			hidden_effect = {
+				country_event = {
+					id = cascadia_rework.1
+					days = 5
+				}
+			}
+			clr_country_flag = CAS_coup_progressing_flag
+		}
+	}
+	CAS_big_city_recruitment = {
+		icon = hol_draw_up_staff_plans
+
+
+		available = {
+			FROM  = { 
+				is_controlled_by = ROOT 
+			}
+			has_completed_focus = CAS_reach_out_to_the_center_left
+		}
+
+		cost = 30
+		
+		state_target = any_controlled_state
+		target_array = CAS.big_cities_state
+
+		on_map_mode = map_and_decisions_view  
+
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			add_manpower = 10000
+			CAS_weaken_nazis_moderate_effect = yes
+		}
+
+	}
+	CAS_placate_nazis_decision = {
+
+		cost = 15
+		
+		fire_only_once = no
+		days_re_enable = 15
+		days_remove = 15
+		modifier = {
+			army_org_factor = -0.07
+		}
+
+		remove_effect = {
+			CAS_placate_nazis_moderate_decision_effect = yes
+		}
+
+	}
+	CAS_reassign_disloyal_nazis_decision = {
+
+		cost = 15
+		
+		fire_only_once = no
+		days_re_enable = 15
+		days_remove = 15
+		modifier = {
+			army_morale_factor = -0.05
+		}
+		remove_effect = {
+			CAS_weaken_nazis_moderate_effect = yes
+		}
+
+	}
+	CAS_secure_high_command_loyalties_decision = {
+
+		cost = 50
+		
+		fire_only_once = yes
+		days_remove = 15
+		available = {
+			has_completed_focus = CAS_curtail_nazis
+		}
+		remove_effect = {
+			add_command_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = CAS_generals_will_be_loyal_against_nazis_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_to_variable = {
+				var = CAS.var_extra_negative_risk_coup
+				value = -1
+			}
+			CAS_weaken_nazis_large_effect = yes
+		}
+
 	}
 
 }

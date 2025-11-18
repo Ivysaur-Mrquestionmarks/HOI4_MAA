@@ -1,0 +1,13 @@
+CAS_altright_military_infiltration_modifier = { #NATIONAL SPIRIT, balls.
+	enable = { always = yes }
+
+	icon = ast_volunteer_defence_corps
+	
+	stability_factor = CAS.var_nazi_modifier_negatives
+	war_support_factor = CAS.var_nazi_modifier_negatives
+	political_power_factor = CAS.var_nazi_modifier_negatives
+	compliance_growth = CAS.var_nazi_modifier_negatives
+	breakthrough_factor = CAS.var_nazi_modifier_negatives
+	
+
+}

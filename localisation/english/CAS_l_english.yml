@@ -198,6 +198,8 @@
  CAS_purge_nazis_from_military_desc:0 "Now that the West Coast War is over, we can deal with the other extreme. The failed coup and this purge will show every nazi how we deal with them in Cascadia."
  CAS_expand_militia_autonomy:0 "Expand Militia Autonomy"
  CAS_expand_militia_autonomy_desc:0 "Whether we like it or not, we are too dependent on these militias to fight the red scum. Further integration and expansion will help us in our conflict and push us towards victory."
+ CAS_reach_out_to_the_center_left:0 "Reach Out to the Center-Left"
+ CAS_reach_out_to_the_center_left_desc:0 "Although our rhetoric against the left has been harsh lately, we must remember that we are still a part of the center-left. Expanding recruitment campaigns in big cities will help us counter the growing alt-right infiltration in our military, at least, for the time being."
  
  #Military branch
  CAS_the_cascadian_military:0 "The Cascadian Military"
@@ -268,10 +270,15 @@
  
  
  # Decisions
- CAS_nazi_influence_decision_category:0 "Dealing With the Nazis"
+ CAS_nazi_influence_decision_category:0 "The Alt-Right Conspiracy"
  CAS_nazi_influence_decision_category_desc:0 "To aid in our war of independence and the fight against Bolshevism, we were forced to make a deal with the devil.\n\nCurrent influence of the Nazi Militias: [CAS_NAZI_INFL_SCRLOC] \n\nCurrent happiness of the Nazi Militias: [CAS_NAZI_STSF_SCRLOC] \n\n\nCoup Risk Level: [CAS_NAZI_COUPLVL_SCRLOC]"
- CAS_nazi_purge_decision:0 "Purge the Nazis"
- 
+ CAS_nazi_purge_decision:0 "Purge the Alt-Right"
+ CAS_nazis_scheming_mission:0 "Alt-Right Agitation Grows"
+ CAS_big_city_recruitment:0 "Recruit Center-Left Militias in [FROM.GetName]"
+ CAS_placate_nazis_decision:0 "Placate the Alt-Right"
+ CAS_secure_high_command_loyalties_decision:0 "Secure the Loyalty of the High Command"
+ CAS_reassign_disloyal_nazis_decision:0 "Investigate Far-Right Influences in the Military"
+ CAS_imminent_nazi_coup_mission:0 "Imminent Alt-Right Coup"
  
  
  
@@ -294,6 +301,12 @@
  CAS_nazis_coup_risk_1:0 "§GVery Low ([?CAS.var_nazi_rebellion_indicator]).§!"
  CAS_nazis_coup_risk_0:0 "§CNone ([?CAS.var_nazi_rebellion_indicator]).§!"
  
+ CAS_nazis_mil_inf_4:0 "§RVery Severe ([?CAS.var_nazi_rebellion_indicator]).§!"
+ CAS_nazis_mil_inf_3:0 "§OSevere ([?CAS.var_nazi_rebellion_indicator]).§!"
+ CAS_nazis_mil_inf_2:0 "§YModerate ([?CAS.var_nazi_rebellion_indicator]).§!"
+ CAS_nazis_mil_inf_1:0 "§GLow ([?CAS.var_nazi_rebellion_indicator]).§!"
+ CAS_nazis_mil_inf_0:0 "§CVery Low ([?CAS.var_nazi_rebellion_indicator]).§!"
+ 
  #country flags
  nazi_coup:0 "§RDer Neu Ordung!§!"
  rees_coup:0 "§GRees Has Assumed Control!§!"
@@ -311,7 +324,6 @@
  CAS_strengthens_nazis_moderate_tt:0 "§OThis will strengthen Nazi influence by a moderate amount§!"
  CAS_weakens_nazis_large_tt:0 "§CThis will weaken Nazi influence by a large amount§!"
  CAS_strengthens_nazis_large_tt:0 "§RThis will strengthen Nazi influence by a large amount§!"
- 
  CAS_angers_nazis_little_tt:0 "§RThis will anger the Nazis by a little amount§!"
  CAS_please_nazis_little_tt:0 "§GThis will please the Nazis by a little amount§!"
  CAS_angers_nazis_moderate_tt:0 "§RThis will anger the Nazis by a moderate amount§!"
@@ -319,18 +331,54 @@
  CAS_angers_nazis_large_tt:0 "§RThis will anger the Nazis by a large amount§!"
  CAS_please_nazis_large_tt:0 "§GThis will please the Nazis by a large amount§!"
  
+ CAS_generals_will_be_loyal_against_nazis_tt:0 "Securing the loyalty of the high command will §Gpermanently lower§! the §Rrisk of a coup§! by 1."
+ CAS_influence_of_nazis_needs_weak_tt:0 "Alt-Right influence in the military is §GWeak§! or §CInsignificant§!.\n\t Current influence: [CAS_NAZI_INFL_SCRLOC]"
+ CAS_happiness_of_nazis_needs_good_tt:0 "Alt-Right satisfaction with our governing is §CVery Pleased§!.\n\t Current satisfaction: [CAS_NAZI_STSF_SCRLOC]"
+ 
+ 
  #Ideas
  CAS_nazi_militias_in_military_idea:0 "Nazi Military Influence: §CModerate§!"
  CAS_nazi_militias_in_military_weak_idea:0 "Nazi Military Influence: §GWeak§!"
  CAS_nazi_militias_in_military_stronger_idea:0 "Nazi Military Influence: §RStrong§!"
  CAS_big_tent_against_socialism_idea:0 "Big Tent Against Socialism"
  CAS_big_tent_against_socialism_idea_2:0 "Big Tent Against Socialism"
+ CAS_altright_military_infiltration_modifier:0 "Extreme-Right Military Influence: [CAS_NAZI_MIL_INFL_SCRLOC]"
+ CAS_altright_military_infiltration_modifier_high_idea:0 "Extreme-Right Military Influence"
+ CAS_altright_military_infiltration_modifier_low_idea:0 "Extreme-Right Military Influence"
  
  
  # Events
  cascadia.10.t:0 "Questionable Volunteers Arrive!"
  cascadia.10.d:0 "Volunteers from all over the former United States and even some from Canada have arrived to fight for our cause! However, it seems the political affiliations of these volunteers are, well, questionable at best."
  cascadia.10.a:0 "We'll take anything we can get"
+ 
+ cascadia_rework.1.t:0 "Alt-Right Influence Expands"
+ cascadia_rework.1.d:0 "Alt-Right activity in our military has seen a large increase in the past month. The influence of the alt-right bloc is reaching concerning levels, especially as their agitation continues to increase..."
+ cascadia_rework.1.a:0 "We better find a way to crack down on them..."
+ 
+ cascadia_rework.2.t:0 "Mike Ma Shows Support for the Alt-Right"
+ cascadia_rework.2.d:0 "TODO"
+ cascadia_rework.2.a:0 "Eco-fascism? Huh..."
+ 
+ cascadia_rework.3.t:0 "The New Awakening"
+ cascadia_rework.3.d:0 "TODO"
+ cascadia_rework.3.a:0 "They're just a small facebook group, right?"
+ 
+ cascadia_rework.4.t:0 "Fire Legion Exiles Start Radicalizing"
+ cascadia_rework.4.d:0 "TODO"
+ cascadia_rework.4.a:0 "We should've never let them in..."
+ 
+ cascadia_rework.5.t:0 "Classified Report: Alt-Right Coup Planned"
+ cascadia_rework.5.d:0 "TODO"
+ cascadia_rework.5.a:0 "We must act quickly..."
+ 
+ cascadia_rework.6.t:0 "Alt-Right Infiltration of the Military Grows"
+ cascadia_rework.6.d:0 "TODO"
+ cascadia_rework.6.a:0 "Not good..."
+ 
+ cascadia_rework.7.t:0 "Alt-Right Infiltration of the Military Shrinks"
+ cascadia_rework.7.d:0 "TODO"
+ cascadia_rework.7.a:0 "Finally, some good news!"
  
  
  

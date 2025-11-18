@@ -47,7 +47,19 @@ oob = "CAS_2021"
 
 country_event = {
 	id = cascadia.10
-	days = 30
+	days = 5
+}
+country_event = {
+	id = cascadia_rework.2
+	days = 35
+}
+country_event = {
+	id = cascadia_rework.3
+	days = 20
+}
+country_event = {
+	id = cascadia_rework.4
+	days = 50
 }
 
 set_politics = {
@@ -71,6 +83,9 @@ add_ideas = {
 	CAS_nazi_militias_in_military_idea
 	CAS_big_tent_against_socialism_idea
 }
+add_dynamic_modifier = {
+	modifier = CAS_altright_military_infiltration_modifier
+}
 
 
 set_variable = {
@@ -81,8 +96,31 @@ set_variable = {
     var = CAS.var_nazi_satisfaction
     value = 56
 }
-
+set_variable = {
+	var = CAS.var_nazi_modifier_negatives
+	value = 0
+}
+set_variable = {
+	var = CAS.var_extra_negative_risk_coup
+	value = 0
+}
+activate_mission = CAS_nazis_scheming_mission
 CAS_nazi_anger_calculation_effect = yes
+
+every_state = {
+	limit = {
+		OR = {
+			state = 94
+			state = 496
+			state = 122
+			state = 125
+		}
+	}
+	add_to_array = {
+		array = CAS.big_cities_state
+		value = THIS.id
+	}
+}
 
 
 ### Country Leaders ###
