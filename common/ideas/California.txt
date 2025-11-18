@@ -140,6 +140,7 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.2
 				encryption_factor = -0.1
+    civilian_intel_to_others = 0.2
 				consumer_goods_expected_value = 0.02
 				industrial_capacity_factory = -0.15
 			}
@@ -150,6 +151,7 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.1
 				encryption_factor = 0.05
+    civilian_intel_to_others = -0.1
 				industrial_capacity_factory = -0.05
 			}
 		}
@@ -159,6 +161,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.15
 				encryption_factor = 0.25
+    civilian_intel_to_others = -0.3
 				consumer_goods_expected_value = -0.015
 				industrial_capacity_factory = 0.1
 			}
