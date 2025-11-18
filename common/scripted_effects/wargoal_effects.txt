@@ -98,6 +98,30 @@ effect_kill_the_PRA = {
 
 
 ### Central America Wargoals
+effect_kill_canadian_collapse = {
+	custom_effect_tooltip = effect_kill_canadian_collapse_tt
+	for_each_scope_loop = { #This loops declare the wars
+    		array = global.CAN_collapse
+		ROOT = {
+			if = { 
+				limit = {
+					NOT = { 
+						has_wargoal_against = PREV
+						TAG = PREV
+						is_in_faction_with = PREV
+					}
+				}
+				create_wargoal = {
+    					target = PREV
+    					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+
+### Central America Wargoals
 effect_kill_central_america = {
 	custom_effect_tooltip = effect_kill_central_america_tt
 	for_each_scope_loop = { #This loops declare the wars
