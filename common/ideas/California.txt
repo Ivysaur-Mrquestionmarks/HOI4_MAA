@@ -90,14 +90,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.05
 			}
 		}
-		AngeredAnarchists = {
-			picture = SPR_international_brigades
-			modifier = {
-				stability_factor = -0.10
-				political_power_factor = -0.15
-				production_speed_buildings_factor = -0.05
-			}
-		}
+
 		HappyChinese = {
 			picture = chi_chinese_unity
 			modifier = {
@@ -105,13 +98,130 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 			}
 		}
+
+		#Annarchist oficcers
+		AngeredAnarchists = {
+			picture = SPR_international_brigades
+			modifier = {
+				army_org_factor = -0.15
+				army_morale_factor = -0.05
+				planning_speed = -0.1
+				conscription_factor = -0.15
+				command_power_gain = -0.1
+				max_command_power = -20
+			}
+		}
+
+		DispleacedAnarchists = {
+			picture = SPR_international_brigades
+			modifier = {
+				army_org_factor = -0.05
+				planning_speed = -0.05
+				conscription_factor = 0.05
+				max_command_power = 5
+			}
+		} 
+
 		HappyAnarchists = {
 			picture = SPR_international_brigades
 			modifier = {
-				political_power_factor = 0.05
+				army_org_factor = 0.1
+				army_morale_factor = 0.01
+				planning_speed = 0.05
+				conscription_factor = 0.1
+				command_power_gain = 0.1
+				max_command_power = 25
+			}
+		}
+
+		#Vanguardist Councils
+		AngeredCouncils = {
+			#picture = uwu
+			modifier = {
+				political_power_gain = -0.2
+				encryption_factor = -0.1
+				consumer_goods_expected_value = 0.02
+				industrial_capacity_factory = -0.15
+			}
+		}
+
+		DispleacedCouncils = {
+			#picture = uwu
+			modifier = {
+				political_power_gain = -0.1
+				encryption_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		HappyCouncils = {
+			#picture = uwu
+			modifier = {
+				political_power_gain = 0.15
+				encryption_factor = 0.25
+				consumer_goods_expected_value = -0.015
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		#Bestiages of liberalism
+		AngeredLiberals = {
+			picture = uwu
+			modifier = {
+				research_speed_factor = -0.15
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.15
+			}
+		}
+
+		DispleacedLiberals = {
+			picture = uwu
+			modifier = {
+				research_speed_factor = -0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		HappyLiberals = {
+			picture = uwu
+			modifier = {
+				research_speed_factor = 0.1
+				consumer_goods_factor = -0.15
 				production_speed_buildings_factor = 0.15
 			}
 		}
+
+		#Conservatibe guerrillas
+		RightWingGuerrillas1 = {
+			picture = wu
+			modifier = {
+				resistance_target = 0.25
+				no_compliance_gain = 1
+				stability_factor = -0.15
+				army_attack_factor = -0.15
+			}
+		}
+
+		RightWingGuerrillas2 = {
+			picture = wuu
+			modifier = {
+				resistance_target = 0.2
+				no_compliance_gain = 1
+				stability_factor = -0.1
+				army_attack_factor = -0.1
+			}
+		}
+
+		RightWingGuerrillas3 = {
+			picture = uwu
+			modifier = {
+				resistance_target = 0.15
+				compliance_growth_on_our_occupied_states = -0.05
+				stability_factor = -0.05
+			}
+		}
+
 		Media_Deradicalization = {
 			picture = Radio_Gang
 			modifier = {
