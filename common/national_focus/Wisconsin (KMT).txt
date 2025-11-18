@@ -5389,9 +5389,6 @@ focus_tree = {
 		prerequisite = {
 			focus = KMT_our_place_in_america
 		}
-		mutually_exclusive = {
-			focus = KMT_partisan_politics
-		}
 	}
 
 	focus = {
@@ -6710,7 +6707,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_country_leader_trait = KMT_cato
 		}
 		prerequisite = {
 			focus = KMT_president_ryan
@@ -7545,8 +7542,13 @@ focus_tree = {
 				long_name = KMT_autocratic_cdp_long
 				name = KMT_autocratic_cdp_papal
 			}
-			set_politics = {
-				elections_allowed = yes
+			hidden_effect = {
+				set_politics = {
+					ruling_party = autocratic
+					elections_allowed = yes
+					last_election = "2020.11.3"
+					election_frequency = 48
+				}
 			}
 		}
 		prerequisite = {
@@ -8614,9 +8616,9 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = no
 		available_if_capitulated = no
-		add_political_power = 150
 		completion_reward = {
 			add_ideas = KMT_moving_forward
+			add_political_power = 150
 		}
 		prerequisite = {
 			focus = KMT_patience_is_key
