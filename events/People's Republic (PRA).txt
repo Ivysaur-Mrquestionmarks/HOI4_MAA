@@ -2677,7 +2677,7 @@ country_event = {
 			ideology = authoritarian_left
 			popularity = 0.05
 		}
-		
+		PRA_change_vanguardist_up = yes
 	}
 }
 
@@ -2698,7 +2698,7 @@ country_event = {
 			ideology = libertarian_left
 			popularity = -0.1
 		}
-		
+		PRA_change_vanguardist_down = yes
 	}
 }
 

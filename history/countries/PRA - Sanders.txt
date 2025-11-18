@@ -55,6 +55,31 @@ add_to_variable = {
 }
 PRA_water_update = yes
 
+#Factions
+#Vanguardist
+set_variable = {
+  	var = vanguardist 
+ 	value = 1
+}
+
+add_to_array = {
+    array = PRA.Councils
+    value = token:AngeredCouncils
+    index = 0
+}
+
+add_to_array = {
+    array = PRA.Councils
+    value = token:DispleacedCouncils
+    index = 1
+}
+
+add_to_array = {
+    array = PRA.Councils
+    value = token:HappyCouncils
+    index = 2 
+}
+
 #Missile ammo stockpile.
 add_equipment_to_stockpile = {
     type = anti_ship_missile_equipment
