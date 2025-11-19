@@ -516,7 +516,7 @@
  TEMPLATE_DURING_REORGANIZATION:0 "Division is currently switching to a new or upgraded template. During this time they will use stats from the old one until they have enough equipment suitable for the new.\n"
  SPEED_OUT_OF_SUPPLY:0 "Out of supply: $VALUE|+=%$"
  SPEED_INFRASTRUCTURE_IMPACT:0 "Infrastructure: $VALUE|+=%$"
- SPEED_STRATEGIC_REDEPLOYMENT_DESC:0 "Strategic redeployment speed $VAUE|H$ km/h"
+ SPEED_STRATEGIC_REDEPLOYMENT_DESC:0 "Strategic redeployment speed $VAUE|H$ mph"
  SPEED_RETREATING:0 "Retreating: $VALUE|+=%$"
  GOOD_ARMOR_DEFENSE_DESC:1 "If an Enemy Division attacking us is unable to penetrate our armor, we will take up to $ORG|%0G$ less organization and strength damage.\n"
  GOOD_ARMOR_ATTACK_DESC_STR:2 "If attacking an Enemy Division that cannot penetrate our armor we will do more damage.\n"
