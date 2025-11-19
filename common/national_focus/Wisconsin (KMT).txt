@@ -6648,7 +6648,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			remove_country_leader_trait = KMT_low_legitimacy
 			add_political_power = 150
 			add_war_support = 0.1
 		}
@@ -6863,6 +6862,7 @@ focus_tree = {
 			}
 			else = {
 				remove_ideas = KMT_coalition_of_the_willing_2
+				remove_country_leader_trait = KMT_coalition_leader
 			}
 		}
 		prerequisite = {
@@ -6882,7 +6882,7 @@ focus_tree = {
 		x = 16
 		y = 12
 
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -6895,7 +6895,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_command_power = 100
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
 		}
 		prerequisite = {
 			focus = KMT_sane_republicanism
@@ -6909,7 +6915,7 @@ focus_tree = {
 		x = 18
 		y = 12
 
-		cost = 2
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -6922,7 +6928,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = KMT_interventionism_idea_1
+				remove_idea = KMT_interventionism_idea
+			}
 		}
 		prerequisite = {
 			focus = KMT_sane_republicanism
@@ -6935,11 +6944,12 @@ focus_tree = {
 		x = 20
 		y = 12
 
-		cost = 2
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			controls_state = 242
 		}
 		
 		bypass = {
@@ -6948,7 +6958,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			remove_country_leader_trait = KMT_low_legitimacy
+			add_ideas = KMT_reconstituted_congress
 		}
 		prerequisite = {
 			focus = KMT_sane_republicanism
@@ -6961,11 +6972,15 @@ focus_tree = {
 		x = 18
 		y = 13
 
-		cost = 2
+		cost = 9
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			USA = { exists = no }
+			FRA = { exists = no }
+			CSA = { exists = no }
+			PRA = { exists = no }
 		}
 		
 		bypass = {
@@ -6974,7 +6989,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_political_power = 200
+			add_ideas = KMT_america_restored
 		}
 		prerequisite = {
 			focus = KMT_our_place_in_the_world
@@ -6993,11 +7009,18 @@ focus_tree = {
 		x = 16
 		y = 14
 
-		cost = 2
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			all_state = {	
+				OR = {
+					NOT = {has_state_flag = part_of_america}
+					is_owned_by = ROOT
+					owner = { is_ally_with = ROOT } #Checks for territory controlled by indpendent faction members/puppets
+				}		
+			}
 		}
 		
 		bypass = {
@@ -7006,7 +7029,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			effect_kill_mexico = yes
 		}
 		prerequisite = {
 			focus = KMT_restore_america
@@ -7020,11 +7043,18 @@ focus_tree = {
 		x = 20
 		y = 14
 
-		cost = 2
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			all_state = {	
+				OR = {
+					NOT = {has_state_flag = part_of_america}
+					is_owned_by = ROOT
+					owner = { is_ally_with = ROOT } #Checks for territory controlled by indpendent faction members/puppets
+				}		
+			}
 		}
 		
 		bypass = {
@@ -7033,7 +7063,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			effect_kill_canadian_collapse = yes
 		}
 		prerequisite = {
 			focus = KMT_restore_america
@@ -7475,6 +7505,10 @@ focus_tree = {
 		}
 		available = {
 			autocratic > 0.75
+			USA = { exists = no }
+			FRA = { exists = no }
+			CSA = { exists = no }
+			PRA = { exists = no }
 		}
 		
 		bypass = {
@@ -7662,21 +7696,36 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			if = { 
-				limit = { country_exists = MIN }
+				limit = {
+					AND = {
+						country_exists = MIN
+						MIN = { is_puppet = no }
+					}
+				}
 				create_wargoal = {
 					target = MIN
 					type = annex_everything
 				}
 			}
 			if = { 
-				limit = { country_exists = MIL }
+				limit = {
+					AND = {
+						country_exists = MIL
+						MIL = { is_puppet = no }
+					}
+				}
 				create_wargoal = {
 					target = MIL
 					type = annex_everything
 				}
 			}
 			if = { 
-				limit = { country_exists = MNS }
+				limit = {
+					AND = {
+						country_exists = MNS
+						MNS = { is_puppet = no }
+					}
+				}
 				create_wargoal = {
 					target = MNS
 					type = annex_everything
@@ -7944,7 +7993,7 @@ focus_tree = {
 		x = 8
 		y = 11
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -8026,7 +8075,7 @@ focus_tree = {
 		x = 8
 		y = 12
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -8081,7 +8130,7 @@ focus_tree = {
 		x = 8
 		y = 13
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
