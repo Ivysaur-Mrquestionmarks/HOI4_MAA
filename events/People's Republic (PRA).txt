@@ -2530,6 +2530,63 @@ news_event = {
 	}
 }
 
+#Faction revolts:
+#vangaurdist revolt
+country_event = {
+	id = California.62
+	title = California.62.t
+	desc = California.62.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = California.62.a
+		start_civil_war = {
+    			ideology = authoritarian_left 
+    			size = 0.3
+    			capital = 429
+    			states = {
+        			429 444 451 342 460
+    			}
+
+    			keep_political_leader = yes
+    			keep_political_party_members = yes
+		}
+		add_popularity = {
+    			ideology = authoritarian_left
+    			popularity = -1
+		}
+	}
+}
+
+country_event = {
+	id = California.63
+	title = California.63.t
+	desc = California.63.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = California.63.a
+		start_civil_war = {
+    			ideology = democrat 
+    			size = 0.3
+    			capital = 493
+    			states = {
+        			493 494 459 3 495
+    			}
+
+    			keep_political_leader = yes
+    			keep_political_party_members = yes
+		}
+		add_popularity = {
+    			ideology = democrat
+    			popularity = -1
+		}
+	}
+}
+#Revolts end here
+
 #Water system update (debug)
 country_event = {
 	id = California.75
@@ -2611,11 +2668,9 @@ country_event = {
 				count = 1
 			}
 		}
-		country_event = { 
-			id = California.79
-			days = 7
-		}
-		HOP = {
+
++.0
+ 0.		HOP = {
 			country_event = { 
 				id = California.77
 				days = 3
@@ -2678,6 +2733,7 @@ country_event = {
 			popularity = 0.05
 		}
 		PRA_change_vanguardist_up = yes
+		PRA_change_annarchist_up = yes
 	}
 }
 
@@ -2699,6 +2755,7 @@ country_event = {
 			popularity = -0.1
 		}
 		PRA_change_vanguardist_down = yes
+		PRA_change_annarchist_down = yes
 	}
 }
 

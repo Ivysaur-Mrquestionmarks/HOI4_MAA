@@ -61,6 +61,8 @@ PRA_water_update = {
 }
 
 PRA_change_vanguardist_up = {
+	custom_effect_tooltip = PRA_council_up
+
 	remove_ideas = var:PRA.Councils^vanguardist
 
 	add_to_variable = {
@@ -71,10 +73,14 @@ PRA_change_vanguardist_up = {
     		var = vanguardist
     		max = 2
 	}
-	add_ideas = var:PRA.Councils^vanguardist
+	hidden_effect = {
+		add_ideas = var:PRA.Councils^vanguardist
+	}
 }
 
 PRA_change_vanguardist_down = {
+	custom_effect_tooltip = PRA_council_down
+
 	remove_ideas = var:PRA.Councils^vanguardist
 
 	add_to_variable = {
@@ -100,24 +106,137 @@ PRA_change_vanguardist_down = {
     			var = vanguardist
     			value = -22
 		}
-		start_civil_war = {
-    			ideology = authoritarian_left 
-    			size = 0.3
-    			capital = 429
-    			states = {
-        			429 444 451 342 460
-    			}
-
-    			keep_political_leader = yes
-    			keep_political_party_members = yes
+		country_event = { 
+			id = California.62
+			days = 7
 		}
-add_popularity = {
-    ideology = authoritarian_left
-    popularity = -1
-}
+		
 
 	}
 	else = {
-		add_ideas = var:PRA.Councils^vanguardist
+		hidden_effect = {
+			add_ideas = var:PRA.Councils^vanguardist
+		}
+	}
+}
+
+PRA_change_liberals_up = {
+	custom_effect_tooltip = PRA_liberals_up
+
+	remove_ideas = var:PRA.libs^liberals
+
+	add_to_variable = {
+    		var = liberals
+    		value = 1
+	}
+	clamp_variable = {
+    		var = liberals
+    		max = 2
+	}
+	hidden_effect = {
+		add_ideas = var:PRA.libs^liberals
+	}
+}
+
+PRA_change_liberals_down = {
+	custom_effect_tooltip = PRA_liberals_down
+
+	remove_ideas = var:PRA.libs^liberals
+
+	add_to_variable = {
+    		var = vanguardist
+    		value = -1
+	}
+	if = {
+		limit = {
+			check_variable = {
+    				var = liberals
+    				value = 0
+    				compare = less_than
+			}
+			NOT = {
+				check_variable = {
+    					var = liberals
+    					value = -2
+    					compare = less_than
+				}
+			}
+		}
+		add_to_variable = {
+    			var = liberals
+    			value = -22
+		}
+		country_event = { 
+			id = California.63
+			days = 7
+		}
+		
+
+	}
+	else = {
+		hidden_effect = {
+			add_ideas = var:PRA.libs^liberals
+		}
+	}
+}
+
+
+PRA_change_annarchist_up = {
+	custom_effect_tooltip = PRA_annarchist_up
+
+	remove_ideas = var:PRA.anna^annarchist
+
+	add_to_variable = {
+    		var = annarchist
+    		value = 1
+	}
+	clamp_variable = {
+    		var = annarchist
+    		max = 2
+	}
+	hidden_effect = {
+		add_ideas = var:PRA.anna^annarchist
+	}
+}
+
+PRA_change_annarchist_down = {
+	custom_effect_tooltip = PRA_annarchist_down
+
+	remove_ideas = var:PRA.anna^annarchist
+
+	add_to_variable = {
+    		var = annarchist
+    		value = -1
+	}
+	if = {
+		limit = {
+			check_variable = {
+    				var = annarchist
+    				value = 0
+    				compare = less_than
+			}
+			NOT = {
+				check_variable = {
+    					var = annarchist
+    					value = -2
+    					compare = less_than
+				}
+			}
+		}
+		add_to_variable = {
+    			var = annarchist
+    			value = -22
+		}
+		country_event = { 
+			id = California.2
+			days = 31
+		}
+		
+
+	}
+	else = {
+		hidden_effect = {
+			add_ideas = var:PRA.anna^annarchist
+		}
 	}
 }

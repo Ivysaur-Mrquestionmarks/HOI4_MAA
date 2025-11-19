@@ -54,8 +54,9 @@ add_to_variable = {
     	value = 10
 }
 PRA_water_update = yes
-
-#Factions
+##########
+#Factions#
+##########
 #Vanguardist
 set_variable = {
   	var = vanguardist 
@@ -79,6 +80,59 @@ add_to_array = {
     value = token:HappyCouncils
     index = 2 
 }
+
+#liberals
+set_variable = {
+  	var = liberals
+ 	value = 2
+}
+
+add_to_array = {
+    array = PRA.libs
+    value = token:AngeredLiberals
+    index = 0
+}
+
+add_to_array = {
+    array = PRA.libs
+    value = token:DispleacedLiberals
+    index = 1
+}
+
+add_to_array = {
+    array = PRA.libs
+    value = token:HappyLiberals
+    index = 2 
+}
+
+
+#annarchist
+set_variable = {
+  	var = annarchist
+ 	value = 2
+}
+
+add_to_array = {
+    array = PRA.anna #omg annamaxxing!
+    value = token:AngeredAnarchists
+    index = 0
+}
+
+add_to_array = {
+    array = PRA.anna
+    value = token:DispleacedAnarchists
+    index = 1
+}
+
+add_to_array = {
+    array = PRA.anna
+    value = token:HappyAnarchists
+    index = 2 
+}
+
+##############
+#Factions END#
+##############
 
 #Missile ammo stockpile.
 add_equipment_to_stockpile = {
