@@ -3335,6 +3335,12 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			PRA = { country_event = wisconsin.40 }
+			if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				dismantle_faction = yes
+			}
 		}
 		prerequisite = {
 			focus = KMT_feed_the_poor
@@ -6068,6 +6074,7 @@ focus_tree = {
 				ruling_only = yes
 			}
 			pope_hasnt_been_killed = yes
+			KMT_Callista_Gingrich = { is_hired_as_advisor = yes }
 		}
 		
 		bypass = {
@@ -6806,8 +6813,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_stability = 0.05
-			add_manpower = 50000
+			add_research_slot = 1
 			country_event = wisconsin.60
 		}
 		prerequisite = {
@@ -6977,6 +6983,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			controls_state = 242
 			USA = { exists = no }
 			FRA = { exists = no }
 			CSA = { exists = no }
@@ -6991,6 +6998,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 200
 			add_ideas = KMT_america_restored
+			set_capital = {
+				state = 242
+  				remember_old_capital = no
+			}
 		}
 		prerequisite = {
 			focus = KMT_our_place_in_the_world

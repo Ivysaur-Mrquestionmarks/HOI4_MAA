@@ -35,10 +35,10 @@ characters={
 			idea_token = advisor_Paul_Ryan
 			cost = 200
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -73,10 +73,10 @@ characters={
 			idea_token = advisor_Ron_Johnson
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -115,10 +115,10 @@ characters={
 			idea_token = advisor_Tammy_Baldwin
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -157,10 +157,10 @@ characters={
 			idea_token = advisor_Annette_Ziegler
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -212,10 +212,10 @@ characters={
 			idea_token = advisor_Raymond_Leo_Burke
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -252,10 +252,10 @@ characters={
 			idea_token = advisor_Robert_Prevost
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -291,10 +291,10 @@ characters={
 			idea_token = advisor_Paul_Nehlen
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -337,10 +337,10 @@ characters={
 			idea_token = advisor_Satya_Rhodes_Conway
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -378,10 +378,10 @@ characters={
 			idea_token = advisor_Brandon_Johnson
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -429,10 +429,10 @@ characters={
 			idea_token = advisor_Bill_Ayers
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -479,10 +479,10 @@ characters={
 			idea_token = advisor_Bernardine_Dohrn
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -511,10 +511,10 @@ characters={
 			idea_token = advisor_Zack_Snyder
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -552,10 +552,10 @@ characters={
 			idea_token = advisor_Selena_Fox
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = {
@@ -590,10 +590,10 @@ characters={
 			idea_token = advisor_Gwen_Moore
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				OR = {
@@ -621,10 +621,10 @@ characters={
 			idea_token = advisor_Bob_Dylan
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				has_completed_focus = KMT_great_lakes_culture
@@ -649,10 +649,10 @@ characters={
 			idea_token = advisor_Mark_Ruffalo
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				OR = {
@@ -678,12 +678,12 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Callista_Gingrich
-			cost = 150
+			cost = 75
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = { 
@@ -712,10 +712,10 @@ characters={
 			idea_token = advisor_Sean_Duffy
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = { 
@@ -744,10 +744,10 @@ characters={
 			idea_token = advisor_Ron_Kovic
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				NOT = { 
@@ -776,10 +776,10 @@ characters={
 			idea_token = advisor_Andrew_Anglin
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				has_completed_focus = KMT_control_the_media
@@ -804,10 +804,10 @@ characters={
 			idea_token = advisor_Kevin_MacDonald
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				has_completed_focus = KMT_destroy_the_jewish_conspiracy
@@ -832,10 +832,10 @@ characters={
 			idea_token = advisor_Ellen_Johnson
 			cost = 150
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				OR = {
@@ -867,10 +867,10 @@ characters={
 			removal_cost = -1
 			can_be_fired = no
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				has_idea = advisor_Rick_Snyder				
@@ -897,10 +897,10 @@ characters={
 			removal_cost = -1
 			can_be_fired = no
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				has_idea = advisor_John_Boehner				
@@ -927,10 +927,10 @@ characters={
 			removal_cost = -1
 			can_be_fired = no
 			allowed = {
-				tag = KMT
+				original_tag = KMT
 			}
 			visible = {
-				tag = KMT
+				original_tag = KMT
 			}
 			available = {
 				has_idea = advisor_Scott_Walker				
