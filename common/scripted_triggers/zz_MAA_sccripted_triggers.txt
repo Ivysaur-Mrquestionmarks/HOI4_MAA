@@ -9,3 +9,27 @@ pope_hasnt_been_killed = {
 		}
 	}
 }
+CAS_democracy_ai_scripted_trigger = {
+	OR = {
+        has_game_rule = {
+        	rule = CAS_political_path
+        	option = CAS_PATH_DEMOCRACY
+        }
+		has_game_rule = {
+			rule = CAS_political_path
+			option = CAS_PATH_GREEN
+        }
+		has_game_rule = {
+        	rule = CAS_political_path
+        	option = CAS_PATH_LIBERAL
+        }
+		has_game_rule = {
+        	rule = CAS_political_path
+        	option = CAS_PATH_TORY
+        }
+		has_game_rule = {
+        	rule = CAS_political_path
+        	option = CAS_PATH_WHIG
+        }
+    }
+}

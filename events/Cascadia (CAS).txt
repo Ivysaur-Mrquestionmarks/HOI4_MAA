@@ -851,3 +851,43 @@ country_event = {
 	}
 }
 
+#Nazi coup
+country_event = {
+	id = cascadia_rework.8
+	title = cascadia.1.t
+	desc = cascadia.1.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = no
+	immediate = {
+		hidden_effect = {
+			set_country_flag = CAS_successful_nazi_coup_flag
+			CAS_alt_right_takeover_vars_effect = yes
+		}
+	}
+	option = {
+		name = cascadia.1.a
+		CAS_alt_right_takeover_effect = yes
+		ai_chance = {
+			factor = 60
+			modifier = {
+      			factor = 0 
+      			CAS_democracy_ai_scripted_trigger = yes
+   			}
+		}
+	}
+	option = { #ai fail
+		name = cascadia_rework.8.a
+		trigger = {
+			is_ai = yes
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+      			add = 100 
+      			CAS_democracy_ai_scripted_trigger = yes
+   			}
+		}
+	}
+}
+

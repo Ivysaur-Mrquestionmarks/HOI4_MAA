@@ -260,3 +260,20 @@ defined_text = {
 		localization_key = CAS_nazis_mil_inf_0
 	}
 }
+defined_text = {
+	name = CAS_NAZI_STATUS_SCRLOC
+	text = {
+		trigger = {
+			tag = CAS
+			has_country_flag = CAS_successful_nazi_coup_flag
+		}
+		localization_key = CAS_nazis_in_control_loc
+	}
+	text = {
+		trigger = {
+			tag = CAS
+			NOT = { has_country_flag = CAS_successful_nazi_coup_flag }
+		}
+		localization_key = CAS_nazis_been_purged_loc
+	}
+}

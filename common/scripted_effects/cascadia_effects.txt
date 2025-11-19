@@ -565,3 +565,71 @@ CAS_nazi_anger_calculation_effect = {
 		hidden_effect = { country_event = cascadia_rework.7 }
 	}
 }
+
+CAS_alt_right_takeover_effect = {
+	add_threat = 6
+	add_ideas = CAS_SS_coup_succeeded_1
+	add_popularity = {
+	    ideology = autocratic
+	    popularity = 0.2
+	}
+	set_politics = {
+		ruling_party = autocratic
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				SAZ = { is_puppet_of = CAS }
+			}
+			country_event = seattle_independence.4
+		}
+	}
+	remove_ideas = {
+		CAS_nazi_militias_in_military_idea
+		CAS_nazi_militias_in_military_stronger_idea
+		CAS_nazi_militias_in_military_weak_idea
+	}
+	remove_dynamic_modifier = { modifier = CAS_altright_military_infiltration_modifier }
+}
+
+CAS_alt_right_change_power_vars_effect = {
+	set_country_flag = CAS_nazis_purged_flag
+	mark_focus_tree_layout_dirty = yes
+
+	set_variable = {
+		var = CAS.var_nazi_rebellion_indicator
+		value = 0
+	}
+	set_variable = {
+		var = CAS.var_nazi_modifier_negatives
+		value = 0
+	}
+	set_variable = {
+		var = CAS.var_nazi_satisfaction_rebellion_level
+		value = 0
+	}
+	set_variable = {
+		var = CAS.var_nazi_influence_rebellion_level
+		value = 0
+	}
+	set_variable = {
+		var = CAS.var_nazi_influence_rebellion_level_anti
+		value = 0
+	}
+	set_variable = {
+		var = CAS.var_nazi_satisfaction_rebellion_level_anti
+		value = 0
+	}
+	set_variable = {
+		var = CAS.var_nazi_influence
+		value = 0
+	}
+	set_variable = {
+		var = CAS.var_nazi_satisfaction
+		value = 0
+	}
+	set_variable = {
+		var = CAS.var_extra_negative_risk_coup
+		value = 0
+	}
+}

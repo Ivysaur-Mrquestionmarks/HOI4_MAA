@@ -136,7 +136,7 @@ ideas = {
 		}
 		#coup failed
 		CAS_SS_coup_failed_1 = {
-			picture = generic_guerilla_warfare
+			#picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS}
 			modifier = {
 				stability_factor = -0.20
@@ -144,7 +144,7 @@ ideas = {
 			}
 		}
 		CAS_SS_coup_failed_2 = {
-			picture = generic_guerilla_warfare
+			#picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS}
 			modifier = {
 				stability_factor = -0.15
@@ -152,7 +152,7 @@ ideas = {
 			}
 		}
 		CAS_SS_coup_failed_3 = {
-			picture = generic_guerilla_warfare
+			#picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS}
 			modifier = {
 				stability_factor = -0.15
@@ -160,7 +160,7 @@ ideas = {
 			}
 		}
 		CAS_SS_coup_failed_4 = {
-			picture = generic_guerilla_warfare
+			#picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS}
 			modifier = {
 				stability_factor = -0.10
@@ -168,7 +168,7 @@ ideas = {
 			}
 		}
 		CAS_SS_coup_failed_5 = {
-			picture = generic_guerilla_warfare
+			#picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS}
 			modifier = {
 				stability_factor = -0.05
@@ -176,7 +176,7 @@ ideas = {
 			}
 		}
 		CAS_SS_coup_failed_6 = {
-			picture = generic_guerilla_warfare
+			#picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS}
 			modifier = {
 				stability_factor = -0.05
@@ -184,7 +184,7 @@ ideas = {
 		}
 		#coup succeeds
 		CAS_SS_coup_succeeded_1 = {
-			picture = generic_guerilla_warfare
+			#picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS}
 			modifier = {
 				stability_factor = -0.15
@@ -193,7 +193,7 @@ ideas = {
 			}
 		}
 		CAS_SS_coup_succeeded_2 = {
-			picture = generic_guerilla_warfare
+			#picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS}
 			modifier = {
 				stability_factor = -0.15
@@ -202,7 +202,7 @@ ideas = {
 			}
 		}
 		CAS_SS_coup_succeeded_3 = {
-			picture = generic_guerilla_warfare
+			#picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS}
 			modifier = {
 				stability_factor = -0.12
@@ -211,7 +211,7 @@ ideas = {
 			}
 		}
 		CAS_SS_coup_succeeded_4 = {
-			picture = generic_guerilla_warfare
+			#picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS}
 			modifier = {
 				stability_factor = -0.05
@@ -220,7 +220,7 @@ ideas = {
 			}
 		}
 		CAS_SS_coup_succeeded_5 = {
-			picture = generic_guerilla_warfare
+			#picture = generic_guerilla_warfare
 			allowed = { original_tag = CAS}
 			modifier = {
 				stability_factor = -0.05

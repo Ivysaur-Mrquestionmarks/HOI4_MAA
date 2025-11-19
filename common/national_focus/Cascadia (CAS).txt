@@ -25,6 +25,11 @@ focus_tree = {
 			has_war_with = PRA
 			NOT = { has_global_flag = war_independence_over }
 		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = CAS_successful_nazi_coup_flag
+			}
+		}
 		completion_reward = {
 			CAS_up_guerilla_war_idea = yes
 		}

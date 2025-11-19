@@ -11,7 +11,9 @@ CAS_nazi_influence_decision_category = {
 		cost = 50
 		
 		complete_effect = {
-			set_country_flag = CAS_nazis_purged_flag
+			hidden_effect = {
+				CAS_alt_right_change_power_vars_effect = yes
+			}
 			remove_dynamic_modifier = {
 				modifier = CAS_altright_military_infiltration_modifier
 			}
@@ -93,11 +95,9 @@ CAS_nazi_influence_decision_category = {
 		}
 		timeout_effect = {
 			CAS_strengthen_nazis_moderate_mission_effect = yes
-			hidden_effect = {
-				country_event = {
-					id = cascadia_rework.1
-					days = 5
-				}
+			country_event = {
+				id = cascadia_rework.8
+				days = 5
 			}
 			clr_country_flag = CAS_coup_progressing_flag
 		}
