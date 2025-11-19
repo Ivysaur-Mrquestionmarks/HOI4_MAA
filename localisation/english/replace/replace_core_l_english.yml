@@ -22,3 +22,11 @@
  MENU_YOUTUBE:0 "Make America Again YouTube"
  MENU_FACEBOOK:0 "Make America Again Reddit"
  
+ UNIT_SPEED:0 "Division speed: $VALUE|H$ mph" 
+ NAVAL_COMBAT_SHIP_TOOLTIP_APPROACHING:0 "\n§YApproaching§! $FLAG$ $TARGET|R$ (§Y$DIST|0$mph§! beyond range)"
+ NAVAL_COMBAT_DIST_TO_ARRIVE:0 "\n  Distance to arrive: $DIST|0Y$Miles" 
+ MOVING_STRATEGIC_REDEPLOYMENT:1 "Strategic redeployment mode.\nSpeed: $VALUE|H1$ mph\n  Base: $BASE|H1$ mph\n  Infrastructure addition: $ADD|=G1$ mph."
+ MOVING_STRATEGIC_REDEPLOYMENT_RAIL:0 "Strategic redeployment mode.\nSpeed: $VALUE|H1$ mph\n  Base: $BASE|H1$ mph\n  Railway addition: $ADD|=G1$ mph." 
+ MOVING_AMPHIBIOUS_INVASION:0 "Division is doing amphibious invasion. Its speed is set to $VALUE|H$ mph." 
+ MOVEMENT_SPEED_DESC:0 "Speed: $VALUE|H$ mph\nBase: $BASE|H$ mph"
+ FLEET_OUT_OF_RANGE_TOOLTIP_ENTRY:0 "  $FLAG$ $NAME$ nearest naval base $DIST|G0$ miles.\n" 
