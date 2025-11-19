@@ -133,10 +133,7 @@ focus_tree = {
 			has_idea = CAS_nazi_militias_in_military_weak_idea
 		}
 		available = {
-			OR = {
-				has_idea = CAS_nazi_militias_in_military_idea
-				has_idea = CAS_nazi_militias_in_military_weak_idea
-			}
+			has_idea = CAS_nazi_militias_in_military_idea
 		}
 		mutually_exclusive = { focus = CAS_expand_militia_autonomy }
 		completion_reward = {

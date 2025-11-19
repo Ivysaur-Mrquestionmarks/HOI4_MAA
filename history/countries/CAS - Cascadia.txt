@@ -69,8 +69,8 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	autocratic = 38
-	republican = 12
+	autocratic = 20
+	republican = 30
 	democrat = 48
 	authoritarian_left = 1
 	libertarian_right = 0
@@ -125,12 +125,12 @@ every_state = {
 
 ### Country Leaders ###
 recruit_character = CAS_resistance_council
+recruit_character = CAS_raymond_rees
 recruit_character = CAS_national_social_directorate
 recruit_character = CAS_knute_buehler
 recruit_character = CAS_kshama_sawant
 recruit_character = CAS_arthur_macarthur
 recruit_character = CAS_jay_inslee
-recruit_character = CAS_raymond_rees
 recruit_character = CAS_raymond_i
 recruit_character = CAS_kako_i
 recruit_character = CAS_jack_donovan

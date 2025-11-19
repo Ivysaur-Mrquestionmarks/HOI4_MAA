@@ -776,6 +776,32 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = cascadia_rework.3.a
+		set_party_name = {
+			ideology = autocratic
+			long_name = CAS_new_awakening_party
+			name = CAS_new_awakening_party
+		}
+		hidden_effect = {
+			promote_character = {
+				character = CAS_national_social_directorate
+				ideology = neonazism
+			}
+			add_popularity = {
+				ideology = republican
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.15
+			}
+		}
+		effect_tooltip = {
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.15
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
 		CAS_strengthen_nazis_moderate_effect = yes
 	}
 }
