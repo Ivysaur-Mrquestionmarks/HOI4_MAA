@@ -138,21 +138,6 @@
  #Texas
  TEX_puppet_regime:0 "Puppet Regimes"
 
-
- #Le fleet
- PAC_colapse_:0 "The Collapse of the Junta"
- PAC_colapse__desc:0 "Our control over the lands the fleet is on is tenuous.\nThe current war with the communists is rapidly draining the resources we require to keep order in our territories. We can buy us some time with a few, well-placed propaganda campaigns, but these won't last forever. We need to be fast, if we wish to save America from this foreign threat."
- PAC_collapse:0 "Time Till the End"
- PAC_collapse_desc:0 "Our control is not only wavering amongst the populous, but our officers as well. Should this war drag on for too long, they may take matters into their own hands..."
- PAC_time:0 "Propaganda Effort"
- PAC_time_desc:0 "Ads, interviews, and a bit political roughhousing are ways we can sway the populous to our cause, and cement our authority. However, these methods won't be enough to last us forever, so we should make haste in winning this war."
- PAC_the_old_harbor_incident:0 "The Old Harbor Incident"
- PAC_the_old_harbor_incident_desc:0 "Aquilino's war against California was never a popular one, especially among many military officers. As such, there have been many plans to remove Aquilino from power. Though many remain cautious of actually enacting these plans, all it takes is a couple of ambitious upstarts to put them in to motion.\n\n§YThis will prematurely cause the collapse of the Pacific Fleet.§! §RCausing the collapse too early will give the People's Republic a significant advantage in the future.§!"
- PAC_balance_army_militias:0"The Great Debate"
- PAC_balance_army_militias_desc:0"When the fleet took over America's Pacific Territories, it didn't have any long term plan for them. The marines seized as much control as they could leaving the militias to take care of the rest.\nNow that we have to administrate a landmass were people actually live in, we have to arrange who will be the ones in charge of administrating the land. The §YGreat Debate§! is the way we will do this. There we will decide who will control what and the future direction of our state.\nThis will be determined by the amount of influence the army and militias have over the land.\n\nArmy influence is: [?army_strength|%C]\n\nMilitia influence is: [?militia_strength|%O]"
- PAC_state_of_the_army:0"End the debate"
-
-
  #tooltips
  gain_ships_destroyers:0 "We will win §Cdestroyers§!"
  Operation_Guam:0 "§COur marines will start an attack in San Francisco§!"
