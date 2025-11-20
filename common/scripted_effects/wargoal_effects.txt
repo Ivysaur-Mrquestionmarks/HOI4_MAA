@@ -15,6 +15,29 @@ effect_kill_kentucky = {
 	}
 }
 
+## mopping up America
+effect_mop_up_america_wargoals = { #using global.country_owns_American_State
+	for_each_scope_loop = { #This loops declare the wars
+    	array = global.country_owns_American_State
+		ROOT = {
+			if = { 
+				limit = {
+					NOT = { 
+						has_wargoal_against = PREV 
+						TAG = PREV
+						is_in_faction_with = PREV
+					}
+				}
+				create_wargoal = {
+    				target = PREV
+    				type = annex_everything
+				}
+			}
+		}
+	}
+	custom_effect_tooltip = effect_mop_up_america_wargoals_tt
+}
+
 ## Texas and Texas Collapse
 War_on_texas_collapse_tags = { #using global.texas_collapse
 	for_each_scope_loop = { #This loops declare the wars
@@ -24,6 +47,8 @@ War_on_texas_collapse_tags = { #using global.texas_collapse
 				limit = {
 					NOT = { 
 						has_wargoal_against = PREV 
+						TAG = PREV
+						is_in_faction_with = PREV
 					}
 				}
 				create_wargoal = {
@@ -45,7 +70,9 @@ RVR_kill_the_CSA = {
 			if = { 
 				limit = {
 					NOT = { 
-						has_wargoal_against = PREV 
+						has_wargoal_against = PREV
+						TAG = PREV
+						is_in_faction_with = PREV 
 					}
 				}
 				create_wargoal = {
@@ -69,6 +96,8 @@ effect_kill_the_PRA = {
 				limit = {
 					NOT = { 
 						has_wargoal_against = PREV 
+						TAG = PREV
+						is_in_faction_with = PREV
 					}
 				}
 				create_wargoal = {
@@ -85,6 +114,8 @@ effect_kill_the_PRA = {
 				limit = {
 					NOT = { 
 						has_wargoal_against = PREV 
+						TAG = PREV
+						is_in_faction_with = PREV
 					}
 				}
 				create_wargoal = {

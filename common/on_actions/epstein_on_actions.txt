@@ -504,6 +504,7 @@ on_actions = {
 							tag = VAN
 							is_in_array = { global.caribbean_countries = THIS }
 							is_in_array = { global.mexican_collapse_countries = THIS }
+							is_in_array = { global.CAN_collapse = THIS }
 						}
 					}
 					add_to_array = {
