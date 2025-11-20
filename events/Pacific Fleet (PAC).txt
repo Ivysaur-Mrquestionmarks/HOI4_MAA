@@ -12,6 +12,18 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		hidden_effect = {
+		    country_event = {
+  				id = fleet_P.7
+    			days = 100
+			}
+		}
+		hidden_effect = {
+		    country_event = {
+  				id = fleet_P.8
+    			days = 200
+			}
+		}
 	}
 }
 
@@ -66,7 +78,7 @@ country_event = {
 }
 
 country_event = {
-	id = fleet_P.5 #factories bommed
+	id = fleet_P.5 #factories bombed
 	title = fleet_P.5.t
 	desc = fleet_P.5.d
 	#picture = 
@@ -131,47 +143,41 @@ country_event = {
 	}
 }
 
-
 country_event = {
-	id = fleet_P.7 #loses against mr Bernie
+	id = fleet_P.7 #anti-war protests emerge
 	title = fleet_P.7.t
 	desc = fleet_P.7.d
 	#picture = 
-	trigger = {
-		tag = PAC
-		has_war_with = PRA
-		NOT = {
-			controls_state = 107
-			controls_state = 138
-			controls_state = 123
-			controls_state = 241
-			PRA = {
-				any_owned_state = {
-					is_controlled_by = PAC
-				}
-			}
-		}
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = fleet_P.7.a
+		name = fleet_P.7.a #let them protest
 		ai_chance = {
 			factor = 100
 		}
-		white_peace = PRA
-		set_country_flag = temp_loss
-		mark_focus_tree_layout_dirty = yes
-		PRA = {
-			transfer_state = 107
-			transfer_state = 138
-			transfer_state = 123
-			transfer_state = 241
+		hidden_effect = {
+		    country_event = {
+  				id = fleet_P.9
+    			days = 100
+		    }
+		}
+	}
+	option = {
+		name = fleet_P.7.b #clear out the protesters
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+		    country_event = {
+  				id = fleet_P.9
+    			days = 100
+		    }
 		}
 	}
 }
 
 country_event = {
-	id = fleet_P.8 #A minor set back
+	id = fleet_P.8 #army and militias incident
 	title = fleet_P.8.t
 	desc = fleet_P.8.d
 	#picture = 
@@ -182,176 +188,66 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		hidden_effect = {
+		    country_event = {
+  				id = fleet_P.10
+    			days = 100
+		    }
+		}
 	}
 }
 
 country_event = {
-	id = fleet_P.9 #Second war report, about going to war with Bernie again
+	id = fleet_P.9 #protests about the juntas leadership
 	title = fleet_P.9.t
 	desc = fleet_P.9.d
 	#picture = 
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = fleet_P.9.a
+		name = fleet_P.9.a #allow them to protest
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = fleet_P.9.b #crush them
 		ai_chance = {
 			factor = 100
 		}
 	}
 }
+
 country_event = {
-	id = fleet_P.10 #China invasion, fleet perspective
+	id = fleet_P.10 #army and militia fight over leadership over the military
 	title = fleet_P.10.t
 	desc = fleet_P.10.d
 	#picture = 
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = fleet_P.10.a
+		name = fleet_P.10.a #side with the army on this
 		ai_chance = {
 			factor = 100
 		}
-		custom_effect_tooltip = China_invasion
-		set_country_flag = China_has_invaded
-		mark_focus_tree_layout_dirty = yes
+	}
+	option = {
+		name = fleet_P.10.b #side with the militia on this
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 
 country_event = {
-	id = fleet_P.11 #China invasion, Sandars perspective
+	id = fleet_P.11 #victory :D
 	title = fleet_P.11.t
 	desc = fleet_P.11.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = fleet_P.11.a
-		ai_chance = {
-			factor = 100
-		}
-		custom_effect_tooltip = China_invasion
-		hidden_effect = { 
-			load_oob = "PRA_chinese_invension"
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				load_oob = "PRA_chinese_invasion_navy_mtg"
-			}
-			else = {
-				load_oob = "PRA_chinese_invasion_navy"
-			}
-		}
-	}
-}
-
-
-country_event = {
-	id = fleet_P.12 #ask for support
-	title = fleet_P.12.t
-	desc = fleet_P.12.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { #ask Biden boy
-		name = fleet_P.12.a
-		ai_chance = {
-			factor = 6
-		}
-		FRA = {
-			country_event = {
-  				id = fleet_P.13
-    			days = 5
-			}
-		}
-	}
-	option = { #ask trump
-		name = fleet_P.12.b
-		ai_chance = {
-			factor = 5
-		}
-		USA = {
-			country_event = {
-  				id = fleet_P.13
-    			days = 5
-			}
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.13#support asked for
-	title = fleet_P.13.t
-	desc = fleet_P.13.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { #yes uwu we love the fleet
-		name = fleet_P.13.a
-		ai_chance = {
-			factor = 10
-		}
-		add_war_support = 0.05
-		PAC = {
-			country_event = {
-  				id = fleet_P.14
-    			days = 5
-			}
-		}
-	}
-	option = { #no fuck you peace of trash that can't swimn, your mother hates you
-		name = fleet_P.13.b
-		ai_chance = {
-			factor = 1
-		}
-
-	}
-}
-
-country_event = {
-	id = fleet_P.14 #They accepted
-	title = fleet_P.14.t
-	desc = fleet_P.14.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = fleet_P.14.a
-		ai_chance = {
-			factor = 100
-		}
-		custom_effect_tooltip = gain_ships_crusiers
-		hidden_effect = { 
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				load_oob = "PAC_navy_a_call_for_help_2_mtg"	
-			}
-			else = {
-				load_oob = "PAC_navy_a_call_for_help_2"
-			}
-		}
-		set_fuel_ratio = 1
-		add_manpower = 50000	
-		add_equipment_to_stockpile = {
-			amount = 5000
-    		type = infantry_equipment
-   			producer = FROM
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.15 #victory :D
-	title = fleet_P.15.t
-	desc = fleet_P.15.d
 	#picture = 
 	trigger = {
 		tag = PAC
 		NOT = {
 			has_war = yes
-			has_country_flag = temp_loss
 			has_country_flag = HAW_Pacific_Collapse
 		}
 		PRA = {
@@ -363,730 +259,28 @@ country_event = {
 	}
 	fire_only_once = yes
 	option = {
-		name = fleet_P.15.a
+		name = fleet_P.11.a
 		ai_chance = {
 			factor = 100
 		}
 		set_cosmetic_tag = army_cali
-		hidden_effect = { 
-			load_focus_tree = fleet2
-		}
 		every_state = {
 			limit = {is_core_of = PRA}
 			add_core_of = PAC
 		}
 		set_capital = 304
-	}
-}
-
-country_event = {
-	id = fleet_P.16 #Meeting
-	title = fleet_P.16.t
-	desc = fleet_P.16.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { #favour the army
-		name = fleet_P.16.a
-		ai_chance = {
-			factor = 1
-			modifier = {
-      			factor = 0
-      			OR = {
-					has_game_rule = {
-              			rule = PAC_political_path
-             			option = PAC_PATH_MILITIA
-          			}
-      			}
-   			}
-		}
-		PAC_army_influence_10 = yes
-	}
-	option = { #favour the militias
-		name = fleet_P.16.b
-		ai_chance = {
-			factor = 1
-			modifier = {
-      			factor = 0
-      			OR = {
-					has_game_rule = {
-              			rule = PAC_political_path
-             			option = PAC_PATH_MILITARY
-          			}
-					has_game_rule = {
-              			rule = PAC_political_path
-             			option = PAC_PATH_REPUBLIC
-					}
-      			}
-   			}
-		}
-		PAC_militia_influence_10 = yes
-	}
-}
-
-country_event = {
-	id = fleet_P.17 #description of the new state
-	title = fleet_P.17.t
-	desc = fleet_P.17.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.17.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-
-country_event = {
-	id = fleet_P.18 #operation Java, border conflicts
-	title = fleet_P.18.t
-	desc = fleet_P.18.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.18.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-
-country_event = {
-	id = fleet_P.19 #Military wins
-	title = fleet_P.19.t
-	desc = fleet_P.19.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.19.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-
-country_event = {
-	id = fleet_P.20 #Plan for making extra militias
-	title = fleet_P.20.t
-	desc = fleet_P.20.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.20.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-
-country_event = {
-	id = fleet_P.21 #chossing how to focus the naval industry
-	title = fleet_P.21.t
-	desc = fleet_P.21.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.21.a #civilian focused navy
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_civilian_navy
-		PAC_militia_influence_5 = yes
-	}
-	option = { 
-		name = fleet_P.21.b #military focused navy
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_military_navy
-		PAC_army_influence_5 = yes
-	}
-}
-
-country_event = {
-	id = fleet_P.22 #democracy wins
-	title = fleet_P.22.t
-	desc = fleet_P.22.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.22.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.23 #Buy support equipment from Canada
-	title = fleet_P.23.t
-	desc = fleet_P.23.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.23.a
-		ai_chance = {
-			factor = 1
-		}
-		add_stability = 0.1
-		add_equipment_to_stockpile = {
-    		type = support_equipment
-    		amount = 4500
-    		producer = CAN
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.24 #militia wins
-	title = fleet_P.24.t
-	desc = fleet_P.24.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.24.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.25 #operation falklands, invasion of cascadia
-	title = fleet_P.25.t
-	desc = fleet_P.25.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.25.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.26 #faith of the hunters
-	title = fleet_P.26.t
-	desc = fleet_P.26.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.26.a
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_integrate_hunters
-	}
-
-	option = { 
-		name = fleet_P.26.b
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_supres_hunters
-	}
-
-	option = { 
-		name = fleet_P.26.c
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_let_hunters
-	}
-}
-
-country_event = {
-	id = fleet_P.27 #operation bermuda, invasion of micro states
-	title = fleet_P.27.t
-	desc = fleet_P.27.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.27.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.28 #operation crete, invasion of mormons
-	title = fleet_P.28.t
-	desc = fleet_P.28.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.28.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-
-country_event = {
-	id = fleet_P.29 #operation agnes, invasion of MONKE
-	title = fleet_P.29.t
-	desc = fleet_P.29.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.29.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.30 #operation Britain, invasion of Trump
-	title = fleet_P.30.t
-	desc = fleet_P.30.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.30.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.31 #(HOP event) The PAC is supporting resistance
-	title = fleet_P.31.t
-	desc = fleet_P.31.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.31.a
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_HOP_aiding_resistance
-	}
-}
-
-country_event = {
-	id = fleet_P.32 #Invade em Nazis
-	title = fleet_P.32.t
-	desc = fleet_P.32.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.32.a
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.33 #(natives event) The PAC is supporting white supremecist.
-	title = fleet_P.33.t
-	desc = fleet_P.33.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.33.a
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_natives_white_supremecist_in_the_army
-	}
-}
-
-country_event = {
-	id = fleet_P.34 #operation Aland Inavade the tribes.
-	title = fleet_P.34.t
-	desc = fleet_P.34.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.34.a
-		ai_chance = {
-			factor = 1
-		}
-
-	}
-}
-
-country_event = {
-	id = fleet_P.35 #Invade Texas + prepare for unification wars
-	title = fleet_P.35.t
-	desc = fleet_P.35.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.35.a
-		ai_chance = {
-			factor = 1
-		}
-
-	}
-}
-
-country_event = {
-	id = fleet_P.36 #Describes the nature of the council
-	title = fleet_P.36.t
-	desc = fleet_P.36.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.36.a
-		ai_chance = {
-			factor = 1
-		}
-
-	}
-}
-
-country_event = {
-	id = fleet_P.37 #describes what ancom and ancaps agree on
-	title = fleet_P.37.t
-	desc = fleet_P.37.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.37.a
-		ai_chance = {
-			factor = 1
-		}
-		add_stability = 0.15
-	}
-}
-
-country_event = {
-	id = fleet_P.38 #describes how both want to fight against statist sponsored opresion
-	title = fleet_P.38.t
-	desc = fleet_P.38.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.38.a
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_fight_against_opresion 
-	}
-}
-
-country_event = {
-	id = fleet_P.39 #describes how ancaps want a society run by small busneses
-	title = fleet_P.39.t
-	desc = fleet_P.39.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.39.a
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_small_bussneses
-	}
-}
-
-country_event = {
-	id = fleet_P.40 #describes what ancaps_and_ancoms_disagree_on
-	title = fleet_P.40.t
-	desc = fleet_P.40.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.40.a
-		ai_chance = {
-			factor = 1
-		}
-		add_political_power = 60
-		add_stability = -0.1
-	}
-}
-
-country_event = {
-	id = fleet_P.41 #shows the dinamic of power between the army and president
-	title = fleet_P.41.t
-	desc = fleet_P.41.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.41.a
-		ai_chance = {
-			factor = 1
-		}
-		add_country_leader_trait = PAC_puppet_of_the_army
-	}
-}
-
-country_event = {
-	id = fleet_P.42 #The president tries to pass his ideals despite the armie's control over him and the state
-	title = fleet_P.42.t
-	desc = fleet_P.42.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.42.a
-		ai_chance = {
-			factor = 1
-		}
-		add_political_power = 50
-		add_popularity = {
-    			ideology = democrat
-    			popularity = 0.2
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.43 #The army demands a more centralised state
-	title = fleet_P.43.t
-	desc = fleet_P.43.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.43.a
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_centralised_state
-	}
-}
-
-country_event = {
-	id = fleet_P.44 #The army decided that statehood is a problem and that states should legaly and culturaly be abolished
-	title = fleet_P.44.t
-	desc = fleet_P.44.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.44.a
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_end_state_loyalty
-	}
-}
-
-country_event = {
-	id = fleet_P.45 #describes a project to rebuild america both culturaly and economicly for when the civil war ends
-	title = fleet_P.45.t
-	desc = fleet_P.45.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.45.a
-		ai_chance = {
-			factor = 1
-		}
-		add_timed_idea = {
-			idea = PAC_rebuild_america
-			days = 400
-		}
-	}
-}
-
-
-country_event = {
-	id = fleet_P.46 #A propaganda poster proclaiming the american republic as a democratic paradise, ending with why you should conscript into the military
-	title = fleet_P.46.t
-	desc = fleet_P.46.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.46.a
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_for_a_better_america
-	}
-}
-country_event = {
-	id = fleet_P.47
-	title = fleet_P.47.t
-	desc = fleet_P.47.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.47.a
-		ai_chance = {
-			factor = 1
-		}
-		every_state = {
-			limit = {is_core_of =  ALA}
-			damage_building = {
-    			type = infrastructure
-    			damage = 10
-			}
-		}
-	}
-}
-country_event = {
-	id = fleet_P.48
-	title = fleet_P.48.t
-	desc = fleet_P.48.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.48.a
-		ai_chance = {
-			factor = 1
-		}
-		PAC = {
-			433 = {
-				damage_building = {
-    				type = arms_factory
-    				damage = 10
-				}
-				damage_building = {
-    				type = infrastructure
-    				damage = 10
-				}
-			}
-			441 = {
-				damage_building = {
-     				type = infrastructure
-    				damage = 10
-				}
-				damage_building = {
-     				type = arms_factory
-    				damage = 10
-				}
-				damage_building = {
-     				type = industrial_complex
-    				damage = 10
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-	id = fleet_P.49 #Compares jhones to kolchak (leader of the white army during first years of the russian civil war) and calls him the saviur of america.
-	title = fleet_P.49.t
-	desc = fleet_P.49.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.49.a
-		ai_chance = {
-			factor = 1
-		}
-		add_country_leader_trait = PAC_american_kolchak
-	}
-}
-
-country_event = {
-	id = fleet_P.50 #describes how military control has changed the life in america. 
-	title = fleet_P.50.t
-	desc = fleet_P.50.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.50.a
-		ai_chance = {
-			factor = 1
-		}
-		add_political_power = 80
-	}
-}
-
-
-country_event = {
-	id = fleet_P.51 #tells how there are shortage of goods and essentials for civilians yet the factories keep pomping out military goods like if there was no tomorow. 
-	title = fleet_P.51.t
-	desc = fleet_P.51.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.51.a
-		ai_chance = {
-			factor = 1
-		}
-
-	}
-}
-
-country_event = {
-	id = fleet_P.52 #martial law
-	title = fleet_P.52.t
-	desc = fleet_P.52.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.52.a
-		ai_chance = {
-			factor = 1
-		}
-		add_ideas = PAC_martial_law
-	}
-}
-
-country_event = {
-	id = fleet_P.53 #A military meeting were they talk about their post unification plan, mainly the use of the army to expand america's influence internationaly
-	title = fleet_P.53.t
-	desc = fleet_P.53.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = { 
-		name = fleet_P.53.a
-		ai_chance = {
-			factor = 1
-		}
-		add_political_power = 75
-		war_support_factor = 0.2
+		complete_national_focus = PAC_pacific_victory
 	}
 }
 
 country_event = { #Alaska event
-	id = fleet_P.54
-	title = fleet_P.54.t
-	desc = fleet_P.54.d
+	id = fleet_P.12
+	title = fleet_P.12.t
+	desc = fleet_P.12.d
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
-		name = fleet_P.54.a #play as them
+		name = fleet_P.12.a #play as them
 		ai_chance = {
 			factor = 1
 		}
@@ -1097,7 +291,7 @@ country_event = { #Alaska event
 	}
 
 	option = { 
-		name = fleet_P.54.b #Stay in hawaii
+		name = fleet_P.12.b #Stay in hawaii
 		ai_chance = {
 			factor = 1
 		}
@@ -1105,9 +299,9 @@ country_event = { #Alaska event
 	}
 }
 country_event = {
-	id = fleet_P.55 #The Enclave
-	title = fleet_P.55.t
-	desc = fleet_P.55.d
+	id = fleet_P.13 #The Enclave
+	title = fleet_P.13.t
+	desc = fleet_P.13.d
 	picture = event_Enclave_Event
 	trigger = {
 		NOT = {
@@ -1122,7 +316,7 @@ country_event = {
 	}
 	fire_only_once = yes
 	option = { 
-		name = fleet_P.55.a #become the Enclave
+		name = fleet_P.13.a #become the Enclave
 		ai_chance = {
 			factor = 99
 		}
@@ -1185,7 +379,7 @@ country_event = {
 	}
 
 	option = { 
-		name = fleet_P.55.b #Refuse their offer
+		name = fleet_P.13.b #Refuse their offer
 		ai_chance = {
 			factor = 1
 		}
@@ -1195,9 +389,9 @@ country_event = {
 }
 #Fire Legion is annexed by PAC
 country_event = {
-	id = fleet_P.56
-	title = fleet_P.56.t
-	desc = fleet_P.56.d
+	id = fleet_P.14
+	title = fleet_P.14.t
+	desc = fleet_P.14.d
 	trigger = {
 		original_tag = FIR
 		has_war = no
@@ -1218,7 +412,7 @@ country_event = {
 	fire_only_once = yes
 	#annexed into Fleet
 	option = {
-		name = fleet_P.56.a
+		name = fleet_P.14.a
 		ai_chance = {
 			factor = 100
 		}
@@ -1241,7 +435,7 @@ country_event = {
 	}
 	#the Legion lives
 	option = {
-		name = fleet_P.56.b
+		name = fleet_P.14.b
 		ai_chance = {
 			factor = 0
 		}
@@ -1250,32 +444,32 @@ country_event = {
 }
 #fleet is notified that the Fire Legion has joined
 country_event = {
-	id = fleet_P.57
-	title = fleet_P.57.t
-	desc = fleet_P.57.d
+	id = fleet_P.15
+	title = fleet_P.15.t
+	desc = fleet_P.15.d
 	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = fleet_P.57.a
+		name = fleet_P.15.a
 		add_political_power = 5
 	}
 }
 country_event = { #Collapse event for the PAC
-	id = fleet_P.58
-	title = fleet_P.58.t
-	desc = fleet_P.58.d
+	id = fleet_P.16
+	title = fleet_P.16.t
+	desc = fleet_P.16.d
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = fleet_P.58.a
+		name = fleet_P.16.a
 		set_cosmetic_tag = PAC_colapse
 		release = ALA
 		white_peace = PRA
 		release = PRA
 		ALA = { inherit_technology = PAC }
 		country_event = {
-    		id = fleet_P.54
+    		id = fleet_P.12
     		days = 2
 		}
 		hidden_effect = {
@@ -1309,14 +503,14 @@ country_event = { #Collapse event for the PAC
 	}
 }
 news_event = { #News event for the Pacific Fleet collapse
-	id = fleet_P.59
-	title = fleet_P.59.t
-	desc = fleet_P.59.d
+	id = fleet_P.17
+	title = fleet_P.17.t
+	desc = fleet_P.17.d
 	picture = event_PAC_Fleet_Collapse 
 	is_triggered_only = yes
 	major = yes
 	
 	option = {
-		name = fleet_P.59.a
+		name = fleet_P.17.a
 	}
 }
