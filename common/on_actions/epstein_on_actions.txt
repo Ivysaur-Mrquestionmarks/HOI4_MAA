@@ -462,7 +462,6 @@ on_actions = {
 			}
 			every_possible_country = {
 				if = {
-					
 					limit = {
 						NOT = {
 							tag = CAN
