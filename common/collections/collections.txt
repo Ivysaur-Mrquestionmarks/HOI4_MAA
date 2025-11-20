@@ -1,0 +1,202 @@
+########################################
+
+ ##   ##  #  # #  # ### ###  ### ###  ##     
+#  # #  # #  # ## #  #  #  #  #  #   #       
+#    #  # #  # # ##  #  ###   #  ##   #      
+#  # #  # #  # #  #  #  #  #  #  #     #     
+ ##   ##   ##  #  #  #  #  # ### ### ## 
+
+########################################     
+
+world_at_peace_countries = {
+	input = game:all_countries
+	operators = {
+		limit = {
+			has_war = no 
+		}
+	}
+	name = COLLECTION_COUNTRIES_AT_PEACE
+}
+
+democrat_faction_members = {
+	input = game:scope
+	operators = {
+		faction_members
+		limit = {
+			has_government = democrat
+		}
+	}
+	name = COLLECTION_DEMOCRATIC_FACTION_MEMBERS
+}
+
+uncapitulated_democratic_faction_members = {
+	input = game:scope
+	operators = {
+		faction_members
+		limit = {
+			has_government = democrat
+			has_capitulated = no
+		}
+	}
+	name = COLLECTION_UNCAPITULATED_DEMOCRATIC_FACTION_MEMBERS
+}
+
+world_democratic_countries = {
+	input = game:all_countries
+	name = COLLECTION_WORLD_DEMOCRATIC_COUNTRIES
+	operators = {
+		limit = {
+			has_government = democrat
+		}
+	}
+}
+
+###
+world_uncapitulated_democratic_countries_and_dominions = {
+	input = game:all_countries
+	name = COLLECTION_UNCAPITULATED_DEMOCRATIC_COUNTRIES_AND_DOMINIONS
+	operators = {
+		limit = {
+			has_government = democrat
+			has_capitulated = no
+			OR = {
+				is_subject = no
+				has_autonomy_state = autonomy_dominion
+			}
+		}
+	}
+}
+###
+world_uncapitulated_democratic_countries = {
+	input = collection:world_democratic_countries
+	name = COLLECTION_UNCAPITULATED_DEMOCRATIC_COUNTRIES
+	operators = {
+		limit = {
+			has_capitulated = no
+		}
+	}	
+}
+
+world_non_communist_countries = {
+	input = game:all_countries
+	name = COLLECTION_NON_COMMUNIST_COUNTRIES
+	operators = {
+		limit = {
+			NOT = { has_government = authoritarian_left }
+		}
+	}
+}
+
+world_non_communist_states = {
+	input = game:all_states
+	name = COLLECTION_NON_COMMUNIST_STATES
+	operators = {
+		limit = {
+			NOT = { controller = { has_government = authoritarian_left } }
+		}
+	}
+}
+
+world_communist_countries = {
+	input = game:all_countries
+	name = COLLECTION_WORLD_COMMUNIST_COUNTRIES
+	operators = {
+		limit = {
+			has_government = authoritarian_left
+		}
+	}
+}
+
+#########################
+
+ ## ###  ##  ### ###  ## 
+#    #  #  #  #  #   #   
+ #   #  ####  #  ##   #  
+  #  #  #  #  #  #     # 
+##   #  #  #  #  ### ##  
+
+########################
+
+
+faction_owned_core_states = {
+	input = game:scope
+	operators = {
+		faction_members
+		owned_states
+		limit = {
+			is_core_of = PREV 
+		}
+	}
+	name = COLLECTION_FACTION_OWNED_CORE_STATES
+}
+
+world_non_fascist_controlled_states = {
+	input = game:all_states
+	operators = {
+		limit = {
+			controller = { NOT = { has_government = autocratic } }
+		}
+	}
+}
+
+faction_controlled_non_core_states = {
+	input = game:scope
+	operators = {
+		faction_members
+		controlled_states
+		limit = {
+			NOT = { is_core_of = PREV }
+		}
+	}
+	name = COLLECTION_FACTION_CONTROLLED_NON_CORE_STATES
+}
+
+
+country_and_all_subjects_controlled_non_core_states = {
+	input = game:scope
+	operators = {
+		country_and_all_subjects
+		controlled_states
+		limit = {
+			NOT = { is_core_of = PREV }
+		}
+	}
+	name = COLLECTION_COUNTRY_AND_SUBJECTS_CONTROLLED_NON_CORE_STATES
+}
+
+states_controlled_by_faction_member_and_core_holder = {
+	input = game:scope
+	operators = {
+		faction_members
+		controlled_states
+		limit = {
+			is_core_of = controller
+		}
+	}
+	name = COLLECTION_STATES_CONTROLLED_BY_FACTION_MEMBER_AND_CORE_HOLDER
+}
+
+
+neighboring_states_to_leader = {
+	input = game:all_states
+	name = COLLECTION_NEIGHBORING_STATES
+	operators = {
+		limit = {
+			any_neighbor_state = {
+				is_owned_by = ROOT 
+			}	
+		}
+	}
+}
+
+puppet_controlled_border_states = {
+	input = collection:neighboring_states_to_leader
+	name = COLLECTION_CONTROLLED_PUPPET_BORDER_STATES
+	operators = {
+		limit = {
+			controller = {
+				is_subject_of = ROOT
+			}
+		}
+	}
+}
