@@ -150,7 +150,7 @@ country_event = {
     	DET = {
             country_event = { id = wisconsin.7 hours = 12 }
         }
-		create_faction = "Tomah Pact"
+		create_faction_from_template = faction_template_KMT_DET
 		add_ideas = KMT_treaty_with_det
 	}
 
@@ -247,7 +247,7 @@ country_event = {
 		}
 		KMT = {
             country_event = { id = wisconsin.8 hours = 12 }
-			create_faction = "Tomah Pact"
+			create_faction_from_template = faction_template_KMT_DET
         }
 		add_ideas = KMT_treaty_with_det
 	}
@@ -305,7 +305,7 @@ country_event = {
 		DET = {
             country_event = { id = wisconsin.9 hours = 12 }
         }
-		create_faction = "Tomah Pact"
+		create_faction_from_template = faction_template_KMT_DET
 		add_ideas = KMT_treaty_with_det
 	}
 
