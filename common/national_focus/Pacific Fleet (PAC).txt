@@ -1,0 +1,6277 @@
+focus_tree = {
+	id = fleet1
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 13
+			tag = PAC
+		}
+	}
+
+	default = no
+
+    continuous_focus_position = { x = 700 y = 1000 }
+
+	initial_show_position = {
+		#focus = CW_Independence_struggle
+	}
+
+	focus = {
+		id = PAC_continue
+		icon = GFX_focus_secret_rearmament
+		cost = 5
+		x = 5
+		y = 1
+		allow_branch = {
+		}
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		select_effect = {
+			country_event = {
+  				id = fleet_P.2
+    			days = 15
+			}
+		}
+		completion_reward = {
+			add_manpower = 45000
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = PAC_join_training
+		icon = GFX_focus_chi_army_reform
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_continue
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_continue }
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			every_country = {
+				limit = {OR = {tag = CAS tag = PAC}}
+				division_template = {
+   					name = "American infantry"
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 4 }
+					} 
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "division_template = \"American infantry\"	start_experience_factor = 0.25	start_equipment_factor = 1"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+						count = 2
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PAC_canada_diplomacy
+		icon = GFX_focus_MON_Negotiate_with_Canada
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_join_training
+		allow_branch = {
+		}
+		prerequisite = {focus = PAC_join_training }
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_opinion_modifier = {
+    			target = CAN
+    			modifier = diplomatic_exchange
+			}
+			add_opinion_modifier = {
+    			target = CAN
+    			modifier = diplomatic_exchange_trade
+			}
+			reverse_add_opinion_modifier = {
+    			target = CAN
+    			modifier = diplomatic_exchange
+			}
+			reverse_add_opinion_modifier = {
+    			target = CAN
+    			modifier = diplomatic_exchange_trade
+			}
+		}
+	}
+
+	focus = {
+		id = PAC_buy_rifles_CAN
+		icon = GFX_goal_Sell_Pardons
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_canada_diplomacy
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_canada_diplomacy }
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 4500
+    			producer = CAN
+			}
+		}
+	}
+
+	focus = {
+		id = PAC_infiltrate_the_sandarist
+		icon = GFX_focus_prc_infiltration
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_join_training
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_join_training }
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = {
+  				id = fleet_P.3
+    				days = 2
+			}			
+		}
+	}
+
+	focus = {
+		id = PAC_sabotage_the_sandarist
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 8
+		x = -1
+		y = 1
+		relative_position_id = PAC_infiltrate_the_sandarist
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_infiltrate_the_sandarist}
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			PRA = {
+				add_timed_idea = {
+    				idea = PAC_sabotage
+    				days = 120
+				}
+			}			
+		}
+	}
+
+	focus = {
+		id = PAC_5th_columb
+		icon = GFX_goal_generic_wolf_pack
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = PAC_buy_rifles_CAN
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_sabotage_the_sandarist}
+		prerequisite = { focus = PAC_buy_rifles_CAN }
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = {
+  				id = fleet_P.4
+    				days = 0
+			}
+			PRA = {
+				random_owned_controlled_state = {
+					limit = {NOT = {state = 364 state = 394}} #this prevents them from spawing in lakes
+					create_unit = {
+						division = "division_template = \"Militias\"	start_experience_factor = 0.89	start_equipment_factor = 0.5"
+						owner = PAC
+						allow_spawning_on_enemy_provs = yes
+						count = 2
+					}
+				}
+				if = {limit = {PRA = {has_stability < 0.80}}
+					random_owned_controlled_state = {
+						limit = {NOT = {state = 364 state = 394}} #this prevents them from spawing in lakes
+						create_unit = {
+							division = "division_template = \"Militias\"	start_experience_factor = 0.01	start_equipment_factor = 0.7"
+							owner = PAC
+							allow_spawning_on_enemy_provs = yes
+							count = 2
+						}
+					}
+				}
+				if = {limit = {PRA = {has_stability < 0.60}}
+					random_owned_controlled_state = {
+						limit = {NOT = {state = 364 state = 394}} #this prevents them from spawing in lakes
+						create_unit = {
+							division = "division_template = \"Militias\"	start_experience_factor = 0.15	start_equipment_factor = 0.2"
+							owner = PAC
+							allow_spawning_on_enemy_provs = yes
+							count = 2
+						}
+					}
+				}
+				if = {limit = {PRA = {has_stability < 0.40}}
+					random_owned_controlled_state = {
+						limit = {NOT = {state = 364 state = 394}} #this prevents them from spawing in lakes
+						create_unit = {
+							division = "division_template = \"Militias\"	start_experience_factor = 0.56	start_equipment_factor = 1"
+							owner = PAC
+							allow_spawning_on_enemy_provs = yes
+							count = 2
+						}
+					}
+				}
+				if = {limit = {PRA = {has_stability < 0.20}}
+					random_owned_controlled_state = {
+						limit = {NOT = {state = 364 state = 394}} #this prevents them from spawing in lakes
+						create_unit = {
+							division = "division_template = \"Militias\"	start_experience_factor = 0.25	start_equipment_factor = 1"
+							owner = PAC
+							allow_spawning_on_enemy_provs = yes
+							count = 2
+						}
+					}
+				}
+				if = {limit = {PRA = {has_stability < 0.01}}
+					random_owned_controlled_state = {
+						limit = {NOT = {state = 364 state = 394}} #this prevents them from spawing in lakes
+						create_unit = {
+							division = "division_template = \"Militias\"	start_experience_factor = 0.25	start_equipment_factor = 1"
+							owner = PAC
+							allow_spawning_on_enemy_provs = yes
+							count = 2
+						}
+					}
+				}
+				
+			}						
+		}
+	}
+
+	focus = {
+		id = PAC_fuel_1
+		icon = GFX_goal_pc_oil
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_continue
+		allow_branch = {
+	    }
+		prerequisite = { focus = PAC_continue}
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_fuel_ratio = 1				
+		}
+	}
+	focus = {
+		id = PAC_call_marines
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_fuel_1
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_fuel_1 }
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_manpower = 30000	
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"U.S. Marine Battalion\"	start_experience_factor = 0.25	start_equipment_factor = 0.68"
+					owner = PAC
+					allow_spawning_on_enemy_provs = yes
+					count = 2
+				}
+			}			
+		}
+	}
+
+	focus = {
+		id = PAC_old_ships
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_call_marines
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_call_marines }
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = gain_ships_destroyers
+			hidden_effect = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					load_oob = "PAC_navy_utilise_the_old_ships_mtg"
+				}
+				else = {
+					load_oob = "PAC_navy_utilise_the_old_ships"
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = convoy
+    			amount = 76		
+			}				
+		}
+	}
+	focus = {
+		id = PAC_shore_boming
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_fuel_1
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_fuel_1 }
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			PRA = {
+				random_owned_controlled_state = {
+					limit = {arms_factory > 1}
+					damage_building = {
+    					type = arms_factory
+    					damage = 10
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {arms_factory > 1}
+					damage_building = {
+    					type = arms_factory
+    					damage = 10
+					}
+				}
+				country_event = {
+  					id = fleet_P.5
+    				days = 2
+				}
+			}				
+		}
+	}
+
+	focus = {
+		id = PAC_supply_sky
+		icon = GFX_goal_generic_air_bomber
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_shore_boming
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_shore_boming }
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = PAC_sky_supplies				
+		}
+	}
+	focus = {
+		id = PAC_operation_guam
+		icon = GFX_goal_generic_position_armies
+		cost = 8
+		x = -1
+		y = 1
+		relative_position_id = PAC_supply_sky
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_supply_sky }
+		prerequisite = { focus = PAC_old_ships }
+		available = {
+			has_war_with = PRA
+			NOT = {controls_state = 304}
+		}
+		bypass = {
+			controls_state = 304
+			has_completed_focus = PAC_5th_columb
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	    available_if_capitulated = no
+		completion_reward = {
+			country_event = {
+  				id = fleet_P.6
+    			days = 0
+			}						
+		}
+	}
+
+	focus = {
+		id = PAC_CRUSH_BERNIE
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = PAC_5th_columb
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_operation_guam }
+		prerequisite = { focus = PAC_5th_columb }
+		available = {
+			has_war_with = PRA
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_timed_idea = {
+    			idea = PAC_crush_em_reds
+    			days = 180
+			}					
+		}
+	}
+
+	focus = {
+		id = PAC_pacific_victory
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_CRUSH_BERNIE
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_CRUSH_BERNIE }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_repair_california
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_pacific_victory
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_pacific_victory }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_keep_key_industrial_zones
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_repair_california
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_reprivatization
+		}
+		prerequisite = { focus = PAC_repair_california }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_reprivatization
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_repair_california
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_keep_key_industrial_zones
+		}
+		prerequisite = { focus = PAC_repair_california }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_a_helping_hand
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_reprivatization
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_reprivatization }
+		prerequisite = { focus = PAC_keep_key_industrial_zones }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_remaining_traditors
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_pacific_victory
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_pacific_victory }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_loosen_restrictions
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_the_remaining_traditors
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_increase_military_presence
+		}
+		prerequisite = { focus = PAC_the_remaining_traditors }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_increase_military_presence
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_the_remaining_traditors
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_loosen_restrictions
+		}
+		prerequisite = { focus = PAC_the_remaining_traditors }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_finish_the_mop_up
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_loosen_restrictions
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_loosen_restrictions }
+		prerequisite = { focus = PAC_increase_military_presence }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_no_more_tyrants
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 1
+		x = -33
+		y = 1
+		relative_position_id = PAC_finish_the_mop_up
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_government_unity
+		}
+		mutually_exclusive = {
+			focus = PAC_direct_rule
+		}
+		prerequisite = { focus = PAC_finish_the_mop_up }
+		prerequisite = { focus = PAC_a_helping_hand }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_government_unity
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 1
+		x = 2
+		y = 1
+		relative_position_id = PAC_finish_the_mop_up
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_no_more_tyrants
+		}
+		mutually_exclusive = {
+			focus = PAC_direct_rule
+		}
+		prerequisite = { focus = PAC_finish_the_mop_up }
+		prerequisite = { focus = PAC_a_helping_hand }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_direct_rule
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 1
+		x = 33
+		y = 1
+		relative_position_id = PAC_a_helping_hand
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_no_more_tyrants
+		}
+		mutually_exclusive = {
+			focus = PAC_government_unity
+		}
+		prerequisite = { focus = PAC_finish_the_mop_up }
+		prerequisite = { focus = PAC_a_helping_hand }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	############## Militia Path ##############
+
+	focus = {
+		id = PAC_suppress_the_military
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = PAC_no_more_tyrants
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_no_more_tyrants }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_here_to_liberate
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = PAC_no_more_tyrants
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_no_more_tyrants }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_rip_their_chains
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = PAC_here_to_liberate
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_here_to_liberate }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_a_peoples_government
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = PAC_here_to_liberate
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_here_to_liberate }
+		prerequisite = { focus = PAC_suppress_the_military }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_in_their_cells
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = PAC_suppress_the_military
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_suppress_the_military }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_brand_new_day
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_a_peoples_government
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_in_their_cells }
+		prerequisite = { focus = PAC_a_peoples_government }
+		prerequisite = { focus = PAC_rip_their_chains }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	############## Anarchist Path ##############
+
+	focus = {
+		id = PAC_for_the_revolution
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 1
+		x = -15
+		y = 1
+		relative_position_id = PAC_brand_new_day
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_new_american_liberty
+		}
+		prerequisite = { focus = PAC_brand_new_day }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_death_of_the_capitalists
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = PAC_for_the_revolution
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_for_the_revolution }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_follow_in_vermins_footsteps
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = PAC_death_of_the_capitalists
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_empower_the_common_people
+		}
+		prerequisite = { focus = PAC_death_of_the_capitalists }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_empower_the_common_people
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_death_of_the_capitalists
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_empower_the_common_people
+		}
+		prerequisite = { focus = PAC_death_of_the_capitalists }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_pawns_of_oppression
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_follow_in_vermins_footsteps
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_follow_in_vermins_footsteps
+			focus = PAC_empower_the_common_people
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_united_in_liberty
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_follow_in_vermins_footsteps
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_follow_in_vermins_footsteps
+			focus = PAC_empower_the_common_people
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_communes_of_the_pacific
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_empower_the_common_people
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_follow_in_vermins_footsteps
+			focus = PAC_empower_the_common_people
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_total_liberation
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_pawns_of_oppression
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_pawns_of_oppression
+		}
+		prerequisite = { 
+			focus = PAC_united_in_liberty
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_local_defense
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_communes_of_the_pacific
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_communes_of_the_pacific
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_community_education_and_utilities
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_communes_of_the_pacific
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_communes_of_the_pacific
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_expand_the_council
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_total_liberation
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_the_vanguard_of_anarchism
+		}
+		prerequisite = { 
+			focus = PAC_total_liberation
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_vanguard_of_anarchism
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_total_liberation
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_expand_the_council
+		}
+		prerequisite = { 
+			focus = PAC_total_liberation
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_autonomy_to_the_utmost
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_local_defense
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_local_defense
+		}
+		prerequisite = { 
+			focus = PAC_community_education_and_utilities
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_freedom_in_the_pacific
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_the_vanguard_of_anarchism
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_autonomy_to_the_utmost
+		}
+		prerequisite = { 
+			focus = PAC_expand_the_council
+			focus = PAC_the_vanguard_of_anarchism
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_fight_the_societal_reactionaries
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = PAC_death_of_the_capitalists
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_death_of_the_capitalists }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_queer_empowerment
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_fight_the_societal_reactionaries
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_fight_the_societal_reactionaries }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_race_liberation
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_queer_empowerment
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_queer_empowerment }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_embrace_digital_culture
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_queer_empowerment
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_queer_empowerment }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_cultural_victory
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_embrace_digital_culture
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_embrace_digital_culture }
+		prerequisite = { focus = PAC_race_liberation }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_achieve_labor_freedom
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -11
+		y = 1
+		relative_position_id = PAC_for_the_revolution
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_for_the_revolution }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_peoples_control_of_production
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_achieve_labor_freedom
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_achieve_labor_freedom }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_industrial_democracy
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = PAC_achieve_labor_freedom
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_achieve_labor_freedom }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_peoples_banks
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_achieve_labor_freedom
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_achieve_labor_freedom }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_free_worker_associations
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_industrial_democracy
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_industrial_democracy }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_free_markets_without_capitalism
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_industrial_democracy
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_industrial_democracy }
+		prerequisite = { focus = PAC_the_peoples_control_of_production }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_mutual_credit
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -1
+		y = 2
+		relative_position_id = PAC_the_peoples_banks
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_the_peoples_control_of_production }
+		prerequisite = { focus = PAC_the_peoples_banks }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_end_of_labour_exploitation
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_free_worker_associations
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_free_worker_associations }
+		prerequisite = { focus = PAC_free_markets_without_capitalism }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_peoples_property
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_free_markets_without_capitalism
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_the_end_of_labour_exploitation }
+		prerequisite = { focus = PAC_mutual_credit }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_fair_economics
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_mutual_credit
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_the_end_of_labour_exploitation }
+		prerequisite = { focus = PAC_mutual_credit }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_free_and_happy_workers
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_fair_economics
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_peoples_property }
+		prerequisite = { focus = PAC_fair_economics }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_freedom_fighters_of_the_pacific
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 11
+		y = 1
+		relative_position_id = PAC_for_the_revolution
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_for_the_revolution }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_liberators_of_america
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_freedom_fighters_of_the_pacific
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_freedom_fighters_of_the_pacific }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_decentralized_command
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_freedom_fighters_of_the_pacific
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_freedom_fighters_of_the_pacific }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_peoples_war
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = PAC_freedom_fighters_of_the_pacific
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_freedom_fighters_of_the_pacific }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_reconnecting_supply
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 2
+		relative_position_id = PAC_liberators_of_america
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_liberators_of_america }
+		prerequisite = { focus = PAC_decentralized_command }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_learn_from_vietnam
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_the_peoples_war
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_decentralized_command }
+		prerequisite = { focus = PAC_the_peoples_war }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_against_a_powerful_enemy
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_learn_from_vietnam
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_learn_from_vietnam }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_popular_liberation_army
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_against_a_powerful_enemy
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_reconnecting_supply }
+		prerequisite = { focus = PAC_against_a_powerful_enemy }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	############## Anarchist War Goals :3 ##############
+
+	focus = {
+		id = PAC_revolution_and_liberation
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 1
+		x = 6
+		y = 1
+		relative_position_id = PAC_for_the_revolution
+		allow_branch = {
+		}
+		available = {
+			if = {
+               limit = { is_ai = yes }
+			   has_completed_focus = PAC_freedom_fighters_of_the_pacific
+			}
+			if = {
+               limit = { is_ai = no }
+			   has_completed_focus = PAC_for_the_revolution
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_cascadian_revolution
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = -2
+		y = 1
+		relative_position_id = PAC_revolution_and_liberation
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_revolution_and_liberation
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_desert_freedom
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_revolution_and_liberation
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_revolution_and_liberation
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_free_the_mountains
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = 2
+		y = 1
+		relative_position_id = PAC_revolution_and_liberation
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_revolution_and_liberation
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_destroying_fascism
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_cascadian_revolution
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_cascadian_revolution
+		}
+		prerequisite = { 
+			focus = PAC_desert_freedom
+		}
+		prerequisite = { 
+			focus = PAC_free_the_mountains
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_texan_liberation
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_free_the_mountains
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_texan_cooperation
+		}
+		prerequisite = { 
+			focus = PAC_cascadian_revolution
+		}
+		prerequisite = { 
+			focus = PAC_desert_freedom
+		}
+		prerequisite = { 
+			focus = PAC_free_the_mountains
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_texan_cooperation
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = -2
+		y = 1
+		relative_position_id = PAC_free_the_mountains
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_texan_liberation
+		}
+		prerequisite = { 
+			focus = PAC_cascadian_revolution
+		}
+		prerequisite = { 
+			focus = PAC_desert_freedom
+		}
+		prerequisite = { 
+			focus = PAC_free_the_mountains
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_liberation_will_come
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = PAC_texan_cooperation
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_destroying_fascism
+		}
+		prerequisite = { 
+			focus = PAC_texan_cooperation
+			focus = PAC_texan_liberation
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_fake_anarchism
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = -3
+		y = 1
+		relative_position_id = PAC_liberation_will_come
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_liberation_will_come
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_restore_his_anarchism_to_ohio
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = PAC_liberation_will_come
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_vermin_our_friend
+		}
+		prerequisite = { 
+			focus = PAC_liberation_will_come
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_vermin_our_friend
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = PAC_liberation_will_come
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_restore_his_anarchism_to_ohio
+		}
+		prerequisite = { 
+			focus = PAC_liberation_will_come
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_down_with_the_confederate_regime
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = 3
+		y = 1
+		relative_position_id = PAC_liberation_will_come
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_liberation_will_come
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_minnesotan_liberation
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = 0
+		y = 2
+		relative_position_id = PAC_fake_anarchism
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_fake_anarchism
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_true_appalachian_revolution
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = PAC_restore_his_anarchism_to_ohio
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_restore_his_anarchism_to_ohio
+			focus = PAC_vermin_our_friend
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_virginian_freedom
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = PAC_restore_his_anarchism_to_ohio
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_the_anarchists_of_virginia
+		}
+		prerequisite = { 
+			focus = PAC_restore_his_anarchism_to_ohio
+			focus = PAC_vermin_our_friend
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_anarchists_of_virginia
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = 3
+		y = 1
+		relative_position_id = PAC_restore_his_anarchism_to_ohio
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_virginian_freedom
+		}
+		prerequisite = { 
+			focus = PAC_restore_his_anarchism_to_ohio
+			focus = PAC_vermin_our_friend
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_to_mimai
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = 0
+		y = 2
+		relative_position_id = PAC_down_with_the_confederate_regime
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_down_with_the_confederate_regime
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_down_with_the_liberal_system
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_virginian_freedom
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_the_true_appalachian_revolution
+			focus = PAC_virginian_freedom
+			focus = PAC_the_anarchists_of_virginia
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_free_and_liberated_america
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = PAC_down_with_the_liberal_system
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_minnesotan_liberation
+		}
+		prerequisite = { 
+			focus = PAC_down_with_the_liberal_system
+		}
+		prerequisite = { 
+			focus = PAC_to_mimai
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_anarchism_in_one_nation
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_free_and_liberated_america
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_liberation_of_the_oppressed
+		}
+		prerequisite = { 
+			focus = PAC_free_and_liberated_america
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_liberation_of_the_oppressed
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_free_and_liberated_america
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_anarchism_in_one_nation
+		}
+		prerequisite = { 
+			focus = PAC_free_and_liberated_america
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_north_american_liberation
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = PAC_anarchism_in_one_nation
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_anarchism_in_one_nation
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_scars_left_by_tyrants
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_anarchism_in_one_nation
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_anarchism_in_one_nation
+			focus = PAC_liberation_of_the_oppressed
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_a_new_vision_for_america
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_liberation_of_the_oppressed
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_anarchism_in_one_nation
+			focus = PAC_liberation_of_the_oppressed
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_spread_revolutionary_ideas
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_liberation_of_the_oppressed
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_liberation_of_the_oppressed
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_community_rebuilding
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_the_scars_left_by_tyrants
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_the_scars_left_by_tyrants
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_a_new_way_of_life
+		icon = GFX_goal_VIR_begin_the_liberation_of_the_ppl
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_a_new_vision_for_america
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_a_new_vision_for_america
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	############## Libertarian Path ##############
+
+	focus = {
+		id = PAC_new_american_liberty
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 1
+		x = 7
+		y = 1
+		relative_position_id = PAC_brand_new_day
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_for_the_revolution
+		}
+		prerequisite = { focus = PAC_brand_new_day }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_set_the_markets_free
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -4
+		y = 1
+		relative_position_id = PAC_new_american_liberty
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_new_american_liberty }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_deregulation_is_key
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_set_the_markets_free
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_set_the_markets_free }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_lower_taxation
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_set_the_markets_free
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_set_the_markets_free }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_economic_opportunity
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_lower_taxation
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_lower_taxation }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_rebuild_from_statism
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_lower_taxation
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_lower_taxation }
+		prerequisite = { focus = PAC_deregulation_is_key }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_embrace_the_future_of_economics
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_rebuild_from_statism
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_economic_opportunity }
+		prerequisite = { focus = PAC_rebuild_from_statism }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_free_and_fair_trade
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_rebuild_from_statism
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_rebuild_from_statism }
+		prerequisite = { focus = PAC_privatization }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_prosperity_once_again
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_embrace_the_future_of_economics
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_embrace_the_future_of_economics }
+		prerequisite = { focus = PAC_free_and_fair_trade }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_yellow_and_black_governance
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_new_american_liberty
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_new_american_liberty }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_gather_political_allies
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_new_american_liberty
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_new_american_liberty }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_local_rights
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_yellow_and_black_governance
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_yellow_and_black_governance }
+		prerequisite = { focus = PAC_gather_political_allies }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_protecting_the_peoples_speech
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_yellow_and_black_governance
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_yellow_and_black_governance }
+		prerequisite = { focus = PAC_gather_political_allies }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_privatization
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_local_rights
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_deregulation_is_key }
+		prerequisite = { focus = PAC_local_rights }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_restoring_old_liberties
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_local_rights
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_local_rights }
+		prerequisite = { focus = PAC_protecting_the_peoples_speech }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_keep_your_rifle
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_protecting_the_peoples_speech
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_protecting_the_peoples_speech }
+		prerequisite = { focus = PAC_freedom_through_the_barrel }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_form_the_pacific_republic
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_restoring_old_liberties
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_forever_with_the_militias
+		}
+		prerequisite = { focus = PAC_privatization }
+		prerequisite = { focus = PAC_restoring_old_liberties }
+		prerequisite = { focus = PAC_keep_your_rifle }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_forever_with_the_guardians
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_restoring_old_liberties
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_form_the_pacific_republic
+		}
+		prerequisite = { focus = PAC_privatization }
+		prerequisite = { focus = PAC_restoring_old_liberties }
+		prerequisite = { focus = PAC_keep_your_rifle }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_coastal_liberty
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_forever_with_the_guardians
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_forever_with_the_guardians
+			focus = PAC_form_the_pacific_republic
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_militias_of_the_pacific
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = PAC_new_american_liberty
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_new_american_liberty }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_freedom_through_the_barrel
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_militias_of_the_pacific
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_militias_of_the_pacific }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_militia_reformation
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_militias_of_the_pacific
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_militias_of_the_pacific }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_modern_standards
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_militia_reformation
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_freedom_through_the_barrel }
+		prerequisite = { focus = PAC_militia_reformation }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_rethink_the_command_structure
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_militia_reformation
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_militia_reformation }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_equipment_contracts
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_modern_standards
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_keep_your_rifle }
+		prerequisite = { focus = PAC_modern_standards }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_terrain_training
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_modern_standards
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_modern_standards }
+		prerequisite = { focus = PAC_rethink_the_command_structure }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_guardians_of_pacific_liberty
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_equipment_contracts
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_equipment_contracts }
+		prerequisite = { focus = PAC_terrain_training }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_follow_jefferson
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_coastal_liberty
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_begin_the_utopia
+		}
+		prerequisite = { focus = PAC_prosperity_once_again }
+		prerequisite = { focus = PAC_coastal_liberty }
+		prerequisite = { focus = PAC_guardians_of_pacific_liberty }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_patriots_in_command
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_follow_jefferson
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_follow_jefferson }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_expand_military_industries
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_follow_jefferson
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_follow_jefferson }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_a_new_tree_of_liberty
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_patriots_in_command
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_patriots_in_command }
+		prerequisite = { focus = PAC_expand_military_industries }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_begin_the_utopia
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_coastal_liberty
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_follow_jefferson
+		}
+		prerequisite = { focus = PAC_prosperity_once_again }
+		prerequisite = { focus = PAC_coastal_liberty }
+		prerequisite = { focus = PAC_guardians_of_pacific_liberty }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_meet_with_billionaires
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_begin_the_utopia
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_begin_the_utopia }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_megacities_across_the_pacific
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_begin_the_utopia
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_begin_the_utopia }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_paradisio
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_megacities_across_the_pacific
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_megacities_across_the_pacific }
+		prerequisite = { focus = PAC_meet_with_billionaires }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_total_digital_privacy
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_begin_the_utopia
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_follow_jefferson
+			focus = PAC_begin_the_utopia
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_smaller_government
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_total_digital_privacy
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_total_digital_privacy
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_work_with_marginalized_people
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_total_digital_privacy
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_total_digital_privacy
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	############## Libertarian War Goals ##############
+
+	focus = {
+		id = PAC_bring_libertys_return
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 1
+		x = 0
+		y = 10
+		relative_position_id = PAC_new_american_liberty
+		allow_branch = {
+		}
+		available = {
+			if = {
+               limit = { is_ai = yes }
+			   has_completed_focus = PAC_militias_of_the_pacific
+			}
+			if = {
+               limit = { is_ai = no }
+			   has_completed_focus = PAC_new_american_liberty
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_advance_into_cascadia
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = -2
+		y = 1
+		relative_position_id = PAC_bring_libertys_return
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_bring_libertys_return
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_destroy_the_radical_threats
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_bring_libertys_return
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_bring_libertys_return
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_through_the_rocky_mountain_tops
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 2
+		y = 1
+		relative_position_id = PAC_bring_libertys_return
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_bring_libertys_return
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_end_populism
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_advance_into_cascadia
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_advance_into_cascadia
+		}
+		prerequisite = { 
+			focus = PAC_destroy_the_radical_threats
+		}
+		prerequisite = { 
+			focus = PAC_through_the_rocky_mountain_tops
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_work_with_cruz
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = -2
+		y = 1
+		relative_position_id = PAC_through_the_rocky_mountain_tops
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_defeat_the_cowboys
+		}
+		prerequisite = { 
+			focus = PAC_advance_into_cascadia
+		}
+		prerequisite = { 
+			focus = PAC_destroy_the_radical_threats
+		}
+		prerequisite = { 
+			focus = PAC_through_the_rocky_mountain_tops
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_defeat_the_cowboys
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_through_the_rocky_mountain_tops
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_work_with_cruz
+		}
+		prerequisite = { 
+			focus = PAC_advance_into_cascadia
+		}
+		prerequisite = { 
+			focus = PAC_destroy_the_radical_threats
+		}
+		prerequisite = { 
+			focus = PAC_through_the_rocky_mountain_tops
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_forward_to_liberty
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = PAC_work_with_cruz
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_end_populism
+		}
+		prerequisite = { 
+			focus = PAC_work_with_cruz
+		}
+		prerequisite = { 
+			focus = PAC_defeat_the_cowboys
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_our_libertarian_friends
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = -5
+		y = 1
+		relative_position_id = PAC_forward_to_liberty
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_restore_liberty_to_the_great_lakes
+		}
+		prerequisite = { 
+			focus = PAC_forward_to_liberty
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_restore_liberty_to_the_great_lakes
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = -3
+		y = 1
+		relative_position_id = PAC_forward_to_liberty
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_our_libertarian_friends
+		}
+		prerequisite = { 
+			focus = PAC_forward_to_liberty
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_advance_into_ohio
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_forward_to_liberty
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_forward_to_liberty
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_liberty_in_the_south
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 3
+		y = 1
+		relative_position_id = PAC_forward_to_liberty
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_forward_to_liberty
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_march_into_minnesota
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 1
+		y = 2
+		relative_position_id = PAC_our_libertarian_friends
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_our_libertarian_friends
+			focus = PAC_restore_liberty_to_the_great_lakes
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_free_appalachia
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = -2
+		y = 1
+		relative_position_id = PAC_advance_into_ohio
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_advance_into_ohio
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_to_virginia
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_advance_into_ohio
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_cooperation_with_virginia
+		}
+		prerequisite = { 
+			focus = PAC_advance_into_ohio
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_cooperation_with_virginia
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 2
+		y = 1
+		relative_position_id = PAC_advance_into_ohio
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_to_virginia
+		}
+		prerequisite = { 
+			focus = PAC_advance_into_ohio
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_advance_into_florida
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 0
+		y = 2
+		relative_position_id = PAC_liberty_in_the_south
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_liberty_in_the_south
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_washington_feds
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_to_virginia
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_free_appalachia
+			focus = PAC_to_virginia
+			focus = PAC_cooperation_with_virginia
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_yellow_and_black_america
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = PAC_the_washington_feds
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_march_into_minnesota
+		}
+		prerequisite = { 
+			focus = PAC_the_washington_feds
+		}
+		prerequisite = { 
+			focus = PAC_advance_into_florida
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	############## Military Democracy Path ##############
+
+	focus = {
+		id = PAC_return_to_democracy
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_government_unity
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_government_unity }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_let_freedom_ring
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_return_to_democracy
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_ensure_law_and_order
+		}
+		prerequisite = { focus = PAC_return_to_democracy }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_ensure_law_and_order
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_return_to_democracy
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_let_freedom_ring
+		}
+		prerequisite = { focus = PAC_return_to_democracy }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_cultural_liberalism
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_let_freedom_ring
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_let_freedom_ring
+		    focus = PAC_ensure_law_and_order
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_opposition_reconciliation
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_let_freedom_ring
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_let_freedom_ring }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_a_westcoast_federal_government
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_let_freedom_ring
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_let_freedom_ring
+		    focus = PAC_ensure_law_and_order
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_blue_funding
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_ensure_law_and_order
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_ensure_law_and_order }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_environmental_protections
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_ensure_law_and_order
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_let_freedom_ring
+		    focus = PAC_ensure_law_and_order
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_rights_for_the_oppressed
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_cultural_liberalism
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_cultural_liberalism }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_drug_policy_reform
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_cultural_liberalism
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_cultural_liberalism }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_unite_the_pacific
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_opposition_reconciliation
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_opposition_reconciliation }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_liberty_to_the_people
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_a_westcoast_federal_government
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_opposition_reconciliation }
+		prerequisite = { focus = PAC_a_westcoast_federal_government }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_military_democracy
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_a_westcoast_federal_government
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_a_westcoast_federal_government }
+		prerequisite = { focus = PAC_blue_funding }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_national_militarization
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_blue_funding
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_blue_funding }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_green_pacific
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_environmental_protections
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_environmental_protections }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_eco_industries
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_environmental_protections
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_environmental_protections }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_elections_in_the_pacific
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_liberty_to_the_people
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_liberty_to_the_people 
+		    focus = PAC_military_democracy
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_end_military_authority
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_elections_in_the_pacific
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_keep_their_grip
+		}
+		prerequisite = { focus = PAC_elections_in_the_pacific }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_keep_their_grip
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_elections_in_the_pacific
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_end_military_authority
+		}
+		prerequisite = { focus = PAC_elections_in_the_pacific }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_economic_restoration
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 13
+		y = 1
+		relative_position_id = PAC_government_unity
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_government_unity }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_social_economy
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = PAC_economic_restoration
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_continue_with_neoliberalism
+		}
+		prerequisite = { focus = PAC_economic_restoration }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_continue_with_neoliberalism
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -4
+		y = 1
+		relative_position_id = PAC_economic_restoration
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_social_economy
+		}
+		prerequisite = { focus = PAC_economic_restoration }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_cooperate_with_corporations
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_continue_with_neoliberalism
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_continue_with_neoliberalism }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_reopen_the_pacific
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_continue_with_neoliberalism
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_continue_with_neoliberalism }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_industrial_rebuilding
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = PAC_continue_with_neoliberalism
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_continue_with_neoliberalism
+			focus = PAC_social_economy
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_in_the_defense_of_workers
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_social_economy
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_social_economy }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_raise_the_capital_gains_tax
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_social_economy
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_social_economy }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_silicon_revival
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_cooperate_with_corporations
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_cooperate_with_corporations }
+		prerequisite = { focus = PAC_reopen_the_pacific }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_revive_the_tourism_industry
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_reopen_the_pacific
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_reopen_the_pacific }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_work_with_military_corporations
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_industrial_rebuilding
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_the_war_industry_in_our_hands
+		}
+		prerequisite = { focus = PAC_industrial_rebuilding }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_war_industry_in_our_hands
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_industrial_rebuilding
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_work_with_military_corporations
+		}
+		prerequisite = { focus = PAC_industrial_rebuilding }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_welfare_for_all
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_in_the_defense_of_workers
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_in_the_defense_of_workers }
+		prerequisite = { focus = PAC_raise_the_capital_gains_tax }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+    focus = {
+		id = PAC_corporate_relegation
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_raise_the_capital_gains_tax
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_raise_the_capital_gains_tax }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_get_back_investments
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_silicon_revival
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_silicon_revival }
+		prerequisite = { focus = PAC_revive_the_tourism_industry }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_new_skyscrapers
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_work_with_military_corporations
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_work_with_military_corporations
+			focus = PAC_the_war_industry_in_our_hands
+	    }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_healthcare_for_the_common_people
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_welfare_for_all
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_welfare_for_all }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_move_out_the_unwanted
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_new_skyscrapers
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_revive_the_tourism_industry }
+		prerequisite = { focus = PAC_new_skyscrapers }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_housing_market_reform
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_new_skyscrapers
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_new_skyscrapers }
+		prerequisite = { focus = PAC_healthcare_for_the_common_people }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_militia_integration
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -15
+		y = 1
+		relative_position_id = PAC_government_unity
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_government_unity }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_update_training_standards
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = PAC_militia_integration
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_militia_integration }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_decide_on_the_budget
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_militia_integration
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_militia_integration }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_adapt_to_land_warfare
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_militia_integration
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_militia_integration }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_to_return_americas_liberty
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_update_training_standards
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_update_training_standards }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_new_weapons_for_a_new_age
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_update_training_standards
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_update_training_standards }
+		prerequisite = { focus = PAC_decide_on_the_budget }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_change_up_our_tactics
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_decide_on_the_budget
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_decide_on_the_budget }
+		prerequisite = { focus = PAC_adapt_to_land_warfare }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_federal_technology
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_to_return_americas_liberty
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_to_return_americas_liberty }
+		prerequisite = { focus = PAC_new_weapons_for_a_new_age }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_following_the_nato_doctrine
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_new_weapons_for_a_new_age
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_new_weapons_for_a_new_age }
+		prerequisite = { focus = PAC_change_up_our_tactics }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_from_the_sea_to_the_land
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_federal_technology
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_federal_technology }
+		prerequisite = { focus = PAC_following_the_nato_doctrine }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	############## Military Democracy War Goals ##############
+
+	focus = {
+		id = PAC_contact_the_federal_government
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 1
+		x = -9
+		y = 1
+		relative_position_id = PAC_government_unity
+		allow_branch = {
+		}
+		available = {
+			if = {
+               limit = { is_ai = yes }
+			   has_completed_focus = PAC_militia_integration
+			}
+			if = {
+               limit = { is_ai = no }
+			   has_completed_focus = PAC_government_unity
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_annex_the_cascades
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 2
+		x = -2
+		y = 1
+		relative_position_id = PAC_contact_the_federal_government
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_contact_the_federal_government
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_bring_stability_to_the_desert
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_contact_the_federal_government
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_contact_the_federal_government
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_secure_the_rockies
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 2
+		x = 2
+		y = 1
+		relative_position_id = PAC_contact_the_federal_government
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_contact_the_federal_government
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_a_war_on_both_sides
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_bring_stability_to_the_desert
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_annex_the_cascades
+		}
+		prerequisite = { 
+			focus = PAC_bring_stability_to_the_desert
+		}
+		prerequisite = { 
+			focus = PAC_secure_the_rockies
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_reunite_with_the_federals
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 2
+		x = 0
+		y = 2
+		relative_position_id = PAC_a_war_on_both_sides
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_a_war_on_both_sides
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	############## Military Dictatorship Path ##############
+
+	focus = {
+		id = PAC_the_remaining_militia
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 5
+		y = 1
+		relative_position_id = PAC_direct_rule
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_direct_rule }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_keep_them_quiet
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 7
+		y = 1
+		relative_position_id = PAC_direct_rule
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_direct_rule }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_keeping_them_in_line
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_the_remaining_militia
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_the_remaining_militia }
+		prerequisite = { focus = PAC_keep_them_quiet }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_establish_a_surveillance_state
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_keeping_them_in_line
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_keeping_them_in_line }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_protect_national_values
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_keeping_them_in_line
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_keeping_them_in_line }
+		prerequisite = { focus = PAC_embrace_stratocracy }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_keeping_order
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_establish_a_surveillance_state
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_establish_a_surveillance_state }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_watch_their_activity
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_establish_a_surveillance_state
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_establish_a_surveillance_state }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_americas_old_and_new_enemies
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_protect_national_values
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_protect_national_values }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_protectors_of_america
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_protect_national_values
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_protect_national_values }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_suppress_rebellion
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_keeping_order
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_keeping_order }
+		prerequisite = { focus = PAC_watch_their_activity }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_total_watch
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_watch_their_activity
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_watch_their_activity }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_accept_their_ways
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_americas_old_and_new_enemies
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_staying_to_tradition
+		}
+		prerequisite = { focus = PAC_americas_old_and_new_enemies }
+		prerequisite = { focus = PAC_protectors_of_america }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_staying_to_tradition
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_americas_old_and_new_enemies
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_accept_their_ways
+		}
+		prerequisite = { focus = PAC_americas_old_and_new_enemies }
+		prerequisite = { focus = PAC_protectors_of_america }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_embrace_stratocracy
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_keep_them_quiet
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_the_remaining_militia }
+		prerequisite = { focus = PAC_keep_them_quiet }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_traitors_in_the_military
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_embrace_stratocracy
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_embrace_stratocracy }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_unamerican_propaganda
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_embrace_stratocracy
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_embrace_stratocracy }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_a_salvation_government
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_unamerican_propaganda
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_unamerican_propaganda }
+		prerequisite = { focus = PAC_traitors_in_the_military }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_allow_limited_freedoms
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_a_salvation_government
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_ensure_stability
+		}
+		prerequisite = { focus = PAC_a_salvation_government }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_ensure_stability
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_a_salvation_government
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_allow_limited_freedoms
+		}
+		prerequisite = { focus = PAC_a_salvation_government }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_semper_fortis
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -11
+		y = 1
+		relative_position_id = PAC_direct_rule
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_direct_rule }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_sharpen_our_swords
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = PAC_semper_fortis
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_semper_fortis }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_focus_on_army_recruitment
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_semper_fortis
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_semper_fortis }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_what_weve_learned
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_semper_fortis
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_semper_fortis }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_weaponry_of_anew
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_sharpen_our_swords
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_sharpen_our_swords }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_follow_the_flag
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_focus_on_army_recruitment
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_focus_on_army_recruitment }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_uphold_our_honor
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_focus_on_army_recruitment
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_focus_on_army_recruitment }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_land_tactics_and_doctrine
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_what_weve_learned
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_what_weve_learned }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_work_it_out
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_follow_the_flag
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_follow_the_flag }
+		prerequisite = { focus = PAC_uphold_our_honor }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_invest_into_officer_schools
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_land_tactics_and_doctrine
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_land_tactics_and_doctrine }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_non_sibi_sed_patriae
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_work_it_out
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_weaponry_of_anew }
+		prerequisite = { focus = PAC_work_it_out }
+		prerequisite = { focus = PAC_invest_into_officer_schools }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_economic_control
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 15
+		y = 1
+		relative_position_id = PAC_direct_rule
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_direct_rule }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_put_up_the_strings
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_economic_control
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_a_deal
+		}
+		prerequisite = { focus = PAC_economic_control }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_a_deal
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_economic_control
+		allow_branch = {
+		}
+		mutually_exclusive = {
+			focus = PAC_put_up_the_strings
+		}
+		prerequisite = { focus = PAC_economic_control }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_industrial_nationalization
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_put_up_the_strings
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_put_up_the_strings }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_enforce_protectionist_policies
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_put_up_the_strings
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_put_up_the_strings }
+		prerequisite = { focus = PAC_a_deal }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_expand_weapon_contracts
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = PAC_a_deal
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_a_deal }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_begin_infrastructure_projects
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_industrial_nationalization
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_industrial_nationalization }
+		prerequisite = { focus = PAC_expand_weapon_contracts }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_home_front
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_industrial_nationalization
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_industrial_nationalization }
+		prerequisite = { focus = PAC_enforce_protectionist_policies }
+		prerequisite = { focus = PAC_expand_weapon_contracts }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_maximize_productivity
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_expand_weapon_contracts
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_industrial_nationalization }
+		prerequisite = { focus = PAC_enforce_protectionist_policies }
+		prerequisite = { focus = PAC_expand_weapon_contracts }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_riches_of_the_pacific
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_expand_weapon_contracts
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_industrial_nationalization }
+		prerequisite = { focus = PAC_expand_weapon_contracts }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_reconstruct_urban_areas
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_begin_infrastructure_projects
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_begin_infrastructure_projects }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_focus_on_metal_extraction
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PAC_the_riches_of_the_pacific
+		allow_branch = {
+		}
+		prerequisite = { focus = PAC_the_riches_of_the_pacific }
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	############## Military Dictatorship War Goals ##############
+
+	focus = {
+		id = PAC_national_threats
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 1
+		x = -5
+		y = 1
+		relative_position_id = PAC_direct_rule
+		allow_branch = {
+		}
+		available = {
+			if = {
+               limit = { is_ai = yes }
+			   has_completed_focus = PAC_semper_fortis
+			}
+			if = {
+               limit = { is_ai = no }
+			   has_completed_focus = PAC_direct_rule
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_cascade_march
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = -2
+		y = 1
+		relative_position_id = PAC_national_threats
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_national_threats
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_chaos_to_the_east
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_national_threats
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_national_threats
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_climb_up
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = 2
+		y = 1
+		relative_position_id = PAC_national_threats
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_national_threats
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_maga_isnt_patriotism
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = PAC_the_cascade_march
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_the_cascade_march
+		}
+		prerequisite = { 
+			focus = PAC_chaos_to_the_east
+		}
+		prerequisite = { 
+			focus = PAC_climb_up
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_return_texas_to_the_union
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = 3
+		y = 1
+		relative_position_id = PAC_the_cascade_march
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_the_cascade_march
+		}
+		prerequisite = { 
+			focus = PAC_chaos_to_the_east
+		}
+		prerequisite = { 
+			focus = PAC_climb_up
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_were_halfway_there
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = PAC_maga_isnt_patriotism
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_maga_isnt_patriotism
+		}
+		prerequisite = { 
+			focus = PAC_return_texas_to_the_union
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_pacify_the_libertarians
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = -2
+		y = 1
+		relative_position_id = PAC_were_halfway_there
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_were_halfway_there
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_cleveland_push
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = PAC_were_halfway_there
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_were_halfway_there
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_southern_mop_up
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = 2
+		y = 1
+		relative_position_id = PAC_were_halfway_there
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_were_halfway_there
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_minnesotan_blitz
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = 0
+		y = 2
+		relative_position_id = PAC_pacify_the_libertarians
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_pacify_the_libertarians
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_appalachia_march
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = PAC_the_cleveland_push
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_the_cleveland_push
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_operation_mary
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = PAC_the_cleveland_push
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_the_cleveland_push
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_crush_flordia
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = 0
+		y = 2
+		relative_position_id = PAC_southern_mop_up
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_southern_mop_up
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_the_failed_protectors
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = PAC_the_appalachia_march
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_the_appalachia_march
+			focus = PAC_operation_mary
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+
+	focus = {
+		id = PAC_guardians_of_america
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = PAC_the_failed_protectors
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_the_minnesotan_blitz
+		}
+		prerequisite = { 
+			focus = PAC_the_failed_protectors
+		}
+		prerequisite = { 
+			focus = PAC_crush_flordia
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {				
+		}
+	}
+}

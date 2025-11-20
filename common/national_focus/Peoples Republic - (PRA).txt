@@ -168,12 +168,6 @@ focus_tree = {
 			    producer = PRC
 			}
 			add_offsite_building = { type = arms_factory level = 3 }
-			hidden_effect = {
-				PAC = {
-					set_country_flag = China_has_invaded
-					mark_focus_tree_layout_dirty = yes
-				}
-			}
 			division_template = {
 				name = "Chinese Volunteers"
 				is_locked = yes
