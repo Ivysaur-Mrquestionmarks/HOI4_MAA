@@ -61,89 +61,89 @@ CAS_up_guerilla_war_idea = {
 	}
 }
 CAS_ss_coup_up = {
-			if = {
-				limit = {
-					has_idea = CAS_SS_coup_succeeded_1
-				}
-				remove_ideas = CAS_SS_coup_succeeded_1
-			}
-			if = {
-				limit = {
-					has_idea = CAS_SS_coup_succeeded_2
-				}
-				remove_ideas = CAS_SS_coup_succeeded_2
-			}
-			if = {
-				limit = {
-					has_idea = CAS_SS_coup_succeeded_3
-				}
-				remove_ideas = CAS_SS_coup_succeeded_3
-			}
-			if = {
-				limit = {
-					has_idea = CAS_SS_coup_succeeded_4
-				}
-				remove_ideas = CAS_SS_coup_succeeded_4
-			}
-			if = {
-				limit = {
-					has_idea = CAS_SS_coup_succeeded_5
-				}
-				remove_ideas = CAS_SS_coup_succeeded_5
-			}
+	if = {
+		limit = {
+			has_idea = CAS_SS_coup_succeeded_1
+		}
+		remove_ideas = CAS_SS_coup_succeeded_1
+	}
+	if = {
+		limit = {
+			has_idea = CAS_SS_coup_succeeded_2
+		}
+		remove_ideas = CAS_SS_coup_succeeded_2
+	}
+	if = {
+		limit = {
+			has_idea = CAS_SS_coup_succeeded_3
+		}
+		remove_ideas = CAS_SS_coup_succeeded_3
+	}
+	if = {
+		limit = {
+			has_idea = CAS_SS_coup_succeeded_4
+		}
+		remove_ideas = CAS_SS_coup_succeeded_4
+	}
+	if = {
+		limit = {
+			has_idea = CAS_SS_coup_succeeded_5
+		}
+		remove_ideas = CAS_SS_coup_succeeded_5
+	}
 }
 CAS_ss_fail_up = {
-			if = {
-				limit = {
-					has_idea = CAS_SS_coup_failed_3
-				}
-				swap_ideas = {
-					remove_idea = CAS_SS_coup_failed_3
-					add_idea = CAS_SS_coup_failed_4
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAS_SS_coup_failed_2
-				}
-				swap_ideas = {
-					remove_idea = CAS_SS_coup_failed_2
-					add_idea = CAS_SS_coup_failed_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAS_SS_coup_failed_1
-				}
-				swap_ideas = {
-					remove_idea = CAS_SS_coup_failed_1
-					add_idea = CAS_SS_coup_failed_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAS_SS_coup_failed_5
-				}
-				swap_ideas = {
-					remove_idea = CAS_SS_coup_failed_5
-					add_idea = CAS_SS_coup_failed_6
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAS_SS_coup_failed_4
-				}
-				swap_ideas = {
-					remove_idea = CAS_SS_coup_failed_4
-					add_idea = CAS_SS_coup_failed_5
-				}
-			}
-			if = {
-				limit = {
-					has_idea = CAS_SS_coup_failed_6
-				}
-				remove_ideas = CAS_SS_coup_failed_6
-			}
+	if = {
+		limit = {
+			has_idea = CAS_SS_coup_failed_6
+		}
+		remove_ideas = CAS_SS_coup_failed_6
+	}
+	if = {
+		limit = {
+			has_idea = CAS_SS_coup_failed_5
+		}
+		swap_ideas = {
+			remove_idea = CAS_SS_coup_failed_5
+			add_idea = CAS_SS_coup_failed_6
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CAS_SS_coup_failed_4
+		}
+		swap_ideas = {
+			remove_idea = CAS_SS_coup_failed_4
+			add_idea = CAS_SS_coup_failed_5
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CAS_SS_coup_failed_3
+		}
+		swap_ideas = {
+			remove_idea = CAS_SS_coup_failed_3
+			add_idea = CAS_SS_coup_failed_4
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CAS_SS_coup_failed_2
+		}
+		swap_ideas = {
+			remove_idea = CAS_SS_coup_failed_2
+			add_idea = CAS_SS_coup_failed_3
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CAS_SS_coup_failed_1
+		}
+		swap_ideas = {
+			remove_idea = CAS_SS_coup_failed_1
+			add_idea = CAS_SS_coup_failed_2
+		}
+	}
 }
 
 
