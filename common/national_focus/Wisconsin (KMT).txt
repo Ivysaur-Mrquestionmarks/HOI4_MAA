@@ -877,7 +877,7 @@ focus_tree = {
 				else = {
 					add_timed_idea = { idea = KMT_entryism days = 100 }
 				}
-				add_ideas = KMT_entryism_hidden
+				#add_ideas = KMT_entryism_hidden
 			}	
 		}
 		prerequisite = {

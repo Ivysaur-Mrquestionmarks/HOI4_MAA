@@ -5534,5 +5534,141 @@ leader_traits = {
 		consumer_goods_factor = -0.2
 		republican_drift = 0.02
 	}
-	
+	KMT_advisor_compassionate_judge = {
+		sprite = 13
+		random = no
+		stability_weekly = 0.001
+		war_support_factor = -0.05
+		weekly_manpower = 500
+	}
+	KMT_advisor_federal_judiciary_veteran = {
+		sprite = 13
+		random = no
+		stability_weekly = 0.001
+		army_attack_factor = 0.05
+		drift_defence_factor = 0.3
+	}
+	KMT_advisor_media_powerhouse = {
+		sprite = 13
+		random = no
+		stability_factor = 0.1
+		political_power_factor = 0.15
+	}
+	KMT_advisor_public_communicator = {
+		sprite = 10
+		random = no
+		political_power_gain = 0.05
+		consumer_goods_factor = -0.2
+	}
+	KMT_advisor_crusader_against_corruption = {
+		sprite = 13
+		random = no
+		stability_factor = 0.2
+		war_support_factor = 0.1
+		justify_war_goal_time = -0.3
+	}
+	KMT_advisor_dream_team_member = {
+		sprite = 13
+		random = no
+		stability_factor = -0.1
+		war_support_factor = 0.2
+		political_power_factor = 0.2
+		resistance_target = -0.5
+	}
+	KMT_advisor_moderate_conservative = {
+		sprite = 10
+		random = no
+		republican_acceptance = 50
+		production_factory_efficiency_gain_factor = 0.1
+		production_factory_max_efficiency_factor = 0.1
+	}
+	KMT_advisor_ideological_strategist = {
+		sprite = 13
+		random = no
+		republican_acceptance = 100
+		war_support_factor = 0.2
+		monthly_population = 0.1
+	}
+	KMT_advisor_aggresive_originalist = {
+		sprite = 13
+		random = no
+		republican_acceptance = 50
+		surrender_limit = 0.3
+		political_power_gain = 0.25
+	}
+	KMT_advisor_textualist = {
+		sprite = 13
+		random = no
+		republican_acceptance = 50
+		research_speed_factor = 0.1
+		stability_factor = 0.05
+	}
+	KMT_advisor_legal_technician = {
+		sprite = 13
+		random = no
+		republican_acceptance = 50
+		stability_factor = 0.1
+		war_support_weekly = 0.001
+	}
+	KMT_advisor_social_conservative = {
+		sprite = 13
+		random = no
+		republican_acceptance = 50
+		stability_factor = 0.1
+		war_support_weekly = 0.001
+		army_attack_against_major_factor = 0.05
+	}
+	KMT_advisor_civil_rights_defender = {
+		sprite = 13
+		random = no
+		democrat_acceptance = 50
+		stability_factor = 0.25
+		recruitable_population_factor = 0.05
+	}
+	KMT_advisor_pragmatic_liberal = {
+		sprite = 13
+		random = no
+		democrat_acceptance = 50
+		stability_factor = 0.05
+		production_speed_buildings_factor = 0.2
+		political_power_factor = 0.1
+	}
+	KMT_advisor_administrative_expert = {
+		sprite = 13
+		random = no
+		democrat_acceptance = 50
+		stability_factor = 0.1
+		political_advisor_cost_factor = -0.5
+		trade_laws_cost_factor = -0.5
+		economy_cost_factor = -0.5
+		theorist_cost_factor = -0.5
+	}
+	KMT_advisor_progressive_jurist = {
+		sprite = 13
+		random = no
+		democrat_acceptance = 50
+		libertarian_left_acceptance = 50
+		conscription = 0.05
+		research_speed_factor = 0.1
+	}
+	KMT_advisor_aggresive_litigator = {
+		sprite = 13
+		random = no
+		democrat_acceptance = 50
+		army_attack_against_major_factor = 0.1
+		army_attack_defence_major_factor = 0.1
+	}
+	KMT_advisor_reserved_administrator = {
+		sprite = 13
+		random = no
+		democrat_acceptance = 50
+		political_power_factor = 0.2
+		encryption_factor = 0.25
+	}
+	KMT_advisor_relentless_prosecutor = {
+		sprite = 13
+		random = no
+		army_attack_factor = 0.05
+		decryption_factor = 0.5
+	}
 }

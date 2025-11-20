@@ -39,6 +39,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -77,6 +80,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -119,6 +125,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -216,6 +225,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -256,6 +268,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -295,6 +310,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -341,6 +359,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -382,6 +403,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -433,6 +457,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -483,6 +510,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -515,6 +545,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -556,6 +589,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = {
@@ -594,6 +630,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				OR = {
@@ -625,6 +664,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				has_completed_focus = KMT_great_lakes_culture
@@ -653,6 +695,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				OR = {
@@ -669,6 +714,7 @@ characters={
 
 	KMT_Callista_Gingrich = {
 		name = KMT_Callista_Gingrich
+		gender = female
 
 		portraits = {
 			civilian = {
@@ -684,6 +730,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = { 
@@ -716,6 +765,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = { 
@@ -748,6 +800,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				NOT = { 
@@ -780,6 +835,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				has_completed_focus = KMT_control_the_media
@@ -808,6 +866,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				has_completed_focus = KMT_destroy_the_jewish_conspiracy
@@ -821,6 +882,7 @@ characters={
 
 	KMT_Ellen_Johnson = {
 		name = KMT_Ellen_Johnson
+		gender = female
 
 		portraits = {
 			civilian = {
@@ -836,6 +898,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				OR = {
@@ -871,6 +936,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				has_idea = advisor_Rick_Snyder				
@@ -901,6 +969,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				has_idea = advisor_John_Boehner				
@@ -931,6 +1002,9 @@ characters={
 			}
 			visible = {
 				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
 			}
 			available = {
 				has_idea = advisor_Scott_Walker				
@@ -941,6 +1015,563 @@ characters={
 			}
 		}
 	}
+
+	# Judges ADVISORS ONLY
+
+	KMT_Frank_Caprio = {
+		name = KMT_Frank_Caprio
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Frank_Caprio
+			cost = 50
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				date < 2025.08.20		
+			}
+			traits = { KMT_advisor_compassionate_judge }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Maryanne_Trump_Barry = {
+		name = KMT_Maryanne_Trump_Barry
+		gender = female
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Maryanne_Trump_Barry
+			cost = 50
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				date < 2023.11.13
+			}
+			traits = { KMT_advisor_federal_judiciary_veteran }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Judy_Sheindlin = {
+		name = KMT_Judy_Sheindlin
+		gender = female
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Judy_Sheindlin
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+			}
+			traits = { KMT_advisor_media_powerhouse }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Lynn_Toler = {
+		name = KMT_Lynn_Toler
+		gender = female
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Lynn_Toler
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+			}
+			traits = { KMT_advisor_public_communicator }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Jed_S_Rakoff = {
+		name = KMT_Jed_S_Rakoff
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Jed_S_Rakoff
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+			}
+			traits = { KMT_advisor_crusader_against_corruption }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Alan_Dershowitz = {
+		name = KMT_Alan_Dershowitz
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Alan_Dershowitz
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+			}
+			traits = { KMT_advisor_dream_team_member }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_John_Roberts = {
+		name = KMT_John_Roberts
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_John_Roberts
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				USA = { exists = no }
+			}
+			traits = { KMT_advisor_moderate_conservative }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Clarence_Thomas = {
+		name = KMT_Clarence_Thomas
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Clarence_Thomas
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				USA = { exists = no }
+			}
+			traits = { KMT_advisor_ideological_strategist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Samuel_Alito = {
+		name = KMT_Samuel_Alito
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Samuel_Alito
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				USA = { exists = no }
+			}
+			traits = { KMT_advisor_aggresive_originalist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Neil_Gorsuch = {
+		name = KMT_Neil_Gorsuch
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Neil_Gorsuch
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				USA = { exists = no }
+			}
+			traits = { KMT_advisor_textualist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Brett_Kavanaugh = {
+		name = KMT_Brett_Kavanaugh
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Brett_Kavanaugh
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				USA = { exists = no }
+				IDA = { exists = no }
+			}
+			traits = { KMT_advisor_legal_technician }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Amy_Coney_Barrett = {
+		name = KMT_Amy_Coney_Barrett
+		gender = female
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Amy_Coney_Barrett
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				USA = { exists = no }
+			}
+			traits = { KMT_advisor_social_conservative }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Sonia_Sotomayor = {
+		name = KMT_Sonia_Sotomayor
+		gender = female
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Sonia_Sotomayor
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				FRA = { exists = no }
+			}
+			traits = { KMT_advisor_civil_rights_defender }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Elena_Kagan = {
+		name = KMT_Elena_Kagan
+		gender = female
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Elena_Kagan
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				FRA = { exists = no }
+			}
+			traits = { KMT_advisor_pragmatic_liberal }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Stephen_Breyer = {
+		name = KMT_Stephen_Breyer
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Stephen_Breyer
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				FRA = { exists = no }
+			}
+			traits = { KMT_advisor_administrative_expert }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Ketanji_Brown_Jackson = {
+		name = KMT_Ketanji_Brown_Jackson
+		gender = female
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Ketanji_Brown_Jackson
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				FRA = { exists = no }
+			}
+			traits = { KMT_advisor_progressive_jurist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Letitia_James = {
+		name = KMT_Letitia_James
+		gender = female
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Letitia_James
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+			}
+			traits = { KMT_advisor_aggresive_litigator }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Merrick_Garland = {
+		name = KMT_Merrick_Garland
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Merrick_Garland
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+				FRA = { exists = no }
+			}
+			traits = { KMT_advisor_reserved_administrator }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Jack_Smith = {
+		name = KMT_Jack_Smith
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Jack_Smith
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_completed_focus = KMT_wsc_coup
+			}
+			available = {
+			}
+			traits = { KMT_advisor_relentless_prosecutor }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
 	
 
 	### Military Leaders ###

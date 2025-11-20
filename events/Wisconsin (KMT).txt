@@ -204,9 +204,9 @@ country_event = {
 					factor = 90
 						NOT = {
 							OR = {
-								197 = { owner = GLA }
-								198 = { owner = GLA }
-								209 = { owner = GLA }
+								197 = { is_owned_by = GLA }
+								198 = { is_owned_by = GLA }
+								209 = { is_owned_by = GLA }
 							}
 						}
 				}
@@ -1226,7 +1226,7 @@ country_event = {
 		add_tech_bonus = {
     		bonus = 1
 		    uses = 3
- 	 	    category = infantry_equipment
+ 	 	    category = infantry_weapons
 		}
 	}
 }
