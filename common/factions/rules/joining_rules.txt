@@ -11,22 +11,22 @@
 joining_rule_non_fascist = {
 	type = joining_rules
 	visible = {
-		NOT = { has_government = fascism }
+		NOT = { has_government = autocratic }
 	}
 	ai_will_do = {
 		base = 0
 		modifier = {
 			add = 1
-			NOT = { has_government = fascism }
+			NOT = { has_government = autocratic }
 		}
 		modifier = {
 			add = 1
-			has_government = communism
+			has_government = authoritarian_left
 		}
 	}
 	trigger = {
 		NOT = {
-			has_government = fascism
+			has_government = autocratic
 		}
 		IF = {
 			limit = { NOT = { has_rule = can_join_opposite_factions } }
@@ -38,22 +38,26 @@ joining_rule_non_fascist = {
 joining_rule_non_democratic = {
 	type = joining_rules
 	visible = {
-		NOT = { has_government = democratic }
+		NOT = { has_government = democrat }
 	}
 	ai_will_do = {
 		base = 0
 		modifier = {
 			add = 1
-			NOT = { has_government = democratic }
+			NOT = { has_government = democrat }
 		}
 		modifier = {
 			add = 1
-			has_government = fascism
+			has_government = autocratic
+		}
+		modifier = {
+			add = 1
+			has_government = republican
 		}
 	}
 	trigger = {
 		NOT = {
-			has_government = democratic 
+			has_government = democrat 
 		}
 		IF = {
 			limit = { NOT = { has_rule = can_join_opposite_factions } }
@@ -62,20 +66,54 @@ joining_rule_non_democratic = {
 	}
 }
 
-joining_rule_non_communist = {
+joining_rule_non_republican = {
 	type = joining_rules
 	visible = {
-		NOT = { has_government = communism }
+		NOT = { has_government = republican }
 	}
 	ai_will_do = {
 		base = 0
 		modifier = {
 			add = 1
-			NOT = { has_government = communism }
+			NOT = { has_government = republican }
 		}
 		modifier = {
 			add = 1
-			has_government = fascism
+			has_government = democrat
+		}
+		modifier = {
+			add = 1
+			has_government = libertarian_left
+		}
+		modifier = {
+			add = 1
+			has_government = authoritarian_left
+		}
+	}
+	trigger = {
+		NOT = {
+			has_government = republican 
+		}
+		IF = {
+			limit = { NOT = { has_rule = can_join_opposite_factions } }
+			has_government = FROM
+		}
+	}
+}
+joining_rule_non_communist = {
+	type = joining_rules
+	visible = {
+		NOT = { has_government = authoritarian_left }
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			NOT = { has_government = authoritarian_left }
+		}
+		modifier = {
+			add = 1
+			has_government = autocratic
 		}
 	}
 	available = {
@@ -86,26 +124,17 @@ joining_rule_non_communist = {
 			NOT = {
 				any_enemy_country = {
 					is_major = yes
-					has_government = fascism
+					has_government = autocratic
 				}
 			}
 		}
 	}
 	can_remove = {
-		IF = {
-			limit = {
-				ROOT = { original_tag = JAP }
-			}
-			always = no 
-		}
-		ELSE = {
-			always = yes 
-		}
-		
+		always = yes
 	}
 	trigger = {
 		NOT = {
-			has_government = communism 
+			has_government = authoritarian_left 
 		}
 		IF = {
 			limit = { NOT = { has_rule = can_join_opposite_factions } }
@@ -940,3 +969,4 @@ joining_rule_asia_only = {
 		capital_scope = { is_on_continent = asia }
 	}
 }
+
