@@ -1,0 +1,18 @@
+american_states = {
+	input = game:all_states
+
+	operators = {
+		limit = {
+			has_state_flag = part_of_america
+		}
+	}
+}
+
+faction_american_states = {
+	input = collection:american_states
+
+	operators = {
+		faction_members
+		owned_states
+	}
+}
