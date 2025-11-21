@@ -12,8 +12,7 @@ faction_american_states = {
 	input = collection:american_states
 
 	operators = {
-		limit = {
-			is_owned_by_ROOT_or_ally = yes
-		}
+		faction_members
+		owned_states
 	}
 }
