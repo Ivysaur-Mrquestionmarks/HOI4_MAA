@@ -879,11 +879,11 @@ FRA_collapse_state_coring_cateogry  = {
 
 		fire_only_once = yes
 
-		#visible = {
-		#	NOT = { has_country_flag = FRA_collapse_finished_flag }
-		#	has_global_flag = FRA_collapse_global_flag
-		#	
-		#}
+		visible = {
+			NOT = { has_country_flag = FRA_collapse_finished_flag }
+			has_global_flag = FRA_collapse_global_flag
+			
+		}
 
 		complete_effect = {
 			set_country_flag = FRA_collapse_finished_flag
