@@ -21,10 +21,10 @@
  COLLECTION_COUNTRY_AND_ALL_SUBJECTS: "§Y[Country.GetNameWithFlag]§! and all its subjects"
  COLLECTION_COUNTRIES_AT_PEACE: "Countries at peace"
  COLLECTION_OCCUPIED_STATES_BY_JAPAN_OR_FACTION_MEMBERS: "Non-core states controlled by [THIS.GetNameDef] and its allies and subject nations"
- COLLECTION_AMOUNT_OF_COMMUNIST_CONTROLLED_STATES_SAME_CONTINENT: "States on the same Continent controlled by §YAuthoritarian-Left§! Countries"
+ COLLECTION_AMOUNT_OF_COMMUNIST_CONTROLLED_STATES_SAME_CONTINENT: "States on the same Continent controlled by §YAuthoritarian-Left§! or §YLibertarian-Left§! Countries"
  COLLECTION_AMOUNT_OF_FASCIST_CONTROLLED_STATES_SAME_CONTINENT: "States on the same Continent controlled by §YAutocratic§! Countries"
  COLLECTION_STATES_MY_CONTINENT_CONTROLLED_DEMOCRATIC_FASCIST: "States on the same Continent controlled by §YAutocratic§! or §YDemocrat§! Countries"
- COLLECTION_STATES_MY_CONTINENT_CONTROLLED_DEMOCRATIC_COMMUNIST: "States on the same Continent controlled by §YAuthoritarian-Left§! or §YDemocrat§! Countries"
+ COLLECTION_STATES_MY_CONTINENT_CONTROLLED_DEMOCRATIC_COMMUNIST: "States on the same Continent controlled by §YAuthoritarian-Left§! or §YLibertarian-Left§§! Countries"
  COLLECTION_STATES_MY_CONTINENT: "States in [ROOT.GetCountryContinent]"
  COLLECTION_FACTION_STATES_MY_CONTINENT: "Faction controlled states in [ROOT.GetCountryContinent]"
  COLLECTION_NON_FASCIST_STATES_MY_CONTINENT: "Non-autocratic controlled states in [ROOT.GetCountryContinent]"
@@ -46,3 +46,9 @@
  COLLECTION_NON_COMMUNIST_STATES: "States controlled by Non-Authoritarian-Leftists"
  COLLECTION_ALL_SAME_CONTINENT_COUNTRIES: "All countries on same continent"
  COLLECTION_ALL_COMMUNIST_OR_DEFEATED_SAME_CONTINENT_COUNTRIES: "Same-continent Authoritarian-Left Countries"
+ 
+ COLLECTION_STATES_IN_CENTRAL_AMERICAS: "All states in Central America"
+ COLLECTION_FACTION_CONTROLLED_STATES_IN_CENTRAL_AMERICAS: "States in Central America controlled by us"
+ 
+ 
+ 

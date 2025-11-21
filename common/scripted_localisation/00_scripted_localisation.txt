@@ -23,6 +23,90 @@ defined_text = {
 	#	}
 	#	localization_key = south_america
 	#}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = east_canada_continent }
+		}
+		localization_key = east_canada_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = west_canada_continent }
+		}
+		localization_key = west_canada_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = canadian_great_plains_continent }
+		}
+		localization_key = canadian_great_plains_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = west_coast_continent }
+		}
+		localization_key = west_coast_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = east_coast_continent }
+		}
+		localization_key = east_coast_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = south_atlantic_continent }
+		}
+		localization_key = south_atlantic_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = great_lakes_continent }
+		}
+		localization_key = great_lakes_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = appalachia_continent }
+		}
+		localization_key = appalachia_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = great_plains_continent }
+		}
+		localization_key = great_plains_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = rockies_continent }
+		}
+		localization_key = rockies_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = mexico_continent }
+		}
+		localization_key = mexico_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = caribbean_continent }
+		}
+		localization_key = caribbean_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = central_america_continent }
+		}
+		localization_key = central_america_continent
+	}
+	text = {
+		trigger = {
+			capital_scope = { is_on_continent = south_america_continent }
+		}
+		localization_key = south_america_continent
+	}
 	
 	text = {
 		localization_key = same_continent
