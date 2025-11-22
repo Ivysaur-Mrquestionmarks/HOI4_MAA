@@ -1239,7 +1239,7 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			add_stability = 0.10
-			create_faction = "Ordained American Front"
+			#create_faction = "Ordained American Front"
 			580 = {
 				if = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }

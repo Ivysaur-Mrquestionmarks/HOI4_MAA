@@ -1432,9 +1432,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			create_faction = "Western Canada"
-			VAN = { add_to_faction = BRC }
-			VAN = { add_to_faction = ALT }
+			#create_faction = "Western Canada"
+			#VAN = { add_to_faction = BRC }
+			#VAN = { add_to_faction = ALT }
 		}		
 		ai_will_do = {
 			}

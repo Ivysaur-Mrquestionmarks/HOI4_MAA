@@ -257,7 +257,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { 
-			create_faction = "Western Loyalists"
+			#create_faction = "Western Loyalists"
 			add_country_leader_trait = IDA_attack_bonus
 		}
 	}

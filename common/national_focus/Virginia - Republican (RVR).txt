@@ -750,7 +750,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			set_major = yes
-			create_faction = RVR_A_f_LAF
+			#create_faction = RVR_A_f_LAF
 		}
 	}
 	focus = {

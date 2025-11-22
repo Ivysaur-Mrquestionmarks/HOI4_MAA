@@ -523,7 +523,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			puppet = BOS
-			create_faction = NewEnglandFront
+			#create_faction = NewEnglandFront - mat needs to replace
 			NEW = {
 				declare_war_on = {
 				    target = ARC

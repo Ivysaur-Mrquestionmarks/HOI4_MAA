@@ -2404,7 +2404,7 @@ focus_tree = {
 				ideology = autocratic
 				popularity = 0.10
 			}
-			create_faction = TEX_dallas_treaty
+			#create_faction = TEX_dallas_treaty
 		}
 
 	}
@@ -6150,7 +6150,7 @@ focus_tree = {
 		}
 		available = { NOT = { country_exists = HOP } }
 		completion_reward = {
-				create_faction = "Pan-Monarchist Front"
+				#create_faction = "Pan-Monarchist Front"
 		}
 	}
 	focus = {
@@ -9500,7 +9500,7 @@ focus_tree = {
 			focus = TEX_still_a_democracy
 		}
 		completion_reward = {
-			create_faction = "Progressive Front"
+			#create_faction = "Progressive Front"
 		}
 	}
 	focus = {
@@ -13297,7 +13297,7 @@ focus_tree = {
 			country_exists = CSA
 		}
 		completion_reward = {
-			create_faction = "Southern Shield"
+			#create_faction = "Southern Shield"
 			TEX = { add_to_faction = CSA }
 		}
 	}

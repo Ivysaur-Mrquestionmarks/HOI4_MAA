@@ -3785,7 +3785,7 @@ focus_tree = {
 				can_create_factions = yes 
 			}
 			
-			create_faction = "NRA_charlestone_pact_faction"
+			#create_faction = "NRA_charlestone_pact_faction"
 			
 		}
 		
@@ -8851,7 +8851,7 @@ focus_tree = {
 				can_create_factions = yes 
 			}
 			
-			create_faction = "NRA_Mercenary_Pact"
+			#create_faction = "NRA_Mercenary_Pact"
 			
 			add_state_core = 333
 			add_state_core = 262
@@ -9862,7 +9862,7 @@ focus_tree = {
 				can_create_factions = yes 
 			}
 			
-			create_faction = "NRA_Neo_Trumpist_Front"
+			#create_faction = "NRA_Neo_Trumpist_Front"
 			
 			
 		}
@@ -10387,7 +10387,7 @@ focus_tree = {
 				can_create_factions = yes 
 			}
 			add_political_power = 100
-			create_faction = "NRA_union_of_corporate_states"
+			#create_faction = "NRA_union_of_corporate_states"
 			
 		}
 		

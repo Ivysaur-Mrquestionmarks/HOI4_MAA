@@ -728,7 +728,7 @@ focus_tree = {
 				target = HLY
 			}
 			set_cosmetic_tag = Driver_California
-			create_faction = "American Anarchist Front"
+			#create_faction = "American Anarchist Front"
 		}
 	}
 	focus = {
@@ -800,7 +800,7 @@ focus_tree = {
 				country_event = { id = AnarchistCalifornia.4 hours = 2 } 
 			}
 			set_cosmetic_tag = Bookchin_California
-			create_faction = "United Communes of America"
+			#create_faction = "United Communes of America"
 		}
 	}
 	focus = {

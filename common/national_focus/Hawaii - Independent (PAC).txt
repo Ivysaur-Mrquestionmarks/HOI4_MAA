@@ -1760,7 +1760,7 @@ focus_tree = {
 		}
 		relative_position_id = PAC_HAW_civilian_government
 		completion_reward = {
-			create_faction = HAW_PAC_ANCAP_PACT
+			#create_faction = HAW_PAC_ANCAP_PACT
 			#DO EVENT INVITING BJC LATER
 		}
 	}

@@ -278,10 +278,10 @@ FRA_biden_dont_fuck_up_collapse_please = {
 
 FRA_new_england_collapse_start = { #using global.FRA_new_england_collapse
 	
-	BRA = {
-		create_faction = BRA_NHC_Unstable_alliance #should disband in 3 months
-		add_to_faction = NHC
-	}
+	#BRA = {
+	#	create_faction = BRA_NHC_Unstable_alliance #should disband in 3 months
+	#	add_to_faction = NHC
+	#}
 	
 	
 	for_each_scope_loop = { #This loops declare the wars

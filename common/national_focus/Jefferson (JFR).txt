@@ -1120,7 +1120,7 @@ focus_tree = {
 			focus = The_Imperial_Currency
 		}
 		completion_reward = {
-			create_faction = Nortonist_America
+			#create_faction = Nortonist_America
 			add_ideas = Norton_Diplomacy
 		}
 	}

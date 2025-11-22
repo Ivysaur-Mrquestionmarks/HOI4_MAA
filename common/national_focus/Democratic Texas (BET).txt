@@ -299,8 +299,8 @@ focus_tree = {
 			focus = BET_look_beyond_texas
 		}
 		completion_reward = {
-			create_faction = beto_pact
-			BET = { add_to_faction = NMX }
+			#create_faction = beto_pact
+			#BET = { add_to_faction = NMX }
 		}
 	}
 	focus = {
