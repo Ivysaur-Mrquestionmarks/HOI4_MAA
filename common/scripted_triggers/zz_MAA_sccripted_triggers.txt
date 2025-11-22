@@ -33,3 +33,43 @@ CAS_democracy_ai_scripted_trigger = {
         }
     }
 }
+
+
+trigger_has_right_wing_ideologies = {
+	OR = {
+		has_government = republican
+		has_government = libertarian_right
+		has_government = autocratic
+	}
+}
+trigger_has_left_wing_ideologies = {
+	OR = {
+		has_government = democrat
+		has_government = libertarian_left
+		has_government = authoritarian_left
+	}
+}
+trigger_has_radical_right_wing_ideologies = {
+	OR = {
+		has_government = libertarian_right
+		has_government = autocratic
+	}
+}
+trigger_has_radical_left_wing_ideologies = {
+	OR = {
+		has_government = libertarian_left
+		has_government = authoritarian_left
+	}
+}
+trigger_has_extremist_ideologies = {
+	OR = {
+		trigger_has_radical_right_wing_ideologies = yes
+		trigger_has_radical_left_wing_ideologies = yes
+	}
+}
+trigger_has_centrist_ideologies = {
+	OR = {
+		has_government = republican
+		has_government = democrat
+	}
+}

@@ -4,12 +4,7 @@ call_to_war_rule_faction_leader_only = {
 		is_faction_leader = yes
 	}
 	ai_will_do = {
-		base = 0
-		modifier = { 
-			add = 2
-			is_faction_leader = yes
-			NOT = { has_government = democratic }
-		}
+		base = 2
 	}
 	modifier = {
 		political_power_factor = -0.1
@@ -22,11 +17,7 @@ call_to_war_rule_major_only = {
 		is_major = yes
 	}
 	ai_will_do = {
-		base = 0
-		modifier = { 
-			add = 2
-			tag = GER 
-		}
+		base = 1
 	}
 	modifier = {
 		political_power_factor = -0.05
@@ -35,6 +26,9 @@ call_to_war_rule_major_only = {
 
 call_to_war_rule_independent_only = {
 	type = call_to_war_rules
+	ai_will_do = {
+		base = 1
+	}
 	trigger = {
 		is_subject = no 
 	}
@@ -44,12 +38,7 @@ call_to_war_rule_independent_only = {
 
 guarantee_threat_reduction_15 = {
 	type = call_to_war_rules
-	ai_will_do = {
-		base = 0
-		modifier = { 
-			add = 2
-			has_government = democratic
-		}
+	
 	}
 	modifier = {
 		guarantee_tension = -0.15
@@ -62,9 +51,7 @@ guarantee_threat_reduction_15 = {
 
 guarantee_threat_reduction_40 = {
 	type = call_to_war_rules
-	ai_will_do = {
-		base = 0
-	}
+	
 	modifier = {
 		guarantee_tension = -0.4
 	}

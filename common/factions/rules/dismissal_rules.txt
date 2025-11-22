@@ -11,8 +11,8 @@ dismissal_rule_world_tension = {
 	ai_will_do = {
 		base = 0
 		modifier = {  
-			add = 1
-			has_government = democratic
+			add = 0
+			has_government = democrat
 			is_faction_leader = yes 
 		}
 	}
@@ -26,8 +26,7 @@ dismissal_rule_offensive_war = {
 	ai_will_do = {
 		base = 0
 		modifier = {  
-			add = 1
-			has_government = neutrality
+			add = 0
 			is_faction_leader = yes 
 		}
 	}
@@ -49,64 +48,296 @@ dismissal_rule_offensive_war = {
 
 dismissal_rule_ideology_not_democratic = {
 	type = dismissal_rules
-	visible = { has_government = democratic }
+	visible = { has_government = democrat }
 	ai_will_do = {
-		base = 0
+		base = 1
 	}
 
 	dismiss_member_trigger = {
 		NOT = {
-			has_government = democratic 
+			has_government = democrat 
 		}
+	}
+}
+dismissal_rule_ideology_democratic = {
+	type = dismissal_rules
+	visible = { NOT = { has_government = democrat } }
+	ai_will_do = {
+		base = 1
+	}
+
+	dismiss_member_trigger = {
+		has_government = democrat
+	}
+}
+
+dismissal_rule_ideology_left_wing = {
+	type = dismissal_rules
+	visible = { NOT = { trigger_has_left_wing_ideologies = yes } }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			trigger_has_right_wing_ideologies = yes
+		}
+		modifier = {
+			add = 2
+			trigger_has_radical_right_wing_ideologies = yes
+		}
+	}
+
+	dismiss_member_trigger = {
+		trigger_has_left_wing_ideologies = yes
+	}
+}
+dismissal_rule_ideology_right_wing = {
+	type = dismissal_rules
+	visible = { NOT = { trigger_has_right_wing_ideologies = yes } }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			trigger_has_left_wing_ideologies = yes
+		}
+		modifier = {
+			add = 2
+			trigger_has_radical_left_wing_ideologies = yes
+		}
+	}
+
+	dismiss_member_trigger = {
+		trigger_has_right_wing_ideologies = yes
+	}
+}
+dismissal_rule_ideology_radical_left_wing = {
+	type = dismissal_rules
+	visible = { NOT = { trigger_has_radical_left_wing_ideologies = yes } }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			NOT = { trigger_has_radical_left_wing_ideologies = yes }
+		}
+	}
+
+	dismiss_member_trigger = {
+		trigger_has_radical_left_wing_ideologies = yes
+	}
+}
+dismissal_rule_ideology_radical_right_wing = {
+	type = dismissal_rules
+	visible = { NOT = { trigger_has_radical_right_wing_ideologies = yes } }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			NOT = { trigger_has_radical_right_wing_ideologies = yes }
+		}
+	}
+
+	dismiss_member_trigger = {
+		trigger_has_radical_right_wing_ideologies = yes
+	}
+}
+dismissal_rule_ideology_extremism = {
+	type = dismissal_rules
+	visible = { NOT = { trigger_has_extremist_ideologies = yes } }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			trigger_has_centrist_ideologies = yes
+		}
+	}
+
+	dismiss_member_trigger = {
+		trigger_has_extremist_ideologies = yes
+	}
+}
+
+dismissal_rule_ideology_not_republican = {
+	type = dismissal_rules
+	visible = { has_government = republican }
+	ai_will_do = {
+		base = 1
+	}
+
+	dismiss_member_trigger = {
+		NOT = {
+			has_government = republican 
+		}
+	}
+}
+dismissal_rule_ideology_republican = {
+	type = dismissal_rules
+	visible = { NOT = { has_government = republican } }
+	ai_will_do = {
+		base = 1
+	}
+
+	dismiss_member_trigger = {
+		has_government = republican
 	}
 }
 
 dismissal_rule_ideology_not_communism = {
 	type = dismissal_rules
-	visible = { has_government = communism }
+	visible = { has_government = authoritarian_left }
 	ai_will_do = {
-		base = 0
+		base = 1
 	}
 
 	dismiss_member_trigger = {
 		NOT = {
-			has_government = communism 
+			has_government = authoritarian_left 
 		}
 	}
 }
 
 dismissal_rule_ideology_communist = {
 	type = dismissal_rules
-	visible = { NOT = { has_government = communism } }
+	visible = { NOT = { has_government = authoritarian_left } }
 	ai_will_do = {
-		base = 0
+		base = 1
 	}
 
 	dismiss_member_trigger = {
-		has_government = communism
+		has_government = authoritarian_left
+	}
+}
+dismissal_rule_ideology_authoritarian = {
+	type = dismissal_rules
+	visible = { NOT = { OR = { has_government = authoritarian_left  has_government = autocratic } } }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = libertarian_left
+				has_government = libertarian_right
+			}
+		}
+	}
+
+	dismiss_member_trigger = {
+		OR = {
+			has_government = autocratic
+			has_government = authoritarian_left
+		}
+	}
+}
+dismissal_rule_ideology_not_libertarian_left = {
+	type = dismissal_rules
+	visible = { has_government = libertarian_left }
+	ai_will_do = {
+		base = 1
+	}
+
+	dismiss_member_trigger = {
+		NOT = {
+			has_government = libertarian_left 
+		}
+	}
+}
+
+dismissal_rule_ideology_libertarian_left = {
+	type = dismissal_rules
+	visible = { NOT = { has_government = libertarian_left } }
+	ai_will_do = {
+		base = 1
+	}
+
+	dismiss_member_trigger = {
+		has_government = libertarian_left
+	}
+}
+dismissal_rule_ideology_not_libertarian_right = {
+	type = dismissal_rules
+	visible = { has_government = libertarian_right }
+	ai_will_do = {
+		base = 1
+	}
+
+	dismiss_member_trigger = {
+		NOT = {
+			has_government = libertarian_right 
+		}
+	}
+}
+
+dismissal_rule_ideology_libertarian_right = {
+	type = dismissal_rules
+	visible = { NOT = { has_government = libertarian_right } }
+	ai_will_do = {
+		base = 1
+	}
+
+	dismiss_member_trigger = {
+		has_government = libertarian_right
+	}
+}
+dismissal_rule_ideology_not_libertarian = {
+	type = dismissal_rules
+	visible = { OR = { has_government = libertarian_right has_government = libertarian_left } }
+	ai_will_do = {
+		base = 1
+	}
+
+	dismiss_member_trigger = {
+		OR = {
+			NOT = {
+				has_government = libertarian_left 
+			}
+			NOT = {
+				has_government = libertarian_right 
+			}
+		}
+	}
+}
+
+dismissal_rule_ideology_libertarian = {
+	type = dismissal_rules
+	visible = { NOT = { OR = { has_government = libertarian_right has_government = libertarian_left } } }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = authoritarian_left
+				has_government = autocratic
+			}
+		}
+	}
+
+	dismiss_member_trigger = {
+		OR = {
+			has_government = libertarian_left
+			has_government = libertarian_right
+		}
 	}
 }
 
 dismissal_rule_ideology_fascist = {
 	type = dismissal_rules
-	visible = { NOT = { has_government = fascism } }
+	visible = { NOT = { has_government = autocratic } }
 	ai_will_do = {
-		base = 0
+		base = 1
 	}
 
 	dismiss_member_trigger = {
-		has_government = fascism
+		has_government = autocratic
 	}
 }
-
-dismissal_rule_ideology_democratic = {
+dismissal_rule_ideology_not_fascist = {
 	type = dismissal_rules
-	visible = { NOT = { has_government = democratic } }
+	visible = { has_government = autocratic }
 	ai_will_do = {
-		base = 0
+		base = 1
 	}
 
 	dismiss_member_trigger = {
-		has_government = democratic
+		NOT = {
+			has_government = autocratic
+		}
 	}
 }

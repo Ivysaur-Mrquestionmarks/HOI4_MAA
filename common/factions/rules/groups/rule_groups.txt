@@ -66,11 +66,26 @@ rule_group_war_relation = {
 # Ideology rules 
 rule_group_dismissal_ideology = {
 	rules = {
+		dismissal_rule_ideology_left_wing
+		dismissal_rule_ideology_right_wing
+		dismissal_rule_ideology_extremism
+		dismissal_rule_ideology_radical_left_wing
+		dismissal_rule_ideology_radical_right_wing
+		dismissal_rule_ideology_authoritarian
+		dismissal_rule_ideology_not_libertarian
+		dismissal_rule_ideology_libertarian
 		dismissal_rule_ideology_not_democratic
-		dismissal_rule_ideology_communist
-		dismissal_rule_ideology_fascist
 		dismissal_rule_ideology_democratic
+		dismissal_rule_ideology_not_republican
+		dismissal_rule_ideology_republican
+		dismissal_rule_ideology_communist
 		dismissal_rule_ideology_not_communism
+		dismissal_rule_ideology_fascist
+		dismissal_rule_ideology_not_fascist
+		dismissal_rule_ideology_not_libertarian_left
+		dismissal_rule_ideology_libertarian_left
+		dismissal_rule_ideology_not_libertarian_right
+		dismissal_rule_ideology_libertarian_right
 	}
 }
 

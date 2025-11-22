@@ -15,10 +15,26 @@ change_leader_rule_never = {
 	}
 	available = {
 		faction_manifest_fulfillment > 0.66
+		OR = {
+			tag = USA
+			tag = FRA
+			tag = PRA
+			tag = GLA
+			tag = CSA
+		}
 	}
 
 	can_remove = { 
 		faction_manifest_fulfillment < 0.5 
+		NOT = {
+			OR = {
+				tag = USA
+				tag = FRA
+				tag = PRA
+				tag = GLA
+				tag = CSA
+			}
+		}
 	}
 
 	modifier = {
@@ -28,8 +44,14 @@ change_leader_rule_never = {
 	ai_will_do = {
 		base = 0
 		modifier = {  
-			add = 5
-			has_government = fascism
+			add = 35
+			OR = {
+				tag = USA
+				tag = FRA
+				tag = PRA
+				tag = GLA
+				tag = CSA
+			}
 			is_faction_leader = yes 
 		}
 	}
@@ -45,12 +67,12 @@ change_leader_rule_manpower = {
 		modifier = {  
 			add = 5 
 			is_faction_leader = yes 
-			has_manpower > 1000000
+			has_manpower > 300000
 		}
 		modifier = {  
 			add = 5 
 			is_faction_leader = yes 
-			has_manpower > 2000000
+			has_manpower > 600000
 		}
 	}
 }
