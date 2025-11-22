@@ -2391,10 +2391,10 @@ country_event = { #(Corporate west virgnia pov) west virgnia gets invited to a f
 		ai_chance = {
 			factor = 100
 		}	
-		CSA = {
-			create_faction = "The Appalachian Yeezys Club"
-			add_to_faction = NRA
-		}	
+		#CSA = {
+		#	create_faction = "The Appalachian Yeezys Club"
+		#	add_to_faction = NRA
+		#}	
 	}
 	option = {
 		name = south.89.b #No, lol.

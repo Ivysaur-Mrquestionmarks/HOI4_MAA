@@ -26170,7 +26170,7 @@ country_event = { #Exiles ask the NPA if they can join their faction
 			}
 		}
 		else = {
-			create_faction = "Alliance for American Freedom"
+			#create_faction = "Alliance for American Freedom"
 			every_country = {
 				limit = {
 					is_in_faction_with = IDA
@@ -26349,7 +26349,7 @@ country_event = { #Event for GLA from Lincoln requesting to ally them
 			is_ai = no
 			is_in_faction = no
 		}
-		create_faction = "Alliance for American Freedom"
+		#create_faction = "Alliance for American Freedom"
 		every_country = {
 			limit = {
 				is_in_faction_with = IDA

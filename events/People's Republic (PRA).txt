@@ -1075,7 +1075,7 @@ country_event = {
 	fire_only_once = yes
 	option = { #America is the land of forgiveness
 		name = California.20.a
-		create_faction = Western_Legitimists
+		#create_faction = Western_Legitimists
 		PAC = {
 			country_event = { id = California.21 days = 5 }
 		}
@@ -1089,7 +1089,7 @@ country_event = {
 	option = { #Fuck them
 		name = California.20.b
 		add_country_leader_trait = Grandpa_Bernie
-		create_faction = Western_Legitimists
+		#create_faction = Western_Legitimists
 		remove_country_leader_trait = american_socialist
 		country_event = { id = California.22 days = 10 }
 	}
