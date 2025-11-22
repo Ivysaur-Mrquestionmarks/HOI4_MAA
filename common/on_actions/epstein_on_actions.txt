@@ -184,6 +184,31 @@ on_actions = {
 			every_possible_country = {
 				limit = {
 					OR = {
+						tag = CHI
+						tag = PAN
+						tag = COS
+						tag = ELS
+						tag = GUA
+						tag = COL
+						tag = VEN
+						tag = ACF
+						tag = FAL
+						tag = HON
+						tag = NIC
+						tag = DOM
+						tag = CUB
+						tag = CUC
+						is_in_array = { global.mexican_collapse_countries = THIS }
+					}
+				}
+				add_to_array = {
+					array = global.hispanic_countries_array
+					value = THIS.id
+				}
+			}
+			every_possible_country = {
+				limit = {
+					OR = {
 						tag = SKN
 						tag = AGB
 						tag = DMC

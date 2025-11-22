@@ -67,6 +67,12 @@ trigger_has_extremist_ideologies = {
 		trigger_has_radical_left_wing_ideologies = yes
 	}
 }
+trigger_has_libertarian_ideologies = {
+	OR = {
+		has_government = libertarian_left
+		has_government = libertarian_right
+	}
+}
 trigger_has_centrist_ideologies = {
 	OR = {
 		has_government = republican

@@ -37,9 +37,13 @@
  
  # SEA faction rule names
  joining_rules_applicability: "§gWhen active, only countries that fulfill the following conditions can join our Faction:§!"
- joining_rule_non_fascist: "Non-Autocratic Countries Only"
- joining_rule_non_democratic: "Non-Democrats Only"
- joining_rule_non_communist: "Non-Authoritarian-Leftists Only"
+ joining_rule_non_left_wing: "Non-Left-Leaning Countries Only"
+ joining_rule_non_radical_left: "Non-Radical-Left Countries Only"
+ joining_rule_non_right_wing: "Non-Right-Wing Countries Only"
+ joining_rule_non_radical_right: "Non-Radical-Right Countries Only"
+ joining_rule_far_left: "Authoritarian-Left and Libertarian-Left Countries Only"
+ joining_rule_centrist: "Democrat and Republican Countries Only"
+ joining_rule_libertarians: "Libertarian-Left and Libertarian-Right Countries Only"
  joining_rule_fascist_only: "Autocratic Countries Only"
  joining_rule_same_continent_only: "Countries on the Same Continent Only"
  joining_rule_puppets_only: "Own Subjects Only"

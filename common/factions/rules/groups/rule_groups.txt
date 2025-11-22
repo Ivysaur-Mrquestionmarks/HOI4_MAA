@@ -17,15 +17,15 @@ rule_group_manpower = {
 
 rule_group_ideology = {
 	rules = {
-		joining_rule_non_fascist
-		joining_rule_non_democratic
-		joining_rule_non_communist
-		joining_rule_same_ideology
+		joining_rule_non_left_wing
+		joining_rule_non_radical_left
+		joining_rule_non_right_wing
+		joining_rule_non_radical_right
+		joining_rule_far_left
+		joining_rule_centrist
+		joining_rule_libertarians
 		joining_rule_fascist_only
-		joining_rule_democratic_non_aligned
-		joining_rule_puppets_only
-		joining_rule_communist_only
-		joining_rule_support_percentage
+		joining_rule_same_ideology
 	}
 }
 
@@ -34,16 +34,6 @@ rule_group_geographical = {
 	rules = {
 		joining_rule_neighbors_only
 		joining_rule_same_continent_only
-		joining_rule_china_only
-		joining_rule_east_asia_only
-		joining_rule_asia_pacific_ocenania_only
-		joining_rule_asia_only
-		joining_rule_africa_only
-		joining_rule_americas_only
-		joining_rule_nordics_only
-		joining_rule_baltics_only
-		joining_rule_islamic_only
-		joining_rule_balkans_only
 		joining_rule_hispanic_only
 	}
 }
