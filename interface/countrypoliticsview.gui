@@ -128,7 +128,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "faction"
-				position = { x = 110 y = -50}
+				position = { x = 104 y = -50}
 				size = { width = 175 height = 20 }
 				clipping = no
 
@@ -147,7 +147,7 @@ guiTypes = {
 
 					instantTextboxType = {
 						name = "view_factions_text"
-						position = { x = 45 y = 5 }
+						position = { x = 55 y = 5 }
 						font = "hoi_18mbs"
 						text = "CREATE_FACTION"
 						maxWidth = 143
@@ -160,7 +160,7 @@ guiTypes = {
 					iconType = {
 						name = "create_faction_icon"
 						spriteType = "GFX_tension_war_list_major"
-						position = { x = 4 y = -1}
+						position = { x = 13 y = -1}
 						alwaystransparent = yes
 					}														
 				}
