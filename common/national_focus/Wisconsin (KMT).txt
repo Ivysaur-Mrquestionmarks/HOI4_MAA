@@ -931,6 +931,10 @@ focus_tree = {
 				}
 				leave_faction = yes
 			}
+			set_country_leader_portrait = {
+				ideology = republican
+				portrait = "gfx/leaders/KMT/Paul_Ryan_2.dds"
+			}
 		}
 		prerequisite = {
             focus = KMT_disband_the_trouble_makers
