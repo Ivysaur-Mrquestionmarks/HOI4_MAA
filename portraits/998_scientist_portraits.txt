@@ -1,527 +1,38 @@
 
-continent = {
-	name = north_america
+default = {
 	scientist = {
 		female = {
-			"gfx/leaders/Generic/scientists/scientist_generic_female_01.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_02.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_03.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_04.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_05.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_06.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_07.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_08.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_09.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_10.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_11.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_12.tga"
+			"GFX_portrait_generic_female_1"
+			"GFX_portrait_generic_female_2"
+			"GFX_portrait_generic_female_3"
+			"GFX_portrait_generic_female_4"
+			"GFX_portrait_generic_female_5"
+			"GFX_portrait_generic_female_6"
+			"GFX_portrait_generic_female_7"
+			"GFX_portrait_generic_female_8"
+			"GFX_portrait_generic_female_9"
+			"GFX_portrait_generic_female_10"
+			"GFX_portrait_generic_female_11"
+			"GFX_portrait_generic_female_12"
 		}
 		male = {
-			"gfx/leaders/Generic/scientists/scientist_generic_male_01.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_02.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_03.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_04.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_05.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_06.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_07.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_08.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_09.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_10.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_11.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_12.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_13.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_14.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_15.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_16.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_17.tga"
-		}
-	}
-}
-
-continent = {
-	name = europe
-	scientist = {
-		female = {
-			"gfx/leaders/Generic/scientists/scientist_generic_female_01.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_02.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_03.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_04.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_05.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_06.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_07.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_08.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_09.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_10.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_11.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_12.tga"
-		}
-		male = {
-			"gfx/leaders/Generic/scientists/scientist_generic_male_01.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_02.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_03.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_04.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_05.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_06.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_07.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_08.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_09.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_10.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_11.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_12.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_13.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_14.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_15.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_16.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_17.tga"
-		}
-	}
-}
-
-continent = {
-	name = africa
-	scientist = {
-		female = {
-			"GFX_portrait_generic_africa_female_01"
-			"GFX_portrait_generic_africa_female_02"
-			"GFX_portrait_generic_africa_female_03"
-			"GFX_portrait_generic_africa_female_04"
-			"GFX_portrait_generic_africa_female_05"
-			"GFX_portrait_generic_africa_female_06"
-			"GFX_portrait_generic_africa_female_07"
-			"GFX_portrait_generic_africa_female_08"
-		}
-		male = {
-			"GFX_portrait_generic_africa_male_01"
-			"GFX_portrait_generic_africa_male_02"
-			"GFX_portrait_generic_africa_male_03"
-			"GFX_portrait_generic_africa_male_04"
-			"GFX_portrait_generic_africa_male_05"
-			"GFX_portrait_generic_africa_male_06"
-			"GFX_portrait_generic_africa_male_07"
-			"GFX_portrait_generic_africa_male_08"
-		}
-	}
-}
-
-continent = {
-	name = middle_east
-	scientist = {
-		female = {
-			"GFX_portrait_generic_arabia_female_01"
-			"GFX_portrait_generic_arabia_female_02"
-			"GFX_portrait_generic_arabia_female_03"
-			"GFX_portrait_generic_arabia_female_04"
-			"GFX_portrait_generic_arabia_female_05"
-			"GFX_portrait_generic_arabia_female_06"
-			"GFX_portrait_generic_arabia_female_07"
-			"GFX_portrait_generic_arabia_female_08"
-		}
-		male = {
-			"GFX_portrait_generic_arabia_male_01"
-			"GFX_portrait_generic_arabia_male_02"
-			"GFX_portrait_generic_arabia_male_03"
-			"GFX_portrait_generic_arabia_male_04"
-			"GFX_portrait_generic_arabia_male_05"
-			"GFX_portrait_generic_arabia_male_06"
-			"GFX_portrait_generic_arabia_male_07"
-			"GFX_portrait_generic_arabia_male_08"
-		}
-	}
-}
-
-continent = {
-	name = asia
-	scientist = {
-		female = {
-			"GFX_portrait_generic_asia_female_01"
-			"GFX_portrait_generic_asia_female_02"
-			"GFX_portrait_generic_asia_female_03"
-			"GFX_portrait_generic_asia_female_04"
-			"GFX_portrait_generic_asia_female_05"
-			"GFX_portrait_generic_asia_female_06"
-			"GFX_portrait_generic_asia_female_07"
-			"GFX_portrait_generic_asia_female_08"
-		}
-		male = {
-			"GFX_portrait_generic_asia_male_01"
-			"GFX_portrait_generic_asia_male_02"
-			"GFX_portrait_generic_asia_male_03"
-			"GFX_portrait_generic_asia_male_04"
-			"GFX_portrait_generic_asia_male_05"
-			"GFX_portrait_generic_asia_male_06"
-			"GFX_portrait_generic_asia_male_07"
-			"GFX_portrait_generic_asia_male_08"
-		}
-	}
-}
-
-continent = {
-	name = south_america
-	scientist = {
-		female = {
-			"GFX_portrait_generic_southamerica_female_01"
-			"GFX_portrait_generic_southamerica_female_02"
-			"GFX_portrait_generic_southamerica_female_03"
-			"GFX_portrait_generic_southamerica_female_04"
-			"GFX_portrait_generic_southamerica_female_05"
-			"GFX_portrait_generic_southamerica_female_06"
-			"GFX_portrait_generic_southamerica_female_07"
-			"GFX_portrait_generic_southamerica_female_08"
-		}
-		male = {
-			"GFX_portrait_generic_southamerica_male_01"
-			"GFX_portrait_generic_southamerica_male_02"
-			"GFX_portrait_generic_southamerica_male_03"
-			"GFX_portrait_generic_southamerica_male_04"
-			"GFX_portrait_generic_southamerica_male_05"
-			"GFX_portrait_generic_southamerica_male_06"
-			"GFX_portrait_generic_southamerica_male_07"
-			"GFX_portrait_generic_southamerica_male_08"
-		}
-	}
-}
-
-continent = {
-	name = australia
-	scientist = {
-		female = {
-			"GFX_portrait_generic_australia_female_01"
-			"GFX_portrait_generic_australia_female_02"
-			"GFX_portrait_generic_australia_female_03"
-			"GFX_portrait_generic_europe_female_02"
-			"GFX_portrait_generic_europe_female_04"
-			"GFX_portrait_generic_europe_female_06"
-			"GFX_portrait_generic_europe_female_10"
-			"GFX_portrait_generic_europe_female_12"
-			"GFX_portrait_generic_europe_female_14"
-		}
-		male = {
-			"GFX_portrait_generic_australia_male_01"
-			"GFX_portrait_generic_australia_male_02"
-			"GFX_portrait_generic_australia_male_03"
-			"GFX_portrait_generic_europe_male_02"
-			"GFX_portrait_generic_europe_male_04"
-			"GFX_portrait_generic_europe_male_06"
-			"GFX_portrait_generic_europe_male_10"
-			"GFX_portrait_generic_europe_male_14"
-			"GFX_portrait_generic_europe_male_15"
-		}
-	}
-}
-
-PAK = {
-	scientist = {
-		female = {
-			"GFX_portrait_generic_india_female_01"
-			"GFX_portrait_generic_india_female_02"
-			"GFX_portrait_generic_india_female_03"
-			"GFX_portrait_generic_india_female_04"
-			"GFX_portrait_generic_india_female_05"
-			"GFX_portrait_generic_india_female_06"
-		}
-		male = {
-			"GFX_portrait_generic_india_male_01"
-			"GFX_portrait_generic_india_male_02"
-			"GFX_portrait_generic_india_male_03"
-			"GFX_portrait_generic_india_male_04"
-			"GFX_portrait_generic_india_male_05"
-			"GFX_portrait_generic_india_male_06"
-		}
-	}
-}
-
-RAJ = {
-	scientist = {
-		female = {
-			"GFX_portrait_generic_india_female_01"
-			"GFX_portrait_generic_india_female_02"
-			"GFX_portrait_generic_india_female_03"
-			"GFX_portrait_generic_india_female_04"
-			"GFX_portrait_generic_india_female_05"
-			"GFX_portrait_generic_india_female_06"
-		}
-		male = {
-			"GFX_portrait_generic_india_male_01"
-			"GFX_portrait_generic_india_male_02"
-			"GFX_portrait_generic_india_male_03"
-			"GFX_portrait_generic_india_male_04"
-			"GFX_portrait_generic_india_male_05"
-			"GFX_portrait_generic_india_male_06"
-		}
-	}
-}
-
-RAJ_UK = {
-	scientist = {
-		female = {
-			"GFX_portrait_generic_india_female_01"
-			"GFX_portrait_generic_india_female_02"
-			"GFX_portrait_generic_india_female_03"
-			"GFX_portrait_generic_india_female_04"
-			"GFX_portrait_generic_india_female_05"
-			"GFX_portrait_generic_india_female_06"
-			"GFX_portrait_generic_europe_female_01"
-			"GFX_portrait_generic_europe_female_02"
-			"GFX_portrait_generic_europe_female_03"
-			"GFX_portrait_generic_europe_female_04"
-			"GFX_portrait_generic_europe_female_05"
-			"GFX_portrait_generic_europe_female_06"
-			"GFX_portrait_generic_europe_female_07"
-			"GFX_portrait_generic_europe_female_08"
-			"GFX_portrait_generic_europe_female_09"
-			"GFX_portrait_generic_europe_female_10"
-			"GFX_portrait_generic_europe_female_11"
-			"GFX_portrait_generic_europe_female_12"
-			"GFX_portrait_generic_europe_female_13"
-			"GFX_portrait_generic_europe_female_14"
-			"GFX_portrait_generic_europe_female_15"
-			"GFX_portrait_generic_europe_female_16"
-		}
-		male = {
-			"GFX_portrait_generic_india_male_01"
-			"GFX_portrait_generic_india_male_02"
-			"GFX_portrait_generic_india_male_03"
-			"GFX_portrait_generic_india_male_04"
-			"GFX_portrait_generic_india_male_05"
-			"GFX_portrait_generic_india_male_06"
-			"GFX_portrait_generic_europe_male_01"
-			"GFX_portrait_generic_europe_male_02"
-			"GFX_portrait_generic_europe_male_03"
-			"GFX_portrait_generic_europe_male_04"
-			"GFX_portrait_generic_europe_male_05"
-			"GFX_portrait_generic_europe_male_06"
-			"GFX_portrait_generic_europe_male_07"
-			"GFX_portrait_generic_europe_male_08"
-			"GFX_portrait_generic_europe_male_09"
-			"GFX_portrait_generic_europe_male_10"
-			"GFX_portrait_generic_europe_male_11"
-			"GFX_portrait_generic_europe_male_12"
-			"GFX_portrait_generic_europe_male_13"
-			"GFX_portrait_generic_europe_male_14"
-			"GFX_portrait_generic_europe_male_15"
-			"GFX_portrait_generic_europe_male_16"
-		}
-	}
-}
-
-MAL_UK = {
-	scientist = {
-		female = {
-			"GFX_portrait_generic_asia_female_02"
-			"GFX_portrait_generic_asia_female_04"
-			"GFX_portrait_generic_asia_female_06"
-			"GFX_portrait_generic_asia_female_08"
-			"GFX_portrait_generic_europe_female_01"
-			"GFX_portrait_generic_europe_female_02"
-			"GFX_portrait_generic_europe_female_03"
-			"GFX_portrait_generic_europe_female_04"
-			"GFX_portrait_generic_europe_female_05"
-			"GFX_portrait_generic_europe_female_06"
-			"GFX_portrait_generic_europe_female_07"
-			"GFX_portrait_generic_europe_female_08"
-			"GFX_portrait_generic_europe_female_09"
-			"GFX_portrait_generic_europe_female_10"
-			"GFX_portrait_generic_europe_female_11"
-			"GFX_portrait_generic_europe_female_12"
-			"GFX_portrait_generic_europe_female_13"
-			"GFX_portrait_generic_europe_female_14"
-			"GFX_portrait_generic_europe_female_15"
-			"GFX_portrait_generic_europe_female_16"
-		}
-		male = {
-			"GFX_portrait_generic_asia_male_02"
-			"GFX_portrait_generic_asia_male_04"
-			"GFX_portrait_generic_asia_male_06"
-			"GFX_portrait_generic_asia_male_08"
-			"GFX_portrait_generic_europe_male_01"
-			"GFX_portrait_generic_europe_male_02"
-			"GFX_portrait_generic_europe_male_03"
-			"GFX_portrait_generic_europe_male_04"
-			"GFX_portrait_generic_europe_male_05"
-			"GFX_portrait_generic_europe_male_06"
-			"GFX_portrait_generic_europe_male_07"
-			"GFX_portrait_generic_europe_male_08"
-			"GFX_portrait_generic_europe_male_09"
-			"GFX_portrait_generic_europe_male_10"
-			"GFX_portrait_generic_europe_male_11"
-			"GFX_portrait_generic_europe_male_12"
-			"GFX_portrait_generic_europe_male_13"
-			"GFX_portrait_generic_europe_male_14"
-			"GFX_portrait_generic_europe_male_15"
-			"GFX_portrait_generic_europe_male_16"
-		}
-	}
-}
-
-SAF = {
-	scientist = {
-		female = {
-			"GFX_portrait_generic_europe_female_01"
-			"GFX_portrait_generic_europe_female_02"
-			"GFX_portrait_generic_europe_female_03"
-			"GFX_portrait_generic_europe_female_04"
-			"GFX_portrait_generic_europe_female_05"
-			"GFX_portrait_generic_europe_female_06"
-			"GFX_portrait_generic_europe_female_07"
-			"GFX_portrait_generic_europe_female_08"
-			"GFX_portrait_generic_europe_female_09"
-			"GFX_portrait_generic_europe_female_10"
-			"GFX_portrait_generic_europe_female_11"
-			"GFX_portrait_generic_europe_female_12"
-			"GFX_portrait_generic_europe_female_13"
-			"GFX_portrait_generic_europe_female_14"
-			"GFX_portrait_generic_europe_female_15"
-			"GFX_portrait_generic_europe_female_16"
-			"GFX_portrait_generic_africa_female_01"
-			"GFX_portrait_generic_africa_female_04"
-			"GFX_portrait_generic_africa_female_05"
-			"GFX_portrait_generic_africa_female_08"
-		}
-		male = {
-			"GFX_portrait_generic_europe_male_01"
-			"GFX_portrait_generic_europe_male_02"
-			"GFX_portrait_generic_europe_male_03"
-			"GFX_portrait_generic_europe_male_04"
-			"GFX_portrait_generic_europe_male_05"
-			"GFX_portrait_generic_europe_male_06"
-			"GFX_portrait_generic_europe_male_07"
-			"GFX_portrait_generic_europe_male_08"
-			"GFX_portrait_generic_europe_male_09"
-			"GFX_portrait_generic_europe_male_10"
-			"GFX_portrait_generic_europe_male_11"
-			"GFX_portrait_generic_europe_male_12"
-			"GFX_portrait_generic_europe_male_13"
-			"GFX_portrait_generic_europe_male_14"
-			"GFX_portrait_generic_europe_male_15"
-			"GFX_portrait_generic_europe_male_16"
-			"GFX_portrait_generic_africa_male_01"
-			"GFX_portrait_generic_africa_male_04"
-			"GFX_portrait_generic_africa_male_05"
-			"GFX_portrait_generic_africa_male_08"
-		}
-	}
-}
-
-SAF_COM = {
-	scientist = {
-		female = {
-			"GFX_portrait_generic_africa_female_01"
-			"GFX_portrait_generic_africa_female_02"
-			"GFX_portrait_generic_africa_female_03"
-			"GFX_portrait_generic_africa_female_04"
-			"GFX_portrait_generic_africa_female_05"
-			"GFX_portrait_generic_africa_female_06"
-			"GFX_portrait_generic_africa_female_07"
-			"GFX_portrait_generic_africa_female_08"
-		}
-		male = {
-			"GFX_portrait_generic_africa_male_01"
-			"GFX_portrait_generic_africa_male_02"
-			"GFX_portrait_generic_africa_male_03"
-			"GFX_portrait_generic_africa_male_04"
-			"GFX_portrait_generic_africa_male_05"
-			"GFX_portrait_generic_africa_male_06"
-			"GFX_portrait_generic_africa_male_07"
-			"GFX_portrait_generic_africa_male_08"
-		}
-	}
-}
-
-INS_HOL = {
-	scientist = {
-		female = {
-			"GFX_portrait_generic_asia_female_02"
-			"GFX_portrait_generic_asia_female_04"
-			"GFX_portrait_generic_asia_female_06"
-			"GFX_portrait_generic_asia_female_08"
-			"GFX_portrait_generic_europe_female_01"
-			"GFX_portrait_generic_europe_female_02"
-			"GFX_portrait_generic_europe_female_03"
-			"GFX_portrait_generic_europe_female_04"
-			"GFX_portrait_generic_europe_female_05"
-			"GFX_portrait_generic_europe_female_06"
-			"GFX_portrait_generic_europe_female_07"
-			"GFX_portrait_generic_europe_female_08"
-			"GFX_portrait_generic_europe_female_09"
-			"GFX_portrait_generic_europe_female_10"
-			"GFX_portrait_generic_europe_female_11"
-			"GFX_portrait_generic_europe_female_12"
-			"GFX_portrait_generic_europe_female_13"
-			"GFX_portrait_generic_europe_female_14"
-			"GFX_portrait_generic_europe_female_15"
-			"GFX_portrait_generic_europe_female_16"
-		}
-		male = {
-			"GFX_portrait_generic_asia_male_02"
-			"GFX_portrait_generic_asia_male_04"
-			"GFX_portrait_generic_asia_male_06"
-			"GFX_portrait_generic_asia_male_08"
-			"GFX_portrait_generic_europe_male_01"
-			"GFX_portrait_generic_europe_male_02"
-			"GFX_portrait_generic_europe_male_03"
-			"GFX_portrait_generic_europe_male_04"
-			"GFX_portrait_generic_europe_male_05"
-			"GFX_portrait_generic_europe_male_06"
-			"GFX_portrait_generic_europe_male_07"
-			"GFX_portrait_generic_europe_male_08"
-			"GFX_portrait_generic_europe_male_09"
-			"GFX_portrait_generic_europe_male_10"
-			"GFX_portrait_generic_europe_male_11"
-			"GFX_portrait_generic_europe_male_12"
-			"GFX_portrait_generic_europe_male_13"
-			"GFX_portrait_generic_europe_male_14"
-			"GFX_portrait_generic_europe_male_15"
-			"GFX_portrait_generic_europe_male_16"
-		}
-	}
-}
-
-AFG = {
-	scientist = {
-		female = {
-			"GFX_portrait_generic_arabia_female_01"
-			"GFX_portrait_generic_arabia_female_02"
-			"GFX_portrait_generic_arabia_female_03"
-			"GFX_portrait_generic_arabia_female_04"
-			"GFX_portrait_generic_arabia_female_05"
-			"GFX_portrait_generic_arabia_female_06"
-			"GFX_portrait_generic_arabia_female_07"
-			"GFX_portrait_generic_arabia_female_08"
-		}
-		male = {
-			"GFX_portrait_generic_arabia_male_01"
-			"GFX_portrait_generic_arabia_male_02"
-			"GFX_portrait_generic_arabia_male_03"
-			"GFX_portrait_generic_arabia_male_04"
-			"GFX_portrait_generic_arabia_male_05"
-			"GFX_portrait_generic_arabia_male_06"
-			"GFX_portrait_generic_arabia_male_07"
-			"GFX_portrait_generic_arabia_male_08"
-		}
-	}
-}
-
-MEX = {
-	scientist = {
-		female = {
-			"GFX_portrait_generic_southamerica_female_01"
-			"GFX_portrait_generic_southamerica_female_02"
-			"GFX_portrait_generic_southamerica_female_03"
-			"GFX_portrait_generic_southamerica_female_04"
-			"GFX_portrait_generic_southamerica_female_05"
-			"GFX_portrait_generic_southamerica_female_06"
-			"GFX_portrait_generic_southamerica_female_07"
-			"GFX_portrait_generic_southamerica_female_08"
-		}
-		male = {
-			"GFX_portrait_generic_southamerica_male_01"
-			"GFX_portrait_generic_southamerica_male_02"
-			"GFX_portrait_generic_southamerica_male_03"
-			"GFX_portrait_generic_southamerica_male_04"
-			"GFX_portrait_generic_southamerica_male_05"
-			"GFX_portrait_generic_southamerica_male_06"
-			"GFX_portrait_generic_southamerica_male_07"
-			"GFX_portrait_generic_southamerica_male_08"
+			"GFX_portrait_generic_male_1"
+			"GFX_portrait_generic_male_2"
+			"GFX_portrait_generic_male_3"
+			"GFX_portrait_generic_male_4"
+			"GFX_portrait_generic_male_5"
+			"GFX_portrait_generic_male_6"
+			"GFX_portrait_generic_male_7"
+			"GFX_portrait_generic_male_8"
+			"GFX_portrait_generic_male_9"
+			"GFX_portrait_generic_male_10"
+			"GFX_portrait_generic_male_11"
+			"GFX_portrait_generic_male_12"
+			"GFX_portrait_generic_male_13"
+			"GFX_portrait_generic_male_14"
+			"GFX_portrait_generic_male_15"
+			"GFX_portrait_generic_male_16"
+			"GFX_portrait_generic_male_17"
 		}
 	}
 }
@@ -529,18 +40,18 @@ MEX = {
 NAV = {
 	scientist = {
 		female = {
-			"gfx/leaders/Generic/scientists/scientist_generic_female_01.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_02.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_03.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_04.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_05.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_06.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_07.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_08.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_09.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_10.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_11.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_12.tga"
+			"GFX_portrait_generic_female_1"
+			"GFX_portrait_generic_female_2"
+			"GFX_portrait_generic_female_3"
+			"GFX_portrait_generic_female_4"
+			"GFX_portrait_generic_female_5"
+			"GFX_portrait_generic_female_6"
+			"GFX_portrait_generic_female_7"
+			"GFX_portrait_generic_female_8"
+			"GFX_portrait_generic_female_9"
+			"GFX_portrait_generic_female_10"
+			"GFX_portrait_generic_female_11"
+			"GFX_portrait_generic_female_12"
 			"GFX_portrait_generic_southamerica_female_01"
 			"GFX_portrait_generic_southamerica_female_02"
 			"GFX_portrait_generic_southamerica_female_03"
@@ -551,23 +62,23 @@ NAV = {
 			"GFX_portrait_generic_southamerica_female_08"
 		}
 		male = {
-			"gfx/leaders/Generic/scientists/scientist_generic_male_01.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_02.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_03.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_04.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_05.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_06.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_07.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_08.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_09.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_10.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_11.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_12.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_13.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_14.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_15.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_16.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_17.tga"
+			"GFX_portrait_generic_male_1"
+			"GFX_portrait_generic_male_2"
+			"GFX_portrait_generic_male_3"
+			"GFX_portrait_generic_male_4"
+			"GFX_portrait_generic_male_5"
+			"GFX_portrait_generic_male_6"
+			"GFX_portrait_generic_male_7"
+			"GFX_portrait_generic_male_8"
+			"GFX_portrait_generic_male_9"
+			"GFX_portrait_generic_male_10"
+			"GFX_portrait_generic_male_11"
+			"GFX_portrait_generic_male_12"
+			"GFX_portrait_generic_male_13"
+			"GFX_portrait_generic_male_14"
+			"GFX_portrait_generic_male_15"
+			"GFX_portrait_generic_male_16"
+			"GFX_portrait_generic_male_17"
 			"GFX_portrait_generic_southamerica_male_01"
 			"GFX_portrait_generic_southamerica_male_02"
 			"GFX_portrait_generic_southamerica_male_03"
@@ -582,37 +93,72 @@ NAV = {
 HOP = {
 	scientist = {
 		female = {
-			"gfx/leaders/Generic/scientists/scientist_generic_female_01.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_02.png"
-			#"gfx/leaders/Generic/scientists/scientist_generic_female_03.png" #racism
-			"gfx/leaders/Generic/scientists/scientist_generic_female_04.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_05.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_06.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_07.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_08.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_09.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_female_10.tga"
-			#"gfx/leaders/Generic/scientists/scientist_generic_female_11.tga" #racism
-			"gfx/leaders/Generic/scientists/scientist_generic_female_12.tga"
+			"GFX_portrait_generic_female_1"
+			"GFX_portrait_generic_female_2"
+			"GFX_portrait_generic_female_4"
+			"GFX_portrait_generic_female_5"
+			"GFX_portrait_generic_female_6"
+			"GFX_portrait_generic_female_7"
+			"GFX_portrait_generic_female_8"
+			"GFX_portrait_generic_female_9"
+			"GFX_portrait_generic_female_10"
+			"GFX_portrait_generic_female_12"
 		}
 		male = {
-			"gfx/leaders/Generic/scientists/scientist_generic_male_01.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_02.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_03.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_04.png"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_05.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_06.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_07.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_08.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_09.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_10.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_11.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_12.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_13.tga"
-			#"gfx/leaders/Generic/scientists/scientist_generic_male_14.tga" #racism
-			"gfx/leaders/Generic/scientists/scientist_generic_male_15.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_16.tga"
-			"gfx/leaders/Generic/scientists/scientist_generic_male_17.tga"
+			"GFX_portrait_generic_male_1"
+			"GFX_portrait_generic_male_2"
+			"GFX_portrait_generic_male_3"
+			"GFX_portrait_generic_male_4"
+			"GFX_portrait_generic_male_5"
+			"GFX_portrait_generic_male_6"
+			"GFX_portrait_generic_male_7"
+			"GFX_portrait_generic_male_8"
+			"GFX_portrait_generic_male_9"
+			"GFX_portrait_generic_male_10"
+			"GFX_portrait_generic_male_11"
+			"GFX_portrait_generic_male_12"
+			"GFX_portrait_generic_male_13"
+			"GFX_portrait_generic_male_15"
+			"GFX_portrait_generic_male_16"
+			"GFX_portrait_generic_male_17"
+		}
+	}
+}
+continent = {
+	name = north_america
+	scientist = {
+		female = {
+			"GFX_portrait_generic_female_1"
+			"GFX_portrait_generic_female_2"
+			"GFX_portrait_generic_female_3"
+			"GFX_portrait_generic_female_4"
+			"GFX_portrait_generic_female_5"
+			"GFX_portrait_generic_female_6"
+			"GFX_portrait_generic_female_7"
+			"GFX_portrait_generic_female_8"
+			"GFX_portrait_generic_female_9"
+			"GFX_portrait_generic_female_10"
+			"GFX_portrait_generic_female_11"
+			"GFX_portrait_generic_female_12"
+		}
+		male = {
+			"GFX_portrait_generic_male_1"
+			"GFX_portrait_generic_male_2"
+			"GFX_portrait_generic_male_3"
+			"GFX_portrait_generic_male_4"
+			"GFX_portrait_generic_male_5"
+			"GFX_portrait_generic_male_6"
+			"GFX_portrait_generic_male_7"
+			"GFX_portrait_generic_male_8"
+			"GFX_portrait_generic_male_9"
+			"GFX_portrait_generic_male_10"
+			"GFX_portrait_generic_male_11"
+			"GFX_portrait_generic_male_12"
+			"GFX_portrait_generic_male_13"
+			"GFX_portrait_generic_male_14"
+			"GFX_portrait_generic_male_15"
+			"GFX_portrait_generic_male_16"
+			"GFX_portrait_generic_male_17"
 		}
 	}
 }
