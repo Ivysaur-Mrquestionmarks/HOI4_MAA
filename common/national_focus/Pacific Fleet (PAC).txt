@@ -53,6 +53,14 @@ focus_tree = {
 		relative_position_id = PAC_continue
 		allow_branch = {
 		}
+		bypass = {
+			OR = {
+				has_global_flag = canadian_civil_war
+				NOT = {
+				    country_exists = CAN
+				}
+			}
+		}
 		prerequisite = { focus = PAC_continue }
 		available = {
 			has_war_with = PRA
@@ -100,6 +108,14 @@ focus_tree = {
 		relative_position_id = PAC_join_training
 		allow_branch = {
 		}
+		bypass = {
+			OR = {
+				has_global_flag = canadian_civil_war
+				NOT = {
+				    country_exists = CAN
+				}
+			}
+		}
 		prerequisite = {focus = PAC_join_training }
 		available = {
 			has_war_with = PRA
@@ -136,6 +152,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = PAC_canada_diplomacy
 		allow_branch = {
+		}
+		bypass = {
+			OR = {
+				has_global_flag = canadian_civil_war
+				NOT = {
+				    country_exists = CAN
+				}
+			}
 		}
 		prerequisite = { focus = PAC_canada_diplomacy }
 		available = {
@@ -174,7 +198,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
   				id = fleet_P.3
-    				days = 2
+    			days = 2
 			}			
 		}
 	}
@@ -202,7 +226,11 @@ focus_tree = {
     				idea = PAC_sabotage
     				days = 120
 				}
-			}			
+			}
+			add_days_mission_timeout = {
+    			mission = PAC_collapse
+    			days = 30
+			}		
 		}
 	}
 
@@ -424,7 +452,11 @@ focus_tree = {
   					id = fleet_P.5
     				days = 2
 				}
-			}				
+			}
+			add_days_mission_timeout = {
+    			mission = PAC_collapse
+    			days = 30
+			}			
 		}
 	}
 
@@ -502,7 +534,11 @@ focus_tree = {
 			add_timed_idea = {
     			idea = PAC_crush_em_reds
     			days = 180
-			}					
+			}
+			add_days_mission_timeout = {
+    			mission = PAC_collapse
+    			days = 35
+			}				
 		}
 	}
 
@@ -517,7 +553,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = PAC_CRUSH_BERNIE }
 		available = {
-			
+			always = no
 		}
 		ai_will_do = {
 			factor = 5
@@ -727,7 +763,7 @@ focus_tree = {
 		prerequisite = { focus = PAC_finish_the_mop_up }
 		prerequisite = { focus = PAC_a_helping_hand }
 		available = {
-			
+			always = no
 		}
 		ai_will_do = {
 			factor = 5
@@ -755,7 +791,7 @@ focus_tree = {
 		prerequisite = { focus = PAC_finish_the_mop_up }
 		prerequisite = { focus = PAC_a_helping_hand }
 		available = {
-			
+			always = no
 		}
 		ai_will_do = {
 			factor = 5
@@ -783,7 +819,7 @@ focus_tree = {
 		prerequisite = { focus = PAC_finish_the_mop_up }
 		prerequisite = { focus = PAC_a_helping_hand }
 		available = {
-			
+			always = no
 		}
 		ai_will_do = {
 			factor = 5

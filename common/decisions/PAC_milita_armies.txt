@@ -165,7 +165,7 @@ PAC_colapse_ = {
 		}
 		is_good  = no
 		fire_only_once = yes
-		days_mission_timeout = 700
+		days_mission_timeout = 500
 		timeout_effect = {
 			country_event = fleet_P.58
 		}
@@ -173,7 +173,7 @@ PAC_colapse_ = {
 
 	PAC_time = {
 		cost = 75
-		days_re_enable = 45
+		days_re_enable = 50
 		ai_will_do = {
 			base = 0
 		}
