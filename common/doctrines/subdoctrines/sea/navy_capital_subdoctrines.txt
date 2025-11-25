@@ -13,16 +13,6 @@ line_of_battle = {
 
     ai_will_do = { 
         base = 1
-        modifier = {
-            factor = 75
-            OR = {
-                original_tag = ENG
-                original_tag = USA
-                original_tag = JAP
-                original_tag = ITA
-                original_tag = SOV
-            }
-        }
     }
 
     # EFFECTS
@@ -93,10 +83,6 @@ battlecruiser_supremacy = {
 
     ai_will_do = { 
         base = 1
-        modifier = {
-            factor = 75
-            original_tag = FRA
-        }
     }
 
     # EFFECTS
@@ -169,10 +155,6 @@ armored_raiders = {
 
     ai_will_do = { 
         base = 1
-        modifier = {
-            factor = 50
-            original_tag = GER
-        }
     }
 
     # EFFECTS

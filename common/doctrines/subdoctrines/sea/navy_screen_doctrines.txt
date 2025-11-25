@@ -13,10 +13,6 @@ convoy_escort = {
 
     ai_will_do = { 
         base = 1
-        modifier = {
-            factor = 95
-            original_tag = ENG
-        }
     }
 
     # EFFECTS
@@ -131,13 +127,6 @@ hunter_killers = {
     }
     ai_will_do = { 
         base = 1
-        modifier = {
-            factor = 95
-            OR = {
-            	original_tag = FRA
-            	original_tag = SOV
-            }
-        }
     }
 
     # EFFECTS
@@ -186,10 +175,6 @@ torpedo_primacy = {
 
     ai_will_do = { 
         base = 0
-        modifier = {
-            factor = 95
-            original_tag = JAP
-        }
     }
     available = {
    		always = yes

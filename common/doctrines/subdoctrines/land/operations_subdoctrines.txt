@@ -12,7 +12,7 @@ mission_type_tactics = {
         base = 1
         modifier = {
             factor = 50
-            original_tag = GER
+            original_tag = USA
         }
 
         modifier = {
@@ -146,7 +146,7 @@ infiltration_tactics = {
         base = 1
         modifier = {
             factor = 50
-            original_tag = JAP
+            original_tag = CAS
         }
 
     }
@@ -247,14 +247,6 @@ grand_assault = {
     ai_will_do = {
 
         base = 1
-        modifier = {
-            factor = 50
-            OR = {
-                original_tag = ENG
-                original_tag = FRA
-                original_tag = ITA
-            }
-        }
 
     }
 
@@ -348,7 +340,7 @@ deep_battle = {
         base = 1
         modifier = {
             factor = 50
-            original_tag = SOV
+            original_tag = PRA
         }
 
         modifier = {
@@ -475,7 +467,7 @@ deep_battle_no_lar = {
         base = 1
         modifier = {
             factor = 50
-            original_tag = SOV
+            original_tag = PRA
         }
 
         modifier = {
@@ -715,7 +707,7 @@ rapid_domination = {
         base = 1
         modifier = {
             factor = 50
-            original_tag = USA
+            original_tag = FRA
         }
 
         modifier = {

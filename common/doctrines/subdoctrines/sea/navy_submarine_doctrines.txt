@@ -13,10 +13,6 @@ wolfpacks = {
 
     ai_will_do = { 
         base = 1
-        modifier = {
-            factor = 75
-            original_tag = GER
-        }
     }
 
     # EFFECTS
@@ -74,22 +70,6 @@ submarine_fleet_operations = {
 
     ai_will_do = { 
         base = 1
-        modifier = {
-            factor = 25
-            original_tag = USA
-        }
-        modifier = {
-            factor = 25
-            original_tag = FRA
-        }
-        modifier = {
-            factor = 25
-            original_tag = ITA
-        }
-        modifier = {
-            factor = 25
-            original_tag = SOV
-        }
     }
 
     # EFFECTS
@@ -133,10 +113,6 @@ capital_hunters = {
 
     ai_will_do = { 
         base = 1
-        modifier = {
-            factor = 25
-            original_tag = JAP
-        }
     }
     available = {
         always = yes
@@ -397,5 +373,5 @@ long_range_submarines = {
 
     }
 
-
+}
 

@@ -296,10 +296,6 @@ air_subdoctrine_heavy_aircraft_focus = {
 
         base = 1
         modifier = {
-            factor = 25
-            original_tag = ITA  
-        }
-        modifier = {
             factor = 2
             is_major = no 
         }
