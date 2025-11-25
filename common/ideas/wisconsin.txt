@@ -1482,6 +1482,16 @@ ideas = {
 			}
 		}
 
+		KMT_judicial_branch = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { has_government = autocratic }
+			modifier = {
+				war_support_factor = 0.05
+				political_power_cost = 0.1
+				civilian_factory_use = 5
+			}
+		}
+
 
 	}
 

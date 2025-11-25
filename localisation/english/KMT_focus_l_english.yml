@@ -30,6 +30,8 @@
  KMT_smom_tt:0 "§Y$KMT_John_T_Dunlap$§! becomes available as a Field Marshal"
  KMT_coalition_angry_tt:0 "§RThe Coalition will be somewhat displeased!§!"
  KMT_sane_republicanism_tt:0 "§GThe outcome of this focus will depend on whether we moderated on the fiscal issues, the social issues, both or neither!§!"
+ KMT_advisor_refresh_tt:0 "§GThis focus will completely refresh the Advior Pool!§!"
+ KMT_affect_sane_republicanism_tt:0 "§YThe event choice we pick will alter the 'Sane Republicanism' Focus Rewards!§!"
 
 #### ########  ########    ###     ######  
  ##  ##     ## ##         ## ##   ##    ## 
@@ -358,6 +360,9 @@
 
  KMT_america_restored:0 "America Restored"
  KMT_america_restored_desc:0 "Against all odds, the nation has been reclaimed from collapse, chaos, and the ambitions of separatists. The United States stands politically, militarily and spiritually united once more. Though challenges remain, the dream of a restored America has become a reality: proud, stable, and ready to assume its place in the world again."
+
+ KMT_judicial_branch:0 "The Judicial Branch"
+ KMT_judicial_branch_desc:0 "The Judicial Branch is here to govern. The days of the Legislative dead-locks and filibusters are a thing of the past as well as the Executive inactions and omissions are now dead. the future of America lies in the gavel and mallet. 'Salus populi est suprema lex!'"
 
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
@@ -1089,6 +1094,10 @@
  KMT_mexico_intervention_desc:0 "Stability at home demands stability beyond our borders. The crisis to our south threatens the security and regional order. Though intervention is not a choice taken lightly, it may be the only path to ensuring a safer and more stable continent. If Mexico cannot restore peace themselves, then America must act decisively."
  KMT_canada_intervention:0 "Intervention in Canada"
  KMT_canada_intervention_desc:0 "The collapse of Canada has left a vacuum at our northern frontier: one that threatens trade routes, humanitarian stability, and the fragile order we have worked tirelessly to rebuild. While intervention is never undertaken lightly, allowing chaos to fester so close to our borders would be a dereliction of duty. If Canada cannot stand, then America must ensure that the North does not fall into permanent disorder."
+
+ # Judges
+ KMT_wsc_coup:0 "The Wisconsin Supreme Court Coup"
+ KMT_wsc_coup_desc:0 "With the judiciary now holding overwhelming influence over the branches of government, the Wisconsin Supreme Court makes its decisive move. Under the justification of 'restoring constitutional order', the justices, led by Annette Ziegler, shall seize direct control of the government, dissolving democratic safeguards and assuming full executive, legislative and judicial authority."
 
  # Army
  KMT_upgrade_fort_mccoy:0 "Upgrade Fort McCoy"

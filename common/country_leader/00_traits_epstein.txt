@@ -5345,6 +5345,13 @@ leader_traits = {
 		compliance_gain = 0.05
 		army_defence_factor = 0.05
 	}
+	KMT_chief_justice_of_wsc = {
+		random = no
+		political_power_cost = 0.15
+		stability_factor = 0.05
+		intelligence_agency_defense = 0.15
+		operative_slot = 1
+	}
 
 	#advisors
 	KMT_advisor_shrewd_politician = {

@@ -6284,7 +6284,7 @@ focus_tree = {
 		x = 23
 		y = 8
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -6302,7 +6302,19 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-
+			set_politics = {
+    			ruling_party = autocratic
+				elections_allowed = no
+			}
+			remove_power_balance = {
+				id = KMT_judicial_bop
+			}
+			add_stability = -0.1
+			swap_ideas = {
+				remove_idea = KMT_coalition_of_the_willing_2
+				add_idea = KMT_judicial_branch
+			}
+			custom_effect_tooltip = KMT_advisor_refresh_tt
 		}
 		prerequisite = {
 			focus = KMT_empower_the_courts
@@ -6760,6 +6772,7 @@ focus_tree = {
 			}
 			add_political_power = 50
 			country_event = wisconsin.59
+			custom_effect_tooltip = KMT_affect_sane_republicanism_tt
 		}
 		prerequisite = {
 			focus = KMT_choose_a_vp
@@ -6819,6 +6832,7 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			country_event = wisconsin.60
+			custom_effect_tooltip = KMT_affect_sane_republicanism_tt
 		}
 		prerequisite = {
 			focus = KMT_choose_a_vp
