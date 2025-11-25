@@ -29,15 +29,6 @@ spriteTypes = {
 	}
 
 	corneredTileSpriteType = {
-		name = "GFX_specops_tiled_marble_bg"
-		size= { x=505 y=242 }
-		textureFile = "gfx/interface/officer_corp/officer_corp_bg_specops.dds"
-		borderSize = { x=6 y=6 }
-		tilingCenter = yes
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
-
-	corneredTileSpriteType = {
 		name = "GFX_navy_tiled_marble_bg"
 		size= { x=505 y=242 }
 		textureFile = "gfx/interface/officer_corp/officer_corp_bg_navy.dds"
@@ -372,5 +363,32 @@ corneredTileSpriteType = {
 	tilingCenter = yes
 	effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 }
+
+
+			####	#####	 ###
+		   #   		#		#	#
+			####	###		#####
+				#	#		#	#
+		   #####	#####	#	#
+
+
+
+	spriteType = {
+		name = "GFX_doctrines_officer_corps_button_land"
+		texturefile = "gfx/interface/officer_corp/doctrines_officer_corps_button_land.dds"
+	}
+	spriteType = {
+		name = "GFX_doctrines_officer_corps_button_naval"
+		texturefile = "gfx/interface/officer_corp/doctrines_officer_corps_button_naval.dds"
+	}
+	spriteType = {
+		name = "GFX_doctrines_officer_corps_button_air"
+		texturefile = "gfx/interface/officer_corp/doctrines_officer_corps_button_air.dds"
+	}
+	spriteType = {
+		name = "GFX_bronze_number_container"
+		texturefile = "gfx/interface/officer_corp/bronze_number_container.dds"
+	}
+
 
 }
