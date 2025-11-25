@@ -5,6 +5,10 @@ technologies = {
 	special_forces_mountaineers = {
 		doctrine_name = "TITLE_SPECIAL_FORCES"
 		
+		allow_branch = {
+			has_dlc = "Arms Against Tyranny"
+		}
+		
 		# EFFECT ########
 		mountaineers_special_forces_contribution_factor = -0.25
 		category_mountaineers = {
@@ -52,7 +56,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -103,7 +107,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -148,7 +152,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -194,7 +198,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -238,7 +242,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -289,7 +293,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -333,7 +337,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -372,7 +376,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -410,7 +414,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -432,6 +436,9 @@ technologies = {
 	
 	special_forces_marines = {
 		doctrine_name = "MARINES_DOCTRINE"
+		allow_branch = {
+			has_dlc = "Arms Against Tyranny"
+		}
 		
 		xp_research_type = navy
 		xp_unlock_cost = 60
@@ -462,7 +469,7 @@ technologies = {
 		}
 		
 		marines_special_forces_contribution_factor = -0.25
-		naval_invasion_capacity = 5
+		naval_invasion_division_cap = 2
 		category_special_forces = {
 			max_organisation = 5
 			soft_attack = 0.05
@@ -477,7 +484,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -532,7 +539,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -578,7 +585,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -625,7 +632,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -674,7 +681,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -717,7 +724,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -762,7 +769,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 		
@@ -814,7 +821,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -839,7 +846,6 @@ technologies = {
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
-		allow_branch = { has_dlc = "Man the Guns" }
 		
 		amphibious_mechanized = {
 			 soft_attack = 0.1
@@ -865,41 +871,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
-			cat_marines_doctrine
-		}
-
-		
-		folder = {
-			name = special_forces_doctrine_folder
-			position = { x = -1 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-		
-		ai_research_weights = {
-			#artillery = 4.0
-		}
-	}
-	
-	marines_commandoes_mechanised_non_mtg = {
-		
-		xp_research_type = navy
-		xp_unlock_cost = 60
-		
-		force_use_small_tech_layout = yes
-		allow_branch = { not = { has_dlc = "Man the Guns" } }
-		
-		special_forces_attack_factor = 0.15
-		
-		doctrine = yes	
-		research_cost = 2.25
-		
-		categories = {
-			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -947,14 +919,15 @@ technologies = {
 		}
 
 		extra_marine_supply_grace = 24
-		naval_invasion_capacity = 10
+		naval_invasion_prep_days = -5
+		naval_invasion_plan_cap = 1
 			
 		doctrine = yes	
 		research_cost = 2.25
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -977,6 +950,10 @@ technologies = {
 	
 	special_forces_paratroopers = {
 		doctrine_name = "PARATROOPERS_DOCTRINE"
+
+		allow_branch = {
+			has_dlc = "Arms Against Tyranny"
+		}
 
 		xp_research_type = air
 		xp_unlock_cost = 60
@@ -1020,7 +997,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1032,10 +1009,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			#modifier = {
-			#	factor = 0
-				#NOT = { ai_has_completed_air_doctrine = yes }
-			#}
 		}
 		
 		ai_research_weights = {
@@ -1069,7 +1042,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		
@@ -1112,7 +1085,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		
@@ -1161,7 +1134,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		
@@ -1205,7 +1178,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1250,7 +1223,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1294,7 +1267,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1333,7 +1306,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1371,7 +1344,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1406,7 +1379,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
