@@ -186529,6 +186529,150 @@ SpriteType = {
 
     }
     SpriteType = {
+        name = "GFX_goal_KMT_American_Catholicism"
+        texturefile = "gfx/interface/goals/KMT_American_Catholicism.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_American_Catholicism_shine"
+        texturefile = "gfx/interface/goals/KMT_American_Catholicism.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_American_Catholicism.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_American_Catholicism.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_Forgive_the_Sinners"
+        texturefile = "gfx/interface/goals/KMT_Forgive_the_Sinners.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_Forgive_the_Sinners_shine"
+        texturefile = "gfx/interface/goals/KMT_Forgive_the_Sinners.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_Forgive_the_Sinners.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_Forgive_the_Sinners.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_Army_of_God"
+        texturefile = "gfx/interface/goals/KMT_Army_of_God.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_Army_of_God_shine"
+        texturefile = "gfx/interface/goals/KMT_Army_of_God.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_Army_of_God.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_Army_of_God.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_One_Nation_Under_God_Indivisible"
+        texturefile = "gfx/interface/goals/KMT_One_Nation_Under_God_Indivisible.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_One_Nation_Under_God_Indivisible_shine"
+        texturefile = "gfx/interface/goals/KMT_One_Nation_Under_God_Indivisible.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_One_Nation_Under_God_Indivisible.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_One_Nation_Under_God_Indivisible.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
         name = "GFX_goal_KMT_Hinder_the_Courts"
         texturefile = "gfx/interface/goals/KMT_Hinder_the_Courts.tga"
     }
