@@ -173,7 +173,7 @@ add_opinion_modifier = {
     target = CSA
     modifier = illegitimate_successor_opinion
 }
-create_faction = Legitimists
+create_faction_from_template = faction_template_biden_legitimists
 add_to_faction = FRA
 add_to_faction = VIR
 #add_to_faction = FME

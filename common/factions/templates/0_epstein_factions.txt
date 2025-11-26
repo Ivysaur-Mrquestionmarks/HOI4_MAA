@@ -33,8 +33,8 @@ faction_template_trump_loyalists = {
 }
 
 faction_template_biden_legitimists = {
-	name = defensive_democratic_faction
-	manifest = faction_manifest_strength_in_unity
+	name = legitimists_faction
+	manifest = faction_manifest_reclaim_america
 	can_leader_join_other_factions = yes
 	#color = { 179 183 235 } # this should default to faction leader's color
 	icon = GFX_faction_logo_generic
@@ -54,10 +54,11 @@ faction_template_biden_legitimists = {
 		#faction_goal_a_military_base
 
 		# Long terms
-		#faction_goal_the_atomic_race
+		faction_goal_crushing_the_orange_menace
 	}
 
 	default_rules = {
+		joining_rule_non_radical_right
 	}
 	
 }

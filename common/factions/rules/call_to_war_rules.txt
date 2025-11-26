@@ -39,7 +39,6 @@ call_to_war_rule_independent_only = {
 guarantee_threat_reduction_15 = {
 	type = call_to_war_rules
 	
-	}
 	modifier = {
 		guarantee_tension = -0.15
 	}

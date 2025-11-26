@@ -871,7 +871,7 @@ faction_goal_defeat_of_anti_communists = {
 	completed = {
 		collection_size = {
 			input = {
-				input = collection:anti_communist_controlled_states_my_continent
+				input = collection:anticommunism_american_states
 				name = COLLECTION_STATES_MY_CONTINENT_CONTROLLED_DEMOCRATIC_FASCIST
 			}
 			value < 1
@@ -960,6 +960,60 @@ faction_goal_the_red_tide = {
 		effect_tooltip = {
 			add_faction_influence_ratio = 0.05
 			army_experience = 50 
+		}	
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+
+
+
+
+# MAA CUSTOM GOALS
+faction_goal_crushing_the_orange_menace = {
+	name = crushing_the_orange_menace_goal_name
+	description = crushing_the_orange_menace_goal_desc
+	category = long_term
+	group = FOCUS_FILTER_ARMY_XP
+	allowed = {
+		
+	}
+	visible = {
+		FROM = {
+			is_major = yes
+			NOT = {
+				tag = USA
+			}
+		}
+		country_exists = USA
+	}
+	completed = {
+		NOT = { country_exists = USA }
+		FROM = {
+			OR = {
+				owns_state = 416
+				any_allied_country = {
+					owns_state = 416
+				}
+			}
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 250
+		custom_effect_tooltip = generic_skip_one_line_tt
+		every_faction_member = {
+			hidden_effect = {
+				add_faction_influence_ratio = 0.05
+				army_experience = 50
+				add_political_power = 250
+			} 
+		}
+		effect_tooltip = {
+			add_faction_influence_ratio = 0.05
+			army_experience = 50 
+			add_political_power = 250
 		}	
 	}
 	ai_will_do = {

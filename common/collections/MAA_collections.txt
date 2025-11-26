@@ -12,7 +12,24 @@ faction_american_states = {
 	input = collection:american_states
 
 	operators = {
-		faction_members
-		owned_states
+		limit = {
+			is_owned_by_ROOT_or_ally = yes 
+		}
+	}
+}
+
+anticommunism_american_states = {
+	input = collection:american_states
+
+	operators = {
+		limit = {
+			controller = {
+				OR = {
+					has_government = autocratic
+					has_government = libertarian_right
+					has_government = republican
+				}
+			}
+		}
 	}
 }

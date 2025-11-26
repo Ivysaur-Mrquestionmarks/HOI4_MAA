@@ -1,0 +1,63 @@
+@manifest_fulfilled_value = 0.9
+
+# Generic Expansionism
+faction_manifest_reclaim_america = {
+	name = manifest_reclaim_america_goal_name
+	description = manifest_reclaim_america_goal_desc
+	is_manifest = yes
+	ratio_progress = {
+		total_amount_collection = collection:american_states
+		completed_amount_collection = collection:faction_american_states
+
+		range = { 
+			max = 1
+		}
+		
+		scale = {
+			party_popularity_stability_factor = 0.10
+		}
+		
+		progress_sections = {
+			warlord_legitimacy_section = {
+				min = 0
+				max = 0.15
+				modifier = { 
+					stability_factor = -0.05
+					war_support_factor = -0.05
+					generate_wargoal_tension = -0.1
+					justify_war_goal_time = -0.05
+				}
+			}
+			moderate_legitimacy_section = {
+				min = 0.15
+				max = 0.45
+				modifier = { 
+					stability_factor = 0.05
+					war_support_factor = 0.05
+					generate_wargoal_tension = -0.2
+					justify_war_goal_time = -0.1
+				}
+			}
+			strong_legitimacy_section = {
+				min = 0.45
+				max = 0.9
+				modifier = { 
+					stability_factor = 0.1
+					war_support_factor = 0.1
+					generate_wargoal_tension = -0.3
+					justify_war_goal_time = -0.15
+				}
+			}
+			internationally_legitimate_govt_section = {
+				min = @manifest_fulfilled_value
+				modifier = { 
+					stability_factor = 0.15
+					war_support_factor = 0.15
+					generate_wargoal_tension = -0.4
+					justify_war_goal_time = -0.2
+				}
+			}
+		}
+	}
+}
+
