@@ -79,3 +79,46 @@ trigger_has_centrist_ideologies = {
 		has_government = democrat
 	}
 }
+
+# Does tag need a Military Academy? 
+# Add triggers for those countries as needed 
+has_military_academy = {
+	IF = {
+		limit = { 
+			#original_tag = ETH 
+			original_tag = MAA
+		}
+		custom_trigger_tooltip = {
+			tooltip = has_military_academy_tt 
+		}
+	}
+}
+
+
+# Does tag need a Naval Academy? 
+# Add triggers for those countries as needed 
+has_naval_academy = {
+	IF = {
+		limit = { 
+			#original_tag = ETH 
+			original_tag = MAA
+		}
+		custom_trigger_tooltip = {
+			tooltip = has_naval_academy_tt 
+		}
+	}
+}
+
+# Does tag need an Air Force Academy? 
+# Add triggers for those countries as needed 
+has_air_academy = {
+	IF = {
+		limit = { 
+			#original_tag = ETH 
+			original_tag = MAA
+		}
+		custom_trigger_tooltip = {
+			tooltip = has_air_academy_tt 
+		}
+	}
+}
