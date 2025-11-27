@@ -63,7 +63,7 @@ scripted_gui = {
 			8_2_American_Reich_image_visible = {
 				HOP = {
 					has_country_flag = winner_of_the_2ACW
-					has_completed_focus = HOP_The_Jester
+					#has_completed_focus = HOP_The_Jester
 				}
 			}
 			8_3_Heavenly_kingdom_image_visible = {
