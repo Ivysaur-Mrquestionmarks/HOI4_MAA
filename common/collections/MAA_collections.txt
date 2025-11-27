@@ -1,6 +1,6 @@
-american_states = {
+american_states_collection = {
 	input = game:all_states
-
+	name = COLLECTION_ALL_AMERICAN_STATES
 	operators = {
 		limit = {
 			has_state_flag = part_of_america
@@ -8,18 +8,19 @@ american_states = {
 	}
 }
 
-faction_american_states = {
-	input = collection:american_states
+faction_american_states_collection = {
+	input = collection:american_states_collection
 
 	operators = {
 		limit = {
-			is_owned_by_ROOT_or_ally = yes 
+			is_controlled_by_ROOT_or_ally = yes 
 		}
 	}
+	name = COLLECTION_AMERICAN_STATES_CONTROLLED_BY_FACTION_MEMBER
 }
 
-anticommunism_american_states = {
-	input = collection:american_states
+anticommunism_american_states_collection = {
+	input = collection:american_states_collection
 
 	operators = {
 		limit = {

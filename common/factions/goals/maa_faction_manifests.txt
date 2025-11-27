@@ -6,8 +6,8 @@ faction_manifest_reclaim_america = {
 	description = manifest_reclaim_america_goal_desc
 	is_manifest = yes
 	ratio_progress = {
-		total_amount_collection = collection:american_states
-		completed_amount_collection = collection:faction_american_states
+		total_amount_collection = collection:american_states_collection
+		completed_amount_collection = collection:faction_american_states_collection
 
 		range = { 
 			max = 1

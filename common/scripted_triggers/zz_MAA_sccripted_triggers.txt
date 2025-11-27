@@ -122,3 +122,17 @@ has_air_academy = {
 		}
 	}
 }
+# Does tag need an established Air Force? 
+# Add triggers for those countries as needed 
+has_air_force_command = {
+	IF = {
+		limit = { 
+			#original_tag = ETH 
+			original_tag = MAA 
+		}
+		custom_trigger_tooltip = {
+			tooltip = has_air_force_command_tt 
+			has_completed_focus = ETH_the_ethiopian_air_force
+		}
+	}
+}
