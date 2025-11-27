@@ -559,7 +559,17 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_stability = 0.05
+			set_power_balance = {
+                id = army_militia_bop
+                left_side = militia_control
+                right_side = army_control
+            }
+			hidden_effect = {
+				add_ideas = PAC_post_war_economy
+				remove_ideas = PAC_sky_supplies
+			}	
 		}
 	}
 
@@ -580,7 +590,21 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {		
+			add_stability = 0.05
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = PAC_post_war_economy
+				add_idea = PAC_post_war_economy_2
+			}
 		}
 	}
 
@@ -604,7 +628,25 @@ focus_tree = {
 			factor = 50
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = arms_factory
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = PAC_post_war_economy_2
+				add_idea = PAC_post_war_economy_3
+			}
+			add_power_balance_value = {
+				id = army_militia_bop
+				value = 0.1
+				tooltip_side = army_control
+			}
 		}
 	}
 
@@ -628,7 +670,25 @@ focus_tree = {
 			factor = 50
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = PAC_post_war_economy_2
+				add_idea = PAC_post_war_economy_3
+			}
+			add_power_balance_value = {
+				id = army_militia_bop
+				value = -0.1
+				tooltip_side = militia_control
+			}		
 		}
 	}
 
@@ -650,7 +710,21 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_stability = 0.05
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = PAC_post_war_economy_3
+				add_idea = PAC_post_war_economy_4
+			}
 		}
 	}
 
@@ -671,7 +745,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			country_event = {
+  				id = fleet_P.18
+    			days = 0
+			}
 		}
 	}
 
@@ -695,7 +773,14 @@ focus_tree = {
 			factor = 50
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {	
+			add_power_balance_value = {
+				id = army_militia_bop
+				value = -0.1
+				tooltip_side = militia_control
+			}	
+			add_stability = 0.05
+			add_political_power = -50
 		}
 	}
 
@@ -719,7 +804,14 @@ focus_tree = {
 			factor = 50
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_power_balance_value = {
+				id = army_militia_bop
+				value = 0.1
+				tooltip_side = army_control
+			}
+			add_stability = -0.05
+			add_political_power = 50
 		}
 	}
 
@@ -741,7 +833,16 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {	
+			add_stability = 0.05
+			add_popularity = {
+                ideology = authoritarian_left
+                popularity = -0.1
+            }
+			add_popularity = {
+                ideology = libertarian_left
+                popularity = -0.1
+            }			
 		}
 	}
 
@@ -769,7 +870,22 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {		
+			set_politics = {
+                ruling_party = libertarian_right
+                elections_allowed = no
+            }
+            add_ideas = PAC_army_remnants
+			add_ideas = PAC_unpopular_coup
+			hidden_effect = {
+			    swap_ideas = {
+				    remove_idea = PAC_post_war_economy_4
+				    add_idea = PAC_post_war_economy_3
+			    }
+			    remove_ideas = PAC_home_of_the_marines
+			    remove_ideas = PAC_heavy_army_expending
+			    remove_ideas = PAC_army_militia_rivalry
+			}
 		}
 	}
 
@@ -797,7 +913,17 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			set_politics = {
+                ruling_party = democrat
+                elections_allowed = no
+            }
+			hidden_effect = {
+			    country_event = {
+  				    id = pacific_democrats.1
+    			    days = 15
+			    }
+			}
 		}
 	}
 
@@ -825,7 +951,14 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			remove_power_balance = {
+                id = army_militia_bop
+            }
+			country_event = {
+  				id = pacific_junta.1
+    			days = 0
+			}	
 		}
 	}
 
@@ -848,7 +981,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {		
+			swap_ideas = {
+				remove_idea = PAC_army_remnants
+				add_idea = PAC_army_remnants_2
+			}		
 		}
 	}
 
@@ -869,7 +1006,25 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_popularity = {
+                ideology = libertarian_right
+                popularity = 0.05
+            }
+			add_popularity = {
+                ideology = libertarian_left
+                popularity = 0.05
+            }
+			swap_ideas = {
+				remove_idea = PAC_unpopular_coup
+				add_idea = PAC_unpopular_coup_2
+			}
+			hidden_effect = {
+				country_event = {
+  				    id = fleet_P.24
+    			    days = 0
+			    }
+			}
 		}
 	}
 
@@ -890,14 +1045,26 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_popularity = {
+                ideology = libertarian_right
+                popularity = 0.05
+            }
+			add_popularity = {
+                ideology = libertarian_left
+                popularity = 0.05
+            }
+			swap_ideas = {
+				remove_idea = PAC_unpopular_coup_2
+				add_idea = PAC_unpopular_coup_3
+			}			
 		}
 	}
 
 	focus = {
 		id = PAC_a_peoples_government
 		icon = GFX_goal_FLD_the_libertarian_cause
-		cost = 3
+		cost = 2
 		x = -1
 		y = 1
 		relative_position_id = PAC_here_to_liberate
@@ -912,7 +1079,17 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+			add_popularity = {
+                ideology = libertarian_right
+                popularity = 0.05
+            }
+			add_popularity = {
+                ideology = libertarian_left
+                popularity = 0.05
+            }
 		}
 	}
 
@@ -933,7 +1110,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_army_remnants_2
+				add_idea = PAC_army_remnants_3
+			}	
 		}
 	}
 
@@ -956,7 +1137,14 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {		
+			remove_ideas = PAC_army_remnants_3
+			hidden_effect = {
+				country_event = {
+  				    id = fleet_P.25
+    			    days = 0
+			    }
+			}
 		}
 	}
 
@@ -976,13 +1164,17 @@ focus_tree = {
 		}
 		prerequisite = { focus = PAC_brand_new_day }
 		available = {
-			
+			always = no
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			set_politics = {
+                ruling_party = libertarian_left
+                elections_allowed = no
+            }		
 		}
 	}
 
@@ -2494,7 +2686,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = PAC_brand_new_day }
 		available = {
-			
+			always = no
 		}
 		ai_will_do = {
 			factor = 5

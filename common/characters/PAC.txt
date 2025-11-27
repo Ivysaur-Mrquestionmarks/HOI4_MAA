@@ -43,17 +43,31 @@ characters={
 			expire = "2060.1.1.1"
 			id = -1
 		}
-		country_leader = {
-			traits = {}
-			ideology = rino
-			expire = "2060.1.1.1"
-			id = -1
+	}
+	PAC_nicholas_zehr = {
+		name = PAC_nicholas_zehr
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAC/PAC_nicholas_zehr.dds"
+			}
+			army = {
+				small = "gfx/interface/ideas/PAC/PAC_nicholas_zehr_advisor.dds"
+				large = "gfx/leaders/PAC/PAC_nicholas_zehr_general.dds"
+			}
 		}
 		country_leader = {
 			traits = {}
-			ideology = Authoritarian_Liberalism
+			ideology = libertarian_ideology
 			expire = "2060.1.1.1"
 			id = -1
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 	PAC_council_of_libertarian_minds = {

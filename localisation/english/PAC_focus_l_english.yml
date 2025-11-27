@@ -1,5 +1,6 @@
 ﻿l_english:
- #Pacific Fleet Events
+ ################################ PAC - EVENTS ################################
+ 
  fleet_P.1.t:0 "The Birth of the Junta"
  fleet_P.1.d:0 "After the civil war broke out the Pacific fleet quickly seized Alaska and Hawaii to be given as concessions to the winner, but as days turned into months, the Pacific Fleet quickly realized that they were alone in the Pacific, and it was up to them to restore America to the Glory she once had. We are now tasked to destroy the Red Menace in California, but our nation grows weary and our population are increasingly anti-war... If we do not win this war soon, our hold is as good as gone."
  fleet_P.1.a:0 "We Fight Our Country's Battles."
@@ -17,7 +18,7 @@
  fleet_P.4.a:0 "I want military parades in Sacramento by Christmas"
 
  fleet_P.5.t:0 "The shelling of california"
- fleet_P.5.d:0 "Today at 5 am we recived reports that ships of the empirialist navy have attack varius of our cities.\nThis will temporaly reduce our industrial output and has already killed several workers who were in the area affected."
+ fleet_P.5.d:0 "Today at 5 am we received reports that ships of the imperialist navy have attack various of our cities.\nThis will temporarily reduce our industrial output and has already killed several workers who were in the area affected."
  fleet_P.5.a:0 "This won't stop the revolution"
 
  fleet_P.6.t:0 "Operation Guam"
@@ -74,17 +75,70 @@
  fleet_P.17.d:0 "Following the arrest of Admiral John C. Aquillino and other high ranking offiers in Alaska by a group of upstarts, the entire U.S. Pacific Fleet has disbanded. Soldiers fighting in California have surrendered to the forces of the [PRA.GetName] and naval forces have placed themselves under the authority of the civilian government of Alaska and Hawaii. Though the collapse of the U.S. Pacific Fleet has been met with despair by some, many Californians have taken to the streets to celebrate the defeat of such a formidable foe."
  fleet_P.17.a:0 "Non sibi sed patriae"
 
+ fleet_P.18.t:0 "Their Punishment"
+ fleet_P.18.d:0 ""
+ fleet_P.18.a:0 "Execution."
+ fleet_P.18.b:0 "Prison."
+
+ fleet_P.19.t:0 "Tensions Grow Between The Army and Militias"
+ fleet_P.19.d:0 ""
+ fleet_P.19.a:0 "Worrying."
+
+ fleet_P.20.t:0 "Aquilino Announces Return to Democracy"
+ fleet_P.20.d:0 ""
+ fleet_P.20.a:0 "Great News!"
+
+ fleet_P.21.t:0 "Libertarian and Anarchist Militias Storm The Capital"
+ fleet_P.21.d:0 ""
+ fleet_P.21.a:0 "For The People!"
+
+ fleet_P.22.t:0 "The Inauguration of Rusty Hicks"
+ fleet_P.22.d:0 ""
+ fleet_P.22.a:0 "Our New President!"
+
+ fleet_P.23.t:0 "Libertarians and Anarchists Attempt a Coup"
+ fleet_P.23.d:0 ""
+ fleet_P.23.a:0 "This Nation Isn't Ready for Democracy..."
+
+ fleet_P.24.t:0 "Fights Between Anarchists and Libertarians Emerge"
+ fleet_P.24.d:0 ""
+ fleet_P.24.a:0 "We Should Have Expected This..."
+
+ fleet_P.25.t:0 "Anarchists Attempt to Overthrow The Government"
+ fleet_P.25.d:0 ""
+ fleet_P.25.a:0 "They Succeed."
+ fleet_P.25.b:0 "They Fail."
+
+ pacific_anarchists.1.t:0 ""
+ pacific_anarchists.1.d:0 ""
+ pacific_anarchists.1.a:0 ""
+
+ pacific_libertarians.1.t:0 ""
+ pacific_libertarians.1.d:0 ""
+ pacific_libertarians.1.a:0 ""
+
+ pacific_democrats.1.t:0 "Tensions Between The Army and Militias Cool Down"
+ pacific_democrats.1.d:0 ""
+ pacific_democrats.1.a:0 "Great News!"
+
+ pacific_junta.1.t:0 "Aquilino Declares National Emergency"
+ pacific_junta.1.d:0 ""
+ pacific_junta.1.a:0 "We Will Keep Everyone Safe"
+
  PAC_path_guides.1.t:0 "Path Guides"
  PAC_path_guides.1.d:0 "There are 3 paths after winning the war against Bernie: Military Clique, Republic, Libertarian Unity. Go down the respective parts of your focus tree to get them once your new tree unlocks."
  PAC_path_guides.1.a:0 "Ok"
+
  PAC_path_guides.2.t:0 "Alaska"
  PAC_path_guides.2.d:0 "- Play as Pacific Fleet\n- Lose the war with Bernie\n- Choose to play as Alaska \n\nIf you wish to play as the Russian coups, find the Pacific leadership guilty, then follow the responding paths."
  PAC_path_guides.2.a:0 "Ok"
+
  PAC_path_guides.3.t:0 "The Enclave"
  PAC_path_guides.3.d:0 "§RPLEASE NOTE THAT THIS IS AN INCOMPLETE PATH, OTHER LEAD DEVS DIDN'T WANT TO PULL CONTENT THAT WAS ALREADY RELEASED DUE TO PREVIOUS DECISIONAL ERRORS§! \n\nThere are 2 main ways to go about this. \n\nWay 1:\n- As the Pacific Fleet, collapse and play as Hawaii\n- The Federal Republic of America (Biden) needs to capitulate\n- The People’s Republic of America (California) cannot side with the legitimists and cannot become the Western Federal Republic\n- This does require RNG, so tag switching may be needed if you want it for certain \n\n\nOr, you could:\n- Play as the [FRA.GetName] \n- Get the Federal Republic to Collapse (guide exists) \n- IF THE PACIFIC FLEET COLLAPSED AND HAWAII IS DEMOCRATIC there will be an option to evacuate and form the enclave during the collapse"
  PAC_path_guides.3.a:0 "Ok"
 
- #Pacific Fleet Focuses
+ ################################ PAC - FOCUSES ################################
+
  PAC_continue:0 "Mobilize a Class III Draft"
  PAC_continue_desc:0 "In previous wars, one could obtain a Class III deferment from conscription if he was the sole breadwinner for his family. We must do away with this luxury if we hope to retake California."
  PAC_join_training:0 "Joint Military Maneuvers"
@@ -113,45 +167,58 @@
  PAC_operation_guam_desc:0 "Our naval supremacy has allowed us to position a small invasion force just off the coast of San Franciso. When we're ready, let's use this force to establish a beachhead and then quickly push into the mainland."
  PAC_CRUSH_BERNIE:0 "Suffocate the Socialists"
  PAC_CRUSH_BERNIE_desc:0 "We'll make the Reds pay for their treachery. Push forward, and take back our homeland!"
- PAC_failed:0 "Lost the Battle..."
- PAC_failed_desc:0 "Although our invasion was a failure, we acquired a great deal of intelligence and knowledge on our foe. Every page discussing enemy tactics, every map showing potential Communist weak points, every training procedure developed in response to the Reds' underhanded schemes, all of it was bought with the blood of thousands of our finest men. Let's ensure that it doesn't go to waste."
- PAC_fuel_2:0 "Empty the Reserves"
- PAC_fuel_2_desc:0 "Our invasion expended most of our fuel supplies. Canadian fuel is no longer an option, so we'll have to tap into the civilian supply."
- PAC_fail_men:0 "Mobilize a Class IV Draft"
- PAC_fail_men_desc:0 "Class IV service exemptions apply to noncitizens, some government officials, religious ministers, individuals with prior military service, sole surviving sons, and those who are unqualified (be it for medical or other reasons) for military service. We must draft them all if we are to rebuild our force, as unpopular as that may be."
- PAC_fail_men_desc:0 "Class IV service exemptions apply to noncitizens, some government officials, religious ministers, individuals with prior military service, sole surviving sons, and those who are unqualified (be it for medical or other reasons) for military service. We must draft them all if we are to rebuild our force, as unpopular as that may be."
- PAC_fail_marines:0 "Cut Corners on Marine Training"
- PAC_fail_marines_desc:0 "We can expedite the deployment of our new Marine Divisions by axing any training topic that isn't absolutely necessary for combat performance - our newly-minted Marines can learn the rest when they get to their respective units."
- PAC_another_one:0 "...But not the War"
- PAC_another_one_desc:0 "That fool Sanders thinks we have no fight left in us. It's time to show him how wrong he is."
- PAC_China:0 "Shut down the Asian Supply Lines"
- PAC_China_desc:0 "The Chinese have sent an intervention force to stave off the collapse of their Californian puppet. Let's give them a black eye for their troubles."
- PAC_ships_china:0 "Our Allies around the Globe"
- PAC_ships_china_desc:0 "Simultaneously supporting naval landings and dealing with Chinese reinforcements have stretched our fleet thin. We should appeal to our allies to see if they can spare anything from their fleets for us."
- PAC_china_dockyards:0 "Convert the Mercantile Shipbuilding Industry"
- PAC_china_dockyards_desc:0 "Our civilian drydocks have lain dormant since the start of the conflict. Upgrading these facilities to military standards would be a cheap and expedient way to increase our warship production."
- PAC_staff:0 "Call upon our Atlantic Brethren"
- PAC_staff_desc:0 "We'll attempt to raise our counterparts on the East Coast via SATCOM transmission. Maybe they can provide some new insights about our tactical situation by looking at it with a few fresh pairs of eyes."
- PAC_militia_china:0 "The 1st 'Pearl Harbor' Division"
- PAC_militia_china_desc:0 "Since the start of our war with the Reds, several anti-Communist militias have sprung up, mostly composed of veterans who failed to meet the age requirements. While their equipment isn't up to the standards of our Marine Divisions, it would nonetheless be wise to integrate them into our existing order of battle."
- PAC_militia_china_2:0 "The 2nd 'Last Frontier' Division"
- PAC_militia_china_2_desc:0 "Our milita units have proven themselves to be adequate second-line troops, freeing up our Marines for more important tasks. We should increase their budget and help bolster their recruitment efforts."
- PAC_call_for_help:0 "A Call for Help"
- PAC_call_for_help_desc:0 "Thus far, we've managed to survive without turning to the donkey and elephant in the room. However, if our war efforts are to succeed, we need to do more than just survive. It's time to make a formal request for support from either Trump or Biden."
 
- #Pacific Fleet Ideas
+ #Post-Victory
+ PAC_pacific_victory:0 "Pacific Victory"
+ PAC_pacific_victory_desc:0 ""
+ PAC_repair_california:0 "Repair California"
+ PAC_repair_california_desc:0 ""
+ PAC_keep_key_industrial_zones:0 "Keep Key Industrial Zones"
+ PAC_keep_key_industrial_zones_desc:0 ""
+ PAC_reprivatization:0 "Reprivatization"
+ PAC_reprivatization_desc:0 ""
+ PAC_a_helping_hand:0 "A Helping Hand"
+ PAC_a_helping_hand_desc:0 ""
+ PAC_the_remaining_traditors:0 "The Remaining Traitors"
+ PAC_the_remaining_traditors_desc:0 ""
+ PAC_loosen_restrictions:0 "Loosen Restrictions"
+ PAC_loosen_restrictions_desc:0 ""
+ PAC_increase_military_presence:0 "Increase Military Presence"
+ PAC_increase_military_presence_desc:0 ""
+ PAC_finish_the_mop_up:0 "Finish The Mop Up"
+ PAC_finish_the_mop_up_desc:0 ""
+
+ ################################ PAC - IDEAS ################################
+
  PAC_home_of_the_marines:0"Home of the Marines"
- PAC_army_militia_mechanic:0"Fight over control"
- PAC_army_militia_mechanic_desc:0"The fundation of our state is fragile. Control of the lands is divided between the §CArmy§! and local §Omilities§!. Both are trying to increase their influence and they will try to seize control if the opportunity is given."
+ PAC_army_militia_rivalry:0"Rivalry in The Military"
+ PAC_army_militia_rivalry_desc:0"The foundation of our state is fragile. Control of the lands is divided between the §CArmy§! and local §Omilitias§!. Both are trying to increase their influence and they will try to seize control if the opportunity is given."
  PAC_heavy_army_expending:0"Large Military Expenditure"
  PAC_sabotage:0"The Fleet's Sabotage"
  PAC_sky_supplies:0"Sky Supplies"
  PAC_crush_em_reds:0"Crush The Reds"
  PAC_junta_remnants:0 "Junta Remnants"
- PAC_moderatism_era_1:0 "Moderatism Era"
- PAC_radicalism_era:0 "Radicalism Era"
 
- #Pacific Fleet Decisions
+ #Post-War Ideas
+ PAC_post_war_economy:0 "Post-War Economy"
+ PAC_post_war_economy_2:0 "Post-War Economy"
+ PAC_post_war_economy_3:0 "Post-War Economy"
+ PAC_post_war_economy_4:0 "Post-War Economy"
+
+ #Anarchist/Libertarian Ideas
+ PAC_army_remnants:0 "Army Remnants"
+ PAC_army_remnants_2:0 "Army Remnants"
+ PAC_army_remnants_3:0 "Army Remnants"
+
+ PAC_unpopular_coup:0 "Unpopular Coup"
+ PAC_unpopular_coup_2:0 "Unpopular Coup"
+ PAC_unpopular_coup_3:0 "Unpopular Coup"
+ PAC_unpopular_coup_4:0 "Unpopular Coup"
+ PAC_unpopular_coup_5:0 "Unpopular Coup"
+ PAC_unpopular_coup_6:0 "Unpopular Coup"
+
+ ################################ PAC - DECISIONS ################################
+
  PAC_colapse_:0 "The Collapse of the Junta"
  PAC_colapse__desc:0 "Our control over the lands the fleet is on is tenuous.\nThe current war with the communists is rapidly draining the resources we require to keep order in our territories. We can buy us some time with a few, well-placed propaganda campaigns, but these won't last forever. We need to be fast, if we wish to save America from this foreign threat."
  PAC_collapse:0 "Time Till the End"
@@ -160,15 +227,29 @@
  PAC_time_desc:0 "Ads, interviews, and a bit political roughhousing are ways we can sway the populous to our cause, and cement our authority. However, these methods won't be enough to last us forever, so we should make haste in winning this war."
  PAC_the_old_harbor_incident:0 "The Old Harbor Incident"
  PAC_the_old_harbor_incident_desc:0 "Aquilino's war against California was never a popular one, especially among many military officers. As such, there have been many plans to remove Aquilino from power. Though many remain cautious of actually enacting these plans, all it takes is a couple of ambitious upstarts to put them in to motion.\n\n§YThis will prematurely cause the collapse of the Pacific Fleet.§! §RCausing the collapse too early will give the People's Republic a significant advantage in the future.§!"
- PAC_balance_army_militias:0"The Great Debate"
- PAC_balance_army_militias_desc:0"When the fleet took over America's Pacific Territories, it didn't have any long term plan for them. The marines seized as much control as they could leaving the militias to take care of the rest.\nNow that we have to administrate a landmass were people actually live in, we have to arrange who will be the ones in charge of administrating the land. The §YGreat Debate§! is the way we will do this. There we will decide who will control what and the future direction of our state.\nThis will be determined by the amount of influence the army and militias have over the land.\n\nArmy influence is: [?army_strength|%C]\n\nMilitia influence is: [?militia_strength|%O]"
- PAC_state_of_the_army:0"End the debate"
 
- #Pacific Fleet Other Stuff
+ ################################ PAC - OTHER  ################################
+
  diplomatic_exchange:0 "Diplomatic Exchange"
  diplomatic_exchange_trade:0 "Diplomatic Trade Exchange"
+ PAC_inauguration_tooltip:0 "§HThe Inauguration Will Commence...§!"
 
- #Hawaii Tree
+ PAC_nicholas_zehr:0 "Nicholas Zehr"
+
+ army_militia_bop:0 "Army-Militia Power Struggle"
+ army_militia_bop_desc:0 ""
+ militia_control:0 "Militia Control"
+ army_militia_middle:0 "Army-Militia Middle"
+ army_control:0 "Army Control"
+
+ militia_medium_control:0 "Militia Medium Control"
+ militia_high_control:0 "Militia High Control"
+
+ army_medium_control:0 "Army Medium Control"
+ vermin_very_high_power:0 "Army High Control"
+
+ ################################ HAWAII - FOCUSES ################################
+
  focus_hawaii_military_improvement:0 "Military Improvement Program"
  focus_hawaii_military_improvement_desc:0 "We need a powerful military to defend ourselves from the threat of other nations."
  focus_hawaii_military_modernisation:0 "Modernise the Army I"

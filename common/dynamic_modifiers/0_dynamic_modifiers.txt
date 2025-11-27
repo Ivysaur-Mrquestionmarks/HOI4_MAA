@@ -55,23 +55,12 @@ resource_import_cost = { #NATIONAL SPIRIT, balls.
 }
 
 
-
-PAC_army_militia_mechanic = {
-	icon = "GFX_idea_PAC_rivalry"
-	conscription_factor = militia_strength
-	army_attack_factor = army_strength
-	army_defence_factor = army_strength
-}
-
-
 fuel_mechanic = {
 	industrial_capacity_factory = expense_mil
 	production_speed_buildings_factor = expense_civs
 	base_fuel_gain = fuel_lost
 	fuel_gain_factor = fuel_rationing
 }
-
-
 
 
 FRA_rural_rebels = {

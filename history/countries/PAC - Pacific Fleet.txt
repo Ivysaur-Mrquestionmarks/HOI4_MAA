@@ -144,12 +144,10 @@ country_event = {
 }
 
 set_convoys = 300
-add_dynamic_modifier = {
-	modifier = PAC_army_militia_mechanic
-}
 add_ideas = {
 	PAC_home_of_the_marines
 	PAC_heavy_army_expending
+	PAC_army_militia_rivalry
 	limited_conscription
 	war_economy
 	International_Vaccines
@@ -197,6 +195,7 @@ recruit_character = PAC_patricia_m_anslow
 recruit_character = PAC_timothy_albertson
 recruit_character = PAC_thomas_payne
 recruit_character = PAC_torrence_w_saxe
+recruit_character = PAC_nicholas_zehr
 
 ### Admirals ###
 recruit_character = PAC_david_glenn

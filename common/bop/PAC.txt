@@ -1,0 +1,59 @@
+army_militia_bop = {
+	initial_value = 1
+	left_side = militia_control
+	right_side = army_control
+	decision_category = PAC_army_militia_balance_of_power_category
+	range = {
+		id = army_militia_middle
+		min = -0.3
+		max = 0.3
+		modifier = {
+			
+		}
+	}
+	side = {
+		id = militia_control
+		icon = GFX_bop_PAC_militia_control
+		range = {
+			id = militia_medium_control
+			min = -0.7
+			max = -0.3
+			modifier = {
+			}
+			on_activate = {
+			}
+		}
+		range = {
+			id = militia_high_control
+			min = -1
+			max = -0.7
+			modifier = {
+			}
+			on_activate = {
+			}
+		}
+	}
+	side = {
+		id = army_control
+		icon = GFX_bop_PAC_army_control
+		range = {
+			id = army_medium_control
+			min = 0.3
+			max = 0.7
+			modifier = {
+			}
+			on_activate = {
+			}
+		}
+		range = {
+			id = army_high_control
+			min = 0.7
+			max = 0.1
+			modifier = {
+			}
+			on_activate = {
+			}
+		}
+	}
+}
+

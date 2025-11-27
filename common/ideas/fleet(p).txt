@@ -1,8 +1,6 @@
 ideas = {
-
-
 	country = {
-
+		#Beginning Ideas
 		PAC_junta_remnants = {
 			
 			allowed = {
@@ -18,64 +16,6 @@ ideas = {
 				political_power_factor = -0.65
 			}
 		}
-
-		PAC_moderatism_era_1 = {
-			
-			allowed = {
-				always = no
-			}
-			available = {
-				is_subject = no
-			}
-
-			picture = PAC_to_defend_america
-
-			modifier = {
-				republican_drift = 0.05
-				democrat_drift = 0.05
-				stability_factor = 0.01
-			}
-		}
-
-		PAC_moderatism_era_2 = {
-
-			name = PAC_moderatism_era_1
-			
-			allowed = {
-				always = no
-			}
-			available = {
-				is_subject = no
-			}
-
-			picture = PAC_to_defend_america
-
-			modifier = {
-				democrat_drift = 0.01
-				stability_factor = 0.01
-				political_power_factor = 0.05
-			}
-		}
-
-		PAC_radicalism_era = {
-
-			
-			allowed = {
-				always = no
-			}
-			available = {
-				is_subject = no
-			}
-
-			picture = PAC_to_defend_america
-
-			modifier = {
-				autocratic_drift = 0.05
-				libertarian_right_drift = 0.05
-				authoritarian_left_drift = 0.05
-			}
-		}
-
 
 		PAC_home_of_the_marines = {
 			
@@ -104,6 +44,23 @@ ideas = {
 				consumer_goods_expected_value = 0.05
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
+			}
+		} 
+
+		PAC_army_militia_rivalry = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = PAC_rivalry
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+				command_power_gain = -0.15
+				army_org_factor = -0.05
+				planning_speed = -0.05
 			}
 		} 
 
@@ -146,6 +103,236 @@ ideas = {
 				supply_consumption_factor = -0.10
 				out_of_supply_factor = -0.1
 				no_supply_grace = 48
+			}
+		}
+
+        #Post-War Ideas
+		PAC_post_war_economy = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = -0.3
+				consumer_goods_factor = 0.5
+				consumer_goods_expected_value = 0.5
+			}
+		}
+
+		PAC_post_war_economy_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.25
+				consumer_goods_factor = 0.4
+				consumer_goods_expected_value = 0.4
+			}
+		}
+
+		PAC_post_war_economy_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.3
+				consumer_goods_expected_value = 0.3
+			}
+		}
+
+		PAC_post_war_economy_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
+			}
+		}
+
+		#Anarchist-Libertarian Ideas
+		PAC_army_remnants = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = -0.25
+				political_power_gain = -0.25
+				command_power_gain = -0.25
+			}
+		}
+
+		PAC_army_remnants_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = -0.2
+				political_power_gain = -0.2
+				command_power_gain = -0.2
+			}
+		}
+
+		PAC_army_remnants_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = -0.1
+				political_power_gain = -0.1
+				command_power_gain = -0.1
+			}
+		}
+
+		PAC_unpopular_coup = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = -0.35
+				war_support_factor = -0.4
+				political_power_gain = -0.25
+                drift_defence_factor = -0.3
+				surrender_limit = -0.65
+			}
+		}
+
+		PAC_unpopular_coup_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = -0.3
+				war_support_factor = -0.35
+				political_power_gain = -0.2
+                drift_defence_factor = -0.25
+				surrender_limit = -0.6
+			}
+		}
+
+		PAC_unpopular_coup_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = -0.25
+				war_support_factor = -0.3
+				political_power_gain = -0.15
+                drift_defence_factor = -0.2
+				surrender_limit = -0.5
+			}
+		}
+
+		PAC_unpopular_coup_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = -0.2
+				war_support_factor = -0.25
+				political_power_gain = -0.1
+                drift_defence_factor = -0.15
+				surrender_limit = -0.4
+			}
+		}
+
+		PAC_unpopular_coup_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = -0.15
+				war_support_factor = -0.2
+				political_power_gain = -0.05
+                drift_defence_factor = -0.1
+				surrender_limit = -0.3
+			}
+		}
+
+		PAC_unpopular_coup_6 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_gain = -0.05
+                drift_defence_factor = -0.05
+				surrender_limit = -0.15
 			}
 		}
 	}

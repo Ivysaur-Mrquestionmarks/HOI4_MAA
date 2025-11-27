@@ -1,159 +1,3 @@
-PAC_balance_army_militias = {
-	PAC_state_of_the_army = {
-		available = {
-			always = no
-		}
-		cost = 0
-		ai_will_do = {
-			base = 0
-		}
-	}
-	PAC_meating = {
-		cost = 50
-		days_remove = 15
-		fire_only_once = yes
-		ai_will_do = {
-			base = 10
-		}
-          	remove_effect = {
-			country_event = {
-				id = fleet_P.16
-				days = 0
-			}
-		}
-	}
-	PAC_limit_our_military_expending = {
-		cost = 100
-		days_remove = 45
-		ai_will_do = {
-			base = 0
-		}
-		visible = {
-			has_idea = PAC_heavy_army_expending
-		}
-          	remove_effect = {
-			swap_ideas = {
-    				remove_idea = PAC_heavy_army_expending
-    				add_idea = PAC_heavy_civilian_expending
-			}
-			PAC_militia_influence_10 = yes
-		}
-	}
-
-	PAC_increase_our_military_expending = {
-		cost = 100
-		days_remove = 45
-		ai_will_do = {
-			base = 0
-		}
-		visible = {
-			has_idea = PAC_heavy_civilian_expending
-		}
-          	remove_effect = {
-			swap_ideas = {
-    				remove_idea = PAC_heavy_civilian_expending
-    				add_idea = PAC_heavy_army_expending 
-			}
-			PAC_army_influence_10 = yes
-		}
-	}
-
-	PAC_boder_conflict = { #operation java
-		state_target = yes
-		target_trigger = {
-		 	FROM = {
-				OR = {
-					is_claimed_by = PAC	
-					is_core_of = PAC
-				}
-			}
-		}
-		visible = {
-			has_completed_focus = PAC_java
-			NOT = { 
-				has_country_flag = planing_border_conflict
-				FROM = {
-					is_owned_by = ROOT
-				}
-			}
-			FROM = {
-				any_neighbor_state = {
-					is_controlled_by = PAC
-				}
-			}
-		}
-		cost = 35
-		days_remove = 45
-		days_re_enable = 120
-		on_map_mode = map_only
-		ai_will_do = {
-			base = 25
-		}
-		complete_effect = {
-			set_country_flag = planing_border_conflict
-			PAC_army_influence_5 = yes
-		}
-		remove_effect = {
-			
-			FROM = { random_neighbor_state = { 
-				limit = {is_owned_by = PAC} 
-					ROOT = {
-						start_border_war = {
-							change_state_after_war =  yes
-							attacker = {
-								state = PREV
-								num_provinces = 5
-								on_win = conflict_results.1
-								on_lose = conflict_results.1
-								on_cancel = conflict_results.1
-							}
-					
-							defender = {
-								state = FROM
-								num_provinces = 5
-								on_win = conflict_results.2
-								on_lose = conflict_results.2
-								on_cancel = conflict_results.2
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	PAC_units = { 
-		state_target = yes
-		target_trigger = {
-		 	FROM = {
-				is_owned_and_controlled_by = PAC
-			}
-		}
-		visible = {
-			has_completed_focus = PAC_militia_creation
-		}
-		cost = 50
-		days_remove = 30
-		fire_only_once = yes
-		on_map_mode = map_only
-		ai_will_do = {
-			base = 25
-		}
-		complete_effect = {
-			PAC_militia_influence_5 = yes
-		}
-		remove_effect = {
-			FROM = {
-				create_unit = {
-					division = "division_template = \"Militias\"	start_experience_factor = 0	start_equipment_factor = 1"
-					owner = PAC
-					allow_spawning_on_enemy_provs = yes
-					count = 2
-				}
-			}			
-		}
-	}
-}
-
 PAC_colapse_ = {
 	PAC_collapse = {
 		allowed = {tag = PAC}
@@ -198,6 +42,150 @@ PAC_colapse_ = {
 		fixed_random_seed = no
         remove_effect = {
 			country_event = fleet_P.58
+		}
+	}
+}
+
+PAC_army_militia_balance_of_power_category = {
+	PAC_the_inauguration = {
+	
+	    icon = GFX_decision_generic_prepare_civil_war
+
+		priority = 10
+
+		allowed = { 
+			original_tag = AFS
+		}
+
+		available = {
+            always = no
+		}
+
+		days_mission_timeout = 70
+
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = PAC_inauguration
+		}
+
+		is_good = yes
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = PAC_inauguration_tooltip
+			if = {
+				limit = { 
+					power_balance_value = {
+                        id = army_militia_bop
+                        value < -0.3
+                    }
+			    }
+				hidden_effect = {
+				    country_event = {
+				        id = fleet_P.21
+				        days = 0
+			        }
+				}
+			}
+			if = {
+				limit = {
+					is_power_balance_in_range = {
+                        id = army_militia_bop
+                        range > army_militia_middle
+                    }
+			    }
+				hidden_effect = {
+				    country_event = {
+				        id = fleet_P.22
+				        days = 0
+			        }
+				}
+			}
+			if = {
+				limit = {
+					power_balance_value = {
+                        id = army_militia_bop
+                        value > 0.3
+                    }
+			    }
+				hidden_effect = {
+				    country_event = {
+				        id = fleet_P.23
+				        days = 0
+			        }
+				}
+			}
+		}
+	}
+
+    PAC_give_power_to_the_militias = {
+		priority = 100
+		icon = GFX_decision_generic_political_rally
+		allowed = {
+			original_tag = AFS
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_BOP_action
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 35
+		days_remove = 35
+		cost = 75
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_BOP_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+		    add_power_balance_value = {
+				id = army_militia_bop
+				value = 0.1
+				tooltip_side = militia_control
+			}
+		}
+	}
+
+	PAC_give_power_to_the_army = {
+		priority = 100
+		icon = GFX_decision_generic_political_rally
+		allowed = {
+			original_tag = AFS
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_BOP_action
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 35
+		days_remove = 35
+		cost = 75
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_BOP_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+		    add_power_balance_value = {
+				id = army_militia_bop
+				value = 0.1
+				tooltip_side = army_control
+			}
 		}
 	}
 }
