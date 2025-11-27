@@ -1,6 +1,6 @@
 buildings = {
    #Custom PRA mechanic:
-  water_desalination = {
+	water_desalination = {
 		hide_if_missing_tech = yes
 		missing_tech_loc = { 
 			localization_key = custom_water_desalination
@@ -10,7 +10,7 @@ buildings = {
 		show_on_map = 1
 		base_cost = 6000
 		icon_frame = 28 #will be changed later ofc.
-  only_costal = yes
+		only_costal = yes
 		value = 4
 		infrastructure_construction_effect = yes
 		show_modifier = yes
@@ -19,7 +19,7 @@ buildings = {
 			modifiers = {
 				monthly_population = 0.01
 				fuel_gain_from_states = -1.0 #per hour
-    #The actual buff/mechanic it plays with will be a variable in desicions.
+		#The actual buff/mechanic it plays with will be a variable in desicions.
 				custom_modifier_tooltip = water_desalination_gain_1
 			}
 		}

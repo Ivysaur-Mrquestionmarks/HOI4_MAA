@@ -637,7 +637,7 @@ faction_goal_unlock_research = {
 	category = short_term
 	group = FOCUS_FILTER_INTERNAL_AFFAIRS
 	available = {
-		FROM = { num_faction_members > 2 }
+		FROM = { num_faction_members > 1 }
 	}
 	visible = {
 		FROM = { has_faction_research_unlocked = no }
@@ -713,7 +713,7 @@ faction_goal_unlock_military = {
 	category = short_term
 	group = FOCUS_FILTER_INTERNAL_AFFAIRS
 	available = {
-		FROM = { num_faction_members > 2 }
+		FROM = { num_faction_members > 1 }
 	}
 	visible = {
 		FROM = { has_faction_military_unlocked = no }

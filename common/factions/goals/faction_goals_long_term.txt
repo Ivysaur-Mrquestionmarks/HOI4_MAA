@@ -976,7 +976,7 @@ faction_goal_crushing_the_orange_menace = {
 	name = crushing_the_orange_menace_goal_name
 	description = crushing_the_orange_menace_goal_desc
 	category = long_term
-	group = FOCUS_FILTER_ARMY_XP
+	group = FOCUS_FILTER_CONSOLIDATION
 	allowed = {
 		
 	}
@@ -1024,7 +1024,7 @@ faction_goal_retaking_washington_dc = {
 	name = retaking_washington_dc_goal_name
 	description = retaking_washington_dc_goal_desc
 	category = long_term
-	group = FOCUS_FILTER_ARMY_XP
+	group = FOCUS_FILTER_CONSOLIDATION
 	allowed = {
 		
 	}
