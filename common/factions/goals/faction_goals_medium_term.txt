@@ -775,16 +775,16 @@ faction_goal_control_newfoundland_bases = {
 #			}
 #		}
 #	}
-	available = {
-
-	}
-	completed = {
+#	available = {
+#
+#	}
+#	completed = {
 #		331 = { is_controlled_by_ROOT_or_ally = yes }
-	}
-	complete_effect = {
-		add_faction_power_projection = 100
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = TARGET_STATE_CONTROLLERS
+#	}
+#	complete_effect = {
+#		add_faction_power_projection = 100
+#		custom_effect_tooltip = generic_skip_one_line_tt
+#		custom_effect_tooltip = TARGET_STATE_CONTROLLERS
 #		every_faction_member = { 
 #			visible_when_empty = yes
 #			limit = {
@@ -814,65 +814,65 @@ faction_goal_control_newfoundland_bases = {
 #			}
 #		}
 #	}
-	ai_will_do = {
-		base = 0
-		modifier = {
-			factor = 2 # Target of opportunity - already at war anyway
-			331 = {
-				owner = {
-					has_war_with = ROOT
-				}
-			}
-		}
-		modifier = {
-			add = 2 # If convoys being threatened try to secure the transatlantic supply lines better
-			convoy_threat > 0.5
-			collection_size = {
-				input = {
-					input = game:all_states
-					operators = {
-						limit = {
-							is_controlled_by_ROOT_or_ally = yes 
-							is_on_continent = north_america
-						}
-					}
-					name = COLLECTION_FACTION_STATES_IN_NORTH_AMERICA
-				}
-				value > 0
-			}
-			collection_size = {
-				input = {
-					input = game:all_states
-					operators = {
-						limit = {
-							is_controlled_by_ROOT_or_ally = yes 
-							is_on_continent = europe
-						}
-					}
-					name = COLLECTION_FACTION_STATES_IN_EUROPE
-				}
-				value > 0
-			}
-		}
-		modifier = {
-			add = 1 # If naval power seek to project it by expanding bases
-			has_navy_size = {
-				size > 5
-				type = capital_ship
-			}
-		}
-		modifier = {
-			add = 1 # If at war with a north american power prioritize this
-			NOT = {
-				any_controlled_state = {
-					is_on_continent = north_america
-				}
-			}
-			any_enemy_country = {
-				capital_scope = {
-					is_on_continent = north_america
-				}
-			}
-		}
-	}
-}
+#	ai_will_do = {
+#		base = 0
+#		modifier = {
+#			factor = 2 # Target of opportunity - already at war anyway
+#			331 = {
+#				owner = {
+#					has_war_with = ROOT
+#				}
+#			}
+#		}
+#		modifier = {
+#			add = 2 # If convoys being threatened try to secure the transatlantic supply lines better
+#			convoy_threat > 0.5
+#			collection_size = {
+#				input = {
+#					input = game:all_states
+#					operators = {
+#						limit = {
+#							is_controlled_by_ROOT_or_ally = yes 
+#							is_on_continent = north_america
+#						}
+#					}
+#					name = COLLECTION_FACTION_STATES_IN_NORTH_AMERICA
+#				}
+#				value > 0
+#			}
+#			collection_size = {
+##				input = {
+#					input = game:all_states
+#					operators = {
+#						limit = {
+#							is_controlled_by_ROOT_or_ally = yes 
+#							is_on_continent = europe
+#						}
+#					}
+#					name = COLLECTION_FACTION_STATES_IN_EUROPE
+#				}
+#				value > 0
+#			}
+#		}
+#		modifier = {
+#			add = 1 # If naval power seek to project it by expanding bases
+#			has_navy_size = {
+#				size > 5
+#				type = capital_ship
+##			}
+#		}
+#		modifier = {
+#			add = 1 # If at war with a north american power prioritize this
+#			NOT = {
+#				any_controlled_state = {
+#					is_on_continent = north_america
+#				}
+#			}
+#			any_enemy_country = {
+#				capital_scope = {
+#					is_on_continent = north_america
+#				}
+#			}
+#		}
+#	}
+#}

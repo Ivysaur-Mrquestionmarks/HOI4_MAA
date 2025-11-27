@@ -166,12 +166,12 @@ country_event = {
 		    type = annex_everything
 		}
 		add_ideas = SIN_war_escalation
-		create_faction = MORMON_WAR_ANPRIM_ALLIANCE
+		#create_faction = MORMON_WAR_ANPRIM_ALLIANCE
 		hidden_effect = { 
 			set_global_flag = mormon_war_begun 
 			add_state_core = 348 
 			news_event = { id = mormon.6 days = 1 } 
-			UTA = { create_faction = MORMON_WAR_MORMON_ALLIANCE } 
+			#UTA = { create_faction = MORMON_WAR_MORMON_ALLIANCE } 
 			MOL = { country_event = { id = mormon.8 days = 6 } } 
 			PRA = { country_event = { id = mormon.9 days = 5 } } 
 			every_state = {

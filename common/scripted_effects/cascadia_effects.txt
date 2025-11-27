@@ -353,7 +353,7 @@ CAS_nazi_coup_trigger_mission_effect = {
 				id = cascadia_rework.5
 				days = 3
 			}
-			set_var = {
+			set_variable = {
 				var = CAS.var_nazi_days_mission_coup_reduction
 				value = CAS.var_nazi_rebellion_indicator
 			}

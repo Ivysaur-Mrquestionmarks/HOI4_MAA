@@ -210,7 +210,7 @@ joining_rule_fascist_only = {
 	ai_will_do = {
 		base = 0
 		modifier = {
-			add 5
+			add = 5
 			has_government = autocratic
 		}
 	}
@@ -271,11 +271,6 @@ joining_rule_has_no_war = {
 	type = joining_rules
 	ai_will_do = {
 		base = 0
-		modifier = {
-			add = 3
-			has_government = neutrality
-			has_war = no 
-		}
 	}
 	trigger = {
 		has_war = no
