@@ -362,4 +362,34 @@ characters={
 			logistics_skill = 2
 		}
 	}
+
+	#advisors
+	CAN_oliver_karafa = {
+		name = "Oliver Karafa" #this guy's life story is hilarious lol
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/CAN/oliver_karafa.dds"
+			}
+			civilian = {
+				small = "gfx/interface/ideas/CAN/oliver_karafa.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CAN_oliver_karafa_advisor
+			cost = 150
+			allowed = {
+				original_tag = CAN
+			}
+			visible = {
+				original_tag = CAN
+			}
+			available = {
+
+			}
+			traits = {
+				 CAN_reckless_entrepreneur
+			}
+		}
+	}
 }

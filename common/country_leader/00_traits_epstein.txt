@@ -1995,6 +1995,15 @@ leader_traits = {
 		production_speed_buildings_factor = 0.15
 		consumer_goods_factor = -0.20
 	}
+
+	CAN_reckless_entrepreneur = {
+		random = no
+		sprite = 10
+		stability_factor = -0.15
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		military_industrial_organization_funds_gain = 0.10 #subject to testing- not sure if this works outside of MIO scope
+	}
 	
 	#VANCOUVER
 	
