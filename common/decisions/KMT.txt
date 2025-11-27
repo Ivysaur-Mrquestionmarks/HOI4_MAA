@@ -20,7 +20,10 @@ KMT_counter_revolution_mission = {
 		fire_only_once = yes
 
 		activation = {
-			has_completed_focus = KMT_weathermen_coup
+			AND = {
+				has_completed_focus = KMT_weathermen_coup
+				has_civil_war = no
+			}
 		}
 
 		is_good = no

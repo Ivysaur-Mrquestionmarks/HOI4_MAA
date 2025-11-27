@@ -887,9 +887,9 @@ country_event = {
 
 			}
 
-			remove_ideas = {
-				idea = KMT_weather_underground_militia_1
-			}
+			#remove_ideas = {
+			#	idea = KMT_weather_underground_militia_1
+			#}
 
 			delete_unit_template_and_units = {
 				division_template = "Weathermen Militia"
