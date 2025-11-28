@@ -1530,6 +1530,20 @@ ideas = {
 			}
 		}
 
+		KMT_judicial_branch_2 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { has_government = autocratic }
+			modifier = {
+				war_support_factor = 0.1
+				compliance_gain = 0.15
+				republican_drift = -0.01
+				democrat_drift = -0.01
+				libertarian_right_drift = -0.01
+				libertarian_left_drift = -0.01
+				authoritarian_left_drift = -0.01
+			}
+		}
+
 
 	}
 
