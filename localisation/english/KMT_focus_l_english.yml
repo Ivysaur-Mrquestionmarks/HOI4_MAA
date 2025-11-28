@@ -364,6 +364,21 @@
  KMT_judicial_branch:0 "The Judicial Branch"
  KMT_judicial_branch_desc:0 "The Judicial Branch is here to govern. The days of the Legislative dead-locks and filibusters are a thing of the past as well as the Executive inactions and omissions are now dead. the future of America lies in the gavel and mallet. 'Salus populi est suprema lex!'"
 
+ KMT_judicial_branch_1:0 "The Judicial Branch"
+ KMT_judicial_branch_1_desc:0 "The Judicial Branch is here to govern. The days of the Legislative dead-locks and filibusters are a thing of the past as well as the Executive inactions and omissions are now dead. the future of America lies in the gavel and mallet. 'Salus populi est suprema lex!'"
+
+ KMT_judicial_branch_2:0 "The Judicial Branch"
+ KMT_judicial_branch_2_desc:0 "The Judicial Branch is here to govern. The days of the Legislative dead-locks and filibusters are a thing of the past as well as the Executive inactions and omissions are now dead. the future of America lies in the gavel and mallet. 'Salus populi est suprema lex!'"
+
+ KMT_judicial_army:0 "The Judicial Army"
+ KMT_judicial_army_desc:0 "A professional military force, sworn not to the people nor the constitution, but to the judiciary itself. Their mission is singular: enforce the rulings of the Supreme Judicial Authority across the land."
+
+ KMT_stacked_positions:0 "Stacked Institutions"
+ KMT_stacked_positions_desc:0 "Key ministries, agencies, and government offices are now filled with loyal judges and legal clerks. Their legal expertise, and unquestioning loyalty, ensure the court's vision prevails."
+
+ KMT_order_and_justice_idea:0 "Order and Justice"
+ KMT_order_and_justice_idea_desc:0 "The court's rule has brought a new state doctrine: a society guided by strict legalism, absolute order, and uncompromising justice. Liberty may suffer, but thats a risk we are willing to take."
+
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
 ##       ##     ## ##       ####  ##    ##    ##       
@@ -1100,7 +1115,23 @@
 
  # Judges
  KMT_wsc_coup:0 "The Wisconsin Supreme Court Coup"
- KMT_wsc_coup_desc:0 "With the judiciary now holding overwhelming influence over the branches of government, the Wisconsin Supreme Court makes its decisive move. Under the justification of 'restoring constitutional order', the justices, led by Annette Ziegler, shall seize direct control of the government, dissolving democratic safeguards and assuming full executive, legislative and judicial authority."
+ KMT_wsc_coup_desc:0 "The Wisconsin Supreme Court has seized full control of the constitutional machinery, overturning the norms of republican governance in the name of 'restoring judicial supremacy'. With legislative paralysis and national chaos as justification, the justices, led by Annette Ziegler, place themselves above all branches. The age of elected authority ends; the reign of the robe begins."
+ KMT_ban_parties:0 "Ban All Political Parties"
+ KMT_ban_parties_desc:0 "Political parties are declared inherently corrupt, destabilizing, and oppositional to the pure will of the Court. By banning partisanship altogether, the judiciary seeks to eliminate all competing institutions, ensuring only one, unquestionable source of national legitimacy."
+ KMT_supremacy_of_judicial:0 "Supremacy of the Judicial Branch"
+ KMT_supremacy_of_judicial_desc:0 "The Court declares itself the sole interpreter of the law, the Constitution, and the nation's future. With no legislature and no president to contest them, the justices now rule as the most powerful body in American history."
+ KMT_we_are_the_constitution:0 "We ARE the Constitution"
+ KMT_we_are_the_constitution_desc:0 "No longer bound merely to interpret the Constitution, the Court proclaims itself the living embodiment of it. What the justices decree becomes law. What they abolish ceases to exist. They are the ultimate authority, and so, judicial infallibility made government."
+ KMT_an_army_enforcing_the_court_rules:0 "An Army to Enforce the Court's Will"
+ KMT_an_army_enforcing_the_court_rules_desc:0 "The judiciary reforms the military structure as one loyal not to a president, nor to a people, but to judicial rulings themselves. An army of constitutional enforcers is created as soldiers are trained to uphold verdicts with unquestioning obedience."
+ KMT_juditial_dictatorship:0 "The Judicial Dictatorship"
+ KMT_juditial_dictatorship_desc:0 "The transformation is complete. The Court officially dissolves the republican democracy of shared governance and formally establishes an autocracy of judges. The robes have become uniforms of power, and the Constitution has been rewritten to elevate them above all earthly restraint."
+ KMT_stack_political_positions_with_judges:0 "Fill Every Office With Judges"
+ KMT_stack_political_positions_with_judges_desc:0 "Governors, cabinet officials, local administrators: all replaced by judicial appointees. Every pillar of government now serves the Court directly. The nation becomes a vast bureaucracy of legal clerks and robed officials."
+ KMT_order_and_justice:0 "Order and Justice"
+ KMT_order_and_justice_desc:0 "A new national doctrine emerges: absolute order enforced through absolute legal authority. The Court promises stability, obedience, and the eradication of chaos, even if justice, in the traditional sense, must be redefined along the way."
+ KMT_glorious_purpouse:0 "Glorious Purpose"
+ KMT_glorious_purpouse_desc:0 "The judges proclaim a divine mandate: to reshape the nation into their ideal of perfect legal order. With new powers to recruit judicial figures from around the world, expanding their reach, the Court marches ever closer to total ideological domination."
 
  # Army
  KMT_upgrade_fort_mccoy:0 "Upgrade Fort McCoy"
@@ -1260,6 +1291,13 @@
  KMT_give_power_to_executive:0 "Give Power to the Executive Branch"
  KMT_give_power_to_judicial:0 "Give Power to the Judiciary Branch"
  KMT_send_constitucional_questions:0 "Send Constitucional Questions to the Courts"
+
+ KMT_recruit_judges:0 "Recruit Renowned Judges Arround the World"
+ KMT_recruit_judges_desc:0 "In these turbulent times, the nation's legal foundations must be reinforced by the sharpest judicial minds the world has to offer. By extending discreet invitations to renowned jurists from abroad, we can strengthen our institutions, bolster our legitimacy, and shape a judiciary capable of defending ruling alone. Each figure brings unique expertise as we navigate the challenges ahead."
+ KMT_recruit_moraes:0 "Recruit Alexandre de Moraes"
+ KMT_recruit_hale:0 "Recruit Brenda Hale"
+ KMT_recruit_garzon:0 "Recruit Baltasar Garzón"
+ KMT_recruit_nisar:0 "Recruit Mian Saqib Nisar"
 
  #######  ######## ##     ## ######## ########      ######  ######## ##     ## ######## ######## 
 ##     ##    ##    ##     ## ##       ##     ##    ##    ##    ##    ##     ## ##       ##       

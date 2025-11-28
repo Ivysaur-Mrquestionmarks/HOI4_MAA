@@ -534,3 +534,86 @@ KMT_judicial_balance_of_power_category = {
 	}
 
 }
+
+KMT_recruit_judges = {
+
+	KMT_recruit_moraes = {
+		icon = GFX_decision_generic_decision
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 5
+		}
+		visible = {
+			has_completed_focus = KMT_glorious_purpouse
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = KMT_moraes
+		}
+	}
+
+	KMT_recruit_hale = {
+		icon = GFX_decision_generic_decision
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 5
+		}
+		visible = {
+			has_completed_focus = KMT_glorious_purpouse
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = KMT_hale
+		}
+	}
+
+	KMT_recruit_garzon = {
+		icon = GFX_decision_generic_decision
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 5
+		}
+		visible = {
+			has_completed_focus = KMT_glorious_purpouse
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = KMT_garzon
+		}
+	}
+
+	KMT_recruit_nisar = {
+		icon = GFX_decision_generic_decision
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 5
+		}
+		visible = {
+			has_completed_focus = KMT_glorious_purpouse
+		}
+		available = {
+		}
+		complete_effect = {
+			set_country_flag = KMT_nisar
+		}
+	}
+}

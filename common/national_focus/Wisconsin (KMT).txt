@@ -6547,7 +6547,7 @@ focus_tree = {
 		x = 22
 		y = 12
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -6560,7 +6560,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_ideas = KMT_order_and_justice_idea
 		}
 		prerequisite = {
 			focus = KMT_an_army_enforcing_the_court_rules
@@ -6579,7 +6579,7 @@ focus_tree = {
 		x = 24
 		y = 12
 
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -6592,7 +6592,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = KMT_recruit_judges
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 		prerequisite = {
 			focus = KMT_an_army_enforcing_the_court_rules

@@ -1571,6 +1571,126 @@ characters={
 			}
 		}
 	}
+
+	KMT_Alexandre_Moraes = {
+		name = KMT_Alexandre_Moraes
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Alexandre_Moraes
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_country_flag = KMT_moraes
+			}
+			available = {
+			}
+			traits = { KMT_constitutional_defender }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = { media_personality politically_connected }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	KMT_Brenda_Hale = {
+		name = KMT_Brenda_Hale
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Brenda_Hale
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_country_flag = KMT_hale
+			}
+			available = {
+			}
+			traits = { KMT_judicial_reformer }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Baltasar_Garzon = {
+		name = KMT_Baltasar_Garzon
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Baltasar_Garzon
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_country_flag = KMT_garzon
+			}
+			available = {
+			}
+			traits = { KMT_international_prosecutor }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Mian_Saqib_Nisar = {
+		name = KMT_Mian_Saqib_Nisar
+
+		portraits = {
+			civilian = {
+				small = TODO
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Mian_Saqib_Nisar
+			cost =  150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				has_country_flag = KMT_nisar
+			}
+			available = {
+			}
+			traits = { KMT_hunter_of_corruption_and_crime }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 	
 	
 
@@ -1603,6 +1723,7 @@ characters={
 			}
 		}
 	}
+
 	KMT_micheal_hagee = {
 		name = KMT_micheal_hagee
 		portraits = {
@@ -1632,6 +1753,7 @@ characters={
 			}
 		}
 	}
+
 	KMT_hope_skibitsky = {
 		name = KMT_hope_skibitsky
 		gender = female
@@ -1662,6 +1784,7 @@ characters={
 			}
 		}
 	}
+
 	KMT_Mark_E_Anderson = {
 		name = KMT_Mark_E_Anderson
 		portraits = {
@@ -1691,6 +1814,7 @@ characters={
 			}
 		}
 	}
+
 	KMT_Sandra_A_Gregory = {
 		name = KMT_Sandra_A_Gregory
 		gender = female
@@ -1721,6 +1845,7 @@ characters={
 			}
 		}	
 	}
+
 	KMT_Robert_Neller = {
 		name = KMT_Robert_Neller
 		portraits = {
@@ -1750,6 +1875,7 @@ characters={
 			}
 		}	
 	}
+
 	KMT_James_Cartwright = {
 		name = KMT_James_Cartwright
 		portraits = {
@@ -1779,6 +1905,7 @@ characters={
 			}
 		}	
 	}
+
 	KMT_Daniel_P_Leaf = {
 		name = KMT_Daniel_P_Leaf
 		portraits = {
@@ -1807,6 +1934,40 @@ characters={
 				factor = 1
 			}
 		}	
+	}
+
+	KMT_John_T_Dunlap = {
+		name = KMT_John_T_Dunlap
+		portraits = {
+			navy = {
+				small = "GFX_idea_military_John_T_Dunlap"
+				large = "gfx/leaders/KMT/John_T_Dunlap.dds"
+			}
+		}
+		field_marshal = {
+			traits = { inflexible_strategist unyielding_defender expert_delegator commando skilled_staffer }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
+			visible = {
+				has_country_flag = KMT_smom
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = chief_John_T_Dunlap
+			ledger = army
+			cost = 50
+			available = {
+				has_completed_focus = KMT_american_crusade
+			}
+			traits = { army_chief_defensive_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 
 
@@ -1907,37 +2068,4 @@ characters={
 	}
 
 
-	KMT_John_T_Dunlap = {
-		name = KMT_John_T_Dunlap
-		portraits = {
-			navy = {
-				small = "GFX_idea_military_John_T_Dunlap"
-				large = "gfx/leaders/KMT/John_T_Dunlap.dds"
-			}
-		}
-		field_marshal = {
-			traits = { inflexible_strategist unyielding_defender expert_delegator commando skilled_staffer }
-			skill = 4
-			attack_skill = 2
-			defense_skill = 5
-			planning_skill = 3
-			logistics_skill = 2
-			visible = {
-				has_country_flag = KMT_smom
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = chief_John_T_Dunlap
-			ledger = army
-			cost = 50
-			available = {
-				has_completed_focus = KMT_american_crusade
-			}
-			traits = { army_chief_defensive_2 }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 }

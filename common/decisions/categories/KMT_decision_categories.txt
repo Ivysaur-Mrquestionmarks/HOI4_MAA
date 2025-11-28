@@ -43,3 +43,18 @@ KMT_judicial_balance_of_power_category = {
 	visible = {
 	}
 }
+
+
+KMT_recruit_judges = {
+	icon = GFX_decision_category_generic
+	allowed = {
+    	original_tag = KMT
+	}
+
+	visible = {
+		has_completed_focus = KMT_glorious_purpouse
+	}
+
+	priority = 90
+
+}
