@@ -537,6 +537,23 @@ on_actions = {
 					}
 				}
 			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = FRA
+						is_owned_by = NEW
+						is_owned_by = VIR
+						is_owned_by = TIM
+						is_owned_by = WBK
+						is_owned_by = NRA
+					}
+				}
+				set_state_flag = state_part_of_american_northeast_flag
+				add_to_array = {
+					array = global.state_part_of_american_northeast
+					value = THIS.id
+				}
+			}
 			every_state = { #Give each country 2 trains per owned state
 				owner = {
 					add_equipment_to_stockpile = {

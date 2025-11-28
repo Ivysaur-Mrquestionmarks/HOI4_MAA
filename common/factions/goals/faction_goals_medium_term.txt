@@ -748,14 +748,14 @@ faction_goal_control_mexican_oil = {
 ### Strategic Bases
 
 # Newfoundland
-faction_goal_control_newfoundland_bases = {
-	name = control_newfoundland_bases_goal_name
-	description = control_newfoundland_bases_goal_desc
-	category = medium_term
-	group = FOCUS_FILTER_ANNEXATION
-	allowed = {
-		always = no
-	}
+#faction_goal_control_newfoundland_bases = {
+#	name = control_newfoundland_bases_goal_name
+#	description = control_newfoundland_bases_goal_desc
+#	category = medium_term
+#	group = FOCUS_FILTER_ANNEXATION
+#	allowed = {
+#		always = no
+#	}
 #	visible = {
 #		FROM = {
 #			NOT = {
@@ -876,3 +876,64 @@ faction_goal_control_newfoundland_bases = {
 #		}
 #	}
 #}
+
+
+
+### MAA Custom
+
+faction_goal_secure_the_northeast = {
+	name = secure_the_northeast_goal_name
+	description = secure_the_northeast_goal_desc
+	group = FOCUS_FILTER_WAR_SUPPORT
+	category = medium_term
+	visible = {
+		FROM = { original_tag = FRA }
+	}
+	available = {
+	
+	}
+	completed = {
+		FROM = {
+			all_collection_elements = {
+				collection = {
+					input = collection:northeast_american_states_collection
+					operators = {
+						
+					}
+				}
+				OR = {
+					is_owned_by = FROM
+					owner = {
+						is_ally_with = FROM
+					}
+				}
+			}
+			has_completed_focus = FRA_the_great_crisis_of_our_time
+		}
+
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ALL_FACTION_MEMBERS_IN_NE
+		every_faction_member = {
+			limit = {
+				any_state_in = {
+					array = global.state_part_of_american_northeast
+					controller = {
+						tag = PREV
+					}
+				}
+			}
+			add_faction_initiative = 1
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			army_experience = 50
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}

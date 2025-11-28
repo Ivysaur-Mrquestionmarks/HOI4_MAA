@@ -1,0 +1,29 @@
+	### FACTION ASSETS ###
+
+spriteTypes = {
+
+	#########################
+	##### Faction Logos #####
+	#########################
+
+	spriteType = {
+		name = "GFX_faction_icon_legitmists"
+		texturefile = "gfx/interface/factions/epstein_faction_logos/faction_icon_legitmists.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_icon_constitutionalists"
+		texturefile = "gfx/interface/factions/epstein_faction_logos/faction_icon_constitutionalists.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_icon_populists"
+		texturefile = "gfx/interface/factions/epstein_faction_logos/faction_icon_populists.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_icon_loyalists"
+		texturefile = "gfx/interface/factions/epstein_faction_logos/faction_icon_loyalists.dds"
+		noOfFrames = 2
+	}
+}

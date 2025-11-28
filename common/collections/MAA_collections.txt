@@ -19,6 +19,29 @@ faction_american_states_collection = {
 	name = COLLECTION_AMERICAN_STATES_CONTROLLED_BY_FACTION_MEMBER
 }
 
+# REGIONAL STATE COLLECTIONS
+northeast_american_states_collection = {
+	input = game:all_states
+	name = FRA_conditions_for_northeast_goal_completion_tt
+	operators = {
+		limit = {
+			#is_in_array = { global.state_part_of_american_northeast = THIS }
+			has_state_flag = state_part_of_american_northeast_flag
+		}
+	}
+}
+faction_northeast_american_states_collection = {
+	input = collection:northeast_american_states_collection
+
+	operators = {
+		limit = {
+			is_controlled_by_ROOT_or_ally = yes 
+		}
+	}
+	name = COLLECTION_NORTHEAST_AMERICAN_STATES_CONTROLLED_BY_FACTION_MEMBER
+}
+
+
 anticommunism_american_states_collection = {
 	input = collection:american_states_collection
 
@@ -34,3 +57,5 @@ anticommunism_american_states_collection = {
 		}
 	}
 }
+
+

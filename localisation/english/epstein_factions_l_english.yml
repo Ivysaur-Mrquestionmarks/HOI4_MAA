@@ -20,8 +20,9 @@
  beto_pact:0 "Texan Defense Organization"
  
  
- #Legitimists
- legitimists_faction:0 "Legitimists"
+ # Faction Names
+ legitimists_faction_name:0 "Legitimists"
+ loyalists_faction_name:0 "Loyalists"
  
  
  ### Manifests
@@ -31,6 +32,21 @@
  ### Long Term Goals
  crushing_the_orange_menace_goal_name:0 "Crushing the Orange Menace"
  crushing_the_orange_menace_goal_desc:0 "Donald Trump, the one who started this whole mess, must be brought down."
+ retaking_washington_dc_goal_name:0 "Retaking the Capital"
+ retaking_washington_dc_goal_desc:0 "Losing the Capital, Washington D.C., was a great blow to our cause. We must do everything we can to retake it to secure our legitimacy."
  
+ ### Medium Term Goals
+ secure_the_northeast_goal_name:0 "Secure the North Atlantic"
+ secure_the_northeast_goal_desc:0 "We must first prioritize our regional security before turning our attention elsewhere. To do this, we must consolidate our surroundings."
+ 
+ 
+ # Misc Tooltips
+ FRA_conditions_for_northeast_goal_completion_tt:0 "§YEvery§! §Rstarting§! §Ycore state of the [FRA.GetName], [VIR.GetName], [NRA.GetName], [TIM.GetName], and [NEW.GetName]§!"
+ 
+ # Progress Sections
+ warlord_legitimacy_section:0 "Legitimacy Level: §RWarlord State§!"
+ moderate_legitimacy_section:0 "Legitimacy Level: §YReunification Contender§!"
+ strong_legitimacy_section:0 "Legitimacy Level: §GClear Successor State§!"
+ internationally_legitimate_govt_section:0 "Legitimacy Level: §CInternationally Recognized§!"
  
  

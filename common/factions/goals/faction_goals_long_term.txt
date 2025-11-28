@@ -978,7 +978,7 @@ faction_goal_crushing_the_orange_menace = {
 	category = long_term
 	group = FOCUS_FILTER_CONSOLIDATION
 	allowed = {
-		
+		NOT = { tag = USA }
 	}
 	visible = {
 		FROM = {
@@ -990,7 +990,8 @@ faction_goal_crushing_the_orange_menace = {
 		country_exists = USA
 	}
 	completed = {
-		NOT = { country_exists = USA }
+		USA = { exists = no }
+		
 		FROM = {
 			OR = {
 				owns_state = 416
@@ -1020,6 +1021,7 @@ faction_goal_crushing_the_orange_menace = {
 		base = 1
 	}
 }
+
 faction_goal_retaking_washington_dc = {
 	name = retaking_washington_dc_goal_name
 	description = retaking_washington_dc_goal_desc

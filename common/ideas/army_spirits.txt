@@ -622,7 +622,7 @@ ideas = {
 
 		operational_reserve_spirit = {
 			ledger = army
-			visible = { has_tech = mass_assault }
+			visible = { has_doctrine = mass_assault }
 			modifier = {
 				tactic_relentless_assault_preferred_weight_factor = 1
 				army_strength_factor = 0.1
