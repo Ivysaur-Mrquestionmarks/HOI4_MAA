@@ -130,7 +130,7 @@ if = {
 
 set_research_slots = 3
 
-create_faction = Revolutionary_Front
+create_faction_from_template = faction_template_libertarian_right
 
 set_politics = {
 	ruling_party = libertarian_right

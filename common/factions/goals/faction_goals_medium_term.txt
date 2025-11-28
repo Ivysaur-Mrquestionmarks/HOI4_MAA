@@ -550,7 +550,7 @@ faction_goal_a_military_base = {
 		base = 0
 		modifier = {
 			add = 1
-			date > 1938.1.1
+			date > 2023.1.1
 		}
 		modifier = {
 			add = 1
@@ -927,6 +927,37 @@ faction_goal_secure_the_northeast = {
 			}
 			add_faction_initiative = 1
 		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			army_experience = 50
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+faction_goal_gla_secure_wisconsin_michigan = {
+	name = gla_secure_wisconsin_michigan_goal_name
+	description = gla_secure_wisconsin_michigan_goal_desc
+	group = FOCUS_FILTER_WAR_SUPPORT
+	category = medium_term
+	visible = {
+		FROM = { original_tag = GLA }
+	}
+	available = {
+	
+	}
+	completed = {
+		KMT = { exists = no }
+		DET = { exists = no }
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = THE_FACTION_LEADER
+		GLA = { add_faction_initiative = 1 }
 		custom_effect_tooltip = generic_skip_one_line_tt
 		custom_effect_tooltip = ALL_FACTION_MEMBERS
 		every_faction_member = {

@@ -456,12 +456,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_goal_unknown"
 		}
 		
-		iconType = {
-		    name = "overlay"
-		    position = { x = -9 y = -28 }
-		    alwaystransparent = yes
-		}
-		
 		instantTextboxType = {
 			name = "name"
 			position = { x = 15 y = 58 }
@@ -524,6 +518,12 @@ guiTypes = {
 			quadTextureSprite = "GFX_goal_unknown"
 			centerposition = yes
 			Orientation = CENTER
+		}
+		
+		iconType = {
+		    name = "overlay"
+		    position = { x = -9 y = -28 }
+		    alwaystransparent = yes
 		}
 		
 		iconType = {

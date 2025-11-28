@@ -690,9 +690,6 @@ faction_goal_defeat_of_communism = {
 				ideology = authoritarian_left
 				popularity = -0.15
 			}
-			add_political_power = 50
-		}
-		every_faction_member = {
 			add_popularity = {
 				ideology = libertarian_left
 				popularity = -0.15
@@ -1062,6 +1059,85 @@ faction_goal_retaking_washington_dc = {
 			add_faction_influence_ratio = 0.05
 			army_experience = 50 
 			add_political_power = 250
+		}	
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+faction_goal_securing_the_great_lakes_region = {
+	name = securing_the_great_lakes_region_goal_name
+	description = securing_the_great_lakes_region_goal_desc
+	category = long_term
+	group = FOCUS_FILTER_CONSOLIDATION
+	allowed = {
+		ROOT = {
+			OR = {
+				tag = AFS
+				tag = KMT
+				tag = DET
+				tag = GLA
+				tag = ISA
+				tag = MIN
+				tag = MNS
+				tag = MIL
+			}
+		}
+	}
+	visible = {
+	}
+	completed = {
+		FROM = {
+			all_collection_elements = {
+				collection = {
+					input = collection:greatlakes_american_states_collection
+					operators = {
+						
+					}
+				}
+				OR = {
+					is_owned_by = FROM
+					owner = {
+						is_ally_with = FROM
+					}
+				}
+			}
+			has_completed_focus = GLA_its_time_to_liberate_america
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 250
+		custom_effect_tooltip = generic_skip_one_line_tt
+		every_faction_member = {
+			hidden_effect = {
+				add_faction_influence_ratio = 0.05
+				army_experience = 50
+				add_political_power = 250
+				every_collection_element = {
+					input = {
+						input = collection:greatlakes_american_states_collection
+						limit = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					add_compliance = 30
+				}
+			} 
+		}
+		effect_tooltip = {
+			add_faction_influence_ratio = 0.05
+			army_experience = 50 
+			add_political_power = 250
+			every_collection_element = {
+				input = {
+					input = collection:greatlakes_american_states_collection
+					limit = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				add_compliance = 30
+			}
 		}	
 	}
 	ai_will_do = {

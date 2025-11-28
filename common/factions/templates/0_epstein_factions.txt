@@ -3,7 +3,7 @@
 
 faction_template_trump_loyalists = {
 	name = loyalists_faction_name
-	manifest = faction_manifest_strength_in_unity
+	manifest = faction_manifest_reclaim_america
 	can_leader_join_other_factions = yes
 	# color = { 179 183 235 } # this should default to faction leader's color
 	icon = GFX_faction_icon_loyalists
@@ -16,11 +16,10 @@ faction_template_trump_loyalists = {
 
 	goals = {
 		# Short term goals
-		# #faction_goal_growing_the_faction
-		# #faction_goal_military_infrastructure
+		faction_goal_defeating_the_NPA
 
 		# Medium term goals
-		#faction_goal_a_military_base
+		faction_goal_a_military_base
 
 		# Long terms
 		faction_goal_retaking_washington_dc
@@ -48,8 +47,7 @@ faction_template_biden_legitimists = {
 
 	goals = {
 		# Short term goals
-		# #faction_goal_growing_the_faction
-		# #faction_goal_military_infrastructure
+		faction_goal_unlock_research
 
 		# Medium term goals
 		faction_goal_secure_the_northeast
@@ -60,6 +58,37 @@ faction_template_biden_legitimists = {
 
 	default_rules = {
 		joining_rule_non_radical_right
+		change_leader_rule_never
+	}
+	
+}
+
+faction_template_libertarian_right = {
+	name = libertarian_right_faction_name
+	manifest = faction_manifest_reclaim_america
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_icon_constitutionalists
+	visible = {
+		has_government = libertarian_right
+	}
+	available = {
+		has_government = libertarian_right
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_military
+
+		# Medium term goals
+		faction_goal_gla_secure_wisconsin_michigan
+
+		# Long terms
+		faction_goal_securing_the_great_lakes_region
+	}
+
+	default_rules = {
+		joining_rule_same_ideology
 		change_leader_rule_never
 	}
 	

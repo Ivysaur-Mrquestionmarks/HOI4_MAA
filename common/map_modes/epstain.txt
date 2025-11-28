@@ -146,42 +146,4 @@ scripted_map_modes = {
 		near_text = state
 		update_daily = yes
 	}
-	debug_regions = {
-		top = {
-			type = state
-
- 			color = {
-				FROM = {
-					if = {
-						limit = {
-							is_in_array = {
-    								array = global.state_part_of_american_northeast
-    								value = THIS.id
-							}
-						}
-					
-				
- 						set_temp_variable = { red = 0.8 }
- 						set_temp_variable = { blue = 0.0}
-						set_temp_variable = { green = 1}
-						set_temp_variable = { alpha = 1.0 }
-
-
-
- 						set_temp_variable = { highlighted = 0.5}
-					}				
-				}
- 				
- 			}
-
-			thickness = no
-		}
-		bottom = {
-			type = none
-		}
-
- 		far_text = state
-		near_text = state
-		update_daily = yes
-	}
 }

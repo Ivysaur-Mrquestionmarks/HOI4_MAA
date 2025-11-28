@@ -23,6 +23,7 @@
  # Faction Names
  legitimists_faction_name:0 "Legitimists"
  loyalists_faction_name:0 "Loyalists"
+ libertarian_right_faction_name:0 "Constitutionalists"
  
  
  ### Manifests
@@ -34,14 +35,24 @@
  crushing_the_orange_menace_goal_desc:0 "Donald Trump, the one who started this whole mess, must be brought down."
  retaking_washington_dc_goal_name:0 "Retaking the Capital"
  retaking_washington_dc_goal_desc:0 "Losing the Capital, Washington D.C., was a great blow to our cause. We must do everything we can to retake it to secure our legitimacy."
+ securing_the_great_lakes_region_goal_name:0 "Securing the Great Lakes"
+ securing_the_great_lakes_region_goal_desc:0 ""
  
  ### Medium Term Goals
  secure_the_northeast_goal_name:0 "Secure the North Atlantic"
  secure_the_northeast_goal_desc:0 "We must first prioritize our regional security before turning our attention elsewhere. To do this, we must consolidate our surroundings."
+ gla_secure_wisconsin_michigan_goal_name:0 "Secure Wisconsin and Michigan"
+ gla_secure_wisconsin_michigan_goal_desc:0 ""
+ 
+ 
+ ### Short Term Goals
+ defeating_the_NPA_goal_name:0 "Defeating the [NPA.GetName]"
+ defeating_the_NPA_goal_desc:0 "Before setting our sights on the rest of the country, we must crush internal dissent within the Republican Party. Mike Pence will be made an example for what we do to traitors."
  
  
  # Misc Tooltips
- FRA_conditions_for_northeast_goal_completion_tt:0 "§YEvery§! §Rstarting§! §Ycore state of the [FRA.GetName], [VIR.GetName], [NRA.GetName], [TIM.GetName], and [NEW.GetName]§!"
+ FRA_conditions_for_northeast_goal_completion_tt:0 "§Rstarting§! §Ycore states§! of §Ythe [FRA.GetName], [VIR.GetName], [NRA.GetName], [TIM.GetName], and [NEW.GetName]§!"
+ COLLECTION_ALL_GREAT_LAKES_AMERICAN_STATES:0 "§YStates in the Great Lakes and Ohio Region§!"
  
  # Progress Sections
  warlord_legitimacy_section:0 "Legitimacy Level: §RWarlord State§!"

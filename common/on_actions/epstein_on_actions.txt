@@ -549,10 +549,21 @@ on_actions = {
 					}
 				}
 				set_state_flag = state_part_of_american_northeast_flag
-				add_to_array = {
-					array = global.state_part_of_american_northeast
-					value = THIS.id
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = GLA
+						is_owned_by = AFS
+						is_owned_by = MIN
+						is_owned_by = MNS
+						is_owned_by = MIL
+						is_owned_by = DET
+						is_owned_by = KMT
+						is_owned_by = ISA
+					}
 				}
+				set_state_flag = state_part_of_american_great_lakes_flag
 			}
 			every_state = { #Give each country 2 trains per owned state
 				owner = {
