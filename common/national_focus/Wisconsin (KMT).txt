@@ -8248,6 +8248,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			USA = { exists = no }
+			FRA = { exists = no }
+			CSA = { exists = no }
+			PRA = { exists = no }
 		}
 		
 		bypass = {
