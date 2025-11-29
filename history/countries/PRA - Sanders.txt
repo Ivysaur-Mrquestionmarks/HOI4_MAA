@@ -13,7 +13,7 @@ declare_war_on = {
 }
 add_civil_war_target = ORO
 
-create_faction = united_workers_of_america
+create_faction_from_template = faction_template_pra_populists
 
 #Starting tech
 set_technology = {

@@ -645,7 +645,7 @@ faction_goal_defeating_the_NPA = {
 		}
 	}
 	completed = {
-		FROM = {
+		USA = {
 			OR = {
 				owns_state = 207
 				any_allied_country = {
@@ -679,7 +679,7 @@ faction_goal_pra_secure_the_new_state = {
 	name = pra_secure_the_new_state_goal_name
 	description = pra_secure_the_new_state_goal_desc
 	category = short_term
-	group = FOCUS_FILTER_CONSOLIDATION
+	group = FOCUS_FILTER_INTERNAL_AFFAIRS
 	allowed = {
 		tag = PRA
 	}
@@ -690,7 +690,7 @@ faction_goal_pra_secure_the_new_state = {
 		}
 	}
 	completed = {
-		FROM = {
+		PRA = {
 			NOT = { has_war_with = CAS }
 			NOT = { has_war_with = PAC }
 			NOT = { country_exists = ORO }

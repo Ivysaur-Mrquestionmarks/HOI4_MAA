@@ -44,16 +44,24 @@
  secure_the_northeast_goal_desc:0 "We must first prioritize our regional security before turning our attention elsewhere. To do this, we must consolidate our surroundings."
  gla_secure_wisconsin_michigan_goal_name:0 "Secure Wisconsin and Michigan"
  gla_secure_wisconsin_michigan_goal_desc:0 ""
+ pra_water_supply_secure_goal_name:0 "Secure the Water Supply"
+ pra_water_supply_secure_goal_desc:0 ""
+ pra_west_coast_revolution_goal_name:0 "The West Coast Revolution"
+ pra_west_coast_revolution_goal_desc:0 ""
  
  
  ### Short Term Goals
  defeating_the_NPA_goal_name:0 "Defeating the [NPA.GetName]"
  defeating_the_NPA_goal_desc:0 "Before setting our sights on the rest of the country, we must crush internal dissent within the Republican Party. Mike Pence will be made an example for what we do to traitors."
+ pra_secure_the_new_state_goal_name:0 "Securing the West Coast Revolution"
+ pra_secure_the_new_state_goal_desc:0 "Our revolution is young and fragile; we face many enemies from within and from foreign powers. We must secure the revolution in California before moving on to the rest of the former United States of America."
  
  
  # Misc Tooltips
  FRA_conditions_for_northeast_goal_completion_tt:0 "§Rstarting§! §Ycore states§! of §Ythe [FRA.GetName], [VIR.GetName], [NRA.GetName], [TIM.GetName], and [NEW.GetName]§!"
  COLLECTION_ALL_GREAT_LAKES_AMERICAN_STATES:0 "§YStates in the Great Lakes and Ohio Region§!"
+ COLLECTION_STATES_ANTICOMMUNIST_COUNTRIES:0 "States controlled by Countries with Right-Wing Ideologies"
+ CAS_sTARTING_CORES_NAME:0 "Starting [CAS.GetName] States"
  
  # Progress Sections
  warlord_legitimacy_section:0 "Legitimacy Level: §RWarlord State§!"

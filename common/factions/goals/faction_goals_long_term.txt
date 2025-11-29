@@ -868,11 +868,12 @@ faction_goal_defeat_of_anti_communists = {
 	completed = {
 		collection_size = {
 			input = {
-				input = collection:anticommunism_american_states
-				name = COLLECTION_STATES_MY_CONTINENT_CONTROLLED_DEMOCRATIC_FASCIST
+				input = collection:anticommunism_american_states_collection
+				name = COLLECTION_STATES_ANTICOMMUNIST_COUNTRIES
 			}
 			value < 1
 		}
+		USA = { exists = no }
 		
 	}
 	complete_effect = {
@@ -989,7 +990,7 @@ faction_goal_crushing_the_orange_menace = {
 	completed = {
 		USA = { exists = no }
 		
-		FROM = {
+		ROOT = {
 			OR = {
 				owns_state = 416
 				any_allied_country = {
@@ -1036,7 +1037,7 @@ faction_goal_retaking_washington_dc = {
 		}
 	}
 	completed = {
-		FROM = {
+		ROOT = {
 			OR = {
 				owns_state = 242
 				any_allied_country = {
@@ -1088,7 +1089,7 @@ faction_goal_securing_the_great_lakes_region = {
 	visible = {
 	}
 	completed = {
-		FROM = {
+		GLA = {
 			all_collection_elements = {
 				collection = {
 					input = collection:greatlakes_american_states_collection
@@ -1097,9 +1098,9 @@ faction_goal_securing_the_great_lakes_region = {
 					}
 				}
 				OR = {
-					is_owned_by = FROM
+					is_owned_by = ROOT
 					owner = {
-						is_ally_with = FROM
+						is_ally_with = ROOT
 					}
 				}
 			}
@@ -1109,34 +1110,48 @@ faction_goal_securing_the_great_lakes_region = {
 	complete_effect = {
 		add_faction_power_projection = 250
 		custom_effect_tooltip = generic_skip_one_line_tt
-		every_faction_member = {
-			hidden_effect = {
+		hidden_effect = {
+			every_faction_member = {
 				add_faction_influence_ratio = 0.05
 				army_experience = 50
 				add_political_power = 250
-				every_collection_element = {
-					input = {
-						input = collection:greatlakes_american_states_collection
-						limit = {
-							is_fully_controlled_by = ROOT
-						}
-					}
-					add_compliance = 30
-				}
 			} 
+		}
+		hidden_effect = {
+			ROOT = {
+			every_collection_element = {
+				input = {
+					input = collection:greatlakes_american_states_collection
+					operators = {
+						faction_members
+						#controlled_states
+						#limit = {
+						#	is_fully_controlled_by = PREV
+						#}
+					}
+				}
+				add_compliance = 30
+			}
+			}
 		}
 		effect_tooltip = {
 			add_faction_influence_ratio = 0.05
 			army_experience = 50 
 			add_political_power = 250
-			every_collection_element = {
-				input = {
-					input = collection:greatlakes_american_states_collection
-					limit = {
-						is_fully_controlled_by = ROOT
+			ROOT = {
+				every_collection_element = {
+					input = {
+						input = collection:greatlakes_american_states_collection
+						operators = {
+							faction_members
+							#controlled_states
+							#limit = {
+							#	is_fully_controlled_by = PREV
+							#}
+						}
 					}
+					add_compliance = 30
 				}
-				add_compliance = 30
 			}
 		}	
 	}

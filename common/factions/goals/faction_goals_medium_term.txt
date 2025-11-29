@@ -893,7 +893,7 @@ faction_goal_secure_the_northeast = {
 	
 	}
 	completed = {
-		FROM = {
+		ROOT = {
 			all_collection_elements = {
 				collection = {
 					input = collection:northeast_american_states_collection
@@ -902,9 +902,9 @@ faction_goal_secure_the_northeast = {
 					}
 				}
 				OR = {
-					is_owned_by = FROM
+					is_owned_by = ROOT
 					owner = {
-						is_ally_with = FROM
+						is_ally_with = ROOT
 					}
 				}
 			}
@@ -962,6 +962,114 @@ faction_goal_gla_secure_wisconsin_michigan = {
 		custom_effect_tooltip = ALL_FACTION_MEMBERS
 		every_faction_member = {
 			army_experience = 50
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+faction_goal_pra_water_supply_secure = {
+	name = pra_water_supply_secure_goal_name
+	description = pra_water_supply_secure_goal_desc
+	group = FOCUS_FILTER_INTERNAL_AFFAIRS
+	category = medium_term
+	visible = {
+		FROM = { 
+			original_tag = PRA 
+			has_country_flag = PRA_wcw_redux_update_content_flag
+		}
+		
+	}
+	available = {
+	
+	}
+	completed = {
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = THE_FACTION_LEADER
+		PRA = { add_faction_initiative = 1 }
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			add_political_power = 50
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+faction_goal_pra_west_coast_revolution = {
+	name = pra_west_coast_revolution_goal_name
+	description = pra_west_coast_revolution_goal_desc
+	group = FOCUS_FILTER_WAR_SUPPORT
+	category = medium_term
+	visible = {
+		FROM = { 
+			original_tag = PRA 
+		}
+		
+	}
+	available = {
+	
+	}
+	completed = {
+		ROOT = {
+			all_collection_elements = {
+				collection = {
+					input = game:all_states
+					name = CAS_sTARTING_CORES_NAME
+					operators = {
+						
+						limit = { 
+							is_core_of = CAS
+							NOT = {
+								is_core_of = LIB
+								is_core_of = PAC
+								state = 562
+							}
+								
+						}
+					}
+				}
+				OR = {
+					is_owned_by = ROOT
+					owner = {
+						is_ally_with = ROOT
+					}
+				}
+			}
+			NOT = { country_exists = HOP }
+			NOT = { country_exists = IDA }
+		}
+		
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = THE_FACTION_LEADER
+		PRA = { add_faction_initiative = 1 }
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			add_war_support = 0.05
+			if = {
+				limit = { PRA = { has_government = libertarian_left } }
+				add_popularity = {
+					ideology = libertarian_left
+					popularity = 0.1
+				}
+			}
+			if = {
+				limit = { PRA = { has_government = authoritarian_left } }
+				add_popularity = {
+					ideology = authoritarian_left
+					popularity = 0.1
+				}
+			}
 		}
 	}
 	ai_will_do = {
