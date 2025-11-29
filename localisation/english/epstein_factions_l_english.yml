@@ -25,11 +25,14 @@
  loyalists_faction_name:0 "Loyalists"
  libertarian_right_faction_name:0 "Constitutionalists"
  pra_populists_faction_name:0 "Populists"
+ NATO_faction_name:0 "North Atlantic Treaty Organization"
  
  
  ### Manifests
  manifest_reclaim_america_goal_name:0 "Reclamation of America"
  manifest_reclaim_america_goal_desc:0 "Following the events in the early months of 2021, we find our beautiful country fractured. We must collect the pieces to reunify our glorious nation."
+ manifest_restore_nato_goal_name:0 "Restoring NATO Influence in North America"
+ manifest_restore_nato_goal_desc:0 "The collapse of the United States also meant the collapse of NATO influence over much of the Americas. The instability in Canada is also concerning..."
  
  ### Long Term Goals
  crushing_the_orange_menace_goal_name:0 "Crushing the Orange Menace"
@@ -62,6 +65,7 @@
  COLLECTION_ALL_GREAT_LAKES_AMERICAN_STATES:0 "§YStates in the Great Lakes and Ohio Region§!"
  COLLECTION_STATES_ANTICOMMUNIST_COUNTRIES:0 "States controlled by Countries with Right-Wing Ideologies"
  CAS_sTARTING_CORES_NAME:0 "Starting [CAS.GetName] States"
+ generic_NATO_country_flag:0 "Member of NATO"
  
  # Progress Sections
  warlord_legitimacy_section:0 "Legitimacy Level: §RWarlord State§!"

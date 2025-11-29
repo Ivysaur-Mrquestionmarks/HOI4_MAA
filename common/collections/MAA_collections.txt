@@ -8,6 +8,19 @@ american_states_collection = {
 	}
 }
 
+north_america_nato_states_collection = {
+	input = game:all_states
+	name = COLLECTION_ALL_NA_NATO_STATES
+	operators = {
+		limit = {
+			OR = {
+				has_state_flag = part_of_america
+				has_state_flag = part_of_canada
+			}
+		}
+	}
+}
+
 faction_american_states_collection = {
 	input = collection:american_states_collection
 
@@ -17,6 +30,17 @@ faction_american_states_collection = {
 		}
 	}
 	name = COLLECTION_AMERICAN_STATES_CONTROLLED_BY_FACTION_MEMBER
+}
+
+faction_north_america_nato_states_collection = {
+	input = collection:north_america_nato_states_collection
+
+	operators = {
+		limit = {
+			is_controlled_by_ROOT_or_ally = yes 
+		}
+	}
+	name = COLLECTION_NA_NATO_STATES_CONTROLLED_BY_FACTION_MEMBER
 }
 
 

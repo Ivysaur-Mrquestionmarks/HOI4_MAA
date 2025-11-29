@@ -815,8 +815,23 @@ news_event = {
 				set_faction_name = "European Alliance"
 				remove_from_faction = CAN
 				leave_faction = yes
+				clr_country_flag = generic_NATO_country_flag
+				every_subject_country = {
+					clr_country_flag = generic_NATO_country_flag
+				}
 			}
-			FFR = { set_faction_leader = yes }
+			if = {
+				limit = {
+					original_tag = FFR
+				}
+				FFR = { set_faction_leader = yes }
+			}
+			if = {
+				limit = {
+					original_tag = CAN
+				}
+				clr_country_flag = generic_NATO_country_flag
+			}
 		}
 	}
 	option = {

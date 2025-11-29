@@ -442,7 +442,19 @@ on_actions = {
 			LAS = {
 				inherit_technology = UTA #just incase we change UTA's tech around at all. Keeps it dynamic!
 			}
-			
+			every_country = {
+				limit = {
+					OR = {
+						tag = FFR
+						tag = ENG
+						tag = HOL
+						tag = CAN
+						tag = GRL
+						is_subject_of = ENG
+					}
+				}
+				set_country_flag = generic_NATO_country_flag
+			}
 			every_country = {
 				if = {
 					limit = {

@@ -125,4 +125,40 @@ faction_template_pra_populists = {
 	
 }
 
+faction_template_NATO_faction = {
+	name = NATO_faction_name
+	manifest = faction_manifest_restore_nato
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_icon_nato
+	visible = {
+		always = no
+	}
+	available = {
+		OR = {
+			tag = ENG
+			tag = GRL
+			tag = HOL
+			tag = FFR
+			tag = CAN
+		}
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_research
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		joining_rule_nato_eligible_only
+	}
+	
+}
+
 

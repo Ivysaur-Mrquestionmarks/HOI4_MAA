@@ -61,3 +61,63 @@ faction_manifest_reclaim_america = {
 	}
 }
 
+# NATO
+faction_manifest_restore_nato = {
+	name = manifest_restore_nato_goal_name
+	description = manifest_restore_nato_goal_desc
+	is_manifest = yes
+	ratio_progress = {
+		total_amount_collection = collection:north_america_nato_states_collection
+		completed_amount_collection = collection:faction_north_america_nato_states_collection
+
+		range = { 
+			max = 1
+		}
+		
+		scale = {
+			party_popularity_stability_factor = 0.10
+		}
+		
+		progress_sections = {
+			weak_nato_NA_influence_section = {
+				min = 0
+				max = 0.05
+				modifier = { 
+					justify_war_goal_time = -0.05
+					war_stability_factor = 0.05
+					war_support_factor = 0.05
+				}
+			}
+			moderate_nato_NA_influence_section = {
+				min = 0.05
+				max = 0.35
+				modifier = { 
+					justify_war_goal_time = -0.25
+					required_garrison_factor = -0.05
+					war_stability_factor = 0.1
+					war_support_factor = 0.1
+				}
+			}
+			strong_nato_NA_influence_section = {
+				min = 0.35
+				max = 0.8
+				modifier = { 
+					justify_war_goal_time = -0.45
+					required_garrison_factor = -0.1
+					war_stability_factor = 0.2
+					war_support_factor = 0.2
+				}
+			}
+			nato_NA_control_section = {
+				min = 0.8
+				modifier = { 
+					justify_war_goal_time = -0.65
+					required_garrison_factor = -0.2
+					war_stability_factor = 0.25
+					war_support_factor = 0.25
+				}
+			}
+		}
+	}
+}
+

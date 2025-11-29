@@ -137,6 +137,8 @@ faction_goal_rule_the_waves = {
 		FROM = {
 			OR = {
 				original_tag = ENG # Britannia always wants to Rule!
+				original_tag = FFR
+				original_tag = GRL
 				num_of_naval_factories > 19
 			}
 		}

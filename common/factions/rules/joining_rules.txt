@@ -338,6 +338,20 @@ joining_rule_same_continent_only = {
 		enemy_justify_war_goal_time = 0.1
 	}
 }
+joining_rule_nato_eligible_only = {
+	type = joining_rules
+	ai_will_do = {
+		base = 0
+	}
+	can_remove = {
+		always = no
+	}
+	trigger = {
+		ROOT = { has_country_flag = generic_NATO_country_flag }
+	}
+	modifier = {
+	}
+}
 
 
 joining_rule_hispanic_only = {
