@@ -31,7 +31,7 @@
  ### Manifests
  manifest_reclaim_america_goal_name:0 "Reclamation of America"
  manifest_reclaim_america_goal_desc:0 "Following the events in the early months of 2021, we find our beautiful country fractured. We must collect the pieces to reunify our glorious nation."
- manifest_restore_nato_goal_name:0 "Restoring NATO Influence in North America"
+ manifest_restore_nato_goal_name:0 "Restore NATO Influence in Americas"
  manifest_restore_nato_goal_desc:0 "The collapse of the United States also meant the collapse of NATO influence over much of the Americas. The instability in Canada is also concerning..."
  
  ### Long Term Goals
@@ -67,10 +67,15 @@
  CAS_sTARTING_CORES_NAME:0 "Starting [CAS.GetName] States"
  generic_NATO_country_flag:0 "Member of NATO"
  
- # Progress Sections
+ ### Progress Sections
+ 
  warlord_legitimacy_section:0 "Legitimacy Level: §RWarlord State§!"
  moderate_legitimacy_section:0 "Legitimacy Level: §YReunification Contender§!"
  strong_legitimacy_section:0 "Legitimacy Level: §GClear Successor State§!"
  internationally_legitimate_govt_section:0 "Legitimacy Level: §CInternationally Recognized§!"
  
+ weak_nato_NA_influence_section:0 "§YWeak NATO Influence§!"
+ moderate_nato_NA_influence_section:0 "§OModerate NATO Influence§!"
+ strong_nato_NA_influence_section:0 "§GStrong NATO Influence§!"
+ nato_NA_control_section:0 "§CNATO Influence Restored§!"
  
