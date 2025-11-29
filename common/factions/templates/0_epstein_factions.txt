@@ -94,4 +94,35 @@ faction_template_libertarian_right = {
 	
 }
 
+faction_template_pra_populists = {
+	name = pra_populists_faction_name
+	manifest = faction_manifest_reclaim_america
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_icon_populists
+	visible = {
+		always = no
+	}
+	available = {
+		tag = PRA
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_pra_secure_the_new_state
+
+		# Medium term goals
+		faction_goal_gla_secure_wisconsin_michigan
+
+		# Long terms
+		faction_goal_securing_the_great_lakes_region
+	}
+
+	default_rules = {
+		joining_rule_non_right_wing
+		change_leader_rule_never
+	}
+	
+}
+
 
