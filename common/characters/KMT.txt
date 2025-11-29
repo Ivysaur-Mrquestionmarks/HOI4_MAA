@@ -14,6 +14,7 @@ characters={
 
 		}
 		country_leader = {
+			desc = KMT_Paul_Ryan_desc
 			traits = { KMT_coalition_leader }
 			ideology = conservative
 			expire = "2060.1.1.1"
@@ -66,6 +67,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = KMT_Ron_Johnson_desc
 			traits = { KMT_populist_businessman }
 			ideology = trumpist
 			expire = "2060.1.1.1"
@@ -111,6 +113,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = KMT_Tammy_Baldwin_desc
 			traits = { KMT_progressive_voice }
 			ideology = progressive
 			expire = "2060.1.1.1"
@@ -156,6 +159,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = KMT_Annette_Ziegler_desc
 			traits = { KMT_chief_justice_of_wsc }
 			ideology = Oligarchy
 			expire = "2060.1.1.1"
@@ -194,7 +198,8 @@ characters={
 			}
 		}
 		country_leader = {
-			traits = {}
+			desc = KMT_SCOTUS_desc
+			traits = { KMT_legal_consortium KMT_ever_vigilant }
 			ideology = Oligarchy
 			expire = "2060.1.1.1"
 			id = -1
@@ -211,6 +216,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = KMT_Raymond_Leo_Burke_desc
 			traits = { KMT_secundum_cor_tuum }
 			ideology = theocracy
 			expire = "2060.1.1.1"
@@ -254,6 +260,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = KMT_Robert_Prevost_desc
 			traits = { KMT_in_illo_uno_unum }
 			ideology = theocracy
 			expire = "2060.1.1.1"
@@ -296,6 +303,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = KMT_Paul_Nehlen_desc
 			traits = { KMT_controversial_figure }
 			ideology = neonazism
 			expire = "2060.1.1.1"
@@ -389,6 +397,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = KMT_Brandon_Johnson_desc
 			traits = { KMT_puppet_figure KMT_teachers_union_organizer }
 			ideology = democratic_socialism
 			expire = "2060.1.1.1"
@@ -435,6 +444,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = KMT_Bill_Ayers_desc
 			traits = { KMT_old_guard_marxist }
 			ideology = communism
 			expire = "2060.1.1.1"
@@ -488,6 +498,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = KMT_Bernardine_Dohrn_desc
 			traits = { KMT_old_guard_marxist }
 			ideology = communism
 			expire = "2060.1.1.1"
@@ -575,6 +586,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = KMT_Selena_Fox_desc
 			traits = { KMT_wiccan_elder }
 			ideology = anarchism
 			expire = "2060.1.1.1"
@@ -1593,7 +1605,7 @@ characters={
 			}
 			available = {
 			}
-			traits = { KMT_constitutional_defender }
+			traits = { KMT_advisor_constitutional_defender }
 			ai_will_do = {
 				factor = 1
 			}
@@ -1610,6 +1622,7 @@ characters={
 
 	KMT_Brenda_Hale = {
 		name = KMT_Brenda_Hale
+		gender = female
 
 		portraits = {
 			civilian = {
@@ -1629,7 +1642,7 @@ characters={
 			}
 			available = {
 			}
-			traits = { KMT_judicial_reformer }
+			traits = { KMT_advisor_judicial_reformer }
 			ai_will_do = {
 				factor = 1
 			}
@@ -1657,7 +1670,7 @@ characters={
 			}
 			available = {
 			}
-			traits = { KMT_international_prosecutor }
+			traits = { KMT_advisor_international_prosecutor }
 			ai_will_do = {
 				factor = 1
 			}
@@ -1685,7 +1698,7 @@ characters={
 			}
 			available = {
 			}
-			traits = { KMT_hunter_of_corruption_and_crime }
+			traits = { KMT_advisor_hunter_of_corruption_and_crime }
 			ai_will_do = {
 				factor = 1
 			}
@@ -2003,6 +2016,7 @@ characters={
 			}
 		}
 	}
+
 	KMT_Jay_L_Johnson = {
 		name = KMT_Jay_L_Johnson
 		portraits = {
@@ -2034,6 +2048,7 @@ characters={
 			}
 		}
 	}
+
 	KMT_Margaret_A_Rykowski = {
 		name = KMT_Margaret_A_Rykowski
 		gender = female

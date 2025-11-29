@@ -5361,6 +5361,25 @@ leader_traits = {
 		intelligence_agency_defense = 0.15
 		operative_slot = 1
 	}
+	KMT_legal_consortium = {
+		random = no
+		political_power_factor = -0.05
+		stability_factor = 0.1
+	}
+	KMT_ever_vigilant = {
+		random = no
+		operative_slot = 2
+	}
+	KMT_judicial_federalism_triat = {
+		random = no
+		stability_factor = 0.1
+		production_speed_buildings_factor = 0.1
+	}
+	KMT_judicial_centralism_triat = {
+		random = no
+		war_support_factor = 0.1
+		industrial_capacity_factory = 0.1
+	}
 
 	#advisors
 	KMT_advisor_shrewd_politician = {
@@ -5687,20 +5706,20 @@ leader_traits = {
 		army_attack_factor = 0.05
 		decryption_factor = 0.5
 	}
-	KMT_constitutional_defender = {
+	KMT_advisor_constitutional_defender = {
 		sprite = 13
 		random = no
 		stability_factor = 0.1
 		political_power_factor = 0.05
 	}
-	KMT_judicial_reformer = {
+	KMT_advisor_judicial_reformer = {
 		sprite = 13
 		random = no
 		consumer_goods_factor = -0.15
 		stability_factor = 0.05
 		war_support_factor = 0.05
 	}
-	KMT_international_prosecutor = {
+	KMT_advisor_international_prosecutor = {
 		sprite = 15
 		random = no
 		operation_outcome = 0.25
@@ -5709,7 +5728,7 @@ leader_traits = {
 		resistance_growth = -0.25
 		compliance_growth = 0.05
 	}
-	KMT_hunter_of_corruption_and_crime = {
+	KMT_advisor_hunter_of_corruption_and_crime = {
 		sprite = 13
 		random = no
 		autocratic_drift = 0.1
