@@ -26,4 +26,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/factions/epstein_faction_logos/faction_icon_loyalists.dds"
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_faction_icon_nazbol"
+		texturefile = "gfx/interface/factions/epstein_faction_logos/faction_icon_nazbol.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_icon_atomwaffen"
+		texturefile = "gfx/interface/factions/epstein_faction_logos/faction_icon_atomwaffen.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_icon_kkk"
+		texturefile = "gfx/interface/factions/epstein_faction_logos/faction_icon_kkk.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_icon_nato"
+		texturefile = "gfx/interface/factions/epstein_faction_logos/faction_icon_nato.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_faction_icon_anarchist"
+		texturefile = "gfx/interface/factions/epstein_faction_logos/faction_icon_anarchist.dds"
+		noOfFrames = 2
+	}
 }
