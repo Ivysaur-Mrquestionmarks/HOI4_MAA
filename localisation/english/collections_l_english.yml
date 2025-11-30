@@ -43,7 +43,7 @@
  COLLECTION_FACTION_NAVAL_FACILITY: "Faction Naval Engineering Facilities"
  COLLECTION_FACTION_AIR_FACILITY: "Faction Aerodynamics and Avionics Facilities"
  COLLECTION_CASUALTIES_INFLICTED_BY_FACTION_MEMBERS: "Number of faction members that inflicted more than 250,000 casualties on the enemy in a defensive war"
- COLLECTION_NON_COMMUNIST_STATES: "States controlled by Non-Authoritarian-Leftists"
+ COLLECTION_NON_COMMUNIST_STATES: "States not controlled by Authoritarian or Libertarian Left Countries"
  COLLECTION_ALL_SAME_CONTINENT_COUNTRIES: "All countries on same continent"
  COLLECTION_ALL_COMMUNIST_OR_DEFEATED_SAME_CONTINENT_COUNTRIES: "Same-continent Authoritarian-Left Countries"
  
@@ -53,9 +53,13 @@
  
  COLLECTION_NA_NATO_STATES_CONTROLLED_BY_FACTION_MEMBER: "Former or current NATO states in the United States and Canada that are controlled by faction member"
  COLLECTION_AMERICAN_STATES_CONTROLLED_BY_FACTION_MEMBER: "American States that are controlled by faction member"
+ COLLECTION_CANADIAN_STATES_CONTROLLED_BY_FACTION_MEMBER: "Canadian States that are controlled by faction member"
+ COLLECTION_MEXICAN_STATES_CONTROLLED_BY_FACTION_MEMBER: "Mexican States that are controlled by faction member"
  COLLECTION_NORTHEAST_AMERICAN_STATES_CONTROLLED_BY_FACTION_MEMBER: "Northeast American States that are controlled by faction member"
  COLLECTION_ALL_NA_NATO_STATES: "Former or Current NATO States in the United States and Canada"
  COLLECTION_ALL_AMERICAN_STATES: "Core American States"
+ COLLECTION_ALL_CANADIAN_STATES: "Core Canadian States"
+ COLLECTION_ALL_MEXICAN_STATES: "Core Mexican States"
  COLLECTION_ALL_NORTHEAST_AMERICAN_STATES: "Core Northeastern American States"
  
  

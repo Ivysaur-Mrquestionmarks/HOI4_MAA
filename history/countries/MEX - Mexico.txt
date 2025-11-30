@@ -81,4 +81,8 @@ add_to_array = {
 	value = PVB.id
 	index = 10
 }
+#For Mexican civil war
+every_core_state = {
+	set_state_flag = part_of_mexico_flag
+}
 

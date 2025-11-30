@@ -2369,7 +2369,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		#create_faction = IDA_anti_communism
+		create_faction_from_template = faction_template_redwar_trump_ida
 		every_country = {
 			limit = {
 				OR = {

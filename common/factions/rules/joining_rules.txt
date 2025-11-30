@@ -352,6 +352,48 @@ joining_rule_nato_eligible_only = {
 	modifier = {
 	}
 }
+joining_rule_csa_appalachia_special = {
+	type = joining_rules
+	ai_will_do = {
+		base = 0
+	}
+	visible = { tag = CSA }
+	can_remove = {
+		always = no
+	}
+	trigger = {
+		OR = {
+			tag = CSA
+			tag = NRA
+			tag = KFC
+		}
+	}
+	modifier = {
+	}
+}
+joining_rule_jihadis_suck_special = {
+	type = joining_rules
+	ai_will_do = {
+		base = 0
+	}
+	visible = {
+		OR = {
+			tag = ISA 
+			AND = {
+				tag = GTB
+				has_government = autocratic
+			}
+		}
+	}
+	can_remove = {
+		always = no
+	}
+	trigger = {
+		always = no
+	}
+	modifier = {
+	}
+}
 
 
 joining_rule_hispanic_only = {
@@ -374,6 +416,52 @@ joining_rule_hispanic_only = {
 		custom_trigger_tooltip = {
 			tooltip = is_hispanic_country_tt
 			is_in_array = { global.hispanic_countries_array = THIS }
+		}
+	}
+}
+joining_rule_mexican_only = {
+	type = joining_rules
+	visible = {
+		is_in_array = { global.mexican_collapse_countries = THIS }
+	}
+	can_remove = {
+		always = no
+	}
+	ai_will_do = {
+		base = 0
+	}
+
+	modifier = {
+		war_support_factor = 0.05
+	}
+
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = is_mexican_country_tt
+			is_in_array = { global.mexican_collapse_countries = THIS }
+		}
+	}
+}
+joining_rule_canada_only = {
+	type = joining_rules
+	visible = {
+		is_in_array = { global.CAN_collapse = THIS }
+	}
+	can_remove = {
+		always = no
+	}
+	ai_will_do = {
+		base = 0
+	}
+
+	modifier = {
+		war_support_factor = 0.05
+	}
+
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = is_canadian_country_tt
+			is_in_array = { global.CAN_collapse = THIS }
 		}
 	}
 }

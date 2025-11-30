@@ -7,6 +7,25 @@ american_states_collection = {
 		}
 	}
 }
+canadian_states_collection = {
+	input = game:all_states
+	name = COLLECTION_ALL_CANADIAN_STATES
+	operators = {
+		limit = {
+			has_state_flag = part_of_canada
+		}
+	}
+}
+
+mexican_states_collection = {
+	input = game:all_states
+	name = COLLECTION_ALL_MEXICAN_STATES
+	operators = {
+		limit = {
+			has_state_flag = part_of_mexico_flag
+		}
+	}
+}
 
 north_america_nato_states_collection = {
 	input = game:all_states
@@ -30,6 +49,26 @@ faction_american_states_collection = {
 		}
 	}
 	name = COLLECTION_AMERICAN_STATES_CONTROLLED_BY_FACTION_MEMBER
+}
+faction_canadian_states_collection = {
+	input = collection:canadian_states_collection
+
+	operators = {
+		limit = {
+			is_controlled_by_ROOT_or_ally = yes 
+		}
+	}
+	name = COLLECTION_CANADIAN_STATES_CONTROLLED_BY_FACTION_MEMBER
+}
+faction_mexican_states_collection = {
+	input = collection:mexican_states_collection
+
+	operators = {
+		limit = {
+			is_controlled_by_ROOT_or_ally = yes 
+		}
+	}
+	name = COLLECTION_MEXICAN_STATES_CONTROLLED_BY_FACTION_MEMBER
 }
 
 faction_north_america_nato_states_collection = {
@@ -102,6 +141,16 @@ anticommunism_american_states_collection = {
 					has_government = republican
 				}
 			}
+		}
+	}
+}
+american_non_communist_states = {
+	input = collection:american_states_collection
+	name = COLLECTION_NON_COMMUNIST_STATES
+	operators = {
+		limit = {
+			NOT = { controller = { has_government = authoritarian_left } }
+			NOT = { controller = { has_government = libertarian_left } }
 		}
 	}
 }

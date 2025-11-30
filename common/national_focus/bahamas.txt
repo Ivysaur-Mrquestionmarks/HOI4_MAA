@@ -732,87 +732,95 @@ focus_tree = {
 						has_government = libertarian_right
 					}
 				}
-				create_faction = order_of_blackbeard_alliance
-				else = {
-					create_faction = strawhat_alliance
-					if = {
-						limit = {
-							is_ai = no
-						}
-						play_song = "we_go"
+				create_faction_from_template = {
+					template = faction_template_dominican_sphere_faction
+					name = order_of_blackbeard_alliance
+				}
+			}
+			else = {
+				create_faction_from_template = {
+					template = faction_template_dominican_sphere_faction
+					name = strawhat_alliance
+				}
+				if = {
+					limit = {
+						is_ai = no
 					}
-					JAM = { 
-						hidden_effect = {
-							add_popularity = { ideology = libertarian_right popularity = 0.43 }
-							set_politics = {
-							    ruling_party = libertarian_right
-							    elections_allowed = no
-							}
+					play_song = "we_go"
+				}
+				JAM = { 
+					hidden_effect = {
+						add_popularity = { ideology = libertarian_right popularity = 0.43 }
+						set_politics = {
+						    ruling_party = libertarian_right
+						    elections_allowed = no
 						}
-						country_event = _zzz.3 
 					}
-					SKN = { country_event = _zzz.3 }
-					SVG = { country_event = _zzz.3 }
+					country_event = _zzz.3 
+				}
+				SKN = { country_event = _zzz.3 }
+				SVG = { country_event = _zzz.3 }
+				add_opinion_modifier = {
+				    target = JAM
+				    modifier = cheat_opinion_modifier_good
+				}
+				JAM = {
 					add_opinion_modifier = {
-					    target = JAM
+					    target = ROOT
 					    modifier = cheat_opinion_modifier_good
 					}
-					JAM = {
-						add_opinion_modifier = {
-						    target = ROOT
-						    modifier = cheat_opinion_modifier_good
-						}
-					}
+				}
+				add_opinion_modifier = {
+				    target = SKN
+				    modifier = cheat_opinion_modifier_good
+				}
+				SKN = {
 					add_opinion_modifier = {
-					    target = SKN
+					    target = ROOT
 					    modifier = cheat_opinion_modifier_good
 					}
-					SKN = {
-						add_opinion_modifier = {
-						    target = ROOT
-						    modifier = cheat_opinion_modifier_good
-						}
-					}
+				}
+				add_opinion_modifier = {
+				    target = SVG
+				    modifier = cheat_opinion_modifier_good
+				}
+				SVG = {
 					add_opinion_modifier = {
-					    target = SVG
+					    target = ROOT
 					    modifier = cheat_opinion_modifier_good
-					}
-					SVG = {
-						add_opinion_modifier = {
-						    target = ROOT
-						    modifier = cheat_opinion_modifier_good
-						}
 					}
 				}
 			}
 			every_state = {
 				limit = {
-					state = 390
-					state = 362
-					state = 391
-					state = 378
-					state = 349
-					state = 490
-					state = 159
-					state = 545
-					state = 588
-					state = 585
-					state = 586
-					state = 589
-					state = 408
-					state = 587
-					state = 499
-					state = 498
-					state = 405
-					state = 401
-					state = 313
-					state = 458
-					state = 345
-					state = 369
-					state = 462
-					state = 52
-					state = 455
-					state = 474
+					OR = {
+						state = 390
+						state = 362
+						state = 391
+						state = 378
+						state = 349
+						state = 490
+						state = 159
+						state = 545
+						state = 588
+						state = 585
+						state = 586
+						state = 589
+						state = 408
+						state = 587
+						state = 499
+						state = 498
+						state = 405
+						state = 401
+						state = 313
+						state = 458
+						state = 345
+						state = 369
+						state = 462
+						state = 52
+						state = 455
+						state = 474
+					}
 				}
 				add_claim_by = ROOT
 			}
@@ -863,7 +871,10 @@ focus_tree = {
 						is_subject = no
 					}
 				}
-				create_faction = red_roger_alliance
+				create_faction_from_template = {
+					template = faction_template_dominican_sphere_faction
+					name = red_roger_alliance
+				}
 			}
 			hidden_effect = {
 				news_event = { id = maa.bahamas.5 hours = 12 }
@@ -1022,7 +1033,10 @@ focus_tree = {
 		x = 14
 		y = 4
 		completion_reward = {
-			create_faction = BAH_equatorial_shield
+			create_faction_from_template = {
+				template = faction_template_dominican_sphere_faction
+				name = BAH_equatorial_shield
+			}
 			JAM = { country_event = _zzz.3 }
 			SKN = { country_event = _zzz.3 }
 			SVG = { country_event = _zzz.3 }

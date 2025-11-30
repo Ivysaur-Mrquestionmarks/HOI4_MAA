@@ -1183,7 +1183,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			create_faction = KFC_national_front
+			create_faction_from_template = faction_template_nazbols
 			NRA = {
 				country_event = {
 					id = kentucky.15

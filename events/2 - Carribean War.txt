@@ -122,11 +122,11 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = carribean_war_globflag
-			create_faction = carribean_communist_alliance
+			create_faction_from_template = faction_template_caribbean_communist_alliance
 			add_to_faction = HAI
 			CUC = {
 				transfer_state = 349
-				create_faction = carribean_liberal_alliance
+				create_faction_from_template = faction_template_caribbean_liberal_alliance
 				add_to_faction = HBI
 			}
 			transfer_units_fraction= {
@@ -224,7 +224,7 @@ country_event = {
 			id = carribean.8
 			days = 1
 		}
-		create_faction = caribbean_jihadi_alliance
+		create_faction_from_template = faction_template_caribbean_jihadi_alliance
 		ROOT = {
 			division_template = {
 				name = "Jihadi Infantry"
@@ -320,7 +320,7 @@ country_event = {
 		    target = HBI
 		    type = annex_everything
 		}
-		create_faction = dominican_sphere_faction
+		create_faction = faction_template_dominican_sphere_faction
 		add_popularity = {
 			ideology = autocratic
 			popularity = 0.05
@@ -789,7 +789,10 @@ country_event = {
 				}
 			}
 			HON = {
-				create_faction = "Quetzaltenango Treaty"
+				create_faction_from_template = {
+					template = faction_template_dominican_sphere_faction
+					name = "Quetzaltenango Treaty"
+				}
 				add_to_faction = GUA
 			}
 		}

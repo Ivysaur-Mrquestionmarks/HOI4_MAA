@@ -1243,7 +1243,10 @@ focus_tree = {
 			has_government = autocratic
 		}
 		completion_reward = {
-			create_faction = MON_Alliance
+			create_faction_from_template = {
+				template = faction_template_maa_generic
+				name = MON_Alliance
+			}
 			custom_effect_tooltip = MON_Separatists_tooltip
 		}
 	}

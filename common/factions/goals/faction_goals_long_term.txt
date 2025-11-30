@@ -1021,6 +1021,55 @@ faction_goal_crushing_the_orange_menace = {
 		base = 1
 	}
 }
+faction_goal_crushing_the_bernie_commie_menace = {
+	name = crushing_the_bernie_commie_menace_goal_name
+	description = crushing_the_bernie_commie_menace_goal_desc
+	category = long_term
+	group = FOCUS_FILTER_CONSOLIDATION
+	allowed = {
+		NOT = { tag = PRA }
+	}
+	visible = {
+		FROM = {
+			is_major = yes
+			NOT = {
+				tag = PRA
+			}
+		}
+		country_exists = PRA
+	}
+	completed = {
+		PRA = { exists = no }
+		
+		ROOT = {
+			OR = {
+				owns_state = 304
+				any_allied_country = {
+					owns_state = 304
+				}
+			}
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 250
+		custom_effect_tooltip = generic_skip_one_line_tt
+		every_faction_member = {
+			hidden_effect = {
+				add_faction_influence_ratio = 0.05
+				army_experience = 50
+				add_political_power = 250
+			} 
+		}
+		effect_tooltip = {
+			add_faction_influence_ratio = 0.05
+			army_experience = 50 
+			add_political_power = 250
+		}	
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
 
 faction_goal_retaking_washington_dc = {
 	name = retaking_washington_dc_goal_name

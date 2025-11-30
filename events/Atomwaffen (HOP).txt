@@ -60,7 +60,7 @@ country_event = {
 		name = tribal.2.a
 		add_ideas = HOP_ss_divisions
 		hidden_effect = { 
-			#create_faction = faction_black_swastika 
+			create_faction_from_template = faction_template_faction_black_swastika 
 			set_country_flag = hop_nazis_are_here
 		}
 		set_politics = {
@@ -163,8 +163,8 @@ country_event = {
 			add_state_core = 352
 			add_state_core = 365
 			NAV = {
-			#	create_faction = TRIBAL_ALLIANCE
-			#	add_to_faction = TOH
+				create_faction_from_template = faction_template_TRIBAL_ALLIANCE
+				add_to_faction = TOH
 				set_major = yes
 				activate_mission = HOP_tick_tock_nav
 			}

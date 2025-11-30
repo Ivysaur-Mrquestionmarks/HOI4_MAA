@@ -1882,7 +1882,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = KKK_2k_unite_the_right
-			create_faction = traditionalist
+			create_faction_from_template = faction_template_unite_the_right
 			country_event = {
     				id = kkk.10
     				days = 1

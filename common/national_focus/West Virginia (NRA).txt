@@ -3786,6 +3786,13 @@ focus_tree = {
 			}
 			
 			#create_faction = "NRA_charlestone_pact_faction"
+			if = {
+				limit = { NOT = { is_in_faction = yes } }
+				create_faction_from_template = {
+					template = faction_template_nazbols
+					name = NRA_charlestone_pact_faction
+				}
+			}
 			
 		}
 		

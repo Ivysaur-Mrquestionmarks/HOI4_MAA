@@ -26,6 +26,33 @@ faction_manifest_containment_of_communism = {
 	}
 }
 
+# Containment of AMERICAN Communism
+faction_manifest_containment_of_american_communism = {
+	name = containment_of_communism_goal_name
+	description = containment_of_communism_goal_desc
+	is_manifest = yes
+	ratio_progress = {
+		total_amount_collection = collection:american_states_collection
+		completed_amount_collection = collection:american_non_communist_states
+		
+		scale = {
+			authoritarian_left_drift = -0.08
+			libertarian_left_drift = -0.08
+		}
+		
+		progress_sections = {
+			manifest_fulfilled = {
+				min = @manifest_fulfilled_value
+	
+				modifier = { 
+					required_garrison_factor = -0.15
+					generate_wargoal_tension = -0.15
+				}
+			}
+		}
+	}
+}
+
 # Generic Expansionism
 faction_manifest_regional_expansionism = {
 	name = regional_expansionism_goal_name

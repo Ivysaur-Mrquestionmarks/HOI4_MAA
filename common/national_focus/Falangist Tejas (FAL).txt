@@ -4275,7 +4275,7 @@ focus_tree = {
 			focus = FAL_one_currency
 		}
 		completion_reward = {
-			create_faction = "Pact of Hispanidad"
+			create_faction_from_template = faction_template_hispanidad_america
 			every_country = {
 				limit = {
 					has_dynamic_modifier = {

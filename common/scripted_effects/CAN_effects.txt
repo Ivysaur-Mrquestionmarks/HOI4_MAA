@@ -263,7 +263,10 @@ ONT_break_up_effect = {
 	release_on_controlled = ONT
 	release_on_controlled = PTR
 	ONT = {
-		#create_faction = CAN_monarchist_faction_name
+		create_faction_from_template = {
+			template = faction_template_generic_canada_cw_faction
+			name = CAN_monarchist_faction_name
+		}
 	}
 	every_state = {
 		limit = {
@@ -298,7 +301,10 @@ CAN_collapse_start_and_troop_and_OOBS_effect = { ##### TODO: ADD OOBs
 			tag = CAN
 		}
 		set_cosmetic_tag = CAN_collapse
-		#create_faction = CAN_trudeau_faction_name
+		create_faction_from_template = {
+			template = faction_template_generic_canada_cw_faction
+			name = CAN_trudeau_faction_name
+		}
 	}
 	country_event = { id = Canada.2 days = 35 }
 	add_field_marshal_role = {

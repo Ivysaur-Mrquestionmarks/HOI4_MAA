@@ -2533,7 +2533,11 @@ focus_tree = {
 			factor = 300
 		}
 		completion_reward = {
-			create_faction = "AFPAC"
+			#create_faction = "AFPAC"
+			create_faction_from_template = {
+				template = faction_template_maa_american_generic
+				name = "AFPAC"
+			}
 		}
 
 	}
@@ -7343,7 +7347,11 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			create_faction = "Caribbean Shield"
+			#create_faction = "Caribbean Shield"
+			create_faction_from_template = {
+				template = faction_template_maa_generic
+				name = "Caribbean Shield"
+			}
 		}
 	}
 	focus = {

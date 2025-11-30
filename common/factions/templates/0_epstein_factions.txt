@@ -1,4 +1,66 @@
 
+# true MAA generico # - use for nations that will be shortly reworked so u dont care, or whatever else u may find use for
+
+faction_template_maa_generic = { # 
+	name = maa_generic_faction_name
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		always = no
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		#faction_goal_unlock_research
+
+		# Medium term goals
+		#faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		
+	}
+	
+}
+
+
+# true MAA generico american reunification # - use for nations that will be shortly reworked so u dont care, or whatever else u may find use for
+
+faction_template_maa_american_generic = { # 
+	name = maa_generic_faction_name
+	manifest = faction_manifest_reclaim_america
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		is_in_array = { global.country_owns_American_State = THIS.id }
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		#faction_goal_unlock_research
+
+		# Medium term goals
+		#faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		
+	}
+	
+}
 
 
 faction_template_trump_loyalists = {
@@ -42,7 +104,10 @@ faction_template_biden_legitimists = {
 		always = no
 	}
 	available = {
-		has_government = democrat
+		OR = {
+			has_government = democrat
+			tag = FRA
+		}
 	}
 
 	goals = {
@@ -54,6 +119,71 @@ faction_template_biden_legitimists = {
 
 		# Long terms
 		faction_goal_crushing_the_orange_menace
+	}
+
+	default_rules = {
+		joining_rule_non_radical_right
+		change_leader_rule_never
+	}
+	
+}
+faction_template_western_legitimists = {
+	name = western_legitimists_faction_name
+	manifest = faction_manifest_reclaim_america
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_icon_legitmists
+	visible = {
+		always = no
+	}
+	available = {
+		OR = {
+			has_government = republican
+			has_government = democrat
+			has_government = libertarian_left
+		}
+		tag = PRA
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_research
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		faction_goal_crushing_the_orange_menace
+	}
+
+	default_rules = {
+		joining_rule_non_left_wing
+		change_leader_rule_never
+	}
+	
+}
+faction_template_western_loyalists = {
+	name = western_loyalists_faction_name
+	manifest = faction_manifest_reclaim_america
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_icon_loyalists
+	visible = {
+		always = no
+	}
+	available = {
+		tag = IDA
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_research
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		faction_goal_crushing_the_bernie_commie_menace
 	}
 
 	default_rules = {
@@ -125,6 +255,130 @@ faction_template_pra_populists = {
 	
 }
 
+faction_template_nazbols = {
+	name = KFC_national_front
+	manifest = faction_manifest_reclaim_america
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_icon_nazbol
+	visible = {
+		always = no
+	}
+	available = {
+		tag = KKK
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_military
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		faction_goal_resource_control
+	}
+
+	default_rules = {
+		joining_rule_same_ideology
+		change_leader_rule_never
+	}
+	
+}
+
+faction_template_unite_the_right = {
+	name = unite_the_right_faction_name
+	manifest = faction_manifest_reclaim_america
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_icon_kkk
+	visible = {
+		always = no
+	}
+	available = {
+		tag = KKK
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_military
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		faction_goal_resource_control
+	}
+
+	default_rules = {
+		joining_rule_non_left_wing
+		change_leader_rule_never
+	}
+	
+}
+
+faction_template_faction_black_swastika = {
+	name = faction_black_swastika
+	manifest = faction_manifest_reclaim_america
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_icon_atomwaffen
+	visible = {
+		always = no
+	}
+	available = {
+		tag = HOP
+		has_government = autocratic
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_military
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		faction_goal_resource_control
+	}
+
+	default_rules = {
+		joining_rule_fascist_only
+		change_leader_rule_never
+	}
+	
+}
+
+faction_template_hispanidad_america = {
+	name = hispanidad_america_faction_name
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_icon_atomwaffen
+	visible = {
+		is_in_array = { global.hispanic_countries_array = THIS.id }
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_military
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_resource_control
+	}
+
+	default_rules = {
+		joining_rule_hispanic_only
+		change_leader_rule_never
+	}
+	
+}
+
 faction_template_NATO_faction = {
 	name = NATO_faction_name
 	manifest = faction_manifest_restore_nato
@@ -157,6 +411,390 @@ faction_template_NATO_faction = {
 
 	default_rules = {
 		joining_rule_nato_eligible_only
+	}
+	
+}
+
+faction_template_redwar_trump_ida = { 
+	name = IDA_anti_communism
+	manifest = faction_manifest_containment_of_american_communism
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		original_tag = IDA
+	}
+	available = {
+		trigger_has_right_wing_ideologies = yes
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_research
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		joining_rule_non_radical_left
+	}
+	
+}
+
+faction_template_appalachian_yeezys_club = { 
+	name = appalachian_yeezys_club_faction_name
+	manifest = faction_manifest_reclaim_america
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		always = no
+	}
+	available = {
+		tag = CSA
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_research
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		joining_rule_csa_appalachia_special
+	}
+	
+}
+
+faction_template_generic_rightwing_american_faction_1 = { 
+	name = generic_rightwing_american_faction_name
+	manifest = faction_manifest_reclaim_america
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_research
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		joining_rule_non_left_wing
+	}
+	
+}
+
+faction_template_generic_leftwing_american_faction_1 = { 
+	name = generic_lefttwing_american_faction_name
+	manifest = faction_manifest_reclaim_america
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_research
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		joining_rule_non_right_wing
+	}
+	
+}
+
+
+# CANADA CIVIL WAR FACTIONS # 
+
+faction_template_generic_canada_cw_faction = { # generic
+	name = CAN_trudeau_faction_name
+	manifest = faction_manifest_reclaim_canada
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		always = no
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		#faction_goal_unlock_research
+
+		# Medium term goals
+		#faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		joining_rule_canada_only
+	}
+	
+}
+
+
+# MEXICO CIVIL WAR FACTIONS # - leaving for ivy
+
+faction_template_mexican_federales = { # Federales
+	name = mexican_federales_faction_name
+	manifest = faction_manifest_reclaim_mexico
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		always = no
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		#faction_goal_unlock_research
+
+		# Medium term goals
+		#faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		joining_rule_mexican_only
+	}
+	
+}
+faction_template_mexican_revolucionarios = { # Revolucionarios
+	name = mexican_revolucionarios_faction_name
+	manifest = faction_manifest_reclaim_mexico
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		always = no
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		#faction_goal_unlock_research
+
+		# Medium term goals
+		#faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		joining_rule_mexican_only
+	}
+	
+}
+faction_template_mexican_zapatistas = { # Zapatistas
+	name = mexican_zapatistas_faction_name
+	manifest = faction_manifest_reclaim_mexico
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		always = no
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		#faction_goal_unlock_research
+
+		# Medium term goals
+		#faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		joining_rule_mexican_only
+	}
+	
+}
+
+
+# TRIBES #
+
+faction_template_TRIBAL_ALLIANCE = { # tribal alliance
+	name = TRIBAL_ALLIANCE
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		always = no
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		#faction_goal_unlock_research
+
+		# Medium term goals
+		#faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		
+	}
+	
+}
+
+
+# Caribbean #
+
+faction_template_caribbean_communist_alliance = { # old guard - not necessarily just communists
+	name = carribean_communist_alliance
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		always = no
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		#faction_goal_unlock_research
+
+		# Medium term goals
+		#faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		
+	}
+	
+}
+faction_template_caribbean_liberal_alliance = { # 
+	name = carribean_liberal_alliance
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		always = no
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		#faction_goal_unlock_research
+
+		# Medium term goals
+		#faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		
+	}
+	
+}
+faction_template_caribbean_jihadi_alliance = { # 
+	name = caribbean_jihadi_alliance
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		always = no
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		#faction_goal_unlock_research
+
+		# Medium term goals
+		#faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		joining_rule_jihadis_suck_special
+	}
+	
+}
+faction_template_dominican_sphere_faction = { # 
+	name = dominican_sphere_faction
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	#color = { 179 183 235 } # this should default to faction leader's color
+	icon = GFX_faction_logo_generic
+	visible = {
+		always = no
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		#faction_goal_unlock_research
+
+		# Medium term goals
+		#faction_goal_a_military_base
+
+		# Long terms
+		#faction_goal_rule_the_waves
+	}
+
+	default_rules = {
+		
 	}
 	
 }

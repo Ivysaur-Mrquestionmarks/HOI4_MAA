@@ -26,15 +26,34 @@
  libertarian_right_faction_name:0 "Constitutionalists"
  pra_populists_faction_name:0 "Populists"
  NATO_faction_name:0 "North Atlantic Treaty Organization"
+ western_legitimists_faction_name:0 "Western Legitimists"
+ mexican_revolucionarios_faction_name:0 "Revolucionarios"
+ mexican_federales_faction_name:0 "Federales"
+ mexican_zapatistas_faction_name:0 "Zapatistas"
+ appalachian_yeezys_club_faction_name:0 "Appalachian Yeezys Club"
+ hispanidad_america_faction_name:0 "Pact of Hispanidad"
+ western_loyalists_faction_name:0 "Western Loyalists"
+ unite_the_right_faction_name:0 "American Traditionalist Front"
+ 
+ # Generic Names
+ generic_rightwing_american_faction_name:0 "Alliance for American Freedom"
+ generic_lefttwing_american_faction_name:0 "Reform America Alliance"
+ maa_generic_faction_name:0 "Alliance"
  
  
  ### Manifests
  manifest_reclaim_america_goal_name:0 "Reclamation of America"
  manifest_reclaim_america_goal_desc:0 "Following the events in the early months of 2021, we find our beautiful country fractured. We must collect the pieces to reunify our glorious nation."
+ manifest_reclaim_mexico_goal_name:0 "Reclamation of Mexico"
+ manifest_reclaim_mexico_goal_desc:0 ""
+ manifest_reclaim_canada_goal_name:0 "Reclamation of Canada"
+ manifest_reclaim_canada_goal_desc:0 ""
  manifest_restore_nato_goal_name:0 "Restore NATO Influence in Americas"
  manifest_restore_nato_goal_desc:0 "The collapse of the United States also meant the collapse of NATO influence over much of the Americas. The instability in Canada is also concerning..."
  
  ### Long Term Goals
+ crushing_the_bernie_commie_menace_goal_name:0 "Crushing the Commie Menace"
+ crushing_the_bernie_commie_menace_goal_desc:0 "Everything that the [PRA.GetName] stands for is against the very notion of Americanism. They must be stopped!"
  crushing_the_orange_menace_goal_name:0 "Crushing the Orange Menace"
  crushing_the_orange_menace_goal_desc:0 "Donald Trump, the one who started this whole mess, must be brought down."
  retaking_washington_dc_goal_name:0 "Retaking the Capital"
@@ -66,6 +85,8 @@
  COLLECTION_STATES_ANTICOMMUNIST_COUNTRIES:0 "States controlled by Countries with Right-Wing Ideologies"
  CAS_sTARTING_CORES_NAME:0 "Starting [CAS.GetName] States"
  generic_NATO_country_flag:0 "Member of NATO"
+ is_mexican_country_tt:0 "Is Mexican Warlord"
+ is_canadian_country_tt:0 "Is Canadian Warlord"
  
  ### Progress Sections
  

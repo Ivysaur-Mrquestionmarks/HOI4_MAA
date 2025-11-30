@@ -1867,7 +1867,7 @@ focus_tree = {
 				custom_effect_tooltip = needs_approval							
 			}	
 			effect_tooltip = { #Yeezy club
-				create_faction = "The Apalachian Yeezy Club"
+				create_faction_from_template = faction_template_appalachian_yeezys_club
 				add_to_faction = NRA
 			}
 		}

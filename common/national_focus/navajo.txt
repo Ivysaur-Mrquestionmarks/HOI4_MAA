@@ -672,6 +672,10 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = NAV_peoples_liberation_army
 			#create_faction = NAV_alliance_liberation_army
+			create_faction_from_template = {
+				template = faction_template_TRIBAL_ALLIANCE
+				name = NAV_alliance_liberation_army
+			}
 		}
 
 	}
@@ -872,6 +876,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			#create_faction "Anti-Colonial League"
+			create_faction_from_template = {
+				template = faction_template_TRIBAL_ALLIANCE
+				name = "Anti-Colonial League"
+			}
 			HAM = {
 				country_event = {
 					id = _zzz.3

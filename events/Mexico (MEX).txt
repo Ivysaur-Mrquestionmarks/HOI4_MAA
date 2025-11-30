@@ -169,7 +169,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			country_event = { id = mexico.6 days = 3 }
-			#ZAP = { create_faction = Zapatistas }
+			ZAP = { create_faction_from_template = faction_template_mexican_zapatistas }
 			ADF = { 
 				transfer_state = 395
 				transfer_state = 662
@@ -206,7 +206,7 @@ country_event = {
 	}
 	option = {
 		name = mexico.5.a
-		#create_faction = Federales
+		create_faction_from_template = faction_template_mexican_federales
 		add_popularity = {
 		    ideology = autocratic
 		    popularity = 0.35
@@ -470,7 +470,7 @@ country_event = {
 			add_state_core = 645
 			transfer_state = 660
 			add_state_core = 660
-			#create_faction = Revolucionarios
+			create_faction_from_template = faction_template_mexican_revolucionarios
 			add_to_faction = WMX
 			add_to_faction = ADF
 			set_capital = 385
