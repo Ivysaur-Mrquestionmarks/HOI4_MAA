@@ -10,10 +10,7 @@ state={
 		owner = TEX
 		add_core_of = TEX
 		victory_points = {
-			4699 10 
-		}
-		victory_points = {
-			3633 5 
+			3633 12 
 		}
 		buildings = {
 			infrastructure = 5
@@ -26,7 +23,7 @@ state={
 	provinces={
 		28 281 446 1100 1127 1452 1817 2148 2377 2643 2679 3010 3083 3240 3460 3633 3679 4102 4292 4381 4699 5198 6095 10261 10337 10459 10542 
 	}
-	manpower=524745
+	manpower=364745
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

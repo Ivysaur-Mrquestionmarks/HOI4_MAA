@@ -3,7 +3,7 @@ state={
 	id=668
 	name="STATE_668"
 	provinces={
-		283 977 1212 3392 4515 10315 10316 10374 
+		283 977 1212 3392 4515 5119 6228 9989 10315 10316 10374 
 	}
 	history={
 		owner = TEX
@@ -15,7 +15,10 @@ state={
 			4515 10 
 		}
 		victory_points = {
-			3392 5
+			3392 10
+		}
+		victory_points = {
+			5119 13
 		}
 		buildings = {
 			infrastructure = 7
@@ -24,7 +27,7 @@ state={
 			synthetic_refinery = 1
 		}
 	}
-	manpower=1139710
+	manpower=2139710
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

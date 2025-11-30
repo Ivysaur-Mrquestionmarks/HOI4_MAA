@@ -8,7 +8,10 @@ state={
 		add_core_of = TEX
 		add_core_of = TXL
 		victory_points = {
-			4205 1 
+			4205 3 
+		}
+		victory_points = {
+			4071 15 
 		}
 		buildings = {
 			infrastructure = 2
@@ -20,7 +23,7 @@ state={
 	provinces={
 		199 301 917 1076 1526 2376 2452 3769 4071 4205 5670 9767 9881 9996 10035 
 	}
-	manpower=247713
+	manpower=367713
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
