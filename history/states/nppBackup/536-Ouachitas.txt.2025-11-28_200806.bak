@@ -1,0 +1,27 @@
+state={
+	id=536
+	name="STATE_536"
+	provinces={
+		10062 1303 10099 3897 82 10020
+	}
+	history={
+		owner = CSA
+		add_core_of = CSA
+
+		buildings={
+			infrastructure = 6
+		}
+		victory_points = {
+			82 20 #Little Rock
+		}
+		victory_points = {
+			10020 8 #North Little Rock
+		}
+		victory_points = {
+			3897 5 #Hot Springs
+		}
+	}
+	manpower=659902
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

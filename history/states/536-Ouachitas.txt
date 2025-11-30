@@ -2,7 +2,7 @@ state={
 	id=536
 	name="STATE_536"
 	provinces={
-		10062 1303 10099 3897 82 10020
+		10062 1303 10099 3897 82 10020 11012
 	}
 	history={
 		owner = CSA
@@ -12,7 +12,13 @@ state={
 			infrastructure = 6
 		}
 		victory_points = {
-			10020 20 #Little Rock
+			82 20 #Little Rock
+		}
+		victory_points = {
+			10020 8 #North Little Rock
+		}
+		victory_points = {
+			3897 5 #Hot Springs
 		}
 	}
 	manpower=659902

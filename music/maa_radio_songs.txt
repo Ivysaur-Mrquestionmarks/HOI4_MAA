@@ -156,6 +156,21 @@ music = {
 	}
 }
 music = {
+	song = "the_unthinking_majority"
+
+	chance = {
+		modifier = {
+			factor = 10
+			NOT = {
+				OR = {
+					has_government = democrat
+					has_government = republican
+				}
+			}
+		}
+	}
+}
+music = {
 	song = "the_american_dream_is_killing_me"
 
 	chance = {

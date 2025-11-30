@@ -2,7 +2,7 @@ state={
 	id=267
 	name="STATE_267"
 	provinces={
-		1610 1651 2317 2563 2684 5032 9758 9790 9902 2058 3790 9798 1992 6291
+		1610 1651 2317 2563 2684 5032 9758 9790 9888 9902 2058 3790 9798 1992 6291
 	}
 
 	resources={
@@ -19,10 +19,13 @@ state={
 			industrial_complex = 1
 		}
 		victory_points = {
-			9902 3 #Clarksville
+			9902 2 #Clarksville
 		}
 		victory_points = {
-			5032 10 #Fayetteville
+			9888 15 #Fayetteville
+		}
+		victory_points = {
+			5032 7 #Bentonville
 		}
 		victory_points = {
 			2317 1 #Harrison

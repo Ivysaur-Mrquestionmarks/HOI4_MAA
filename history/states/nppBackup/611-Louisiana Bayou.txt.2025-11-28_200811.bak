@@ -1,0 +1,34 @@
+state={
+	id=611
+	name="STATE_611"
+	provinces={
+		1206 4920 10876 10944 10995 11012 19553 10974 10994 3078 4708 1633 10992 5539 2962 3810 10999 1273 10986 10980 10966 6190 10921 4636 10903 1177 10895
+	}
+		history={
+			owner = CSA
+			add_core_of = CSA
+			add_core_of = LOU
+			buildings={
+				infrastructure = 3
+				fuel_silo = 3
+			}
+			victory_points = {
+				2962 8
+			}
+			victory_points = {
+				10994 3
+			}
+			victory_points = {
+				5539 3
+			}
+			victory_points = {
+				10921 3
+			}
+			victory_points = {
+				10966 3
+			}
+		}
+	manpower=351248
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -3,7 +3,7 @@ state={
 	id=279
 	name="STATE_279"
 	provinces={
-		186 560 827 1300 1621 2012 2335 2562 3944 4166 4745 4855 5103 6319 6457 10088 10153 10167 10217 10231 10255 10275 10286 10289 10304 10327 10351 10363 
+		186 560 827 1300 1621 2012 2335 2562 3944 4166 4745 4855 4941 5103 6319 6457 10088 10153 10167 10217 10231 10255 10262 10275 10286 10289 10304 10327 10351 10363 10419
 	}
 
 	resources={
@@ -15,6 +15,15 @@ state={
 			add_core_of = CSA
 			victory_points = {
 				4855 5 #Texarkana
+			}
+			victory_points = {
+				1300 6 #Pine Bluff
+			}
+			victory_points = {
+				10351 2 #El Dorado
+			}
+			victory_points = {
+				2012 1 #Monticello
 			}
 		buildings={
 			infrastructure = 6
