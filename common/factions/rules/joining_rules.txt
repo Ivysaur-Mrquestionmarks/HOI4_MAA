@@ -33,9 +33,11 @@ joining_rule_non_radical_left = {
 		NOT = {
 			trigger_has_radical_left_wing_ideologies = yes 
 		}
-		IF = {
-			limit = { NOT = { has_rule = can_join_opposite_factions } }
-			has_government = FROM
+		hidden_trigger = {
+			IF = {
+				limit = { NOT = { has_rule = can_join_opposite_factions } }
+				has_government = FROM
+			}
 		}
 	}
 }
@@ -61,9 +63,11 @@ joining_rule_non_left_wing = {
 		NOT = {
 			trigger_has_left_wing_ideologies = yes 
 		}
-		IF = {
-			limit = { NOT = { has_rule = can_join_opposite_factions } }
-			has_government = FROM
+		hidden_trigger = {
+			IF = {
+				limit = { NOT = { has_rule = can_join_opposite_factions } }
+				has_government = FROM
+			}
 		}
 	}
 }
@@ -92,9 +96,11 @@ joining_rule_non_radical_right = {
 		NOT = {
 			trigger_has_radical_right_wing_ideologies = yes 
 		}
-		IF = {
-			limit = { NOT = { has_rule = can_join_opposite_factions } }
-			has_government = FROM
+		hidden_trigger = {
+			IF = {
+				limit = { NOT = { has_rule = can_join_opposite_factions } }
+				has_government = FROM
+			}
 		}
 	}
 }
@@ -120,9 +126,11 @@ joining_rule_non_right_wing = {
 		NOT = {
 			trigger_has_right_wing_ideologies = yes 
 		}
-		IF = {
-			limit = { NOT = { has_rule = can_join_opposite_factions } }
-			has_government = FROM
+		hidden_trigger = {
+			IF = {
+				limit = { NOT = { has_rule = can_join_opposite_factions } }
+				has_government = FROM
+			}
 		}
 	}
 }
@@ -146,9 +154,11 @@ joining_rule_far_left = {
 	}
 	trigger = {
 		trigger_has_radical_left_wing_ideologies = yes
-		IF = {
-			limit = { NOT = { has_rule = can_join_opposite_factions } }
-			has_government = FROM
+		hidden_trigger = {
+			IF = {
+				limit = { NOT = { has_rule = can_join_opposite_factions } }
+				has_government = FROM
+			}
 		}
 	}
 }
@@ -172,9 +182,11 @@ joining_rule_centrist = {
 	}
 	trigger = {
 		trigger_has_centrist_ideologies = yes
-		IF = {
-			limit = { NOT = { has_rule = can_join_opposite_factions } }
-			has_government = FROM
+		hidden_trigger = {
+			IF = {
+				limit = { NOT = { has_rule = can_join_opposite_factions } }
+				has_government = FROM
+			}
 		}
 	}
 }
@@ -198,9 +210,11 @@ joining_rule_libertarians = {
 	}
 	trigger = {
 		trigger_has_libertarian_ideologies = yes
-		IF = {
-			limit = { NOT = { has_rule = can_join_opposite_factions } }
-			has_government = FROM
+		hidden_trigger = {
+			IF = {
+				limit = { NOT = { has_rule = can_join_opposite_factions } }
+				has_government = FROM
+			}
 		}
 	}
 }
@@ -219,9 +233,11 @@ joining_rule_fascist_only = {
 	}
 	trigger = {
 		has_government = autocratic
-		IF = {
-			limit = { NOT = { has_rule = can_join_opposite_factions } }
-			has_government = FROM
+		hidden_trigger = {
+			IF = {
+				limit = { NOT = { has_rule = can_join_opposite_factions } }
+				has_government = FROM
+			}
 		}
 	}
 }
@@ -246,9 +262,11 @@ joining_rule_puppets_only = {
 	}
 	trigger = {
 		ROOT = { is_subject_of = FROM }
-		IF = {
-			limit = { NOT = { has_rule = can_join_opposite_factions } }
-			has_government = FROM
+		hidden_trigger = {
+			IF = {
+				limit = { NOT = { has_rule = can_join_opposite_factions } }
+				has_government = FROM
+			}
 		}
 	}
 	modifier= {
@@ -343,6 +361,9 @@ joining_rule_nato_eligible_only = {
 	ai_will_do = {
 		base = 0
 	}
+	visible = {
+		ROOT = { has_country_flag = generic_NATO_country_flag }
+	}
 	can_remove = {
 		always = no
 	}
@@ -427,6 +448,12 @@ joining_rule_mexican_only = {
 	can_remove = {
 		always = no
 	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = is_mexican_country_tt
+			is_in_array = { global.mexican_collapse_countries = THIS }
+		}
+	}
 	ai_will_do = {
 		base = 0
 	}
@@ -445,7 +472,13 @@ joining_rule_mexican_only = {
 joining_rule_canada_only = {
 	type = joining_rules
 	visible = {
-		is_in_array = { global.CAN_collapse = THIS }
+		ROOT = { is_in_array = { global.CAN_collapse = THIS.id } }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = is_canadian_country_tt
+			is_in_array = { global.CAN_collapse = THIS }
+		}
 	}
 	can_remove = {
 		always = no
@@ -462,6 +495,35 @@ joining_rule_canada_only = {
 		custom_trigger_tooltip = {
 			tooltip = is_canadian_country_tt
 			is_in_array = { global.CAN_collapse = THIS }
+		}
+	}
+}
+joining_rule_america_only = {
+	type = joining_rules
+	visible = {
+		ROOT = { is_in_array = { global.country_owns_American_State = THIS.id } }
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = is_american_country_tt
+			is_in_array = { global.country_owns_American_State = THIS.id }
+		}
+	}
+	can_remove = {
+		always = no
+	}
+	ai_will_do = {
+		base = 0
+	}
+
+	modifier = {
+		war_support_factor = 0.05
+	}
+
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = is_american_country_tt
+			is_in_array = { global.country_owns_American_State = THIS.id }
 		}
 	}
 }

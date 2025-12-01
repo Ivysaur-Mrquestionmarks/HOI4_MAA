@@ -57,7 +57,7 @@ faction_template_maa_american_generic = { #
 	}
 
 	default_rules = {
-		
+		joining_rule_america_only
 	}
 	
 }
@@ -90,6 +90,7 @@ faction_template_trump_loyalists = {
 	default_rules = {
 		change_leader_rule_never
 		joining_rule_non_left_wing
+		joining_rule_america_only
 	}
 	
 }
@@ -124,6 +125,7 @@ faction_template_biden_legitimists = {
 	default_rules = {
 		joining_rule_non_radical_right
 		change_leader_rule_never
+		joining_rule_america_only
 	}
 	
 }
@@ -159,6 +161,7 @@ faction_template_western_legitimists = {
 	default_rules = {
 		joining_rule_non_left_wing
 		change_leader_rule_never
+		joining_rule_america_only
 	}
 	
 }
@@ -189,6 +192,7 @@ faction_template_western_loyalists = {
 	default_rules = {
 		joining_rule_non_radical_right
 		change_leader_rule_never
+		joining_rule_america_only
 	}
 	
 }
@@ -220,6 +224,7 @@ faction_template_libertarian_right = {
 	default_rules = {
 		joining_rule_same_ideology
 		change_leader_rule_never
+		joining_rule_america_only
 	}
 	
 }
@@ -251,6 +256,7 @@ faction_template_pra_populists = {
 	default_rules = {
 		joining_rule_non_right_wing
 		change_leader_rule_never
+		joining_rule_america_only
 	}
 	
 }
@@ -282,6 +288,7 @@ faction_template_nazbols = {
 	default_rules = {
 		joining_rule_same_ideology
 		change_leader_rule_never
+		joining_rule_america_only
 	}
 	
 }
@@ -313,6 +320,7 @@ faction_template_unite_the_right = {
 	default_rules = {
 		joining_rule_non_left_wing
 		change_leader_rule_never
+		joining_rule_america_only
 	}
 	
 }

@@ -110,14 +110,14 @@ country_event = {
 	#picture =
 	is_triggered_only = yes
 	#communism
-	option = {
-		name = _debug.5.a
-		set_portraits = {
-		    character = USA_donald_trump
-		    army = { large ="GFX_portrait_maga_communism_donald" }
-		    civilian = { large ="GFX_portrait_maga_communism_donald" }
-		}
-	}
+	#option = { #this is literally a secret path?
+	#	name = _debug.5.a
+	#	set_portraits = {
+	#	    character = USA_donald_trump
+	#	    army = { large ="GFX_portrait_maga_communism_donald" }
+	#	    civilian = { large ="GFX_portrait_maga_communism_donald" }
+	#	}
+	#}
 	#June 2025 Portrait
 	option = {
 		name = _debug.5.b
@@ -131,5 +131,43 @@ country_event = {
 	option = {
 		name = _debug.5.c
 		country_event = _debug.4
+	}
+}
+
+
+#create canadian faction
+country_event = {
+	id = _debug.6
+	title = _debug.6.t
+	desc = _debug.6.d
+	#picture =
+	is_triggered_only = yes
+	option = {
+		name = _debug.6.a
+		create_faction_from_template = faction_template_generic_canada_cw_faction
+	}
+}
+#create mexican faction
+country_event = {
+	id = _debug.7
+	title = _debug.7.t
+	desc = _debug.7.d
+	#picture =
+	is_triggered_only = yes
+	option = {
+		name = _debug.7.a
+		create_faction_from_template = faction_template_mexican_federales
+	}
+}
+#create generic faction
+country_event = {
+	id = _debug.8
+	title = _debug.8.t
+	desc = _debug.8.d
+	#picture =
+	is_triggered_only = yes
+	option = {
+		name = _debug.8.a
+		create_faction_from_template = faction_template_maa_generic
 	}
 }

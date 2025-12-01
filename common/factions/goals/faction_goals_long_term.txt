@@ -1170,19 +1170,22 @@ faction_goal_securing_the_great_lakes_region = {
 		}
 		hidden_effect = {
 			ROOT = {
-			every_collection_element = {
-				input = {
-					input = collection:greatlakes_american_states_collection
-					operators = {
-						faction_members
-						#controlled_states
-						#limit = {
-						#	is_fully_controlled_by = PREV
-						#}
+				every_collection_element = {
+					input = {
+						input = collection:greatlakes_american_states_collection
+						operators = {
+							#faction_members
+							#controlled_states
+							#limit = {
+							#	is_fully_controlled_by = PREV
+							#}
+						}
+					}
+					if = {
+						limit = { is_controlled_by_ROOT_or_ally = yes }
+						add_compliance = 30
 					}
 				}
-				add_compliance = 30
-			}
 			}
 		}
 		effect_tooltip = {
@@ -1194,14 +1197,17 @@ faction_goal_securing_the_great_lakes_region = {
 					input = {
 						input = collection:greatlakes_american_states_collection
 						operators = {
-							faction_members
+							#faction_members
 							#controlled_states
 							#limit = {
 							#	is_fully_controlled_by = PREV
 							#}
 						}
 					}
-					add_compliance = 30
+					if = {
+						limit = { is_controlled_by_ROOT_or_ally = yes }
+						add_compliance = 30
+					}
 				}
 			}
 		}	

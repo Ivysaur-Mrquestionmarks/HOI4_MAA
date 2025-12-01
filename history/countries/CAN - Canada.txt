@@ -77,6 +77,11 @@ add_to_array = {
     value = VAN.id
     index = 7
 }
+add_to_array = {
+    array = global.CAN_collapse
+    value = CAN.id
+    index = 8
+}
 
 
 add_ideas = NATO_NATO_idea
