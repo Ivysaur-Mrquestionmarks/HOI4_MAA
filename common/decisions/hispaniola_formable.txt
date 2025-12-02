@@ -79,7 +79,7 @@ American_reunification = {
 
 		available = {
 			is_subject = no
-			every_state = {
+			all_state = {
 				limit = {
 					OR = {
 						is_core_of = CUB
