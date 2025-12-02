@@ -194,7 +194,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				large = #TODO
+				large = "gfx/leaders/KMT/SCOTUS.dds"
 			}
 		}
 		country_leader = {
@@ -929,6 +929,40 @@ characters={
 		}
 	}
 
+	KMT_Dan_Harmon = {
+		name = KMT_Dan_Harmon
+		gender = female
+
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/KMT/advisor_Dan_Harmon.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Dan_Harmon
+			cost = 150
+			allowed = {
+				original_tag = KMT
+			}
+			visible = {
+				original_tag = KMT
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}
+			}
+			available = {
+				NOT = {
+					has_completed_focus = KMT_wsc_coup
+				}			
+			}
+			traits = { KMT_advisor_rick_and_morty_creator }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 	KMT_Rick_Snyder = {
 		name = KMT_Rick_Snyder
 
@@ -1589,7 +1623,8 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = TODO
+				large = "gfx/leaders/KMT/Alexandre_de_Moraes.dds"
+				small = "gfx/interface/ideas/KMT/advisor_Alexandre_de_Moraes.dds"
 			}
 		}
 		advisor = {
@@ -1617,6 +1652,10 @@ characters={
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 1
+			visible = {
+				original_tag = KMT
+				has_country_flag = KMT_moraes
+			}
 		}
 	}
 
@@ -1626,7 +1665,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = TODO
+				small = "gfx/interface/ideas/KMT/advisor_Brenda_Hale.dds"
 			}
 		}
 		advisor = {
@@ -1654,7 +1693,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = TODO
+				small = "gfx/interface/ideas/KMT/advisor_Baltasar_Garzon.dds"
 			}
 		}
 		advisor = {
@@ -1682,7 +1721,7 @@ characters={
 
 		portraits = {
 			civilian = {
-				small = TODO
+				small = "gfx/interface/ideas/KMT/advisor_Mian_Saqib_Nisar.dds"
 			}
 		}
 		advisor = {
@@ -1798,7 +1837,7 @@ characters={
 		}
 	}
 
-	KMT_Mark_E_Anderson = {
+	KMT_Mark_E_Anderson = { #This dude already in Virginia so it is not recruited in history/countries/KMT - Wisconsin
 		name = KMT_Mark_E_Anderson
 		portraits = {
 			army = {
@@ -1947,6 +1986,216 @@ characters={
 				factor = 1
 			}
 		}	
+	}
+
+	KMT_Matthew_J_Strub = {
+		name = KMT_Matthew_J_Strub
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/KMT/military_Matthew_J_Strub.dds"
+				large = "gfx/leaders/KMT/Matthew_J_Strub.dds"
+			}
+		}
+		field_marshal = {
+			traits = {  } 
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = chief_Matthew_J_Strub
+			ledger = army
+			cost = 150
+			available = {
+			}
+			traits = { army_chief_drill_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Brion_J_Aderman = {
+		name = KMT_Brion_J_Aderman
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/KMT/military_Brion_J_Aderman.dds"
+				large = "gfx/leaders/KMT/Brion_J_Aderman.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  } 
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Brion_J_Aderman
+			ledger = army
+			cost = 100
+			available = {
+			}
+			traits = { army_artillery_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Matthew_P_Beilfuss = {
+		name = KMT_Matthew_P_Beilfuss
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/KMT/military_Matthew_P_Beilfuss.dds"
+				large = "gfx/leaders/KMT/Matthew_P_Beilfuss.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  } 
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Matthew_P_Beilfuss
+			ledger = army
+			cost = 100
+			available = {
+			}
+			traits = { army_entrenchment_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Charles_A_Mattison = {
+		name = KMT_Charles_A_Mattison
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/KMT/military_Charles_A_Mattison.dds"
+				large = "gfx/leaders/KMT/Charles_A_Mattison.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  } 
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Charles_A_Mattison
+			ledger = army
+			cost = 100
+			available = {
+			}
+			traits = { army_regrouping_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Duane_R_Weyer = {
+		name = KMT_Duane_R_Weyer
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/KMT/military_Duane_R_Weyer.dds"
+				large = "gfx/leaders/KMT/Duane_R_Weyer.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  } 
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Duane_R_Weyer
+			ledger = army
+			cost = 100
+			available = {
+			}
+			traits = { army_logistics_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	KMT_Erik_A_Peterson = {
+		name = KMT_Erik_A_Peterson
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/KMT/military_Erik_A_Peterson.dds"
+				large = "gfx/leaders/KMT/Erik_A_Peterson.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = theorist
+			idea_token = theorist_Erik_A_Peterson
+			ledger = air
+			cost = 100
+			available = {
+			}
+			traits = { air_warfare_theorist }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+
+	KMT_Chad_E_Workman = {
+		name = KMT_Chad_E_Workman
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/KMT/military_Chad_E_Workman.dds"
+				large = "gfx/leaders/KMT/Chad_E_Workman.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Chad_E_Workman
+			ledger = air
+			cost = 100
+			available = {
+			}
+			traits = { air_bomber_interception_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}		
 	}
 
 	KMT_John_T_Dunlap = {
