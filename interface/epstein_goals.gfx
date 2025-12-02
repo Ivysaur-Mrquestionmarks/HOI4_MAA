@@ -187754,15 +187754,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_autonomy_in_new_usa"
-        texturefile = "gfx/interface/goals/KMT_autonomy_in_new_usa.dds"
+        texturefile = "gfx/interface/goals/KMT_autonomy_in_new_usa.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_autonomy_in_new_usa_shine"
-        texturefile = "gfx/interface/goals/KMT_autonomy_in_new_usa.dds"
+        texturefile = "gfx/interface/goals/KMT_autonomy_in_new_usa.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_autonomy_in_new_usa.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_autonomy_in_new_usa.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -187774,8 +187774,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_autonomy_in_new_usa.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_autonomy_in_new_usa.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -187790,15 +187790,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_annexation"
-        texturefile = "gfx/interface/goals/KMT_annexation.dds"
+        texturefile = "gfx/interface/goals/KMT_annexation.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_annexation_shine"
-        texturefile = "gfx/interface/goals/KMT_annexation.dds"
+        texturefile = "gfx/interface/goals/KMT_annexation.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_annexation.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_annexation.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -187810,8 +187810,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_annexation.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_annexation.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -187826,15 +187826,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_birthplace_gop"
-        texturefile = "gfx/interface/goals/KMT_birthplace_gop.dds"
+        texturefile = "gfx/interface/goals/KMT_birthplace_gop.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_birthplace_gop_shine"
-        texturefile = "gfx/interface/goals/KMT_birthplace_gop.dds"
+        texturefile = "gfx/interface/goals/KMT_birthplace_gop.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_birthplace_gop.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_birthplace_gop.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -187846,8 +187846,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_birthplace_gop.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_birthplace_gop.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -187862,15 +187862,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_stomp_on_debt"
-        texturefile = "gfx/interface/goals/KMT_stomp_on_debt.dds"
+        texturefile = "gfx/interface/goals/KMT_stomp_on_debt.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_stomp_on_debt_shine"
-        texturefile = "gfx/interface/goals/KMT_stomp_on_debt.dds"
+        texturefile = "gfx/interface/goals/KMT_stomp_on_debt.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_stomp_on_debt.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_stomp_on_debt.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -187882,8 +187882,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_stomp_on_debt.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_stomp_on_debt.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -187898,15 +187898,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_tax_cuts"
-        texturefile = "gfx/interface/goals/KMT_tax_cuts.dds"
+        texturefile = "gfx/interface/goals/KMT_tax_cuts.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_tax_cuts_shine"
-        texturefile = "gfx/interface/goals/KMT_tax_cuts.dds"
+        texturefile = "gfx/interface/goals/KMT_tax_cuts.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_tax_cuts.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_tax_cuts.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -187918,8 +187918,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_tax_cuts.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_tax_cuts.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -187934,15 +187934,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_buy_guns"
-        texturefile = "gfx/interface/goals/KMT_buy_guns.dds"
+        texturefile = "gfx/interface/goals/KMT_buy_guns.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_buy_guns_shine"
-        texturefile = "gfx/interface/goals/KMT_buy_guns.dds"
+        texturefile = "gfx/interface/goals/KMT_buy_guns.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_buy_guns.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_buy_guns.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -187954,8 +187954,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_buy_guns.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_buy_guns.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -187970,15 +187970,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_oil_in_the_lakes"
-        texturefile = "gfx/interface/goals/KMT_oil_in_the_lakes.dds"
+        texturefile = "gfx/interface/goals/KMT_oil_in_the_lakes.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_oil_in_the_lakes_shine"
-        texturefile = "gfx/interface/goals/KMT_oil_in_the_lakes.dds"
+        texturefile = "gfx/interface/goals/KMT_oil_in_the_lakes.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_oil_in_the_lakes.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_oil_in_the_lakes.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -187990,8 +187990,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_oil_in_the_lakes.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_oil_in_the_lakes.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -188006,15 +188006,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_deport_illegals"
-        texturefile = "gfx/interface/goals/KMT_deport_illegals.dds"
+        texturefile = "gfx/interface/goals/KMT_deport_illegals.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_deport_illegals_shine"
-        texturefile = "gfx/interface/goals/KMT_deport_illegals.dds"
+        texturefile = "gfx/interface/goals/KMT_deport_illegals.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_deport_illegals.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_deport_illegals.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -188026,8 +188026,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_deport_illegals.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_deport_illegals.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -188042,15 +188042,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_ban_abortion"
-        texturefile = "gfx/interface/goals/KMT_ban_abortion.dds"
+        texturefile = "gfx/interface/goals/KMT_ban_abortion.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_ban_abortion_shine"
-        texturefile = "gfx/interface/goals/KMT_ban_abortion.dds"
+        texturefile = "gfx/interface/goals/KMT_ban_abortion.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_ban_abortion.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_ban_abortion.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -188062,8 +188062,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_ban_abortion.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_ban_abortion.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -188078,15 +188078,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_trumpism_to_the_fullest"
-        texturefile = "gfx/interface/goals/KMT_trumpism_to_the_fullest.dds"
+        texturefile = "gfx/interface/goals/KMT_trumpism_to_the_fullest.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_trumpism_to_the_fullest_shine"
-        texturefile = "gfx/interface/goals/KMT_trumpism_to_the_fullest.dds"
+        texturefile = "gfx/interface/goals/KMT_trumpism_to_the_fullest.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_trumpism_to_the_fullest.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_trumpism_to_the_fullest.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -188098,8 +188098,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_trumpism_to_the_fullest.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_trumpism_to_the_fullest.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -188114,15 +188114,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_embrace_bidenomics"
-        texturefile = "gfx/interface/goals/KMT_embrace_bidenomics.dds"
+        texturefile = "gfx/interface/goals/KMT_embrace_bidenomics.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_embrace_bidenomics_shine"
-        texturefile = "gfx/interface/goals/KMT_embrace_bidenomics.dds"
+        texturefile = "gfx/interface/goals/KMT_embrace_bidenomics.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_embrace_bidenomics.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_embrace_bidenomics.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -188134,8 +188134,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_embrace_bidenomics.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_embrace_bidenomics.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -188150,15 +188150,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_minimum_wage"
-        texturefile = "gfx/interface/goals/KMT_minimum_wage.dds"
+        texturefile = "gfx/interface/goals/KMT_minimum_wage.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_minimum_wage_shine"
-        texturefile = "gfx/interface/goals/KMT_minimum_wage.dds"
+        texturefile = "gfx/interface/goals/KMT_minimum_wage.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_minimum_wage.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_minimum_wage.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -188170,8 +188170,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_minimum_wage.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_minimum_wage.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -188186,15 +188186,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_tax_corporations"
-        texturefile = "gfx/interface/goals/KMT_tax_corporations.dds"
+        texturefile = "gfx/interface/goals/KMT_tax_corporations.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_tax_corporations_shine"
-        texturefile = "gfx/interface/goals/KMT_tax_corporations.dds"
+        texturefile = "gfx/interface/goals/KMT_tax_corporations.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_tax_corporations.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_tax_corporations.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -188206,8 +188206,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_tax_corporations.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_tax_corporations.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -188222,15 +188222,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_buy_back_guns"
-        texturefile = "gfx/interface/goals/KMT_buy_back_guns.dds"
+        texturefile = "gfx/interface/goals/KMT_buy_back_guns.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_buy_back_guns_shine"
-        texturefile = "gfx/interface/goals/KMT_buy_back_guns.dds"
+        texturefile = "gfx/interface/goals/KMT_buy_back_guns.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_buy_back_guns.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_buy_back_guns.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -188242,8 +188242,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_buy_back_guns.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_buy_back_guns.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -188258,15 +188258,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_housing_for_all"
-        texturefile = "gfx/interface/goals/KMT_housing_for_all.dds"
+        texturefile = "gfx/interface/goals/KMT_housing_for_all.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_housing_for_all_shine"
-        texturefile = "gfx/interface/goals/KMT_housing_for_all.dds"
+        texturefile = "gfx/interface/goals/KMT_housing_for_all.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_housing_for_all.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_housing_for_all.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -188278,8 +188278,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_housing_for_all.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_housing_for_all.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -188294,15 +188294,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_protect_minorities"
-        texturefile = "gfx/interface/goals/KMT_protect_minorities.dds"
+        texturefile = "gfx/interface/goals/KMT_protect_minorities.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_protect_minorities_shine"
-        texturefile = "gfx/interface/goals/KMT_protect_minorities.dds"
+        texturefile = "gfx/interface/goals/KMT_protect_minorities.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_protect_minorities.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_protect_minorities.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -188314,8 +188314,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_protect_minorities.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_protect_minorities.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -188330,15 +188330,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_public_health_care"
-        texturefile = "gfx/interface/goals/KMT_public_health_care.dds"
+        texturefile = "gfx/interface/goals/KMT_public_health_care.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_public_health_care_shine"
-        texturefile = "gfx/interface/goals/KMT_public_health_care.dds"
+        texturefile = "gfx/interface/goals/KMT_public_health_care.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_public_health_care.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_public_health_care.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -188350,8 +188350,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_public_health_care.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_public_health_care.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
@@ -188366,15 +188366,15 @@ SpriteType = {
     }
     SpriteType = {
         name = "GFX_goal_KMT_la_follette_legacy"
-        texturefile = "gfx/interface/goals/KMT_la_follette_legacy.dds"
+        texturefile = "gfx/interface/goals/KMT_la_follette_legacy.tga"
     }
     SpriteType = {
         name = "GFX_goal_KMT_la_follette_legacy_shine"
-        texturefile = "gfx/interface/goals/KMT_la_follette_legacy.dds"
+        texturefile = "gfx/interface/goals/KMT_la_follette_legacy.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_la_follette_legacy.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_la_follette_legacy.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = -90.0
             animationlooping = no
             animationtime = 0.75
@@ -188386,8 +188386,8 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/KMT_la_follette_legacy.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationmaskfile = "gfx/interface/goals/KMT_la_follette_legacy.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
             animationrotation = 90.0
             animationlooping = no
             animationtime = 0.75
