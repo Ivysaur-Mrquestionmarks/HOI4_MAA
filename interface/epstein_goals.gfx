@@ -188401,6 +188401,42 @@ SpriteType = {
 
     }
     SpriteType = {
+        name = "GFX_goal_KMT_weathermen_coup"
+        texturefile = "gfx/interface/goals/KMT_weathermen_coup.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_weathermen_coup_shine"
+        texturefile = "gfx/interface/goals/KMT_weathermen_coup.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_weathermen_coup.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_weathermen_coup.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
         name = "GFX_goal_KMT_new_identity_on_the_lakes"
         texturefile = "gfx/interface/goals/KMT_new_identity_on_the_lakes.tga"
     }
