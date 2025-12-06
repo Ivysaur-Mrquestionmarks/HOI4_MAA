@@ -188833,6 +188833,582 @@ SpriteType = {
 
     }
     SpriteType = {
+        name = "GFX_goal_KMT_into_minnesota"
+        texturefile = "gfx/interface/goals/KMT_into_minnesota.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_into_minnesota_shine"
+        texturefile = "gfx/interface/goals/KMT_into_minnesota.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_into_minnesota.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_into_minnesota.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_lake_superior"
+        texturefile = "gfx/interface/goals/KMT_lake_superior.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_lake_superior_shine"
+        texturefile = "gfx/interface/goals/KMT_lake_superior.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_lake_superior.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_lake_superior.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_lake_eirie"
+        texturefile = "gfx/interface/goals/KMT_lake_eirie.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_lake_eirie_shine"
+        texturefile = "gfx/interface/goals/KMT_lake_eirie.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_lake_eirie.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_lake_eirie.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_lake_ontario"
+        texturefile = "gfx/interface/goals/KMT_lake_ontario.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_lake_ontario_shine"
+        texturefile = "gfx/interface/goals/KMT_lake_ontario.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_lake_ontario.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_lake_ontario.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_prepare_for_the_onslaught"
+        texturefile = "gfx/interface/goals/KMT_prepare_for_the_onslaught.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_prepare_for_the_onslaught_shine"
+        texturefile = "gfx/interface/goals/KMT_prepare_for_the_onslaught.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_prepare_for_the_onslaught.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_prepare_for_the_onslaught.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_dark_stain_of_mccarthysm"
+        texturefile = "gfx/interface/goals/KMT_dark_stain_of_mccarthysm.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_dark_stain_of_mccarthysm_shine"
+        texturefile = "gfx/interface/goals/KMT_dark_stain_of_mccarthysm.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_dark_stain_of_mccarthysm.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_dark_stain_of_mccarthysm.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_equity_solidarity_socialism"
+        texturefile = "gfx/interface/goals/KMT_equity_solidarity_socialism.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_equity_solidarity_socialism_shine"
+        texturefile = "gfx/interface/goals/KMT_equity_solidarity_socialism.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_equity_solidarity_socialism.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_equity_solidarity_socialism.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_state_defense"
+        texturefile = "gfx/interface/goals/KMT_state_defense.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_state_defense_shine"
+        texturefile = "gfx/interface/goals/KMT_state_defense.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_state_defense.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_state_defense.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_militia_training"
+        texturefile = "gfx/interface/goals/KMT_militia_training.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_militia_training_shine"
+        texturefile = "gfx/interface/goals/KMT_militia_training.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_militia_training.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_militia_training.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_abolish_private_proprety"
+        texturefile = "gfx/interface/goals/KMT_abolish_private_proprety.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_abolish_private_proprety_shine"
+        texturefile = "gfx/interface/goals/KMT_abolish_private_proprety.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_abolish_private_proprety.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_abolish_private_proprety.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_supremacy_over_the_state"
+        texturefile = "gfx/interface/goals/KMT_supremacy_over_the_state.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_supremacy_over_the_state_shine"
+        texturefile = "gfx/interface/goals/KMT_supremacy_over_the_state.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_supremacy_over_the_state.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_supremacy_over_the_state.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_feed_the_poor"
+        texturefile = "gfx/interface/goals/KMT_feed_the_poor.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_feed_the_poor_shine"
+        texturefile = "gfx/interface/goals/KMT_feed_the_poor.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_feed_the_poor.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_feed_the_poor.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_join_bernie"
+        texturefile = "gfx/interface/goals/KMT_join_bernie.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_join_bernie_shine"
+        texturefile = "gfx/interface/goals/KMT_join_bernie.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_join_bernie.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_join_bernie.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_loyalty_to_the_cause"
+        texturefile = "gfx/interface/goals/KMT_loyalty_to_the_cause.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_loyalty_to_the_cause_shine"
+        texturefile = "gfx/interface/goals/KMT_loyalty_to_the_cause.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_loyalty_to_the_cause.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_loyalty_to_the_cause.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_relief_middle_class"
+        texturefile = "gfx/interface/goals/KMT_relief_middle_class.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_relief_middle_class_shine"
+        texturefile = "gfx/interface/goals/KMT_relief_middle_class.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_relief_middle_class.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_relief_middle_class.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_inspire_the_people"
+        texturefile = "gfx/interface/goals/KMT_inspire_the_people.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_inspire_the_people_shine"
+        texturefile = "gfx/interface/goals/KMT_inspire_the_people.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_inspire_the_people.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_inspire_the_people.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
         name = "GFX_goal_USA_navy_docks"
         texturefile = "gfx/interface/goals/USA_navy_docks.dds"
     }
