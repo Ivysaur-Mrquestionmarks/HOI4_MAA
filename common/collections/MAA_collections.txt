@@ -22,7 +22,7 @@ mexican_states_collection = {
 	name = COLLECTION_ALL_MEXICAN_STATES
 	operators = {
 		limit = {
-			has_state_flag = part_of_mexico_flag
+			is_on_continent = mexico_continent #This is more efficient, lol.
 		}
 	}
 }

@@ -39,6 +39,7 @@ buildings = {
 
 		show_modifier = yes
 		allied_build = yes
+		affects_energy = yes
 
 		infrastructure_construction_effect = yes
 		level_cap = {
@@ -487,15 +488,17 @@ buildings = {
 				nuclear_production_factor = 3
 				thermonuclear_production_factor = 2
 				fuel_gain_from_states = 16.0 #per hour
-				country_resource_chromium = -30
+				country_resource_chromium = -30 #uranium
 				#consumer_goods_factor = -0.05
+				country_resource_coal = 16 #You are consuming another form of energy now.
 			}
 		}
 
 		state_modifiers = {
 			state_production_speed_buildings_factor = 0.15
 			local_building_slots_factor = 0.15
-			state_resources_factor = 0.1			
+			state_resources_factor = 0.1	
+			local_factory_energy_consumption = -0.65 #Buffed due to uranium cost		
 		}
 
 		level_cap = {

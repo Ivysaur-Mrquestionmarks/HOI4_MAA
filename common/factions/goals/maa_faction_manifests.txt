@@ -83,39 +83,42 @@ faction_manifest_reclaim_mexico = {
 				min = 0
 				max = 0.15
 				modifier = { 
-					stability_factor = -0.05
+					stability_factor = 0.05
 					war_support_factor = -0.05
-					generate_wargoal_tension = -0.1
-					justify_war_goal_time = -0.05
+					army_core_defence_factor = 0.1
+					resistance_target = -0.1
 				}
 			}
 			moderate_legitimacy_section = {
 				min = 0.15
-				max = 0.45
+				max = 0.35
 				modifier = { 
-					stability_factor = 0.05
+					stability_factor = -0.05
 					war_support_factor = 0.05
-					generate_wargoal_tension = -0.2
-					justify_war_goal_time = -0.1
+					army_defence_factor = -0.15
+					army_core_defence_factor = 0.15
+					resistance_target = 0.1
 				}
 			}
 			strong_legitimacy_section = {
-				min = 0.45
-				max = 0.9
+				min = 0.35
+				max = 0.7
 				modifier = { 
-					stability_factor = 0.1
+					stability_factor = -0.15
 					war_support_factor = 0.1
-					generate_wargoal_tension = -0.3
-					justify_war_goal_time = -0.15
+					army_defence_factor = -0.25
+					army_core_defence_factor = 0.25
+					resistance_target = 0.3
 				}
 			}
 			internationally_legitimate_govt_section = {
 				min = @manifest_fulfilled_value
 				modifier = { 
-					stability_factor = 0.15
+					stability_factor = -0.25
 					war_support_factor = 0.15
-					generate_wargoal_tension = -0.4
-					justify_war_goal_time = -0.2
+					army_defence_factor = -0.4
+					army_core_defence_factor = 0.4
+					resistance_target = 0.5
 				}
 			}
 		}

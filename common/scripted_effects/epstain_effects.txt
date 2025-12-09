@@ -238,6 +238,14 @@ fuel_clamp = {
 				var = fuel_rationing
 				value = fuel_rationing_2
 			}
+			set_variable = {
+				var = energy_rationing
+				value = fuel_rationing
+			}
+			multiply_variable = {
+    				var = energy_rationing 
+    				value = -1
+			}
 }
 
 CSA_dynamic_faith = {

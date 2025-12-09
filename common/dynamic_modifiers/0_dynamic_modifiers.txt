@@ -55,11 +55,12 @@ resource_import_cost = { #NATIONAL SPIRIT, balls.
 }
 
 
-fuel_mechanic = {
+fuel_mechanic = { 
 	industrial_capacity_factory = expense_mil
 	production_speed_buildings_factor = expense_civs
-	base_fuel_gain = fuel_lost
+	#base_fuel_gain = fuel_lost 
 	fuel_gain_factor = fuel_rationing
+	factory_energy_consumption = energy_rationing
 }
 
 
