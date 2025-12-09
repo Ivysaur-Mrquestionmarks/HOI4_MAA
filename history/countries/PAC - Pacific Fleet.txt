@@ -360,3 +360,40 @@ if = {
 		}
 	}
 }
+
+set_variable = {
+	var = PAC.var_pp_level
+	value = 0.05
+}
+set_variable = {
+	var = PAC.var_compliance_level
+	value = 0.00
+}
+set_variable = {
+	var = PAC.var_drift_defence_level
+	value = 0.00
+}
+set_variable = {
+	var = PAC.var_stability_level
+	value = 0.00
+}
+set_variable = {
+	var = PAC.var_war_support_level
+	value = 0.00
+}
+set_variable = {
+	var = PAC.var_libertarian_left_level
+	value = 0.00
+}
+set_variable = {
+	var = PAC.var_defense_level
+	value = 0.00
+}
+set_variable = {
+	var = PAC.var_production_speed_level
+	value = 0.00
+}
+set_variable = {
+	var = PAC.var_factory_efficiency_level
+	value = 0.00
+}

@@ -985,7 +985,11 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = PAC_army_remnants
 				add_idea = PAC_army_remnants_2
-			}		
+			}
+			add_popularity = {
+                ideology = autocratic
+                popularity = -0.1
+            }	
 		}
 	}
 
@@ -1114,7 +1118,11 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = PAC_army_remnants_2
 				add_idea = PAC_army_remnants_3
-			}	
+			}
+			add_popularity = {
+                ideology = autocratic
+                popularity = -0.1
+            }	
 		}
 	}
 
@@ -1174,7 +1182,10 @@ focus_tree = {
 			set_politics = {
                 ruling_party = libertarian_left
                 elections_allowed = no
-            }		
+            }
+			add_dynamic_modifier = {
+				modifier = PAC_a_land_to_be_free_dynamic_modifier
+			}
 		}
 	}
 
@@ -1195,7 +1206,15 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_unpopular_coup_3
+				add_idea = PAC_unpopular_coup_4
+			}
+			country_event = {
+  				id = pacific_anarchists.1
+    			days = 0
+			}
 		}
 	}
 
@@ -1219,7 +1238,34 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_unpopular_coup_4
+				add_idea = PAC_unpopular_coup_5
+			}
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.03
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.05
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_defense_level
+				value = 0.03
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_drift_defence_level
+				value = 0.03
+				tooltip = drift_defence_factor_tt
+			}
+			unlock_decision_tooltip = PAC_become_loveable
+			unlock_decision_tooltip = PAC_host_rave_parties
 		}
 	}
 
@@ -1243,7 +1289,34 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_unpopular_coup_4
+				add_idea = PAC_unpopular_coup_5
+			}
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.03
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.05
+				tooltip = compliance_growth_tt
+			}
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_drift_defence_level
+				value = 0.03
+				tooltip = drift_defence_factor_tt
+			}
+			unlock_decision_tooltip = PAC_expand_the_association
+			unlock_decision_tooltip = PAC_common_ownership
 		}
 	}
 
@@ -1267,7 +1340,48 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_unpopular_coup_5
+				add_idea = PAC_unpopular_coup_6
+			}
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.03
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.03
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_libertarian_left_level
+				value = 0.02
+				tooltip = libertarian_left_drift_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_drift_defence_level
+				value = 0.02
+				tooltip = drift_defence_factor_tt
+			}
+			add_popularity = {
+                ideology = autocratic
+                popularity = -0.1
+            }
+			add_popularity = {
+                ideology = libertarian_right
+                popularity = -0.1
+            }
+			add_popularity = {
+                ideology = republican
+                popularity = -0.1
+            }
+			add_popularity = {
+                ideology = democrat
+                popularity = -0.1
+            }
 		}
 	}
 
@@ -1291,7 +1405,26 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.03
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_libertarian_left_level
+				value = 0.02
+				tooltip = libertarian_left_drift_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_drift_defence_level
+				value = 0.02
+				tooltip = drift_defence_factor_tt
+			}
+			unlock_decision_tooltip = PAC_fight_against_the_dictators_of_america
+			unlock_decision_tooltip = PAC_defend_our_free_lands
+			unlock_decision_tooltip = PAC_help_your_community
 		}
 	}
 
@@ -1315,7 +1448,25 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.03
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.03
+				tooltip = compliance_growth_tt
+			}
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.03
+				tooltip = stability_factor_tt
+			}
+			unlock_decision_tooltip = PAC_meet_with_mayors
+			unlock_decision_tooltip = PAC_commune_formalization
 		}
 	}
 
@@ -1341,7 +1492,28 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.03
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_libertarian_left_level
+				value = 0.02
+				tooltip = libertarian_left_drift_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_drift_defence_level
+				value = 0.02
+				tooltip = drift_defence_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.03
+				tooltip = compliance_growth_tt
+			}	
 		}
 	}
 
@@ -1364,7 +1536,18 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_defense_level
+				value = 0.05
+				tooltip = army_defence_factor_tt
+			}		
 		}
 	}
 
@@ -1387,7 +1570,46 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.03
+				tooltip = stability_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_production_speed_level
+				value = 0.03
+				tooltip = production_speed_factor_tt
+			}
+			#maybe add stuff for energy or something
 		}
 	}
 
@@ -1413,7 +1635,12 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			PAC_association_of_anarchists = {
+			    promote_character = yes
+		    }
+			add_country_leader_trait = PAC_the_common_people_empowered
+			remove_idea = PAC_unpopular_coup_6
 		}
 	}
 
@@ -1439,7 +1666,9 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			remove_idea = PAC_unpopular_coup_6		
+			add_country_leader_trait = PAC_protector_of_anarchy
 		}
 	}
 
@@ -1465,7 +1694,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.05
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.03
+				tooltip = compliance_growth_tt
+			}
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.05
+				tooltip = stability_factor_tt
+			}			
 		}
 	}
 
@@ -1492,7 +1737,28 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.05
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.05
+				tooltip = compliance_growth_tt
+			}
+			add_to_variable = {
+				var = PAC.var_drift_defence_level
+				value = 0.05
+				tooltip = drift_defence_factor_tt
+			}		
 		}
 	}
 
@@ -1513,7 +1779,10 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_idea = PAC_live_freely
+			unlock_decision_tooltip = PAC_fight_bigotry
+			unlock_decision_tooltip = PAC_empower_the_oppressed	
 		}
 	}
 
@@ -1534,7 +1803,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_live_freely
+				add_idea = PAC_live_freely_2
+			}		
 		}
 	}
 
@@ -1555,7 +1828,21 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = PAC_live_freely_3 } }
+				swap_ideas = {
+				    remove_idea = PAC_live_freely_2
+				    add_idea = PAC_live_freely_3
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_live_freely_3 }
+				swap_ideas = {
+				    remove_idea = PAC_live_freely_3
+				    add_idea = PAC_live_freely_4
+			    }
+			}				
 		}
 	}
 
@@ -1576,7 +1863,21 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = PAC_live_freely_3 } }
+				swap_ideas = {
+				    remove_idea = PAC_live_freely_2
+				    add_idea = PAC_live_freely_3
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_live_freely_3 }
+				swap_ideas = {
+				    remove_idea = PAC_live_freely_3
+				    add_idea = PAC_live_freely_4
+			    }
+			}		
 		}
 	}
 
@@ -1598,7 +1899,22 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_live_freely_4
+				add_idea = PAC_live_freely_5
+			}
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.02
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.02
+				tooltip = compliance_growth_tt
+			}
 		}
 	}
 
@@ -1619,7 +1935,8 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_ideas = PAC_a_mutual_economy			
 		}
 	}
 
@@ -1640,7 +1957,39 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = arms_factory
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			if = {
+				limit = { NOT = { has_idea = PAC_a_mutual_economy_2 } }
+				swap_ideas = {
+				    remove_idea = PAC_a_mutual_economy
+				    add_idea = PAC_a_mutual_economy_2
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_a_mutual_economy_2 }
+				swap_ideas = {
+				    remove_idea = PAC_a_mutual_economy_2
+				    add_idea = PAC_a_mutual_economy_3
+			    }
+			}				
 		}
 	}
 
@@ -1661,7 +2010,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_factory_efficiency_level
+				value = 0.03
+				tooltip = factory_efficiency_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_production_speed_level
+				value = -0.02
+				tooltip = production_speed_factor_tt
+			}			
 		}
 	}
 
@@ -1682,7 +2047,21 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = PAC_a_mutual_economy_2 } }
+				swap_ideas = {
+				    remove_idea = PAC_a_mutual_economy
+				    add_idea = PAC_a_mutual_economy_2
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_a_mutual_economy_2 }
+				swap_ideas = {
+				    remove_idea = PAC_a_mutual_economy_2
+				    add_idea = PAC_a_mutual_economy_3
+			    }
+			}			
 		}
 	}
 
@@ -1703,7 +2082,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_factory_efficiency_level
+				value = 0.03
+				tooltip = factory_efficiency_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_production_speed_level
+				value = -0.02
+				tooltip = production_speed_factor_tt
+			}		
 		}
 	}
 
@@ -1725,7 +2120,45 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_factory_efficiency_level
+				value = 0.03
+				tooltip = factory_efficiency_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_production_speed_level
+				value = 0.03
+				tooltip = production_speed_factor_tt
+			}	
 		}
 	}
 
@@ -1747,7 +2180,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_a_mutual_economy_3
+				add_idea = PAC_a_mutual_economy_4
+			}
 		}
 	}
 
@@ -1769,7 +2206,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_factory_efficiency_level
+				value = 0.03
+				tooltip = factory_efficiency_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_production_speed_level
+				value = -0.02
+				tooltip = production_speed_factor_tt
+			}		
 		}
 	}
 
@@ -1791,7 +2244,42 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				add_resource = {
+                    type = steel
+                    amount = 5
+                }	
+		    }
+		    random_controlled_state = {
+				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				add_resource = {
+                    type = aluminium
+                    amount = 5
+                }	
+		    }
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				add_resource = {
+                    type = tungsten
+                    amount = 5
+                }	
+		    }
+			if = {
+				limit = { NOT = { has_idea = PAC_a_mutual_economy_5 } }
+				swap_ideas = {
+				    remove_idea = PAC_a_mutual_economy_4
+				    add_idea = PAC_a_mutual_economy_5
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_a_mutual_economy_5 }
+				swap_ideas = {
+				    remove_idea = PAC_a_mutual_economy_5
+				    add_idea = PAC_a_mutual_economy_6
+			    }
+			}		
 		}
 	}
 
@@ -1813,7 +2301,21 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = PAC_a_mutual_economy_5 } }
+				swap_ideas = {
+				    remove_idea = PAC_a_mutual_economy_4
+				    add_idea = PAC_a_mutual_economy_5
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_a_mutual_economy_5 }
+				swap_ideas = {
+				    remove_idea = PAC_a_mutual_economy_5
+				    add_idea = PAC_a_mutual_economy_6
+			    }
+			}			
 		}
 	}
 
@@ -1835,7 +2337,50 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				add_resource = {
+                    type = steel
+                    amount = 5
+                }	
+		    }
+		    random_controlled_state = {
+				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				add_resource = {
+                    type = aluminium
+                    amount = 5
+                }	
+		    }
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				add_resource = {
+                    type = tungsten
+                    amount = 5
+                }	
+		    }
+			swap_ideas = {
+				remove_idea = PAC_a_mutual_economy_6
+				add_idea = PAC_a_mutual_economy_7
+			}			
 		}
 	}
 
@@ -1856,7 +2401,8 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_ideas = PAC_defenders_of_anarchy
 		}
 	}
 
@@ -1877,7 +2423,28 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = PAC_defenders_of_anarchy_2 } }
+				swap_ideas = {
+				    remove_idea = PAC_defenders_of_anarchy
+				    add_idea = PAC_defenders_of_anarchy_2
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_defenders_of_anarchy_2 }
+				swap_ideas = {
+				    remove_idea = PAC_defenders_of_anarchy_2
+				    add_idea = PAC_defenders_of_anarchy_3
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_defenders_of_anarchy_3 }
+				swap_ideas = {
+				    remove_idea = PAC_defenders_of_anarchy_3
+				    add_idea = PAC_defenders_of_anarchy_4
+			    }
+			}			
 		}
 	}
 
@@ -1898,7 +2465,28 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			if = {
+				limit = { has_idea = PAC_defenders_of_anarchy }
+				swap_ideas = {
+				    remove_idea = PAC_defenders_of_anarchy
+				    add_idea = PAC_defenders_of_anarchy_2
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_defenders_of_anarchy_2 }
+				swap_ideas = {
+				    remove_idea = PAC_defenders_of_anarchy_2
+				    add_idea = PAC_defenders_of_anarchy_3
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_defenders_of_anarchy_3 }
+				swap_ideas = {
+				    remove_idea = PAC_defenders_of_anarchy_3
+				    add_idea = PAC_defenders_of_anarchy_4
+			    }
+			}		
 		}
 	}
 
@@ -1919,7 +2507,28 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			if = {
+				limit = { has_idea = PAC_defenders_of_anarchy }
+				swap_ideas = {
+				    remove_idea = PAC_defenders_of_anarchy
+				    add_idea = PAC_defenders_of_anarchy_2
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_defenders_of_anarchy_2 }
+				swap_ideas = {
+				    remove_idea = PAC_defenders_of_anarchy_2
+				    add_idea = PAC_defenders_of_anarchy_3
+			    }
+			}
+			if = {
+				limit = { has_idea = PAC_defenders_of_anarchy_3 }
+				swap_ideas = {
+				    remove_idea = PAC_defenders_of_anarchy_3
+				    add_idea = PAC_defenders_of_anarchy_4
+			    }
+			}
 		}
 	}
 
@@ -1941,7 +2550,32 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			build_railway = {
+				level = 2
+				start_province = 2614
+				target_province = 9509
+			}
+			build_railway = {
+				level = 2
+				start_province = 2614
+				target_province = 8636
+			}
+			build_railway = {
+				level = 1
+				start_province = 9509
+				target_province = 10184
+			}
+			build_railway = {
+				level = 2
+				start_province = 10184
+				target_province = 10417
+			}
+			build_railway = {
+				level = 1
+				start_province = 10184
+				target_province = 846
+			}		
 		}
 	}
 
@@ -1963,7 +2597,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_defenders_of_anarchy_4
+				add_idea = PAC_defenders_of_anarchy_5
+			}			
 		}
 	}
 
@@ -1984,7 +2622,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_defenders_of_anarchy_5
+				add_idea = PAC_defenders_of_anarchy_6
+			}		
 		}
 	}
 
@@ -2006,7 +2648,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_defenders_of_anarchy_6
+				add_idea = PAC_defenders_of_anarchy_7
+			}		
 		}
 	}
 
@@ -2021,14 +2667,11 @@ focus_tree = {
 		relative_position_id = PAC_for_the_revolution
 		allow_branch = {
 		}
+		prerequisite = { focus = PAC_for_the_revolution }
 		available = {
 			if = {
                limit = { is_ai = yes }
 			   has_completed_focus = PAC_freedom_fighters_of_the_pacific
-			}
-			if = {
-               limit = { is_ai = no }
-			   has_completed_focus = PAC_for_the_revolution
 			}
 		}
 		ai_will_do = {
@@ -5069,14 +5712,11 @@ focus_tree = {
 		relative_position_id = PAC_government_unity
 		allow_branch = {
 		}
+		prerequisite = { focus = PAC_government_unity }
 		available = {
 			if = {
                limit = { is_ai = yes }
 			   has_completed_focus = PAC_militia_integration
-			}
-			if = {
-               limit = { is_ai = no }
-			   has_completed_focus = PAC_government_unity
 			}
 		}
 		ai_will_do = {
@@ -6133,14 +6773,11 @@ focus_tree = {
 		relative_position_id = PAC_direct_rule
 		allow_branch = {
 		}
+		prerequisite = { focus = PAC_direct_rule }
 		available = {
 			if = {
                limit = { is_ai = yes }
 			   has_completed_focus = PAC_semper_fortis
-			}
-			if = {
-               limit = { is_ai = no }
-			   has_completed_focus = PAC_direct_rule
 			}
 		}
 		ai_will_do = {

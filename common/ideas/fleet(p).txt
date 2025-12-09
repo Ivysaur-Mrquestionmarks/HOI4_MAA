@@ -335,5 +335,378 @@ ideas = {
 				surrender_limit = -0.15
 			}
 		}
+
+		#Anarchist Ideas
+		PAC_live_freely = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = 0.05
+				monthly_population = -0.05
+				libertarian_left_drift = 0.02
+				army_morale_factor = 0.03
+			}
+		}
+
+		PAC_live_freely_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = 0.1
+				monthly_population = -0.05
+				libertarian_left_drift = 0.03
+				army_morale_factor = 0.05
+			}
+		}
+
+		PAC_live_freely_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = 0.15
+				monthly_population = -0.05
+				libertarian_left_drift = 0.04
+				army_morale_factor = 0.07
+			}
+		}
+
+		PAC_live_freely_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = 0.15
+				monthly_population = -0.05
+				libertarian_left_drift = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+
+		PAC_live_freely_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                stability_factor = 0.2
+				monthly_population = -0.05
+				libertarian_left_drift = 0.06
+				army_morale_factor = 0.13
+			}
+		}
+
+		PAC_a_mutual_economy = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				industry_repair_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		PAC_a_mutual_economy_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = -0.05
+				consumer_goods_expected_value = -0.15
+				industry_repair_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+
+		PAC_a_mutual_economy_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.05
+				consumer_goods_expected_value = -0.2
+				industry_repair_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+			}
+		}
+
+		PAC_a_mutual_economy_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.1
+				consumer_goods_expected_value = -0.25
+				industry_repair_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+			}
+		}
+
+		PAC_a_mutual_economy_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.15
+				consumer_goods_expected_value = -0.3
+				industry_repair_factor = 0.25
+				industrial_capacity_factory = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+			}
+		}
+
+		PAC_a_mutual_economy_6 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.2
+				consumer_goods_expected_value = -0.45
+				industry_repair_factor = 0.3
+				industrial_capacity_factory = 0.3
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+			}
+		}
+
+		PAC_a_mutual_economy_7 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.25
+				consumer_goods_expected_value = -0.5
+				industry_repair_factor = 0.35
+				industrial_capacity_factory = 0.35
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+			}
+		}
+
+		PAC_defenders_of_anarchy = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                command_power_gain = -0.1
+				army_org_factor = -0.03
+				land_reinforce_rate = 0.05
+				training_time_factor = -0.05
+				minimum_training_level = -0.05
+				army_breakthrough_against_major_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_strength_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		PAC_defenders_of_anarchy_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                command_power_gain = -0.15
+				army_org_factor = -0.05
+				land_reinforce_rate = 0.05
+				training_time_factor = -0.05
+				minimum_training_level = -0.05
+				army_breakthrough_against_major_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_strength_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		PAC_defenders_of_anarchy_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                command_power_gain = -0.15
+				army_org_factor = -0.05
+				land_reinforce_rate = 0.1
+				training_time_factor = -0.1
+				minimum_training_level = -0.08
+				army_breakthrough_against_major_factor = 0.07
+				army_core_defence_factor = 0.1
+				army_strength_factor = 0.1
+				army_morale_factor = 0.07
+			}
+		}
+
+		PAC_defenders_of_anarchy_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                command_power_gain = -0.15
+				army_org_factor = -0.05
+				land_reinforce_rate = 0.15
+				training_time_factor = -0.15
+				minimum_training_level = -0.08
+				army_breakthrough_against_major_factor = 0.1
+				army_core_defence_factor = 0.15
+				army_strength_factor = 0.15
+				army_morale_factor = 0.1
+			}
+		}
+
+		PAC_defenders_of_anarchy_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                command_power_gain = -0.15
+				army_org_factor = -0.05
+				land_reinforce_rate = 0.2
+				training_time_factor = -0.2
+				minimum_training_level = -0.1
+				army_breakthrough_against_major_factor = 0.15
+				army_core_defence_factor = 0.2
+				army_strength_factor = 0.2
+				army_morale_factor = 0.15
+			}
+		}
+
+		PAC_defenders_of_anarchy_6 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                command_power_gain = -0.15
+				army_org_factor = -0.05
+				land_reinforce_rate = 0.25
+				training_time_factor = -0.2
+				minimum_training_level = -0.1
+				army_breakthrough_against_major_factor = 0.2
+				army_core_defence_factor = 0.25
+				army_strength_factor = 0.25
+				army_morale_factor = 0.2
+			}
+		}
+
+		PAC_defenders_of_anarchy_7 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                command_power_gain = -0.15
+				army_org_factor = -0.05
+				land_reinforce_rate = 0.25
+				training_time_factor = -0.2
+				minimum_training_level = -0.1
+				army_breakthrough_against_major_factor = 0.3
+				army_core_defence_factor = 0.25
+				army_strength_factor = 0.3
+				army_morale_factor = 0.25
+			}
+		}
 	}
 }

@@ -268,7 +268,7 @@ country_event = {
 			limit = {is_core_of = PRA}
 			add_core_of = PAC
 		}
-		set_capital = 304
+		set_capital = 366
 		complete_national_focus = PAC_pacific_victory
 	}
 }
@@ -685,7 +685,7 @@ country_event = {
 add_namespace = pacific_anarchists
 
 country_event = {
-	id = pacific_anarchists.1 #
+	id = pacific_anarchists.1 #The Libertarian Threat Crushed
 	title = pacific_anarchists.1.t
 	desc = pacific_anarchists.1.d
 	#picture = 
@@ -696,6 +696,11 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		add_stability = 0.05
+		add_popularity = {
+            ideology = libertarian_right
+            popularity = -0.15
+        }
 	}
 }
 

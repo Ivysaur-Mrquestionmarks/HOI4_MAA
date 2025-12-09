@@ -20,3 +20,15 @@ PAC_army_militia_balance_of_power_category = {
 	visible = {
 	}
 }
+
+PAC_anarchy_in_the_pacific = {
+	#icon = hol_war_on_pacifism
+	
+	allowed = {
+		tag = PAC
+	}
+
+	visible = {
+		has_war_with = PRA
+	}
+}

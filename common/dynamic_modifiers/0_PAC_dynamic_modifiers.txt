@@ -1,0 +1,19 @@
+#### Anarchist ####
+PAC_a_land_to_be_free_dynamic_modifier = { #NATIONAL SPIRIT, balls.
+	enable = { always = yes }
+
+	icon = GFX_idea_PAC_a_land_to_be_free_dynamic_modifier
+	
+	political_power_gain = PAC.var_pp_level
+	drift_defence_factor = PAC.var_drift_defence_level
+	compliance_growth = PAC.var_compliance_level
+	stability_factor = PAC.var_stability_level
+	war_support_factor = PAC.var_war_support_level
+	libertarian_left_drift = PAC.var_libertarian_left_level
+
+	army_defence_factor = PAC.var_defense_level
+
+	production_speed_buildings_factor = PAC.var_production_speed_level
+	production_factory_efficiency_gain_factor = PAC.var_factory_efficiency_level
+}
+
