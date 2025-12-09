@@ -112,7 +112,7 @@ faction_manifest_reclaim_mexico = {
 				}
 			}
 			internationally_legitimate_govt_section = {
-				min = @manifest_fulfilled_value
+				min = 0.7
 				modifier = { 
 					stability_factor = -0.25
 					war_support_factor = 0.15
