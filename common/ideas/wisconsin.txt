@@ -843,7 +843,6 @@ ideas = {
 				stability_factor = 0.1
 				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.2
-				industrial_capacity_factory = 0.1
 			}
 		}
 
@@ -1602,6 +1601,39 @@ ideas = {
 				war_support_factor = 0.15
 				research_speed_factor = 0.15
 				stability_factor = 0.15
+			}
+		}
+
+		KMT_the_will_to_fight_idea = {
+			allowed = { original_tag = KMT }
+			modifier = {
+				war_support_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+
+		KMT_npa_army_intel = {
+			allowed = { original_tag = KMT }
+			targeted_modifier = {
+				tag = NPA
+				attack_bonus_against = 0.3
+   				breakthrough_bonus_against = 0.05
+			}
+		}
+
+		KMT_agency_expanded_1 = {
+			allowed = { original_tag = KMT }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				operative_slot = 2
+				agency_upgrade_time = -0.15
+				resistance_growth = -0.05
+				civilian_intel_to_others = -0.2
+				army_intel_to_others = -0.2
 			}
 		}
 

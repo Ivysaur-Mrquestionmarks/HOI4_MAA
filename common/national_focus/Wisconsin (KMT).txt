@@ -5566,7 +5566,7 @@ focus_tree = {
 		x = 4
 		y = 8
 
-		cost = 2
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
@@ -5579,7 +5579,23 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_ideas = KMT_the_will_to_fight_idea
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = KMT
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+				producer = KMT
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+				producer = KMT
+			}
+			add_political_power = 100
 		}
 		prerequisite = {
 			focus = KMT_rehabilitate_maga_elements
@@ -5593,20 +5609,25 @@ focus_tree = {
 		x = 3
 		y = 9
 
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			NPA = { exists = yes}
 		}
 		
 		bypass = {
+			NOT = { NPA = { exists = yes} }
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			army_experience = 100
+			navy_experience = 100
+			air_experience = 100
+			add_timed_idea = { idea = KMT_npa_army_intel days = 350 }
 		}
 		prerequisite = {
 			focus = KMT_fiscal_conservatism
@@ -5623,7 +5644,7 @@ focus_tree = {
 		x = 5
 		y = 9
 
-		cost = 2
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -5636,7 +5657,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = KMT_agency_expanded_1
+				remove_idea = KMT_agency_expanded
+			}
 		}
 		prerequisite = {
 			focus = KMT_fiscal_conservatism

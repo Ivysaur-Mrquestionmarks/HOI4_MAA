@@ -394,6 +394,15 @@
  KMT_compromise_politics_2: "Compromise Politics"
  KMT_compromise_politics_2_desc: "A delicate but functional balance has been struck between competing factions, allowing national policy to move forward."
 
+ KMT_the_will_to_fight_idea:0 "The Will to Fight"
+ KMT_the_will_to_fight_idea_desc:0 "A broad, uneasy unity fuels our war effort. Everyone knows the stakes. Everyone knows that defeat is unthinkable."
+
+ KMT_npa_army_intel:0 "NPA Army Intel"
+ KMT_npa_army_intel_desc:0 "Through combined training with the NPA we have gained important information on how they operate, should we choose tgo use it."
+
+ KMT_agency_expanded_1:0 "Expanded Agency"
+ KMT_agency_expanded_1_desc:0 "We have decided that having a strong Intelligence Agency is essential for our security."
+
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
 ##       ##     ## ##       ####  ##    ##    ##       
@@ -1185,6 +1194,12 @@
  KMT_social_liberalism_desc: "Promoting moderate social reforms may soothe tensions and help stabilize our fractured nation. Paired with a responsible fiscal policy, these efforts could cement a new era of political compromise."
  KMT_fiscal_conservatism: "Fiscal Conservatism"
  KMT_fiscal_conservatism_desc: "Responsible budgeting and disciplined spending are essential for restoring faith in government. A renewed conservative economic approach may provide the stability our coalition desperately needs."
+ KMT_the_will_to_figt:0 "The Will to Fight"
+ KMT_the_will_to_figt_desc:0 "Our coalition must learn to fight as one. By rallying every able body that wishes to defend the constitutional republic, we can forge an army not of ideology, but united by instinct."
+ KMT_npa_joint_drills:0 "Joint Drills With the [NPA.GetName]"
+ KMT_npa_joint_drills_desc:0 "The [NPA.GetName] brings manpower, discipline, and battlefield experience. They did defeat Trump, after all. Conducting joint exercises may strengthen our bond. It may also grant us intelligence on how they operate, should we need it later."
+ KMT_spy_reforms:0 "Intelligence Reforms"
+ KMT_spy_reforms_desc:0 "Our intelligence agency must be modernized and expanded. A professional and loyal spy network will ensure the security of the [KMT.GetName] both at home and abroad."
 
  # Expansion
  KMT_backstab_michigan:0 "Backstab [DET.GetName]"
