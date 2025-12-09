@@ -382,6 +382,18 @@
  KMT_judicial_branch_3:0 "The Judicial Branch"
  KMT_judicial_branch_3_desc:0 "The Judicial Branch is here to govern. The days of the Legislative dead-locks and filibusters are a thing of the past as well as the Executive inactions and omissions are now dead. the future of America lies in the gavel and mallet. 'Salus populi est suprema lex!'"
 
+ KMT_coalition_of_the_willing_4:0 "United Coalition"
+ KMT_coalition_of_the_willing_4_desc:0 "Through careful diplomacy, shared interests, and the looming threats beyond Wisconsin's borders, the coalition has matured into a disciplined and dependable wartime alliance. Each member now acts with a unified purpose, lending legitimacy abroad and stability at home. While internal rivalries still linger beneath the surface, the coalition is finally strong enough to shape the future of America."
+
+ KMT_compromise_politics: "Compromise Politics"
+ KMT_compromise_politics_desc: "A delicate but functional balance has been struck between competing factions, allowing national policy to move forward, albeit slowly."
+
+ KMT_compromise_politics_1: "Compromise Politics"
+ KMT_compromise_politics_1_desc: "A delicate but functional balance has been struck between competing factions, allowing national policy to move forward, albeit slowly."
+
+ KMT_compromise_politics_2: "Compromise Politics"
+ KMT_compromise_politics_2_desc: "A delicate but functional balance has been struck between competing factions, allowing national policy to move forward."
+
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
 ##       ##     ## ##       ####  ##    ##    ##       
@@ -710,11 +722,27 @@
  wisconsin.59.a:0 "Revive the Tea Party Fiscal Policy"
  wisconsin.59.b:0 "This is not the moment for old grudges"
 
- #event 59: social policy
+ #event 60: social policy
  wisconsin.60.t:0 "The Question of Social Policy"
  wisconsin.60.d:0 "Social questions like Abortion, the Draft, LGBT rights, etc. long left to simmer have resurfaced within th epublic debate. Conservatives push for a bold, sweeping reform package to reassure the base and cement Ryan's authority over the party. Yet librals within the coalition fear that such a move may deepen existing divisions.\n\nRyan faces a choice between ideological purity and political stability."
  wisconsin.60.a:0 "Push the conservative reforms through"
  wisconsin.60.b:0 "Seek moderation and unity"
+
+ #event 61: kmt npa alliance
+ wisconsin.61.t:0 "The [KMT.GetAdjective] Alliance Request"
+ wisconsin.61.d:0 "[KMT.GetLeader] has approached us with a request to form an alliance. After our victory against the MAGA movement, we sure do need allies, but can they be useful?"
+ wisconsin.61.a:0 "Welcome them into the fold!"
+ wisconsin.61.b:0 "We must decline"
+
+ #event 62: npa accepts
+ wisconsin.62.t:0 "[NPA.GetNameDefCap] Welcomes Us"
+ wisconsin.62.d:0 "[NPA.GetLeader] has accepted our request to form an alliance. Together we shall bring forward a non-toxic form of politics."
+ wisconsin.62.a:0 "Together, we are stronger!"
+
+ #event 63: npa rejects
+ wisconsin.63.t:0 "[NPA.GetNameDef] Declines"
+ wisconsin.63.d:0 "[NPA.GetLeader] has rejected our request to form an alliance. This rejection has only strengthened our resolve to pursue our own path towards unification."
+ wisconsin.63.a:0 "We will forge ahead regardless!"
 
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 
@@ -1142,8 +1170,24 @@
  KMT_unitarian_rule:0 "Unitarian Rule"
  KMT_unitarian_rule_desc:0 "A fragmented judiciary only weakens the power of the national government. Through establishing a unitary judicial hierarchy under firm central oversight, we can guarantee uniform legal standards across the nation and prevent dissident courts from undermining our authority."
 
+ # NPA adjacent path
+ KMT_ally_the_npa:0 "Ally the NPA"
+ KMT_ally_the_npa_desc:0 "With the Trump defeated and the NPA victorious, we can beging to understand that they are the only remaining organized power. A pragmatic partnership may ensure our survival and strengthen our position in the new American order. Cooperation today could become dominance tomorrow."
+ KMT_our_place_in_america:0 "Our Place in America"
+ KMT_our_place_in_america_desc:0 "The landscape of the United States has changed forever. Through diplomacy, strength, and political clarity, [KMT.GetNameDef] must define its role in this fractured continent. We are no longer a regional player, through our new alliance we are a rising power, and the world must come to terms with that."
+ KMT_maintain_the_coalition:0 "Maintain the Coalition"
+ KMT_maintain_the_coalition_desc:0 "Our coalition is fragile, held together by mutual need rather than trust. To avoid collapse and infighting, we must reinforce the bonds of cooperation, stabilize our partners, and ensure that Wisconsin itself remains the keystone of this coalition. Unity is a weapon and we intend to wield it."
+ KMT_rehabilitate_sane_democrats: "Rehabilitate Moderate Democrats"
+ KMT_rehabilitate_sane_democrats_desc: "Many Democrats remain open to reason, stability, and the restoration of order. By offering them a place in our government, we can broaden our appeal and rebuild a functioning political center."
+ KMT_rehabilitate_maga_elements: "Rehabilitate MAGA Elements"
+ KMT_rehabilitate_maga_elements_desc: "Not all within the MAGA movement are beyond redemption. Some simply seek security and representation. If we can bring them into the fold, we may gain valuable political capital and avoid unnecessary conflict."
+ KMT_social_liberalism: "Social Liberalism"
+ KMT_social_liberalism_desc: "Promoting moderate social reforms may soothe tensions and help stabilize our fractured nation. Paired with a responsible fiscal policy, these efforts could cement a new era of political compromise."
+ KMT_fiscal_conservatism: "Fiscal Conservatism"
+ KMT_fiscal_conservatism_desc: "Responsible budgeting and disciplined spending are essential for restoring faith in government. A renewed conservative economic approach may provide the stability our coalition desperately needs."
+
  # Expansion
- KMT_backstab_michigan:0 "Backstab Michigan"
+ KMT_backstab_michigan:0 "Backstab [DET.GetName]"
  KMT_backstab_michigan_desc:0 "[DET.GetNameDef] was useful as a distraction on our strike on the GLA. Now it stands in our way. With o our ambitions clear, we shall strike decisively and remove this pretenders before they grow bold."
  KMT_kill_minnesota:0 "End the Minnesota Problem"
  KMT_kill_minnesota_desc:0 "Minnesota insinsts on holding Northern Wisconisn like a weed in our garden. They must all be uprooted."
@@ -1277,7 +1321,7 @@
  KMT_software_investments_desc:0 "By channeling resources into the rapidly growing software sector, we ensure our industries, military, and administration benefit from cutting-edge digital solutions. These investments will yield both economic efficiency and strategic advantages."
  KMT_second_chicago_world_fair:0 "Second Chicago World's Fair"
  KMT_second_chicago_world_fair_desc:0 "The first Chicago World's Fair showcased the marvels of the industrial age. Now, decades later, we will host a second exposition to highlight our technological advancements, cultural achievements, and industrial might to the world."
- KMT_restore_focus_on_energy_plan:0 "Restore Focus on Energy Plan"
+ KMT_restore_focus_on_energy_plan:0 "Restore the 'Focus on Energy Plan'"
  KMT_restore_focus_on_energy_plan_desc:0 "The original Focus on Energy Plan was meant to modernize our power infrastructure, invest in alternative fuels, and ensure our industries run at full capacity. After the 2020 debacle it died. Now is the time to refocus our efforts, securing the resources and technology needed for a stronger, more independent energy sector."
  KMT_nuclear_energy:0 "Embrace Nuclear Energy"
  KMT_nuclear_energy_desc:0 "Nuclear power promises unparalleled efficiency and energy output. Though costly and controversial, it could provide our industry with nearly limitless energy while advancing our scientific capabilities."
@@ -1342,6 +1386,7 @@
 ##     ##    ##    ##     ## ##       ##    ##     ##    ##    ##    ##     ## ##       ##       
  #######     ##    ##     ## ######## ##     ##     ######     ##     #######  ##       ##      
  kmt_rejected_meeting:0 "Rejected Meeting"
+ kmt_npa_alliance:0 "NPA-Wisconsin Alliance"
  kmt_claimed_state:0 "[KMT.GetName] and [DET.GetName] have agreed between them that this is a [KMT.GetAdjective] claim."
  det_claimed_state:0 "[KMT.GetName] and [DET.GetName] have agreed between them that this is a [DET.GetAdjective] claim."
  KMT_doing_cr:0 "Dealing with the Counter-Revolution"

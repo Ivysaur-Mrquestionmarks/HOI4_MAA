@@ -2207,3 +2207,119 @@ country_event = {
 		set_country_flag = KMT_moderate_social
 	}
 }
+
+# NPA Alliance (NPA prespective)
+country_event = {
+	id = wisconsin.61
+	title = wisconsin.61.t
+	desc = wisconsin.61.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+    	days = 2
+	}
+	option = {
+		name = wisconsin.61.a
+		ai_chance = {
+			factor = 200
+		}
+		FROM = { country_event = { id = wisconsin.62 days = 1 } }
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = "NPA"
+				value = 200
+			}
+		}
+
+		diplomatic_relation = {
+			country = KMT
+			relation = guarantee
+			active = yes
+		}
+		diplomatic_relation = {
+			country = KMT
+			relation = military_access
+			active = yes
+		}
+		add_opinion_modifier = {
+			target = KMT
+			modifier = kmt_npa_alliance
+		}
+	}
+	option = {
+		name = wisconsin.61.b
+		ai_chance = {
+			factor = 1
+		}
+		FROM = { country_event = { id = wisconsin.63 days = 1 } }
+	}
+}
+
+# NPA Alliance accepted
+country_event = {
+	id = wisconsin.62
+	title = wisconsin.62.t
+	desc = wisconsin.62.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+    	days = 2
+	}
+	option = {
+		name = wisconsin.62.a
+		ai_chance = {
+			factor = 1
+		}
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = "KMT"
+				value = 200
+			}
+		}
+
+		diplomatic_relation = {
+			country = NPA
+			relation = guarantee
+			active = yes
+		}
+		diplomatic_relation = {
+			country = NPA
+			relation = military_access
+			active = yes
+		}
+		add_opinion_modifier = {
+			target = NPA
+			modifier = kmt_npa_alliance
+		}
+	}
+}
+
+# NPA Alliance rejected
+country_event = {
+	id = wisconsin.63
+	title = wisconsin.63.t
+	desc = wisconsin.63.d
+	picture = TBD
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+    	days = 2
+	}
+	option = {
+		name = wisconsin.63.a
+		ai_chance = {
+			factor = 1
+		}
+		uncomplete_national_focus = {
+			focus = KMT_ally_the_npa
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+		complete_national_focus = KMT_claim_america
+
+	}
+}
