@@ -1510,3 +1510,29 @@ news_event = {
 		name = News_events.42.a
 	}
 }
+
+#Fall of Meixico city
+news_event = {
+	id = News_events.43
+	title = News_events.43.t
+	desc = News_events.43.d
+	picture = news_event_2038_world_cup
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = News_events.43.a
+	}
+}
+
+#Fall of Monterrey
+news_event = {
+	id = News_events.44
+	title = News_events.44.t
+	desc = News_events.44.d
+	picture = news_event_2038_world_cup
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = News_events.43.a
+	}
+}

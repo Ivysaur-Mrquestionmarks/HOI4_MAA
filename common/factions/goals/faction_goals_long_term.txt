@@ -1216,3 +1216,120 @@ faction_goal_securing_the_great_lakes_region = {
 		base = 1
 	}
 }
+
+#Mexico civil war.
+MEX_reconquer_the_south = {
+	name = MEX_reconquer_the_south
+	description = MEX_reconquer_the_south_desc
+	group = FOCUS_FILTER_ANNEXATION
+	category = long_term
+	allowed = {
+		OR = {
+			tag = MEX
+			tag = RMX
+		}
+	}
+	visible = {
+		always = no
+	}
+	completed = {
+		OR = {
+			has_full_control_of_state = 351	
+			any_allied_country = {
+				has_full_control_of_state = 351	
+			}
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+
+		351 = {
+			controller = { 	
+				add_faction_influence_score = 225
+				every_controlled_state = {
+					add_compliance = 5
+				}
+			}
+		}
+	}
+}
+
+MEX_capital = {
+	name = MEX_capital
+	description = MEX_capital_desc
+	group = FOCUS_FILTER_ANNEXATION
+	category = long_term
+	allowed = {
+		OR = {
+			tag = ZAP
+			tag = RMX
+		}
+	}
+	visible = {
+		always = no
+	}
+	completed = {
+		OR = {
+			has_full_control_of_state = 651
+			any_allied_country = {
+				has_full_control_of_state = 651
+			}
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 175
+
+		651 = {
+			controller = { 	
+				add_faction_influence_score = 300
+				every_controlled_state = {
+					add_compliance = 7
+				}
+				news_event = {
+    					id = News_events.43
+    					days = 1
+				}
+			}
+		}
+	}
+}
+
+MEX_monterey = {
+	name = MEX_monterey
+	description = MEX_monterey_desc
+	group = FOCUS_FILTER_ANNEXATION
+	category = long_term
+	allowed = {
+		OR = {
+			tag = ZAP
+			tag = MEX
+		}
+	}
+	visible = {
+		always = no
+	}
+	completed = {
+		OR = {
+			has_full_control_of_state = 385
+			any_allied_country = {
+				has_full_control_of_state = 385
+			}
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 125
+
+		385 = {
+			controller = { 	
+				add_faction_influence_score = 250
+				every_controlled_state = {
+					add_compliance = 6
+				}
+				news_event = {
+    					id = News_events.44
+    					days = 1
+				}
+			}
+		}
+	}
+}

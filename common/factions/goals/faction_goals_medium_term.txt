@@ -1076,3 +1076,113 @@ faction_goal_pra_west_coast_revolution = {
 		base = 1
 	}
 }
+
+#Mexico civil war.
+
+MEX_yucatan = {
+	name = MEX_yucatan
+	description = MEX_yucatan_desc
+	group = FOCUS_FILTER_ANNEXATION
+	category = medium_term
+	allowed = {
+		OR = {
+			tag = MEX
+			tag = RMX
+		}
+	}
+	visible = {
+		always = no
+	}
+	completed = {
+		OR = {
+			has_full_control_of_state = 355	
+			any_allied_country = {
+				has_full_control_of_state = 355	
+			}
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 75
+
+		355 = {
+			controller = { 	
+				add_faction_influence_score = 125
+				every_controlled_state = {
+					add_compliance = 5
+				}
+			}
+		}
+	}
+}
+
+MEX_torreon = {
+	name = MEX_torreon
+	description = MEX_torreon_desc
+	group = FOCUS_FILTER_ANNEXATION
+	category = medium_term
+	allowed = {
+		OR = {
+			tag = ZAP
+			tag = RMX
+		}
+	}
+	visible = {
+		always = no
+	}
+	completed = {
+		OR = {
+			has_full_control_of_state = 639
+			any_allied_country = {
+				has_full_control_of_state = 639	
+			}
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 75
+
+		639 = {
+			controller = { 	
+				add_faction_influence_score = 125
+				every_controlled_state = {
+					add_compliance = 5
+				}
+			}
+		}
+	}
+}
+
+MEX_hermosillo = {
+	name = MEX_hermosillo
+	description = MEX_hermosillo_desc
+	group = FOCUS_FILTER_ANNEXATION
+	category = medium_term
+	allowed = {
+		OR = {
+			tag = ZAP
+			tag = MEX
+		}
+	}
+	visible = {
+		always = no
+	}
+	completed = {
+		OR = {
+			has_full_control_of_state = 137
+			any_allied_country = {
+				has_full_control_of_state = 137
+			}
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 75
+
+		137 = {
+			controller = { 	
+				add_faction_influence_score = 125
+				every_controlled_state = {
+					add_compliance = 5
+				}
+			}
+		}
+	}
+}

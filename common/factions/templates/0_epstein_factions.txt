@@ -589,12 +589,16 @@ faction_template_mexican_federales = { # Federales
 	goals = {
 		# Short term goals
 		#faction_goal_unlock_research
-
+		faction_goal_military_infrastructure
+		faction_goal_spy_master
 		# Medium term goals
-		#faction_goal_a_military_base
+		faction_goal_air_superiority
+		MEX_hermosillo
+		MEX_yucatan
 
 		# Long terms
-		#faction_goal_rule_the_waves
+		MEX_reconquer_the_south
+		MEX_monterey
 	}
 
 	default_rules = {
@@ -617,12 +621,16 @@ faction_template_mexican_revolucionarios = { # Revolucionarios
 	goals = {
 		# Short term goals
 		#faction_goal_unlock_research
-
+		faction_goal_military_infrastructure
+		faction_goal_an_infantry_army
 		# Medium term goals
-		#faction_goal_a_military_base
+		faction_goal_industrial_expansion
+		MEX_yucatan
+		MEX_torreon
 
 		# Long terms
-		#faction_goal_rule_the_waves
+		MEX_reconquer_the_south
+		MEX_capital
 	}
 
 	default_rules = {
@@ -644,13 +652,18 @@ faction_template_mexican_zapatistas = { # Zapatistas
 
 	goals = {
 		# Short term goals
-		#faction_goal_unlock_research
+		faction_goal_an_infantry_army
+		faction_goal_spy_master
 
 		# Medium term goals
-		#faction_goal_a_military_base
+		faction_goal_a_military_base
+		MEX_torreon
+		MEX_hermosillo
 
 		# Long terms
 		#faction_goal_rule_the_waves
+		MEX_capital
+		MEX_monterey
 	}
 
 	default_rules = {
