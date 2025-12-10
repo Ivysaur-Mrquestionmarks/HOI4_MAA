@@ -753,6 +753,16 @@
  wisconsin.63.d:0 "[NPA.GetLeader] has rejected our request to form an alliance. This rejection has only strengthened our resolve to pursue our own path towards unification."
  wisconsin.63.a:0 "We will forge ahead regardless!"
 
+ #event 64: npa puppets wisconsin (npa pespective)
+ wisconsin.64.t:0 "Wisconsin Seeks Our Protection"
+ wisconsin.64.d:0 "Wisconsin wishes to further integrate within our leadership, seeking the security and guidance the [NPA.GetName]. By offering to align itself under our banner, Wisconsin hopes to ensure its claims warrented in the Great Lakes. Accepting their request would bring them into our faction and place their government under our supervision, while granting them a mandate to rule the reconstruct the Great Lakes in our name."
+ wisconsin.64.a:0 "They are safer under our wing"
+
+ #event 65: npa puppets wiscosnin / glrz
+ wisconsin.65.t:0 "We have submited to the [NPA.GetName]""
+ wisconsin.65.d:0 "In return for our loyalty, we have been acknowledged our rightful claim to reconstruct the Great Lakes. The integration of these territories will strengthen our administration and allow us to help our new bosses."
+ wisconsin.65.a:0 "A loyal partner, properly aligned"
+
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 
 ##     ##  ##   ##  ##     ##    ##     ##  ##       ##          ####  ##  ##   ##  #### #### ##       ##       
@@ -1196,10 +1206,14 @@
  KMT_fiscal_conservatism_desc: "Responsible budgeting and disciplined spending are essential for restoring faith in government. A renewed conservative economic approach may provide the stability our coalition desperately needs."
  KMT_the_will_to_figt:0 "The Will to Fight"
  KMT_the_will_to_figt_desc:0 "Our coalition must learn to fight as one. By rallying every able body that wishes to defend the constitutional republic, we can forge an army not of ideology, but united by instinct."
- KMT_npa_joint_drills:0 "Joint Drills With the [NPA.GetName]"
+ KMT_npa_joint_drills:0 "Army Exercises with the [NPA.GetName]"
  KMT_npa_joint_drills_desc:0 "The [NPA.GetName] brings manpower, discipline, and battlefield experience. They did defeat Trump, after all. Conducting joint exercises may strengthen our bond. It may also grant us intelligence on how they operate, should we need it later."
  KMT_spy_reforms:0 "Intelligence Reforms"
  KMT_spy_reforms_desc:0 "Our intelligence agency must be modernized and expanded. A professional and loyal spy network will ensure the security of the [KMT.GetName] both at home and abroad."
+ KMT_gl_reconstruction_zone:0 "The Great Lakes Reconstruction Zone"
+ KMT_gl_reconstruction_zone_desc:0 "Our partnership with the NPA has proven fruitful, but cooperation alone is not enough. By establishing a formal Reconstruction Zone in the Great Lakes region, we can coordinate redevelopment, restore order, and build the foundations of a stable post-war America. Together with our newfound allies."
+ KMT_betray_npa:0 "Betray the [NPA.GetName]"
+ KMT_betray_npa_desc:0 "The alliance with the NPA was always meant to be temporary. Now that our position is secure and our military is strong, it is time to cast aside the facade of cooperation and seize control of America's destiny. A New America will rise unified under our rule, without rivals on the inside and without compromise on the outside."
 
  # Expansion
  KMT_backstab_michigan:0 "Backstab [DET.GetName]"

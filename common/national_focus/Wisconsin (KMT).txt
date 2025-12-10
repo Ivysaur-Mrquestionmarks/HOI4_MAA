@@ -5614,11 +5614,17 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			NPA = { exists = yes}
+			OR = {
+				NPA = { exists = yes}
+				NOT = { has_war_with = NPA }
+			}
 		}
 		
 		bypass = {
-			NOT = { NPA = { exists = yes} }
+			OR = {
+				NOT = { NPA = { exists = yes} }
+				has_war_with = NPA
+			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -5682,6 +5688,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			NOT = { has_war_with = NPA }
 		}
 		
 		bypass = {
@@ -5690,7 +5697,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			NPA = { country_event = { id = wisconsin.64 } }
 		}
 		prerequisite = {
 			focus = KMT_npa_joint_drills
@@ -5714,9 +5721,15 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			NPA = { exists = yes }
+			NOT = { has_war_with = NPA }
 		}
 		
 		bypass = {
+			OR = {
+				NPA = { exists = no }
+				has_war_with = NPA
+			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = no
@@ -5726,7 +5739,20 @@ focus_tree = {
                 flag = reunification_start
                 value = 2
             }
-			
+			set_cosmetic_tag = KMT_ryans_america
+			add_country_leader_trait = KMT_decimus
+			declare_war_on = {
+    			target = NPA
+    			type = annex_everything
+			}
+		}
+		bypass_effect = {
+			set_country_flag = {
+                flag = reunification_start
+                value = 2
+            }
+			set_cosmetic_tag = KMT_ryans_america
+			add_country_leader_trait = KMT_decimus
 		}
 		prerequisite = {
 			focus = KMT_npa_joint_drills
@@ -7930,17 +7956,17 @@ focus_tree = {
 			factor = 1
 		}
 		available = {	
-			any_country_with_original_tag = {
-				original_tag_to_check = AFS
-				exists = yes
-			}
+			#any_country_with_original_tag = {
+			#	original_tag_to_check = AFS
+			#	exists = yes
+			#}
 		}
 		
 		bypass = {
-			any_country_with_original_tag = {
-				original_tag_to_check = AFS
-				exists = no
-			}
+			#any_country_with_original_tag = {
+			#	original_tag_to_check = AFS
+			#	exists = no
+			#}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -7975,16 +8001,16 @@ focus_tree = {
 			factor = 1
 		}
 		available = {	
-			any_country_with_original_tag = {
-				original_tag_to_check = KFC
-				exists = yes
-			}
+			#any_country_with_original_tag = {
+			#	original_tag_to_check = KFC
+			#	exists = yes
+			#}
 		}	
 		bypass = {
-			any_country_with_original_tag = {
-				original_tag_to_check = KFC
-				exists = no
-			}
+			#any_country_with_original_tag = {
+			#	original_tag_to_check = KFC
+			#	exists = no
+			#}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -8008,17 +8034,17 @@ focus_tree = {
 			factor = 1
 		}
 		available = {	
-			any_country_with_original_tag = {
-				original_tag_to_check = NRA
-				exists = yes
-			}
+			#any_country_with_original_tag = {
+			#	original_tag_to_check = NRA
+			#	exists = yes
+			#}
 		}
 		
 		bypass = {
-			any_country_with_original_tag = {
-				original_tag_to_check = NRA
-				exists = no
-			}
+			#any_country_with_original_tag = {
+			#	original_tag_to_check = NRA
+			#	exists = no
+			#}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no

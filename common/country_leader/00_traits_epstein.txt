@@ -5380,6 +5380,12 @@ leader_traits = {
 		war_support_factor = 0.1
 		industrial_capacity_factory = 0.1
 	}
+	KMT_decimus = {
+		random = no
+		stability_factor = -0.2
+		compliance_gain = 0.05
+		army_attack_factor = 0.05
+	}
 
 	#advisors
 	KMT_advisor_shrewd_politician = {

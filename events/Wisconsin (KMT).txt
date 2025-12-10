@@ -2320,6 +2320,61 @@ country_event = {
 			refund_political_power = no
 		}
 		complete_national_focus = KMT_claim_america
+	}
+}
 
+# join npa (npa prespective)
+country_event = {
+	id = wisconsin.64
+	title = wisconsin.64.t
+	desc = wisconsin.64.d
+	picture = TBD 
+	is_triggered_only = yes	
+
+	option = {
+		name = wisconsin.64.a
+		ai_chance = { factor = 200 }
+		if = {
+			limit = {
+				is_faction_leader = yes
+			}
+			add_to_faction = FROM
+		}
+		puppet = KMT
+		FROM = { country_event = { id = wisconsin.65 } }
+
+	}
+}
+
+# puppeted by npa + cores
+country_event = {
+	id = wisconsin.65
+	title = wisconsin.65.t
+	desc = wisconsin.65.d
+	picture = TBD
+
+	is_triggered_only = yes
+
+	option = {
+		name = wisconsin.65.a
+		ai_chance = { factor = 200 }
+		add_state_core = 152
+		add_state_core = 160
+		add_state_core = 161
+		add_state_core = 162
+		add_state_core = 130
+		add_state_core = 153
+		add_state_core = 165
+		add_state_core = 157
+		add_state_core = 190
+		add_state_core = 208
+		add_state_core = 206
+		add_state_core = 161
+		add_state_core = 559
+		add_state_core = 204
+		add_state_core = 209
+		add_state_core = 198
+		add_state_core = 197
+		set_cosmetic_tag = KMT_glrz
 	}
 }
