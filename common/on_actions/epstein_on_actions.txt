@@ -261,6 +261,17 @@ on_actions = {
 					value = 0
 				}
 			}
+			#Mexico stuff
+			every_state = {
+				limit = {
+					is_on_continent = mexico_continent
+				}
+				set_state_flag = part_of_mexico_flag
+				add_to_array = { #having an array will make certain things easier
+					array = global.mexican_states
+					value = THIS.id
+				}
+			}
 			USA = {
 				random_list = {
 					1 ={

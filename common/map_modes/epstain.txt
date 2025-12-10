@@ -131,6 +131,24 @@ scripted_map_modes = {
 
 
  						set_temp_variable = { highlighted = 0.5}
+					}
+
+					else_if = {
+						limit = {
+							is_in_array = {
+    								array =  global.mexican_states
+    								value = THIS.id
+							}
+						}
+					
+						set_temp_variable = { blue = 1.0}
+ 						set_temp_variable = { red = 0.75 }
+						set_temp_variable = { green = 0.0}
+						set_temp_variable = { alpha = 1.0 }
+
+
+
+ 						set_temp_variable = { highlighted = 0.5}
 					}					
 				}
  				
