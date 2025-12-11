@@ -5746,6 +5746,13 @@ leader_traits = {
 		autocratic_drift = 0.1
 		political_power_factor = 0.15
 	}
+
+	ADF_paramilitary_leader = {
+		conscription = 0.02
+		conscription_factor = -0.1
+		training_time_factor =  -0.35
+		mobilization_laws_cost_factor = 0.6
+	}
     
 	#PAC
 	PAC_the_common_people_empowered = {

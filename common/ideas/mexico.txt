@@ -32,51 +32,50 @@ ideas = {
 			}
 		}
 
-  WMX_nationalism = {
-      #picture =
-      modifier = {
-       resistance_growth = -0.1
-       conscription_factor = 0.1
-       compliance_growth = -0.05
-      }
-  }
-  CAR_shadow_army = {
-      #picture =
-      modifier = {
-   resistance_damage_to_garrison_on_our_occupied_states = 0.35
-
-        resistance_growth_on_our_occupied_states = 0.3
-        compliance_growth = -0.1
-      }
+		WMX_nationalism = {
+      			#picture =
+      			modifier = {
+       				resistance_growth = -0.1
+       				conscription_factor = 0.1
+       				compliance_growth = -0.05
+      			}
+  		}
+  		CAR_shadow_army = {
+      			#picture =
+      			modifier = {
+   				resistance_damage_to_garrison_on_our_occupied_states = 0.35
+        			resistance_growth_on_our_occupied_states = 0.3
+        			compliance_growth = -0.1
+      			}
+		}
+		RMX_reformist = {
+      			#picture =
+      			modifier = {
+      				compliance_growth = 0.1
+      			}
+   		}
+		MEX_initial_shock = {
+    			#picture =
+    			modifier = {
+      				army_speed_factor = 0.2
+      				army_attack_factor = -0.1
+      				army_defence_factor = -0.1
+      				planning_speed = -0.9
+    			}
+		}
+		YUC_independence_struggle = {
+    			#picture =
+    			modifier = {
+      				army_core_attack_factor = 0.1
+      				army_core_defence_factor = 0.1
+    			}
+  		}
+		ZAP_operation_marcos = {
+ 			#picture =
+    			modifier = {
+        			army_speed_factor = 0.2
+        			army_attack_factor = 0.35
+    			}
+		}
 	}
-RMX_reformist = {
-      #picture =
-      modifier = {
-      compliance_growth = 0.1
-      }
-   }
-MEX_initial_shock = {
-    #picture =
-    modifier = {
-      army_speed_factor = 0.2
-      army_attack_factor = -0.1
-      army_defence_factor = -0.1
-      planning_speed = -0.9
-    }
-}
-YUC_independence_struggle = {
-    #picture =
-    modifier = {
-      army_core_attack_factor = 0.1
-      army_core_defence_factor = 0.1
-    }
-  }
-ZAP_operation_marcos = {
- #picture =
-    modifier = {
-        army_speed_factor = 0.2
-        army_attack_factor = 0.35
-    }
-}
-}
 }
