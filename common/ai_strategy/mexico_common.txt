@@ -29,3 +29,22 @@ MEX_retake_paso = {
 
 }
 
+VEN_ZAP_support = {
+        allowed = {
+                original_tag = VEN
+        }
+        enable = {
+                always = yes
+        }
+
+        ai_strategy = {
+                type = send_volunteers_desire
+                id = "ZAP"
+                value = 500
+        }
+        ai_strategy = {
+                type = support
+                id = "ZAP"
+                value = 200
+        }
+}
