@@ -136,6 +136,19 @@ CSA_ruined_infra = {
 	supply_consumption_factor = 1
 	army_morale_factor = -0.25
 }
+
+MEX_annarchic_society = {
+      icon = "GFX_idea_unknown" 
+	     army_speed_factor = -0.5
+      supply_consumption_factor = 0.75
+      resistance_target = 10
+      army_morale_factor = -0.25
+      compliance_growth = 0.15
+      resistance_growth = 0.2
+      dig_in_speed_factor = 0.4
+      breakthrough_factor = -0.35
+}
+
 CSA_faith = {
 	icon = "GFX_idea_unknown" 
 	stability_factor = pop_sup
