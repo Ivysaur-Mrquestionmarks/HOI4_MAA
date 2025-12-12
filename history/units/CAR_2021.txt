@@ -1,0 +1,198 @@
+division_template = {
+    name = "Guardaespaldas"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+    name = "Los camioncitos"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "sicarios"
+		location = 2355
+		division_template = "Los camioncitos"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 4476
+		division_template = "Los camioncitos"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 2984
+		division_template = "Los camioncitos"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.75
+	}
+
+
+	division = {
+		name = "sicarios"
+		location = 11638
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 4999
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 2532
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 5809
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 11421
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 11638
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 4999
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 2532
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 5809
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 11421
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 11638
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 4999
+		division_template = "Guardaespaldass"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 2532
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 5809
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 11421
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		start_manpower_factor = 0.75
+	}
+
+	division = {
+		name = "sicarios"
+		location = 1736
+		division_template = "Guardaespaldas"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+		start_manpower_factor = 0.75
+	}
+
+}

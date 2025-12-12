@@ -1,0 +1,214 @@
+division_template = {
+    name = "Los Marines"
+#    division_names_group =
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 0 y = 4 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+		marine = { x = 1 y = 4 }
+	}
+}
+
+division_template = {
+    name = "infanteria"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1ra division de infanteria marina"
+		location = 19652
+		division_template = "Los Marines"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		name = "2nda division de infanteria marina"
+		location = 136
+		division_template = "Los Marines"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		name = "3ra division de infanteria marina"
+		location = 6220
+		division_template = "Los Marines"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+
+
+	division = {
+		name = "4ta division de infanteria marina"
+		location = 11439
+		division_template = "Los Marines"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+		start_manpower_factor = 0.9
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 119631
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 409
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 253
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 11528
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 119631
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 409
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 253
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 11528
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 119631
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 409
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 253
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 11528
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 119631
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 409
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 253
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+
+	division = {
+		name = "Ejercito Mejicano"
+		location = 11528
+		division_template = "infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		start_manpower_factor = 0.65
+	}
+}
