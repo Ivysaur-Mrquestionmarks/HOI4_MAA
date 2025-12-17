@@ -10063,6 +10063,7 @@ focus_tree = {
 			    has_war_with = VIR
 			}
 		}
+		bypass = { NOT = { country_exists = VIR } }
 		completion_reward = {
 		    VIR = {
 				country_event = {
@@ -10879,19 +10880,16 @@ focus_tree = {
 		allow_branch = {
 		}
 		will_lead_to_war_with = TEX
-		bypass = { NOT = { country_exists = TEX } }
+		#bypass = { NOT = { country_exists = TEX } }
 		available = {
 			if = {
 				limit = { is_ai = yes }
 			    has_war = no
-				is_neighbor_of = TEX
+				#is_neighbor_of = TEX
 			}
 		}
 		completion_reward = {
-		    create_wargoal = {
-			    target = TEX
-			    type = annex_everything
-		    }
+		    War_on_texas_collapse_tags = yes
 		}
 	}
 

@@ -593,7 +593,7 @@ focus_tree = {
 		completion_reward = {		
 			add_stability = 0.05
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -713,7 +713,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -2246,21 +2246,21 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = steel
                     amount = 5
                 }	
 		    }
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = aluminium
                     amount = 5
                 }	
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = tungsten
                     amount = 5
@@ -2357,21 +2357,21 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = steel
                     amount = 5
                 }	
 		    }
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = aluminium
                     amount = 5
                 }	
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = tungsten
                     amount = 5
@@ -2678,7 +2678,12 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_war_support = 0.01
+			set_country_flag = {
+                flag = reunification_start
+                value = 2
+            }		
 		}
 	}
 
@@ -2694,13 +2699,33 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_revolution_and_liberation
 		}
+		will_lead_to_war_with = CAS
+		will_lead_to_war_with = LIB
+		bypass = { 
+			NOT = { country_exists = CAS country_exists = LIB } 
+		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = CAS
+			    type = annex_everything
+		    }
+		    if = {
+		        limit = { country_exists = LIB }
+		        create_wargoal = {
+			        target = LIB
+			        type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2716,13 +2741,79 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_revolution_and_liberation
 		}
+		will_lead_to_war_with = UTA
+		will_lead_to_war_with = HOP
+		will_lead_to_war_with = AFO
+		will_lead_to_war_with = SIN
+		will_lead_to_war_with = LAS
+		will_lead_to_war_with = MOL
+		bypass = { 
+			NOT = { 
+				country_exists = UTA 
+			    country_exists = HOP
+				country_exists = AFO
+				country_exists = SIN
+				country_exists = LAS
+				country_exists = MOL
+			} 
+		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = UTA
+			    type = annex_everything
+		    }
+			if = {
+			    limit = { country_exists = NAV }
+				create_wargoal = {
+					target = NAV
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = HOP }
+				create_wargoal = {
+					target = HOP
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = AFO }
+				create_wargoal = {
+					target = AFO
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = SIN }
+				create_wargoal = {
+					target = SIN
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = LAS }
+				create_wargoal = {
+					target = LAS
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = MOL }
+				create_wargoal = {
+					target = MOL
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2738,13 +2829,36 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_revolution_and_liberation
 		}
+		will_lead_to_war_with = MON
+		will_lead_to_war_with = IDA
+		bypass = { 
+			NOT = { 
+				country_exists = MON
+				country_exists = IDA
+			} 
+		}
 		available = {
+		    if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = MON
+			    type = annex_everything
+		    }
+		    if = { 
+		        limit = { country_exists = IDA }
+		        create_wargoal = {
+			        target = IDA
+			        type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2767,12 +2881,34 @@ focus_tree = {
 			focus = PAC_free_the_mountains
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				OR = {
+				    is_neighbor_of = USA
+					is_neighbor_of = NPA
+				}
+			}
 		}
+		will_lead_to_war_with = USA
+		will_lead_to_war_with = NPA
+		bypass = { NOT = { country_exists = USA country_exists = NPA } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = USA
+			    type = annex_everything
+		    }
+		    if = {
+			limit = { country_exists = NPA }
+				create_wargoal = {
+					target = NPA
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2797,13 +2933,21 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_free_the_mountains
 		}
+		will_lead_to_war_with = TEX
+		#bypass = { NOT = { country_exists = TEX } }
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				#is_neighbor_of = TEX
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    War_on_texas_collapse_tags = yes
 		}
 	}
 
@@ -2828,7 +2972,12 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_free_the_mountains
 		}
+		bypass = { NOT = { country_exists = TEX } }
 		available = {
+			TEX = { has_government = libertarian_left }
+			NOT = {
+			    has_war_with = TEX
+			}
 		}
 		ai_will_do = {
 			factor = 5
@@ -2855,12 +3004,61 @@ focus_tree = {
 			focus = PAC_texan_liberation
 		}
 		available = {
+			has_war = no
+		    NOT = {
+		        country_exists = USA
+			    country_exists = TEX
+		    }
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			every_state = {
+			    limit = { is_core_of = CAS }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = UTA }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = AFO }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = SIN }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = LAS }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = MOL }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = HOP }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = MON }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = IDA }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = USA }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = TEX }
+			    add_core_of = PAC
+		    }	
 		}
 	}
 
@@ -2877,12 +3075,43 @@ focus_tree = {
 			focus = PAC_liberation_will_come
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				OR = {
+				    is_neighbor_of = GLA
+					is_neighbor_of = KMT
+					is_neighbor_of = DET
+				}
+			}
 		}
+		will_lead_to_war_with = GLA
+		will_lead_to_war_with = KMT
+		will_lead_to_war_with = DET
+		bypass = { NOT = { country_exists = GLA country_exists = KMT country_exists = DET } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = GLA
+			    type = annex_everything
+		    }
+			if = {
+			    limit = { country_exists = KMT }
+				create_wargoal = {
+					target = KMT
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = DET }
+				create_wargoal = {
+					target = DET
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2902,12 +3131,28 @@ focus_tree = {
 			focus = PAC_liberation_will_come
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				is_neighbor_of = AFS
+			}
+			AFS = {
+				NOT = {
+                    has_government = libertarian_left
+				}
+			}
 		}
+		will_lead_to_war_with = AFS
+		bypass = { NOT = { country_exists = AFS } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = AFS
+			    type = annex_everything
+		    }
 		}
 	}
 
@@ -2926,7 +3171,12 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_liberation_will_come
 		}
+		bypass = { NOT = { country_exists = AFS } }
 		available = {
+			AFS = { has_government = libertarian_left }
+			NOT = {
+			    has_war_with = AFS
+			}
 		}
 		ai_will_do = {
 			factor = 5
@@ -2949,12 +3199,17 @@ focus_tree = {
 			focus = PAC_liberation_will_come
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+	    completion_reward = {			
+            RVR_kill_the_CSA = yes
 		}
 	}
 
@@ -2970,13 +3225,47 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_fake_anarchism
 		}
+		will_lead_to_war_with = MNS
+		will_lead_to_war_with = MIL
+		will_lead_to_war_with = MIN
+		bypass = { NOT = { country_exists = MNS country_exists = MIL country_exists = MIN } }
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				OR = {
+				    is_neighbor_of = MNS
+					is_neighbor_of = MIL
+					is_neighbor_of = MIN
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			if = { 
+				limit = { country_exists = MNS }
+				create_wargoal = {
+					target = MNS
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = MIL }
+				create_wargoal = {
+					target = MIL
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = MIN }
+				create_wargoal = {
+					target = MIN
+					type = annex_everything
+				}
+			}		
 		}
 	}
 
@@ -2994,12 +3283,27 @@ focus_tree = {
 			focus = PAC_vermin_our_friend
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				is_neighbor_of = NRA
+			}
 		}
+		will_lead_to_war_with = NRA
+		bypass = { NOT = { country_exists = NRA } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			create_wargoal = {
+			    target = NRA
+			    type = annex_everything
+		    }
+			create_wargoal = {
+			    target = TIM
+			    type = annex_everything
+		    }			
 		}
 	}
 
@@ -3020,12 +3324,43 @@ focus_tree = {
 			focus = PAC_vermin_our_friend
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			    OR = {
+		            is_neighbor_of = VIR
+				    is_neighbor_of = RVR
+				    is_neighbor_of = OBX
+			    }
+			}
 		}
+		will_lead_to_war_with = VIR
+		will_lead_to_war_with = RVR
+		will_lead_to_war_with = OBX
+		bypass = { NOT = { country_exists = VIR country_exists = OBX country_exists = RVR } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			create_wargoal = {
+			    target = VIR
+			    type = annex_everything
+		    }
+			if = {
+			    limit = { country_exists = RVR }
+				create_wargoal = {
+					target = RVR
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = OBX }
+				create_wargoal = {
+					target = OBX
+					type = annex_everything
+			    }
+		    }		
 		}
 	}
 
@@ -3046,7 +3381,17 @@ focus_tree = {
 			focus = PAC_vermin_our_friend
 		}
 		available = {
+			VIR = { 
+				has_country_leader = {
+				    name = "ANTIFA Council"
+                    ruling_only = yes
+				}
+		    }
+			NOT = {
+			    has_war_with = VIR
+			}
 		}
+		bypass = { NOT = { country_exists = VIR } }
 		ai_will_do = {
 			factor = 5
 		}
@@ -3067,13 +3412,58 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_down_with_the_confederate_regime
 		}
+		will_lead_to_war_with = FLO
+		bypass = { NOT = { country_exists = FLO } }
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = FLO
+			    type = annex_everything
+		    }
+			if = { 
+				limit = { country_exists = NSA }
+				create_wargoal = {
+					target = NSA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = GKJ }
+				create_wargoal = {
+					target = GKJ
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FLD }
+				create_wargoal = {
+					target = FLD
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FLA }
+				create_wargoal = {
+					target = FLA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = SEM }
+				create_wargoal = {
+					target = SEM
+					type = annex_everything
+				}
+			}
 		}
 	}
 
@@ -3092,12 +3482,44 @@ focus_tree = {
 			focus = PAC_the_anarchists_of_virginia
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				is_neighbor_of = FRA
+			}
 		}
+		will_lead_to_war_with = FRA
+		bypass = { NOT = { country_exists = FRA } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = FRA
+			    type = annex_everything
+		    }
+			if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = NEW
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = N }
+                create_wargoal = {
+			        target = NAB
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = WAB
+			        type = annex_everything
+		        }
+			}
 		}
 	}
 
@@ -3120,12 +3542,42 @@ focus_tree = {
 			focus = PAC_to_mimai
 		}
 		available = {
+			all_state = {	
+			    OR = {
+			        NOT = { has_state_flag = part_of_america }
+			        is_owned_by = ROOT
+			        owner = { is_ally_with = ROOT } #Checks for territory controlled by indpendent faction members/puppets
+			    }		
+		    }
+		    ROOT = {
+			    if = {
+			        limit = {
+				        is_in_faction = yes
+				    }
+				    is_faction_leader = yes
+				}
+				is_subject = no
+			}
+		    has_war = no
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			#news_event = {
+			#	id = vermin.16
+			#	days = 0
+			#}
+		    hidden_effect = {
+			    every_state = {
+			        limit = { 
+			            is_owned_by = ROOT
+			            has_state_flag = part_of_america
+			        }
+			        add_core_of = ROOT
+			    }
+			}		
 		}
 	}
 
@@ -3150,7 +3602,28 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.02
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.03
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_defense_level
+				value = 0.03
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_drift_defence_level
+				value = 0.03
+				tooltip = drift_defence_factor_tt
+			}		
 		}
 	}
 
@@ -3175,7 +3648,28 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.02
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.03
+				tooltip = compliance_growth_tt
+			}
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.03
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_drift_defence_level
+				value = 0.03
+				tooltip = drift_defence_factor_tt
+			}		
 		}
 	}
 
@@ -3192,12 +3686,156 @@ focus_tree = {
 			focus = PAC_anarchism_in_one_nation
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
+		will_lead_to_war_with = MEX
+		will_lead_to_war_with = WMX
+		will_lead_to_war_with = CAR
+		will_lead_to_war_with = RMX
+		will_lead_to_war_with = ADF
+		will_lead_to_war_with = ZAP	
+		will_lead_to_war_with = YUC
+		will_lead_to_war_with = GUA
+		will_lead_to_war_with = BLZ
+		will_lead_to_war_with = HON
+		will_lead_to_war_with = ELS
+		will_lead_to_war_with = NIC
+		will_lead_to_war_with = COS
+		will_lead_to_war_with = PAN
+		will_lead_to_war_with = CHI
+		will_lead_to_war_with = ALT
+		will_lead_to_war_with = ARY 
+		will_lead_to_war_with = WPC
+		will_lead_to_war_with = BRC 
+		will_lead_to_war_with = TEM
+		will_lead_to_war_with = ANA
+		will_lead_to_war_with = CAN
+		will_lead_to_war_with = QUE 
+		will_lead_to_war_with = ONT
+		will_lead_to_war_with = NUN
+		will_lead_to_war_with = PTR
+		will_lead_to_war_with = MRT
+		will_lead_to_war_with = FFR
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MEX
+		    }
+		    create_wargoal = {
+				type = annex_everything
+				target = WMX
+		    }	
+		    create_wargoal = {
+				type = annex_everything
+				target = CAR
+		    }		
+		    create_wargoal = {
+				type = annex_everything
+				target = RMX
+		    }
+		    create_wargoal = {
+				type = annex_everything
+				target = ADF
+		    }
+		    create_wargoal = {
+				type = annex_everything
+				target = ZAP
+		    }
+		    create_wargoal = {
+				type = annex_everything
+				target = YUC
+		    }
+			create_wargoal = {
+				type = annex_everything
+				target = GUA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BLZ
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HON
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ELS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NIC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = COS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CHI
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PAN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ALT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ARY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = WPC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BRC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TEM
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ANA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MRT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PTR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NUN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ONT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = QUE
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CAN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = FFR
+			}			
 		}
 	}
 
@@ -3220,7 +3858,61 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}			
 		}
 	}
 
@@ -3243,7 +3935,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.02
+				tooltip = compliance_growth_tt
+			}
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}		
+			add_to_variable = {
+				var = PAC.var_libertarian_left_level
+				value = 0.02
+				tooltip = libertarian_left_drift_factor_tt
+			}
 		}
 	}
 
@@ -3265,7 +3973,13 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			every_country = { 
+				add_popularity = {
+                    ideology = libertarian_left
+                    popularity = 0.25
+                }
+		    }			
 		}
 	}
 
@@ -3287,7 +4001,67 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}	
 		}
 	}
 
@@ -3309,7 +4083,28 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.01
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}		
+			add_to_variable = {
+				var = PAC.var_libertarian_left_level
+				value = 0.02
+				tooltip = libertarian_left_drift_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_production_speed_level
+				value = 0.02
+				tooltip = production_speed_factor_tt
+			}	
 		}
 	}
 
