@@ -190957,6 +190957,366 @@ SpriteType = {
 
     }
     SpriteType = {
+        name = "GFX_goal_KMT_rally_the_snyder_bros"
+        texturefile = "gfx/interface/goals/KMT_rally_the_snyder_bros.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_rally_the_snyder_bros_shine"
+        texturefile = "gfx/interface/goals/KMT_rally_the_snyder_bros.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_rally_the_snyder_bros.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_rally_the_snyder_bros.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_lessons_of_the_spartans"
+        texturefile = "gfx/interface/goals/KMT_lessons_of_the_spartans.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_lessons_of_the_spartans_shine"
+        texturefile = "gfx/interface/goals/KMT_lessons_of_the_spartans.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_lessons_of_the_spartans.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_lessons_of_the_spartans.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_slow_motion_innovations"
+        texturefile = "gfx/interface/goals/KMT_slow_motion_innovations.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_slow_motion_innovations_shine"
+        texturefile = "gfx/interface/goals/KMT_slow_motion_innovations.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_slow_motion_innovations.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_slow_motion_innovations.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_lessons_of_the_persians"
+        texturefile = "gfx/interface/goals/KMT_lessons_of_the_persians.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_lessons_of_the_persians_shine"
+        texturefile = "gfx/interface/goals/KMT_lessons_of_the_persians.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_lessons_of_the_persians.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_lessons_of_the_persians.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_individual_freedoms"
+        texturefile = "gfx/interface/goals/KMT_individual_freedoms.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_individual_freedoms_shine"
+        texturefile = "gfx/interface/goals/KMT_individual_freedoms.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_individual_freedoms.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_individual_freedoms.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_work_on_a_watchmen_sequel"
+        texturefile = "gfx/interface/goals/KMT_work_on_a_watchmen_sequel.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_work_on_a_watchmen_sequel_shine"
+        texturefile = "gfx/interface/goals/KMT_work_on_a_watchmen_sequel.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_work_on_a_watchmen_sequel.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_work_on_a_watchmen_sequel.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_join_fra"
+        texturefile = "gfx/interface/goals/KMT_join_fra.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_join_fra_shine"
+        texturefile = "gfx/interface/goals/KMT_join_fra.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_join_fra.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_join_fra.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_cinematic_states_of_america"
+        texturefile = "gfx/interface/goals/KMT_cinematic_states_of_america.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_cinematic_states_of_america_shine"
+        texturefile = "gfx/interface/goals/KMT_cinematic_states_of_america.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_cinematic_states_of_america.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_cinematic_states_of_america.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_release_the_snyder_cut"
+        texturefile = "gfx/interface/goals/KMT_release_the_snyder_cut.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_release_the_snyder_cut_shine"
+        texturefile = "gfx/interface/goals/KMT_release_the_snyder_cut.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_release_the_snyder_cut.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_release_the_snyder_cut.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_american_foundation_for_suicide_prevention"
+        texturefile = "gfx/interface/goals/KMT_american_foundation_for_suicide_prevention.tga"
+    }
+    SpriteType = {
+        name = "GFX_goal_KMT_american_foundation_for_suicide_prevention_shine"
+        texturefile = "gfx/interface/goals/KMT_american_foundation_for_suicide_prevention.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_american_foundation_for_suicide_prevention.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/KMT_american_foundation_for_suicide_prevention.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
         name = "GFX_goal_USA_navy_docks"
         texturefile = "gfx/interface/goals/USA_navy_docks.dds"
     }
