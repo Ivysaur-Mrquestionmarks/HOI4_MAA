@@ -192,6 +192,15 @@ characters = {
 			}
 		}
 	}
+	VIR_soviet_fuentes = {
+		name = "Nick Fuentes"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NRA/nick_fuentes_soviet.tga"
+				small = "gfx/interface/ideas/NRA/fuentes_russian.dds"
+			}
+		}
+	}
 	### Military Leaders ###
 	# Army #
 	VIR_timothy_p_williams = {

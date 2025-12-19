@@ -324,3 +324,69 @@ VIR_impending_revolt = {
 		}
 	}
 }
+
+GEN_Political_Allignment = {
+
+	VIR_rehabilitate_nick_fuentes = {
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = VIR
+		}
+
+		available = {
+			NOT = {
+				country_exists = FLO
+			}
+			if = {
+				limit = {
+					country_exists = LGB
+				}
+				NOT = {
+					country_exists = LGB #for the tooltip
+				}
+			}
+			owns_state = 580
+			has_government = authoritarian_left
+		}
+
+		visible = {
+			has_country_leader = {
+				character = NRA_Jackson_Hinkle
+				ruling_only = yes
+			}
+		}
+		cost = 30
+
+		fire_only_once = yes
+
+		days_remove = 10
+
+		modifier = {
+			
+		}
+
+		visible = {
+			is_in_faction = no
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			add_corps_commander_role = {
+			    character = VIR_soviet_fuentes
+			    skill = 2
+			    attack_skill = 2
+			    defense_skill = 3
+			    planning_skill = 3
+			    logistics_skill = 2
+				traits = {
+					media_personality inflexible_strategist trickster guerilla_fighter
+				}
+			}
+		}
+
+	}	
+
+}
