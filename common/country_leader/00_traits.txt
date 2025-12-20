@@ -4528,6 +4528,7 @@ leader_traits = {
 	
 	industrial_concern = {
 		random = no
+		local_resources_coal_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -4540,7 +4541,9 @@ leader_traits = {
 		production_speed_supply_node_factor = 0.15
 		equipment_bonus = {
 			train_equipment = {
+				instant = yes
 				build_cost_ic = -0.25
+				armor_value = 0.15
 				reliability = 0.1
 			}
 		}
@@ -4570,6 +4573,7 @@ leader_traits = {
 	
 	electronics_concern = {
 		random = no
+		factory_energy_consumption = -0.1
 		
 		ai_will_do = {
 			factor = 1
