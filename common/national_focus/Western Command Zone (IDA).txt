@@ -3054,9 +3054,9 @@ focus_tree = {
 		prerequisite = {
 			focus = IDA_War_Plan_White
 		}
-		mutually_exclusive = {
-			focus = IDA_Meet_With_Jenner
-		}
+		#mutually_exclusive = {
+		#	focus = IDA_Meet_With_Jenner
+		#}
 		ai_will_do = {
 			factor = 50
 		}
@@ -3064,11 +3064,6 @@ focus_tree = {
 			
 		}
 		available = { 
-			PRA = {
-				NOT = {
-					PRA_caitlyn_jenner = { is_country_leader = yes }
-				}
-			}
 		}
 		bypass = {
 			NOT = {
@@ -3192,7 +3187,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = { #California went Trumpist under Jenner, following negotiations are favored for the PRA in this scenario
+	focus = { #California went Trumpist under Jenner, following negotiations are favored for the PRA in this scenario               #### REMOVED CONTENT
 		id = IDA_Meet_With_Jenner
 		icon = GFX_goal_Caitlyn_Jenner
 		x = 20
@@ -3208,12 +3203,10 @@ focus_tree = {
 			factor = 50
 		}
 		allow_branch = {
-			
+			always = no 
 		}
 		available = { 
-			PRA = {
-				PRA_caitlyn_jenner = { is_country_leader = yes }
-			}
+			
 		}
 		bypass = {
 			
@@ -3260,7 +3253,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = IDA_Operation_Wolverine
-			focus = IDA_Meet_With_Jenner
+			#focus = IDA_Meet_With_Jenner
 		}
 		mutually_exclusive = {
 			
