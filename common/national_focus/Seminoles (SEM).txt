@@ -374,7 +374,7 @@ focus_tree = {
 		ai_will_do = { 
 			factor = 300
 		}
-		x = 15
+		x = 30
 		y = -5
 		available = {
 			has_war = no
@@ -384,10 +384,739 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SEM_reconcile_with_the_miccosukee
+		id = SEM_strengthen_traditional_floridan_industry
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 13
+		y = 1
+		relative_position_id = SEM_a_people_unconquered
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_a_people_unconquered
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_increase_agricultural_subsidies
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 2
+		y = 1
+		relative_position_id = SEM_strengthen_traditional_floridan_industry
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_strengthen_traditional_floridan_industry
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_florida_oranges
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_increase_agricultural_subsidies
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_increase_agricultural_subsidies
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_build_up_port_tampa_bay
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_strengthen_traditional_floridan_industry
+		ai_will_do = { 
+			factor = 300
+		}	
+		prerequisite = {
+			focus = SEM_strengthen_traditional_floridan_industry
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_create_a_seminole_merchant_fleet
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_build_up_port_tampa_bay
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_build_up_port_tampa_bay
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_strong_supply_lines
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_create_a_seminole_merchant_fleet
+		ai_will_do = { 
+			factor = 300
+		}	
+		prerequisite = {
+			focus = SEM_create_a_seminole_merchant_fleet
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_florida_state_university
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_strong_supply_lines
+		ai_will_do = { 
+			factor = 300
+		}	
+		prerequisite = {
+			focus = SEM_strong_supply_lines
+		}
+		prerequisite = {
+			focus = SEM_subsidies_for_native_owned_businesses
+		}
+		prerequisite = {
+			focus = SEM_florida_oranges
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_invest_in_small_business
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -2
+		y = 1
+		relative_position_id = SEM_strengthen_traditional_floridan_industry
+		ai_will_do = { 
+			factor = 300
+		}	
+		prerequisite = {
+			focus = SEM_strengthen_traditional_floridan_industry
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_reliable_energy_supply
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_invest_in_small_business
+		ai_will_do = { 
+			factor = 300
+		}	
+		prerequisite = {
+			focus = SEM_invest_in_small_business
+		}
+		prerequisite = {
+			focus = SEM_modernize_petroleum_infrastructure
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_subsidies_for_native_owned_businesses
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_invest_in_small_business
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_invest_in_small_business
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_tribal_reform
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -10
+		y = 1
+		relative_position_id = SEM_a_people_unconquered
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_a_people_unconquered
+		}
+		available = {
+			has_completed_focus = SEM_wipe_away_the_remnants_of_bia
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_preserving_seminole_culture
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -10
+		y = 1
+		relative_position_id = SEM_tribal_reform
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_tribal_reform
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_problem_of_the_iste_hatke
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 5
+		y = 1
+		relative_position_id = SEM_tribal_reform
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_tribal_reform
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_down_the_warpath
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 2
+		y = 1
+		relative_position_id = SEM_problem_of_the_iste_hatke
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = SEM_promote_cooperation_between_the_races
+		}
+		prerequisite = {
+			focus = SEM_problem_of_the_iste_hatke
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_a_coalition_against_the_pale_skins
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
 		x = 1
+		y = 1
+		relative_position_id = SEM_down_the_warpath
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_down_the_warpath
+		}
+		available = {
+			has_completed_focus = SEM_pan_tribal_alliance
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_land_back
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_down_the_warpath
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_down_the_warpath
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_install_tribal_authorities_in_the_cities
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_land_back
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_land_back
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_seminole_law_above_all
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_install_tribal_authorities_in_the_cities
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_install_tribal_authorities_in_the_cities
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_seize_white_businesses
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_land_back
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_land_back
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_the_trail_of_tears
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_land_back
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_install_tribal_authorities_in_the_cities
+		}
+		prerequisite = {
+			focus = SEM_seize_white_businesses
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_off_the_reservation
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_the_trail_of_tears
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_the_trail_of_tears
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_remember_ancient_cuban_native_ties
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 2
+		y = 2
+		relative_position_id = SEM_land_back
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_a_coalition_against_the_pale_skins
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_promote_cooperation_between_the_races
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -3
+		y = 1
+		relative_position_id = SEM_problem_of_the_iste_hatke
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = SEM_down_the_warpath
+		}
+		prerequisite = {
+			focus = SEM_problem_of_the_iste_hatke
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_ensure_equality_under_the_law
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_promote_cooperation_between_the_races
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_promote_cooperation_between_the_races
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_one_nation_two_systems
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -2
+		y = 1
+		relative_position_id = SEM_ensure_equality_under_the_law
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_ensure_equality_under_the_law
+		}
+		prerequisite = {
+			focus = SEM_allow_honorary_memberships
+		}
+		prerequisite = {
+			focus = SEM_relax_attitudes_towards_interracial_marriages
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_expand_the_reservations
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_promote_cooperation_between_the_races
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_promote_cooperation_between_the_races
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_establish_associate_tribal_memberships
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -2
+		y = 1
+		relative_position_id = SEM_promote_cooperation_between_the_races
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_promote_cooperation_between_the_races
+		}
+		prerequisite = {
+			focus = SEM_end_the_policy
+			focus = SEM_quarter_bloods
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_allow_honorary_memberships
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_establish_associate_tribal_memberships
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_establish_associate_tribal_memberships
+		}
+		prerequisite = {
+			focus = SEM_end_the_policy
+			focus = SEM_quarter_bloods
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_question_of_blood
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -3
+		y = 1
+		relative_position_id = SEM_tribal_reform
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_tribal_reform
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_full_bloods_only
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -2
+		y = 1
+		relative_position_id = SEM_question_of_blood
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = SEM_quarter_bloods
+			focus = SEM_end_the_policy
+		}
+		prerequisite = {
+			focus = SEM_question_of_blood
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_ban_interracial_marriage
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_full_bloods_only
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_full_bloods_only
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_quarter_bloods
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_question_of_blood
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = SEM_full_bloods_only
+			focus = SEM_end_the_policy
+		}
+		prerequisite = {
+			focus = SEM_question_of_blood
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_end_the_policy
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 2
+		y = 1
+		relative_position_id = SEM_question_of_blood
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = SEM_full_bloods_only
+			focus = SEM_quarter_bloods
+		}
+		prerequisite = {
+			focus = SEM_question_of_blood
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_relax_attitudes_towards_interracial_marriages
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 2
+		relative_position_id = SEM_end_the_policy
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_end_the_policy
+			focus = SEM_quarter_bloods
+		}
+		prerequisite = {
+			focus = SEM_promote_cooperation_between_the_races
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_expand_seminole_petroleum
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 8
+		y = 1
+		relative_position_id = SEM_a_people_unconquered
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_a_people_unconquered
+		}
+		available = {
+			has_completed_focus = SEM_wipe_away_the_remnants_of_bia
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_modernize_petroleum_infrastructure
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_expand_seminole_petroleum
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_expand_seminole_petroleum
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_tap_into_big_cypress_national_preserve
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 2
+		relative_position_id = SEM_expand_seminole_petroleum
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_expand_seminole_petroleum
+		}
+		prerequisite = {
+			focus = SEM_absorb_the_reservation
+		}
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = SEM_drill_baby_drill
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_tap_into_big_cypress_national_preserve
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_tap_into_big_cypress_national_preserve
+		}
+		mutually_exclusive = {
+			focus = SEM_respect_our_ancestral_lands
+		}
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = SEM_respect_our_ancestral_lands
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_modernize_petroleum_infrastructure
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_modernize_petroleum_infrastructure
+		}
+		mutually_exclusive = {
+			focus = SEM_drill_baby_drill
+		}
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = SEM_reconcile_with_the_miccosukee
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 3
 		y = 1
 		relative_position_id = SEM_a_people_unconquered
 		ai_will_do = { 
@@ -413,7 +1142,7 @@ focus_tree = {
 		id = SEM_there_are_only_the_seminoles
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
-		x = 3
+		x = 5
 		y = 1
 		relative_position_id = SEM_a_people_unconquered
 		ai_will_do = { 
@@ -435,6 +1164,40 @@ focus_tree = {
 			581 = {
 				add_manpower = -100
 			}
+		}
+	}
+	focus = {
+		id = SEM_reaffirm_the_miccosukee_autonomy
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 2
+		relative_position_id = SEM_reconcile_with_the_miccosukee
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_reconcile_with_the_miccosukee
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = SEM_pan_tribal_alliance
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_reaffirm_the_miccosukee_autonomy
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_reaffirm_the_miccosukee_autonomy
+		}
+		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -465,6 +1228,122 @@ focus_tree = {
 				    instant_build = yes
 				}
 			}
+		}
+	}
+	focus = {
+		id = SEM_wipe_away_the_remnants_of_bia
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_develop_miccosukee_lands
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_develop_miccosukee_lands
+		}
+		prerequisite = {
+			focus = SEM_absorb_the_reservation
+			focus = SEM_reaffirm_the_miccosukee_autonomy
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = SEM_big_cypress_and_brighton_cattle
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_wipe_away_the_remnants_of_bia
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_wipe_away_the_remnants_of_bia
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_expand_the_casinos
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 2
+		y = 1
+		relative_position_id = SEM_wipe_away_the_remnants_of_bia
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_wipe_away_the_remnants_of_bia
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_promote_tribal_education
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -2
+		y = 1
+		relative_position_id = SEM_wipe_away_the_remnants_of_bia
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_wipe_away_the_remnants_of_bia
+		}
+		prerequisite = {
+			focus = SEM_reaffirm_the_miccosukee_autonomy
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_absorb_the_reservation
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_there_are_only_the_seminoles
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_there_are_only_the_seminoles
+		}
+		completion_reward = {
+			581 = {
+				add_extra_state_shared_building_slots = 2	
+			}
+			add_stability = -0.03
+		}
+	}
+	focus = {
+		id = SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_absorb_the_reservation
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_absorb_the_reservation
+		}
+		completion_reward = {
+			581 = {
+				add_extra_state_shared_building_slots = 2	
+			}
+			add_stability = -0.03
 		}
 	}
 }
