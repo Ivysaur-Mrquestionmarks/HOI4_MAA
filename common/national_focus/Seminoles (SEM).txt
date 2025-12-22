@@ -365,6 +365,460 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SEM_remembering_the_seminole_wars
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		#allow_branch = {
+		#	has_completed_focus = SEM_a_new_florida
+		#}
+		ai_will_do = { 
+			factor = 300
+		}
+		x = 58
+		y = -5
+		available = {
+			has_war = no
+		}	
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_big_cypress_shootout
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_remembering_the_seminole_wars
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_remembering_the_seminole_wars
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_guerilla_warfare
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 4
+		y = 1
+		relative_position_id = SEM_remembering_the_seminole_wars
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_remembering_the_seminole_wars
+		}
+		mutually_exclusive = {
+			focus = SEM_modernize_the_army
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_mikasuki_code
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 3
+		y = 1
+		relative_position_id = SEM_guerilla_warfare
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_guerilla_warfare
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_local_manufacturing
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_guerilla_warfare
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_guerilla_warfare
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_the_forests_are_our_cover
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_local_manufacturing
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_study_the_battle_of_wahoo_swamp
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_study_the_battle_of_wahoo_swamp
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_guerilla_warfare
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_guerilla_warfare
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_live_off_the_land
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_study_the_battle_of_wahoo_swamp
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_study_the_battle_of_wahoo_swamp
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_legacy_of_the_black_seminole_scouts
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 2
+		relative_position_id = SEM_live_off_the_land
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_live_off_the_land
+		}
+		prerequisite = {
+			focus = SEM_the_forests_are_our_cover
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_melt_away_into_the_forests
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_legacy_of_the_black_seminole_scouts
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_legacy_of_the_black_seminole_scouts
+		}
+		prerequisite = {
+			focus = SEM_reliable_cheap_arms
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_raiding_tactics
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 3
+		y = 1
+		relative_position_id = SEM_study_the_battle_of_wahoo_swamp
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_local_manufacturing
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_reliable_cheap_arms
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_raiding_tactics
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_raiding_tactics
+		}
+		prerequisite = {
+			focus = SEM_local_manufacturing
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_evolution_of_the_medicine_man
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_live_off_the_land
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_live_off_the_land
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_modernize_the_army
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -4
+		y = 1
+		relative_position_id = SEM_remembering_the_seminole_wars
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_remembering_the_seminole_wars
+		}
+		mutually_exclusive = {
+			focus = SEM_guerilla_warfare
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_streamlining_arms_manufacturing
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -3
+		y = 1
+		relative_position_id = SEM_modernize_the_army
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_modernize_the_army
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_fledling_mic
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 3
+		relative_position_id = SEM_streamlining_arms_manufacturing
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_streamlining_arms_manufacturing
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_refurbish_old_stockpiles
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_modernize_the_army
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_modernize_the_army
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_trucks_over_horses
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_modernize_the_army
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_modernize_the_army
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_a_new_kind_of_cavalry
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_trucks_over_horses
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_trucks_over_horses
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_soaring_like_the_heron
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_a_new_kind_of_cavalry
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_a_new_kind_of_cavalry
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_roaring_cannons
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_modernize_the_army
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_trucks_over_horses
+		}
+		prerequisite = {
+			focus = SEM_refurbish_old_stockpiles
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_metal_behemoths
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_roaring_cannons
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_roaring_cannons
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_domination_through_speed
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_roaring_cannons
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_roaring_cannons
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_learn_from_the_oppressor
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_roaring_cannons
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_domination_through_speed
+		}
+		prerequisite = {
+			focus = SEM_metal_behemoths
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_even_the_playing_field
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_learn_from_the_oppressor
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_learn_from_the_oppressor
+		}
+		prerequisite = {
+			focus = SEM_soaring_like_the_heron
+		}
+		prerequisite = {
+			focus = SEM_fledling_mic
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
 		id = SEM_a_people_unconquered
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
@@ -566,7 +1020,7 @@ focus_tree = {
 		id = SEM_preserving_seminole_culture
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
-		x = -21
+		x = -20
 		y = 1
 		relative_position_id = SEM_a_people_unconquered
 		ai_will_do = { 
@@ -583,7 +1037,7 @@ focus_tree = {
 		id = SEM_maintaining_our_traditions
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = SEM_preserving_seminole_culture
 		ai_will_do = { 
@@ -716,7 +1170,7 @@ focus_tree = {
 		id = SEM_elevate_mikasuki_as_the_national_language
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
-		x = 1
+		x = 4
 		y = 1
 		relative_position_id = SEM_establish_mikasuki_language_schools
 		ai_will_do = { 
@@ -737,7 +1191,7 @@ focus_tree = {
 		id = SEM_fund_the_seminole_tribal_libraries
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = SEM_preserving_seminole_culture
 		ai_will_do = { 
@@ -754,7 +1208,7 @@ focus_tree = {
 		id = SEM_promote_the_seminole_museum
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SEM_preserving_seminole_culture
 		ai_will_do = { 
@@ -771,7 +1225,7 @@ focus_tree = {
 		id = SEM_decolonize_the_historical_narrative
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = SEM_preserving_seminole_culture
 		ai_will_do = { 
