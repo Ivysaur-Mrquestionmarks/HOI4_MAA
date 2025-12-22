@@ -374,7 +374,7 @@ focus_tree = {
 		ai_will_do = { 
 			factor = 300
 		}
-		x = 30
+		x = 32
 		y = -5
 		available = {
 			has_war = no
@@ -563,10 +563,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SEM_tribal_reform
+		id = SEM_preserving_seminole_culture
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
-		x = -10
+		x = -21
 		y = 1
 		relative_position_id = SEM_a_people_unconquered
 		ai_will_do = { 
@@ -575,25 +575,213 @@ focus_tree = {
 		prerequisite = {
 			focus = SEM_a_people_unconquered
 		}
-		available = {
-			has_completed_focus = SEM_wipe_away_the_remnants_of_bia
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_maintaining_our_traditions
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 3
+		y = 1
+		relative_position_id = SEM_preserving_seminole_culture
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_preserving_seminole_culture
 		}
 		completion_reward = {
 			add_war_support = 0.1
 		}
 	}
 	focus = {
-		id = SEM_preserving_seminole_culture
+		id = SEM_annual_green_corn_ceremony
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
-		x = -10
+		x = -1
 		y = 1
-		relative_position_id = SEM_tribal_reform
+		relative_position_id = SEM_maintaining_our_traditions
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_tribal_reform
+			focus = SEM_maintaining_our_traditions
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_promote_seminole_stickball
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_maintaining_our_traditions
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_maintaining_our_traditions
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_continue_seminole_tourism
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_promote_seminole_stickball
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_promote_seminole_stickball
+			focus = SEM_annual_green_corn_ceremony
+		}
+		mutually_exclusive = {
+			focus = SEM_end_the_rape_of_culture
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_end_the_rape_of_culture
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 3
+		y = 1
+		relative_position_id = SEM_promote_seminole_stickball
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_promote_seminole_stickball
+			focus = SEM_annual_green_corn_ceremony
+		}
+		prerequisite = {
+			focus = SEM_ban_interracial_marriage
+		}
+		mutually_exclusive = {
+			focus = SEM_continue_seminole_tourism
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_standardize_the_mikasuki_language
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_fund_the_seminole_tribal_libraries
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_fund_the_seminole_tribal_libraries
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_establish_mikasuki_language_schools
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_standardize_the_mikasuki_language
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_standardize_the_mikasuki_language
+		}
+		prerequisite = {
+			focus = SEM_decolonize_the_historical_narrative
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_elevate_mikasuki_as_the_national_language
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_establish_mikasuki_language_schools
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_establish_mikasuki_language_schools
+		}
+		prerequisite = {
+			focus = SEM_continue_seminole_tourism
+			focus = SEM_end_the_rape_of_culture
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_fund_the_seminole_tribal_libraries
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_preserving_seminole_culture
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_preserving_seminole_culture
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_promote_the_seminole_museum
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_preserving_seminole_culture
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_preserving_seminole_culture
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = SEM_decolonize_the_historical_narrative
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_preserving_seminole_culture
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_promote_the_seminole_museum
+		}
+		prerequisite = {
+			focus = SEM_fund_the_seminole_tribal_libraries
 		}
 		completion_reward = {
 			add_war_support = 0.1
@@ -603,14 +791,14 @@ focus_tree = {
 		id = SEM_problem_of_the_iste_hatke
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
-		x = 5
+		x = -4
 		y = 1
-		relative_position_id = SEM_tribal_reform
+		relative_position_id = SEM_a_people_unconquered
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_tribal_reform
+			focus = SEM_a_people_unconquered
 		}
 		completion_reward = {
 			add_war_support = 0.1
@@ -901,14 +1089,14 @@ focus_tree = {
 		id = SEM_question_of_blood
 		icon = GFX_goal_SEM_our_new_nation
 		cost = 10.00
-		x = -3
+		x = -12
 		y = 1
-		relative_position_id = SEM_tribal_reform
+		relative_position_id = SEM_a_people_unconquered
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_tribal_reform
+			focus = SEM_a_people_unconquered
 		}
 		completion_reward = {
 			add_war_support = 0.1
