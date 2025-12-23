@@ -374,7 +374,7 @@ focus_tree = {
 		ai_will_do = { 
 			factor = 300
 		}
-		x = 58
+		x = 60
 		y = -5
 		available = {
 			has_war = no
@@ -397,7 +397,7 @@ focus_tree = {
 			focus = SEM_remembering_the_seminole_wars
 		}
 		completion_reward = {
-			add_war_support = 0.1
+	
 		}
 	}
 	focus = {
@@ -851,7 +851,89 @@ focus_tree = {
 			focus = SEM_a_people_unconquered
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = SEM_scrap_metal_recycling
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 4
+		y = 1
+		relative_position_id = SEM_strengthen_traditional_floridan_industry
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_strengthen_traditional_floridan_industry
+		}
+		completion_reward = {
+			584 = {
+				add_resource = {
+				    type = steel
+				    amount = 5
+				}
+				add_resource = {
+				    type = aluminium
+				    amount = 3
+				}
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = SEM_bog_iron_refining
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_scrap_metal_recycling
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_scrap_metal_recycling
+		}
+		completion_reward = {
+			581 = {
+				add_resource = {
+				    type = steel
+				    amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = SEM_rare_mineral_mining
+		icon = GFX_goal_SEM_our_new_nation
+		cost = 10.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_scrap_metal_recycling
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_scrap_metal_recycling
+		}
+		completion_reward = {
+			578 = {
+				add_resource = {
+				    type = tungsten
+				    amount = 8
+				}
+			}
+			583 = {
+				add_resource = {
+				    type = chromium
+				    amount = 4
+				}
+			}	
 		}
 	}
 	focus = {
@@ -868,7 +950,21 @@ focus_tree = {
 			focus = SEM_strengthen_traditional_floridan_industry
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			584 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = supply_node
+				    level = 1
+				    instant_build = yes
+				    province = 11157
+				}
+			}
+			346 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			581 = {
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	focus = {
@@ -885,7 +981,7 @@ focus_tree = {
 			focus = SEM_increase_agricultural_subsidies
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_ideas = SEM_seminole_orange
 		}
 	}
 	focus = {
@@ -902,7 +998,20 @@ focus_tree = {
 			focus = SEM_strengthen_traditional_floridan_industry
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			353 = {
+				add_building_construction = {
+				    type = dockyard
+				    level = 2
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				    type = naval_base
+				    level = 2
+				    instant_build = yes
+				    province = 11112
+				}
+			}
 		}
 	}
 	focus = {
@@ -919,7 +1028,10 @@ focus_tree = {
 			focus = SEM_build_up_port_tampa_bay
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_equipment_to_stockpile = {
+			    type = convoy
+			    amount = 200
+			}
 		}
 	}
 	focus = {
@@ -949,6 +1061,9 @@ focus_tree = {
 		ai_will_do = { 
 			factor = 300
 		}	
+		available = {
+			industrial_complex > 24
+		}
 		prerequisite = {
 			focus = SEM_strong_supply_lines
 		}
@@ -959,7 +1074,7 @@ focus_tree = {
 			focus = SEM_florida_oranges
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -976,7 +1091,31 @@ focus_tree = {
 			focus = SEM_strengthen_traditional_floridan_industry
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			353 = {
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			580 = {
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			339 = {
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_ideas = SEM_small_business_investments
 		}
 	}
 	focus = {
@@ -996,7 +1135,31 @@ focus_tree = {
 			focus = SEM_modernize_petroleum_infrastructure
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_ideas = SEM_reliable_energy
+			353 = {
+				add_building_construction = {
+				    type = energy_infrastructure
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			581 = {
+				add_building_construction = {
+				    type = energy_infrastructure
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			580 = {
+				add_building_construction = {
+				    type = energy_infrastructure
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	focus = {
@@ -1013,7 +1176,8 @@ focus_tree = {
 			focus = SEM_invest_in_small_business
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_ideas = SEM_hard_rock_cafe
+			add_offsite_building = { type = industrial_complex level = 4 }
 		}
 	}
 	focus = {
@@ -1255,7 +1419,7 @@ focus_tree = {
 			focus = SEM_a_people_unconquered
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_political_power = -100
 		}
 	}
 	focus = {
@@ -1275,7 +1439,26 @@ focus_tree = {
 			focus = SEM_problem_of_the_iste_hatke
 		}
 		completion_reward = {
+			custom_effect_tooltip = SEM_warpath_warning_tt
 			add_war_support = 0.1
+			every_core_state = {
+				limit = {
+					is_owned_by = SEM
+					OR = {
+						state = 580
+						state = 582
+						state = 587
+						state = 397
+						state = 579
+						state = 339
+						state = 583
+						state = 346
+						state = 353
+					}
+				}
+				remove_core_of = SEM
+				add_resistance = 75
+			}
 		}
 	}
 	focus = {
@@ -1295,7 +1478,49 @@ focus_tree = {
 			has_completed_focus = SEM_pan_tribal_alliance
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			effect_tooltip = {
+				every_owned_state = {
+					limit = {
+						
+						OR = {
+							state = 580
+							state = 582
+							state = 587
+							state = 397
+							state = 579
+							state = 339
+							state = 583
+							state = 346
+							state = 353
+						}
+					}
+					add_compliance = 10
+					add_resistance = -5
+				}
+			}
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						NOT = {
+							is_core_of = SEM
+						}
+						OR = {
+							state = 580
+							state = 582
+							state = 587
+							state = 397
+							state = 579
+							state = 339
+							state = 583
+							state = 346
+							state = 353
+						}
+					}
+					add_compliance = 10
+					add_resistance = -5
+				}
+			}
+			
 		}
 	}
 	focus = {
@@ -1313,6 +1538,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
+			add_timed_idea = {
+				idea = SEM_taking_back_what_is_ours
+				days = 720
+			}
 		}
 	}
 	focus = {
@@ -1329,7 +1558,14 @@ focus_tree = {
 			focus = SEM_land_back
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			353 = {
+				add_compliance = 20
+				add_resistance = -10
+			}
+			580 = {
+				add_compliance = 20
+				add_resistance = -10
+			}
 		}
 	}
 	focus = {
@@ -1384,6 +1620,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
+			397 = {
+				set_state_name = "Orlando White Reservation"
+			}
 		}
 	}
 	focus = {
@@ -1417,7 +1656,10 @@ focus_tree = {
 			focus = SEM_a_coalition_against_the_pale_skins
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			580 = {
+				add_core_of = SEM
+			}
+			add_stability = 0.07
 		}
 	}
 	focus = {
@@ -1674,7 +1916,46 @@ focus_tree = {
 			has_completed_focus = SEM_wipe_away_the_remnants_of_bia
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			580 = {
+				add_building_construction = {
+				    type = synthetic_refinery
+				    level = 1
+				    instant_build = yes
+				}
+				add_building_construction = {
+				    type = fuel_silo
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			353 = {
+				add_building_construction = {
+				    type = synthetic_refinery
+				    level = 1
+				    instant_build = yes
+				}
+				add_building_construction = {
+				    type = fuel_silo
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			397 = {
+				add_building_construction = {
+				    type = synthetic_refinery
+				    level = 1
+				    instant_build = yes
+				}
+				add_building_construction = {
+				    type = fuel_silo
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			
 		}
 	}
 	focus = {
@@ -1691,7 +1972,25 @@ focus_tree = {
 			focus = SEM_expand_seminole_petroleum
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 3
+			    category = synth_resources
+			}
+			353 = {
+				add_building_construction = {
+				    type = infrastructure
+				    level = 2
+				    instant_build = yes
+				}
+			}
+			397 = {
+				add_building_construction = {
+				    type = infrastructure
+				    level = 2
+				    instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1711,6 +2010,12 @@ focus_tree = {
 			focus = SEM_absorb_the_reservation
 		}
 		completion_reward = {
+			581 = {
+				add_resource = {
+				    type = oil
+				    amount = 35
+				}
+			}
 			add_stability = -0.05
 		}
 	}
@@ -1731,7 +2036,19 @@ focus_tree = {
 			focus = SEM_respect_our_ancestral_lands
 		}
 		completion_reward = {
-			add_stability = -0.05
+			397 = {
+				add_resource = {
+				    type = oil
+				    amount = 25
+				}
+			}
+			581 = {
+				add_resource = {
+				    type = oil
+				    amount = 15
+				}
+			}
+			add_ideas = SEM_reckless_drilling
 		}
 	}
 	focus = {
@@ -1751,7 +2068,8 @@ focus_tree = {
 			focus = SEM_drill_baby_drill
 		}
 		completion_reward = {
-			add_stability = -0.05
+			add_stability = 0.1
+			add_political_power = 150
 		}
 	}
 	focus = {
@@ -1822,7 +2140,16 @@ focus_tree = {
 			focus = SEM_reconcile_with_the_miccosukee
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.02
+			add_popularity = {
+			    ideology = libertarian_right
+			    popularity = 0.03
+			}
+			581 = {
+				add_dynamic_modifier = {
+				    modifier = SEM_tribal_autonomy
+				}
+			}
 		}
 	}
 	focus = {
@@ -1839,7 +2166,23 @@ focus_tree = {
 			focus = SEM_reaffirm_the_miccosukee_autonomy
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
+			add_popularity = {
+			    ideology = libertarian_right
+			    popularity = 0.05
+			}
+			add_popularity = {
+			    ideology = autocratic
+			    popularity = 0.05
+			}
+			add_popularity = {
+			    ideology = democrat
+			    popularity = 0.02
+			}
+			add_popularity = {
+			    ideology = republican
+			    popularity = 0.02
+			}
 		}
 	}
 	focus = {
@@ -1891,7 +2234,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_research_slot = 1
-			add_stability = 0.03
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -1908,7 +2251,22 @@ focus_tree = {
 			focus = SEM_wipe_away_the_remnants_of_bia
 		}
 		completion_reward = {
-			
+			581 = {
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			584 = {
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 	focus = {
@@ -1925,7 +2283,15 @@ focus_tree = {
 			focus = SEM_wipe_away_the_remnants_of_bia
 		}
 		completion_reward = {
-			
+			add_ideas = SEM_lets_go_gambling
+			580 = {
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	focus = {
@@ -1945,7 +2311,7 @@ focus_tree = {
 			focus = SEM_reaffirm_the_miccosukee_autonomy
 		}
 		completion_reward = {
-			
+			add_ideas = SEM_tribal_education
 		}
 	}
 	focus = {
@@ -1982,10 +2348,7 @@ focus_tree = {
 			focus = SEM_absorb_the_reservation
 		}
 		completion_reward = {
-			581 = {
-				add_extra_state_shared_building_slots = 2	
-			}
-			add_stability = -0.03
+			add_ideas = SEM_seminole_supremacy
 		}
 	}
 }

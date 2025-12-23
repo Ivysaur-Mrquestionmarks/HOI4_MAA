@@ -63,6 +63,11 @@ fuel_mechanic = {
 	factory_energy_consumption = energy_rationing
 }
 
+SEM_tribal_autonomy = {
+	#icon = ""
+	local_manpower = -0.1
+	state_resources_factor = -0.1
+}
 
 FRA_rural_rebels = {
 	icon = "GFX_idea_FLO_trumpism" 

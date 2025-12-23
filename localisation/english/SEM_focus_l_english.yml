@@ -36,7 +36,7 @@
  SEM_starting_desc:0 "This new fledgling Seminole nation has it's work cut out for it. The swamps of Southern Florida are sparse in population and in factories. In addition to this, the Seminole nation only allows their fellow Seminoles to enlist and hold goverment office. Time will only tell if these are setbacks or advantages."
  
  SEM_a_people_unconquered:0 "A People Unconquered"
- SEM_a_people_unconquered_desc:0 "We have long referred to ourselves as the 'unconquered people' for our ancestor's ability to avoid removal from our homelands. In the Seminole Wars when our people sufferred a resounding defeat, hundreds resisted removal by hiding out in swamps. We have made our ancestors proud and we still have the right to proudly call ourselves 'unconquered'!"
+ SEM_a_people_unconquered_desc:0 "Since the Seminole Wars, our people have prided ourselves over never signing a treaty with the United States government. We resisted the imperialist beast then, and we have done so now! We have proven we still have the grit and fight to still call ourselves the "Unconquered People"!"
  
  SEM_reconcile_with_the_miccosukee:0 "Reconcile with the Miccosukee"
  SEM_reconcile_with_the_miccosukee_desc:0 "Decades ago, the Miccosukee split from the Seminoles over petty political differences, and they have remained independent ever since. We cannot let these squabbles get in the way of unity, we will reach out and reintegrate what remains of the Miccosukee."
@@ -46,7 +46,7 @@
  SEM_there_are_only_the_seminoles_desc:0 "The Miccosukee are still Seminoles, despite whatever claims to independence they might have. We will make sure they will recognize that fact no matter what. We must clamp down on their rootless identity and ensure Seminole unity."
  
  SEM_reaffirm_the_miccosukee_autonomy:0 "Reaffirm the Miccosukee Autonomy"
- SEM_reaffirm_the_miccosukee_autonomy_desc:0 ""
+ SEM_reaffirm_the_miccosukee_autonomy_desc:0 "The Miccosukee are our brothers and we must respect their claims to their own reservation. We shall elevate them to an autonomous status to prove that we will not trample over the rights of any other native tribes."
 
  SEM_develop_miccosukee_lands:0 "Develop Miccosukee Territory"
  SEM_develop_miccosukee_lands_desc:0 ""
@@ -57,7 +57,7 @@
  SEM_wipe_away_the_remnants_of_bia:0 "Sweep Away the Bureau of Indian Affairs"
  SEM_wipe_away_the_remnants_of_bia_desc:0 ""
  
- SEM_promote_tribal_education:0 "Promote Tribal Education"
+ SEM_promote_tribal_education:0 "Independent Tribal Curriculum"
  SEM_promote_tribal_education_desc:0 ""
 
  SEM_big_cypress_and_brighton_cattle:0 "Expand Cattle Operations in Brighton and Big Cypress"
@@ -112,7 +112,7 @@
 
  SEM_a_coalition_against_the_pale_skins:0 "Form A Coalition Against the Pale-Skins"
  
- SEM_pan_tribal_alliance:0 "Pan-Tribal Alliance"
+ SEM_pan_tribal_alliance:0 "Pan-Indianism"
 
  SEM_ban_interracial_marriage:0 "Ban Interracial Marriage"
 
@@ -154,7 +154,7 @@
 
  SEM_florida_oranges:0 "Champion the Seminole Orange"
 
- SEM_florida_state_university:0 "Increase Funding to Florida State University"
+ SEM_florida_state_university:0 "Cooperate With Florida State University"
 
  SEM_increase_agricultural_subsidies:0 "Support Indigenous Farmers"
  
@@ -231,6 +231,34 @@
  SEM_mikasuki_code:0 "Mikasuki Code"
 
  SEM_the_forests_are_our_cover:0 "Terrain Is Our Advantage"
+ 
+ SEM_scrap_metal_recycling:0 "Scrap Metal Recycling"
+
+ SEM_bog_iron_refining:0 "Bog Iron Refining"
+
+ SEM_rare_mineral_mining:0 "Rare Mineral Mining"
+ 
+ #IDEAS
+
+ SEM_seminole_supremacy:0 "Seminole Supremacy"
+
+ SEM_tribal_education:0 "Tribal Education"
+
+ SEM_lets_go_gambling:0 "A Land of Gaming"
+
+ SEM_reliable_energy:0 "Stable Energy Production"
+
+ SEM_small_business_investments:0 "Small Business Subsidies"
+
+ SEM_reckless_drilling:0 "Resources Over Heritage"
+
+ SEM_seminole_orange:0 "The Seminole Orange"
+
+ SEM_hard_rock_cafe:0 "Hard Rock Cafe Inc."
+
+ SEM_taking_back_what_is_ours:0 "Avenging Our Ancestors"
+
+ #EVENTS
 
  seminoles.1.d:0 "The Seminole chickees. Traditional longhouses that Seminoles for generations had built and lived in down in the swamps for Florida and the American South. Today it held one of the most pivitol meetings in the tribe's history. Leader of the tribe, Marcellus Osecola Jr. was speaking to the gathered heads and elders of the tribe. \n\n"Brothers and sisters," He said with a slow but powerful voice that resonated within the open building. "We, for the first time since the 1800's the Seminole nation is once again free. This was once a land of proud warriors, willing to fight against insurmountable odds for their freedoms. Alas, this was not enough. For hundreds of years after our people where executed, enslaved, murdered and relocated against our will. No more I say. NO MORE! Today marks the day that the Seminoles undergo our next trail, the Trail of Blood!""
  seminoles.1.a:0 "We will have our revenge..."
@@ -244,3 +272,11 @@
  News_Events.103.a:0 "An Unlikely Victor"
  News_events.103.t:0 "Seminole Tribe Triumphs in Floridian Civil War"
  News_events.103.d:0 "An unlikely victor emerges from the fires of the Floridian Civil War. The Seminole nation, though quite small, has taken control of Florida follwing their recent victory. Chieftan Marcus Osecola Jr. is set to lead the nation as the head of the Seminole Tribe and seems hell-bent on protecting the land from invaders. Osecola states that the Second Confederacy poses the "biggest threat to the Seminole culture and our way of life" over any other nation. There appears to be an inevitable clash in the future."
+
+ #Dynamic Modifiers
+
+ SEM_tribal_autonomy:0 "Tribal Autonomy"
+
+ #Tooltips
+
+ SEM_warpath_warning_tt:0 "Without §YPan-Indianism§!, there will be a §Rcivil war!§!\n\n"

@@ -12,5 +12,82 @@ ideas = {
 				heat_attrition_factor = -0.50
 			}
 		}
-	}	
+		SEM_seminole_supremacy = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = 0.1
+				autocratic_drift = 0.02
+				resistance_target = -0.05
+				compliance_growth = -0.05
+			}
+		}
+		SEM_tribal_education = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				research_speed_factor = 0.05
+				autocratic_drift = -0.01
+			}
+		}
+		SEM_lets_go_gambling = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				stability_factor = -0.02
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		SEM_reliable_energy = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				factory_energy_consumption = -0.15
+				production_factory_max_efficiency_factor = 0.05
+				stability_factor = 0.05
+
+			}
+		}
+		SEM_small_business_investments = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+
+			}
+		}
+		SEM_hard_rock_cafe = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				political_power_factor = 0.05
+				trade_opinion_factor = 0.1
+
+			}
+		}
+		SEM_seminole_orange = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				stability_weekly_factor = 0.001
+				monthly_population = 0.1
+				industrial_capacity_factory = 0.07
+
+			}
+		}
+		SEM_reckless_drilling = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				stability_factor = -0.1
+				monthly_population = -0.05
+				local_resources_factor = 0.25
+
+			}
+		}
+		SEM_taking_back_what_is_ours = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				production_speed_buildings_factor = -0.4
+				resistance_activity = 0.05
+				resistance_growth = -0.1
+				compliance_growth = 0.1
+			}
+		}
+	}		
 }
