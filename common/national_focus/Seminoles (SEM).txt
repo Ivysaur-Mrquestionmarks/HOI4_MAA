@@ -2192,7 +2192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_expand_seminole_petroleum
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_expand_seminole_petroleum
 		cost = 5.00
 		x = 8
 		y = 1
@@ -2248,7 +2248,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_modernize_petroleum_infrastructure
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_modernize_petroleum_infrastructure
 		cost = 5.00
 		x = 1
 		y = 1
@@ -2283,7 +2283,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_tap_into_big_cypress_national_preserve
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_tap_into_big_cypress_preserve
 		cost = 5.00
 		x = -1
 		y = 2
@@ -2309,7 +2309,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_drill_baby_drill
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_drill_baby_drill
 		cost = 5.00
 		x = 0
 		y = 1
@@ -2341,7 +2341,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_respect_our_ancestral_lands
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_protect_our_ancenstral_lands
 		cost = 5.00
 		x = 0
 		y = 2
