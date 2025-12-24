@@ -26,6 +26,27 @@ recruit_character = MEX_salvador_cienfuegos
 
 oob = "MEX_2021"
 
+set_autonomy = {
+    target = RMX
+    autonomous_state = autonomy_integrated_puppet
+    end_wars = no
+    end_civil_wars = no
+}
+
+set_autonomy = {
+    target = WMX
+    autonomous_state = autonomy_integrated_puppet
+    end_wars = no
+    end_civil_wars = no
+}
+
+set_autonomy = {
+    target = YUC
+    autonomous_state = autonomy_integrated_puppet
+    end_wars = no
+    end_civil_wars = no
+}
+
 
 add_to_array = {
 	array = global.mexican_collapse_countries
