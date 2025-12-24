@@ -89,5 +89,344 @@ ideas = {
 				compliance_growth = 0.1
 			}
 		}
+		SEM_victory_over_the_white_man = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				recruitable_population_factor = -0.2
+				war_support_factor = 0.1
+				army_attack_factor = 0.1
+				compliance_growth = 0.2
+				autocratic_drift = 0.05
+			}
+		}
+		SEM_seminole_laws = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				consumer_goods_factor = 0.08
+				stability_factor = 0.05
+				required_garrison_factor = -0.1
+				resistance_activity = -0.15
+				autocratic_drift = 0.03
+			}
+		}
+		SEM_white_resistance = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				consumer_goods_factor = 0.5
+				recruitable_population_factor = -0.5
+				political_power_factor = -0.1
+				stability_factor = -0.25
+				industrial_capacity_factory = -0.4
+				production_speed_buildings_factor = -0.4
+				libertarian_right_drift = -0.1
+			}
+		}
+		SEM_white_resistance_1 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				consumer_goods_factor = 0.25
+				recruitable_population_factor = -0.25
+				political_power_factor = -0.1
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+				libertarian_right_drift = -0.08
+			}
+		}
+		SEM_white_resistance_2 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				consumer_goods_factor = 0.1
+				recruitable_population_factor = -0.1
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+				libertarian_right_drift = -0.05
+			}
+		}
+		SEM_white_resistance_3 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				libertarian_right_drift = -0.01
+			}
+		}
+		SEM_white_resistance_alt_1 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				consumer_goods_factor = 0.55
+				recruitable_population_factor = -0.5
+				political_power_factor = -0.1
+				stability_factor = -0.3
+				industrial_capacity_factory = -0.3
+				production_speed_buildings_factor = -0.4
+				libertarian_right_drift = -0.1
+			}
+		}
+		SEM_white_resistance_alt_2 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				consumer_goods_factor = 0.6
+				recruitable_population_factor = -0.45
+				political_power_factor = -0.05
+				stability_factor = -0.2
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.3
+				libertarian_right_drift = -0.05
+			}
+		}
+		SEM_white_resistance_alt_3 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				consumer_goods_factor = 0.6
+				recruitable_population_factor = -0.50
+				political_power_factor = -0.05
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				libertarian_right_drift = -0.01
+			}
+		}
+		SEM_two_systems = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = -0.05
+				recruitable_population_factor = 0.2
+				libertarian_right_drift = 0.05
+				republican_drift = 0.03
+				democrat_drift = 0.02
+			}
+		}
+		SEM_ended_bq = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				recruitable_population_factor = 0.15
+				political_power_factor = -0.08
+				army_org_factor = -0.02
+				stability_factor = 0.05
+			}
+		}
+		SEM_fullblood_citizenship = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				recruitable_population_factor = -0.1
+				political_power_factor = 0.1
+				army_org_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		SEM_tribal_resistance = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				political_power_factor = -0.1
+			}
+		}
+		SEM_standardizing_mikasuki = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				research_speed_factor = -0.01
+				consumer_goods_factor = 0.01
+			}
+		}
+		SEM_mikasuki_schools= {
+			allowed = { original_tag = SEM }
+			modifier = {
+				research_speed_factor = 0.02
+				political_power_gain = 0.01
+			}
+		}
+		SEM_mikasuki_national_language = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.15
+				stability_factor = 0.1
+			}
+		}
+		SEM_seminole_tribal_libraries = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				research_speed_factor = 0.04
+			}
+		}
+		SEM_seminole_tourism_industry = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				stability_factor = -0.03
+				consumer_goods_factor = -0.08
+			}
+		}
+		SEM_our_merchant_fleet = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05 
+				
+			}
+			equipment_bonus = {
+				ship_hull_light = { build_cost_ic = -0.05 instant = yes }
+				convoy = { build_cost_ic = -0.1 instant = yes }
+			}
+		}
+		SEM_our_merchant_fleet_1 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.08 
+				supply_node_range = 0.1
+				navy_max_range_factor = 0.1
+			}
+			equipment_bonus = {
+				ship_hull_light = { build_cost_ic = -0.05 instant = yes }
+				convoy = { build_cost_ic = -0.1 instant = yes }
+			}
+		}
+		SEM_mikasuki_code_talkers = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				encryption_factor = 0.3
+				army_intel_to_others = -15
+				airforce_intel_to_others = -15
+				navy_intel_to_others = -15
+			}
+		}
+		SEM_local_manufacturing_1 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1 
+				line_change_production_efficiency_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.05 instant = yes }
+			}
+		}
+		SEM_local_manufacturing_2 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1 
+				line_change_production_efficiency_factor = 0.05
+				equipment_capture_factor = 0.25
+
+			}
+			equipment_bonus = {
+				infantry_equipment = { build_cost_ic = -0.05 instant = yes }
+			}
+		}
+		SEM_local_manufacturing_3 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.15 
+				line_change_production_efficiency_factor = 0.07
+				equipment_capture_factor = 0.25
+				equipment_conversion_speed = 0.1
+				research_speed_factor = 0.03
+			}
+			equipment_bonus = {
+				infantry_equipment = { 
+					build_cost_ic = -0.15 
+					soft_attack = 0.1
+					instant = yes 
+				}
+			}
+		}
+		SEM_guerilla_warfare_1 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				experience_gain_army_unit_factor = -0.1
+				conscription = 0.01
+				army_core_defence_factor = 0.1
+				dig_in_speed_factor = 0.05
+			}
+		}
+		SEM_guerilla_warfare_2 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				experience_gain_army_unit_factor = -0.1
+				conscription = 0.01
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.05
+				dig_in_speed_factor = 0.05
+				army_morale_factor = 0.1
+				terrain_penalty_reduction = 0.1
+			}
+		}
+		SEM_guerilla_warfare_3 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				experience_gain_army_unit_factor = -0.1
+				conscription = 0.01
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.1
+				dig_in_speed_factor = 0.05
+				army_morale_factor = 0.1
+				terrain_penalty_reduction = 0.25
+				max_dig_in_factor = 0.1
+				army_speed_factor = 0.05
+			}
+		}
+		SEM_guerilla_warfare_4 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				experience_gain_army_unit_factor = -0.1
+				conscription = 0.01
+				recruitable_population_factor = 0.1
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.1
+				dig_in_speed_factor = 0.05
+				army_morale_factor = 0.1
+				terrain_penalty_reduction = 0.25
+				max_dig_in_factor = 0.1
+				army_speed_factor = 0.05
+				recon_factor = 0.2
+			}
+		}
+		SEM_guerilla_warfare_5 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				experience_gain_army_unit_factor = -0.1
+				conscription = 0.01
+				recruitable_population_factor = 0.1
+				army_core_defence_factor = 0.3
+				army_core_attack_factor = 0.1
+				dig_in_speed_factor = 0.1
+				army_morale_factor = 0.1
+				terrain_penalty_reduction = 0.25
+				max_dig_in_factor = 0.2
+				army_speed_factor = 0.1
+				recon_factor = 0.2
+			}
+		}
+		SEM_survivalism = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				supply_consumption_factor = -0.25
+				supply_combat_penalties_on_core_factor = -0.5
+				out_of_supply_factor = -0.2
+				no_supply_grace = 120
+			}
+		}
+		SEM_survivalism_1 = {
+			allowed = { original_tag = SEM }
+			modifier = {
+				supply_consumption_factor = -0.25
+				supply_combat_penalties_on_core_factor = -0.5
+				out_of_supply_factor = -0.2
+				no_supply_grace = 120
+				experience_loss_factor = -0.15
+			}
+			equipment_bonus = {
+				hospital_tech = { 
+					casualty_trickleback = 0.10
+					max_organisation = 0.1
+					instant = yes 
+				}
+			}
+		}
 	}		
 }

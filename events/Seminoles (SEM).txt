@@ -24,3 +24,131 @@ country_event = {
 		news_event = { id = News_Events.103 hours = 4 }
 	}
 }
+
+country_event = {
+	id = seminoles.3
+	title = seminoles.3.t
+	desc = seminoles.3.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = seminoles.3.a
+		add_ideas = SEM_white_resistance
+	}
+}
+
+add_namespace = sem_tot
+
+country_event = {
+	id = sem_tot.1
+	title = sem_tot.1.t
+	desc = sem_tot.1.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	option = {
+		name = sem_tot.1.a
+		580 = {
+			add_manpower = -30000
+			add_resistance = 5
+			add_compliance = 5
+		}
+		353 = {
+			add_manpower = -30000
+			add_resistance = 5
+			add_compliance = 5
+		}
+		339 = {
+			add_manpower = -10000
+			add_resistance = 5
+			add_compliance = 5
+		}
+		578 = {
+			add_manpower = -10000
+			add_resistance = 5
+			add_compliance = 5
+		}
+		397 = {
+			add_manpower = 80000
+			add_resistance = 10
+		}
+		hidden_effect = {
+			country_event = {
+				id = sem_tot.1
+				days = 365
+			}
+		}
+	}
+}
+
+add_namespace = sem_culture
+
+country_event = {
+	id = sem_culture.1
+	title = sem_culture.1.t
+	desc = sem_culture.1.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	option = {
+		name = sem_culture.1.a
+		add_equipment_to_stockpile = {
+		    type = support_equipment
+		    amount = 250
+		    producer = SEM
+		}
+		add_stability = 0.01
+		add_political_power = 15
+		hidden_effect = {
+			id = sem_culture.1
+			days = 365
+		}
+	}
+}
+
+country_event = {
+	id = sem_culture.2
+	title = sem_culture.2.t
+	desc = sem_culture.2.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	option = {
+		name = sem_culture.2.a 
+		
+		add_stability = 0.02
+		add_political_power = 25
+	}
+}
+
+add_namespace = sem_army
+
+country_event = {
+	id = sem_army.1
+	title = sem_army.1.t
+	desc = sem_army.1.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	option = {
+		name = sem_army.1.a 
+		
+		
+	}
+	option = {
+		name = sem_army.1.b
+		
+		
+	}
+}
+
+country_event = {
+	id = sem_army.2
+	title = sem_army.2.t
+	desc = sem_army.2.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	option = {
+		name = sem_army.2.a 
+		
+		army_experience = 10
+		
+	}
+}
