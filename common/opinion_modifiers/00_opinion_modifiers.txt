@@ -1106,6 +1106,12 @@ opinion_modifiers = {
 	###	MAKE AMERICA AGAIN MODIFIERS	###
 	###########################################
 
+	sem_native_brothers = {
+		value = 50
+	}
+	sem_seminole_brothers = {
+		value = 50
+	}
 	illegitimate_successor_opinion = {
 		value = -200
 	}

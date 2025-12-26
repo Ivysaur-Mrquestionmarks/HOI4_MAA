@@ -366,7 +366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_remembering_the_seminole_wars
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_remember_the_seminole_wars
 		cost = 5.00
 		#allow_branch = {
 		#	has_completed_focus = SEM_a_new_florida
@@ -374,8 +374,8 @@ focus_tree = {
 		ai_will_do = { 
 			factor = 300
 		}
-		x = 60
-		y = -5
+		x = 45
+		y = 2
 		available = {
 			has_completed_focus = SEM_a_people_unconquered
 		}	
@@ -385,7 +385,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_big_cypress_shootout
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_big_cypress_shootout
 		cost = 5.00
 		x = 0
 		y = 2
@@ -402,7 +402,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_guerilla_warfare
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_our_ancestors_warfare
 		cost = 5.00
 		x = 4
 		y = 1
@@ -427,7 +427,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_mikasuki_code
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_mikasuki_code
 		cost = 5.00
 		x = 3
 		y = 1
@@ -447,7 +447,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_local_manufacturing
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_prioritise_local_manufacturing
 		cost = 5.00
 		x = 1
 		y = 1
@@ -480,7 +480,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_the_forests_are_our_cover
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_terrain_is_our_advantage
 		cost = 5.00
 		x = -1
 		y = 1
@@ -500,7 +500,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_study_the_battle_of_wahoo_swamp
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_study_battle_of_wahoo_swamp
 		cost = 5.00
 		x = -1
 		y = 1
@@ -530,7 +530,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_live_off_the_land
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_live_off_the_land
 		cost = 5.00
 		x = -1
 		y = 1
@@ -624,7 +624,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_raiding_tactics
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_raid_and_run
 		cost = 5.00
 		x = 3
 		y = 1
@@ -1971,6 +1971,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SEM_relax_attitudes_towards_interracial_marriages
+			focus = SEM_end_the_rape_of_culture
 		}
 		available = {
 			NOT = {
@@ -2637,6 +2638,646 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SEM_seminole_supremacy
+		}
+	}
+	focus = {
+		id = SEM_america_in_chaos
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = 0
+		y = 7
+		relative_position_id = SEM_a_people_unconquered
+		ai_will_do = { 
+			factor = 100
+		}
+		available = {
+			has_completed_focus = SEM_a_people_unconquered
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = SEM_ties_with_the_oklahoman_seminoles
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = -4
+		y = 1
+		relative_position_id = SEM_america_in_chaos
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_america_in_chaos
+		}
+		available = {
+			OKL = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			OKL = {
+				add_opinion_modifier = {
+				    target = SEM
+				    modifier = sem_seminole_brothers
+				}
+			}
+		}
+	}
+	focus = {
+		id = SEM_navajo_and_tohono_brothers
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_ties_with_the_oklahoman_seminoles
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_ties_with_the_oklahoman_seminoles
+		}
+		available = {
+			NAV = {
+				exists = yes
+			}
+			has_completed_focus = SEM_pan_tribal_alliance
+		}
+		completion_reward = {
+			NAV = {
+				add_opinion_modifier = {
+				    target = SEM
+				    modifier = sem_native_brothers
+				}
+			}
+		}
+	}
+	focus = {
+		id = SEM_showdown_in_dixie
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = SEM_america_in_chaos
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_america_in_chaos
+		}
+		mutually_exclusive = {
+			focus = SEM_opportunity_in_dixie
+			focus = SEM_the_panhandle_deal
+		}
+		available = {
+			CSA = {
+				exists = yes
+				NOT = {
+					has_war_with = SEM
+				}
+			}
+			NOT = {
+				has_global_flag = Dixie_Collapse_Global
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CSA
+			}
+		}
+	}
+	focus = {
+		id = SEM_opportunity_in_dixie
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_america_in_chaos
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_america_in_chaos
+		}
+		mutually_exclusive = {
+			focus = SEM_showdown_in_dixie
+			focus = SEM_the_panhandle_deal
+		}
+		available = {
+			has_global_flag = Dixie_Collapse_Global
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					#has_global_flag = Dixie_Collapse_Global
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = KKK
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = CSA
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = ZIO
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = AFR
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = CSB
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = LGB
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = APA
+				}
+			}
+		}
+	}
+	focus = {
+		id = SEM_the_panhandle_deal
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = SEM_america_in_chaos
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_america_in_chaos
+		}
+		mutually_exclusive = {
+			focus = SEM_showdown_in_dixie
+			focus = SEM_opportunity_in_dixie
+		}
+		available = {
+			CSA = {
+				exists = yes
+				NOT = {
+					has_war_with = SEM
+				}
+			}
+			NOT = {
+				has_global_flag = Dixie_Collapse_Global
+			}
+		}
+		completion_reward = {
+			CSA = {
+				country_event = {
+					id = sem_panhandle.1
+					days = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = SEM_osceola_line
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_the_panhandle_deal
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_the_panhandle_deal
+		}
+		completion_reward = {
+			602 = {
+				add_building_construction = {
+				    type = bunker
+				    level = 2
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_border = yes
+				      
+				    }
+				}
+				add_building_construction = {
+				    type = bunker
+				    level = 1
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_border = yes
+				        limit_to_victory_point > 1
+				    }
+				}
+			}
+			324 = {
+				add_building_construction = {
+				    type = bunker
+				    level = 2
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_border = yes
+				        
+				    }
+				}
+				add_building_construction = {
+				    type = bunker
+				    level = 1
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_border = yes
+				        limit_to_victory_point > 1
+				    }
+				}
+			}
+			603 = {
+				add_building_construction = {
+				    type = bunker
+				    level = 2
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_border = yes
+				        
+				    }
+				}
+				add_building_construction = {
+				    type = bunker
+				    level = 1
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_border = yes
+				        limit_to_victory_point > 1
+				    }
+				}
+			}
+			327 = {
+				add_building_construction = {
+				    type = bunker
+				    level = 2
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_border = yes
+				        
+				    }
+				}
+				add_building_construction = {
+				    type = bunker
+				    level = 1
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_border = yes
+				        limit_to_victory_point > 1
+				    }
+				}
+			}
+			323 = {
+				add_building_construction = {
+				    type = bunker
+				    level = 5
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_border = yes
+				   
+				    }
+				}
+			}
+			322 = {
+				add_building_construction = {
+				    type = bunker
+				    level = 5
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_border = yes
+				    }
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SEM_north_florida_removals
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = 1
+		y = 2
+		relative_position_id = SEM_the_panhandle_deal
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_the_panhandle_deal
+		}
+		available = {
+			has_completed_focus = SEM_the_trail_of_tears
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_reclaiming_our_ancestral_lands
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_opportunity_in_dixie
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_opportunity_in_dixie
+			focus = SEM_showdown_in_dixie
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_liberate_the_united_states
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_reclaiming_our_ancestral_lands
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_reclaiming_our_ancestral_lands
+		}
+		mutually_exclusive = {
+			focus = SEM_the_past_redeemed
+		}
+		available = {
+			has_completed_focus = SEM_pan_tribal_alliance
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_the_past_redeemed
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_reclaiming_our_ancestral_lands
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_reclaiming_our_ancestral_lands
+		}
+		mutually_exclusive = {
+			focus = SEM_liberate_the_united_states
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_where_the_suffering_began
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_liberate_the_united_states
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_liberate_the_united_states
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					any_owned_state = {
+						OR = {
+							is_core_of = VIR
+							is_core_of = NRA
+						}
+					}
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = KFC
+							tag = AFS
+							tag = USA
+						}
+					} 
+				}
+				ROOT = {
+					create_wargoal = {
+					    type = annex_everything
+					    target = PREV
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SEM_reclaiming_the_thirteen_colonies
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_where_the_suffering_began
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_where_the_suffering_began
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					any_owned_state = {
+						OR = {
+							is_core_of = NRA
+							is_core_of = TIM
+							is_core_of = FRA
+							is_core_of = NEW
+							is_core_of = WBK 
+						}
+					}
+					NOT = {
+						OR = {
+							tag = AFS
+							tag = NRA
+							tag = VIR
+							tag = CAN
+							tag = USA
+							tag = MIN
+							tag = MIL
+							tag = MNS
+						}
+					} 
+				}
+				ROOT = {
+					create_wargoal = {
+					    type = annex_everything
+					    target = PREV
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SEM_avenge_tecumsehs_confederacy
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_where_the_suffering_began
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_where_the_suffering_began
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					any_owned_state = {
+						OR = {
+							is_core_of = AFS
+							is_core_of = KFC
+							is_core_of = GLA
+							is_core_of = DET
+							is_core_of = KMT
+							is_core_of = MIL 
+							is_core_of = MIN
+							is_core_of = MNS
+						}
+					}
+					NOT = {
+						OR = {
+							tag = USA
+							tag = NPA
+						}
+					} 
+				}
+				ROOT = {
+					create_wargoal = {
+					    type = annex_everything
+					    target = PREV
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SEM_take_back_the_great_plains
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_avenge_tecumsehs_confederacy
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_avenge_tecumsehs_confederacy
+		}
+		prerequisite = {
+			focus = SEM_reclaiming_the_thirteen_colonies
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					any_owned_state = {
+						OR = {
+							is_core_of = OKL
+							is_core_of = USA
+							is_core_of = TEX
+						}
+					}
+					NOT = {
+						OR = {
+							tag = OKL
+							tag = CSA
+							tag = SIN
+							tag = HAM
+							tag = MON
+							tag = AFS
+							tag = HOP
+							tag = TOH
+							tag = NAV
+							tag = UTA
+						}
+					} 
+				}
+				ROOT = {
+					create_wargoal = {
+					    type = annex_everything
+					    target = PREV
+					}
+				}
+			} 
+		}
+	}
+	focus = {
+		id = SEM_from_sea_to_shining_sea
+		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_take_back_the_great_plains
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_take_back_the_great_plains
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					any_owned_state = {
+						OR = {
+							is_core_of = PRA
+							is_core_of = UTA
+							is_core_of = LAS
+							is_core_of = AFO
+							is_core_of = MOL
+							is_core_of = CAS
+							is_core_of = LIB
+							is_core_of = MON
+							is_core_of = HAM
+							is_core_of = SIN
+							is_core_of = HOP
+							is_core_of = NAV
+							is_core_of = TOH
+						}
+					}
+					NOT = {
+						OR = {
+							tag = USA
+							tag = TEX
+							tag = OKL
+						}
+					} 
+				}
+				ROOT = {
+					create_wargoal = {
+					    type = annex_everything
+					    target = PREV
+					}
+				}
+			} 
 		}
 	}
 }
