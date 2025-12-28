@@ -3682,7 +3682,7 @@ AFS_saving_terra_decisions = {
 			has_country_flag = AFS_building_ai
 			has_country_flag = {
                 flag = AFS_ai_building_decision
-                value > 15
+                value > 14
             }
 		}
 
