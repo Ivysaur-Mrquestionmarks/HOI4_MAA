@@ -3217,6 +3217,7 @@ country_event = {
 			factor = 100
 		}
 		set_country_flag = AFS_normal_vance
+		set_country_flag = AFS_vance_fate
 	}
 }
 
@@ -3238,6 +3239,7 @@ country_event = {
 			factor = 100
 		}
 		set_country_flag = AFS_enlight_vance
+		set_country_flag = AFS_vance_fate
 	}
 }
 
