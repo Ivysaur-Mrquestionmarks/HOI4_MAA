@@ -1,0 +1,376 @@
+SEM_balance_of_power_category = {
+
+	SEM_circumvent_council = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 75
+		
+		days_remove = 35
+
+		is_good = yes
+
+		remove_effect = {
+
+		}
+		complete_effect = {
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = 0.1
+			    #tooltip_side = my_bop_side
+			}
+		}
+		modifier = {
+			political_power_factor = -0.1
+		}
+	}
+
+	SEM_placate_the_council = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 25
+		
+		days_remove = 5
+
+		is_good = yes
+
+		remove_effect = {
+
+		}
+		complete_effect = {
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = 0.05
+			    #tooltip_side = my_bop_side
+			}
+			add_stability = -0.03
+		}
+	}
+	SEM_allign_the_military = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			command_power > 49
+		}
+		visible = {
+			
+		}
+
+		custom_cost_trigger = { 
+		    command_power > 49
+		} 
+
+		custom_cost_text = SEM_military_allignment
+
+		days_remove = 5
+
+		is_good = yes
+
+		remove_effect = {
+
+		}
+		complete_effect = {
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = 0.15
+			    #tooltip_side = my_bop_side
+			}
+			army_experience = 15
+			add_command_power = -50
+		}
+	}
+	SEM_allign_the_military = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			command_power > 24
+		}
+		visible = {
+			
+		}
+
+		custom_cost_trigger = { 
+		    command_power > 24
+		} 
+
+		custom_cost_text = SEM_military_allignment
+
+		days_remove = 5
+
+		is_good = yes
+
+		remove_effect = {
+
+		}
+		complete_effect = {
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = 0.15
+			    #tooltip_side = my_bop_side
+			}
+			army_experience = 15
+			add_command_power = -25
+		}
+	}
+	SEM_win_over_council_members = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+
+		custom_cost_trigger = { 
+		    
+		} 
+
+		cost = 100
+
+		days_remove = 5
+
+		is_good = yes
+
+		remove_effect = {
+
+		}
+		complete_effect = {
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = 0.1
+			    #tooltip_side = my_bop_side
+			}
+			add_stability = 0.05
+			add_popularity = {
+			    ideology = autocratic
+			    popularity = 0.03
+			}
+		}
+	}
+	SEM_clamp_down_on_osceolas_authority = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+
+		custom_cost_trigger = { 
+		    
+		} 
+
+		cost = 50
+
+		days_remove = 5
+
+		is_good = yes
+
+		remove_effect = {
+
+		}
+		complete_effect = {
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = -0.1
+			    #tooltip_side = my_bop_side
+			}
+			add_stability = 0.05
+		}
+	}
+	SEM_promote_stability_through_dialogue = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+
+		custom_cost_trigger = { 
+		    
+		} 
+
+		cost = 150
+
+		days_remove = 35
+
+		is_good = yes
+
+		remove_effect = {
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = -0.15
+			    #tooltip_side = my_bop_side
+			}
+		}
+		modifier = {
+			stability_weekly = 0.01
+			libertarian_right_drift = 0.03
+		}
+		complete_effect = {
+			
+		}
+	}
+	SEM_remove_compromised_council_members = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+
+		custom_cost_trigger = { 
+		    
+		} 
+
+		cost = 75
+
+
+		is_good = yes
+
+		remove_effect = {
+			
+		}
+		
+		complete_effect = {
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = -0.05
+			    #tooltip_side = my_bop_side
+			}
+			add_stability = -0.04
+		}
+	}
+	SEM_reach_out_to_other_tribes = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+
+		custom_cost_trigger = { 
+		    
+		} 
+
+		cost = 75
+
+		is_good = yes
+
+		remove_effect = {
+			
+		}
+		
+		complete_effect = {
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = -0.2
+			    #tooltip_side = my_bop_side
+			}
+			add_popularity = {
+			    ideology = libertarian_right
+			    popularity = 0.05
+			}
+		}
+	}
+}
+
+SEM_whites_vs_natives = {
+
+	SEM_reassure_whites = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			NOT = {
+				has_idea = SEM_white_people_be_like_happy
+			}
+		}
+		visible = {
+			
+		}
+		cost = 50
+		
+		days_remove = 35
+
+		is_good = yes
+
+		remove_effect = {
+
+		}
+		complete_effect = {
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = -0.05
+			    #tooltip_side = my_bop_side
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_content
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like_content
+					add_idea = SEM_white_people_be_like_happy
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like
+					add_idea = SEM_white_people_be_like_content
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_angry
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like_angry
+					add_idea = SEM_white_people_be_like
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_inflamed
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like_inflamed
+					add_idea = SEM_white_people_be_like_angry
+				}
+			}
+		}
+		modifier = {
+			political_power_factor = -0.2
+		}
+	}	
+}

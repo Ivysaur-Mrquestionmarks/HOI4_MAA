@@ -1,0 +1,20 @@
+SEM_balance_of_power_category = {
+	icon = generic_propaganda
+	
+	allowed = {
+		OR = {
+			original_tag = SEM
+		}
+	}
+
+}
+SEM_whites_vs_natives = {
+	icon = generic_propaganda
+	
+	allowed = {
+		OR = {
+			original_tag = SEM
+		}
+	}
+
+}

@@ -95,7 +95,7 @@
 
  SEM_relax_attitudes_towards_interracial_marriages:0 "Destigmatize Interracial Marriage"
  
- SEM_promote_cooperation_between_the_races:0 "Promote Racial Cooperation"
+ SEM_promote_cooperation_between_the_races:0 "Seek Reconciliation"
  
  SEM_establish_associate_tribal_memberships:0 "Establish Associate Tribal Memberships"
 
@@ -348,7 +348,35 @@
  SEM_survivalism:0 "Thriving on the Land"
 
  SEM_survivalism_1:0 "Thriving on the Land"
+ 
+ SEM_white_people_be_like_happy:0 "White Relations Excellent"
 
+ SEM_white_people_be_like_content:0 "White Relations Stable"
+
+ SEM_white_people_be_like:0 "White Relations Strained"
+
+ SEM_white_people_be_like_angry:0 "White Relations Bad"
+
+ SEM_white_people_be_like_inflamed:0 "White Relations Inflamed"
+
+ SEM_native_people_be_like_happy:0 "Happy Native Americans"
+
+ SEM_native_people_be_like:0 "Content Native Americans"
+
+ SEM_native_people_be_like_worried:0 "Weary Native Americans"
+
+ SEM_native_people_be_like_angry:0 "Angry Native Americans"
+
+ SEM_native_people_be_like_inflamed:0 "Inflamed Native Americans"
+
+ SEM_fillibusters:0 "The Fillibusters"
+ SEM_fillibusters_1:0 "The Fillibusters"
+
+ SEM_council_revolt:0 "Seminole Council Revolt"
+
+ SEM_disorganized_state:0 "Disorganized State"
+ SEM_disorganized_state_1:0 "Disorganized State"
+ SEM_disorganized_state_2:0 "Disorganized State"
  #EVENTS
 
  seminoles.1.d:0 "The Seminole chickees. Traditional longhouses that Seminoles for generations had built and lived in down in the swamps for Florida and the American South. Today it held one of the most pivitol meetings in the tribe's history. Leader of the tribe, Marcellus Osecola Jr. was speaking to the gathered heads and elders of the tribe. \n\n"Brothers and sisters," He said with a slow but powerful voice that resonated within the open building. "We, for the first time since the 1800's the Seminole nation is once again free. This was once a land of proud warriors, willing to fight against insurmountable odds for their freedoms. Alas, this was not enough. For hundreds of years after our people where executed, enslaved, murdered and relocated against our will. No more I say. NO MORE! Today marks the day that the Seminoles undergo our next trail, the Trail of Blood!""
@@ -356,13 +384,17 @@
  seminoles.1.t:0 "The Floridian Civil War"
 
  seminoles.2.t:0 "Seminole Victory!"
- seminoles.2.d:0 "Chieftan Marcus Osecola Jr. gathered the tribial council together at a small table in the Miami courthouse. He laid down on the table numerous pictures from the past few months of conflict. They were grotesque. Many of the council members looked away at the mere sight of them. \n\n"These have already made their rounds on the interent." Osecola said picking up a photo of one of his soldiers carrying scalps. "The other nations will not take kindly to our ways. Espically the Klan to the north. \n\nOsecola slowly placed down the picture and placed both of his hands on the table as if to brace himself. "We must prepare ourselves for what is to come and if need be, strike first.""
+ seminoles.2.d:0 "Chieftan Marcus Osecola Jr. gathered the tribial council together at a small table in the Miami courthouse. He laid down on the table numerous pictures from the past few months of conflict. They were grotesque. Many of the council members looked away at the mere sight of them. \n\n"These have already made their rounds on the internet." Osecola said picking up a photo of one of his soldiers carrying scalps. "The other nations will not take kindly to our ways. Espically the Klan to the north. \n\nOsecola slowly placed down the picture and placed both of his hands on the table as if to brace himself. "We must prepare ourselves for what is to come and if need be, strike first.""
  seminoles.2.a:0 "A hard fought victory"
-
- seminoles.3.t:0 "Us Few Seminoles"
- seminoles.3.d:0 "Despite our victory, the realities of governing a land of majority white people is dawning on us. The native population of Florida is only around 1% of the total population, with a measly 4,000 seminoles left. If we want our new nation to survive, we must find a way to deal with this new reality."
- seminoles.3.a:0 "Unfortunate..."
  
+ seminoles.3.t:0 "The End of the Honeymoon"
+ seminoles.3.d:0 ""
+ seminoles.3.a:0 "Reality comes knocking hard"
+ 
+ seminoles.4.t:0 "Revolt of the Fillibusters"
+ seminoles.4.d:0 ""
+ seminoles.4.a:0 "We need to do something!"
+
  sem_tot.1.t:0 "Trail of Tears Continued"
  sem_tot.1.d:0 ""
  sem_tot.1.a:0 "More the merrier!"
@@ -407,11 +439,45 @@
 
  #Tooltips
 
- SEM_warpath_warning_tt:0 "Without §YPan-Indianism§!, there will be a §Rcivil war!§!\n\n"
+ SEM_warpath_warning_tt:0 "Without §YPan-Indianism§!, the tribal authorities will §Roppose§! us!\n\n"
 
  SEM_tot_tt:0 "Every 365 days, for 20 years, we will get events related to the White removal"
 
+ SEM_reconciliation_tt:0 "We will be making changes, some popular to our fellow White man, others very unpopular to our fellow Natives."
+ 
+ SEM_native_bad_tt:0 "We will incur a §Rstability penalty§! due to §YInflamed Native Americans§!"
+
+ SEM_white_bad_tt:0 "We will incur a §Rstability penalty§! due to §YWhite Relations Inflamed§!"
+ 
+ SEM_bop_warning_tt:0 "\nNeither side can §Yconsolidate power§! unless the problem of the White man is solved!"
  #Opinion Modifiers
 
  sem_seminole_brothers:0 "Seminole Brothers"
  sem_native_brothers:0 "Native Brothers"
+
+ #BOP
+ SEM_tribe_vs_osceola_bop:0 "Struggle Over Power"
+ tribe_osceola_equilibrium:0 "Balanced Power Dynamics"
+ tribe_lean:0 "Mild Tribal Authority"
+ tribe_mild:0 "Moderate Tribal Authority"
+ tribe_complete:0 "Absolute Tribal Authority"
+ osceola_lean:0 "Osceola's Growing Authority"
+ osceola_mild:0 "Osceola's Centralized Authority"
+ osceola_complete:0 "Osceola's Absolute Authority"
+ tribe_favored:0 "Tribal Authority"
+ osceola_favored:0 "Osceola's Authority"
+
+ #Decisions
+
+ SEM_military_allignment:0 "£GFX_command_power §Y50§!"
+ SEM_military_allignment_blocked:0 "£GFX_command_power §R50§!"
+
+ SEM_circumvent_council:0 "§0Circumvent the Seminole Council§!"
+ SEM_placate_the_council:0 "§0Placate the Seminole Council§!"
+ SEM_allign_the_military:0 "§0Align the Military§!"
+ SEM_win_over_council_members:0 "§0Win Over Council Members§!"
+
+ SEM_clamp_down_on_osceolas_authority:0 "§YClamp Down on Osceola's Authority§!"
+ SEM_promote_stability_through_dialogue:0 "§YPromote Stability Through Dialogue§!"
+ SEM_remove_compromised_council_members:0 "§YRemove Compromised Council Members§!"
+ SEM_reach_out_to_other_tribes:0 "§YReach Out to Other Tribes§!"

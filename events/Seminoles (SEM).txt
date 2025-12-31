@@ -22,6 +22,12 @@ country_event = {
 	option = {
 		name = seminoles.2.a
 		news_event = { id = News_Events.103 hours = 4 }
+		add_ideas = SEM_white_people_be_like
+		add_ideas = SEM_native_people_be_like
+		add_ideas = SEM_disorganized_state
+		hidden_effect = {
+			
+		}
 	}
 }
 
@@ -34,7 +40,36 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = seminoles.3.a
-		add_ideas = SEM_white_resistance
+		complete_national_focus = SEM_problem_of_the_iste_hatke
+		swap_ideas = {
+			remove_idea = SEM_white_people_be_like
+			add_idea = SEM_white_people_be_like_inflamed
+		}
+		swap_ideas = {
+			remove_idea = SEM_native_people_be_like
+			add_idea = SEM_native_people_be_like_worried
+		}
+		hidden_effect = {
+			country_event = {
+				id = seminoles.4
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = seminoles.4
+	title = seminoles.4.t
+	desc = seminoles.4.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = seminoles.4.a
+		add_ideas = SEM_fillibusters
+		complete_national_focus = SEM_problem_of_the_iste_hatke
+		
 	}
 }
 
