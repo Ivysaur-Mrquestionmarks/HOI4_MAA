@@ -1,7 +1,7 @@
 capital = 480
 
 set_politics = {
-	ruling_party = democrat
+	ruling_party = libertarian_left
 	last_election = "2018.7.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -25,3 +25,4 @@ set_cosmetic_tag = MEX_states
 
 ### Country Leaders ###
 recruit_character = RMX_ricardo_anaya
+recruit_character = RMX_Jaime_Rodriguez_Calderon

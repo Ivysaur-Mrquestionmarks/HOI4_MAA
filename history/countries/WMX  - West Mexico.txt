@@ -1,17 +1,17 @@
 capital = 480
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = republican 
 	last_election = "2018.7.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
 	autocratic = 52
-	republican = 0
+	republican = 20
 	democrat = 3
 	authoritarian_left = 0
-	libertarian_right = 45
+	libertarian_right = 25
 	libertarian_left = 0
 }
 

@@ -15,4 +15,19 @@ characters={
 			id = -1
 		}
 	}
+
+	RMX_Jaime_Rodriguez_Calderon = {
+		name = RMX_ricardo_anaya
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/dem_rebels/Jaime_Rodriguez_Calderon.dds"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
 }
