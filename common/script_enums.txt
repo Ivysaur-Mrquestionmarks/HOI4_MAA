@@ -381,11 +381,6 @@ script_enum_equipment_bonus_type = {
 	submarine_4
 	support_equipment
 	support_equipment_1
-	drone_equipment
-	drone_equipment_0
-	drone_equipment_1
-	drone_equipment_2
-	drone_equipment_3
 	light_tank_chassis
 	light_tank_chassis_0
 	light_tank_chassis_1
@@ -396,13 +391,6 @@ script_enum_equipment_bonus_type = {
 	medium_tank_chassis_1
 	medium_tank_chassis_2
 	medium_tank_chassis_3
-	IFV_air_chassis_0
-	IFV_chasis
-	IFV_chasis_0
-	IFV_chasis_1
-	IFV_chasis_2
-	IFV_chasis_3
-	IFV_chasis_4
 	heavy_tank_chassis
 	heavy_tank_chassis_0
 	heavy_tank_chassis_1
@@ -652,13 +640,70 @@ script_enum_equipment_bonus_type = {
 	supersonic_fighter_equipment_1
 	
 	# MAA
+	infantry_AA_equipment
 	infantry_AA_equipment_1
 	infantry_AA_equipment_2
 	infantry_AA_equipment_3
 	infantry_AA_equipment_4
+	infantry_AT_equipment
 	infantry_AT_equipment_1
 	infantry_AT_equipment_2
 	infantry_AT_equipment_3
 	infantry_AT_equipment_4
-	
+	drone_equipment
+	drone_equipment_0
+	drone_equipment_1
+	drone_equipment_2
+	drone_equipment_3
+
+	IFV_air_chassis_0
+	IFV_chasis
+	IFV_chasis_0
+	IFV_chasis_1
+	IFV_chasis_2
+	IFV_chasis_3
+	IFV_chasis_4
+	mechanized_air_equipment
+	mechanized_air_equipment_1
+	mechanized_air_equipment_2
+	mechanized_air_equipment_3
+
+	anti_ship_missile_equipment
+	anti_ship_missile_equipment_1
+	anti_ship_missile_equipment_2
+	anti_ship_missile_equipment_3
+	anti_ship_missile_equipment_4
+	anti_ship_missile_equipment_5
+	cruise_missile_equipment
+	cruise_missile_equipment_0
+	cruise_missile_equipment_1
+	cruise_missile_equipment_2
+	cruise_missile_equipment_3
+	cruise_missile_equipment_4
+	cruise_missile_equipment_5
+	sam_missile_equipment_2
+	sam_missile_equipment_3
+	sam_missile_equipment_4
+
+	transport_heli_equipment
+	transport_heli_equipment_1
+	transport_heli_equipment_2
+	transport_heli_equipment_3
+	transport_heli_equipment_4
+	transport_heli_equipment_COL
+
+	stealth_bomber_airframe_0
+	stealth_bomber_airframe_2
+	stealth_bomber_airframe_3
+
+	ship_hull_assult
+	ship_hull_assult_1
+	ship_hull_assult_2
+	ship_hull_assult_3
+	ship_hull_assult_4
+	ship_hull_coast
+	ship_hull_coast_1
+	ship_hull_coast_2
+	ship_hull_coast_3
+	ship_hull_coast_4
 }
