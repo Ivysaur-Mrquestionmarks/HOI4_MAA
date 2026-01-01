@@ -156,9 +156,9 @@ set_politics = {
 }
 set_popularities = {
 	autocratic = 0
-	republican = 5
+	republican = 20
 	democrat = 70
-	authoritarian_left = 20
+	authoritarian_left = 5
 	libertarian_right = 0
 	libertarian_left = 5
 }
@@ -357,7 +357,7 @@ if = {
 		traits = { operative_master_interrogator operative_tough }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { FRA }
+		nationalities = { FRA USA PRA GLA }
 	}
 }
 
