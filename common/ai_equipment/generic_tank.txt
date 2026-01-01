@@ -5,6 +5,10 @@ generic_light_tanks = {
 
 
 	available_for = {}
+	
+	blocked_for = {
+		FRA
+	}
 
 	roles = {
 		land_light_tank
