@@ -60,10 +60,10 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_air_radar	
-			}
+			#custom_effect_tooltip = {
+			#	localization_key = SP_UNLOCK_PROJECT
+			#	PROJECT = sp_air_radar	
+			#}
 		}
 
 		special_project_specialization = { specialization_air specialization_nuclear }
@@ -230,6 +230,21 @@ technologies = {
 		#	ship_radar_1
 		#	radio_navigation_1
 		#}
+
+		enable_equipment_modules = {
+			limit = {
+				has_dlc = "Gotterdammerung"
+				has_dlc = "No Step Back"
+			}
+			lc_radar
+		}
+
+		enable_equipment_modules = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			ship_radar_1
+		}
 		research_cost = 1.75
 		
 		#folder = {
