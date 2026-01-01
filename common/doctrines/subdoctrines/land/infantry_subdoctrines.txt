@@ -523,7 +523,7 @@ commandos = {
     }
 }
 
-irregulars = {
+irregulars = { ## TODO: Repurpose Later
     track = infantry
     name = SUBDOCTRINE_IRREGULARS
     description = SUBDOCTRINE_IRREGULARS_DESC
@@ -537,6 +537,7 @@ irregulars = {
     }
     visible = {
         has_dlc = "No Compromise, No Surrender"
+		always = no
     }
 
 
@@ -546,15 +547,15 @@ irregulars = {
             factor = 2
             is_major = no
         }
-        modifier = {
-            factor = 0
-            NOT = {
-                OR = {
-                has_template_containing_unit = irregular_infantry
-                has_template_containing_unit = militia
-                }
-            }
-        }
+        #modifier = {
+        #   factor = 0
+        #    NOT = {
+        #        OR = {
+        #        has_template_containing_unit = irregular_infantry
+        #        has_template_containing_unit = militia
+        #        }
+        #    }
+        #}
     }
     irregular_infantry = {
         defense = 0.1
@@ -640,7 +641,7 @@ peoples_war = {
         base = 1
         modifier = {
             factor = 95
-            original_tag = PRC
+            original_tag = PRA
         }
 
         modifier = {
