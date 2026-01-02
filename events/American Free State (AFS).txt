@@ -1934,15 +1934,20 @@ country_event = {
 				    traits = {}
 			    }
 			    set_cosmetic_tag = empty
-				add_ideas = AFS_twilight_idea
+				#add_ideas = AFS_twilight_idea
 				add_stability = -1
-				add_war_support = -1	
+				add_war_support = -1
                 set_political_power = 0
-				add_manpower = -100000000000000000000000
+				add_manpower = -99999999
+				set_party_name = {
+                    ideology = libertarian_left
+                    long_name = AFS_libertarian_left_party_no_one_long
+                    name = AFS_libertarian_left_party_no_one
+                }
 		    }
 		    every_state = { 
 				transfer_state_to = wild
-				add_manpower = -100000000000000000
+				add_manpower = -99999999
 				set_demilitarized_zone = yes
 			}
 		}
