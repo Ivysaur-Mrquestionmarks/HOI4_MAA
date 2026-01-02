@@ -109,21 +109,51 @@
  fleet_P.25.a:0 "They Succeed."
  fleet_P.25.b:0 "They Fail."
 
- pacific_anarchists.1.t:0 ""
+ #Anarchist Events
+
+ pacific_anarchists.1.t:0 "The Libertarian Threat Crushed"
  pacific_anarchists.1.d:0 ""
- pacific_anarchists.1.a:0 ""
+ pacific_anarchists.1.a:0 "The Capitalists, Crushed."
+
+ pacific_anarchists.2.t:0 "The Association of Anarchists Established"
+ pacific_anarchists.2.d:0 ""
+ pacific_anarchists.2.a:0 "A Step Closer Our Anarchist Vision!"
+
+ pacific_anarchists.3.t:0 "The Association of Anarchists Empowered"
+ pacific_anarchists.3.d:0 ""
+ pacific_anarchists.3.a:0 "The Common People Have The Power They Deserve!"
+
+ pacific_anarchists.4.t:0 "A Second Vermin"
+ pacific_anarchists.4.d:0 ""
+ pacific_anarchists.4.a:0 "In Alana We Trust."
+
+ pacific_anarchists.5.t:0 "The United Front Against Reaction"
+ pacific_anarchists.5.d:0 ""
+ pacific_anarchists.5.a:0 "Unite! Oppressed Peoples of America!"
+
+ pacific_anarchists.6.t:0 "Melting Pot"
+ pacific_anarchists.6.d:0 ""
+ pacific_anarchists.6.a:0 "The Outcasts of Society, In One Place!"
+
+ #Libertarian Events
 
  pacific_libertarians.1.t:0 ""
  pacific_libertarians.1.d:0 ""
  pacific_libertarians.1.a:0 ""
 
+ #Democrat Events
+
  pacific_democrats.1.t:0 "Tensions Between The Army and Militias Cool Down"
  pacific_democrats.1.d:0 ""
  pacific_democrats.1.a:0 "Great News!"
 
+ #Junta Events
+
  pacific_junta.1.t:0 "Aquilino Declares National Emergency"
  pacific_junta.1.d:0 ""
  pacific_junta.1.a:0 "We Will Keep Everyone Safe"
+
+ #Path Guide Events
 
  PAC_path_guides.1.t:0 "Path Guides"
  PAC_path_guides.1.d:0 "There are 3 paths after winning the war against Bernie: Military Clique, Republic, Libertarian Unity. Go down the respective parts of your focus tree to get them once your new tree unlocks."

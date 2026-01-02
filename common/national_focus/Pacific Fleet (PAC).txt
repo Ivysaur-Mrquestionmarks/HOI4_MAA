@@ -1317,6 +1317,10 @@ focus_tree = {
 			}
 			unlock_decision_tooltip = PAC_expand_the_association
 			unlock_decision_tooltip = PAC_common_ownership
+			country_event = {
+  				id = pacific_anarchists.2
+    			days = 0
+			}
 		}
 	}
 
@@ -1641,6 +1645,10 @@ focus_tree = {
 		    }
 			add_country_leader_trait = PAC_the_common_people_empowered
 			remove_idea = PAC_unpopular_coup_6
+			country_event = {
+  				id = pacific_anarchists.3
+    			days = 0
+			}
 		}
 	}
 
@@ -1669,6 +1677,10 @@ focus_tree = {
 		completion_reward = {
 			remove_idea = PAC_unpopular_coup_6		
 			add_country_leader_trait = PAC_protector_of_anarchy
+			country_event = {
+  				id = pacific_anarchists.4
+    			days = 0
+			}
 		}
 	}
 
@@ -1782,7 +1794,11 @@ focus_tree = {
 		completion_reward = {
 			add_idea = PAC_live_freely
 			unlock_decision_tooltip = PAC_fight_bigotry
-			unlock_decision_tooltip = PAC_empower_the_oppressed	
+			unlock_decision_tooltip = PAC_empower_the_oppressed
+			country_event = {
+  				id = pacific_anarchists.5
+    			days = 0
+			}
 		}
 	}
 
@@ -1877,7 +1893,11 @@ focus_tree = {
 				    remove_idea = PAC_live_freely_3
 				    add_idea = PAC_live_freely_4
 			    }
-			}		
+			}
+			country_event = {
+  				id = pacific_anarchists.6
+    			days = 0
+			}
 		}
 	}
 
@@ -1929,7 +1949,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = PAC_for_the_revolution }
 		available = {
-			
+			has_completed_focus = PAC_death_of_the_capitalists
 		}
 		ai_will_do = {
 			factor = 5
@@ -2395,7 +2415,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = PAC_for_the_revolution }
 		available = {
-			
+			has_completed_focus = PAC_death_of_the_capitalists
 		}
 		ai_will_do = {
 			factor = 5
@@ -2669,6 +2689,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = PAC_for_the_revolution }
 		available = {
+			has_completed_focus = PAC_death_of_the_capitalists
 			if = {
                limit = { is_ai = yes }
 			   has_completed_focus = PAC_freedom_fighters_of_the_pacific
