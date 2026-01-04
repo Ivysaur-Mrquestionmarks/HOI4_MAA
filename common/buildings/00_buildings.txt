@@ -689,7 +689,7 @@ buildings = {
 	
 	energy_infrastructure = {
 		base_cost = 12000
-		icon_frame = 30
+		icon_frame = 31
 		value = 1
 
 		show_modifier = yes
@@ -708,7 +708,7 @@ buildings = {
 	
 	industrial_infrastructure = {
 		base_cost = 12000
-		icon_frame = 31
+		icon_frame = 32
 		value = 1
 
 		show_modifier = yes
@@ -724,6 +724,44 @@ buildings = {
 			local_resource_gain_efficiency_per_infrastructure = 0.10
 		}
 	}
+	
+	#solar_farm_building = {
+	#	base_cost = 12000
+	#	icon_frame = 33
+	#	value = 1
+#
+#		show_modifier = yes
+#		affects_energy = yes
+#
+#		infrastructure_construction_effect = yes
+#		level_cap = {
+#			state_max = 1
+#			shares_slots = yes
+#			group_by = infrastructure_keystone
+#		}
+#		state_modifiers = {
+#			local_factory_energy_consumption_per_infrastructure = -0.075
+#		}
+#	}
+#	
+#	wind_farm_building = {
+#		base_cost = 12000
+#		icon_frame = 34
+#		value = 1
+#
+#		show_modifier = yes
+#
+#
+#		infrastructure_construction_effect = yes
+#		level_cap = {
+#			state_max = 1
+#			shares_slots = yes
+#			group_by = infrastructure_keystone
+#		}
+#		state_modifiers = {
+#			local_resource_gain_efficiency_per_infrastructure = 0.10
+#		}
+#	}
 }
 
 spawn_points = {
