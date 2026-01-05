@@ -49,6 +49,7 @@ country_event = {
 			remove_idea = SEM_native_people_be_like
 			add_idea = SEM_native_people_be_like_worried
 		}
+		set_country_flag = SEM_relation_system
 		hidden_effect = {
 			country_event = {
 				id = seminoles.4
@@ -68,8 +69,6 @@ country_event = {
 	option = {
 		name = seminoles.4.a
 		add_ideas = SEM_fillibusters
-		complete_national_focus = SEM_problem_of_the_iste_hatke
-		
 	}
 }
 

@@ -19,9 +19,9 @@ focus_tree = {
 			factor = 300
 		}
 		allow_branch = {
-			#NOT = {
+			NOT = {
 				has_completed_focus = SEM_a_new_florida
-			#}
+			}
 		}
 		completion_reward = {
 			country_event = {
@@ -368,9 +368,9 @@ focus_tree = {
 		id = SEM_remembering_the_seminole_wars
 		icon = GFX_goal_SEM_remember_the_seminole_wars
 		cost = 5.00
-		#allow_branch = {
-		#	has_completed_focus = SEM_a_new_florida
-		#}
+		allow_branch = {
+			has_completed_focus = SEM_a_new_florida
+		}
 		ai_will_do = { 
 			factor = 300
 		}
@@ -547,7 +547,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_legacy_of_the_black_seminole_scouts
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_legacy_of_the_black_scouts
 		cost = 5.00
 		x = 1
 		y = 2
@@ -592,7 +592,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_melt_away_into_the_forests
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_melt_away_into_the_forests
 		cost = 5.00
 		x = 1
 		y = 1
@@ -644,7 +644,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_reliable_cheap_arms
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_native_wisdom
 		cost = 5.00
 		x = -1
 		y = 1
@@ -675,7 +675,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_evolution_of_the_medicine_man
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_evolution_of_the_medicine_man
 		cost = 5.00
 		x = -1
 		y = 1
@@ -922,9 +922,9 @@ focus_tree = {
 		id = SEM_a_people_unconquered
 		icon = GFX_goal_SEM_an_unconquered_people
 		cost = 5.00
-		#allow_branch = {
-		#	has_completed_focus = SEM_a_new_florida
-		#}
+		allow_branch = {
+			has_completed_focus = SEM_a_new_florida
+		}
 		ai_will_do = { 
 			factor = 300
 		}
@@ -1319,6 +1319,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SEM_a_people_unconquered
 		}
+		available = {
+			has_completed_focus = SEM_wipe_away_the_remnants_of_bia
+		}
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -1473,7 +1476,7 @@ focus_tree = {
 					has_idea = SEM_white_people_be_like_happy
 				}
 				swap_ideas = {
-					remove_idea = SEM_native_people_be_like_happy
+					remove_idea = SEM_white_people_be_like_happy
 					add_idea = SEM_white_people_be_like_content
 				}
 			}
@@ -1780,7 +1783,11 @@ focus_tree = {
 					add_resistance = -5
 				}
 			}
-			
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = -0.1
+			    #tooltip_side = my_bop_side
+			}
 		}
 	}
 	focus = {
@@ -1827,6 +1834,11 @@ focus_tree = {
 				add_compliance = 20
 				add_resistance = -10
 			}
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = 0.1
+			    #tooltip_side = my_bop_side
+			}
 		}
 	}
 	focus = {
@@ -1847,6 +1859,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SEM_seminole_laws
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = 0.15
+			    #tooltip_side = my_bop_side
+			}
 		}
 	}
 	focus = {
@@ -2037,6 +2054,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SEM_problem_of_the_iste_hatke
 		}
+		available = {
+			NOT = {
+				has_completed_focus = SEM_there_are_only_the_seminoles
+			}
+		}
 		completion_reward = {
 			custom_effect_tooltip = SEM_reconciliation_tt
 			add_power_balance_value = {
@@ -2155,6 +2177,31 @@ focus_tree = {
 			add_popularity = {
 			    ideology = republican
 			    popularity = 0.15
+			}
+			remove_ideas = SEM_fillibusters
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like
+				}
+				remove_idea = has_idea = SEM_native_people_be_like
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like_happy
+				}
+				remove_idea = SEM_native_people_be_like_happy
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_content
+				}
+				remove_idea = SEM_white_people_be_like_content
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_happy
+				}
+				remove_idea = has_idea = SEM_white_people_be_like_happy
 			}
 		}
 	}
@@ -2356,6 +2403,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SEM_a_people_unconquered
+		}
+		available = {
+			has_completed_focus = SEM_wipe_away_the_remnants_of_bia
 		}
 		completion_reward = {
 			add_political_power = -100
@@ -2608,6 +2658,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SEM_a_people_unconquered
+		}
+		available = {
+			has_completed_focus = SEM_wipe_away_the_remnants_of_bia
 		}
 		completion_reward = {
 			580 = {
@@ -3096,6 +3149,9 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = SEM_a_people_unconquered
+		}
+		allow_branch = {
+			has_completed_focus = SEM_a_new_florida
 		}
 		completion_reward = {
 			add_political_power = 100

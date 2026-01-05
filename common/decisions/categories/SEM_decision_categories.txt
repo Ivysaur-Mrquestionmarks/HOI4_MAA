@@ -10,11 +10,15 @@ SEM_balance_of_power_category = {
 }
 SEM_whites_vs_natives = {
 	icon = generic_propaganda
-	
+	visible_when_empty = no
 	allowed = {
 		OR = {
 			original_tag = SEM
 		}
+		has_completed_focus = SEM_problem_of_the_iste_hatke
+	}
+	visible = {
+		has_completed_focus = SEM_problem_of_the_iste_hatke
 	}
 
 }

@@ -85,24 +85,28 @@
  SEM_question_of_blood_desc:0 "Blood quantum is a controversial policy that decides who is Native by the percentage of native blood they have. We currently mandate members have at least a quarter of Seminole blood in them, but this has restricted the amount of members in our tribe. We find ourselves greatly outnumbered in our own nation, so some have pushed for ending blood quantum in our tribe altogether to boost our ranks. A fringe few however, call for the return of the "good old days" where you needed 100% native blood to be considered a member."
 
  SEM_full_bloods_only:0 "Reestablish Full-Blood Citizenship"
- SEM_full_bloods_only_desc:0 ""
+ SEM_full_bloods_only_desc:0 "Decades ago, our reservation demanded each of its members to have full Seminole blood. Unfortunately we have diluted that requirement to a measly 25% to bolster our numbers. We must return to the tradition and revise our stance on this subject matter."
 
  SEM_quarter_bloods:0 "Reaffirm Quarter-Blood Policy"
- SEM_quarter_bloods_desc:0 " "
+ SEM_quarter_bloods_desc:0 "The quarter-blood policy is the compromise between full-blood citizenship and abolishing blood quantum altogether. It has been this way for decades, so why change course now?"
 
  SEM_end_the_policy:0 "End the Policy of B.Q."
- SEM_end_the_policy_desc:0 ""
+ SEM_end_the_policy_desc:0 "Blood quantum is an outdated practice that some tribes have already gotten rid of. We should follow suit. The only requirements to join our tribe from now on is to have an ancestor from the 1957 Tribal Roll and be sponsored by a current member. We don't expect this to be a popular policy among the tribe, but it is a necessity."
 
  SEM_relax_attitudes_towards_interracial_marriages:0 "Destigmatize Interracial Marriage"
+ SEM_relax_attitudes_towards_interracial_marriages_desc:0 "Only relatively recently has our tribe opened up to the idea of interracial marriage. It is still ultimately frowned upon, especially marriages with White people. We must break this stigma if we seek to bring our people and nation into the modern era."
  
  SEM_promote_cooperation_between_the_races:0 "Seek Reconciliation"
+ SEM_promote_cooperation_between_the_races_desc:0 "We must not perpetrate a cycle of violence by attacking our fellow White brothers. Most want to see this nation succeed. Only a fringe few bigots seek to take down what could be an incredible multicultural state that reconciles its brutal history with the United States. Even if we wanted to fight the White man anyways, we are greatly outnumbered."
  
  SEM_establish_associate_tribal_memberships:0 "Establish Associate Tribal Memberships"
+ SEM_establish_associate_tribal_memberships_desc:0 "Associate Tribal Memberships will allow non-tribal entities to partner up with our tribe. These will usually be vendors and organizations who seek to support our tribe and people. We must be willing to show we can work with everyone to improve the lives of this nation."
 
  SEM_problem_of_the_iste_hatke:0 "Problem of the Iste Hatke"
+ SEM_problem_of_the_iste_hatke_desc:0 "The Iste Hatke, or the White man, is still the dominant race in Florida. While we have legitimate claim over this land, we still have to face the reality of our situation. Some hard-headed tribal members want to find a way to completely entrench Native power, while others seek a more liberal solution, such as a pluralistic nation."
 
  SEM_down_the_warpath:0 "Down the Warpath"
- SEM_down_the_warpath_desc:0 " "
+ SEM_down_the_warpath_desc:0 "There cannot be any reconciliation with the race that pillaged our homes and killed the sons and daughters of this proud tribe. We will take minoritarianism to the extreme, and enforce our will, no matter how unpopular it is."
 
  SEM_land_back:0 "Fanaticize the Land Back Movement"
 
@@ -387,8 +391,8 @@
  seminoles.2.d:0 "Chieftan Marcus Osecola Jr. gathered the tribial council together at a small table in the Miami courthouse. He laid down on the table numerous pictures from the past few months of conflict. They were grotesque. Many of the council members looked away at the mere sight of them. \n\n"These have already made their rounds on the internet." Osecola said picking up a photo of one of his soldiers carrying scalps. "The other nations will not take kindly to our ways. Espically the Klan to the north. \n\nOsecola slowly placed down the picture and placed both of his hands on the table as if to brace himself. "We must prepare ourselves for what is to come and if need be, strike first.""
  seminoles.2.a:0 "A hard fought victory"
  
- seminoles.3.t:0 "The End of the Honeymoon"
- seminoles.3.d:0 ""
+ seminoles.3.t:0 "Racial Tensions Boil Over"
+ seminoles.3.d:0 "Protests in Miami and Tampa have rocked our fledling nation. People hoistered the old Floridian flag over government buildings, while others took to burning the Seminole flag. Even our supposed Native allies find themselves hesistant to support us. They claim we do not represent the entire Native community, and some leaders are getting ready to support the protests against us! It seems like everyone is standing poised against us, ready to bring us down."
  seminoles.3.a:0 "Reality comes knocking hard"
  
  seminoles.4.t:0 "Revolt of the Fillibusters"
@@ -468,7 +472,7 @@
  osceola_favored:0 "Osceola's Authority"
 
  #Decisions
-
+ 
  SEM_military_allignment:0 "£GFX_command_power §Y50§!"
  SEM_military_allignment_blocked:0 "£GFX_command_power §R50§!"
 
@@ -481,3 +485,18 @@
  SEM_promote_stability_through_dialogue:0 "§YPromote Stability Through Dialogue§!"
  SEM_remove_compromised_council_members:0 "§YRemove Compromised Council Members§!"
  SEM_reach_out_to_other_tribes:0 "§YReach Out to Other Tribes§!"
+
+ SEM_whites_vs_natives:0 "Managing the Racial Crisis"
+ SEM_whites_vs_natives_desc:0 "Just because we came out victorious in the Floridian Civil War, doesn't mean we won a popular mandate with the people. Our government is strictly a minority government, with the Seminole Tribal Authority technically governing the entire nation, cities included. The predominantly White population has apparently taken issue with this and now multiple groups are agitating against our government. Even the natives are not too enthusiastic about us, seeing how we are but a tiny minority within an already small minority. If we are too complacent, this could spiral into a crisis that may topple our very regime."
+
+ SEM_reassure_whites:0 "Reassure White Citizens"
+
+ SEM_invest_in_reservations:0 "Invest in Native Reservations"
+
+ SEM_grant_the_council_more_power:0 "Decentralize Tribal Authority"
+
+ SEM_city_autonomy:0 "Grant Cities More Autonomy"
+
+ SEM_white_bad_mission:0 "Worsening White Relations"
+
+ SEM_native_bad_mission:0 "Worsening Native Relations"

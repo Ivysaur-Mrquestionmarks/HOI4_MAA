@@ -315,11 +315,13 @@ SEM_whites_vs_natives = {
 			}
 		}
 		visible = {
-			
+			has_completed_focus = SEM_promote_cooperation_between_the_races			
 		}
 		cost = 50
 		
-		days_remove = 35
+		#days_remove = 35
+
+		days_re_enable = 50
 
 		is_good = yes
 
@@ -370,7 +372,339 @@ SEM_whites_vs_natives = {
 			}
 		}
 		modifier = {
+		
+		}
+	}
+
+	SEM_invest_in_reservations = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			NOT = {
+				has_idea = SEM_native_people_be_like_happy
+			}
+		}
+		visible = {
+			has_completed_focus = SEM_promote_cooperation_between_the_races			
+		}
+		#cost = 50
+		
+		days_re_enable = 50
+
+		days_remove = 70
+
+		is_good = yes
+
+		remove_effect = {
+
+		}
+		complete_effect = {
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = 0.05
+			    #tooltip_side = my_bop_side
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like
+				}
+				swap_ideas = {
+					remove_idea = SEM_native_people_be_like
+					add_idea = SEM_native_people_be_like_happy
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like_worried
+				}
+				swap_ideas = {
+					remove_idea = SEM_native_people_be_like_worried
+					add_idea = SEM_native_people_be_like
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like
+				}
+				swap_ideas = {
+					remove_idea = SEM_native_people_be_like
+					add_idea = SEM_native_people_be_like_happy
+				}
+			}
+			581 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+	}
+
+	SEM_grant_the_council_more_power = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			NOT = {
+				has_idea = SEM_native_people_be_like_happy
+			}
+		}
+		visible = {
+			has_completed_focus = SEM_promote_cooperation_between_the_races			
+		}
+		cost = 100
+		
+		days_remove = 70
+
+		days_re_enable = 100
+
+		is_good = yes
+
+		remove_effect = {
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like
+				}
+				swap_ideas = {
+					remove_idea = SEM_native_people_be_like
+					add_idea = SEM_native_people_be_like_happy
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like_worried
+				}
+				swap_ideas = {
+					remove_idea = SEM_native_people_be_like_worried
+					add_idea = SEM_native_people_be_like
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like
+				}
+				swap_ideas = {
+					remove_idea = SEM_native_people_be_like
+					add_idea = SEM_native_people_be_like_happy
+				}
+			}
+		}
+		complete_effect = {
+			
+		}
+		modifier = {
+			power_balance_weekly = -0.02
+		}
+	}
+
+	SEM_city_autonomy = {
+
+		icon = GFX_decision_NBR_uprising
+
+		allowed = {
+			has_country_flag = SEM_relation_system
+		}
+		available = {
+			NOT = {
+				has_idea = SEM_white_people_be_like_happy
+			}
+		}
+		visible = {
+			has_completed_focus = SEM_promote_cooperation_between_the_races			
+		}
+		cost = 100
+		
+		days_remove = 70
+
+		days_re_enable = 100
+
+		is_good = yes
+
+		remove_effect = {
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_content
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like_content
+					add_idea = SEM_white_people_be_like_happy
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like
+					add_idea = SEM_white_people_be_like_content
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_angry
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like_angry
+					add_idea = SEM_white_people_be_like
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_inflamed
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like_inflamed
+					add_idea = SEM_white_people_be_like_angry
+				}
+			}
+		}
+		complete_effect = {
+			
+		}
+		modifier = {
 			political_power_factor = -0.2
 		}
-	}	
+	}
+
+	SEM_white_bad_mission = {
+
+		icon = GFX_decision_NBR_uprising
+
+		allowed = {
+			has_country_flag = SEM_relation_system
+		}
+		available = {
+			OR = {
+				has_completed_focus = SEM_one_nation_two_systems
+				has_completed_focus = SEM_down_the_warpath
+			}
+			
+		}
+		visible = {
+			
+		}
+		#cost = 100
+		
+		#days_remove = 70
+
+		days_re_enable = 100
+
+		days_mission_timeout = 100
+
+		is_good = no
+
+		timeout_effect  = {
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_happy
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like_happy
+					add_idea = SEM_white_people_be_like_content
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_content
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like_content
+					add_idea = SEM_white_people_be_like
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like
+					add_idea = SEM_white_people_be_like_angry
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_angry
+				}
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like_angry
+					add_idea = SEM_white_people_be_like_inflamed
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_white_people_be_like_inflamed
+				}
+				add_stability = -0.1
+			}
+		}
+	}
+	SEM_native_bad_mission = {
+
+		icon = GFX_decision_NBR_uprising
+
+		available = {
+			OR = {
+				has_completed_focus = SEM_one_nation_two_systems
+				has_completed_focus = SEM_down_the_warpath
+			}	
+		}
+		visible = {
+			
+		}
+		#cost = 100
+		
+		#days_remove = 70
+
+		days_re_enable = 100
+
+		days_mission_timeout = 100
+
+		is_good = no
+
+		timeout_effect  = {
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like_happy
+				}
+				swap_ideas = {
+					remove_idea = SEM_native_people_be_like_happy
+					add_idea = SEM_native_people_be_like
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like
+				}
+				swap_ideas = {
+					remove_idea = SEM_native_people_be_like
+					add_idea = SEM_native_people_be_like_worried
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like_worried
+				}
+				swap_ideas = {
+					remove_idea = SEM_native_people_be_like_worried
+					add_idea = SEM_native_people_be_like_angry
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like_angry
+				}
+				swap_ideas = {
+					remove_idea = SEM_native_people_be_like_angry
+					add_idea = SEM_native_people_be_like_inflamed
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = SEM_native_people_be_like_inflamed
+				}
+				add_stability = -0.1
+			}
+		}
+	}
 }
