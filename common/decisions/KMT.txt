@@ -554,6 +554,9 @@ KMT_recruit_judges = {
 		}
 		complete_effect = {
 			set_country_flag = KMT_moraes
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = advisor_Alexandre_Moraes
+			custom_effect_tooltip = KMT_moraes_tt
 		}
 	}
 
@@ -574,6 +577,9 @@ KMT_recruit_judges = {
 		}
 		complete_effect = {
 			set_country_flag = KMT_hale
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = advisor_Brenda_Hale
+			add_offsite_building = { type = industrial_complex level = 3 }
 		}
 	}
 
@@ -594,6 +600,9 @@ KMT_recruit_judges = {
 		}
 		complete_effect = {
 			set_country_flag = KMT_garzon
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = advisor_Baltasar_Garzon
+			add_stability = 0.05
 		}
 	}
 
@@ -614,6 +623,9 @@ KMT_recruit_judges = {
 		}
 		complete_effect = {
 			set_country_flag = KMT_nisar
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = advisor_Mian_Saqib_Nisar
+			add_war_support = 0.05
 		}
 	}
 }

@@ -913,8 +913,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05			
+			add_political_power = 50			
 			add_state_core = 197
 			add_state_core = 198
 			add_state_core = 209
@@ -6705,8 +6704,6 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = KMT_recruit_judges
 			add_political_power = 100
-			add_stability = 0.05
-			add_war_support = 0.05
 		}
 		prerequisite = {
 			focus = KMT_an_army_enforcing_the_court_rules
@@ -7825,7 +7822,7 @@ focus_tree = {
 			set_party_name = {
 				ideology = autocratic
 				long_name = KMT_autocratic_cdp_long
-				name = KMT_autocratic_cdp_papal
+				name = KMT_autocratic_cdp
 			}
 			hidden_effect = {
 				set_politics = {
