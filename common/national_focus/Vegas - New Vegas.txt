@@ -30,25 +30,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = LAS_make_deals_with_allies
-		icon = GFX_goal_unknown
-		relative_position_id = LAS_declare_new_vegas
-		x = -4
-		y = 1
-		prerequisite = {
-			focus = LAS_declare_new_vegas
-		}
-		mutually_exclusive = {
-			focus = LAS_choose_our_allies
-			focus = LAS_fight_our_enemies
-		}
-		cost = 5
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_choose_our_allies
+		id = LAS_the_meeting
 		icon = GFX_goal_unknown
 		relative_position_id = LAS_declare_new_vegas
 		x = 0
@@ -56,169 +38,51 @@ focus_tree = {
 		prerequisite = {
 			focus = LAS_declare_new_vegas
 		}
-		mutually_exclusive = {
-			focus = LAS_make_deals_with_allies
-			focus = LAS_fight_our_enemies
-		}
 		cost = 5
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = LAS_fight_our_enemies
-		icon = GFX_goal_unknown
-		relative_position_id = LAS_declare_new_vegas
-		x = 4
-		y = 1
-		prerequisite = {
-			focus = LAS_declare_new_vegas
-		}
-		mutually_exclusive = {
-			focus = LAS_make_deals_with_allies
-			focus = LAS_choose_our_allies
-		}
-		cost = 5
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_a_deal_with_courier
+		id = LAS_get_real_allies
 		icon = GFX_goal_unknown
 		cost = 5
-		relative_position_id = LAS_make_deals_with_allies
+		relative_position_id = LAS_the_meeting
 		x = -1
 		y = 1
 		prerequisite = {
-			focus = LAS_make_deals_with_allies
+			focus = LAS_the_meeting
 		}
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = LAS_appease_mob
+		id = LAS_sabotage_the_nerds
 		icon = GFX_goal_unknown
 		cost = 5
-		relative_position_id = LAS_make_deals_with_allies
+		relative_position_id = LAS_the_meeting
 		x = 1
 		y = 1
 		prerequisite = {
-			focus = LAS_make_deals_with_allies
+			focus = LAS_the_meeting
 		}
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = LAS_casino_worker_bonus
+		id = LAS_break_their_knees
 		icon = GFX_goal_unknown
 		cost = 5
-		#relative position id = LAS_make_deals_with_allies
-		x = 7
-		y = 3
-		prerequisite = {
-			focus = LAS_a_deal_with_courier
-		}
-		prerequisite = {
-			focus = LAS_appease_mob
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_question_work_courier
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = LAS_choose_our_allies
-		x = -1
-		y = 1
-		prerequisite = {
-			focus = LAS_choose_our_allies
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_question_work_mob
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = LAS_choose_our_allies
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = LAS_choose_our_allies
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_support_our_allies
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = LAS_choose_our_allies
+		relative_position_id = LAS_the_meeting
 		x = 0
 		y = 2
 		prerequisite = {
-			focus = LAS_question_work_courier
+			focus = LAS_get_real_allies
 		}
 		prerequisite = {
-			focus = LAS_question_work_mob
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_build_loyal_army
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = LAS_fight_our_enemies
-		x = -1
-		y = 1
-		prerequisite = {
-			focus = LAS_fight_our_enemies
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_attack_courier
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = LAS_fight_our_enemies
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = LAS_fight_our_enemies
-		}
-		#prerequisite = {
-			focus = LAS_build_loyal_army
-		{
-		completion_reward = {
-			
-		}
-		available = {
-			has_completed_focus = LAS_build_loyal_army
-		}
-	}
-	focus = {
-		id = LAS_ohno
-		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_fight_our_enemies
-		x = 0
-		y = 2
-		prerequisite = {
-			focus = LAS_build_loyal_army
-		}
-		prerequisite = {
-			focus = LAS_attack_courier
+			focus = LAS_sabotage_the_nerds
 		}
 		completion_reward = {
 			
@@ -228,121 +92,34 @@ focus_tree = {
 		id = LAS_showdown_at_wynn_casino
 		icon = GFX_goal_unknown
 		cost = 10
-		relative_position_id = LAS_support_our_allies
-		x = 0
-		y = 2
-		prerequisite = {
-			focus = LAS_casino_worker_bonus
-			focus = LAS_support_our_allies
-			focus = LAS_ohno
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_clock_strikes_midnight
-		icon = GFX_goal_unknown
-		cost = 0
-		relative_position_id = LAS_showdown_at_wynn_casino
-		x = -1
-		y = 1
-		prerequisite = {
-			focus = LAS_showdown_at_wynn_casino
-		}
-		mutually_exclusive = {
-			focus = LAS_the_casino_burns
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_the_casino_burns
-		icon = GFX_goal_unknown
-		cost = 0
-		relative_position_id = LAS_showdown_at_wynn_casino
-		x = 18
-		y = 1
-		prerequisite = {
-			focus = LAS_showdown_at_wynn_casino
-		}
-		mutually_exclusive = {
-			focus = LAS_clock_strikes_midnight
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_render_unto_courier
-		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_clock_strikes_midnight
-		x = -16
-		y = 1
-		prerequisite = {
-			focus = LAS_clock_strikes_midnight
-		}
-		mutually_exclusive = {
-			focus = LAS_the_house_always_wins
-			focus = LAS_aint_that_a_kick_in_the_head
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_the_house_always_wins
-		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_clock_strikes_midnight
+		relative_position_id = LAS_break_their_knees
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = LAS_clock_strikes_midnight
-		}
-		mutually_exclusive = {
-			focus = LAS_render_unto_courier
-			focus = LAS_aint_that_a_kick_in_the_head
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_aint_that_a_kick_in_the_head
-		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_clock_strikes_midnight
-		x = 16
-		y = 1
-		prerequisite = {
-			focus = LAS_clock_strikes_midnight
-		}
-		mutually_exclusive = {
-			focus = LAS_the_house_always_wins
-			focus = LAS_render_unto_courier
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_the_burned_man
-		icon = GFX_goal_unknown
-		cost = 3
-		relative_position_id = LAS_the_casino_burns
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = LAS_the_casino_burns
+			focus = LAS_break_their_knees
 		}
 		completion_reward = {
 			
 		}
 	}
 	#Courier Path#
+	focus = {
+		id = LAS_render_unto_courier
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_showdown_at_wynn_casino
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_showdown_at_wynn_casino
+		}
+		mutually_exclusive = {
+			focus = LAS_the_house_always_wins
+		}
+		completion_reward = {
+			
+		}
+	}
 	focus = {
 		id = LAS_take_control_of_strip
 		icon = GFX_goal_unknown
@@ -407,7 +184,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 4
 		relative_position_id = LAS_new_vegas_secured
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = { 
 			focus = LAS_new_vegas_secured
@@ -421,7 +198,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		relative_position_id = LAS_new_vegas_secured
-		x = 1
+		x = 2
 		y = 1
 		prerequisite = { 
 			focus = LAS_new_vegas_secured
@@ -435,7 +212,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		relative_position_id = LAS_seize_casinos
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = { 
 			focus = LAS_seize_casinos
@@ -449,7 +226,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 4
 		relative_position_id = LAS_win_hearts_and_minds
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = { 
 			focus = LAS_win_hearts_and_minds
@@ -462,11 +239,11 @@ focus_tree = {
 		id = LAS_restore_order
 		icon = GFX_goal_unknown
 		cost = 5
-		relative_position_id = LAS_fight_crime
-		x = 0
+		relative_position_id = LAS_seize_casinos
+		x = 1
 		y = 1
 		prerequisite = { 
-			focus = LAS_fight_crime
+			focus = LAS_seize_casinos
 		}
 		completion_reward = {
 			
@@ -476,11 +253,11 @@ focus_tree = {
 		id = LAS_make_oct_23_a_national_holiday
 		icon = GFX_goal_unknown
 		cost = 2
-		relative_position_id = LAS_rebuild_postal_service
-		x = 0
+		relative_position_id = LAS_win_hearts_and_minds
+		x = 1
 		y = 1
 		prerequisite = { 
-			focus = LAS_rebuild_postal_service
+			focus = LAS_win_hearts_and_minds
 		}
 		completion_reward = {
 			
@@ -492,12 +269,18 @@ focus_tree = {
 		cost = 1
 		relative_position_id = LAS_new_vegas_secured
 		x = 0
-		y = 4
+		y = 3
 		prerequisite = { 
 			focus = LAS_restore_order
 		}
-		prerequisite = {
+		prerequisite = { 
 			focus = LAS_make_oct_23_a_national_holiday
+		}
+		prerequisite = { 
+			focus = LAS_rebuild_postal_service
+		}
+		prerequisite = { 
+			focus = LAS_fight_crime
 		}
 		completion_reward = {
 			
@@ -552,6 +335,20 @@ focus_tree = {
 		}
 		prerequisite = { 
 			focus = LAS_our_direction
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_placeholder
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = 
+		x = 
+		y = 
+		prerequisite = {
+			focus = 
 		}
 		completion_reward = {
 			
