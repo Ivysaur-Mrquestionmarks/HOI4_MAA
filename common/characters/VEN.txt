@@ -48,7 +48,7 @@ characters={
 		name = "Edmundo Gonzales"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/VEN/VEN_edmundo_gonzalez _civilwar.tga"
+				large = "gfx/leaders/VEN/VEN_edmundo_gonzalez_civilwar.tga"
 			}
 		}
 		country_leader = {
@@ -82,6 +82,32 @@ characters={
 			ideology = Christian_Libertarianism
 			traits = { professional_crisis_solver }
 		}
+	}
+	VEN_maria_corina_machado = {
+		name = "María Corina Machado"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VEN/VEN_maria_machado.tga"
+			}
+		}
+		country_leader = {
+			desc = "DESC_LEADER_MARIA_MACHADO"
+			ideology = trumpist
+			traits = { crowned_adder }
+		}
+	}
+	VEN_maria_corina_machado_civil_war = {
+		name = "María Corina Machado"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VEN/VEN_maria_machado.tga"
+			}
+		}
+		#country_leader = {
+		#	desc = "DESC_LEADER_MARIA_MACHADO"
+		#	ideology = trumpist
+		#	traits = { crowned_adder }
+		#}
 	}
 
 

@@ -154,6 +154,26 @@ country_event = {
 		VEN_richard_vargas = {
 			set_nationality = PREV
 		}
+		VEN_maria_corina_machado_civil_war = {
+			set_nationality = PREV
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					original_tag = VEN
+					has_government = democrat
+				}
+				add_country_leader_role = {
+				    character = VEN_maria_corina_machado_civil_war
+				    promote_leader = yes
+				    country_leader = {
+				        ideology = trumpist
+				        traits = { crowned_adder }
+				    }
+				}
+				country_event = { id = poor_people.6 days = 35 }
+			}
+		}
 	}
 }
 
@@ -189,6 +209,44 @@ country_event = {
 			add_country_leader_trait = {
 			    ideology = communism
 			    trait = VEN_vercingetorix
+			}
+		}
+	}
+}
+
+#Machado takes over?
+country_event = {
+	id = poor_people.6
+	title = poor_people.6.t
+	desc = poor_people.6.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#no ty
+	option = {
+		name = poor_people.6.a
+		ai_chance = {
+			factor = 40
+		}
+		add_stability = 0.05
+	}
+	#do it
+	option = {
+		name = poor_people.6.b
+		ai_chance = {
+			factor = 60
+		}
+		add_popularity = {
+			ideology = republican
+			popularity = 0.66
+		}
+		set_politics = {
+		    ruling_party = republican
+		    elections_allowed = yes
+		}
+		effect_tooltip = {
+			VEN_maria_corina_machado_civil_war = {
+				add_country_leader_trait = crowned_adder
 			}
 		}
 	}
