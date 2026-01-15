@@ -84,6 +84,13 @@ country_event = {
 			id = poor_people.4
 			days = 3
 		}
+		hidden_effect = {
+			set_portraits = {
+			    character = VEN_nicolas_maduro
+			    army = { large ="GFX_portrait_maduro_war" }
+			    civilian = { large ="GFX_portrait_maduro_war" }
+			}
+		}
 	}
 }
 
@@ -146,6 +153,43 @@ country_event = {
 		}
 		VEN_richard_vargas = {
 			set_nationality = PREV
+		}
+	}
+}
+
+#Maduro wins Venezuelan Civil War - Portrait Change & Leader Traits
+country_event = {
+	id = poor_people.5
+	title = poor_people.5.t
+	desc = poor_people.5.d
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = venezuelan_civil_war
+		original_tag = VEN
+		has_government = authoritarian_left
+		has_war = no
+		has_country_leader = {
+			character = VEN_nicolas_maduro
+			ruling_only = yes
+		}
+	}
+	option = {
+		name = poor_people.5.a
+		set_portraits = {
+		    character = VEN_nicolas_maduro
+		    army = { large ="GFX_portrait_maduro_postwar" }
+		    civilian = { large ="GFX_portrait_maduro_postwar" }
+		}
+		VEN_nicolas_maduro = {
+			swap_country_leader_traits = {
+			    remove = dictator
+			    add = VEN_super_bigote
+			    ideology = communism
+			}
+			add_country_leader_trait = {
+			    ideology = communism
+			    trait = VEN_vercingetorix
+			}
 		}
 	}
 }

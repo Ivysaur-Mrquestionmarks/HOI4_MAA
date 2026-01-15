@@ -193,4 +193,14 @@ spriteTypes = {
 		name = "GFX_portrait_Portrait_Eternal_James_Mattis_Vanilla_MAA_copy"
 		texturefile = "gfx/leaders/AFS/Portrait_Eternal_James_Mattis_Vanilla_MAA_copy.dds"
 	}
+
+	#Super Bigote
+	spriteType = {
+		name = "GFX_portrait_maduro_war"
+		texturefile = "gfx/leaders/VEN/maduro_war.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_maduro_postwar"
+		texturefile = "gfx/leaders/VEN/maduro_post_war.dds"
+	}
 }
