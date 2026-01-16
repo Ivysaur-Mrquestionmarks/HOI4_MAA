@@ -203,4 +203,10 @@ spriteTypes = {
 		name = "GFX_portrait_maduro_postwar"
 		texturefile = "gfx/leaders/VEN/maduro_post_war.dds"
 	}
+
+	#old russian
+	spriteType = {
+		name = "GFX_portrait_older_vitaly"
+		texturefile = "gfx/leaders/FLA/vitalyzd_OLD.tga"
+	}
 }

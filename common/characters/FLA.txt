@@ -713,4 +713,21 @@ characters={
 			logistics_skill = 1
 		}
 	}
+	FLA_vitalyzdtv = {
+		name = "Vitaly Zdorovetskiy"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/FLA/Vitaly_Zdorovetskiy_General.dds"
+				large = "gfx/leaders/FLA/vitalyzdtv.tga"
+			}
+		}
+		corps_commander = {
+			traits = { media_personality harsh_leader substance_addict  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 }
