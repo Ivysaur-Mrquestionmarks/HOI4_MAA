@@ -13,5 +13,17 @@ ideas = {
 				send_volunteer_size = 2
 			}
 		}
+
+		VEN_quid_pro_quo = {
+			picture = USA_military_overconfidence
+			available = {
+				has_government = republican
+			}
+			modifier = {
+				send_volunteer_divisions_required = -1.0
+				send_volunteers_tension = -1.0
+				send_volunteer_size = 2
+			}
+		}
 	}
 }
