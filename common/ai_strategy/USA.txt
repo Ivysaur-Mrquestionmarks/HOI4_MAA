@@ -201,3 +201,33 @@ BRA_support_USA = {
 	    value = 500
 	}
 }
+MACHADO_HELP_DRUMPF = {
+	allowed = {
+		original_tag = VEN
+	}
+	enable = {
+		has_government = republican
+		country_exists = USA
+		USA = {
+			has_government = republican
+		}
+		has_war = no
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = USA }
+			NOT = { USA = { has_government = republican } }
+		}
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "USA"
+		value = 500
+	}
+	ai_strategy = {
+		type = support
+		id = "USA"
+		value = 200
+	}
+}
