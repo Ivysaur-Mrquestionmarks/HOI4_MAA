@@ -404,6 +404,12 @@
  KMT_agency_expanded_1:0 "Expanded Agency"
  KMT_agency_expanded_1_desc:0 "We have decided that having a strong Intelligence Agency is essential for our security."
 
+ KMT_coalition_of_the_willing_5:0 "United Coalition"
+ KMT_coalition_of_the_willing_5_desc:0 "Through careful diplomacy, shared interests, and the looming threats beyond Wisconsin's borders, the coalition has matured into a disciplined and dependable wartime alliance. Each member now acts with a unified purpose, lending legitimacy abroad and stability at home. While internal rivalries still linger beneath the surface, the coalition is finally strong enough to shape the future of America."
+
+ KMT_compromise_politics_3: "Compromise Politics"
+ KMT_compromise_politics_3_desc: "A delicate but functional balance has been struck between competing factions, allowing national policy to move forward."
+
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
 ##       ##     ## ##       ####  ##    ##    ##       
@@ -1215,6 +1221,18 @@
  KMT_gl_reconstruction_zone_desc:0 "Our partnership with the NPA has proven fruitful, but cooperation alone is not enough. By establishing a formal Reconstruction Zone in the Great Lakes region, we can coordinate redevelopment, restore order, and build the foundations of a stable post-war America. Together with our newfound allies."
  KMT_betray_npa:0 "Betray the [NPA.GetName]"
  KMT_betray_npa_desc:0 "The alliance with the NPA was always meant to be temporary. Now that our position is secure and our military is strong, it is time to cast aside the facade of cooperation and seize control of America's destiny. A New America will rise unified under our rule, without rivals on the inside and without compromise on the outside."
+ KMT_formalize_the_coalition: "Formalize the Coalition"
+ KMT_formalize_the_coalition_desc: "The loose alliance that carried us through the darkest days must now be reforged into something permanent. Whether born of cooperation or conquest, the Coalition of the Willing must become a unified political and military bloc under our leadership."
+ KMT_national_unity: "National Unity"
+ KMT_national_unity_desc: "The old divisions of left and right nearly destroyed America. Only through compromise, discipline, and shared sacrifice can a new political order emerge: one that binds together patriots of every faction under a single banner."
+ KMT_push_east: "Push East"
+ KMT_push_east_desc: "The warlords of the East still cling to true American land. Their time has passed. The march east will shatter the last warlords and pretenders standing between us and national reunification."
+ KMT_push_south: "Push South"
+ KMT_push_south_desc: "The Confederates still defy the authority of the new America. Their rebellion must be crushed, their banners torn down, and their territory brought back into the Union by force if necessary."
+ KMT_push_dc: "March on Washington"
+ KMT_push_dc_desc: "Washington once stood as the heart of the Republic. Now it is little more than a symbol held by broken regimes and failed leaders. We will reclaim the capital and restore its place as the center of American power."
+ KMT_new_america: "A New America"
+ KMT_new_america_desc: "The war is over. The continent is united. From the ruins of the old republic rises a new America. One stronger, more disciplined, and forged in fire. The long road of reunification has ended. Now the work of rebuilding begins." 
 
  # Expansion
  KMT_backstab_michigan:0 "Backstab [DET.GetName]"

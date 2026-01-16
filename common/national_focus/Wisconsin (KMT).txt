@@ -5783,7 +5783,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KMT_coalition_of_the_willing_4
+				add_idea = KMT_coalition_of_the_willing_5
+			}
 		}
 		prerequisite = {
 			focus = KMT_gl_reconstruction_zone
@@ -5802,6 +5805,8 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			has_completed_focus = KMT_fiscal_conservatism
+			has_completed_focus = KMT_social_liberalism
 		}
 		
 		bypass = {
@@ -5810,7 +5815,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			swap_ideas = {
+					add_idea = KMT_compromise_politics_3
+					remove_idea = KMT_compromise_politics_2
+				}
 		}
 		prerequisite = {
 			focus = KMT_formalize_the_coalition
@@ -5836,7 +5844,25 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			every_country_with_original_tag = {
+				original_tag_to_check = AFS
+				ROOT = {
+					create_wargoal = {
+						target = PREV 
+						type = annex_everything
+					}
+				}
+			}
+			effect_kill_kentucky = yes
+			every_country_with_original_tag = {
+				original_tag_to_check = NRA
+				ROOT = {
+					create_wargoal = {
+						target = PREV 
+						type = annex_everything
+					}
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_betray_npa
@@ -5862,7 +5888,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			RVR_kill_the_CSA = yes
 		}
 		prerequisite = {
 			focus = KMT_push_east
@@ -5888,7 +5914,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = { 
+				limit = { country_exists = FRA }
+				create_wargoal = {
+					target = FRA
+					type = annex_everything
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_push_south
@@ -5909,6 +5941,11 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			controls_state = 242
+			USA = { exists = no }
+			FRA = { exists = no }
+			CSA = { exists = no }
+			PRA = { exists = no }
 		}
 		
 		bypass = {
@@ -5917,7 +5954,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_ideas = KMT_america_restored
+			add_state_core = 242
+			set_capital = {
+				state = 242
+  				remember_old_capital = no
+			}
 		}
 		prerequisite = {
 			focus = KMT_push_dc
