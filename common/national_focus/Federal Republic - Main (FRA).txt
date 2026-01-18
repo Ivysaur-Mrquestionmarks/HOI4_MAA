@@ -5971,16 +5971,18 @@ focus_tree = {
 	focus = {
 		id = FRA_kill_tim
 		icon = GFX_goal_FRA_kill_tim
-		cost = 4.00
-		prerequisite = {
-			focus = FRA_consolidate_realm
-		}
+		cost = 4
 		x = 1
 		y = 1
 		relative_position_id = FRA_consolidate_realm
+		
+		prerequisite = {
+			focus = FRA_consolidate_realm
+		}
 		bypass = {
 			TIM = { exists = no }
 		}
+		
 		will_lead_to_war_with = TIM
 		completion_reward = {
 			create_wargoal = {
