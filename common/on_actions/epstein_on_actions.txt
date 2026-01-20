@@ -656,6 +656,41 @@ on_actions = {
 				}
 				GTB = { country_event = { id = cub.1 days = 1 } }
 			}
+			else_if = {
+				limit = {
+					FROM = {  #проигравший
+						original_tag = AFO
+						has_completed_focus = AFO_3_temper_madness
+					}
+				}
+				AFO = {
+					drop_cosmetic_tag = yes
+					AFO_matthew_higer = {
+						set_character_name = "Matthew Higer"
+					}
+					AFO_christopher_azzano = {
+						set_character_name = "Christopher Azzano"
+					}
+					AFO_john_teichert = {
+						set_character_name = "John Teichert"
+					}
+					load_focus_tree = area51start
+					unlock_national_focus = AFO_deploy_garrison
+					unlock_national_focus = AFO_on_our_own
+					unlock_national_focus = AFO_show_goes_on
+					unlock_national_focus = AFO_solidify_border
+					unlock_national_focus = AFO_secure_armaments
+					unlock_national_focus = AFO_experimental_production
+					unlock_national_focus = AFO_air_defence
+					unlock_national_focus = AFO_perimeter_zero
+					unlock_national_focus = AFO_martial_law
+					unlock_national_focus = AFO_kidnappings
+					unlock_national_focus = AFO_conscript_children
+					unlock_national_focus = AFO_experimental_weaponry
+					unlock_national_focus = AFO_experimental_cloning
+					unlock_national_focus = AFO_play_it_safe
+				}
+			}
 			#else_if = {
 			#	limit = {
 			#		original_tag = USA #победитель
