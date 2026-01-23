@@ -187,6 +187,37 @@ music = {
 	}
 }
 music = {
+	song = "losing_my_religion"
+
+	chance = {
+		modifier = {
+			factor = 5
+			NOT = {
+				OR = {
+					has_government = libertarian_right
+					has_government = autocratic
+					has_government = republican
+				}
+			}
+		}
+	}
+}
+music = {
+	song = "karma_police"
+
+	chance = {
+		modifier = {
+			factor = 10
+			NOT = {
+				OR = {
+					has_government = autocratic
+					has_government = republican
+				}
+			}
+		}
+	}
+}
+music = {
 	song = "fuck_the_system"
 
 	chance = {
@@ -250,6 +281,16 @@ music = {
 	}
 }
 music = {
+	song = "blackhole_sun"
+	
+	chance = {
+		modifier = {
+			factor = 8
+			has_war = yes
+		}
+	}
+}
+music = {
 	song = "Sabotage"
 	
 	chance = {
@@ -269,11 +310,40 @@ music = {
 	}
 }
 music = {
+	song = "american_pie"
+	
+	chance = {
+		modifier = {
+			factor = 6
+			has_war = yes
+		}
+	}
+}
+music = {
 	song = "sweet_child_o_mine"
 	
 	chance = {
 		modifier = {
 			factor = 4
+		}
+	}
+}
+music = {
+	song = "you_give_love_a_bad_name"
+	
+	chance = {
+		modifier = {
+			factor = 7
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "the_final_countdown"
+	
+	chance = {
+		modifier = {
+			factor = 3
 		}
 	}
 }
@@ -359,11 +429,29 @@ music = {
 	}
 }
 music = {
+	song = "dont_stop_believing"
+	
+	chance = {
+		modifier = {
+			factor = 4
+		}
+	}
+}
+music = {
 	song = "rebellion"
 	
 	chance = {
 		modifier = {
-			factor = 8
+			factor = 6
+		}
+	}
+}
+music = {
+	song = "dream_on"
+	
+	chance = {
+		modifier = {
+			factor = 6
 		}
 	}
 }
@@ -373,6 +461,25 @@ music = {
 	chance = {
 		modifier = {
 			factor = 8
+		}
+	}
+}
+music = {
+	song = "can_you_feel_my_heart"
+	
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "sweet_home_alabama"
+	
+	chance = {
+		modifier = {
+			factor = 8
+			original_tag = CSA
 		}
 	}
 }
@@ -399,6 +506,16 @@ music = {
 }
 music = {
 	song = "knights_of_cydonia"
+	
+	chance = {
+		modifier = {
+			factor = 6
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "take_me_out"
 	
 	chance = {
 		modifier = {
@@ -444,6 +561,15 @@ music = {
 	chance = {
 		modifier = {
 			factor = 3
+		}
+	}
+}
+music = {
+	song = "break_stuff"
+	
+	chance = {
+		modifier = {
+			factor = 5
 		}
 	}
 }
@@ -503,6 +629,16 @@ music = {
 	}
 }
 music = {
+	song = i_just_died_in_your_arms
+	
+	chance = {
+		modifier = {
+			factor = 9
+			has_war = yes
+		}
+	}
+}
+music = {
 	song = eye_of_the_tiger
 	
 	chance = {
@@ -521,6 +657,20 @@ music = {
 		modifier = {
 			factor = 7
 			original_tag = PRA
+		}
+	}
+}
+music = {
+	song = dani_california
+	chance = {
+		modifier = {
+			factor = 5
+		}
+		modifier = {
+			factor = 7
+			has_government = autocratic
+			has_government = republican
+			has_government = libertarian_right
 		}
 	}
 }

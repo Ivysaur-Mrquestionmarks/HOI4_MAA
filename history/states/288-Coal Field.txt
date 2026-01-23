@@ -18,17 +18,20 @@ state={
 			arms_factory = 2 #Naval Ordnance Station Louisville MAYBE ADD +1?
 			air_base = 2
 		}
-		victory_points = { #Louisville
-		4173 25 
+		victory_points = { 
+			4173 25 #Louisville
 		}
-		victory_points = { #Owensboro
-		9482 6 
+		victory_points = { 
+			9482 6 #Owensboro
 		}
-		victory_points = { #Elizabethtown
-		3959 3
+		victory_points = { 
+			3959 3 #Elizabethtown
 		}
 		victory_points = {
 			9395 3 #Frankfort
+		}
+		victory_points = {
+			9441 2 #Fort Knox
 		}
 	}
  state_category=metropolis

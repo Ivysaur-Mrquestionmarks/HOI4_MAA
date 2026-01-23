@@ -256,6 +256,23 @@ music = {
 	}
 }
 music = {
+	song = "zombie"
+	
+	chance = {
+		modifier = {
+			factor = 10
+			OR = {
+				has_government = libertarian_left
+				has_country_leader = { name = "Theodore Kaczynski" ruling_only = yes }
+				original_tag = GLA
+			}
+			NOT = {
+				original_tag = PRA
+			}
+		}
+	}
+}
+music = {
 	song = "underground_lockdown"
 	
 	chance = {
@@ -496,6 +513,15 @@ music = {
 	}
 }
 music = {
+	song = "amerika"
+
+	chance = {
+		modifier = {
+			factor = 4
+		}
+	}
+}
+music = {
 	song = "red_spy_is_in_the_bass"
 
 	chance = {
@@ -579,6 +605,16 @@ music = {
 	chance = {
 		modifier = {
 			factor = 11
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "amerikhastan"
+
+	chance = {
+		modifier = {
+			factor = 3
 			has_war = yes
 		}
 	}
@@ -936,6 +972,18 @@ music = {
 		modifier = {
 			factor = 7
 			original_tag = BAH
+		}
+	}
+}
+music = {
+	song = "all_star"
+
+	chance = {
+		modifier = {
+			factor = 9
+		}
+		modifier = {
+			factor = 7
 		}
 	}
 }
