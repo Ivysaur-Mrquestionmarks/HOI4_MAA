@@ -33,4 +33,75 @@ buildings = {
 			shares_slots = yes
 		}
 	}
+	
+	outdated_nuclear_reactor = {
+		is_buildable = no
+		spawn_point = nuclear_reactor_spawn
+		show_on_map = 0
+		base_cost = 35000
+		icon_frame = 27
+		#nuclear_reactor = yes
+		value = 10
+		infrastructure_construction_effect = yes
+		
+		country_modifiers = {
+			modifiers = {
+				fuel_gain_from_states = 5.0 #per hour
+				country_resource_chromium = -20 #uranium
+				#consumer_goods_factor = -0.05
+				country_resource_coal = 10 #You are consuming another form of energy now.
+			}
+		}
+
+		state_modifiers = {
+			state_production_speed_buildings_factor = 0.05
+			local_building_slots_factor = 0.05
+			state_resources_factor = 0.05
+			local_factory_energy_consumption = -0.15 #Buffed due to uranium cost		
+		}
+
+		level_cap = {
+			state_max = 3
+			shares_slots = yes
+			group_by = reactors
+		}
+	}
+	
+	#solar_farm_building = {
+	#	base_cost = 12000
+	#	icon_frame = 33
+	#	value = 1
+#
+#		show_modifier = yes
+#		affects_energy = yes
+#
+#		infrastructure_construction_effect = yes
+#		level_cap = {
+#			state_max = 1
+#			shares_slots = yes
+#			group_by = infrastructure_keystone
+#		}
+#		state_modifiers = {
+#			local_factory_energy_consumption_per_infrastructure = -0.075
+#		}
+#	}
+#	
+#	wind_farm_building = {
+#		base_cost = 12000
+#		icon_frame = 34
+#		value = 1
+#
+#		show_modifier = yes
+#
+#
+#		infrastructure_construction_effect = yes
+#		level_cap = {
+#			state_max = 1
+#			shares_slots = yes
+#			group_by = infrastructure_keystone
+#		}
+#		state_modifiers = {
+#			local_resource_gain_efficiency_per_infrastructure = 0.10
+#		}
+#	}
 }
