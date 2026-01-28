@@ -5996,12 +5996,12 @@ focus_tree = {
 			add_stability = 0.05
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 5000
+				amount = 3500
 				producer = KMT
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment
-				amount = 5000
+				amount = 3500
 				producer = KMT
 			}
 		}
@@ -9808,6 +9808,11 @@ focus_tree = {
 			}
 			add_resource = {
     			type = aluminium
+    			amount = 4
+    			state = 106
+			}
+			add_resource = {
+    			type = coal
     			amount = 4
     			state = 106
 			}

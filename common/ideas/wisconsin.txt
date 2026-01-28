@@ -1738,6 +1738,7 @@ ideas = {
 			removal_cost = 0
 			modifier = {
 				country_resource_oil = 25
+				country_resource_coal = 25
 			}			
 			research_bonus = {
 				synth_resources = 0.15
