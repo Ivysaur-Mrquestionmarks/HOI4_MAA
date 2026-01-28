@@ -2712,44 +2712,43 @@ country_event = {
 	}
 }
 
-#Rising Above Death
-country_event = {
-	id = mattis.15
-	title = mattis.15.t
-	desc = mattis.15.d
-	picture = event_AFS_mattis_cyborg
-	is_triggered_only = yes
-	#mean_time_to_happen = { days = 30 }
-	fire_only_once = yes
-	immediate = {
-    
-	}
-	option = {
-		name = mattis.15.a
-		ai_chance = {
-			factor = 100
-		}
-		promote_character = {
-            character = AFS_james_mattis
-            ideology = military_dictatorship
-        }
-		add_trait = {
-            character = AFS_james_mattis
-            ideology = military_dictatorship
-            trait = AFS_immortal_cyborg
-        }
-		remove_trait = {
-            character = AFS_james_mattis
-            ideology = military_dictatorship
-            trait = AFS_ill
-        }
-		set_country_leader_portrait = {
-	        ideology = military_dictatorship
-	        portrait = "GFX_portrait_Portrait_Eternal_James_Mattis_Vanilla_MAA_copy"
-        }
-		set_country_flag = AFS_mattis_cyborg
-	}
-}
+#Rising Above Death OLD EVENT
+#country_event = {
+#	id = mattis.15
+#	title = mattis.15.t
+#	desc = mattis.15.d
+#	picture = event_AFS_mattis_cyborg
+#	is_triggered_only = yes
+#	#mean_time_to_happen = { days = 30 }
+#	fire_only_once = yes
+#	immediate = {
+#    
+#	}
+#	option = {
+#		name = mattis.15.a
+#		ai_chance = {
+#			factor = 100
+#		}
+#           character = AFS_james_mattis
+#            ideology = military_dictatorship
+#        }
+#		add_trait = {
+#            character = AFS_james_mattis
+#            ideology = military_dictatorship
+#           trait = AFS_immortal_cyborg
+#        }
+#		remove_trait = {
+#            character = AFS_james_mattis
+#            ideology = military_dictatorship
+#            trait = AFS_ill
+#        }
+#		set_country_leader_portrait = {
+#	        ideology = military_dictatorship
+#	        portrait = "GFX_portrait_Portrait_Eternal_James_Mattis_Vanilla_MAA_copy"
+#        }
+#		set_country_flag = AFS_mattis_cyborg
+#	}
+#}
 
 #Americas Military Purification
 news_event = {
@@ -2977,6 +2976,81 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+	}
+}
+
+#Victory Speech
+country_event = {
+	id = mattis.24
+	title = mattis.24.t
+	desc = mattis.24.d
+	picture = event_AFS_stability
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = mattis.24.a
+		ai_chance = {
+			factor = 100
+		}
+		country_event = {
+			id = mattis.25
+			days = 0
+		}
+	}
+}
+
+#He Escapes
+country_event = {
+	id = mattis.25
+	title = mattis.25.t
+	desc = mattis.25.d
+	picture = event_AFS_stability
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = mattis.25.a
+		ai_chance = {
+			factor = 100
+		}
+		country_event = {
+			id = mattis.26
+			days = 10
+		}
+		country_event = {
+			id = mattis.13
+			days = 200
+		}
+	}
+}
+
+#The Interrogation of Vermin and Hawkins
+country_event = {
+	id = mattis.26
+	title = mattis.26.t
+	desc = mattis.26.d
+	picture = event_AFS_stability
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = mattis.26.a
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = AFS_kill_loyalists
+		unlock_decision_tooltip = AFS_hunt_down_vermin_loyalists
+		unlock_decision_tooltip = AFS_hunt_down_hawkins_loyalists
 	}
 }
 

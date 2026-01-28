@@ -2364,8 +2364,8 @@ focus_tree = {
             }
 			hidden_effect = {
 				country_event = {
-				    id = mattis.13
-				    days = 650
+				    id = mattis.24
+				    days = 1
 			    }
 			}
 		}
@@ -5049,10 +5049,6 @@ focus_tree = {
 			        add_idea = AFS_strength_and_might_2
 		        }
 			}
-			if = {
-				limit = { has_country_flag = AFS_mattis_is_gonna_die }
-				unlock_decision_tooltip = AFS_cybernetic_implants
-			}
 		}
 	}
 
@@ -5284,7 +5280,7 @@ focus_tree = {
             }
 			if = {
 				limit = { has_country_flag = AFS_mattis_is_gonna_die }
-				unlock_decision_tooltip = AFS_achieve_eternity
+				unlock_decision_tooltip = AFS_cybernetic_implants
 			}
 		}
 	}

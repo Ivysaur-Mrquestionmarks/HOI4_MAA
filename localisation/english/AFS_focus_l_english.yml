@@ -412,6 +412,18 @@
  mattis.23.d:0 "Mattis took center stage, thousands gathered around him with hope in their hearts, the hero of Ohio some have called him, as if there was only one. He spoke concisely, “Brothers and sisters of Ohio, look around you, look at what we have risen above. We were forced to drown in crime and chaos for too long, as many used our graciousness as a stepping stone. They thought we were a lost people that would slave away for the benefit of others. No longer will we be seen as weak, no longer will we be the laughingstock they claimed we were, no longer will we be forced to sacrifice our children for pennies on the dollar. Those in power refused to deal with the problems of society, allowing them to fester to stir voters into action. They sought to keep us in fear, but I ask, do you walk these streets in fear today? Do you worry about your children playing after dark? Do you distrust your neighbors?  The answer, we all know, is no, you don’t have to live in fear any longer. We have ensured our streets are clean and secure, and we will continue to expand our safety across the Ohio Valley. We will have safety, we will have security, and we shall have stability for all."
  mattis.23.a:0 "Stability Will Be Ensured"
 
+ mattis.24.t:0 "Victory Speech"
+ mattis.24.d:0 "mattis does a speech about the victory against vermin and hawkins and the future of ohio, but then, his speech is interrupted by him getting shot"
+ mattis.24.a:0 "Mr. President!"
+
+ mattis.25.t:0 "He Escapes"
+ mattis.25.d:0 "mattis (at the hospital) is told that the assassin has escaped and is no where to be found"
+ mattis.25.a:0 "Vermin and Hawkins are Responsible For This... I Just Know It..."
+
+ mattis.26.t:0 "The Interrogation of Vermin and Hawkins"
+ mattis.26.d:0 "mattis interrogates vermin and hawkins, vermin and hawkins don't give any info about the assassin and say that they never hired an assassin or told their supporters to assassinate mattis, mattis keeps demanding info, but then just kills them"
+ mattis.26.a:0 "Let's Move On."
+
  #Vance Events
 
  vance.1.t:0 "Mike DeWine's March on Columbus"
@@ -1855,6 +1867,8 @@
  AFS_mattis_political_decisions:0 "The Second Experiment"
  AFS_mattis_political_decisions_desc:0 "\n\n\n\n£AFS_mattis_political_decisions_pic\n\n\n\n\n\n\n\n"
 
+ AFS_hunt_down_vermin_loyalists:0 "Hunt Down Vermin Loyalists"
+ AFS_hunt_down_hawkins_loyalists:0 "Hunt Down Hawkins Loyalists"
  AFS_crush_dissidents:0 "Crush Dissidents"
  AFS_watch_their_every_move:0 "Watch Their Every Move"
  AFS_american_media_only:0 "American Media Only"
@@ -1881,9 +1895,10 @@
  AFS_decaying_savior_desc:0 "\n\n\n\n£AFS_decaying_savior_decisions_pic\n\n\n\n\n\n\n\nI... Must... Live..."
 
  AFS_death:0 "Death"
+ AFS_medical_treatment:0 "Medical Treatment"
  AFS_cybernetic_implants:0 "Cybernetic Implants"
  AFS_biological_modifications:0 "Biological Modifications"
- AFS_achieve_eternity:0 "Achieve Eternity"
+ #AFS_achieve_eternity:0 "Achieve Eternity"
 
  #Normal Vance Political Decisions
  AFS_vance_political_decisions:0 "Government of Ohio"
@@ -1955,11 +1970,11 @@
 
  AFS_and:0 "§W--------- AND ---------§!"
 
- AFS_do_focuses_to_make_mattis_alive:0 "§HComplete Certain Military Focuses to Unlock Decisions to Ensure Mattis's Survival.§!"
+ AFS_do_focuses_to_make_mattis_alive:0 "§HComplete Certain Military Focuses to Unlock Decisions to Keep Mattis Alive!§!"
 
- AFS_he_will_live:0 "§0I Must Live, For Columbia Needs Me, Forever...§!"
+ #AFS_he_will_live:0 "§0I Must Live, For Columbia Needs Me, Forever...§!"
 
- AFS_mattis_cyborg_tooltip:0 "James Mattis Has Been Immortalized..."
+ #AFS_mattis_cyborg_tooltip:0 "James Mattis Has Been Immortalized..."
 
  AFS_white_relations:0 "  - Relations With Whites §R-25%§!"
  AFS_hispanic_relations:0 "  - Relations With Hispanics §R-15%§!"

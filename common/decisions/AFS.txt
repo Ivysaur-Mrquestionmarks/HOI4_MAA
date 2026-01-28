@@ -4664,6 +4664,96 @@ AFS_hawkins_economic_decisions = {
 }
 
 AFS_mattis_political_decisions = {
+	AFS_hunt_down_vermin_loyalists = {
+		priority = 25
+		icon = GFX_decision_generic_police_action
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_kill_loyalists
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = yes
+		
+		#days_re_enable = 40
+
+		days_remove = 50
+		
+		cost = 80
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 50
+				value = 1
+			}
+		}
+		modifier = {
+			stability_factor = -0.1
+			resistance_growth = -0.05
+		}
+		remove_effect = {
+			add_popularity = {
+                ideology = libertarian_left
+                popularity = -0.1
+            }
+		}
+	}
+
+	AFS_hunt_down_hawkins_loyalists = {
+		priority = 25
+		icon = GFX_decision_generic_police_action
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_kill_loyalists
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = yes
+		
+		#days_re_enable = 40
+
+		days_remove = 50
+		
+		cost = 80
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 50
+				value = 1
+			}
+		}
+		modifier = {
+			stability_factor = -0.1
+			resistance_growth = -0.05
+		}
+		remove_effect = {
+			add_popularity = {
+                ideology = authoritarian_left
+                popularity = -0.1
+            }
+		}
+	}
+
 	AFS_crush_dissidents = {
 		priority = 25
 		icon = GFX_decision_generic_police_action
@@ -4698,8 +4788,8 @@ AFS_mattis_political_decisions = {
 			}
 		}
 		modifier = {
-			stability_factor = -0.1
-			resistance_growth = -0.35
+			stability_factor = -0.05
+			resistance_growth = -0.15
 		}
 		remove_effect = {
 		}
@@ -5573,6 +5663,51 @@ AFS_decaying_savior = {
 		}
 	}
 
+	AFS_medical_treatment = {
+		priority = 100
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_mattis_is_gonna_die
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_mattis_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 90
+
+		days_remove = 90
+		
+		cost = 90
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_mattis_action
+				days = 90
+				value = 1
+			}
+		}
+		modifier = {
+			civilian_factory_use = 2
+			research_speed_factor = 0.01
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AFS_death
+				days = 100
+			}
+		}
+	}
+
     AFS_cybernetic_implants = {
 		priority = 100
 		#icon = #GFX_decision_hol_attract_foreign_investors
@@ -5583,7 +5718,7 @@ AFS_decaying_savior = {
 
 		visible = {
 			has_country_flag = AFS_mattis_is_gonna_die
-			has_completed_focus = AFS_made_of_steel
+			has_completed_focus = AFS_the_future_is_present
 		}
 
 		available = {
@@ -5609,7 +5744,7 @@ AFS_decaying_savior = {
 		}
 		modifier = {
 			civilian_factory_use = 10
-			research_speed_factor = 0.1
+			research_speed_factor = 0.05
 		}
 		remove_effect = {
 			add_days_mission_timeout = {
@@ -5655,71 +5790,13 @@ AFS_decaying_savior = {
 		}
 		modifier = {
 			civilian_factory_use = 10
-			research_speed_factor = 0.1
+			research_speed_factor = 0.05
 		}
 		remove_effect = {
 			add_days_mission_timeout = {
 				mission = AFS_death
 				days = 200
 			}
-		}
-	}
-
-	AFS_achieve_eternity = {
-		priority = 100
-		#icon = #GFX_decision_hol_attract_foreign_investors
-
-		allowed = {
-			original_tag = AFS
-		}
-
-		visible = {
-			has_country_flag = AFS_mattis_is_gonna_die
-			has_completed_focus = AFS_the_future_is_present
-		}
-
-		available = {
-			NOT = {
-				has_country_flag = AFS_doing_mattis_action
-			}
-			amount_research_slots > 3
-			OR = {
-				nuclear_facility > 1
-				land_facility > 1
-			}
-		}
-		
-		fire_only_once = yes
-		
-		#days_re_enable = 150
-
-		days_remove = 300
-		
-		cost = 200
-
-		complete_effect = {
-			set_country_flag = {
-				flag = AFS_doing_mattis_action
-				days = 300
-				value = 1
-			}
-		}
-		modifier = {
-			civilian_factory_use = 20
-			research_speed_factor = 0.1
-		}
-		remove_effect = {
-			custom_effect_tooltip = AFS_he_will_live
-			hidden_effect = {
-				country_event = {
-				    id = mattis.14
-				    days = 0
-			    }
-			    country_event = {
-				    id = mattis.15
-				    days = 10
-			    }
-		    }
 		}
 	}
 }
