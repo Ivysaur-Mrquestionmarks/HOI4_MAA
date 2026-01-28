@@ -1658,6 +1658,15 @@ ideas = {
 			}
 		}
 
+		KMT_victorious_npa = {
+			allowed = { OR = {original_tag = KMT original_tag = NPA } }
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				overlord_trade_cost_factor = -0.3
+			}
+		}
+
 
 	}
 
