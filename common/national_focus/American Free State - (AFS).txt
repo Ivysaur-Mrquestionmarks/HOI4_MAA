@@ -420,12 +420,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_libertarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = libertarian_left_drift_factor_tt
 			}
 		}
@@ -476,7 +476,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 		    add_to_variable = {
 				var = AFS.var_libertarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = libertarian_left_drift_factor_tt
 			}
 			unlock_decision_tooltip = AFS_individual_will
@@ -567,17 +567,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 		    add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_libertarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = libertarian_left_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_drift_defence_level
-				value = 0.05
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}
 		}
@@ -615,12 +615,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_pp_level
-				value = 0.03
+				value = 0.02
 				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
 				var = AFS.var_drift_defence_level
-				value = 0.05
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}
 			#country_event = {
@@ -661,22 +661,22 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			subtract_from_variable = {
 				var = AFS.var_pp_level
-				value = -0.15
+				value = -0.1
 				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
 				var = AFS.var_libertarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = libertarian_left_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_compliance_level
-				value = 0.05
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}
 		}
@@ -719,22 +719,22 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			subtract_from_variable = {
 				var = AFS.var_pp_level
-				value = -0.15
+				value = -0.1
 				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
 				var = AFS.var_libertarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = libertarian_left_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_compliance_level
-				value = 0.05
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}
 			unlock_decision_tooltip = AFS_set_up_autonomous_zone
@@ -772,12 +772,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 		    add_to_variable = {
 				var = AFS.var_defense_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_defence_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			country_event = {
@@ -819,17 +819,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.03
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_compliance_level
-				value = 0.03
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}
 			add_to_variable = {
 				var = AFS.var_drift_defence_level
-				value = 0.05
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}
 			unlock_decision_tooltip = AFS_helping_the_poor
@@ -873,12 +873,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 		    add_to_variable = {
 				var = AFS.var_defense_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_defence_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 		}
@@ -912,12 +912,12 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_compliance_level
-				value = 0.05
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}
 		}
@@ -945,17 +945,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.03
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_compliance_level
-				value = 0.03
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}
 			add_to_variable = {
 				var = AFS.var_drift_defence_level
-				value = 0.05
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}
 			hidden_effect = {
@@ -991,12 +991,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 		    add_to_variable = {
 				var = AFS.var_defense_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_defence_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			unlock_decision_tooltip = AFS_meet_with_the_lgbtq_community
@@ -1201,12 +1201,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 		    add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_defense_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_defence_factor_tt
 			}
 			unlock_decision_tooltip = AFS_spreading_the_anarchist_cause
@@ -1307,7 +1307,7 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 		}
@@ -1361,7 +1361,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.03
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
@@ -1371,17 +1371,17 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = AFS.var_libertarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = libertarian_left_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_drift_defence_level
-				value = 0.05
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_compliance_level
-				value = 0.05
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}
 			country_event = {
@@ -1410,12 +1410,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 		    add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_defense_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_defence_factor_tt
 			}
 		}
@@ -1512,7 +1512,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
-				value = 0.05
+				value = 0.02
 				tooltip = monthly_population_tt
 			}
 		}
@@ -1689,7 +1689,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
-				value = 0.05
+				value = 0.02
 				tooltip = monthly_population_tt
 			}
 		}
@@ -1826,7 +1826,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_research_level
-				value = 0.05
+				value = 0.02
 				tooltip = research_speed_factor_tt
 			}
 		}
@@ -1957,7 +1957,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
-				value = 0.05
+				value = 0.02
 				tooltip = monthly_population_tt
 			}
 		}
@@ -2510,17 +2510,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 		    add_to_variable = {
 				var = AFS.var_pp_level
-				value = 0.1
+				value = 0.05
 				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
 				var = AFS.var_drift_defence_level
-				value = 0.05
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_authoritarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = authoritarian_left_drift_factor_tt
 			}
 		}
@@ -2549,17 +2549,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_morale_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_morale_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_drift_defence_level
-				value = 0.05
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}
 			add_to_variable = {
@@ -2606,22 +2606,22 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 		    add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_morale_level
-				value = 0.05
+				value = 0.02
 				tooltip = army_morale_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_authoritarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = authoritarian_left_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_conscription_level
-				value = 0.05
+				value = 0.02
 				tooltip = conscription_factor_tt
 			}
 		}
@@ -2659,17 +2659,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 		    add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_attack_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_attack_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_conscription_level
-				value = 0.05
+				value = 0.02
 				tooltip = conscription_factor_tt
 			}
 		}
@@ -2698,12 +2698,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 		    add_to_variable = {
 				var = AFS.var_authoritarian_left_level
-				value = 0.03
+				value = 0.01
 				tooltip = authoritarian_left_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_conscription_level
-				value = 0.05
+				value = 0.02
 				tooltip = conscription_factor_tt
 			}
 		}
@@ -2732,12 +2732,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 		    add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_attack_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_attack_factor_tt
 			}
 		}
@@ -2797,12 +2797,12 @@ focus_tree = {
 			}
 		    add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_attack_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_attack_factor_tt
 			}
 			unlock_decision_tooltip = AFS_begin_a_terror_attack_in_biden
@@ -2838,12 +2838,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 			add_to_variable = {
 				var = AFS.var_conscription_level
-				value = 0.03
+				value = 0.02
 				tooltip = conscription_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_pp_level
-				value = 0.03
+				value = 0.02
 				tooltip = political_power_gain_tt
 			}
 		    unlock_decision_tooltip = AFS_begin_a_terror_attack_in_paris
@@ -2877,7 +2877,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 		    add_to_variable = {
 				var = AFS.var_pp_level
-				value = 0.05
+				value = 0.02
 				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
@@ -2911,17 +2911,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 		    add_to_variable = {
 				var = AFS.var_pp_level
-				value = 0.05
+				value = 0.02
 				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
 				var = AFS.var_drift_defence_level
-				value = 0.1
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_authoritarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = authoritarian_left_drift_factor_tt
 			}
 		}
@@ -2951,12 +2951,12 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			country_event = {
@@ -2986,7 +2986,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 		    add_to_variable = {
 				var = AFS.var_pp_level
-				value = 0.05
+				value = 0.02
 				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
@@ -3084,7 +3084,7 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = AFS.var_research_level
-				value = 0.05
+				value = 0.03
 				tooltip = research_speed_factor_tt
 			}
 		}
@@ -3280,7 +3280,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 			add_to_variable = {
 				var = AFS.var_research_level
-				value = 0.05
+				value = 0.03
 				tooltip = research_speed_factor_tt
 			}
 		}
@@ -3589,12 +3589,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_anything_and_everything_modify_tt
 			add_to_variable = {
 				var = AFS.var_conscription_level
-				value = 0.1
+				value = 0.03
 				tooltip = conscription_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_authoritarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = authoritarian_left_drift_factor_tt
 			}
 		}
@@ -4851,17 +4851,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 		    add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_morale_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_morale_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_conscription_level
-				value = 0.05
+				value = 0.02
 				tooltip = conscription_factor_tt
 			}
 		}
@@ -4886,17 +4886,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 		    add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_morale_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_morale_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_conscription_level
-				value = 0.05
+				value = 0.02
 				tooltip = conscription_factor_tt
 			}
 		}
@@ -4921,17 +4921,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 		    add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_morale_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_morale_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_conscription_level
-				value = 0.05
+				value = 0.02
 				tooltip = conscription_factor_tt
 			}
 		}
@@ -4956,12 +4956,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 			add_to_variable = {
 				var = AFS.var_morale_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_morale_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_conscription_level
-				value = 0.03
+				value = 0.02
 				tooltip = conscription_factor_tt
 			}
 		}
@@ -4986,12 +4986,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 		    add_to_variable = {
 				var = AFS.var_attack_level
-				value = 0.05
+				value = 0.02
 				tooltip = army_attack_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_defense_level
-				value = 0.05
+				value = 0.02
 				tooltip = army_defence_factor_tt
 			}
 		}
@@ -5176,7 +5176,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 			add_to_variable = {
 				var = AFS.var_research_level
-				value = 0.1
+				value = 0.05
 				tooltip = research_speed_factor_tt
 			}
 		}
@@ -5201,7 +5201,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 		    add_to_variable = {
 				var = AFS.var_attack_level
-				value = 0.1
+				value = 0.03
 				tooltip = army_attack_factor_tt
 			}
 		}
@@ -5227,7 +5227,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 			add_to_variable = {
 				var = AFS.var_research_level
-				value = 0.1
+				value = 0.05
 				tooltip = research_speed_factor_tt
 			}
 			if = {
@@ -5345,12 +5345,12 @@ focus_tree = {
 			}
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
@@ -5406,12 +5406,12 @@ focus_tree = {
 			}
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_autocratic_level
-				value = 0.02
+				value = 0.01
 				tooltip = autocratic_drift_factor_tt
 			}
 		}
@@ -5436,17 +5436,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_morale_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_morale_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_autocratic_level
-				value = 0.02
+				value = 0.01
 				tooltip = autocratic_drift_factor_tt
 			}
 		}
@@ -5489,12 +5489,12 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_autocratic_level
-				value = 0.03
+				value = 0.01
 				tooltip = autocratic_drift_factor_tt
 			}
 			country_event = {
@@ -5532,17 +5532,17 @@ focus_tree = {
 			}
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_autocratic_level
-				value = 0.02
+				value = 0.01
 				tooltip = autocratic_drift_factor_tt
 			}
 		}
@@ -5725,12 +5725,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 		    add_to_variable = {
 				var = AFS.var_pp_level
-				value = 0.05
+				value = 0.02
 				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 		}
@@ -5760,12 +5760,12 @@ focus_tree = {
 			}
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_resistance_growth_level
-				value = -0.05
+				value = -0.02
 				tooltip = resistance_growth_tt
 			}
 			country_event = {
@@ -5804,7 +5804,7 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = AFS.var_resistance_growth_level
-				value = -0.05
+				value = -0.02
 				tooltip = resistance_growth_tt
 			}
 		}
@@ -5829,17 +5829,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 		    add_to_variable = {
 				var = AFS.var_pp_level
-				value = 0.05
+				value = 0.02
 				tooltip = political_power_gain_tt
 			}
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = -0.05
+				value = -0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_resistance_growth_level
-				value = -0.03
+				value = -0.02
 				tooltip = resistance_growth_tt
 			}
 			country_event = {
@@ -5869,17 +5869,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_renewal_modify_tt
 		    add_to_variable = {
 				var = AFS.var_pp_level
-				value = 0.03
+				value = 0.02
 				tooltip = political_power_gain_tt
 			}
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = -0.05
+				value = -0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_resistance_growth_level
-				value = -0.03
+				value = -0.02
 				tooltip = resistance_growth_tt
 			}
 		}
@@ -6030,15 +6030,6 @@ focus_tree = {
     					instant_build = yes
 				}
 			}
-			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    					type = arms_factory
-    					level = 1
-    					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -6148,15 +6139,6 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    					type = arms_factory
-    					level = 1
-    					instant_build = yes
-				}
-			}
 			random_controlled_state = {
 				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
 				add_extra_state_shared_building_slots = 1
@@ -6548,17 +6530,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.03
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_autocratic_level
-				value = 0.02
+				value = 0.01
 				tooltip = autocratic_drift_factor_tt
 			}
 			country_event = {
@@ -6587,17 +6569,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 			add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.03
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
-				value = 0.1
+				value = 0.02
 				tooltip = monthly_population_tt
 			}
 		}
@@ -6622,7 +6604,7 @@ focus_tree = {
 			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 		    add_to_variable = {
 				var = AFS.var_autocratic_level
-				value = 0.02
+				value = 0.01
 				tooltip = autocratic_drift_factor_tt
 			}
 			unlock_decision_tooltip = AFS_show_them_truth
@@ -6658,12 +6640,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
-				value = 0.05
+				value = 0.02
 				tooltip = monthly_population_tt
 			}
 			unlock_decision_tooltip = AFS_eradicate_sin
@@ -6701,12 +6683,12 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
-				value = 0.05
+				value = 0.02
 				tooltip = monthly_population_tt
 			}
 			add_to_variable = {
 				var = AFS.var_resistance_growth_level
-				value = -0.05
+				value = -0.02
 				tooltip = resistance_growth_tt
 			}
 			country_event = {
@@ -6735,12 +6717,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 		    add_to_variable = {
 				var = AFS.var_autocratic_level
-				value = 0.02
+				value = 0.01
 				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_stability_factor_tt
 			}
 			add_to_variable = {
@@ -6773,12 +6755,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 		    add_to_variable = {
 				var = AFS.var_autocratic_level
-				value = 0.02
+				value = 0.01
 				tooltip = autocratic_drift_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_resistance_growth_level
-				value = -0.03
+				value = -0.02
 				tooltip = resistance_growth_tt
 			}
 		}
@@ -6806,22 +6788,22 @@ focus_tree = {
 			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 		    add_to_variable = {
 				var = AFS.var_war_support_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_war_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_morale_level
-				value = 0.05
+				value = 0.02
 				tooltip = army_morale_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_conscription_level
-				value = 0.05
+				value = 0.02
 				tooltip = conscription_factor_tt
 			}
 		}
@@ -6846,12 +6828,12 @@ focus_tree = {
 			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 		    add_to_variable = {
 				var = AFS.var_pp_level
-				value = 0.05
+				value = 0.02
 				tooltip = political_power_gain_tt
 			}
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 		}
@@ -6919,12 +6901,12 @@ focus_tree = {
 			}
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 		    add_to_variable = {
 				var = AFS.var_resistance_growth_level
-				value = -0.05
+				value = -0.02
 				tooltip = resistance_growth_tt
 			}
 			unlock_decision_tooltip = AFS_expell_the_remaining_rebels
@@ -6960,17 +6942,17 @@ focus_tree = {
 			custom_effect_tooltip = AFS_the_leviathans_ecclesiasticall_modify_tt
 		    add_to_variable = {
 				var = AFS.var_pp_level
-				value = 0.03
+				value = 0.02
 				tooltip = political_power_gain_tt
 			}
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = AFS.var_autocratic_level
-				value = 0.02
+				value = 0.01
 				tooltip = autocratic_drift_factor_tt
 			}
 		}
@@ -7000,12 +6982,12 @@ focus_tree = {
 			}
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 		    add_to_variable = {
 				var = AFS.var_resistance_growth_level
-				value = -0.05
+				value = -0.02
 				tooltip = resistance_growth_tt
 			}
 		}
@@ -7093,7 +7075,7 @@ focus_tree = {
 			}
 		    add_to_variable = {
 				var = AFS.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			country_event = {
@@ -7270,6 +7252,11 @@ focus_tree = {
 			        add_idea = AFS_the_army_of_the_duke_2
 		        }
 			}
+			add_to_variable = {
+				var = AFS.var_conscription_level
+				value = 0.02
+				tooltip = conscription_factor_tt
+			}
 		}
 	}
 
@@ -7289,12 +7276,10 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-		    every_owned_state = {
-			    add_state_modifier = {
-                    modifier = {
-                        recruitable_population = 0.05
-                    }
-                }
+		    add_to_variable = {
+				var = AFS.var_conscription_level
+				value = 0.02
+				tooltip = conscription_factor_tt
 			}
 		}
 	}
