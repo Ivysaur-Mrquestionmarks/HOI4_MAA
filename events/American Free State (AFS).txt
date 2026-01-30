@@ -2679,6 +2679,12 @@ country_event = {
         }
 		custom_effect_tooltip = AFS_do_focuses_to_make_mattis_alive
 		set_country_flag = AFS_mattis_is_gonna_die
+		hidden_effect = {
+		    country_event = {
+			    id = mattis.27
+			    days = 300
+		    }
+		}
 	}
 }
 
@@ -2996,9 +3002,11 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		country_event = {
-			id = mattis.25
-			days = 0
+		hidden_effect = {
+		    country_event = {
+			    id = mattis.25
+			    days = 0
+		    }
 		}
 	}
 }
@@ -3020,13 +3028,15 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		country_event = {
-			id = mattis.26
-			days = 10
-		}
-		country_event = {
-			id = mattis.13
-			days = 200
+		hidden_effect = {
+		    country_event = {
+			    id = mattis.26
+			    days = 10
+		    }
+			country_event = {
+			    id = mattis.13
+			    days = 200
+		    }
 		}
 	}
 }
@@ -3051,6 +3061,39 @@ country_event = {
 		set_country_flag = AFS_kill_loyalists
 		unlock_decision_tooltip = AFS_hunt_down_vermin_loyalists
 		unlock_decision_tooltip = AFS_hunt_down_hawkins_loyalists
+	}
+}
+
+#As The Days Go By...
+country_event = {
+	id = mattis.27
+	title = mattis.27.t
+	desc = mattis.27.d
+	picture = event_AFS_stability
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = mattis.27.a
+		ai_chance = {
+			factor = 100
+		}
+		add_days_mission_timeout = {
+			mission = AFS_death
+			days = -200
+		}
+		unlock_decision_tooltip = AFS_the_blood_of_chicago
+		unlock_decision_tooltip = AFS_the_blood_of_denver
+		unlock_decision_tooltip = AFS_the_blood_of_washington_dc
+		unlock_decision_tooltip = AFS_the_blood_of_atlanta
+		unlock_decision_tooltip = AFS_the_blood_of_austin
+		unlock_decision_tooltip = AFS_the_blood_of_salt_lake_city
+		unlock_decision_tooltip = AFS_the_blood_of_sacramento
+		unlock_decision_tooltip = AFS_the_blood_of_portland
+		set_country_flag = AFS_mattis_blood_conquest
 	}
 }
 

@@ -5798,6 +5798,289 @@ AFS_decaying_savior = {
 			}
 		}
 	}
+
+	AFS_the_blood_of_chicago = {
+		priority = 100
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_mattis_is_gonna_die
+			has_country_flag = AFS_mattis_blood_conquest
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_mattis_action
+			}
+			has_owned_state = 198
+			NOT = {
+			    country_exists = GLA
+				country_exists = KMT
+				country_exists = DET
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = AFS_death
+				days = 100
+			}
+		}
+	}
+
+	AFS_the_blood_of_denver = {
+		priority = 100
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_mattis_is_gonna_die
+			has_country_flag = AFS_mattis_blood_conquest
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_mattis_action
+			}
+			has_owned_state = 416
+			NOT = {
+			    country_exists = USA
+				country_exists = NPA
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = AFS_death
+				days = 100
+			}
+		}
+	}
+
+	AFS_the_blood_of_washington_dc = {
+		priority = 100
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_mattis_is_gonna_die
+			has_country_flag = AFS_mattis_blood_conquest
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_mattis_action
+			}
+			has_owned_state = 242
+			NOT = {
+			    country_exists = FRA
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = AFS_death
+				days = 100
+			}
+		}
+	}
+
+	AFS_the_blood_of_atlanta = {
+		priority = 100
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_mattis_is_gonna_die
+			has_country_flag = AFS_mattis_blood_conquest
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_mattis_action
+			}
+			has_owned_state = 329
+			NOT = {
+			    country_exists = CSA
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = AFS_death
+				days = 100
+			}
+		}
+	}
+
+	AFS_the_blood_of_austin = {
+		priority = 100
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_mattis_is_gonna_die
+			has_country_flag = AFS_mattis_blood_conquest
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_mattis_action
+			}
+			has_owned_state = 143
+			NOT = {
+			    country_exists = TEX
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = AFS_death
+				days = 100
+			}
+		}
+	}
+
+	AFS_the_blood_of_salt_lake_city = {
+		priority = 100
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_mattis_is_gonna_die
+			has_country_flag = AFS_mattis_blood_conquest
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_mattis_action
+			}
+			has_owned_state = 411
+			NOT = {
+			    country_exists = UTA
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = AFS_death
+				days = 100
+			}
+		}
+	}
+
+	AFS_the_blood_of_sacramento = {
+		priority = 100
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_mattis_is_gonna_die
+			has_country_flag = AFS_mattis_blood_conquest
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_mattis_action
+			}
+			has_owned_state = 366
+			NOT = {
+			    country_exists = PRA
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = AFS_death
+				days = 100
+			}
+		}
+	}
+
+	AFS_the_blood_of_portland = {
+		priority = 100
+		#icon = #GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_mattis_is_gonna_die
+			has_country_flag = AFS_mattis_blood_conquest
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_mattis_action
+			}
+			has_owned_state = 496
+			NOT = {
+			    country_exists = CAS
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = AFS_death
+				days = 100
+			}
+		}
+	}
 }
 
 AFS_vance_political_decisions = {
