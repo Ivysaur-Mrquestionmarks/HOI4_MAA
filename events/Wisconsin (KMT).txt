@@ -1126,7 +1126,7 @@ country_event = {
 	id = wisconsin.31
 	title = wisconsin.31.t
 	desc = wisconsin.31.d
-	picture = TBD
+	picture = event_KMT_event_31
 
 	is_triggered_only = yes
 
@@ -1179,7 +1179,7 @@ country_event = {
 	id = wisconsin.32
 	title = wisconsin.32.t
 	desc = wisconsin.32.d
-	picture = TBD
+	picture = event_KMT_event_32
 
 	is_triggered_only = yes
 
@@ -1205,7 +1205,7 @@ country_event = {
 	id = wisconsin.33
 	title = wisconsin.33.t
 	desc = wisconsin.33.d
-	picture = TBD
+	picture = event_KMT_event_32
 
 	is_triggered_only = yes
 
@@ -1236,7 +1236,7 @@ country_event = {
 	id = wisconsin.34
 	title = wisconsin.34.t
 	desc = wisconsin.34.d
-	picture = TBD
+	picture = event_KMT_event_32
 
 	is_triggered_only = yes
 
@@ -1277,7 +1277,7 @@ country_event = {
 	id = wisconsin.35
 	title = wisconsin.35.t
 	desc = wisconsin.35.d
-	picture = TBD
+	picture = event_KMT_event_35
 
 	is_triggered_only = yes
 
@@ -1427,7 +1427,7 @@ country_event = {
 	option = {
 		name = wisconsin.35.b
 		ai_chance = {
-			factor = 0
+			factor = 1
 		}
 		custom_effect_tooltip = KMT_play_as_counter_revolution_tt
 		hidden_effect = {
@@ -1529,7 +1529,7 @@ country_event = {
 	id = wisconsin.36
 	title = wisconsin.36.t
 	desc = wisconsin.36.d
-	picture = TBD
+	picture = event_KMT_event_36
 
 	is_triggered_only = yes
 
@@ -1578,7 +1578,7 @@ country_event = {
 	id = wisconsin.37
 	title = wisconsin.37.t
 	desc = wisconsin.37.d
-	picture = TBD
+	picture = event_KMT_event_37
 
 	is_triggered_only = yes
 
@@ -1619,7 +1619,7 @@ country_event = {
 	id = wisconsin.38
 	title = wisconsin.38.t
 	desc = wisconsin.38.d
-	picture = TBD
+	picture = event_KMT_event_4
 
 	is_triggered_only = yes
 
@@ -1640,7 +1640,7 @@ country_event = {
 	id = wisconsin.39
 	title = wisconsin.39.t
 	desc = wisconsin.39.d
-	picture = TBD
+	picture = event_KMT_event_3
 
 	is_triggered_only = yes
 
@@ -1658,7 +1658,7 @@ country_event = {
 	id = wisconsin.40
 	title = wisconsin.40.t
 	desc = wisconsin.40.d
-	picture = TBD
+	picture = event_KMT_event_40
 
 	is_triggered_only = yes
 	mean_time_to_happen = {
@@ -1694,7 +1694,7 @@ country_event = {
 	id = wisconsin.41
 	title = wisconsin.41.t
 	desc = wisconsin.41.d
-	picture = TBD
+	picture = event_KMT_event_3
 
 	is_triggered_only = yes
 
@@ -1718,7 +1718,7 @@ country_event = {
 	id = wisconsin.42
 	title = wisconsin.42.t
 	desc = wisconsin.42.d
-	picture = TBD
+	picture = event_KMT_event_4
 
 	is_triggered_only = yes
 
@@ -1731,12 +1731,12 @@ country_event = {
 	}
 }
 
-# Ice Legion ultimatum
+# Ice Legion ultimatum (MIL prespective)
 country_event = {
 	id = wisconsin.43
 	title = wisconsin.43.t
 	desc = wisconsin.43.d
-	picture = TBD
+	picture = event_KMT_event_1
 
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 2 }
@@ -1763,7 +1763,7 @@ country_event = {
 	id = wisconsin.44
 	title = wisconsin.44.t
 	desc = wisconsin.44.d
-	picture = TBD
+	picture = event_KMT_event_4
 
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1804,7 +1804,7 @@ country_event = {
 	id = wisconsin.45
 	title = wisconsin.45.t
 	desc = wisconsin.45.d
-	picture = TBD
+	picture = event_KMT_event_3
 
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1823,7 +1823,7 @@ country_event = {
 	id = wisconsin.46
 	title = wisconsin.46.t
 	desc = wisconsin.46.d
-	picture = TBD
+	picture = event_KMT_event_13
 
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1842,7 +1842,7 @@ country_event = {
 	id = wisconsin.47
 	title = wisconsin.47.t
 	desc = wisconsin.47.d
-	picture = TBD
+	picture = event_KMT_event_15
 
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1861,7 +1861,7 @@ country_event = {
 	id = wisconsin.48
 	title = wisconsin.48.t
 	desc = wisconsin.48.d
-	picture = TBD
+	picture = event_KMT_event_48
 
 	is_triggered_only = yes
 	mean_time_to_happen = {
@@ -1897,7 +1897,7 @@ country_event = {
 	id = wisconsin.49
 	title = wisconsin.49.t
 	desc = wisconsin.49.d
-	picture = TBD
+	picture = event_KMT_event_3
 
 	is_triggered_only = yes
 
@@ -1921,7 +1921,7 @@ country_event = {
 	id = wisconsin.50
 	title = wisconsin.50.t
 	desc = wisconsin.50.d
-	picture = TBD
+	picture = event_KMT_event_4
 
 	is_triggered_only = yes
 
@@ -1939,7 +1939,7 @@ country_event = {
 	id = wisconsin.51
 	title = wisconsin.51.t
 	desc = wisconsin.51.d
-	picture = TBD
+	picture = event_KMT_event_51
 
 	is_triggered_only = yes
 	mean_time_to_happen = {
@@ -1975,7 +1975,7 @@ country_event = {
 	id = wisconsin.52
 	title = wisconsin.52.t
 	desc = wisconsin.52.d
-	picture = TBD
+	picture = event_KMT_event_3
 
 	is_triggered_only = yes
 
@@ -1999,7 +1999,7 @@ country_event = {
 	id = wisconsin.53
 	title = wisconsin.53.t
 	desc = wisconsin.53.d
-	picture = TBD
+	picture = event_KMT_event_4
 
 	is_triggered_only = yes
 
@@ -2022,7 +2022,7 @@ country_event = {
 	id = wisconsin.54
 	title = wisconsin.54.t
 	desc = wisconsin.54.d
-	picture = TBD
+	picture = event_KMT_event_54
 
 	is_triggered_only = yes
 	mean_time_to_happen = {
@@ -2043,7 +2043,7 @@ country_event = {
 	id = wisconsin.55
 	title = wisconsin.55.t
 	desc = wisconsin.55.d
-	picture = TBD
+	picture = event_KMT_event_55
 
 	is_triggered_only = yes
 	mean_time_to_happen = {
@@ -2090,7 +2090,7 @@ country_event = {
 	id = wisconsin.56
 	title = wisconsin.56.t
 	desc = wisconsin.56.d
-	picture = TBD
+	picture = event_KMT_event_56
 
 	is_triggered_only = yes
 	mean_time_to_happen = {
@@ -2129,7 +2129,7 @@ country_event = {
 	id = wisconsin.57
 	title = wisconsin.57.t
 	desc = wisconsin.57.d
-	picture = TBD
+	picture = event_KMT_event_57
 
 	is_triggered_only = yes
 	mean_time_to_happen = {
@@ -2146,7 +2146,7 @@ country_event = {
 	id = wisconsin.58
 	title = wisconsin.58.t
 	desc = wisconsin.58.d
-	picture = TBD
+	picture = event_KMT_event_1
 
 	is_triggered_only = yes
 	
