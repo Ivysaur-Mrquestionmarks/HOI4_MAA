@@ -1821,7 +1821,7 @@
 
  #Saving Terra Decisions
  AFS_saving_terra_decisions:0 "Saving Terra"
- AFS_saving_terra_decisions_desc:0 "\n\n\n\n£AFS_saving_terra_decisions_pic\n\n\n\n\n\n\n\nMother Nature is dying. Humanity's years and years of destruction have put her in a very critical state, and we must save Mother Nature from her demise and rid humanity from Terra, For Terra! For Mother!"
+ AFS_saving_terra_decisions_desc:0 "\n\n\n\n£AFS_saving_terra_decisions_pic\n\n\n\n\n\n\n\nMother Nature is dying. Humanity's years and years of destruction have put her in a very critical state, and we must save Mother Nature from her demise and rid humanity from Terra, For Terra! For Mother! \n\n [AFS_pandemic_progress]"
 
  AFS_eliminate_the_oil_barons:0 "Eliminate The Oil Barons"
  AFS_eliminate_the_wealthly:0 "Eliminate The Wealthly"
@@ -1835,9 +1835,26 @@
  AFS_take_down_the_big_ben:0 "Take Down The Big Ben"
  AFS_take_down_the_taj_mahal:0 "Take Down The Taj Mahal"
  AFS_begin_a_terror_attack_in_sydney:0 "Begin a Terror Attack in Sydney"
- AFS_build_the_ai:0 "Build The A.I"
- AFS_build_the_ai_desc:0 "With every step we take into improving our A.I, is a step closer to it making the perfect disease to wipe terra clean of it's oppressers."
- AFS_release_the_pandemic:0 "Release The Pandemic "
+ AFS_build_the_ai:0 "Utilize A.I"
+ AFS_develop_the_virus:0 "Develop The Virus"
+ AFS_release_the_pandemic:0 "Release The Pandemic"
+
+ AFS_pandemic_local_progress_0: "§RProgress: 0%§!"
+ AFS_pandemic_local_progress_1: "§RProgress: 5%§!"
+ AFS_pandemic_local_progress_2: "§RProgress: 10%§!"
+ AFS_pandemic_local_progress_3: "§RProgress: 15%§!"
+ AFS_pandemic_local_progress_4: "§RProgress: 20%§!"
+ AFS_pandemic_local_progress_5: "§OProgress: 25%§!"
+ AFS_pandemic_local_progress_6: "§OProgress: 30%§!"
+ AFS_pandemic_local_progress_7: "§OProgress: 35%§!"
+ AFS_pandemic_local_progress_8: "§OProgress: 40%§!"
+ AFS_pandemic_local_progress_9: "§OProgress: 45%§!"
+ AFS_pandemic_local_progress_10: "§OProgress: 50%§!"
+ AFS_pandemic_local_progress_11: "§6Progress: 60%§!"
+ AFS_pandemic_local_progress_12: "§6Progress: 70%§!"
+ AFS_pandemic_local_progress_13: "§6Progress: 80%§!"
+ AFS_pandemic_local_progress_14: "§6Progress: 90%§!"
+ AFS_pandemic_local_progress_15: "§GProgress: 100%§!"
 
  #Hawkins Political Decisions
  AFS_hawkins_political_decisions:0 "Green Political Decisions"

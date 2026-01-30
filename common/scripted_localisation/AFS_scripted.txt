@@ -1,0 +1,223 @@
+defined_text = {
+	name = AFS_pandemic_progress
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 1
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_0
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 0
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 2
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_1
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 1
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 3
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_2
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 2
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 4
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_3
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 3
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 5
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_4
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 4
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 6
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_5
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 5
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 7
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_6
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 6
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 8
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_7
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 7
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 9
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_8
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 8
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 10
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_9
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 9
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 11
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_10
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 10
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 12
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_11
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 11
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 13
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_12
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 12
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 14
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_13
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 13
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 15
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_14
+	}
+	text = {
+		trigger = {
+			tag = AFS
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value > 14
+            }
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 16
+            }
+		}
+		localization_key = AFS_pandemic_local_progress_15
+	}
+}

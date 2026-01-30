@@ -1824,7 +1824,7 @@ news_event = {
 	}
 }
 
-#Building The Foundations
+#Development of a Bio-Pandemic Starts
 country_event = {
 	id = hawkins.18
 	title = hawkins.18.t
@@ -1841,9 +1841,9 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		unlock_decision_tooltip = AFS_build_the_ai
-		set_country_flag = AFS_building_ai
-		set_country_flag = AFS_ai_building_decision
+		unlock_decision_tooltip = AFS_develop_the_virus
+		set_country_flag = AFS_bio_pandemic_start
+		set_country_flag = AFS_bio_pandemic_decision
 	}
 }
 

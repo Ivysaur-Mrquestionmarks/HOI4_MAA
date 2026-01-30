@@ -3629,9 +3629,10 @@ AFS_saving_terra_decisions = {
 		}
 
 		visible = {
-			has_country_flag = AFS_building_ai
+			has_completed_focus = AFS_technology_looting
+			has_country_flag = AFS_bio_pandemic_start
 			has_country_flag = {
-                flag = AFS_ai_building_decision
+                flag = AFS_bio_pandemic_decision
                 value < 15
             }
 		}
@@ -3646,9 +3647,59 @@ AFS_saving_terra_decisions = {
 		
 		fire_only_once = no
 		
-		days_re_enable = 0
+		days_re_enable = 50
 
-		days_remove = 200
+		days_remove = 225
+		
+		cost = 150
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 200
+				value = 1
+			}
+		}
+		modifier = {
+			civilian_factory_use = 40
+		}
+		remove_effect = {
+			modify_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value = 1
+            }
+		}
+	}
+
+	AFS_develop_the_virus = {
+		priority = 25
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_country_flag = AFS_bio_pandemic_start
+			has_country_flag = {
+                flag = AFS_bio_pandemic_decision
+                value < 15
+            }
+		}
+
+		available = {	
+            amount_research_slots > 3
+			num_of_owned_factories > 100
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 50
+
+		days_remove = 300
 		
 		cost = 150
 
@@ -3664,7 +3715,7 @@ AFS_saving_terra_decisions = {
 		}
 		remove_effect = {
 			modify_country_flag = {
-                flag = AFS_ai_building_decision
+                flag = AFS_bio_pandemic_decision
                 value = 1
             }
 		}
@@ -3679,9 +3730,9 @@ AFS_saving_terra_decisions = {
 		}
 
 		visible = {
-			has_country_flag = AFS_building_ai
+			has_country_flag = AFS_bio_pandemic_start
 			has_country_flag = {
-                flag = AFS_ai_building_decision
+                flag = AFS_bio_pandemic_decision
                 value > 14
             }
 		}
