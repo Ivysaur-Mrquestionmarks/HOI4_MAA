@@ -2682,7 +2682,7 @@ country_event = {
 		hidden_effect = {
 		    country_event = {
 			    id = mattis.27
-			    days = 300
+			    days = 650
 		    }
 		}
 	}
@@ -2706,6 +2706,7 @@ country_event = {
 			factor = 100
 		}
 		clr_country_flag = AFS_mattis_is_gonna_die
+		kill_country_leader = yes
 		add_country_leader_role = {
             character = AFS_stanley_mcchrystal
             promote_leader = yes
@@ -3035,7 +3036,7 @@ country_event = {
 		    }
 			country_event = {
 			    id = mattis.13
-			    days = 200
+			    days = 300
 		    }
 		}
 	}
@@ -3069,8 +3070,14 @@ country_event = {
 	id = mattis.27
 	title = mattis.27.t
 	desc = mattis.27.d
-	picture = event_AFS_stability
+	picture = event_AFS_mattis_ill
 	is_triggered_only = yes
+	trigger = {
+		has_country_leader = {
+            name = "James Mattis"
+            ruling_only = yes
+        }
+	}
 	#mean_time_to_happen = { days = 0 }
 	fire_only_once = yes
 	immediate = {
@@ -3083,8 +3090,17 @@ country_event = {
 		}
 		add_days_mission_timeout = {
 			mission = AFS_death
-			days = -200
+			days = -100
 		}
+		swap_country_leader_traits = {
+            remove = AFS_ill
+            add = AFS_ill_2
+            ideology = military_dictatorship
+        }
+		set_country_leader_portrait = {
+	        ideology = military_dictatorship
+	        portrait = GFX_portrait_AFS_james_mattis_frail
+        }
 		unlock_decision_tooltip = AFS_the_blood_of_chicago
 		unlock_decision_tooltip = AFS_the_blood_of_denver
 		unlock_decision_tooltip = AFS_the_blood_of_washington_dc
@@ -3094,6 +3110,51 @@ country_event = {
 		unlock_decision_tooltip = AFS_the_blood_of_sacramento
 		unlock_decision_tooltip = AFS_the_blood_of_portland
 		set_country_flag = AFS_mattis_blood_conquest
+		hidden_effect = {
+			country_event = {
+			    id = mattis.28
+			    days = 650
+		    }
+		}
+	}
+}
+
+#A Frail Body
+country_event = {
+	id = mattis.28
+	title = mattis.28.t
+	desc = mattis.28.d
+	picture = event_AFS_mattis_ill
+	is_triggered_only = yes
+	trigger = {
+		has_country_leader = {
+            name = "James Mattis"
+            ruling_only = yes
+        }
+	}
+	#mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = mattis.28.a
+		ai_chance = {
+			factor = 100
+		}
+		add_days_mission_timeout = {
+			mission = AFS_death
+			days = -100
+		}
+		swap_country_leader_traits = {
+            remove = AFS_ill_2
+            add = AFS_weak_frail_deformed
+            ideology = military_dictatorship
+        }
+		set_country_leader_portrait = {
+	        ideology = military_dictatorship
+	        portrait = GFX_portrait_AFS_james_mattis_frail_2
+        }
 	}
 }
 
