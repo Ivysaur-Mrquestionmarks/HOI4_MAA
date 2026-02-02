@@ -432,6 +432,18 @@
  mattis.28.d:0 "mattis's health is once more declining"
  mattis.28.a:0 "It... Won't... Stop... Me..."
 
+ mattis.29.t:0 "The Military Meets in Columbus"
+ mattis.29.d:0 "the mattis military (after mattis's death) meets in columbus to decide the future of ohio (or america because this event could happen before or after reunification) but then the disagreements start coming in"
+ mattis.29.a:0 "We Can Still Agree On Something! Right?"
+
+ mattis.30.t:0 "The Debate in Columbus"
+ mattis.30.d:0 "the meeting turns into a debate between the generals, and stanley mcchrystal, decides to pull the trigger"
+ mattis.30.a:0 "..."
+
+ mattis.31.t:0 "The Trigger Pulled"
+ mattis.31.d:0 "stanley mcchrystal kills one of the generals, and realizes that fear is the only way to keep himself in power and ensure order in the government"
+ mattis.31.a:0 "Order... Order Will Be Ensured."
+
  #Vance Events
 
  vance.1.t:0 "Mike DeWine's March on Columbus"
@@ -1054,6 +1066,30 @@
  AFS_industrielle_america:0 "Industrielle Ohio"
  AFS_industrielle_america_desc:0 "We cannot exist alone on the factories the cities offer. While we have done wonders in expanding our military industry, the question remains of how much further can we go. I have ordered all property not used for practical purposes be seized. Museums have been emptied, useless call centers repurposed. They shall all be turned into factories of war. Producing the tanks, aircraft, and artillery the Great Experiment demands. \n\nThe Great Experiment Demands It"
 
+ #Post-Mattis Tree
+ AFS_may_he_rest:0 "May He Rest"
+ AFS_may_he_rest_desc:0 ""
+ AFS_gather_the_generals:0 "Gather The Generals"
+ AFS_gather_the_generals_desc:0 ""
+ 
+ AFS_fear:0 "Fear"
+ AFS_fear_desc:0 ""
+ AFS_always_afraid:0 "Always Afraid"
+ AFS_always_afraid_desc:0 ""
+ AFS_loyality_above_all:0 "Loyality Above All"
+ AFS_loyality_above_all_desc:0 ""
+ AFS_stablity_endures:0 "Stablity Endures
+ AFS_stablity_endures_desc:0 ""
+
+ AFS_a_new_savior:0 "A New Savior"
+ AFS_a_new_savior_desc:0 ""
+ AFS_continue_his_mission:0 "Continue His Mission"
+ AFS_continue_his_mission_desc:0 ""
+ AFS_a_new_path:0 "A New Path"
+ AFS_a_new_path_desc:0 ""
+ AFS_cement_control:0 "Cement Control"
+ AFS_cement_control_desc:0 ""
+
  #Mattis War Tree
  AFS_no_one_to_trust:0 "No Person to Trust"
  AFS_no_one_to_trust_desc:0 "We did it. Our nation of warriors and stoics has been secured. However, threats to my Great Experiment exist everywhere, all along our borders. Weakness seeks to destroy the discipline and standards that only the blood of true patriots could truly possess. I must continue in my great crusade, the Great Experiment must expand. It is our manifest destiny. It is the dream of Columbia."
@@ -1666,6 +1702,15 @@
  AFS_the_second_american_century:0 "The Second American Century"
  AFS_the_second_american_century_desc:0 ""
 
+ AFS_growing_dissent:0 "Growing Dissent"
+ AFS_growing_dissent_desc:0 ""
+ AFS_growing_dissent_2:0 "Growing Dissent"
+ AFS_growing_dissent_2_desc:0 ""
+ AFS_growing_dissent_3:0 "Growing Dissent"
+ AFS_growing_dissent_3_desc:0 ""
+ AFS_growing_dissent_4:0 "Growing Dissent"
+ AFS_growing_dissent_4_desc:0 ""
+
  #Vance Ideas
  AFS_triumvirate_rebels:0 "Triumvirate Rebels"
  AFS_triumvirate_rebels_desc:0 ""
@@ -2151,6 +2196,8 @@
  AFS_former_gla_libertarian:0 "Former Great Lakes Libertarian"
  AFS_anarchist_activist:0 "Anarchist Activist"
  AFS_false_savior_trait:0 "False Savior"
+ AFS_false_savior_trait_2:0 "False Savior"
+ AFS_new_savior:0 "New Savior"
  #AFS_immortal_cyborg:0 "Immortal Cyborg"
  AFS_ill:0 "Ill"
  AFS_ill_2:0 "Ill"

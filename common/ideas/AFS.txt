@@ -1222,6 +1222,54 @@ ideas = {
 			}
 		}
 
+		AFS_growing_dissent = {
+			picture = AFS_the_american_stratocracy
+			modifier = {
+				political_power_gain = -0.2
+				command_power_gain = -0.1
+				stability_factor = -0.15
+				war_support_factor = -0.25
+				army_morale_factor = -0.1
+				autocratic_drift = -0.06
+			}
+		}
+
+		AFS_growing_dissent_2 = {
+			picture = AFS_the_american_stratocracy
+			modifier = {
+				political_power_gain = -0.15
+				command_power_gain = -0.05
+				stability_factor = -0.1
+				war_support_factor = -0.2
+				army_morale_factor = -0.05
+				autocratic_drift = -0.04
+			}
+		}
+
+		AFS_growing_dissent_3 = {
+			picture = AFS_the_american_stratocracy
+			modifier = {
+				political_power_gain = -0.1
+				command_power_gain = -0.03
+				stability_factor = -0.05
+				war_support_factor = -0.1
+				army_morale_factor = -0.03
+				autocratic_drift = -0.02
+			}
+		}
+
+		AFS_growing_dissent_4 = {
+			picture = AFS_the_american_stratocracy
+			modifier = {
+				political_power_gain = -0.05
+				command_power_gain = -0.01
+				stability_factor = -0.03
+				war_support_factor = -0.05
+				army_morale_factor = -0.02
+				autocratic_drift = -0.01
+			}
+		}
+
 		#Vance Ideas
 		AFS_triumvirate_rebels = {
 			picture = AFS_triumvirate_broken

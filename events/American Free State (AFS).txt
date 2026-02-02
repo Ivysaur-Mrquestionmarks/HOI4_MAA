@@ -2719,7 +2719,8 @@ country_event = {
 	}
 }
 
-#Rising Above Death OLD EVENT
+######################OLD EVENT######################
+#Rising Above Death
 #country_event = {
 #	id = mattis.15
 #	title = mattis.15.t
@@ -3155,6 +3156,78 @@ country_event = {
 	        ideology = military_dictatorship
 	        portrait = GFX_portrait_AFS_james_mattis_frail_2
         }
+	}
+}
+
+#The Military Meets in Columbus
+country_event = {
+	id = mattis.29
+	title = mattis.29.t
+	desc = mattis.29.d
+	picture = event_AFS_mattis_ill
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = mattis.29.a
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+			country_event = {
+			    id = mattis.30
+			    days = 0
+		    }
+		}
+	}
+}
+
+#The Debate in Columbus
+country_event = {
+	id = mattis.30
+	title = mattis.30.t
+	desc = mattis.30.d
+	picture = event_AFS_mattis_ill
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = mattis.30.a
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+			country_event = {
+			    id = mattis.31
+			    days = 0
+		    }
+		}
+	}
+}
+
+#The Trigger Pulled
+country_event = {
+	id = mattis.31
+	title = mattis.31.t
+	desc = mattis.31.d
+	picture = event_AFS_mattis_ill
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 0 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = mattis.31.a
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 
