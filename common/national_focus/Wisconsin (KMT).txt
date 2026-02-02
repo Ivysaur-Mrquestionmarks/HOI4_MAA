@@ -7568,7 +7568,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			autocratic > 0.25
+			autocratic > 0.15
 		}
 		
 		bypass = {
@@ -7630,7 +7630,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			autocratic > 0.5
+			autocratic > 0.25
 		}
 		
 		bypass = {
@@ -7788,7 +7788,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			autocratic > 0.75
+			autocratic > 0.5
 			USA = { exists = no }
 			FRA = { exists = no }
 			CSA = { exists = no }
