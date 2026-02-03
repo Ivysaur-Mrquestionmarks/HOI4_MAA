@@ -5538,6 +5538,26 @@ spriteTypes = {
 ### WISCONSIN (KMT) ###
     #ideas
     spriteType = {
+        name = "GFX_idea_KMT_coalition_of_the_willing"
+        texturefile = "gfx/interface/ideas/KMT/KMT_coalition_of_the_willing.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_weather_underground_militia"
+        texturefile = "gfx/interface/ideas/KMT/KMT_weather_underground_militia.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_struggling_industry"
+        texturefile = "gfx/interface/ideas/KMT/KMT_struggling_industry.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_poorly_organized_state"
+        texturefile = "gfx/interface/ideas/KMT/KMT_poorly_organized_state.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_rallying_the_wisconsinites"
+        texturefile = "gfx/interface/ideas/KMT/KMT_rallying_the_wisconsinites.dds"
+    }
+    spriteType = {
         name = "GFX_idea_KMT_treaty_with_det"
         texturefile = "gfx/interface/ideas/KMT/KMT_queso_productivo.dds"
     }
