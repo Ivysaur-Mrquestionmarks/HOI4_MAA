@@ -5562,6 +5562,32 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/KMT/KMT_queso_productivo.dds"
     }
     spriteType = {
+        name = "GFX_idea_KMT_agency_expanded"
+        texturefile = "gfx/interface/ideas/KMT/KMT_agency_expanded.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_guerrilla"
+        texturefile = "gfx/interface/ideas/KMT/KMT_guerrilla.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_weather_underground_militia_1"
+        texturefile = "gfx/interface/ideas/KMT/KMT_weather_underground_militia_1.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_forest_division"
+        texturefile = "gfx/interface/ideas/KMT/KMT_forest_division.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_the_fight_of_our_lives"
+        texturefile = "gfx/interface/ideas/KMT/KMT_the_fight_of_our_lives.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_the_fight_of_our_lives_1"
+        texturefile = "gfx/interface/ideas/KMT/KMT_the_fight_of_our_lives.dds"
+    }
+    
+    #state modifiers
+    spriteType = {
         name = "GFX_idea_kmt_claimed_state"
         texturefile = "gfx/interface/ideas/KMT/KMT_queso.dds"
     }
