@@ -948,6 +948,10 @@ country_event = {
 			KMT_Ron_Johnson = { 
 				promote_character = yes
 			}
+			news_event = {
+				id = wisconsin.1001
+				days = 2
+			}
 		}
 		set_politics = {
     		ruling_party = republican
@@ -963,6 +967,10 @@ country_event = {
 		hidden_effect = { 
 			KMT_Ron_Johnson = { 
 				promote_character = yes
+			}
+			news_event = {
+				id = wisconsin.1002
+				days = 2
 			}
 		}
 		set_politics = {
@@ -990,6 +998,12 @@ country_event = {
 		set_politics = {
 			ruling_party = republican
     		elections_allowed = no
+		}
+		hidden_effect = {
+			news_event = {
+				id = wisconsin.1001
+				days = 2
+			}
 		}
 		
 	}
@@ -2035,6 +2049,12 @@ country_event = {
 		}
 		add_political_power = 25
 		add_stability = 0.15
+		hidden_effect = {
+			news_event = {
+				id = wisconsin.1003
+				days = 2
+			}
+		}
 	}
 }
 
@@ -2295,6 +2315,13 @@ country_event = {
 			target = NPA
 			modifier = kmt_npa_alliance
 		}
+
+		hidden_effect = {
+			news_event = {
+				id = wisconsin.1007
+				days = 2
+			}
+		}
 	}
 }
 
@@ -2376,5 +2403,178 @@ country_event = {
 		add_state_core = 198
 		add_state_core = 197
 		set_cosmetic_tag = KMT_glrz
+	}
+}
+
+
+
+
+
+
+
+# NEWS EVENTS
+# victory over chaos
+news_event = {
+	id = wisconsin.1000
+	title = wisconsin.1000.t
+	desc = wisconsin.1000.d
+	picture = event_KMT_event_1000
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = wisconsin.1000.a
+		trigger = { has_government = libertarian_right }
+	}
+	option = {
+		name = wisconsin.1000.b
+		trigger = { NOT = { has_government = libertarian_right } }
+	}
+}
+
+# ron johnson elected
+news_event = {
+	id = wisconsin.1001
+	title = wisconsin.1001.t
+	desc = wisconsin.1001.d
+	picture = event_KMT_event_1001
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = wisconsin.1001.a
+		trigger = { tag = USA }
+	}
+	option = {
+		name = wisconsin.1001.b
+		trigger = { NOT = { tag = USA tag = KMT} }
+	}
+	option = {
+		name = wisconsin.1001.c
+		trigger = { tag = KMT }
+	}
+}
+
+# tammy baldwin elected
+news_event = {
+	id = wisconsin.1002
+	title = wisconsin.1002.t
+	desc = wisconsin.1002.d
+	picture = event_KMT_event_1002
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = wisconsin.1002.a
+		trigger = { tag = FRA }
+	}
+	option = {
+		name = wisconsin.1002.b
+		trigger = { NOT = { tag = FRA tag = KMT} }
+	}
+	option = {
+		name = wisconsin.1002.c
+		trigger = { tag = KMT }
+	}
+}
+
+# pope visits wiscosnin
+news_event = {
+	id = wisconsin.1003
+	title = wisconsin.1003.t
+	desc = wisconsin.1003.d
+	picture = event_KMT_event_1003
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = wisconsin.1003.a
+	}
+}
+
+# president ryan
+news_event = {
+	id = wisconsin.1004
+	title = wisconsin.1004.t
+	desc = wisconsin.1004.d
+	picture = event_KMT_event_1004
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = wisconsin.1004.a
+	}
+}
+
+# wsc coup
+news_event = {
+	id = wisconsin.1005
+	title = wisconsin.1005.t
+	desc = wisconsin.1005.d
+	picture = event_KMT_event_1005
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = wisconsin.1005.a
+	}
+}
+
+# let him cook
+news_event = {
+	id = wisconsin.1006
+	title = wisconsin.1006.t
+	desc = wisconsin.1006.d
+	picture = event_KMT_event_1006
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = wisconsin.1006.a
+	}
+}
+
+# ally npa
+news_event = {
+	id = wisconsin.1007
+	title = wisconsin.1007.t
+	desc = wisconsin.1007.d
+	picture = event_KMT_event_1007
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = wisconsin.1007.a
+	}
+}
+
+# betray npa
+news_event = {
+	id = wisconsin.1008
+	title = wisconsin.1008.t
+	desc = wisconsin.1008.d
+	picture = event_KMT_event_1008
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = wisconsin.1008.a
+	}
+}
+
+# weathermen coup
+news_event = {
+	id = wisconsin.1009
+	title = wisconsin.1009.t
+	desc = wisconsin.1009.d
+	picture = event_KMT_event_1009
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = wisconsin.1009.a
+	}
+}
+
+# counter coup
+news_event = {
+	id = wisconsin.1010
+	title = wisconsin.1010.t
+	desc = wisconsin.1010.d
+	picture = event_KMT_event_1010
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = wisconsin.1010.a
 	}
 }

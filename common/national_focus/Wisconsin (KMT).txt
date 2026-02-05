@@ -775,6 +775,12 @@ focus_tree = {
 			}
 			add_political_power = 150
 			add_country_leader_trait = KMT_hero_of_wisconsin
+			hidden_effect = {
+				news_event = {
+					id = wisconsin.1000
+					days = 2
+				}
+			}
 		}
 	}
 
@@ -1058,6 +1064,13 @@ focus_tree = {
 
 			set_division_force_allow_recruiting = {
 				division_template = "Weathermen Militia"
+			}
+
+			hidden_effect = {
+				news_event = {
+					id = wisconsin.1009
+					days = 2
+				}
 			}
 		}
 		prerequisite = {
@@ -2110,7 +2123,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = public_healthcare_system
+			add_ideas = KMT_public_healthcare_system
 		}
 		prerequisite = {
 			focus = KMT_protect_minorities
@@ -3501,6 +3514,13 @@ focus_tree = {
 			}
 
 			add_ideas = KMT_unholy_coalition
+
+			hidden_effect = {
+				news_event = {
+					id = wisconsin.1010
+					days = 2
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_weathermen_coup
@@ -5747,6 +5767,12 @@ focus_tree = {
     			target = NPA
     			type = annex_everything
 			}
+			hidden_effect = {
+				news_event = {
+					id = wisconsin.1008
+					days = 2
+				}
+			}
 		}
 		bypass_effect = {
 			set_country_flag = {
@@ -6507,6 +6533,12 @@ focus_tree = {
 				add_idea = KMT_judicial_branch
 			}
 			custom_effect_tooltip = KMT_advisor_refresh_tt
+			hidden_effect = {
+				news_event = {
+					id = wisconsin.1005
+					days = 2
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_empower_the_courts
@@ -6929,6 +6961,12 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150
 			add_war_support = 0.1
+			hidden_effect = {
+				news_event = {
+					id = wisconsin.1004
+					days = 2
+				}
+			}
 		}
 		prerequisite = {
 			focus = KMT_hinder_the_courts
@@ -7393,6 +7431,12 @@ focus_tree = {
 			remove_ideas = KMT_coalition_of_the_willing_2
 			remove_power_balance = {
 				id = KMT_judicial_bop
+			}
+			hidden_effect = {
+				news_event = {
+					id = wisconsin.1006
+					days = 2
+				}
 			}
 		}
 		prerequisite = {
