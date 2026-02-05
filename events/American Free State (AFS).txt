@@ -3004,6 +3004,8 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		add_stability = -0.05
+		add_war_support = -0.05
 		hidden_effect = {
 		    country_event = {
 			    id = mattis.25
@@ -3228,6 +3230,8 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		add_political_power = -100
+		set_country_flag = AFS_fear_time
 	}
 }
 

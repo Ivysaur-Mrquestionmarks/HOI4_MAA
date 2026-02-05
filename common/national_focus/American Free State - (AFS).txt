@@ -359,8 +359,8 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
-			#has_completed_focus = AFS_againist_tyranny
-			#has_country_flag = AFS_civil_war_over
+			has_completed_focus = AFS_againist_tyranny
+			has_country_flag = AFS_civil_war_over
 		}
 		available = {
 			has_country_flag = {
@@ -2318,7 +2318,7 @@ focus_tree = {
 			focus = AFS_begin_the_plot
 		}
 		select_effect = {  }
-		#allow_branch = {
+		allow_branch = {
 			has_country_flag = {
                 flag = AFS_civil_war_over
             }
@@ -2329,7 +2329,7 @@ focus_tree = {
 					has_completed_focus = AFS_againist_the_triumvirate
 				}
 			}
-		#}
+		}
 		offset = {
 			x = -19
 			y = 0
@@ -6232,14 +6232,9 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_completed_focus = AFS_may_he_rest
 		}
 		available = {
-			NOT = {
-			    has_country_leader = {
-                    name = "James Mattis"
-                    ruling_only = yes
-                }
-			}
 		}
 		completion_reward = {
 
@@ -6281,6 +6276,9 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_country_flag = {
+                flag = AFS_fear_time
+            }
 		}
 		available = {
 		}
@@ -6340,7 +6338,19 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-
+            if = {
+			    limit = { has_idea = AFS_strength_and_might_2 }
+				swap_ideas = {
+			        remove_idea = AFS_growing_dissent_2
+			        add_idea = AFS_growing_dissent_3
+		        }
+			}
+		    else = {
+			    swap_ideas = {
+			        remove_idea = AFS_growing_dissent_3
+			        add_idea = AFS_growing_dissent_4
+		        }
+			}
 		}
 	}
 
@@ -6395,6 +6405,9 @@ focus_tree = {
 		}
 		select_effect = {  }
 		allow_branch = {
+			has_country_flag = {
+                flag = AFS_fear_time
+            }
 		}
 		available = {
 		}
@@ -6466,6 +6479,7 @@ focus_tree = {
 		relative_position_id = AFS_continue_his_mission
 		prerequisite = {
 			focus = AFS_continue_his_mission
+			focus = AFS_a_new_path
 		}
 		select_effect = {  }
 		allow_branch = {
