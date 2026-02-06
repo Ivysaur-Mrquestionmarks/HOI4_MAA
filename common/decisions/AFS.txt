@@ -5864,10 +5864,9 @@ AFS_decaying_savior = {
 		}
 
 		available = {
-			NOT = {
-				has_country_flag = AFS_doing_mattis_action
+			AFS = {
+				has_owned_state = 198
 			}
-			has_owned_state = 198
 			NOT = {
 			    country_exists = GLA
 				country_exists = KMT
@@ -5901,10 +5900,9 @@ AFS_decaying_savior = {
 		}
 
 		available = {
-			NOT = {
-				has_country_flag = AFS_doing_mattis_action
+			AFS = {
+				has_owned_state = 416
 			}
-			has_owned_state = 416
 			NOT = {
 			    country_exists = USA
 				country_exists = NPA
@@ -5937,10 +5935,9 @@ AFS_decaying_savior = {
 		}
 
 		available = {
-			NOT = {
-				has_country_flag = AFS_doing_mattis_action
+			AFS = {
+				has_owned_state = 242
 			}
-			has_owned_state = 242
 			NOT = {
 			    country_exists = FRA
 			}
@@ -5972,10 +5969,9 @@ AFS_decaying_savior = {
 		}
 
 		available = {
-			NOT = {
-				has_country_flag = AFS_doing_mattis_action
+			AFS = {
+				has_owned_state = 329
 			}
-			has_owned_state = 329
 			NOT = {
 			    country_exists = CSA
 			}
@@ -6007,10 +6003,9 @@ AFS_decaying_savior = {
 		}
 
 		available = {
-			NOT = {
-				has_country_flag = AFS_doing_mattis_action
+			AFS = {
+				has_owned_state = 143
 			}
-			has_owned_state = 143
 			NOT = {
 			    country_exists = TEX
 			}
@@ -6042,10 +6037,9 @@ AFS_decaying_savior = {
 		}
 
 		available = {
-			NOT = {
-				has_country_flag = AFS_doing_mattis_action
+			AFS = {
+				has_owned_state = 411
 			}
-			has_owned_state = 411
 			NOT = {
 			    country_exists = UTA
 			}
@@ -6077,10 +6071,9 @@ AFS_decaying_savior = {
 		}
 
 		available = {
-			NOT = {
-				has_country_flag = AFS_doing_mattis_action
+			AFS = {
+				has_owned_state = 366
 			}
-			has_owned_state = 366
 			NOT = {
 			    country_exists = PRA
 			}
@@ -6112,10 +6105,9 @@ AFS_decaying_savior = {
 		}
 
 		available = {
-			NOT = {
-				has_country_flag = AFS_doing_mattis_action
+			AFS = {
+				has_owned_state = 496
 			}
-			has_owned_state = 496
 			NOT = {
 			    country_exists = CAS
 			}
