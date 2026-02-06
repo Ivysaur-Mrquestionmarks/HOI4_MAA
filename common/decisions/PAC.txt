@@ -842,3 +842,624 @@ PAC_anarchy_in_the_pacific = {
 		}
 	}
 }
+
+PAC_yellow_and_black_government = {
+	PAC_ally_with_republicans = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_gather_political_allies
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = yes
+		
+		#days_re_enable = 25
+
+		days_remove = 35
+		
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.01
+				tooltip = political_power_gain_tt
+			}
+			add_popularity = {
+                ideology = republican
+                popularity = 0.03
+            }
+			add_popularity = {
+                ideology = libertarian_right
+                popularity = 0.03
+            }
+		}
+	}
+
+	PAC_ally_with_queer_movements = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_gather_political_allies
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = yes
+		
+		#days_re_enable = 25
+
+		days_remove = 35
+		
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.01
+				tooltip = political_power_gain_tt
+			}
+			add_popularity = {
+                ideology = democrat
+                popularity = 0.03
+            }
+			add_popularity = {
+                ideology = libertarian_right
+                popularity = 0.03
+            }
+		}
+	}
+
+	PAC_ally_with_neo_liberals = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_gather_political_allies
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = yes
+		
+		#days_re_enable = 25
+
+		days_remove = 35
+		
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.01
+				tooltip = political_power_gain_tt
+			}
+			add_popularity = {
+                ideology = democrat
+                popularity = 0.03
+            }
+			add_popularity = {
+                ideology = libertarian_right
+                popularity = 0.03
+            }
+		}
+	}
+
+	PAC_expand_county_powers = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_local_rights
+			has_country_flag = {
+                flag = PAC_political_decision_1
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 30
+
+		days_remove = 60
+		
+		cost = 65
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 60
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.01
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.01
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.01
+				tooltip = compliance_growth_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_1
+                value = 1
+            }
+		}
+	}
+
+	PAC_power_to_states = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_local_rights
+			has_country_flag = {
+                flag = PAC_political_decision_2
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 30
+
+		days_remove = 60
+		
+		cost = 65
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.01
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.01
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.01
+				tooltip = compliance_growth_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_2
+                value = 1
+            }
+		}
+	}
+
+	PAC_fight_against_anti_americanism = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_forever_with_the_guardians
+			has_country_flag = {
+                flag = PAC_political_decision_3
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 35
+		
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.01
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.01
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = -0.01
+				tooltip = compliance_growth_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_3
+                value = 1
+            }
+		}
+	}
+
+	PAC_call_to_liberty = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_forever_with_the_guardians
+			has_country_flag = {
+                flag = PAC_political_decision_4
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 30
+
+		days_remove = 30
+		
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		modifier = {
+            army_org_factor = -0.05
+			weekly_manpower = 125
+		}
+		remove_effect = {
+			modify_country_flag = {
+                flag = PAC_political_decision_4
+                value = 1
+            }
+		}
+	}
+
+	PAC_legitimize_the_republic = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_form_the_pacific_republic
+			has_country_flag = {
+                flag = PAC_political_decision_5
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 30
+		
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.01
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.01
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.01
+				tooltip = compliance_growth_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_5
+                value = 1
+            }
+		}
+	}
+
+	PAC_democracy_restoration = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_form_the_pacific_republic
+			has_country_flag = {
+                flag = PAC_political_decision_6
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 30
+
+		days_remove = 35
+		
+		cost = 35
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.01
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.01
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.01
+				tooltip = compliance_growth_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_6
+                value = 1
+            }
+		}
+	}
+
+	PAC_rally_the_youth = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_coastal_liberty
+			has_country_flag = {
+                flag = PAC_political_decision_7
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 30
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.01
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_7
+                value = 1
+            }
+		}
+	}
+
+	PAC_spread_the_ideals_of_liberty = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_coastal_liberty
+			has_country_flag = {
+                flag = PAC_political_decision_8
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 30
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.01
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_8
+                value = 1
+            }
+		}
+	}
+}

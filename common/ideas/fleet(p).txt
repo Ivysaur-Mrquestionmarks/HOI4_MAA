@@ -708,5 +708,182 @@ ideas = {
 				army_morale_factor = 0.25
 			}
 		}
+
+		#Libertarian Ideas
+		PAC_economic_liberty = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.05
+				consumer_goods_expected_value = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_oil_factor = 0.05
+				global_building_slots = 1
+			}
+		}
+
+		PAC_economic_liberty_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.1
+				consumer_goods_expected_value = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_oil_factor = 0.05
+				global_building_slots = 1
+			}
+		}
+
+		PAC_economic_liberty_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.15
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_oil_factor = 0.1
+				global_building_slots = 1
+			}
+		}
+
+		PAC_economic_liberty_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.2
+				consumer_goods_expected_value = 0.2
+				industrial_capacity_factory = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				production_oil_factor = 0.1
+				global_building_slots = 1
+			}
+		}
+
+		PAC_economic_liberty_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.25
+				consumer_goods_expected_value = 0.3
+				industrial_capacity_factory = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+				production_oil_factor = 0.15
+				global_building_slots = 1
+			}
+		}
+
+		PAC_the_guard_of_pacific_freedom = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.03
+				planning_speed = 0.05
+				dig_in_speed_factor = 0.05
+				experience_gain_army_unit = 0.05
+			}
+		}
+
+		PAC_the_guard_of_pacific_freedom_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.1
+				army_org_factor = 0.05
+				planning_speed = 0.1
+				dig_in_speed_factor = 0.1
+				experience_gain_army_unit = 0.08
+			}
+		}
+
+		PAC_the_guard_of_pacific_freedom_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.08
+				planning_speed = 0.15
+				dig_in_speed_factor = 0.15
+				experience_gain_army_unit = 0.1
+			}
+		}
+
+		PAC_the_guard_of_pacific_freedom_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_factor = 0.1
+				planning_speed = 0.2
+				dig_in_speed_factor = 0.2
+				experience_gain_army_unit = 0.15
+			}
+		}
 	}
 }

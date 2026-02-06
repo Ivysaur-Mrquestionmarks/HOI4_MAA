@@ -17,3 +17,23 @@ PAC_a_land_to_be_free_dynamic_modifier = { #NATIONAL SPIRIT, balls.
 	production_factory_efficiency_gain_factor = PAC.var_factory_efficiency_level
 }
 
+#### Libertarian ####
+PAC_bastion_of_liberty_dynamic_modifier = { #NATIONAL SPIRIT, balls.
+	enable = { always = yes }
+
+	icon = GFX_idea_PAC_a_land_to_be_free_dynamic_modifier
+	
+	political_power_gain = PAC.var_pp_level
+	compliance_growth = PAC.var_compliance_level
+	stability_factor = PAC.var_stability_level
+	war_support_factor = PAC.var_war_support_level
+	libertarian_right_drift = PAC.var_libertarian_right_level
+
+	army_defence_factor = PAC.var_defense_level
+
+	production_speed_buildings_factor = PAC.var_production_speed_level
+	production_factory_efficiency_gain_factor = PAC.var_factory_efficiency_level
+	research_speed_factor = PAC.var_research_speed_level
+	local_resources_factor = PAC.var_local_resources_level
+}
+

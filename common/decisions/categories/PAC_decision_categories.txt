@@ -29,6 +29,16 @@ PAC_anarchy_in_the_pacific = {
 	}
 
 	visible = {
-		has_war_with = PRA
+	}
+}
+
+PAC_yellow_and_black_government = {
+	#icon = hol_war_on_pacifism
+	
+	allowed = {
+		tag = PAC
+	}
+
+	visible = {
 	}
 }

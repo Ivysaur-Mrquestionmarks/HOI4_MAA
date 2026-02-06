@@ -782,7 +782,7 @@ country_event = {
 add_namespace = pacific_libertarians
 
 country_event = {
-	id = pacific_libertarians.1 #
+	id = pacific_libertarians.1 #Anarchists Defeated at Sacramento
 	title = pacific_libertarians.1.t
 	desc = pacific_libertarians.1.d
 	#picture = 
@@ -793,6 +793,37 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		add_stability = 0.05
+		add_popularity = {
+            ideology = libertarian_left
+            popularity = -0.05
+        }
+		hidden_effect = {
+		    country_event = {
+  			    id = pacific_libertarians.2
+    		    days = 15
+		    }
+		}
+	}
+}
+
+country_event = {
+	id = pacific_libertarians.2 #Anarchists Crushed
+	title = pacific_libertarians.2.t
+	desc = pacific_libertarians.2.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pacific_libertarians.2.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = 0.05
+		add_popularity = {
+            ideology = libertarian_left
+            popularity = -0.15
+        }
 	}
 }
 

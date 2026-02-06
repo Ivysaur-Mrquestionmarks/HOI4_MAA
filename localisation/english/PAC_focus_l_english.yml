@@ -137,9 +137,13 @@
 
  #Libertarian Events
 
- pacific_libertarians.1.t:0 ""
+ pacific_libertarians.1.t:0 "Anarchists Defeated at Sacramento"
  pacific_libertarians.1.d:0 ""
- pacific_libertarians.1.a:0 ""
+ pacific_libertarians.1.a:0 "The Libertarian Dream Has Been Defended!"
+
+ pacific_libertarians.2.t:0 "Anarchists Crushed"
+ pacific_libertarians.2.d:0 ""
+ pacific_libertarians.2.a:0 "Victory Against The Leftist Radicals!"
 
  #Democrat Events
 
@@ -371,6 +375,88 @@
  PAC_a_new_way_of_life:0 "A New Way of Life"
  PAC_a_new_way_of_life_desc:0 ""
 
+ #Libertarians
+ PAC_new_american_liberty:0 "New American Liberty"
+ PAC_new_american_liberty_desc:0 ""
+
+ PAC_set_the_markets_free:0 "Set The Markets Free"
+ PAC_set_the_markets_free_desc:0 ""
+ PAC_deregulation_is_key:0 "Deregulation Is Key"
+ PAC_deregulation_is_key_desc:0 ""
+ PAC_lower_taxation:0 "Lower Taxation"
+ PAC_lower_taxation_desc:0 ""
+ PAC_economic_opportunity:0 "Economic Opportunity"
+ PAC_economic_opportunity_desc:0 ""
+ PAC_rebuild_from_statism:0 "Rebuild From Statism"
+ PAC_rebuild_from_statism_desc:0 ""
+ PAC_embrace_the_future_of_economics:0 "Embrace The Future of Economics"
+ PAC_embrace_the_future_of_economics_desc:0 ""
+ PAC_free_and_fair_trade:0 "Free And Fair Trade"
+ PAC_free_and_fair_trade_desc:0 ""
+ PAC_prosperity_once_again:0 "Prosperity Once Again"
+ PAC_prosperity_once_again_desc:0 ""
+
+ PAC_yellow_and_black_governance:0 "Yellow And Black Governance"
+ PAC_yellow_and_black_governance_desc:0 ""
+ PAC_gather_political_allies:0 "Gather Political Allies"
+ PAC_gather_political_allies_desc:0 ""
+ PAC_local_rights:0 "Local Rights"
+ PAC_local_rights_desc:0 ""
+ PAC_protecting_the_peoples_speech:0 "Protecting The People's Speech"
+ PAC_protecting_the_peoples_speech_desc:0 ""
+ PAC_privatization:0 "Privatization"
+ PAC_privatization_desc:0 ""
+ PAC_restoring_old_liberties:0 "Restoring Old Liberties"
+ PAC_restoring_old_liberties_desc:0 ""
+ PAC_keep_your_rifle:0 "Keep Your Rifle"
+ PAC_keep_your_rifle_desc:0 ""
+ PAC_form_the_pacific_republic:0 "Form The Pacific Republic"
+ PAC_form_the_pacific_republic_desc:0 ""
+ PAC_forever_with_the_guardians:0 "Forever With The Guardians"
+ PAC_forever_with_the_guardians_desc:0 ""
+ PAC_coastal_liberty:0 "Coastal Liberty"
+ PAC_coastal_liberty_desc:0 ""
+
+ PAC_militias_of_the_pacific:0 "Militias of The Pacific"
+ PAC_militias_of_the_pacific_desc:0 ""
+ PAC_freedom_through_the_barrel:0 "Freedom Through The Barrel"
+ PAC_freedom_through_the_barrel_desc:0 ""
+ PAC_militia_reformation:0 "Militia Reformation"
+ PAC_militia_reformation_desc:0 ""
+ PAC_modern_standards:0 "Modern Standards"
+ PAC_modern_standards_desc:0 ""
+ PAC_rethink_the_command_structure:0 "Rethink The Command Structure"
+ PAC_rethink_the_command_structure_desc:0 ""
+ PAC_equipment_contracts:0 "Equipment Contracts"
+ PAC_equipment_contracts_desc:0 ""
+ PAC_terrain_training:0 "Terrain Training"
+ PAC_terrain_training_desc:0 ""
+ PAC_guardians_of_pacific_liberty:0 "Guardians of Pacific Liberty"
+ PAC_guardians_of_pacific_liberty_desc:0 ""
+ 
+ PAC_follow_jefferson:0 "Follow Jefferson"
+ PAC_follow_jefferson_desc:0 ""
+ PAC_patriots_in_command:0 "Patriots In Command"
+ PAC_patriots_in_command_desc:0 ""
+ PAC_expand_military_industries:0 "Expand Military Industries"
+ PAC_expand_military_industries_desc:0 ""
+ PAC_a_new_tree_of_liberty:0 "A New Tree of Liberty"
+ PAC_a_new_tree_of_liberty_desc:0 ""
+ PAC_begin_the_utopia:0 "Begin The Utopia"
+ PAC_begin_the_utopia_desc:0 ""
+ PAC_meet_with_billionaires:0 "Meet With Billionaires"
+ PAC_meet_with_billionaires_desc:0 ""
+ PAC_megacities_across_the_pacific:0 "Megacities Across The Pacific"
+ PAC_megacities_across_the_pacific_desc:0 ""
+ PAC_paradisio:0 "Paradisio"
+ PAC_paradisio_desc:0 ""
+ PAC_total_digital_privacy:0 "Total Digital Privacy"
+ PAC_total_digital_privacy_desc:0 ""
+ PAC_smaller_government:0 "Smaller Government"
+ PAC_smaller_government_desc:0 ""
+ PAC_work_with_marginalized_people:0 "Work With Marginalized Communities"
+ PAC_work_with_marginalized_people_desc:0 ""
+
  ################################ PAC - IDEAS ################################
 
  PAC_home_of_the_marines:0"Home of the Marines"
@@ -425,6 +511,21 @@
  PAC_defenders_of_anarchy_6:0 "Defenders of Anarchy"
  PAC_defenders_of_anarchy_7:0 "Defenders of Anarchy"
 
+ #Libertarian Ideas
+ PAC_bastion_of_liberty_dynamic_modifier:0 "Bastion of Liberty"
+
+ PAC_economic_liberty:0 "Economic Liberty"
+ PAC_economic_liberty_2:0 "Economic Liberty"
+ PAC_economic_liberty_3:0 "Economic Liberty"
+ PAC_economic_liberty_4:0 "Economic Liberty"
+ PAC_economic_liberty_5:0 "Economic Liberty"
+
+ PAC_the_guard_of_pacific_freedom:0 "The Guard of Pacific Freedom"
+ PAC_the_guard_of_pacific_freedom_2:0 "The Guard of Pacific Freedom"
+ PAC_the_guard_of_pacific_freedom_3:0 "The Guard of Pacific Freedom"
+ PAC_the_guard_of_pacific_freedom_4:0 "The Guard of Pacific Freedom"
+ 
+
  ################################ PAC - DECISIONS ################################
 
  PAC_colapse_:0 "The Collapse of the Junta"
@@ -451,13 +552,30 @@
  PAC_defend_our_free_lands:0 "Defend Our Free Lands!"
  PAC_help_your_community:0 "Help Your Community!"
 
+ PAC_anarchy_in_the_pacific:0 "Anarchy in The Pacific"
+ PAC_anarchy_in_the_pacific_desc:0 ""
+
+ PAC_ally_with_republicans:0 "Ally With Republicans"
+ PAC_ally_with_queer_movements:0 "Ally With Queer Movements"
+ PAC_ally_with_neo_liberals:0 "Ally With Neo-Liberals"
+ PAC_expand_county_powers:0 "Expand County Powers"
+ PAC_power_to_states:0 "Power To States"
+ PAC_fight_against_anti_americanism:0 "Fight Against Anti-Americanism"
+ PAC_call_to_liberty:0 "Call To Liberty"
+ PAC_legitimize_the_republic:0 "Legitimize The Republic"
+ PAC_democracy_restoration:0 "Democracy Restoration"
+ PAC_rally_the_youth:0 "Rally The Youth"
+ PAC_spread_the_ideals_of_liberty:0 "Spread The Ideals of Liberty"
+
  ################################ PAC - OTHER  ################################
 
  diplomatic_exchange:0 "Diplomatic Exchange"
  diplomatic_exchange_trade:0 "Diplomatic Trade Exchange"
  PAC_inauguration_tooltip:0 "§HThe Inauguration Will Commence...§!"
 
- PAC_a_land_to_be_free_dynamic_modifier_modify_tt: "Modify §Y$PAC_a_land_to_be_free_dynamic_modifier$§! by"
+ PAC_a_land_to_be_free_modify_tt: "Modify §Y$PAC_a_land_to_be_free_dynamic_modifier$§! by"
+
+ PAC_bastion_of_liberty_modify_tt: "Modify §Y$PAC_bastion_of_liberty_dynamic_modifier$§! by"
 
  PAC_nicholas_zehr:0 "Nicholas Zehr"
  PAC_alana_mclaughlin:0 "Alana McLaughlin"

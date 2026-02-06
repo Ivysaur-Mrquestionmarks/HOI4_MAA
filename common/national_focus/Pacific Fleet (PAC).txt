@@ -1246,22 +1246,22 @@ focus_tree = {
 			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
 			add_to_variable = {
 				var = PAC.var_pp_level
-				value = 0.03
+				value = 0.02
 				tooltip = political_power_gain_tt
 			}
 			add_to_variable = {
 				var = PAC.var_war_support_level
-				value = 0.05
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_defense_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_defence_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_drift_defence_level
-				value = 0.03
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}
 			unlock_decision_tooltip = PAC_become_loveable
@@ -1302,17 +1302,17 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = PAC.var_compliance_level
-				value = 0.05
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}
 			add_to_variable = {
 				var = PAC.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_drift_defence_level
-				value = 0.03
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}
 			unlock_decision_tooltip = PAC_expand_the_association
@@ -1352,17 +1352,17 @@ focus_tree = {
 			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
 			add_to_variable = {
 				var = PAC.var_stability_level
-				value = 0.03
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_libertarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = libertarian_left_drift_factor_tt
 			}
 			add_to_variable = {
@@ -1413,12 +1413,12 @@ focus_tree = {
 			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
 			add_to_variable = {
 				var = PAC.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_libertarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = libertarian_left_drift_factor_tt
 			}
 			add_to_variable = {
@@ -1461,12 +1461,12 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = PAC.var_compliance_level
-				value = 0.03
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}
 			add_to_variable = {
 				var = PAC.var_stability_level
-				value = 0.03
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			unlock_decision_tooltip = PAC_meet_with_mayors
@@ -1500,12 +1500,12 @@ focus_tree = {
 			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
 			add_to_variable = {
 				var = PAC.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_libertarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = libertarian_left_drift_factor_tt
 			}
 			add_to_variable = {
@@ -1515,7 +1515,7 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = PAC.var_compliance_level
-				value = 0.03
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}	
 		}
@@ -1544,12 +1544,12 @@ focus_tree = {
 			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
 			add_to_variable = {
 				var = PAC.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_defense_level
-				value = 0.05
+				value = 0.03
 				tooltip = army_defence_factor_tt
 			}		
 		}
@@ -1605,12 +1605,12 @@ focus_tree = {
 			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
 			add_to_variable = {
 				var = PAC.var_stability_level
-				value = 0.03
+				value = 0.02
 				tooltip = stability_factor_tt
 			}	
 			add_to_variable = {
 				var = PAC.var_production_speed_level
-				value = 0.03
+				value = 0.02
 				tooltip = production_speed_factor_tt
 			}
 			#maybe add stuff for energy or something
@@ -1715,12 +1715,12 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = PAC.var_compliance_level
-				value = 0.03
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}
 			add_to_variable = {
 				var = PAC.var_stability_level
-				value = 0.05
+				value = 0.02
 				tooltip = stability_factor_tt
 			}			
 		}
@@ -1753,22 +1753,22 @@ focus_tree = {
 			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
 			add_to_variable = {
 				var = PAC.var_stability_level
-				value = 0.05
+				value = 0.03
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_war_support_level
-				value = 0.05
+				value = 0.03
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_compliance_level
-				value = 0.05
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}
 			add_to_variable = {
 				var = PAC.var_drift_defence_level
-				value = 0.05
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}		
 		}
@@ -2039,7 +2039,7 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = PAC.var_factory_efficiency_level
-				value = 0.03
+				value = 0.02
 				tooltip = factory_efficiency_factor_tt
 			}	
 			add_to_variable = {
@@ -2111,7 +2111,7 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = PAC.var_factory_efficiency_level
-				value = 0.03
+				value = 0.02
 				tooltip = factory_efficiency_factor_tt
 			}	
 			add_to_variable = {
@@ -2160,10 +2160,19 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT}
+				limit = {is_core_of = ROOT is_coastal = yes}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-    					type = industrial_complex
+    					type = dockyard
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT is_coastal = yes}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = dockyard
     					level = 1
     					instant_build = yes
 				}
@@ -2171,12 +2180,12 @@ focus_tree = {
 			custom_effect_tooltip = PAC_a_land_to_be_free_modify_tt
 			add_to_variable = {
 				var = PAC.var_factory_efficiency_level
-				value = 0.03
+				value = 0.02
 				tooltip = factory_efficiency_factor_tt
 			}	
 			add_to_variable = {
 				var = PAC.var_production_speed_level
-				value = 0.03
+				value = 0.02
 				tooltip = production_speed_factor_tt
 			}	
 		}
@@ -2235,7 +2244,7 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = PAC.var_factory_efficiency_level
-				value = 0.03
+				value = 0.02
 				tooltip = factory_efficiency_factor_tt
 			}	
 			add_to_variable = {
@@ -3632,17 +3641,17 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = PAC.var_war_support_level
-				value = 0.03
+				value = 0.02
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_defense_level
-				value = 0.03
+				value = 0.02
 				tooltip = army_defence_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_drift_defence_level
-				value = 0.03
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}		
 		}
@@ -3678,17 +3687,17 @@ focus_tree = {
 			}
 			add_to_variable = {
 				var = PAC.var_compliance_level
-				value = 0.03
+				value = 0.02
 				tooltip = compliance_growth_tt
 			}
 			add_to_variable = {
 				var = PAC.var_stability_level
-				value = 0.03
+				value = 0.02
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
 				var = PAC.var_drift_defence_level
-				value = 0.03
+				value = 0.02
 				tooltip = drift_defence_factor_tt
 			}		
 		}
@@ -3970,7 +3979,7 @@ focus_tree = {
 			}		
 			add_to_variable = {
 				var = PAC.var_libertarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = libertarian_left_drift_factor_tt
 			}
 		}
@@ -4118,7 +4127,7 @@ focus_tree = {
 			}		
 			add_to_variable = {
 				var = PAC.var_libertarian_left_level
-				value = 0.02
+				value = 0.01
 				tooltip = libertarian_left_drift_factor_tt
 			}	
 			add_to_variable = {
@@ -4151,7 +4160,14 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = PAC_a_land_to_be_free_dynamic_modifier
+			}
+			country_event = {
+  				id = pacific_libertarians.1
+    			days = 0
+			}
 		}
 	}
 
@@ -4172,7 +4188,8 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_ideas = PAC_economic_liberty
 		}
 	}
 
@@ -4193,7 +4210,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_economic_liberty
+				add_idea = PAC_economic_liberty_2
+			}		
 		}
 	}
 
@@ -4214,7 +4235,34 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}		
 		}
 	}
 
@@ -4235,7 +4283,34 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}		
 		}
 	}
 
@@ -4257,7 +4332,38 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = PAC_economic_liberty_2
+				add_idea = PAC_economic_liberty_3
+			}			
 		}
 	}
 
@@ -4279,7 +4385,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_economic_liberty_3
+				add_idea = PAC_economic_liberty_4
+			}
 		}
 	}
 
@@ -4301,7 +4411,43 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT is_coastal = yes}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = dockyard
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT is_coastal = yes}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = dockyard
+    					level = 1
+    					instant_build = yes
+				}
+			}			
 		}
 	}
 
@@ -4323,7 +4469,38 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_economic_liberty_4
+				add_idea = PAC_economic_liberty_5
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT is_coastal = yes}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = dockyard
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}	
 		}
 	}
 
@@ -4344,7 +4521,28 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.02
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.02
+				tooltip = compliance_growth_tt
+			}
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.02
+				tooltip = libertarian_right_drift_factor_tt
+			}
 		}
 	}
 
@@ -4365,7 +4563,31 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.02
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.02
+				tooltip = compliance_growth_tt
+			}
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}
+			unlock_decision_tooltip = PAC_ally_with_republicans
+			unlock_decision_tooltip = PAC_ally_with_queer_movements
+			unlock_decision_tooltip = PAC_ally_with_neo_liberals
 		}
 	}
 
@@ -4387,7 +4609,25 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.03
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.02
+				tooltip = compliance_growth_tt
+			}		
+			unlock_decision_tooltip = PAC_expand_county_powers
+			unlock_decision_tooltip = PAC_power_to_states	
 		}
 	}
 
@@ -4409,7 +4649,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.03
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = -0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}
 		}
 	}
 
@@ -4431,7 +4687,24 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_political_power = -100
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_factory_efficiency_level
+				value = 0.03
+				tooltip = factory_efficiency_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_production_speed_level
+				value = 0.03
+				tooltip = production_speed_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_local_resources_level
+				value = 0.03
+				tooltip = local_resources_factor_tt
+			}	
 		}
 	}
 
@@ -4453,7 +4726,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.02
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.02
+				tooltip = compliance_growth_tt
+			}		
 		}
 	}
 
@@ -4475,7 +4764,18 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.02
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_defense_level
+				value = 0.02
+				tooltip = army_defence_factor_tt
+			}		
 		}
 	}
 
@@ -4501,7 +4801,35 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.03
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = -0.03
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.02
+				tooltip = political_power_gain_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.02
+				tooltip = compliance_growth_tt
+			}	
+			unlock_decision_tooltip = PAC_legitimize_the_republic
+			unlock_decision_tooltip = PAC_democracy_restoration	
 		}
 	}
 
@@ -4527,7 +4855,40 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = -0.03
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.03
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.02
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_defense_level
+				value = 0.02
+				tooltip = army_defence_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.02
+				tooltip = libertarian_right_drift_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = -0.02
+				tooltip = compliance_growth_tt
+			}
+			unlock_decision_tooltip = PAC_fight_against_anti_americanism
+			unlock_decision_tooltip = PAC_call_to_liberty
 		}
 	}
 
@@ -4551,7 +4912,25 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.02
+				tooltip = compliance_growth_tt
+			}
+			unlock_decision_tooltip = PAC_rally_the_youth
+			unlock_decision_tooltip = PAC_spread_the_ideals_of_liberty
 		}
 	}
 
@@ -4572,7 +4951,8 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_ideas = PAC_the_guard_of_pacific_freedom
 		}
 	}
 
@@ -4593,7 +4973,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 0.4
+                uses = 2
+                category = infantry_weapons
+            }
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.02
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_defense_level
+				value = 0.02
+				tooltip = army_defence_factor_tt
+			}		
 		}
 	}
 
@@ -4614,7 +5010,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_the_guard_of_pacific_freedom
+				add_idea = PAC_the_guard_of_pacific_freedom_2
+			}				
 		}
 	}
 
@@ -4636,7 +5036,28 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+	            cost_reduction = 0.35
+	            uses = 2
+	            category = land_doctrine
+            }
+			add_doctrine_cost_reduction = {
+	            cost_reduction = 0.35
+	            uses = 2
+	            category = naval_doctrine
+            }
+			add_doctrine_cost_reduction = {
+	            cost_reduction = 0.35
+	            uses = 2
+	            category = air_doctrine
+            }
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_research_speed_level
+				value = 0.02
+				tooltip = research_speed_factor_tt
+			}		
 		}
 	}
 
@@ -4657,7 +5078,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_the_guard_of_pacific_freedom_2
+				add_idea = PAC_the_guard_of_pacific_freedom_3
+			}			
 		}
 	}
 
@@ -4679,7 +5104,34 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_political_power = -50
+			add_tech_bonus = {
+                bonus = 0.4
+                uses = 2
+                category = infantry_weapons
+            }
+			add_tech_bonus = {
+				bonus = 0.4
+				uses = 2
+				category = infantry_tech
+			}	
+			add_tech_bonus = {
+                bonus = 0.4
+                uses = 2
+                category = armor
+            }  
+			add_tech_bonus = {
+                bonus = 0.4
+                uses = 2
+                category = artillery
+            }  
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_research_speed_level
+				value = 0.02
+				tooltip = research_speed_factor_tt
+			}
 		}
 	}
 
@@ -4701,7 +5153,19 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			army_experience = 35
+			add_doctrine_cost_reduction = {
+	            cost_reduction = 0.35
+	            uses = 2
+	            category = land_doctrine
+            }	
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_defense_level
+				value = 0.02
+				tooltip = army_defence_factor_tt
+			}			
 		}
 	}
 
@@ -4723,7 +5187,11 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PAC_the_guard_of_pacific_freedom_3
+				add_idea = PAC_the_guard_of_pacific_freedom_4
+			}			
 		}
 	}
 
@@ -4749,7 +5217,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.02
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_defense_level
+				value = 0.02
+				tooltip = army_defence_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}			
 		}
 	}
 
@@ -4770,7 +5254,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.02
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_defense_level
+				value = 0.02
+				tooltip = army_defence_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}			
 		}
 	}
 
@@ -4791,7 +5291,34 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = arms_factory
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = arms_factory
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = arms_factory
+    					level = 1
+    					instant_build = yes
+				}
+			}		
 		}
 	}
 
@@ -4813,7 +5340,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.02
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_defense_level
+				value = 0.02
+				tooltip = army_defence_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}			
 		}
 	}
 
@@ -4839,7 +5382,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.02
+				tooltip = compliance_growth_tt
+			}			
 		}
 	}
 
@@ -4860,7 +5419,33 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.02
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_factory_efficiency_level
+				value = 0.03
+				tooltip = factory_efficiency_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_production_speed_level
+				value = 0.03
+				tooltip = production_speed_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_local_resources_level
+				value = 0.03
+				tooltip = local_resources_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_research_speed_level
+				value = 0.03
+				tooltip = research_speed_factor_tt
+			}	
 		}
 	}
 
@@ -4881,7 +5466,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						has_state_category = city
+						has_state_category = large_city
+						has_state_category = metropolis
+						has_state_category = megalopolis
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}			
 		}
 	}
 
@@ -4903,7 +5504,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_research_speed_level
+				value = 0.02
+				tooltip = research_speed_factor_tt
+			}	
 		}
 	}
 
@@ -4927,7 +5544,18 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.02
+				tooltip = political_power_gain_tt
+			}		
 		}
 	}
 
@@ -4950,7 +5578,18 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = -0.02
+				tooltip = political_power_gain_tt
+			}		
 		}
 	}
 
@@ -4973,7 +5612,23 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.02
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_libertarian_right_level
+				value = 0.01
+				tooltip = libertarian_right_drift_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.02
+				tooltip = compliance_growth_tt
+			}		
 		}
 	}
 
