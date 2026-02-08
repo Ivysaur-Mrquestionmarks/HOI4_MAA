@@ -6237,7 +6237,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-
+            mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -6313,8 +6313,9 @@ focus_tree = {
 			        add_idea = AFS_growing_dissent_3
 		        }
 			}
-		    else = {
-			    swap_ideas = {
+		    if = {
+			    limit = { has_idea = AFS_strength_and_might_3 }
+				swap_ideas = {
 			        remove_idea = AFS_growing_dissent_3
 			        add_idea = AFS_growing_dissent_4
 		        }
@@ -6345,8 +6346,9 @@ focus_tree = {
 			        add_idea = AFS_growing_dissent_3
 		        }
 			}
-		    else = {
-			    swap_ideas = {
+		    if = {
+			    limit = { has_idea = AFS_strength_and_might_3 }
+				swap_ideas = {
 			        remove_idea = AFS_growing_dissent_3
 			        add_idea = AFS_growing_dissent_4
 		        }
@@ -6412,11 +6414,10 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-            swap_country_leader_traits = {
-                remove = AFS_false_savior_trait
-                add = AFS_false_savior_trait_2
-                ideology = military_dictatorship
-            }
+			swap_ruler_traits = { 
+				remove = AFS_false_savior_trait
+				add = AFS_false_savior_trait_2
+			}
 		}
 	}
 
@@ -6462,11 +6463,10 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-            swap_country_leader_traits = {
-                remove = AFS_false_savior_trait_2
-                add = AFS_new_savior
-                ideology = military_dictatorship
-            }
+			swap_ruler_traits = { 
+				remove = AFS_false_savior_trait
+				add = AFS_new_savior
+			}
 		}
 	}
 

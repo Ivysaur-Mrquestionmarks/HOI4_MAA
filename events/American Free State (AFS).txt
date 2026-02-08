@@ -2847,7 +2847,7 @@ country_event = {
             }
         }
 		complete_national_focus = AFS_may_he_rest
-		mark_focus_tree_layout_dirty = yes
+		add_ideas = AFS_growing_dissent
 	}
 }
 
