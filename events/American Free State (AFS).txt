@@ -520,6 +520,10 @@ country_event = {
                 long_name = AFS_post_civil_war_vermin_long
                 name = AFS_post_civil_war_vermin
             }
+			country_event = {
+				id = AFS.16
+				days = 0
+			}
 	    }
 		if = {
 			limit = {
@@ -537,6 +541,10 @@ country_event = {
                 long_name = AFS_post_civil_war_hawkins_long
                 name = AFS_post_civil_war_hawkins
             }
+			country_event = {
+				id = AFS.17
+				days = 0
+			}
 	    }
 		if = {
 			limit = {
@@ -554,6 +562,10 @@ country_event = {
                 long_name = AFS_post_civil_war_mattis_long
                 name = AFS_post_civil_war_mattis
             }
+			country_event = {
+				id = AFS.18
+				days = 0
+			}
 	    }
 		add_ideas = AFS_ruins_of_the_triumvirate
 		add_ideas = AFS_a_scarred_population
@@ -765,6 +777,106 @@ country_event = {
 		add_political_power = -50
 		add_command_power = -10
 		add_stability = -0.05
+	}
+}
+
+#The American Free State Descends Into Civil War
+news_event = {
+	id = AFS.15
+	title = AFS.15.t
+	desc = AFS.15.d
+	picture = event_AFS_mattis_unification
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = AFS.15.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Anarchists Declare Victory in Ohio
+news_event = {
+	id = AFS.16
+	title = AFS.16.t
+	desc = AFS.16.d
+	picture = event_AFS_mattis_unification
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = AFS.16.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Eco-Socialists Announces Their Victory in Ohio
+news_event = {
+	id = AFS.17
+	title = AFS.17.t
+	desc = AFS.17.d
+	picture = event_AFS_mattis_unification
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = AFS.17.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Militarists Declare Their Triumph in Ohio
+news_event = {
+	id = AFS.18
+	title = AFS.18.t
+	desc = AFS.18.d
+	picture = event_AFS_mattis_unification
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = AFS.18.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Republican Coup in The American Free State
+news_event = {
+	id = AFS.19
+	title = AFS.19.t
+	desc = AFS.19.d
+	picture = event_AFS_mattis_unification
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = AFS.19.a
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 
@@ -997,6 +1109,12 @@ country_event = {
 		name = vermin.7.a
 		ai_chance = {
 			factor = 100
+		}
+		hidden_effect = {
+		    country_event = {
+				id = AFS.15
+				days = 0
+			}
 		}
 	}
 }
@@ -1601,6 +1719,12 @@ country_event = {
 		name = hawkins.7.a
 		ai_chance = {
 			factor = 100
+		}
+		hidden_effect = {
+		    country_event = {
+				id = AFS.15
+				days = 0
+			}
 		}
 	}
 }
@@ -2510,6 +2634,12 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		hidden_effect = {
+		    country_event = {
+				id = AFS.15
+				days = 0
+			}
+		}
 	}
 }
 
@@ -2716,6 +2846,7 @@ country_event = {
                 traits = { AFS_false_savior_trait }
             }
         }
+		complete_national_focus = AFS_may_he_rest
 		mark_focus_tree_layout_dirty = yes
 	}
 }
