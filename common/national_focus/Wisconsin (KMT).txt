@@ -2589,6 +2589,8 @@ focus_tree = {
 				remove_idea = KMT_permanent_revolution_idea
 				add_idea = KMT_permanent_revolution_idea_1
 			}
+
+			set_cosmetic_tag = KMT_great_lakes_commune
 		}
 		prerequisite = {
 			focus = KMT_permanent_revolution
