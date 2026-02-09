@@ -3,6 +3,23 @@
  water_desalination:0 "Desalination Plant"
  water_desalination_plural:0 "Desalination Plants" 
  water_desalination_desc:0 "The Civil War has cut our much needed access to the Colorado river and other water sources.\nWe will need to eventually regain control of the Colorado if we want to prevent a crisis in the future, but for the time being we will need to create our own water supply for our people.\n\nThis building is meant to be exclusive for the Californian tags with the §Cwater§! §Ymanagement§! mechanic such as @PRA \n\nWater Units: §C+1§!" 
+ modifier_production_speed_water_desalination_factor:0 "Desalination plant builfing speed"
+#Technology#
+ PRA_desalination_upgrade:0 "Modern Desalination"
+ PRA_desalination_upgrade_desc:0 "Current desalination processes are costly and inefficient. There are a variety of improvements that can be made to these facilities to increase their output of fresh water."
+ PRA_advanced_desalination:0 "Standarised Desalination Plants"
+ PRA_advanced_desalination_desc:0 "With research into more efficient desalination methods, desalination plants are now exponentially more efficient and viable than in the decades prior, making them a truly revolutionary development for our nation and the rest of the world."
+ PRA_basic_irregation:0 "Basic Irrigation"
+ PRA_basic_irregation_desc:0 "We can improve the efficiency of irrigation practices to minimize water use while maintaining the same level of production"
+ PRA_improved_irregation:0 "Improved Irrigation"
+ PRA_improved_irregation_desc:0 "Updated systems for tracking and transporting water from its sources to our agricultural sectors will improve the efficiency of the whole process"
+ PRA_advanced_irregation:0 "Advanced irrigation"
+ PRA_advanced_irregation_desc:0 "With the most modern advancements in engineering and biology, we can maximize the amount of crops irrigated with the minimum water possible"
+ PRA_improved_extraction:0 "Industrial Water Pumps"
+ PRA_improved_extraction_desc:0 "For our desalinating plants to work, we need to acquire as much water as possible from the ocean.The creation of bigger and better tools to extract this water is an important development in the world of desalination"
+ PRA_industrial_dehumidifiers:0 "Industrial Dehumidifiers"
+ PRA_industrial_dehumidifiers_desc:0 "An idea has been proposed to use large scale dehumidifiers and use the water they extract from the air and use it for human consumption. While there are detractors from the idea, it has been given the go ahead to experiment with"
+
 #Desicions (rework)
  PRA_water_management:0 "Water Management"
  PRA_water_management_desc:0 "The civil war has cut off California from our much needed water supply. Making an already bad water crisis into a potential nation ending one.\nWhile we regain control of §Ykey rivers§!, we will need to make §Ydeals§! with their current occupiers and §Ybuild§! §Cdesalination infrastructure§! to reduce the impacts of the crisis.\n\nCurrently [?requirements|%-] of our population doesn't has their water related needs met\n\nTotal water production: [?total_water|C0] units.\nFrom deals and rivers: [?base_water|C0]\n From buildings: [?facilities|C0]\n\nAn unit of water is enough to provide [?water_per_pop|Y0] thousand people with water related needs\nOur current population is: [?max_manpower_k|Y0] thousand" 
@@ -661,6 +678,11 @@
  Reunite_with_the_True_president_desc:0 "It was bound to happen eventually, Trump wishes for us to reunite with the one true America!"
  Exploit_their_Disadvantages:0 "Exploit Their Disadvantages"
  Exploit_their_Disadvantages_desc:0 "With the Texan collapse, we can easily roll through their warlordistic states!"
+ #Water management#
+ PRA_water_infra:0 "Handle the Water Crisis"
+ PRA_water_infra_desc:0 "California has always been dependent on importing water from nearby states, but since the start of the war and the Trumpists cutting off our access to the Colorado, the state has been in an ever worsening water crisis. We must act quickly and begin creating an independent and sustainable water system, from desalination plants to deals with neighboring states."
+ PRA_desalination_north:0 "Water Self-Reliance"
+ PRA_desalination_north_desc:0 "To maintain our true independence, we must invest heavily into creating large scale desalination facilities throughout our great pacific coast. A good option to begin our project right now is northern California."
  
  # Tooltips #
  pra_loose_communist_generals:0 "We will loose all generals with the §RStaunch Communist§! trait."
