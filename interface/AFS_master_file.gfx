@@ -13213,6 +13213,12 @@ spriteTypes = {
 
 	### Events ###
 	#News Events
+    spriteType = { name = "event_AFS_civil_war_news" texturefile = "gfx/events/AFS_events/AFS_civil_war_news.dds" }
+    spriteType = { name = "event_AFS_vermin_civil_war_victory" texturefile = "gfx/events/AFS_events/AFS_vermin_civil_war_victory.dds" }
+    spriteType = { name = "event_AFS_hawkins_civil_war_victory" texturefile = "gfx/events/AFS_events/AFS_hawkins_civil_war_victory.dds" }
+    spriteType = { name = "event_AFS_mattis_civil_war_victory" texturefile = "gfx/events/AFS_events/AFS_mattis_civil_war_victory.dds" }
+    spriteType = { name = "event_AFS_dewine_coup" texturefile = "gfx/events/AFS_events/AFS_dewine_coup.dds" }
+
 	spriteType = { name = "event_AFS_eco_terror_unification" texturefile = "gfx/events/AFS_events/AFS_eco_terror_unification.dds" }
     spriteType = { name = "event_AFS_hawkins_unification" texturefile = "gfx/events/AFS_events/AFS_hawkins_unification.dds" }
     spriteType = { name = "event_AFS_mattis_unification" texturefile = "gfx/events/AFS_events/AFS_mattis_unification.dds" }

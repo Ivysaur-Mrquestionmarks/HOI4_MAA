@@ -785,7 +785,7 @@ news_event = {
 	id = AFS.15
 	title = AFS.15.t
 	desc = AFS.15.d
-	picture = event_AFS_mattis_unification
+	picture = event_AFS_civil_war_news
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -805,7 +805,7 @@ news_event = {
 	id = AFS.16
 	title = AFS.16.t
 	desc = AFS.16.d
-	picture = event_AFS_mattis_unification
+	picture = event_AFS_vermin_civil_war_victory
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -825,7 +825,7 @@ news_event = {
 	id = AFS.17
 	title = AFS.17.t
 	desc = AFS.17.d
-	picture = event_AFS_mattis_unification
+	picture = event_AFS_hawkins_civil_war_victory
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -845,7 +845,7 @@ news_event = {
 	id = AFS.18
 	title = AFS.18.t
 	desc = AFS.18.d
-	picture = event_AFS_mattis_unification
+	picture = event_AFS_mattis_civil_war_victory
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
@@ -865,7 +865,7 @@ news_event = {
 	id = AFS.19
 	title = AFS.19.t
 	desc = AFS.19.d
-	picture = event_AFS_mattis_unification
+	picture = event_AFS_dewine_coup
 	is_triggered_only = yes
 	#mean_time_to_happen = { days = 30 }
 	fire_only_once = yes
