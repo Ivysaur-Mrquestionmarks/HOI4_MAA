@@ -26,8 +26,8 @@ units = {
 		location = 1945
 		division_template = "Police Division"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.6
-		start_manpower_factor = 0.4
+		start_equipment_factor = 1 #0.6
+		start_manpower_factor = 1 #0.4
 	}
 	#2
 	division = {
@@ -35,8 +35,8 @@ units = {
 		location = 8464
 		division_template = "Police Division"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.3
-		start_manpower_factor = 0.6
+		start_equipment_factor = 1 #0.3
+		start_manpower_factor = 1 #0.6
 	}
 	#3
 	division = {
@@ -44,8 +44,8 @@ units = {
 		location = 8508
 		division_template = "Police Squad"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
-		start_manpower_factor = 0.2
+		start_equipment_factor = 1 #0.9
+		start_manpower_factor = 1 #0.2
 	}
 	#4
 	division = {
@@ -53,8 +53,8 @@ units = {
 		location = 5411
 		division_template = "Police Squad"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
-		start_manpower_factor = 0.1
+		start_equipment_factor = 1 #0.9
+		start_manpower_factor = 1 #0.1
 	}
 	#5
 	division = {
@@ -62,8 +62,8 @@ units = {
 		location = 8547
 		division_template = "Police Squad"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
-		start_manpower_factor = 0.2
+		start_equipment_factor = 1 #0.9
+		start_manpower_factor = 1 #0.2
 	}
 	#6
 	division = {
@@ -71,7 +71,25 @@ units = {
 		location = 486
 		division_template = "Police Squad"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
-		start_manpower_factor = 0.1
+		start_equipment_factor = 1 #0.9
+		start_manpower_factor = 1 #0.1
+	}
+	#7
+	division = {
+		name = "Fifth Squad"
+		location = 486
+		division_template = "Police Squad"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1 #0.9
+		start_manpower_factor = 1 #0.1
+	}
+	#8
+	division = {
+		name = "Eighth Squad"
+		location = 486
+		division_template = "Police Squad"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1 #0.9
+		start_manpower_factor = 1 #0.1
 	}
 }

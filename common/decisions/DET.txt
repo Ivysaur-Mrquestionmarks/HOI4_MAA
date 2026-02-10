@@ -7,21 +7,17 @@ DET_greater_detroit_cat = {
 		}
 
 		available = {
-			has_war = no
-			all_state = {
-				OR = {
-					NOT = {
-						state = 157
-						state = 190
-						state = 162
-						state = 161
-						state = 160
-						state = 152
-					}
-					is_controlled_by = DET
-				}
+			#has_war = no
+			OR = {
+				controls_state = 157
+				controls_state = 190
+				controls_state = 162
+				controls_state = 161
+				controls_state = 160
+				controls_state = 152
 			}
 		}
+		
 		cost = 0
 
 		fire_only_once = yes
@@ -37,6 +33,11 @@ DET_greater_detroit_cat = {
 
 		complete_effect = {
 		}
+
+		ai_will_do = {
+			base = 200
+		}
+
 
 		remove_effect = {
 			every_state = {

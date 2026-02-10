@@ -7,7 +7,29 @@ DET_KMT_alliance = {
 	ai_strategy = {
     		type = alliance
     		id = KMT
-    		value = 200
+    		value = 500
+	}
+	ai_strategy = {
+	    type = diplo_action_acceptance
+	    id = KMT
+	    value = 500
+	    target = join_allies
+	}
+	ai_strategy = {
+	    type = consider_weak
+	    id = GLA
+	    value = 500
+	}
+	ai_strategy = {
+    		type = prepare_for_war
+    		id = GLA
+    		value = 500
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = KMT
+    		value = 500
+    		target = call_allies
 	}
 }
 
@@ -20,6 +42,30 @@ KMT_DET_alliance = {
 	ai_strategy = {
     		type = alliance
     		id = DET
-    		value = 200
+    		value = 500
+	}
+	ai_strategy = {
+	    type = diplo_action_acceptance
+	    id = DET
+	    value = 500
+	    target = join_allies
+	}
+	ai_strategy = {
+	    type = consider_weak
+	    id = GLA
+	    value = 500
+	}
+	ai_strategy = {
+    		type = prepare_for_war
+    		id = GLA
+    		value = 500
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = DET
+    		value = 500
+    		target = call_allies
 	}
 }
+
+
