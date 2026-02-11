@@ -5766,10 +5766,49 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/KMT/KMT_steel_belt.dds"
     }
     spriteType = {
+        name = "GFX_idea_KMT_steel_belt_1"
+        texturefile = "gfx/interface/ideas/KMT/KMT_steel_belt.dds"
+    }
+    spriteType = {
         name = "GFX_idea_KMT_research"
         texturefile = "gfx/interface/ideas/KMT/KMT_research.dds"
     }
-    
+    spriteType = {
+        name = "GFX_idea_KMT_nuclear_idea"
+        texturefile = "gfx/interface/ideas/KMT/KMT_nuclear_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_renewables_idea"
+        texturefile = "gfx/interface/ideas/KMT/KMT_renewables_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_gas_idea"
+        texturefile = "gfx/interface/ideas/KMT/KMT_gas_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_real_american_spirit_idea"
+        texturefile = "gfx/interface/ideas/KMT/KMT_real_american_spirit_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_great_lakes_unbound_idea"
+        texturefile = "gfx/interface/ideas/KMT/KMT_great_lakes_unbound_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_socialized_healthcare"
+        texturefile = "gfx/interface/ideas/KMT/KMT_socialized_healthcare.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_permanent_revolution_idea"
+        texturefile = "gfx/interface/ideas/KMT/KMT_permanent_revolution_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_weather_underground_militia_3"
+        texturefile = "gfx/interface/ideas/KMT/KMT_weather_underground_militia_3.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_weather_underground_militia_4"
+        texturefile = "gfx/interface/ideas/KMT/KMT_weather_underground_militia_4.dds"
+    }
     #state modifiers
     spriteType = {
         name = "GFX_idea_kmt_claimed_state"
