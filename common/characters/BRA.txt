@@ -169,6 +169,47 @@ characters={
 		}
 	}
 
+	BRA_tara_desisto = {
+		name = "Tara DeSisto"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/tara_desisto.tga"
+			}
+		}
+		gender = female
+		country_leader = {
+			ideology = Jeffersonianism
+			traits = {  }
+		}
+	}
+	BRA_haley_macintire = {
+		name = "Haley Macintire"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/haley_macintire.tga"
+				small = "gfx/interface/ideas/BRA/haley_macintire_advisor.dds"
+			}
+			army = {
+				large = "gfx/leaders/BRA/haley_macintire.tga"
+				small = "gfx/interface/ideas/BRA/haley_macintire_advisor.dds"
+			}
+		}
+		gender = female
+		country_leader = {
+			ideology = anarcho_communism
+			traits = {  }
+		}
+		corps_commander = {
+			traits={ infantry_officer trickster guerilla_fighter } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = { OR = { has_government = authoritarian_left has_government = libertarian_left } }
+		}
+	}
+
 
 
 
@@ -652,6 +693,45 @@ characters={
 			}
 			ai_will_do = {
 				factor = 10
+			}
+		}
+	}
+	BRA_michelle_wu = {
+		name = "Michelle Wu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/michelle_wu.tga"
+				small = "gfx/interface/ideas/BRA/michelle_wu_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/BRA/michelle_wu.tga"
+				small = "gfx/interface/ideas/BRA/michelle_wu_idea.dds"
+			}
+		}
+		gender = female
+		country_leader = {
+			ideology = progressive
+			traits = {  }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_michelle_wu
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			available = {
+					OR = {
+						has_government = democrat
+						has_government = libertarian_left
+						has_government = authoritarian_left
+					}
+			}
+			traits = {
+				feminist_minister
+			}
+			ai_will_do = {
+				factor = 0
 			}
 		}
 	}
