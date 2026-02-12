@@ -173,6 +173,7 @@ characters={
 
 
 
+
 	###### GENERALS!!!! ######
 	BRA_dennis_white = {
 		name = "Dennis White"
@@ -614,6 +615,46 @@ characters={
 			}
 		}
 	}	
+	BRA_oren_cass = {
+		name = "Oren Cass"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRA/oren_cass.tga"
+				small = "gfx/interface/ideas/BRA/oren_cass_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/BRA/oren_cass.tga"
+				small = "gfx/interface/ideas/BRA/oren_cass_idea.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservative
+			traits = { economist }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRA_matt_omalley
+			cost = 150
+			allowed = {
+				tag = BRA
+			}
+			available = {
+				NOT = {
+					OR = {
+						has_government = democrat
+						has_government = libertarian_left
+						has_government = authoritarian_left
+					}
+				}
+			}
+			traits = {
+				financial_expert economist
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
 
 	#ADMIRALS
 	BRA_jamie_c_frederick = {
