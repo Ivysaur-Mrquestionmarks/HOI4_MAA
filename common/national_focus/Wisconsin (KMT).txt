@@ -18,6 +18,47 @@ focus_tree = {
     initial_show_position = {
 		focus = KMT_the_state_of_wisconsin
 	}
+	shortcut = {
+		name = KMT_cr_shortcut
+		target = KMT_end_the_counter_revolution
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = KMT_weathermen_shortcut
+		target = KMT_weathermen_coup
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = KMT_elections_shortcut
+		target = KMT_hold_elections
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = KMT_america_shortcut
+		target = KMT_claim_america
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = KMT_npa_shortcut
+		target = KMT_ally_the_npa
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = KMT_industry_shortcut
+		target = KMT_dairy_industry
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = KMT_army_shortcut
+		target = KMT_upgrade_fort_mccoy
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = KMT_gla_war_shortcut
+		target = KMT_the_state_of_wisconsin
+		scroll_wheel_factor = 1
+	}
+	
 	
 
 	########  ########  ########          ######   ##          ###       ##      ##    ###    ########  
