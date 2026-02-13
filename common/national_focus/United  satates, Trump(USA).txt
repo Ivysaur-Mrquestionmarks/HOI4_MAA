@@ -11,6 +11,46 @@ focus_tree = {
 	shared_focus = USA_NEW_45th_directive
 	continuous_focus_position = { x = 1200 y = 1000 }
 	default = no
+
+	shortcut = {
+		name = USA_purge_dems_shortcut
+		target = USA_purge_dems
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = USA_evangelist_shortcut
+		target = USA_evangelist_path
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = USA_pb_shortcut
+		target = USA_PB_path
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = USA_maga_shortcut
+		target = USA_MAGA_path
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = USA_rino_shortcut
+		target = USA_rino_path
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = USA_army_shortcut
+		target = USA_reasses_army
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = USA_maa_shortcut
+		target = USA_make_america_again
+		scroll_wheel_factor = 1
+	}
+
+
+
+
 	focus = {
 		id = USA_reasses_army
 		icon = GFX_goal_USA_Reassess_the_Military

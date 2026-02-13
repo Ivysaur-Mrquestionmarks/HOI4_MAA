@@ -33,6 +33,95 @@ focus_tree = {
 	initial_show_position = {
 		focus = FRA_biden_admin
 	}
+
+	shortcut = {
+		name = FRA_biden_shortcut
+		target = FRA_assemble_the_cabinet
+		scroll_wheel_factor = 1
+		trigger = {
+			has_country_leader = { name = "Joe Biden" ruling_only = yes }
+		}
+	}
+	shortcut = {
+		name = FRA_obama_shortcut
+		target = FRA_third_obama_admin
+		scroll_wheel_factor = 1
+		trigger = {
+			has_country_flag = president_obama
+		}
+	}
+	shortcut = {
+		name = FRA_aoc_shortcut
+		target = FRA_first_progressive_admin
+		scroll_wheel_factor = 1
+		trigger = {
+			has_country_flag = progressive_president
+		}
+	}
+	shortcut = {
+		name = FRA_bidone_shortcut
+		target = FRA_biden_couped_kamabla
+		scroll_wheel_factor = 1
+		trigger = {
+			has_country_flag = FRA_biden_removed_from_office_flag
+		}
+	}
+	shortcut = {
+		name = FRA_kamala_shortcut
+		target = FRA_harris_admin
+		scroll_wheel_factor = 1
+		trigger = {
+			has_country_flag = president_kamala
+		}
+	}
+	shortcut = {
+		name = FRA_mcconnell_shortcut
+		target = FRA_mcconnell_admin
+		scroll_wheel_factor = 1
+		trigger = {
+			has_country_flag = president_mcconnell
+		}
+	}
+	shortcut = {
+		name = FRA_graham_shortcut
+		target = FRA_graham_admin
+		scroll_wheel_factor = 1
+		trigger = {
+			has_country_flag = president_graham
+		}
+	}
+	shortcut = {
+		name = FRA_business_as_usual_shortcut
+		target = FRA_business_as_usual
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = FRA_pentagon_shortcut
+		target = FRA_rejuvinate_pentagon
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = FRA_the_great_crisis_of_our_time_shortcut
+		target = FRA_the_great_crisis_of_our_time
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = FRA_virginia_shortcut
+		target = FRA_VIR_connect_capitals
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = FRA_kentucky_shortcut
+		target = KFC_FRA_VIR_legitimists_in_kentucky
+		scroll_wheel_factor = 1
+	}
+	shortcut = {
+		name = FRA_sc_shortcut
+		target = SCA_FRA_southern_reconstruction
+		scroll_wheel_factor = 1
+	}
+	
+	
 	
 	####### Biden Administration ######
 	
