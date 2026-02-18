@@ -15,4 +15,52 @@ characters={
 			id = -1
 		}
 	}
+	MIN_omar_fateh = {
+		name = "Omar Fateh"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/omar_fateh.dds"
+				small = "gfx/interface/ideas/MIN/omar_fateh_general.dds"
+			}
+			army = {
+				large = "gfx/leaders/MIN/omar_fateh.dds"
+				small = "gfx/interface/ideas/MIN/omar_fateh_general.dds"
+			}
+		}
+		country_leader = {
+			traits = { dictator }
+			ideology = eco_fascism
+		}
+		field_marshal = {
+			traits={ politically_connected harsh_leader trickster organizer guerilla_fighter } 
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	#generals
+	MIN_william_kelly = {
+		name = "William Kelly"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/will_kelly.tga"
+				small = "gfx/interface/ideas/MIN/william_kelly_general.dds"
+			}
+			army = {
+				large = "gfx/leaders/MIN/will_kelly.tga"
+				small = "gfx/interface/ideas/MIN/william_kelly_general.dds"
+			}
+		}
+		corps_commander = {
+			traits={ trait_reckless infantry_leader } 
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
 }

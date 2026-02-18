@@ -58,11 +58,17 @@ add_ideas = {
 set_popularities = {
 	autocratic = 0
 	republican = 0
-	democrat = 30
-	authoritarian_left = 0
+	democrat = 12
+	authoritarian_left = 18
 	libertarian_right = 10
 	libertarian_left = 60
 }
 
 ### Country Leaders ###
 recruit_character = MIN_jesse_ventura
+recruit_character = MIN_omar_fateh
+
+#generals
+recruit_character = MIN_william_kelly
+
+
