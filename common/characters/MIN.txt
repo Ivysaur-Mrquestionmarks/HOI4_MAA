@@ -14,6 +14,10 @@ characters={
 			expire = "2060.1.1.1"
 			id = -1
 		}
+		country_leader = {
+			traits = { MIN_surf_ventura }
+			ideology = progressive
+		}
 	}
 	MIN_omar_fateh = {
 		name = "Omar Fateh"
@@ -38,6 +42,31 @@ characters={
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 3
+		}
+	}
+	MIN_kyle_wagner = {
+		name = "Kyle Wagner"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/kyle_wagner.tga"
+				small = "gfx/interface/ideas/MIN/kyle_wagner_general.dds"
+			}
+			army = {
+				large = "gfx/leaders/MIN/kyle_wagner.tga"
+				small = "gfx/interface/ideas/MIN/kyle_wagner_general.dds"
+			}
+		}
+		country_leader = {
+			traits = { Annoying_Bitch }
+			ideology = anarcho_primitivism
+		}
+		corps_commander = {
+			traits={ low_iq trait_reckless trickster guerilla_fighter } 
+			skill = 1
+			attack_skill = 3 #seemingly high stats are to compensate for low_iq trait
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 
