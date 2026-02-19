@@ -616,9 +616,6 @@ country_event = {
 	desc = wisconsin.14.d
 	picture = event_KMT_event_14 
 	is_triggered_only = yes	
-	mean_time_to_happen = {
-		days = 20
-	}
 
 	option = {
 		name = wisconsin.14.a
@@ -651,9 +648,6 @@ country_event = {
 	desc = wisconsin.15.d
 	picture = event_KMT_event_15 
 	is_triggered_only = yes	
-	mean_time_to_happen = {
-		days = 20
-	}
 
 	option = {
 		name = wisconsin.15.a
@@ -1332,10 +1326,10 @@ country_event = {
 						set_nationality = PREV.PREV
 						# Transfers to breakaway
 					}
-					KMT_Mark_E_Anderson = { # Character
-						set_nationality = PREV.PREV
-						# Transfers to breakaway
-					}
+					#KMT_Mark_E_Anderson = { # Character
+					#	set_nationality = PREV.PREV
+					#	# Transfers to breakaway
+					#}
 					KMT_Sandra_A_Gregory = { # Character
 						set_nationality = PREV.PREV
 						# Transfers to breakaway
@@ -1675,9 +1669,7 @@ country_event = {
 	picture = event_KMT_event_40
 
 	is_triggered_only = yes
-	mean_time_to_happen = {
-    	days = 2
-	}
+	
 	option = {
 		name = wisconsin.40.a
 		ai_chance = {
@@ -1753,7 +1745,6 @@ country_event = {
 	picture = event_KMT_event_1
 
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 2 }
 
 	option = {
 		name = wisconsin.43.a
@@ -1878,9 +1869,7 @@ country_event = {
 	picture = event_KMT_event_48
 
 	is_triggered_only = yes
-	mean_time_to_happen = {
-    	days = 2
-	}
+	
 	option = {
 		name = wisconsin.48.a
 		ai_chance = {
@@ -1956,9 +1945,7 @@ country_event = {
 	picture = event_KMT_event_51
 
 	is_triggered_only = yes
-	mean_time_to_happen = {
-    	days = 2
-	}
+	
 	option = {
 		name = wisconsin.51.a
 		ai_chance = {
@@ -2039,9 +2026,7 @@ country_event = {
 	picture = event_KMT_event_54
 
 	is_triggered_only = yes
-	mean_time_to_happen = {
-    	days = 2
-	}
+	
 	option = {
 		name = wisconsin.54.a
 		ai_chance = {
@@ -2066,9 +2051,7 @@ country_event = {
 	picture = event_KMT_event_55
 
 	is_triggered_only = yes
-	mean_time_to_happen = {
-    	days = 2
-	}
+	
 	option = {
 		name = wisconsin.55.a
 		trigger = {
@@ -2113,9 +2096,7 @@ country_event = {
 	picture = event_KMT_event_56
 
 	is_triggered_only = yes
-	mean_time_to_happen = {
-    	days = 2
-	}
+	
 	option = {
 		name = wisconsin.56.a
 		KMT_Raymond_Leo_Burke = { 
@@ -2152,9 +2133,7 @@ country_event = {
 	picture = event_KMT_event_57
 
 	is_triggered_only = yes
-	mean_time_to_happen = {
-    	days = 2
-	}
+	
 	option = {
 		name = wisconsin.57.a
 		add_country_leader_trait = KMT_meant_for_something_greater
@@ -2236,9 +2215,7 @@ country_event = {
 	picture = event_KMT_event_1
 
 	is_triggered_only = yes
-	mean_time_to_happen = {
-    	days = 2
-	}
+	
 	option = {
 		name = wisconsin.61.a
 		ai_chance = {
@@ -2285,9 +2262,7 @@ country_event = {
 	picture = event_KMT_event_3
 
 	is_triggered_only = yes
-	mean_time_to_happen = {
-    	days = 2
-	}
+	
 	option = {
 		name = wisconsin.62.a
 		ai_chance = {
@@ -2333,9 +2308,7 @@ country_event = {
 	picture = event_KMT_event_4
 
 	is_triggered_only = yes
-	mean_time_to_happen = {
-    	days = 2
-	}
+	
 	option = {
 		name = wisconsin.63.a
 		ai_chance = {

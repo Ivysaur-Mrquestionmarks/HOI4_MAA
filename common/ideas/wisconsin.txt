@@ -1180,7 +1180,7 @@ ideas = {
 
 		KMT_rallying_the_snyder_bros = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				weekly_manpower = 1500
 				stability_weekly = 0.001
@@ -1191,7 +1191,7 @@ ideas = {
 
 		KMT_the_spartans = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				army_core_defence_factor = 0.15
 				surrender_limit = 0.1
@@ -1201,7 +1201,7 @@ ideas = {
 
 		KMT_the_persians = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				conscription = 0.05
 				army_speed_factor = 0.05
@@ -1211,7 +1211,7 @@ ideas = {
 
 		KMT_affsp = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				stability_weekly = 0.001
 				monthly_population = 0.1
@@ -1221,7 +1221,7 @@ ideas = {
 
 		KMT_ecospiritualism_idea = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				political_power_factor = 0.1
 				libertarian_left_drift = 0.01
@@ -1230,7 +1230,7 @@ ideas = {
 
 		KMT_ecospiritualism_idea_1 = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
@@ -1241,7 +1241,7 @@ ideas = {
 
 		KMT_caring_state = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				stability_weekly = 0.001
 				political_power_cost = 0.1
@@ -1251,7 +1251,7 @@ ideas = {
 
 		KMT_ecospiritualism_idea_2 = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.1
@@ -1265,7 +1265,7 @@ ideas = {
 
 		KMT_interfaith_dialogue_idea = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				stability_factor = 0.2
 				political_power_factor = 0.1
@@ -1275,7 +1275,7 @@ ideas = {
 
 		KMT_interfaith_dialogue_idea_1 = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				stability_factor = 0.25
 				war_support_factor = 0.1
@@ -1296,7 +1296,7 @@ ideas = {
 
 		KMT_border_turret_initiative = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				war_support_factor = 0.1
 				army_defence_factor = 0.2
@@ -1390,7 +1390,7 @@ ideas = {
 
 		KMT_catholic_america_idea_4 = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes	
+			allowed_civil_war = {always = yes }	
 			modifier = {
 				war_support_factor = 0.2
 				stability_factor = 0.2
@@ -1402,7 +1402,7 @@ ideas = {
 
 		KMT_tea_party_movement = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes	
+			allowed_civil_war = {always = yes }	
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.1
@@ -1413,7 +1413,7 @@ ideas = {
 
 		KMT_reformed_social_policy = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes	
+			allowed_civil_war = {always = yes }	
 			modifier = {
 				monthly_population = 0.05
 				research_speed_factor = 0.1
@@ -1433,7 +1433,7 @@ ideas = {
 
 		KMT_interventionism_idea = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				army_attack_factor = 0.025
 				army_defence_factor = 0.025
@@ -1446,7 +1446,7 @@ ideas = {
 
 		KMT_interventionism_idea_1 = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
@@ -1460,7 +1460,7 @@ ideas = {
 
 		KMT_reconstituted_congress = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				stability_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -1472,7 +1472,7 @@ ideas = {
 
 		KMT_america_restored = {
 			allowed = { original_tag = KMT }
-			allowed_civil_war = yes
+			allowed_civil_war = {always = yes }
 			modifier = {
 				stability_factor = 0.2
 				consumer_goods_factor = -0.1
