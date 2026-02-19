@@ -5873,6 +5873,66 @@ spriteTypes = {
         name = "GFX_idea_KMT_affsp"
         texturefile = "gfx/interface/ideas/KMT/KMT_affsp.dds"
     }
+    spriteType = {
+        name = "GFX_idea_KMT_ecospiritualism_idea"
+        texturefile = "gfx/interface/ideas/KMT/KMT_ecospiritualism_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_ecospiritualism_idea_1"
+        texturefile = "gfx/interface/ideas/KMT/KMT_ecospiritualism_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_ecospiritualism_idea_2"
+        texturefile = "gfx/interface/ideas/KMT/KMT_ecospiritualism_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_caring_state"
+        texturefile = "gfx/interface/ideas/KMT/KMT_caring_state.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_interfaith_dialogue_idea_1"
+        texturefile = "gfx/interface/ideas/KMT/KMT_interfaith_dialogue_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_revenge"
+        texturefile = "gfx/interface/ideas/KMT/KMT_revenge.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_border_turret_initiative"
+        texturefile = "gfx/interface/ideas/KMT/KMT_border_turret_initiative.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_coalition_of_the_willing_2"
+        texturefile = "gfx/interface/ideas/KMT/KMT_coalition_of_the_willing_2.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_catholic_america_idea"
+        texturefile = "gfx/interface/ideas/KMT/KMT_catholic_america_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_catholic_america_idea_1"
+        texturefile = "gfx/interface/ideas/KMT/KMT_catholic_america_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_catholic_america_idea_2"
+        texturefile = "gfx/interface/ideas/KMT/KMT_catholic_america_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_catholic_america_idea_3"
+        texturefile = "gfx/interface/ideas/KMT/KMT_catholic_america_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_catholic_america_idea_4"
+        texturefile = "gfx/interface/ideas/KMT/KMT_catholic_america_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_deus_vult_idea"
+        texturefile = "gfx/interface/ideas/KMT/KMT_deus_vult_idea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_KMT_rallying_the_faithful"
+        texturefile = "gfx/interface/ideas/KMT/KMT_rallying_the_faithful.dds"
+    }
     #state modifiers
     spriteType = {
         name = "GFX_idea_kmt_claimed_state"
