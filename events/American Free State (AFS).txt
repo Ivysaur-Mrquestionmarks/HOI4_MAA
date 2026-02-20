@@ -1451,6 +1451,26 @@ country_event = {
 	}
 }
 
+#Vermin Loves All
+country_event = {
+	id = vermin.22
+	title = vermin.22.t
+	desc = vermin.22.d
+	picture = event_AFS_rust_belt
+	is_triggered_only = yes
+	#mean_time_to_happen = { days = 30 }
+	fire_only_once = yes
+	immediate = {
+    
+	}
+	option = {
+		name = vermin.22.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
 add_namespace = hawkins
 
 #Annihilationism Spreads in The Green Army
@@ -2936,7 +2956,10 @@ country_event = {
 	trigger = {
 		tag = AFS
 		has_completed_focus = AFS_an_eternal_golden_age
-		has_country_flag = AFS_mattis_cyborg
+		has_country_leader = {
+            name = "James Mattis"
+            ruling_only = yes
+        }
 	}
 	mean_time_to_happen = { days = 10 }
 	fire_only_once = yes
@@ -2960,7 +2983,10 @@ country_event = {
 	trigger = {
 		tag = AFS
 		has_completed_focus = AFS_never_again
-		has_country_flag = AFS_mattis_cyborg
+		has_country_leader = {
+            name = "James Mattis"
+            ruling_only = yes
+        }
 	}
 	mean_time_to_happen = { days = 20 }
 	fire_only_once = yes

@@ -871,22 +871,58 @@ AFS_individualist_collectivist_balance_of_power_category = {
 				value = 1
 			}
 		}
+		modifier = {
+			libertarian_left_drift = 0.03
+			stability_weekly = 0.01
+			compliance_growth_on_our_occupied_states = 0.05
+		}
 		remove_effect = {
 			add_power_balance_value = {
 				id = individualist_collectivist_bop
 				value = -0.1
 				tooltip_side = individualist
 			}
-			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
-			add_to_variable = {
-				var = AFS.var_stability_level
-				value = 0.01
-				tooltip = stability_factor_tt
+		}
+	}
+
+	AFS_promote_less_dependence_on_vermin = {
+		priority = 25
+		icon = GFX_decision_generic_civil_support
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_vermins_anarchist_dreams
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_BOP_action
 			}
-			add_to_variable = {
-				var = AFS.var_compliance_level
-				value = 0.01
-				tooltip = compliance_growth_tt
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 20
+
+		days_remove = 25
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_BOP_action
+				days = 25
+				value = 1
+			}
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = individualist_collectivist_bop
+				value = -0.1
+				tooltip_side = individualist
 			}
 		}
 	}
@@ -926,7 +962,7 @@ AFS_individualist_collectivist_balance_of_power_category = {
 		}
 		modifier = {
 			libertarian_left_drift = 0.03
-			army_attack_speed_factor = 0.1
+			army_attack_speed_factor = 0.05
 			breakthrough_factor = 0.05
 		}
 		remove_effect = {
@@ -980,7 +1016,101 @@ AFS_individualist_collectivist_balance_of_power_category = {
 		}
 	}
 
+	AFS_promote_individual_craftsmanship = {
+		priority = 25
+		icon = GFX_decision_generic_civil_support
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_promote_mutual_aid
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_BOP_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 20
+
+		days_remove = 25
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_BOP_action
+				days = 25
+				value = 1
+			}
+		}
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.05
+			equipment_capture_factor = 0.1
+			production_factory_max_efficiency_factor = -0.05
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = individualist_collectivist_bop
+				value = -0.1
+				tooltip_side = individualist
+			}
+		}
+	}
+
 	AFS_unite_the_people = {
+		priority = 25
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_vermins_anarchist_dreams
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_BOP_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 20
+
+		days_remove = 25
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_BOP_action
+				days = 25
+				value = 1
+			}
+		}
+		modifier = {
+			libertarian_left_drift = 0.03
+			war_support_weekly = 0.01
+			army_defence_factor = 0.05
+		}
+		remove_effect = {
+		    add_power_balance_value = {
+				id = individualist_collectivist_bop
+				value = 0.1
+				tooltip_side = collectivist
+			}
+		}
+	}
+
+	AFS_entrench_vermins_ideals = {
 		priority = 25
 		icon = GFX_decision_hol_exchange_intelligence_data
 
@@ -1018,17 +1148,6 @@ AFS_individualist_collectivist_balance_of_power_category = {
 				id = individualist_collectivist_bop
 				value = 0.1
 				tooltip_side = collectivist
-			}
-			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
-			add_to_variable = {
-				var = AFS.var_war_support_level
-				value = 0.01
-				tooltip = war_support_factor_tt
-			}
-			add_to_variable = {
-				var = AFS.var_defense_level
-				value = 0.01
-				tooltip = army_defence_factor_tt
 			}
 		}
 	}
@@ -1110,11 +1229,59 @@ AFS_individualist_collectivist_balance_of_power_category = {
 		}
 		modifier = {
 			libertarian_left_drift = 0.03
-			stability_weekly = 0.003
-			army_org_factor = 0.3
+			stability_weekly = 0.01
+			army_org_factor = 0.05
 		}
 		remove_effect = {
 		    add_power_balance_value = {
+				id = individualist_collectivist_bop
+				value = 0.1
+				tooltip_side = collectivist
+			}
+		}
+	}
+
+	AFS_workers_united = {
+		priority = 25
+		icon = GFX_decision_generic_civil_support
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_promote_mutual_aid
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_BOP_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 20
+
+		days_remove = 25
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_BOP_action
+				days = 25
+				value = 1
+			}
+		}
+		modifier = {
+			production_factory_efficiency_gain_factor = -0.05
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			production_lack_of_resource_penalty_factor = -0.05
+		}
+		remove_effect = {
+			add_power_balance_value = {
 				id = individualist_collectivist_bop
 				value = 0.1
 				tooltip_side = collectivist
@@ -1223,6 +1390,11 @@ AFS_vermin_political_decisions = {
                 popularity = 0.02
             }
 			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
+			add_to_variable = {
+				var = AFS.var_stability_level
+				value = 0.01
+				tooltip = stability_factor_tt
+			}
 			add_to_variable = {
 				var = AFS.var_monthly_population_level
 				value = 0.01
@@ -1504,6 +1676,109 @@ AFS_vermin_political_decisions = {
 			}
 			modify_country_flag = {
                 flag = AFS_vermin_military_decision_2
+                value = 1
+            }
+		}
+	}
+
+	AFS_fight_for_your_ponies = {
+		priority = 25
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_for_americas_future
+			has_country_flag = {
+                flag = AFS_vermin_military_decision_3
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+			surrender_progress > 0.35
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 35
+		
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 30
+				value = 1
+			}
+		}
+		modifier = {
+			weekly_manpower = 1000
+			training_time_factor = -0.1
+            army_org_factor = -0.05
+		}
+		remove_effect = {
+			modify_country_flag = {
+                flag = AFS_vermin_military_decision_3
+                value = 1
+            }
+		}
+	}
+
+	AFS_vermins_counter_attack = {
+		priority = 25
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			original_tag = AFS
+		}
+
+		visible = {
+			has_completed_focus = AFS_for_americas_future
+			has_country_flag = {
+                flag = AFS_vermin_military_decision_3
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AFS_doing_political_action
+			}
+			surrender_progress > 0.35
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 35
+
+		days_remove = 35
+		
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = {
+				flag = AFS_doing_political_action
+				days = 30
+				value = 1
+			}
+		}
+		modifier = {
+			army_attack_factor = 0.05
+			army_speed_factor = 0.05
+			breakthrough_factor = 0.05
+			army_morale_factor = 0.05
+		}
+		remove_effect = {
+			modify_country_flag = {
+                flag = AFS_vermin_military_decision_3
                 value = 1
             }
 		}

@@ -1005,6 +1005,10 @@ focus_tree = {
 			}
 			unlock_decision_tooltip = AFS_meet_with_the_lgbtq_community
 			unlock_decision_tooltip = AFS_promote_equality
+			country_event = {
+				id = vermin.22
+				days = 0
+			}
 			hidden_effect = {
 			    set_country_flag = AFS_vermin_political_decision_3
 			    set_country_flag = AFS_vermin_political_decision_4
@@ -1144,9 +1148,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			army_experience = 45
-		    navy_experience = 25
-		    air_experience = 25
+			army_experience = 30
+			add_doctrine_cost_reduction = {
+	            cost_reduction = 0.35
+	            uses = 2
+	            category = land_doctrine
+            }
 		    swap_ideas = {
 			    remove_idea = AFS_vermins_black_army_3
 			    add_idea = AFS_vermins_black_army_4
@@ -1170,6 +1177,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			army_experience = 45
+			add_doctrine_cost_reduction = {
+	            cost_reduction = 0.45
+	            uses = 2
+	            category = land_doctrine
+            }
 		    if = {
 			    limit = { has_idea = AFS_vermins_black_army_5 }
 				swap_ideas = {
@@ -1421,6 +1434,12 @@ focus_tree = {
 				value = 0.02
 				tooltip = army_defence_factor_tt
 			}
+			unlock_decision_tooltip = AFS_fight_for_your_ponies
+			unlock_decision_tooltip = AFS_vermins_counter_attack
+			hidden_effect = {
+			    set_country_flag = AFS_vermin_military_decision_3
+			    set_country_flag = AFS_vermin_military_decision_4
+			}
 		}
 	}
 
@@ -1451,6 +1470,8 @@ focus_tree = {
 			unlock_decision_tooltip = AFS_meet_with_farmers
 			unlock_decision_tooltip = AFS_meet_with_families
 			unlock_decision_tooltip = AFS_meet_with_educators
+			unlock_decision_tooltip = AFS_promote_individual_craftsmanship
+			unlock_decision_tooltip = AFS_workers_united
 			hidden_effect = {
 			    set_country_flag = AFS_vermin_economic_decision_1
 			    set_country_flag = AFS_vermin_economic_decision_2
@@ -1476,7 +1497,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -1485,7 +1506,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -1494,7 +1515,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -1554,7 +1575,7 @@ focus_tree = {
 		        }
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     				type = industrial_complex
@@ -1568,7 +1589,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     				type = industrial_complex
@@ -1618,7 +1639,7 @@ focus_tree = {
 		        }
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -1627,7 +1648,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -1636,7 +1657,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -1672,7 +1693,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -1681,7 +1702,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -1754,14 +1775,14 @@ focus_tree = {
 			    add_idea = AFS_a_stateless_economy_4
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = steel
                     amount = 5
                 }	
 		    }
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = aluminium
                     amount = 5
@@ -1787,7 +1808,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -1796,7 +1817,7 @@ focus_tree = {
 				}
 			}	
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     					type = arms_factory
@@ -1805,21 +1826,21 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = steel
                     amount = 5
                 }	
 		    }
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = aluminium
                     amount = 5
                 }	
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = tungsten
                     amount = 5
@@ -1909,14 +1930,14 @@ focus_tree = {
 		        }
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = steel
                     amount = 5
                 }	
 		    }
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = aluminium
                     amount = 5
@@ -3026,7 +3047,7 @@ focus_tree = {
 			    add_idea = Ruins_of_the_Rust_Belt_2
 		    }
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     					type = arms_factory
@@ -3111,7 +3132,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -3120,7 +3141,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -3129,7 +3150,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -3164,7 +3185,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = AFS_terra_weapons
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -3173,7 +3194,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -3182,7 +3203,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -3223,7 +3244,7 @@ focus_tree = {
 		        }
 			}
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -3232,7 +3253,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -3241,7 +3262,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -3318,7 +3339,7 @@ focus_tree = {
 			    add_idea = AFS_terra_weapons_4
 		    }
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -3327,7 +3348,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -3336,7 +3357,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -3365,7 +3386,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = AFS_death_infrastructure
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
     				type = infrastructure
@@ -3374,7 +3395,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
     				type = infrastructure
@@ -3383,7 +3404,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
     				type = infrastructure
@@ -3434,7 +3455,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
     				type = infrastructure
@@ -3443,7 +3464,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
     				type = infrastructure
@@ -3452,7 +3473,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
     				type = infrastructure
@@ -3461,7 +3482,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
     				type = infrastructure
@@ -3470,7 +3491,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
     				type = infrastructure
@@ -4387,7 +4408,7 @@ focus_tree = {
 		completion_reward = {
 		    add_ideas = AFS_solar_infrastructure
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -4396,7 +4417,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -4452,7 +4473,7 @@ focus_tree = {
 			    add_idea = AFS_solar_infrastructure_2
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -4461,7 +4482,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -4470,7 +4491,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -4530,7 +4551,7 @@ focus_tree = {
 			    add_idea = AFS_eco_socialist_economics_2
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -4539,7 +4560,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -4548,7 +4569,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -4557,7 +4578,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -4643,7 +4664,7 @@ focus_tree = {
 			    add_idea = AFS_extreme_environmentalist_regulations_2
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = -1
 				add_building_construction = {
     					type = industrial_complex
@@ -4652,7 +4673,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = -1
 				add_building_construction = {
     					type = industrial_complex
@@ -4661,7 +4682,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = -1
 				add_building_construction = {
     					type = industrial_complex
@@ -4739,7 +4760,7 @@ focus_tree = {
 			    add_idea = AFS_solar_infrastructure_3
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -4748,7 +4769,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -4757,7 +4778,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -4766,7 +4787,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -5914,7 +5935,7 @@ focus_tree = {
 			    add_idea = Ruins_of_the_Rust_Belt_2
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -5923,7 +5944,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -5959,7 +5980,7 @@ focus_tree = {
 			    add_idea = Ruins_of_the_Rust_Belt_3
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -5968,7 +5989,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -6008,7 +6029,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -6017,7 +6038,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -6026,7 +6047,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -6084,7 +6105,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -6093,7 +6114,7 @@ focus_tree = {
 				}
 			}
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -6102,7 +6123,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -6111,7 +6132,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -6144,7 +6165,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -6153,7 +6174,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -6162,7 +6183,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -8279,7 +8300,7 @@ focus_tree = {
 		        }
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     					type = industrial_complex
@@ -8288,7 +8309,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     					type = industrial_complex
@@ -8355,7 +8376,7 @@ focus_tree = {
 			    add_idea = AFS_the_industrial_heart_once_more_4
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -8364,7 +8385,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -8434,7 +8455,7 @@ focus_tree = {
 		        }
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -8443,7 +8464,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -8511,7 +8532,7 @@ focus_tree = {
 			    add_idea = AFS_techno_feudalist_economics_4
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -8520,7 +8541,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -8529,7 +8550,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
     				type = infrastructure
@@ -8607,21 +8628,21 @@ focus_tree = {
 		        }
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = steel
                     amount = 10
                 }	
 		    }
 		    random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = aluminium
                     amount = 10
                 }	
 		    }
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_resource = {
                     type = tungsten
                     amount = 10
@@ -8660,7 +8681,7 @@ focus_tree = {
 		        }
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -8669,7 +8690,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -8678,7 +8699,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -8710,7 +8731,7 @@ focus_tree = {
 		completion_reward = {
 		    remove_ideas = Ruins_of_the_Rust_Belt_4
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -8719,7 +8740,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -8728,7 +8749,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = arms_factory
@@ -11356,9 +11377,9 @@ focus_tree = {
 				limit = { NOT = { has_government = libertarian_left } }
 				add_popularity = {
                     ideology = libertarian_left
-                    popularity = 0.45
+                    popularity = 0.35
                 }
-				add_stability = -0.35
+				add_stability = -0.25
 			}
 		}
 	}
@@ -11379,6 +11400,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
             add_to_variable = {
 				var = AFS.var_libertarian_left_level
 				value = 0.03
@@ -11418,6 +11440,7 @@ focus_tree = {
 			remove_power_balance = {
                 id = individualist_collectivist_bop
             }
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
             add_to_variable = {
 				var = AFS.var_stability_level
 				value = 0.05
@@ -11457,6 +11480,7 @@ focus_tree = {
 			remove_power_balance = {
                 id = individualist_collectivist_bop
             }
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
             add_to_variable = {
 				var = AFS.var_pp_level
 				value = 0.1
@@ -13959,7 +13983,7 @@ focus_tree = {
 				tooltip = political_power_gain_tt
 			}
             random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -13968,7 +13992,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -13977,7 +14001,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex
@@ -13986,7 +14010,7 @@ focus_tree = {
 				}
 			}
 			random_controlled_state = {
-				limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
+				limit = {is_core_of = ROOT} 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     					type = industrial_complex

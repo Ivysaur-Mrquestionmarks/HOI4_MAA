@@ -95,7 +95,7 @@
  vermin.1.a:0 "Hawkins And Mattis Must Be Defeated!"
 
  vermin.2.t:0 "Vermin Rally At Columbus"
- vermin.2.d:0 "Vermin supreme, the man with the boot as a cap, marches along with many other of his followers, rocking the same outfit he has. Him and his supporters rallied at Columbus today to establish their position of Anarchism in Ohio, many are willing to fight alongside him, for Anarchism."
+ vermin.2.d:0 "Vermin Supreme, the man with the boot as a cap, marches along with many other of his followers, rocking the same outfit he has. Him and his supporters rallied at Columbus today to establish their position of Anarchism in Ohio, many are willing to fight alongside him, for Anarchism."
  vermin.2.a:0 "The New Capital of Anarchism!"
 
  vermin.3.t:0 "Where To Rally at Next?"
@@ -174,6 +174,10 @@
  vermin.21.t:0 "Anarchism And The Rust Belt"
  vermin.21.d:0 ""
  vermin.21.a:0 "Prosperity Within Anarchism!"
+
+ vermin.22.t:0 "Vermin Loves All"
+ vermin.22.d:0 "vermin welcomes a bunch of lgbtq refugees and talks with them and promises to fight against reactionaries"
+ vermin.22.a:0 "Everyone is Free, Everyone is Accepted."
 
  #Hawkins Events
 
@@ -798,7 +802,7 @@
  AFS_formalize_the_anarchist_internationale_desc:0 "From Ukraine to Catalonia to Korea to now America, anarchism cannot be restrained by countries or continents. To ensure the success of future anarchist states like our own, we shall organize the myriad of anarchist movements into a new Internationale."
  AFS_meet_with_anarchists_worldwide:0 "Meet With Anarchists Worldwide"
  AFS_meet_with_anarchists_worldwide_desc:0 "We shall arrange a large meeting with representatives from as many Anarchist groups in the world as we are able to. For our global plans to succeed, organization and cooperation are key."
- AFS_arm_the_freedom_fighters:0 "Arm the Freedom Fighters"
+ AFS_arm_the_freedom_fighters:0 "Arm Freedom Fighters"
  AFS_arm_the_freedom_fighters_desc:0 "Freedom has been achieved on the home front but worldwide our brothers continue to be oppressed. With our huge stockpile of weapons produced by us we will aid our friends in their struggle against oppression."
  AFS_true_liberty_across_america:0 "True Liberty Across America"
  AFS_true_liberty_across_america_desc:0 "Vermin has bestowed real freedom to all those in the American continent. No more we will lay down and bend the knee. We stand tall, happy, and proud, knowing true freedom and not the fake lies that were given to us years ago."
@@ -1873,8 +1877,10 @@
  AFS_meet_with_the_common_people:0 "Meet With The Common People"
  AFS_meet_with_the_lgbtq_community:0 "Meet With The LGBTQ+ Community"
  AFS_promote_equality:0 "Promote Equality"
- AFS_spreading_the_anarchist_cause:0 "Spreading The Anarchist Cause"
- AFS_fight_for_the_anarchist_cause:0 "Fight For The Anarchist Cause"
+ AFS_spreading_the_anarchist_cause:0 "§H[MILITARY]§! Spreading The Anarchist Cause"
+ AFS_fight_for_the_anarchist_cause:0 "§H[MILITARY]§! Fight For The Anarchist Cause"
+ AFS_fight_for_your_ponies:0 "§H[MILITARY]§! Fight For Your Ponies"
+ AFS_vermins_counter_attack:0 "§H[MILITARY]§! Vermins Counter Attack"
 
  #Vermin Economic Decisions
  AFS_vermin_economic_decisions:0 "Anarchist Economic Decisions"
@@ -2139,12 +2145,16 @@
  collectivist_high_influence:0 "Collectivist High Influence"
 
  AFS_empower_the_individual:0 "§CEmpower The Individual§!"
+ AFS_promote_less_dependence_on_vermin:0 "§CPromote Less Dependence On Cermin§!"
  AFS_individual_will:0 "§CIndividual Will§!"
  AFS_perpetuate_individual_liberty:0 "§CPerpetuate Individual Liberty§!"
+ AFS_promote_individual_craftsmanship:0 "§CPromote Individual Craftsmanship§!"
 
  AFS_unite_the_people:0 "§RUnite The People§!"
+ AFS_entrench_vermins_ideals:0 "§REntrench Vermins Ideals§!"
  AFS_bring_unity_in_anarchism:0 "§RBring Unity in Anarchism§!"
  AFS_anarchism_without_adjectives:0 "§RAnarchism Without Adjectives§!"
+ AFS_workers_united:0 "§RWorkers United§!"
 
  #Vance BOP
  ohio_republican_government_bop:0 "Balance of Government"
