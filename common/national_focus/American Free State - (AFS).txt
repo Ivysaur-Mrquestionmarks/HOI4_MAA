@@ -3667,21 +3667,22 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_tech_bonus = {
-                bonus = 0.2
-                uses = 2
-                category = land_doctrine
-            }
-		    add_tech_bonus = {
-                bonus = 0.4
-                uses = 2
-                category = cat_mechanized_equipment
-            }
-			add_tech_bonus = {
-                bonus = 0.4
-                uses = 3
-                category = armor
-            }
+			army_experience = 35
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.35
+				uses = 2
+				category = land_doctrine
+			}
+			add_mastery_bonus = {
+				bonus = 0.1
+				days = 300
+				track = infantry
+			}
+			add_mastery_bonus = {
+				bonus = 0.1
+				days = 300
+				track = armor
+			}
 		}
 	}
 
@@ -3740,10 +3741,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AFS_victory_at_any_cost
-		icon = GFX_goal_AFS_victory_at_any_cost
+		id = AFS_modern_armored_warfare
+		icon = GFX_goal_AFS_blending_in
 		cost = 5
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = AFS_blending_in
 		prerequisite = {
@@ -3751,6 +3752,81 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = AFS_a_green_internationale
+		}
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+		    add_tech_bonus = {
+                bonus = 0.4
+                uses = 4
+                category = infantry_weapons
+            }
+			add_tech_bonus = {
+                bonus = 0.4
+                uses = 4
+                category = support_tech
+            }
+		}
+	}
+
+	focus = {
+		id = AFS_aircraft_modernization_and_development
+		icon = GFX_goal_AFS_blending_in
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = AFS_blending_in
+		prerequisite = {
+			focus = AFS_blending_in
+		}
+		prerequisite = {
+			focus = AFS_a_green_internationale
+		}
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+		    air_experience = 35
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.4
+				uses = 3
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 2
+			    category = light_air
+			}
+		    add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 2
+			    category = medium_air
+			}
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 2
+			    category = heavy_air
+			}
+		}
+	}
+
+	focus = {
+		id = AFS_victory_at_any_cost
+		icon = GFX_goal_AFS_victory_at_any_cost
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = AFS_modern_armored_warfare
+		prerequisite = {
+			focus = AFS_modern_armored_warfare
+		}
+		prerequisite = {
+			focus = AFS_aircraft_modernization_and_development
 		}
 		select_effect = {  }
 		allow_branch = {
