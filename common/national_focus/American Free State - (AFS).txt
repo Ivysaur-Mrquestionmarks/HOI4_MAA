@@ -3729,12 +3729,12 @@ focus_tree = {
 		completion_reward = {
 		    add_tech_bonus = {
                 bonus = 0.4
-                uses = 4
+                uses = 2
                 category = infantry_weapons
             }
 			add_tech_bonus = {
                 bonus = 0.4
-                uses = 4
+                uses = 2
                 category = support_tech
             }
 		}
@@ -3742,7 +3742,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_modern_armored_warfare
-		icon = GFX_goal_AFS_blending_in
+		icon = GFX_goal_AFS_modern_armored_warfare
 		cost = 5
 		x = 0
 		y = 1
@@ -3761,20 +3761,25 @@ focus_tree = {
 		completion_reward = {
 		    add_tech_bonus = {
                 bonus = 0.4
-                uses = 4
-                category = infantry_weapons
+                uses = 3
+                category = armor
             }
 			add_tech_bonus = {
                 bonus = 0.4
-                uses = 4
-                category = support_tech
+                uses = 3
+                category = cat_mechanized_equipment
+            }
+			add_tech_bonus = {
+                bonus = 0.4
+                uses = 2
+                category = IFV
             }
 		}
 	}
 
 	focus = {
 		id = AFS_aircraft_modernization_and_development
-		icon = GFX_goal_AFS_blending_in
+		icon = GFX_goal_AFS_aircraft_modernization_and_development
 		cost = 5
 		x = 2
 		y = 1

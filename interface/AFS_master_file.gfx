@@ -5329,6 +5329,80 @@ spriteTypes = {
 	}
 
     SpriteType = {
+        name = "GFX_goal_AFS_modern_armored_warfare"
+        texturefile = "gfx/interface/goals/AFS_modern_armored_warfare.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_modern_armored_warfare_shine"
+        texturefile = "gfx/interface/goals/AFS_modern_armored_warfare.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_modern_armored_warfare.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_modern_armored_warfare.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
+        name = "GFX_goal_AFS_aircraft_modernization_and_development"
+        texturefile = "gfx/interface/goals/AFS_aircraft_modernization_and_development.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_AFS_aircraft_modernization_and_development_shine"
+        texturefile = "gfx/interface/goals/AFS_aircraft_modernization_and_development.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_aircraft_modernization_and_development.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/AFS_aircraft_modernization_and_development.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+	}
+
+    SpriteType = {
         name = "GFX_goal_AFS_victory_at_any_cost"
         texturefile = "gfx/interface/goals/AFS_victory_at_any_cost.dds"
     }
