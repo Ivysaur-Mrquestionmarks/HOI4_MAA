@@ -67,6 +67,12 @@ country_event = {
 	days = 1192
 }
 
+#Bo Gritz dies
+country_event = {
+	id = viva_las_vegas.21
+	days = 1792
+}
+
 add_ideas = {
 	#laws
 	low_economic_mobilisation
@@ -112,6 +118,8 @@ recruit_character = LAS_keenan_korth
 recruit_character = LAS_paul_kim
 recruit_character = LAS_david_armstrong_jones_second_earl_of_snowdon
 recruit_character = LAS_tristan_morrow
+recruit_character = LAS_george_stamper
+recruit_character = LAS_adam_haman
 
 ### Generals ###
 recruit_character = LAS_curtiss_bass

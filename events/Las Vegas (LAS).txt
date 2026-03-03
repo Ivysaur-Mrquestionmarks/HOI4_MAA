@@ -760,3 +760,60 @@ news_event = {
 		}	
 	}
 }
+
+#Death of Bo Gritz
+country_event = {
+	id = viva_las_vegas.21
+	title = viva_las_vegas.21.t
+	desc = viva_las_vegas.21.d
+	picture = event_las_vegas_01
+	is_triggered_only = yes
+	trigger = {
+		original_tag = LAS
+		has_country_leader = {
+			character = LAS_bo_gritz
+			ruling_only = no
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = viva_las_vegas.21.a #Libertarians take over
+		effect_tooltip = { kill_ideology_leader = libertarian_right }
+		hidden_effect = {
+			retire_character = LAS_bo_gritz
+
+		}
+		add_country_leader_role = {
+		    character = LAS_george_stamper
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = libertarian_ideology
+		        traits = {
+				###
+			}
+		    }
+		}
+			set_party_name = {
+			    ideology = libertarian_right
+			    long_name = LAS_libertarian_party_of_nevada_long
+			    name = LAS_libertarian_party_of_nevada
+			}
+	}
+	option = {
+		name = viva_las_vegas.21.b #Populists keep "power"
+		effect_tooltip = { kill_ideology_leader = libertarian_right }
+		hidden_effect = {
+			retire_character = LAS_bo_gritz
+		}
+		add_country_leader_role = {
+		    character = LAS_adam_haman
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = populist_conservatism
+		        traits = {
+				###
+			}
+		    }
+		}
+	}
+}

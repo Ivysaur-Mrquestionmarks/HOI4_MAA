@@ -77,7 +77,7 @@ characters={
 			id = -1
 		}
 	}
-	LAS_bo_gritz = {
+	LAS_bo_gritz = { #dies February 27, 2026
 		name = LAS_bo_gritz
 		portraits = {
 			civilian = {
@@ -89,6 +89,22 @@ characters={
 			ideology = populist_conservatism
 			expire = "2060.1.1.1"
 			id = -1
+		}
+	}
+	LAS_george_stamper = { #Bo Gritz successor
+		name = "George Stamper"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAS/george_stamper.tga"
+			}
+		}
+	}
+	LAS_adam_haman = { #Bo Gritz successor
+		name = "Adam Haman"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAS/adam_haman.tga"
+			}
 		}
 	}
 	LAS_case_cunningham = {
