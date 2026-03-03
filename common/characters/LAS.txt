@@ -951,7 +951,7 @@ characters={
 				NOT = {
 					OR = {
 						has_government = democrat
-						has_government = libertarian_left
+						#has_government = libertarian_left
 						has_government = authoritarian_left
 					}
 				}
