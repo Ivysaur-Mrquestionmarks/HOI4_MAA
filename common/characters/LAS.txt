@@ -927,6 +927,42 @@ characters={
 		
 	}
 
+	LAS_jeff_hurley = {
+		name = "Jeffery P. Hurley" #this guy is scary :(
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/LAS/jeff_hurley.dds"
+			}
+			army = {
+				small = "gfx/interface/ideas/LAS/jeff_hurley.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAS_jeff_hurley_advisor
+			cost = 150
+			allowed = {
+				original_tag = LAS
+			}
+			visible = {
+				original_tag = LAS
+			}
+			available = {
+				NOT = {
+					OR = {
+						has_government = democrat
+						has_government = libertarian_left
+						has_government = authoritarian_left
+					}
+				}
+			}
+			traits = {
+				 economy_reformer
+			}
+		}
+		
+	}
+
 
 	#army advisors
 
