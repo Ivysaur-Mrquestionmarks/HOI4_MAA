@@ -1427,6 +1427,8 @@ country_event = {
 						republican = 15
 						democrat = 10
 					}
+
+					set_cosmetic_tag = KMT_counter_revolution_tag
 				}
 			}
 		}
@@ -1494,6 +1496,8 @@ country_event = {
 					}
 				}		
 			}
+
+			set_cosmetic_tag = KMT_counter_revolution_tag
 
 			set_popularities = {
 				autocratic = 45
@@ -2376,6 +2380,41 @@ country_event = {
 		add_state_core = 198
 		add_state_core = 197
 		set_cosmetic_tag = KMT_glrz
+	}
+}
+
+# weathermen chaos
+country_event = {
+	id = wisconsin.66
+	title = wisconsin.66.t
+	desc = wisconsin.66.d
+	picture = event_KMT_event_66
+
+	is_triggered_only = yes
+
+	option = {
+		name = wisconsin.66.a
+		ai_chance = { factor = 1 }
+		add_manpower = -1848
+		add_popularity = {
+			ideology = authoritarian_left
+			popularity = -0.02
+		}
+	}
+	option = {
+		name = wisconsin.66.b
+		ai_chance = { factor = 1 }
+		add_manpower = -702
+	}
+	option = {
+		name = wisconsin.66.c
+		ai_chance = { factor = 1 }
+		add_manpower = -702
+		add_popularity = {
+			ideology = authoritarian_left
+			popularity = 0.02
+		}
+		add_stability = -0.02
 	}
 }
 
