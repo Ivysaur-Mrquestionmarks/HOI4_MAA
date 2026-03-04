@@ -33,6 +33,7 @@
  KMT_advisor_refresh_tt:0 "§GThis focus will completely refresh the Advisor Pool!§!"
  KMT_affect_sane_republicanism_tt:0 "§YThe event option we pick will influence the 'Sane Republicanism' Focus Rewards!§!"
  KMT_moraes_tt:0 "§Y$KMT_Alexandre_Moraes$§! becomes available as a General"
+ KMT_mea_is_back_tt:0 "§Y$KMT_Mark_E_Anderson$§! becomes available as a General"
 
 #### ########  ########    ###     ######  
  ##  ##     ## ##         ## ##   ##    ## 
@@ -839,6 +840,11 @@
  wisconsin.1010.t:0 "A Counter-Revolution in Wisconsin"
  wisconsin.1010.d:0 "Another coup has occurred today in Wisconsin, this time however, it is a counter-coup against the Weathermen. The coup seems to have been perpetrated by a large tent coalition, not too dissimilar to the old Coalition of the Willing before the war against [GLA.GetNameDef]. The three leaders of the group seem to be Paul Nehlen, an infamous White Supremacist, Selena Fox, Wiccan priestess and advocate for religious freedom, and film director Zack Snyder. With such a diverse and conflicting alliance, a power struggle seems almost inevitable."
  wisconsin.1010.a:0 "What is even Happening?"
+
+ #charater event: counter revolution
+ wisconsin.2000.t:0 "Mark E. Anderson returns to Wiscosnin"
+ wisconsin.2000.d:0 "With Virginia off the equation, General Mark E. Anderson has returned to his homeland of Wsiconsin. After months of fighting for Virginia, where he was deployed when the Civil War begun, he brings with him valuable experience to the battlefield."
+ wisconsin.2000.a:0 "Welcome Home, General"
 
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 

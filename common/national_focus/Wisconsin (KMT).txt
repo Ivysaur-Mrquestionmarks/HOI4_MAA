@@ -161,6 +161,7 @@ focus_tree = {
 		completion_reward = {
             add_political_power = 50
             add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
             random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -212,6 +213,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
             add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
             random_owned_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -220,6 +222,7 @@ focus_tree = {
 				    instant_build = yes
                 }
             }
+			custom_effect_tooltip = generic_skip_one_line_tt
             add_ideas = war_economy
         }
 		prerequisite = {
@@ -327,6 +330,7 @@ focus_tree = {
 				name = "Badger Intelligence Commission"
 				icon = GFX_intelligence_agency_FBI_Agency
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_agency_expanded
         }
 		prerequisite = {
@@ -367,6 +371,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = KMT_guerrilla
+			custom_effect_tooltip = generic_skip_one_line_tt
 			country_event = wisconsin.13
         }
 		prerequisite = {
@@ -438,7 +443,9 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = { set_technology = { KMT_forest_division = 1 popup = no } }
 			set_technology = { infantry_AA_equipment_1 = 1 }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_forest_division
+			custom_effect_tooltip = generic_skip_one_line_tt
 			division_template = {
     			name = "Forest Division"
     			#division_names_group = TODO
@@ -468,6 +475,7 @@ focus_tree = {
     				owner = KMT
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			army_experience = 50
         }
         
@@ -592,6 +600,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_timed_idea = { idea = KMT_forward days = 50 }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			declare_war_on = {
     			target = GLA
     			type = annex_everything
@@ -815,6 +824,7 @@ focus_tree = {
   				remember_old_capital = no
 			}
 			add_political_power = 150
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_country_leader_trait = KMT_hero_of_wisconsin
 			hidden_effect = {
 				news_event = {
@@ -1019,6 +1029,7 @@ focus_tree = {
 			else = {
 				remove_ideas = KMT_coalition_of_the_willing_1
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { is_puppet_of = USA }
 				country_event = wisconsin.24
@@ -1087,6 +1098,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_stability = -0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = KMT_coalition_of_the_willing
@@ -1099,10 +1111,11 @@ focus_tree = {
 				}
 				remove_ideas = KMT_coalition_of_the_willing_1
 			}
-			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			activate_mission = KMT_counter_revolution
+			custom_effect_tooltip = generic_skip_one_line_tt
 			retire_character = KMT_Paul_Ryan
-
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_division_force_allow_recruiting = {
 				division_template = "Weathermen Militia"
 			}
@@ -1156,7 +1169,9 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_cosmetic_tag = KMT_state_of_wisconsin
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					is_faction_leader = yes
@@ -1689,6 +1704,7 @@ focus_tree = {
 				ideology = republican
 				popularity = 0.05
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_republican_wisconsin
 		}
 		prerequisite = {
@@ -1717,6 +1733,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_republican_wisconsin
 				add_idea = KMT_republican_wisconsin_1
@@ -1748,6 +1765,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_republican_wisconsin_1
 				add_idea = KMT_republican_wisconsin_2
@@ -1788,6 +1806,7 @@ focus_tree = {
 			add_political_power = -200
 			add_stability = -0.05
 			add_war_support = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
     			amount = 10000
@@ -1926,6 +1945,7 @@ focus_tree = {
 				ideology = trumpist
 				trait = KMT_trump_loyalist
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_republican_wisconsin_2
 				add_idea = KMT_republican_wisconsin_3
@@ -1975,6 +1995,7 @@ focus_tree = {
 				ideology = democrat
 				popularity = 0.05
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_democrat_wisconsin
 		}
 		prerequisite = {
@@ -2003,6 +2024,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_democrat_wisconsin
 				add_idea = KMT_democrat_wisconsin_1
@@ -2034,6 +2056,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_political_power = 75
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_democrat_wisconsin_1
 				add_idea = KMT_democrat_wisconsin_2
@@ -2066,6 +2089,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -50
 			add_stability = -0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
     			amount = 5000
@@ -2099,6 +2123,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = -100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -2196,6 +2221,7 @@ focus_tree = {
 				ideology = progressive
 				trait = KMT_la_follette_heir
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_democrat_wisconsin_2
 				add_idea = KMT_democrat_wisconsin_3
@@ -2241,9 +2267,13 @@ focus_tree = {
 			add_state_core = 198
 			add_state_core = 209
 			add_state_core = 152
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_cosmetic_tag = KMT_great_lakes_soviet
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			country_event = wisconsin.36
+			custom_effect_tooltip = generic_skip_one_line_tt
 			unlock_decision_tooltip = KMT_propaganda
 		}
 		prerequisite = {
@@ -2333,6 +2363,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = KMT_socialized_healthcare
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_days_mission_timeout = {
 				mission = KMT_counter_revolution
 				days = 50
@@ -2365,6 +2396,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			unlock_decision_tooltip = KMT_arm_black_militias
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = advisor_Gwen_Moore
 		}
@@ -2398,6 +2430,7 @@ focus_tree = {
 				mission = KMT_counter_revolution
 				days = 50
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = authoritarian_left
 				popularity = 0.05
@@ -2436,8 +2469,11 @@ focus_tree = {
 				mission = KMT_counter_revolution
 				days = 20
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = advisor_Bob_Dylan
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = advisor_Mark_Ruffalo
 		}
 		prerequisite = {
@@ -2520,10 +2556,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			remove_ideas = KMT_poorly_organized_state
 			custom_effect_tooltip = KMT_end_counter_revolution_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = KMT_poorly_organized_state
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_permanent_revolution_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_research_slot = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_state_core = 160
 			add_state_core = 161
 			add_state_core = 162
@@ -2536,6 +2576,7 @@ focus_tree = {
 			add_state_core = 206
 			add_state_core = 204
 			add_state_core = 560
+			custom_effect_tooltip = generic_skip_one_line_tt	
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = advisor_Ellen_Johnson
 		}
@@ -2612,15 +2653,17 @@ focus_tree = {
 				long_name = KMT_libertarian_left_party_revolution_long
 				name = KMT_libertarian_left_party_revolution
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_politics = {
     			ruling_party = libertarian_left
 				elections_allowed = no
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = libertarian_left
 				popularity = 0.15
 			}
-
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_weather_underground_militia_1
 				add_idea = KMT_weather_underground_militia_4
@@ -3115,6 +3158,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_prepared_for_an_invasion
 		}
 		prerequisite = {
@@ -3536,14 +3580,17 @@ focus_tree = {
 				long_name = KMT_libertarian_left_party_couter_revolution_long
 				name = KMT_libertarian_left_party_couter_revolution
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_party_name = {
 				ideology = libertarian_right
 				long_name = KMT_libertarian_right_party_couter_revolution_long
 				name = KMT_libertarian_right_party_couter_revolution
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			KMT_Selena_Fox = { 
 				promote_character = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			KMT_Zack_Snyder = {
 				add_country_leader_role = {
 					country_leader = {
@@ -3664,6 +3711,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_stability = -0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_other_country = {
 				limit = {
 					original_tag = KMT
@@ -3789,8 +3837,10 @@ focus_tree = {
 				}
 			}
 			remove_ideas = KMT_poorly_organized_state
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 100
 			add_stability = 0.15
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_research_slot = 1
 		}
 		prerequisite = {
@@ -3823,7 +3873,8 @@ focus_tree = {
 				ideology = autocratic
 				popularity = 0.05
 			}
-			add_political_power = 50	
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = KMT_unholy_coalition
 		}
 		prerequisite = {
@@ -3862,8 +3913,10 @@ focus_tree = {
 				ideology = libertarian_right
 				popularity = 0.05
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = -0.05
 			add_political_power = 75
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = KMT_unholy_coalition
 		}
 		prerequisite = {
@@ -3902,7 +3955,9 @@ focus_tree = {
 				ideology = libertarian_left
 				popularity = 0.05
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_war_support = -0.2
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = KMT_unholy_coalition			
 			set_country_flag = {
                 flag = reunification_start
@@ -3990,8 +4045,10 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			unlock_decision_tooltip = KMT_anti_semitism
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.1
 			add_war_support = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = advisor_Kevin_MacDonald
 		}
@@ -4020,8 +4077,10 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			remove_country_leader_trait = KMT_controversial_figure
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = advisor_Andrew_Anglin
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.05
 		}
 		prerequisite = {
@@ -4055,6 +4114,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			USA = { country_event = wisconsin.48 }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.05
 		}
 		prerequisite = {
@@ -4148,8 +4208,10 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			set_cosmetic_tag = KMT_nehlens_america
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.1
 			add_political_power = 200
+			custom_effect_tooltip = generic_skip_one_line_tt
 			unlock_decision_tooltip = KMT_remember_yockey		
 			set_country_flag = {
                 flag = reunification_start
@@ -4185,6 +4247,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_timed_idea = { idea = KMT_rallying_the_snyder_bros days = 200 }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 50
 		}
 		prerequisite = {
@@ -4300,6 +4363,7 @@ focus_tree = {
 				ideology = authoritarian_left
 				popularity = -0.5
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = advisor_Mark_Ruffalo
 		}
@@ -4357,6 +4421,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			FRA = { country_event = wisconsin.51 }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.05
 		}
 		prerequisite = {
@@ -4438,6 +4503,7 @@ focus_tree = {
 			add_stability = 0.1
 			add_war_support = 0.5
 			add_political_power = 200
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ruler_traits = { remove = KMT_great_cinematographer add = KMT_american_director }
 		}
 		prerequisite = {
@@ -4525,6 +4591,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_ecospiritualism_idea
 		}
 		prerequisite = {
@@ -4587,7 +4654,9 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			set_cosmetic_tag = KMT_wicca_america
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_war_support = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ruler_traits = { remove = KMT_wiccan_elder add = KMT_wiccan_elder_1 }
 		}
 		prerequisite = {
@@ -4618,8 +4687,11 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			set_cosmetic_tag = KMT_atheist_america
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ruler_traits = { remove = KMT_wiccan_elder add = KMT_religious_figure_for_atheist_state }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = advisor_Ellen_Johnson
 		}
@@ -4684,6 +4756,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_caring_state
 		}
 		prerequisite = {
@@ -5213,6 +5286,7 @@ focus_tree = {
 				state = 181
   				remember_old_capital = no
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.1
 			add_war_support = 0.1
 		}
@@ -5348,6 +5422,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_timed_idea = { idea = KMT_revenge days = 100 }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.05
 			add_war_support = 0.05
 		}
@@ -5377,6 +5452,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = KMT_border_turret_initiative
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				bonus = 0.75
 				uses = 2
@@ -5447,11 +5523,14 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			remove_ideas = KMT_poorly_organized_state
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_research_slot = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 100
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_command_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			army_experience = 10
 			navy_experience = 10
 			air_experience = 10
@@ -5645,6 +5724,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = KMT_the_will_to_fight_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 10000
@@ -5660,6 +5740,7 @@ focus_tree = {
 				amount = 500
 				producer = KMT
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 100
 		}
 		prerequisite = {
@@ -5698,6 +5779,7 @@ focus_tree = {
 			army_experience = 100
 			navy_experience = 100
 			air_experience = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = { idea = KMT_npa_army_intel days = 350 }
 		}
 		prerequisite = {
@@ -6028,6 +6110,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = KMT_america_restored
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_state_core = 242
 			set_capital = {
 				state = 242
@@ -6065,6 +6148,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 75
 			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 3500
@@ -6103,6 +6187,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = KMT_victorious_npa
+			custom_effect_tooltip = generic_skip_one_line_tt
 			NPA = { add_ideas = KMT_victorious_npa }
 		}
 		prerequisite = {
@@ -6243,6 +6328,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			set_cosmetic_tag = KMT_ryans_america
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_country_leader_trait = KMT_low_legitimacy
 			set_power_balance = {
 				id = KMT_judicial_bop
@@ -6348,6 +6434,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			custom_effect_tooltip = KMT_invite_the_pope_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_power_balance_value = {
 				id = KMT_judicial_bop
 				value = -0.05
@@ -6415,6 +6502,7 @@ focus_tree = {
 				value = -0.15
 				tooltip_side = executive_authority
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 50
 			add_war_support = 0.05
 		}
@@ -6450,6 +6538,7 @@ focus_tree = {
 				value = 0.1
 				tooltip_side = judiciary_authority
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.1
 		}
 		prerequisite = {
@@ -6487,6 +6576,7 @@ focus_tree = {
 				value = -0.4
 				tooltip_side = executive_authority
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 50
 			add_war_support = 0.05
 			add_stability = -0.05
@@ -6526,6 +6616,7 @@ focus_tree = {
 				value = 0.4
 				tooltip_side = judiciary_authority
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.1
 		}
 		prerequisite = {
@@ -6563,6 +6654,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			retire_character = KMT_Paul_Ryan
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_politics = {
     			ruling_party = autocratic
 				elections_allowed = no
@@ -6570,7 +6662,9 @@ focus_tree = {
 			remove_power_balance = {
 				id = KMT_judicial_bop
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = -0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_coalition_of_the_willing_2
 				add_idea = KMT_judicial_branch
@@ -6676,6 +6770,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_war_support = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_research_slot = 1
 		}
 		prerequisite = {
@@ -6706,25 +6801,27 @@ focus_tree = {
 				ideology = autocratic
 				popularity = 0.05
 			}
-			random_owned_state = {
-				limit = { is_core_of = KMT }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-			    	type = arms_factory
-    				level = 1
-    				instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = { is_core_of = KMT }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-			    	type = arms_factory
-    				level = 1
-    				instant_build = yes
-				}
-			}
 			army_experience = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_state = {
+				limit = { is_core_of = KMT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+			    	type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { is_core_of = KMT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+			    	type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_judicial_army
 		}
 		prerequisite = {
@@ -6760,6 +6857,7 @@ focus_tree = {
 				add_idea = KMT_judicial_branch_2
 			}
 			set_cosmetic_tag = KMT_dictatorship_of_the_judges
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_party_name = {
 				ideology = autocratic
 				long_name = KMT_supreme_judicial_long
@@ -6797,6 +6895,7 @@ focus_tree = {
 				ideology = autocratic
 				popularity = 0.05
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_stacked_positions
 		}
 		prerequisite = {
@@ -6859,6 +6958,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			unlock_decision_category_tooltip = KMT_recruit_judges
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 100
 		}
 		prerequisite = {
@@ -6897,6 +6997,7 @@ focus_tree = {
 				state = 242
   				remember_old_capital = no
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			KMT_SCOTUS = { 
 				promote_character = yes
 			}
@@ -7097,18 +7198,23 @@ focus_tree = {
 				long_name = KMT_republican_tea_party_long
 				name = KMT_republican_tea_party
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_party_name = {
 				ideology = libertarian_right
 				long_name = KMT_libertarian_right_tea_party_long
 				name = KMT_libertarian_right_tea_party
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_party_name = {
 				ideology = democrat
 				long_name = KMT_democrat_tea_party_long
 				name = KMT_democrat_tea_party
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			country_event = wisconsin.59
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = KMT_affect_sane_republicanism_tt
 		}
 		prerequisite = {
@@ -7168,7 +7274,9 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_research_slot = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			country_event = wisconsin.60
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = KMT_affect_sane_republicanism_tt
 		}
 		prerequisite = {
@@ -7199,7 +7307,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			custom_effect_tooltip = KMT_sane_republicanism_tt
-
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					AND = {
@@ -7223,6 +7331,7 @@ focus_tree = {
 			}
 			else = {
 				remove_ideas = KMT_coalition_of_the_willing_2
+				custom_effect_tooltip = generic_skip_one_line_tt
 				remove_country_leader_trait = KMT_coalition_leader
 			}
 		}
@@ -7260,6 +7369,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_command_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			army_experience = 50
 			navy_experience = 50
 			air_experience = 50
@@ -7320,6 +7430,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			remove_country_leader_trait = KMT_low_legitimacy
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_reconstituted_congress
 		}
 		prerequisite = {
@@ -7352,7 +7463,9 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_political_power = 200
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_america_restored
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_state_core = 242
 			set_capital = {
 				state = 242
@@ -7469,9 +7582,13 @@ focus_tree = {
 				long_name = KMT_autocratic_party_papal_long
 				name = KMT_autocratic_party_papal
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			country_event = wisconsin.56
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_cosmetic_tag = KMT_catholic_america
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = KMT_coalition_of_the_willing_2
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_power_balance = {
 				id = KMT_judicial_bop
 			}
@@ -7514,7 +7631,9 @@ focus_tree = {
 				ideology = autocratic
 				popularity = 0.1
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_rallying_the_faithful
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_offsite_building = { type = arms_factory level = 2 }
 			add_offsite_building = { type = industrial_complex level = 3 }
 		}
@@ -7543,7 +7662,9 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_catholic_america_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_offsite_building = { type = arms_factory level = 1 }
 			add_offsite_building = { type = industrial_complex level = 1 }
 		}
@@ -7576,6 +7697,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_war_support = 0.15
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_state = {
 				limit = { is_core_of = KMT }
 				add_extra_state_shared_building_slots = 1
@@ -7603,6 +7725,7 @@ focus_tree = {
     				instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			division_template = {
     			name = "Knights of Malta"
     			#division_names_group = TODO
@@ -7636,6 +7759,7 @@ focus_tree = {
     				owner = KMT
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_country_flag = KMT_smom
 			custom_effect_tooltip = KMT_smom_tt
 			custom_effect_tooltip = available_chief_of_army
@@ -7667,6 +7791,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_research_slot = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_catholic_america_idea
 				add_idea = KMT_catholic_america_idea_1
@@ -7700,7 +7825,9 @@ focus_tree = {
 				ideology = autocratic
 				popularity = 0.05
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_deus_vult_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_offsite_building = { type = arms_factory level = 1 }
 		}
 		prerequisite = {
@@ -7729,6 +7856,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_stability = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_catholic_america_idea_1
 				add_idea = KMT_catholic_america_idea_2
@@ -7772,6 +7900,7 @@ focus_tree = {
 		 	   		owner = KMT
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			army_experience = 50
 			navy_experience = 50
 			air_experience = 50
@@ -7825,6 +7954,7 @@ focus_tree = {
 				amount = 500
 				producer = KMT
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 50
 		}
 		prerequisite = {
@@ -7935,6 +8065,7 @@ focus_tree = {
 					}
 				}
 				remove_country_leader_trait = KMT_meant_for_something_greater
+				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			add_country_leader_trait = KMT_patriarch_of_the_new_world
 			set_cosmetic_tag = KMT_patriarchy_of_america
@@ -8559,6 +8690,7 @@ focus_tree = {
 				province = 6273
 				value = 10
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			hidden_effect =  {
 				set_province_name = {
     				id = 6273
@@ -8566,6 +8698,7 @@ focus_tree = {
 				}
 			}
 			army_experience = 10
+			custom_effect_tooltip = generic_skip_one_line_tt
 			106 = {
 				add_building_construction = {
 			    	type = bunker
@@ -8599,6 +8732,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			army_experience = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_guerrilla
 				add_idea = KMT_guerrilla_1
@@ -8633,6 +8767,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			remove_ideas = KMT_guerrilla
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_traditional_army
 		}
 		prerequisite = {
@@ -8663,6 +8798,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			army_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = KMT_urban_assault_tt
 			hidden_effect = {
 				random_army_leader = { add_unit_leader_trait = urban_assault_specialist }
@@ -8701,6 +8837,7 @@ focus_tree = {
 			    uses = 2
  			   category = military_police_tech
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			division_template = {
     			name = "State Patrol"
     			#division_names_group = TODO
@@ -8749,6 +8886,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			army_experience = 75
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 1
 			    uses = 2
@@ -8807,6 +8945,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = KMT_mass_producing_basic_guns
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 2
 			    uses = 1
@@ -8839,11 +8978,13 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 20
 			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 3
 				category = land_doctrine
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_vietnam_learning
 		}
 		prerequisite = {
@@ -8875,6 +9016,7 @@ focus_tree = {
 			    uses = 1
  			    category = logistics_tech
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_guerrilla_1
 				add_idea = KMT_guerrilla_2
@@ -8905,6 +9047,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			army_experience = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_guerrilla_2
 				add_idea = KMT_guerrilla_3
@@ -8992,6 +9135,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = KMT_artillery_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 1.5
 			    uses = 2
@@ -9023,6 +9167,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			army_experience = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_traditional_army
 				add_idea = KMT_traditional_army_1
@@ -9116,6 +9261,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_war_support = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_glorious_army
 		}
 		prerequisite = {
@@ -9147,6 +9293,7 @@ focus_tree = {
 			    uses = 1
  			   category = drones
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			army_experience = 10
 			air_experience = 10
 		}
@@ -9179,6 +9326,7 @@ focus_tree = {
 			    uses = 1
  			   category = rocketry
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			army_experience = 10
 			air_experience = 10
 		}
@@ -9207,6 +9355,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			air_experience = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_airforce
 		}
 		prerequisite = {
@@ -9234,6 +9383,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			air_experience = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -9242,6 +9392,7 @@ focus_tree = {
 				    instant_build = yes
                 }
             }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 1
 			    uses = 1
@@ -9278,6 +9429,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			air_experience = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_state = {
 				add_building_construction = {
 				    type = air_base
@@ -9351,6 +9503,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 			air_experience = 10
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 1
 			    uses = 1
@@ -9386,6 +9539,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_airforce_1
 				add_idea = KMT_airforce_2
@@ -9419,6 +9573,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			navy_experience = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -9427,6 +9582,7 @@ focus_tree = {
 				    instant_build = yes
                 }
             }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_navy
 		}
 		prerequisite = {
@@ -9455,8 +9611,10 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			custom_effect_tooltip = KMT_recalled_advisors_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = -50
 			navy_experience = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_navy
 				add_idea = KMT_navy_1
@@ -9487,6 +9645,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			navy_experience = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 2
 			    uses = 4
@@ -9548,6 +9707,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 			navy_experience = 10
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 1
 			    uses = 1
@@ -9583,6 +9743,7 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 100
 			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_navy_2
 				add_idea = KMT_navy_3
@@ -9617,6 +9778,7 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25
 			navy_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 1.5
 			    uses = 2
@@ -9652,6 +9814,7 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25
 			navy_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_airforce_2
 				add_idea = KMT_airforce_3
@@ -9706,7 +9869,8 @@ focus_tree = {
 				    instant_build = yes
 				}
 			}
-		add_ideas = KMT_dairy_industry_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = KMT_dairy_industry_idea
 		}
 	}
 
@@ -9787,6 +9951,7 @@ focus_tree = {
     				instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_transportation_effort_idea
 		}
 		prerequisite = {
@@ -9822,7 +9987,9 @@ focus_tree = {
     				instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			army_experience = 5
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 0.5
 			    uses = 2
@@ -9858,7 +10025,9 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_political_power = -50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_new_industry
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 0.75
 			    uses = 3
@@ -10004,6 +10173,7 @@ focus_tree = {
     				instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 1
 			    uses = 1
@@ -10079,6 +10249,7 @@ focus_tree = {
 				    instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = KMT_dairy_industry_idea
 				add_idea = KMT_dairy_industry_idea_1
@@ -10117,11 +10288,13 @@ focus_tree = {
 				    instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 1
 			    uses = 1
  			    category = industry
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			country_event = wisconsin.31
 		}
 		prerequisite = {
@@ -10184,6 +10357,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_steel_belt
 		}
 		prerequisite = {
@@ -10213,6 +10387,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = KMT_kohler
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_state = {
 				limit = { is_core_of = KMT }
 				add_extra_state_shared_building_slots = 1
@@ -10261,7 +10436,9 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = KMT_milwaukee_tool
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_research_slot = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_research
 		}
 		prerequisite = {
@@ -10386,8 +10563,8 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = KMT_wec_energy	
-			add_political_power = 50
+			show_ideas_tooltip = KMT_wec_energy
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
     			bonus = 1
 			    uses = 2
@@ -10422,6 +10599,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = KMT_nuclear_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				bonus = 1.5
 				uses = 1
@@ -10463,6 +10641,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = KMT_renewables_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				bonus = 1.5
 				uses = 1
@@ -10504,6 +10683,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = KMT_gas_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				bonus = 1.5
 				uses = 1
@@ -10622,6 +10802,7 @@ focus_tree = {
 			add_stability = 0.10
 			add_war_support = 0.10
 			add_political_power = 150
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_real_american_spirit_idea
 		}
 		prerequisite = {
@@ -10667,6 +10848,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.15
 			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_great_lakes_unbound_idea
 		}
 		prerequisite = {

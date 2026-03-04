@@ -21,7 +21,7 @@ characters={
 			id = -1
 		}
 		field_marshal = {
-			traits = { }
+			traits = { politically_connected }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -451,7 +451,7 @@ characters={
 			id = -1
 		}
 		corps_commander = {
-			traits = { militias_officer }
+			traits = { politically_connected militias_officer }
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1
@@ -505,7 +505,7 @@ characters={
 			id = -1
 		}
 		corps_commander = {
-			traits = { militias_officer }
+			traits = { politically_connected militias_officer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -1136,7 +1136,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Judy_Sheindlin
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1165,7 +1165,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Lynn_Toler
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1193,7 +1193,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Jed_S_Rakoff
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1221,7 +1221,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Alan_Dershowitz
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1249,7 +1249,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_John_Roberts
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1278,7 +1278,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Clarence_Thomas
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1307,7 +1307,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Samuel_Alito
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1336,7 +1336,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Neil_Gorsuch
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1365,7 +1365,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Brett_Kavanaugh
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1396,7 +1396,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Amy_Coney_Barrett
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1426,7 +1426,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Sonia_Sotomayor
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1456,7 +1456,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Elena_Kagan
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1485,7 +1485,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Stephen_Breyer
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1515,7 +1515,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Ketanji_Brown_Jackson
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1545,7 +1545,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Letitia_James
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1573,7 +1573,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Merrick_Garland
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1602,7 +1602,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Jack_Smith
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1631,7 +1631,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Alexandre_Moraes
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1672,7 +1672,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Brenda_Hale
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1700,7 +1700,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Baltasar_Garzon
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1728,7 +1728,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = advisor_Mian_Saqib_Nisar
-			cost =  150
+			cost = 150
 			allowed = {
 				original_tag = KMT
 			}
@@ -1758,7 +1758,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { media_personality veteran_of_siege harsh_leader ranger } 
+			traits = { media_personality harsh_leader ranger } #veteran_of_siege
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2
@@ -1786,7 +1786,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { veteran_of_siege old_guard infantry_leader commando ambusher } 
+			traits = { old_guard infantry_leader commando ambusher } #veteran_of_siege
 			skill = 4
 			attack_skill = 4
 			defense_skill = 3
@@ -1853,6 +1853,9 @@ characters={
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
+			visible = {
+				has_country_flag = KMT_mea_is_back
+			}
 		}
 		advisor = {
 			slot = high_command
@@ -1864,6 +1867,9 @@ characters={
 			traits = { army_infantry_2 }
 			ai_will_do = {
 				factor = 1
+			}
+			visible = {
+				has_country_flag = KMT_mea_is_back
 			}
 		}
 	}
