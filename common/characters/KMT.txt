@@ -2338,5 +2338,32 @@ characters={
 		}
 	}
 
+	### BIG-FOOT ###
+	KMT_Sasquatch = {
+		name = KMT_Sasquatch
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KMT/Sasquatch.dds"
+				small = "gfx/interface/ideas/KMT/military_Sasquatch.dds"
+			}
+			army = {
+				large = "gfx/leaders/KMT/Sasquatch.dds"
+				small = "gfx/interface/ideas/KMT/military_Sasquatch.dds"
+			}
+
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery ranger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				has_country_flag = KMT_big_monke_is_here
+			}
+		}
+	}
+
 
 }

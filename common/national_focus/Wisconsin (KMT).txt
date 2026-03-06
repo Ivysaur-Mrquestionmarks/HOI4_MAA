@@ -441,7 +441,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			hidden_effect = { set_technology = { KMT_forest_division = 1 popup = no } }
+			hidden_effect = {
+				set_technology = {
+					KMT_forest_division = 1
+					popup = no
+				}
+				country_event = { id = wisconsin.68 days = 20 }
+			}
 			set_technology = { infantry_AA_equipment_1 = 1 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_forest_division

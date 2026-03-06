@@ -34,6 +34,7 @@
  KMT_affect_sane_republicanism_tt:0 "§YThe event option we pick will influence the 'Sane Republicanism' Focus Rewards!§!"
  KMT_moraes_tt:0 "§Y$KMT_Alexandre_Moraes$§! becomes available as a General"
  KMT_mea_is_back_tt:0 "§Y$KMT_Mark_E_Anderson$§! becomes available as a General"
+ KMT_promote_big_foot_tt:0 "§Y$KMT_Sasquatch$§! becomes available as a General"
 
 #### ########  ########    ###     ######  
  ##  ##     ## ##         ## ##   ##    ## 
@@ -781,6 +782,12 @@
  wisconsin.66.b:0 "Soft Actions. We need them"
  wisconsin.66.c:0 "Ignore it. Our focus is somewhere else"
 
+ #event 68: forest noises
+ wisconsin.68.t:0 "Strange Noises in the Forest"
+ wisconsin.68.d:0 "Since the formation of our specialized 'Forest Division', patrols operating in the deep wilderness have begun reporting unusual disturbances. Soldiers stationed in remote observation posts claim to hear heavy footsteps, distant howls, and the snapping of large branches during the night.\n\nWhile some officers dismiss the reports as wildlife or the imagination of tired troops, others argue that the pattern of disturbances is too consistent to ignore. Several patrols have also discovered enormous footprints and signs that something large has been moving through the forested areas.\n\nSome within the command structure propose assembling a dedicated expeditionary team composed of soldiers, trackers, and scientists to investigate the phenomenon. Whether this is merely an elaborate misunderstanding or something far more unusual remains to be seen."
+ wisconsin.68.a:0 "Ignore it. We have bigger fish to fry."
+ wisconsin.68.b:0 "Assemble an expeditionary team."
+
  #news event 1000: victory over chaos
  wisconsin.1000.t:0 "Wisconsin Proclaims Victory Over Chaos"
  wisconsin.1000.d:0 "Today, Paul Ryan announced the surrender of the final pockets of Libertarian resistance in the Great Lakes, and the definitive victory of Wisconsin over the Libertarian forces previously in control of the region. While this is a major change in the balance of power in the region, there is still doubt over which side this change will benefit, as the so-called “Coalition of the Willing” now begins to show cracks in its structure, with Ryan himself having announced important changes to come in the upcoming months."
@@ -841,10 +848,16 @@
  wisconsin.1010.d:0 "Another coup has occurred today in Wisconsin, this time however, it is a counter-coup against the Weathermen. The coup seems to have been perpetrated by a large tent coalition, not too dissimilar to the old Coalition of the Willing before the war against [GLA.GetNameDef]. The three leaders of the group seem to be Paul Nehlen, an infamous White Supremacist, Selena Fox, Wiccan priestess and advocate for religious freedom, and film director Zack Snyder. With such a diverse and conflicting alliance, a power struggle seems almost inevitable."
  wisconsin.1010.a:0 "What is even Happening?"
 
- #charater event: counter revolution
+ #charater event 2000: mark anderson returns
  wisconsin.2000.t:0 "Mark E. Anderson returns to Wiscosnin"
  wisconsin.2000.d:0 "With Virginia off the equation, General Mark E. Anderson has returned to his homeland of Wsiconsin. After months of fighting for Virginia, where he was deployed when the Civil War begun, he brings with him valuable experience to the battlefield."
  wisconsin.2000.a:0 "Welcome Home, General"
+
+ #charater event 2001: big foot
+ wisconsin.2001.t:0 "Sasquatch discovered"
+ wisconsin.2001.d:0 "Reports from our expedition force to the dense forests of America have long spoken of a massive, ape-like creature lurking deep within the wilderness. For decades such stories were dismissed as folklore told by loggers and hikers.\n\nHowever, a recent expedition to the State of Washington has uncovered strange footprints, broken trees, and what appears to be coarse strands of hair unlike any known North American animal. Soldiers claim to have captured a towering figure moving through the fog while trying to disappear into the forest fog."
+ wisconsin.2001.a:0 "Promote it immedialy"
+ wisconsin.2001.b:0 "Kill it. Embalm it. Put it in a museum"
 
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
 ##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 
