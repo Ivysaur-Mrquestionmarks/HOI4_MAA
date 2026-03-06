@@ -379,6 +379,22 @@ bookmarks = {
 			}
 		}
 
+		"KMT"={
+			history = "KMT_GOOD_FRIDAY_DESC"
+			ideology = republican
+			minor = yes
+			ideas = {
+				KMT_coalition_of_the_willing
+				KMT_weather_underground_militia
+				KMT_poorly_organized_state
+			}
+			focuses = {
+				KMT_keep_a_tight_grip
+				KMT_hold_elections
+				KMT_weathermen_coup
+			}
+		}
+
 		#"LAS"={
 		#	history = "LAS_GOOD_FRIDAY_DESC"
 		#	ideology = democrat
