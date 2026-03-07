@@ -2366,4 +2366,12 @@ technologies = {
 			penal_battalion
 		}
 	}
+
+	### MILITIA TECH ###
+	militia_tech = {
+ 		allow = { always = no }
+		enable_subunits = {
+			militia
+		}
+	}
 }

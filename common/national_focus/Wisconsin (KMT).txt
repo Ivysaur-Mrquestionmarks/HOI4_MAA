@@ -3322,6 +3322,8 @@ focus_tree = {
 				}
 			}
 			army_experience = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_technology = { militia_tech = 1 popup = no }
 		}
 		prerequisite = {
 			focus = KMT_state_defense
@@ -3450,6 +3452,8 @@ focus_tree = {
 				}
 				dismantle_faction = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_technology = { militia_tech = 1 popup = no }
 		}
 		prerequisite = {
 			focus = KMT_feed_the_poor
@@ -3488,6 +3492,8 @@ focus_tree = {
 				ideology = authoritarian_left
 				popularity = 0.10
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_technology = { militia_tech = 1 popup = no }
 		}
 		prerequisite = {
 			focus = KMT_feed_the_poor
