@@ -1,7 +1,9 @@
 state={
 	id=575
 	name="STATE_575"
-	
+	resources={
+		coal = 9
+	}
 	history={
 		owner = KFC
 		add_core_of = KFC

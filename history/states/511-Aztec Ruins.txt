@@ -1,6 +1,9 @@
 state={
 	id=511
 	name="STATE_511"
+	resources={
+		coal = 8
+	}
 	provinces={
 		4990 2582 9638 5
 	}
