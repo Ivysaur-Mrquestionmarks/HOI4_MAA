@@ -68,6 +68,14 @@ spriteTypes = {
 		name = "GFX_portrait_liver_king"
 		texturefile = "gfx/leaders/TEX/liver_king.tga"
 	}
+	spriteType = {
+		name = "GFX_portrait_Aldrich_Ames"
+		texturefile = "gfx/leaders/KMT/Aldrich_Ames.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Oleg_Nikolaenko"
+		texturefile = "gfx/leaders/KMT/Oleg_Nikolaenko.dds"
+	}
 	
 	#Leader Portraits
 	spriteType = {

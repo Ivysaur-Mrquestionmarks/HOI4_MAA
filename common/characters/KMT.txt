@@ -1,3 +1,5 @@
+### IF ADDING CHARACTER TO WISCONSIN UPDATE WHO GETS TRANSFERED IN CIVIL WAR (COUNTER REVOLUTION) OR TALK TO APOS TO DO IT ###
+
 characters={
 
 	### Country Leaders ###
@@ -2361,6 +2363,40 @@ characters={
 			logistics_skill = 2
 			visible = {
 				has_country_flag = KMT_big_monke_is_here
+			}
+		}
+	}
+
+
+	### SCIENTISTS ###
+	KMT_Tom_P_M_Barnett = {
+		name = KMT_Tom_P_M_Barnett
+		portraits = {
+			army = {
+				large = "gfx/leaders/KMT/Tom_P_M_Barnett.dds"
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_bright }
+			skills = {
+				specialization_naval = 3
+			}
+		}
+	}
+
+	KMT_Eugene_L_Tattini = {
+		name = KMT_Eugene_L_Tattini
+		portraits = {
+			army = {
+				large = "gfx/leaders/KMT/Eugene_L_Tattini.dds"
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_jet_expert }
+			skills = {
+				specialization_air = 2
 			}
 		}
 	}

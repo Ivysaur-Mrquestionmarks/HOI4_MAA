@@ -139,6 +139,10 @@ recruit_character = KMT_John_T_Dunlap
 #big foot
 recruit_character = KMT_Sasquatch
 
+#scientists
+recruit_character = KMT_Tom_P_M_Barnett
+recruit_character = KMT_Eugene_L_Tattini
+
 #goes to Navajo early in
 recruit_character = NAV_wahsayah_whitebird
 
@@ -162,4 +166,26 @@ add_ideas = {
 	KMT_weather_underground_militia
 	KMT_struggling_industry
 	KMT_poorly_organized_state
+}
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "Aldrich Ames"
+		GFX = GFX_portrait_Aldrich_Ames
+		traits = { operative_infiltrator operative_well_groomed }
+		bypass_recruitment = yes
+		available_to_spy_master = yes
+		nationalities = { KMT GLA FRA }
+		gender = male
+	}
+
+	create_operative_leader = {
+		name = "Oleg Nikolaenko"
+		GFX = GFX_portrait_Oleg_Nikolaenko
+		traits = { operative_safe_cracker operative_linguist }
+		bypass_recruitment = yes
+		available_to_spy_master = yes
+		nationalities = { KMT }
+		gender = male
+	}
 }
