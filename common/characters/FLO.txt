@@ -703,6 +703,26 @@ characters={
 			legacy_id = 25064
 		}
 	}
+	FLO_jake_lang = {
+		name = "Jake Lang"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/FLO/jake_lang_general.dds"
+				large = "gfx/leaders/FLO/jake_lang.tga"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected media_personality harsh_leader }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				has_government = autocratic
+			}
+		}
+	}
 	# Navy #
 	FLO_thomas_collins = {
 		name = FLO_thomas_collins
