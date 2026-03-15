@@ -658,124 +658,19 @@ country_event = {
 }
 
 country_event = {
-	id = fleet_P.25 #Anarchists Attempt to Overthrow The Government
+	id = fleet_P.25 #Anarchists Purged
 	title = fleet_P.25.t
 	desc = fleet_P.25.d
 	#picture = 
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = fleet_P.25.a #They Succeed.
+		name = fleet_P.25.a
 		ai_chance = {
 			factor = 100
 		}
-		add_stability = -0.2
-		complete_national_focus = PAC_for_the_revolution
-	}
-	option = {
-		name = fleet_P.25.a #They Fail.
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = -0.15
+		add_stability = -0.05
 		complete_national_focus = PAC_new_american_liberty
-	}
-}
-
-add_namespace = pacific_anarchists
-
-country_event = {
-	id = pacific_anarchists.1 #The Libertarian Threat Crushed
-	title = pacific_anarchists.1.t
-	desc = pacific_anarchists.1.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = pacific_anarchists.1.a
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = 0.05
-		add_popularity = {
-            ideology = libertarian_right
-            popularity = -0.15
-        }
-	}
-}
-
-country_event = {
-	id = pacific_anarchists.2 #The Association of Anarchists Established
-	title = pacific_anarchists.2.t
-	desc = pacific_anarchists.2.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = pacific_anarchists.2.a
-		ai_chance = {
-			factor = 100
-		}
-	}
-}
-
-country_event = {
-	id = pacific_anarchists.3 #The Association of Anarchists Empowered
-	title = pacific_anarchists.3.t
-	desc = pacific_anarchists.3.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = pacific_anarchists.3.a
-		ai_chance = {
-			factor = 100
-		}
-	}
-}
-
-country_event = {
-	id = pacific_anarchists.4 #A Second Vermin
-	title = pacific_anarchists.4.t
-	desc = pacific_anarchists.4.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = pacific_anarchists.3.a
-		ai_chance = {
-			factor = 100
-		}
-	}
-}
-
-country_event = {
-	id = pacific_anarchists.5 #The United Front Against Reaction
-	title = pacific_anarchists.5.t
-	desc = pacific_anarchists.5.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = pacific_anarchists.5.a
-		ai_chance = {
-			factor = 100
-		}
-	}
-}
-
-country_event = {
-	id = pacific_anarchists.6 #Melting Pot
-	title = pacific_anarchists.6.t
-	desc = pacific_anarchists.6.d
-	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = pacific_anarchists.6.a
-		ai_chance = {
-			factor = 100
-		}
 	}
 }
 

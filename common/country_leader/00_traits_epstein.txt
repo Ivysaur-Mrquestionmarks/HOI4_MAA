@@ -5813,19 +5813,4 @@ leader_traits = {
 		training_time_factor =  -0.35
 		mobilization_laws_cost_factor = 0.6
 	}
-    
-	#PAC
-	PAC_the_common_people_empowered = {
-		random = no
-		stability_weekly = 0.005
-		political_power_factor = -0.05
-		compliance_gain = 0.05
-	}
-
-	PAC_protector_of_anarchy = {
-		random = no
-		war_support_weekly = 0.005
-		political_power_factor = 0.05
-		war_stability_factor = 0.1
-	}
 }

@@ -70,38 +70,6 @@ characters={
 			logistics_skill = 1
 		}
 	}
-	PAC_alana_mclaughlin = {
-		name = PAC_alana_mclaughlin
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/PAC/PAC_alana_mclaughlin.dds"
-			}
-			army = {
-				small = "gfx/interface/ideas/PAC/PAC_alana_mclaughlin_advisor.dds"
-				large = "gfx/leaders/PAC/PAC_alana_mclaughlin_general.dds"
-			}
-		}
-		country_leader = {
-			traits = {}
-			ideology = anarchism
-			expire = "2060.1.1.1"
-			id = -1
-		}
-	}
-	PAC_association_of_anarchists = {
-		name = PAC_association_of_anarchists
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/PAC/PAC_association_of_anarchists.tga"
-			}
-		}
-		country_leader = {
-			traits = {  }
-			ideology = anarchism
-			expire = "2060.1.1.1"
-			id = -1
-		}
-	}
 	PAC_moses_kaoiwi = { #PRA puppet leader
 		name = PAC_moses_kaoiwi
 		portraits = {
