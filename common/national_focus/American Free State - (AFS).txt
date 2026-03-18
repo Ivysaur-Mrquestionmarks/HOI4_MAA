@@ -6324,7 +6324,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_may_he_rest
-		icon = GFX_goal_AFS_militarize_the_nation
+		icon = GFX_goal_AFS_may_he_rest
 		cost = 1
 		x = 19
 		y = 1
@@ -6345,7 +6345,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_gather_the_generals
-		icon = GFX_goal_AFS_militarize_the_nation
+		icon = GFX_goal_AFS_gather_the_generals
 		cost = 3
 		x = 0
 		y = 1
@@ -6368,7 +6368,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_fear
-		icon = GFX_goal_AFS_militarize_the_nation
+		icon = GFX_goal_AFS_fear
 		cost = 5
 		x = -2
 		y = 1
@@ -6394,7 +6394,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_always_afraid
-		icon = GFX_goal_AFS_militarize_the_nation
+		icon = GFX_goal_AFS_always_afraid
 		cost = 5
 		x = -1
 		y = 1
@@ -6409,14 +6409,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			if = {
-			    limit = { has_idea = AFS_strength_and_might_2 }
+			    limit = { has_idea = AFS_growing_dissent_2 }
 				swap_ideas = {
 			        remove_idea = AFS_growing_dissent_2
 			        add_idea = AFS_growing_dissent_3
 		        }
 			}
 		    if = {
-			    limit = { has_idea = AFS_strength_and_might_3 }
+			    limit = { has_idea = AFS_growing_dissent_3 }
 				swap_ideas = {
 			        remove_idea = AFS_growing_dissent_3
 			        add_idea = AFS_growing_dissent_4
@@ -6427,7 +6427,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_loyality_above_all
-		icon = GFX_goal_AFS_militarize_the_nation
+		icon = GFX_goal_AFS_loyality_above_all
 		cost = 5
 		x = 1
 		y = 1
@@ -6442,14 +6442,14 @@ focus_tree = {
 		}
 		completion_reward = {
             if = {
-			    limit = { has_idea = AFS_strength_and_might_2 }
+			    limit = { has_idea = AFS_growing_dissent_2 }
 				swap_ideas = {
 			        remove_idea = AFS_growing_dissent_2
 			        add_idea = AFS_growing_dissent_3
 		        }
 			}
 		    if = {
-			    limit = { has_idea = AFS_strength_and_might_3 }
+			    limit = { has_idea = AFS_growing_dissent_3 }
 				swap_ideas = {
 			        remove_idea = AFS_growing_dissent_3
 			        add_idea = AFS_growing_dissent_4
@@ -6460,7 +6460,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_stablity_endures
-		icon = GFX_goal_AFS_militarize_the_nation
+		icon = GFX_goal_AFS_stablity_endures
 		cost = 5
 		x = 1
 		y = 1
@@ -6499,7 +6499,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_a_new_savior
-		icon = GFX_goal_AFS_militarize_the_nation
+		icon = GFX_goal_AFS_a_new_savior
 		cost = 5
 		x = 2
 		y = 1
@@ -6525,7 +6525,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_continue_his_mission
-		icon = GFX_goal_AFS_militarize_the_nation
+		icon = GFX_goal_AFS_continue_his_mission
 		cost = 5
 		x = -1
 		y = 1
@@ -6548,7 +6548,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_a_new_path
-		icon = GFX_goal_AFS_militarize_the_nation
+		icon = GFX_goal_AFS_a_new_path
 		cost = 5
 		x = 1
 		y = 1
@@ -6574,7 +6574,7 @@ focus_tree = {
 
 	focus = {
 		id = AFS_cement_control
-		icon = GFX_goal_AFS_militarize_the_nation
+		icon = GFX_goal_AFS_cement_control
 		cost = 5
 		x = 1
 		y = 1
