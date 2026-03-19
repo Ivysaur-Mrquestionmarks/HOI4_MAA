@@ -2,7 +2,9 @@
 state={
 	id=59
 	name="STATE_59"
-
+	resources={
+		coal = 8
+	}
 	history={
 		owner = CAN
 		add_core_of = CAN
