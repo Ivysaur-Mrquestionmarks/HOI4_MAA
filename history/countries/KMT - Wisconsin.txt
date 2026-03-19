@@ -162,10 +162,13 @@ set_popularities = {
 	libertarian_left = 2
 }
 add_ideas = {
+	# Starting Ideas
 	KMT_coalition_of_the_willing
 	KMT_weather_underground_militia
 	KMT_struggling_industry
 	KMT_poorly_organized_state
+	# Laws
+	low_economic_mobilisation
 }
 if = {
 	limit = { has_dlc = "La Resistance" }

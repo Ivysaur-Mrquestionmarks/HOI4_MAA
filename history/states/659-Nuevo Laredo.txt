@@ -1,6 +1,9 @@
 state={
 	id=659
 	name="STATE_659"
+	resources={
+		coal = 3
+	}
 	history={
 		owner = MEX
 		add_core_of = MEX
