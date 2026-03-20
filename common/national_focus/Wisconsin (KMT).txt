@@ -987,7 +987,7 @@ focus_tree = {
 				}
 				dismantle_faction = yes
 			}
-			else_if ={
+			else_if = {
 				limit = {
 					is_in_faction = yes
 				}
@@ -1184,7 +1184,7 @@ focus_tree = {
 				}
 				dismantle_faction = yes
 			}
-			else_if ={
+			else_if = {
 				limit = {
 					is_in_faction = yes
 				}
@@ -2623,6 +2623,7 @@ focus_tree = {
 				remove_idea = KMT_weather_underground_militia_1
 				add_idea = KMT_weather_underground_militia_3
 			}
+			unlock_decision_category_tooltip = KMT_rotative_leadership
 		}
 		prerequisite = {
 			focus = KMT_permanent_revolution
@@ -6241,7 +6242,7 @@ focus_tree = {
 		prerequisite = {
 			focus = KMT_national_unity
 		}
-		mutually_exclusive ={
+		mutually_exclusive = {
 			focus = KMT_annexation_npa
 		}
 	}
@@ -6286,7 +6287,7 @@ focus_tree = {
 		prerequisite = {
 			focus = KMT_national_unity
 		}
-		mutually_exclusive ={
+		mutually_exclusive = {
 			focus = KMT_second_among_equals
 		}
 	}

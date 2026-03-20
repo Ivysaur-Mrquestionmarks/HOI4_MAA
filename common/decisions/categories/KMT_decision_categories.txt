@@ -58,3 +58,18 @@ KMT_recruit_judges = {
 	priority = 90
 
 }
+
+
+KMT_rotative_leadership = {
+	icon = GFX_decision_category_generic_communist_revolution
+	allowed = {
+    	original_tag = KMT
+	}
+
+	visible = {
+		has_completed_focus = KMT_keep_the_militias_in_charge
+	}
+
+	priority = 90
+
+}

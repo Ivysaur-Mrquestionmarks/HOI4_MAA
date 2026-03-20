@@ -629,3 +629,52 @@ KMT_recruit_judges = {
 		}
 	}
 }
+
+KMT_rotative_leadership = {
+
+	KMT_appoint_dohrn = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+		}
+		visible = {
+			has_completed_focus = KMT_keep_the_militias_in_charge
+		}
+		available = {
+			KMT_Bernardine_Dohrn = {
+				is_country_leader = no
+			}
+		}
+		complete_effect = {
+			promote_character = KMT_Bernardine_Dohrn
+		}
+	}
+
+	KMT_appoint_ayers = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = {
+			original_tag = KMT
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+		}
+		visible = {
+			has_completed_focus = KMT_keep_the_militias_in_charge
+		}
+		available = {
+			KMT_Bill_Ayers = {
+				is_country_leader = no
+			}
+		}
+		complete_effect = {
+			promote_character = KMT_Bill_Ayers
+		}
+	}
+}
