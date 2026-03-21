@@ -101,3 +101,35 @@ country_event = {
 		}
 	}
 }
+
+#Chuck Norris dies
+country_event = {
+	id = Hollywood.4
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		original_tag = HLY
+		has_character = HYL_chuck_norris
+		NOT = { has_cosmetic_tag = LA_Autonomous_Zone }
+		date > 2026.03.20
+	}
+	immediate = {
+		HYL_chuck_norris = {
+			unit_leader_event = {
+				id = Hollywood.5
+				hours = 6
+			}
+		}
+	}
+}
+unit_leader_event = {
+	id = Hollywood.5
+	title = Hollywood.5.t
+	desc = Hollywood.5.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = Hollywood.5.a
+		retire = yes
+	}
+}

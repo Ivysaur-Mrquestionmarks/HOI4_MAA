@@ -343,6 +343,24 @@ characters={
 			visible = { NOT = { has_cosmetic_tag = LA_Autonomous_Zone } }
 		}
 	}
+	HYL_chuck_norris = {
+		name = "Chuck Norris"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HLY/Chuck_Norris_General.dds"
+				large = "gfx/leaders/HLY/chuck_norris.tga"
+			}
+		}
+		corps_commander = {
+			traits = { media_personality brilliant_strategist war_hero brave } 
+			skill = 7
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 6
+			visible = { NOT = { has_cosmetic_tag = LA_Autonomous_Zone } }
+		}
+	}
 	HYL_wyatt_russell = {
 		name = HYL_wyatt_russell
 		portraits = {
