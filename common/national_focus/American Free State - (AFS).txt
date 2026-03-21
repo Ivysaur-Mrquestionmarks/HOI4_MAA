@@ -10694,14 +10694,14 @@ focus_tree = {
 		        }
 			}
 			if = {
-				limit = { country_exists = N }
+				limit = { country_exists = NAB }
                 create_wargoal = {
 			        target = NAB
 			        type = annex_everything
 		        }
 			}
 			if = {
-				limit = { country_exists = NEW }
+				limit = { country_exists = WAB }
                 create_wargoal = {
 			        target = WAB
 			        type = annex_everything

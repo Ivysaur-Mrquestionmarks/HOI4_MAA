@@ -1123,8 +1123,6 @@ focus_tree = {
 		}
 	}
 
-	############## Libertarian Path ##############
-
 	focus = {
 		id = PAC_new_american_liberty
 		icon = GFX_goal_FLD_the_libertarian_cause
@@ -2640,7 +2638,8 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_war_support = 0.01			
 		}
 	}
 
@@ -2656,13 +2655,33 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_bring_libertys_return
 		}
+		will_lead_to_war_with = CAS
+		will_lead_to_war_with = LIB
+		bypass = { 
+			NOT = { country_exists = CAS country_exists = LIB } 
+		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = CAS
+			    type = annex_everything
+		    }
+		    if = {
+		        limit = { country_exists = LIB }
+		        create_wargoal = {
+			        target = LIB
+			        type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2678,13 +2697,81 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_bring_libertys_return
 		}
+		will_lead_to_war_with = NAV
+		will_lead_to_war_with = UTA
+		will_lead_to_war_with = HOP
+		will_lead_to_war_with = AFO
+		will_lead_to_war_with = SIN
+		will_lead_to_war_with = LAS
+		will_lead_to_war_with = MOL
+		bypass = { 
+			NOT = { 
+				country_exists = NAV
+				country_exists = UTA 
+			    country_exists = HOP
+				country_exists = AFO
+				country_exists = SIN
+				country_exists = LAS
+				country_exists = MOL
+			} 
+		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = UTA
+			    type = annex_everything
+		    }
+			if = {
+			    limit = { country_exists = NAV }
+				create_wargoal = {
+					target = NAV
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = HOP }
+				create_wargoal = {
+					target = HOP
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = AFO }
+				create_wargoal = {
+					target = AFO
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = SIN }
+				create_wargoal = {
+					target = SIN
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = LAS }
+				create_wargoal = {
+					target = LAS
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = MOL }
+				create_wargoal = {
+					target = MOL
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2700,13 +2787,36 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_bring_libertys_return
 		}
+		will_lead_to_war_with = MON
+		will_lead_to_war_with = IDA
+		bypass = { 
+			NOT = { 
+				country_exists = MON
+				country_exists = IDA
+			} 
+		}
 		available = {
+		    if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = MON
+			    type = annex_everything
+		    }
+		    if = { 
+		        limit = { country_exists = IDA }
+		        create_wargoal = {
+			        target = IDA
+			        type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2729,12 +2839,39 @@ focus_tree = {
 			focus = PAC_through_the_rocky_mountain_tops
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				OR = {
+				    is_neighbor_of = USA
+					is_neighbor_of = NPA
+				}
+			}
 		}
+		will_lead_to_war_with = USA
+		will_lead_to_war_with = NPA
+		bypass = { NOT = { country_exists = USA country_exists = NPA } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = USA
+			    type = annex_everything
+		    }
+		    if = {
+			    limit = { 
+					country_exists = NPA
+					NOT = {
+						is_ally_with = NPA
+					}
+				}
+				create_wargoal = {
+					target = NPA
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2759,13 +2896,24 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_through_the_rocky_mountain_tops
 		}
+		bypass = { NOT = { country_exists = TEX } }
 		available = {
+			TEX = { has_government = libertarian_right }
+			NOT = {
+			    has_war_with = TEX
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    #TEX = {
+			#	country_event = {
+			#	    id = fleet_P.11
+			#	    days = 0
+			#    }
+			#}
 		}
 	}
 
@@ -2790,13 +2938,21 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_through_the_rocky_mountain_tops
 		}
+		will_lead_to_war_with = TEX
+		#bypass = { NOT = { country_exists = TEX } }
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				#is_neighbor_of = TEX
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    War_on_texas_collapse_tags = yes
 		}
 	}
 
@@ -2819,12 +2975,62 @@ focus_tree = {
 			focus = PAC_put_texas_in_their_place
 		}
 		available = {
+			has_war = no
+		    NOT = {
+		        country_exists = USA
+			    country_exists = FRA
+		    }
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			add_war_support = 0.05
+		    every_state = {
+			    limit = { is_core_of = CAS }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = NAV }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = UTA }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = HOP }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = AFO }
+			    add_core_of = PAC
+		    }			
+			every_state = {
+			    limit = { is_core_of = SIN }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = MOL }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = MON }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = IDA }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = TEX }
+			    add_core_of = PAC
+		    }
+			every_state = {
+			    limit = { is_core_of = USA }
+			    add_core_of = PAC
+		    }
 		}
 	}
 
@@ -2843,13 +3049,24 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_forward_to_liberty
 		}
+		bypass = { NOT = { country_exists = GLA } }
 		available = {
+			TEX = { has_government = libertarian_right }
+			NOT = {
+			    has_war_with = GLA
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    #GLA = {
+			#	country_event = {
+			#	    id = fleet_P.11
+			#	    days = 0
+			#    }
+			#}
 		}
 	}
 
@@ -2869,12 +3086,46 @@ focus_tree = {
 			focus = PAC_forward_to_liberty
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				OR = {
+				    is_neighbor_of = GLA
+					is_neighbor_of = KMT
+					is_neighbor_of = DET
+				}
+			}
 		}
+		will_lead_to_war_with = GLA
+		will_lead_to_war_with = KMT
+		will_lead_to_war_with = DET
+		bypass = { NOT = { country_exists = GLA country_exists = KMT country_exists = DET } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    if = {
+			    limit = { country_exists = GLA }
+				create_wargoal = {
+					target = GLA
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = KMT }
+				create_wargoal = {
+					target = KMT
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = DET }
+				create_wargoal = {
+					target = DET
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2890,13 +3141,40 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_forward_to_liberty
 		}
+		will_lead_to_war_with = AFS
+		will_lead_to_war_with = KFC
+		bypass = { 
+			NOT = { country_exists = AFS country_exists = KFC }
+		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				OR = {
+				    is_neighbor_of = AFS
+				    is_neighbor_of = KFC
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    if = {
+			    limit = { country_exists = AFS }
+				create_wargoal = {
+					target = AFS
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = KFC }
+				create_wargoal = {
+					target = KFC
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2913,12 +3191,69 @@ focus_tree = {
 			focus = PAC_forward_to_liberty
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = CSA
+			    type = annex_everything
+		    }
+			if = { 
+				limit = { country_exists = KKK }
+				create_wargoal = {
+					target = KKK
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = LGB }
+				create_wargoal = {
+					target = LGB
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = SCA }
+				create_wargoal = {
+					target = SCA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = ZIO }
+				create_wargoal = {
+					target = ZIO
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = ARK }
+				create_wargoal = {
+					target = ARK
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = AFR }
+				create_wargoal = {
+					target = AFR
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = CSB }
+				create_wargoal = {
+					target = CSB
+					type = annex_everything
+				}
+			}
 		}
 	}
 
@@ -2936,12 +3271,46 @@ focus_tree = {
 			focus = PAC_restore_liberty_to_the_great_lakes
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				OR = {
+				    is_neighbor_of = MIL
+					is_neighbor_of = MNS
+					is_neighbor_of = MIN
+				}
+			}
 		}
+		will_lead_to_war_with = MIL
+		will_lead_to_war_with = MNS
+		will_lead_to_war_with = MIN
+		bypass = { NOT = { country_exists = MIL country_exists = MNS country_exists = MIN } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    if = {
+			    limit = { country_exists = MIL }
+				create_wargoal = {
+					target = MIL
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = MNS }
+				create_wargoal = {
+					target = MNS
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = MIN }
+				create_wargoal = {
+					target = MIN
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2958,12 +3327,30 @@ focus_tree = {
 			focus = PAC_advance_into_ohio
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				is_neighbor_of = NRA
+			}
 		}
+		will_lead_to_war_with = NRA
+		bypass = { NOT = { country_exists = NRA } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = NRA
+			    type = annex_everything
+		    }
+			if = {
+			    limit = { country_exists = TIM }
+				create_wargoal = {
+					target = TIM
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -2983,12 +3370,43 @@ focus_tree = {
 			focus = PAC_advance_into_ohio
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			    OR = {
+		            is_neighbor_of = VIR
+				    is_neighbor_of = RVR
+				    is_neighbor_of = OBX
+			    }
+			}
 		}
+		will_lead_to_war_with = VIR
+		will_lead_to_war_with = RVR
+		will_lead_to_war_with = OBX
+		bypass = { NOT = { country_exists = VIR country_exists = OBX country_exists = RVR } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = VIR
+			    type = annex_everything
+		    }
+			if = {
+			    limit = { country_exists = RVR }
+				create_wargoal = {
+					target = RVR
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = OBX }
+				create_wargoal = {
+					target = OBX
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -3007,13 +3425,24 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_advance_into_ohio
 		}
+		bypass = { NOT = { country_exists = RVR } }
 		available = {
+			RVR = { has_government = libertarian_right }
+			NOT = {
+			    has_war_with = RVR
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    #RVR = {
+			#	country_event = {
+			#	    id = fleet_P.11
+			#	    days = 0
+			#    }
+			#}
 		}
 	}
 
@@ -3029,13 +3458,58 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_liberty_in_the_south
 		}
+		will_lead_to_war_with = FLO
+		bypass = { NOT = { country_exists = FLO } }
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = FLO
+			    type = annex_everything
+		    }
+			if = { 
+				limit = { country_exists = NSA }
+				create_wargoal = {
+					target = NSA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = GKJ }
+				create_wargoal = {
+					target = GKJ
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FLD }
+				create_wargoal = {
+					target = FLD
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FLA }
+				create_wargoal = {
+					target = FLA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = SEM }
+				create_wargoal = {
+					target = SEM
+					type = annex_everything
+				}
+			}
 		}
 	}
 
@@ -3054,12 +3528,44 @@ focus_tree = {
 			focus = PAC_cooperation_with_virginia
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				is_neighbor_of = FRA
+			}
 		}
+		will_lead_to_war_with = FRA
+		bypass = { NOT = { country_exists = FRA } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = FRA
+			    type = annex_everything
+		    }
+			if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = NEW
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = NAB }
+                create_wargoal = {
+			        target = NAB
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = WAB }
+                create_wargoal = {
+			        target = WAB
+			        type = annex_everything
+		        }
+			}
 		}
 	}
 
@@ -3082,12 +3588,337 @@ focus_tree = {
 			focus = PAC_advance_into_florida
 		}
 		available = {
+			all_state = {	
+			    OR = {
+			        NOT = { has_state_flag = part_of_america }
+			        is_owned_by = ROOT
+			        owner = { is_ally_with = ROOT } #Checks for territory controlled by indpendent faction members/puppets
+			    }		
+		    }
+		    ROOT = {
+			    if = {
+			        limit = {
+				        is_in_faction = yes
+				    }
+				    is_faction_leader = yes
+				}
+				is_subject = no
+			}
+		    has_war = no
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+            #news_event = {
+			#	id = vermin.16
+			#	days = 0
+			#}
+		    hidden_effect = {
+			    every_state = {
+			        limit = { 
+			            is_owned_by = ROOT
+			            has_state_flag = part_of_america
+			        }
+			        add_core_of = ROOT
+			    }
+			}
+		}
+	}
+
+	focus = {
+		id = PAC_global_reconnection
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PAC_yellow_and_black_america
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_yellow_and_black_america
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = -150
+			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
+			add_to_variable = {
+				var = PAC.var_factory_efficiency_level
+				value = 0.01
+				tooltip = factory_efficiency_factor_tt
+			}	
+			add_to_variable = {
+				var = PAC.var_production_speed_level
+				value = 0.01
+				tooltip = production_speed_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_local_resources_level
+				value = 0.01
+				tooltip = local_resources_factor_tt
+			}
+		}
+	}
+
+	focus = {
+		id = PAC_american_reurbanisation
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PAC_yellow_and_black_america
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_yellow_and_black_america
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PAC_peace_in_america
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = PAC_yellow_and_black_america
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_yellow_and_black_america
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = -0.65
+		}
+	}
+
+	focus = {
+		id = PAC_the_healing_process
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_global_reconnection
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_global_reconnection
+		}
+		prerequisite = { 
+			focus = PAC_american_reurbanisation
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.05
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT} 
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PAC_economic_pacts_with_the_americas
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PAC_american_reurbanisation
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_american_reurbanisation
+		}
+		prerequisite = { 
+			focus = PAC_peace_in_america
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			every_other_country = {
+				limit = { 
+					OR = {
+					    has_government = libertarian_right
+						has_government = democrat
+						has_government = republican
+						has_government = autocratic
+					}
+			    }
+			    add_opinion_modifier = {
+                    modifier = PAC_libertarian_economic_pact
+                }
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {is_core_of = ROOT}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PAC_the_continuation_of_freedom
+		icon = GFX_goal_FLD_the_libertarian_cause
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = PAC_the_healing_process
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_the_healing_process
+		}
+		prerequisite = { 
+			focus = PAC_economic_pacts_with_the_americas
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
 		}
 	}
 

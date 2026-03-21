@@ -1134,7 +1134,7 @@ opinion_modifiers = {
 		value = -50
 	}
 	AFS_green_terror_state = {
-		value = 200
+		value = -200
 	}
 	kmt_rejected_meeting = {
 		value = -75
@@ -1144,5 +1144,8 @@ opinion_modifiers = {
 	}
 	TIM_attempted_to_manipulate_algorithms = {
 		value = -75
+	}
+	PAC_libertarian_economic_pact = {
+		value = 50
 	}
 }
