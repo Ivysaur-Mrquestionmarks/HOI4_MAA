@@ -701,8 +701,10 @@ focus_tree = {
 		relative_position_id = PAC_reprivatization
 		allow_branch = {
 		}
-		prerequisite = { focus = PAC_reprivatization }
-		prerequisite = { focus = PAC_keep_key_industrial_zones }
+		prerequisite = {
+			focus = PAC_reprivatization
+			focus = PAC_keep_key_industrial_zones
+		}
 		available = {
 			
 		}
@@ -824,8 +826,10 @@ focus_tree = {
 		relative_position_id = PAC_loosen_restrictions
 		allow_branch = {
 		}
-		prerequisite = { focus = PAC_loosen_restrictions }
-		prerequisite = { focus = PAC_increase_military_presence }
+		prerequisite = { 
+			focus = PAC_loosen_restrictions
+			focus = PAC_increase_military_presence
+		}
 		available = {
 			
 		}
