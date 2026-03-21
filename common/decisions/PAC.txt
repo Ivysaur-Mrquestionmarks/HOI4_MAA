@@ -58,7 +58,7 @@ PAC_army_militia_balance_of_power_category = {
 		}
 
 		available = {
-            always = no
+            has_country_flag = PAC_inauguration
 		}
 
 		days_mission_timeout = 70
@@ -118,6 +118,7 @@ PAC_army_militia_balance_of_power_category = {
 			        }
 				}
 			}
+			remove_country_flag = PAC_inauguration
 		}
 	}
 

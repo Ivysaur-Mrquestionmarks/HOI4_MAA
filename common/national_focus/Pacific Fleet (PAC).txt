@@ -847,10 +847,12 @@ focus_tree = {
                 ideology = libertarian_left
                 popularity = -0.1
             }
-			country_event = {
-  				id = fleet_P.20
-    			days = 30
-			}		
+			hidden_effect = {
+			    country_event = {
+  				    id = fleet_P.20
+    			    days = 30
+			    }	
+			}	
 		}
 	}
 
