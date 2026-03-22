@@ -1180,6 +1180,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = PAC_economic_liberty
+			remove_ideas = PAC_post_war_economy_4
 		}
 	}
 
@@ -1533,6 +1534,10 @@ focus_tree = {
 				value = 0.02
 				tooltip = libertarian_right_drift_factor_tt
 			}
+			swap_ideas = {
+				remove_idea = PAC_unpopular_coup_3
+				add_idea = PAC_unpopular_coup_4
+			}
 		}
 	}
 
@@ -1656,6 +1661,10 @@ focus_tree = {
 				value = -0.01
 				tooltip = libertarian_right_drift_factor_tt
 			}
+			swap_ideas = {
+				remove_idea = PAC_unpopular_coup_4
+				add_idea = PAC_unpopular_coup_5
+			}
 		}
 	}
 
@@ -1732,7 +1741,11 @@ focus_tree = {
 				var = PAC.var_compliance_level
 				value = 0.02
 				tooltip = compliance_growth_tt
-			}		
+			}
+			swap_ideas = {
+				remove_idea = PAC_unpopular_coup_5
+				add_idea = PAC_unpopular_coup_6
+			}
 		}
 	}
 
@@ -1818,6 +1831,7 @@ focus_tree = {
 				value = 0.02
 				tooltip = compliance_growth_tt
 			}	
+			remove_ideas = PAC_unpopular_coup_6
 			unlock_decision_tooltip = PAC_legitimize_the_republic
 			unlock_decision_tooltip = PAC_democracy_restoration	
 		}
@@ -1877,6 +1891,7 @@ focus_tree = {
 				value = -0.02
 				tooltip = compliance_growth_tt
 			}
+			remove_ideas = PAC_unpopular_coup_6
 			unlock_decision_tooltip = PAC_fight_against_anti_americanism
 			unlock_decision_tooltip = PAC_call_to_liberty
 		}
