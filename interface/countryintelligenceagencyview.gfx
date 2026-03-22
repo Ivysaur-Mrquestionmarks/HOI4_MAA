@@ -468,6 +468,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/operatives/agencies/Black_Panther_Agency.tga"
 		noOfFrames = 2
 	}
+
+	spriteType = {
+		name = "GFX_intelligence_agency_KMT_Agency"
+		texturefile = "gfx/interface/operatives/agencies/KMT_Agency.tga"
+		noOfFrames = 2
+	}
 	
 	#generic
 	spriteType = {

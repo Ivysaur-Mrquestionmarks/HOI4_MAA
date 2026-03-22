@@ -328,7 +328,7 @@ focus_tree = {
 		completion_reward = {
 			create_intelligence_agency = {
 				name = "Badger Intelligence Commission"
-				icon = GFX_intelligence_agency_FBI_Agency
+				icon = GFX_intelligence_agency_KMT_Agency
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = KMT_agency_expanded
