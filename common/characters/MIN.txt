@@ -92,4 +92,25 @@ characters={
 			logistics_skill = 2
 		}
 	}
+	MIN_obergruppenfuhrer_will_stancil = {
+		name = "Will Stancil"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/Portrait_Will_Stancil_Reich_MAA.dds"
+				small = "gfx/interface/ideas/MIN/will_stancil_general.dds" #not sure yet if he will have a political advisor role
+			}
+			army = {
+				large = "gfx/leaders/MIN/Portrait_Will_Stancil_Reich_MAA.dds"
+				small = "gfx/interface/ideas/MIN/will_stancil_general.dds"
+			}
+		}
+		corps_commander = {
+			traits={ media_personality trait_cautious inflexible_strategist } 
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
 }
