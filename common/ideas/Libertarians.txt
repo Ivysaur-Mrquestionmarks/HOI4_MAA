@@ -462,11 +462,11 @@ ideas = {
 		GLA_free_market_environmentalism = {
 			picture = GLA_free_market_environmentalism
 			modifier = {
-				stability_factor = 0.05
 				monthly_population = 0.05
-				production_oil_factor = -0.1
 				consumer_goods_factor = -0.1
 				research_speed_factor = 0.05
+				production_speed_solar_farm_factor = 0.1
+				production_speed_wind_farm_building_factor = 0.1
 			}
 		}
 		GLA_migrants_allowed = {

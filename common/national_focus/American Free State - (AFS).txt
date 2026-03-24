@@ -2116,20 +2116,6 @@ focus_tree = {
 				    tooltip_side = mattis_powerful
 			    }
 		    }
-			if = {
-			    limit = { has_country_flag = AFS_hawkins_side }
-			    add_days_mission_timeout = {
-			        mission = AFS_civil_war_soon_hawkins
-			        days = 25
-		        }
-		    }
-		    if = {
-			    limit = { has_country_flag = AFS_mattis_side }
-			    add_days_mission_timeout = {
-			        mission = AFS_civil_war_soon_mattis
-			        days = 25
-		        }
-		    }
 		}
 	}
 
@@ -2240,22 +2226,6 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-		    if = {
-			    limit = { has_country_flag = AFS_hawkins_side }
-			    add_power_balance_value = {
-				    id = hawkins_bop
-				    value = 0.1
-				    tooltip_side = hawkins_powerful
-			    }
-		    }
-		    if = {
-			    limit = { has_country_flag = AFS_mattis_side }
-			    add_power_balance_value = {
-				    id = mattis_bop
-				    value = 0.1
-				    tooltip_side = mattis_powerful
-			    }
-		    }
 			custom_effect_tooltip = AFS_this_will_strengthen_us
 		}
 	}
@@ -2277,6 +2247,20 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			if = {
+			    limit = { has_country_flag = AFS_hawkins_side }
+			    add_days_mission_timeout = {
+			        mission = AFS_civil_war_soon_hawkins
+			        days = 25
+		        }
+		    }
+		    if = {
+			    limit = { has_country_flag = AFS_mattis_side }
+			    add_days_mission_timeout = {
+			        mission = AFS_civil_war_soon_mattis
+			        days = 25
+		        }
+		    }
 		    custom_effect_tooltip = AFS_this_will_strengthen_us
 		}
 	}
@@ -4687,6 +4671,42 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_ideas = AFS_energy_of_the_future
+			#random_controlled_state = {
+			#	limit = {is_core_of = ROOT} 
+			#	add_extra_state_shared_building_slots = 1
+			#	add_building_construction = {
+    		#		type = solar_farm_building
+    		#		level = 1
+    		#		instant_build = yes
+			#	}
+			#}
+			#random_controlled_state = {
+			#	limit = {is_core_of = ROOT} 
+			#	add_extra_state_shared_building_slots = 1
+			#	add_building_construction = {
+    		#		type = solar_farm_building
+    		#		level = 1
+    		#		instant_build = yes
+			#	}
+			#}
+			#random_controlled_state = {
+			#	limit = {is_core_of = ROOT} 
+			#	add_extra_state_shared_building_slots = 1
+			#	add_building_construction = {
+    		#		type = wind_farm_building
+    		#		level = 1
+    		#		instant_build = yes
+			#	}
+			#}
+			#random_controlled_state = {
+			#	limit = {is_core_of = ROOT} 
+			#	add_extra_state_shared_building_slots = 1
+			#	add_building_construction = {
+    		#		type = wind_farm_building
+    		#		level = 1
+    		#		instant_build = yes
+			#	}
+			#}
 			country_event = {
 				id = hawkins.37
 				days = 0
