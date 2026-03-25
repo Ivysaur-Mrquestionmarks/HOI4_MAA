@@ -1,5 +1,3 @@
-capital = 486
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	tech_recon = 1
@@ -27,9 +25,30 @@ if = {
 	}
 }
 
-add_manpower = 12000
-
+capital = 486
+set_stability = 0
+#add_manpower = 12000
+set_war_support = 0.35
 oob = "SIN_2021"
+set_research_slots = 1
+
+
+### Country Leaders ###
+recruit_character = SIN_Ted_Kaczynski
+recruit_character = SIN_john_zerzan
+recruit_character = SIN_El_Chapo
+recruit_character = SIN_james_marcello
+recruit_character = SIN_mitt_romney
+
+### Advisors ###
+recruit_character = SIN_terry_nichols
+recruit_character = SIN_ramzi_ahmed_yousef
+recruit_character = SIN_dzhokhar_a_tsarnaev
+recruit_character = SIN_robert_p_hanssen
+
+### Generals ###
+
+### Admirals ###
 
 set_politics = {
 	ruling_party = autocratic
@@ -38,35 +57,17 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	autocratic = 89
-	republican = 0
-	democrat = 0
-	authoritarian_left = 0
-	libertarian_right = 11
-	libertarian_left = 0
+	autocratic = 1
+	republican = 44
+	democrat = 48
+	authoritarian_left = 3
+	libertarian_right = 2
+	libertarian_left = 2
 }
 
 add_ideas = {
 	
 }
-
-### Country Leaders ###
-# Primitivists #
-recruit_character = SIN_theodore_kaczynski
-recruit_character = SIN_sane_theodore_kaczynski
-recruit_character = SIN_john_zerzan
-# Cartel #
-recruit_character = SIN_joaquin_guzman
-recruit_character = SIN_james_marcello
-# Republicans #
-recruit_character = SIN_mitt_romney
-
-### Political Advisors ###
-recruit_character = SIN_terry_nichols
-recruit_character = SIN_ramzi_ahmed_yousef
-recruit_character = SIN_dzhokhar_a_tsarnaev
-recruit_character = SIN_robert_p_hanssen
-
 if = {
 	limit = { has_dlc = "La Resistance" }
 	create_operative_leader = {

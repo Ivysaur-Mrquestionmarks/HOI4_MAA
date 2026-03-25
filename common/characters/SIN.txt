@@ -1,36 +1,60 @@
-characters={
+
+
+characters = {
 
 	### Country Leaders ###
-	# Primitivists #
-	SIN_theodore_kaczynski = {
-		name = SIN_theodore_kaczynski
+	SIN_Keith_Laube = {
+		name = SIN_Keith_Laube
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SIN/kaczynski.dds"
+				#large = 
 			}
 		}
 		country_leader = {
-			desc = "DESC_LEADER_TED_KACZYNSKI"
-			traits = { anarcho_primitivist_trait shadow_of_chapo }
+			traits = {  }
+			ideology = libertarian_ideology
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
+
+	SIN_Ted_Kaczynski = {
+		name = SIN_Ted_Kaczynski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Ted_Kaczynski.dds"
+				small = "gfx/interface/ideas/SIN/advisor_Ted_Kaczynski.dds"
+			}
+		}
+		country_leader = {
+			#desc = "DESC_LEADER_TED_KACZYNSKI"
+			traits = {  }
 			ideology = anarcho_primitivism
 			expire = "2060.1.1.1"
 			id = -1
 		}
-	}
-	SIN_sane_theodore_kaczynski = {
-		name = SIN_theodore_kaczynski
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/SIN/Ted_Kaczynski_Sane.dds"
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Ted_Kaczynski
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+
+			}
+			available = {
+			
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1
 			}
 		}
-		country_leader = {
-			traits = {}
-			ideology = Jeffersonianism
-			expire = "2060.1.1.1"
-			id = -1
-		}
 	}
+
 	SIN_john_zerzan = {
 		name = SIN_john_zerzan
 		portraits = {
@@ -39,45 +63,45 @@ characters={
 			}
 		}
 		country_leader = {
-			traits = { anarcho_primitivist_trait }
+			traits = {  }
 			ideology = anarcho_primitivism
 			expire = "2060.1.1.1"
 			id = -1
 		}
 	}
 	# Cartel #
-	SIN_joaquin_guzman = {
-		name = SIN_joaquin_guzman
+	SIN_El_Chapo = {
+		name = SIN_El_Chapo
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SIN/chapo.dds"
+				large = "gfx/leaders/SIN/El_Chapo.dds"
+				small = "gfx/interface/ideas/SIN/advisor_El_Chapo.dds"
 			}
 			army = {
-				small = "GFX_idea_El_Chapo_ADV"
-				large = "gfx/leaders/SIN/chapo.dds"
+				large = "gfx/leaders/SIN/El_Chapo_2.dds"
 			}
 		}
 		country_leader = {
 			ideology = corporatocracy
-			traits = { el_chapo_trait }
+			traits = {  }
 			expire = "2060.1.1.1"
 			id = -1
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = SIN_El_Chapo
+			idea_token = advisor_El_Chapo
 			cost = 150
 			allowed = {
 				original_tag = SIN
 			}
 			visible = {
-				has_completed_focus = Meet_with_Chapo
+				#has_completed_focus = Meet_with_Chapo
 			}
 			available = {
 			
 			}
 			traits = {
-				El_Chapo_Advisor 
+				 
 			}
 			ai_will_do = {
 				factor = 5
