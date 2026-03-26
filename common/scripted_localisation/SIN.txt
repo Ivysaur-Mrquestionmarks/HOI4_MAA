@@ -1,0 +1,229 @@
+defined_text = {
+	name = GetCartelLoyaltyStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_cartel_destroyed_flag
+		}
+		localization_key = SIN_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_cartel_integrated_flag
+		}
+		localization_key = SIN_loyalty_status_integrated
+	}
+	text = {
+		localization_key = SIN_cartel_loyalty_status_amount
+	}
+}
+
+defined_text = {
+	name = GetMobLoyaltyStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_mob_destroyed_flag
+		}
+		localization_key = SIN_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_mob_integrated_flag
+		}
+		localization_key = SIN_loyalty_status_integrated
+	}
+	text = {
+		localization_key = SIN_mob_loyalty_status_amount
+	}
+}
+
+defined_text = {
+	name = GetAnprimsLoyaltyStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_anprims_destroyed_flag
+		}
+		localization_key = SIN_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_anprims_integrated_flag
+		}
+		localization_key = SIN_loyalty_status_integrated
+	}
+	text = {
+		localization_key = SIN_anprims_loyalty_status_amount
+	}
+}
+
+defined_text = {
+	name = GetIslamistsLoyaltyStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_islamists_destroyed_flag
+		}
+		localization_key = SIN_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_nsm_integrated_flag
+		}
+		localization_key = SIN_loyalty_status_integrated
+	}
+	text = {
+		localization_key = SIN_islamists_loyalty_status_amount
+	}
+}
+
+defined_text = {
+	name = GetDtLoyaltyStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_dt_destroyed_flag
+		}
+		localization_key = SIN_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_dt_integrated_flag
+		}
+		localization_key = SIN_loyalty_status_integrated
+	}
+	text = {
+		localization_key = SIN_dt_loyalty_status_amount
+	}
+}
+
+defined_text = {
+	name = GetEstablishmentLoyaltyStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_establishment_destroyed_flag
+		}
+		localization_key = SIN_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_establishment_integrated_flag
+		}
+		localization_key = SIN_loyalty_status_integrated
+	}
+	text = {
+		localization_key = SIN_establishment_loyalty_status_amount
+	}
+}
+
+
+
+defined_text = {
+	name = GetCartelPopularityStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_cartel_destroyed_flag
+		}
+		localization_key = SIN_popularity_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_cartel_integrated_flag
+		}
+		localization_key = SIN_popularity_status_integrated
+	}
+	text = {
+		localization_key = SIN_cartel_popularity_status_amount
+	}
+}
+
+defined_text = {
+	name = GetMobPopularityStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_mob_destroyed_flag
+		}
+		localization_key = SIN_popularity_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_mob_integrated_flag
+		}
+		localization_key = SIN_popularity_status_integrated
+	}
+	text = {
+		localization_key = SIN_mob_popularity_status_amount
+	}
+}
+
+defined_text = {
+	name = GetAnprimsPopularityStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_anprims_destroyed_flag
+		}
+		localization_key = SIN_popularity_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_anprims_integrated_flag
+		}
+		localization_key = SIN_popularity_status_integrated
+	}
+	text = {
+		localization_key = SIN_anprims_popularity_status_amount
+	}
+}
+
+defined_text = {
+	name = GetIslamistsPopularityStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_islamists_destroyed_flag
+		}
+		localization_key = SIN_popularity_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_islamists_integrated_flag
+		}
+		localization_key = SIN_popularity_status_integrated
+	}
+	text = {
+		localization_key = SIN_islamists_popularity_status_amount
+	}
+}
+
+defined_text = {
+	name = GetDtPopularityStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_dt_destroyed_flag
+		}
+		localization_key = SIN_popularity_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_dt_integrated_flag
+		}
+		localization_key = SIN_popularity_status_integrated
+	}
+	text = {
+		localization_key = SIN_dt_popularity_status_amount
+	}
+}
+
+defined_text = {
+	name = GetEstablishmentPopularityStatus
+	text = {
+		trigger = {
+			has_country_flag = SIN_establishment_destroyed_flag
+		}
+		localization_key = SIN_popularity_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIN_establishment_integrated_flag
+		}
+		localization_key = SIN_popularity_status_integrated
+	}
+	text = {
+		localization_key = SIN_establishment_popularity_status_amount
+	}
+}

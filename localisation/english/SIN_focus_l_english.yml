@@ -1,4 +1,80 @@
 ﻿l_english:
+
+
+########  #######   #######  ##       ######## #### ########   ######  
+   ##    ##     ## ##     ## ##          ##     ##  ##     ## ##    ## 
+   ##    ##     ## ##     ## ##          ##     ##  ##     ## ##       
+   ##    ##     ## ##     ## ##          ##     ##  ########   ######  
+   ##    ##     ## ##     ## ##          ##     ##  ##              ## 
+   ##    ##     ## ##     ## ##          ##     ##  ##        ##    ## 
+   ##     #######   #######  ########    ##    #### ##         ######  
+
+
+#### ########  ########    ###     ######  
+ ##  ##     ## ##         ## ##   ##    ## 
+ ##  ##     ## ##        ##   ##  ##       
+ ##  ##     ## ######   ##     ##  ######  
+ ##  ##     ## ##       #########       ## 
+ ##  ##     ## ##       ##     ## ##    ## 
+#### ########  ######## ##     ##  ######  
+
+
+######## ##     ## ######## ##    ## ########  ######  
+##       ##     ## ##       ###   ##    ##    ##    ## 
+##       ##     ## ##       ####  ##    ##    ##       
+######   ##     ## ######   ## ## ##    ##     ######  
+##        ##   ##  ##       ##  ####    ##          ## 
+##         ## ##   ##       ##   ###    ##    ##    ## 
+########    ###    ######## ##    ##    ##     ###### 
+
+
+########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
+##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 
+##     ##  ##   ##  ##     ##    ##     ##  ##       ##          ####  ##  ##   ##  #### #### ##       ##       
+########  ##     ## ########     ##     ##  ######    ######     ## ## ## ##     ## ## ### ## ######    ######  
+##        ######### ##   ##      ##     ##  ##             ##    ##  #### ######### ##     ## ##             ## 
+##        ##     ## ##    ##     ##     ##  ##       ##    ##    ##   ### ##     ## ##     ## ##       ##    ## 
+##        ##     ## ##     ##    ##    #### ########  ######     ##    ## ##     ## ##     ## ########  ###### 
+
+ SIN_autocratic_party_long:0 "Sinaloa Cartel"
+ SIN_autocratic_party:0 "Sinaloa"
+ SIN_libertarian_right_party_long:0 "Libertarian Party of Colorado"
+ SIN_libertarian_right_party:0 "LPCO"
+ SIN_republican_party_long:0 "Colorado Republican Party"
+ SIN_republican_party:0 "C-GOP"
+ SIN_democrat_party_long:0 "Colorado Democratic Party"
+ SIN_democrat_party:0 "C-DEM"
+ SIN_libertarian_left_party_long:0 "Green Party of Colorado"
+ SIN_libertarian_left_party:0 "GPCO"
+ SIN_authoritarian_left_party_long:0 "Syndicalist Movement"
+ SIN_authoritarian_left_party:0 "Syndicalists"
+
+
+########  #######   ######  ##     ##  ######  ########  ######  
+##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
+##       ##     ## ##       ##     ## ##       ##       ##       
+######   ##     ## ##       ##     ##  ######  ######    ######  
+##       ##     ## ##       ##     ##       ## ##             ## 
+##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
+##        #######   ######   #######   ######  ########  ###### 
+
+
+########  ########  ######  ####  ######  ####  #######  ##    ##  ######  
+##     ## ##       ##    ##  ##  ##    ##  ##  ##     ## ###   ## ##    ## 
+##     ## ##       ##        ##  ##        ##  ##     ## ####  ## ##       
+##     ## ######   ##        ##   ######   ##  ##     ## ## ## ##  ######  
+##     ## ##       ##        ##        ##  ##  ##     ## ##  ####       ## 
+##     ## ##       ##    ##  ##  ##    ##  ##  ##     ## ##   ### ##    ## 
+########  ########  ######  ####  ######  ####  #######  ##    ##  ######  
+
+
+ #######  ######## ##     ## ######## ########      ######  ######## ##     ## ######## ######## 
+##     ##    ##    ##     ## ##       ##     ##    ##    ##    ##    ##     ## ##       ##       
+##     ##    ##    ##     ## ##       ##     ##    ##          ##    ##     ## ##       ##       
+##     ##    ##    ######### ######   ########      ######     ##    ##     ## ######   ######   
+##     ##    ##    ##     ## ##       ##   ##            ##    ##    ##     ## ##       ##       
+##     ##    ##    ##     ## ##       ##    ##     ##    ##    ##    ##     ## ##       ##       
+ #######     ##    ##     ## ######## ##     ##     ######     ##     #######  ##       ##      
  The_Meeting:0 "The Meeting"
 
  Create_Bomb_Streamlines:0 "Streamline Bomb Production"
@@ -177,6 +253,71 @@
 
 
 
+ 
 
 
 
+ SIN_internal_factions:0 "Faction Management"
+ SIN_internal_factions_desc:1 "placeholder"
+ SIN_ui_faction_header:0 "Faction"
+ SIN_ui_loyalty_header:0 "Loyalty"
+ SIN_ui_popularity_header:0 "Influence"
+
+ SIN_cartel_loyalty_status:0 "[GetCartelLoyaltyStatus]"
+ SIN_cartel_loyalty_status_amount:0 "[?SIN.SIN_cartel_loyalty|0]"
+
+ SIN_mob_loyalty_status:0 "[GetMobLoyaltyStatus]"
+ SIN_mob_loyalty_status_amount:0 "[?SIN.SIN_mob_loyalty|0]"
+
+ SIN_anprims_loyalty_status:0 "[GetAnprimsLoyaltyStatus]"
+ SIN_anprims_loyalty_status_amount:0 "[?SIN.SIN_anprims_loyalty|0]"
+
+ SIN_islamists_loyalty_status:0 "[GetIslamistsLoyaltyStatus]"
+ SIN_islamists_loyalty_status_amount:0 "[?SIN.SIN_islamists_loyalty|0]"
+
+ SIN_dt_loyalty_status:0 "[GetDtLoyaltyStatus]"
+ SIN_dt_loyalty_status_amount:0 "[?SIN.SIN_dt_loyalty|0]"
+
+ SIN_establishment_loyalty_status:0 "[GetEstablishmentLoyaltyStatus]"
+ SIN_establishment_loyalty_status_amount:0 "[?SIN.SIN_establishment_loyalty|0]"
+
+ SIN_cartel_popularity_status:0 "[GetCartelPopularityStatus]"
+ SIN_cartel_popularity_status_amount:0 "[?SIN.SIN_cartel_popularity|0]"
+
+ SIN_mob_popularity_status:0 "[GetMobPopularityStatus]"
+ SIN_mob_popularity_status_amount:0 "[?SIN.SIN_mob_popularity|0]"
+
+ SIN_anprims_popularity_status:0 "[GetAnprimsPopularityStatus]"
+ SIN_anprims_popularity_status_amount:0 "[?SIN.SIN_anprims_popularity|0]"
+
+ SIN_islamists_popularity_status:0 "[GetIslamistsPopularityStatus]"
+ SIN_islamists_popularity_status_amount:0 "[?SIN.SIN_islamists_popularity|0]"
+
+ SIN_dt_popularity_status:0 "[GetDtPopularityStatus]"
+ SIN_dt_popularity_status_amount:0 "[?SIN.SIN_dt_popularity|0]"
+
+ SIN_establishment_popularity_status:0 "[GetEstablishmentPopularityStatus]"
+ SIN_establishment_popularity_status_amount:0 "[?SIN.SIN_establishment_popularity|0]"
+
+ SIN_loyalty_status_crushed:0 "§gCrushed§!"
+ SIN_loyalty_status_integrated:0 "§gIntegrated§!"
+
+ SIN_popularity_status_crushed:0 "$SIN_loyalty_status_crushed$"
+ SIN_popularity_status_integrated:0 "$SIN_loyalty_status_integrated$"
+
+ SIN_cartel_name_text:0 "Cartel"
+ SIN_mob_name_text:0 "Mafia"
+ SIN_anprims_name_text:0 "Anarcho-Primitivists"
+ SIN_islamists_name_text:0 "Islamists"
+ SIN_dt_name_text:0 "Domestic Terrorists"
+ SIN_establishment_name_text:0 "Establishment"
+
+ SIN_CARTEL_TOOLTIP:0 "The £faction_SIN_cartel §YCartel§! placeholder. \nThe £faction_SIN_cartel §YNacrotrafickers§! placeholder."
+ SIN_MOB_TOOLTIP:0 "The £faction_SIN_bs §YMafia§! placeholder. \nThe £faction_SIN_bs §YMobsters§! placeholder."
+ SIN_ANPRIMS_TOOLTIP:0 "The £faction_SIN_anprims §YAnarcho-Primitivists§! placeholder. \nThe £faction_SIN_anprims §YAnarcho-Primitivists§! placeholder."
+ SIN_ISLAMISTS_TOOLTIP:0 "The £faction_SIN_islamists §YIslamists§! placeholder. \nThe £faction_SIN_islamists §YIslamists§! placeholder."
+ SIN_DT_TOOLTIP:0 "The £faction_SIN_dt §YDomestic Terrorists§! placeholder. \nThe £faction_SIN_dt §YDomestic Terrorists§! placeholder."
+ SIN_ESTABLISHMENT_TOOLTIP:0 "The £faction_SIN_establishment §YEstablishment§! placeholder. \nThe £faction_SIN_establishment §YPoliticians§! placeholder."
+
+ SIN_LOYALTY_TOOLTIP:0 "§YLoyalty§! represents the faction's desire to cooperate with our leader. \nThe higher the §YLoyalty§!, the less likely it is that a faction will confront him. \nBefore integrating a faction into our Criminal System, it is necessary to complete certain decisions to align their members with us and increase their §YLoyalty§! to 100."
+ SIN_POPULARITY_TOOLTIP:0 "§YInfluence§! represents the influence a faction receives from inside ADX Florence. \nThe higher the §YInfluence§!, the more likely it is that a faction will take bold actions. \nBefore destroying a faction, it is necessary to complete certain decisions to weaken it and reduce its §YInfluence§! to 0."

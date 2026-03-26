@@ -7,7 +7,8 @@ characters = {
 		name = SIN_Keith_Laube
 		portraits = {
 			civilian = {
-				#large = 
+				large = "gfx/leaders/SIN/Keith_Laube.dds"
+				small = "gfx/interface/ideas/SIN/advisor_Keith_Laube.dds"
 			}
 		}
 		country_leader = {
@@ -15,6 +16,26 @@ characters = {
 			ideology = libertarian_ideology
 			expire = "2060.1.1.1"
 			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Keith_Laube
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+
+			}
+			available = {
+			
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 

@@ -1,3 +1,23 @@
+SIN_internal_factions = {
+	priority = 10
+
+	icon = power_struggle
+
+	picture = GFX_decision_cat_picture_faction_management_bulgaria
+
+	scripted_gui = sin_internal_factions_decision_ui
+
+	visible = {
+		has_country_flag = SIN_factions_unlocked_flag
+	}
+
+	allowed = {
+		original_tag = SIN
+	}
+}
+
+
+
 Eastern_Expansion = {
 	icon = hol_war_on_pacifism
 	

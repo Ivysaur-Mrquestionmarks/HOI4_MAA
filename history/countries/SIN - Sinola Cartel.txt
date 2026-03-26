@@ -34,6 +34,7 @@ set_research_slots = 1
 
 
 ### Country Leaders ###
+recruit_character = SIN_Keith_Laube
 recruit_character = SIN_Ted_Kaczynski
 recruit_character = SIN_john_zerzan
 recruit_character = SIN_El_Chapo
@@ -66,7 +67,9 @@ set_popularities = {
 }
 
 add_ideas = {
-	
+	scraping_the_barrel
+	closed_economy
+
 }
 if = {
 	limit = { has_dlc = "La Resistance" }
@@ -79,3 +82,42 @@ if = {
 		nationalities = { SIN USA PRA FRA }
 	}
 }
+
+set_country_flag = SIN_factions_unlocked_flag
+
+	set_variable = { SIN_cartel_loyalty = 90 }
+	set_variable = { SIN_cartel_popularity = 50 }
+	set_variable = { SIN_mob_loyalty = 45 }
+	set_variable = { SIN_mob_popularity = 20 }
+	set_variable = { SIN_anprims_loyalty = 05 }
+	set_variable = { SIN_anprims_popularity = 20 }
+	set_variable = { SIN_islamists_loyalty = 10 }
+	set_variable = { SIN_islamists_popularity = 10 }
+	set_variable = { SIN_dt_loyalty = 50 }
+	set_variable = { SIN_dt_popularity = 25 }
+	set_variable = { SIN_establishment_loyalty = 0 }
+	set_variable = { SIN_establishment_popularity = 0 }
+
+	set_variable = { SIN_faction_interaction_cost_standard = 20 }
+	set_variable = { SIN_broad_socialist_opression_cost_standard = 20 }
+	set_variable = { SIN_faction_days_remove_very_low = 7 } #Allow Speech, Discredit, Repress
+	set_variable = { SIN_faction_days_remove_low = 14 } #Joint Act, Ban Media, Anti-faction Speech
+	set_variable = { SIN_faction_days_remove_medium = 21 } #Bolster Zveno, Imprison leaders
+	set_variable = { SIN_faction_days_remove_high = 30 } #Legalize, Fund, Appoint, Raid, Destroy
+	set_variable = { SIN_faction_days_remove_very_high = 60 } #Integrate
+	set_variable = { SIN_faction_days_reenable_low = 7 } #Allow Speech, Discredit
+	set_variable = { SIN_faction_days_reenable_medium = 14 } #Joint Act, Anti-faction Speech
+	set_variable = { SIN_faction_days_reenable_high = 60 } #Fund
+	set_variable = { SIN_faction_days_reenable_very_high = 120 } #Raid
+	set_variable = { SIN_faction_low_increase = 5 }
+	set_variable = { SIN_faction_medium_increase = 10 }
+	set_variable = { SIN_faction_high_increase = 15 }
+	set_variable = { SIN_faction_low_decrease = -5 }
+	set_variable = { SIN_faction_medium_decrease = -10 }
+	set_variable = { SIN_faction_high_decrease = -15 }
+	set_variable = { SIN_zveno_coup_timer_delay_low = 7 } #Time to be added to zveno coup timer when completing certain internal faction decisions related to the Zveno
+	set_variable = { SIN_zveno_coup_timer_delay_medium = 15 } #Time to be added to zveno coup timer when completing certain internal faction decisions related to the Zveno
+	set_variable = { SIN_zveno_coup_timer_delay_high = 30 } #Time to be added to zveno coup timer when completing certain internal faction decisions related to the Zveno
+	set_variable = { SIN_ff_missions_base_days_to_add = 60 } #Base amount of days to be added to Impending FF Coup mission
+	set_variable = { SIN_ff_missions_popularity_factor = 1 } #More popularity means more days to add
+	set_variable = { SIN_ff_missions_loyalty_factor = 1 } #More loyalty means less days to add
