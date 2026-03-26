@@ -1315,7 +1315,10 @@ MEX_states = {
 	color = rgb { 104  152  83 }
 	color_ui = rgb { 104  152  83 }
 }
-
+PEN_atlantic_command_zone = {
+	color = rgb { 98 0 0 }
+	color_ui = rgb { 98 0 0 }
+}
 
 
 

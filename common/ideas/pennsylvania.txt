@@ -1,0 +1,149 @@
+ideas = {
+    country = {
+        PEN_Upcoming_Election = {
+            allowed = {original_tag = PEN } 
+
+            picture = placeholder
+            modifier = {
+                libertarian_left_drift = 0.03
+                libertarian_right_drift = 0.04
+                democrat_drift = 0.05
+                republican_drift = 0.06
+            }
+        }
+    }
+    country = {
+        PEN_Streets_in_Anarchy = {
+            picture = placeholder
+            modifier = {
+                stability_factor = -0.4
+                war_support_factor = -0.35
+                monthly_population = -0.1
+                training_time_factor = 0.15
+                consumer_goods_factor = -0.2
+                resistance_activity = 0.2
+            }
+        }
+    }
+    country = {
+        PEN_Sloppy_Army = {
+            picture = placeholder
+            modifier = {
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+                army_morale_factor = -0.2
+                army_speed_factor = -0.4
+                army_org_factor = -0.1
+                experience_gain_army_unit = -0.5
+                training_time_factor = 1
+            }
+        }
+    }
+    country = {
+        PEN_Sloppy_Army_2 = {
+            picture = placeholder
+            modifier = {
+                army_attack_factor = -0.05
+                army_defence_factor = -0.1
+                army_morale_factor = -0.1
+                army_speed_factor = -0.2
+                army_org_factor = -0.1
+                experience_gain_army_unit = -0.5
+                training_time_factor = 0.90
+            }
+        }
+    }
+    country = {
+        PEN_Sloppy_Army_3 = {
+            picture = placeholder
+            modifier = {
+                army_attack_factor = -0.05
+                army_defence_factor = -0.05
+                army_morale_factor = 0.05
+                army_org_factor = -0.1
+                training_time_factor = 0.15
+            }
+        }
+    }
+    country = {
+        PEN_Sloppy_Army_4 = {
+            picture = placeholder
+            modifier = {
+                army_attack_factor = 0.1
+                army_defence_factor = 0.1
+                army_morale_factor = 0.1
+                army_speed_factor = 0.15
+                army_org_factor = 0.1
+            }
+        }
+    }
+    country = {
+        PEN_Trumpist_Army = {
+            picture = placeholder
+            modifier = {
+                army_attack_factor = 0.3
+                army_defence_factor = -0.1
+                army_morale_factor = -0.1
+                army_speed_factor = 0.25
+                army_org_factor = -0.1
+                experience_loss_factor = 0.1
+                breakthrough_factor = 0.05
+            }
+        }
+    }
+    country = {
+        PEN_Swiftie_Strike = {
+            picture = placeholder 
+            modifier = {
+                industrial_capacity_factory = -0.20
+                production_speed_buildings_factor = -0.30
+                consumer_goods_factor = 0.25
+                surrender_limit = -0.2
+                stability_weekly = -0.02
+            }
+        }
+    }
+    country = {
+        PEN_Swiftie_Strike_2 = {
+            picture = placeholder 
+            modifier = {
+                industrial_capacity_factory = -0.15
+                production_speed_buildings_factor = -0.20
+                consumer_goods_factor = 0.20
+                surrender_limit = -0.1
+                stability_weekly = -0.01
+            }
+        }
+    }
+     country = {
+        PEN_Swiftie_Strike_3 = {
+            picture = placeholder 
+            modifier = {
+                industrial_capacity_factory = -0.10
+                production_speed_buildings_factor = -0.10
+                consumer_goods_factor = 0.10
+                stability_weekly = -0.001
+            }
+        }
+    }
+    country = {
+        PEN_Safe_Streets = {
+            picture = placeholder 
+            modifier = {
+                stability_factor = 0.1
+                production_speed_buildings_factor = 0.05
+                conscription_factor = 0.02
+                monthly_population = 0.05
+            }
+        }
+    }
+    country = {
+        PEN_Very_Early_Econnomy = {
+            picture = placeholder
+            modifier = {
+               industrial_capacity_factory = 0.05
+               production_factory_efficiency_gain_factor = 0.1
+            }
+        }
+    }
+}

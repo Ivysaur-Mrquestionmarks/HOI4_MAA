@@ -1,0 +1,93 @@
+add_namespace = Pennsylvania
+
+country_event = {
+    id = pennsylvania.1
+    title = pennsylvania.1.t
+    desc = pennsylvania.1.d
+    #picture = 
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.1.a
+    }
+}
+
+country_event = {
+    id = pennsylvania.2
+    title = pennsylvania.2.t
+    desc = pennsylvania.2.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.2.a
+        ai_chance = {
+            factor = 25
+        }
+    }
+}
+country_event = {
+    id = pennsylvania.3
+    title = pennsylvania.3.t
+    desc = pennsylvania.3.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.3.a
+        add_ideas = PEN_Upcoming_Election
+    }
+}
+country_event = {
+    id = pennsylvania.4
+    title = pennsylvania.4.t
+    desc = pennsylvania.4.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.4.a
+    }
+}
+country_event = {
+    id = pennsylvania.5
+    title = pennsylvania.5.t
+    desc = pennsylvania.5.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.5.a
+        add_ideas = PEN_Swiftie_Strike
+    }
+}
+country_event = {
+    id = pennsylvania.6
+    title = pennsylvania.6.t
+    desc = pennsylvania.6.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.6.a
+    }
+}
+country_event = {
+    id = pennsylvania.7
+    title = pennsylvania.7.t
+    desc = pennsylvania.7.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.7.a
+        add_popularity = {
+            ideology = republican
+            popularity = 0.1
+        }
+    }
+}
+country_event = {
+    id = pennsylvania.8
+    title = pennsylvania.8.t
+    desc = pennsylvania.8.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.8.a
+    }
+}

@@ -49,14 +49,14 @@ if = {
 }
 
 set_politics = {
-	ruling_party = republican
+	ruling_party = autocratic
 	last_election = "2020.11.3"
 	election_frequency = 12
 	elections_allowed = no
 }
 set_popularities = {
-	autocratic = 5
-	republican = 69
+	autocratic = 25
+	republican = 49
 	democrat = 24
 	authoritarian_left = 0
 	libertarian_right = 2
@@ -67,3 +67,15 @@ set_popularities = {
 recruit_character = PEN_doug_mastriano
 recruit_character = PEN_bob_casey
 recruit_character = PEN_david_mccormick
+recruit_character = PEN_provisional
+
+### Generals ###
+recruit_character = PEN_mark_j_schindler
+recruit_character = PEN_frank_j_mcgovern
+recruit_character = PEN_oscar_m_laughman_III
+recruit_character = PEN_terrance_l_koudelka_jr
+
+add_ideas = {
+	PEN_Streets_in_Anarchy
+	PEN_Sloppy_Army
+}

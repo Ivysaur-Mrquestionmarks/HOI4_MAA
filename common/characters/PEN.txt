@@ -43,4 +43,18 @@ characters={
 			id = -1
 		}
 	}
+	PEN_provisional = {
+		name = "Pennsylvanian Provisional Government"
+		portraits = {
+			civilian = { 
+				large = "gfx/leaders/PEN/provisional.dds"
+			}
+		}
+	}
+	country_leader = {
+		ideology = military_dictatorship
+		traits = PEN_aloof_authority
+		expire = "2060.1.1.1"
+		id = -1
+	}
 }

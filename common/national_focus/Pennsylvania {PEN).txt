@@ -1,0 +1,670 @@
+focus_tree = {
+    id = pennsylvania
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = PEN
+        }
+    }
+    focus = {
+        id = Born_From_The_Chaos
+        icon = placeholder
+        x = 20
+        y = 0 
+        cost = 7
+        select_effect = {
+            country_event = {
+                id = pennsylvania.1
+            }
+        }
+        completion_reward = {
+            country_event = {
+                id = pennsylvania.2
+                days = 1
+            }
+        }
+    }
+    focus = {
+        id = The_Council_Convens
+        icon = placeholder 
+        x = 20
+        y = 1
+        cost = 3
+        prerequisite = {
+            focus = Born_From_The_Chaos
+        }
+        completion_reward = {
+            country_event = {
+                id = pennsylvania.3
+                days = 0
+            }
+        }
+    }
+    focus = {
+        id = The_Fate_Of_Pennsylvania
+        icon = placeholder
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = The_Council_Convens
+        }
+        relative_position_id = The_Council_Convens
+        completion_reward = {
+            add_stability = 0.1
+        }
+    }
+    focus = {
+        id = Pennsylvanian_Economy
+        icon = placeholder 
+        x = 40
+        y = 0
+        cost = 8
+        completion_reward = {
+            add_ideas = PEN_Very_Early_Econnomy
+        }
+    }
+    focus = {
+        id = Side_With_The_Trumpists
+        icon = placeholder
+        x = -2
+        y = 1
+        cost = 4
+
+        prerequisite = {
+            focus = The_Fate_Of_Pennsylvania
+        }
+        mutually_exclusive = {
+            focus = Side_With_The_Republicans
+            focus = Side_With_The_Libertarians
+        }
+        relative_position_id = The_Fate_Of_Pennsylvania
+
+        completion_reward = {
+            add_popularity = {
+                ideology = republican
+                popularity = 0.25
+            }
+            set_politics = {
+                ruling_party = republican
+            }
+            set_party_name = {
+                ideology = republican
+                long_name = PEN_trumpist_republicans_long
+                name = PEN_trumpist_republicans
+            }
+        }
+    }
+    focus = {
+         id = Side_With_The_Republicans
+        icon = placeholder
+        x = 0
+        y = 1
+        cost = 4
+
+        prerequisite = {
+            focus = The_Fate_Of_Pennsylvania
+        }
+        mutually_exclusive = {
+            focus = Side_With_The_Trumpists
+            focus = Side_With_The_Libertarians
+        }
+        relative_position_id = The_Fate_Of_Pennsylvania
+
+        completion_reward = {
+            add_popularity = {
+                ideology = republican
+                popularity = 0.20
+            }
+             set_politics = {
+                ruling_party = republican
+            }
+            set_party_name = {
+                ideology = republican
+                long_name = PEN_republicans_long
+                name = PEN__republicans
+            }
+        }
+    }
+    focus = {
+         id = Side_With_The_Libertarians
+        icon = placeholder
+        x = 2
+        y = 1
+        cost = 4
+
+        prerequisite = {
+            focus = The_Fate_Of_Pennsylvania
+        }
+        mutually_exclusive = {
+            focus = Side_With_The_Trumpists
+            focus = Side_With_The_Republicans
+        }
+        relative_position_id = The_Fate_Of_Pennsylvania
+
+        completion_reward = {
+            add_popularity = {
+                ideology = libertarian_right
+                popularity = 0.2
+            }
+            set_politics = {
+                ruling_party = libertarian_right
+            }
+        }
+    }
+    focus = {
+        id = Trumps_Brand_New_Puppet
+        icon = placeholder
+        x = -5
+        y = 1
+        cost = 4
+        relative_position_id = Side_With_The_Trumpists
+        prerequisite = {
+            focus = Side_With_The_Trumpists
+        }
+        completion_reward = {
+            country_event = {
+                id = pennsylvania.4
+            }
+            add_stability = 0.05
+            add_war_support = 0.05
+            hidden_effect = {
+                country_event = {
+                    id = pennsylvania.5
+                    days = 12
+                }
+            }
+        }
+    }
+    ##### TRUMPIST #####
+    focus = {
+        id = Dealing_With_Internal_Matters
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 2
+        relative_position_id = Trumps_Brand_New_Puppet
+        prerequisite = {
+            focus = Trumps_Brand_New_Puppet
+        }
+        completion_reward = {
+            add_political_power = 25
+        }
+    }
+    focus = {
+        id = Calm_The_People
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 5 
+        relative_position_id = Dealing_With_Internal_Matters
+        prerequisite = {
+            focus = Dealing_With_Internal_Matters
+        }
+        completion_reward = {
+            stability_factor = 0.05
+        }
+    }
+    focus = {
+        id = Sort_Out_The_Strikes
+        icon = placeholder 
+        x = -5
+        y = 1
+        cost = 5 
+        relative_position_id = Dealing_With_Internal_Matters
+        prerequisite = {
+            focus = Dealing_With_Internal_Matters
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PEN_Swiftie_Strike
+                add_idea = PEN_Swiftie_Strike_2
+            }
+        }
+    }
+    focus = {
+        id = Reorganise_The_Army
+        icon = placeholder 
+        x = 2
+        y = 1
+        cost = 5 
+        relative_position_id = Dealing_With_Internal_Matters
+        prerequisite = {
+            focus = Dealing_With_Internal_Matters
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PEN_Sloppy_Army
+                add_idea = PEN_Sloppy_Army_2
+            }
+        }
+    }
+    focus = {
+        id = The_Call_With_Trump
+        icon = placeholder 
+        x = 2
+        y = 1
+        cost = 5 
+        relative_position_id = Sort_Out_The_Strikes
+        prerequisite = {
+            focus = Sort_Out_The_Strikes
+            focus = Calm_The_People
+        }
+        completion_reward = {
+            country_event = {
+                id = pennsylvania.8
+            }
+        }
+    }
+     focus = {
+        id = Our_Mission
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 5 
+        relative_position_id = The_Call_With_Trump
+        prerequisite = {
+            focus = The_Call_With_Trump
+        }
+        completion_reward = {
+            country_event = {
+                id = pennsylvania.9
+            }
+        }
+     }
+    focus = {
+        id = Remove_People_Striking
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 5 
+        relative_position_id = Sort_Out_The_Strikes
+        prerequisite = {
+            focus = Sort_Out_The_Strikes
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PEN_Swiftie_Strike_2
+                add_idea = PEN_Swiftie_Strike_3
+            }
+        }
+    } 
+    focus = {
+        id = Send_In_The_Police
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 5 
+        relative_position_id = Calm_The_People
+        prerequisite = {
+            focus = Calm_The_People
+        }
+        completion_reward = {
+            add_manpower = -1439
+        }
+    } 
+    focus = {
+        id = Fire_Incompetent_Officers
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 5 
+        relative_position_id = Reorganise_The_Army
+        prerequisite = {
+            focus = Reorganise_The_Army
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PEN_Sloppy_Army_2
+                add_idea = PEN_Sloppy_Army_3
+            }
+        }
+    } 
+    focus = {
+        id = Request_Knowledge_From_Trump
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 5 
+        relative_position_id = Fire_Incompetent_Officers
+        prerequisite = {
+            focus = Fire_Incompetent_Officers
+        }
+        completion_reward = {
+            add_ideas = PEN_Trumpist_Army
+            swap_ideas = {
+                remove_idea = PEN_Sloppy_Army_3
+                add_idea =  PEN_Sloppy_Army_4
+            }
+        }
+    } 
+    focus = {
+        id = Increase_Law_Enforcement
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 5 
+        relative_position_id = Send_In_The_Police
+        prerequisite = {
+            focus = Send_In_The_Police
+        }
+        completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex 
+				    level = 3
+				    instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = arms_factory 
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = arms_factory 
+				    level = 2
+				    instant_build = yes
+				}
+			}
+		}
+    } 
+    focus = {
+        id = Ban_All_Swift_Music
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 5 
+        relative_position_id = Remove_People_Striking
+        prerequisite = {
+            focus = Remove_People_Striking
+        }
+        completion_reward = {
+            country_event = {
+                id = pennsylvania.6
+                days = 1
+            }
+        }
+    } 
+    focus = {
+        id = Operation_Cat_Lady
+        icon = placeholder 
+        x = 1
+        y = 1
+        cost = 8
+        relative_position_id = Ban_All_Swift_Music
+        prerequisite = {
+            focus = Ban_All_Swift_Music
+            focus = Increase_Law_Enforcement
+        }
+        completion_reward = {
+            country_event = {
+                id = pennsylvania.7
+                days = 0
+            }
+            remove_ideas = PEN_Swiftie_Strike_3
+        }
+    }
+     focus = {
+        id = Prepare_For_The_Conquest
+        icon = placeholder 
+        x = 2
+        y = 1
+        cost = 5 
+        relative_position_id = Our_Mission
+        prerequisite = {
+            focus = Our_Mission
+        }
+        prerequisite = {
+            focus = Ban_All_Swift_Music
+        }
+        prerequisite = {
+            focus = Increase_Law_Enforcement
+        }
+        prerequisite = {
+            focus = Request_Knowledge_From_Trump
+        }
+        completion_reward = {
+            country_event = {
+                id = pennsylvania.10
+            }
+        }
+     }
+    focus = {
+        id = Militarize_The_Streets
+        icon = placeholder 
+        x = 2
+        y = 1
+        cost = 8
+        relative_position_id = Increase_Law_Enforcement
+        prerequisite = {
+            focus = Request_Knowledge_From_Trump
+            focus = Increase_Law_Enforcement
+        }
+        completion_reward = {
+            add_ideas = PEN_Safe_Streets
+            remove_ideas = PEN_Streets_in_Anarchy
+            add_popularity = {
+                ideology = autocratic
+                popularity = 0.15
+            }
+        }
+    }
+    focus = {
+        id = Our_Time_to_Strike
+        icon = placeholder 
+        x = 3
+        y = 1
+        cost = 8
+        relative_position_id = Operation_Cat_Lady
+        prerequisite = {
+            focus = Operation_Cat_Lady
+        }
+        prerequisite = {
+            focus = Militarize_The_Streets
+        }
+        prerequisite = {
+           focus = Prepare_For_The_Conquest
+        }
+        completion_reward = {
+            create_wargoal = {
+                target = PHI
+                type = annex_everything
+            }
+            create_wargoal = {
+                target = AMS
+                type = annex_everything
+            }
+            every_state = {
+                limit = {
+                     is_core_of = PHI
+                }
+                add_core_of = PEN
+            }
+        }
+    }
+    focus = {
+        id = Reunite_The_North_East
+        icon = placeholder
+        x = 0
+        y = 1
+        cost 1
+        relative_position_id = Our_Time_to_Strike
+        prerequisite = {
+            focus = Our_Time_to_Strike
+        }
+        available = {
+            has_war = no
+        }
+        completion_reward = {
+            create_wargoal = {
+                target = NYC
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = DMA
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = NHR
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = VER
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = SYR
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = UTC
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = TNY
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = DMV
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = MRD
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = WDC
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = RNJ
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = NHC
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = PVD
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = BRA
+                type = annex_everything
+            }
+             create_wargoal = {
+                target = WMS
+                type = annex_everything
+            }
+        }
+    }
+    focus = {
+        id = The_Atlantic_Command_Zone
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 7
+        relative_position_id = Reunite_The_North_East
+        prerequisite = {
+            focus = Reunite_The_North_East
+        }
+        completion_reward = {
+            set_cosmetic_tag = PEN_atlantic_command_zone
+        }
+    }
+    focus = {
+        id = Intergrate_The_North_East
+        icon = placeholder 
+        x = -2
+        y = 1
+        cost = 6
+        relative_position_id = The_Atlantic_Command_Zone
+        prerequisite = {
+            focus = The_Atlantic_Command_Zone
+        }
+        completion_reward= {
+            every_state = {
+                limit = {
+                    is_core_of = XXX
+             }
+            add_core_of = YYY
+            }
+        }
+    }
+    focus = {
+        id = Join_The_Loyalists
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 6
+        relative_position_id = The_Atlantic_Command_Zone
+        prerequisite = {
+            focus = The_Atlantic_Command_Zone
+        }
+        completion_reward= {
+        }
+    }
+    focus = {
+        id = Prepare_The_Move_South
+        icon = placeholder 
+        x = -5
+        y = 1
+        cost = 6
+        relative_position_id = The_Atlantic_Command_Zone
+        prerequisite = {
+            focus = The_Atlantic_Command_Zone
+        }
+        completion_reward= {
+        }
+    }
+    focus = {
+        id = The_Trump_Economy
+        icon = placeholder 
+        x = 2
+        y = 1
+        cost = 6
+        relative_position_id = The_Atlantic_Command_Zone
+        prerequisite = {
+            focus = The_Atlantic_Command_Zone
+        }
+        completion_reward= {
+        }
+    }
+     focus = {
+        id = Fuck_The_Earth
+        icon = placeholder 
+        x = 5
+        y = 1
+        cost = 6
+        relative_position_id = The_Atlantic_Command_Zone
+        prerequisite = {
+            focus = The_Atlantic_Command_Zone
+        }
+        completion_reward= {
+            277 = {
+                add_resource = {
+                    type = aluminium
+                    amount = 15
+                }
+            }
+            357 = {
+                add_resource = {
+                    type = steel
+                    amount = 23
+                }
+            }
+        }
+    }
+}
+
+
+     
