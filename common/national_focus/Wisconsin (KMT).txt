@@ -1018,6 +1018,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
+			has_civil_war = no
 			NOT = { has_idea = KMT_weather_underground_militia }
 			NOT = { has_idea = KMT_weather_underground_militia_1 }
 		}
