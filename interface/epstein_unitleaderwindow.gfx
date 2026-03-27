@@ -98,4 +98,10 @@ spriteTypes = {
 		name = "GFX_trait_american_loyalist"
 		texturefile = "gfx/interface/traits/trait_american_loyalist.tga"
 	}
+
+	#MIN - Green Minnesota
+	spriteType = {
+		name = "GFX_trait_MIN_green_army_commander_trait"
+		texturefile = "gfx/interface/traits/trait_operative_commando.dds"
+	}
 }

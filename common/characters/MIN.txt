@@ -36,7 +36,7 @@ characters={
 			ideology = eco_fascism
 		}
 		field_marshal = {
-			traits={ politically_connected harsh_leader trickster organizer guerilla_fighter } 
+			traits={ MIN_green_army_commander_trait politically_connected harsh_leader trickster organizer guerilla_fighter } 
 			skill = 4
 			attack_skill = 2
 			defense_skill = 3
@@ -84,7 +84,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={ trait_reckless infantry_leader } 
+			traits={ MIN_green_army_commander_trait trait_reckless infantry_leader } 
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1

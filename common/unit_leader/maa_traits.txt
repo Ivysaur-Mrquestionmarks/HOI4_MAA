@@ -548,4 +548,25 @@ leader_traits = {
 			factor = 0
 		}
 	}
+
+	#Green Minnesota
+	MIN_green_army_commander_trait = { 
+		type = all
+		trait_type = personality_trait
+		
+		allowed = {
+			always = no
+		}
+		
+		modifier = {
+			army_org_factor = 0.01
+			army_morale_factor = 0.02
+		}
+		
+		non_shared_modifier = {
+			experience_gain_factor = -0.02
+		}
+		
+		new_commander_weight = { factor = 0 }
+	}
 }
