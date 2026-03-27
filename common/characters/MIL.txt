@@ -74,6 +74,12 @@ characters={
 			planning_skill = 3
 			logistics_skill = 4
 			legacy_id = 20102
+			visible = {
+				OR = {
+					original_tag = MIL
+					has_country_flag = andreotti_recruited
+				}
+			}
 		}
 	}
 }

@@ -662,6 +662,29 @@ on_actions = {
 				}
 				GTB = { country_event = { id = cub.1 days = 1 } }
 			}
+			if = {
+				limit = {
+					original_tag = MIN #winner
+					FROM = { original_tag = MIL } #loser
+				}
+				every_state = {
+					limit = {
+						is_core_of = MIL
+					}
+					remove_core_of = MIL
+				}
+				MIL = {
+					MIL_eugene_andreotti = {
+						set_nationality = MIN
+					}
+				}
+				MIL_eugene_andreotti = {
+					unit_leader_event = {
+						id = bomali.1
+						hours = 16
+					}
+				}
+			}
 			else_if = {
 				limit = {
 					FROM = {  #проигравший
