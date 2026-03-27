@@ -6,37 +6,23 @@ country_event = {
 	title = mormon.1.t
 	desc = mormon.1.d
 	picture = event_el_chapo_01
-	fire_only_once = yes
-	trigger = {
-		tag = SIN
-		date > 2021.5.14
-	}
-	mean_time_to_happen = { days = 14 }
+	is_triggered_only = yes
+
 	option = {
 		name = mormon.1.a
+		ai_chance = {
+			factor = 1
+		}
+
+		promote_character = SIN_Ted_Kaczynski
 		set_politics = {
 			ruling_party = libertarian_right
 		}
 		add_popularity = {
 		    ideology = libertarian_right
-		    popularity = 0.20
+		    popularity = 0.10
 		}
-		348 = {
-			set_demilitarized_zone = no
-			create_unit = {
-				division = "name = \"National Guard Remnants\" division_template = \"Escaped Prisoners\" start_experience_factor = 0.7" 
-				owner = SIN
-			}
-			create_unit = {
-				division = "name = \"West Colorado Rangers\" division_template = \"Escaped Prisoners\" start_experience_factor = 0.4" 
-				owner = SIN
-			}
-			create_unit = {
-				division = "name = \"Anarcho-Primitivist Legion\" division_template = \"Escaped Prisoners\" start_experience_factor = 0.1" 
-				owner = SIN
-			}
-		}
-		hidden_effect = { UTA = { country_event = { id = mormon.3 days = 14 } } news_event = { id = mormon.2 } }
+		hidden_effect = { news_event = { id = mormon.2 } }
 	}
 }
 #AnPrim news event
