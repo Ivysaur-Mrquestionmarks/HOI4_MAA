@@ -940,4 +940,11 @@ spriteTypes = {
 	spriteType = { name = "event_KMT_event_1009" texturefile = "gfx/events/KMT_events/KMT_event_1009.tga" }
 
 	spriteType = { name = "event_KMT_event_1010" texturefile = "gfx/events/KMT_events/KMT_event_1010.tga" }
+
+
+	#SIN event pics
+
+	spriteType = { name = "event_SIN_event_1" texturefile = "gfx/events/SIN_events/SIN_event_1.tga" }
+
+	spriteType = { name = "event_SIN_event_1000" texturefile = "gfx/events/SIN_events/SIN_event_1000.tga" }
 }

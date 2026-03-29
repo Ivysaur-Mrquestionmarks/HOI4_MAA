@@ -3,6 +3,67 @@ SIN_internal_factions = {
 		icon = GFX_decision_hol_attract_foreign_investors
 
 	}
+
+	SIN_cooperation_islamists_operation  = { #islamists Allow/Support faction operations
+
+		priority = 42
+
+		#icon = GFX_decision_SIN_speech_zveno
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_low
+
+		days_re_enable = SIN_faction_days_reenable_low
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_islamists_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_faction_management
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_islamists_integrated_flag }
+			NOT = { has_country_flag = SIN_islamists_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+			if = {
+				limit = {
+					has_country_flag = SIN_discredited_islamists_flag
+				}
+				clr_country_flag = SIN_discredited_islamists_flag
+			}
+		}
+
+		remove_effect = {
+			unlock_decision_tooltip = SIN_cooperation_islamists_joint_act
+			SIN_islamists_low_loyalty_increase_effect = yes
+			SIN_islamists_low_popularity_increase_effect = yes
+			set_country_flag = SIN_operation_islamists_flag
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_speech_cd_tt
+		}
+	}
 }
 
 

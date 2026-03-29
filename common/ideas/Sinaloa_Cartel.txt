@@ -1,5 +1,68 @@
 ideas = {
+
 	country = {
+
+	#### STARTING IDEAS ####
+
+		SIN_anarchy = {
+			allowed = { original_tag = SIN }
+			modifier = {
+				political_power_factor = -0.5
+				stability_factor = -0.8
+				war_support_factor = -0.8
+			}
+		}
+
+
+	#### OTHER IDEAS ####
+
+		SIN_anarchy_1 = {
+			allowed = { original_tag = SIN }
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}
+		}
+
+		SIN_deindustrialization = {
+			allowed = { original_tag = SIN }
+			modifier = {
+				political_power_gain = 0.5
+				political_advisor_cost_factor = -0.25	
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		SIN_streamlining_bombs = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            	NOT = { country_exists = UTA }
+            }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.25
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				custom_modifier_tooltip = SIN_cancel_no_utah_tt
+			}
+		}
+
+		SIN_anprim_influx = {
+			allowed = { original_tag = SIN }
+			modifier = {
+				weekly_manpower = 100
+				research_speed_factor = 0.1
+				libertarian_right_drift = 0.05
+			}
+		}
+
+
+	
+
+
+
 
 
 		SIN_Bomb_streamlines = {

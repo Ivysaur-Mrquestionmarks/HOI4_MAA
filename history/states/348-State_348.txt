@@ -2,15 +2,21 @@
 state={
 	id=348
 	name="STATE_348"
+
 	resources={
 		coal = 19
 	}
 	provinces={
 		386 1030 1052 1988 2056 2104 2252 3969 3987 4191 4433 4524 5570 5778 6013 6063 8944 9274 9352 9518
 	}
-		history={
+	history={
 		owner = SIN
 		add_core_of = USA
+
+		start_resistance = yes
+		set_compliance = 05
+		set_resistance = 70
+
 		victory_points = {
 			3987 1 #Glenwood Springs
 		}

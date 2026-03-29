@@ -1,562 +1,82 @@
-add_namespace = Primitivists
+add_namespace = colorado
 
-#Bombing Campaigns 1
+# Kazcynski Takes over
 country_event = {
-	id = Primitivists.1
-	title = Primitivists.1.t
-	desc = Primitivists.1.d
-	#picture =
+	id = colorado.1
+	title = colorado.1.t
+	desc = colorado.1.d
+	picture = event_SIN_event_1
 	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.1.a
-		add_stability = -0.03
-		add_manpower = -31
-		
-	}
-}
-#Bombing Campaigns 2
-country_event = {
-	id = Primitivists.2
-	title = Primitivists.2.t
-	desc = Primitivists.2.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.2.a
-		
-		
-	}
-}
-#Bombing Campaigns 3
-country_event = {
-	id = Primitivists.3
-	title = Primitivists.3.t
-	desc = Primitivists.3.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.3.a
-		add_war_support = 0.05
-		add_manpower = -10
-		
-	}
-}
-#Bombing Campaigns 4
-country_event = {
-	id = Primitivists.4
-	title = Primitivists.4.t
-	desc = Primitivists.4.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.4.a
-		add_stability = -0.01
-		add_manpower = -2
-		
-	}
-}
-#Bombing Campaigns 5
-country_event = {
-	id = Primitivists.5
-	title = Primitivists.5.t
-	desc = Primitivists.5.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.5.a
-		add_stability = -0.1
-		add_manpower = -100
-		
-	}
-}
-#Coordinate with Bombers
-country_event = {
-	id = Primitivists.6
-	title = Primitivists.6.t
-	desc = Primitivists.6.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.6.a
-		add_stability = -0.05
 
-		
-	}
-}
-#SALT LAKE REVOLT
-country_event = {
-	id = Primitivists.7
-	title = Primitivists.7.t
-	desc = Primitivists.7.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
 	option = {
-		name = Primitivists.5.a
-		add_war_support = -0.05
-		
-	}
-}
-#Reach out to the Fascists
-country_event = {
-	id = Primitivists.8
-	title = Primitivists.8.t
-	desc = Primitivists.8.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.8.a
-		set_country_flag = HOP_Treaty_of_SL
-		SIN = {
-			set_country_flag = SIN_Treaty_of_SL
-		}
-	}
-	option = {
-		name = Primitivists.8.b
-		SIN = {
-			country_event = { id = Primitivists.10 days = 5 }
-		}
-	}
-}
-#Treaty of SL
-country_event = {
-	id = Primitivists.9
-	title = Primitivists.9.t
-	desc = Primitivists.9.d
-	trigger = {
-		count_triggers = {
-			amount = 3
-			HOP = {
-				has_country_flag = HOP_Treaty_of_SL
-			}
-			has_country_flag = SIN_Treaty_of_SL
-			NOT = {
-				has_war_with = UTA
-			}
-		}
-	}
-	fire_only_once = yes
-	option = {
-		name = Primitivists.9.a
-		MOL = {
-			transfer_state = 488
-			add_state_core = 488
-		}
-		LAS = {
-			transfer_state = 393
-			transfer_state = 419
-			transfer_state = 117
-			transfer_state = 522
-			add_state_core = 419
-			add_state_core = 393
-			add_state_core = 117
-			add_state_core = 522
-		}
-		SIN = {
-			transfer_state = 414
-			transfer_state = 411
-			transfer_state = 117
-			transfer_state = 522
-			transfer_state = 518
-			add_state_core = 414
-			add_state_core = 411
-			add_state_core = 117
-			add_state_core = 522
-			add_state_core = 518
-		}
-		HOP = {
-			transfer_state = 410
-			transfer_state = 406
-			transfer_state = 513
-			transfer_state = 514
-			add_state_core = 410
-			add_state_core = 406
-			add_state_core = 513
-			add_state_core = 514
-		}
-		if = {
-			limit = {
-				IDA = {
-					has_completed_focus = IDA_Direct_Intervention
-				}
-			}
-			transfer_state = 411
-			transfer_state = 117
-			transfer_state = 522
-			add_state_core = 117
-			add_state_core = 411
-			add_state_core = 522
-		}
-	}
-}
-#Hitlerites Denied SL Treaty
-country_event = {
-	id = Primitivists.10
-	title = Primitivists.10.t
-	desc = Primitivists.10.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.10.a
-		complete_national_focus = Winner_Takes_All
-		
-	}
-}
-country_event = {
-	id = Primitivists.11
-	title = Primitivists.11.t
-	desc = Primitivists.11.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.11.a #No Injuries
+		name = colorado.1.a
 		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0 
-      			OR = {
-          			has_game_rule = {
-              			rule = SIN_path
-             			option = SIN_PATH_WHOLESOME
-          			}
-      			}
-   			}
+			factor = 1
 		}
-		add_stability = 0.05
-		set_country_flag = Primitivist_Idealism
-		
-	}
-	option = {
-		name = Primitivists.11.b #Injuries
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0 
-      			OR = {
-          			has_game_rule = {
-              			rule = SIN_path
-             			option = SIN_PATH_MONKEY
-          			}
-      			}
-   			}
-		}
-		add_stability = -0.05
-		hidden_effect = {
-			country_event = { id = Primitivists.12 days = 30 }
-			add_country_leader_trait = Debilitated
-		}
-		
-	}
-	option = {
-		name = Primitivists.11.c
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0 
-      			OR = {
-          			has_game_rule = {
-              			rule = SIN_path
-             			option = SIN_PATH_WHOLESOME
-          			}
-      			}
-   			}
-		}
-		retire_character = SIN_theodore_kaczynski
-		SIN_john_zerzan = {
-			promote_character = yes
-		}
-	}
-}
-country_event = {
-	id = Primitivists.12
-	title = Primitivists.12.t
-	desc = Primitivists.12.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.12.a #Ted is Cured
-		remove_country_leader_trait = Debilitated
-		hidden_effect = {
-			retire_character = SIN_theodore_kaczynski
-			SIN_sane_theodore_kaczynski = {
-				promote_character = yes
-			}
-			set_cosmetic_tag = Republic_of_Rockies
-			load_focus_tree = Republic_of_Rockies_Tree
-		}
-		
-	}
-}
-country_event = { #Republicans Coup Kaczynski
-	id = Primitivists.13
-	title = Primitivists.13.t
-	desc = Primitivists.13.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.13.a #Kill them all
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0 
-      			OR = {
-          			has_game_rule = {
-              			rule = SIN_path
-             			option = SIN_PATH_NPA
-          			}
-      			}
-   			}
-		}
-		add_stability = 0.05
-		add_popularity = {
+
+		promote_character = SIN_Ted_Kaczynski
+		set_party_name = {
 			ideology = libertarian_right
-			popularity = 0.10
-		}
-		add_manpower = -2500
-	}
-	option = {
-		name = Primitivists.13.b #Romney Takes It!
-		ai_chance = {
-			factor = 10
+			long_name = SIN_libertarian_right_party_anprim_long
+			name = SIN_libertarian_right_party_anprim
 		}
 		set_politics = {
-			ruling_party = republican
+			ruling_party = libertarian_right
 		}
-		add_stability = 0.05
 		add_popularity = {
-			ideology = republican
-			popularity = 0.10
+		    ideology = libertarian_right
+		    popularity = 0.10
 		}
-		set_cosmetic_tag = Colorado_NPA
-		
+		hidden_effect = {
+			country_event = {
+				id = colorado.2
+				hours = 4
+			}
+			news_event = {
+				id = colorado.1000
+				days = 1
+			}
+		}
 	}
 }
-country_event = { #Sinaloa Coup Kaczynski
-	id = Primitivists.14
-	title = Primitivists.14.t
-	desc = Primitivists.14.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.14.a #Kill them all
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0 
-      			OR = {
-          			has_game_rule = {
-              			rule = SIN_path
-             			option = SIN_PATH_CARTEL
-          			}
-					has_game_rule = {
-              			rule = SIN_path
-             			option = SIN_PATH_MAFIA
-          			}
-      			}
-   			}
-		}
-		add_stability = 0.05
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.10
-		}
-		add_manpower = -4000
-	}
-	option = {
-		name = Primitivists.14.b #El Chapo takes control
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0 
-      			OR = {
-          			has_game_rule = {
-              			rule = SIN_path
-             			option = SIN_PATH_MAFIA
-          			}
-      			}
-   			}
-		}
-		set_politics = {
-			ruling_party = autocratic
-		}
-		add_stability = 0.05
-		add_popularity = {
-			ideology = autocratic
-			popularity = 0.10
-		}
-		set_cosmetic_tag = Sinaloa_Cartel
-		
-	}
-	option = {
-		name = Primitivists.14.c #Marcello takes control
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0 
-      			OR = {
-          			has_game_rule = {
-              			rule = SIN_path
-             			option = SIN_PATH_CARTEL
-          			}
-      			}
-   			}
-		}
-		set_politics = {
-			ruling_party = autocratic
-		}
-		add_stability = 0.05
-		add_popularity = {
-			ideology = autocratic
-			popularity = 0.10
-		}
-		SIN_james_marcello = {
-			promote_character = yes
-		}
-		set_cosmetic_tag = Colorado_Outfit
-		
-	}
-}
+
+# Kazcynski-Chapo Meeting
 country_event = {
-	id = Primitivists.15
-	title = Primitivists.15.t
-	desc = Primitivists.15.d
-	#picture =
+	id = colorado.2
+	title = colorado.2.t
+	desc = colorado.2.d
+	picture = event_SIN_event_2
 	is_triggered_only = yes
-	fire_only_once = yes
+
 	option = {
-		name = Primitivists.15.a
-		add_manpower = -250
-		add_stability = -0.1
-		
+		name = colorado.2.a
+		ai_chance = {
+			factor = 1
+		}
+
+		set_power_balance = {
+			id = SIN_ted_chapo_bop
+			set_value = -0.65
+		}
 	}
 }
-country_event = {
-	id = Primitivists.16
-	title = Primitivists.16.t
-	desc = Primitivists.16.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.16.a
-		SIN = {
-			puppet = LAS
-		}
-		LAS = {
-			LAS_michael_ramirez = {
-				promote_character = yes
-			}
-			set_politics = {
-				ruling_party = autocratic
-			}
-			add_stability = 0.05
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.10
-			}
-		}
-	}
-	option = {
-		name = Primitivists.16.b
-		SIN = {
-			create_wargoal = {
-				target = LAS
-				type = annex_everything
-			}
-		}
-		
-	}
-}
+
+
+
+
+
+
+
+# NEWS EVENTS
+# Kazcynski elected
 news_event = {
-	id = Primitivists.17
-	title = Primitivists.17.t
-	desc = Primitivists.17.d
-	#picture =
+	id = colorado.1000
+	title = colorado.1000.t
+	desc = colorado.1000.d
+	picture = event_SIN_event_1000
 	is_triggered_only = yes
-	fire_only_once = yes
+	major = yes
 	option = {
-		name = Primitivists.17.a
-
-		
-	}
-}
-country_event = {
-	id = Primitivists.18
-	title = Primitivists.18.t
-	desc = Primitivists.18.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.18.a
-		add_stability = 0.03
-		add_political_power = 5
-		
-	}
-}
-country_event = {
-	id = Primitivists.19
-	title = Primitivists.19.t
-	desc = Primitivists.19.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.19.a
-		add_stability = 0.01
-		add_political_power = -10
-		
-	}
-}
-country_event = {
-	id = Primitivists.20
-	title = Primitivists.20.t
-	desc = Primitivists.20.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.20.a
-		add_stability = -0.08
-		add_political_power = -50
-		
-	}
-}
-country_event = {
-	id = Primitivists.21
-	title = Primitivists.21.t
-	desc = Primitivists.21.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Primitivists.21.a
-		SIN = {
-			add_stability = 0.15
-			annex_country = {
-				target = ROOT
-				transfer_troops = yes
-			}
-		}
-		
-	}
-	option = {
-		name = Primitivists.21.b
-		SIN = {
-			add_stability = -0.05
-		}
-		
+		name = colorado.1000.a
 	}
 }

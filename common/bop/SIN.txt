@@ -1,0 +1,116 @@
+SIN_ted_chapo_bop = {
+    #intial_value = 0.1
+    left_side = chapo_side
+    right_side = ted_side
+    decision_category = SIN_ted_chapo_balance_of_power_category
+    side = {
+        id = chapo_side
+        icon = GFX_bop_SWI_centralization_council_side
+        range = {
+            id = absolute_chapo_power
+            min = -1
+            max = -0.9
+            modifier = {
+                
+            }
+            on_activate = {
+                
+            }
+            on_deactivate = {
+                
+            }
+        }
+		range = {
+            id = great_chapo_power
+            min = -0.9
+            max = -0.7
+            modifier = {
+
+            }
+            on_activate = {
+                
+            }
+            on_deactivate = {
+                
+            }
+        }
+		range = {
+            id = medium_chapo_power
+            min = -0.7
+            max = -0.4
+            modifier = {
+
+            }
+            on_activate = {
+                
+            }
+            on_deactivate = {
+                
+            }
+        }
+        range = {
+            id = small_chapo_power
+            min = -0.4
+            max = -0.15
+            modifier = {
+                
+            }
+            on_activate = {
+                
+            }
+            on_deactivate = {
+                
+            }
+        }
+        range = {
+            id = balanced_power
+            min = -0.15
+            max = 0.15
+            modifier = {
+                
+            }
+            on_activate = {
+                
+            }
+            on_deactivate = {
+                
+            }
+        }
+    }
+    side = {
+        id = ted_side
+        icon = GFX_bop_SWI_centralization_canton_side
+		range = {
+            id = small_ted_power
+            min = 0.15
+            max = 0.4
+            modifier = {
+                
+            }
+        }
+		range = {
+            id = medium_ted_power
+            min = 0.4
+            max = 0.7
+            modifier = {
+                
+            }
+        }
+        range = {
+            id = great_ted_power
+            min = 0.7
+            max = 0.9
+            modifier = {
+                
+            }
+        }
+        range = {
+            id = absolute_ted_power
+            min = 0.9
+            max = 1
+            modifier = {
+                
+            }
+        }
+    }
+}

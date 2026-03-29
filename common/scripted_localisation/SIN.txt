@@ -227,3 +227,71 @@ defined_text = {
 		localization_key = SIN_establishment_popularity_status_amount
 	}
 }
+
+
+defined_text = {
+	name = GetCartelName
+	text = {
+		trigger = {
+			original_tag = SIN
+		}
+		localization_key = SIN_cartel_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetMobName
+	text = {
+		trigger = {
+			original_tag = SIN
+		}
+		localization_key = SIN_mob_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetAnprimsName
+	text = {
+		trigger = {
+			original_tag = SIN
+		}
+		localization_key = SIN_anprims_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetIslamistsName
+	text = {
+		trigger = {
+			original_tag = SIN
+		}
+		localization_key = SIN_islamists_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetDtName
+	text = {
+		trigger = {
+			original_tag = SIN
+		}
+		localization_key = SIN_dt_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetEstablishmentName
+	text = {
+		trigger = {
+			original_tag = SIN
+		}
+		localization_key = SIN_establishment_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetDecisionCooldownTooltip
+	text = {
+		localization_key = BUL_days_re_enable_tt
+	}
+}

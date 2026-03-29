@@ -27,7 +27,7 @@ if = {
 
 capital = 486
 set_stability = 0
-#add_manpower = 12000
+add_manpower = 1000
 set_war_support = 0.35
 oob = "SIN_2021"
 set_research_slots = 1
@@ -69,7 +69,9 @@ set_popularities = {
 add_ideas = {
 	scraping_the_barrel
 	closed_economy
+	isolation
 
+	SIN_anarchy
 }
 if = {
 	limit = { has_dlc = "La Resistance" }
@@ -81,6 +83,11 @@ if = {
 		available_to_spy_master = yes
 		nationalities = { SIN USA PRA FRA }
 	}
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 2000
 }
 
 set_country_flag = SIN_factions_unlocked_flag
