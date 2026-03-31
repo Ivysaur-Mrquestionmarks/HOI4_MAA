@@ -3,7 +3,7 @@ add_namespace = bomali
 #Andreotti defection
 unit_leader_event = {
 	id = bomali.1
-	tittle = bomali.1.t
+	title = bomali.1.t
 	desc = bomali.1.d
 	is_triggered_only = yes
 	fire_only_once = yes
