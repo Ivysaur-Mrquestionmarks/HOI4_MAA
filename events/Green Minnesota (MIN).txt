@@ -13,7 +13,7 @@ unit_leader_event = {
 		set_country_flag = andreotti_recruited
 		effect_tooltip = {
 			create_corps_commander = {
-				name = MIL_eugene_andreotti
+				name = "Eugene Andreotti"
 				skill = 3
 			}
 		}
