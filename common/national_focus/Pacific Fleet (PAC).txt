@@ -1152,7 +1152,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_dynamic_modifier = {
-				modifier = PAC_a_land_to_be_free_dynamic_modifier
+				modifier = PAC_bastion_of_liberty_dynamic_modifier
 			}
 			country_event = {
   				id = pacific_libertarians.1
@@ -1180,7 +1180,10 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = PAC_economic_liberty
-			remove_ideas = PAC_post_war_economy_4
+			swap_ideas = {
+				remove_idea = PAC_post_war_economy_3
+				add_idea = PAC_post_war_economy_4
+			}
 		}
 	}
 
@@ -1381,6 +1384,7 @@ focus_tree = {
 				remove_idea = PAC_economic_liberty_3
 				add_idea = PAC_economic_liberty_4
 			}
+			remove_ideas = PAC_post_war_economy_4
 		}
 	}
 

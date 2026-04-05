@@ -54,11 +54,13 @@ PAC_army_militia_balance_of_power_category = {
 		priority = 10
 
 		allowed = { 
-			original_tag = AFS
+			original_tag = PAC
 		}
 
 		available = {
-            has_country_flag = PAC_inauguration
+			NOT = {
+                has_country_flag = PAC_inauguration
+			}
 		}
 
 		days_mission_timeout = 70
