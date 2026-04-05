@@ -146,4 +146,210 @@ ideas = {
             }
         }
     }
+     country = {
+        PEN_Intergration_Effort = {
+            picture = placeholder
+            modifier = {
+             compliance_gain = 0.2
+             resistance_growth = -0.05
+            }
+        }
+    }
+    country = {
+        PEN_Trump_Economy = {
+            picture = placeholder 
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.15
+                industrial_capacity_factory = 0.2
+                consumer_goods_factor = -o.2
+                production_speed_buildings_factor = 0.25
+                global_building_slots_factor = 0.1
+                research_speed_factor = 0.15
+            }
+        }
+    }
+    country = {
+        PEN_Trump_Economy_2 = {
+            picture = placeholder
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.25
+                industrial_capacity_factory = 0.25
+                consumer_goods_factor = -o.2
+                production_speed_buildings_factor = 0.3
+                global_building_slots_factor = 0.1
+                research_speed_factor = 0.10
+                stability_factor = 0.1
+            }
+        }
+    }
+    country = {
+        PEN_Medicine = {
+            picture = placeholder
+            modifier = {
+                monthly_population = 0.15
+                weekly_manpower = 25
+                political_power_gain = 0.1
+            }
+        }
+    }
+    country = {
+        PEN_Early_Econnomy = {
+            picture = placeholder 
+            modifier = {
+                industrial_capacity_factory = 0.1
+                production_factory_efficiency_gain_factor = 0.1
+                production_factory_max_efficiency_factor = 0.15
+                production_speed_buildings_factor = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+        }
+    }
+    country = {
+        PEN_Modern_Economy = {
+            picture = placeholder
+            modifier = {
+                industrial_capacity_factory = 0.2
+                production_factory_efficiency_gain_factor = 0.2
+                production_factory_max_efficiency_factor = 0.25
+                production_speed_buildings_factor = 0.15
+                industrial_capacity_dockyard = 0.20
+                research_speed_factor = 0.1
+                consumer_goods_factor = -0.4
+            }
+        }
+    }
+    country = {
+        PEN_Ai_Warfare = {
+            picture = placeholder 
+            modifier = {
+                experience_loss_factor = 0.05
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                experience_gain_army_factor = -0.25
+            }
+        }
+    }
+    country = {
+        PEN_Tech_Boom = {
+            picture = placeholder 
+            modifier = {
+                research_speed_factor = 0.2
+            }
+        }
+    }
+    country = {
+        PEN_Tax_Cuts_For_The_Rich = {
+            picture = placeholder 
+            modifier = {
+                political_power_gain = -0.1
+                consumer_goods_factor = 0.05
+                stability_factor = -0.05
+                authoritarian_left_drift = 0.01
+            }
+        }
+    }
+    country = {
+        PEN_High_Military = {
+            picture = placeholder 
+            modifier = {
+                supply_consumption_factor = -0.2
+                army_speed_factor = 0.1
+            }
+        }
+    }
+    country = {
+        PEN_Sus_Minerals = {
+            picture = placeholder 
+            modifier = {
+                army_armor_attack_factor = 0.1
+                army_artillery_attack_factor = 0.1
+            }
+        }
+    }
+    country = {
+        PEN_Trumpism = {
+            picture = placeholder 
+            modifier = {
+                industrial_capacity_factory = 0.15
+                republican_drift = 0.05
+                autocratic_drift = 0.04
+                consumer_goods_factor = -0.05
+            }
+        }
+    }
+    country = {
+        PEN_Open_Market = {
+            picture = placeholder
+            modifier = {
+                min_export = 0.2
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+                production_speed_buildings_factor = 0.15
+                research_speed_factor = 0.15
+            }
+        }
+    }
+    country = {
+        PEN_Gop_Market = {
+            picture = placeholder
+            modifier = {
+                min_export = 0.1
+                industrial_capacity_factory = 0.075
+                industrial_capacity_dockyard = 0.075
+                production_speed_buildings_factor = 0.5
+                research_speed_factor = 0.5
+            }
+        }
+    }
+    country = {
+        PEN_Trump_Market = {
+            picture = placeholder
+            modifier = {
+                min_export = -0.05
+                industrial_capacity_factory = -0.05
+                industrial_capacity_dockyard = -0.05
+                production_speed_buildings_factor = 0.5
+                research_speed_factor = 0.25
+            }
+        }
+    }
+    country = {
+        PEN_Tariffs = {
+            picture = placeholder 
+            modifier = {
+                industrial_capacity_factory = -0.025
+                stability_factor = -0.05
+                consumer_goods_factor = -0.1
+            }
+        }
+    }
+    country = {
+        PEN_High_Tariffs = {
+            picture = placeholder 
+            modifier = {
+                industrial_capacity_factory = -0.05
+                stability_factor = -0.01
+                consumer_goods_factor = -0.25
+            }
+        }
+    }
+    country = {
+        PEN_Mass_Deport = {
+            picture = placeholder 
+            modifier = {
+                monthly_population = -0.15
+                stability_factor = 0.1
+                production_speed_buildings_factor = -0.05
+            }
+        }
+    }
+    country = {
+        PEN_Control_The_Media = {
+            picture = placeholder 
+            modifier = {
+                autocratic_drift = 0.02
+                research_speed_factor = -0.05
+            }
+        }
+    }
 }

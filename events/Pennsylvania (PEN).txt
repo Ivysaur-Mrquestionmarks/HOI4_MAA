@@ -91,3 +91,71 @@ country_event = {
         name = pennsylvania.8.a
     }
 }
+country_event = {
+    id = pennsylvania.9
+    title = pennsylvania.9.t
+    desc = pennsylvania.9.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.9.a
+    }
+    option = {
+        name = pennsylvania.9.b
+    }
+}
+country_event = {
+    id = pennsylvania.10
+    title = pennsylvania.10.t
+    desc = pennsylvania.10.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.10.a
+    }
+}
+country_event = {
+    id = pennsylvania.11
+    title = pennsylvania.11.t
+    desc = pennsylvania.11.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.11.a
+    }
+    option = {
+        name = pennsylvania.11.b
+    }
+    option = {
+        name = pennsylvania.11.c
+    }
+}
+country_event = {
+    id = pennsylvania.12
+    title = pennsylvania.12.t
+    desc = pennsylvania.12.d 
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.12.a
+        add_ideas = PEN_Open_Market
+    }
+    option = {
+        name = pennsylvania.b
+        add_ideas = PEN_Gop_Market
+    }
+    option = {
+        name = pennsylvania.c 
+        add_ideas = PEN_Trump_Market
+    }
+}
+country_event = {
+    id = pennsylvania.13
+    title = pennsylvania.13.t
+    desc = pennsylvania.13.d 
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = pennsylvania.13.a
+    }
+}

@@ -9,7 +9,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = Born_From_The_Chaos
+        id = PEN_Born_From_The_Chaos
         icon = placeholder
         x = 20
         y = 0 
@@ -27,13 +27,13 @@ focus_tree = {
         }
     }
     focus = {
-        id = The_Council_Convens
+        id = PEN_The_Council_Convens
         icon = placeholder 
         x = 20
         y = 1
         cost = 3
         prerequisite = {
-            focus = Born_From_The_Chaos
+            focus = PEN_Born_From_The_Chaos
         }
         completion_reward = {
             country_event = {
@@ -43,44 +43,49 @@ focus_tree = {
         }
     }
     focus = {
-        id = The_Fate_Of_Pennsylvania
+        id = PEN_The_Fate_Of_Pennsylvania
         icon = placeholder
         x = 0
         y = 1
         cost = 4
         prerequisite = {
-            focus = The_Council_Convens
+            focus = PEN_The_Council_Convens
         }
-        relative_position_id = The_Council_Convens
+        relative_position_id = PEN_The_Council_Convens
         completion_reward = {
             add_stability = 0.1
         }
     }
     focus = {
-        id = Pennsylvanian_Economy
+        id = PEN_Pennsylvanian_Economy
         icon = placeholder 
-        x = 40
-        y = 0
+        x = 9
+        y = 1
         cost = 8
+        mutually_exclusive =  {focus = PEN_The_Trump_Economy}
+        relative_position_id = PEN_The_Atlantic_Command_Zone
+        prerequisite = {
+            focus = PEN_The_Atlantic_Command_Zone
+        }
         completion_reward = {
             add_ideas = PEN_Very_Early_Econnomy
         }
     }
     focus = {
-        id = Side_With_The_Trumpists
+        id = PEN_Side_With_The_Trumpists
         icon = placeholder
-        x = -2
+        x = -20
         y = 1
         cost = 4
 
         prerequisite = {
-            focus = The_Fate_Of_Pennsylvania
+            focus = PEN_The_Fate_Of_Pennsylvania
         }
         mutually_exclusive = {
-            focus = Side_With_The_Republicans
-            focus = Side_With_The_Libertarians
+            focus = PEN_Side_With_The_Republicans
+            focus = PEN_Side_With_The_Libertarians
         }
-        relative_position_id = The_Fate_Of_Pennsylvania
+        relative_position_id = PEN_The_Fate_Of_Pennsylvania
 
         completion_reward = {
             add_popularity = {
@@ -98,20 +103,20 @@ focus_tree = {
         }
     }
     focus = {
-         id = Side_With_The_Republicans
+         id = PEN_Side_With_The_Republicans
         icon = placeholder
         x = 0
         y = 1
         cost = 4
 
         prerequisite = {
-            focus = The_Fate_Of_Pennsylvania
+            focus = PEN_The_Fate_Of_Pennsylvania
         }
         mutually_exclusive = {
-            focus = Side_With_The_Trumpists
-            focus = Side_With_The_Libertarians
+            focus = PEN_Side_With_The_Trumpists
+            focus = PEN_Side_With_The_Libertarians
         }
-        relative_position_id = The_Fate_Of_Pennsylvania
+        relative_position_id = PEN_The_Fate_Of_Pennsylvania
 
         completion_reward = {
             add_popularity = {
@@ -124,25 +129,25 @@ focus_tree = {
             set_party_name = {
                 ideology = republican
                 long_name = PEN_republicans_long
-                name = PEN__republicans
+                name = PEN_republicans
             }
         }
     }
     focus = {
-         id = Side_With_The_Libertarians
+         id = PEN_Side_With_The_Libertarians
         icon = placeholder
         x = 2
         y = 1
         cost = 4
 
         prerequisite = {
-            focus = The_Fate_Of_Pennsylvania
+            focus = PEN_The_Fate_Of_Pennsylvania
         }
         mutually_exclusive = {
-            focus = Side_With_The_Trumpists
-            focus = Side_With_The_Republicans
+            focus = PEN_Side_With_The_Trumpists
+            focus = PEN_Side_With_The_Republicans
         }
-        relative_position_id = The_Fate_Of_Pennsylvania
+        relative_position_id = PEN_The_Fate_Of_Pennsylvania
 
         completion_reward = {
             add_popularity = {
@@ -155,14 +160,14 @@ focus_tree = {
         }
     }
     focus = {
-        id = Trumps_Brand_New_Puppet
+        id = PEN_Trumps_Brand_New_Puppet
         icon = placeholder
         x = -5
         y = 1
         cost = 4
-        relative_position_id = Side_With_The_Trumpists
+        relative_position_id = PEN_Side_With_The_Trumpists
         prerequisite = {
-            focus = Side_With_The_Trumpists
+            focus = PEN_Side_With_The_Trumpists
         }
         completion_reward = {
             country_event = {
@@ -180,42 +185,42 @@ focus_tree = {
     }
     ##### TRUMPIST #####
     focus = {
-        id = Dealing_With_Internal_Matters
+        id = PEN_Dealing_With_Internal_Matters
         icon = placeholder 
         x = 0
         y = 1
         cost = 2
-        relative_position_id = Trumps_Brand_New_Puppet
+        relative_position_id = PEN_Trumps_Brand_New_Puppet
         prerequisite = {
-            focus = Trumps_Brand_New_Puppet
+            focus = PEN_Trumps_Brand_New_Puppet
         }
         completion_reward = {
             add_political_power = 25
         }
     }
     focus = {
-        id = Calm_The_People
+        id = PEN_Calm_The_People
         icon = placeholder 
         x = 0
         y = 1
         cost = 5 
-        relative_position_id = Dealing_With_Internal_Matters
+        relative_position_id = PEN_Dealing_With_Internal_Matters
         prerequisite = {
-            focus = Dealing_With_Internal_Matters
+            focus = PEN_Dealing_With_Internal_Matters
         }
         completion_reward = {
             stability_factor = 0.05
         }
     }
     focus = {
-        id = Sort_Out_The_Strikes
+        id = PEN_Sort_Out_The_Strikes
         icon = placeholder 
         x = -5
         y = 1
         cost = 5 
-        relative_position_id = Dealing_With_Internal_Matters
+        relative_position_id = PEN_Dealing_With_Internal_Matters
         prerequisite = {
-            focus = Dealing_With_Internal_Matters
+            focus = PEN_Dealing_With_Internal_Matters
         }
         completion_reward = {
             swap_ideas = {
@@ -225,14 +230,14 @@ focus_tree = {
         }
     }
     focus = {
-        id = Reorganise_The_Army
+        id = PEN_Reorganise_The_Army
         icon = placeholder 
         x = 2
         y = 1
         cost = 5 
-        relative_position_id = Dealing_With_Internal_Matters
+        relative_position_id = PEN_Dealing_With_Internal_Matters
         prerequisite = {
-            focus = Dealing_With_Internal_Matters
+            focus = PEN_Dealing_With_Internal_Matters
         }
         completion_reward = {
             swap_ideas = {
@@ -242,15 +247,15 @@ focus_tree = {
         }
     }
     focus = {
-        id = The_Call_With_Trump
+        id = PEN_The_Call_With_Trump
         icon = placeholder 
         x = 2
         y = 1
         cost = 5 
-        relative_position_id = Sort_Out_The_Strikes
+        relative_position_id = PEN_Sort_Out_The_Strikes
         prerequisite = {
-            focus = Sort_Out_The_Strikes
-            focus = Calm_The_People
+            focus = PEN_Sort_Out_The_Strikes
+            focus = PEN_Calm_The_People
         }
         completion_reward = {
             country_event = {
@@ -259,14 +264,14 @@ focus_tree = {
         }
     }
      focus = {
-        id = Our_Mission
+        id = PEN_Our_Mission
         icon = placeholder 
         x = 0
         y = 1
         cost = 5 
-        relative_position_id = The_Call_With_Trump
+        relative_position_id = PEN_The_Call_With_Trump
         prerequisite = {
-            focus = The_Call_With_Trump
+            focus = PEN_The_Call_With_Trump
         }
         completion_reward = {
             country_event = {
@@ -275,14 +280,14 @@ focus_tree = {
         }
      }
     focus = {
-        id = Remove_People_Striking
+        id = PEN_Remove_People_Striking
         icon = placeholder 
         x = 0
         y = 1
         cost = 5 
-        relative_position_id = Sort_Out_The_Strikes
+        relative_position_id = PEN_Sort_Out_The_Strikes
         prerequisite = {
-            focus = Sort_Out_The_Strikes
+            focus = PEN_Sort_Out_The_Strikes
         }
         completion_reward = {
             swap_ideas = {
@@ -292,28 +297,28 @@ focus_tree = {
         }
     } 
     focus = {
-        id = Send_In_The_Police
+        id = PEN_Send_In_The_Police
         icon = placeholder 
         x = 0
         y = 1
         cost = 5 
-        relative_position_id = Calm_The_People
+        relative_position_id = PEN_Calm_The_People
         prerequisite = {
-            focus = Calm_The_People
+            focus = PEN_Calm_The_People
         }
         completion_reward = {
             add_manpower = -1439
         }
     } 
     focus = {
-        id = Fire_Incompetent_Officers
+        id = PEN_Fire_Incompetent_Officers
         icon = placeholder 
         x = 0
         y = 1
         cost = 5 
-        relative_position_id = Reorganise_The_Army
+        relative_position_id = PEN_Reorganise_The_Army
         prerequisite = {
-            focus = Reorganise_The_Army
+            focus = PEN_Reorganise_The_Army
         }
         completion_reward = {
             swap_ideas = {
@@ -323,14 +328,14 @@ focus_tree = {
         }
     } 
     focus = {
-        id = Request_Knowledge_From_Trump
+        id = PEN_Request_Knowledge_From_Trump
         icon = placeholder 
         x = 0
         y = 1
         cost = 5 
-        relative_position_id = Fire_Incompetent_Officers
+        relative_position_id = PEN_Fire_Incompetent_Officers
         prerequisite = {
-            focus = Fire_Incompetent_Officers
+            focus = PEN_Fire_Incompetent_Officers
         }
         completion_reward = {
             add_ideas = PEN_Trumpist_Army
@@ -341,14 +346,14 @@ focus_tree = {
         }
     } 
     focus = {
-        id = Increase_Law_Enforcement
+        id = PEN_Increase_Law_Enforcement
         icon = placeholder 
         x = 0
         y = 1
         cost = 5 
-        relative_position_id = Send_In_The_Police
+        relative_position_id = PEN_Send_In_The_Police
         prerequisite = {
-            focus = Send_In_The_Police
+            focus = PEN_Send_In_The_Police
         }
         completion_reward = {
 			random_owned_controlled_state = {
@@ -378,14 +383,14 @@ focus_tree = {
 		}
     } 
     focus = {
-        id = Ban_All_Swift_Music
+        id = PEN_Ban_All_Swift_Music
         icon = placeholder 
         x = 0
         y = 1
         cost = 5 
-        relative_position_id = Remove_People_Striking
+        relative_position_id = PEN_Remove_People_Striking
         prerequisite = {
-            focus = Remove_People_Striking
+            focus = PEN_Remove_People_Striking
         }
         completion_reward = {
             country_event = {
@@ -395,15 +400,15 @@ focus_tree = {
         }
     } 
     focus = {
-        id = Operation_Cat_Lady
+        id = PEN_Operation_Cat_Lady
         icon = placeholder 
         x = 1
         y = 1
         cost = 8
-        relative_position_id = Ban_All_Swift_Music
+        relative_position_id = PEN_Ban_All_Swift_Music
         prerequisite = {
-            focus = Ban_All_Swift_Music
-            focus = Increase_Law_Enforcement
+            focus = PEN_Ban_All_Swift_Music
+            focus = PEN_Increase_Law_Enforcement
         }
         completion_reward = {
             country_event = {
@@ -414,23 +419,23 @@ focus_tree = {
         }
     }
      focus = {
-        id = Prepare_For_The_Conquest
+        id = PEN_Prepare_For_The_Conquest
         icon = placeholder 
         x = 2
         y = 1
         cost = 5 
-        relative_position_id = Our_Mission
+        relative_position_id = PEN_Our_Mission
         prerequisite = {
-            focus = Our_Mission
+            focus = PEN_Our_Mission
         }
         prerequisite = {
-            focus = Ban_All_Swift_Music
+            focus = PEN_Ban_All_Swift_Music
         }
         prerequisite = {
-            focus = Increase_Law_Enforcement
+            focus = PEN_Increase_Law_Enforcement
         }
         prerequisite = {
-            focus = Request_Knowledge_From_Trump
+            focus = PEN_Request_Knowledge_From_Trump
         }
         completion_reward = {
             country_event = {
@@ -439,15 +444,15 @@ focus_tree = {
         }
      }
     focus = {
-        id = Militarize_The_Streets
+        id = PEN_Militarize_The_Streets
         icon = placeholder 
         x = 2
         y = 1
         cost = 8
-        relative_position_id = Increase_Law_Enforcement
+        relative_position_id = PEN_Increase_Law_Enforcement
         prerequisite = {
-            focus = Request_Knowledge_From_Trump
-            focus = Increase_Law_Enforcement
+            focus = PEN_Request_Knowledge_From_Trump
+            focus = PEN_Increase_Law_Enforcement
         }
         completion_reward = {
             add_ideas = PEN_Safe_Streets
@@ -459,20 +464,20 @@ focus_tree = {
         }
     }
     focus = {
-        id = Our_Time_to_Strike
+        id = PEN_Our_Time_to_Strike
         icon = placeholder 
         x = 3
         y = 1
         cost = 8
-        relative_position_id = Operation_Cat_Lady
+        relative_position_id = PEN_Operation_Cat_Lady
         prerequisite = {
-            focus = Operation_Cat_Lady
+            focus = PEN_Operation_Cat_Lady
         }
         prerequisite = {
-            focus = Militarize_The_Streets
+            focus = PEN_Militarize_The_Streets
         }
         prerequisite = {
-           focus = Prepare_For_The_Conquest
+           focus = PEN_Prepare_For_The_Conquest
         }
         completion_reward = {
             create_wargoal = {
@@ -492,14 +497,14 @@ focus_tree = {
         }
     }
     focus = {
-        id = Reunite_The_North_East
+        id = PEN_Reunite_The_North_East
         icon = placeholder
         x = 0
         y = 1
         cost 1
-        relative_position_id = Our_Time_to_Strike
+        relative_position_id = PEN_Our_Time_to_Strike
         prerequisite = {
-            focus = Our_Time_to_Strike
+            focus = PEN_Our_Time_to_Strike
         }
         available = {
             has_war = no
@@ -568,86 +573,118 @@ focus_tree = {
         }
     }
     focus = {
-        id = The_Atlantic_Command_Zone
+        id = PEN_The_Atlantic_Command_Zone
         icon = placeholder 
         x = 0
         y = 1
-        cost = 7
-        relative_position_id = Reunite_The_North_East
+        cost = 3
+        relative_position_id = PEN_Reunite_The_North_East
         prerequisite = {
-            focus = Reunite_The_North_East
+            focus = PEN_Reunite_The_North_East
         }
         completion_reward = {
             set_cosmetic_tag = PEN_atlantic_command_zone
         }
     }
     focus = {
-        id = Intergrate_The_North_East
+        id = PEN_Intergrate_The_North_East
         icon = placeholder 
-        x = -2
+        x = 2.5
         y = 1
-        cost = 6
-        relative_position_id = The_Atlantic_Command_Zone
+        cost = 5
+        relative_position_id = PEN_The_Atlantic_Command_Zone
         prerequisite = {
-            focus = The_Atlantic_Command_Zone
+            focus = PEN_The_Atlantic_Command_Zone
         }
         completion_reward= {
-            every_state = {
-                limit = {
-                    is_core_of = XXX
-             }
-            add_core_of = YYY
-            }
+            add_ideas  = PEN_Intergration_Effort
         }
     }
     focus = {
-        id = Join_The_Loyalists
+        id = PEN_Join_The_Loyalists
         icon = placeholder 
         x = 0
         y = 1
         cost = 6
-        relative_position_id = The_Atlantic_Command_Zone
+        relative_position_id = PEN_The_Atlantic_Command_Zone
         prerequisite = {
-            focus = The_Atlantic_Command_Zone
+            focus = PEN_The_Atlantic_Command_Zone
         }
+        bypass = {
+			OR = {
+				USA = {
+					NOT = {
+						has_government = republican
+					}
+				}
+				NOT = {
+					country_exists = USA
+				}
+			}
+		}
         completion_reward= {
+            USA = {
+				add_to_faction = ROOT
+			}
         }
     }
     focus = {
-        id = Prepare_The_Move_South
+        id = PEN_Prepare_The_Move_South
         icon = placeholder 
-        x = -5
+        x = -4
         y = 1
         cost = 6
-        relative_position_id = The_Atlantic_Command_Zone
+        relative_position_id = PEN_The_Atlantic_Command_Zone
         prerequisite = {
-            focus = The_Atlantic_Command_Zone
+            focus = PEN_The_Atlantic_Command_Zone
         }
         completion_reward= {
+            country_event = {
+                id = pennsylvania.11
+            }
         }
     }
     focus = {
-        id = The_Trump_Economy
+        id = PEN_The_Trump_Economy
         icon = placeholder 
-        x = 2
+        x = 5.5
         y = 1
         cost = 6
-        relative_position_id = The_Atlantic_Command_Zone
+        relative_position_id = PEN_The_Atlantic_Command_Zone
         prerequisite = {
-            focus = The_Atlantic_Command_Zone
+            focus = PEN_The_Atlantic_Command_Zone
         }
+        mutually_exclusive = {focus = Pennsylvanian_Economy}
         completion_reward= {
+            add_ideas = PEN_Trump_Economy
         }
     }
-     focus = {
-        id = Fuck_The_Earth
-        icon = placeholder 
-        x = 5
+    focus = {
+        id = PEN_Benefit_From_The_Trump_Economy
+        icon = placeholder
+        x = -2
         y = 1
         cost = 6
-        relative_position_id = The_Atlantic_Command_Zone
+        relative_position_id = PEN_The_Trump_Economy
         prerequisite = {
-            focus = The_Atlantic_Command_Zone
+            focus = PEN_The_Trump_Economy
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PEN_Trump_Economy
+                add_idea = PEN_Trump_Economy_2
+            }
+        }
+    }
+    focus = {
+        id = PEN_Fuck_The_Earth
+        icon = placeholder 
+        x = 15
+        y = 1
+        cost = 6
+        relative_position_id = PEN_The_Atlantic_Command_Zone
+        prerequisite = {
+            focus = PEN_The_Atlantic_Command_Zone
         }
         completion_reward= {
             277 = {
@@ -661,6 +698,630 @@ focus_tree = {
                     type = steel
                     amount = 23
                 }
+            }
+        }
+    }
+    focus = {
+        id = PEN_Trump_Back_In_Power
+        icon = placeholder 
+        x = 0
+        y = 6
+        cost = 6
+        relative_position_id = PEN_Join_The_Loyalists
+        prerequisite = {
+            focus = PEN_Transform_The_Woke_Bastion
+        }
+    }
+    focus = {
+        id = PEN_The_Virginian_Question
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 6
+        relative_position_id = PEN_Prepare_The_Move_South
+        prerequisite = {
+            focus = PEN_Prepare_The_Move_South
+        }
+        completion_reward= {
+        }
+    }
+    focus = {
+        id = PEN_Absorb_Virgina
+        icon = placeholder 
+        x = 1
+        y = 1
+        cost = 6
+        relative_position_id = PEN_The_Virginian_Question
+        mutually_exclusive = {
+            focus = PEN_Forceful_Unification_Vir
+        }
+        prerequisite = {
+            focus = PEN_The_Virginian_Question
+        }
+        completion_reward= {
+            
+        }
+    }
+    focus = {
+        id = PEN_Forceful_Unification_Vir
+        icon = placeholder 
+        x = -1
+        y = 1
+        cost = 6
+        relative_position_id = PEN_The_Virginian_Question
+        mutually_exclusive = {
+            focus = PEN_Absorb_Virgina
+        }
+        prerequisite = {
+            focus = PEN_The_Virginian_Question
+        }
+        completion_reward= {
+        }
+    }
+    focus = {
+        id = PEN_The_Dixie_Question
+        icon = placeholder 
+        x = 0
+        y = 2
+        cost = 6
+        relative_position_id = PEN_The_Virginian_Question
+        prerequisite = {
+            focus = PEN_Absorb_Virgina
+            focus = PEN_Forceful_Unification_Vir
+        }
+        completion_reward= {
+            
+        }
+    }
+    focus = {
+        id = PEN_Absorb_Dixie
+        icon = placeholder 
+        x = 1
+        y = 1
+        cost = 6
+        relative_position_id = PEN_The_Dixie_Question
+        mutually_exclusive = {
+            focus = PEN_Forceful_Unification_Dix
+        }
+        prerequisite = {
+            focus = PEN_The_Dixie_Question
+        }
+        completion_reward= {
+            
+        }
+    }
+    focus = {
+        id = PEN_Forceful_Unification_Dix
+        icon = placeholder 
+        x = -1
+        y = 1
+        cost = 6
+        relative_position_id = PEN_The_Dixie_Question
+        mutually_exclusive = {
+            focus = PEN_Absorb_Dixie
+        }
+        prerequisite = {
+            focus = PEN_The_Dixie_Question
+        }
+        completion_reward= {
+        }
+    }
+    focus = {
+        id = PEN_The_Florida_Question
+        icon = placeholder 
+        x = 0
+        y = 2
+        cost = 6
+        relative_position_id = PEN_The_Dixie_Question
+        prerequisite = {
+            focus = PEN_Absorb_Dixie
+            focus = PEN_Forceful_Unification_Dix
+        }
+        completion_reward= {
+            
+        }
+    }
+    focus = {
+        id = PEN_Absorb_Florida
+        icon = placeholder 
+        x = 1
+        y = 1
+        cost = 6
+        relative_position_id = PEN_The_Florida_Question
+        mutually_exclusive = {
+            focus = PEN_Forceful_Unification_Flo
+        }
+        prerequisite = {
+            focus = PEN_The_Florida_Question
+        }
+        completion_reward= {
+            
+        }
+    }
+    focus = {
+        id = PEN_Forceful_Unification_Flo
+        icon = placeholder 
+        x = -1
+        y = 1
+        cost = 6
+        relative_position_id = PEN_The_Florida_Question
+        mutually_exclusive = {
+            focus = PEN_Absorb_Florida
+        }
+        prerequisite = {
+            focus = PEN_The_Florida_Question
+        }
+        completion_reward= {
+        }
+    }
+    focus = {
+        id = PEN_Pharmaceutical_Industry
+        icon = placeholder
+        x = 3
+        y = 1
+        cost = 6
+        relative_position_id = PEN_Pennsylvanian_Economy
+        prerequisite = {
+            focus = PEN_Pennsylvanian_Economy
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PEN_Very_Early_Econnomy
+                add_idea = PEN_Early_Econnomy
+            }
+        }
+    }
+    focus = {
+        id = PEN_Tech_Sector
+        icon = placeholder
+        x = 1
+        y = 1
+        cost = 6
+        relative_position_id = PEN_Pharmaceutical_Industry
+        prerequisite = {
+            focus = PEN_Pharmaceutical_Industry
+        }
+        prerequisite = {
+            focus = PEN_Search_For_Rare_Minerals
+        }
+        completion_reward = {
+            add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = industry
+			}
+             add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = electronics
+			}
+        }
+    }
+    focus = {
+        id = PEN_Pennsylvanian_Medicine
+        icon = placeholder
+        x = -2
+        y = 1
+        cost = 6
+        relative_position_id = PEN_Pharmaceutical_Industry
+        prerequisite = {
+            focus = PEN_Pharmaceutical_Industry
+        }
+        completion_reward = {
+            add_ideas = PEN_Medicine
+        }
+    }
+    focus = {
+        id = PEN_War_Will_Come
+        icon = placeholder
+        x = 0
+        y = 1
+        cost = 6
+        relative_position_id = PEN_Pennsylvanian_Medicine
+        prerequisite = {
+            focus = PEN_Pennsylvanian_Medicine
+        }
+        completion_reward = {
+            random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = arms_factory 
+				    level = 2
+				    instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = arms_factory 
+				    level = 3
+				    instant_build = yes
+				}
+			}
+        }
+    }
+    focus = {
+        id = PEN_Big_Apple_Tech_Companies
+        icon = placeholder
+        x = 0
+        y = 1
+        cost = 7
+        available = {
+            controls_state = 228
+            NOT = {
+                country_exists = NYC
+            }
+        }
+        relative_position_id = PEN_Tech_Sector
+        prerequisite = {
+            focus = PEN_Tech_Sector
+        }
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+    focus = {
+        id = PEN_Who_To_Sell_To
+        icon = placeholder 
+        x = 1
+        y = 2
+        cost = 6
+        relative_position_id = PEN_Pennsylvanian_Medicine
+        prerequisite = {
+            focus = PEN_War_Will_Come
+        }
+        prerequisite = {
+            focus = PEN_Big_Apple_Tech_Companies
+        }
+        completion_reward = {
+            country_event = {
+             id = pennsylvania.12
+            }
+        }
+    }
+    focus = {
+        id = PEN_Fuck_The_Enviroment
+        icon = placeholder
+        x = 0
+        y = 1
+        cost = 6
+        relative_position_id = PEN_Who_To_Sell_To
+        prerequisite = {
+           focus = PEN_Who_To_Sell_To
+        }
+        completion_reward = {
+            random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = synth_resources 
+				    level = 2
+				    instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = synth_resources 
+				    level = 1
+				    instant_build = yes
+				}
+			}
+        }
+    }
+    focus = {
+        id = PEN_Independant_Industry
+        icon = placeholder
+        x = 2
+        y = 1
+        relative_position_id = PEN_Fuck_The_Enviroment
+        prerequisite = {
+            focus = PEN_Fuck_The_Enviroment
+        }
+        prerequisite = {
+            focus = PEN_Big_Tech_In_Government
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PEN_Early_Econnomy
+                add_idea = PEN_Modern_Economy
+            }
+        }
+    }
+    focus = {
+        id = PEN_Search_For_Rare_Minerals
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 6
+        relative_position_id = PEN_Fuck_The_Earth
+        prerequisite = {
+            focus = PEN_Fuck_The_Earth
+        }
+        completion_reward = {
+            add_ideas = PEN_Sus_Minerals
+        }
+    }
+    focus = {
+        id = PEN_Better_Equipment
+        icon = placeholder
+        x = 1
+        y = 1
+        cost = 6
+        relative_position_id = PEN_Search_For_Rare_Minerals
+        prerequisite = {
+            focus = PEN_Search_For_Rare_Minerals
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.4
+                uses = 4
+                category = armor
+            }
+            add_tech_bonus = {
+                bonus = 0.3
+                uses = 5
+                category = artillery_equipment
+            }
+        }
+    }
+    focus = {
+        id = PEN_Upgrade_The_Military
+        icon = placeholder
+        x = 0
+        y = 1
+        relative_position_id = PEN_Better_Equipment
+        prerequisite = {
+            focus = PEN_Better_Equipment
+        }
+        completion_reward = {
+            add_ideas = PEN_High_Military
+        }
+    }
+    focus = {
+        id = PEN_Ai_In_Warfare
+        icon = placeholder
+        x = 1.5
+        y = 1
+        cost = 6
+        relative_position_id = PEN_Big_Apple_Tech_Companies
+        prerequisite = {
+            focus = PEN_Big_Apple_Tech_Companies
+        }
+        prerequisite = {
+            focus = PEN_Upgrade_The_Military
+        }
+        completion_reward = {
+            add_ideas = PEN_Ai_Warfare
+        }
+    }
+    focus = {
+        id = PEN_Big_Tech_In_Government
+        icon = placeholder
+        x = 0
+        y = 1
+        cost = 6
+        relative_position_id = PEN_Ai_In_Warfare
+        prerequisite = {
+            focus = PEN_Ai_In_Warfare
+        }
+        completion_reward = {
+            add_research_slot = 1
+            add_popularity = {
+                ideology = autocratic
+                popularity = 0.1
+            }
+            add_ideas = PEN_Tech_Boom
+        }
+    }
+    focus = {
+        id = PEN_Hand_Over_DC
+        icon = placeholder 
+        x = 0
+        y = 1
+        cost = 5
+        available = {
+            country_exists = USA
+            controls_state = 242
+        }
+        relative_position_id = PEN_Join_The_Loyalists
+        prerequisite = {
+            focus = PEN_Join_The_Loyalists
+        }
+        completion_reward = {
+            242 = { transfer_state_to = USA}
+        }
+    }
+    focus = {
+        id = PEN_Tax_Cuts_For_The_Rich
+        icon = placeholder 
+        x = 2
+        y = 1
+        cost = 5
+        relative_position_id = PEN_Hand_Over_DC
+        prerequisite = {
+            focus = PEN_Benefit_From_The_Trump_Economy
+        }
+        prerequisite = {
+            focus = PEN_Hand_Over_DC
+        }
+        completion_reward= {
+            add_ideas  = PEN_Tax_Cuts_For_The_Rich
+        }
+    }
+    focus = {
+        id = PEN_Traiff_Slop
+        icon = placeholder 
+        x = 2
+        y = 1
+        cost = 5
+        relative_position_id = PEN_Tax_Cuts_For_The_Rich
+        prerequisite = {
+            focus = PEN_Tax_Cuts_For_The_Rich
+        }
+        prerequisite = {
+            focus = PEN_More_Jobs
+        }
+        completion_reward= {
+            add_ideas  = PEN_Tariffs
+        }
+    }
+    focus = {
+        id = PEN_More_Jobs
+        icon = placeholder
+        x = 2
+        y = 1
+        cost = 5
+        relative_position_id = PEN_Benefit_From_The_Trump_Economy
+        prerequisite = {
+            focus = PEN_Benefit_From_The_Trump_Economy
+        }
+        completion_reward = {
+            random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex 
+				    level = 2
+				    instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
+			}
+            stability_factor = 0.1
+        }
+    }
+    focus = {
+        id = PEN_Enforce_Trumpism
+        icon = placeholder
+        x = 0
+        y = 2
+        cost = 5
+        relative_position_id = PEN_Hand_Over_DC
+        prerequisite = {
+            focus = PEN_Hand_Over_DC
+        }
+        completion_reward = {
+            add_ideas = PEN_Trumpism
+            add_popularity = {
+                ideology = autocratic
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = republican
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = PEN_Transform_The_Woke_Bastion
+        icon = placeholder
+        x = 0
+        y = 1.5
+        cost = 5
+        relative_position_id = PEN_Enforce_Trumpism
+        prerequisite = {
+            focus = PEN_Enforce_Trumpism
+        }
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = PEN_Home_Of_The_Rich
+        icon = placeholder
+        x = 1.5
+        y = 1
+        cost = 5
+        relative_position_id = PEN_More_Jobs
+        prerequisite = {
+            focus = PEN_More_Jobs
+        }
+        completion_reward = {
+            country_event = {
+                id = pennsylvania.13
+            }
+        }
+    }
+    focus = {
+        id = PEN_Drill_Baby_Drill
+        icon = placeholder 
+        x = 0
+        y = 1
+        relative_position_id = PEN_Traiff_Slop
+        prerequisite = {
+            focus = PEN_Traiff_Slop
+        }
+        completion_reward = {
+             360 = {
+                add_resource = {
+                    type = oil
+                    amount = 34
+                }
+            }
+        }
+    }
+    focus = {
+        id = PEN_Deport_Them_All
+        icon = placeholder
+        x = 1.5
+        y = 1
+        cost = 5
+        relative_position_id = PEN_Drill_Baby_Drill
+        prerequisite {
+            focus = PEN_Drill_Baby_Drill
+        }
+        prerequisite = {
+            focus = PEN_Lies_On_Social_Media
+        }
+        completion_reward = {
+            add_ideas = PEN_Mass_Deport
+            stability_factor = -0.5
+        }
+    }
+    focus = {
+        id = PEN_Lies_On_Social_Media
+        icon = placeholder
+        x = 0
+        y = 1
+        cost = 5
+        relative_position_id = PEN_Home_Of_The_Rich
+        prerequisite = {
+            focus = PEN_Home_Of_The_Rich
+        }
+        completion_reward = {
+            add_ideas = PEN_Control_The_Media
+        }
+    }
+    focus = {
+        id = PEN_Trumps_Golden_Child
+        icon = placeholder
+        x = 0
+        y = 1
+        cost = 5
+        relative_position_id = PEN_Deport_Them_All
+        prerequisite = {
+            focus = PEN_Deport_Them_All
+        }
+    }
+    focus = {
+        id = PEN_Increase_Tariffs
+        icon = placeholder
+        x = -2
+        y = 1
+        cost = 5
+        relative_position_id = PEN_Traiff_Slop
+        prerequisite = {
+            focus = PEN_Traiff_Slop
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = PEN_Traiff_Slop
+                add_idea = PEN_High_Tariffs
             }
         }
     }
