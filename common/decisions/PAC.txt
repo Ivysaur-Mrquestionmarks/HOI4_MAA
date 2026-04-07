@@ -80,10 +80,16 @@ PAC_army_militia_balance_of_power_category = {
 			custom_effect_tooltip = PAC_inauguration_tooltip
 			if = {
 				limit = { 
-					power_balance_value = {
-                        id = army_militia_bop
-                        value < -0.3
-                    }
+					OR = {
+					    is_power_balance_in_range = {
+                            id = army_militia_bop
+                            range > militia_medium_control
+                        }
+						is_power_balance_in_range = {
+                            id = army_militia_bop
+                            range > militia_high_control
+                        }
+					}
 			    }
 				hidden_effect = {
 				    country_event = {
@@ -108,10 +114,16 @@ PAC_army_militia_balance_of_power_category = {
 			}
 			if = {
 				limit = {
-					power_balance_value = {
-                        id = army_militia_bop
-                        value > 0.3
-                    }
+					OR = {
+					    is_power_balance_in_range = {
+                            id = army_militia_bop
+                            range > army_medium_control
+                        }
+						is_power_balance_in_range = {
+                            id = army_high_control
+                            range > militia_high_control
+                        }
+					}
 			    }
 				hidden_effect = {
 				    country_event = {
@@ -131,7 +143,7 @@ PAC_army_militia_balance_of_power_category = {
 			original_tag = AFS
 		}
 		visible = {
-			always = yes
+			has_completed_focus = PAC_pacific_victory
 		}
 		available = {
 			NOT = {
@@ -165,7 +177,7 @@ PAC_army_militia_balance_of_power_category = {
 			original_tag = AFS
 		}
 		visible = {
-			always = yes
+			has_completed_focus = PAC_pacific_victory
 		}
 		available = {
 			NOT = {

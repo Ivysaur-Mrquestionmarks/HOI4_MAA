@@ -1496,6 +1496,7 @@ focus_tree = {
     				instant_build = yes
 				}
 			}	
+			add_research_slot = 1
 		}
 	}
 
@@ -1626,7 +1627,11 @@ focus_tree = {
 				tooltip = compliance_growth_tt
 			}		
 			unlock_decision_tooltip = PAC_expand_county_powers
-			unlock_decision_tooltip = PAC_power_to_states	
+			unlock_decision_tooltip = PAC_power_to_states
+			hidden_effect = {
+			    set_country_flag = PAC_political_decision_1
+			    set_country_flag = PAC_political_decision_2
+			}	
 		}
 	}
 
@@ -1838,6 +1843,10 @@ focus_tree = {
 			remove_ideas = PAC_unpopular_coup_6
 			unlock_decision_tooltip = PAC_legitimize_the_republic
 			unlock_decision_tooltip = PAC_democracy_restoration	
+			hidden_effect = {
+			    set_country_flag = PAC_political_decision_5
+			    set_country_flag = PAC_political_decision_6
+			}
 		}
 	}
 
@@ -1898,6 +1907,10 @@ focus_tree = {
 			remove_ideas = PAC_unpopular_coup_6
 			unlock_decision_tooltip = PAC_fight_against_anti_americanism
 			unlock_decision_tooltip = PAC_call_to_liberty
+			hidden_effect = {
+			    set_country_flag = PAC_political_decision_3
+			    set_country_flag = PAC_political_decision_4
+			}
 		}
 	}
 
@@ -1940,6 +1953,10 @@ focus_tree = {
 			}
 			unlock_decision_tooltip = PAC_rally_the_youth
 			unlock_decision_tooltip = PAC_spread_the_ideals_of_liberty
+			hidden_effect = {
+			    set_country_flag = PAC_political_decision_7
+			    set_country_flag = PAC_political_decision_8
+			}
 		}
 	}
 
@@ -2327,7 +2344,8 @@ focus_tree = {
     					level = 1
     					instant_build = yes
 				}
-			}		
+			}
+			add_research_slot = 1
 		}
 	}
 
@@ -2454,7 +2472,8 @@ focus_tree = {
 				var = PAC.var_research_speed_level
 				value = 0.03
 				tooltip = research_speed_factor_tt
-			}	
+			}
+			add_research_slot = 1
 		}
 	}
 
@@ -2529,7 +2548,7 @@ focus_tree = {
 				var = PAC.var_research_speed_level
 				value = 0.02
 				tooltip = research_speed_factor_tt
-			}	
+			}
 		}
 	}
 
