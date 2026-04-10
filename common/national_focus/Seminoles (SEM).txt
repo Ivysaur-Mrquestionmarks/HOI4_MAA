@@ -19,9 +19,9 @@ focus_tree = {
 			factor = 300
 		}
 		allow_branch = {
-			NOT = {
+			#NOT = {
 				has_completed_focus = SEM_a_new_florida
-			}
+			#}
 		}
 		completion_reward = {
 			country_event = {
@@ -368,9 +368,9 @@ focus_tree = {
 		id = SEM_remembering_the_seminole_wars
 		icon = GFX_goal_SEM_remember_the_seminole_wars
 		cost = 5.00
-		allow_branch = {
-			has_completed_focus = SEM_a_new_florida
-		}
+		#allow_branch = {
+		#	has_completed_focus = SEM_a_new_florida
+		#}
 		ai_will_do = { 
 			factor = 300
 		}
@@ -922,9 +922,9 @@ focus_tree = {
 		id = SEM_a_people_unconquered
 		icon = GFX_goal_SEM_an_unconquered_people
 		cost = 5.00
-		allow_branch = {
-			has_completed_focus = SEM_a_new_florida
-		}
+		#allow_branch = {
+		#	has_completed_focus = SEM_a_new_florida
+		#}
 		ai_will_do = { 
 			factor = 300
 		}
@@ -1308,7 +1308,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_preserving_seminole_culture
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_preserve_our_traditions
 		cost = 5.00
 		x = -20
 		y = 1
@@ -1328,7 +1328,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_maintaining_our_traditions
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_preserve_our_traditions
 		cost = 5.00
 		x = 2
 		y = 1
@@ -1451,7 +1451,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_end_the_rape_of_culture
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_end_the_rape_of_culture
 		cost = 5.00
 		x = 3
 		y = 1
@@ -1663,7 +1663,7 @@ focus_tree = {
 		id = SEM_down_the_warpath
 		icon = GFX_goal_SEM_down_the_warpath
 		cost = 5.00
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = SEM_problem_of_the_iste_hatke
 		ai_will_do = { 
@@ -2015,6 +2015,7 @@ focus_tree = {
 					}
 				}
 				add_core_of = SEM
+				add_manpower = -20000
 			}
 		}
 	}
@@ -2070,7 +2071,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_ensure_equality_under_the_law
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_ensure_equality_under_the_laws
 		cost = 5.00
 		x = 0
 		y = 2
@@ -2137,7 +2138,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_one_nation_two_systems
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_one_nation_two_systems
 		cost = 5.00
 		x = -2
 		y = 1
@@ -2207,7 +2208,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_expand_the_reservations
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_expand_the_everglades_reservation
 		cost = 5.00
 		x = 1
 		y = 1
@@ -2257,7 +2258,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_establish_associate_tribal_memberships
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_associate_tribal_memberships
 		cost = 5.00
 		x = -2
 		y = 1
@@ -2325,7 +2326,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_allow_honorary_memberships
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_honorary_tribal_memberships
 		cost = 5.00
 		x = 0
 		y = 1
@@ -2393,7 +2394,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_question_of_blood
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_policy_of_blood_quantum
 		cost = 5.00
 		x = -12
 		y = 1
@@ -2413,7 +2414,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_full_bloods_only
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_reestablish_full_blood_citizenship
 		cost = 5.00
 		x = -2
 		y = 1
@@ -2439,7 +2440,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_ban_interracial_marriage
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_ban_interracial_marriage
 		cost = 5.00
 		x = 0
 		y = 1
@@ -2499,7 +2500,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_quarter_bloods
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_reaffirm_the_quarter_blood_policy
 		cost = 5.00
 		x = 0
 		y = 1
@@ -2525,7 +2526,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_end_the_policy
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_end_the_bq_policy
 		cost = 5.00
 		x = 2
 		y = 1
@@ -2582,7 +2583,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_relax_attitudes_towards_interracial_marriages
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_destigmatize_interracial_marriage
 		cost = 5.00
 		x = -1
 		y = 2

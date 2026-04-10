@@ -15,7 +15,7 @@ SEM_tribe_vs_osceola_bop = {
 	}
 	side = {
 		id = tribe_favored
-		icon = GFX_idea_LAS_casino_favoured
+		icon = GFX_bop_SEM_tribal_authority
 		range = {
 			id = tribe_lean
 			min = -0.5
@@ -55,7 +55,7 @@ SEM_tribe_vs_osceola_bop = {
 	}
 	side = {
 		id = osceola_favored
-		icon = GFX_idea_LAS_people_favoured
+		icon = GFX_bop_SEM_osceolla_authority
 		range = {
 			id = osceola_lean
 			min = 0.1

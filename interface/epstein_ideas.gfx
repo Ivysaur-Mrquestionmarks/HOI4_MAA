@@ -796,7 +796,14 @@ spriteTypes = {
     	name = "GFX_idea_SEM_starting"
     	texturefile = "gfx/interface/ideas/SEM/starting.dds"
 	}
-
+    spriteType = {
+        name = "GFX_bop_SEM_osceolla_authority"
+        texturefile = "gfx/interface/bop/bop_SEM_osceolla_authority.dds"
+    }
+    spriteType = {
+        name = "GFX_bop_SEM_tribal_authority"
+        texturefile = "gfx/interface/bop/bop_SEM_tribal_authority.dds"
+    }
 ### NASA (NSA) ###
 	spriteType = {
     	name = "GFX_idea_NSA_starting"

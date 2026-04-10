@@ -2,7 +2,7 @@ SEM_balance_of_power_category = {
 
 	SEM_circumvent_council = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_generic_civil_support
 
 		available = {
 			
@@ -33,7 +33,7 @@ SEM_balance_of_power_category = {
 
 	SEM_placate_the_council = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_hol_draw_up_staff_plans
 
 		available = {
 			
@@ -61,7 +61,7 @@ SEM_balance_of_power_category = {
 	}
 	SEM_allign_the_military = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_SWE_set_army_budget
 
 		available = {
 			command_power > 49
@@ -129,7 +129,7 @@ SEM_balance_of_power_category = {
 	}
 	SEM_win_over_council_members = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_SWI_elect_confederation_president
 
 		available = {
 			
@@ -166,7 +166,7 @@ SEM_balance_of_power_category = {
 	}
 	SEM_clamp_down_on_osceolas_authority = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_oppression
 
 		available = {
 			
@@ -199,7 +199,7 @@ SEM_balance_of_power_category = {
 	}
 	SEM_promote_stability_through_dialogue = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_generic_speech
 
 		available = {
 			
@@ -235,7 +235,7 @@ SEM_balance_of_power_category = {
 	}
 	SEM_remove_compromised_council_members = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_SWI_dismiss_council
 
 		available = {
 			
@@ -268,7 +268,7 @@ SEM_balance_of_power_category = {
 	}
 	SEM_reach_out_to_other_tribes = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_SWI_support_humanitarian_efforts
 
 		available = {
 			
@@ -307,7 +307,7 @@ SEM_whites_vs_natives = {
 
 	SEM_reassure_whites = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_generic_political_address
 
 		available = {
 			NOT = {
@@ -378,7 +378,7 @@ SEM_whites_vs_natives = {
 
 	SEM_invest_in_reservations = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_gre_investment_decisions
 
 		available = {
 			NOT = {
@@ -443,7 +443,7 @@ SEM_whites_vs_natives = {
 
 	SEM_grant_the_council_more_power = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_generic_political_discourse
 
 		available = {
 			NOT = {
@@ -500,7 +500,7 @@ SEM_whites_vs_natives = {
 
 	SEM_city_autonomy = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_generic_independence
 
 		allowed = {
 			has_country_flag = SEM_relation_system
@@ -569,7 +569,7 @@ SEM_whites_vs_natives = {
 
 	SEM_white_bad_mission = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_SWI_consolidate_council_power
 
 		allowed = {
 			has_country_flag = SEM_relation_system
@@ -641,7 +641,7 @@ SEM_whites_vs_natives = {
 	}
 	SEM_native_bad_mission = {
 
-		icon = GFX_decision_NBR_uprising
+		icon = GFX_decision_SWI_consolidate_council_power
 
 		available = {
 			OR = {

@@ -9,7 +9,7 @@ SEM_balance_of_power_category = {
 
 }
 SEM_whites_vs_natives = {
-	icon = generic_propaganda
+	icon = GFX_decision_category_generic_crisis
 	visible_when_empty = no
 	allowed = {
 		OR = {
