@@ -1150,6 +1150,19 @@ characters={
 			}
 		}
 	}
+	LGB_jessica_marie_watkins = {
+		name = "Jessica Marie Watkins"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LGB/jessica_marie_watkins.tga"
+			}
+		}
+		country_leader = {
+			traits = {}
+			ideology = libertarian_ideology
+		}
+		gender = female
+	}
 	### Military Leaders ###
 	# Army #
 	LGB_alex_ketchum = {
