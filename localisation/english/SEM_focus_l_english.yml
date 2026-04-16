@@ -271,6 +271,12 @@
  SEM_north_florida_removals:0 "North Florida Removals"
 
  SEM_navajo_and_tohono_brothers:0 "Navajo Brothers"
+
+ SEM_embrace_christianity:0 "Embrace Christianity"
+
+ SEM_recognize_the_israel_connection:0 "Recognize the Israel Connection"
+ SEM_recognize_the_israel_connection_desc:0 "Our people must wake up to the fact that we are the descendants of the Tribe of Rueben, one of the 12 lost tribes of Israel, and that we are Yahweh's chosen people. For too long modern historians have overlooked this heritage to demean our people, but no longer. While this may be intolerable to most of our tribe, in due time we will be rewarded by almighty Yahweh!"
+ SEM_return_to_animistic_tradition:0 "Return to Animistic Tradition"
  
  #IDEAS
 
@@ -318,11 +324,11 @@
 
  SEM_tribal_resistance:0 "Tribal Resistance"
  
- SEM_standardizing_mikasuki:0 "Standarizing Mikasuki"
+ SEM_standardizing_mikasuki:0 "Standarizing Muscogee"
 
- SEM_mikasuki_schools:0 "Mikasuki Language Schooling"
+ SEM_mikasuki_schools:0 "Muscogee Language Schooling"
 
- SEM_mikasuki_national_language:0 "National Recognition of Mikasuki"
+ SEM_mikasuki_national_language:0 "National Recognition of Muscogee"
 
  SEM_seminole_tribal_libraries:0 "Expanded Tribal Libraries"
 
@@ -332,7 +338,7 @@
 
  SEM_our_merchant_fleet_1:0 "The Seminole Merchant Fleet"
 
- SEM_mikasuki_code_talkers:0 "Mikasuki Code Talkers"
+ SEM_mikasuki_code_talkers:0 "Muscogee Code Talkers"
 
  SEM_local_manufacturing_1:0 "Native Manufacturing"
  
@@ -433,6 +439,11 @@
  sem_panhandle.3.t:0 "The Panhandle Deal Fails!"
  sem_panhandle.3.d:0 " "
  sem_panhandle.3.a:0 "Damn it!"
+ 
+ sem_israel.1.t:0 "The Tribe of Rueben"
+ sem_israel.1.d:0 ""
+ sem_israel.1.a:0 "Fully embrace the title"
+ sem_israel.1.b:0 "This is going too far!"
 
  News_Events.103.a:0 "An Unlikely Victor"
  News_events.103.t:0 "Seminole Tribe Triumphs in Floridian Civil War"
@@ -441,7 +452,7 @@
  #Dynamic Modifiers
 
  SEM_tribal_autonomy:0 "Tribal Autonomy"
-
+ SEM_seminole_traditions:0 "Seminole Culture"
  #Tooltips
 
  SEM_warpath_warning_tt:0 "Without §YPan-Indianism§!, the tribal authorities will §Roppose§! us!\n\n"
@@ -455,6 +466,8 @@
  SEM_white_bad_tt:0 "We will incur a §Rstability penalty§! due to §YWhite Relations Inflamed§!"
  
  SEM_bop_warning_tt:0 "\nNeither side can §Yconsolidate power§! unless the problem of the White man is solved!"
+
+ SEM_modify_tradition_modifier_tt:0 "Modify §Y$SEM_seminole_traditions$§! by:"
  #Opinion Modifiers
 
  sem_seminole_brothers:0 "Seminole Brothers"

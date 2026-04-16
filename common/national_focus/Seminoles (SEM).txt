@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 200 y = 0 }
+	continuous_focus_position = { x = 1 y = 1000 }
 	focus = {
 		id = SEM_floridian_civil_war
 		icon = GFX_goal_florida_civil_war_focus
@@ -1310,7 +1310,7 @@ focus_tree = {
 		id = SEM_preserving_seminole_culture
 		icon = GFX_goal_SEM_preserve_our_traditions
 		cost = 5.00
-		x = -20
+		x = -25
 		y = 1
 		relative_position_id = SEM_a_people_unconquered
 		ai_will_do = { 
@@ -1324,13 +1324,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.1
+			add_dynamic_modifier = {
+				modifier = SEM_seminole_traditions
+			}
 		}
 	}
 	focus = {
 		id = SEM_maintaining_our_traditions
-		icon = GFX_goal_SEM_preserve_our_traditions
+		icon = GFX_goal_SEM_maintain_our_traditions
 		cost = 5.00
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = SEM_preserving_seminole_culture
 		ai_will_do = { 
@@ -1341,13 +1344,102 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_stability_factor = 0.10 tooltip = stability_factor_tt }
+		}
+	}
+	focus = {
+		id = SEM_embrace_christianity
+		icon = GFX_goal_SEM_embrace_christianity
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_maintaining_our_traditions
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = SEM_recognize_the_israel_connection
+			focus = SEM_return_to_animistic_tradition
+		}
+		prerequisite = {
+			focus = SEM_maintaining_our_traditions
+		}
+		completion_reward = {
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_stability_factor = 0.1 tooltip = stability_factor_tt }
+			add_to_variable = { SEM_political_power_factor = 0.05 tooltip = political_power_factor_tt }
+		}
+	}
+	focus = {
+		id = SEM_return_to_animistic_tradition
+		icon = GFX_goal_SEM_return_to_animistic_tradition
+		cost = 5.00
+		x = 4
+		y = 1
+		relative_position_id = SEM_maintaining_our_traditions
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = SEM_recognize_the_israel_connection
+			focus = SEM_embrace_christianity
+		}
+		prerequisite = {
+			focus = SEM_maintaining_our_traditions
+		}
+		completion_reward = {
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_war_support_factor = 0.05 tooltip = war_support_factor_tt }
+			add_to_variable = { SEM_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt }
+			add_to_variable = { SEM_monthly_population = 0.07 tooltip = monthly_population_tt }
+		}
+	}
+	focus = {
+		id = SEM_recognize_the_israel_connection
+		icon = GFX_goal_SEM_recognize_the_israeli_condition
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = SEM_maintaining_our_traditions
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = SEM_return_to_animistic_tradition
+			focus = SEM_embrace_christianity
+		}
+		prerequisite = {
+			focus = SEM_maintaining_our_traditions
+		}
+		completion_reward = {
+			country_event = sem_israel.1
+
+			IF = {
+				LIMIT = {
+					ZIO = {
+						exists = yes
+					}
+				}
+				ZIO = {
+					add_opinion_modifier = {
+					    target = SEM
+					    modifier = large_increase
+					}
+				}
+			}
+			
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_stability_factor = -0.20 tooltip = stability_factor_tt }
+			add_to_variable = { SEM_political_power_factor = 0.10 tooltip = political_power_factor_tt }
+
 		}
 	}
 	focus = {
 		id = SEM_annual_green_corn_ceremony
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_green_corn_dance
 		cost = 5.00
-		x = -1
+		x = -4
 		y = 1
 		relative_position_id = SEM_maintaining_our_traditions
 		ai_will_do = { 
@@ -1360,13 +1452,15 @@ focus_tree = {
 			country_event = {
 				id = sem_culture.1
 			}
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_monthly_population = 0.10 tooltip = monthly_population_tt }
 		}
 	}
 	focus = {
 		id = SEM_promote_seminole_stickball
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_game_of_stickball
 		cost = 5.00
-		x = 1
+		x = -2
 		y = 1
 		relative_position_id = SEM_maintaining_our_traditions
 		ai_will_do = { 
@@ -1379,11 +1473,13 @@ focus_tree = {
 			country_event = {
 				id = sem_culture.2
 			}
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_army_org_factor = 0.08 tooltip = army_org_factor_tt }
 		}
 	}
 	focus = {
 		id = SEM_continue_seminole_tourism
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_continue_seminole_tourism
 		cost = 5.00
 		x = -1
 		y = 1
@@ -1453,7 +1549,7 @@ focus_tree = {
 		id = SEM_end_the_rape_of_culture
 		icon = GFX_goal_SEM_end_the_rape_of_culture
 		cost = 5.00
-		x = 3
+		x = 8
 		y = 1
 		relative_position_id = SEM_promote_seminole_stickball
 		ai_will_do = { 
@@ -1516,7 +1612,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_standardize_the_mikasuki_language
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_standardize_the_muscogee_language
 		cost = 5.00
 		x = -1
 		y = 1
@@ -1536,7 +1632,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_establish_mikasuki_language_schools
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_muscogee_language_schools
 		cost = 5.00
 		x = 1
 		y = 1
@@ -1561,7 +1657,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_elevate_mikasuki_as_the_national_language
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_elevate_muscogee_as_the_national_language
 		cost = 5.00
 		x = 4
 		y = 1
@@ -1587,9 +1683,9 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_fund_the_seminole_tribal_libraries
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_fund_seminole_libraries
 		cost = 5.00
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = SEM_preserving_seminole_culture
 		ai_will_do = { 
@@ -1604,9 +1700,9 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_promote_the_seminole_museum
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_promote_the_seminole_museum
 		cost = 5.00
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = SEM_preserving_seminole_culture
 		ai_will_do = { 
@@ -1617,13 +1713,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 75
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_political_power_factor = 0.05 tooltip = political_power_factor_tt }
+			add_to_variable = { SEM_stability_factor = 0.08 tooltip = stability_factor_tt }
 		}
 	}
 	focus = {
 		id = SEM_decolonize_the_historical_narrative
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_decolonize_the_historical_narrative
 		cost = 5.00
-		x = -1
+		x = -2
 		y = 2
 		relative_position_id = SEM_preserving_seminole_culture
 		ai_will_do = { 
@@ -1637,6 +1736,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_war_support_factor = 0.1 tooltip = war_support_factor_tt }
+			add_to_variable = { SEM_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
 		}
 	}
 	focus = {
@@ -2832,7 +2934,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_reconcile_with_the_miccosukee
-		icon = GFX_goal_SEM_reconcile_with_the_miccosukeee
+		icon = GFX_goal_SEM_reconcile_with_the_miccosukee
 		cost = 5.00
 		x = 3
 		y = 1
@@ -3152,7 +3254,7 @@ focus_tree = {
 			has_completed_focus = SEM_a_people_unconquered
 		}
 		allow_branch = {
-			has_completed_focus = SEM_a_new_florida
+			#has_completed_focus = SEM_a_new_florida
 		}
 		completion_reward = {
 			add_political_power = 100

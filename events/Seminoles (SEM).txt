@@ -258,3 +258,31 @@ country_event = {
     	}
 	}
 }
+
+add_namespace = sem_israel
+
+country_event = {
+	id = sem_israel.1
+	title = sem_israel.1.t
+	desc = sem_israel.1.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	option = {
+		name = sem_israel.31.a 
+
+		
+		
+		ai_chance = {
+    		base = 100
+    	}
+	}
+	option = {
+		name = sem_israel.1.a 
+
+		
+		
+		ai_chance = {
+    		base = 100
+    	}
+	}
+}
