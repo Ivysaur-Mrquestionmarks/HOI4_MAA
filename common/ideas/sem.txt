@@ -14,6 +14,7 @@ ideas = {
 		}
 		SEM_seminole_supremacy = {
 			allowed = { original_tag = SEM }
+			picture = SEM_seminole_supremacy
 			modifier = {
 				stability_factor = -0.1
 				political_power_factor = 0.1
@@ -25,6 +26,7 @@ ideas = {
 		}
 		SEM_disorganized_state = {
 			allowed = { original_tag = SEM }
+			picture = SEM_disorganized_state
 			modifier = {
 				consumer_goods_factor = 0.5
 				local_resources_factor = -0.3
@@ -37,6 +39,7 @@ ideas = {
 		}
 		SEM_disorganized_state_1 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_disorganized_state
 			modifier = {
 				consumer_goods_factor = 0.25
 				local_resources_factor = -0.1
@@ -49,6 +52,7 @@ ideas = {
 		}
 		SEM_disorganized_state_2 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_disorganized_state
 			modifier = {
 				consumer_goods_factor = 0.1
 				political_power_factor = -0.1
@@ -60,6 +64,7 @@ ideas = {
 		}
 		SEM_white_people_be_like_happy = {
 			allowed = { original_tag = SEM }
+			picture = SEM_white_people_happy
 			modifier = {
 				conscription_factor = 0.2
 				army_core_defence_factor = 0.15
@@ -67,6 +72,7 @@ ideas = {
 		}
 		SEM_white_people_be_like_content = {
 			allowed = { original_tag = SEM }
+			picture = SEM_white_people_content
 			modifier = {
 				conscription_factor = 0.05
 				army_core_defence_factor = 0.05
@@ -74,6 +80,7 @@ ideas = {
 		}
 		SEM_white_people_be_like = {
 			allowed = { original_tag = SEM }
+			picture = SEM_white_people_strained
 			modifier = {
 				conscription_factor = -0.1
 				army_core_defence_factor = -0.05
@@ -82,25 +89,29 @@ ideas = {
 		}
 		SEM_white_people_be_like_angry = {
 			allowed = { original_tag = SEM }
+			picture = SEM_white_people_mad
 			modifier = {
 				conscription_factor = -0.2
 				stability_factor = -0.1
 				army_core_defence_factor = -0.1
+				stability_weekly_factor = -0.001
 				libertarian_right_drift = -0.03
 			}
 		}
 		SEM_white_people_be_like_inflamed = {
 			allowed = { original_tag = SEM }
+			picture = SEM_white_people_angry
 			modifier = {
 				conscription_factor = -0.25
 				stability_factor = -0.15
-				stability_weekly_factor = -0.001
-				army_core_defence_factor = -0.1
+				stability_weekly_factor = -0.002
+				army_core_defence_factor = -0.15
 				libertarian_right_drift = -0.05
 			}
 		}
 		SEM_native_people_be_like_happy = {
 			allowed = { original_tag = SEM }
+			picture = SEM_native_people_happy
 			modifier = {
 				consumer_goods_factor = 0.08
 				political_power_factor = 0.1
@@ -109,6 +120,7 @@ ideas = {
 		}
 		SEM_native_people_be_like = {
 			allowed = { original_tag = SEM }
+			picture = SEM_native_people_content
 			modifier = {
 				consumer_goods_factor = 0.05
 				political_power_factor = 0.05
@@ -117,6 +129,7 @@ ideas = {
 		}
 		SEM_native_people_be_like_worried = {
 			allowed = { original_tag = SEM }
+			picture = SEM_native_people_strained
 			modifier = {
 				political_power_factor = -0.05
 				autocratic_drift = -0.01
@@ -125,6 +138,7 @@ ideas = {
 		}
 		SEM_native_people_be_like_angry = {
 			allowed = { original_tag = SEM }
+			picture = SEM_native_people_mad
 			modifier = {
 				political_power_factor = -0.1
 				stability_factor = -0.05
@@ -133,14 +147,31 @@ ideas = {
 		}
 		SEM_native_people_be_like_inflamed = {
 			allowed = { original_tag = SEM }
+			picture = SEM_native_people_inflamed
 			modifier = {
 				political_power_factor = -0.2
 				stability_factor = -0.1
 				autocratic_drift = -0.1
 			}
 		}
+		SEM_racial_harmony = {
+			allowed = { original_tag = SEM }
+			picture = SEM_racial_harmony
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_factor = 0.2
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				conscription_factor = 0.25
+				non_core_manpower = 0.1
+				army_core_defence_factor = 0.3
+				army_core_attack_factor = 0.15
+				autocrat_drift = -0.1
+			}
+		}
 		SEM_tribal_education = {
 			allowed = { original_tag = SEM }
+			picture = SEM_tribal_education
 			modifier = {
 				research_speed_factor = 0.05
 				autocratic_drift = -0.01
@@ -148,6 +179,7 @@ ideas = {
 		}
 		SEM_lets_go_gambling = {
 			allowed = { original_tag = SEM }
+			picture = SEM_land_of_gaming
 			modifier = {
 				stability_factor = -0.02
 				political_power_gain = 0.05
@@ -156,6 +188,7 @@ ideas = {
 		}
 		SEM_reliable_energy = {
 			allowed = { original_tag = SEM }
+			picture = SEM_reliable_energy
 			modifier = {
 				factory_energy_consumption = -0.15
 				production_factory_max_efficiency_factor = 0.05
@@ -165,6 +198,7 @@ ideas = {
 		}
 		SEM_small_business_investments = {
 			allowed = { original_tag = SEM }
+			picture = SEM_native_subsidies
 			modifier = {
 				consumer_goods_factor = 0.05
 				production_speed_industrial_complex_factor = 0.1
@@ -173,6 +207,7 @@ ideas = {
 		}
 		SEM_hard_rock_cafe = {
 			allowed = { original_tag = SEM }
+			picture = SEM_hard_rock_cafe
 			modifier = {
 				political_power_factor = 0.05
 				trade_opinion_factor = 0.1
@@ -181,6 +216,7 @@ ideas = {
 		}
 		SEM_seminole_orange = {
 			allowed = { original_tag = SEM }
+			picture = SEM_seminole_tangelo
 			modifier = {
 				stability_weekly_factor = 0.001
 				monthly_population = 0.1
@@ -190,6 +226,7 @@ ideas = {
 		}
 		SEM_reckless_drilling = {
 			allowed = { original_tag = SEM }
+			picture = SEM_resources_over_heritage
 			modifier = {
 				stability_factor = -0.1
 				monthly_population = -0.05
@@ -198,7 +235,8 @@ ideas = {
 			}
 		}
 		SEM_taking_back_what_is_ours = {
-			allowed = { original_tag = SEM }
+			allowed = { origin al_tag = SEM }
+			picture = SEM_seminolization
 			modifier = {
 				production_speed_buildings_factor = -0.1
 				resistance_activity = 0.05
@@ -208,6 +246,7 @@ ideas = {
 		}
 		SEM_victory_over_the_white_man = {
 			allowed = { original_tag = SEM }
+			picture = SEM_victory_over_the_white_man
 			modifier = {
 				political_power_factor = 0.1
 				stability_factor = 0.1
@@ -215,11 +254,12 @@ ideas = {
 				war_support_factor = 0.1
 				army_attack_factor = 0.1
 				compliance_growth = 0.2
-				autocratic_drift = 0.05
+				autocratic_drift = 0.1
 			}
 		}
 		SEM_seminole_laws = {
 			allowed = { original_tag = SEM }
+			picture = SEM_seminole_tribal_laws
 			modifier = {
 				consumer_goods_factor = 0.08
 				stability_factor = 0.05
@@ -230,6 +270,7 @@ ideas = {
 		}
 		SEM_ended_bq = {
 			allowed = { original_tag = SEM }
+			picture = SEM_ended_bq
 			modifier = {
 				recruitable_population_factor = 0.15
 				political_power_factor = -0.08
@@ -239,6 +280,7 @@ ideas = {
 		}
 		SEM_fullblood_citizenship = {
 			allowed = { original_tag = SEM }
+			picture = SEM_full_bloods
 			modifier = {
 				recruitable_population_factor = -0.1
 				political_power_factor = 0.1
@@ -248,12 +290,14 @@ ideas = {
 		}
 		SEM_tribal_resistance = {
 			allowed = { original_tag = SEM }
+			picture = SEM_tribal_resistance
 			modifier = {
 				political_power_factor = -0.1
 			}
 		}
 		SEM_standardizing_mikasuki = {
 			allowed = { original_tag = SEM }
+			picture = SEM_standardizing_muscogee
 			modifier = {
 				research_speed_factor = -0.01
 				consumer_goods_factor = 0.01
@@ -261,6 +305,7 @@ ideas = {
 		}
 		SEM_mikasuki_schools= {
 			allowed = { original_tag = SEM }
+			picture = SEM_muscogee_language_schools
 			modifier = {
 				research_speed_factor = 0.02
 				political_power_gain = 0.01
@@ -268,6 +313,7 @@ ideas = {
 		}
 		SEM_mikasuki_national_language = {
 			allowed = { original_tag = SEM }
+			picture = SEM_national_recognition_of_muscogee
 			modifier = {
 				research_speed_factor = 0.05
 				political_power_gain = 0.15
@@ -276,12 +322,14 @@ ideas = {
 		}
 		SEM_seminole_tribal_libraries = {
 			allowed = { original_tag = SEM }
+			picture = SEM_seminole_tribal_libraries
 			modifier = {
 				research_speed_factor = 0.04
 			}
 		}
 		SEM_seminole_tourism_industry = {
 			allowed = { original_tag = SEM }
+			picture = SEM_continue_seminole_tourism
 			modifier = {
 				stability_factor = -0.03
 				consumer_goods_factor = -0.08
@@ -289,6 +337,7 @@ ideas = {
 		}
 		SEM_our_merchant_fleet = {
 			allowed = { original_tag = SEM }
+			picture = SEM_merchant_fleet
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.05 
@@ -301,6 +350,7 @@ ideas = {
 		}
 		SEM_our_merchant_fleet_1 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_merchant_fleet
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.08 
@@ -314,6 +364,7 @@ ideas = {
 		}
 		SEM_mikasuki_code_talkers = {
 			allowed = { original_tag = SEM }
+			picture = SEM_muscogee_code_talkers
 			modifier = {
 				encryption_factor = 0.3
 				army_intel_to_others = -15
@@ -323,6 +374,7 @@ ideas = {
 		}
 		SEM_local_manufacturing_1 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_native_manufacturing
 			modifier = {
 				production_lack_of_resource_penalty_factor = -0.1 
 				line_change_production_efficiency_factor = 0.05
@@ -333,6 +385,7 @@ ideas = {
 		}
 		SEM_local_manufacturing_2 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_native_manufacturing
 			modifier = {
 				production_lack_of_resource_penalty_factor = -0.1 
 				line_change_production_efficiency_factor = 0.05
@@ -345,6 +398,7 @@ ideas = {
 		}
 		SEM_local_manufacturing_3 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_native_manufacturing
 			modifier = {
 				production_lack_of_resource_penalty_factor = -0.15 
 				line_change_production_efficiency_factor = 0.07
@@ -362,6 +416,7 @@ ideas = {
 		}
 		SEM_guerilla_warfare_1 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_our_ancestors_warfare
 			modifier = {
 				experience_gain_army_unit_factor = -0.1
 				conscription = 0.01
@@ -371,6 +426,7 @@ ideas = {
 		}
 		SEM_guerilla_warfare_2 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_our_ancestors_warfare
 			modifier = {
 				experience_gain_army_unit_factor = -0.1
 				conscription = 0.01
@@ -383,6 +439,7 @@ ideas = {
 		}
 		SEM_guerilla_warfare_3 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_our_ancestors_warfare
 			modifier = {
 				experience_gain_army_unit_factor = -0.1
 				conscription = 0.01
@@ -397,6 +454,7 @@ ideas = {
 		}
 		SEM_guerilla_warfare_4 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_our_ancestors_warfare
 			modifier = {
 				experience_gain_army_unit_factor = -0.1
 				conscription = 0.01
@@ -413,6 +471,7 @@ ideas = {
 		}
 		SEM_guerilla_warfare_5 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_our_ancestors_warfare
 			modifier = {
 				experience_gain_army_unit_factor = -0.1
 				conscription = 0.01
@@ -429,6 +488,7 @@ ideas = {
 		}
 		SEM_survivalism = {
 			allowed = { original_tag = SEM }
+			#picture =
 			modifier = {
 				supply_consumption_factor = -0.25
 				supply_combat_penalties_on_core_factor = -0.5
@@ -438,6 +498,7 @@ ideas = {
 		}
 		SEM_survivalism_1 = {
 			allowed = { original_tag = SEM }
+			#picture =
 			modifier = {
 				supply_consumption_factor = -0.25
 				supply_combat_penalties_on_core_factor = -0.5
@@ -455,6 +516,7 @@ ideas = {
 		}
 		SEM_fillibusters = {
 			allowed = { original_tag = SEM }
+			picture = SEM_the_patriot_army
 			modifier = {
 				supply_consumption_factor = 0.1
 				weekly_manpower = -50
@@ -464,6 +526,7 @@ ideas = {
 		}
 		SEM_fillibusters_1 = {
 			allowed = { original_tag = SEM }
+			picture = SEM_the_patriot_army
 			modifier = {
 				supply_consumption_factor = 0.25
 				weekly_manpower = -75
@@ -473,11 +536,71 @@ ideas = {
 		}
 		SEM_council_revolt = {
 			allowed = { original_tag = SEM }
+			picture = SEM_seminole_council_revolt
 			modifier = {
 				power_balance_weekly = -0.01
 				political_power_factor = -0.15
 				war_support_factor = -0.1
 			}
 		}
-	}		
-}
+	}
+		### COMPANIES ###
+
+	industrial_concern = {
+
+		SEM_seminole_oil = {
+
+				picture = 
+				allowed = {
+					original_tag = SEM
+				}
+					
+				research_bonus = {
+					synth_resources = 0.10
+				}
+					
+				traits = { refinery_concern }
+					
+				modifier = {
+					production_oil_factor = 0.15
+					factory_energy_consumption = -0.05
+				}
+			}
+
+		SEM_hard_rock_international = {
+
+			picture = 
+			allowed = {
+				original_tag = SEM
+			}
+					
+			research_bonus = {
+				industry = 0.10
+			}
+					
+			traits = { industrial_concern }
+					
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		SEM_seminole_chickee = {
+
+			picture = 
+			allowed = {
+				original_tag = SEM
+			}
+				
+			research_bonus = {
+				industry = 0.10
+			}
+					
+			traits = { construction_company }
+					
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}	
+}		

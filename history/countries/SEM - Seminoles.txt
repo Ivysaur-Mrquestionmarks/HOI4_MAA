@@ -69,6 +69,11 @@ set_variable = { SEM_stability_factor = 0 }
 set_variable = { SEM_war_support_factor = 0 }
 set_variable = { SEM_monthly_population = 0 }
 set_variable = { SEM_army_org_factor = 0 }
+set_variable = { SEM_army_attack_factor  = 0 }
+set_variable = { SEM_production_speed_buildings_factor = 0 }
+set_variable = { SEM_industrial_capacity_factory = 0 }
+set_variable = { SEM_army_org_factor = 0 }
+set_variable = { SEM_global_building_slots_factor = 0 }
 
 ### Country Leaders ###
 recruit_character = SEM_marcellus_osceola_jr

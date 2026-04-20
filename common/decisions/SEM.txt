@@ -425,11 +425,11 @@ SEM_whites_vs_natives = {
 			}
 			IF = {
 				limit = {
-					has_idea = SEM_native_people_be_like
+					has_idea = SEM_native_people_be_like_inflamed
 				}
 				swap_ideas = {
-					remove_idea = SEM_native_people_be_like
-					add_idea = SEM_native_people_be_like_happy
+					remove_idea = SEM_native_people_be_like_inflamed
+					add_idea = SEM_native_people_be_like_worried
 				}
 			}
 			581 = {
@@ -482,11 +482,11 @@ SEM_whites_vs_natives = {
 			}
 			IF = {
 				limit = {
-					has_idea = SEM_native_people_be_like
+					has_idea = SEM_native_people_be_like_inflamed
 				}
 				swap_ideas = {
-					remove_idea = SEM_native_people_be_like
-					add_idea = SEM_native_people_be_like_happy
+					remove_idea = SEM_native_people_be_like_inflamed
+					add_idea = SEM_native_people_be_like_worried
 				}
 			}
 		}
@@ -503,7 +503,7 @@ SEM_whites_vs_natives = {
 		icon = GFX_decision_generic_independence
 
 		allowed = {
-			has_country_flag = SEM_relation_system
+			original_tag = SEM
 		}
 		available = {
 			NOT = {
@@ -567,22 +567,171 @@ SEM_whites_vs_natives = {
 		}
 	}
 
+	SEM_promise_change = {
+
+		icon = GFX_decision_generic_independence
+
+		allowed = {
+			original_tag = SEM
+		}
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = SEM_promote_cooperation_between_the_races			
+		}
+		cost = 25
+
+		days_re_enable = 100
+
+		is_good = yes
+
+		complete_effect = {
+			add_days_mission_timeout = {
+			    mission = SEM_native_bad_mission
+			    days = 30
+			}
+			add_days_mission_timeout = {
+			    mission = SEM_white_bad_mission
+			    days = 30
+			}
+		}
+	}
+
+	SEM_terrorize_state = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = SEM
+		}
+		available = {
+
+		}
+		visible = {
+			#OR = {
+			#	has_completed_focus = SEM_land_back
+			#}
+		}
+
+		state_target = yes
+
+		target_array = controlled_states
+
+		target_trigger = {
+			#OR = {
+			#	has_completed_focus = SEM_land_back
+			#}
+			FROM = {
+				is_owned_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		cost = 15
+
+		days_re_enable = 100
+
+		days_remove = 10
+
+		ai_will_do = {
+			base = 200
+		}
+
+		modifier = {
+			
+		}
+
+
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			FROM = {
+				add_resistance = -5
+				add_compliance = 5
+			}
+			random_list = {
+				    10 = {
+				    	FROM = {
+				    		damage_building = {
+							   type = infrastructure
+							   state = 123
+							   damage = 0.5
+							}
+							add_manpower = -15
+				    	}
+				        
+						add_stability = -0.02
+				    }
+				    10 = {
+				    	FROM = {
+				    		damage_building = {
+								type = arms_factory
+								state = 123
+								damage = 0.5
+							}
+							add_manpower = -25
+				    	}
+				      
+						add_stability = -0.02
+				    }
+				    10 = {
+				    	FROM = {
+					    	damage_building = {
+							  type = industrial_complex
+							  state = 123
+							  damage = 0.5
+							}
+							add_manpower = -50
+				    	}
+				        
+						add_stability = -0.02
+				    }
+				    10 = {
+				    	FROM = {
+					    	damage_building = {
+							  type = industrial_complex
+							  state = 123
+							  damage = 0.5
+							}
+							damage_building = {
+							  type = infrastructure
+							  state = 123
+							  damage = 0.5
+							}
+							add_manpower = -100
+				    	}
+				        
+						add_stability = -0.04
+				    }
+				}
+		}
+	}
 	SEM_white_bad_mission = {
 
 		icon = GFX_decision_SWI_consolidate_council_power
 
 		allowed = {
-			has_country_flag = SEM_relation_system
+			original_tag = SEM
+			
 		}
 		available = {
 			OR = {
 				has_completed_focus = SEM_one_nation_two_systems
 				has_completed_focus = SEM_down_the_warpath
 			}
-			
 		}
 		visible = {
-			
+			NOT = {
+				OR = {
+					has_completed_focus = SEM_one_nation_two_systems
+					has_completed_focus = SEM_down_the_warpath
+				}
+			}
 		}
 		#cost = 100
 		
@@ -597,20 +746,17 @@ SEM_whites_vs_natives = {
 		timeout_effect  = {
 			IF = {
 				limit = {
-					has_idea = SEM_white_people_be_like_happy
+					has_idea = SEM_white_people_be_like_inflamed
 				}
-				swap_ideas = {
-					remove_idea = SEM_white_people_be_like_happy
-					add_idea = SEM_white_people_be_like_content
-				}
+				add_stability = -0.1
 			}
 			IF = {
 				limit = {
-					has_idea = SEM_white_people_be_like_content
+					has_idea = SEM_white_people_be_like_angry
 				}
 				swap_ideas = {
-					remove_idea = SEM_white_people_be_like_content
-					add_idea = SEM_white_people_be_like
+					remove_idea = SEM_white_people_be_like_angry
+					add_idea = SEM_white_people_be_like_inflamed
 				}
 			}
 			IF = {
@@ -624,18 +770,21 @@ SEM_whites_vs_natives = {
 			}
 			IF = {
 				limit = {
-					has_idea = SEM_white_people_be_like_angry
+					has_idea = SEM_white_people_be_like_content
 				}
 				swap_ideas = {
-					remove_idea = SEM_white_people_be_like_angry
-					add_idea = SEM_white_people_be_like_inflamed
+					remove_idea = SEM_white_people_be_like_content
+					add_idea = SEM_white_people_be_like
 				}
 			}
 			IF = {
 				limit = {
-					has_idea = SEM_white_people_be_like_inflamed
+					has_idea = SEM_white_people_be_like_happy
 				}
-				add_stability = -0.1
+				swap_ideas = {
+					remove_idea = SEM_white_people_be_like_happy
+					add_idea = SEM_white_people_be_like_content
+				}
 			}
 		}
 	}
@@ -643,14 +792,23 @@ SEM_whites_vs_natives = {
 
 		icon = GFX_decision_SWI_consolidate_council_power
 
+		allowed = {
+			original_tag = SEM
+			
+		}
 		available = {
 			OR = {
 				has_completed_focus = SEM_one_nation_two_systems
 				has_completed_focus = SEM_down_the_warpath
-			}	
+			}
 		}
 		visible = {
-			
+			NOT = {
+				OR = {
+					has_completed_focus = SEM_one_nation_two_systems
+					has_completed_focus = SEM_down_the_warpath
+				}
+			}
 		}
 		#cost = 100
 		
@@ -665,20 +823,17 @@ SEM_whites_vs_natives = {
 		timeout_effect  = {
 			IF = {
 				limit = {
-					has_idea = SEM_native_people_be_like_happy
+					has_idea = SEM_native_people_be_like_inflamed
 				}
-				swap_ideas = {
-					remove_idea = SEM_native_people_be_like_happy
-					add_idea = SEM_native_people_be_like
-				}
+				add_stability = -0.1
 			}
 			IF = {
 				limit = {
-					has_idea = SEM_native_people_be_like
+					has_idea = SEM_native_people_be_like_angry
 				}
 				swap_ideas = {
-					remove_idea = SEM_native_people_be_like
-					add_idea = SEM_native_people_be_like_worried
+					remove_idea = SEM_native_people_be_like_angry
+					add_idea = SEM_native_people_be_like_inflamed
 				}
 			}
 			IF = {
@@ -692,19 +847,23 @@ SEM_whites_vs_natives = {
 			}
 			IF = {
 				limit = {
-					has_idea = SEM_native_people_be_like_angry
+					has_idea = SEM_native_people_be_like
 				}
 				swap_ideas = {
-					remove_idea = SEM_native_people_be_like_angry
-					add_idea = SEM_native_people_be_like_inflamed
+					remove_idea = SEM_native_people_be_like
+					add_idea = SEM_native_people_be_like_worried
 				}
 			}
 			IF = {
 				limit = {
-					has_idea = SEM_native_people_be_like_inflamed
+					has_idea = SEM_native_people_be_like_happy
 				}
-				add_stability = -0.1
+				swap_ideas = {
+					remove_idea = SEM_native_people_be_like_happy
+					add_idea = SEM_native_people_be_like
+				}
 			}
+						
 		}
 	}
 }

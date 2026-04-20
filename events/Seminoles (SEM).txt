@@ -133,8 +133,10 @@ country_event = {
 		add_stability = 0.01
 		add_political_power = 15
 		hidden_effect = {
-			id = sem_culture.1
-			days = 365
+			country_event = {
+				id = sem_culture.1
+				days = 365
+			}			
 		}
 	}
 }
@@ -153,6 +155,47 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = sem_culture.3
+	title = sem_culture.3.t
+	desc = sem_culture.3.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	option = {
+		name = sem_culture.3.a 
+		
+		add_stability = 0.02
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = sem_culture.4
+	title = sem_culture.4.t
+	desc = sem_culture.4.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	option = {
+		name = sem_culture.4.a 
+		
+		add_stability = 0.02
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = sem_culture.5
+	title = sem_culture.5.t
+	desc = sem_culture.5.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	option = {
+		name = sem_culture.5.a 
+		
+		add_stability = 0.02
+		add_political_power = 25
+	}
+}
 add_namespace = sem_army
 
 country_event = {

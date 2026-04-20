@@ -70,13 +70,18 @@ SEM_tribal_autonomy = {
 }
 
 SEM_seminole_traditions = {
-	#icon = ""
+	icon = "GFX_idea_FLO_trumpism"
 	army_core_defence_factor = SEM_army_core_defence_factor 
 	political_power_factor = SEM_political_power_factor
 	stability_factor = SEM_stability_factor 
 	war_support_factor = SEM_war_support_factor
 	monthly_population = SEM_monthly_population 
 	army_org_factor = SEM_army_org_factor 
+	army_attack_factor = SEM_army_attack_factor
+	production_speed_buildings_factor = SEM_production_speed_buildings_factor
+	industrial_capacity_factory = SEM_industrial_capacity_factory
+	army_org_factor = SEM_army_org_factor
+	global_building_slots_factor = SEM_global_building_slots_factor
 }
 
 FRA_rural_rebels = {

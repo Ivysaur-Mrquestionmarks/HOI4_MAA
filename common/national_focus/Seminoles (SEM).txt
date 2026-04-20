@@ -368,9 +368,9 @@ focus_tree = {
 		id = SEM_remembering_the_seminole_wars
 		icon = GFX_goal_SEM_remember_the_seminole_wars
 		cost = 5.00
-		#allow_branch = {
-		#	has_completed_focus = SEM_a_new_florida
-		#}
+		allow_branch = {
+			#has_completed_focus = SEM_a_new_florida
+		}
 		ai_will_do = { 
 			factor = 300
 		}
@@ -922,9 +922,9 @@ focus_tree = {
 		id = SEM_a_people_unconquered
 		icon = GFX_goal_SEM_an_unconquered_people
 		cost = 5.00
-		#allow_branch = {
-		#	has_completed_focus = SEM_a_new_florida
-		#}
+		allow_branch = {
+			#has_completed_focus = SEM_a_new_florida
+		}
 		ai_will_do = { 
 			factor = 300
 		}
@@ -934,7 +934,8 @@ focus_tree = {
 			has_war = no
 		}	
 		completion_reward = {
-			add_war_support = 0.1
+			add_political_power = 100
+			add_war_support = 0.05
 			set_power_balance = {
 				id = SEM_tribe_vs_osceola_bop
 			}
@@ -1075,12 +1076,17 @@ focus_tree = {
 				    instant_build = yes
 				    province = 11157
 				}
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
 			}
 			346 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 			}
 			581 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 			}
 		}
 	}
@@ -1188,6 +1194,7 @@ focus_tree = {
 		}	
 		available = {
 			industrial_complex > 24
+			owns_state = 327
 		}
 		prerequisite = {
 			focus = SEM_strong_supply_lines
@@ -1323,7 +1330,7 @@ focus_tree = {
 			has_completed_focus = SEM_wipe_away_the_remnants_of_bia
 		}
 		completion_reward = {
-			add_stability = 0.1
+			add_stability = 0.05
 			add_dynamic_modifier = {
 				modifier = SEM_seminole_traditions
 			}
@@ -1333,7 +1340,7 @@ focus_tree = {
 		id = SEM_maintaining_our_traditions
 		icon = GFX_goal_SEM_maintain_our_traditions
 		cost = 5.00
-		x = 4
+		x = 0
 		y = 1
 		relative_position_id = SEM_preserving_seminole_culture
 		ai_will_do = { 
@@ -1343,7 +1350,7 @@ focus_tree = {
 			focus = SEM_preserving_seminole_culture
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			
 			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
 			add_to_variable = { SEM_stability_factor = 0.10 tooltip = stability_factor_tt }
 		}
@@ -1352,9 +1359,9 @@ focus_tree = {
 		id = SEM_embrace_christianity
 		icon = GFX_goal_SEM_embrace_christianity
 		cost = 5.00
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = SEM_maintaining_our_traditions
+		relative_position_id = SEM_continue_seminole_tourism
 		ai_will_do = { 
 			factor = 300
 		}
@@ -1363,7 +1370,8 @@ focus_tree = {
 			focus = SEM_return_to_animistic_tradition
 		}
 		prerequisite = {
-			focus = SEM_maintaining_our_traditions
+			focus = SEM_continue_seminole_tourism
+			#focus = SEM_end_the_rape_of_culture
 		}
 		completion_reward = {
 			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
@@ -1374,10 +1382,10 @@ focus_tree = {
 	focus = {
 		id = SEM_return_to_animistic_tradition
 		icon = GFX_goal_SEM_return_to_animistic_tradition
-		cost = 5.00
-		x = 4
+		cost = 4.00
+		x = 5
 		y = 1
-		relative_position_id = SEM_maintaining_our_traditions
+		relative_position_id = SEM_continue_seminole_tourism
 		ai_will_do = { 
 			factor = 300
 		}
@@ -1386,7 +1394,8 @@ focus_tree = {
 			focus = SEM_embrace_christianity
 		}
 		prerequisite = {
-			focus = SEM_maintaining_our_traditions
+			#focus = SEM_continue_seminole_tourism
+			focus = SEM_end_the_rape_of_culture
 		}
 		completion_reward = {
 			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
@@ -1399,9 +1408,9 @@ focus_tree = {
 		id = SEM_recognize_the_israel_connection
 		icon = GFX_goal_SEM_recognize_the_israeli_condition
 		cost = 5.00
-		x = 2
+		x = 3
 		y = 1
-		relative_position_id = SEM_maintaining_our_traditions
+		relative_position_id = SEM_continue_seminole_tourism
 		ai_will_do = { 
 			factor = 300
 		}
@@ -1410,7 +1419,8 @@ focus_tree = {
 			focus = SEM_embrace_christianity
 		}
 		prerequisite = {
-			focus = SEM_maintaining_our_traditions
+			focus = SEM_continue_seminole_tourism
+			focus = SEM_end_the_rape_of_culture
 		}
 		completion_reward = {
 			country_event = sem_israel.1
@@ -1428,7 +1438,7 @@ focus_tree = {
 					}
 				}
 			}
-			
+
 			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
 			add_to_variable = { SEM_stability_factor = -0.20 tooltip = stability_factor_tt }
 			add_to_variable = { SEM_political_power_factor = 0.10 tooltip = political_power_factor_tt }
@@ -1438,7 +1448,7 @@ focus_tree = {
 	focus = {
 		id = SEM_annual_green_corn_ceremony
 		icon = GFX_goal_SEM_green_corn_dance
-		cost = 5.00
+		cost = 2.00
 		x = -4
 		y = 1
 		relative_position_id = SEM_maintaining_our_traditions
@@ -1459,7 +1469,7 @@ focus_tree = {
 	focus = {
 		id = SEM_promote_seminole_stickball
 		icon = GFX_goal_SEM_game_of_stickball
-		cost = 5.00
+		cost = 2.00
 		x = -2
 		y = 1
 		relative_position_id = SEM_maintaining_our_traditions
@@ -1478,6 +1488,70 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SEM_alligator_wrestling
+		icon = GFX_goal_SEM_game_of_stickball
+		cost = 2.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_maintaining_our_traditions
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_maintaining_our_traditions
+		}
+		completion_reward = {
+			country_event = {
+				id = sem_culture.3
+			}
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_army_attack_factor = 0.04 tooltip = army_attack_factor_tt }
+		}
+	}
+	focus = {
+		id = SEM_chickee_building
+		icon = GFX_goal_SEM_game_of_stickball
+		cost = 2.00
+		x = 2
+		y = 1
+		relative_position_id = SEM_maintaining_our_traditions
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_maintaining_our_traditions
+		}
+		completion_reward = {
+			country_event = {
+				id = sem_culture.4
+			}
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { SEM_global_building_slots_factor = 0.05 tooltip = global_building_slots_factor_tt }
+		}
+	}
+	focus = {
+		id = SEM_patchworking
+		icon = GFX_goal_SEM_game_of_stickball
+		cost = 2.00
+		x = 4
+		y = 1
+		relative_position_id = SEM_maintaining_our_traditions
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_maintaining_our_traditions
+		}
+		completion_reward = {
+			country_event = {
+				id = sem_culture.5
+			}
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_industrial_capacity_factory = 0.08 tooltip = industrial_capacity_factory_tt }
+		}
+	}
+	focus = {
 		id = SEM_continue_seminole_tourism
 		icon = GFX_goal_SEM_continue_seminole_tourism
 		cost = 5.00
@@ -1490,17 +1564,26 @@ focus_tree = {
 		prerequisite = {
 			focus = SEM_promote_seminole_stickball
 			focus = SEM_annual_green_corn_ceremony
+			focus = SEM_alligator_wrestling
+			focus = SEM_chickee_building
+			focus = SEM_patchworking
 		}
 		mutually_exclusive = {
 			focus = SEM_end_the_rape_of_culture
 		}
 		completion_reward = {
 			add_ideas = SEM_seminole_tourism_industry
+
+			custom_effect_tooltip = sem_new_line_tt
+
 			add_power_balance_value = {
 			    id = SEM_tribe_vs_osceola_bop
 			    value = -0.1
 			    #tooltip_side = my_bop_side
 			}
+
+			custom_effect_tooltip = sem_new_line_tt
+
 			IF = {
 				limit = {
 					has_idea = SEM_white_people_be_like_happy
@@ -1549,7 +1632,7 @@ focus_tree = {
 		id = SEM_end_the_rape_of_culture
 		icon = GFX_goal_SEM_end_the_rape_of_culture
 		cost = 5.00
-		x = 8
+		x = 5
 		y = 1
 		relative_position_id = SEM_promote_seminole_stickball
 		ai_will_do = { 
@@ -1558,9 +1641,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SEM_promote_seminole_stickball
 			focus = SEM_annual_green_corn_ceremony
-		}
-		prerequisite = {
-			focus = SEM_ban_interracial_marriage
+			focus = SEM_alligator_wrestling
+			focus = SEM_chickee_building
+			focus = SEM_patchworking
 		}
 		mutually_exclusive = {
 			focus = SEM_continue_seminole_tourism
@@ -1613,15 +1696,15 @@ focus_tree = {
 	focus = {
 		id = SEM_standardize_the_mikasuki_language
 		icon = GFX_goal_SEM_standardize_the_muscogee_language
-		cost = 5.00
-		x = -1
+		cost = 1.00
+		x = -7
 		y = 1
-		relative_position_id = SEM_fund_the_seminole_tribal_libraries
+		relative_position_id = SEM_preserving_seminole_culture
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_fund_the_seminole_tribal_libraries
+			focus = SEM_preserving_seminole_culture
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -1633,7 +1716,7 @@ focus_tree = {
 	focus = {
 		id = SEM_establish_mikasuki_language_schools
 		icon = GFX_goal_SEM_muscogee_language_schools
-		cost = 5.00
+		cost = 1.00
 		x = 1
 		y = 1
 		relative_position_id = SEM_standardize_the_mikasuki_language
@@ -1658,8 +1741,8 @@ focus_tree = {
 	focus = {
 		id = SEM_elevate_mikasuki_as_the_national_language
 		icon = GFX_goal_SEM_elevate_muscogee_as_the_national_language
-		cost = 5.00
-		x = 4
+		cost = 2.00
+		x = 1
 		y = 1
 		relative_position_id = SEM_establish_mikasuki_language_schools
 		ai_will_do = { 
@@ -1667,10 +1750,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SEM_establish_mikasuki_language_schools
-		}
-		prerequisite = {
-			focus = SEM_continue_seminole_tourism
-			focus = SEM_end_the_rape_of_culture
 		}
 		available = {
 			NOT = {
@@ -1685,7 +1764,7 @@ focus_tree = {
 		id = SEM_fund_the_seminole_tribal_libraries
 		icon = GFX_goal_SEM_fund_seminole_libraries
 		cost = 5.00
-		x = -3
+		x = 7
 		y = 1
 		relative_position_id = SEM_preserving_seminole_culture
 		ai_will_do = { 
@@ -1704,12 +1783,12 @@ focus_tree = {
 		cost = 5.00
 		x = -1
 		y = 1
-		relative_position_id = SEM_preserving_seminole_culture
+		relative_position_id = SEM_fund_the_seminole_tribal_libraries
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_preserving_seminole_culture
+			focus = SEM_fund_the_seminole_tribal_libraries
 		}
 		completion_reward = {
 			add_political_power = 75
@@ -1722,20 +1801,17 @@ focus_tree = {
 		id = SEM_decolonize_the_historical_narrative
 		icon = GFX_goal_SEM_decolonize_the_historical_narrative
 		cost = 5.00
-		x = -2
-		y = 2
-		relative_position_id = SEM_preserving_seminole_culture
+		x = -1
+		y = 1
+		relative_position_id = SEM_promote_the_seminole_museum
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
 			focus = SEM_promote_the_seminole_museum
 		}
-		prerequisite = {
-			focus = SEM_fund_the_seminole_tribal_libraries
-		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_political_power = 25
 			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
 			add_to_variable = { SEM_war_support_factor = 0.1 tooltip = war_support_factor_tt }
 			add_to_variable = { SEM_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
@@ -1786,14 +1862,56 @@ focus_tree = {
 			IF = {
 				limit = {
 					NOT = {
-						has_completed_focus = SEM_pan_indianism
+						has_completed_focus = SEM_pan_tribal_alliance
 					}
 				}
 				add_ideas = SEM_council_revolt
+
+				custom_effect_tooltip = sem_new_line_tt
+
 				add_power_balance_value = {
 				    id = SEM_tribe_vs_osceola_bop
 				    value = -0.1
 				    #tooltip_side = my_bop_side
+				}
+
+				custom_effect_tooltip = sem_new_line_tt
+
+				IF = {
+					LIMIT = {
+						has_idea = SEM_native_people_be_like_happy
+					}
+					swap_ideas = {
+						remove_idea = SEM_native_people_be_like_happy
+						add_idea =  SEM_native_people_be_like_inflamed
+					}
+				}
+				IF = {
+					LIMIT = {
+						has_idea = SEM_native_people_be_like
+					}
+					swap_ideas = {
+						remove_idea = SEM_native_people_be_like
+						add_idea =  SEM_native_people_be_like_inflamed
+					}
+				}
+				IF = {
+					LIMIT = {
+						has_idea = SEM_native_people_be_like_worried
+					}
+					swap_ideas = {
+						remove_idea = SEM_native_people_be_like_worried
+						add_idea =  SEM_native_people_be_like_inflamed
+					}
+				}
+				IF = {
+					LIMIT = {
+						has_idea = SEM_native_people_be_like_angry
+					}
+					swap_ideas = {
+						remove_idea = SEM_native_people_be_like_angry
+						add_idea =  SEM_native_people_be_like_inflamed
+					}
 				}
 			}
 
@@ -1821,7 +1939,7 @@ focus_tree = {
 					}
 				}
 				remove_core_of = SEM
-				add_resistance = 75
+				add_resistance = 50
 			}
 			
 		}
@@ -1906,7 +2024,7 @@ focus_tree = {
 			focus = SEM_down_the_warpath
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			custom_effect_tooltip = SEM_terrorize_state_tt
 			add_timed_idea = {
 				idea = SEM_taking_back_what_is_ours
 				days = 720
@@ -2119,6 +2237,8 @@ focus_tree = {
 				add_core_of = SEM
 				add_manpower = -20000
 			}
+			add_ideas = SEM_victory_over_the_white_man
+			remove_ideas = SEM_fillibusters_1
 		}
 	}
 	focus = {
@@ -2256,8 +2376,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SEM_relax_attitudes_towards_interracial_marriages
-			focus = SEM_end_the_rape_of_culture
-			focus = SEM_continue_seminole_tourism
+			focus = SEM_ban_interracial_marriage
 		}
 		available = {
 			NOT = {
@@ -2275,37 +2394,38 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 			    ideology = democrat
-			    popularity = 0.05
+			    popularity = 0.1
 			}
 			add_popularity = {
 			    ideology = republican
-			    popularity = 0.15
+			    popularity = 0.1
 			}
 			remove_ideas = SEM_fillibusters
 			IF = {
 				limit = {
 					has_idea = SEM_native_people_be_like
 				}
-				remove_idea = has_idea = SEM_native_people_be_like
+				remove_ideas = has_idea = SEM_native_people_be_like
 			}
 			IF = {
 				limit = {
 					has_idea = SEM_native_people_be_like_happy
 				}
-				remove_idea = SEM_native_people_be_like_happy
+				remove_ideas = SEM_native_people_be_like_happy
 			}
 			IF = {
 				limit = {
 					has_idea = SEM_white_people_be_like_content
 				}
-				remove_idea = SEM_white_people_be_like_content
+				remove_ideas = SEM_white_people_be_like_content
 			}
 			IF = {
 				limit = {
 					has_idea = SEM_white_people_be_like_happy
 				}
-				remove_idea = has_idea = SEM_white_people_be_like_happy
+				remove_ideas = has_idea = SEM_white_people_be_like_happy
 			}
+			add_ideas = SEM_racial_harmony
 		}
 	}
 	focus = {
@@ -2322,7 +2442,13 @@ focus_tree = {
 			focus = SEM_promote_cooperation_between_the_races
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_war_support = 0.03
+			581 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			584 = {
+				add_extra_state_shared_building_slots = 1
+			}
 			IF = {
 				limit = {
 					has_idea = SEM_native_people_be_like_happy
@@ -2497,7 +2623,7 @@ focus_tree = {
 	focus = {
 		id = SEM_question_of_blood
 		icon = GFX_goal_SEM_policy_of_blood_quantum
-		cost = 5.00
+		cost = 2.00
 		x = -12
 		y = 1
 		relative_position_id = SEM_a_people_unconquered
@@ -2511,7 +2637,7 @@ focus_tree = {
 			has_completed_focus = SEM_wipe_away_the_remnants_of_bia
 		}
 		completion_reward = {
-			add_political_power = -100
+			add_political_power = 10
 		}
 	}
 	focus = {
@@ -2545,7 +2671,7 @@ focus_tree = {
 		icon = GFX_goal_SEM_ban_interracial_marriage
 		cost = 5.00
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SEM_full_bloods_only
 		ai_will_do = { 
 			factor = 300
@@ -2603,7 +2729,7 @@ focus_tree = {
 	focus = {
 		id = SEM_quarter_bloods
 		icon = GFX_goal_SEM_reaffirm_the_quarter_blood_policy
-		cost = 5.00
+		cost = 2.00
 		x = 0
 		y = 1
 		relative_position_id = SEM_question_of_blood
@@ -2619,6 +2745,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
+			add_political_power = 15
 			add_power_balance_value = {
 			    id = SEM_tribe_vs_osceola_bop
 			    value = -0.1
@@ -2707,10 +2834,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_political_power = 75
+
 			add_timed_idea = {
 				idea = SEM_tribal_resistance
 				days = 90
 			}
+
 			IF = {
 				limit = {
 					has_idea = SEM_native_people_be_like_happy
@@ -2935,7 +3065,7 @@ focus_tree = {
 	focus = {
 		id = SEM_reconcile_with_the_miccosukee
 		icon = GFX_goal_SEM_reconcile_with_the_miccosukee
-		cost = 5.00
+		cost = 3.00
 		x = 3
 		y = 1
 		relative_position_id = SEM_a_people_unconquered
@@ -2966,7 +3096,7 @@ focus_tree = {
 	focus = {
 		id = SEM_there_are_only_the_seminoles
 		icon = GFX_goal_SEM_there_are_only_seminoles
-		cost = 5.00
+		cost = 4.00
 		x = 5
 		y = 1
 		relative_position_id = SEM_a_people_unconquered
@@ -2999,7 +3129,7 @@ focus_tree = {
 	focus = {
 		id = SEM_reaffirm_the_miccosukee_autonomy
 		icon = GFX_goal_SEM_reaffirm_the_miccosukee_autonomy
-		cost = 5.00
+		cost = 3.00
 		x = -1
 		y = 2
 		relative_position_id = SEM_reconcile_with_the_miccosukee
@@ -3201,7 +3331,7 @@ focus_tree = {
 	focus = {
 		id = SEM_absorb_the_reservation
 		icon = GFX_goal_SEM_absorb_the_reservation
-		cost = 5.00
+		cost = 4.00
 		x = 1
 		y = 1
 		relative_position_id = SEM_there_are_only_the_seminoles
@@ -3291,7 +3421,7 @@ focus_tree = {
 		id = SEM_navajo_and_tohono_brothers
 		icon = GFX_goal_SEM_entrench_seminole_supremacy
 		cost = 5.00
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SEM_ties_with_the_oklahoman_seminoles
 		ai_will_do = { 
@@ -3447,7 +3577,7 @@ focus_tree = {
 		id = SEM_osceola_line
 		icon = GFX_goal_SEM_entrench_seminole_supremacy
 		cost = 5.00
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = SEM_the_panhandle_deal
 		ai_will_do = { 
@@ -3576,7 +3706,7 @@ focus_tree = {
 		icon = GFX_goal_SEM_entrench_seminole_supremacy
 		cost = 5.00
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = SEM_the_panhandle_deal
 		ai_will_do = { 
 			factor = 100
