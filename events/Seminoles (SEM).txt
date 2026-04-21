@@ -72,6 +72,248 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = seminoles.5
+	title = seminoles.5.t
+	desc = seminoles.5.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = seminoles.5.a
+		
+		add_stability = 0.1
+		add_political_power = 100
+		every_state = {
+			limit = {
+				OR = {
+					state = 322
+					state = 323
+					state = 327
+					state = 603
+					state = 324
+					state = 602
+				}
+			}
+			remove_core_of = CSA
+		}
+		release_puppet = CSA
+		CSA = {
+			set_cosmetic_tag = CSA_native
+		}
+	}
+	option = {
+		name = seminoles.5.b
+		every_state = {
+			limit = {
+				OR = {
+					state = 329
+					state = 328
+					state = 386
+					state = 508
+					state = 509
+					state = 506
+					state = 309
+					state = 290
+					state = 507
+					state = 299
+					state = 300
+					state = 284
+					state = 282
+					state = 283
+					state = 533
+					state = 293
+				}
+			}
+			add_core_of = SEM
+			transfer_state_to = SEM
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 263
+					state = 308
+					state = 264
+					state = 656
+					state = 534
+					state = 331
+					state = 266
+				}
+			}
+			add_core_of = NCA
+			transfer_state_to = NCA
+		}
+		puppet = NCA
+		NCA = {
+			set_cosmetic_tag = NCA_cherokee
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 280
+					state = 262
+					state = 333
+					state = 260
+					state = 593
+					state = 271
+					state = 591
+					state = 592
+				}
+			}
+			add_core_of = APA
+			transfer_state_to = APA
+		}
+		puppet = APA
+		APA = {
+			set_cosmetic_tag = APA_chocktaw
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 381
+					state = 551
+					state = 294
+					state = 552
+					state = 291
+					state = 303
+					state = 289
+				}
+			}
+			add_core_of = ABM
+			transfer_state_to = ABM
+		}
+		puppet = ABM
+		ABM = {
+			set_cosmetic_tag = ABM_creek
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 407
+					state = 388
+					state = 604
+					state = 605
+					state = 606
+					state = 287
+					state = 607
+					state = 608
+				}
+			}
+			add_core_of = MIS
+			transfer_state_to = MIS
+		}
+		puppet = MIS
+		MIS = {
+			set_cosmetic_tag = MIS_choctaw
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 611
+					state = 316
+					state = 317
+					state = 315
+					state = 307
+					state = 612
+					state = 609
+				}
+			}
+			add_core_of = LOU
+			transfer_state_to = LOU
+		}
+		puppet = LOU
+
+		LOU = {
+			set_cosmetic_tag = LOU_houma
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 279
+					state = 269
+					state = 505
+					state = 267
+					state = 535
+					state = 536
+				}
+			}
+			add_core_of = ARK
+			transfer_state_to = ARK
+		}
+		puppet = ARK
+
+		ARK = {
+			set_cosmetic_tag = ARK_quapaw
+		}
+
+	}
+	option = {
+		name = seminoles.5.c
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 329
+					state = 328
+					state = 386
+					state = 508
+					state = 509
+					state = 506
+					state = 309
+					state = 290
+					state = 507
+					state = 299
+					state = 300
+					state = 284
+					state = 282
+					state = 283
+					state = 533
+					state = 293
+				}
+			}
+			add_core_of = SEM
+			transfer_state_to = SEM
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = CSA
+					is_core_of = TEX
+					is_core_of = USA
+					is_core_of = FRA
+					is_core_of = AFS
+					is_core_of = GLA
+					is_core_of = NEW
+					is_core_of = WBK
+					is_core_of = VIR
+					is_core_of = NRA
+					is_core_of = KFC
+					is_core_of = MIL
+					is_core_of = MON
+					is_core_of = IDA
+					is_core_of = UTA
+					is_core_of = NAV
+					is_core_of = TOH
+					is_core_of = HOP
+					is_core_of = SIN
+					is_core_of = HAM
+					is_core_of = PRA
+					is_core_of = CAS
+					is_core_of = LIB
+					is_core_of = PAC
+				}
+			}
+			add_claim_by = SEM
+		}
+	}
+}
+
 add_namespace = sem_tot
 
 country_event = {

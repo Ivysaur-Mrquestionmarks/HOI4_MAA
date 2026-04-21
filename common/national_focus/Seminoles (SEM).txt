@@ -1489,7 +1489,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_alligator_wrestling
-		icon = GFX_goal_SEM_game_of_stickball
+		icon = GFX_goal_SEM_alligator_wrestling
 		cost = 2.00
 		x = 0
 		y = 1
@@ -1510,7 +1510,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_chickee_building
-		icon = GFX_goal_SEM_game_of_stickball
+		icon = GFX_goal_SEM_new_chickee_designs
 		cost = 2.00
 		x = 2
 		y = 1
@@ -1532,7 +1532,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_patchworking
-		icon = GFX_goal_SEM_game_of_stickball
+		icon = GFX_goal_SEM_seminole_patchwork
 		cost = 2.00
 		x = 4
 		y = 1
@@ -3372,7 +3372,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_america_in_chaos
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_america_in_chaos
 		cost = 5.00
 		x = 0
 		y = 7
@@ -3392,7 +3392,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_ties_with_the_oklahoman_seminoles
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_oklahoma_seminoles
 		cost = 5.00
 		x = -4
 		y = 1
@@ -3419,7 +3419,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_navajo_and_tohono_brothers
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_navajo_brothers
 		cost = 5.00
 		x = 0
 		y = 1
@@ -3447,7 +3447,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_showdown_in_dixie
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_dixie_showdown
 		cost = 5.00
 		x = -2
 		y = 1
@@ -3461,6 +3461,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SEM_opportunity_in_dixie
 			focus = SEM_the_panhandle_deal
+			focus = SEM_relax_in_the_sunshine
 		}
 		available = {
 			CSA = {
@@ -3482,8 +3483,8 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_opportunity_in_dixie
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
-		cost = 5.00
+		icon = GFX_goal_SEM_opportunity_in_the_south
+		cost = 2.00
 		x = 0
 		y = 1
 		relative_position_id = SEM_america_in_chaos
@@ -3496,6 +3497,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SEM_showdown_in_dixie
 			focus = SEM_the_panhandle_deal
+			focus = SEM_relax_in_the_sunshine
 		}
 		available = {
 			has_global_flag = Dixie_Collapse_Global
@@ -3537,8 +3539,35 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SEM_relax_in_the_sunshine
+		icon = GFX_goal_SEM_relax_in_the_sun
+		cost = 5.00
+		x = 4
+		y = 1
+		relative_position_id = SEM_america_in_chaos
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_america_in_chaos
+		}
+		mutually_exclusive = {
+			focus = SEM_showdown_in_dixie
+			focus = SEM_opportunity_in_dixie
+			focus = SEM_the_panhandle_deal
+		}
+		available = {
+		
+		}
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.2
+			add_war_support = -0.2
+		}
+	}
+	focus = {
 		id = SEM_the_panhandle_deal
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_panhandle_deal
 		cost = 5.00
 		x = 2
 		y = 1
@@ -3552,6 +3581,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SEM_showdown_in_dixie
 			focus = SEM_opportunity_in_dixie
+			focus = SEM_relax_in_the_sunshine
 		}
 		available = {
 			CSA = {
@@ -3575,7 +3605,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_osceola_line
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_osceola_line
 		cost = 5.00
 		x = -1
 		y = 1
@@ -3703,7 +3733,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_north_florida_removals
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_north_florida_removals
 		cost = 5.00
 		x = 1
 		y = 1
@@ -3723,7 +3753,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_reclaiming_our_ancestral_lands
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_reclaim_ancestral_land
 		cost = 5.00
 		x = -1
 		y = 1
@@ -3736,12 +3766,12 @@ focus_tree = {
 			focus = SEM_showdown_in_dixie
 		}
 		completion_reward = {
-			
+			country_event = seminoles.5
 		}
 	}
 	focus = {
 		id = SEM_liberate_the_united_states
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_liberate_the_united_states
 		cost = 5.00
 		x = 1
 		y = 1
@@ -3759,12 +3789,12 @@ focus_tree = {
 			has_completed_focus = SEM_pan_tribal_alliance
 		}
 		completion_reward = {
-			
+			add_war_support = 0.1
 		}
 	}
 	focus = {
 		id = SEM_the_past_redeemed
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_the_past_redeemed
 		cost = 5.00
 		x = -1
 		y = 1
@@ -3779,12 +3809,12 @@ focus_tree = {
 			focus = SEM_liberate_the_united_states
 		}
 		completion_reward = {
-			
+			add_stability = 0.2
 		}
 	}
 	focus = {
 		id = SEM_where_the_suffering_began
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_where_the_suffering_began
 		cost = 5.00
 		x = 0
 		y = 1
@@ -3824,7 +3854,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_reclaiming_the_thirteen_colonies
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_destroy_the_thirteen_colonies
 		cost = 5.00
 		x = -1
 		y = 1
@@ -3871,7 +3901,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_avenge_tecumsehs_confederacy
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_avenge_tehcumsehs_confederacy
 		cost = 5.00
 		x = 1
 		y = 1
@@ -3915,7 +3945,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_take_back_the_great_plains
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_take_back_the_great_plains
 		cost = 5.00
 		x = -1
 		y = 1
@@ -3965,7 +3995,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_from_sea_to_shining_sea
-		icon = GFX_goal_SEM_entrench_seminole_supremacy
+		icon = GFX_goal_SEM_from_sea_to_shining_sea
 		cost = 5.00
 		x = 0
 		y = 1
