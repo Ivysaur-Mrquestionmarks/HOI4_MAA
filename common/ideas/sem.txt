@@ -543,6 +543,67 @@ ideas = {
 				war_support_factor = -0.1
 			}
 		}
+		SEM_new_military = {
+			allowed = { original_tag = SEM }
+			picture = SEM_seminole_council_revolt
+			modifier = {
+				research_speed_factor = 0.05
+				experience_gain_army_factor = 0.1
+				max_planning_factor = 0.1
+			}
+		}
+		SEM_new_military_1 = {
+			allowed = { original_tag = SEM }
+			picture = SEM_seminole_council_revolt
+			modifier = {
+				research_speed_factor = 0.05
+				experience_gain_army_factor = 0.1
+				max_planning_factor = 0.15
+				planning_speed = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+		SEM_new_military_2 = {
+			allowed = { original_tag = SEM }
+			picture = SEM_seminole_council_revolt
+			modifier = {
+				research_speed_factor = 0.05
+				experience_gain_army_factor = 0.1
+				max_planning_factor = 0.15
+				planning_speed = 0.2
+				army_speed_factor = 0.2
+				army_armor_attack_factor = 0.1
+				motorized_attack_factor = 0.1
+				coordination_bonus = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SEM_new_military_3 = {
+			allowed = { original_tag = SEM }
+			picture = SEM_seminole_council_revolt
+			modifier = {
+				research_speed_factor = 0.1
+				experience_gain_army_factor = 0.1
+				max_planning_factor = 0.15
+				planning_speed = 0.2
+				army_speed_factor = 0.2
+				army_armor_attack_factor = 0.2
+				motorized_attack_factor = 0.2
+				coordination_bonus = 0.1
+				industrial_capacity_factory = 0.05
+				army_fuel_consumption_factor = -0.15
+				supply_consumption_factor = -0.1
+			}
+		}
+		SEM_CENTCOM = {
+			allowed = { original_tag = SEM }
+			picture = SEM_seminole_council_revolt
+			modifier = {
+				army_org_factor = 0.15
+				army_org_regain = 0.1
+				breakthrough_factor = 0.1
+			}
+		}
 	}
 		### COMPANIES ###
 

@@ -700,7 +700,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SEM_modernize_the_army
-		icon = GFX_goal_SEM_our_new_nation
+		icon = GFX_goal_SEM_copy_uncle_sam
 		cost = 5.00
 		x = -4
 		y = 1
@@ -720,202 +720,255 @@ focus_tree = {
 				uses = 2
 				category = cat_mobile_warfare
 			}
+			add_ideas = SEM_new_military
 		}
 	}
 	focus = {
-		id = SEM_streamlining_arms_manufacturing
-		icon = GFX_goal_SEM_our_new_nation
+		id = SEM_study_us_joint_doctrine
+		icon = GFX_goal_SEM_study_us_joint_doctrine
 		cost = 5.00
-		x = -3
+		x = 0
 		y = 1
 		relative_position_id = SEM_modernize_the_army
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_modernize_the_army
+			focus = SEM_remembering_the_seminole_wars
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_mastery = {
+			    amount = 50
+			    # FILTERS:
+			    grand_doctrine = new_mobile_warfare
+			    index = 1
+			}
+			swap_ideas = {
+				remove_idea = SEM_new_military
+				add_idea = SEM_new_military_1
+			}
 		}
 	}
 	focus = {
-		id = SEM_fledling_mic
-		icon = GFX_goal_SEM_our_new_nation
-		cost = 5.00
-		x = 0
-		y = 2
-		relative_position_id = SEM_streamlining_arms_manufacturing
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = SEM_streamlining_arms_manufacturing
-		}
-		completion_reward = {
-			add_war_support = 0.1
-		}
-	}
-	focus = {
-		id = SEM_refurbish_old_stockpiles
-		icon = GFX_goal_SEM_our_new_nation
+		id = SEM_investing_in_power
+		icon = GFX_goal_SEM_invest_in_power
 		cost = 5.00
 		x = -1
 		y = 1
-		relative_position_id = SEM_modernize_the_army
+		relative_position_id = SEM_study_us_joint_doctrine
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_modernize_the_army
+			focus = SEM_study_us_joint_doctrine
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 3
+			    category = armor
+			}
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 3
+			    category = artillery
+			}
 		}
-	}
+	}	
 	focus = {
-		id = SEM_trucks_over_horses
-		icon = GFX_goal_SEM_our_new_nation
+		id = SEM_focus_on_projection
+		icon = GFX_goal_SEM_focus_on_projection
 		cost = 5.00
 		x = 1
 		y = 1
-		relative_position_id = SEM_modernize_the_army
+		relative_position_id = SEM_study_us_joint_doctrine
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_modernize_the_army
+			focus = SEM_study_us_joint_doctrine
 		}
 		completion_reward = {
-			add_war_support = 0.1
+
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 3
+			    category = air_equipment
+			}
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 3
+			    category = naval_equipment
+			}
 		}
 	}
 	focus = {
-		id = SEM_a_new_kind_of_cavalry
-		icon = GFX_goal_SEM_our_new_nation
+		id = SEM_carrier_projects
+		icon = GFX_goal_SEM_carrier_projects
 		cost = 5.00
 		x = 1
 		y = 1
-		relative_position_id = SEM_trucks_over_horses
+		relative_position_id = SEM_focus_on_projection
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_trucks_over_horses
+			focus = SEM_focus_on_projection
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
 		}
 	}
 	focus = {
-		id = SEM_soaring_like_the_heron
-		icon = GFX_goal_SEM_our_new_nation
-		cost = 5.00
-		x = 0
-		y = 2
-		relative_position_id = SEM_a_new_kind_of_cavalry
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = SEM_a_new_kind_of_cavalry
-		}
-		completion_reward = {
-			add_war_support = 0.1
-		}
-	}
-	focus = {
-		id = SEM_roaring_cannons
-		icon = GFX_goal_SEM_our_new_nation
-		cost = 5.00
-		x = 0
-		y = 2
-		relative_position_id = SEM_modernize_the_army
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = SEM_trucks_over_horses
-		}
-		prerequisite = {
-			focus = SEM_refurbish_old_stockpiles
-		}
-		completion_reward = {
-			add_war_support = 0.1
-		}
-	}
-	focus = {
-		id = SEM_metal_behemoths
-		icon = GFX_goal_SEM_our_new_nation
-		cost = 5.00
-		x = 1
-		y = 1
-		relative_position_id = SEM_roaring_cannons
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = SEM_roaring_cannons
-		}
-		completion_reward = {
-			add_war_support = 0.1
-		}
-	}
-	focus = {
-		id = SEM_domination_through_speed
-		icon = GFX_goal_SEM_our_new_nation
+		id = SEM_embrace_the_nine_principles
+		icon = GFX_goal_SEM_embrace_the_nine_principles
 		cost = 5.00
 		x = -1
 		y = 1
-		relative_position_id = SEM_roaring_cannons
+		relative_position_id = SEM_focus_on_projection
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_roaring_cannons
+			focus = SEM_focus_on_projection
+			focus = SEM_investing_in_power
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_mastery = {
+			    amount = 50
+			    # FILTERS:
+			    grand_doctrine = new_mobile_warfare
+			    index = 1
+			}
+			swap_ideas = {
+				remove_idea = SEM_new_military_1
+				add_idea = SEM_new_military_2
+			}
 		}
 	}
 	focus = {
-		id = SEM_learn_from_the_oppressor
-		icon = GFX_goal_SEM_our_new_nation
+		id = SEM_dynamic_warfare
+		icon = GFX_goal_SEM_new_dynamic_warfare
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_embrace_the_nine_principles
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_embrace_the_nine_principles
+		}
+		prerequisite = {
+			focus = SEM_utilize_centcom_and_socom
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+			swap_ideas = {
+				remove_idea = SEM_new_military_2
+				add_idea = SEM_new_military_3
+			}
+			add_mastery = {
+			    amount = 100
+			    # FILTERS:
+			    grand_doctrine = new_mobile_warfare
+			    index = 1
+			}
+		}
+	}
+	focus = {
+		id = SEM_rehabilitate_lockheed_assets
+		icon = GFX_goal_SEM_rehabilitate_lockheed_assets
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = SEM_modernize_the_army
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_modernize_the_army
+		}
+		completion_reward = {
+			353 = {
+				add_building_construction = {
+				    type = arms_factory
+				    level = 2
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			add_tech_bonus = {
+			    bonus = 1
+			    uses = 1
+			    category = cat_heavy_fighter
+			}
+			add_tech_bonus = {
+			    bonus = 1
+			    uses = 1
+			    category = light_fighter
+			}
+			add_tech_bonus = {
+			    bonus = 1
+			    uses = 1
+			    category = radar_tech
+			}
+		}
+	}
+	focus = {
+		id = SEM_space_coast
+		icon = GFX_goal_SEM_space_coast
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_rehabilitate_lockheed_assets
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = SEM_rehabilitate_lockheed_assets
+		}
+		completion_reward = {
+			577 = {
+				add_building_construction = {
+				    type = arms_factory
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_tech_bonus = {
+			    bonus = 1
+			    uses = 3
+			    category = rocketry
+			}
+			air_experience = 100
+		}
+	}
+	focus = {
+		id = SEM_utilize_centcom_and_socom
+		icon = GFX_goal_SEM_seize_centcom_data
 		cost = 5.00
 		x = 0
 		y = 2
-		relative_position_id = SEM_roaring_cannons
+		relative_position_id = SEM_rehabilitate_lockheed_assets
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_domination_through_speed
-		}
-		prerequisite = {
-			focus = SEM_metal_behemoths
+			focus = SEM_rehabilitate_lockheed_assets
 		}
 		completion_reward = {
-			add_war_support = 0.1
-		}
-	}
-	focus = {
-		id = SEM_even_the_playing_field
-		icon = GFX_goal_SEM_our_new_nation
-		cost = 5.00
-		x = 1
-		y = 1
-		relative_position_id = SEM_learn_from_the_oppressor
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = SEM_learn_from_the_oppressor
-		}
-		prerequisite = {
-			focus = SEM_soaring_like_the_heron
-		}
-		completion_reward = {
-			add_war_support = 0.1
+			army_experience = 100
+			add_ideas = SEM_CENTCOM
 		}
 	}
 	focus = {
@@ -1317,7 +1370,7 @@ focus_tree = {
 		id = SEM_preserving_seminole_culture
 		icon = GFX_goal_SEM_preserve_our_traditions
 		cost = 5.00
-		x = -25
+		x = -23
 		y = 1
 		relative_position_id = SEM_a_people_unconquered
 		ai_will_do = { 

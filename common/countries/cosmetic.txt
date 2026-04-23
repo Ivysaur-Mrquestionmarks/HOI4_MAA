@@ -1319,9 +1319,34 @@ PEN_atlantic_command_zone = {
 	color = rgb { 98 0 0 }
 	color_ui = rgb { 98 0 0 }
 }
-
-
-
+SEM_pan_tribal = {
+	color = rgb { 79 18 18 }
+	color_ui = rgb { 79 18 18 }
+}
+SCA_lumbee = {
+	color = rgb { 94 65 50 }
+	color_ui = rgb { 94 65 50 }
+}
+ABM_creek = {
+	color = rgb { 13 136 90 }
+	color_ui = rgb { 13 136 90 }
+}
+MIS_choctaw = {
+	color = rgb { 44 50 153 }
+	color_ui = rgb { 44 50 153 }
+}
+LOU_houma = {
+	color = rgb { 163 22 11 }
+	color_ui = rgb { 163 22 11 }
+}
+ARK_quapaw = {
+	color = rgb { 242 223 10 }
+	color_ui = rgb { 242 223 10 }
+}
+NCA_cherokee = {
+	color = rgb { 255 167 3 }
+	color_ui = rgb { 255 167 3 }
+}
 
 
 

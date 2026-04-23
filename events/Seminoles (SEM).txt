@@ -76,7 +76,7 @@ country_event = {
 	id = seminoles.5
 	title = seminoles.5.t
 	desc = seminoles.5.d
-	picture = sem_wins_image
+	picture = SEM_seminole_flag
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -98,7 +98,9 @@ country_event = {
 			remove_core_of = CSA
 		}
 		release_puppet = CSA
+
 		CSA = {
+			drop_cosmetic_tag = yes
 			set_cosmetic_tag = CSA_native
 		}
 	}
@@ -121,8 +123,8 @@ country_event = {
 					state = 284
 					state = 282
 					state = 283
-					state = 533
-					state = 293
+					state = 532
+					state = 325
 				}
 			}
 			add_core_of = SEM
@@ -132,8 +134,6 @@ country_event = {
 		every_state = {
 			limit = {
 				OR = {
-					state = 263
-					state = 308
 					state = 264
 					state = 656
 					state = 534
@@ -147,6 +147,26 @@ country_event = {
 		puppet = NCA
 		NCA = {
 			set_cosmetic_tag = NCA_cherokee
+			create_country_leader = {
+				name = "Michell Hicks"
+				desc = ""
+				picture = "gfx/leaders/NCA/michell_hicks.dds"
+				#expire = "2060.1.1.1"
+				ideology = libertarian_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Michell Hicks"
+				desc = ""
+				picture = "gfx/leaders/NCA/michell_hicks.dds"
+				#expire = "2060.1.1.1"
+				ideology = despotism
+				traits = {
+					
+				}
+			}
 		}
 
 		every_state = {
@@ -180,6 +200,7 @@ country_event = {
 					state = 291
 					state = 303
 					state = 289
+					state = 386
 				}
 			}
 			add_core_of = ABM
@@ -188,6 +209,26 @@ country_event = {
 		puppet = ABM
 		ABM = {
 			set_cosmetic_tag = ABM_creek
+			create_country_leader = {
+				name = "Stephanie Bryan"
+				desc = ""
+				picture = "gfx/leaders/ABM/stephanie_bryan.dds"
+				#expire = "2060.1.1.1"
+				ideology = libertarian_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Stephanie Bryans"
+				desc = ""
+				picture = "gfx/leaders/ABM/stephanie_bryan.dds"
+				#expire = "2060.1.1.1"
+				ideology = despotism
+				traits = {
+					
+				}
+			}
 		}
 
 		every_state = {
@@ -209,6 +250,26 @@ country_event = {
 		puppet = MIS
 		MIS = {
 			set_cosmetic_tag = MIS_choctaw
+			create_country_leader = {
+				name = "Cyrus Ben"
+				desc = ""
+				picture = "gfx/leaders/MIS/cyrus_ben.dds"
+				#expire = "2060.1.1.1"
+				ideology = libertarian_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Cyrus Ben"
+				desc = ""
+				picture = "gfx/leaders/MIS/cyrus_ben.dds"
+				#expire = "2060.1.1.1"
+				ideology = despotism
+				traits = {
+					
+				}
+			}
 		}
 
 		every_state = {
@@ -230,6 +291,26 @@ country_event = {
 
 		LOU = {
 			set_cosmetic_tag = LOU_houma
+			create_country_leader = {
+				name = "Lora Ann Chaiss"
+				desc = ""
+				picture = "gfx/leaders/LOU/lora_ann_chaiss.dds"
+				#expire = "2060.1.1.1"
+				ideology = libertarian_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Lora Ann Chaiss"
+				desc = ""
+				picture = "gfx/leaders/LOU/lora_ann_chaiss.dds"
+				#expire = "2060.1.1.1"
+				ideology = despotism
+				traits = {
+					
+				}
+			}
 		}
 
 		every_state = {
@@ -250,18 +331,78 @@ country_event = {
 
 		ARK = {
 			set_cosmetic_tag = ARK_quapaw
+			create_country_leader = {
+				name = "Wena Supernaw"
+				desc = ""
+				picture = "gfx/leaders/ARK/wena_supernaw.dds"
+				#expire = "2060.1.1.1"
+				ideology = libertarian_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Wena Supernaw"
+				desc = ""
+				picture = "gfx/leaders/ARK/wena_supernaw.dds"
+				#expire = "2060.1.1.1"
+				ideology = despotism
+				traits = {
+					
+				}
+			}
+
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 533
+					state = 293
+					state = 263
+				 	state = 308
+				}
+			}
+			add_core_of = SCA
+			transfer_state_to = SCA
+		}
+		puppet = SCA
+
+		SCA = {
+			set_cosmetic_tag = SCA_lumbee
+			create_country_leader = {
+				name = "John Lowery"
+				desc = ""
+				picture = "gfx/leaders/SCA/john_lowery.dds"
+				#expire = "2060.1.1.1"
+				ideology = libertarian_ideology
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "John Lowery"
+				desc = ""
+				picture = "gfx/leaders/SCA/john_lowery.dds"
+				#expire = "2060.1.1.1"
+				ideology = despotism
+				traits = {
+					
+				}
+			}
 		}
 
 	}
 	option = {
 		name = seminoles.5.c
-
+		trigger = {
+			has_completed_focus = SEM_pan_tribal_alliance
+		}
 		every_state = {
 			limit = {
 				OR = {
 					state = 329
 					state = 328
-					state = 386
 					state = 508
 					state = 509
 					state = 506
@@ -273,8 +414,8 @@ country_event = {
 					state = 284
 					state = 282
 					state = 283
-					state = 533
-					state = 293
+					state = 532
+					state = 325
 				}
 			}
 			add_core_of = SEM
@@ -311,6 +452,8 @@ country_event = {
 			}
 			add_claim_by = SEM
 		}
+		drop_cosmetic_tag = 
+		set_cosmetic_tag = SEM_pan_tribal
 	}
 }
 
@@ -406,8 +549,8 @@ country_event = {
 	option = {
 		name = sem_culture.3.a 
 		
-		add_stability = 0.02
-		add_political_power = 25
+		add_war_support = 0.01
+		add_manpower = -5
 	}
 }
 
@@ -420,8 +563,10 @@ country_event = {
 	option = {
 		name = sem_culture.4.a 
 		
-		add_stability = 0.02
-		add_political_power = 25
+		add_stability = 0.01
+		584 = {
+			add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 
@@ -434,8 +579,15 @@ country_event = {
 	option = {
 		name = sem_culture.5.a 
 		
-		add_stability = 0.02
-		add_political_power = 25
+		add_political_power = 10
+		581 = {
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 1
+			    instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 add_namespace = sem_army

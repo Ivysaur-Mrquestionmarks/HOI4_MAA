@@ -670,8 +670,10 @@ spriteTypes = {
 	spriteType = { name = "waco_event_image" texturefile = "gfx/events/waco_event.dds" }
 	
 	spriteType = { name = "spokane_valley_image" texturefile = "gfx/events/spokane_valley.dds" }
-	
-	spriteType = { name = "sem_wins_image" texturefile = "gfx/events/sem_wins_image.dds" }
+
+	### SEM EVENTS ###
+	spriteType = { name = "sem_wins_image" texturefile = "gfx/events/SEM_events/SEM_wins_image.dds" }
+	spriteType = { name = "SEM_seminole_flag" texturefile = "gfx/events/SEM_events/SEM_seminole_flag.dds" }
 	
 	spriteType = { name = "nasa_wins_image" texturefile = "gfx/events/nasa_wins_image.dds" }
 	
