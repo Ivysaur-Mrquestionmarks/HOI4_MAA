@@ -388,7 +388,7 @@ focus_tree = {
 		icon = GFX_goal_SEM_big_cypress_shootout
 		cost = 5.00
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = SEM_remembering_the_seminole_wars
 		ai_will_do = { 
 			factor = 300
@@ -405,7 +405,7 @@ focus_tree = {
 		icon = GFX_goal_SEM_our_ancestors_warfare
 		cost = 5.00
 		x = 4
-		y = 1
+		y = 2
 		relative_position_id = SEM_remembering_the_seminole_wars
 		ai_will_do = { 
 			factor = 300
@@ -429,7 +429,7 @@ focus_tree = {
 		id = SEM_mikasuki_code
 		icon = GFX_goal_SEM_mikasuki_code
 		cost = 5.00
-		x = 3
+		x = -4
 		y = 1
 		relative_position_id = SEM_guerilla_warfare
 		ai_will_do = { 
@@ -437,6 +437,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SEM_guerilla_warfare
+			focus = SEM_modernize_the_army
 		}
 		available = {
 			has_completed_focus = SEM_establish_mikasuki_language_schools
@@ -703,7 +704,7 @@ focus_tree = {
 		icon = GFX_goal_SEM_copy_uncle_sam
 		cost = 5.00
 		x = -4
-		y = 1
+		y = 2
 		relative_position_id = SEM_remembering_the_seminole_wars
 		ai_will_do = { 
 			factor = 300
@@ -727,14 +728,14 @@ focus_tree = {
 		id = SEM_study_us_joint_doctrine
 		icon = GFX_goal_SEM_study_us_joint_doctrine
 		cost = 5.00
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = SEM_modernize_the_army
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = SEM_remembering_the_seminole_wars
+			focus = SEM_modernize_the_army
 		}
 		completion_reward = {
 			add_mastery = {
@@ -816,10 +817,44 @@ focus_tree = {
 			focus = SEM_focus_on_projection
 		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				uses = 2
-				category = cat_mobile_warfare
+			IF = {
+				LIMIT = {
+					NOT = {
+						has_technology = early_ship_hull_carrier
+					}
+				}
+				set_technology = {
+				    early_ship_hull_carrier = 1
+				}
+			}
+			create_equipment_variant = {
+			    name = "Osceola Class"								
+			    type = ship_hull_carrier_conversion_ca
+			    modules = {
+			        fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = dp_ship_secondaries_1
+					mid_1_custom_slot = empty
+			    }
+			}
+			add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_conversion_ca
+						creator = "SEM"
+						version_name = "Osceola Class"
+					}
+					name = "Osceola"
+					requested_factories = 5
+					progress = 0.3
+					amount = 1
+				}
+			add_tech_bonus = {
+			    bonus = 1
+			    uses = 2
+			    category = cv_tech
 			}
 		}
 	}
@@ -828,7 +863,7 @@ focus_tree = {
 		icon = GFX_goal_SEM_embrace_the_nine_principles
 		cost = 5.00
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = SEM_focus_on_projection
 		ai_will_do = { 
 			factor = 300
@@ -888,7 +923,7 @@ focus_tree = {
 		id = SEM_rehabilitate_lockheed_assets
 		icon = GFX_goal_SEM_rehabilitate_lockheed_assets
 		cost = 5.00
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = SEM_modernize_the_army
 		ai_will_do = { 
@@ -1028,7 +1063,7 @@ focus_tree = {
 	focus = {
 		id = SEM_scrap_metal_recycling
 		icon = GFX_goal_SEM_scrap_metal_industry
-		cost = 5.00
+		cost = 3.00
 		x = 4
 		y = 1
 		relative_position_id = SEM_strengthen_traditional_floridan_industry
@@ -1146,7 +1181,7 @@ focus_tree = {
 	focus = {
 		id = SEM_florida_oranges
 		icon = GFX_goal_SEM_champion_the_seminole_orange
-		cost = 5.00
+		cost = 3.00
 		x = 0
 		y = 2
 		relative_position_id = SEM_increase_agricultural_subsidies
@@ -1466,6 +1501,11 @@ focus_tree = {
 		relative_position_id = SEM_continue_seminole_tourism
 		ai_will_do = { 
 			factor = 300
+		}
+		available = {
+			ZIO = {
+				exists = yes
+			}
 		}
 		mutually_exclusive = {
 			focus = SEM_return_to_animistic_tradition
@@ -2073,6 +2113,11 @@ focus_tree = {
 		ai_will_do = { 
 			factor = 300
 		}
+		available = {
+			NOT = {
+				has_country_flag = SEM_collapsing
+			}
+		}
 		prerequisite = {
 			focus = SEM_down_the_warpath
 		}
@@ -2094,6 +2139,11 @@ focus_tree = {
 		relative_position_id = SEM_land_back
 		ai_will_do = { 
 			factor = 300
+		}
+		available = {
+			NOT = {
+				has_country_flag = SEM_collapsing
+			}
 		}
 		prerequisite = {
 			focus = SEM_land_back
@@ -2124,6 +2174,11 @@ focus_tree = {
 		ai_will_do = { 
 			factor = 300
 		}
+		available = {
+			NOT = {
+				has_country_flag = SEM_collapsing
+			}
+		}
 		prerequisite = {
 			focus = SEM_install_tribal_authorities_in_the_cities
 		}
@@ -2148,6 +2203,11 @@ focus_tree = {
 		relative_position_id = SEM_land_back
 		ai_will_do = { 
 			factor = 300
+		}
+		available = {
+			NOT = {
+				has_country_flag = SEM_collapsing
+			}
 		}
 		prerequisite = {
 			focus = SEM_land_back
@@ -2191,6 +2251,11 @@ focus_tree = {
 		ai_will_do = { 
 			factor = 300
 		}
+		available = {
+			NOT = {
+				has_country_flag = SEM_collapsing
+			}
+		}
 		prerequisite = {
 			focus = SEM_install_tribal_authorities_in_the_cities
 		}
@@ -2199,6 +2264,22 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = SEM_tot_tt
+			every_country = {
+				limit = {
+					OR = {
+						tag = USA
+						tag = FRA
+						tag = TEX
+						tag = CSA
+					}
+					exists = yes
+				}
+				add_opinion_modifier = {
+					target = SEM
+					modifier = large_decrease
+				}
+			}
+			add_stability = -0.1
 			580 = {
 				add_manpower = -30000
 				add_resistance = 5
@@ -2244,6 +2325,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SEM_the_trail_of_tears
+		}
+		available = {
+			NOT = {
+				has_country_flag = SEM_collapsing
+			}
 		}
 		available = {
 			580 = {
@@ -2292,6 +2378,13 @@ focus_tree = {
 			}
 			add_ideas = SEM_victory_over_the_white_man
 			remove_ideas = SEM_fillibusters_1
+
+			IF = {
+				LIMIT = {
+					has_idea = SEM_council_revolt
+				}
+				remove_ideas = SEM_council_revolt
+			}
 		}
 	}
 	focus = {
@@ -2331,9 +2424,7 @@ focus_tree = {
 			focus = SEM_problem_of_the_iste_hatke
 		}
 		available = {
-			NOT = {
-				has_completed_focus = SEM_there_are_only_the_seminoles
-			}
+			has_completed_focus = SEM_reconcile_with_the_miccosukee
 		}
 		completion_reward = {
 			custom_effect_tooltip = SEM_reconciliation_tt
@@ -3801,7 +3892,19 @@ focus_tree = {
 			has_completed_focus = SEM_the_trail_of_tears
 		}
 		completion_reward = {
-			
+			324 = {
+				add_manpower = -40000
+			}
+			602 = {
+				add_manpower = -50000
+			}
+			327 = {
+				add_manpower = -10000
+			}
+			397 = {
+				add_manpower = 100000
+				add_resistance = 10
+			}
 		}
 	}
 	focus = {

@@ -217,23 +217,31 @@
  SEM_continue_seminole_tourism_desc:0 "Whether we like it or not, our tribe is supported through tourism. If this is a necessary evil, then we should make the most of it and at least educate those who come to our reservation."
 
  SEM_alligator_wrestling:0 "Alligator Wrestling"
+ SEM_alligator_wrestling_desc:0 "While extremely dangerous, over the last one hundred years, alligator wrestling has taken off in our tribe. Of course only the trained should participate but there are always going to be the dumb few White folk who get deathrolled."
 
  SEM_chickee_building:0 "Continue Chickee Building"
-
+ SEM_chickee_building_desc:0 "The Chickee and its style is of extreme cultural importance to our people, but we cannot deny, it is not the most spacious nor efficient way to build homes for our people. We have created new designs which seek to blend modernity and tradition, which we hope will satisfy our housing needs."
+ 
  SEM_patchworking:0 "Seminole Artisanship"
+ SEM_patchworking_desc:0 "Seminole patchworking is an important tradition that must be preserved. We should create new programs to get more of our people, specifically women, into patchworking."
 
  SEM_end_the_rape_of_culture:0 "End the Rape of Culture"
  SEM_end_the_rape_of_culture_desc:0 "White people have shown no respect for Native culture. They wear our culture like a child wears a costume on Halloween. They have no reverence for the history of a people that are older than their own country. They are soulless and corrupt everything they touch. That ends today. We will ban any foreigners from visting our reservations and will enact harsh punishments on those who mock us and our ways."
  
  SEM_remembering_the_seminole_wars:0 "Remembering the Seminole Wars"
+ SEM_remembering_the_seminole_wars_desc:0 "The Seminole Wars were a series of conflict fought between our people and the United States. While we never formally surrendered, our people fled into the Everglades and kept our culture and people intact. We must never forget what the colonialists and imperialists did to us and our brothers so many years ago."
  
  SEM_modernize_the_army:0 "Copy Uncle Sam"
+ SEM_modernize_the_army_desc:0 "As the saying goes... if you can't beat them, join them. We will modernize our military and restructure ourselves on the United States military. We will not be technologically inferior to any enemies ever again!"
 
  SEM_big_cypress_shootout:0 "Big Cypress Shootout"
+ SEM_big_cypress_shootout_desc:0 "The Big Cypress Shootout has been an annual tradition for our tribe, reenacting battles from the Second Seminole War. While mostly for fun and entertainment, we can expand this event into war games for our soldiers."
 
  SEM_guerilla_warfare:0 "Our Ancestor's Warfare"
+ SEM_guerilla_warfare_desc:0 "We are still around solely due to the genius of our strategy in the Seminole Wars and our ability to outflank and outmaneuver the enemy. We must not forsake our past and try to keep true to our military roots."
 
  SEM_study_the_battle_of_wahoo_swamp:0 "Study of Battle of Wahoo Swamp"
+ SEM_study_the_battle_of_wahoo_swamp_desc:0 " "
 
  SEM_local_manufacturing:0 "Prioritise Local Manufacturing"
 
@@ -423,6 +431,16 @@
 
  SEM_racial_harmony:0 "Racial Harmony"
 
+ SEM_new_military:0 "Modernizing Military"
+
+ SEM_new_military_1:0 "Modernizing Military"
+
+ SEM_new_military_2:0 "Modern Military"
+
+ SEM_new_military_3:0 "Better Than Uncle Sam"
+
+ SEM_CENTCOM:0 "Repurposed CENTCOM and SOCOM Data"
+
  SEM_fillibusters:0 "The Second Patriot Army"
  SEM_fillibusters_1:0 "The Second Patriot Army"
 
@@ -480,7 +498,7 @@
  sem_culture.5.a:0 "A testament to our creativity."
 
  sem_army.1.t:0 "Learning from the Seminole Wars"
- sem_army.1.d:0 " "
+ sem_army.1.d:0 "The Seminole Wars were treacherous for our people, with many in the end being removed to Oklahoma where our lost brothers now remain. Despite unspeakable crimes and overwhelming force, we used guerilla warfare to beat the Americans in many different battles, but in the long run the United States technological and numerical might drove us into the Everglades where we have remained since.\n\nHowever, this could be more than just a tragedy. It could be a lesson for our people and how we should form our army. One side calls for us to follow our ancestors and rely on guerilla warfare and infiltration to beat our enemies.\n\nOthers believe that this will just lead to a repeat and us once again being driven back to the Everglades. They call on us to use all of the left over military sites and equipment from the now defunct United States army to build a modern military."
  sem_army.1.a:0 "Learn from Uncle Sam"
  sem_army.1.b:0 "Follow in the footsteps of Osceola"
 
@@ -506,6 +524,18 @@
  sem_israel.1.a:0 "Fully embrace the title"
  sem_israel.1.b:0 "This is going too far!"
 
+ sem_bopevent.1.t:0 "Osceola Moves to Dissolve the Seminole Tribal Council!"
+ sem_bopevent.1.d:0 "The success of Osceola against the White man and the preservation of stability in the country has severely weakened the influence of the Seminole Tribal Council. Many of our people now look solely to Osceola Jr for guidance, which he has swiftly capitalized on. After demonizing the council as weak and efficient, he has declared the Seminole Council void, with him acting as the sole leader of the nation!"
+ sem_bopevent.1.a:0 "A sensible move."
+
+ sem_bopevent.2.t:0 "The Warpath Party Dissolves"
+ sem_bopevent.2.d:0 "After unsuccessfully agitating for influence, with the nominal support of Osceola Jr, the Warpath party has dissolved. Both Osceola Jr and the Seminole Council came to the understanding that both sides must share the power for the betterment of the tribe. While a fringe few are not happy with this, most are content with the status quo."
+ sem_bopevent.2.a:0 "The Seminole Council exists for a reason."
+
+ sem_bopevent.3.t:0 "The Council Removes Osceola Jr!"
+ sem_bopevent.3.d:0 "The Seminole Council has apparently lost all faith in the leadership of Osceola Jr and his war against the Pale-Skins. They have claimed the brutality of his policies have torn the nation apart, condemning him for crimes against humanity. Just earlier he was arrested after his guards refused to defend him. It seems like the rule of Osceola Jr is over with the Seminole Council taking up the mantle. But not all is well. The news have sparked a new series of riots and calls for the end of minoritarianism in Florida. The Council is ill prepared for this and it is likely the entire nation will collapse!"
+ sem_bopevent.3.a:0 "The end is nigh..."
+ 
  News_Events.103.a:0 "An Unlikely Victor"
  News_events.103.t:0 "Seminole Tribe Triumphs in Floridian Civil War"
  News_events.103.d:0 "An unlikely victor emerges from the fires of the Floridian Civil War. The Seminole nation, though quite small, has taken control of Florida follwing their recent victory. Chieftan Marcus Osecola Jr. is set to lead the nation as the head of the Seminole Tribe and seems hell-bent on protecting the land from invaders. Osecola states that the Second Confederacy poses the "biggest threat to the Seminole culture and our way of life" over any other nation. There appears to be an inevitable clash in the future."
@@ -514,7 +544,7 @@
 
  SEM_tribal_autonomy:0 "Tribal Autonomy"
  SEM_seminole_traditions:0 "Seminole Culture"
- #Tooltips
+ #Tool-tips
 
  SEM_warpath_warning_tt:0 "Without §YPan-Indianism§!, the tribal authorities will §Roppose§! us!\n\n"
 
@@ -550,6 +580,12 @@
  osceola_complete:0 "Osceola's Absolute Authority"
  tribe_favored:0 "Tribal Authority"
  osceola_favored:0 "Osceola's Authority"
+ 
+ #TRAITS
+ SEM_collapsing_council:0 "Ineffective Authority"
+ 
+ #FLAGS
+ SEM_collapsing:0 "§RCollapsing§!"
 
  #Decisions
  
@@ -584,6 +620,6 @@
  SEM_native_bad_mission:0 "Worsening Native Relations"
 
  ### COMPANIES ###
- SEM_seminole_oil:0 "Seminole Oil"
+ SEM_seminole_oil:0 "Seminole Petroleum"
  SEM_hard_rock_international:0 "Hard Rock International"
  SEM_seminole_chickee:0 "Seminole Chickee"

@@ -4148,6 +4148,21 @@ leader_traits = {
 		}
 		
 	}
+	# Seminole Traits #
+	SEM_collapsing_council = {
+		random = no
+
+		stability_weekly = -0.01 
+		political_power_factor = -0.5
+		party_popularity_stability_factor = -0.25
+		political_advisor_cost_factor = 1
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
 	### Theorist Traits ###
 	# Alpine Services LLC #
 	security_training_corporation = {

@@ -488,7 +488,7 @@ ideas = {
 		}
 		SEM_survivalism = {
 			allowed = { original_tag = SEM }
-			#picture =
+			picture = SEM_survivalism
 			modifier = {
 				supply_consumption_factor = -0.25
 				supply_combat_penalties_on_core_factor = -0.5
@@ -498,7 +498,7 @@ ideas = {
 		}
 		SEM_survivalism_1 = {
 			allowed = { original_tag = SEM }
-			#picture =
+			picture = SEM_survivalism
 			modifier = {
 				supply_consumption_factor = -0.25
 				supply_combat_penalties_on_core_factor = -0.5
@@ -545,7 +545,7 @@ ideas = {
 		}
 		SEM_new_military = {
 			allowed = { original_tag = SEM }
-			picture = SEM_seminole_council_revolt
+			picture = SEM_modernizing_military
 			modifier = {
 				research_speed_factor = 0.05
 				experience_gain_army_factor = 0.1
@@ -554,7 +554,7 @@ ideas = {
 		}
 		SEM_new_military_1 = {
 			allowed = { original_tag = SEM }
-			picture = SEM_seminole_council_revolt
+			picture = SEM_modernizing_military
 			modifier = {
 				research_speed_factor = 0.05
 				experience_gain_army_factor = 0.1
@@ -565,7 +565,7 @@ ideas = {
 		}
 		SEM_new_military_2 = {
 			allowed = { original_tag = SEM }
-			picture = SEM_seminole_council_revolt
+			picture = SEM_modernizing_military
 			modifier = {
 				research_speed_factor = 0.05
 				experience_gain_army_factor = 0.1
@@ -580,7 +580,7 @@ ideas = {
 		}
 		SEM_new_military_3 = {
 			allowed = { original_tag = SEM }
-			picture = SEM_seminole_council_revolt
+			picture = SEM_better_than_uncle_sam
 			modifier = {
 				research_speed_factor = 0.1
 				experience_gain_army_factor = 0.1
@@ -597,7 +597,7 @@ ideas = {
 		}
 		SEM_CENTCOM = {
 			allowed = { original_tag = SEM }
-			picture = SEM_seminole_council_revolt
+			picture = SEM_socom
 			modifier = {
 				army_org_factor = 0.15
 				army_org_regain = 0.1
@@ -611,7 +611,7 @@ ideas = {
 
 		SEM_seminole_oil = {
 
-				picture = 
+				picture = SEM_seminole_petroleum
 				allowed = {
 					original_tag = SEM
 				}
@@ -630,7 +630,7 @@ ideas = {
 
 		SEM_hard_rock_international = {
 
-			picture = 
+			picture = SEM_hard_rock
 			allowed = {
 				original_tag = SEM
 			}
@@ -648,7 +648,7 @@ ideas = {
 
 		SEM_seminole_chickee = {
 
-			picture = 
+			picture = SEM_seminole_chickee
 			allowed = {
 				original_tag = SEM
 			}

@@ -674,6 +674,15 @@ spriteTypes = {
 	### SEM EVENTS ###
 	spriteType = { name = "sem_wins_image" texturefile = "gfx/events/SEM_events/SEM_wins_image.dds" }
 	spriteType = { name = "SEM_seminole_flag" texturefile = "gfx/events/SEM_events/SEM_seminole_flag.dds" }
+	spriteType = { name = "SEM_alligator_wresting_event" texturefile = "gfx/events/SEM_events/SEM_alligator_wresting_event.dds" }
+	spriteType = { name = "SEM_green_corn_event" texturefile = "gfx/events/SEM_events/SEM_green_corn_event.dds" }
+	spriteType = { name = "SEM_stickball_event" texturefile = "gfx/events/SEM_events/SEM_stickball_event.dds" }
+	spriteType = { name = "SEM_chickee_event" texturefile = "gfx/events/SEM_events/SEM_chickee_event.dds" }
+	spriteType = { name = "SEM_patchworking_event" texturefile = "gfx/events/SEM_events/SEM_patchworking_event.dds" }
+	spriteType = { name = "SEM_patriot_army_event" texturefile = "gfx/events/SEM_events/SEM_patriot_army_event.dds" }
+	spriteType = { name = "SEM_big_cypress_event" texturefile = "gfx/events/SEM_events/SEM_big_cypress_event.dds" }
+	spriteType = { name = "SEM_racial_tensions_event" texturefile = "gfx/events/SEM_events/SEM_racial_tensions_event.dds" }
+	spriteType = { name = "SEM_military_event" texturefile = "gfx/events/SEM_events/SEM_military_event.dds" }
 	
 	spriteType = { name = "nasa_wins_image" texturefile = "gfx/events/nasa_wins_image.dds" }
 	

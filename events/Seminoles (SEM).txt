@@ -35,7 +35,7 @@ country_event = {
 	id = seminoles.3
 	title = seminoles.3.t
 	desc = seminoles.3.d
-	picture = sem_wins_image
+	picture = SEM_racial_tensions_event
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -63,7 +63,7 @@ country_event = {
 	id = seminoles.4
 	title = seminoles.4.t
 	desc = seminoles.4.d
-	picture = sem_wins_image
+	picture = SEM_patriot_army_event
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -81,7 +81,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = seminoles.5.a
-		
+		complete_national_focus = SEM_the_past_redeemed
 		add_stability = 0.1
 		add_political_power = 100
 		every_state = {
@@ -106,6 +106,7 @@ country_event = {
 	}
 	option = {
 		name = seminoles.5.b
+		complete_national_focus = SEM_the_past_redeemed
 		every_state = {
 			limit = {
 				OR = {
@@ -398,6 +399,7 @@ country_event = {
 		trigger = {
 			has_completed_focus = SEM_pan_tribal_alliance
 		}
+		complete_national_focus = SEM_liberate_the_united_states
 		every_state = {
 			limit = {
 				OR = {
@@ -467,6 +469,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = sem_tot.1.a
+		add_stability = -0.02
+		add_manpower = -100
 		580 = {
 			add_manpower = -30000
 			add_resistance = 5
@@ -506,7 +510,7 @@ country_event = {
 	id = sem_culture.1
 	title = sem_culture.1.t
 	desc = sem_culture.1.d
-	picture = sem_wins_image
+	picture = SEM_green_corn_event
 	is_triggered_only = yes
 	option = {
 		name = sem_culture.1.a
@@ -530,7 +534,7 @@ country_event = {
 	id = sem_culture.2
 	title = sem_culture.2.t
 	desc = sem_culture.2.d
-	picture = sem_wins_image
+	picture = SEM_stickball_event
 	is_triggered_only = yes
 	option = {
 		name = sem_culture.2.a 
@@ -544,7 +548,7 @@ country_event = {
 	id = sem_culture.3
 	title = sem_culture.3.t
 	desc = sem_culture.3.d
-	picture = sem_wins_image
+	picture = SEM_alligator_wresting_event
 	is_triggered_only = yes
 	option = {
 		name = sem_culture.3.a 
@@ -558,7 +562,7 @@ country_event = {
 	id = sem_culture.4
 	title = sem_culture.4.t
 	desc = sem_culture.4.d
-	picture = sem_wins_image
+	picture = SEM_chickee_event
 	is_triggered_only = yes
 	option = {
 		name = sem_culture.4.a 
@@ -574,7 +578,7 @@ country_event = {
 	id = sem_culture.5
 	title = sem_culture.5.t
 	desc = sem_culture.5.d
-	picture = sem_wins_image
+	picture = SEM_patchworking_event
 	is_triggered_only = yes
 	option = {
 		name = sem_culture.5.a 
@@ -596,7 +600,7 @@ country_event = {
 	id = sem_army.1
 	title = sem_army.1.t
 	desc = sem_army.1.d
-	picture = sem_wins_image
+	picture = SEM_military_event
 	is_triggered_only = yes
 	option = {
 		name = sem_army.1.a 
@@ -614,7 +618,7 @@ country_event = {
 	id = sem_army.2
 	title = sem_army.2.t
 	desc = sem_army.2.d
-	picture = sem_wins_image
+	picture = SEM_big_cypress_event
 	is_triggered_only = yes
 	option = {
 		name = sem_army.2.a 
@@ -705,7 +709,7 @@ country_event = {
 	picture = sem_wins_image
 	is_triggered_only = yes
 	option = {
-		name = sem_israel.31.a 
+		name = sem_israel.1.a 
 
 		
 		
@@ -718,6 +722,184 @@ country_event = {
 
 		
 		
+		ai_chance = {
+    		base = 100
+    	}
+	}
+}
+
+add_namespace = sem_bopevent
+
+country_event = {
+	id = sem_bopevent.1
+	title = sem_bopevent.1.t
+	desc = sem_bopevent.1.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			power_balance_value = {
+		    	id = SEM_tribe_vs_osceola_bop
+		   		value > 0.85
+			}
+			has_completed_focus = SEM_off_the_reservation
+		}
+		
+	}
+	option = {
+		name = sem_bopevent.1.a 
+
+		add_political_power = 100
+		add_popularity = {
+		    ideology = autocratic
+		    popularity = 0.25
+		}
+		remove_power_balance = {
+		    id = SEM_tribe_vs_osceola_bop
+		}
+		set_politics = {
+		    ruling_party = autocratic
+		    elections_allowed = no
+		}
+		
+		ai_chance = {
+    		base = 100
+    	}
+	}
+}
+
+country_event = {
+	id = sem_bopevent.2
+	title = sem_bopevent.2.t
+	desc = sem_bopevent.2.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			power_balance_value = {
+		    	id = SEM_tribe_vs_osceola_bop
+		   		value < -0.85
+			}
+			OR = {
+				has_completed_focus = SEM_off_the_reservation
+				has_completed_focus = SEM_one_nation_two_system
+			}
+			has_completed_focus = SEM_reconcile_with_the_miccosukee
+		}
+		
+	}
+	option = {
+		name = sem_bopevent.2.a 
+
+		add_stability = 0.1
+		add_popularity = {
+		    ideology = libertarian_right
+		    popularity = 0.25
+		}
+		remove_power_balance = {
+		    id = SEM_tribe_vs_osceola_bop
+		}
+		
+		ai_chance = {
+    		base = 100
+    	}
+	}
+}
+
+country_event = {
+	id = sem_bopevent.3
+	title = sem_bopevent.3.t
+	desc = sem_bopevent.3.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			power_balance_value = {
+		    	id = SEM_tribe_vs_osceola_bop
+		   		value < -0.99
+			}
+			NOT = {
+				has_completed_focus = SEM_off_the_reservation
+			}
+			has_completed_focus = SEM_down_the_warpath
+			has_idea = SEM_council_revolt
+		}
+		
+	}
+	option = {
+		name = sem_bopevent.3.a 
+		add_stability = -0.3
+		add_war_support = -0.3
+		retire_ideology_leader = libertarian_right
+		create_country_leader = {
+			name = "Seminole Tribal Council"
+			desc = ""
+			picture = "gfx/leaders/SEM/Seminole_Tribal_Authority.tga"
+			#expire = "2060.1.1.1"
+			ideology = libertarian_ideology
+			traits = {
+					
+			}
+		}
+		set_country_flag = SEM_collapsing
+		hidden_effect = {
+			country_event = {
+				id = sem_collapse.1
+				days = 14
+			}
+		}
+		
+		ai_chance = {
+    		base = 100
+    	}
+	}
+}
+
+add_namespace = sem_collapse
+
+country_event = {
+	id = sem_collapse.1
+	title = sem_collapse.1.t
+	desc = sem_collapse.1.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sem_collapse.1.a 
+		add_stability = -0.1
+
+		add_country_leader_trait = SEM_collapsing_council
+
+		hidden_effect = {
+			country_event = {
+				id = sem_collapse.2
+				days = 14
+			}
+		}
+		ai_chance = {
+    		base = 100
+    	}
+	}
+}
+
+country_event = {
+	id = sem_collapse.2
+	title = sem_collapse.2.t
+	desc = sem_collapse.2.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sem_collapse.2.a 
+		add_stability = -0.2
+		add_war_support = -0.2
+		add_political_power = -100
+
 		ai_chance = {
     		base = 100
     	}
