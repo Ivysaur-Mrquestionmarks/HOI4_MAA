@@ -477,6 +477,7 @@ brutally_oppressive_occupation = {
 		}
 	}
 }
+
 KKK_forced_work = {
 	icon = 9
 	sound_effect = "Martial_Law_Interface_Brutally_Oppressive_Occupation_Unique_FAS"
@@ -498,6 +499,29 @@ KKK_forced_work = {
 		resistance_decay = 0.2
 		repair_speed_arms_factory_factor = 0.35
 		repair_speed_industrial_complex_factor = 0.35
+	}
+	
+	ai_will_do = {
+		base = 1000
+	}
+}
+
+SEM_italwa_law = {
+	icon = 10
+	sound_effect = "Martial_Law_Interface_Brutally_Oppressive_Occupation_Unique_FAS"
+	
+	visible = {
+		tag = SEM
+		has_completed_focus = SEM_install_tribal_authorities_in_the_cities
+	}
+	
+	state_modifier = {		
+		compliance_gain = 0.03
+		resistance_target = -0.3
+		required_garrison_factor = -0.4	
+		resistance_damage_to_garrison = -0.25	
+		local_factories = 0.1
+		local_resources = 0.15
 	}
 	
 	ai_will_do = {

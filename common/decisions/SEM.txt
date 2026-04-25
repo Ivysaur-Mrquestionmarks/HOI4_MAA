@@ -609,9 +609,9 @@ SEM_whites_vs_natives = {
 
 		}
 		visible = {
-			#OR = {
-			#	has_completed_focus = SEM_land_back
-			#}
+			OR = {
+				has_completed_focus = SEM_land_back
+			}
 		}
 
 		state_target = yes
@@ -619,9 +619,9 @@ SEM_whites_vs_natives = {
 		target_array = controlled_states
 
 		target_trigger = {
-			#OR = {
-			#	has_completed_focus = SEM_land_back
-			#}
+			OR = {
+				has_completed_focus = SEM_land_back
+			}
 			FROM = {
 				is_owned_by = ROOT
 				NOT = {
@@ -651,8 +651,8 @@ SEM_whites_vs_natives = {
 
 		remove_effect = {
 			FROM = {
-				add_resistance = -5
-				add_compliance = 5
+				add_resistance = -10
+				add_compliance = 10
 			}
 			random_list = {
 				    10 = {
@@ -665,7 +665,7 @@ SEM_whites_vs_natives = {
 							add_manpower = -15
 				    	}
 				        
-						add_stability = -0.02
+						add_stability = -0.01
 				    }
 				    10 = {
 				    	FROM = {
@@ -677,7 +677,7 @@ SEM_whites_vs_natives = {
 							add_manpower = -25
 				    	}
 				      
-						add_stability = -0.02
+						add_stability = -0.01
 				    }
 				    10 = {
 				    	FROM = {
@@ -689,7 +689,7 @@ SEM_whites_vs_natives = {
 							add_manpower = -50
 				    	}
 				        
-						add_stability = -0.02
+						add_stability = -0.01
 				    }
 				    10 = {
 				    	FROM = {
@@ -706,7 +706,7 @@ SEM_whites_vs_natives = {
 							add_manpower = -100
 				    	}
 				        
-						add_stability = -0.04
+						add_stability = -0.02
 				    }
 				}
 		}
@@ -717,7 +717,6 @@ SEM_whites_vs_natives = {
 
 		allowed = {
 			original_tag = SEM
-			
 		}
 		available = {
 			OR = {
@@ -725,13 +724,8 @@ SEM_whites_vs_natives = {
 				has_completed_focus = SEM_down_the_warpath
 			}
 		}
-		visible = {
-			NOT = {
-				OR = {
-					has_completed_focus = SEM_one_nation_two_systems
-					has_completed_focus = SEM_down_the_warpath
-				}
-			}
+		activation = {
+			has_completed_focus = SEM_problem_of_the_iste_hatke
 		}
 		#cost = 100
 		
@@ -802,14 +796,10 @@ SEM_whites_vs_natives = {
 				has_completed_focus = SEM_down_the_warpath
 			}
 		}
-		visible = {
-			NOT = {
-				OR = {
-					has_completed_focus = SEM_one_nation_two_systems
-					has_completed_focus = SEM_down_the_warpath
-				}
-			}
+		activation = {
+			has_completed_focus = SEM_problem_of_the_iste_hatke
 		}
+
 		#cost = 100
 		
 		#days_remove = 70

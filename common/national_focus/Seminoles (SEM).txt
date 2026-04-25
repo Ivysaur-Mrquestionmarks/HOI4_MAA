@@ -19,9 +19,9 @@ focus_tree = {
 			factor = 300
 		}
 		allow_branch = {
-			#NOT = {
+			NOT = {
 				has_completed_focus = SEM_a_new_florida
-			#}
+			}
 		}
 		completion_reward = {
 			country_event = {
@@ -369,7 +369,7 @@ focus_tree = {
 		icon = GFX_goal_SEM_remember_the_seminole_wars
 		cost = 5.00
 		allow_branch = {
-			#has_completed_focus = SEM_a_new_florida
+			has_completed_focus = SEM_a_new_florida
 		}
 		ai_will_do = { 
 			factor = 300
@@ -1011,7 +1011,7 @@ focus_tree = {
 		icon = GFX_goal_SEM_an_unconquered_people
 		cost = 5.00
 		allow_branch = {
-			#has_completed_focus = SEM_a_new_florida
+			has_completed_focus = SEM_a_new_florida
 		}
 		ai_will_do = { 
 			factor = 300
@@ -2029,9 +2029,18 @@ focus_tree = {
 						state = 583
 						state = 346
 						state = 353
+						state = 577
+						state = 578
 					}
 				}
 				remove_core_of = SEM
+				force_enable_resistance = {
+				    clear = yes
+				    occupier = SEM
+				    occupied = FLO
+				}
+				start_resistance = yes
+
 				add_resistance = 50
 			}
 			
@@ -2068,6 +2077,8 @@ focus_tree = {
 							state = 583
 							state = 346
 							state = 353
+							state = 577
+							state = 578
 						}
 					}
 					add_compliance = 10
@@ -2090,6 +2101,8 @@ focus_tree = {
 							state = 583
 							state = 346
 							state = 353
+							state = 577
+							state = 578
 						}
 					}
 					add_compliance = 10
@@ -2150,13 +2163,22 @@ focus_tree = {
 		}
 		completion_reward = {
 			353 = {
-				add_compliance = 20
+				add_compliance = 10
 				add_resistance = -10
 			}
 			580 = {
-				add_compliance = 20
+				add_compliance = 10
 				add_resistance = -10
 			}
+			339 = {
+				add_compliance = 10
+				add_resistance = -10
+			}
+			578 = {
+				add_compliance = 10
+				add_resistance = -10
+			}
+			add_stability = 0.1
 			add_power_balance_value = {
 			    id = SEM_tribe_vs_osceola_bop
 			    value = 0.1
@@ -2353,6 +2375,9 @@ focus_tree = {
 			346 = {
 				compliance > 79
 			}
+			577 = {
+				compliance > 79
+			}
 			578 = {
 				compliance > 79
 			}
@@ -2405,6 +2430,11 @@ focus_tree = {
 				add_core_of = SEM
 			}
 			add_stability = 0.07
+			add_power_balance_value = {
+			    id = SEM_tribe_vs_osceola_bop
+			    value = -0.1
+			    #tooltip_side = my_bop_side
+			}
 		}
 	}
 	focus = {
@@ -3528,7 +3558,7 @@ focus_tree = {
 			has_completed_focus = SEM_a_people_unconquered
 		}
 		allow_branch = {
-			#has_completed_focus = SEM_a_new_florida
+			has_completed_focus = SEM_a_new_florida
 		}
 		completion_reward = {
 			add_political_power = 100

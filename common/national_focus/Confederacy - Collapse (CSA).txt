@@ -86,12 +86,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-    			random_owned_controlled_state = {
+    		random_owned_controlled_state = {
 				create_unit = {
-					division = "division_template = \"militias\"	start_experience_factor = 0.25	start_equipment_factor = 1"
+					division = "name = \"Militia\" division_template = \"militias\"	start_experience_factor = 0.25	start_equipment_factor = 1"
 					owner = ROOT
-					count = 3
-					
+					count = 3			
 				}
 			}
 		}
@@ -1335,12 +1334,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			create_unit = {
-				division = "division_template = \"militias\"	start_experience_factor = 0.25	start_equipment_factor = 1"
-				owner = ROOT
-				count = 1
-					
-			}			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Militia\" division_template = \"militias\"	start_experience_factor = 0.25	start_equipment_factor = 1"
+					owner = ROOT
+					count = 3			
+				}
+			}		
 			unlock_decision_tooltip = CSA_units
 			set_country_flag = CSA_unit
 		}
@@ -1733,10 +1733,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			create_unit = {
-				division = "division_template = \"militias\"	start_experience_factor = 0.25	start_equipment_factor = 1"
-				owner = ROOT
-				count = 1
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Militia\" division_template = \"militias\"	start_experience_factor = 0.25	start_equipment_factor = 1"
+					owner = ROOT
+					count = 3			
+				}
 			}			
 			unlock_decision_tooltip = CSA_units
 			set_country_flag = CSA_unit
