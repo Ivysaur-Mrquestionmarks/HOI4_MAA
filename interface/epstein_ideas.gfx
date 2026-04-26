@@ -956,6 +956,10 @@ spriteTypes = {
         name = "GFX_idea_SEM_seminole_petroleum"
         texturefile = "gfx/interface/ideas/SEM/SEM_seminole_petroleum.dds"
     }
+     spriteType = {
+        name = "GFX_idea_SEM_seminole_culture"
+        texturefile = "gfx/interface/ideas/SEM/SEM_seminole_culture.dds"
+    }
     spriteType = {
         name = "GFX_bop_SEM_osceolla_authority"
         texturefile = "gfx/interface/bop/bop_SEM_osceolla_authority.dds"
@@ -965,20 +969,20 @@ spriteTypes = {
         texturefile = "gfx/interface/bop/bop_SEM_tribal_authority.dds"
     }
     spriteType = {
-        name = "GFX_bop_SEM_modernizing_military"
-        texturefile = "gfx/interface/bop/SEM_modernizing_military.dds"
+        name = "GFX_idea_SEM_modernizing_military"
+        texturefile = "gfx/interface/ideas/SEM/SEM_modernizing_military.dds"
     }
     spriteType = {
-        name = "GFX_bop_SEM_better_than_uncle_sam"
-        texturefile = "gfx/interface/bop/SEM_better_than_uncle_sam.dds"
+        name = "GFX_idea_SEM_better_than_uncle_sam"
+        texturefile = "gfx/interface/ideas/SEM/SEM_better_than_uncle_sam.dds"
     }
     spriteType = {
-        name = "GFX_bop_SEM_socom"
-        texturefile = "gfx/interface/bop/SEM_socom.dds"
+        name = "GFX_idea_SEM_socom"
+        texturefile = "gfx/interface/ideas/SEM/SEM_socom.dds"
     }
     spriteType = {
-        name = "GFX_bop_SEM_survivalism"
-        texturefile = "gfx/interface/bop/SEM_survivalism.dds"
+        name = "GFX_idea_SEM_survivalism"
+        texturefile = "gfx/interface/ideas/SEM/SEM_survivalism.dds"
     }
 
 ### NASA (NSA) ###

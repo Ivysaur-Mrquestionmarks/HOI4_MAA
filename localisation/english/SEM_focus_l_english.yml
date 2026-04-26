@@ -331,7 +331,7 @@
 
  SEM_dynamic_warfare:0 "New Dynamic Warfare"
 
-
+ SEM_freedom_from_oppressors:0 "Self-Determination Realized"
  #IDEAS
 
  SEM_seminole_supremacy:0 "Seminole Supremacy"
@@ -454,6 +454,8 @@
  SEM_disorganized_state:0 "Disorganized State"
  SEM_disorganized_state_1:0 "Disorganized State"
  SEM_disorganized_state_2:0 "Disorganized State"
+
+ SEM_liberation_zeal:0 "Liberation Zeal"
  #EVENTS
 
  seminoles.1.d:0 "The Seminole chickees. Traditional longhouses that Seminoles for generations had built and lived in down in the swamps for Florida and the American South. Today it held one of the most pivitol meetings in the tribe's history. Leader of the tribe, Marcellus Osecola Jr. was speaking to the gathered heads and elders of the tribe. \n\n"Brothers and sisters," He said with a slow but powerful voice that resonated within the open building. "We, for the first time since the 1800's the Seminole nation is once again free. This was once a land of proud warriors, willing to fight against insurmountable odds for their freedoms. Alas, this was not enough. For hundreds of years after our people where executed, enslaved, murdered and relocated against our will. No more I say. NO MORE! Today marks the day that the Seminoles undergo our next trail, the Trail of Blood!""
@@ -477,6 +479,10 @@
  seminoles.5.a:0 "Direct annexation is unfeasible, create a Southern puppet state."
  seminoles.5.b:0 "Reclaim our ancestral lands only, partition the rest."
  seminoles.5.c:0 "We can't stop here, all of America must be liberated!"
+
+ seminoles.6.t:0 "Holly Tiger elected as Vice-Chariwoman of the Seminoles"
+ seminoles.6.d:0 "Holly Tiger, by a majority vote from the Board of Directors, has been elected as the Vice-Chairwoman of the Seminoles. She is the first woman to be elected as the Vice-Chairwoman in the history of our tribe, which marks a historic moment. Throughout her campaign, she emphasized that she would put the Seminole people first, and increase transparency when it comes to the business aspect of the tribe.\n\nBehind closed doors however, it has been reported she has called for a radical change in how the tribe operates, citing the calamity of the American collapse. She has supposedly called for the dissolution of the corporate arm of the Seminoles and to pursue more egalitarian ideals. The rumors have gotten to the point that her opponents have called her a socialist and even a communist! It has to be noted that she's been quick to dispel the rumors as mere slander."
+ seminoles.6.a:0 "Congratulations"
 
  sem_tot.1.t:0 "Trail of Tears Continued"
  sem_tot.1.d:0 "As the efforts to relocate our white population into the Orlando Reservation continue, several thousand whites have successfully been relocated this year, though with several casualties among them, mainly due to resistance. Protests, both internal and abroad also continue to harm our reputation, but we will continue onwards. Justice will be done, revenge is at hand."
@@ -541,6 +547,30 @@
  sem_bopevent.3.d:0 "The Seminole Council has apparently lost all faith in the leadership of Osceola Jr and his war against the Pale-Skins. They have claimed the brutality of his policies have torn the nation apart, condemning him for crimes against humanity. Just earlier he was arrested after his guards refused to defend him. It seems like the rule of Osceola Jr is over with the Seminole Council taking up the mantle. But not all is well. The news have sparked a new series of riots and calls for the end of minoritarianism in Florida. The Council is ill prepared for this and it is likely the entire nation will collapse!"
  sem_bopevent.3.a:0 "The end is nigh..."
  
+ sem_collapse.1.t:0 "Council Begins to Fracture"
+ sem_collapse.1.d:0 "With the arrest of Marcellus Osceola Jr, infighting has shaken the Seminole Council down to its core. Bickering from all sides has led to the complete loss of faith from not only from White citizens but from natives as well. The Council essentially has lost complete control of the situation and now is powerless to stop the coming storm..."
+ sem_collapse.1.a:0 "Our grip is slipping!"
+
+ sem_collapse.2.t:0 "Riots Rock Florida!"
+ sem_collapse.2.d:0 "The lack of a proper government in Florida has resulted in protests and riots spreading across the country. People are calling for the restoration of the old Floridian state and the end of Native rule in the area. Worse yet, militias have cropped up and have taken control of regions in the name of this new Floridian government."
+ sem_collapse.2.a:0 "I'm sure they'll stop eventually... right?"
+ 
+ sem_collapse.3.t:0 "Holly Tiger Declared New Chairwoman"
+ sem_collapse.3.d:0 "The Seminole Council has announced a new leader in the midst of the turmoil. It seem's that after much deliberation, Holly Tiger, the recently elected Vice-Chairwoman, has finessed her way into power by promising a return to stability. The Seminole Council has also given her extraordinary powers to restore order and peace to the land of Florida. While people are optimistic about this change, some who are supposedly on the ground floor have claimed that this will be a catastrophic error for the tribe."
+ sem_collapse.3.a:0 "A light at the end of the tunnel?"
+
+ sem_collapse.4.t:0 "Holly Tiger Dissolves the Seminole Council!"
+ sem_collapse.4.d:0 "Holly Tiger has utilized her extreme powers and loopholes to order the dissolution of the Seminole Council, essentially granting complete power to herself. She claims that the Seminole Council was selling out the people of the Seminoles to big business and even claims of collaboration with White supremacists. While no evidence has come out about these affairs, she is quickly galvanizing support from tribal leaders and leftists."
+ sem_collapse.4.a:0 "Oh..."
+
+ sem_collapse.5.t:0 "The Declaration of a New Revolutionary Seminole State"
+ sem_collapse.5.d:0 "With the foreboding dissolution of the Seminole Council, Holly Tiger has completed the transition of the Seminoles from a tribal council republic into a revolutionary state bent on the liberation of all Native people. She has declared that the state's purpose is to bring equality and classlessness to the Native people and to destroy the racial bourgeois of Whites."
+ sem_collapse.5.a:0 "A Red Chieftainess"
+
+ sem_victory.1.t:0 "The Past Redeemed, the Future Secured"
+ sem_victory.1.d:0 ""
+ sem_victory.1.a:0 "Our home until our dying breath!"
+
  News_Events.103.a:0 "An Unlikely Victor"
  News_events.103.t:0 "Seminole Tribe Triumphs in Floridian Civil War"
  News_events.103.d:0 "An unlikely victor emerges from the fires of the Floridian Civil War. The Seminole nation, though quite small, has taken control of Florida follwing their recent victory. Chieftan Marcus Osecola Jr. is set to lead the nation as the head of the Seminole Tribe and seems hell-bent on protecting the land from invaders. Osecola states that the Second Confederacy poses the "biggest threat to the Seminole culture and our way of life" over any other nation. There appears to be an inevitable clash in the future."
@@ -568,6 +598,8 @@
  sem_new_line_tt:0 "\n\n"
 
  SEM_terrorize_state_tt:0 "Unlocks Decision: §YTerrorize State§!"
+
+ SEM_italwa_tt:0 "Unlocks Occupation Law: §YItálwa§! "
 
  #Opinion Modifiers
 

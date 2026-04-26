@@ -604,6 +604,16 @@ ideas = {
 				breakthrough_factor = 0.1
 			}
 		}
+		SEM_liberation_zeal = {
+			allowed = { original_tag = SEM }
+			picture = SEM_socom
+			modifier = {
+				justify_war_goal_time = -0.5
+				army_claim_attack_factor = 0.1
+				political_power_gain = 0.2
+				weekly_casualties_war_support = 0.002
+			}
+		}
 	}
 		### COMPANIES ###
 

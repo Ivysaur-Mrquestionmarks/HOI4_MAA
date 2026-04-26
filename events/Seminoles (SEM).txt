@@ -129,9 +129,31 @@ country_event = {
 				}
 			}
 			add_core_of = SEM
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 329
+					state = 328
+					state = 386
+					state = 508
+					state = 509
+					state = 506
+					state = 309
+					state = 290
+					state = 507
+					state = 299
+					state = 300
+					state = 284
+					state = 282
+					state = 283
+					state = 532
+					state = 325
+				}
+				is_owned_by = SEM
+			}
 			transfer_state_to = SEM
 		}
-
 		every_state = {
 			limit = {
 				OR = {
@@ -143,6 +165,18 @@ country_event = {
 				}
 			}
 			add_core_of = NCA
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 264
+					state = 656
+					state = 534
+					state = 331
+					state = 266
+				}
+				is_owned_by = SEM
+			}
 			transfer_state_to = NCA
 		}
 		puppet = NCA
@@ -184,6 +218,21 @@ country_event = {
 				}
 			}
 			add_core_of = APA
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 280
+					state = 262
+					state = 333
+					state = 260
+					state = 593
+					state = 271
+					state = 591
+					state = 592
+				}
+				is_owned_by = SEM
+			}
 			transfer_state_to = APA
 		}
 		puppet = APA
@@ -205,6 +254,21 @@ country_event = {
 				}
 			}
 			add_core_of = ABM
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 381
+					state = 551
+					state = 294
+					state = 552
+					state = 291
+					state = 303
+					state = 289
+					state = 386
+				}
+				is_owned_by = SEM
+			}
 			transfer_state_to = ABM
 		}
 		puppet = ABM
@@ -246,6 +310,21 @@ country_event = {
 				}
 			}
 			add_core_of = MIS
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 407
+					state = 388
+					state = 604
+					state = 605
+					state = 606
+					state = 287
+					state = 607
+					state = 608
+				}
+				is_owned_by = SEM
+			}
 			transfer_state_to = MIS
 		}
 		puppet = MIS
@@ -286,6 +365,20 @@ country_event = {
 				}
 			}
 			add_core_of = LOU
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 611
+					state = 316
+					state = 317
+					state = 315
+					state = 307
+					state = 612
+					state = 609
+				}
+				is_owned_by = SEM
+			}
 			transfer_state_to = LOU
 		}
 		puppet = LOU
@@ -326,6 +419,19 @@ country_event = {
 				}
 			}
 			add_core_of = ARK
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 279
+					state = 269
+					state = 505
+					state = 267
+					state = 535
+					state = 536
+				}
+				is_owned_by = SEM
+			}
 			transfer_state_to = ARK
 		}
 		puppet = ARK
@@ -365,6 +471,17 @@ country_event = {
 				}
 			}
 			add_core_of = SCA
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 533
+					state = 293
+					state = 263
+				 	state = 308
+				}
+				is_owned_by = SEM
+			}
 			transfer_state_to = SCA
 		}
 		puppet = SCA
@@ -421,6 +538,28 @@ country_event = {
 				}
 			}
 			add_core_of = SEM
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 329
+					state = 328
+					state = 508
+					state = 509
+					state = 506
+					state = 309
+					state = 290
+					state = 507
+					state = 299
+					state = 300
+					state = 284
+					state = 282
+					state = 283
+					state = 532
+					state = 325
+				}
+				is_owned_by = SEM
+			}
 			transfer_state_to = SEM
 		}
 		every_state = {
@@ -456,6 +595,27 @@ country_event = {
 		}
 		drop_cosmetic_tag = 
 		set_cosmetic_tag = SEM_pan_tribal
+	}
+}
+
+country_event = {
+	id = seminoles.6
+	title = seminoles.6.t
+	desc = seminoles.6.d
+	#picture = SEM_patriot_army_event
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SEM
+		date > 2023.01.01
+	}
+	option = {
+		name = seminoles.6.a
+		add_political_power = 10
+		add_popularity = {
+		    ideology = authoritarian_left
+		    popularity = 0.01
+		}
 	}
 }
 
@@ -734,7 +894,6 @@ country_event = {
 	id = sem_bopevent.1
 	title = sem_bopevent.1.t
 	desc = sem_bopevent.1.d
-	picture = sem_wins_image
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -744,6 +903,7 @@ country_event = {
 		   		value > 0.85
 			}
 			has_completed_focus = SEM_off_the_reservation
+			tag = SEM
 		}
 		
 	}
@@ -773,7 +933,6 @@ country_event = {
 	id = sem_bopevent.2
 	title = sem_bopevent.2.t
 	desc = sem_bopevent.2.d
-	picture = sem_wins_image
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -812,7 +971,6 @@ country_event = {
 	id = sem_bopevent.3
 	title = sem_bopevent.3.t
 	desc = sem_bopevent.3.d
-	picture = sem_wins_image
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -826,13 +984,21 @@ country_event = {
 			}
 			has_completed_focus = SEM_down_the_warpath
 			has_idea = SEM_council_revolt
+			tag = SEM
 		}
 		
 	}
 	option = {
 		name = sem_bopevent.3.a 
+		remove_power_balance = {
+		    id = SEM_tribe_vs_osceola_bop
+		}
 		add_stability = -0.3
 		add_war_support = -0.3
+		add_popularity = {
+		    ideology = libertarian_right
+		    popularity = -0.1
+		}
 		retire_ideology_leader = libertarian_right
 		create_country_leader = {
 			name = "Seminole Tribal Council"
@@ -864,14 +1030,16 @@ country_event = {
 	id = sem_collapse.1
 	title = sem_collapse.1.t
 	desc = sem_collapse.1.d
-	picture = sem_wins_image
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
 		name = sem_collapse.1.a 
 		add_stability = -0.1
-
+		add_popularity = {
+		    ideology = libertarian_right
+		    popularity = -0.1
+		}
 		add_country_leader_trait = SEM_collapsing_council
 
 		hidden_effect = {
@@ -890,7 +1058,6 @@ country_event = {
 	id = sem_collapse.2
 	title = sem_collapse.2.t
 	desc = sem_collapse.2.d
-	picture = sem_wins_image
 	is_triggered_only = yes
 	fire_only_once = yes
 
@@ -898,7 +1065,159 @@ country_event = {
 		name = sem_collapse.2.a 
 		add_stability = -0.2
 		add_war_support = -0.2
+		add_popularity = {
+		    ideology = libertarian_right
+		    popularity = -0.1
+		}
 		add_political_power = -100
+		580 = {
+			set_demilitarized_zone = yes
+		}
+		353 = {
+			set_demilitarized_zone = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = sem_collapse.3
+				days = 14
+			}
+		}
+		ai_chance = {
+    		base = 100
+    	}
+	}
+}
+
+country_event = {
+	id = sem_collapse.3
+	title = sem_collapse.3.t
+	desc = sem_collapse.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sem_collapse.3.a
+
+		add_stability = 0.1 
+		add_popularity = {
+		    ideology = authoritarian_left
+		    popularity = 0.05
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Holly Tiger"
+			desc = ""
+			picture = "gfx/leaders/SEM/Holly_Tiger.tga"
+			#expire = "2060.1.1.1"
+			ideology = libertarian_ideology
+			traits = {
+					
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = sem_collapse.4
+				days = 14
+			}
+		}
+		ai_chance = {
+    		base = 100
+    	}
+	}
+}
+
+country_event = {
+	id = sem_collapse.4
+	title = sem_collapse.4.t
+	desc = sem_collapse.4.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sem_collapse.4.a
+
+		add_political_power = 100
+
+		add_popularity = {
+		    ideology = authoritarian_left
+		    popularity = 0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = sem_collapse.5
+				days = 14
+			}
+		}
+		ai_chance = {
+    		base = 100
+    	}
+	}
+}
+
+country_event = {
+	id = sem_collapse.5
+	title = sem_collapse.5.t
+	desc = sem_collapse.5.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sem_collapse.5.a
+
+		add_war_support = 0.1
+		add_political_power = 100
+		add_popularity = {
+		    ideology = authoritarian_left
+		    popularity = 0.15
+		}
+		set_politics = {
+		    ruling_party = authoritarian_left
+		    elections_allowed = no
+		    #last_election = "1935.12.17"
+		    #election_frequency = 48
+		    long_name = "Liberation Party"
+		    name = "Liberation Party"
+		}
+		set_country_flag = SEM_communist
+		hidden_effect = {
+			create_country_leader = {
+				name = "Chieftainess Tiger"
+				desc = ""
+				picture = "gfx/leaders/SEM/Cheiftain_Tiger.tga"
+				#expire = "2060.1.1.1"
+				ideology = communism
+				traits = {
+						
+				}
+			}
+			create_country_leader = {
+				name = "Chieftainess Tiger"
+				desc = ""
+				picture = "gfx/leaders/SEM/Cheiftain_Tiger.tga"
+				#expire = "2060.1.1.1"
+				ideology = fascism
+				traits = {
+						
+				}
+			}
+		}
+		ai_chance = {
+    		base = 100
+    	}
+	}
+}
+add_namespace = sem_victory
+
+country_event = {
+	id = sem_victory.1
+	title = sem_victory.1.t
+	desc = sem_victory.1.d
+	picture = sem_wins_image
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sem_victory.1.a 
 
 		ai_chance = {
     		base = 100

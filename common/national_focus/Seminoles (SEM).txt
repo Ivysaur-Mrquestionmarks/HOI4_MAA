@@ -2184,6 +2184,7 @@ focus_tree = {
 			    value = 0.1
 			    #tooltip_side = my_bop_side
 			}
+			custom_effect_tooltip = SEM_italwa_tt
 		}
 	}
 	focus = {
@@ -3558,7 +3559,7 @@ focus_tree = {
 			has_completed_focus = SEM_a_people_unconquered
 		}
 		allow_branch = {
-			has_completed_focus = SEM_a_new_florida
+			#has_completed_focus = SEM_a_new_florida
 		}
 		completion_reward = {
 			add_political_power = 100
@@ -3737,6 +3738,7 @@ focus_tree = {
 			add_political_power = 200
 			add_stability = 0.2
 			add_war_support = -0.2
+			remove_ideas = SEM_disorganized_state_2
 		}
 	}
 	focus = {
@@ -3947,6 +3949,31 @@ focus_tree = {
 		ai_will_do = { 
 			factor = 100
 		}
+		available = {
+			owns_state = 506
+			IF = {
+				LIMIT = {
+					has_global_flag = Dixie_Collapse_Global
+				}
+				all_country = {
+					LIMIT = {
+						tag = CSA
+						tag = ZIO
+						tag = LGB
+						tag = KKK
+						tag = APA
+						tag = AFR
+						tag = CSB
+					}
+					exists = no
+				}
+			}
+			ELSE = {
+				CSA = {
+					exists = no
+				}
+			}
+		}
 		prerequisite = {
 			focus = SEM_opportunity_in_dixie
 			focus = SEM_showdown_in_dixie
@@ -3976,6 +4003,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
+			add_ideas = SEM_liberation_zeal
 		}
 	}
 	focus = {
@@ -3996,6 +4024,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.2
+			country_event = sem_victory.1
 		}
 	}
 	focus = {
@@ -4227,6 +4256,35 @@ focus_tree = {
 					}
 				}
 			} 
+		}
+	}
+	focus = {
+		id = SEM_freedom_from_oppressors
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_from_sea_to_shining_sea
+		ai_will_do = { 
+			factor = 100
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = generic_we_control_all_american_states_tt
+				all_of_scopes = {
+    					array = global.part_of_USA
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_ally_with = ROOT }
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = SEM_from_sea_to_shining_sea
+		}
+		completion_reward = {
+			
 		}
 	}
 }
