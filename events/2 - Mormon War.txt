@@ -5,7 +5,7 @@ country_event = {
 	id = mormon.1
 	title = mormon.1.t
 	desc = mormon.1.d
-	picture = event_el_chapo_01
+	picture = event_SIN_event_1
 	is_triggered_only = yes
 
 	option = {
@@ -15,6 +15,11 @@ country_event = {
 		}
 
 		promote_character = SIN_Ted_Kaczynski
+		set_party_name = {
+			ideology = libertarian_right
+			long_name = SIN_libertarian_right_party_anprim_long
+			name = SIN_libertarian_right_party_anprim
+		}
 		set_politics = {
 			ruling_party = libertarian_right
 		}
@@ -155,7 +160,7 @@ country_event = {
 		#create_faction = MORMON_WAR_ANPRIM_ALLIANCE
 		hidden_effect = { 
 			set_global_flag = mormon_war_begun 
-			add_state_core = 348 
+			#add_state_core = 348 
 			news_event = { id = mormon.6 days = 1 } 
 			#UTA = { create_faction = MORMON_WAR_MORMON_ALLIANCE } 
 			MOL = { country_event = { id = mormon.8 days = 6 } } 
