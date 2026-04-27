@@ -19,9 +19,9 @@ focus_tree = {
 			factor = 300
 		}
 		allow_branch = {
-			#NOT = {
+			NOT = {
 				has_completed_focus = SEM_a_new_florida
-			#}
+			}
 		}
 		completion_reward = {
 			country_event = {
@@ -369,7 +369,7 @@ focus_tree = {
 		icon = GFX_goal_SEM_remember_the_seminole_wars
 		cost = 5.00
 		allow_branch = {
-			#has_completed_focus = SEM_a_new_florida
+			has_completed_focus = SEM_a_new_florida
 			NOT = {
 				has_country_flag = SEM_collapsing
 			}
@@ -1009,7 +1009,7 @@ focus_tree = {
 		icon = GFX_goal_SEM_an_unconquered_people
 		cost = 5.00
 		allow_branch = {
-			#has_completed_focus = SEM_a_new_florida
+			has_completed_focus = SEM_a_new_florida
 			NOT = {
 				has_country_flag = SEM_collapsing
 			}
@@ -3569,7 +3569,7 @@ focus_tree = {
 			has_completed_focus = SEM_a_people_unconquered
 		}
 		allow_branch = {
-			#has_completed_focus = SEM_a_new_florida
+			has_completed_focus = SEM_a_new_florida
 			NOT = {
 				has_country_flag = SEM_collapsing
 			}
