@@ -794,13 +794,12 @@ country_event = {
 	id = sem_panhandle.1
 	title = sem_panhandle.1.t
 	desc = sem_panhandle.1.d
-	picture = sem_wins_image
 	is_triggered_only = yes
 	option = {
 		name = sem_panhandle.1.a 
 
 		add_timed_idea = {
-			idea = FAL_lousiana_sold_CSA
+			idea = SEM_panhandle_deal_CSA
 			days = 365
 		}
 
@@ -811,6 +810,8 @@ country_event = {
 			transfer_state = 602
 			transfer_state = 323
 			transfer_state = 322
+
+			country_event = sem_panhandle.2
 		}
 
 		ai_chance = {
@@ -830,12 +831,14 @@ country_event = {
 	id = sem_panhandle.2
 	title = sem_panhandle.2.t
 	desc = sem_panhandle.2.d
-	picture = sem_wins_image
 	is_triggered_only = yes
 	option = {
 		name = sem_panhandle.2.a 
 
-		
+		add_timed_idea = {
+			idea = SEM_panhandle_deal
+			days = 365
+		}
 		
 		ai_chance = {
     		base = 100
@@ -847,7 +850,6 @@ country_event = {
 	id = sem_panhandle.3
 	title = sem_panhandle.3.t
 	desc = sem_panhandle.3.d
-	picture = sem_wins_image
 	is_triggered_only = yes
 	option = {
 		name = sem_panhandle.3.a 
@@ -866,7 +868,6 @@ country_event = {
 	id = sem_israel.1
 	title = sem_israel.1.t
 	desc = sem_israel.1.d
-	picture = sem_wins_image
 	is_triggered_only = yes
 	option = {
 		name = sem_israel.1.a 
@@ -1179,6 +1180,7 @@ country_event = {
 		    name = "Liberation Party"
 		}
 		set_country_flag = SEM_communist
+		set_cosmetic_tag = SEM_primitive
 		hidden_effect = {
 			create_country_leader = {
 				name = "Chieftainess Tiger"
@@ -1212,12 +1214,27 @@ country_event = {
 	id = sem_victory.1
 	title = sem_victory.1.t
 	desc = sem_victory.1.d
-	picture = sem_wins_image
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
 		name = sem_victory.1.a 
+
+		ai_chance = {
+    		base = 100
+    	}
+	}
+}
+
+country_event = {
+	id = sem_victory.2
+	title = sem_victory.2.t
+	desc = sem_victory.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sem_victory.2.a 
 
 		ai_chance = {
     		base = 100

@@ -19,9 +19,9 @@ focus_tree = {
 			factor = 300
 		}
 		allow_branch = {
-			NOT = {
+			#NOT = {
 				has_completed_focus = SEM_a_new_florida
-			}
+			#}
 		}
 		completion_reward = {
 			country_event = {
@@ -369,7 +369,10 @@ focus_tree = {
 		icon = GFX_goal_SEM_remember_the_seminole_wars
 		cost = 5.00
 		allow_branch = {
-			has_completed_focus = SEM_a_new_florida
+			#has_completed_focus = SEM_a_new_florida
+			NOT = {
+				has_country_flag = SEM_collapsing
+			}
 		}
 		ai_will_do = { 
 			factor = 300
@@ -902,11 +905,6 @@ focus_tree = {
 			focus = SEM_utilize_centcom_and_socom
 		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				uses = 2
-				category = cat_mobile_warfare
-			}
 			swap_ideas = {
 				remove_idea = SEM_new_military_2
 				add_idea = SEM_new_military_3
@@ -1011,7 +1009,10 @@ focus_tree = {
 		icon = GFX_goal_SEM_an_unconquered_people
 		cost = 5.00
 		allow_branch = {
-			has_completed_focus = SEM_a_new_florida
+			#has_completed_focus = SEM_a_new_florida
+			NOT = {
+				has_country_flag = SEM_collapsing
+			}
 		}
 		ai_will_do = { 
 			factor = 300
@@ -1951,13 +1952,15 @@ focus_tree = {
 				remove_idea = SEM_fillibusters
 				add_idea = SEM_fillibusters_1
 			}
-			custom_effect_tooltip = SEM_warpath_warning_tt
 			IF = {
 				limit = {
 					NOT = {
 						has_completed_focus = SEM_pan_tribal_alliance
 					}
 				}
+				
+				custom_effect_tooltip = SEM_warpath_warning_tt
+
 				add_ideas = SEM_council_revolt
 
 				custom_effect_tooltip = sem_new_line_tt
@@ -2355,8 +2358,15 @@ focus_tree = {
 			}
 		}
 		available = {
-			580 = {
-				compliance > 79
+			IF = {
+				LIMIT = {
+					NOT = {
+						has_completed_focus = SEM_remember_ancient_cuban_native_ties
+					}
+				}
+				580 = {
+					compliance > 79
+				}
 			}
 			582 = {
 				compliance > 79
@@ -3219,7 +3229,7 @@ focus_tree = {
 	focus = {
 		id = SEM_respect_our_ancestral_lands
 		icon = GFX_goal_SEM_protect_our_ancenstral_lands
-		cost = 5.00
+		cost = 3.00
 		x = 0
 		y = 2
 		relative_position_id = SEM_modernize_petroleum_infrastructure
@@ -3560,6 +3570,9 @@ focus_tree = {
 		}
 		allow_branch = {
 			#has_completed_focus = SEM_a_new_florida
+			NOT = {
+				has_country_flag = SEM_collapsing
+			}
 		}
 		completion_reward = {
 			add_political_power = 100
@@ -3584,6 +3597,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_stability = 0.05
 			OKL = {
 				add_opinion_modifier = {
 				    target = SEM
@@ -3606,12 +3620,14 @@ focus_tree = {
 			focus = SEM_ties_with_the_oklahoman_seminoles
 		}
 		available = {
+
 			NAV = {
 				exists = yes
 			}
 			has_completed_focus = SEM_pan_tribal_alliance
 		}
 		completion_reward = {
+			add_war_support = 0.05
 			NAV = {
 				add_opinion_modifier = {
 				    target = SEM
@@ -4282,6 +4298,387 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SEM_from_sea_to_shining_sea
+		}
+		completion_reward = {
+			every_state = {
+				LIMIT = {
+					is_claimed_by = SEM
+				}
+				add_core_of = SEM
+			}
+			remove_ideas = SEM_liberation_zeal
+		}
+	}
+	focus = {
+		id = SEM_the_red_chieftainess
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 15
+		y = 1
+		ai_will_do = { 
+			factor = 100
+		}
+		allow_branch = {
+			has_country_flag = SEM_communist
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_purge_the_disloyal
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_the_red_chieftainess
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_the_red_chieftainess
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_hunt_down_the_patriots
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_the_red_chieftainess
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_the_red_chieftainess
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_preempt_the_rebellion
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_the_red_chieftainess
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_purge_the_disloyal
+		}
+		prerequisite = {
+			focus = SEM_hunt_down_the_patriots
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_return_to_primitive_communism
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_preempt_the_rebellion
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_preempt_the_rebellion
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_fall_back_on_clan_governance
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = SEM_return_to_primitive_communism
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_return_to_primitive_communism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_there_is_a_seminole_saying
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_fall_back_on_clan_governance
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_rely_on_wisdom_from_the_elders
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_rely_on_wisdom_from_the_elders
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_fall_back_on_clan_governance
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_fall_back_on_clan_governance
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_break_the_chains_of_industrialization
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_return_to_primitive_communism
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_return_to_primitive_communism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_execute_the_modern_day_kings
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_break_the_chains_of_industrialization
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_break_the_chains_of_industrialization
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_topple_the_casinos
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_execute_the_modern_day_kings
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_execute_the_modern_day_kings
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_enforce_communal_lands
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = SEM_return_to_primitive_communism
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_return_to_primitive_communism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_sharing_is_mandatory
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = SEM_enforce_communal_lands
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_destroy_the_root_of_all_evil
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_destroy_the_root_of_all_evil
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = SEM_enforce_communal_lands
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_enforce_communal_lands
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_we_must_go_further
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_topple_the_casinos
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_topple_the_casinos
+		}
+		prerequisite = {
+			focus = SEM_sharing_is_mandatory
+		}
+		prerequisite = {
+			focus = SEM_there_is_a_seminole_saying
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_abolish_agriculture
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_we_must_go_further
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_we_must_go_further
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_hunter_gatherer_society
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_abolish_agriculture
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_abolish_agriculture
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_return_to_primitive_manufacturing
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = SEM_abolish_agriculture
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_abolish_agriculture
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_one_with_the_land
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = SEM_abolish_agriculture
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_abolish_agriculture
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_true_primitive_communism_achieved
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_hunter_gatherer_society
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_hunter_gatherer_society
+		}
+		prerequisite = {
+			focus = SEM_return_to_primitive_manufacturing
+		}
+		prerequisite = {
+			focus = SEM_one_with_the_land
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SEM_spread_it_everywhere
+		icon = GFX_goal_SEM_self_determination_realized
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = SEM_true_primitive_communism_achieved
+		ai_will_do = { 
+			factor = 100
+		}
+		prerequisite = {
+			focus = SEM_true_primitive_communism_achieved
 		}
 		completion_reward = {
 			

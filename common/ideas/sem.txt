@@ -606,12 +606,26 @@ ideas = {
 		}
 		SEM_liberation_zeal = {
 			allowed = { original_tag = SEM }
-			picture = SEM_socom
+			picture = SEM_liberation_zeal
 			modifier = {
 				justify_war_goal_time = -0.5
 				army_claim_attack_factor = 0.1
 				political_power_gain = 0.2
 				weekly_casualties_war_support = 0.002
+			}
+		}
+		SEM_panhandle_deal = {
+			allowed = { original_tag = SEM }
+			picture = SEM_bought_the_panhandle
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+		}
+		SEM_panhandle_deal_CSA = {
+			allowed = { original_tag = SEM }
+			picture = SEM_sold_the_panhandle
+			modifier = {
+				consumer_goods_factor = -0.2
 			}
 		}
 	}

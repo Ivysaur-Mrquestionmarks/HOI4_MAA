@@ -984,6 +984,18 @@ spriteTypes = {
         name = "GFX_idea_SEM_survivalism"
         texturefile = "gfx/interface/ideas/SEM/SEM_survivalism.dds"
     }
+    spriteType = {
+        name = "GFX_idea_SEM_sold_the_panhandle"
+        texturefile = "gfx/interface/ideas/SEM/SEM_sold_the_panhandle.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_SEM_bought_the_panhandle"
+        texturefile = "gfx/interface/ideas/SEM/SEM_bought_the_panhandle.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_SEM_liberation_zeal"
+        texturefile = "gfx/interface/ideas/SEM/SEM_liberation_zeal.dds"
+    }
 
 ### NASA (NSA) ###
 	spriteType = {
