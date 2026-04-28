@@ -11,7 +11,7 @@ units = {
 			ship = { name = "CSS Hunley" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CSA version_name = "Hunley Class" } } }
 			ship = { name = "CSS Pioneer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CSA version_name = "Hunley Class" } } }
 			ship = { name = "CSS American Diver" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CSA version_name = "Hunley Class" } } }
-			ship = { name = "CSS Hunley" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CSA version_name = "Hunley Class" } } }
+			ship = { name = "CSS Holland" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CSA version_name = "Hunley Class" } } }
 			ship = { name = "CSS Southern Pride" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CSA version_name = "Ticonderoga class Cruiser" } } }
 		}
 	}
@@ -29,7 +29,7 @@ units = {
 		task_force = {				
 			name = "Missile Flotilla"			
 			location = 2740
-			ship = { name = "CSS vengeance" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CSA version_name = "Ohio Class" } } }
+			ship = { name = "CSS Vengeance" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CSA version_name = "Ohio Class" } } }
 		}
 	}
 }

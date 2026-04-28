@@ -1,0 +1,13 @@
+#You need an air oob dummy!
+air_wings = {
+	401 = {
+		fighter_equipment_1 = {
+			owner = "DOM" 
+			amount = 8
+		}
+		nav_bomber_equipment_1 = {
+			owner = "DOM" 
+			amount = 1
+		}
+	}
+}

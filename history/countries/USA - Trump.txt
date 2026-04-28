@@ -36,7 +36,7 @@ set_technology = {
 	early_fighter = 1
 	fighter1 = 1
 	basic_train = 1	 
-	 
+	interwar_antitank = 1 
 	strategic_bomber1 = 1
 	CAS1 = 1
 	naval_bomber1 = 1
@@ -295,3 +295,46 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = { 
+		name = "2S25 Sprut-SD"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon
+			turret_type_slot = tank_light_three_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = secondary_turret_hmg
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 1
+		}
+		#obsolete = yes
+		icon = "GFX_GER_gwtank_light"
+	}
+	create_equipment_variant = { 
+		name = "M551 Sheridan"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_three_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		#upgrades = {
+		#	tank_nsb_engine_upgrade = 1
+		#	tank_nsb_armor_upgrade = 1
+		#}
+		#obsolete = yes
+		icon = "GFX_GER_gwtank_light"
+	}
+}

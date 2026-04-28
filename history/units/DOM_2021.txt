@@ -28,7 +28,7 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		signal = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 	}
 }
@@ -102,42 +102,30 @@ units = {
 fleet = {
 	name = "Armada de Republica Dominicana"			
 	naval_base = 2060
-		task_force = {				
-			name = "División de Patrulleros"
-			location = 2060 
-			### Patrol Ships ###			
-			ship = { name = "PA-301 Almirante Didiez Burgos" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "USCG 180'" } } }
-			ship = { name = "PM-204 Capotillo" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "USCG 133'" } } }
-			ship = { name = "PM-203 Tortuguero" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "USCG 133'" } } }													
-		}
-		task_force = {				
-			name = "División de Guardacostas"
-			location = 2060 
-			### Coast Guard Vessels ###			
-			ship = { name = "GC-102 Betelgeuse" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
-			ship = { name = "GC-105 Antares" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
-			ship = { name = "GC-110 Sirius" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
-			ship = { name = "GC-103 Procion" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
-			ship = { name = "GC-104 Aldebaran" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
-			ship = { name = "GC-106 Bellatrix" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
-			ship = { name = "GC-108 Capella" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
-			
-			ship = { name = "GC-107 Canopus" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Swiftships Interceptor Class Patrol Boat" } } }
-			ship = { name = "GC-109 Orión" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Swiftships Interceptor Class Patrol Boat" } } }
-			ship = { name = "GC-112 Altair" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Swiftships Interceptor Class Patrol Boat" } } }
-			ship = { name = "GC-111 Centaurus" definition = destroyer start_experience_factor = 0.25 equipment = { destroyer_1 = { amount = 1 owner = DOM version_name = "Swiftships Interceptor Class Patrol Boat" } } }
-		}
+	task_force = {				
+		name = "División de Patrulleros"
+		location = 2060 
+		### Patrol Ships ###			
+		ship = { name = "PA-301 Almirante Didiez Burgos" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "USCG 180'" } } }
+		ship = { name = "PM-204 Capotillo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "USCG 133'" } } }
+		ship = { name = "PM-203 Tortuguero" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "USCG 133'" } } }													
 	}
-########################################################
-air_wings = {
-	401 = {
-		fighter_equipment_1 = {
-			owner = "DOM" 
-			amount = 8
-		}
-		nav_bomber_equipment_1 = {
-			owner = "DOM" 
-			amount = 1
-		}
+	task_force = {				
+		name = "División de Guardacostas"
+		location = 2060 
+		### Coast Guard Vessels ###			
+		ship = { name = "GC-102 Betelgeuse" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
+		ship = { name = "GC-105 Antares" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
+		ship = { name = "GC-110 Sirius" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
+		ship = { name = "GC-103 Procion" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
+		ship = { name = "GC-104 Aldebaran" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
+		ship = { name = "GC-106 Bellatrix" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
+		ship = { name = "GC-108 Capella" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "Seaward Class Patrol Boat" } } }
+			
+		ship = { name = "GC-107 Canopus" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "Swiftships Interceptor Class Patrol Boat" } } }
+		ship = { name = "GC-109 Orión" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "Swiftships Interceptor Class Patrol Boat" } } }
+		ship = { name = "GC-112 Altair" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "Swiftships Interceptor Class Patrol Boat" } } }
+		ship = { name = "GC-111 Centaurus" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = DOM version_name = "Swiftships Interceptor Class Patrol Boat" } } }
 	}
 }
+########################################################

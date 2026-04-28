@@ -15,20 +15,20 @@
 			ship = { name = "USS Anchorage" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
 			ship = { name = "USS Baker" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
 			ship = { name = "USS Barrow" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Anchorage" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Baker" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Barrow" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Anchorage" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Baker" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Barrow" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Anchorage" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Baker" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Barrow" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Anchorage" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Baker" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Barrow" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Anchorage" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
-			ship = { name = "USS Baker" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Frank E. Peterso Jr." definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS William P. Lawrence" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Wayne E. Meyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Benfold" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Bulkeley" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Carl M. Levin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Carney" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Chafee" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Charles J. French" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Pinckney" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Michael Murphy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS John Paul Jones" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Kidd" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
+			ship = { name = "USS Hopper" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PAC version_name = "Arleigh Burke" } } }
 			ship = { name = "USS Clinton" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_1 = { amount = 1 owner = PAC version_name = "US Carrier Class" } } }
 			ship = { name = "USS Ronald Reagan" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_1 = { amount = 1 owner = PAC version_name = "US Carrier Class" } } }
 
@@ -68,14 +68,14 @@
 		task_force = {				
 			name = "Missile submarine force"			
 			location = 6207
-			ship = { name = "USS OHIO" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
-			ship = { name = "USS OHIO" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
-			ship = { name = "USS OHIO" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
-			ship = { name = "USS OHIO" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
-			ship = { name = "USS OHIO" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
-			ship = { name = "USS OHIO" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
-			ship = { name = "USS OHIO" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
-			ship = { name = "USS OHIO" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
+			ship = { name = "USS Ohio" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
+			ship = { name = "USS Michigan" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
+			ship = { name = "USS Henry M. Jackson" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
+			ship = { name = "USS Alabama" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
+			ship = { name = "USS Nevada" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
+			ship = { name = "USS Pennsylvania" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
+			ship = { name = "USS Kentucky" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
+			ship = { name = "USS Nebraska" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "Ohio Class" } } }
 		}
 	}
 
@@ -85,10 +85,10 @@
 		task_force = {				
 			name = "Coastal defense force"			
 			location = 12144
-			ship = { name = "USS free" definition = frigate equipment = { ship_hull_coast_1 = { amount = 1 owner = PAC version_name = "Freedom Class" } } }
-			ship = { name = "USS free" definition = frigate equipment = { ship_hull_coast_1 = { amount = 1 owner = PAC version_name = "Freedom Class" } } }
-			ship = { name = "USS free" definition = frigate equipment = { ship_hull_coast_1 = { amount = 1 owner = PAC version_name = "Freedom Class" } } }
-			ship = { name = "USS free" definition = frigate equipment = { ship_hull_coast_1 = { amount = 1 owner = PAC version_name = "Freedom Class" } } }
+			ship = { name = "USS Fort Worth" definition = frigate equipment = { ship_hull_coast_1 = { amount = 1 owner = PAC version_name = "Freedom Class" } } }
+			ship = { name = "USS San Francisco" definition = frigate equipment = { ship_hull_coast_1 = { amount = 1 owner = PAC version_name = "Freedom Class" } } }
+			ship = { name = "USS Sacramento" definition = frigate equipment = { ship_hull_coast_1 = { amount = 1 owner = PAC version_name = "Freedom Class" } } }
+			ship = { name = "USS Antioch" definition = frigate equipment = { ship_hull_coast_1 = { amount = 1 owner = PAC version_name = "Freedom Class" } } }
 
 		}
 	}
@@ -99,25 +99,25 @@
 		task_force = {				
 			name = "Raiding force"			
 			location = 6351
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
-			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Hawaii" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS North Carolina" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Mississippi" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Illinois" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Vermont" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Montana" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Missouri" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Colorado" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Indiana" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Texas" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Hawaii" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Honolulu" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Kodiak" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Los Angeles" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Oakland" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Eureka" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Bremerton" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS Paulsbo" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
+			ship = { name = "USS John C. Aquilino" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
 			ship = { name = "USS Commie Killer" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PAC version_name = "virginia Class" } } }
 		}
 

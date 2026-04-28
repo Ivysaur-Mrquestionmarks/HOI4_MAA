@@ -11,6 +11,8 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	infantry_AT_equipment_1 = 1
+	infantry_AA_equipment_1 = 1
 }
 if = {
 	limit = {
