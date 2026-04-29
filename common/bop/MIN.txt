@@ -1,0 +1,125 @@
+
+MIN_ventura_vs_green_army_bop = {	### Stats likely subject to balance testing. Feel free to tweak as you please, for now! -Merf
+	initial_value = 0.12
+	left_side = green_army_favored
+	right_side = ventura_favored
+	decision_category = MIN_balance_of_power_category
+	range = {
+		id = ventura_green_equilibrium
+		min = -0.1
+		max = 0.1
+		modifier = {
+			recruitable_population_factor = 0.05
+			political_power_factor = 0.05
+			stability_factor = -0.10
+			democrat_drift = 0.02
+			libertarian_right_drift = 0.02
+		}
+	}
+	side = {
+		id = green_army_favored
+		icon = GFX_idea_LAS_casino_favoured #temp
+		range = {
+			id = green_lean
+			min = -0.5
+			max = -0.1
+			modifier = {
+				stability_factor = -0.15
+				war_stability_factor = 0.05
+				experience_gain_army = 0.04
+				recruitable_population_factor = 0.075
+				army_morale_factor = 0.03
+				army_defence_factor = 0.01
+				authoritarian_left_drift = 0.02
+			}
+		}
+		range = {
+			id = green_mild
+			min = -0.85
+			max = -0.5
+			modifier = {
+				stability_factor = -0.175
+				war_stability_factor = 0.10
+				experience_gain_army = 0.05
+				recruitable_population_factor = 0.10
+				army_morale_factor = 0.04
+				army_defence_factor = 0.04
+				army_speed_factor = 0.05
+				authoritarian_left_drift = 0.04
+			}
+		}
+		range = {
+			id = green_complete
+			min = -1
+			max = -0.85
+			modifier = {
+				stability_factor = -0.20
+				war_stability_factor = 0.3
+				war_support_factor = 0.30
+				experience_gain_army = 0.06
+				recruitable_population_factor = 0.20
+				army_morale_factor = 0.05
+				army_defence_factor = 0.06
+				army_speed_factor = 0.05
+				authoritarian_left_drift = 0.08
+			}
+			on_activate = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = omar_has_couped_through_bop 
+						}
+					}
+					country_event = bomali.2
+				}
+			}
+		}
+	}
+	side = {
+		id = ventura_favored
+		icon = GFX_idea_LAS_people_favoured #temp
+		range = {
+			id = ventura_lean
+			min = 0.1
+			max = 0.5
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				party_popularity_stability_factor = 0.05
+				army_speed_factor = 0.03
+				libertarian_left_drift = 0.02
+			}
+		}
+		range = {
+			id = ventura_mild
+			min = 0.5
+			max = 0.85
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				party_popularity_stability_factor = 0.075
+				army_speed_factor = 0.06
+				libertarian_left_drift = 0.04
+			}
+		}
+		range = {
+			id = ventura_complete
+			min = 0.85
+			max = 1
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.2
+				party_popularity_stability_factor = 0.10
+				army_speed_factor = 0.09
+				libertarian_left_drift = 0.08
+			}
+			on_activate = {
+				
+				#remove_power_balance = {
+				#	id = progressive_conservative_bop
+				#}
+			}
+		}
+	}
+}
+

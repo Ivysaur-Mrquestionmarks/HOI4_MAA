@@ -21,6 +21,11 @@ unit_leader_event = {
 			ideology = democrat
 			popularity = 0.05
 		}
+		add_power_balance_value = {
+		    id = MIN_ventura_vs_green_army_bop
+		    value = 0.075
+		    tooltip_side = ventura_favored
+		}
 		add_war_support = -0.05
 	}
 	#decline
@@ -34,6 +39,54 @@ unit_leader_event = {
 		hidden_effect = {
 			MIL_eugene_andreotti = {
 				set_nationality = MIL
+			}
+		}
+	}
+}
+
+#Green Army Coup (Through Balance of Power!)
+country_event = {
+	id = bomali.2
+	title = bomali.2.t
+	desc = bomali.2.d
+	picture = event_communists_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			set_country_flag = omar_has_couped_through_bop
+		}
+	}
+	option = {
+		name = bomali.2.a
+		set_politics = {
+		    ruling_party = authoritarian_left
+		    elections_allowed = no
+		}
+		add_stability = 0.05
+		add_political_power = -300
+		news_event = bomali.3
+	}
+}
+#news event from above
+news_event = {
+	id = bomali.3
+	title = bomali.3.t
+	desc = bomali.3.d
+	picture = news_event_MIN_omar_fateh_01
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = bomali.3.a
+		trigger = {
+			has_government = authoritarian_left
+		}
+	}
+	option = {
+		name = bomali.3.b
+		trigger = {
+			NOT = {
+				has_government = authoritarian_left
 			}
 		}
 	}

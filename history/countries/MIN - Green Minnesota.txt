@@ -64,6 +64,14 @@ set_popularities = {
 	libertarian_left = 60
 }
 
+set_power_balance = {
+    id = MIN_ventura_vs_green_army_bop
+}
+add_power_balance_modifier = {
+    id = MIN_ventura_vs_green_army_bop
+    modifier = MIN_green_army_coup_power_balance_mod
+}
+
 ### Country Leaders ###
 recruit_character = MIN_jesse_ventura
 recruit_character = MIN_omar_fateh

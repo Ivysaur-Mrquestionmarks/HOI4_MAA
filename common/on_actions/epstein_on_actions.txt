@@ -684,6 +684,10 @@ on_actions = {
 						hours = 16
 					}
 				}
+				remove_power_balance_modifier = {
+				    id = MIN_ventura_vs_green_army_bop
+				    modifier = MIN_green_army_coup_power_balance_mod
+				}
 			}
 			else_if = {
 				limit = {
