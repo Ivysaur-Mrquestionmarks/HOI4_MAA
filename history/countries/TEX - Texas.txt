@@ -182,7 +182,6 @@ recruit_character = TEX_john_cornyn
 recruit_character = TEX_john_murray
 
 ### Generals ###
-recruit_character = TEX_john_murray
 recruit_character = TEX_paul_funk_II
 recruit_character = TEX_john_nichols
 recruit_character = TEX_tracy_norris
@@ -258,11 +257,11 @@ if = {
 	}
 
 	create_equipment_variant = {
-		name = "virginia Class" #attack sub
+		name = "Virginia Class" #attack sub
 		type = ship_hull_submarine_1
 		parent_version = 0
 		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_1
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_engine_slot = sub_ship_nuclear_engine_1
 			rear_1_custom_slot = empty
 				

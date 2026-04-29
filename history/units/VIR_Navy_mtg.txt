@@ -7,9 +7,9 @@ units = {
 		task_force = {					
 			name = "Main Flotilla"
 			location = 4567 # Norfolk
-			ship = { name = "USS Richmond" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIR version_name = "virginia Class" } } }
-			ship = { name = "USS Norfolk" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIR version_name = "virginia Class" } } }
-			ship = { name = "USS Hunter" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIR version_name = "virginia Class" } } }
+			ship = { name = "USS Richmond" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIR version_name = "Virginia Class" } } }
+			ship = { name = "USS Norfolk" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIR version_name = "Virginia Class" } } }
+			ship = { name = "USS Hunter" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIR version_name = "Virginia Class" } } }
 			ship = { name = "USS Stout" definition = destroyer equipment  = { ship_hull_light_1 = { amount = 1 owner = VIR version_name = "Arleigh Burke" } } }
 			ship = { name = "USS Mitscher" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VIR version_name = "Arleigh Burke" } } }
 			ship = { name = "USS Ramage" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VIR version_name = "Arleigh Burke" } } }
@@ -26,7 +26,7 @@ units = {
 		task_force = {					
 			name = "Missile Submarine"
 			location = 3855 # Norfolk
-			ship = { name = "USS Armageddon" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIR version_name = "ohio Class" } } }
+			ship = { name = "USS Armageddon" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIR version_name = "Ohio Class" } } }
 		}
 	}
 }

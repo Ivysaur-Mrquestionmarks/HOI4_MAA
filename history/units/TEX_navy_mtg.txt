@@ -6,7 +6,7 @@ units = {
 		task_force = {				
 			name = "The Invincible Flotilla of Texas"
 			location = 5022
-			ship = { name = "TXS Anihilator" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TEX version_name = "virginia Class" } } }	
+			ship = { name = "TXS Anihilator" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TEX version_name = "Virginia Class" } } }	
 			ship = { name = "TXS Conqueror" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TEX version_name = "Arleigh Burke" } } }
 			ship = { name = "TXS Liberator" definition = frigate equipment = { ship_hull_coast_1 = { amount = 1 owner = TEX version_name = "Freedom Class" } } }
 			ship = { name = "TXS Alamo" definition = frigate equipment = { ship_hull_coast_1 = { amount = 1 owner = TEX version_name = "Freedom Class" } } }

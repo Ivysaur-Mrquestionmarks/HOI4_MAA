@@ -7,10 +7,10 @@ units = {
 			name = "The Anti Capitalist Flotilla"			
 			location = 9509
 			ship = { name = "WCS Karl Marx" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRA version_name = "Ticonderoga class Cruiser" } } }
-			ship = { name = "WCS Revolution" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRA version_name = "virginia Class" } } }
-			ship = { name = "WCS Mao" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRA version_name = "virginia Class" } } }
-			ship = { name = "WCS e621" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRA version_name = "virginia Class" } } }
-			ship = { name = "WCS Che" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRA version_name = "virginia Class" } } }
+			ship = { name = "WCS Revolution" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRA version_name = "Virginia Class" } } }
+			ship = { name = "WCS Mao" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRA version_name = "Virginia Class" } } }
+			ship = { name = "WCS e621" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRA version_name = "Virginia Class" } } }
+			ship = { name = "WCS Che" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRA version_name = "Virginia Class" } } }
 			ship = { name = "WCS Lenin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PRA version_name = "Arleigh Burke" } } }
 			ship = { name = "WCS Engles" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PRA version_name = "Arleigh Burke" } } }
 		}

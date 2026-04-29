@@ -35,10 +35,10 @@ declare_war_on = {
 	target = MNS
 	type = annex_everything
 }
-declare_war_on = {
-	target = MIL
-	type = annex_everything
-}
+#declare_war_on = {
+#	target = MIL
+#	type = annex_everything
+#}
 
 capital = 25
 

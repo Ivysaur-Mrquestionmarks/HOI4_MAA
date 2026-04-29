@@ -175,20 +175,6 @@ characters={
 			id = -1
 		}
 	}
-	AFS_jd_vance = {
-		name = AFS_jd_vance
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/AFS/AFS_jd_vance.dds"
-			}
-		}
-		country_leader = {
-			ideology = conservative
-			traits = {}
-			expire = "2060.1.1.1"
-			id = -1
-		}
-	}
 	AFS_charlie_earl = {
 		name = AFS_charlie_earl
 		portraits = {

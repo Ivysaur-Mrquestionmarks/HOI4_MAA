@@ -31,14 +31,14 @@ if = {
 	}
 }
 
-declare_war_on = {
-	target = MIN
-	type = annex_everything
-}
-declare_war_on = {
-	target = MIL
-	type = annex_everything
-}
+#declare_war_on = {
+#	target = MIN
+#	type = annex_everything
+#}
+#declare_war_on = {
+#	target = MIL
+#	type = annex_everything
+#}
 
 add_ideas = {
 	MNS_Urban_Defense

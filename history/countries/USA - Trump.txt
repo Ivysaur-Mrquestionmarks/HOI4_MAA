@@ -157,7 +157,21 @@ add_ideas = {
 	limited_conscription
 }
 
-activate_advisor = Generic_Vacant_Vice_President
+generate_character = {
+	token_base = Generic_Vacant_Vice_President #token will be TAG_token_base
+	advisor = {
+		slot = political_advisor
+		idea_token = USA
+		traits = { Vacant_Vice_President }
+		can_be_fired = no
+	}
+	#remove_cost = -1 #I believe this does nothing now
+	portraits = { 
+		army = { small = GFX_idea_Vacant_VP }
+	}
+}
+
+activate_advisor = Generic_Vacant_Vice_President_USA
 
 #add_dynamic_modifier = { Saving for another tag :3
 #	modifier = {
@@ -208,7 +222,6 @@ recruit_character = USA_rod_blagojevich
 ### Political Advisors ###
 # Vice Presidents #
 recruit_character = USA_donald_trump_jr
-recruit_character = USA_gavin_mcinnes
 recruit_character = USA_ben_carson
 recruit_character = USA_josh_Hawley
 recruit_character = USA_John_Thune
@@ -220,7 +233,6 @@ recruit_character = USA_david_bernhardt
 recruit_character = USA_sonny_perdue
 recruit_character = USA_wilbur_ross
 recruit_character = USA_eugene_scalia
-recruit_character = USA_ben_carson
 recruit_character = USA_robert_wilkie
 recruit_character = USA_john_ratcliffe
 # Other Advisors #
@@ -316,7 +328,7 @@ if = {
 			tank_nsb_armor_upgrade = 1
 		}
 		#obsolete = yes
-		icon = "GFX_GER_gwtank_light"
+		#icon = "GFX_GER_gwtank_light"
 	}
 	create_equipment_variant = { 
 		name = "M551 Sheridan"
@@ -335,6 +347,6 @@ if = {
 		#	tank_nsb_armor_upgrade = 1
 		#}
 		#obsolete = yes
-		icon = "GFX_GER_gwtank_light"
+		#icon = "GFX_GER_gwtank_light"
 	}
 }

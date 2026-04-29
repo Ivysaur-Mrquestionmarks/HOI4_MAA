@@ -177,7 +177,17 @@ ideas = {
 				}				
 			}
 		}
-
+		LAS_orange_super_event_3 = { #morrow 
+			#picture = caymanian_coast_guard
+			modifier = {
+				offensive_war_stability_factor = 0.2
+			}
+			on_add = {
+				news_event = {
+    					id = viva_las_vegas.20
+				}				
+			}
+		}
 
 	}
 

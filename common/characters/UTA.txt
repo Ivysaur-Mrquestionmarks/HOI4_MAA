@@ -762,6 +762,7 @@ characters={
 		name = UTA_darwin_craig
 		portraits = {
 			army = {
+				large = "gfx/leaders/UTA/craig.dds"
 				small = "GFX_idea_UTA_Craig_advisor"
 			}
 		}
@@ -782,6 +783,14 @@ characters={
 			ai_will_do = {
 				factor = 5
 			}
+		}
+		corps_commander = {
+			traits={ harsh_leader career_officer } 
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
 		}
 	}
 	UTA_robert_taylor = { 
@@ -1104,22 +1113,6 @@ characters={
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 1
-		}
-	}
-	UTA_darwin_craig = {
-		name = "Darwin Craig"
-		portraits = {
-			army = {
-				large = "gfx/leaders/UTA/craig.dds"
-			}
-		}
-		corps_commander = {
-			traits={ harsh_leader career_officer } 
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}
 }

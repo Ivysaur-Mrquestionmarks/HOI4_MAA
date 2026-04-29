@@ -6,13 +6,13 @@ units = {
 		task_force = {				
 			name = "Northern Flotilla"			
 			location = 2378
-			ship = { name = "FRS Independence" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "virginia Class" } } }
-			ship = { name = "FRS Constitution" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "virginia Class" } } }
-			ship = { name = "FRS Democracy" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "virginia Class" } } }
-			ship = { name = "FRS Destiny" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "virginia Class" } } }
-			ship = { name = "FRS Spring" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "virginia Class" } } }
-			ship = { name = "FRS May" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "virginia Class" } } }
-			ship = { name = "FRS Newark" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "virginia Class" } } }
+			ship = { name = "FRS Independence" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Virginia Class" } } }
+			ship = { name = "FRS Constitution" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Virginia Class" } } }
+			ship = { name = "FRS Democracy" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Virginia Class" } } }
+			ship = { name = "FRS Destiny" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Virginia Class" } } }
+			ship = { name = "FRS Spring" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Virginia Class" } } }
+			ship = { name = "FRS May" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Virginia Class" } } }
+			ship = { name = "FRS Newark" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Virginia Class" } } }
 			ship = { name = "FRS Aheam" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Arleigh Burke" } } }
 			ship = { name = "FRS Albany" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Arleigh Burke" } } }
 			ship = { name = "FRS Frederick" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Arleigh Burke" } } }

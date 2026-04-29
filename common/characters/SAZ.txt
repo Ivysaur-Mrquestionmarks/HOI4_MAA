@@ -1,4 +1,4 @@
-characters={
+characters = {
 
 	### Country Leaders ###
 	SAZ_jenny_durkan = {
@@ -25,7 +25,7 @@ characters={
 		}
 		country_leader = {
 			ideology = anarcho_communism
-			traits = {}
+			#traits = {}
 			expire = "2060.1.1.1"
 			id = -1
 		}
@@ -40,7 +40,11 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { old_guard bearer_of_artillery infantry_officer }
+			traits = { 
+				old_guard 
+				bearer_of_artillery 
+				infantry_officer 
+			}
 			skill = 1
 			attack_skill = 2
 			defense_skill = 2

@@ -383,6 +383,23 @@ characters={
 				large = "gfx/leaders/LAS/mcmahill.dds"
 			}
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = LAS_kevin_mcmahill
+			cost = 100
+			allowed = {
+				original_tag = LAS
+			}
+			visible = {
+				original_tag = LAS
+			}
+			available = {
+				
+			}
+			traits = {
+				 army_chief_defensive_2
+			}
+		}
 		corps_commander = {
 			traits = { urban_assault_specialist } 
 			skill = 2
@@ -965,32 +982,6 @@ characters={
 
 
 	#army advisors
-
-	LAS_kevin_mcmahill = {
-		name = "Kevin McMahill"
-		portraits = {
-			army = {
-				small = "gfx/interface/ideas/LAS/LAS_kevin_mcmahill_advisor.dds"
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = LAS_kevin_mcmahill
-			cost = 100
-			allowed = {
-				original_tag = LAS
-			}
-			visible = {
-				original_tag = LAS
-			}
-			available = {
-				
-			}
-			traits = {
-				 army_chief_defensive_2
-			}
-		}
-	}
 	LAS_doug_gillespie = {
 		name = "Doug Gillespie"
 		portraits = {
