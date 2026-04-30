@@ -97,6 +97,7 @@ MIN_ventura_vs_green_army_bop = {	### Stats likely subject to balance testing. F
 				political_power_gain = 0.1
 				party_popularity_stability_factor = 0.05
 				army_speed_factor = 0.03
+				production_speed_industrial_complex_factor = 0.05
 				libertarian_left_drift = 0.02
 			}
 		}
@@ -109,6 +110,7 @@ MIN_ventura_vs_green_army_bop = {	### Stats likely subject to balance testing. F
 				political_power_gain = 0.15
 				party_popularity_stability_factor = 0.075
 				army_speed_factor = 0.06
+				production_speed_industrial_complex_factor = 0.10
 				libertarian_left_drift = 0.04
 			}
 		}
@@ -121,6 +123,7 @@ MIN_ventura_vs_green_army_bop = {	### Stats likely subject to balance testing. F
 				political_power_gain = 0.2
 				party_popularity_stability_factor = 0.10
 				army_speed_factor = 0.09
+				production_speed_industrial_complex_factor = 0.15
 				libertarian_left_drift = 0.08
 			}
 			on_activate = {
