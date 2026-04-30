@@ -1060,7 +1060,7 @@ focus_tree = {
             add_tech_bonus = {
                 bonus = 0.3
                 uses = 5
-                category = artillery_equipment
+                category = artillery
             }
         }
     }
@@ -1320,7 +1320,7 @@ focus_tree = {
         }
         completion_reward = {
             swap_ideas = {
-                remove_idea = PEN_Traiff_Slop
+                remove_idea = PEN_Tariffs
                 add_idea = PEN_High_Tariffs
             }
         }

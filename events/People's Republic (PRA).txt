@@ -1135,7 +1135,7 @@ country_event = { #Use Executive Powers to make VP
 		}
 		country_event = { id = California.23 days = 10 }
 		add_ideas = Andrew_Yang
-		remove_ideas = Generic_Vacant_Vice_President
+		remove_ideas = PRA_vancant_vice_president_pol
 		hidden_effect = {
 			set_country_flag = DemocratVP
 		}
@@ -1152,7 +1152,7 @@ country_event = { #Use Executive Powers to make VP
 		}
 		country_event = { id = California.23 days = 10 }
 		add_ideas = Joe_Sims
-		remove_ideas = Generic_Vacant_Vice_President
+		remove_ideas = PRA_vancant_vice_president_pol
 		hidden_effect = {
 			set_country_flag = CommieVP
 		}
@@ -1165,7 +1165,7 @@ country_event = { #Use Executive Powers to make VP
 		}
 		country_event = { id = California.23 days = 10 }
 		add_ideas = Peter_Lamborn_Wilson
-		remove_ideas = Generic_Vacant_Vice_President
+		remove_ideas = PRA_vancant_vice_president_pol
 		hidden_effect = {
 			set_country_flag = AnarchistVP
 		}

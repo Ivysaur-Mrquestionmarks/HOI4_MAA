@@ -25,7 +25,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = anarcho_communism
-			#traits = {}
+			traits = {}
 			expire = "2060.1.1.1"
 			id = -1
 		}
@@ -41,8 +41,7 @@ characters = {
 		}
 		corps_commander = {
 			traits = { 
-				old_guard 
-				bearer_of_artillery 
+				old_guard 				 
 				infantry_officer 
 			}
 			skill = 1

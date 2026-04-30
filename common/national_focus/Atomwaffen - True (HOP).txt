@@ -1933,7 +1933,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_completed_focus = HOP_The_Jester
+					has_completed_focus = HOP_jester
 				}
 				611 = {
 					set_state_name = "Miller"
@@ -1941,7 +1941,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					has_completed_focus = HOP_The_Loyalist
+					has_completed_focus = HOP_attourney
 				}
 				611 = {
 					set_state_name = "Sol Invictus"

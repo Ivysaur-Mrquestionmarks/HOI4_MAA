@@ -324,9 +324,9 @@ focus_tree = {
 		completion_reward = {
 			IF = {
 				Limit = {
-					CAS = {
-						has_completed_focus = CAS_odinist_moment
-					}
+					#CAS = {
+					#	has_completed_focus = CAS_odinist_moment
+					#}
 				}
 				CAS = {
 					give_guarantee = ACF

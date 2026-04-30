@@ -582,12 +582,13 @@ joint_focus = {
 	completion_reward = {
 
 		add_equipment_bonus = {
-  			bonus = {
-    				cruise_missile_equipment = { # Type of equipment
+			name = USA_missile_bonus
+  			bonus = {		
+    			cruise_missile_equipment = { # Type of equipment
 					air_range = 0.1
 					air_bombing = 0.15
-      					instant = yes
-    				}
+	      			instant = yes
+    			}
 
   			}
 		}

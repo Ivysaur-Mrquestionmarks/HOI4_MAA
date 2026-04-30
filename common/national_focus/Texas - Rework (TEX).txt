@@ -5245,7 +5245,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = TEX_rework_crack_down_on_trumpists
 		cost = 20
-		available = { has_completed_focus = TEX_rework_complete_recovery } 
+		available = { 
+			#has_completed_focus = TEX_rework_complete_recovery 
+		} 
 		prerequisite = {
 			focus = TEX_rework_crack_down_on_trumpists
 		}

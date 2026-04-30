@@ -511,5 +511,29 @@ ideas = {
 				experience_gain_army_unit = 0.15
 			}
 		}
+		PAC_moderatism_era_1 = {
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+			
+			}
+		}
+		PAC_moderatism_era_2 = {
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+		
+			}
+		}
 	}
 }

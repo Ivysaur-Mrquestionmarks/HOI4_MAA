@@ -1038,10 +1038,10 @@ focus_tree = {
               			rule = PRA_political_path
              			option = PRA_PATH_COMMUNIST
           			}
-					has_game_rule = {
-              			rule = PRA_political_path
-             			option = PRA_PATH_ANARCHY
-          			}
+					#has_game_rule = {
+              		#	rule = PRA_political_path
+             		#	option = PRA_PATH_ANARCHY
+          			#}
       			}
    			}
 		}
@@ -1309,10 +1309,10 @@ focus_tree = {
               			rule = PRA_political_path
              			option = PRA_PATH_COLLAPSE
           			}
-					has_game_rule = {
-              			rule = PRA_political_path
-             			option = PRA_PATH_ANARCHY
-          			}
+					#has_game_rule = {
+              		#	rule = PRA_political_path
+             		#	option = PRA_PATH_ANARCHY
+          			#}
       			}
    			}
 		}
@@ -1946,7 +1946,7 @@ focus_tree = {
 		completion_reward = {
 			retire_character = PRA_californian_congress
 			remove_ideas = Andrew_Yang
-			add_ideas = Generic_Vacant_Vice_President
+			add_ideas = PRA_vancant_vice_president_pol
 			PRA_andrew_yang = {
 				promote_character = yes
 			}
@@ -1995,7 +1995,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = The_Embers_of_his_Flame
 			add_ideas = Fatima_Iqbal_Zubair
-			remove_ideas = Generic_Vacant_Vice_President
+			remove_ideas = PRA_vancant_vice_president_pol
 		}
 	}
 	focus = {
@@ -2053,7 +2053,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = PRA_StarChild
 			hidden_effect = {
-				remove_ideas = Generic_Vacant_Vice_President
+				remove_ideas = PRA_vancant_vice_president_pol
 				remove_ideas = Andrew_Yang
 			}
 			add_popularity = {
@@ -2173,7 +2173,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = {
-				remove_ideas = Generic_Vacant_Vice_President
+				remove_ideas = PRA_vancant_vice_president_pol
 				remove_ideas = Andrew_Yang
 			}
 			add_ideas = Shawn_Steel

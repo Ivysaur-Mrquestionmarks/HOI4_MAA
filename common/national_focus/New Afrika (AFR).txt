@@ -1947,14 +1947,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-		create_country_leader = {
-			name = "Raphael Warnock"
-			picture = "gfx/leaders/AFR/warnock.dds"
-			expire = "2060.1.1"
-			ideology = neoliberal
-			traits = {
-=			}
-		}
+			create_country_leader = {
+				name = "Raphael Warnock"
+				picture = "gfx/leaders/AFR/warnock.dds"
+				expire = "2060.1.1"
+				ideology = neoliberal
+				traits = {
+				}
+			}
 		}
 	}
 	focus = {

@@ -240,7 +240,7 @@ add_ideas = {
 	HappyAnarchists
 }
 
-activate_advisor = PRA_Generic_Vacant_Vice_President
+
 set_stability = 0.10
 set_war_support = 0.10
 set_convoys = 547
@@ -383,6 +383,10 @@ recruit_character = PRA_carson_nonce
 ### Admirals ###
 recruit_character = PRA_jody_a_breckenridge
 recruit_character = PRA_sun_jianguo
+
+add_ideas = {
+	PRA_vancant_vice_president_pol
+}
 
 if = {
 	limit = { has_dlc = "La Resistance" }

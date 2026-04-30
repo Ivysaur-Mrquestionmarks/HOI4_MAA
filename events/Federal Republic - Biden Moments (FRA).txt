@@ -713,14 +713,14 @@ country_event = {
 				has_idea = FRA_kamala_harris_vp
 			}
 			remove_ideas = FRA_kamala_harris_vp
-			activate_advisor = Generic_Vacant_Vice_President_political_advisor
+			add_ideas = FRA_vancant_vice_president_pol
 		}
 		if = {
 			limit = {
 				has_idea = FRA_nancy_pelosi_vp
 			}
 			remove_ideas = FRA_nancy_pelosi_vp
-			activate_advisor = Generic_Vacant_Vice_President_political_advisor
+			add_ideas = FRA_vancant_vice_president_pol
 		}
 	}
 }

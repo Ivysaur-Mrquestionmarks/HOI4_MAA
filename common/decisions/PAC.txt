@@ -120,7 +120,7 @@ PAC_army_militia_balance_of_power_category = {
                             range > army_medium_control
                         }
 						is_power_balance_in_range = {
-                            id = army_high_control
+                            id = army_militia_bop
                             range > militia_high_control
                         }
 					}

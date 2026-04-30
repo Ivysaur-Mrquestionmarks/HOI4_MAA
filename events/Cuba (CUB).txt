@@ -16,15 +16,7 @@ country_event = {
 		    remove_idea = Guantanamo_Bay
 		    add_idea = Guantanamo_Bay_Jihad
 		}
-		create_country_leader = {
-			name = "Osama Bin Laden"
-			picture = "gfx/leaders/GTB/binladen.dds"
-			expire = "2060.1.1"
-			ideology = theocracy
-			traits = {
-				mad_mullah	
-			}
-		}
+		promote_character = GTB_osama_bin_laden
 		set_party_name = { 
 		    ideology = autocratic
 		    long_name = GTB_islamic_party_long 

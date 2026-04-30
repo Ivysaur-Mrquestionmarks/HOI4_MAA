@@ -1,27 +1,27 @@
 # Generic characters, may or may not be a place holder.
 # Custom MAA Advisors #
-every_possible_country = {
-	limit = {
-		OR = {
-			tag = FRA
-			tag = USA
-			tag = PRA
-			tag = CSA
-		}
-	}
-	generate_character = {
-		token_base = Generic_Vacant_Vice_President #token will be TAG_token_base
-		advisor = {
-			slot = political_advisor
-			traits = { Vacant_Vice_President }
-			can_be_fired = no
-		}
-		#remove_cost = -1 #I believe this does nothing now
-		portraits = { 
-			army = { small = GFX_idea_Vacant_VP }
-		}
-	}
-}
+#every_possible_country = {
+#	limit = {
+#		OR = {
+#			tag = FRA
+#			tag = USA
+#			#tag = PRA
+#			tag = CSA
+#		}
+#	}
+#	generate_character = {
+#		token_base = Generic_Vacant_Vice_President #token will be TAG_token_base
+#		advisor = {
+#			slot = political_advisor
+#			traits = { Vacant_Vice_President }
+#			can_be_fired = no
+#		}
+#		#remove_cost = -1 #I believe this does nothing now
+#		portraits = { 
+#			army = { small = GFX_idea_Vacant_VP }
+#		}
+#	}
+#}
 every_possible_country = { #Jerma985
 	limit = {
 		NOT = {

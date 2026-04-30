@@ -157,21 +157,7 @@ add_ideas = {
 	limited_conscription
 }
 
-generate_character = {
-	token_base = Generic_Vacant_Vice_President #token will be TAG_token_base
-	advisor = {
-		slot = political_advisor
-		idea_token = USA
-		traits = { Vacant_Vice_President }
-		can_be_fired = no
-	}
-	#remove_cost = -1 #I believe this does nothing now
-	portraits = { 
-		army = { small = GFX_idea_Vacant_VP }
-	}
-}
-
-activate_advisor = Generic_Vacant_Vice_President_USA
+activate_advisor = PRA_vancant_vice_president_Generic_Vacant_Vice_President
 
 #add_dynamic_modifier = { Saving for another tag :3
 #	modifier = {
@@ -221,6 +207,7 @@ recruit_character = USA_rod_blagojevich
 
 ### Political Advisors ###
 # Vice Presidents #
+recruit_character = USA_vancant_vice_president
 recruit_character = USA_donald_trump_jr
 recruit_character = USA_ben_carson
 recruit_character = USA_josh_Hawley
@@ -291,6 +278,11 @@ recruit_character = USA_benjamin_corell #Iowa
 recruit_character = USA_daryl_bohac #Nebraska
 recruit_character = USA_jeffrey_marlette #South Dakota
 recruit_character = USA_alan_dohrmann #North Dakota
+recruit_character = USA_vancant_vice_president
+
+add_ideas = {
+	USA_vancant_vice_president_pol
+}
 
 #spy
 if = {

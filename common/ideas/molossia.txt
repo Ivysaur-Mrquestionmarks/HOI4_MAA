@@ -2,18 +2,18 @@ ideas = {
   country = { #national spirits
 
     MOL_initial_chaos = { #Starting Idea Representing the Chaos Molossia is in
-		allowed = { original_tag = MOL }
-		picture = MOL_starting_chaos
-		modifier = {
-			political_power_cost = 0.25
-			stability_weekly_factor = -0.02
-			stability_factor = -0.25
-			consumer_goods_factor = 0.40
-			libertarian_right_drift = -0.05
-		}
-    }
+			allowed = { original_tag = MOL }
+			picture = MOL_starting_chaos
+			modifier = {
+				political_power_cost = 0.25
+				stability_weekly_factor = -0.02
+				stability_factor = -0.25
+				consumer_goods_factor = 0.40
+				libertarian_right_drift = -0.05
+			}
+  }
 
-    MOL_initial_chaos_1 = { #Starting Idea Representing the Chaos Molossia is in
+  MOL_initial_chaos_1 = { #Starting Idea Representing the Chaos Molossia is in
 		allowed = { original_tag = MOL }
 		picture = MOL_starting_chaos
 		modifier = {
@@ -25,7 +25,7 @@ ideas = {
 		}
 	}
 
-    MOL_initial_chaos_2 = { #Starting Idea Representing the Chaos Molossia is in
+  MOL_initial_chaos_2 = { #Starting Idea Representing the Chaos Molossia is in
 		allowed = { original_tag = MOL }
 		picture = MOL_starting_chaos
 		modifier = {
@@ -35,9 +35,9 @@ ideas = {
 			consumer_goods_factor = 0.24
 			libertarian_right_drift = -0.03
 		}
-    }
+  }
 
-    MOL_initial_chaos_3 = { #Starting Idea Representing the Chaos Molossia is in
+  MOL_initial_chaos_3 = { #Starting Idea Representing the Chaos Molossia is in
 		allowed = { original_tag = MOL }
 		picture = MOL_starting_chaos
 		modifier = {
@@ -47,9 +47,9 @@ ideas = {
 			consumer_goods_factor = 0.16
 			libertarian_right_drift = -0.02
 		}
-    }
+  }
 
-    MOL_initial_chaos_4 = { #Starting Idea Representing the Chaos Molossia is in
+  MOL_initial_chaos_4 = { #Starting Idea Representing the Chaos Molossia is in
 		allowed = { original_tag = MOL }
 		picture = MOL_starting_chaos
 		modifier = {
@@ -59,27 +59,59 @@ ideas = {
 			consumer_goods_factor = 0.8
 			libertarian_right_drift = -0.01
 		}
-    }
-
-    MOL_chaos_under_control = {
+  }
+ 
+  MOL_chaos_under_control = {
 		allowed = { original_tag = MOL }
 		picture = MOL_starting_chaos
 		modifier = {
-			political_power_gain = 0.10
-			stability_weekly_factor = 0.02
+				political_power_gain = 0.10
+				stability_weekly_factor = 0.02
 		}
-    }
+  }
 
-    MOL_birth_of_a_nation_0 = {
+  MOL_birth_of_a_nation_0 = {
 		allowed = {
 			original_tag = MOL
 		}
 		modifier = {
-		
+			
 		}
-    }
+  }
 
-    MOL_refugees = { #weekly manpower, minus stab
+  MOL_birth_of_a_nation_depot_help = {
+		allowed = {
+			original_tag = MOL
+		}
+		modifier = {
+			
+		}
+  }
+  MOL_birth_of_a_nation_no_depot = {
+  	allowed = {
+			original_tag = MOL
+		}
+		modifier = {
+			
+		}
+  }
+  MOL_birth_of_a_nation_silver = {
+  	allowed = {
+			original_tag = MOL
+		}
+		modifier = {
+			
+		}
+  }
+  MOL_birth_of_a_nation_gold = {
+  	allowed = {
+			original_tag = MOL
+		}
+		modifier = {
+			
+		}
+  }
+  MOL_refugees = { #weekly manpower, minus stab
 		allowed = { original_tag = MOL }
 		modifier = {
 			consumer_goods_factor = 0.1
@@ -90,9 +122,9 @@ ideas = {
 			democrat_drift = 0.02
 			republican_drift = 0.02
 		}
-    }
+  }
 
-    MOL_chain_fence = { #weekly manpower, minus stab
+  MOL_chain_fence = { #weekly manpower, minus stab
 		allowed = { original_tag = MOL }
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -101,16 +133,16 @@ ideas = {
 			democrat_drift = 0.01
 			republican_drift = 0.01
 		}
-    }
+  }
 
-    MOL_iron_curtain = { #weekly manpower, minus stab
+  MOL_iron_curtain = { #weekly manpower, minus stab
 		allowed = { original_tag = MOL }
 		modifier = {
 			stability_factor = -0.05
 			monthly_population = 0.20
 			weekly_manpower = 50
 		}
-    }
+  }
 
     MOL_accountable_government = {
 		picture = GFX_idea_MON_Transparent_And_Just_Law

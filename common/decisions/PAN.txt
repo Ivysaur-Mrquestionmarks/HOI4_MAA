@@ -251,7 +251,7 @@ security_coup = {
 		custom_cost_text = give_control_to_the_police_custom_text # localisation
 
 		visible = {
-			has_active_mission = security_coup
+			has_active_mission = security_coup_mission
 		}
 
 		ai_will_do = {

@@ -19,7 +19,7 @@ focus_tree = {
 			factor = 300
 		}
 		completion_reward = {
-			add_ideas = LA_Riots
+			#add_ideas = LA_Riots
 			hidden_effect = {
 				country_event = { id = California.8 days = 5 }
 			}
@@ -139,10 +139,10 @@ focus_tree = {
 			factor = 300
 		}
 		completion_reward = {
-			add_timed_idea = {
-				idea = Conversion_of_Studios
-				days = 125
-			}
+			#add_timed_idea = {
+			#	idea = Conversion_of_Studios
+			#	days = 125
+			#}
 		}
 	}
 	focus = {
@@ -316,10 +316,10 @@ focus_tree = {
 				ideology = authoritarian_left
 				popularity = 0.75
 			}
-			swap_ideas = {
-				remove_idea = LA_Riots
-				add_idea = LA_Riots_Uncontrolled
-			}
+			#swap_ideas = {
+			#	remove_idea = LA_Riots
+			#	add_idea = LA_Riots_Uncontrolled
+			#}
 			set_politics = {
 				ruling_party = libertarian_left
 			}
@@ -360,10 +360,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.01
-			swap_ideas = {
-				remove_idea = LA_Riots_Uncontrolled
-				add_idea = Blood_Supremacy
-			}
+			#swap_ideas = {
+			#	remove_idea = LA_Riots_Uncontrolled
+			#	add_idea = Blood_Supremacy
+			#}
 			set_cosmetic_tag = Bloods_Coup
 			add_popularity = {
 				ideology = autocratic
@@ -442,10 +442,10 @@ focus_tree = {
 			factor = 300
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = Blood_Supremacy
-				add_idea = Blood_Supremacy_2
-			}
+			#swap_ideas = {
+			#	remove_idea = Blood_Supremacy
+			#	add_idea = Blood_Supremacy_2
+			#}
 			add_stability = 0.10
 		}
 	}
@@ -482,10 +482,10 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.01
 			set_cosmetic_tag = Crips
-			swap_ideas = {
-				remove_idea = LA_Riots_Uncontrolled
-				add_idea = Crip_Supremacy
-			}
+			#swap_ideas = {
+			#	remove_idea = LA_Riots_Uncontrolled
+			#	add_idea = Crip_Supremacy
+			#}
 			add_popularity = {
 				ideology = autocratic
 				popularity = 0.25
@@ -653,10 +653,10 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			set_cosmetic_tag = United_Gangs
-			swap_ideas = {
-				remove_idea = LA_Riots_Uncontrolled
-				add_idea = Gangs_United
-			}
+			#swap_ideas = {
+			#	remove_idea = LA_Riots_Uncontrolled
+			#	add_idea = Gangs_United
+			#}
 			add_popularity = {
 				ideology = autocratic
 				popularity = 0.25
@@ -894,14 +894,14 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_stability = +.75
+			add_stability = 0.75
 			add_popularity = {
 				ideology = republican
 				popularity = 0.75
 			}
-			swap_ideas = {
-				remove_idea = LA_Riots
-			}
+			#swap_ideas = {
+			#	remove_idea = LA_Riots
+			#}
 			set_politics = {
 				ruling_party = republican
 			}
@@ -1810,7 +1810,7 @@ focus_tree = {
 			factor = 300
 		}
 		completion_reward = {
-			add_ideas = Disney_Subsidies
+			#add_ideas = Disney_Subsidies
 		}
 	}
 	focus = {
@@ -1826,10 +1826,10 @@ focus_tree = {
 			factor = 300
 		}
 		completion_reward = {
-			swap_ideas = {
-			    remove_idea = Disney_Subsidies
-			    add_idea = Subsidies_for_the_Arts
-			}
+			#swap_ideas = {
+			#    remove_idea = Disney_Subsidies
+			#    add_idea = Subsidies_for_the_Arts
+			#}
 		}
 	}
 	focus = {
@@ -2155,7 +2155,7 @@ focus_tree = {
 				promote_character = yes
 			}
 			set_cosmetic_tag = Burgundian_Disneyland
-			remove_ideas = Subsidies_for_the_Arts
+			#remove_ideas = Subsidies_for_the_Arts
 		}
 	}
 	focus = {
@@ -2187,7 +2187,7 @@ focus_tree = {
 			factor = 300
 		}
 		completion_reward = {
-			add_ideas = State_Supervisions
+			#add_ideas = State_Supervisions
 		}
 	}
 	focus = {
@@ -2220,10 +2220,10 @@ focus_tree = {
 			factor = 300
 		}
 		completion_reward = {
-			swap_ideas = {
-			    remove_idea = State_Supervisions
-			    add_idea = DisTopia
-			}
+			#swap_ideas = {
+			#    remove_idea = State_Supervisions
+			#    add_idea = DisTopia
+			#}
 		}
 	}
 	focus = {

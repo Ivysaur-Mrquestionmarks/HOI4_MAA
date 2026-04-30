@@ -120,7 +120,7 @@ AFS_civil_war_script_effect = {
 	            autocratic = 60
 			    republican = 10
 			    democrat = 10
-			    authoritarian_left 10
+			    authoritarian_left = 10
 			    libertarian_left = 10
 				libertarian_right = 0
             }
@@ -409,7 +409,7 @@ AFS_civil_war_script_effect = {
 	            authoritarian_left = 60
 			    republican = 10
 			    democrat = 10
-			    autocratic 10
+			    autocratic = 10
 			    libertarian_left = 10
 				libertarian_right = 0
             }
@@ -632,7 +632,7 @@ AFS_civil_war_script_effect_hawkins = {
 	            autocratic = 60
 			    republican = 10
 			    democrat = 10
-			    authoritarian_left 10
+			    authoritarian_left = 10
 			    libertarian_left = 10
 				libertarian_right = 0
             }
@@ -897,7 +897,7 @@ AFS_civil_war_script_effect_hawkins = {
 	            libertarian_left = 60
 			    republican = 10
 			    democrat = 10
-			    authoritarian_left 10
+			    authoritarian_left = 10
 			    autocratic = 10
 			    libertarian_right = 0
             }
@@ -1144,7 +1144,7 @@ AFS_civil_war_script_effect_mattis = {
 	            authoritarian_left = 60
 			    republican = 10
 			    democrat = 10
-			    autocratic 10
+			    autocratic = 10
 			    libertarian_left = 10
 				libertarian_right = 0
             }
@@ -1359,7 +1359,7 @@ AFS_civil_war_script_effect_mattis = {
 	            libertarian_left = 60
 			    republican = 10
 			    democrat = 10
-			    authoritarian_left 10
+			    authoritarian_left = 10
 			    autocratic = 10
 			    libertarian_right = 0
             }

@@ -1,5 +1,22 @@
 spriteTypes = {
 ### Flags ###
+# VIR - VIRGINA #
+	spriteType = {
+		name = "GFX_flag_VIR"
+		texturefile = "gfx/flags/small/VIR.tga"
+		legacy_lazy_load = no
+	}
+# TEX - SEXAS #
+	spriteType = {
+		name = "GFX_flag_TEX_american_empire"
+		texturefile = "gfx/flags/small/TEX_american_empire.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_flag_TEX"
+		texturefile = "gfx/flags/small/TEX.tga"
+		legacy_lazy_load = no
+	}
 # ABG - Border Patrol/Arizona #
 	spriteType = {
 		name = "GFX_flag_ABG"
@@ -465,6 +482,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_flag_UTA_autocratic"
 		texturefile = "gfx/flags/small/UTA_autocratic.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_flag_UTA_republican"
+		texturefile = "gfx/flags/small/UTA_CON.tga"
 		legacy_lazy_load = no
 	}
 	spriteType = {

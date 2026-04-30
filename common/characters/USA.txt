@@ -747,6 +747,38 @@ characters={
 			}
 		}
 	}
+	USA_vancant_vice_president = {
+		name = PRA_vancant_vice_president
+		portraits = {
+			army = {
+				small = "GFX_idea_Vacant_VP"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_vancant_vice_president_pol
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				OR = {
+					original_tag = PRA
+					original_tag = USA
+					original_tag = AFS
+					original_tag = CSA
+					original_tag = FRA
+				}
+			}
+			available = {
+				
+			}
+			traits = {
+				Vacant_Vice_President 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
 	# Theorists #
 	USA_james_dickinson = {
 		name = USA_james_dickinson

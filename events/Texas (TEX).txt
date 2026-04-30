@@ -4290,7 +4290,7 @@ country_event = {
    			modifier = {
 				factor = 0 
 				has_game_rule = {
-			               	rule = TEX_start_political_path
+			               	rule = TEX_democracy_political_path
                 			option = TEX_PATH_WASHINGTON_CANDIDATE
 				}
 			}

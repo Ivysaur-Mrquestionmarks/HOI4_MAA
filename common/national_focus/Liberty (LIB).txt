@@ -262,7 +262,7 @@ focus_tree = {
 				NOT = { country_exists = MON }
 				is_in_faction_with = MON
 			}
-			CAS = { has_completed_focus = CAS_new_order }
+			#CAS = { has_completed_focus = CAS_new_order }
 		}
 		completion_reward = {
 			start_border_war = {
@@ -304,7 +304,7 @@ focus_tree = {
 			NOT = {
 				OR = {
 					is_in_faction_with = CAS
-					CAS = { has_completed_focus = CAS_new_order }
+					#CAS = { has_completed_focus = CAS_new_order }
 				}
 			}
 		}
@@ -313,7 +313,7 @@ focus_tree = {
 				NOT = { country_exists = MON }
 				is_in_faction_with = MON
 			}
-			CAS = { has_completed_focus = CAS_new_order }
+			#CAS = { has_completed_focus = CAS_new_order }
 		}
 		completion_reward = {
 			start_border_war = {

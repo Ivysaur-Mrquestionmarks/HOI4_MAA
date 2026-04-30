@@ -1427,7 +1427,7 @@ focus_tree = {
 			has_country_flag = pardoned_npa
 		}
 		completion_reward = {
-			remove_ideas = Generic_Vacant_Vice_President_USA
+			remove_ideas = USA_vancant_vice_president_pol
 			add_ideas = USA_john_thune_advisor
 			country_event = {
     				id = maga.35
@@ -2545,7 +2545,7 @@ focus_tree = {
 			
 		#}
 		completion_reward = {
-			remove_ideas = Generic_Vacant_Vice_President_USA
+			remove_ideas = USA_vancant_vice_president_pol
 			add_ideas = USA_josh_Hawley_advisor
 			country_event = {
     				id = maga.33
@@ -3639,7 +3639,7 @@ focus_tree = {
 			
 		#}
 		completion_reward = {
-			remove_ideas = Generic_Vacant_Vice_President_USA
+			remove_ideas = USA_vancant_vice_president_pol
 			add_ideas = USA_gavin_mcinnes_advisor
 			country_event = {
     				id = maga.34
@@ -4019,7 +4019,7 @@ focus_tree = {
 			
 		#}
 		completion_reward = {
-			unlock_decision_tooltip = USA_Expand_PB_militias
+			unlock_decision_tooltip = USA_PB_units
 			add_power_balance_value = {
     				id = PB_trump_bop
     				value = 0.05
@@ -4218,7 +4218,7 @@ focus_tree = {
 			
 		#}
 		completion_reward = {
-			remove_ideas = Generic_Vacant_Vice_President_USA
+			remove_ideas = USA_vancant_vice_president_pol
 			add_ideas = USA_ben_carson_advisor
 			country_event = {
     				id = maga.235

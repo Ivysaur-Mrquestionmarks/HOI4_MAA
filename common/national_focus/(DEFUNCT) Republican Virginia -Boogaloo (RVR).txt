@@ -479,10 +479,10 @@ focus_tree = {
 			focus = RVR_Liberty_or_Death
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = RVR_Shambled_Economics
-				add_idea = RVR_Organizing_Economy
-			}
+			#swap_ideas = {
+			#	remove_idea = RVR_Shambled_Economics
+			#	add_idea = RVR_Organizing_Economy
+			#}
 		}
 	}
 	focus = {

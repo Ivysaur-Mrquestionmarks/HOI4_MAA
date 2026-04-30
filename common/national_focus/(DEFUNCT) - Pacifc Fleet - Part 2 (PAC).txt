@@ -35,7 +35,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			unlock_decision_category_tooltip = PAC_balance_army_militias				
+			#unlock_decision_category_tooltip = PAC_balance_army_militias				
 			add_stability = 0.25
 		}
 	}
@@ -104,7 +104,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = PAC_units
+			#unlock_decision_tooltip = PAC_units
 			PAC_militia_influence_10 = yes
 		}
 	}
@@ -519,10 +519,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_timed_idea = {
-    				idea = PAC_prepare_operations
-    				days = 365
-			}
+			#add_timed_idea = {
+    		#		idea = PAC_prepare_operations
+    		#		days = 365
+			#}
 			PAC_army_influence_10 = yes
 		}
 	}
@@ -549,7 +549,7 @@ focus_tree = {
   				id = fleet_P.18
     			days = 0
 			}
-			unlock_decision_tooltip = PAC_boder_conflict
+			#unlock_decision_tooltip = PAC_boder_conflict
 		}
 	}
 

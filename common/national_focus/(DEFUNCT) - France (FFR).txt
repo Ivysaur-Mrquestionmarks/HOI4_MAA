@@ -254,10 +254,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 25
-			add_timed_idea = {
-				idea = FFR_French_Constitution
-				days = 365
-			}
+			#add_timed_idea = {
+			#	idea = FFR_French_Constitution
+			#	days = 365
+			#}
 		}
 	}
 	focus = {
@@ -808,7 +808,7 @@ focus_tree = {
 						}
 						add_core_of = NEW
 					}
-					load_focus_tree = French_Acadia_tree
+					#load_focus_tree = French_Acadia_tree
 				}
 			}
 			else = {
@@ -833,7 +833,7 @@ focus_tree = {
 						}
 						add_core_of = NEW
 					}
-					load_focus_tree = French_Acadia_tree
+					#load_focus_tree = French_Acadia_tree
 				}
 			}
 		}

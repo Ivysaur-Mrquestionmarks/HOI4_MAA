@@ -1299,10 +1299,10 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_timed_idea = {
-    			idea = PAC_ready_the_army
-    			days = 300
-			}
+			#add_timed_idea = {
+    		#	idea = PAC_ready_the_army
+    		#	days = 300
+			#}
 		}
 	}
 
@@ -1360,10 +1360,10 @@ focus_tree = {
 
 
 		completion_reward = {
-			swap_ideas = {
-    			remove_idea = PAC_fight_anywhere_1
-    			add_idea = PAC_fight_anywhere_2
-			}
+			#swap_ideas = {
+    		#	remove_idea = PAC_fight_anywhere_1
+    		#	add_idea = PAC_fight_anywhere_2
+			#}
 		}
 	}
 
@@ -1567,10 +1567,10 @@ focus_tree = {
 
 
 		completion_reward = {
-			swap_ideas = {
-    			remove_idea = PAC_keep_america_safe
-    			add_idea = PAC_keep_america_safe_2
-			}			
+			#swap_ideas = {
+    		#	remove_idea = PAC_keep_america_safe
+    		#	add_idea = PAC_keep_america_safe_2
+			#}			
 		}
 	}
 

@@ -90,7 +90,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = ENG_Churchhill_of_Gladstone_idea
+			#add_ideas = ENG_Churchhill_of_Gladstone_idea
 		}
 			
 	}
@@ -108,10 +108,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ENG_Churchhill_of_Gladstone_idea
-				add_idea = ENG_British_Bulldog
-			}
+			#swap_ideas = {
+			#	remove_idea = ENG_Churchhill_of_Gladstone_idea
+			#	add_idea = ENG_British_Bulldog
+			#}
 		}
 			
 	}
@@ -192,10 +192,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ENG_British_Bulldog
-				add_idea = ENG_Kettering_Strongman
-			}
+			#swap_ideas = {
+			#	remove_idea = ENG_British_Bulldog
+			#	add_idea = ENG_Kettering_Strongman
+			#}
 		}
 			
 	}
@@ -230,7 +230,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = ENG_Proud_to_be_British
+			#add_ideas = ENG_Proud_to_be_British
 		}
 	}
 	focus = {
@@ -247,10 +247,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ENG_Proud_to_be_British
-				add_idea = ENG_HMB
-			}
+			#swap_ideas = {
+			#	remove_idea = ENG_Proud_to_be_British
+			#	add_idea = ENG_HMB
+			#}
 		}
 	}
 	focus = {

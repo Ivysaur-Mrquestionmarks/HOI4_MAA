@@ -886,7 +886,7 @@
 						free_building_slots = {
 							building = infrastructure 
 							size > 1
-							include_locked = yes
+							#include_locked = yes
 						}
 						#is_core_of = ROOT
 					}

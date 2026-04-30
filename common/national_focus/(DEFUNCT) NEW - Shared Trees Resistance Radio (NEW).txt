@@ -141,7 +141,7 @@ shared_focus = {
 		add_tech_bonus = {
     		bonus = 0.5
     		uses = 1
-    		category = early_light_cruiser
+    		category = cl_tech
 		}
 		add_tech_bonus = {
     		bonus = 0.5
@@ -163,17 +163,17 @@ shared_focus = {
 		focus = Drain_the_Lobster_Industry
 	}
 	completion_reward = {
-		navy_experience = 25
-		add_tech_bonus = {
-    		bonus = 0.25
-    		uses = 1
-    		category = basic_destroyer
-		}
-		add_tech_bonus = {
-    		bonus = 0.25
-    		uses = 1
-    		category = improved_destroyer
-		}
+   		navy_experience = 25
+   		add_tech_bonus = {
+       		bonus = 0.25
+       		uses = 1
+       		category = dd_tech
+   		}
+   		add_tech_bonus = {
+       		bonus = 0.25
+       		uses = 1
+       		category = dd_tech
+   		}
 	}
 }
 shared_focus = {

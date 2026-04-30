@@ -21,7 +21,7 @@ focus_tree = {
 			country_event = {
 				id = florida.1
 			}
-			activate_mission = FLO_jeb_is_clapping
+			#activate_mission = FLO_jeb_is_clapping
 			hidden_effect = {
 				set_country_flag = eric_trump_funeral_held
 			}
@@ -3682,7 +3682,7 @@ focus_tree = {
 						free_building_slots = {
 							building = air_base 
 							size > 1
-							include_locked = yes
+							#include_locked = yes
 						}
 						is_core_of = ROOT
 					}
@@ -3699,7 +3699,7 @@ focus_tree = {
 						free_building_slots = {
 							building = air_base 
 							size > 1
-							include_locked = yes
+							#include_locked = yes
 						}
 						is_core_of = ROOT
 					}
@@ -4844,7 +4844,7 @@ focus_tree = {
 						free_building_slots = {
 							building = air_base 
 							size > 1
-							include_locked = yes
+							#include_locked = yes
 						}
 						is_core_of = ROOT
 					}
@@ -4861,7 +4861,7 @@ focus_tree = {
 						free_building_slots = {
 							building = air_base 
 							size > 1
-							include_locked = yes
+							#include_locked = yes
 						}
 						is_core_of = ROOT
 					}
@@ -7157,7 +7157,7 @@ focus_tree = {
 						free_building_slots = {
 							building = anti_air_building 
 							size > 1
-							include_locked = yes
+							#include_locked = yes
 						}
 						is_core_of = ROOT
 					}
@@ -7174,7 +7174,7 @@ focus_tree = {
 						free_building_slots = {
 							building = anti_air_building 
 							size > 1
-							include_locked = yes
+							#include_locked = yes
 						}
 						is_core_of = ROOT
 					}
@@ -7191,7 +7191,7 @@ focus_tree = {
 						free_building_slots = {
 							building = anti_air_building 
 							size > 1
-							include_locked = yes
+							#include_locked = yes
 						}
 						is_core_of = ROOT
 					}
