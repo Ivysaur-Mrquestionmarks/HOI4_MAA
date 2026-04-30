@@ -1446,6 +1446,11 @@ leader_traits = {
 		political_power_factor = 0.05
 		republican_acceptance = 90
 	}
+	MIN_smiling_omar = {
+		random = no
+		war_support_factor = 0.05
+		authoritarian_left_drift = 0.15
+	}
 	FRA_kamala_harris_trait = {
 		random = no
 		political_power_factor = 0.10

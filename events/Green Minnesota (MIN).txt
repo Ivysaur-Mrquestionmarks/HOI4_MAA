@@ -155,3 +155,26 @@ country_event = {
 		name = bomali.5.a
 	}
 }
+
+#Omar Fateh civvies
+country_event = {
+	id = bomali.6
+	title = bomali.6.t
+	desc = bomali.6.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = event_communists_01
+	immediate = {
+		hidden_effect = {
+			set_portraits = {
+			    character = MIN_omar_fateh
+			    civilian = { large ="GFX_portrait_smiling_omar_fateh" }
+			}
+			set_country_flag = MIN_smiling_omar_fateh
+		}
+	}
+	option = {
+		name = bomali.6.a
+		add_country_leader_trait = MIN_smiling_omar
+	}
+}

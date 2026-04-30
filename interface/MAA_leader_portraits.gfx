@@ -154,6 +154,10 @@ spriteTypes = {
 		name = "GFX_portrait_technocrat_lex_fridman"
 		texturefile = "gfx/leaders/BRA/fridman_2.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_smiling_omar_fateh"
+		texturefile = "gfx/leaders/MIN/MIN_omar_fateh_CIVILIAN.tga"
+	}
 	#THE DONALDS
 	spriteType = {
 		name = "GFX_portrait_dark_maga_donald"

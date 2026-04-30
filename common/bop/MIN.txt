@@ -115,6 +115,20 @@ MIN_ventura_vs_green_army_bop = {	### Stats likely subject to balance testing. F
 				production_speed_industrial_complex_factor = 0.10
 				libertarian_left_drift = 0.04
 			}
+			on_activate = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = MIN_smiling_omar_fateh
+						}
+						has_country_leader = {
+							character = MIN_omar_fateh
+							ruling_only = yes
+						}
+					}
+					country_event = bomali.6
+				}
+			}
 		}
 		range = {
 			id = ventura_complete
