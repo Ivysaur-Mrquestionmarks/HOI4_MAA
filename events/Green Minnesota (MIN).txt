@@ -88,6 +88,9 @@ news_event = {
 		name = bomali.3.a
 		trigger = {
 			has_government = authoritarian_left
+			NOT = {
+				original_tag = MIN
+			}
 		}
 	}
 	option = {
@@ -96,6 +99,12 @@ news_event = {
 			NOT = {
 				has_government = authoritarian_left
 			}
+		}
+	}
+	option = {
+		name = bomali.3.c
+		trigger = {
+			original_tag = MIN
 		}
 	}
 }
