@@ -40,12 +40,12 @@ units = {
 		start_equipment_factor = 1
 		start_manpower_factor = 1
 	}
-	division = {
-		name = "3rd Strike Force"
-		location = 5195
-		division_template = "Icebreakers"
-		start_experience_factor = 2
-		start_equipment_factor = 1
-		start_manpower_factor = 1
-	}
+#	division = {	#three might be too OP? Ask testers what they think.
+#		name = "3rd Strike Force"
+#		location = 5195
+#		division_template = "Icebreakers"
+#		start_experience_factor = 2
+#		start_equipment_factor = 1
+#		start_manpower_factor = 1
+#	}
 }
