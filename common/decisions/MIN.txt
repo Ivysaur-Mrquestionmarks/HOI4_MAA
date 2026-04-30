@@ -65,3 +65,157 @@ MIN_Raise_Militias = {
 		}
 	}
 }
+
+MIN_balance_of_power_category = {
+
+
+	#DEBUG DECISIONS! FOR TESTING PURPOSES ONLY
+	MIN_appease_ventura_DEBUG = { #DEBUG
+		#priority = 100
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = MIN
+		}
+
+		visible = {
+			is_debug = yes
+		}
+
+		available = {
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 1
+		
+		cost = 0
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = MIN_ventura_vs_green_army_bop
+				value = 0.1
+				tooltip_side = ventura_favored
+			}
+		}
+	}
+	MIN_appease_fateh_DEBUG = { #DEBUG
+		#priority = 100
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = MIN
+		}
+
+		visible = {
+			is_debug = yes
+		}
+
+		available = {
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 1
+		
+		cost = 0
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = MIN_ventura_vs_green_army_bop
+				value = -0.1
+				tooltip_side = green_army_favored
+			}
+		}
+	}
+
+	#real shit
+	MIN_smuggle_guns_bop = {
+		#priority = 100
+		icon = military_operation
+
+		allowed = {
+			original_tag = MIN
+		}
+
+		visible = {
+		}
+
+		available = {
+			OR = {
+				any_country = {
+					limit = {
+						original_tag = AFS
+						has_government = authoritarian_left
+					}
+					exists = yes
+				}
+				NOT = { has_global_flag = ohio_civil_war_global }
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+		
+		cost = 5
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = MIN_ventura_vs_green_army_bop
+				value = -0.07
+				tooltip_side = green_army_favored
+			}
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 1000
+			    producer = AFS
+			}
+			add_equipment_to_stockpile = {
+			    type = artillery_equipment_1
+			    amount = 50
+			    producer = AFS
+			}
+		}
+	}	
+
+	MIN_rally_moderates_bop = {
+		#priority = 100
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = MIN
+		}
+
+		visible = {
+		}
+
+		available = {
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+		
+		cost = 10
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = MIN_ventura_vs_green_army_bop
+				value = 0.10
+				tooltip_side = ventura_favored
+			}
+			add_stability = 0.05
+			add_manpower = 1500
+			add_popularity = {
+				ideology = libertarian_left
+				popularity = 0.04
+			}
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.08
+			}
+		}
+	}
+
+}
