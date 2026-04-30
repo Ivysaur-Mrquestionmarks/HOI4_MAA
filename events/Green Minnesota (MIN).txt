@@ -55,6 +55,14 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = omar_has_couped_through_bop
+			add_country_leader_role = {
+			    character = MIN_hugh_mctavish
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = progressive
+			        traits = { skeptical_towards_industrialization }
+			    }
+			}
 		}
 	}
 	option = {

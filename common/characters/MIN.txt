@@ -69,6 +69,14 @@ characters={
 			logistics_skill = 2
 		}
 	}
+	MIN_hugh_mctavish = {
+		name = "Hugh McTavish"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/hugh_mctavish.tga"
+			}
+		}
+	}
 
 	#generals
 	MIN_william_kelly = {
