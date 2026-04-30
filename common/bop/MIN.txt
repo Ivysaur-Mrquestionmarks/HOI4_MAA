@@ -32,6 +32,16 @@ MIN_ventura_vs_green_army_bop = {	### Stats likely subject to balance testing. F
 				army_defence_factor = 0.01
 				authoritarian_left_drift = 0.02
 			}
+			on_activate = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = MIN_icebreakers_have_been_spawned
+						}
+					}
+					country_event = bomali.4
+				}
+			}
 		}
 		range = {
 			id = green_mild

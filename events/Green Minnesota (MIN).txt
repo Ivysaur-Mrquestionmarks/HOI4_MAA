@@ -91,3 +91,50 @@ news_event = {
 		}
 	}
 }
+
+#Green Army raises a new army in Minneapolis - "The Ice Breakers"
+country_event = {
+	id = bomali.4
+	title = bomali.4.t
+	desc = bomali.4.d
+	picture = event_communists_01
+	is_triggered_only = yes #Balance of Power
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			load_oob = "MIN_ice_breakers"
+			set_country_flag = MIN_icebreakers_have_been_spawned
+		}
+	}
+	option = {
+		name = bomali.4.a
+		custom_effect_tooltip = MIN_load_icebreakers_tt
+		if = {
+			limit = {
+				country_exists = MIL
+			}
+			MIL = {
+				country_event = bomali.5
+			}
+		}
+		if = {
+			limit = {
+				country_exists = MNS
+			}
+			MNS = {
+				country_event = bomali.5
+			}
+		}
+	}
+}
+#Lindell and Milley are informed of above
+country_event = {
+	id = bomali.5
+	title = bomali.5.t
+	desc = bomali.5.d
+	is_triggered_only = yes
+	picture = event_communists_01
+	option = {
+		name = bomali.5.a
+	}
+}
