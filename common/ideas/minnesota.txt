@@ -98,7 +98,10 @@ ideas = {
 		}
 		MIN_the_green_militias = {
 			allowed = { original_tag = MIN }
-			picture = CZE_planning_bonus
+			picture = ast_volunteer_defence_corps
+			available = {
+				country_exists = MIL
+			}
 			modifier = {
 				political_power_cost = 0.2
 				conscription_factor = -0.1
@@ -107,6 +110,7 @@ ideas = {
 				army_core_attack_factor = 0.05
 				land_night_attack = 0.1
 				surrender_limit = 0.15
+				custom_modifier_tooltip = MIN_kill_the_ice_legion_bitch_bop_tt
 			}
 		}
 		#Lindell
