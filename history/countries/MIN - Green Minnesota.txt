@@ -66,6 +66,7 @@ set_popularities = {
 
 set_power_balance = {
     id = MIN_ventura_vs_green_army_bop
+    set_default = yes
 }
 add_power_balance_modifier = {
     id = MIN_ventura_vs_green_army_bop
