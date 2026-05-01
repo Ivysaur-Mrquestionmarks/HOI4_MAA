@@ -69,6 +69,18 @@ characters={
 			logistics_skill = 2
 		}
 	}
+	MIN_daren_mehl = {
+		name = "Daren Mehl"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/MIN_daren_mehl.tga"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			ideology = despotism
+		}
+	}
 
 	#generals
 	MIN_william_kelly = {
@@ -330,6 +342,7 @@ characters={
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/MIN/tim_penny_advisor.dds"
+				large = "gfx/leaders/MIN/MIN_tim_penny.tga"
 			}
 		}
 		advisor = {
@@ -342,6 +355,12 @@ characters={
 			available = {
 				NOT = {
 					has_government = authoritarian_left
+				}
+				NOT = {
+					has_country_leader = {
+						character = MIN_timothy_joseph_penny
+						ruling_only = yes
+					}					
 				}
 			}
 			traits = {
@@ -361,6 +380,10 @@ characters={
 			ai_will_do = {
 				factor = 5
 			}
+		}
+		country_leader = {
+			traits = {  }
+			ideology = Progressive_Republicans
 		}
 	}
 	MIN_hugh_mctavish = {
