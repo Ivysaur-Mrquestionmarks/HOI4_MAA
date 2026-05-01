@@ -9,7 +9,7 @@ characters={
 			}
 		}
 		country_leader = {
-			desc = "DESC_LEADER_GREG_ABBOTT"
+			desc = TEX_Greg_Abbott_desc
 			ideology = populist_conservatism
 			traits = {
 				cripple_trait
@@ -29,7 +29,7 @@ characters={
 			}
 		}
 		country_leader = {
-			desc = "DESC_LEADER_TED_CRUZ"
+			desc = TEX_Ted_Cruz_desc
 			ideology = populist_conservatism
 			traits = {}
 			expire = "2060.1.1.1"
@@ -78,6 +78,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = TEX_Dan_Patrick_desc
 			ideology = trumpist
 			traits = {}
 			expire = "2060.1.1.1"
@@ -95,6 +96,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = TEX_Beto_Orourke_desc
 			ideology = progressive
 			traits = {}
 			expire = "2060.1.1.1"
@@ -129,6 +131,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = TEX_Daniel_Miller_desc
 			ideology = social_nationalism #was set as fascist but I swear Miller was meant to be SocNat? -Merf
 			traits = {}
 			expire = "2060.1.1.1"
@@ -146,6 +149,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = TEX_George_Bush_desc
 			expire = "2060.1.1"
 			ideology = neocon
 			traits = {
