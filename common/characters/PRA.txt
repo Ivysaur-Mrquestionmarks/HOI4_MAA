@@ -133,12 +133,14 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = PRA_Bernie_Sanders_desc
 			traits = { american_socialist }
 			ideology = democratic_socialism
 			expire = "2060.1.1.1"
 			id = -1
 		}
 		country_leader = {
+			desc = PRA_Bernie_Sanders_desc
 			traits = { Grandpa_Bernie }
 			ideology = progressive
 			expire = "2060.1.1.1"

@@ -10,6 +10,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = GLA_Jo_Jorgensen_desc
 			traits = { Mama_Jo }
 			ideology = libertarian_ideology
 			expire = "2060.1.1.1"
@@ -26,6 +27,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = GLA_John_Mcafee_desc
 			traits = {
 				Security_Mastermind
 				Boogaloo_Sympathizer
@@ -45,6 +47,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = GLA_Ron_Paul_desc
 			traits = {
 				Beloved_Politician
 				Libertarian_Icon
@@ -80,6 +83,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = GLA_Gary_Johnson_desc
 			traits = {
 				Construction_Expert }
 			ideology = libertarian_ideology
@@ -160,6 +164,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = GLA_Adam_Fox_desc
 			traits = {  }
 			ideology = national_anarchism
 		}
@@ -181,6 +186,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = GLA_Curtis_Yarvin_desc
 			traits = {  }
 			ideology = dark_enlightenment
 			expire = "2100.1.1.1"
