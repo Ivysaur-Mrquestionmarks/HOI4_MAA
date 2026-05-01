@@ -340,7 +340,9 @@ characters={
 				tag = MIN
 			}
 			available = {
-
+				NOT = {
+					has_government = authoritarian_left
+				}
 			}
 			traits = {
 				anti_communist_crusader
@@ -352,7 +354,7 @@ characters={
 				}
 				add_power_balance_value = {
 				    id = MIN_ventura_vs_green_army_bop
-				    value = 0.10
+				    value = 0.15
 				    tooltip_side = ventura_favored
 				}				
 			}
