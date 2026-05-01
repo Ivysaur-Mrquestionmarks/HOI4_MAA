@@ -1,6 +1,6 @@
 
 joint_focus = {
-	id = AFS_GLA_NAB_the_apostles_of_the_enlightenment
+	id = AFS_GLA_the_apostles_of_the_enlightenment
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
@@ -21,13 +21,6 @@ joint_focus = {
 			tag = GLA
 		}
 	}
-	offset = {
-		x = 50
-		y = 16
-		trigger = {
-			tag = NAB
-		}
-	}
 
 	cost = 1
 	text_icon = NORDIC_focus_style
@@ -35,7 +28,6 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	allow_branch = {
@@ -47,9 +39,6 @@ joint_focus = {
 			exists = yes
 			has_completed_focus = GLA_the_yarvin_march
 		}
-		NAB = {
-			exists = yes
-		}
 	}
 	available = {
 		AFS = {
@@ -60,10 +49,6 @@ joint_focus = {
 			exists = yes
 			has_completed_focus = GLA_the_yarvin_march
 		}
-		NAB = {
-			exists = yes
-			has_completed_focus = NAB_Victory_For_Nick_Land
-		}
 	}
 
 	completion_reward = {
@@ -73,16 +58,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_gather_the_ceos
+	id = AFS_GLA_gather_the_ceos
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -5
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_the_apostles_of_the_enlightenment
+	relative_position_id = AFS_GLA_the_apostles_of_the_enlightenment
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_the_apostles_of_the_enlightenment
+		focus = AFS_GLA_the_apostles_of_the_enlightenment
 	}
 
 	cost = 3
@@ -91,14 +76,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -119,16 +102,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_expand_rust_belt_mining
+	id = AFS_GLA_expand_rust_belt_mining
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -2
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_gather_the_ceos
+	relative_position_id = AFS_GLA_gather_the_ceos
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_gather_the_ceos
+		focus = AFS_GLA_gather_the_ceos
 	}
 
 	cost = 5
@@ -137,14 +120,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -177,16 +158,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_united_industries
+	id = AFS_GLA_united_industries
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -1
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_expand_rust_belt_mining
+	relative_position_id = AFS_GLA_expand_rust_belt_mining
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_expand_rust_belt_mining
+		focus = AFS_GLA_expand_rust_belt_mining
 	}
 
 	cost = 5
@@ -195,14 +176,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -210,7 +189,7 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_ideas = AFS_GLA_NAB_technocapitals_united
+		add_ideas = AFS_GLA_technocapitals_united
 		random_controlled_state = {
 			limit = {is_core_of = ROOT} #This way we guarantee it is in a core state under your control
 			add_extra_state_shared_building_slots = 1
@@ -233,16 +212,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_corporate_economic_management
+	id = AFS_GLA_corporate_economic_management
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -1
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_united_industries
+	relative_position_id = AFS_GLA_united_industries
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_united_industries
+		focus = AFS_GLA_united_industries
 	}
 
 	cost = 5
@@ -251,14 +230,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -278,16 +255,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_unite_our_markets
+	id = AFS_GLA_unite_our_markets
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 1
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_united_industries
+	relative_position_id = AFS_GLA_united_industries
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_united_industries
+		focus = AFS_GLA_united_industries
 	}
 
 	cost = 5
@@ -296,14 +273,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -312,26 +287,26 @@ joint_focus = {
 
 	completion_reward = {
 	    swap_ideas = {
-			remove_idea = AFS_GLA_NAB_technocapitals_united
-			add_idea = AFS_GLA_NAB_technocapitals_united_2
+			remove_idea = AFS_GLA_technocapitals_united
+			add_idea = AFS_GLA_technocapitals_united_2
 		}
 	}
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_prosperity_across_the_enlightened_lands
+	id = AFS_GLA_prosperity_across_the_enlightened_lands
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -1
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_unite_our_markets
+	relative_position_id = AFS_GLA_unite_our_markets
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_unite_our_markets
+		focus = AFS_GLA_unite_our_markets
 	}
 	prerequisite = {
-		focus = AFS_GLA_NAB_corporate_economic_management
+		focus = AFS_GLA_corporate_economic_management
 	}
 
 	cost = 5
@@ -340,14 +315,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -356,23 +329,23 @@ joint_focus = {
 
 	completion_reward = {
 	    swap_ideas = {
-			remove_idea = AFS_GLA_NAB_technocapitals_united_2
-			add_idea = AFS_GLA_NAB_technocapitals_united_3
+			remove_idea = AFS_GLA_technocapitals_united_2
+			add_idea = AFS_GLA_technocapitals_united_3
 		}
 	}
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_the_full_potential_of_the_rust_belt
+	id = AFS_GLA_the_full_potential_of_the_rust_belt
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 2
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_unite_our_markets
+	relative_position_id = AFS_GLA_unite_our_markets
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_unite_our_markets
+		focus = AFS_GLA_unite_our_markets
 	}
 
 	cost = 5
@@ -381,14 +354,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -418,16 +389,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_maximize_weapons_production
+	id = AFS_GLA_maximize_weapons_production
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 1
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_the_full_potential_of_the_rust_belt
+	relative_position_id = AFS_GLA_the_full_potential_of_the_rust_belt
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_the_full_potential_of_the_rust_belt
+		focus = AFS_GLA_the_full_potential_of_the_rust_belt
 	}
 
 	cost = 5
@@ -436,14 +407,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -473,16 +442,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_technocapital_economics
+	id = AFS_GLA_technocapital_economics
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -1
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_the_full_potential_of_the_rust_belt
+	relative_position_id = AFS_GLA_the_full_potential_of_the_rust_belt
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_the_full_potential_of_the_rust_belt
+		focus = AFS_GLA_the_full_potential_of_the_rust_belt
 	}
 
 	cost = 5
@@ -491,14 +460,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -528,19 +495,19 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_ai_industrial_integration
+	id = AFS_GLA_ai_industrial_integration
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 2
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_expand_rust_belt_mining
+	relative_position_id = AFS_GLA_expand_rust_belt_mining
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_expand_rust_belt_mining
+		focus = AFS_GLA_expand_rust_belt_mining
 	}
 	prerequisite = {
-		focus = AFS_GLA_NAB_joint_tech_acceleration
+		focus = AFS_GLA_joint_tech_acceleration
 	}
 
 	cost = 5
@@ -549,14 +516,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -578,16 +543,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_joint_tech_acceleration
+	id = AFS_GLA_joint_tech_acceleration
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 2
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_gather_the_ceos
+	relative_position_id = AFS_GLA_gather_the_ceos
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_gather_the_ceos
+		focus = AFS_GLA_gather_the_ceos
 	}
 
 	cost = 5
@@ -596,14 +561,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -616,16 +579,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_the_new_powerhouse_of_tech
+	id = AFS_GLA_the_new_powerhouse_of_tech
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 1
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_joint_tech_acceleration
+	relative_position_id = AFS_GLA_joint_tech_acceleration
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_joint_tech_acceleration
+		focus = AFS_GLA_joint_tech_acceleration
 	}
 
 	cost = 5
@@ -634,14 +597,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -673,19 +634,19 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_accelerate_into_technocapital_singularity
+	id = AFS_GLA_center_of_civilization
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -1
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_the_new_powerhouse_of_tech
+	relative_position_id = AFS_GLA_the_new_powerhouse_of_tech
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_the_new_powerhouse_of_tech
+		focus = AFS_GLA_the_new_powerhouse_of_tech
 	}
 	prerequisite = {
-		focus = AFS_GLA_NAB_ai_industrial_integration
+		focus = AFS_GLA_ai_industrial_integration
 	}
 
 	cost = 5
@@ -694,14 +655,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -741,16 +700,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_military_cooperation
+	id = AFS_GLA_military_cooperation
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 4
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_the_apostles_of_the_enlightenment
+	relative_position_id = AFS_GLA_the_apostles_of_the_enlightenment
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_the_apostles_of_the_enlightenment
+		focus = AFS_GLA_the_apostles_of_the_enlightenment
 	}
 
 	cost = 3
@@ -759,14 +718,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -779,16 +736,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_improve_military_training
+	id = AFS_GLA_improve_military_training
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -1
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_military_cooperation
+	relative_position_id = AFS_GLA_military_cooperation
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_military_cooperation
+		focus = AFS_GLA_military_cooperation
 	}
 
 	cost = 5
@@ -797,14 +754,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -819,16 +774,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_shared_military_doctrines
+	id = AFS_GLA_shared_military_doctrines
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 2
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_improve_military_training
+	relative_position_id = AFS_GLA_improve_military_training
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_improve_military_training
+		focus = AFS_GLA_improve_military_training
 	}
 
 	cost = 5
@@ -837,14 +792,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -862,19 +815,19 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_joint_military_gear_research
+	id = AFS_GLA_joint_military_gear_research
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -2
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_improve_military_training
+	relative_position_id = AFS_GLA_improve_military_training
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_improve_military_training
+		focus = AFS_GLA_improve_military_training
 	}
 	prerequisite = {
-		focus = AFS_GLA_NAB_joint_tech_acceleration
+		focus = AFS_GLA_joint_tech_acceleration
 	}
 
 	cost = 5
@@ -883,14 +836,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -912,16 +863,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_speed_and_perfection
+	id = AFS_GLA_speed_and_perfection
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -1
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_joint_military_gear_research
+	relative_position_id = AFS_GLA_joint_military_gear_research
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_joint_military_gear_research
+		focus = AFS_GLA_joint_military_gear_research
 	}
 
 	cost = 5
@@ -930,14 +881,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -964,19 +913,19 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_the_leviathans_guard
+	id = AFS_GLA_the_leviathans_guard
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -2
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_shared_military_doctrines
+	relative_position_id = AFS_GLA_shared_military_doctrines
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_shared_military_doctrines
+		focus = AFS_GLA_shared_military_doctrines
 	}
 	prerequisite = {
-		focus = AFS_GLA_NAB_joint_military_gear_research
+		focus = AFS_GLA_joint_military_gear_research
 	}
 
 	cost = 5
@@ -985,14 +934,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -1000,24 +947,24 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		add_ideas = AFS_GLA_NAB_united_technocapital_military
+		add_ideas = AFS_GLA_united_technocapital_military
 	}
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_soldiers_of_technocapital
+	id = AFS_GLA_soldiers_of_technocapital
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = -2
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_the_leviathans_guard
+	relative_position_id = AFS_GLA_the_leviathans_guard
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_the_leviathans_guard
+		focus = AFS_GLA_the_leviathans_guard
 	}
 	prerequisite = {
-		focus = AFS_GLA_NAB_speed_and_perfection
+		focus = AFS_GLA_speed_and_perfection
 	}
 
 	cost = 5
@@ -1026,14 +973,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -1042,32 +987,32 @@ joint_focus = {
 
 	completion_reward = {
 		if = {
-			limit = { has_idea = AFS_GLA_NAB_united_technocapital_military_2 }
+			limit = { has_idea = AFS_GLA_united_technocapital_military_2 }
 			swap_ideas = {
-			    remove_idea = AFS_GLA_NAB_united_technocapital_military_2
-			    add_idea = AFS_GLA_NAB_united_technocapital_military_3
+			    remove_idea = AFS_GLA_united_technocapital_military_2
+			    add_idea = AFS_GLA_united_technocapital_military_3
 		    }
 		}
 		else = {
 			swap_ideas = {
-			    remove_idea = AFS_GLA_NAB_united_technocapital_military
-			    add_idea = AFS_GLA_NAB_united_technocapital_military_2
+			    remove_idea = AFS_GLA_united_technocapital_military
+			    add_idea = AFS_GLA_united_technocapital_military_2
 		    }
 		}
 	}
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_the_future_of_warfare
+	id = AFS_GLA_the_future_of_warfare
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 1
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_the_leviathans_guard
+	relative_position_id = AFS_GLA_the_leviathans_guard
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_the_leviathans_guard
+		focus = AFS_GLA_the_leviathans_guard
 	}
 
 	cost = 5
@@ -1076,14 +1021,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -1092,32 +1035,32 @@ joint_focus = {
 
 	completion_reward = {
 	    if = {
-			limit = { has_idea = AFS_GLA_NAB_united_technocapital_military_2 }
+			limit = { has_idea = AFS_GLA_united_technocapital_military_2 }
 			swap_ideas = {
-			    remove_idea = AFS_GLA_NAB_united_technocapital_military_2
-			    add_idea = AFS_GLA_NAB_united_technocapital_military_3
+			    remove_idea = AFS_GLA_united_technocapital_military_2
+			    add_idea = AFS_GLA_united_technocapital_military_3
 		    }
 		}
 		else = {
 			swap_ideas = {
-			    remove_idea = AFS_GLA_NAB_united_technocapital_military
-			    add_idea = AFS_GLA_NAB_united_technocapital_military_2
+			    remove_idea = AFS_GLA_united_technocapital_military
+			    add_idea = AFS_GLA_united_technocapital_military_2
 		    }
 		}
 	}
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_joint_airforce_buildup
+	id = AFS_GLA_joint_airforce_buildup
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 2
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_military_cooperation
+	relative_position_id = AFS_GLA_military_cooperation
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_military_cooperation
+		focus = AFS_GLA_military_cooperation
 	}
 
 	cost = 5
@@ -1126,14 +1069,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -1151,16 +1092,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_airforce_tech_cooperation
+	id = AFS_GLA_airforce_tech_cooperation
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 0
 	Y = 2
-	relative_position_id = AFS_GLA_NAB_joint_airforce_buildup
+	relative_position_id = AFS_GLA_joint_airforce_buildup
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_joint_airforce_buildup
+		focus = AFS_GLA_joint_airforce_buildup
 	}
 
 	cost = 5
@@ -1169,14 +1110,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
@@ -1207,16 +1146,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = AFS_GLA_NAB_futher_corporate_government_integration
+	id = AFS_GLA_futher_corporate_government_integration
 	search_filters = { joint }
 	icon = GFX_goal_GLA_yarvins_promises
 
 	X = 0
 	Y = 1
-	relative_position_id = AFS_GLA_NAB_the_apostles_of_the_enlightenment
+	relative_position_id = AFS_GLA_the_apostles_of_the_enlightenment
 
 	prerequisite = {
-		focus = AFS_GLA_NAB_the_apostles_of_the_enlightenment
+		focus = AFS_GLA_the_apostles_of_the_enlightenment
 	}
 
 	cost = 5
@@ -1225,14 +1164,12 @@ joint_focus = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 	available = {
   		OR = {
 			tag = AFS
 			tag = GLA
-			tag = NAB
 		}
 	}
 
