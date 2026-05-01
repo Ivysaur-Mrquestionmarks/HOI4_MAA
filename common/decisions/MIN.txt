@@ -99,6 +99,35 @@ MIN_balance_of_power_category = {
 			}
 		}
 	}
+	MIN_appease_ventura_BIG_DEBUG = { #DEBUG
+		#priority = 100
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = MIN
+		}
+
+		visible = {
+			is_debug = yes
+		}
+
+		available = {
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 1
+		
+		cost = 0
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = MIN_ventura_vs_green_army_bop
+				value = 0.5
+				tooltip_side = ventura_favored
+			}
+		}
+	}
 	MIN_appease_fateh_DEBUG = { #DEBUG
 		#priority = 100
 		icon = GFX_decision_eng_trade_unions_demand
@@ -124,6 +153,35 @@ MIN_balance_of_power_category = {
 			add_power_balance_value = {
 				id = MIN_ventura_vs_green_army_bop
 				value = -0.1
+				tooltip_side = green_army_favored
+			}
+		}
+	}
+	MIN_appease_fateh_BIG_DEBUG = { #DEBUG
+		#priority = 100
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = MIN
+		}
+
+		visible = {
+			is_debug = yes
+		}
+
+		available = {
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 1
+		
+		cost = 0
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = MIN_ventura_vs_green_army_bop
+				value = -0.5
 				tooltip_side = green_army_favored
 			}
 		}
