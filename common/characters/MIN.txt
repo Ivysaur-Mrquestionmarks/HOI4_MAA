@@ -69,14 +69,6 @@ characters={
 			logistics_skill = 2
 		}
 	}
-	MIN_hugh_mctavish = {
-		name = "Hugh McTavish"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/MIN/hugh_mctavish.tga"
-			}
-		}
-	}
 
 	#generals
 	MIN_william_kelly = {
@@ -119,6 +111,319 @@ characters={
 			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 3
+		}
+	}
+
+	#Advisors
+	MIN_thomas_christopher_wright = {
+		name = "Chris Wright"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MIN/chris_wright_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MIN_chris_wright
+			cost = 150
+			allowed = {
+				tag = MIN
+			}
+			available = {
+
+			}
+			traits = {
+				captain_of_industry
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	MIN_cameron_a_gordon = {
+		name = "Cam Gordon"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MIN/cam_gordon_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MIN_cam_gordon
+			cost = 150
+			allowed = {
+				tag = MIN
+			}
+			available = {
+
+			}
+			traits = {
+				fortification_engineer
+			}
+			on_add = {
+				add_power_balance_value = {
+				    id = MIN_ventura_vs_green_army_bop
+				    value = 0.05
+				    tooltip_side = ventura_favored
+				}				
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}	
+	MIN_seth_kuhl_stennes = {
+		name = "Seth Kuhl-Stennes"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MIN/seth_kuhl_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MIN_seth_kuhl
+			cost = 150
+			allowed = {
+				tag = MIN
+			}
+			available = {
+
+			}
+			traits = {
+				war_industrialist
+			}
+			on_add = {
+				add_power_balance_value = {
+				    id = MIN_ventura_vs_green_army_bop
+				    value = -0.05
+				    tooltip_side = green_army_favored
+				}				
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	MIN_andrew_j_dawkins = {
+		name = "Andy Dawkins"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MIN/andy_dawkins_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MIN_andy_dawkins
+			cost = 150
+			allowed = {
+				tag = MIN
+			}
+			available = {
+
+			}
+			traits = {
+				silent_workhorse
+			}
+			ai_will_do = {
+				factor = 7
+			}
+		}
+	}
+	MIN_james_aaron_mccaskel = {
+		name = "James McCaskel"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MIN/james_mccaskel_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MIN_james_mccaskel
+			cost = 150
+			allowed = {
+				tag = MIN
+			}
+			available = {
+
+			}
+			traits = {
+				propaganda_expert
+			}
+			on_add = {
+				add_power_balance_value = {
+				    id = MIN_ventura_vs_green_army_bop
+				    value = -0.05
+				    tooltip_side = green_army_favored
+				}				
+			}
+			ai_will_do = {
+				factor = 3
+			}
+		}
+	}
+	MIN_dr_dewayne_davis = {
+		name = "Dr. DeWayne Davis"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MIN/dewayne_davis_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MIN_dewayne_davis
+			cost = 150
+			allowed = {
+				tag = MIN
+			}
+			available = {
+
+			}
+			traits = {
+				prince_of_terror
+			}
+			on_add = {
+				add_power_balance_value = {
+				    id = MIN_ventura_vs_green_army_bop
+				    value = -0.07
+				    tooltip_side = green_army_favored
+				}				
+			}
+			ai_will_do = {
+				factor = 3
+			}
+		}
+	}
+	MIN_peter_hutchinson = {
+		name = "Peter Hutchinson"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MIN/peter_hutchinson_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MIN_peter_hutchinson
+			cost = 150
+			allowed = {
+				tag = MIN
+			}
+			available = {
+
+			}
+			traits = {
+				quartermaster_general#financial_expert
+			}
+			on_add = {
+				add_power_balance_value = {
+				    id = MIN_ventura_vs_green_army_bop
+				    value = 0.07
+				    tooltip_side = ventura_favored
+				}				
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	MIN_timothy_joseph_penny = {
+		name = "Tim Penny"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MIN/tim_penny_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MIN_tim_penny
+			cost = 175
+			allowed = {
+				tag = MIN
+			}
+			available = {
+
+			}
+			traits = {
+				anti_communist_crusader
+			}
+			on_add = {
+				add_popularity = {
+					ideology = libertarian_left
+					popularity = 0.05
+				}
+				add_power_balance_value = {
+				    id = MIN_ventura_vs_green_army_bop
+				    value = 0.10
+				    tooltip_side = ventura_favored
+				}				
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	MIN_hugh_mctavish = {
+		name = "Hugh McTavish"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MIN/hugh_mctavish.tga"
+				small = "gfx/interface/ideas/MIN/hugh_mctavish_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MIN_hugh_mctavish
+			cost = 150
+			allowed = {
+				tag = MIN
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						character = MIN_hugh_mctavish
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				popular_figurehead
+			}
+			on_add = {
+				add_power_balance_value = {
+				    id = MIN_ventura_vs_green_army_bop
+				    value = 0.02
+				    tooltip_side = ventura_favored
+				}				
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+
+	#spy - always have as last adviser recruited
+	MIN_medaria_arradondo = {
+		name = "Medaria Arradondo"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MIN/medaria_arradondo_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MIN_medaria_arradondo
+			cost = 150
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			available = {
+				has_intelligence_agency  = yes 
+			}
+			traits = {
+				head_of_intelligence
+			}
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 }
