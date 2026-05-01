@@ -1588,7 +1588,7 @@ country_event = {
 			release = CSB
 			transfer_units_fraction= {
 				target = CSB
-				size = 0.4
+				size = 0.401						
 				stockpile_ratio = 0.3
 				army_ratio = 0.3
 				navy_ratio = 0
@@ -1598,11 +1598,14 @@ country_event = {
 				#}
 			}
 			every_state = {
-				limit = {is_owned_by = CSB}
+				limit = {
+					is_owned_by = CSB
+					is_core_of = CSB
+				}
 				teleport_armies = {
-    					limit = {
-        					is_core_of = CSB
-    					}
+    				limit = {
+        				
+    				}
 				}
 				add_core_of = CSA
 			}

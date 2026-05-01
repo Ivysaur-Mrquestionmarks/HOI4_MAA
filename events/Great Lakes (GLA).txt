@@ -2624,7 +2624,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		every_occupied_country = { add_resistance = -5 }
+		every_owned_state = { add_resistance = -5 }
 		add_popularity = {
 			ideology = autocratic
 			popularity = 0.05

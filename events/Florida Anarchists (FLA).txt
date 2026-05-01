@@ -240,8 +240,11 @@ unit_leader_event = {
 	fire_only_once = yes
 	option = {
 		name = fla.11.a
-		remove_unit_leader_trait = substance_addict
-		add_unit_leader_trait = inflexible_strategist
+		FLA_vitalyzdtv = {
+			remove_unit_leader_trait = substance_addict
+			add_unit_leader_trait = inflexible_strategist
+		}
+		
 		gain_xp = 350
 	}
 }

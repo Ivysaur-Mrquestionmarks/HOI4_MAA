@@ -148,7 +148,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = alien.9.b safe, senior leads
+		name = alien.9.b #safe, senior leads
 		hidden_effect = {
 		    country_event = {
     			id = alien.10

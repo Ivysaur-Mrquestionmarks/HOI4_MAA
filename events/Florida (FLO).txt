@@ -221,7 +221,10 @@ country_event = {
 				id = florida.13 
 				hours = 6 
 			} 
-			set_country_flag = please_clap_revolution set_capital = 353 
+			set_country_flag = please_clap_revolution 
+			set_capital = {
+				state = 353
+			} 
 		}
 		#set_party_name = { 
 		   # ideology = autocratic
@@ -632,7 +635,7 @@ country_event = {
 		name = florida.30.b
 		ai_chance = { factor = 90 }
 		add_stability = 0.10
-		add_country_flag = conch_has_no_protection
+		set_country_flag = conch_has_no_protection
 	}
 }
 #news event for Romanov Purchase

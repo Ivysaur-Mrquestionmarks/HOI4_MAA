@@ -731,7 +731,7 @@ country_event = {
 				promote_leader = yes
 				country_leader = {
 					ideology = theocracy
-					expire = “2060.1.1.1”
+					expire = "2060.1.1.1"
 					traits = { Puppet_Emperor_of_the_Klan }
 				}
 			}
@@ -772,6 +772,7 @@ news_event = {
 	title = tribal.21.t
 	desc = tribal.21.d
 	picture = event_news_sol_invictus_end
+	fire_only_once = yes
 	trigger = {
 		HOP = {
 			has_country_flag = Roman_Collapse

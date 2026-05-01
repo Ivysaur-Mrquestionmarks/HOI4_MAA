@@ -36,8 +36,10 @@ country_event = {
 				release = VII
 			}
 			transfer_state = 475
-			add_core = 475
-			set_capital = 475
+			add_state_core = 475
+			set_capital = {
+				state = 475
+			}
 			set_province_name = {
 				id = 12204
 				name = "Virgin City"

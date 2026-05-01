@@ -12,7 +12,9 @@ country_event = {
 		#news_event = { id = News_Events.87 hours = 4 }
 		trigger = {
 			FLD = {
-				is_ai = NO
+				NOT = {
+					is_ai = yes
+				}	
 			}
 		}
 	}

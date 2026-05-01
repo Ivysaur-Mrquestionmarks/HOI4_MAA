@@ -224,7 +224,7 @@ country_event = {
 	}
 	option = {
 		name = gkj.11.b
-		add_stability = - 0.10
+		add_stability = -0.10
 		declare_war_on = {
 			target = MEX
 			type = annex_everything
@@ -296,14 +296,14 @@ country_event = {
 		name = gkj.15.b
 		annex_country = {
 			target = TEX
-			transfer_troops = yes
-			every_state = {
-				limit = {
-					is_core_of = TEX
-					is_owned_by = TEX
-				}
-				add_core_of = GKJ
+			transfer_troops = yes			
+		}
+		every_state = {
+			limit = {
+				is_core_of = TEX
+				is_owned_by = TEX
 			}
+			add_core_of = GKJ
 		}
 	}
 }
@@ -346,9 +346,9 @@ country_event = {
 		add_ideas = {
 			GKJ_american_crusade
 		}
-		580 = {
-				limit = { ROOT = { has_full_control_of_state = PREV } }
-				
+		IF = {
+			limit = { ROOT = { has_full_control_of_state = PREV } }
+			580 = {		
 				create_unit = {
 					division = "name = \"21st ''American Crusader'' Division\" division_template = \"American Crusaders\" start_experience_factor = 1" 
 					owner = GKJ
@@ -366,6 +366,8 @@ country_event = {
 					owner = GKJ
 				}
 			}
+		}
+		
 	}
 }
 

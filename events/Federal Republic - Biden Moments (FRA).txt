@@ -758,18 +758,15 @@ country_event = {
 	option = {
 		name = federal_republic.17.a
 		add_advisor_role = {
-			  character = FRA_volodymyr_zelensky
-			  advisor = {
+			character = FRA_volodymyr_zelensky
+			advisor = {
 			    slot = political_advisor
 			    cost = 150
 			    idea_token = FRA_volodymyr_zelensky
 			    traits = {
 			        propaganda_expert
 			    }
-			    allowed = {
-			        always = yes
-			    }
-			  }
+			}
 		}
 		set_country_flag = fra_ukraine_in_exile
 		custom_effect_tooltip = bidens_ukrainian_divisions_tt
