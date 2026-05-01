@@ -9,6 +9,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = FRA_Joe_Biden_desc
 			traits = { fourty_six }
 			ideology = neoliberal
 			expire = "2060.1.1.1"
@@ -89,6 +90,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = FRA_Michelle_Obama_desc
 			traits = { 
 			}
 			ideology = liberal
@@ -108,6 +110,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = FRA_AOC_desc
 			ideology = democratic_socialism
 			traits = {}
 			expire = "2060.1.1.1"
@@ -115,12 +118,14 @@ characters={
 		}
 		country_leader = {
 			ideology = eco_fascism
+			desc = FRA_AOC_desc
 			traits = {}
 			expire = "2060.1.1.1"
 			id = -1
 		}
 		country_leader = {
 			ideology = progressive
+			desc = FRA_AOC_desc
 			traits = {}
 			expire = "2060.1.1.1"
 			id = -1
@@ -194,6 +199,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = FRA_Kamala_Harris_desc
             traits = {}
             ideology = neoliberal
             expire = "2060.1.1.1"
