@@ -1,773 +1,508 @@
 #Faction System
-#islamists
-SIN_islamists_low_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_low_loyalty_increase_tt
-	add_to_variable = { SIN_islamists_loyalty = SIN_faction_low_increase }
-	clamp_variable = {
-		var = SIN_islamists_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_islamists_low_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_low_popularity_increase_tt
-	add_to_variable = { SIN_islamists_popularity = SIN_faction_low_increase }
-	clamp_variable = {
-		var = SIN_islamists_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_islamists_medium_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_medium_loyalty_increase_tt
-	add_to_variable = { SIN_islamists_loyalty = SIN_faction_medium_increase }
-	clamp_variable = {
-		var = SIN_islamists_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_islamists_medium_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_medium_popularity_increase_tt
-	add_to_variable = { SIN_islamists_popularity = SIN_faction_medium_increase }
-	clamp_variable = {
-		var = SIN_islamists_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_islamists_high_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_high_loyalty_increase_tt
-	add_to_variable = { SIN_islamists_loyalty = SIN_faction_high_increase }
-	clamp_variable = {
-		var = SIN_islamists_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_islamists_high_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_high_popularity_increase_tt
-	add_to_variable = { SIN_islamists_popularity = SIN_faction_high_increase }
-	clamp_variable = {
-		var = SIN_islamists_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_islamists_low_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_low_loyalty_decrease_tt
-	add_to_variable = { SIN_islamists_loyalty = SIN_faction_low_decrease }
-	clamp_variable = {
-		var = SIN_islamists_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_islamists_low_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_low_popularity_decrease_tt
-	add_to_variable = { SIN_islamists_popularity = SIN_faction_low_decrease }
-	clamp_variable = {
-		var = SIN_islamists_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_islamists_medium_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
-	add_to_variable = { SIN_islamists_loyalty = SIN_faction_medium_decrease }
-	clamp_variable = {
-		var = SIN_islamists_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_islamists_medium_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_medium_popularity_decrease_tt
-	add_to_variable = { SIN_islamists_popularity = SIN_faction_medium_decrease }
-	clamp_variable = {
-		var = SIN_islamists_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_islamists_high_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_high_loyalty_decrease_tt
-	add_to_variable = { SIN_islamists_loyalty = SIN_faction_high_decrease }
-	clamp_variable = {
-		var = SIN_islamists_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_islamists_high_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_islamists_tt
-	custom_effect_tooltip = SIN_high_popularity_decrease_tt
-	add_to_variable = { SIN_islamists_popularity = SIN_faction_high_decrease }
-	clamp_variable = {
-		var = SIN_islamists_popularity
-		min = 0
-		max = 100
-	}
-}
-
-#BROAD SOCIALISTS
-SIN_bs_low_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_low_loyalty_increase_tt
-	add_to_variable = { SIN_bs_loyalty = SIN_faction_low_increase }
-	clamp_variable = {
-		var = SIN_bs_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bs_low_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_low_popularity_increase_tt
-	add_to_variable = { SIN_bs_popularity = SIN_faction_low_increase }
-	clamp_variable = {
-		var = SIN_bs_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_bs_medium_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_medium_loyalty_increase_tt
-	add_to_variable = { SIN_bs_loyalty = SIN_faction_medium_increase }
-	clamp_variable = {
-		var = SIN_bs_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bs_medium_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_medium_popularity_increase_tt
-	add_to_variable = { SIN_bs_popularity = SIN_faction_medium_increase }
-	clamp_variable = {
-		var = SIN_bs_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_bs_high_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_high_loyalty_increase_tt
-	add_to_variable = { SIN_bs_loyalty = SIN_faction_high_increase }
-	clamp_variable = {
-		var = SIN_bs_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bs_high_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_high_popularity_increase_tt
-	add_to_variable = { SIN_bs_popularity = SIN_faction_high_increase }
-	clamp_variable = {
-		var = SIN_bs_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_bs_low_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_low_loyalty_decrease_tt
-	add_to_variable = { SIN_bs_loyalty = SIN_faction_low_decrease }
-	clamp_variable = {
-		var = SIN_bs_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bs_low_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_low_popularity_decrease_tt
-	add_to_variable = { SIN_bs_popularity = SIN_faction_low_decrease }
-	clamp_variable = {
-		var = SIN_bs_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_bs_medium_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
-	add_to_variable = { SIN_bs_loyalty = SIN_faction_medium_decrease }
-	clamp_variable = {
-		var = SIN_bs_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bs_medium_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_medium_popularity_decrease_tt
-	add_to_variable = { SIN_bs_popularity = SIN_faction_medium_decrease }
-	clamp_variable = {
-		var = SIN_bs_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_bs_high_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_high_loyalty_decrease_tt
-	add_to_variable = { SIN_bs_loyalty = SIN_faction_high_decrease }
-	clamp_variable = {
-		var = SIN_bs_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bs_high_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_bs_tt
-	custom_effect_tooltip = SIN_high_popularity_decrease_tt
-	add_to_variable = { SIN_bs_popularity = SIN_faction_high_decrease }
-	clamp_variable = {
-		var = SIN_bs_popularity
-		min = 0
-		max = 100
-	}
-}
-
-#AGRARIAN UNION
-SIN_bzns_low_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_low_loyalty_increase_tt
-	add_to_variable = { SIN_bzns_loyalty = SIN_faction_low_increase }
-	clamp_variable = {
-		var = SIN_bzns_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bzns_low_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_low_popularity_increase_tt
-	add_to_variable = { SIN_bzns_popularity = SIN_faction_low_increase }
-	clamp_variable = {
-		var = SIN_bzns_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_bzns_medium_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_medium_loyalty_increase_tt
-	add_to_variable = { SIN_bzns_loyalty = SIN_faction_medium_increase }
-	clamp_variable = {
-		var = SIN_bzns_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bzns_medium_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_medium_popularity_increase_tt
-	add_to_variable = { SIN_bzns_popularity = SIN_faction_medium_increase }
-	clamp_variable = {
-		var = SIN_bzns_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_bzns_high_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_high_loyalty_increase_tt
-	add_to_variable = { SIN_bzns_loyalty = SIN_faction_high_increase }
-	clamp_variable = {
-		var = SIN_bzns_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bzns_high_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_high_popularity_increase_tt
-	add_to_variable = { SIN_bzns_popularity = SIN_faction_high_increase }
-	clamp_variable = {
-		var = SIN_bzns_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_bzns_low_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_low_loyalty_decrease_tt
-	add_to_variable = { SIN_bzns_loyalty = SIN_faction_low_decrease }
-	clamp_variable = {
-		var = SIN_bzns_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bzns_low_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_low_popularity_decrease_tt
-	add_to_variable = { SIN_bzns_popularity = SIN_faction_low_decrease }
-	clamp_variable = {
-		var = SIN_bzns_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_bzns_medium_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
-	add_to_variable = { SIN_bzns_loyalty = SIN_faction_medium_decrease }
-	clamp_variable = {
-		var = SIN_bzns_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bzns_medium_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_medium_popularity_decrease_tt
-	add_to_variable = { SIN_bzns_popularity = SIN_faction_medium_decrease }
-	clamp_variable = {
-		var = SIN_bzns_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_bzns_high_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_high_loyalty_decrease_tt
-	add_to_variable = { SIN_bzns_loyalty = SIN_faction_high_decrease }
-	clamp_variable = {
-		var = SIN_bzns_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_bzns_high_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_bzns_tt
-	custom_effect_tooltip = SIN_high_popularity_decrease_tt
-	add_to_variable = { SIN_bzns_popularity = SIN_faction_high_decrease }
-	clamp_variable = {
-		var = SIN_bzns_popularity
-		min = 0
-		max = 100
-	}
-}
-
-#NATIONAL SOCIAL MOVEMENT
-SIN_nsm_low_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_low_loyalty_increase_tt
-	add_to_variable = { SIN_nsm_loyalty = SIN_faction_low_increase }
-	clamp_variable = {
-		var = SIN_nsm_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_nsm_low_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_low_popularity_increase_tt
-	add_to_variable = { SIN_nsm_popularity = SIN_faction_low_increase }
-	clamp_variable = {
-		var = SIN_nsm_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_nsm_medium_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_medium_loyalty_increase_tt
-	add_to_variable = { SIN_nsm_loyalty = SIN_faction_medium_increase }
-	clamp_variable = {
-		var = SIN_nsm_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_nsm_medium_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_medium_popularity_increase_tt
-	add_to_variable = { SIN_nsm_popularity = SIN_faction_medium_increase }
-	clamp_variable = {
-		var = SIN_nsm_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_nsm_high_loyalty_increase_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_high_loyalty_increase_tt
-	add_to_variable = { SIN_nsm_loyalty = SIN_faction_high_increase }
-	clamp_variable = {
-		var = SIN_nsm_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_nsm_high_popularity_increase_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_high_popularity_increase_tt
-	add_to_variable = { SIN_nsm_popularity = SIN_faction_high_increase }
-	clamp_variable = {
-		var = SIN_nsm_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_nsm_low_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_low_loyalty_decrease_tt
-	add_to_variable = { SIN_nsm_loyalty = SIN_faction_low_decrease }
-	clamp_variable = {
-		var = SIN_nsm_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_nsm_low_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_low_popularity_decrease_tt
-	add_to_variable = { SIN_nsm_popularity = SIN_faction_low_decrease }
-	clamp_variable = {
-		var = SIN_nsm_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_nsm_medium_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
-	add_to_variable = { SIN_nsm_loyalty = SIN_faction_medium_decrease }
-	clamp_variable = {
-		var = SIN_nsm_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_nsm_medium_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_medium_popularity_decrease_tt
-	add_to_variable = { SIN_nsm_popularity = SIN_faction_medium_decrease }
-	clamp_variable = {
-		var = SIN_nsm_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_nsm_high_loyalty_decrease_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_high_loyalty_decrease_tt
-	add_to_variable = { SIN_nsm_loyalty = SIN_faction_high_decrease }
-	clamp_variable = {
-		var = SIN_nsm_loyalty
-		min = 0
-		max = 100
-	}
-}
-SIN_nsm_high_popularity_decrease_effect = {
-	custom_effect_tooltip = SIN_nsm_tt
-	custom_effect_tooltip = SIN_high_popularity_decrease_tt
-	add_to_variable = { SIN_nsm_popularity = SIN_faction_high_decrease }
-	clamp_variable = {
-		var = SIN_nsm_popularity
-		min = 0
-		max = 100
-	}
-}
-
-SIN_communists_try_to_form_ff_effect = {
-	set_variable = { SIN_ff_forming_probability = -100 } #The Fatherland Front can only be formed if this variable becomes greater than 0 during this check
-
-	if = { #Having war is relatively important
-		limit = {
-			has_war = yes
-		}
-		add_to_variable = { SIN_ff_forming_probability = 15 }
-		if = { #Having war against SOV is significant
-			limit = {
-				has_war_with = SOV
-				OR = {
-					NOT = { has_country_flag = SIN_at_war_with_the_soviets_flag }
-					has_country_flag = { flag = SIN_at_war_with_the_soviets_flag days > 180 }
-				}	
-			}
-			add_to_variable = { SIN_ff_forming_probability = 10 }
-			if = { #Having war against communist SOV is very important
-				limit = {
-					SOV = { has_government = communism }
-				}
-				add_to_variable = { SIN_ff_forming_probability = 50 }
+	#islamists
+		SIN_islamists_low_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_low_loyalty_increase_tt
+			add_to_variable = { SIN_islamists_loyalty = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_islamists_loyalty
+				min = 0
+				max = 100
 			}
 		}
-	}
-
-	if = { #An ally being at war with SOV is important
-		limit = {
-			any_allied_country = {
-				has_war_with = SOV
-			}
-		}
-		add_to_variable = { SIN_ff_forming_probability = 25 }
-		if = { #If SOV is communist then it becomes very important
-			limit = {
-				SOV = { has_government = communism }
-			}
-			add_to_variable = { SIN_ff_forming_probability = 75 }
-		}
-	}
-
-	if = { #Communist SOV controlling any neighbor state is relatively important
-		limit = {
-			any_neighbor_country = {
-				tag = SOV
-			}
-			SOV = { has_government = communism }
-		}
-		add_to_variable = { SIN_ff_forming_probability = 15 }
-		if= { #Neighbor SOV being at war with SINgaria or her allies is critical
-			limit = {
-				OR = {
-					any_allied_country = {
-						has_war_with = SOV
-					}
-					has_war_with = SOV
-				}			
-			}
-			add_to_variable = { SIN_ff_forming_probability = 100 }
-		}
-	}
-
-	if = { #SOV being communist is relatively important
-		limit = {
-			SOV = { has_government = communism }
-		}
-		add_to_variable = { SIN_ff_forming_probability = 15 }
-	}
-
-	randomize_temp_variable = {
-		var = SIN_random_ff_forming_chance
-		distribution = binomial
-		min = 0
-		max = 100
-	}
-
-	if = {
-		limit = {
-			check_variable = {
-				var = SIN_ff_forming_probability
-				value = SIN_random_ff_forming_chance 
-				compare = greater_than_or_equals 
-			}
-		}
-		country_event = { id = bftb_SINgaria_fatherland_front.1 hours = 16 random_hours = 16 }
-	}
-	log = "Fatherland Front probability: [?SIN.SIN_ff_forming_probability]"
-	log = "Fatherland Front Random chance: [?SIN.SIN_random_ff_forming_chance]"
-}
-
-SIN_ff_approaches_a_faction_effect = {
-
-	randomize_variable = {
-		var = SIN_random_ff_approaching_faction_chance
-		distribution = binomial
-		min = 0
-		max = 100
-	}
-	log = "FF Approaches faction random chance: [?SIN.SIN_random_ff_approaching_faction_chance]"
-}
-
-SIN_ff_preventive_action_taken = {
-	add_to_variable = { SIN_ff_preventive_actions_against_coup = SIN_ff_preventive_actions_base_value }
-	clamp_variable = {
-		var = SIN_ff_preventive_actions_against_coup
-		min = 0
-		max = SIN_ff_preventive_actions_cap_value #This caps the player's ability to prevent the coup
-	}
-	custom_effect_tooltip = SIN_ff_preventive_action_taken_tt
-}
-
-SIN_ff_tries_to_stage_a_coup_effect = {
-	#Make sure the coup will start under the specific circumstances on historical
-	if = {
-		limit = {
-			is_historical_focus_on = yes
-			SIN_historical_requirements_met = yes
-		}
-		log = "Forced Fatherland Front coup"
-		country_event = { id = bftb_SINgaria_fatherland_front.2 hours = 4 random_hours = 4 }
-		set_country_flag = SIN_forced_ff_coup_flag
-	}
-	#If historical requirements not met, do a regular check
-	else = {
-		set_variable = { SIN_ff_coup_probability = -100 } #The coup will only happen if this variable becomes greater than 0 during this check
-
-		if = { #Having war is relatively important
-			limit = {
-				has_war = yes
-			}
-			add_to_variable = { SIN_ff_coup_probability = 15 }
-			if = { #Having war against SOV is significant
-				limit = {
-					has_war_with = SOV
-					OR = {
-						NOT = { has_country_flag = SIN_at_war_with_the_soviets_flag }
-						has_country_flag = { flag = SIN_at_war_with_the_soviets_flag days > 180 }
-					}
-				}
-				add_to_variable = { SIN_ff_coup_probability = 10 }
-				if = { #Having war against communist SOV is very important
-					limit = {
-						SOV = { has_government = communism }
-					}
-					add_to_variable = { SIN_ff_coup_probability = 40 } #Prev 50
-				}
+		SIN_islamists_low_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_low_popularity_increase_tt
+			add_to_variable = { SIN_islamists_popularity = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_islamists_popularity
+				min = 0
+				max = 100
 			}
 		}
 
-		if = { #An ally being at war with SOV is important
-			limit = {
-				any_allied_country = {
-					has_war_with = SOV
-				}
+		SIN_islamists_medium_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_medium_loyalty_increase_tt
+			add_to_variable = { SIN_islamists_loyalty = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_islamists_loyalty
+				min = 0
+				max = 100
 			}
-			add_to_variable = { SIN_ff_coup_probability = 10 } #Prev 25
-			if = { #If SOV is communist then it becomes very important
-				limit = {
-					SOV = { has_government = communism }
-				}
-				add_to_variable = { SIN_ff_coup_probability = 15 } #Prev 75
+		}
+		SIN_islamists_medium_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_medium_popularity_increase_tt
+			add_to_variable = { SIN_islamists_popularity = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_islamists_popularity
+				min = 0
+				max = 100
 			}
 		}
 
-		if = { #Communist SOV controlling any neighbor state is relatively important
-			limit = {
-				any_neighbor_country = {
-					tag = SOV
-				}
-				has_government = communism
+		SIN_islamists_high_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_high_loyalty_increase_tt
+			add_to_variable = { SIN_islamists_loyalty = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_islamists_loyalty
+				min = 0
+				max = 100
 			}
-			add_to_variable = { SIN_ff_coup_probability = 5 }
-			if = { #SOV controls one of our key states
-				limit = {
-					SOV = {
-						any_controlled_state = {
-							has_state_flag = SIN_initial_SINgarian_state_flag
-							is_in_home_area = yes
-						}
-					}
-				}
-				add_to_variable = { SIN_ff_coup_probability = 15 }
-				if= { #Neighbor SOV being at war with SINgaria or her allies is critical
-					limit = {
-						OR = {
-							any_allied_country = {
-								has_war_with = SOV
-							}
-							has_war_with = SOV
-						}			
-					}
-					add_to_variable = { SIN_ff_coup_probability = 100 }
-				}
+		}
+		SIN_islamists_high_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_high_popularity_increase_tt
+			add_to_variable = { SIN_islamists_popularity = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_islamists_popularity
+				min = 0
+				max = 100
 			}
 		}
 
-		if = { #SOV conquering Germany
-			limit = {
-				SOV = {
-					any_controlled_state = {
-						is_core_of = GER
-					}
-				}
+		SIN_islamists_low_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_low_loyalty_decrease_tt
+			add_to_variable = { SIN_islamists_loyalty = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_islamists_loyalty
+				min = 0
+				max = 100
 			}
-			add_to_variable = { SIN_ff_coup_probability = 5 }
-			if = { #SOV conquering initial German states
-				limit = {
-					SOV = {
-						any_controlled_state = {
-							is_core_of = GER
-							NOT = {
-								state = 188
-								state = 763
-								state = 5
-								state = 807
-								state = 85
-							}
-						}
-					}
-				}
-				add_to_variable = { SIN_ff_coup_probability = 15 }
+		}
+		SIN_islamists_low_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_low_popularity_decrease_tt
+			add_to_variable = { SIN_islamists_popularity = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_islamists_popularity
+				min = 0
+				max = 100
 			}
 		}
 
-		if = { #SIN losing key territory
-			limit = {
-				any_state = {
-					has_state_flag = SIN_initial_SINgarian_state_flag
-					controller = {
-						has_war_with = ROOT
-					}
-				}
+		SIN_islamists_medium_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
+			add_to_variable = { SIN_islamists_loyalty = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_islamists_loyalty
+				min = 0
+				max = 100
 			}
-			add_to_variable = { SIN_ff_coup_probability = 15 }
+		}
+		SIN_islamists_medium_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_medium_popularity_decrease_tt
+			add_to_variable = { SIN_islamists_popularity = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_islamists_popularity
+				min = 0
+				max = 100
+			}
 		}
 
-		if = { #SOV being communist is relatively important
-			limit = {
-				SOV = { has_government = communism }
+		SIN_islamists_high_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_high_loyalty_decrease_tt
+			add_to_variable = { SIN_islamists_loyalty = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_islamists_loyalty
+				min = 0
+				max = 100
 			}
-			add_to_variable = { SIN_ff_coup_probability = 10 } #Prev 15
+		}
+		SIN_islamists_high_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_islamists_tt
+			custom_effect_tooltip = SIN_high_popularity_decrease_tt
+			add_to_variable = { SIN_islamists_popularity = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_islamists_popularity
+				min = 0
+				max = 100
+			}
 		}
 
-		randomize_temp_variable = {
-			var = SIN_random_ff_coup_chance
-			distribution = binomial
-			min = 0
-			max = 100
+	#DOMESTIC TERRORISTS
+		SIN_dt_low_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_low_loyalty_increase_tt
+			add_to_variable = { SIN_dt_loyalty = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_dt_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_dt_low_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_low_popularity_increase_tt
+			add_to_variable = { SIN_dt_popularity = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_dt_popularity
+				min = 0
+				max = 100
+			}
 		}
 
-		if = {
-			limit = {
-				check_variable = {
-					var = SIN_ff_coup_probability
-					value = SIN_random_ff_coup_chance 
-					compare = greater_than_or_equals 
-				}
+		SIN_dt_medium_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_medium_loyalty_increase_tt
+			add_to_variable = { SIN_dt_loyalty = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_dt_loyalty
+				min = 0
+				max = 100
 			}
-			country_event = { id = bftb_SINgaria_fatherland_front.2 hours = 4 random_hours = 4 }
 		}
-		log = "[GetDateText] - Fatherland Front coup probability: [?SIN.SIN_ff_coup_probability]"
-		log = "[GetDateText] - Fatherland Front coup Random chance: [?SIN.SIN_random_ff_coup_chance]"
-	}
-}
+		SIN_dt_medium_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_medium_popularity_increase_tt
+			add_to_variable = { SIN_dt_popularity = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_dt_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_dt_high_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_high_loyalty_increase_tt
+			add_to_variable = { SIN_dt_loyalty = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_dt_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_dt_high_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_high_popularity_increase_tt
+			add_to_variable = { SIN_dt_popularity = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_dt_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_dt_low_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_low_loyalty_decrease_tt
+			add_to_variable = { SIN_dt_loyalty = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_dt_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_dt_low_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_low_popularity_decrease_tt
+			add_to_variable = { SIN_dt_popularity = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_dt_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_dt_medium_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
+			add_to_variable = { SIN_dt_loyalty = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_dt_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_dt_medium_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_medium_popularity_decrease_tt
+			add_to_variable = { SIN_dt_popularity = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_dt_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_dt_high_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_high_loyalty_decrease_tt
+			add_to_variable = { SIN_dt_loyalty = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_dt_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_dt_high_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_dt_tt
+			custom_effect_tooltip = SIN_high_popularity_decrease_tt
+			add_to_variable = { SIN_dt_popularity = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_dt_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+	#AGRARIAN UNION
+		SIN_bzns_low_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_low_loyalty_increase_tt
+			add_to_variable = { SIN_bzns_loyalty = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_bzns_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_bzns_low_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_low_popularity_increase_tt
+			add_to_variable = { SIN_bzns_popularity = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_bzns_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_bzns_medium_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_medium_loyalty_increase_tt
+			add_to_variable = { SIN_bzns_loyalty = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_bzns_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_bzns_medium_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_medium_popularity_increase_tt
+			add_to_variable = { SIN_bzns_popularity = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_bzns_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_bzns_high_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_high_loyalty_increase_tt
+			add_to_variable = { SIN_bzns_loyalty = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_bzns_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_bzns_high_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_high_popularity_increase_tt
+			add_to_variable = { SIN_bzns_popularity = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_bzns_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_bzns_low_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_low_loyalty_decrease_tt
+			add_to_variable = { SIN_bzns_loyalty = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_bzns_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_bzns_low_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_low_popularity_decrease_tt
+			add_to_variable = { SIN_bzns_popularity = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_bzns_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_bzns_medium_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
+			add_to_variable = { SIN_bzns_loyalty = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_bzns_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_bzns_medium_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_medium_popularity_decrease_tt
+			add_to_variable = { SIN_bzns_popularity = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_bzns_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_bzns_high_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_high_loyalty_decrease_tt
+			add_to_variable = { SIN_bzns_loyalty = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_bzns_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_bzns_high_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_bzns_tt
+			custom_effect_tooltip = SIN_high_popularity_decrease_tt
+			add_to_variable = { SIN_bzns_popularity = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_bzns_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+	#NATIONAL SOCIAL MOVEMENT
+		SIN_nsm_low_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_low_loyalty_increase_tt
+			add_to_variable = { SIN_nsm_loyalty = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_nsm_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_nsm_low_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_low_popularity_increase_tt
+			add_to_variable = { SIN_nsm_popularity = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_nsm_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_nsm_medium_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_medium_loyalty_increase_tt
+			add_to_variable = { SIN_nsm_loyalty = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_nsm_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_nsm_medium_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_medium_popularity_increase_tt
+			add_to_variable = { SIN_nsm_popularity = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_nsm_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_nsm_high_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_high_loyalty_increase_tt
+			add_to_variable = { SIN_nsm_loyalty = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_nsm_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_nsm_high_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_high_popularity_increase_tt
+			add_to_variable = { SIN_nsm_popularity = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_nsm_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_nsm_low_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_low_loyalty_decrease_tt
+			add_to_variable = { SIN_nsm_loyalty = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_nsm_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_nsm_low_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_low_popularity_decrease_tt
+			add_to_variable = { SIN_nsm_popularity = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_nsm_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_nsm_medium_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
+			add_to_variable = { SIN_nsm_loyalty = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_nsm_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_nsm_medium_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_medium_popularity_decrease_tt
+			add_to_variable = { SIN_nsm_popularity = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_nsm_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_nsm_high_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_high_loyalty_decrease_tt
+			add_to_variable = { SIN_nsm_loyalty = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_nsm_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_nsm_high_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_nsm_tt
+			custom_effect_tooltip = SIN_high_popularity_decrease_tt
+			add_to_variable = { SIN_nsm_popularity = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_nsm_popularity
+				min = 0
+				max = 100
+			}
+		}

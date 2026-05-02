@@ -14,7 +14,7 @@ guiTypes = {
 		#CARTEL
 			iconType = {
 				name ="cartel_icon"
-				spriteType = "GFX_decision_faction_sin_placeholder"
+				spriteType = "GFX_decision_faction_sin_cartel"
 				position = { x = @FACTION_ICONS_X y = 30 }
 			}
 
@@ -39,7 +39,7 @@ guiTypes = {
 		#MOB
 			iconType = {
 				name ="mob_icon"
-				spriteType = "GFX_decision_faction_sin_placeholder"
+				spriteType = "GFX_decision_faction_sin_mafia"
 				position = { x = @FACTION_ICONS_X y = 75 }
 			}
 
@@ -65,7 +65,7 @@ guiTypes = {
 		#ANPRIMS
 			iconType = {
 				name ="anprims_icon"
-				spriteType = "GFX_decision_faction_sin_placeholder"
+				spriteType = "GFX_decision_faction_sin_anprims"
 				position = { x = @FACTION_ICONS_X y = 120 }
 			}
 
@@ -91,7 +91,7 @@ guiTypes = {
 		#ISLAMISTS
 			iconType = {
 				name ="islamists_icon"
-				spriteType = "GFX_decision_faction_sin_placeholder"
+				spriteType = "GFX_decision_faction_sin_islamists"
 				position = { x = @FACTION_ICONS_X y = 165 }
 			}
 
@@ -116,7 +116,7 @@ guiTypes = {
 		#DT
 			iconType = {
 				name ="dt_icon"
-				spriteType = "GFX_decision_faction_sin_placeholder"
+				spriteType = "GFX_decision_faction_sin_dt"
 				position = { x = @FACTION_ICONS_X y = 210 }
 			}
 
@@ -141,7 +141,7 @@ guiTypes = {
 		#ESTABLISHMENT
 			iconType = {
 				name ="establishment_icon"
-				spriteType = "GFX_decision_faction_sin_placeholder"
+				spriteType = "GFX_decision_faction_sin_establishment"
 				position = { x = @FACTION_ICONS_X y = 255 }
 			}
 

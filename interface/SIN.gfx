@@ -1,8 +1,134 @@
 spriteTypes = {	
 
 	spriteType = {
-		name = "GFX_decision_faction_sin_placeholder"
-		texturefile = "gfx/interface/decisions/decision_faction_sin_placeholder.dds"
-	}	
+		name = "GFX_decision_faction_sin_cartel"
+		texturefile = "gfx/interface/decisions/SIN/decision_faction_sin_cartel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_faction_sin_mafia"
+		texturefile = "gfx/interface/decisions/SIN/decision_faction_sin_mafia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_faction_sin_anprims"
+		texturefile = "gfx/interface/decisions/SIN/decision_faction_sin_anprims.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_faction_sin_dt"
+		texturefile = "gfx/interface/decisions/SIN/decision_faction_sin_dt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_faction_sin_islamists"
+		texturefile = "gfx/interface/decisions/SIN/decision_faction_sin_islamists.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_faction_sin_establishment"
+		texturefile = "gfx/interface/decisions/SIN/decision_faction_sin_establishment.dds"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_decision_islamists_1"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_islamists_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_islamists_2"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_islamists_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_islamists_3"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_islamists_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_islamists_4"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_islamists_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_islamists_5"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_islamists_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_islamists_6"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_islamists_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_dt_1"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_dt_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_dt_2"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_dt_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_dt_3"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_dt_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_dt_4"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_dt_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_dt_5"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_dt_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_dt_6"
+		texturefile = "gfx/interface/decisions/SIN/decision_sin_dt_6.dds"
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_faction_sin_cartel"
+		texturefile = "gfx/texticons/SIN/faction_sin_cartel.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_faction_sin_mob"
+		texturefile = "gfx/texticons/SIN/faction_sin_mob.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_faction_sin_anprims"
+		texturefile = "gfx/texticons/SIN/faction_sin_anprims.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_faction_sin_dt"
+		texturefile = "gfx/texticons/SIN/faction_sin_dt.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_faction_sin_islamists"
+		texturefile = "gfx/texticons/SIN/faction_sin_islamists.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_faction_sin_establishment"
+		texturefile = "gfx/texticons/SIN/faction_sin_establishment.dds"
+		legacy_lazy_load = no
+	}
 }
 
