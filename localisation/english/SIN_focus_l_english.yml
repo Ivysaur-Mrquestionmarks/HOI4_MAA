@@ -20,6 +20,9 @@
  SIN_establishment_tt:0 "[GetEstablishmentName]: "
  SIN_mob_tt:0 "[GetMobName]: "
 
+ SIN_islamists_recruits_tt:0 "§GThis Desicion will unlock 5 [GetIslamistsName] Characters!§!"
+ SIN_dt_recruits_tt:0 "§GThis Desicion will unlock 5 [GetDtName] Characters!§!"
+
 
  decision_cost_IE_500: "£infantry_equipment_text_icon  §Y500§!"
  decision_cost_IE_500_blocked: "£infantry_equipment_text_icon  §R500§!"
@@ -435,26 +438,16 @@
  SIN_oppression_islamists_persecute_desc:0 "Islamism is incompatible with our system. Let us take care of that."
 
  SIN_oppression_islamists_destroy:0 "Crush the [GetIslamistsName]"
- SIN_cooperation_islamists_integrate_desc:0 "We have been persecuting the Islamists so far, and it is time to finally destroy them for good."
+ SIN_cooperation_islamists_destroy_desc:0 "We have been persecuting the Islamists so far, and it is time to finally destroy them for good."
 
  SIN_oppression_dt_persecute:0 "Persecute the [GetDtName]"
  SIN_oppression_dt_persecute_desc:0 "Terrorsim is incompatible with our system. Let us take care of that."
 
  SIN_oppression_dt_destroy:0 "Crush the [GetDtName]"
- SIN_cooperation_dt_integrate_desc:0 "We have been persecuting the Terrorists so far, and it is time to finally destroy them for good."
+ SIN_cooperation_dt_destroy_desc:0 "We have been persecuting the Terrorists so far, and it is time to finally destroy them for good."
 
 
 
-
-
- SIN_cooperation_integrate_zveno:0 "Integrate the [GetZvenoName]"
- SIN_cooperation_integrate_zveno_desc:0 "We have been cooperating with the [GetZvenoName] as different, albeit close, entities so far, and it is time to finally integrate them into our government."
- SIN_cooperation_integrate_bs:0 "Integrate the [GetBsName]"
- SIN_cooperation_integrate_bs_desc:0 "We have been cooperating with the [GetBsName] as different, albeit close, entities so far, and it is time to finally integrate them into our government."
- SIN_cooperation_integrate_bzns:0 "Integrate the [GetBznsName]"
- SIN_cooperation_integrate_bzns_desc:0 "We have been cooperating with the [GetBznsName] as different, albeit close, entities so far, and it is time to finally integrate them into our government."
- SIN_cooperation_integrate_nsm:0 "Integrate the [GetNsmName]"
- SIN_cooperation_integrate_nsm_desc:0 "We have been cooperating with the [GetNsmName] as different, albeit close, entities so far, and it is time to finally integrate them into our government."
 
  SIN_cooperation_integrate_faction_tt:0 "Faction Loyalty is §Y100§!"
  SIN_cooperation_destroy_faction_tt:0 "Faction Influence is §Y0§!"
@@ -467,3 +460,6 @@
 
  SIN_prevent_oppressing_tt:0 "\n§RCompleting this decision will prevent us from oppressing this faction in the future.§!\n"
  SIN_prevent_cooperation_tt:0 "\n§RCompleting this decision will prevent further cooperation with this faction.§!\n"
+
+ SIN_islamists_integrated_flag:0 "[GetIslamistsName] are integrated"
+ SIN_dt_integrated_flag:0 "[GetDtName] are integrated"

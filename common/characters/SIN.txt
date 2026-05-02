@@ -28,7 +28,7 @@ characters = {
 
 			}
 			available = {
-			
+				has_completed_focus = SIN_the_establishment_coup
 			}
 			traits = {
 				
@@ -205,102 +205,6 @@ characters = {
 	}
 	### Military Staff and Political Advisors ###
 	# Political Advisors #
-	SIN_terry_nichols = {
-		name = SIN_terry_nichols
-		portraits = {
-			army = {
-				small = "GFX_idea_Nichols_ADV"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = SIN_Terry_Nichols_Advisor
-			cost = 150
-			allowed = {
-				tag = SIN
-			}
-			visible = {
-				has_completed_focus = Create_Bomb_Streamlines
-			}
-			available = {
-				NOT = {
-					has_idea = SIN_Dzhokhar_A_Tsarnaev_Advisor
-					has_idea = SIN_Ramzi_Ahmed_Yousef_Advisor
-					has_country_flag = Banned_Radicals
-				}
-			}
-			traits = {
-				Terry_Nichols_Advisor 
-			}
-			ai_will_do = {
-				factor = 5
-			}
-		}
-	}
-	SIN_ramzi_ahmed_yousef = {
-		name = SIN_ramzi_ahmed_yousef
-		portraits = {
-			army = {
-				small = "GFX_idea_Yousef_ADV"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = SIN_Ramzi_Ahmed_Yousef_Advisor
-			cost = 150
-			allowed = {
-				tag = SIN
-			}
-			visible = {
-				has_completed_focus = Create_Bomb_Streamlines
-			}
-			available = {
-				NOT = {
-					has_idea = SIN_Dzhokhar_A_Tsarnaev_Advisor
-					has_idea = SIN_Terry_Nichols_Advisor
-					has_country_flag = Banned_Radicals
-				}
-			}
-			traits = {
-				Yousef_Advisor 
-			}
-			ai_will_do = {
-				factor = 5
-			}
-		}
-	}
-	SIN_dzhokhar_a_tsarnaev = {
-		name = SIN_dzhokhar_a_tsarnaev
-		portraits = {
-			army = {
-				small = "GFX_idea_Tsarnaev_ADV"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = SIN_Dzhokhar_A_Tsarnaev_Advisor
-			cost = 150
-			allowed = {
-				tag = SIN
-			}
-			visible = {
-				has_completed_focus = Create_Bomb_Streamlines
-			}
-			available = {
-				NOT = {
-					has_idea = SIN_Ramzi_Ahmed_Yousef_Advisor
-					has_idea = SIN_Terry_Nichols_Advisor
-					has_country_flag = Banned_Radicals
-				}
-			}
-			traits = {
-				Tsarnaev_Advisor 
-			}
-			ai_will_do = {
-				factor = 5
-			}
-		}
-	}
 	SIN_robert_p_hanssen = {
 		name = SIN_robert_p_hanssen
 		portraits = {
@@ -330,4 +234,302 @@ characters = {
 			}
 		}
 	}
+
+	# Islamists Characters
+	SIN_Muhanad_Mahmoud_Al_Farekh = {
+		name = SIN_Muhanad_Mahmoud_Al_Farekh
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected harsh_leader } 
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_country_flag = SIN_islamists_integrated_flag
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Muhanad_Mahmoud_Al_Farekh
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_islamists_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_islamists_integrated_flag
+			}
+			traits = { SIN_al_qaeda_trainer }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIN_Dzhokhar_Tsarnaev = {
+		name = SIN_Dzhokhar_Tsarnaev
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Dzhokhar_Tsarnaev
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_islamists_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_islamists_integrated_flag
+			}
+			traits = { SIN_boston_bomber }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIN_Ramzi_Yousef = {
+		name = SIN_Ramzi_Yousef
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Ramzi_Yousef
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_islamists_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_islamists_integrated_flag
+			}
+			traits = { SIN_bojinka_planner }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIN_Jose_Padilla = {
+		name = SIN_Jose_Padilla
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_country_flag = SIN_islamists_integrated_flag
+			}
+		}
+	}
+	SIN_Abu_Hamza_al_Masri = {
+		name = SIN_Abu_Hamza_al_Masri
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Abu_Hamza_al_Masri
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_islamists_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_islamists_integrated_flag
+			}
+			traits = { SIN_cleric_kidnapper }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	# Domestic Terrorists Characters
+	SIN_Tyler_Bingham = {
+		name = SIN_Tyler_Bingham
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected low_iq trait_reckless } 
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_country_flag = SIN_dt_integrated_flag
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Tyler_Bingham
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_dt_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_dt_integrated_flag
+			}
+			traits = { SIN_aryan_brotherhood_leader }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIN_Eric_Rudolph = {
+		name = SIN_Eric_Rudolph
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Eric_Rudolph
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_dt_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_dt_integrated_flag
+			}
+			traits = { SIN_army_of_god_member }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIN_Glendon_Scott_Crawford = {
+		name = SIN_Glendon_Scott_Crawford
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Glendon_Scott_Crawford
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_dt_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_dt_integrated_flag
+			}
+			traits = { SIN_x_ray_gun_schizo }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIN_Perry_Roark = {
+		name = SIN_Perry_Roark
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		corps_commander = {
+			traits = { trickster } 
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				has_country_flag = SIN_dt_integrated_flag
+			}
+		}
+	}
+	SIN_Terry_Nichols = {
+		name = SIN_Terry_Nichols
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Terry_Nichols
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_dt_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_dt_integrated_flag
+			}
+			traits = { SIN_oklahoma_city_bomber }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
 }
