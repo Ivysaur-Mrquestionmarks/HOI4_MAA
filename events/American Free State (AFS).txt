@@ -3243,9 +3243,9 @@ country_event = {
 			mission = AFS_death
 			days = -100
 		}
-		swap_country_leader_traits = {
+		swap_ruler_traits = {
             remove = AFS_ill
-            add = AFS_ill_2
+            add = AFS_ill_2    
             #ideology = military_dictatorship
         }
 		set_country_leader_portrait = {
@@ -3297,7 +3297,7 @@ country_event = {
 			mission = AFS_death
 			days = -100
 		}
-		swap_country_leader_traits = {
+		swap_ruler_traits = {
             remove = AFS_ill_2
             add = AFS_weak_frail_deformed
             #ideology = military_dictatorship

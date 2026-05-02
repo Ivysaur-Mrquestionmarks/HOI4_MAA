@@ -268,7 +268,9 @@ country_event = {
 			limit = {is_core_of = PRA}
 			add_core_of = PAC
 		}
-		set_capital = 366
+		set_capital = {
+			state = 366
+		} 
 		complete_national_focus = PAC_pacific_victory
 	}
 }
@@ -333,12 +335,12 @@ country_event = {
 			FRA_tod_wolters = {
 				set_nationality = ROOT
 			}
-			FRA_stephen_lyons = {
-				set_nationality = ROOT
-			}
-			FRA_austin_miller = {
-				set_nationality = ROOT
-			}
+			#FRA_stephen_lyons = {
+			#	set_nationality = ROOT
+			#}
+			#FRA_austin_miller = {
+			#	set_nationality = ROOT
+			#}
 			FRA_robert_abrams = {
 				set_nationality = ROOT
 			}

@@ -25,7 +25,9 @@ country_event = {
 			province = 9291
 			value = 20
 		}
-		set_capital = 188
+		set_capital = {
+			state = 188
+		}
 	}
 	option = {
 		name = virginia_republicans.1.b
@@ -45,7 +47,9 @@ country_event = {
 			province = 9404
 			value = 30
 		}
-		set_capital = 188
+		set_capital = {
+			state = 188
+		}
 	}
 	option = {
 		name = virginia_republicans.1.c
@@ -65,7 +69,9 @@ country_event = {
 			province = 4600
 			value = 30
 		}
-		set_capital = 188
+		set_capital = {
+			state = 188
+		}
 	}
 }
 country_event = {

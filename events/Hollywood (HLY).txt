@@ -130,6 +130,8 @@ unit_leader_event = {
 	fire_only_once = yes
 	option = {
 		name = Hollywood.5.a
-		retire = yes
+		HYL_chuck_norris = {
+			retire = yes
+		}
 	}
 }

@@ -709,7 +709,7 @@ country_event = {
 	#
 	option = { 
 		name = Resistance.13.a
-		BOS = {
+		BRA = {
 			transfer_state = 221
 			transfer_state = 181
 			transfer_state = 212
@@ -720,17 +720,17 @@ country_event = {
 		}
 		FRA = {
 			declare_war_on = {
-			    target = BOS
+			    target = BRA
 			    type = annex_everything
 			}
 			add_ideas = Call_For_Peace
 		}
-		ARC = {
-			transfer_state = 211
-			transfer_state = 202
-			transfer_state = 203
-			transfer_state = 192
-		}
+		#ARC = {
+		#	transfer_state = 211
+		#	transfer_state = 202
+		#	transfer_state = 203
+		#	transfer_state = 192
+		#}
 		211 = { set_demilitarized_zone = yes }
 		202 = { set_demilitarized_zone = yes }
 		203 = { set_demilitarized_zone = yes }
@@ -747,23 +747,23 @@ country_event = {
 	#
 	option = { 
 		name = Resistance.14.a
-		BOS = {
+		BRA = {
 			transfer_state = 221
 			add_ideas = ReinvigoratedMonarchy
 		}
 		FRA = {
 			declare_war_on = {
-			    target = BOS
+			    target = BRA
 			    type = annex_everything
 			}
 			add_ideas = Call_For_Peace
 		}
-		ARC = {
-			transfer_state = 181
-			transfer_state = 212
-			transfer_state = 211
-			transfer_state = 192
-		}
+		#ARC = {
+		#	transfer_state = 181
+		#	transfer_state = 212
+		#	transfer_state = 211
+		#	transfer_state = 192
+		#}
 		181 = { set_demilitarized_zone = yes }
 		212 = { set_demilitarized_zone = yes }
 		211 = { set_demilitarized_zone = yes }

@@ -4076,7 +4076,8 @@ country_event = {
 	option = { #For america
 		name = maga.178.a
 		ai_chance = {
-			factor = USA.party_popularity_100@libertarian_right
+			#factor = USA.party_popularity_100@libertarian_right #What the hell is this?
+			factor = 50
 		}
 		USA = {
 			annex_country = {
@@ -4585,89 +4586,93 @@ country_event = {
 	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
-	immediate = { hidden_effect = {
-
-
-		207 = {
-			set_demilitarized_zone = no
-			transfer_state_to = NPA
-		}
-		416 = {
-			set_demilitarized_zone = no
-		}
-		add_to_array = {
-    			array = global.Trump_collapse_tags
-    			value = THIS.id
-		}
-		NPA = {
-			load_focus_tree = Trump_collapse
-			create_country_leader = {
-				name = "Todd Young"
-				desc = " "
-				picture = gfx/leaders/USA/Portrait_Lindsey_Graham_Vanilla_MAA_copy.dds
-				expire = "2080.1.1"
-				ideology = Progressive_Republicans 
-				traits = {}
+	immediate = { 
+		hidden_effect = {
+			207 = {
+				set_demilitarized_zone = no
+				transfer_state_to = NPA
 			}
-			set_political_power = 0
+			416 = {
+				set_demilitarized_zone = no
+			}
 			add_to_array = {
-    				array = global.Trump_collapse_tags
-    				value = THIS.id
+	    			array = global.Trump_collapse_tags
+	    			value = THIS.id
 			}
-		}
-		create_dynamic_country = {
-    			original_tag = USA
-   			load_focus_tree = Trump_collapse
-			transfer_state = 416
-			add_to_array = {
-    				array = global.Trump_collapse_tags
-    				value = THIS
+			NPA = {
+				load_focus_tree = Trump_collapse
+				create_country_leader = {
+					name = "Todd Young"
+					desc = " "
+					picture = gfx/leaders/USA/Portrait_Lindsey_Graham_Vanilla_MAA_copy.dds
+					expire = "2080.1.1"
+					ideology = Progressive_Republicans 
+					traits = {}
+				}
+				set_political_power = 0
+				add_to_array = {
+	    			array = global.Trump_collapse_tags
+	    			value = THIS.id
+				}
 			}
-			add_state_core = 416
-			set_politics = {
-    				ruling_party = autocratic
-    				elections_allowed = no
+			create_dynamic_country = {
+	    		original_tag = USA
+	   			load_focus_tree = Trump_collapse
+				transfer_state = 416
+				add_to_array = {
+	    			array = global.Trump_collapse_tags
+	    			value = THIS
+				}
+				add_state_core = 416
+				set_politics = {
+	    			ruling_party = autocratic
+	    			elections_allowed = no
+				}
+				set_temp_variable ={
+					PB = THIS
+				}
+				set_political_party = {
+	    			ideology = autocratic
+	    			popularity = 75
+				}
 			}
-			set_temp_variable ={
-				PB = THIS
-			}
-			set_political_party = {
-    				ideology = autocratic
-    				popularity = 75
-			}
-		}
 
+			transfer_units_fraction= {
+				size = 0.1
+				target = PB
+				stockpile_ratio = 0.1
+				army_ratio = 0.2
+				air_ratio = 0.25
+				navy_ratio = 0
+			}
+			delete_unit_template_and_units = {
+	    		division_template = "PB paramilitary"
+	    		disband = no
+			}
+			transfer_units_fraction= {
+				size = 0.3
+				target = NPA
+				stockpile_ratio = 0.3
+				army_ratio = 0.4
+				air_ratio = 0.1
+				navy_ratio = 0
+			}
 
-		transfer_units_fraction= {
-			target = PB
-			stockpile_ratio = 0.1
-			army_ratio = 0.2
-			air_ratio = 0.25
+			set_nationality = {
+	    		target_country = PB
+	    		character = USA_gavin_mcinnes 
+			}
+			var:PB = {
+				promote_character = USA_gavin_mcinnes 
+			}
+			country_event = {
+	    		id = maga.200
+	    		days = 15
+	    		random_hours = 28
+			}
 		}
-		delete_unit_template_and_units = {
-    			division_template = "PB paramilitary"
-    			disband = no
-		}
-		transfer_units_fraction= {
-			target = NPA
-			stockpile_ratio = 0.3
-			army_ratio = 0.4
-			air_ratio = 0.1
-		}
+	}
 
-		set_nationality = {
-    			target_country = PB
-    			character = USA_gavin_mcinnes 
-		}
-		var:PB = {
-			promote_character = USA_gavin_mcinnes 
-		}
-		country_event = {
-    			id = maga.200
-    			days = 15
-    			random_hours = 28
-		}
-	}}
 	option = { 
 		name = maga.199.a
 		ai_chance = {
@@ -4714,9 +4719,11 @@ country_event = {
 		}
 
 		transfer_units_fraction= {
+			size = 0.1
 			target = CPE
 			stockpile_ratio = 0.1
 			army_ratio = 0.2
+			navy_ratio = 0
 		}
 		if = {
 			limit = { has_country_flag = pardoned_npa }
@@ -4788,9 +4795,11 @@ country_event = {
 		}
 
 		transfer_units_fraction= {
+			size = 0.1
 			target = PU
 			stockpile_ratio = 0.1
 			army_ratio = 0.2
+			navy_ratio = 0
 		}
 
 		set_nationality = {

@@ -12,12 +12,14 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = NPA_Mike_Pence_desc
 			traits = { NPA_insane }
 			ideology = conservative
 			expire = "2060.1.1.1"
 			id = -1
 		}
 		country_leader = {
+			desc = NPA_Mike_Pence_desc
 			traits = { 
 				NPA_greybeard
 				NPA_champion_of_the_people

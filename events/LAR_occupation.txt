@@ -144,7 +144,7 @@ country_event = {
 					
 					# do not change ideology of occupier country
 					var:occupier_country = {
-						remove_from_allowed_party = yes
+						#remove_from_allowed_party = yes
 					}
 					
 					if = {
@@ -152,7 +152,7 @@ country_event = {
 						# it is white peaced & subject of occupier. ignore its ideology as well
 						limit = { NOT = { check_variable = { new_occupied_country = occupied_country } } }
 						var:occupied_country = {
-							remove_from_allowed_party = yes
+							#remove_from_allowed_party = yes
 						}
 					}
 					

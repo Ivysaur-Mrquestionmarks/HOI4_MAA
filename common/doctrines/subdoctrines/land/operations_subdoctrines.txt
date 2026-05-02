@@ -601,7 +601,7 @@ guerilla_war = {
             factor = 0
             NOT = {
                 OR = {
-                has_template_containing_unit = irregular_infantry
+                #has_template_containing_unit = irregular_infantry
                 has_template_containing_unit = militia
                 }
             }

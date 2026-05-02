@@ -1307,7 +1307,7 @@ AFS_vermin_political_decisions = {
 		}
 		state_target = yes
 		target_root_trigger = {
-			any_owned_state = { NOT = { has_dynamic_modifier = { modifier = AFS_autonomous_zone } } }
+			any_owned_state = { NOT = { has_dynamic_modifier = { modifier = AFS_autonomous_zone_state_modifier } } }
 		}
 		target_trigger = {
 			FROM = {

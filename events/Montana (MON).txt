@@ -645,7 +645,7 @@ country_event = {
 		name = montana.25.a
 		add_political_power = 160
 		add_stability = 0.2
-		all_owned_state = { add_manpower = 120000 }
+		every_owned_state = { add_manpower = 120000 }
 	}
 	option = { 
 		name = montana.25.b
@@ -1994,27 +1994,70 @@ country_event = {
 #	}
 	option = { 
 		name = montana.55.c
-	add_equipment_to_stockpile = {
-    type = motorized_equipment                  
-    amount = 500
-    producer = USA
-	}
-	add_equipment_to_stockpile = {
-    type = light_tank_equipment
-    amount = 500
-    producer = USA
-	}
-	add_equipment_to_stockpile = {
-    type = medium_tank_equipment
-    amount = 500
-    producer = USA
-	}
-	add_equipment_to_stockpile = {
-    type = heavy_tank_equipment
-    amount = 500
-    producer = USA
-	}
-	add_political_power = -425
+		add_equipment_to_stockpile = {
+		    type = motorized_equipment                  
+		    amount = 500
+		    producer = USA
+		}
+		IF = {
+			LIMIT = {
+				has_dlc = "No Step Back"
+			}
+			create_equipment_variant = { 
+				name = "M551 Sheridan"
+				type = light_tank_chassis_1
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_cannon
+					turret_type_slot = tank_light_three_man_tank_turret
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+				}
+			}
+			create_equipment_variant = { 
+				name = "M88A2 HERCULES"
+				type = heavy_tank_chassis_1
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_cannon
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 1
+					tank_nsb_armor_upgrade = 1
+				}
+			}
+			add_equipment_to_stockpile = {
+			    type = light_tank_chassis_1
+			    amount = 500
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = heavy_tank_chassis_1
+			    amount = 500
+			    producer = USA
+			}
+		}
+		ELSE = {
+			add_equipment_to_stockpile = {
+			    type = light_tank_equipment_1
+			    amount = 500
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = heavy_tank_equipment_1
+			    amount = 500
+			    producer = USA
+			}
+		}
+		
+		add_political_power = -425
 	}
 }
 

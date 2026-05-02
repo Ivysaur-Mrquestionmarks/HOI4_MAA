@@ -1279,7 +1279,12 @@ country_event = {
 	fire_only_once = yes
 	option = { #Yes
 		name = texas.33.a
-		TEX = { annex_country = SIN }
+		TEX = { 
+			annex_country = {
+			    target = SIN
+			    transfer_troops = yes
+			}
+		}
 	}
 	option = { #No
 		name = texas.33.b
@@ -4472,44 +4477,44 @@ country_event = {
   			base = 30
    			modifier = {
 				OR = {
-				factor = 0 
 					has_game_rule = {
-			               		rule = TEX_democracy_political_path
-                				option = TEX_PATH_BETO
-           				}
+			               rule = TEX_democracy_political_path
+                		option = TEX_PATH_BETO
+           			}
 					has_game_rule = {
-			               		rule = TEX_democracy_political_path
-                				option = TEX_PATH_WASHINGTON_CANDIDATE
-           				}
+			            rule = TEX_democracy_political_path
+                		option = TEX_PATH_WASHINGTON_CANDIDATE
+           			}
 					has_game_rule = {
-			               		rule = TEX_democracy_political_path
-                				option = TEX_PATH_TRUMPISTS
-           				}
+			            rule = TEX_democracy_political_path
+                		option = TEX_PATH_TRUMPISTS
+           			}
 					has_game_rule = {
-			               		rule = TEX_democracy_political_path
-                				option = TEX_PATH_CRUZ
-           				}
+			            rule = TEX_democracy_political_path
+                		option = TEX_PATH_CRUZ
+           			}
 					has_game_rule = {
-			               		rule = TEX_democracy_political_path
-                				option = TEX_PATH_ABBOTT
-           				}
+			            rule = TEX_democracy_political_path
+                		option = TEX_PATH_ABBOTT
+           			}
 					has_game_rule = {
-			               		rule = TEX_democracy_political_path
-                				option = TEX_PATH_BGB_MODERATE
-           				}
+			            rule = TEX_democracy_political_path
+                		option = TEX_PATH_BGB_MODERATE
+           			}
 					has_game_rule = {
-			               		rule = TEX_democracy_political_path
-                				option = TEX_PATH_BUSH
-           				}
+			            rule = TEX_democracy_political_path
+                		option = TEX_PATH_BUSH
+           			}
 					has_game_rule = {
-			               		rule = TEX_democracy_political_path
-                				option = TEX_PATH_BUSH
-           				}
+			            rule = TEX_democracy_political_path
+                		option = TEX_PATH_BUSH
+           			}
 					has_game_rule = {
-			               		rule = TEX_democracy_political_path
-                				option = TEX_PATH_BGB_RADICAL
-           				}
+			            rule = TEX_democracy_political_path
+                		option = TEX_PATH_BGB_RADICAL
+           			}
 				}
+				factor = 0 
 			}
 		}
 		set_country_flag = back_in_black

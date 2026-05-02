@@ -144,15 +144,17 @@ country_event = {
 			target = BRC
 			transfer_troops = yes
 		}
-		annex_country = {
-			target = ANT
-			transfer_troops = yes
-		}
+		#annex_country = {
+		#	target = ANT
+		#	transfer_troops = yes
+		#}
 		annex_country = {
 			target = ALT
 			transfer_troops = yes
 		}
-		set_capital = 6852
+		#set_capital = {
+		#	state = 6852
+		#}
 		country_event = vancouver.5
 	}
 }
@@ -197,21 +199,20 @@ country_event = {
 		name = vancouver.6.a
 		ai_chance = {
 			
-			}
 		}
+		
 		VAN = { country_event = vancouver.7 }
 	}
 	option = {
 		name = vancouver.6.b
 		ai_chance = {
-			}
 		}
+		
 		VAN = { country_event = vancouver.8 }
 	}
 	option = {
 		name = vancouver.6.c
-		ai_chance = {
-			}
+		ai_chance = {			
 		}
 		VAN = { country_event = vancouver.9 }
 	}
