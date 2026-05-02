@@ -80,13 +80,11 @@ American_reunification = {
 		available = {
 			is_subject = no
 			all_state = {
-				limit = {
-					OR = {
-						is_core_of = CUB
-						is_core_of = DOM
-						is_core_of = CUC #failsafe
-						is_core_of = GTB #failsafe
-					}
+				OR = {
+					is_core_of = CUB
+					is_core_of = DOM
+					is_core_of = CUC #failsafe
+					is_core_of = GTB #failsafe
 				}
 				is_controlled_by = ROOT
 			}

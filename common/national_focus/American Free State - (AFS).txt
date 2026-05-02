@@ -1246,6 +1246,36 @@ focus_tree = {
 	}
 
 	focus = {
+		id = AFS_fight_againist_tyranny
+		icon = GFX_goal_AFS_fight_againist_tyranny
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = AFS_promote_anarchist_ideals
+		prerequisite = {
+			focus = AFS_promote_anarchist_ideals
+		}
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
+		    add_to_variable = {
+				var = AFS.var_defense_level
+				value = 0.02
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				var = AFS.var_war_support_level
+				value = 0.02
+				tooltip = war_support_factor_tt
+			}
+		}
+	}
+
+	focus = {
 		id = AFS_leading_the_anarchist_front
 		icon = GFX_goal_AFS_leading_the_anarchist_front
 		cost = 5
@@ -1296,36 +1326,6 @@ focus_tree = {
 			country_event = {
 				id = vermin.9
 				days = 0
-			}
-		}
-	}
-
-	focus = {
-		id = AFS_fight_againist_tyranny
-		icon = GFX_goal_AFS_fight_againist_tyranny
-		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = AFS_promote_anarchist_ideals
-		prerequisite = {
-			focus = AFS_promote_anarchist_ideals
-		}
-		select_effect = {  }
-		allow_branch = {
-		}
-		available = {
-		}
-		completion_reward = {
-			custom_effect_tooltip = AFS_anarchist_paradise_modify_tt
-		    add_to_variable = {
-				var = AFS.var_defense_level
-				value = 0.02
-				tooltip = army_defence_factor_tt
-			}
-			add_to_variable = {
-				var = AFS.var_war_support_level
-				value = 0.02
-				tooltip = war_support_factor_tt
 			}
 		}
 	}

@@ -372,9 +372,9 @@ focus_tree = {
 			set_politics = {
 				ruling_party = autocratic
 			}
-			HLY_dwayne_carter_jr = {
-				promote_character = yes
-			}
+			#HLY_dwayne_carter_jr = {
+			#	promote_character = yes
+			#}
 		}
 	}
 	focus = {
@@ -493,9 +493,9 @@ focus_tree = {
 			set_politics = {
 				ruling_party = autocratic
 			}
-			HLY_calvin_broadus_jr = {
-				promote_character = yes
-			}
+			#HLY_calvin_broadus_jr = {
+			#	promote_character = yes
+			#}
 		}
 	}
 	focus = {
@@ -664,9 +664,9 @@ focus_tree = {
 			set_politics = {
 				ruling_party = autocratic
 			}
-			HLY_kendrick_duckworth = {
-				promote_character = yes
-			}
+			#HLY_kendrick_duckworth = {
+			#	promote_character = yes
+			#}
 		}
 	}
 	focus = {
@@ -1347,9 +1347,9 @@ focus_tree = {
    			}
 		}
 		completion_reward = {
-			HYL_drew_barrymore = {
-				promote_character = yes
-			}
+			#HYL_drew_barrymore = {
+			#	promote_character = yes
+			#}
 			add_popularity = {
 				ideology = autocratic
 				popularity = 0.05
@@ -1551,16 +1551,16 @@ focus_tree = {
 			factor = 300
 		}
 		completion_reward = {
-			HYL_drew_barrymore = {
-				add_field_marshal_role = {
-					traits = { media_personality politically_connected } 
-					skill = 1
-					attack_skill = 1
-					defense_skill = 1
-					planning_skill = 1
-					logistics_skill = 1
-				}
-			}
+			#HYL_drew_barrymore = {
+			#	add_field_marshal_role = {
+			#		traits = { media_personality politically_connected } 
+			#		skill = 1
+			#		attack_skill = 1
+			#		defense_skill = 1
+			#		planning_skill = 1
+			#		logistics_skill = 1
+			#	}
+			#}
 		}
 	}
 	focus = {

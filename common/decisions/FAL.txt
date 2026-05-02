@@ -130,7 +130,7 @@ FAL_ECH_cat = {
 	    }
 
 		custom_cost_trigger = { 
-		    check_variable {
+		    check_variable = {
 		    	ech_integrity > 0.09
 		    }
 		} 
@@ -215,7 +215,7 @@ FAL_ECH_cat = {
 	    }
 
 		custom_cost_trigger = { 
-		    check_variable {
+		    check_variable = {
 		    	ech_integrity > 0.09
 		    }
 		} 
@@ -301,7 +301,7 @@ FAL_ECH_cat = {
 	    }
 
 		custom_cost_trigger = { 
-		    check_variable {
+		    check_variable = {
 		    	ech_integrity > 0.09
 		    }
 		} 

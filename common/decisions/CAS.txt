@@ -115,7 +115,7 @@ CAS_nazi_influence_decision_category = {
 
 		cost = 30
 		
-		state_target = any_controlled_state
+		#state_target = any_controlled_state
 		target_array = CAS.big_cities_state
 
 		on_map_mode = map_and_decisions_view  

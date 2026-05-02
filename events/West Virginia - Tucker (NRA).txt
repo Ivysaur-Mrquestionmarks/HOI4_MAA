@@ -449,18 +449,27 @@ country_event = {
 	fire_only_once = yes
 	option = { #yes we will be annexed
 		name = tucker.22.a
-		NRA = { annex_country = { target = ALA  transfer_troops = yes }
+		NRA = { 
+			annex_country = { 
+				target = ALA  
+				transfer_troops = yes
+			}
+		}
 		every_state = {
 			limit = { is_core_of = ALA }
 			add_core_of	 = NRA
 		}
 		ai_chance = {
 			modifier = {
-				OR = {
-					has_completed_focus = ALA_the_Soldier_Coup
-					has_completed_focus = ALA_Putins_Puppet
-					has_completed_focus = ALA_Reach_out_to_Gorbachev
-				}
+				has_completed_focus = ALA_the_Soldier_Coup
+				factor = 100
+			}
+			modifier = {
+				has_completed_focus = ALA_Putins_Puppet
+				factor = 100
+			}
+			modifier = {
+				has_completed_focus = ALA_Reach_out_to_Gorbachev
 				factor = 100
 			}
 			factor = 1			

@@ -918,7 +918,7 @@ FRA_collapse_state_coring_cateogry  = {
 			}
 		}
 		
-		state_target = any_owned_state
+		#state_target = any_owned_state
 		target_array = global.FRA_array_collapse_coring_states
 
 		on_map_mode = map_and_decisions_view  

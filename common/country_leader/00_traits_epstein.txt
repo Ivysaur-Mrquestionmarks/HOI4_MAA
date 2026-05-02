@@ -4220,7 +4220,7 @@ leader_traits = {
 		consumer_goods_factor = 0.03
 		experience_gain_army = 0.15
 		
-		command_cap = @tier2_cp_cap_increase
+		command_cap_increase = @tier2_cp_cap_increase
 		
 		ai_will_do = {
 			factor = 0
@@ -4231,7 +4231,7 @@ leader_traits = {
 		consumer_goods_factor = 0.03
 		experience_gain_air = 0.15
 		
-		command_cap = @tier2_cp_cap_increase
+		command_cap_increase = @tier2_cp_cap_increase
 		
 		ai_will_do = {
 			factor = 0
@@ -5358,7 +5358,7 @@ leader_traits = {
 	KMT_controversial_figure = {
 		random = no
 		stability_factor = -0.15
-		construction_speed_factor = 0.05
+		production_speed_buildings_factor = 0.05
 	}
 	KMT_puppet_figure = {
 		random = no
@@ -5805,7 +5805,7 @@ leader_traits = {
 		random = no
 		democrat_acceptance = 50
 		army_attack_against_major_factor = 0.1
-		army_attack_defence_major_factor = 0.1
+		army_defence_against_major_factor = 0.1
 	}
 	KMT_advisor_reserved_administrator = {
 		sprite = 13

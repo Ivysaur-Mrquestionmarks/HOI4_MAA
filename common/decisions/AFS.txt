@@ -6140,7 +6140,7 @@ AFS_decaying_savior = {
 
 		available = {
 			AFS = {
-				has_owned_state = 198
+				owns_state = 198
 			}
 			NOT = {
 			    country_exists = GLA
@@ -6176,7 +6176,7 @@ AFS_decaying_savior = {
 
 		available = {
 			AFS = {
-				has_owned_state = 416
+				owns_state = 416
 			}
 			NOT = {
 			    country_exists = USA
@@ -6211,7 +6211,7 @@ AFS_decaying_savior = {
 
 		available = {
 			AFS = {
-				has_owned_state = 242
+				owns_state = 242
 			}
 			NOT = {
 			    country_exists = FRA
@@ -6245,7 +6245,7 @@ AFS_decaying_savior = {
 
 		available = {
 			AFS = {
-				has_owned_state = 329
+				owns_state = 329
 			}
 			NOT = {
 			    country_exists = CSA
@@ -6279,7 +6279,7 @@ AFS_decaying_savior = {
 
 		available = {
 			AFS = {
-				has_owned_state = 143
+				owns_state = 143
 			}
 			NOT = {
 			    country_exists = TEX
@@ -6313,7 +6313,7 @@ AFS_decaying_savior = {
 
 		available = {
 			AFS = {
-				has_owned_state = 411
+				owns_state = 411
 			}
 			NOT = {
 			    country_exists = UTA
@@ -6347,7 +6347,7 @@ AFS_decaying_savior = {
 
 		available = {
 			AFS = {
-				has_owned_state = 366
+				owns_state = 366
 			}
 			NOT = {
 			    country_exists = PRA
@@ -6381,7 +6381,7 @@ AFS_decaying_savior = {
 
 		available = {
 			AFS = {
-				has_owned_state = 496
+				owns_state = 496
 			}
 			NOT = {
 			    country_exists = CAS
@@ -6566,7 +6566,7 @@ AFS_vance_political_decisions = {
 			}
 		}
 		
-		fire_only_once = tes
+		fire_only_once = yes
 		
 		#days_re_enable = 20
 

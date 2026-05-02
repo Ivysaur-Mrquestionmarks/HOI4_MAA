@@ -526,7 +526,7 @@ USA_TRUMP = {
 	}
 
 	USA_increase_resistance = {
-		state_target = any_owned_state
+		#state_target = any_owned_state
 		on_map_mode = map_and_decisions_view
 		target_array = ROOT.core_states
 		visible = {
@@ -569,7 +569,7 @@ USA_TRUMP = {
 	}
 
 	USA_uprising = {
-		state_target = any_owned_state
+		#state_target = any_owned_state
 		on_map_mode = map_and_decisions_view
 		target_array = ROOT.core_states
 		visible = {
