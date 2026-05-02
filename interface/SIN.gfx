@@ -130,5 +130,17 @@ spriteTypes = {
 		texturefile = "gfx/texticons/SIN/faction_sin_establishment.dds"
 		legacy_lazy_load = no
 	}
+
+
+
+
+	spriteType = {
+		name = "GFX_trait_SIN_islamist_trait"
+		texturefile = "gfx/interface/traits/SIN/trait_islamist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_SIN_dt_trait"
+		texturefile = "gfx/interface/traits/SIN/trait_dt.dds"
+	}
 }
 

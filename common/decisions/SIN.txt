@@ -3,10 +3,6 @@ SIN_internal_factions = {
 		icon = GFX_decision_hol_attract_foreign_investors
 		priority = 100
 		remove_effect = {
-			SIN_islamists_high_loyalty_increase_effect = yes
-			SIN_dt_high_loyalty_increase_effect = yes
-			SIN_islamists_high_loyalty_increase_effect = yes
-			SIN_dt_high_loyalty_increase_effect = yes
 		}
 	}
 
