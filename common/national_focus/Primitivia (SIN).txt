@@ -135,7 +135,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            custom_effect_tooltip = SIN_faction_management_tt
 		}
 		prerequisite = {
             focus = SIN_clean_this_mess

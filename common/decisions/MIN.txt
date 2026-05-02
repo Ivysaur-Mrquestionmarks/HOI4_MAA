@@ -214,9 +214,9 @@ MIN_balance_of_power_category = {
 		
 		fire_only_once = no
 		
-		days_re_enable = 25
+		days_re_enable = 50
 		
-		cost = 5
+		cost = 25
 
 		complete_effect = {
 			add_power_balance_value = {
@@ -226,7 +226,7 @@ MIN_balance_of_power_category = {
 			}
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = 1000
+			    amount = 500
 			    producer = AFS
 			}
 			add_equipment_to_stockpile = {
@@ -255,7 +255,7 @@ MIN_balance_of_power_category = {
 		
 		days_re_enable = 25
 		
-		cost = 10
+		cost = 35
 
 		complete_effect = {
 			add_power_balance_value = {

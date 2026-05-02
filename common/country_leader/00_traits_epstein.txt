@@ -2481,32 +2481,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	Terry_Nichols_Advisor = {
-		random = no
-		production_factory_max_efficiency_factor = 0.1
-		opinion_gain_monthly_factor = -0.05
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	Yousef_Advisor = {
-		random = no
-		conscription_factor = 0.01
-		non_core_manpower = 0.03
-		industrial_capacity_factory = 0.05
-		opinion_gain_monthly_factor = -0.05
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	Tsarnaev_Advisor = {
-		random = no
-		army_core_attack_factor = 0.05
-		opinion_gain_monthly_factor = -0.05
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	FRA_kamala_vice_president = {
 		random = no
@@ -5854,6 +5828,64 @@ leader_traits = {
 		stability_factor = 0.2
 		political_power_gain = 0.15
 	}
+
+
+
+	### SIN traits ###
+	# leader
+
+	# advisor
+	SIN_al_qaeda_trainer = {
+		random = no
+		stability_factor = -0.05
+		training_time_army_factor = -0.3
+		weekly_manpower = 30
+	}
+	SIN_boston_bomber = {
+		random = no
+		stability_factor = -0.1
+		war_support_factor = 0.1
+		industrial_capacity_factory = 0.15
+	}
+	SIN_bojinka_planner = {
+		random = no
+		civilian_factory_use = 3
+		max_planning_factor = 0.15
+		planning_speed = 0.15
+	}
+	SIN_cleric_kidnapper = {
+		random = no
+		monthly_population = 0.10
+		war_support_factor = 0.1
+	}
+	SIN_aryan_brotherhood_leader = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = 0.15
+		justify_war_goal_time = -0.3
+	}
+	SIN_army_of_god_member = {
+		random = no
+		autocratic_acceptance = 30
+		offensive_war_stability_factor = 0.3
+		political_power_factor = 0.05
+	}
+	SIN_x_ray_gun_schizo = {
+		random = no
+		research_speed_factor = 0.05
+		nuclear_production_factor = 0.1
+	}
+	SIN_oklahoma_city_bomber = {
+		random = no
+		production_factory_efficiency_gain_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
+	}
+
+
+
+
+
+
 
 
 
