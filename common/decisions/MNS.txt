@@ -8,7 +8,7 @@ MNS_Force_Conscription = {
 			tag = MNS
 		}
 		available = {
-			has_completed_focus = MNS_Partial_Mobilization
+			has_completed_focus = MNS_Moblize_the_Population
 		}
 		visible = {
 			OR = {
@@ -85,7 +85,7 @@ MNS_Force_Conscription = {
 			tag = MNS
 		}
 		available = {
-			has_completed_focus = MNS_Partial_Mobilization
+			has_completed_focus = MNS_Moblize_the_Population
 		}
 		visible = {
 			OR = {

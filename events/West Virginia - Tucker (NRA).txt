@@ -455,24 +455,25 @@ country_event = {
 			add_core_of	 = NRA
 		}
 		ai_chance = {
-			IF = {
-				limit = {
-					ALA = {
-						OR = {
-							has_completed_focus = ALA_the_Soldier_Coup
-							has_completed_focus = ALA_Putins_Puppet
-							has_completed_focus = ALA_Reach_out_to_Gorbachev
-						}
-					}
+			modifier = {
+				OR = {
+					has_completed_focus = ALA_the_Soldier_Coup
+					has_completed_focus = ALA_Putins_Puppet
+					has_completed_focus = ALA_Reach_out_to_Gorbachev
 				}
 				factor = 100
 			}
-				
+			factor = 1			
 		}
 	}
 	option = { #no... womp womp
 		name = tucker.22.b
-		NRA = { create_wargoal = { type = annex_everything  target = ROOT }
+		NRA = { 
+			create_wargoal = { 
+				type = annex_everything  
+				target = ROOT 
+			}
+		}
 	}		
 }
 

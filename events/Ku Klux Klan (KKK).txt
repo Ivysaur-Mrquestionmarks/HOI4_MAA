@@ -52,13 +52,13 @@ country_event = {
 }
 
 country_event = {
-	id = kkk.8 #Talks about the preparations the klan are doing for operation purge (happens before the event above)
-	title = kkk.8.t
-	desc = kkk.8.d
+	id = kkk.16 #Talks about the preparations the klan are doing for operation purge (happens before the event above)
+	title = kkk.16.t
+	desc = kkk.16.d
 	#picture = 
 	is_triggered_only = yes
 	option = {
-		name = kkk.8.a 
+		name = kkk.16.a 
 		ai_chance = {
 			factor = 3
 		}
@@ -169,13 +169,13 @@ country_event = {
 }
 
 country_event = {
-	id = kkk.14 #Event about the Klan prepering to activate their "fifth" columb and going to war with FRA
-	title = kkk.14.t
-	desc = kkk.14.d
+	id = kkk.8 #Event about the Klan prepering to activate their "fifth" columb and going to war with FRA
+	title = kkk.8.t
+	desc = kkk.8.d
 	#picture = 
 	is_triggered_only = yes
 	option = {
-		name = kkk.14.a 
+		name = kkk.8.a 
 		ai_chance = {
 			factor = 3
 		}

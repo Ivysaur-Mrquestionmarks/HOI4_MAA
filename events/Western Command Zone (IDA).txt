@@ -1690,14 +1690,12 @@ country_event = { #Peace out FRA and WCZ
 		}
 		white_peace = IDA
 		if = {
-			limit = {
-				has_war_with = {
-					any_country = {
-						is_ally_with = IDA
-					}
+			every_enemy_country = {
+				limit = {
+					is_in_faction_with = IDA
 				}
+				ROOT = { white_peace = PREV }
 			}
-			white_peace = PREV
 		}
 	}
 }
@@ -1711,87 +1709,6 @@ country_event = { #UTA 40% Strength Uprising.
 	fire_only_once = yes
 	
 	option = { #Starts civil war in Utah, if Utah has a Republican government
-		name = idaho_rework.42.a
-		trigger = {
-			UTA = {
-				has_government = republican
-			}
-		}
-		hidden_effect = {
-			UTA_eric_moutsos = {
-				promote_character = {
-					ideology = populist_conservatism
-				}
-			}
-		}
-		start_civil_war = {
-			ideology = libertarian_right
-			size = 0.4
-			keep_political_leader = no
-			keep_unit_leaders = {
-				
-			}
-			keep_unit_leaders_trigger = {
-				always = yes
-			}
-		}
-		random_other_country = {
-			limit = {
-				original_tag = UTA
-				has_government = libertarian_right
-			}
-			set_cosmetic_tag = IDA_Utah
-			load_focus_tree = idaho_puppet
-		}
-	}
-	
-	option = { #Starts civil war in Utah, if Utah does note have a Republican government
-		name = idaho_rework.42.b
-		trigger = {
-			NOT = {
-				UTA = {
-					has_government = republican
-				}
-			}
-		}
-		hidden_effect = {
-			UTA_eric_moutsos = {
-				promote_character = {
-					ideology = trumpist
-				}
-			}
-		}
-		start_civil_war = {
-			ideology = republican
-			size = 0.4
-			keep_political_leader = no
-			keep_unit_leaders = {
-				
-			}
-			keep_unit_leaders_trigger = {
-				always = yes
-			}
-		}
-		random_other_country = {
-			limit = {
-				original_tag = UTA
-				has_government = republican
-			}
-			set_cosmetic_tag = IDA_Utah
-			load_focus_tree = idaho_puppet
-		}
-	}
-}
-country_event = { #UTA 40% Strength Uprising, repeat event to work around a bug issue
-	id = idaho_rework.42
-	title = idaho_rework.42.t
-	desc = idaho_rework.42.d
-	picture = GFX_report_event_IDA_Militia_5
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #Starts civil war in Utah, if Utah has a Republican government 
 		name = idaho_rework.42.a
 		trigger = {
 			UTA = {
@@ -4005,14 +3922,12 @@ country_event = { #Event for if WCZ goes to war with Bidenist guaranteed Alaska 
 		}
 		white_peace = IDA
 		if = {
-			limit = {
-				has_war_with = {
-					any_country = {
-						is_ally_with = IDA
-					}
+			every_enemy_country = {
+				limit = {
+					is_in_faction_with = IDA
 				}
+				ROOT = { white_peace = PREV }
 			}
-			white_peace = PREV
 		}
 	}
 }
@@ -4054,92 +3969,16 @@ country_event = { #Event for if WCZ goes to war with GLA guaranteed Alaska (GLA 
 		}
 		white_peace = IDA
 		if = {
-			limit = {
-				has_war_with = {
-					any_country = {
-						is_ally_with = IDA
-					}
+			every_enemy_country = {
+				limit = {
+					is_in_faction_with = IDA
 				}
+				ROOT = { white_peace = PREV }
 			}
-			white_peace = PREV
-		}
-	}
-}
-country_event = { #Event for if WCZ goes to war with GLA guaranteed Alaska (GLA peaces out with WCZ) , repeat event for bug workaround
-	id = idaho_rework.93
-	title = idaho_rework.93.t
-	desc = idaho_rework.93.d
-	picture = GFX_report_event_IDA_Alaska
-	
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 7
-	}
-
-	trigger = {
-		tag = GLA
-		has_war_with = IDA
-		IDA = {
-			NOT = {
-				is_neighbor_of = GLA
-				is_in_faction_with = USA
-			}
-		}
-		ALA = {
-			ALA_sarah_palin = { is_country_leader = yes }
-			has_capitulated = yes
-			days_since_capitulated > 10
-		}
-	}
-	
-	option = { #GLA gets this event, white peace GLA and WCZ
-		name = idaho_rework.93.a
-		IDA = {
-			annex_country = {
-				target = ALA
-				transfer_troops = no
-			}
-		}
-		white_peace = IDA
-		if = {
-			limit = {
-				has_war_with = {
-					any_country = {
-						is_ally_with = IDA
-					}
-				}
-			}
-			white_peace = PREV
 		}
 	}
 }
 country_event = { #WCZ gains a spirit that reduces justify war goal tension limit and time, fires news event about the WCZ's conquest of the west, WCZ will gain a news event to decide what path they will choose.
-	id = idaho_rework.94
-	title = idaho_rework.94.t
-	desc = idaho_rework.94.d
-	picture = GFX_report_event_IDA_Celebrations_In_The_Streets
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = idaho_rework.94.a
-		add_ideas = IDA_Masters_Of_The_West
-		hidden_effect = { #Set unification country flag for any missed cores, fires news event about conquest, fires an event where the WCZ decides its path
-			set_country_flag = {
-    			flag = reunification_start
-    			value = 2
-			}
-			news_event = idaho_rework.95
-			country_event = {
-				id = idaho_rework.96
-				days = 10
-			}
-		}
-	}
-}
-country_event = { #Fixes event above because it's broken for whatever reason, WCZ gains a spirit that reduces justify war goal tension limit and time, fires news event about the WCZ's conquest of the west, WCZ will gain a news event to decide what path they will choose.
 	id = idaho_rework.94
 	title = idaho_rework.94.t
 	desc = idaho_rework.94.d
@@ -24775,13 +24614,10 @@ country_event = { #Bundys steps in to stop the revolution, Bundy coup event
 		}
 		leave_faction = yes
 		hidden_effect = {
-			every_country = {
-				limit = {
-					has_war_with = {
-						tag = IDA
-					}
+			if = {
+				every_enemy_country = {
+					ROOT = { white_peace = PREV }
 				}
-				white_peace = IDA
 			}
 			set_party_name = { 
 				ideology = libertarian_right 
@@ -24821,44 +24657,6 @@ country_event = { #Bundys steps in to stop the revolution, Bundy coup event
 	}
 }
 country_event = { #WCZ choose to expand, Trumpist forces arrive and end the revolution
-	id = idaho_rework.251
-	title = idaho_rework.251.t
-	desc = idaho_rework.251.d
-	picture = GFX_report_event_IDA_Militia_4
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = idaho_rework.251.a
-		custom_effect_tooltip = wcz_focus_tree_unlock
-		add_stability = 0.25
-		add_war_support = 0.05
-		add_popularity = {
-			ideology = democrat
-			popularity = -0.1
-		}
-		add_popularity = {
-			ideology = libertarian_left
-			popularity = -0.1
-		}
-		add_popularity = {
-			ideology = authoritarian_left
-			popularity = -0.1
-		}
-		add_popularity = {
-			ideology = republican
-			popularity = 0.15
-		}
-		hidden_effect = {
-			set_country_flag = wcz_rmlf_defeated
-			mark_focus_tree_layout_dirty = yes
-			unlock_national_focus = IDA_Pursue_Further_Integration
-			news_event = idaho_rework.244
-		}
-	}
-}
-country_event = { #WCZ choose to expand, Trumpist forces arrive and end the revolution, repeat event for bug workaround
 	id = idaho_rework.251
 	title = idaho_rework.251.t
 	desc = idaho_rework.251.d
@@ -24936,13 +24734,10 @@ country_event = { #WCZ did not choose to expand, Rocky Mountain Revolution succe
 		remove_ideas = IDA_American_Redoubt
 		leave_faction = yes
 		hidden_effect = {
-			every_country = {
-				limit = {
-					has_war_with = {
-						tag = IDA
-					}
+			if = {
+				every_enemy_country = {
+					ROOT = { white_peace = PREV }
 				}
-				white_peace = IDA
 			}
 			USA = {
 				remove_opinion_modifier = {
@@ -24963,66 +24758,6 @@ country_event = { #WCZ did not choose to expand, Rocky Mountain Revolution succe
 	}
 }
 country_event = { #WCZ chooses a replacement leader for Stankiewicz if he died during the revolution
-	id = idaho_rework.254
-	title = idaho_rework.254.t
-	desc = idaho_rework.254.d
-	picture = GFX_report_event_IDA_Generic_Meeting
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #John Tiegen
-		name = idaho_rework.254.a
-		ai_chance = {
-			factor = 10
-		}
-		add_political_power = 25
-		add_stability = 0.05
-		IDA_john_tiegen = {
-			promote_character = yes
-			promote_leader = yes
-		}
-	}
-	option = { #Eric Parker
-		name = idaho_rework.254.b
-		ai_chance = {
-			factor = 10
-		}
-		add_political_power = 25
-		add_stability = 0.05
-		IDA_eric_parker = {
-			promote_character = yes
-			promote_leader = yes
-		}
-	}
-	option = { #Boone Tidwell
-		name = idaho_rework.254.c
-		ai_chance = {
-			factor = 10
-		}
-		add_political_power = 25
-		add_stability = 0.05
-		IDA_boone_tidwell = {
-			promote_character = yes
-			promote_leader = yes
-		}
-	}
-	option = { #Sam Brown
-		name = idaho_rework.254.e
-		trigger = {
-			has_country_flag = wcz_sam_brown_arrives
-		}
-		ai_chance = {
-			factor = 80
-		}
-		add_political_power = 25
-		add_stability = 0.05
-		IDA_sam_brown = {
-			promote_character = yes
-		}
-	}
-}
-country_event = { #WCZ chooses a replacement leader for Stankiewicz if he died during the revolution, repeat event for bug workaround
 	id = idaho_rework.254
 	title = idaho_rework.254.t
 	desc = idaho_rework.254.d

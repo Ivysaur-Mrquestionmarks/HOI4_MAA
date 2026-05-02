@@ -874,14 +874,14 @@ country_event = { #introduction to hawthorne
   is_triggered_only = yes
   option = {
     name = molossia.51.a
-    set_variable = { iron curtain
+    set_variable = { #iron curtain
       var = hawthorne_walls
       value = 1
     }
   }
   option = {
     name = molossia.51.b
-    set_variable = { chain fence
+    set_variable = { #chain fence
       var = hawthorne_walls
       value = 2
     }

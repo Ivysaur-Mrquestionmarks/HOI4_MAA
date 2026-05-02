@@ -143,6 +143,10 @@ script_enum_equipment_category = {
 	rocket
 	flame
 	land_cruiser
+	support_ship
+	submarine_carrier_size
+	carrier_surface_detection
+	carrier_sub_detection
 }
 
 script_enum_equipment_bonus_type = {
@@ -211,7 +215,7 @@ script_enum_equipment_bonus_type = {
 	# Equipment archetypes & types
 	land_cruiser_chassis
 	land_cruiser_chassis_1
-	land_cruiser_equipment_1 #(No-NSB version)
+	#land_cruiser_equipment_1 #(No-NSB version)
 	destroyer
 	infantry_equipment
 	artillery_equipment
@@ -295,8 +299,8 @@ script_enum_equipment_bonus_type = {
 	large_plane_airframe_4
 	transport_plane_equipment
 	transport_plane_equipment_1
-	transport_plane_equipment_2
-	transport_plane_equipment_3
+	#transport_plane_equipment_2
+	#transport_plane_equipment_3
 	railway_gun_equipment
 	railway_gun_equipment_1
 	super_heavy_railway_gun_equipment
@@ -386,6 +390,7 @@ script_enum_equipment_bonus_type = {
 	light_tank_chassis_1
 	light_tank_chassis_2
 	light_tank_chassis_3
+	light_tank_chassis_4
 	medium_tank_chassis
 	medium_tank_chassis_0
 	medium_tank_chassis_1
@@ -396,6 +401,7 @@ script_enum_equipment_bonus_type = {
 	heavy_tank_chassis_1
 	heavy_tank_chassis_2
 	heavy_tank_chassis_3
+	heavy_tank_chassis_4
 	modern_tank_chassis
 	modern_tank_chassis_1
 	super_heavy_tank_chassis
@@ -442,12 +448,12 @@ script_enum_equipment_bonus_type = {
 	cv_small_plane_naval_bomber_airframe_3
 	cv_small_plane_naval_bomber_airframe_4
 	
-	small_plane_suicide_airframe_0
-	small_plane_suicide_airframe_1
-	small_plane_suicide_airframe_2
-	small_plane_suicide_airframe_3
-	small_plane_suicide_airframe_4
-	small_plane_suicide_airframe_5
+	#small_plane_suicide_airframe_0
+	#small_plane_suicide_airframe_1
+	#small_plane_suicide_airframe_2
+	#small_plane_suicide_airframe_3
+	#small_plane_suicide_airframe_4
+	#small_plane_suicide_airframe_5
 	cv_small_plane_suicide_airframe_0
 	cv_small_plane_suicide_airframe_1
 	cv_small_plane_suicide_airframe_2
@@ -503,6 +509,7 @@ script_enum_equipment_bonus_type = {
 	strat_bomber_equipment_2
 	strat_bomber_equipment_3
 	jet_strat_bomber_equipment_1
+	jet_strat_bomber_equipment_2
 	light_tank_aa_chassis
 	light_tank_artillery_chassis
 	light_tank_destroyer_chassis
@@ -528,22 +535,27 @@ script_enum_equipment_bonus_type = {
 	light_tank_aa_chassis_1
 	light_tank_aa_chassis_2
 	light_tank_aa_chassis_3
+	light_tank_aa_chassis_4
 	light_tank_artillery_chassis_0
 	light_tank_artillery_chassis_1
 	light_tank_artillery_chassis_2
 	light_tank_artillery_chassis_3
+	light_tank_artillery_chassis_4
 	light_tank_destroyer_chassis_0
 	light_tank_destroyer_chassis_1
 	light_tank_destroyer_chassis_2
 	light_tank_destroyer_chassis_3
+	light_tank_destroyer_chassis_4
 	light_tank_amphibious_chassis_0
 	light_tank_amphibious_chassis_1
 	light_tank_amphibious_chassis_2
 	light_tank_amphibious_chassis_3
+	light_tank_amphibious_chassis_4
 	light_tank_flame_chassis_0
 	light_tank_flame_chassis_1
 	light_tank_flame_chassis_2
 	light_tank_flame_chassis_3
+	light_tank_flame_chassis_4
 	medium_tank_aa_chassis_0
 	medium_tank_aa_chassis_1
 	medium_tank_aa_chassis_2
@@ -568,22 +580,27 @@ script_enum_equipment_bonus_type = {
 	heavy_tank_aa_chassis_1
 	heavy_tank_aa_chassis_2
 	heavy_tank_aa_chassis_3
+	heavy_tank_aa_chassis_4 
 	heavy_tank_artillery_chassis_0
 	heavy_tank_artillery_chassis_1
 	heavy_tank_artillery_chassis_2
 	heavy_tank_artillery_chassis_3
+	heavy_tank_artillery_chassis_4
 	heavy_tank_destroyer_chassis_0
 	heavy_tank_destroyer_chassis_1
 	heavy_tank_destroyer_chassis_2
 	heavy_tank_destroyer_chassis_3
+	heavy_tank_destroyer_chassis_4
 	heavy_tank_amphibious_chassis_0
 	heavy_tank_amphibious_chassis_1
 	heavy_tank_amphibious_chassis_2
 	heavy_tank_amphibious_chassis_3
+	heavy_tank_amphibious_chassis_4
 	heavy_tank_flame_chassis_0
 	heavy_tank_flame_chassis_1
 	heavy_tank_flame_chassis_2
 	heavy_tank_flame_chassis_3
+	heavy_tank_flame_chassis_4
 	super_heavy_tank_aa_chassis_1
 	super_heavy_tank_artillery_chassis_1
 	super_heavy_tank_destroyer_chassis_1
@@ -603,6 +620,7 @@ script_enum_equipment_bonus_type = {
 	light_tank_aa_equipment_1
 	light_tank_aa_equipment_2
 	light_tank_aa_equipment_3
+	light_tank_equipment_4
 	medium_tank_equipment_1
 	medium_tank_equipment_2
 	medium_tank_equipment_3
@@ -618,6 +636,7 @@ script_enum_equipment_bonus_type = {
 	heavy_tank_equipment_1
 	heavy_tank_equipment_2
 	heavy_tank_equipment_3
+	heavy_tank_equipment_4
 	heavy_tank_artillery_equipment_1
 	heavy_tank_artillery_equipment_2
 	heavy_tank_artillery_equipment_3
@@ -637,8 +656,78 @@ script_enum_equipment_bonus_type = {
 	super_heavy_tank_aa_equipment_1
 	amphibious_tank_equipment_1
 	amphibious_tank_equipment_2
-	supersonic_fighter_equipment_1
-	
+	#supersonic_fighter_equipment_1
+	heavy_tank_air_chassis
+	heavy_tank_air_chassis_0
+	heavy_tank_air_chassis_1
+	heavy_tank_air_chassis_2
+	heavy_tank_air_chassis_3
+	heavy_tank_air_chassis_4
+	medium_tank_air_chassis
+	medium_tank_air_chassis_0
+	medium_tank_air_chassis_1
+	medium_tank_air_chassis_2
+	medium_tank_air_chassis_3
+	light_tank_air_chassis
+	light_tank_air_chassis_0
+	light_tank_air_chassis_1
+	light_tank_air_chassis_2
+	light_tank_air_chassis_3
+	light_tank_air_chassis_4
+
+	jet_heavy_fighter_equipment
+	jet_heavy_fighter_equipment_1 
+	jet_tac_bomber_equipment_1
+	jet_tac_bomber_equipment_2
+
+	tac_bomber_equipment_0
+	tac_bomber_equipment_1
+	tac_bomber_equipment_2
+	tac_bomber_equipment_3
+	tac_bomber_equipment_4
+
+	jet_nav_bomber_equipment
+	jet_nav_bomber_equipment_1
+
+	navy_attack_helicopter_equipment
+	navy_attack_helicopter_equipment_1
+	navy_attack_helicopter_equipment_2
+
+	army_attack_helicopter_equipment
+	army_attack_helicopter_equipment_1
+	army_attack_helicopter_equipment_2
+	army_attack_helicopter_equipment_3
+
+	large_plane_maritime_patrol_plane_airframestealth_bomber_airframe_0
+	large_plane_maritime_patrol_plane_airframestealth_bomber_airframe_1
+	large_plane_maritime_patrol_plane_airframestealth_bomber_airframe_2
+
+	support_ship_hull
+	support_ship
+	support_ship_1
+	support_ship_2
+
+	ship_hull_carrier_submarine
+	frigate
+	escort_carrier
+	ship_hull_escort_carrier
+	repair_ship_hull
+	repair_ship_1
+	repair_ship_2
+
+	cv_medium_plane_fighter_airframe
+	cv_medium_plane_fighter_airframe_0
+	cv_medium_plane_fighter_airframe_1
+	cv_medium_plane_fighter_airframe_2
+	cv_medium_plane_fighter_airframe_3
+	cv_medium_plane_fighter_airframe_4
+
+	cv_medium_plane_airframe
+	cv_medium_plane_airframe_0
+	cv_medium_plane_airframe_1
+	cv_medium_plane_airframe_2
+	cv_medium_plane_airframe_3
+	cv_medium_plane_airframe_4
 	# MAA
 	infantry_AA_equipment
 	infantry_AA_equipment_1
@@ -656,13 +745,18 @@ script_enum_equipment_bonus_type = {
 	drone_equipment_2
 	drone_equipment_3
 
-	IFV_air_chassis_0
 	IFV_chasis
 	IFV_chasis_0
 	IFV_chasis_1
 	IFV_chasis_2
 	IFV_chasis_3
 	IFV_chasis_4
+	IFV_air_chassis
+	IFV_air_chassis_0
+	IFV_air_chassis_1
+	IFV_air_chassis_2
+	IFV_air_chassis_3
+	IFV_air_chassis_4
 	mechanized_air_equipment
 	mechanized_air_equipment_1
 	mechanized_air_equipment_2
@@ -692,10 +786,10 @@ script_enum_equipment_bonus_type = {
 	transport_heli_equipment_4
 	transport_heli_equipment_COL
 
-	stealth_bomber_airframe_0
-	stealth_bomber_airframe_1
-	stealth_bomber_airframe_2
-	stealth_bomber_airframe_3
+	#stealth_bomber_airframe_0
+	#stealth_bomber_airframe_1
+	#stealth_bomber_airframe_2
+	#stealth_bomber_airframe_3
 
 	ship_hull_assult
 	ship_hull_assult_1

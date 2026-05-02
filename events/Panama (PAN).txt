@@ -68,6 +68,8 @@ country_event = {
 #Chiriqui secession news event
 news_event = {
 	id = panama.2
+	title = panama.2.t
+	desc = panama.2.d
 	picture = GFX_news_event_nuke 
 	major = yes
 	is_triggered_only = yes
@@ -78,63 +80,64 @@ news_event = {
 	}
 }
 
-#Panama Civil War
-country_event = {
-	id = panama.3
-	title = panama.3.t
-	desc = panama.3.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	immediate = {
-		hidden_effect = {
-			PPF = {
-				transfer_state = 336 #temporary province id
-			}
-			every_state = {
-				limit = {
-					is_owned_by = PPF
-				}
-				add_core_of = PPF
-			}
-			911 = { #temporary province id
-				create_unit = {
-					division = "name = \"Guardia Nacional\" division_template = \"Guardia Nacional\" start_experience_factor = 0.8" 
-					owner = PPF
-				}
-			}
-			ZON = {
-				transfer_state = 336 #temporary province id
-			}
-			every_state = {
-				limit = {
-					is_owned_by = ZON
-				}
-				add_core_of = ZON
-			}
-			911 = { #temporary province id
-				create_unit = {
-					division = "name = \"Zonian Militia\" division_template = \"Zonian Militia\" start_experience_factor = 0.6" 
-					owner = ZON
-				}
-			}
-		}
-	#panama
-	option = {
-		name = panama.3.a
-	}
-	#Panama police
-	option = {
-		name = panama.3.b
-		PPF = { change_tag_from = ROOT }
-	}
-	#canal zone
-	option = {
-		name = panama.3.c
-		ZON = { change_tag_from = ROOT }
-		hidden_effect = { ZON = {country_event = { id = panama.5 days = 7 } } }
-	}
-}
+##Panama Civil War
+#country_event = {
+#	id = panama.3
+#	title = panama.3.t
+#	desc = panama.3.d
+#	#picture =
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	immediate = {
+#		hidden_effect = {
+#			PPF = {
+#				transfer_state = 336 #temporary province id
+#			}
+#			every_state = {
+#				limit = {
+#					is_owned_by = PPF
+#				}
+#				add_core_of = PPF
+#			}
+#			911 = { #temporary province id
+#				create_unit = {
+#					division = "name = \"Guardia Nacional\" division_template = \"Guardia Nacional\" start_experience_factor = 0.8" 
+#					owner = PPF
+#				}
+#			}
+#			ZON = {
+#				transfer_state = 336 #temporary province id
+#			}
+#			every_state = {
+#				limit = {
+#					is_owned_by = ZON
+#				}
+#				add_core_of = ZON
+#			}
+#			911 = { #temporary province id
+#				create_unit = {
+#					division = "name = \"Zonian Militia\" division_template = \"Zonian Militia\" start_experience_factor = 0.6" 
+#					owner = ZON
+#				}
+#			}
+#		}
+#	}
+#	#panama
+#	option = {
+#		name = panama.3.a
+#	}
+#	#Panama police
+#	option = {
+#		name = panama.3.b
+#		PPF = { change_tag_from = ROOT }
+#	}
+#	#canal zone
+#	option = {
+#		name = panama.3.c
+#		ZON = { change_tag_from = ROOT }
+#		hidden_effect = { ZON = {country_event = { id = panama.5 days = 7 } } }
+#	}
+#}
 
 #Chiriqui Secessionists crushed
 country_event = {
@@ -160,14 +163,16 @@ country_event = {
 	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
-	immediate = {
+	
 	#zonians
 	option = {
 		name = panama.5.a
+
 	}
 	#canal zone authority
 	option = {
 		name = panama.5.b
+
 	}
 }
 

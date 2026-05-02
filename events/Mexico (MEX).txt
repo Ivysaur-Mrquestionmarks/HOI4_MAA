@@ -473,7 +473,9 @@ country_event = {
 			create_faction_from_template = faction_template_mexican_revolucionarios
 			add_to_faction = WMX
 			add_to_faction = ADF
-			set_capital = 385
+			set_capital = {
+				state = 385
+			}
 		}
 		CAR = {
 			transfer_state = 639

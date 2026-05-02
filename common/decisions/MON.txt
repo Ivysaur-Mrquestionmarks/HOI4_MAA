@@ -39,7 +39,7 @@ MON_Nuke_Yellowstone = {
         cost = 250
 
 		available = {
-			has_completed_focus = MON_The_Schutzstaffel_Council
+			#has_completed_focus = MON_The_Schutzstaffel_Council
             has_government = autocratic
             has_war = yes
             surrender_progress > 0.75             
@@ -49,7 +49,7 @@ MON_Nuke_Yellowstone = {
 		#days_re_enable = 25
 
 		visible = {
-			has_completed_focus = MON_The_Schutzstaffel_Council
+			#has_completed_focus = MON_The_Schutzstaffel_Council
 		}
 
         cost = 50

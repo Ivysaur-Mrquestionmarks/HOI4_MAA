@@ -388,7 +388,7 @@ country_event = {
 	    }
 		add_war_support = 0.10
 		add_equipment_to_stockpile = {
-		    type = fighter_equipment
+		    type = fighter_equipment_1
 		    amount = 30
 		    producer = AFO
 		}
@@ -877,7 +877,7 @@ country_event = {
 		   producer = PRA
 		}
 		add_equipment_to_stockpile = {
-		    type = fighter_equipment
+		    type = fighter_equipment_1
 		    amount = 45
 		    producer = PRA
 		}
@@ -1045,7 +1045,7 @@ country_event = {
 		   producer = UTA
 		}
 		add_equipment_to_stockpile = {
-		   type = fighter_equipment
+		   type = fighter_equipment_1
 		   amount = 10
 		   producer = UTA
 		}
@@ -1128,7 +1128,7 @@ country_event = {
 		   producer = FRA
 		}
 		add_equipment_to_stockpile = {
-		    type = fighter_equipment
+		    type = fighter_equipment_1
 		    amount = 45
 		    producer = FRA
 		}
@@ -1363,13 +1363,42 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-	name = utah.51.a #RussiasOffer
-	add_political_power = -300
-	    add_equipment_to_stockpile = {
-		   type = heavy_tank_equipment
-		   amount = 875
-		   producer = PRA
-	    }
+		name = utah.51.a #RussiasOffer
+		IF = {
+			LIMIT = {
+				has_dlc = "No Step Back"
+			}
+			create_equipment_variant = { 
+				name = "M88A2 HERCULES"
+				type = heavy_tank_chassis_1
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_cannon
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 1
+					tank_nsb_armor_upgrade = 1
+				}
+			}
+			add_equipment_to_stockpile = {
+			   type = heavy_tank_chassis_1
+			   amount = 875
+			   producer = PRA
+		    }
+		}
+		ELSE = {
+			add_equipment_to_stockpile = {
+			   type = heavy_tank_equipment_1
+			   amount = 875
+			   producer = PRA
+		    }
+		}
+		add_political_power = -300	    
 	}
 	option = {
 	name = utah.51.b #BrazilsOffer
@@ -1393,7 +1422,7 @@ country_event = {
 	name = utah.51.e #VenezuelasOffer
 	add_political_power = -50
 	    add_equipment_to_stockpile = {
-		    type = fighter_equipment
+		    type = fighter_equipment_1
 		    amount = 25
 		    producer = UTA
 		}

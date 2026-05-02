@@ -243,8 +243,8 @@ unit_leader_event = {
 		FLA_vitalyzdtv = {
 			remove_unit_leader_trait = substance_addict
 			add_unit_leader_trait = inflexible_strategist
+
+			gain_xp = 350
 		}
-		
-		gain_xp = 350
 	}
 }
