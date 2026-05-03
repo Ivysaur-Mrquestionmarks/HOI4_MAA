@@ -10,7 +10,7 @@
 
 
 
-	
+objectTypes = {
 	pdxmesh = { name = "SIN_cavalry_mesh"
 		file = "gfx/models/units/PRC_cavalry.mesh"
 
@@ -61,4 +61,4 @@
 	pdxmesh = { name = "SIN_sabre_holder_mesh"
 		file = "gfx/models/units/PRC_sword_dadao_holder.mesh"
 	}
-
+}
