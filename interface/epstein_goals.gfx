@@ -6064,43 +6064,6 @@ spriteTypes = {
 
  }
  SpriteType = {
-        name = "GFX_goal_Decapitate_Marx"
-        texturefile = "gfx/interface/goals/Decapitate_Marx.dds"
-    }
-
-    SpriteType = {
-        name = "GFX_goal_Decapitate_Marx_shine"
-        texturefile = "gfx/interface/goals/Decapitate_Marx.dds"
-        effectFile = "gfx/FX/buttonstate.lua"
-        animation = {
-            animationmaskfile = "gfx/interface/goals/Decapitate_Marx.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = -90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-
-        animation = {
-            animationmaskfile = "gfx/interface/goals/Decapitate_Marx.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = 90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        legacy_lazy_load = no
-
- }
- SpriteType = {
         name = "GFX_goal_Kill_Christians"
         texturefile = "gfx/interface/goals/Kill_Christians.dds"
     }
@@ -18535,15 +18498,15 @@ spriteTypes = {
  }
  SpriteType = {
         name = "GFX_goal_Get_out_of_Jail_Free"
-        texturefile = "gfx/interface/goals/Generic_Prison_Camps.dds"
+        texturefile = "gfx/interface/goals/PB_Goals/Generic_Prison_Camps.dds"
     }
 
     SpriteType = {
         name = "GFX_goal_Get_out_of_Jail_Free_shine"
-        texturefile = "gfx/interface/goals/Generic_Prison_Camps.dds"
+        texturefile = "gfx/interface/goals/PB_Goals/Generic_Prison_Camps.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/Generic_Prison_Camps.dds"
+            animationmaskfile = "gfx/interface/goals/PB_Goals/Generic_Prison_Camps.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -18556,7 +18519,7 @@ spriteTypes = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/Generic_Prison_Camps.dds"
+            animationmaskfile = "gfx/interface/goals/PB_Goals/Generic_Prison_Camps.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -44069,83 +44032,7 @@ SpriteType = {
         }
         legacy_lazy_load = no
 
- }
-    SpriteType = {
-        name = "GFX_goal_UTA_Democrats"
-        texturefile = "gfx/interface/goals/UTA_Democrats.dds"
     }
-
-    SpriteType = {
-        name = "GFX_goal_UTA_Democrats_shine"
-        texturefile = "gfx/interface/goals/UTA_Democrats.dds"
-        effectFile = "gfx/FX/buttonstate.lua"
-        animation = {
-            animationmaskfile = "gfx/interface/goals/UTA_Democrats.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = -90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-
-        animation = {
-            animationmaskfile = "gfx/interface/goals/UTA_Democrats.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = 90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        legacy_lazy_load = no
-
-    }
-	
-	SpriteType = {
-        name = "GFX_goal_UTA_Republicans"
-        texturefile = "gfx/interface/goals/UTA_Republicans.dds"
-    }
-
-    SpriteType = {
-        name = "GFX_goal_UTA_Republicans_shine"
-        texturefile = "gfx/interface/goals/UTA_Republicans.dds"
-        effectFile = "gfx/FX/buttonstate.lua"
-        animation = {
-            animationmaskfile = "gfx/interface/goals/UTA_Republicans.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = -90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-
-        animation = {
-            animationmaskfile = "gfx/interface/goals/UTA_Republicans.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = 90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        legacy_lazy_load = no
-
-    }
-	
 	SpriteType = {
         name = "GFX_goal_UTA_Guard_Coup"
         texturefile = "gfx/interface/goals/UTA_Guard_Coup.dds"

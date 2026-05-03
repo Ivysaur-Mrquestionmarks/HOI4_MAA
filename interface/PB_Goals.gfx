@@ -5419,10 +5419,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/PB_Goals/HUN_Bohm_Resigns.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_GER_germanized_education"
-		texturefile = "gfx/interface/goals/ROTG_goals/GER_germanized_education_methods.dds"
-	}
-	SpriteType = {
 		name = "GFX_goal_GER_Red_Diachy"
 		texturefile = "gfx/interface/goals/PB_Goals/Focus_GER_Red_Diachy.dds"
 	}
@@ -5625,38 +5621,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_FRA_Puppet_Britain"
 		texturefile = "gfx/interface/goals/PB_Goals/FRA_Puppet_Britain.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_GER_Modern_Mobile_Warfare"
-		texturefile = "gfx/interface/goals/PB_Goals/GER_Modern_Mobile_Warfare.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_GER_Gas_Enhanced"
-		texturefile = "gfx/interface/goals/PB_Goals/GER_Gas_Enhanced.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_GER_Gas_Dead"
-		texturefile = "gfx/interface/goals/PB_Goals/GER_Gas_Dead.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_GER_Schoko"
-		texturefile = "gfx/interface/goals/PB_Goals/GER_Schoko.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_GER_Motor_Artillery"
-		texturefile = "gfx/interface/goals/PB_Goals/GER_Motor_Artillery.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_GER_British_Walker_Coop"
-		texturefile = "gfx/interface/goals/PB_Goals/GER_British_Walker_Coop.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_GER_Braun"
-		texturefile = "gfx/interface/goals/PB_Goals/GER_Braun.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_GER_Broke_Economy"
-		texturefile = "gfx/interface/goals/PB_Goals/GER_Broke_Economy.dds"
 	}
 }
 

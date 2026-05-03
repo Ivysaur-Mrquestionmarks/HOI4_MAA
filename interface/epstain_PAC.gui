@@ -17,7 +17,7 @@ guiTypes = {
 			position = { x= 1000 y = 170 }
 			font = "hoi_18mbs"
 			text = "Army"
-			format = center_left
+			Orientation = center_left
 			maxWidth = 420
 			maxHeight = 50
 			fixedsize = yes
@@ -33,7 +33,7 @@ guiTypes = {
 			position = { x= 390 y = 180 }
 			font = "hoi_18mbs"
 			text = "Militia"
-			format = center_right
+			Orientation = center_right
 			maxWidth = 420
 			maxHeight = 24
 			fixedsize = yes
@@ -58,7 +58,7 @@ guiTypes = {
 			position = { x= 200 y = 40 }
 			font = "hoi_18mbs"
 			text = "State balance"
-			format = upper_left
+			Orientation = upper_left
 			maxWidth = 420
 			maxHeight = 24
 			fixedsize = yes

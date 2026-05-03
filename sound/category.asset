@@ -565,21 +565,6 @@ category = {
 }
 
 category = {
- name = "nonControllableEntities"
- soundeffects = {
-
- 	### Used largely in dlc for trains/planes/floating harbor
-	GEN_train_equipment_1
- 	GEN_train_equipment_2
-	GEN_train_equipment_3
-	GER_train_equipment_3
-	GEN_floating_harbour
-	train_horn_medium
-	train_horn_veryLarge
- 	}
-}
-
-category = {
  name = "Atmosphere"
  soundeffects = {
 	amb_neutral_wind
@@ -653,6 +638,8 @@ category = {
  	rio_migrant_audio
  	rio_settler_audio
  	tucker_audio
+ 	year_zero
+ 	moderate_libertarian
  	KKK_unification
  	corp_audio
  	nra_audio
