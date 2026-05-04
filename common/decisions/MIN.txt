@@ -218,6 +218,10 @@ MIN_balance_of_power_category = {
 		
 		cost = 25
 
+		ai_will_do = {
+			base = 250
+		}
+
 		complete_effect = {
 			add_power_balance_value = {
 				id = MIN_ventura_vs_green_army_bop
