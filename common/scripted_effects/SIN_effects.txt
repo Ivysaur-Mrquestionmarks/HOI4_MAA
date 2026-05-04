@@ -1,5 +1,5 @@
 #Faction System
-	#islamists
+	#ISLAMISTS
 		SIN_islamists_low_loyalty_increase_effect = {
 			custom_effect_tooltip = SIN_islamists_tt
 			custom_effect_tooltip = SIN_low_loyalty_increase_tt
@@ -253,255 +253,509 @@
 			}
 		}
 
-	#AGRARIAN UNION
-		SIN_bzns_low_loyalty_increase_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+	#CARTEL
+		SIN_cartel_low_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_low_loyalty_increase_tt
-			add_to_variable = { SIN_bzns_loyalty = SIN_faction_low_increase }
+			add_to_variable = { SIN_cartel_loyalty = SIN_faction_low_increase }
 			clamp_variable = {
-				var = SIN_bzns_loyalty
+				var = SIN_cartel_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_bzns_low_popularity_increase_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+		SIN_cartel_low_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_low_popularity_increase_tt
-			add_to_variable = { SIN_bzns_popularity = SIN_faction_low_increase }
+			add_to_variable = { SIN_cartel_popularity = SIN_faction_low_increase }
 			clamp_variable = {
-				var = SIN_bzns_popularity
+				var = SIN_cartel_popularity
 				min = 0
 				max = 100
 			}
 		}
 
-		SIN_bzns_medium_loyalty_increase_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+		SIN_cartel_medium_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_medium_loyalty_increase_tt
-			add_to_variable = { SIN_bzns_loyalty = SIN_faction_medium_increase }
+			add_to_variable = { SIN_cartel_loyalty = SIN_faction_medium_increase }
 			clamp_variable = {
-				var = SIN_bzns_loyalty
+				var = SIN_cartel_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_bzns_medium_popularity_increase_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+		SIN_cartel_medium_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_medium_popularity_increase_tt
-			add_to_variable = { SIN_bzns_popularity = SIN_faction_medium_increase }
+			add_to_variable = { SIN_cartel_popularity = SIN_faction_medium_increase }
 			clamp_variable = {
-				var = SIN_bzns_popularity
+				var = SIN_cartel_popularity
 				min = 0
 				max = 100
 			}
 		}
 
-		SIN_bzns_high_loyalty_increase_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+		SIN_cartel_high_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_high_loyalty_increase_tt
-			add_to_variable = { SIN_bzns_loyalty = SIN_faction_high_increase }
+			add_to_variable = { SIN_cartel_loyalty = SIN_faction_high_increase }
 			clamp_variable = {
-				var = SIN_bzns_loyalty
+				var = SIN_cartel_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_bzns_high_popularity_increase_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+		SIN_cartel_high_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_high_popularity_increase_tt
-			add_to_variable = { SIN_bzns_popularity = SIN_faction_high_increase }
+			add_to_variable = { SIN_cartel_popularity = SIN_faction_high_increase }
 			clamp_variable = {
-				var = SIN_bzns_popularity
+				var = SIN_cartel_popularity
 				min = 0
 				max = 100
 			}
 		}
 
-		SIN_bzns_low_loyalty_decrease_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+		SIN_cartel_low_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_low_loyalty_decrease_tt
-			add_to_variable = { SIN_bzns_loyalty = SIN_faction_low_decrease }
+			add_to_variable = { SIN_cartel_loyalty = SIN_faction_low_decrease }
 			clamp_variable = {
-				var = SIN_bzns_loyalty
+				var = SIN_cartel_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_bzns_low_popularity_decrease_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+		SIN_cartel_low_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_low_popularity_decrease_tt
-			add_to_variable = { SIN_bzns_popularity = SIN_faction_low_decrease }
+			add_to_variable = { SIN_cartel_popularity = SIN_faction_low_decrease }
 			clamp_variable = {
-				var = SIN_bzns_popularity
+				var = SIN_cartel_popularity
 				min = 0
 				max = 100
 			}
 		}
 
-		SIN_bzns_medium_loyalty_decrease_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+		SIN_cartel_medium_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
-			add_to_variable = { SIN_bzns_loyalty = SIN_faction_medium_decrease }
+			add_to_variable = { SIN_cartel_loyalty = SIN_faction_medium_decrease }
 			clamp_variable = {
-				var = SIN_bzns_loyalty
+				var = SIN_cartel_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_bzns_medium_popularity_decrease_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+		SIN_cartel_medium_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_medium_popularity_decrease_tt
-			add_to_variable = { SIN_bzns_popularity = SIN_faction_medium_decrease }
+			add_to_variable = { SIN_cartel_popularity = SIN_faction_medium_decrease }
 			clamp_variable = {
-				var = SIN_bzns_popularity
+				var = SIN_cartel_popularity
 				min = 0
 				max = 100
 			}
 		}
 
-		SIN_bzns_high_loyalty_decrease_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+		SIN_cartel_high_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_high_loyalty_decrease_tt
-			add_to_variable = { SIN_bzns_loyalty = SIN_faction_high_decrease }
+			add_to_variable = { SIN_cartel_loyalty = SIN_faction_high_decrease }
 			clamp_variable = {
-				var = SIN_bzns_loyalty
+				var = SIN_cartel_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_bzns_high_popularity_decrease_effect = {
-			custom_effect_tooltip = SIN_bzns_tt
+		SIN_cartel_high_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_cartel_tt
 			custom_effect_tooltip = SIN_high_popularity_decrease_tt
-			add_to_variable = { SIN_bzns_popularity = SIN_faction_high_decrease }
+			add_to_variable = { SIN_cartel_popularity = SIN_faction_high_decrease }
 			clamp_variable = {
-				var = SIN_bzns_popularity
+				var = SIN_cartel_popularity
 				min = 0
 				max = 100
 			}
 		}
 
-	#NATIONAL SOCIAL MOVEMENT
-		SIN_nsm_low_loyalty_increase_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+	#ANPRIMS
+		SIN_anprims_low_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_low_loyalty_increase_tt
-			add_to_variable = { SIN_nsm_loyalty = SIN_faction_low_increase }
+			add_to_variable = { SIN_anprims_loyalty = SIN_faction_low_increase }
 			clamp_variable = {
-				var = SIN_nsm_loyalty
+				var = SIN_anprims_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_nsm_low_popularity_increase_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+		SIN_anprims_low_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_low_popularity_increase_tt
-			add_to_variable = { SIN_nsm_popularity = SIN_faction_low_increase }
+			add_to_variable = { SIN_anprims_popularity = SIN_faction_low_increase }
 			clamp_variable = {
-				var = SIN_nsm_popularity
+				var = SIN_anprims_popularity
 				min = 0
 				max = 100
 			}
 		}
 
-		SIN_nsm_medium_loyalty_increase_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+		SIN_anprims_medium_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_medium_loyalty_increase_tt
-			add_to_variable = { SIN_nsm_loyalty = SIN_faction_medium_increase }
+			add_to_variable = { SIN_anprims_loyalty = SIN_faction_medium_increase }
 			clamp_variable = {
-				var = SIN_nsm_loyalty
+				var = SIN_anprims_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_nsm_medium_popularity_increase_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+		SIN_anprims_medium_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_medium_popularity_increase_tt
-			add_to_variable = { SIN_nsm_popularity = SIN_faction_medium_increase }
+			add_to_variable = { SIN_anprims_popularity = SIN_faction_medium_increase }
 			clamp_variable = {
-				var = SIN_nsm_popularity
+				var = SIN_anprims_popularity
 				min = 0
 				max = 100
 			}
 		}
 
-		SIN_nsm_high_loyalty_increase_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+		SIN_anprims_high_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_high_loyalty_increase_tt
-			add_to_variable = { SIN_nsm_loyalty = SIN_faction_high_increase }
+			add_to_variable = { SIN_anprims_loyalty = SIN_faction_high_increase }
 			clamp_variable = {
-				var = SIN_nsm_loyalty
+				var = SIN_anprims_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_nsm_high_popularity_increase_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+		SIN_anprims_high_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_high_popularity_increase_tt
-			add_to_variable = { SIN_nsm_popularity = SIN_faction_high_increase }
+			add_to_variable = { SIN_anprims_popularity = SIN_faction_high_increase }
 			clamp_variable = {
-				var = SIN_nsm_popularity
+				var = SIN_anprims_popularity
 				min = 0
 				max = 100
 			}
 		}
 
-		SIN_nsm_low_loyalty_decrease_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+		SIN_anprims_low_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_low_loyalty_decrease_tt
-			add_to_variable = { SIN_nsm_loyalty = SIN_faction_low_decrease }
+			add_to_variable = { SIN_anprims_loyalty = SIN_faction_low_decrease }
 			clamp_variable = {
-				var = SIN_nsm_loyalty
+				var = SIN_anprims_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_nsm_low_popularity_decrease_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+		SIN_anprims_low_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_low_popularity_decrease_tt
-			add_to_variable = { SIN_nsm_popularity = SIN_faction_low_decrease }
+			add_to_variable = { SIN_anprims_popularity = SIN_faction_low_decrease }
 			clamp_variable = {
-				var = SIN_nsm_popularity
+				var = SIN_anprims_popularity
 				min = 0
 				max = 100
 			}
 		}
 
-		SIN_nsm_medium_loyalty_decrease_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+		SIN_anprims_medium_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
-			add_to_variable = { SIN_nsm_loyalty = SIN_faction_medium_decrease }
+			add_to_variable = { SIN_anprims_loyalty = SIN_faction_medium_decrease }
 			clamp_variable = {
-				var = SIN_nsm_loyalty
+				var = SIN_anprims_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_nsm_medium_popularity_decrease_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+		SIN_anprims_medium_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_medium_popularity_decrease_tt
-			add_to_variable = { SIN_nsm_popularity = SIN_faction_medium_decrease }
+			add_to_variable = { SIN_anprims_popularity = SIN_faction_medium_decrease }
 			clamp_variable = {
-				var = SIN_nsm_popularity
+				var = SIN_anprims_popularity
 				min = 0
 				max = 100
 			}
 		}
 
-		SIN_nsm_high_loyalty_decrease_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+		SIN_anprims_high_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_high_loyalty_decrease_tt
-			add_to_variable = { SIN_nsm_loyalty = SIN_faction_high_decrease }
+			add_to_variable = { SIN_anprims_loyalty = SIN_faction_high_decrease }
 			clamp_variable = {
-				var = SIN_nsm_loyalty
+				var = SIN_anprims_loyalty
 				min = 0
 				max = 100
 			}
 		}
-		SIN_nsm_high_popularity_decrease_effect = {
-			custom_effect_tooltip = SIN_nsm_tt
+		SIN_anprims_high_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_anprims_tt
 			custom_effect_tooltip = SIN_high_popularity_decrease_tt
-			add_to_variable = { SIN_nsm_popularity = SIN_faction_high_decrease }
+			add_to_variable = { SIN_anprims_popularity = SIN_faction_high_decrease }
 			clamp_variable = {
-				var = SIN_nsm_popularity
+				var = SIN_anprims_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+	#MOB
+		SIN_mob_low_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_low_loyalty_increase_tt
+			add_to_variable = { SIN_mob_loyalty = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_mob_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_mob_low_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_low_popularity_increase_tt
+			add_to_variable = { SIN_mob_popularity = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_mob_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_mob_medium_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_medium_loyalty_increase_tt
+			add_to_variable = { SIN_mob_loyalty = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_mob_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_mob_medium_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_medium_popularity_increase_tt
+			add_to_variable = { SIN_mob_popularity = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_mob_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_mob_high_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_high_loyalty_increase_tt
+			add_to_variable = { SIN_mob_loyalty = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_mob_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_mob_high_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_high_popularity_increase_tt
+			add_to_variable = { SIN_mob_popularity = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_mob_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_mob_low_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_low_loyalty_decrease_tt
+			add_to_variable = { SIN_mob_loyalty = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_mob_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_mob_low_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_low_popularity_decrease_tt
+			add_to_variable = { SIN_mob_popularity = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_mob_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_mob_medium_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
+			add_to_variable = { SIN_mob_loyalty = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_mob_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_mob_medium_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_medium_popularity_decrease_tt
+			add_to_variable = { SIN_mob_popularity = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_mob_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_mob_high_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_high_loyalty_decrease_tt
+			add_to_variable = { SIN_mob_loyalty = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_mob_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_mob_high_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_mob_tt
+			custom_effect_tooltip = SIN_high_popularity_decrease_tt
+			add_to_variable = { SIN_mob_popularity = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_mob_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+	#ESTABLISHMENT
+		SIN_establishment_low_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_low_loyalty_increase_tt
+			add_to_variable = { SIN_establishment_loyalty = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_establishment_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_establishment_low_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_low_popularity_increase_tt
+			add_to_variable = { SIN_establishment_popularity = SIN_faction_low_increase }
+			clamp_variable = {
+				var = SIN_establishment_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_establishment_medium_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_medium_loyalty_increase_tt
+			add_to_variable = { SIN_establishment_loyalty = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_establishment_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_establishment_medium_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_medium_popularity_increase_tt
+			add_to_variable = { SIN_establishment_popularity = SIN_faction_medium_increase }
+			clamp_variable = {
+				var = SIN_establishment_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_establishment_high_loyalty_increase_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_high_loyalty_increase_tt
+			add_to_variable = { SIN_establishment_loyalty = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_establishment_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_establishment_high_popularity_increase_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_high_popularity_increase_tt
+			add_to_variable = { SIN_establishment_popularity = SIN_faction_high_increase }
+			clamp_variable = {
+				var = SIN_establishment_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_establishment_low_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_low_loyalty_decrease_tt
+			add_to_variable = { SIN_establishment_loyalty = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_establishment_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_establishment_low_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_low_popularity_decrease_tt
+			add_to_variable = { SIN_establishment_popularity = SIN_faction_low_decrease }
+			clamp_variable = {
+				var = SIN_establishment_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_establishment_medium_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_medium_loyalty_decrease_tt
+			add_to_variable = { SIN_establishment_loyalty = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_establishment_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_establishment_medium_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_medium_popularity_decrease_tt
+			add_to_variable = { SIN_establishment_popularity = SIN_faction_medium_decrease }
+			clamp_variable = {
+				var = SIN_establishment_popularity
+				min = 0
+				max = 100
+			}
+		}
+
+		SIN_establishment_high_loyalty_decrease_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_high_loyalty_decrease_tt
+			add_to_variable = { SIN_establishment_loyalty = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_establishment_loyalty
+				min = 0
+				max = 100
+			}
+		}
+		SIN_establishment_high_popularity_decrease_effect = {
+			custom_effect_tooltip = SIN_establishment_tt
+			custom_effect_tooltip = SIN_high_popularity_decrease_tt
+			add_to_variable = { SIN_establishment_popularity = SIN_faction_high_decrease }
+			clamp_variable = {
+				var = SIN_establishment_popularity
 				min = 0
 				max = 100
 			}

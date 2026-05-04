@@ -172,6 +172,9 @@ focus_tree = {
 				value = 0.05
 				tooltip_side = ted_side
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SIN_anprims_low_popularity_increase_effect = yes
+			SIN_anprims_low_loyalty_increase_effect = yes
 		}
 		prerequisite = {
 			focus = SIN_streamline_bomb_production
@@ -237,6 +240,9 @@ focus_tree = {
 				value = 0.05
 				tooltip_side = ted_side
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SIN_anprims_low_popularity_increase_effect = yes
+			SIN_anprims_low_loyalty_increase_effect = yes
 		}
 		prerequisite = {
 			focus = SIN_bring_forth_the_anprims
@@ -345,6 +351,8 @@ focus_tree = {
 		  		focus = SIN_bring_forth_the_anprims
 		  		cost = 21
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SIN_anprims_medium_popularity_increase_effect = yes
 		}
 		prerequisite = {
 			focus = SIN_clean_this_mess
@@ -386,6 +394,8 @@ focus_tree = {
 				value = -0.05
 				tooltip_side = chapo_side
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SIN_cartel_medium_popularity_increase_effect = yes
 		}
 		prerequisite = {
 			focus = SIN_clean_this_mess
@@ -425,6 +435,9 @@ focus_tree = {
 				value = 0.1
 				tooltip_side = ted_side
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SIN_anprims_low_popularity_increase_effect = yes
+			SIN_anprims_high_loyalty_increase_effect = yes
 		}
 		prerequisite = {
 			focus = SIN_primitivist_manifesto
@@ -459,6 +472,9 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SIN_cartel_low_popularity_increase_effect = yes
+			SIN_cartel_high_loyalty_increase_effect = yes
 		}
 		prerequisite = {
 			focus = SIN_cartel_morality
@@ -731,7 +747,7 @@ focus_tree = {
 		x = 8
 		y = 5
 
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			
 		}
@@ -746,7 +762,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            add_political_power = 100
+			add_stability = 0.05
 		}
 		prerequisite = {
 			focus = SIN_train_the_anprims
@@ -777,7 +794,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            SIN_cartel_medium_loyalty_decrease_effect = yes
+			SIN_cartel_medium_popularity_decrease_effect = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = SIN_antagonize_the_cartel_tt
 		}
 		prerequisite = {
 			focus = SIN_look_within
@@ -808,7 +828,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            SIN_cartel_medium_loyalty_increase_effect = yes
+			SIN_cartel_medium_popularity_increase_effect = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = SIN_work_with_the_cartel_tt
 		}
 		prerequisite = {
 			focus = SIN_look_within
@@ -839,7 +862,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            SIN_establishment_medium_loyalty_increase_effect = yes
+			SIN_establishment_medium_popularity_increase_effect = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = SIN_work_with_the_politicians_tt
 		}
 		prerequisite = {
 			focus = SIN_look_within
@@ -870,7 +896,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            SIN_establishment_medium_loyalty_decrease_effect = yes
+			SIN_establishment_medium_popularity_decrease_effect = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = SIN_antagonize_the_politicians_tt
 		}
 		prerequisite = {
 			focus = SIN_look_within
@@ -886,7 +915,7 @@ focus_tree = {
 		x = 5
 		y = 7
 
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			
 		}
@@ -895,13 +924,16 @@ focus_tree = {
 		}
 		
 		bypass = {
-
+			has_country_flag = SIN_cartel_destroyed_flag
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            SIN_cartel_high_loyalty_decrease_effect = yes
+			SIN_cartel_high_popularity_decrease_effect = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_stability = 0.1
 		}
 		prerequisite = {
 			focus = SIN_antagonize_the_cartel
@@ -914,7 +946,7 @@ focus_tree = {
 		x = 7
 		y = 7
 
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			
 		}
@@ -923,13 +955,20 @@ focus_tree = {
 		}
 		
 		bypass = {
-
+			has_country_flag = SIN_cartel_integrated_flag
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            SIN_cartel_high_loyalty_increase_effect = yes
+			SIN_cartel_high_popularity_increase_effect = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_power_balance_value = {
+				id = SIN_ted_chapo_bop
+				value = -0.15
+				tooltip_side = chapo_side
+			}
 		}
 		prerequisite = {
 			focus = SIN_work_with_the_cartel
@@ -945,7 +984,7 @@ focus_tree = {
 		x = 9
 		y = 7
 
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			
 		}
@@ -954,13 +993,16 @@ focus_tree = {
 		}
 		
 		bypass = {
-
+			has_country_flag = SIN_establishment_integrated_flag
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            SIN_establishment_high_loyalty_increase_effect = yes
+			SIN_establishment_high_popularity_increase_effect = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 100
 		}
 		prerequisite = {
 			focus = SIN_work_with_the_politicians
@@ -976,6 +1018,37 @@ focus_tree = {
 		x = 11
 		y = 7
 
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+			has_country_flag = SIN_establishment_destroyed_flag
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            SIN_establishment_high_loyalty_decrease_effect = yes
+			SIN_establishment_high_popularity_decrease_effect = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_war_support = 0.1
+		}
+		prerequisite = {
+			focus = SIN_antagonize_the_politicians
+		}
+	}
+
+	focus = {
+		id = SIN_handle_the_mafia
+		icon = TODO
+		x = 8
+		y = 8
+
 		cost = 3
 		ai_will_do = {
 			
@@ -985,16 +1058,19 @@ focus_tree = {
 		}
 		
 		bypass = {
-
+			has_country_flag = SIN_establishment_destroyed_flag
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            custom_effect_tooltip = SIN_handle_the_mafia_tt
 		}
 		prerequisite = {
-			focus = SIN_antagonize_the_politicians
+			focus = SIN_foil_cartel_operations
+			focus = SIN_more_power_to_chapo
+			focus = SIN_handout_political_positions
+			focus = SIN_smear_the_establishment
 		}
 	}
 
@@ -1213,6 +1289,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SIN_monke_labs
 		}
+		prerequisite = {
+			focus = SIN_handle_the_mafia
+		}
 	}
 
 	focus = {
@@ -1226,7 +1305,7 @@ focus_tree = {
 			
 		}
 		available = {
-			
+			has_country_flag = SIN_anprims_integrated_flag
 		}
 		
 		bypass = {
@@ -1259,7 +1338,7 @@ focus_tree = {
 			
 		}
 		available = {
-			
+			has_country_flag = SIN_cartel_integrated_flag
 		}
 		
 		bypass = {
@@ -1292,7 +1371,7 @@ focus_tree = {
 			
 		}
 		available = {
-			
+			has_country_flag = SIN_mob_integrated_flag
 		}
 		
 		bypass = {
@@ -1325,7 +1404,7 @@ focus_tree = {
 			
 		}
 		available = {
-			
+			has_country_flag = SIN_establishment_integrated_flag
 		}
 		
 		bypass = {

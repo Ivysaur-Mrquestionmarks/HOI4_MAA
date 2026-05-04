@@ -6,8 +6,498 @@ SIN_internal_factions = {
 		}
 	}
 
+
+
+	### CARTEL COOPERATION
+	SIN_cooperation_cartel_invest_in_drug_labs = {
+
+		priority = 46
+
+		icon = GFX_decision_cartel_1
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_low
+
+		days_re_enable = SIN_faction_days_reenable_low
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_cartel_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_work_with_the_cartel
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_cartel_integrated_flag }
+			NOT = { has_country_flag = SIN_cartel_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_cartel_low_loyalty_increase_effect = yes
+			SIN_cartel_low_popularity_increase_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_low_cd_tt
+		}
+	}
+
+	SIN_cooperation_cartel_facilitate_money_movement = {
+
+		priority = 46
+
+		icon = GFX_decision_cartel_2
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_medium
+
+		days_re_enable = SIN_faction_days_reenable_medium
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_cartel_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_work_with_the_cartel
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_cartel_integrated_flag }
+			NOT = { has_country_flag = SIN_cartel_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_cartel_medium_loyalty_increase_effect = yes
+			SIN_cartel_medium_popularity_increase_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_medium_cd_tt
+		}
+	}
+
+	SIN_cooperation_cartel_help_remove_rivals = {
+
+		priority = 46
+
+		icon = GFX_decision_cartel_3
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		days_re_enable = SIN_faction_days_reenable_high
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_cartel_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_work_with_the_cartel
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_cartel_integrated_flag }
+			NOT = { has_country_flag = SIN_cartel_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_cartel_high_loyalty_increase_effect = yes
+			SIN_cartel_high_popularity_increase_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_high_cd_tt
+		}
+	}
+
+	SIN_cooperation_cartel_integrate = {	
+
+		priority = 47
+
+		icon = GFX_decision_cartel_4
+
+		ai_will_do = {
+			base = 100
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIN_cooperation_integrate_faction_tt
+				check_variable = { SIN_cartel_loyalty = 100 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_work_with_the_cartel
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_cartel_integrated_flag }
+			NOT = { has_country_flag = SIN_cartel_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			set_country_flag = SIN_cartel_integrated_flag
+			if = {
+				limit = {
+					has_idea = SIN_many_factions_4
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_4
+					add_idea = SIN_many_factions_5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions_3
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_3
+					add_idea = SIN_many_factions_4
+				}
+				
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions_2
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_2
+					add_idea = SIN_many_factions_3
+				}
+				
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions_1
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_1
+					add_idea = SIN_many_factions_2
+				}
+				
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions
+					add_idea = SIN_many_factions_1
+				}
+				
+			}
+			else = {
+				add_ideas = SIN_many_factions
+			}
+			custom_effect_tooltip = SIN_cartel_recruits_tt
+		}
+	}
+
+	### CARTEL OPPRESSION
+	SIN_oppression_cartel_slander_the_cartel = {
+
+		priority = 46
+
+		icon = GFX_decision_cartel_5
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_low
+
+		days_re_enable = SIN_faction_days_reenable_low
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_cartel_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_antagonize_the_cartel
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_cartel_integrated_flag }
+			NOT = { has_country_flag = SIN_cartel_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_cartel_low_loyalty_decrease_effect = yes
+			SIN_cartel_low_popularity_decrease_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_low_cd_tt
+		}
+	}
+
+	SIN_oppression_cartel_raid_drug_corridors = {
+
+		priority = 46
+
+		icon = GFX_decision_cartel_6
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_medium
+
+		days_re_enable = SIN_faction_days_reenable_medium
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_cartel_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_antagonize_the_cartel
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_cartel_integrated_flag }
+			NOT = { has_country_flag = SIN_cartel_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_cartel_medium_loyalty_decrease_effect = yes
+			SIN_cartel_medium_popularity_decrease_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_medium_cd_tt
+		}
+	}
+
+	SIN_oppression_cartel_assassinate_drug_lord = {
+
+		priority = 46
+
+		icon = GFX_decision_cartel_3
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		days_re_enable = SIN_faction_days_reenable_high
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_cartel_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_antagonize_the_cartel
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_cartel_integrated_flag }
+			NOT = { has_country_flag = SIN_cartel_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_cartel_high_loyalty_decrease_effect = yes
+			SIN_cartel_high_popularity_decrease_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_high_cd_tt
+		}
+	}
+
+	SIN_oppression_cartel_destroy = {
+
+		priority = 47
+
+		icon = GFX_decision_cartel_8
+
+		ai_will_do = {
+			base = 100
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIN_cooperation_destroy_faction_tt
+				check_variable = { SIN_cartel_popularity = 0 compare = less_than_or_equals }
+			}
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					has_country_flag = SIN_cartel_integrated_flag
+				}
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_antagonize_the_cartel
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_cartel_integrated_flag }
+			NOT = { has_country_flag = SIN_cartel_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			set_country_flag = SIN_cartel_destroyed_flag
+			add_stability = 0.05
+		}
+	}
+
 	### ISLAMISTS COOPERATION
-	SIN_cooperation_islamists_operation  = {
+	SIN_cooperation_islamists_operation = {
 
 		priority = 50
 
@@ -70,7 +560,7 @@ SIN_internal_factions = {
 		}
 	}
 
-	SIN_cooperation_islamists_power  = {
+	SIN_cooperation_islamists_power = {
 
 		priority = 49
 
@@ -133,7 +623,7 @@ SIN_internal_factions = {
 		}
 	}
 
-	SIN_cooperation_islamists_free  = {
+	SIN_cooperation_islamists_free = {
 
 		priority = 48
 
@@ -267,7 +757,10 @@ SIN_internal_factions = {
 				limit = {
 					has_idea = SIN_many_factions_4
 				}
-				add_ideas = SIN_many_factions_5
+				swap_ideas = {
+					remove_idea = SIN_many_factions_4
+					add_idea = SIN_many_factions_5
+				}
 			}
 			else_if = {
 				limit = {
@@ -317,7 +810,7 @@ SIN_internal_factions = {
 	}
 
 	### DT COOPERATION
-	SIN_cooperation_dt_operation  = {
+	SIN_cooperation_dt_operation = {
 
 		priority = 46
 
@@ -379,7 +872,7 @@ SIN_internal_factions = {
 		}
 	}
 
-	SIN_cooperation_dt_power  = {
+	SIN_cooperation_dt_power = {
 
 		priority = 45
 
@@ -441,7 +934,7 @@ SIN_internal_factions = {
 		}
 	}
 
-	SIN_cooperation_dt_free  = {
+	SIN_cooperation_dt_free = {
 
 		priority = 44
 
@@ -575,7 +1068,10 @@ SIN_internal_factions = {
 				limit = {
 					has_idea = SIN_many_factions_4
 				}
-				add_ideas = SIN_many_factions_5
+				swap_ideas = {
+					remove_idea = SIN_many_factions_4
+					add_idea = SIN_many_factions_5
+				}
 			}
 			else_if = {
 				limit = {
@@ -625,7 +1121,7 @@ SIN_internal_factions = {
 	}
 
 	### ISLAMISTS OPPRESSION
-	SIN_oppression_islamists_persecute  = {
+	SIN_oppression_islamists_persecute = {
 
 		priority = 49
 
@@ -749,7 +1245,7 @@ SIN_internal_factions = {
 	}
 
 	### DT OPPRESSION
-	SIN_oppression_dt_persecute  = {
+	SIN_oppression_dt_persecute = {
 
 		priority = 45
 

@@ -11,6 +11,11 @@
 
  SIN_cancel_no_utah_tt:0 "§YThis idea will be removed once [UTA.GetNameDef] ceases to exist.§!"
  SIN_faction_management_tt:0 "Unlocks decisions to cooperate with the [GetIslamistsName] and the [GetDtName].\nUnlocks decisions to repress the [GetIslamistsName] and the [GetDtName]."
+ SIN_antagonize_the_cartel_tt:0 "Unlocks decisions to repress with the [GetCartelName]."
+ SIN_work_with_the_cartel_tt:0 "Unlocks decisions to cooperate with the [GetCartelName]."
+ SIN_work_with_the_politicians_tt:0 "Unlocks decisions to cooperate with the [GetEstablishmentName]."
+ SIN_antagonize_the_politicians_tt:0 "Unlocks decisions to repress with the [GetEstablishmentName]."
+ SIN_handle_the_mafia_tt:0 "Unlocks decisions to cooperate with the [GetMobName].\nUnlocks decisions to repress the  [GetMobName]."
 
 
  SIN_islamists_tt:0 "[GetIslamistsName]: "
@@ -22,6 +27,7 @@
 
  SIN_islamists_recruits_tt:0 "§GThis Desicion will unlock 5 [GetIslamistsName] Characters!§!"
  SIN_dt_recruits_tt:0 "§GThis Desicion will unlock 5 [GetDtName] Characters!§!"
+ SIN_cartel_recruits_tt:0 "§GThis Desicion will unlock 5 [GetCartelName] Characters!§!"
 
 
  decision_cost_IE_500: "£infantry_equipment_text_icon  §Y500§!"
@@ -141,6 +147,8 @@
  SIN_islamist_trait_desc:0 "§LThis leader belongs to the Islamists faction.§!"
  SIN_dt_trait:0 "Domestic Terrorist"
  SIN_dt_trait_desc:0 "§LThis leader belongs to the Domestic Terrorists faction.§!"
+ SIN_cartel_trait:0 "Cartel Member"
+ SIN_cartel_trait_desc:0 "§LThis leader belongs to the Cartel faction.§!"
 
 
 
@@ -401,19 +409,20 @@
  SIN_POPULARITY_TOOLTIP:0 "§YInfluence§! represents the influence a faction receives from inside ADX Florence. \nThe higher the §YInfluence§!, the more likely it is that a faction will take bold actions. \nBefore destroying a faction, it is necessary to complete certain decisions to weaken it and reduce its §YInfluence§! to 0."
 
  SIN_low_loyalty_increase_tt:0 "§G+[?SIN.SIN_faction_low_increase]§! faction loyalty."
- SIN_low_popularity_increase_tt:0 "§G+[?SIN.SIN_faction_low_increase]§! faction popularity."
+ SIN_low_popularity_increase_tt:0 "§G+[?SIN.SIN_faction_low_increase]§! faction influence."
  SIN_medium_loyalty_increase_tt:0 "§G+[?SIN.SIN_faction_medium_increase]§! faction loyalty."
- SIN_medium_popularity_increase_tt:0 "§G+[?SIN.SIN_faction_medium_increase]§! faction popularity."
+ SIN_medium_popularity_increase_tt:0 "§G+[?SIN.SIN_faction_medium_increase]§! faction influence."
  SIN_high_loyalty_increase_tt:0 "§G+[?SIN.SIN_faction_high_increase]§! faction loyalty."
- SIN_high_popularity_increase_tt:0 "§G+[?SIN.SIN_faction_high_increase]§! faction popularity."
+ SIN_high_popularity_increase_tt:0 "§G+[?SIN.SIN_faction_high_increase]§! faction influence."
  SIN_low_loyalty_decrease_tt:0 "§R[?SIN.SIN_faction_low_decrease]§! faction loyalty."
- SIN_low_popularity_decrease_tt:0 "§R[?SIN.SIN_faction_low_decrease]§! faction popularity."
+ SIN_low_popularity_decrease_tt:0 "§R[?SIN.SIN_faction_low_decrease]§! faction influence."
  SIN_medium_loyalty_decrease_tt:0 "§R[?SIN.SIN_faction_medium_decrease]§! faction loyalty."
- SIN_medium_popularity_decrease_tt:0 "§R[?SIN.SIN_faction_medium_decrease]§! faction popularity."
+ SIN_medium_popularity_decrease_tt:0 "§R[?SIN.SIN_faction_medium_decrease]§! faction influence."
  SIN_high_loyalty_decrease_tt:0 "§R[?SIN.SIN_faction_high_decrease]§! faction loyalty."
- SIN_high_popularity_decrease_tt:0 "§R[?SIN.SIN_faction_high_decrease]§! faction popularity."
+ SIN_high_popularity_decrease_tt:0 "§R[?SIN.SIN_faction_high_decrease]§! faction influence."
 
  ### DECISIONS ###
+ #coop islamists
  SIN_cooperation_islamists_operation:0 "Allow [GetIslamistsName] Operations"
  SIN_cooperation_islamists_operation_desc:0 "We will allow the Islamists to organize themselves to realize operations across our land."
 
@@ -426,6 +435,7 @@
  SIN_cooperation_islamists_integrate:0 "Integrate the [GetIslamistsName]"
  SIN_cooperation_islamists_integrate_desc:0 "We have been cooperating with the Islamists entities so far, and it is time to finally integrate them into our system."
 
+ #coop dt
  SIN_cooperation_dt_operation:0 "Allow [GetDtName] Operations"
  SIN_cooperation_dt_operation_desc:0 "We will allow the Domestic Terrorists to organize themselves to realize operations across our land."
 
@@ -438,17 +448,45 @@
  SIN_cooperation_dt_integrate:0 "Integrate the [GetDtName]"
  SIN_cooperation_dt_integrate_desc:0 "We have been cooperating with the Terrorists entities so far, and it is time to finally integrate them into our system."
 
+ #opp islamists
  SIN_oppression_islamists_persecute:0 "Persecute the [GetIslamistsName]"
  SIN_oppression_islamists_persecute_desc:0 "Islamism is incompatible with our system. Let us take care of that."
 
  SIN_oppression_islamists_destroy:0 "Crush the [GetIslamistsName]"
  SIN_cooperation_islamists_destroy_desc:0 "We have been persecuting the Islamists so far, and it is time to finally destroy them for good."
 
+ #opp dt
  SIN_oppression_dt_persecute:0 "Persecute the [GetDtName]"
  SIN_oppression_dt_persecute_desc:0 "Terrorsim is incompatible with our system. Let us take care of that."
 
  SIN_oppression_dt_destroy:0 "Crush the [GetDtName]"
  SIN_cooperation_dt_destroy_desc:0 "We have been persecuting the Terrorists so far, and it is time to finally destroy them for good."
+
+ #coop cartel
+ SIN_cooperation_cartel_invest_in_drug_labs:0 "Invest in [GetCartelName] Drug Labs"
+ SIN_cooperation_cartel_invest_in_drug_labs_desc:0 "By investing resources into the Cartel's production network, we can ensure a steady flow of revenue and strengthen our ties with their leadership."
+
+ SIN_cooperation_cartel_facilitate_money_movement:0 "Facilitate [GetCartelName] Money Movement"
+ SIN_cooperation_cartel_facilitate_money_movement_desc:0 "The Cartel relies on complex financial networks to move its wealth. By assisting in laundering and transferring funds, we gain their trust."
+
+ SIN_cooperation_cartel_help_remove_rivals:0 "Help Remove [GetCartelName] Rivals"
+ SIN_cooperation_cartel_help_remove_rivals_desc:0 "Our allies in the Cartel face constant threats from competing organizations. By discreetly supporting their efforts to eliminate rivals, we secure their dominance and our influence over them."
+
+ SIN_cooperation_cartel_integrate:0 "Integrate the [GetCartelName]"
+ SIN_cooperation_cartel_integrate_desc:0 "We have been cooperating with the Cartel entities so far, and it is time to finally integrate them into our system."
+
+ #opp cartel
+ SIN_oppression_cartel_slander_the_cartel:0 "Slander the [GetCartelName]"
+ SIN_oppression_cartel_slander_the_cartel_desc:0 "A coordinated propaganda campaign can turn ADX Florence's opinion against the Cartel, undermining their legitimacy and weakening their support networks."
+
+ SIN_oppression_cartel_raid_drug_corridors:0 "Raid [GetCartelName] Drug Corridors"
+ SIN_oppression_cartel_raid_drug_corridors_desc:0 "Targeting key trafficking routes used by the Cartel will disrupt their operations and cut off vital sources of income."
+
+ SIN_oppression_cartel_assassinate_drug_lord:0 "Assassinate [GetCartelName] Leader"
+ SIN_oppression_cartel_assassinate_drug_lord_desc:0 "Eliminating the leadership of the Cartel could throw the organization into chaos."
+
+ SIN_oppression_cartel_destroy:0 "Crush the [GetCartelName]"
+ SIN_cooperation_cartel_destroy_desc:0 "We have been persecuting the Cartel so far, and it is time to finally destroy them for good."
 
 
 
@@ -465,5 +503,16 @@
  SIN_prevent_oppressing_tt:0 "\n§RCompleting this decision will prevent us from oppressing this faction in the future.§!\n"
  SIN_prevent_cooperation_tt:0 "\n§RCompleting this decision will prevent further cooperation with this faction.§!\n"
 
- SIN_islamists_integrated_flag:0 "[GetIslamistsName] are integrated"
- SIN_dt_integrated_flag:0 "[GetDtName] are integrated"
+ SIN_islamists_integrated_flag:0 "The [GetIslamistsName] are integrated"
+ SIN_dt_integrated_flag:0 "The [GetDtName] are integrated"
+ SIN_cartel_integrated_flag:0 "The [GetCartelName] is integrated"
+ SIN_anprims_integrated_flag:0 "The [GetAnprimsName] are integrated"
+ SIN_mob_integrated_flag:0 "The [GetMobName] are integrated"
+ SIN_establishment_integrated_flag:0 "The [GetEstablishmentName] is integrated"
+
+ SIN_islamists_destroyed_flag:0 "The [GetIslamistsName] are destroyed"
+ SIN_dt_destroyed_flag:0 "The [GetDtName] are destroyed"
+ SIN_cartel_destroyed_flag:0 "The [GetCartelName] is destroyed"
+ SIN_anprims_destroyed_flag:0 "The [GetAnprimsName] are destroyed"
+ SIN_mob_destroyed_flag:0 "The [GetMobName] are destroyed"
+ SIN_establishment_destroyed_flag:0 "The [GetEstablishmentName] is destroyed"

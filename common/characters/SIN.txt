@@ -531,5 +531,194 @@ characters = {
 		}
 	}
 
+	# Cartel Characters
+	SIN_Zambada_Garcia = {
+		name = SIN_Zambada_Garcia
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		field_marshal = {
+			traits = { SIN_cartel_trait organizer logistics_wizard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 6
+			visible = {
+				has_country_flag = SIN_cartel_integrated_flag
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = command_Zambada_Garcia
+			ledger = army
+			cost = 150
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+				not_already_hired_except_as = army_chief
+
+			}
+			traits = { army_chief_organizational_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Zambada_Garcia
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+				not_already_hired_except_as = political_advisor
+			}
+			traits = { SIN_el_mayo }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	SIN_Ivan_Guzman = {
+		name = SIN_Ivan_Guzman
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Ivan_Guzman
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+			}
+			traits = { SIN_el_chapito }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIN_Alfredo_Guzman = {
+		name = SIN_Alfredo_Guzman
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Alfredo_Guzman
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+			}
+			traits = { SIN_alfredillo }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIN_Joaquin_Guzman = {
+		name = SIN_Joaquin_Guzman
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Joaquin_Guzman
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+			}
+			traits = { SIN_el_guero }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIN_Olvidio_Guzman = {
+		name = SIN_Olvidio_Guzman
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		corps_commander = {
+			traits = { SIN_cartel_trait trickster desert_fox scavenger } 
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_country_flag = SIN_cartel_integrated_flag
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Olvidio_Guzman
+			ledger = army
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+			}
+			traits = { SIN_el_raton }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 
 }
