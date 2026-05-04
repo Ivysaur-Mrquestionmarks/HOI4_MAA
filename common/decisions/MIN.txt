@@ -202,9 +202,11 @@ MIN_balance_of_power_category = {
 		available = {
 			OR = {
 				any_country = {
-					AND = {
-						original_tag = AFS
-						has_government = authoritarian_left
+					limit = {
+						AND = {
+							original_tag = AFS
+							has_government = authoritarian_left
+						}
 					}
 					exists = yes
 				}
