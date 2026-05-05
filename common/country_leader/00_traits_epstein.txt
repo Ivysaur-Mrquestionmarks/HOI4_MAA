@@ -5832,6 +5832,17 @@ leader_traits = {
 
 	### SIN traits ###
 	# leader
+	SIN_el_chapo_leader_trait = {
+		random = no
+		local_non_core_manpower = 0.3
+		resistance_target = -0.3
+		war_support_factor = 0.1
+	}
+	SIN_unabomber_leader_trait = {
+		random = no
+		research_speed_factor = 0.1
+		industrial_capacity_factory = 0.15
+	}
 
 	# advisor
 	SIN_al_qaeda_trainer = {
@@ -5919,6 +5930,26 @@ leader_traits = {
 		political_power_gain = 0.05
 		army_attack_speed_factor = 0.025
 		army_speed_factor = 0.15
+	}
+	SIN_el_chapo_advisor_trait = {
+		sprite = 13
+		random = no
+		power_balance_weekly = 0.0025
+		local_non_core_manpower = 0.15
+		resistance_target = -0.15
+	}
+	SIN_unabomber_advisor_trait = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.1
+		industrial_capacity_factory = 0.1
+	}
+	SIN_el_mochomo = {
+		sprite = 13
+		random = no
+		acclimatization_hot_climate_gain_factor = 0.1
+		political_power_factor = 0.1
+		army_defence_against_major_factor = 0.15
 	}
 
 

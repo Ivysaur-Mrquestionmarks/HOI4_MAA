@@ -1770,7 +1770,7 @@ characters = {
 		advisor = {
 			slot = theorist
 			idea_token = theorist_Steven_M_Anderson
-			ledger = navy
+			ledger = army
 			cost = 150
 			traits = { military_theorist }
 			ai_will_do = {
@@ -1840,7 +1840,7 @@ characters = {
 		}
 	}
 
-	KMT_Mark_E_Anderson = { #This dude already in Virginia so it is not recruited in history/countries/KMT - Wisconsin
+	KMT_Mark_E_Anderson = { #This dude starts in Virginia so there is a event where he is recruited when VIR and RVR stop existing
 		name = KMT_Mark_E_Anderson
 		portraits = {
 			army = {

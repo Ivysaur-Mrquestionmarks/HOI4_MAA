@@ -49,7 +49,7 @@ characters = {
 		}
 		country_leader = {
 			#desc = "DESC_LEADER_TED_KACZYNSKI"
-			traits = {  }
+			traits = { SIN_unabomber_leader_trait }
 			ideology = anarcho_primitivism
 			expire = "2060.1.1.1"
 			id = -1
@@ -65,15 +65,130 @@ characters = {
 
 			}
 			available = {
-			
+			 is_country_leader = no
 			}
-			traits = {
-				
-			}
+			traits = { SIN_unabomber_advisor_trait }
 			ai_will_do = {
 				factor = 1
 			}
 		}
+	}
+
+	SIN_Alfredo_Beltran_Leyva = {
+		name = SIN_Alfredo_Beltran_Leyva
+		portraits = {
+			army = {
+				#small = 
+			}
+		}
+		corps_commander = {
+			traits = { organizer desert_fox }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				OR = {
+					NOT = {
+						has_country_leader = {
+							character = SIN_El_Chapo
+						}
+					}
+					has_country_flag = SIN_beltran_reintegrated
+				}
+				NOT = {
+					has_completed_focus = SIN_the_establishment_coup
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Alfredo_Beltran_Leyva
+			ledger = army
+			cost = 150
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_establishment_coup
+				}
+			}
+			available = {
+				OR = {
+					NOT = {
+						has_country_leader = {
+							character = SIN_El_Chapo
+						}
+					}
+					has_country_flag = SIN_beltran_reintegrated
+				}
+				not_already_hired_except_as = high_command
+			}
+			traits = { army_regrouping_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Alfredo_Beltran_Leyva
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_establishment_coup
+				}
+			}
+			available = {
+				OR = {
+					NOT = {
+						has_country_leader = {
+							character = SIN_El_Chapo
+						}
+					}
+					has_country_flag = SIN_beltran_reintegrated
+				}
+				not_already_hired_except_as = political_advisor
+			}
+			traits = { SIN_el_mochomo }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = theorist_Alfredo_Beltran_Leyva
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_establishment_coup
+				}
+			}
+			available = {
+				OR = {
+					NOT = {
+						has_country_leader = {
+							character = SIN_El_Chapo
+						}
+					}
+					has_country_flag = SIN_beltran_reintegrated
+				}
+				not_already_hired_except_as = theorist
+			}
+			traits = { military_theorist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
 	}
 
 	SIN_john_zerzan = {
@@ -90,7 +205,7 @@ characters = {
 			id = -1
 		}
 	}
-	# Cartel #
+
 	SIN_El_Chapo = {
 		name = SIN_El_Chapo
 		portraits = {
@@ -104,7 +219,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = corporatocracy
-			traits = {  }
+			traits = { SIN_el_chapo_leader_trait }
 			expire = "2060.1.1.1"
 			id = -1
 		}
@@ -116,27 +231,33 @@ characters = {
 				original_tag = SIN
 			}
 			visible = {
-				#has_completed_focus = Meet_with_Chapo
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
 			}
 			available = {
-			
+				is_country_leader = no
 			}
-			traits = {
-				 
-			}
+			traits = { SIN_el_chapo_advisor_trait }
 			ai_will_do = {
 				factor = 5
 			}
 		}
 		field_marshal = {
-			traits = { guerilla_fighter fast_planner logistics_wizard } 
+			traits = { SIN_cartel_trait organizer guerilla_fighter fast_planner logistics_wizard } 
 			skill = 4
 			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 5
+			visible = {
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
 		}
 	}
+
 	SIN_james_marcello = {
 		name = SIN_james_marcello
 		portraits = {
@@ -163,6 +284,7 @@ characters = {
 			logistics_skill = 3
 		}
 	}
+
 	# Republicans #
 	SIN_mitt_romney = {
 		name = SIN_mitt_romney
@@ -203,6 +325,7 @@ characters = {
 			}
 		}
 	}
+
 	### Military Staff and Political Advisors ###
 	# Political Advisors #
 	SIN_robert_p_hanssen = {
@@ -276,6 +399,7 @@ characters = {
 			}
 		}
 	}
+
 	SIN_Dzhokhar_Tsarnaev = {
 		name = SIN_Dzhokhar_Tsarnaev
 		portraits = {
@@ -305,6 +429,7 @@ characters = {
 			}
 		}
 	}
+
 	SIN_Ramzi_Yousef = {
 		name = SIN_Ramzi_Yousef
 		portraits = {
@@ -334,6 +459,7 @@ characters = {
 			}
 		}
 	}
+
 	SIN_Jose_Padilla = {
 		name = SIN_Jose_Padilla
 		portraits = {
@@ -353,6 +479,7 @@ characters = {
 			}
 		}
 	}
+
 	SIN_Abu_Hamza_al_Masri = {
 		name = SIN_Abu_Hamza_al_Masri
 		portraits = {
@@ -424,6 +551,7 @@ characters = {
 			}
 		}
 	}
+
 	SIN_Eric_Rudolph = {
 		name = SIN_Eric_Rudolph
 		portraits = {
@@ -453,6 +581,7 @@ characters = {
 			}
 		}
 	}
+
 	SIN_Glendon_Scott_Crawford = {
 		name = SIN_Glendon_Scott_Crawford
 		portraits = {
@@ -482,6 +611,7 @@ characters = {
 			}
 		}
 	}
+
 	SIN_Perry_Roark = {
 		name = SIN_Perry_Roark
 		portraits = {
@@ -501,6 +631,7 @@ characters = {
 			}
 		}
 	}
+
 	SIN_Terry_Nichols = {
 		name = SIN_Terry_Nichols
 		portraits = {
@@ -595,6 +726,7 @@ characters = {
 		}
 		
 	}
+
 	SIN_Ivan_Guzman = {
 		name = SIN_Ivan_Guzman
 		portraits = {
@@ -624,6 +756,7 @@ characters = {
 			}
 		}
 	}
+
 	SIN_Alfredo_Guzman = {
 		name = SIN_Alfredo_Guzman
 		portraits = {
@@ -653,6 +786,7 @@ characters = {
 			}
 		}
 	}
+
 	SIN_Joaquin_Guzman = {
 		name = SIN_Joaquin_Guzman
 		portraits = {
@@ -682,6 +816,7 @@ characters = {
 			}
 		}
 	}
+
 	SIN_Olvidio_Guzman = {
 		name = SIN_Olvidio_Guzman
 		portraits = {
@@ -720,5 +855,6 @@ characters = {
 			}
 		}
 	}
+
 
 }
