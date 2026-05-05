@@ -1122,6 +1122,7 @@ leader_traits = {
 	}
 	#Home Secretary
 	ENG_home_secretary = {
+		random = no
 		#disabled_ideas = 1 #this was busting the starting governors
 		female_random_country_leader_chance = 0.3
 		stability_weekly = -0.05
@@ -1129,6 +1130,7 @@ leader_traits = {
 	}
 	#Minister for Colonies
 	ENG_minister_for_colonies = {
+		random = no
 		stability_factor = 0.3
 		political_power_factor = 0.15
 	}
@@ -1147,6 +1149,22 @@ leader_traits = {
 		conscription = 0.004
 		political_power_cost = 0.07
 		consumer_goods_factor = 0.07
+	}
+	ENG_likes_trump = { #feel free to reuse this for non-ENG tags too
+		random = yes
+		sprite = 13
+		ai_strategy = {
+			type = befriend
+			id = "USA"			
+			value = 50
+		}
+		targeted_modifier = {
+			tag = USA
+			extra_trade_to_target_factor = 0.15
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	#louisiana
 	LOU_kingfish = {
