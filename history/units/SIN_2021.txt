@@ -1,22 +1,28 @@
+focus = {
+	current = "SIN_prision_election"
+	progress = 59
+}
+
+
+
 division_template = {
     name = "Escaped Prisoners"
 #    division_names_group =
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
+		penal_battalion = { x = 0 y = 0 }
+		penal_battalion = { x = 0 y = 1 }
+		penal_battalion = { x = 0 y = 2 }
+		penal_battalion = { x = 0 y = 3 }
 	}
 }
 #################################################
 units = {
 	division = {
-		name = "Florence Militia"
+		name = "1. Escaped Prisoners"
 		location = 510
 		division_template = "Escaped Prisoners"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.3
-		start_manpower_factor = 0.8
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 }
