@@ -5834,7 +5834,7 @@ leader_traits = {
 	# leader
 	SIN_el_chapo_leader_trait = {
 		random = no
-		non_core_manpower  = 0.3
+		non_core_manpower = 0.3
 		resistance_target = -0.3
 		war_support_factor = 0.1
 	}
@@ -5934,8 +5934,8 @@ leader_traits = {
 	SIN_el_chapo_advisor_trait = {
 		sprite = 13
 		random = no
-		power_balance_weekly = 0.0025
-		non_core_manpower  = 0.15
+		power_balance_weekly = -0.0025
+		non_core_manpower = 0.15
 		resistance_target = -0.15
 	}
 	SIN_unabomber_advisor_trait = {
