@@ -87,6 +87,20 @@ characters={
 			}
 		}
 	}
+	ENG_peter_mandelson  = {
+		name = "Lord Mandelson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/peter_mandelson.tga"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {
+				ENG_minister_for_colonies hedonist
+			}
+		}
+	}
 	ENG_matthew_murphy = {
 		name = "Matthew Murphy"
 		portraits = {

@@ -433,7 +433,7 @@ country_event = {
 		is_subject = no
 	}
 	fire_only_once = yes
-	#Bambos Charalmabous is sworn in as Minister for Colonies
+	#Peter Mandelson is sworn in as Minister for Colonies
 	option = {
 		name = english_colonies.19.a
 		add_popularity = {
@@ -444,7 +444,7 @@ country_event = {
 		    ruling_party = libertarian_left
 		    elections_allowed = yes
 		}
-		ENG_bambos_charalmabous = {
+		ENG_peter_mandelson = {
 			promote_character = yes
 		}
 		if = {
@@ -486,7 +486,16 @@ country_event = {
 		add_political_power = 75
 		add_stability = 0.10
 		add_war_support = -0.15
-		country_event = { id = english_colonies.21 days = 1830 }
+		hidden_effect = { 
+			country_event = { 
+				id = english_colonies.21 
+				days = 1830 
+			} 
+			country_event = { 
+				id = english_colonies.22 
+				days = 672 
+			} 
+		}
 	}
 }
 #Lee Anderson defection
@@ -520,6 +529,9 @@ country_event = {
 	desc = english_colonies.21.d
 	#picture =
 	is_triggered_only = yes
+	trigger = {
+		has_idea = ENG_labour_pm
+	}
 	fire_only_once = yes
 	#sadly it's not to be...
 	option = {
@@ -558,5 +570,51 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
+	}
+}
+
+#MANDELSON SCANDAL
+country_event = {
+	id = english_colonies.22
+	title = english_colonies.22.t
+	desc = english_colonies.22.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			ENG_bambos_charalmabous = {
+				promote_character = yes
+			}
+		}
+	}
+	#Starmer is brought down by the scandal!
+	option = {
+		name = english_colonies.22.a
+		ai_chance = {
+			factor = 45
+		}
+		effect_tooltip = {
+			ENG_bambos_charalmabous = {
+				promote_character = yes
+			}
+		}
+		swap_ideas = {
+			remove_idea = ENG_labour_pm
+			add_idea = ENG_king_of_the_north_pm
+		}		
+	}
+	#Starmer survives!
+	option = {
+		name = english_colonies.22.b
+		ai_chance = {
+			factor = 55
+		}
+		effect_tooltip = {
+			ENG_bambos_charalmabous = {
+				promote_character = yes
+			}
+		}
+		add_political_power = 25		
 	}
 }
