@@ -5855,11 +5855,36 @@ leader_traits = {
 		non_core_manpower = 0.3
 		resistance_target = -0.3
 		war_support_factor = 0.1
+		ai_focus_aggressive_factor = 0.25
 	}
 	SIN_unabomber_leader_trait = {
 		random = no
 		research_speed_factor = 0.1
 		industrial_capacity_factory = 0.15
+	}
+	SIN_populist_firebrand = {
+		random = no
+		political_power_gain = 0.1
+		republican_drift = 0.05
+		army_core_defence_factor = 0.1
+	}
+	SIN_establishment_conservative = {
+		random = no
+		stability_factor = 0.05
+		consumer_goods_factor = -0.15
+		production_factory_max_efficiency_factor = 0.05
+	}
+	SIN_freedom_caucus_conservative = {
+		random = no
+		political_power_factor = 0.1
+		war_support_factor = 0.1
+		republican_drift = 0.05
+	}
+	SIN_america_first_nationalist = {
+		random = no
+		political_power_gain = 0.25
+		stability_factor = 0.05
+		war_support_factor = 0.1
 	}
 
 	# advisor
@@ -5968,6 +5993,31 @@ leader_traits = {
 		acclimatization_hot_climate_gain_factor = 0.1
 		political_power_factor = 0.1
 		army_defence_against_major_factor = 0.15
+	}
+	SIN_populist_firebrand_advisor = {
+		sprite = 13
+		random = no
+		political_power_factor = 0.1
+		republican_drift = 0.05
+	}
+	SIN_pro_business_reformer = {
+		sprite = 13
+		random = no
+		consumer_goods_factor = -0.15
+		production_factory_max_efficiency_factor = 0.05
+	}
+	SIN_rule_of_law_advocate = {
+		sprite = 13
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.05
+		republican_drift = 0.05
+	}
+	SIN_single_issue_crusader = {
+		sprite = 13
+		random = no
+		political_power_gain = 0.05
+		stability_factor = 0.15
 	}
 
 

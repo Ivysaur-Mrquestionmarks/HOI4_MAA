@@ -65,7 +65,7 @@ characters = {
 
 			}
 			available = {
-			 is_country_leader = no
+				is_country_leader = no
 			}
 			traits = { SIN_unabomber_advisor_trait }
 			ai_will_do = {
@@ -817,8 +817,8 @@ characters = {
 		}
 	}
 
-	SIN_Olvidio_Guzman = {
-		name = SIN_Olvidio_Guzman
+	SIN_Ovidio_Guzman = {
+		name = SIN_Ovidio_Guzman
 		portraits = {
 			army = {
 				#small = 
@@ -837,7 +837,7 @@ characters = {
 		}
 		advisor = {
 			slot = high_command
-			idea_token = command_Olvidio_Guzman
+			idea_token = command_Ovidio_Guzman
 			ledger = army
 			cost = 100
 			visible = {
@@ -850,6 +850,215 @@ characters = {
 				has_country_flag = SIN_cartel_integrated_flag
 			}
 			traits = { SIN_el_raton }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	# Establishment Characters
+	# gop
+	SIN_Lauren_Boebert = {
+		name = SIN_Lauren_Boebert
+		portraits = {
+			civilian = {
+				#large = 
+				#small = 
+			}
+			army = {
+				large = "gfx/leaders/SIN/Lauren_Boebert_2.dds"
+			}
+		}
+		country_leader = {
+			traits = { SIN_populist_firebrand }
+			ideology = trumpist
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { SIN_establishment_trait politically_connected }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_country_flag = SIN_accepted_boebert_help
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Lauren_Boebert
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			available = {
+				is_country_leader = no
+				has_country_flag = SIN_establishment_integrated_flag
+			}
+			traits = { SIN_populist_firebrand_advisor }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Cory_Gardner = {
+		name = SIN_Cory_Gardner
+		portraits = {
+			civilian = {
+				#large = 
+				#small = 
+			}
+		}
+		country_leader = {
+			traits = { SIN_establishment_conservative }
+			ideology = neocon
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Cory_Gardner
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			available = {
+				is_country_leader = no
+				has_country_flag = SIN_establishment_integrated_flag
+			}
+			traits = { SIN_pro_business_reformer }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Ken_Buck = {
+		name = SIN_Ken_Buck
+		portraits = {
+			civilian = {
+				#large = 
+				#small = 
+			}
+		}
+		country_leader = {
+			traits = { SIN_freedom_caucus_conservative }
+			ideology = conservative
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Ken_Buck
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			available = {
+				is_country_leader = no
+				has_country_flag = SIN_establishment_integrated_flag
+			}
+			traits = { SIN_rule_of_law_advocate }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Ken_Buck = {
+		name = SIN_Ken_Buck
+		portraits = {
+			civilian = {
+				#large = 
+				#small = 
+			}
+		}
+		country_leader = {
+			traits = { SIN_freedom_caucus_conservative }
+			ideology = conservative
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Ken_Buck
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			available = {
+				is_country_leader = no
+				has_country_flag = SIN_establishment_integrated_flag
+			}
+			traits = { SIN_rule_of_law_advocate }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Tom_Tancredo = {
+		name = SIN_Tom_Tancredo
+		portraits = {
+			civilian = {
+				#large = 
+				#small = 
+			}
+		}
+		country_leader = {
+			traits = { SIN_america_first_nationalist }
+			ideology = conservative
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Tom_Tancredo
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			available = {
+				is_country_leader = no
+				has_country_flag = SIN_establishment_integrated_flag
+			}
+			traits = { SIN_single_issue_crusader }
 			ai_will_do = {
 				factor = 1
 			}

@@ -28,6 +28,7 @@
  SIN_islamists_recruits_tt:0 "§GThis Desicion will unlock 5 [GetIslamistsName] Characters!§!"
  SIN_dt_recruits_tt:0 "§GThis Desicion will unlock 5 [GetDtName] Characters!§!"
  SIN_cartel_recruits_tt:0 "§GThis Desicion will unlock 5 [GetCartelName] Characters!§!"
+ SIN_establishment_recruits_tt:0 "§GThis Desicion will unlock [GetEstablishmentName] Characters!§!"
 
 
  decision_cost_IE_500: "£infantry_equipment_text_icon  §Y500§!"
@@ -149,6 +150,8 @@
  SIN_dt_trait_desc:0 "§LThis leader belongs to the Domestic Terrorists faction.§!"
  SIN_cartel_trait:0 "Cartel Member"
  SIN_cartel_trait_desc:0 "§LThis leader belongs to the Cartel faction.§!"
+ SIN_establishment_trait:0 "Establishment Member"
+ SIN_establishment_trait_desc:0 "§LThis leader belongs to the Establishment faction.§!"
 
  SIN_beltran_reintegrated:0 "§YAlfredo Beltrán Leyva§! has been reintegrated into the Cartel."
 
@@ -336,7 +339,8 @@
 
  
 
-
+ SIN_factions_unlocked_flag:0 "The §YInternal Faction Management§! is active"
+ SIN_internal_affairs_ongoing_flag:0 "Dealing with a Faction already"
 
  SIN_internal_factions:0 "Faction Management"
  SIN_internal_factions_desc:1 "placeholder"
@@ -455,14 +459,14 @@
  SIN_oppression_islamists_persecute_desc:0 "Islamism is incompatible with our system. Let us take care of that."
 
  SIN_oppression_islamists_destroy:0 "Crush the [GetIslamistsName]"
- SIN_cooperation_islamists_destroy_desc:0 "We have been persecuting the Islamists so far, and it is time to finally destroy them for good."
+ SIN_oppression_islamists_destroy_desc:0 "We have been persecuting the Islamists so far, and it is time to finally destroy them for good."
 
  #opp dt
  SIN_oppression_dt_persecute:0 "Persecute the [GetDtName]"
  SIN_oppression_dt_persecute_desc:0 "Terrorsim is incompatible with our system. Let us take care of that."
 
  SIN_oppression_dt_destroy:0 "Crush the [GetDtName]"
- SIN_cooperation_dt_destroy_desc:0 "We have been persecuting the Terrorists so far, and it is time to finally destroy them for good."
+ SIN_oppression_dt_destroy_desc:0 "We have been persecuting the Terrorists so far, and it is time to finally destroy them for good."
 
  #coop cartel
  SIN_cooperation_cartel_invest_in_drug_labs:0 "Invest in [GetCartelName] Drug Labs"
@@ -488,7 +492,33 @@
  SIN_oppression_cartel_assassinate_drug_lord_desc:0 "Eliminating the leadership of the Cartel could throw the organization into chaos."
 
  SIN_oppression_cartel_destroy:0 "Crush the [GetCartelName]"
- SIN_cooperation_cartel_destroy_desc:0 "We have been persecuting the Cartel so far, and it is time to finally destroy them for good."
+ SIN_oppression_cartel_destroy_desc:0 "We have been persecuting the Cartel so far, and it is time to finally destroy them for good."
+
+ #coop establishment
+ SIN_cooperation_establishment_hold_city_council:0 "Hold a [GetEstablishmentName] Council Meeting"
+ SIN_cooperation_establishment_hold_city_council_desc:0 "By allowing the Establishment to convene openly, we demonstrate our willingness to cooperate with existing political structures and maintain a sense of normal governance."
+
+ SIN_cooperation_establishment_introduce_new_laws:0 "Introduce a New [GetEstablishmentName] Law"
+ SIN_cooperation_establishment_introduce_new_laws_desc:0 "Working alongside the Establishment, we can introduce legislation that aligns with our broader goals while preserving the appearance of institutional continuity."
+
+ SIN_cooperation_establishment_allow_a_political_rally:0 "Hold a [GetEstablishmentName] Rally"
+ SIN_cooperation_establishment_allow_a_political_rally_desc:0 "Permitting a public rally organized by the Establishment strengthens our relationship with them and helps project unity and legitimacy to the wider population."
+
+ SIN_cooperation_establishment_integrate:0 "Integrate the [GetEstablishmentName]"
+ SIN_cooperation_establishment_integrate_desc:0 "We have been cooperating with the Establishment entities so far, and it is time to finally integrate them into our system."
+
+ #oop establishment
+ SIN_oppression_establishment_raid_a_town_hall:0 "Raid a [GetEstablishmentName] Town Hall"
+ SIN_oppression_establishment_raid_a_town_hall_desc:0 "A direct raid on a Town Hall will disrupt their operations and send a clear message that their authority is no longer recognized."
+
+ SIN_oppression_establishment_hunt_party_militants:0 "Hunt [GetEstablishmentName] Party Militants"
+ SIN_oppression_establishment_hunt_party_militants_desc:0 "By targeting militant elements aligned with the Political Parties, we can weaken their ability to resist and dismantle their support networks."
+
+ SIN_oppression_establishment_kidnap_a_party_leader:0 "Kidnap a [GetEstablishmentName] Party Leader"
+ SIN_oppression_establishment_kidnap_a_party_leader_desc:0 "Abducting a key figure within the Establishment will throw their leadership into disarray, though such actions may provoke unrest or retaliation."
+
+ SIN_oppression_establishment_destroy:0 "Crush the [GetEstablishmentName]"
+ SIN_oppression_establishment_destroy_desc:0 "We have been persecuting the Establishment so far, and it is time to finally destroy them for good."
 
 
 

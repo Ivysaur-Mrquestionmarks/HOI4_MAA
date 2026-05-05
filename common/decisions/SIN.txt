@@ -8,6 +8,494 @@ SIN_internal_factions = {
 
 
 
+	### ESTABLISHMENT COOPERATION
+	SIN_cooperation_establishment_hold_city_council = {
+
+		priority = 46
+
+		icon = GFX_decision_establishment_1
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_low
+
+		days_re_enable = SIN_faction_days_reenable_low
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_establishment_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_work_with_the_politicians
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_establishment_integrated_flag }
+			NOT = { has_country_flag = SIN_establishment_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_establishment_low_loyalty_increase_effect = yes
+			SIN_establishment_low_popularity_increase_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_low_cd_tt
+		}
+	}
+
+	SIN_cooperation_establishment_introduce_new_laws = {
+
+		priority = 46
+
+		icon = GFX_decision_establishment_2
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_medium
+
+		days_re_enable = SIN_faction_days_reenable_medium
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_establishment_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_work_with_the_politicians
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_establishment_integrated_flag }
+			NOT = { has_country_flag = SIN_establishment_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_establishment_medium_loyalty_increase_effect = yes
+			SIN_establishment_medium_popularity_increase_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_medium_cd_tt
+		}
+	}
+
+	SIN_cooperation_establishment_allow_a_political_rally = {
+
+		priority = 46
+
+		icon = GFX_decision_establishment_3
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		days_re_enable = SIN_faction_days_reenable_high
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_establishment_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_work_with_the_politicians
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_establishment_integrated_flag }
+			NOT = { has_country_flag = SIN_establishment_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_establishment_high_loyalty_increase_effect = yes
+			SIN_establishment_high_popularity_increase_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_high_cd_tt
+		}
+	}
+
+	SIN_cooperation_establishment_integrate = {	
+
+		priority = 47
+
+		icon = GFX_decision_establishment_4
+
+		ai_will_do = {
+			base = 100
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIN_cooperation_integrate_faction_tt
+				check_variable = { SIN_establishment_loyalty = 100 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_work_with_the_politicians
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_establishment_integrated_flag }
+			NOT = { has_country_flag = SIN_establishment_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			set_country_flag = SIN_establishment_integrated_flag
+			if = {
+				limit = {
+					has_idea = SIN_many_factions_4
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_4
+					add_idea = SIN_many_factions_5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions_3
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_3
+					add_idea = SIN_many_factions_4
+				}
+				
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions_2
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_2
+					add_idea = SIN_many_factions_3
+				}
+				
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions_1
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_1
+					add_idea = SIN_many_factions_2
+				}
+				
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions
+					add_idea = SIN_many_factions_1
+				}
+				
+			}
+			else = {
+				add_ideas = SIN_many_factions
+			}
+			custom_effect_tooltip = SIN_establishment_recruits_tt
+		}
+	}
+
+	### ESTABLISHMENT OPPRESSION
+	SIN_oppression_establishment_raid_a_town_hall = {
+
+		priority = 46
+
+		icon = GFX_decision_establishment_5
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_low
+
+		days_re_enable = SIN_faction_days_reenable_low
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_establishment_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_antagonize_the_politicians
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_establishment_integrated_flag }
+			NOT = { has_country_flag = SIN_establishment_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_establishment_low_loyalty_decrease_effect = yes
+			SIN_establishment_low_popularity_decrease_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_low_cd_tt
+		}
+	}
+
+	SIN_oppression_establishment_hunt_party_militants = {
+
+		priority = 46
+
+		icon = GFX_decision_establishment_6
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_medium
+
+		days_re_enable = SIN_faction_days_reenable_medium
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_establishment_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_antagonize_the_politicians
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_establishment_integrated_flag }
+			NOT = { has_country_flag = SIN_establishment_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_establishment_medium_loyalty_decrease_effect = yes
+			SIN_establishment_medium_popularity_decrease_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_medium_cd_tt
+		}
+	}
+
+	SIN_oppression_establishment_kidnap_a_party_leader = {
+
+		priority = 46
+
+		icon = GFX_decision_establishment_7
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		days_re_enable = SIN_faction_days_reenable_high
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_establishment_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_antagonize_the_politicians
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_establishment_integrated_flag }
+			NOT = { has_country_flag = SIN_establishment_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_establishment_high_loyalty_decrease_effect = yes
+			SIN_establishment_high_popularity_decrease_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_high_cd_tt
+		}
+	}
+
+	SIN_oppression_establishment_destroy = {
+
+		priority = 47
+
+		icon = GFX_decision_establishment_8
+
+		ai_will_do = {
+			base = 100
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIN_cooperation_destroy_faction_tt
+				check_variable = { SIN_establishment_popularity = 0 compare = less_than_or_equals }
+			}
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					has_country_flag = SIN_establishment_integrated_flag
+				}
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_antagonize_the_politicians
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_establishment_integrated_flag }
+			NOT = { has_country_flag = SIN_establishment_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			set_country_flag = SIN_establishment_destroyed_flag
+			add_stability = 0.05
+		}
+	}
+
 	### CARTEL COOPERATION
 	SIN_cooperation_cartel_invest_in_drug_labs = {
 
