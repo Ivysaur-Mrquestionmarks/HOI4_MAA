@@ -1814,6 +1814,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
+			set_cosmetic_tag = PAC_pacific_republic
 			custom_effect_tooltip = PAC_bastion_of_liberty_modify_tt
 			add_to_variable = {
 				var = PAC.var_stability_level
@@ -2947,6 +2948,7 @@ focus_tree = {
 		bypass = { NOT = { country_exists = TEX } }
 		available = {
 			TEX = { has_government = libertarian_right }
+			TEX = { has_country_leader = TEX_ted_cruz }
 			NOT = {
 			    has_war_with = TEX
 			}
@@ -3018,8 +3020,6 @@ focus_tree = {
 		}
 		prerequisite = { 
 			focus = PAC_work_with_cruz
-		}
-		prerequisite = { 
 			focus = PAC_put_texas_in_their_place
 		}
 		available = {
@@ -5972,8 +5972,10 @@ focus_tree = {
 		relative_position_id = PAC_industrial_nationalization
 		allow_branch = {
 		}
-		prerequisite = { focus = PAC_industrial_nationalization }
-		prerequisite = { focus = PAC_expand_weapon_contracts }
+		prerequisite = { 
+			focus = PAC_industrial_nationalization
+			focus = PAC_expand_weapon_contracts
+		}
 		available = {
 			
 		}
@@ -5994,9 +5996,11 @@ focus_tree = {
 		relative_position_id = PAC_industrial_nationalization
 		allow_branch = {
 		}
-		prerequisite = { focus = PAC_industrial_nationalization }
+		prerequisite = { 
+			focus = PAC_industrial_nationalization
+			focus = PAC_expand_weapon_contracts
+		}
 		prerequisite = { focus = PAC_enforce_protectionist_policies }
-		prerequisite = { focus = PAC_expand_weapon_contracts }
 		available = {
 			
 		}
@@ -6017,9 +6021,11 @@ focus_tree = {
 		relative_position_id = PAC_expand_weapon_contracts
 		allow_branch = {
 		}
-		prerequisite = { focus = PAC_industrial_nationalization }
+		prerequisite = { 
+			focus = PAC_industrial_nationalization
+			focus = PAC_expand_weapon_contracts
+		}
 		prerequisite = { focus = PAC_enforce_protectionist_policies }
-		prerequisite = { focus = PAC_expand_weapon_contracts }
 		available = {
 			
 		}
@@ -6040,8 +6046,10 @@ focus_tree = {
 		relative_position_id = PAC_expand_weapon_contracts
 		allow_branch = {
 		}
-		prerequisite = { focus = PAC_industrial_nationalization }
-		prerequisite = { focus = PAC_expand_weapon_contracts }
+		prerequisite = { 
+			focus = PAC_industrial_nationalization
+			focus = PAC_expand_weapon_contracts
+		}
 		available = {
 			
 		}
