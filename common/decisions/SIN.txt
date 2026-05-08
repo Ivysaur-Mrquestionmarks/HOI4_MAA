@@ -8,6 +8,516 @@ SIN_internal_factions = {
 
 
 
+	### MOB COOPERATION
+	SIN_cooperation_mob_facilitate_gambling = {
+
+		priority = 46
+
+		icon = GFX_decision_mob_1
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_low
+
+		days_re_enable = SIN_faction_days_reenable_low
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_mob_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_handle_the_mafia
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_mob_opp_flag }
+			NOT = { has_country_flag = SIN_mob_integrated_flag }
+			NOT = { has_country_flag = SIN_mob_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			custom_effect_tooltip = SIN_prevent_oppressing_tt
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_mob_low_loyalty_increase_effect = yes
+			SIN_mob_low_popularity_increase_effect = yes
+			set_country_flag = SIN_mob_coop_flag
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_low_cd_tt
+		}
+	}
+
+	SIN_cooperation_mob_fund_alcoholism = {
+
+		priority = 46
+
+		icon = GFX_decision_mob_2
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_medium
+
+		days_re_enable = SIN_faction_days_reenable_medium
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_mob_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_handle_the_mafia
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_mob_opp_flag }
+			NOT = { has_country_flag = SIN_mob_integrated_flag }
+			NOT = { has_country_flag = SIN_mob_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			custom_effect_tooltip = SIN_prevent_oppressing_tt
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_mob_medium_loyalty_increase_effect = yes
+			SIN_mob_medium_popularity_increase_effect = yes
+			set_country_flag = SIN_mob_coop_flag
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_medium_cd_tt
+		}
+	}
+
+	SIN_cooperation_mob_help_loan_sharking = {
+
+		priority = 46
+
+		icon = GFX_decision_mob_3
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		days_re_enable = SIN_faction_days_reenable_high
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_mob_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_handle_the_mafia
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_mob_opp_flag }
+			NOT = { has_country_flag = SIN_mob_integrated_flag }
+			NOT = { has_country_flag = SIN_mob_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			custom_effect_tooltip = SIN_prevent_oppressing_tt
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_mob_high_loyalty_increase_effect = yes
+			SIN_mob_high_popularity_increase_effect = yes
+			set_country_flag = SIN_mob_coop_flag
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_high_cd_tt
+		}
+	}
+
+	SIN_cooperation_mob_integrate = {	
+
+		priority = 47
+
+		icon = GFX_decision_mob_4
+
+		ai_will_do = {
+			base = 100
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIN_cooperation_integrate_faction_tt
+				check_variable = { SIN_mob_loyalty = 100 compare = greater_than_or_equals }
+			}
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					has_country_flag = SIN_mob_destroyed_flag
+				}
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_handle_the_mafia
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_mob_opp_flag }
+			NOT = { has_country_flag = SIN_mob_integrated_flag }
+			NOT = { has_country_flag = SIN_mob_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			clr_country_flag = SIN_mob_coop_flag
+			set_country_flag = SIN_mob_integrated_flag
+			if = {
+				limit = {
+					has_idea = SIN_many_factions_4
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_4
+					add_idea = SIN_many_factions_5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions_3
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_3
+					add_idea = SIN_many_factions_4
+				}
+				
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions_2
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_2
+					add_idea = SIN_many_factions_3
+				}
+				
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions_1
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions_1
+					add_idea = SIN_many_factions_2
+				}
+				
+			}
+			else_if = {
+				limit = {
+					has_idea = SIN_many_factions
+				}
+				swap_ideas = {
+					remove_idea = SIN_many_factions
+					add_idea = SIN_many_factions_1
+				}
+				
+			}
+			else = {
+				add_ideas = SIN_many_factions
+			}
+			custom_effect_tooltip = SIN_mob_recruits_tt
+		}
+	}
+
+	### MOB OPPRESSION
+	SIN_oppression_mob_slander_the_mob = {
+
+		priority = 46
+
+		icon = GFX_decision_mob_5
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_low
+
+		days_re_enable = SIN_faction_days_reenable_low
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_mob_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_handle_the_mafia
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_mob_coop_flag }
+			NOT = { has_country_flag = SIN_mob_integrated_flag }
+			NOT = { has_country_flag = SIN_mob_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			custom_effect_tooltip = SIN_prevent_cooperation_tt
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_mob_low_loyalty_decrease_effect = yes
+			SIN_mob_low_popularity_decrease_effect = yes
+			set_country_flag = SIN_mob_opp_flag
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_low_cd_tt
+		}
+	}
+
+	SIN_oppression_mob_denounce_fraud = {
+
+		priority = 46
+
+		icon = GFX_decision_mob_6
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_medium
+
+		days_re_enable = SIN_faction_days_reenable_medium
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_mob_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_handle_the_mafia
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_mob_coop_flag }
+			NOT = { has_country_flag = SIN_mob_integrated_flag }
+			NOT = { has_country_flag = SIN_mob_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			custom_effect_tooltip = SIN_prevent_cooperation_tt
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_mob_medium_loyalty_decrease_effect = yes
+			SIN_mob_medium_popularity_decrease_effect = yes
+			set_country_flag = SIN_mob_opp_flag
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			custom_effect_tooltip = SIN_cooperation_faction_medium_cd_tt
+		}
+	}
+
+	SIN_oppression_mob_assassinate_mob_leader = {
+
+		priority = 46
+
+		icon = GFX_decision_mob_7
+
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		days_re_enable = SIN_faction_days_reenable_high
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = SIN_mob_destroyed_flag
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_handle_the_mafia
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_mob_coop_flag }
+			NOT = { has_country_flag = SIN_mob_integrated_flag }
+			NOT = { has_country_flag = SIN_mob_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			custom_effect_tooltip = SIN_prevent_cooperation_tt
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			SIN_mob_high_loyalty_decrease_effect = yes
+			SIN_mob_high_popularity_decrease_effect = yes
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			set_country_flag = SIN_mob_opp_flag
+			custom_effect_tooltip = SIN_cooperation_faction_high_cd_tt
+		}
+	}
+
+	SIN_oppression_mob_destroy = {
+
+		priority = 47
+
+		icon = GFX_decision_mob_8
+
+		ai_will_do = {
+			base = 100
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIN_cooperation_destroy_faction_tt
+				check_variable = { SIN_mob_popularity = 0 compare = less_than_or_equals }
+			}
+			NOT = { has_country_flag = SIN_internal_affairs_ongoing_flag }
+		}
+
+		days_remove = SIN_faction_days_remove_very_high
+
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					has_country_flag = SIN_mob_integrated_flag
+				}
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		visible = {
+			has_completed_focus = SIN_handle_the_mafia
+			has_country_flag = SIN_factions_unlocked_flag
+			NOT = { has_country_flag = SIN_mob_coop_flag }
+			NOT = { has_country_flag = SIN_mob_integrated_flag }
+			NOT = { has_country_flag = SIN_mob_destroyed_flag }
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+			set_country_flag = SIN_internal_affairs_ongoing_flag
+		}
+
+		remove_effect = {
+			clr_country_flag = SIN_internal_affairs_ongoing_flag
+			clr_country_flag = SIN_mob_opp_flag
+			set_country_flag = SIN_mob_destroyed_flag
+			add_stability = 0.05
+		}
+	}
+
 	### ESTABLISHMENT COOPERATION
 	SIN_cooperation_establishment_hold_city_council = {
 

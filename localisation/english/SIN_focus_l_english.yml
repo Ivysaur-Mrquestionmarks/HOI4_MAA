@@ -28,6 +28,7 @@
  SIN_islamists_recruits_tt:0 "§GThis Desicion will unlock 5 [GetIslamistsName] Characters!§!"
  SIN_dt_recruits_tt:0 "§GThis Desicion will unlock 5 [GetDtName] Characters!§!"
  SIN_cartel_recruits_tt:0 "§GThis Desicion will unlock 5 [GetCartelName] Characters!§!"
+ SIN_mob_recruits_tt:0 "§GThis Desicion will unlock 5 [GetMobName] Characters!§!"
  SIN_establishment_recruits_tt:0 "§GThis Desicion will unlock [GetEstablishmentName] Characters!§!"
 
 
@@ -519,6 +520,33 @@
 
  SIN_oppression_establishment_destroy:0 "Crush the [GetEstablishmentName]"
  SIN_oppression_establishment_destroy_desc:0 "We have been persecuting the Establishment so far, and it is time to finally destroy them for good."
+
+ #coop mob
+ SIN_cooperation_mob_facilitate_gambling:0 "Facilitate [GetMobName] Gambling"
+ SIN_cooperation_mob_facilitate_gambling_desc:0 "By permitting the Mob to expand its gambling operations, we can secure a steady stream of revenue and strengthen our ties with the criminal underworld."
+
+ SIN_cooperation_mob_fund_alcoholism:0 "Fund [GetMobName] Alcoholism"
+ SIN_cooperation_mob_fund_alcoholism_desc:0 "The Mob profits greatly from alcohol distribution and underground bars. Supporting these ventures will increase their loyalty."
+
+ SIN_cooperation_mob_help_loan_sharking:0 "Help the [GetMobName] to Loan Shark"
+ SIN_cooperation_mob_help_loan_sharking_desc:0 "The Mob has long relied on predatory lending and debt collection to maintain control. Assisting their loan-sharking operations will deepen our cooperation with them."
+
+ SIN_cooperation_mob_integrate:0 "Integrate the [GetMobName]"
+ SIN_cooperation_mob_integrate_desc:0 "We have been cooperating with the Mob entities so far, and it is time to finally integrate them into our system."
+
+ #oop mob
+ SIN_oppression_mob_slander_the_mob:0 "Slander the [GetMobName]"
+ SIN_oppression_mob_slander_the_mob_desc:0 "A coordinated propaganda campaign can expose the crimes and corruption of the Mob, turning ADX firmly against them."
+
+ SIN_oppression_mob_denounce_fraud:0 "Denonuce [GetMobName] Fraud"
+ SIN_oppression_mob_denounce_fraud_desc:0 "By uncovering and publicizing the fraudulent financial schemes of the Mob, we can undermine their legitimacy and weaken their economic power."
+
+ SIN_oppression_mob_assassinate_mob_leader:0 "Assassinate a [GetMobName] Boss"
+ SIN_oppression_mob_assassinate_mob_leader_desc:0 "Removing a prominent boss of the Mob could throw the organization into chaos."
+
+ SIN_oppression_mob_destroy:0 "Crush the [GetMobName]"
+ SIN_oppression_mob_destroy_desc:0 "We have been persecuting the Mob so far, and it is time to finally destroy them for good."
+
 
 
 
