@@ -62,10 +62,15 @@ characters = {
 				original_tag = SIN
 			}
 			visible = {
-
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
 			}
 			available = {
 				is_country_leader = no
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
 			}
 			traits = { SIN_unabomber_advisor_trait }
 			ai_will_do = {
@@ -77,8 +82,12 @@ characters = {
 	SIN_Alfredo_Beltran_Leyva = {
 		name = SIN_Alfredo_Beltran_Leyva
 		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SIN/advisor_Alfredo_Beltran_Leyva.dds"
+			}
 			army = {
-				#small = 
+				large = "gfx/leaders/SIN/Alfredo_Beltran_Leyva.dds"
+				small = "gfx/interface/ideas/SIN/military_Alfredo_Beltran_Leyva.dds"
 			}
 		}
 		corps_commander = {
@@ -106,7 +115,7 @@ characters = {
 			slot = high_command
 			idea_token = command_Alfredo_Beltran_Leyva
 			ledger = army
-			cost = 150
+			cost = 100
 			visible = {
 				original_tag = SIN
 				NOT = {
@@ -237,6 +246,9 @@ characters = {
 			}
 			available = {
 				is_country_leader = no
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
 			}
 			traits = { SIN_el_chapo_advisor_trait }
 			ai_will_do = {
@@ -362,8 +374,9 @@ characters = {
 	SIN_Muhanad_Mahmoud_Al_Farekh = {
 		name = SIN_Muhanad_Mahmoud_Al_Farekh
 		portraits = {
-			army = {
-				#small = 
+			civilian = {
+				large = "gfx/leaders/SIN/Muhanad_Mahmoud_Al_Farekh.dds"
+				small = "gfx/interface/ideas/SIN/advisor_Muhanad_Mahmoud_Al_Farekh.dds" 
 			}
 		}
 		corps_commander = {
@@ -392,6 +405,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_islamists_integrated_flag
+				NOT = {
+					has_country_flag = SIN_islamists_destroyed_flag
+				}
 			}
 			traits = { SIN_al_qaeda_trainer }
 			ai_will_do = {
@@ -403,8 +419,8 @@ characters = {
 	SIN_Dzhokhar_Tsarnaev = {
 		name = SIN_Dzhokhar_Tsarnaev
 		portraits = {
-			army = {
-				#small = 
+			civilian = {
+				small = "gfx/interface/ideas/SIN/advisor_Dzhokhar_Tsarnaev.dds"
 			}
 		}
 		advisor = {
@@ -422,6 +438,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_islamists_integrated_flag
+				NOT = {
+					has_country_flag = SIN_islamists_destroyed_flag
+				}
 			}
 			traits = { SIN_boston_bomber }
 			ai_will_do = {
@@ -433,8 +452,8 @@ characters = {
 	SIN_Ramzi_Yousef = {
 		name = SIN_Ramzi_Yousef
 		portraits = {
-			army = {
-				#small = 
+			civilian = {
+				small = "gfx/interface/ideas/SIN/advisor_Ramzi_Yousef.dds" 
 			}
 		}
 		advisor = {
@@ -452,6 +471,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_islamists_integrated_flag
+				NOT = {
+					has_country_flag = SIN_islamists_destroyed_flag
+				}
 			}
 			traits = { SIN_bojinka_planner }
 			ai_will_do = {
@@ -464,7 +486,8 @@ characters = {
 		name = SIN_Jose_Padilla
 		portraits = {
 			army = {
-				#small = 
+				large = "gfx/leaders/SIN/Jose_Padilla.dds"
+				small = "gfx/interface/ideas/SIN/military_Jose_Padilla.dds" 
 			}
 		}
 		corps_commander = {
@@ -483,8 +506,8 @@ characters = {
 	SIN_Abu_Hamza_al_Masri = {
 		name = SIN_Abu_Hamza_al_Masri
 		portraits = {
-			army = {
-				#small = 
+			civilian = {
+				small = "gfx/interface/ideas/SIN/advisor_Abu_Hamza_al_Masri.dds" 
 			}
 		}
 		advisor = {
@@ -502,6 +525,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_islamists_integrated_flag
+				NOT = {
+					has_country_flag = SIN_islamists_destroyed_flag
+				}
 			}
 			traits = { SIN_cleric_kidnapper }
 			ai_will_do = {
@@ -515,7 +541,8 @@ characters = {
 		name = SIN_Tyler_Bingham
 		portraits = {
 			army = {
-				#small = 
+				large = "gfx/leaders/SIN/Tyler_Bingham.dds"
+				small = "gfx/interface/ideas/SIN/advisor_Tyler_Bingham.dds"
 			}
 		}
 		corps_commander = {
@@ -544,6 +571,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_dt_integrated_flag
+				NOT = {
+					has_country_flag = SIN_dt_destroyed_flag
+				}
 			}
 			traits = { SIN_aryan_brotherhood_leader }
 			ai_will_do = {
@@ -556,7 +586,7 @@ characters = {
 		name = SIN_Eric_Rudolph
 		portraits = {
 			army = {
-				#small = 
+				small = "gfx/interface/ideas/SIN/advisor_Eric_Rudolph.dds" 
 			}
 		}
 		advisor = {
@@ -574,6 +604,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_dt_integrated_flag
+				NOT = {
+					has_country_flag = SIN_dt_destroyed_flag
+				}
 			}
 			traits = { SIN_army_of_god_member }
 			ai_will_do = {
@@ -586,7 +619,7 @@ characters = {
 		name = SIN_Glendon_Scott_Crawford
 		portraits = {
 			army = {
-				#small = 
+				small = "gfx/interface/ideas/SIN/advisor_Glendon_Scott_Crawford.dds" 
 			}
 		}
 		advisor = {
@@ -604,6 +637,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_dt_integrated_flag
+				NOT = {
+					has_country_flag = SIN_dt_destroyed_flag
+				}
 			}
 			traits = { SIN_x_ray_gun_schizo }
 			ai_will_do = {
@@ -616,7 +652,8 @@ characters = {
 		name = SIN_Perry_Roark
 		portraits = {
 			army = {
-				#small = 
+				large = "gfx/leaders/SIN/Perry_Roark.dds"
+				small = "gfx/interface/ideas/SIN/military_Perry_Roark.dds" 
 			}
 		}
 		corps_commander = {
@@ -636,7 +673,7 @@ characters = {
 		name = SIN_Terry_Nichols
 		portraits = {
 			army = {
-				#small = 
+				small = "gfx/interface/ideas/SIN/advisor_Terry_Nichols.dds"  
 			}
 		}
 		advisor = {
@@ -654,6 +691,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_dt_integrated_flag
+				NOT = {
+					has_country_flag = SIN_dt_destroyed_flag
+				}
 			}
 			traits = { SIN_oklahoma_city_bomber }
 			ai_will_do = {
@@ -666,8 +706,12 @@ characters = {
 	SIN_Zambada_Garcia = {
 		name = SIN_Zambada_Garcia
 		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SIN/advisor_Zambada_Garcia.dds"
+			}
 			army = {
-				#small = 
+				large = "gfx/leaders/SIN/Zambada_Garcia.dds"
+				small = "gfx/interface/ideas/SIN/military_Zambada_Garcia.dds"  
 			}
 		}
 		field_marshal = {
@@ -694,6 +738,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_cartel_integrated_flag
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
 				not_already_hired_except_as = army_chief
 
 			}
@@ -731,7 +778,7 @@ characters = {
 		name = SIN_Ivan_Guzman
 		portraits = {
 			army = {
-				#small = 
+				small = "gfx/interface/ideas/SIN/advisor_Ivan_Guzman.dds"
 			}
 		}
 		advisor = {
@@ -749,6 +796,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_cartel_integrated_flag
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
 			}
 			traits = { SIN_el_chapito }
 			ai_will_do = {
@@ -761,7 +811,7 @@ characters = {
 		name = SIN_Alfredo_Guzman
 		portraits = {
 			army = {
-				#small = 
+				small = "gfx/interface/ideas/SIN/advisor_Alfredo_Guzman.dds"
 			}
 		}
 		advisor = {
@@ -779,6 +829,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_cartel_integrated_flag
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
 			}
 			traits = { SIN_alfredillo }
 			ai_will_do = {
@@ -791,7 +844,7 @@ characters = {
 		name = SIN_Joaquin_Guzman
 		portraits = {
 			army = {
-				#small = 
+				small = "gfx/interface/ideas/SIN/advisor_Joaquin_Guzman.dds"
 			}
 		}
 		advisor = {
@@ -809,6 +862,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_cartel_integrated_flag
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
 			}
 			traits = { SIN_el_guero }
 			ai_will_do = {
@@ -821,7 +877,8 @@ characters = {
 		name = SIN_Ovidio_Guzman
 		portraits = {
 			army = {
-				#small = 
+				large = "gfx/leaders/SIN/Ovidio_Guzman.dds"
+				small = "gfx/interface/ideas/SIN/military_Ovidio_Guzman.dds"
 			}
 		}
 		corps_commander = {
@@ -848,6 +905,9 @@ characters = {
 			}
 			available = {
 				has_country_flag = SIN_cartel_integrated_flag
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
 			}
 			traits = { SIN_el_raton }
 			ai_will_do = {
@@ -862,8 +922,8 @@ characters = {
 		name = SIN_Lauren_Boebert
 		portraits = {
 			civilian = {
-				#large = 
-				#small = 
+				large = "gfx/leaders/SIN/Lauren_Boebert.dds"
+				small = "gfx/interface/ideas/SIN/advisor_Lauren_Boebert.dds" 
 			}
 			army = {
 				large = "gfx/leaders/SIN/Lauren_Boebert_2.dds"
@@ -905,6 +965,9 @@ characters = {
 			available = {
 				is_country_leader = no
 				has_country_flag = SIN_establishment_integrated_flag
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
 			}
 			traits = { SIN_populist_firebrand_advisor }
 			ai_will_do = {
@@ -917,8 +980,8 @@ characters = {
 		name = SIN_Cory_Gardner
 		portraits = {
 			civilian = {
-				#large = 
-				#small = 
+				large = "gfx/leaders/SIN/Cory_Gardner.dds"
+				small = "gfx/interface/ideas/SIN/advisor_Cory_Gardner.dds" 
 			}
 		}
 		country_leader = {
@@ -943,6 +1006,9 @@ characters = {
 			available = {
 				is_country_leader = no
 				has_country_flag = SIN_establishment_integrated_flag
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
 			}
 			traits = { SIN_pro_business_reformer }
 			ai_will_do = {
@@ -955,8 +1021,8 @@ characters = {
 		name = SIN_Ken_Buck
 		portraits = {
 			civilian = {
-				#large = 
-				#small = 
+				large = "gfx/leaders/SIN/Ken_Buck.dds"
+				small = "gfx/interface/ideas/SIN/advisor_Ken_Buck.dds" 
 			}
 		}
 		country_leader = {
@@ -981,44 +1047,9 @@ characters = {
 			available = {
 				is_country_leader = no
 				has_country_flag = SIN_establishment_integrated_flag
-			}
-			traits = { SIN_rule_of_law_advocate }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	SIN_Ken_Buck = {
-		name = SIN_Ken_Buck
-		portraits = {
-			civilian = {
-				#large = 
-				#small = 
-			}
-		}
-		country_leader = {
-			traits = { SIN_freedom_caucus_conservative }
-			ideology = conservative
-			expire = "2060.1.1.1"
-			id = -1
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = advisor_Ken_Buck
-			cost = 150
-			allowed = {
-				original_tag = SIN
-			}
-			visible = {
-				original_tag = SIN
 				NOT = {
 					has_country_flag = SIN_establishment_destroyed_flag
 				}
-			}
-			available = {
-				is_country_leader = no
-				has_country_flag = SIN_establishment_integrated_flag
 			}
 			traits = { SIN_rule_of_law_advocate }
 			ai_will_do = {
@@ -1031,8 +1062,8 @@ characters = {
 		name = SIN_Tom_Tancredo
 		portraits = {
 			civilian = {
-				#large = 
-				#small = 
+				large = "gfx/leaders/SIN/Tom_Tancredo.dds"
+				small = "gfx/interface/ideas/SIN/advisor_Tom_Tancredo.dds"
 			}
 		}
 		country_leader = {
@@ -1057,8 +1088,176 @@ characters = {
 			available = {
 				is_country_leader = no
 				has_country_flag = SIN_establishment_integrated_flag
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
 			}
 			traits = { SIN_single_issue_crusader }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	#dems
+	SIN_Jared_Polis = {
+		name = SIN_Jared_Polis
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Jared_Polis.dds"
+				small = "gfx/interface/ideas/SIN/advisor_Jared_Polis.dds"
+			}
+		}
+		country_leader = {
+			traits = { SIN_tech_progressive SIN_libertarian_tendencies }
+			ideology = neoliberal
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Jared_Polis
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			available = {
+				is_country_leader = no
+				has_country_flag = SIN_establishment_integrated_flag
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			traits = { SIN_tech_progressive_advisor }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_John_Hickenlooper = {
+		name = SIN_John_Hickenlooper
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/John_Hickenlooper.dds"
+				small = "gfx/interface/ideas/SIN/advisor_John_Hickenlooper.dds"
+			}
+		}
+		country_leader = {
+			traits = { SIN_pragmatic_centrist }
+			ideology = establishment
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_John_Hickenlooper
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			available = {
+				is_country_leader = no
+				has_country_flag = SIN_establishment_integrated_flag
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			traits = { SIN_business_democrat }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Michael_Bennet = {
+		name = SIN_Michael_Bennet
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Michael_Bennet.dds"
+				small = "gfx/interface/ideas/SIN/advisor_Michael_Bennet.dds"
+			}
+		}
+		country_leader = {
+			traits = { SIN_institutionalist }
+			ideology = liberal
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Michael_Bennet
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			available = {
+				is_country_leader = no
+				has_country_flag = SIN_establishment_integrated_flag
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			traits = { SIN_institutionalist_advisor }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Ken_Salazar = {
+		name = SIN_Ken_Salazar
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Ken_Salazar.dds"
+				small = "gfx/interface/ideas/SIN/advisor_Ken_Salazar.dds"
+			}
+		}
+		country_leader = {
+			traits = { SIN_interior_administrator }
+			ideology = establishment
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Ken_Salazar
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			available = {
+				is_country_leader = no
+				has_country_flag = SIN_establishment_integrated_flag
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+			traits = { SIN_democrat_diplomat }
 			ai_will_do = {
 				factor = 1
 			}

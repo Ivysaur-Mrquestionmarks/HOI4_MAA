@@ -5852,8 +5852,8 @@ leader_traits = {
 	# leader
 	SIN_el_chapo_leader_trait = {
 		random = no
-		non_core_manpower = 0.3
-		resistance_target = -0.3
+		non_core_manpower = 0.1
+		resistance_target = -0.2
 		war_support_factor = 0.1
 		ai_focus_aggressive_factor = 0.25
 	}
@@ -5885,6 +5885,33 @@ leader_traits = {
 		political_power_gain = 0.25
 		stability_factor = 0.05
 		war_support_factor = 0.1
+	}
+	SIN_tech_progressive = {
+		random = no
+		political_power_gain = 0.1
+		research_speed_factor = 0.05
+		stability_factor = 0.1
+	}
+	SIN_libertarian_tendencies = {
+		random = no
+		libertarian_right_acceptance = 50
+	}
+	SIN_pragmatic_centrist = {
+		random = no
+		stability_factor = 0.15
+		democrat_drift = 0.05
+	}
+	SIN_institutionalist = {
+		random = no
+		stability_factor = 0.05
+		research_speed_factor = 0.05
+		political_power_factor = 0.1
+	}
+	SIN_interior_administrator = {
+		random = no
+		stability_factor = 0.05
+		local_resources_factor = 0.1
+		production_speed_buildings_factor = 0.05
 	}
 
 	# advisor
@@ -5978,7 +6005,7 @@ leader_traits = {
 		sprite = 13
 		random = no
 		power_balance_weekly = -0.0025
-		non_core_manpower = 0.15
+		non_core_manpower = 0.05
 		resistance_target = -0.15
 	}
 	SIN_unabomber_advisor_trait = {
@@ -6019,6 +6046,33 @@ leader_traits = {
 		political_power_gain = 0.05
 		stability_factor = 0.15
 	}
+	SIN_tech_progressive_advisor = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.05
+		stability_factor = 0.05
+	}
+	SIN_business_democrat = {
+		sprite = 13
+		random = no
+		democrat_drift = 0.05
+		consumer_goods_factor = -0.1
+	}
+	SIN_institutionalist_advisor = {
+		sprite = 13
+		random = no
+		stability_factor = 0.025
+		research_speed_factor = 0.025
+		political_power_factor = 0.05
+	}
+	SIN_democrat_diplomat = {
+		sprite = 13
+		random = no
+		opinion_gain_monthly_factor = 0.15
+		political_power_gain = 0.1
+		democrat_drift = 0.05
+	}
+
 
 
 
