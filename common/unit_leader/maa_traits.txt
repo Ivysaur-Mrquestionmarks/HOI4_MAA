@@ -620,4 +620,16 @@ leader_traits = {
 		new_commander_weight = { factor = 0 }
 	}
 
+	SIN_mob_trait = {
+
+		type = all
+		trait_type = personality_trait
+
+		allowed = {
+			always = no
+		}
+
+		new_commander_weight = { factor = 0 }
+	}
+
 }

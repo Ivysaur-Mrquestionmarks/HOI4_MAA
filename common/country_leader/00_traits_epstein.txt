@@ -5913,6 +5913,12 @@ leader_traits = {
 		local_resources_factor = 0.1
 		production_speed_buildings_factor = 0.05
 	}
+	SIN_the_man = {
+		random = no
+		stability_factor = 0.05
+		consumer_goods_factor = -0.2
+		political_power_factor = 0.05
+	}
 
 	# advisor
 	SIN_al_qaeda_trainer = {
@@ -6072,7 +6078,25 @@ leader_traits = {
 		political_power_gain = 0.1
 		democrat_drift = 0.05
 	}
-
+	SIN_the_man_advisor = {
+		sprite = 10
+		consumer_goods_factor = -0.1
+		political_power_factor = 0.05
+	}
+	SIN_king_blood = {
+		sprite = 12
+		random = no
+		army_attack_factor = 0.05
+		stability_factor = -0.1
+		war_support_factor = 0.1
+	}
+	SIN_mafia_hitman = {
+		sprite = 12
+		random = no
+		army_attack_factor = 0.1
+		political_power_factor = 0.05
+		army_defence_factor = -0.05
+	}
 
 
 

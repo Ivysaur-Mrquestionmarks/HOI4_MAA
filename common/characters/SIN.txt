@@ -270,30 +270,53 @@ characters = {
 		}
 	}
 
-	SIN_james_marcello = {
-		name = SIN_james_marcello
+	SIN_James_Marcello = {
+		name = SIN_James_Marcello
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SIN/marcello.dds"
+				small = "gfx/interface/ideas/SIN/advisor_James_Marcello.dds"
+				large = "gfx/leaders/SIN/James_Marcello.dds"
 			}
 			army = {
-				small = "gfx/interface/ideas/SIN/James_Marcello_General.dds"
-				large = "gfx/leaders/SIN/marcello.dds"
+				large = "gfx/leaders/SIN/James_Marcello.dds"
 			}
 		}
 		country_leader = {
-			traits = { New_Capone }
+			traits = { SIN_the_man }
 			ideology = despotism
 			expire = "2060.1.1.1"
 			id = -1
 		}
 		corps_commander = {
-			traits = { guerilla_fighter thorough_planner }
+			traits = { SIN_mob_trait guerilla_fighter thorough_planner }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 1
 			planning_skill = 5
 			logistics_skill = 3
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_James_Marcello
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				NOT = {
+					has_country_flag = SIN_mob_destroyed_flag
+				}
+			}
+			available = {
+				is_country_leader = no
+				NOT = {
+					has_country_flag = SIN_mob_destroyed_flag
+				}
+			}
+			traits = { SIN_the_man_advisor }
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 
@@ -366,6 +389,342 @@ characters = {
 			}
 			ai_will_do = {
 				factor = 5
+			}
+		}
+	}
+
+	# Cartel Characters
+	SIN_Zambada_Garcia = {
+		name = SIN_Zambada_Garcia
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SIN/advisor_Zambada_Garcia.dds"
+			}
+			army = {
+				large = "gfx/leaders/SIN/Zambada_Garcia.dds"
+				small = "gfx/interface/ideas/SIN/military_Zambada_Garcia.dds"  
+			}
+		}
+		field_marshal = {
+			traits = { SIN_cartel_trait organizer logistics_wizard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 6
+			visible = {
+				has_country_flag = SIN_cartel_integrated_flag
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = command_Zambada_Garcia
+			ledger = army
+			cost = 150
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+				not_already_hired_except_as = army_chief
+
+			}
+			traits = { army_chief_organizational_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Zambada_Garcia
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+				not_already_hired_except_as = political_advisor
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			traits = { SIN_el_mayo }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+
+	SIN_Ivan_Guzman = {
+		name = SIN_Ivan_Guzman
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/SIN/advisor_Ivan_Guzman.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Ivan_Guzman
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			traits = { SIN_el_chapito }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Alfredo_Guzman = {
+		name = SIN_Alfredo_Guzman
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/SIN/advisor_Alfredo_Guzman.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Alfredo_Guzman
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			traits = { SIN_alfredillo }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Joaquin_Guzman = {
+		name = SIN_Joaquin_Guzman
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/SIN/advisor_Joaquin_Guzman.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Joaquin_Guzman
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			traits = { SIN_el_guero }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Ovidio_Guzman = {
+		name = SIN_Ovidio_Guzman
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIN/Ovidio_Guzman.dds"
+				small = "gfx/interface/ideas/SIN/military_Ovidio_Guzman.dds"
+			}
+		}
+		corps_commander = {
+			traits = { SIN_cartel_trait trickster desert_fox scavenger } 
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_country_flag = SIN_cartel_integrated_flag
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Ovidio_Guzman
+			ledger = army
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_cartel_integrated_flag
+				NOT = {
+					has_country_flag = SIN_cartel_destroyed_flag
+				}
+			}
+			traits = { SIN_el_raton }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	# Mob Characters
+	SIN_Luis_Felipe = {
+		name = SIN_Luis_Felipe
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SIN/advisor_Luis_Felipe.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Luis_Felipe
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_mob_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_mob_integrated_flag
+				NOT = {
+					has_country_flag = SIN_mob_destroyed_flag
+				}
+			}
+			traits = { SIN_king_blood }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Fotios_Geas = {
+		name = SIN_Fotios_Geas
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Fotios_Geas.dds"
+				small = "gfx/interface/ideas/SIN/military_Fotios_Geas.dds"
+			}
+		}
+		corps_commander = {
+			traits = { SIN_mob_trait } 
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_country_flag = SIN_mob_integrated_flag
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Luis_Felipe
+			ledger = army
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_country_flag = SIN_mob_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_mob_integrated_flag
+				NOT = {
+					has_country_flag = SIN_mob_destroyed_flag
+				}
+			}
+			traits = { SIN_mafia_hitman }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Dairo_Antonio_Usuga = {
+		name = SIN_Dairo_Antonio_Usuga
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Dairo_Antonio_Usuga.dds"
+				small = "gfx/interface/ideas/SIN/military_Dairo_Antonio_Usuga.dds"
+			}
+		}
+		corps_commander = {
+			traits = { SIN_mob_trait inflexible_strategist politically_connected } 
+			skill = 4
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_country_flag = SIN_mob_integrated_flag
+			}
+		}
+	}
+
+	SIN_Jessie_Con_ui = {
+		name = SIN_Jessie_Con_ui
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Jessie_Con_ui.dds"
+				small = "gfx/interface/ideas/SIN/military_Jessie_Con_ui.dds"
+			}
+		}
+		corps_commander = {
+			traits = { SIN_mob_trait } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_country_flag = SIN_mob_integrated_flag
 			}
 		}
 	}
@@ -696,220 +1055,6 @@ characters = {
 				}
 			}
 			traits = { SIN_oklahoma_city_bomber }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	# Cartel Characters
-	SIN_Zambada_Garcia = {
-		name = SIN_Zambada_Garcia
-		portraits = {
-			civilian = {
-				small = "gfx/interface/ideas/SIN/advisor_Zambada_Garcia.dds"
-			}
-			army = {
-				large = "gfx/leaders/SIN/Zambada_Garcia.dds"
-				small = "gfx/interface/ideas/SIN/military_Zambada_Garcia.dds"  
-			}
-		}
-		field_marshal = {
-			traits = { SIN_cartel_trait organizer logistics_wizard }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 6
-			visible = {
-				has_country_flag = SIN_cartel_integrated_flag
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = command_Zambada_Garcia
-			ledger = army
-			cost = 150
-			visible = {
-				original_tag = SIN
-				NOT = {
-					has_country_flag = SIN_cartel_destroyed_flag
-				}
-			}
-			available = {
-				has_country_flag = SIN_cartel_integrated_flag
-				NOT = {
-					has_country_flag = SIN_cartel_destroyed_flag
-				}
-				not_already_hired_except_as = army_chief
-
-			}
-			traits = { army_chief_organizational_2 }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = advisor_Zambada_Garcia
-			cost = 150
-			allowed = {
-				original_tag = SIN
-			}
-			visible = {
-				original_tag = SIN
-				NOT = {
-					has_country_flag = SIN_cartel_destroyed_flag
-				}
-			}
-			available = {
-				has_country_flag = SIN_cartel_integrated_flag
-				not_already_hired_except_as = political_advisor
-			}
-			traits = { SIN_el_mayo }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-	}
-
-	SIN_Ivan_Guzman = {
-		name = SIN_Ivan_Guzman
-		portraits = {
-			army = {
-				small = "gfx/interface/ideas/SIN/advisor_Ivan_Guzman.dds"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = advisor_Ivan_Guzman
-			cost = 150
-			allowed = {
-				original_tag = SIN
-			}
-			visible = {
-				original_tag = SIN
-				NOT = {
-					has_country_flag = SIN_cartel_destroyed_flag
-				}
-			}
-			available = {
-				has_country_flag = SIN_cartel_integrated_flag
-				NOT = {
-					has_country_flag = SIN_cartel_destroyed_flag
-				}
-			}
-			traits = { SIN_el_chapito }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	SIN_Alfredo_Guzman = {
-		name = SIN_Alfredo_Guzman
-		portraits = {
-			army = {
-				small = "gfx/interface/ideas/SIN/advisor_Alfredo_Guzman.dds"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = advisor_Alfredo_Guzman
-			cost = 150
-			allowed = {
-				original_tag = SIN
-			}
-			visible = {
-				original_tag = SIN
-				NOT = {
-					has_country_flag = SIN_cartel_destroyed_flag
-				}
-			}
-			available = {
-				has_country_flag = SIN_cartel_integrated_flag
-				NOT = {
-					has_country_flag = SIN_cartel_destroyed_flag
-				}
-			}
-			traits = { SIN_alfredillo }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	SIN_Joaquin_Guzman = {
-		name = SIN_Joaquin_Guzman
-		portraits = {
-			army = {
-				small = "gfx/interface/ideas/SIN/advisor_Joaquin_Guzman.dds"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = advisor_Joaquin_Guzman
-			cost = 150
-			allowed = {
-				original_tag = SIN
-			}
-			visible = {
-				original_tag = SIN
-				NOT = {
-					has_country_flag = SIN_cartel_destroyed_flag
-				}
-			}
-			available = {
-				has_country_flag = SIN_cartel_integrated_flag
-				NOT = {
-					has_country_flag = SIN_cartel_destroyed_flag
-				}
-			}
-			traits = { SIN_el_guero }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	SIN_Ovidio_Guzman = {
-		name = SIN_Ovidio_Guzman
-		portraits = {
-			army = {
-				large = "gfx/leaders/SIN/Ovidio_Guzman.dds"
-				small = "gfx/interface/ideas/SIN/military_Ovidio_Guzman.dds"
-			}
-		}
-		corps_commander = {
-			traits = { SIN_cartel_trait trickster desert_fox scavenger } 
-			skill = 3
-			attack_skill = 4
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 2
-			visible = {
-				has_country_flag = SIN_cartel_integrated_flag
-			}
-		}
-		advisor = {
-			slot = high_command
-			idea_token = command_Ovidio_Guzman
-			ledger = army
-			cost = 100
-			visible = {
-				original_tag = SIN
-				NOT = {
-					has_country_flag = SIN_cartel_destroyed_flag
-				}
-			}
-			available = {
-				has_country_flag = SIN_cartel_integrated_flag
-				NOT = {
-					has_country_flag = SIN_cartel_destroyed_flag
-				}
-			}
-			traits = { SIN_el_raton }
 			ai_will_do = {
 				factor = 1
 			}
