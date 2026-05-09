@@ -12,7 +12,7 @@ characters={
 			}
 		}
 		country_leader = {
-			desc = "DESC_LEADER_VERMIN_SUPREME"
+			desc = AFS_Vermin_Supreme_desc
 			ideology = anarchism
 			traits = { old_figurehead }
 			expire = "2060.1.1.1"
@@ -54,6 +54,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = AFS_Howie_Hawkins_desc
 			ideology = eco_authoritarianism
 			traits = { AFS_leading_the_green_front }
 			expire = "2060.1.1.1"
@@ -95,6 +96,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = AFS_James_Mattis_desc
 			ideology = military_dictatorship
 			traits = { retired_officer }
 			expire = "2060.1.1.1"
@@ -141,6 +143,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = AFS_Mike_Dewine_desc
 			ideology = conservative
 			traits = {}
 			expire = "2060.1.1.1"
@@ -155,6 +158,7 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = AFS_JD_Vance_desc
 			ideology = conservative
 			traits = {}
 			expire = "2060.1.1.1"
