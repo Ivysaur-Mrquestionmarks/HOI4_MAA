@@ -1421,3 +1421,147 @@ USA_cities = {
 		}
 	}
 }
+
+USA_mandelson_ENG_cat = {
+
+
+	USA_normalise_relations_with_uk = {
+		
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			ENG = {
+				has_country_leader = {
+					character = ENG_peter_mandelson
+					ruling_only = yes
+				}				
+			}
+		}
+		visible = {
+			ENG = {
+				has_government = libertarian_left
+			}
+		}
+	
+		cost = 25
+
+		complete_effect = {
+			set_country_flag = USA_special_relationship_flag
+			add_opinion_modifier = {
+			    target = ENG
+			    modifier = USA_special_relationship
+			}
+			hidden_effect = {
+				ENG = {
+					add_opinion_modifier = {
+					    target = ROOT
+					    modifier = offered_support
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+	}
+
+	USA_buy_guns_from_UK = {
+		
+		icon = eng_support_imperialist_coup
+
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			ENG = {
+				has_country_leader = {
+					character = ENG_peter_mandelson
+					ruling_only = yes
+				}				
+			}
+			has_country_flag = USA_special_relationship_flag
+		}
+		visible = {
+			ENG = {
+				has_government = libertarian_left
+			}
+		}
+	
+		cost = 15
+
+		fire_only_once = no
+		
+		days_re_enable = 50
+
+		complete_effect = {
+			ENG = {
+				add_political_power = 15
+			}
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 750
+			    producer = ENG
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+	}
+
+	USA_buy_artillery_from_UK = {
+		
+		icon = eng_support_imperialist_coup
+
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			ENG = {
+				has_country_leader = {
+					character = ENG_peter_mandelson
+					ruling_only = yes
+				}				
+			}
+			has_country_flag = USA_special_relationship_flag
+		}
+		visible = {
+			ENG = {
+				has_government = libertarian_left
+			}
+		}
+	
+		cost = 25
+
+		fire_only_once = no
+		
+		days_re_enable = 50
+
+		complete_effect = {
+			ENG = {
+				add_political_power = 25
+			}
+			add_equipment_to_stockpile = {
+			    type = artillery_equipment_1
+			    amount = 75
+			    producer = ENG
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+	}
+
+
+##### PLEASE FEEL FREE TO ADD MORE INTERACTIONS WITH UK UNDER THIS CATEGORY!
+
+
+}

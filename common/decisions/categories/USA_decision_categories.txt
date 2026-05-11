@@ -87,3 +87,16 @@ USA_evangelism_opposition = {
 		has_completed_focus = USA_evangelist_path
 	}
 }
+
+USA_mandelson_ENG_cat = {
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		ENG = {
+			has_government = libertarian_left
+		}
+	}
+}
