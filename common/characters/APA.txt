@@ -56,6 +56,41 @@ characters={
 		}
 	}
 
+	APA_dalton_eatherly = {
+		name = "Dalton Eatherly"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/APA/chud_the_builder.tga"
+				small = "gfx/interface/ideas/APA/chud_the_builder_ADVISOR.dds"
+			}
+			army = {
+				large = "gfx/leaders/APA/chud_the_builder.tga"
+				small = "gfx/interface/ideas/APA/chud_the_builder_ADVISOR.dds"
+			}
+		}
+		country_leader = {
+			traits = {}
+			ideology = neonazism #fascism
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = APA_dalton_eatherly_advisor
+			cost = 150
+			allowed = {
+				tag = APA
+			}
+			available = {
+				
+			}
+			traits = {
+				national_socialist_paramilitarist #PLACEHOLDER???
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 	#Advisors
 	APA_john_parker = {
 		name = "John Parker"
@@ -78,7 +113,7 @@ characters={
 				APA_john_parker_trait
 			}
 			ai_will_do = {
-				factor = 5
+				factor = 9
 			}
 		}
 	}
