@@ -19,13 +19,21 @@ country_event = {
 			    long_name = KFC_resistance_party
 			    name = KFC_resistance_party
 			}
+			#create_country_leader = { #side note- should probably convert revolutionaries into the character system at some point.
+			#	name = "Bryan Howay"
+			#	picture = "gfx/leaders/KFC/howay.dds"
+			#	expire = "2060.1.1"
+			#	ideology = libertarian_ideology
+			#	traits = {
+			#		#
+			#	}
+			#}
 			create_country_leader = {
-				name = "Bryan Howay"
-				picture = "gfx/leaders/KFC/howay.dds"
-				expire = "2060.1.1"
+				name = "Scott DeShields Jr."
+				picture = "gfx/leaders/KFC/kentucky_ballistics.tga"
 				ideology = libertarian_ideology
 				traits = {
-					#
+					KFC_kentucky_ballistics
 				}
 			}
 			set_country_flag = KFC_War
@@ -840,13 +848,21 @@ country_event = {
 			    long_name = KFC_Communist_Party_Long
 			    name = KFC_Communist_Party
 			}
+			#create_country_leader = {
+			#	name = "Bryan Howay"
+			#	picture = "gfx/leaders/KFC/howay.dds"
+			#	expire = "2060.1.1"
+			#	ideology = libertarian_ideology
+			#	traits = {
+			#		#
+			#	}
+			#}
 			create_country_leader = {
-				name = "Bryan Howay"
-				picture = "gfx/leaders/KFC/howay.dds"
-				expire = "2060.1.1"
+				name = "Scott DeShields Jr."
+				picture = "gfx/leaders/KFC/kentucky_ballistics.tga"
 				ideology = libertarian_ideology
 				traits = {
-					#
+					KFC_kentucky_ballistics
 				}
 			}
 			
