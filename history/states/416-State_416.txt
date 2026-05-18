@@ -3,7 +3,7 @@ state={
 	id=416
 	name="STATE_416"
 	provinces={
-		185 505 683 1796 2004 3473 5162 5616 6368 9017 9287 8839 1126
+		185 406 505 589 683 1126 1796 2004 3473 5162 5616 6368 8839 9017 9287 11630 11815 11857
 	}
 
 	resources={
@@ -19,16 +19,19 @@ state={
 			6368 40 #Denver
 		}
 		victory_points = {
-			5616 5 #Fort Collins
+			5616 15 #Fort Collins
 		}
 		victory_points = {
-			683 5 #Boulder
+			11857 12 #Lakewood
+		}
+		victory_points = {
+			683 10 #Boulder
+		}
+		victory_points = {
+			505 5 #Cheyenne Mountain Defense Complex
 		}
 		victory_points = {
 			9017 1 #Granby
-		}
-		victory_points = {
-			505 1 #Canon City
 		}
 
 		buildings = {

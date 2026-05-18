@@ -3,7 +3,7 @@ state={
 	id=424
 	name="STATE_424"
 	provinces={
-		84 735 752 906 1023 1040 1392 1564 1642 1982 2077 2249 2411 3106 3416 3957 4052 4098 4347 5147 5453 5938 8958 8964 9037 9157 2141 8861 8809 8897 2692 2116
+		84 735 752 906 1023 1040 1392 1564 1642 1982 2077 2116 2141 2249 2411 2692 3106 3326 3416 3957 4052 4098 4347 5147 5453 5938 8861 8809 8897 8958 8964 9037 9157 9617 10876 11526
 	}
 
 	resources={
@@ -14,13 +14,19 @@ state={
 		owner = USA
 		add_core_of = USA
 		victory_points = {
-			1982 10 #Colorado Springs
+			1982 20 #Colorado Springs
 		}
 		victory_points = {
-			8958 5 #Greeley
+			10876 20 #Aurora
 		}
 		victory_points = {
-			906 1 #Fort Morgan
+			8958 8 #Greeley
+		}
+		victory_points = {
+			906 3 #Fort Morgan
+		}
+		victory_points = {
+			3326 3 #Denver IA
 		}
 		
 		buildings = {
