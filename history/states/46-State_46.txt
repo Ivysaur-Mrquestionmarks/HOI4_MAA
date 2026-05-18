@@ -8,7 +8,16 @@ state={
 		add_claim_by = PRA
 		add_core_of = LAS
 		victory_points = {
-			252 40 #Las Vegas
+			252 25 #Las Vegas
+		}
+		victory_points = {
+			5996 10 #Paradise
+		}
+		victory_points = {
+			11374 15 #Henderson
+		}
+		victory_points = {
+			229 8 #Spring Valley
 		}
 		victory_points = {
 			2678 2 #Pahrump
@@ -18,6 +27,9 @@ state={
 		}
 		victory_points = {
 			1794 1 #Moapa
+		}
+		victory_points = {
+		 	11256 3 #Nellis AFB
 		}
 		buildings = {
 			infrastructure = 8
@@ -30,7 +42,7 @@ state={
 	}
 
 	provinces={
-		252 1066 1178 1794 2678 3801 5182 9860 9922 
+		229 252 1066 1178 1794 2678 3015 3801 5182 5996 9860 9922 11256 11343 11356 11373 11374
 	}
 	manpower=2286001
 	buildings_max_level_factor=1.000
