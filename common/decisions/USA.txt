@@ -91,6 +91,36 @@ GEN_Political_Allignment = {
 		}
 
 	}
+
+	USA_add_trump_to_mount_rushmore = {
+		
+		icon = GFX_decision_politics_republican
+
+		allowed = {
+			#original_tag = USA
+			always = no #coding this in but not able to access mod rn to check which state id Mount Rushmore is in
+		}
+		available = {
+			#owns_state = #mount rushmore plox
+		}
+
+		cost = 175
+
+		days_remove = 400
+
+		remove_effect = {
+			effect_tooltip = {
+				add_political_power = 300
+				add_stability = 0.05
+			}
+			news_event = 
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+	}
 }
 
 American_reunification = {
