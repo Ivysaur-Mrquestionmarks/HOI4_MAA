@@ -83,6 +83,9 @@ news_event = {
 	desc = bomali.3.d
 	picture = news_event_MIN_omar_fateh_01
 	is_triggered_only = yes
+	trigger = { #for some reason this was firing even tho MIN was defeated?
+		country_exists = MIN
+	}
 	major = yes
 	option = {
 		name = bomali.3.a
