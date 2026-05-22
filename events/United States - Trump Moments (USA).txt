@@ -6725,3 +6725,28 @@ country_event = { #Same negotiations of the previous event, but it is Trump's pe
 		
    }
 }
+
+news_event = { #Trump on Rushmore
+    id = maga.273
+    title = maga.273.t
+    desc = maga.273.d
+    picture = news_event_trump_rushmore_01
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = maga.273.a
+        trigger = {
+		original_tag = USA
+	}
+	add_political_power = 300
+	add_stability = 0.05
+   }
+	option = {
+		name = maga.273.b
+		trigger = {
+			NOT = {
+				original_tag = USA
+			}
+		}
+	}
+}
