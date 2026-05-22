@@ -108,12 +108,14 @@ GEN_Political_Allignment = {
 
 		days_remove = 400
 
+		fire_only_once = yes
+
 		remove_effect = {
 			effect_tooltip = {
 				add_political_power = 300
 				add_stability = 0.05
 			}
-			news_event = 
+			news_event = maga.273
 		}
 
 		ai_will_do = {
