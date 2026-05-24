@@ -175,6 +175,9 @@ country_event = {
 			WMX = {
 				set_cosmetic_tag = RMX_dark_green_colour
 			}
+			YUC = {
+				set_cosmetic_tag = YUC_new_colour
+			}
 			country_event = { id = mexico.6 days = 3 }
 			ZAP = { create_faction_from_template = faction_template_mexican_zapatistas }
 			ADF = { 
