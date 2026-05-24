@@ -6740,6 +6740,18 @@ news_event = { #Trump on Rushmore
 	}
 	add_political_power = 300
 	add_stability = 0.05
+	add_popularity = {
+		ideology = republican
+		popularity = 0.05
+	}
+	hidden_effect = {
+		443 = {
+			add_victory_points = {
+				province = 5073
+				value = 2
+			}
+		}
+	}
    }
 	option = {
 		name = maga.273.b

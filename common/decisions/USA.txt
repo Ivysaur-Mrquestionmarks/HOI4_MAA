@@ -97,11 +97,15 @@ GEN_Political_Allignment = {
 		icon = GFX_decision_politics_republican
 
 		allowed = {
-			#original_tag = USA
-			always = no #coding this in but not able to access mod rn to check which state id Mount Rushmore is in
+			original_tag = USA
 		}
 		available = {
-			#owns_state = #mount rushmore plox
+			controls_province = 5073
+		}
+        	cancel_trigger = {
+        	    NOT = {
+        	        controls_province = 5073
+        	    }
 		}
 
 		cost = 175
@@ -112,8 +116,12 @@ GEN_Political_Allignment = {
 
 		remove_effect = {
 			effect_tooltip = {
-				add_political_power = 300
+				add_political_power = 325
 				add_stability = 0.05
+				add_popularity = {
+					ideology = republican
+					popularity = 0.05
+				}
 			}
 			news_event = maga.273
 		}
