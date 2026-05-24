@@ -168,6 +168,13 @@ country_event = {
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
+			#NOTE! THIS IS JUST A PLACEHOLDER COSMETIC TAG BECAUSE IT'S CONFUSING THAT FEDERALES AND REVOLUTIONARIES HAVE THE SAME FACTION COLOUR!!! FEEL FREE TO REMOVE WHEN NECESSARY - MERF
+			RMX = {
+				set_cosmetic_tag = RMX_dark_green_colour
+			}
+			WMX = {
+				set_cosmetic_tag = RMX_dark_green_colour
+			}
 			country_event = { id = mexico.6 days = 3 }
 			ZAP = { create_faction_from_template = faction_template_mexican_zapatistas }
 			ADF = { 
