@@ -43,4 +43,18 @@ characters={
 			id = -1
 		}
 	}
+	BJC_markus_persson = {
+		name = "Markus Persson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BJC/notch.tga"
+			}
+		}
+		country_leader = {
+			ideology = trumpist #or would neocon be more thematically appropriate?
+			traits = {
+				#notch
+			}
+		}
+	}
 }
