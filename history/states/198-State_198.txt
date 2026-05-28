@@ -2,7 +2,7 @@ state={
 	id=198
 	name="STATE_198"
 	provinces={
-		4960 5094 8544 
+		3643 3834 4960 5094 8544 
 	}
 
 	resources={
@@ -20,7 +20,10 @@ state={
 			5094 50 #Chicago
 		}
 		victory_points = {
-			4960 8 #Chicago
+			4960 8 #Waukegan
+		}
+		victory_points = {
+			3834 7 #Evanston
 		}
 		buildings = {
 			infrastructure = 10

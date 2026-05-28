@@ -2,7 +2,7 @@ state={
 	id=186
 	name="STATE_186"
 	provinces={
-		119 370 724 744 1189 1897 2110 2130 2826 3294 3391 3793 4014 4685 5492 5635 5666 5909 8267 8315 8401 8493 8519 8543 8552 8662 8862 
+		119 370 724 744 1189 1897 2110 2130 2826 3294 3391 3793 4014 4685 5492 5635 5666 5909 7806 8267 8315 8401 8493 8519 8543 8552 8662 8862 
 	}
 		history={
 		owner = USA
@@ -11,16 +11,34 @@ state={
 		add_core_of = NPA
 
 		victory_points = {
-			8519 3 #Waterloo
+			8519 7 #Waterloo
 		}
 		victory_points = {
-			8862 3 #Iowa City
+			8543 7 #Ames
 		}
 		victory_points = {
-			8662 9 #Cedar Rapids
+			8862 3 #Burlington
 		}
 		victory_points = {
-			370 12 #Des Moines
+			1189 3 #Fort Dodge
+		}
+		victory_points = {
+			4014 3 #Ottumwa
+		}
+		victory_points = {
+			2110 4 #Marshalltown
+		}
+		victory_points = {
+			7806 6 #Ankeny
+		}
+		victory_points = {
+			8552 12 #Cedar Rapids
+		}
+		victory_points = {
+			8662 8 #Iowa City
+		}
+		victory_points = {
+			370 15 #Des Moines
 		}
 		buildings = {
 			infrastructure = 7

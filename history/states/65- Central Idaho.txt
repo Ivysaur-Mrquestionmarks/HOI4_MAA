@@ -3,7 +3,7 @@ state={
 	id=65
 	name="STATE_65"
 	provinces={
-		6 572 729 808 1092 1214 1354 1461 1590 1616 1691 2040 2710 2722 3439 3965 4188 4634 4676 4802 5069 5394 5726 5988 7697 7752 7794 8057 8116 8145 8189 8239 8245 8276 8298 8416 19505 
+		6 572 729 808 848 1092 1214 1354 1461 1590 1616 1691 2040 2710 2722 3439 3965 4188 4634 4676 4802 5069 5394 5726 5988 7697 7752 7776 7794 7845 7972 8057 8116 8145 8189 8239 8245 8276 8298 8320 8416 19505 
 	}
 	history={
 		owner = MON
@@ -12,6 +12,15 @@ state={
 		
 		victory_points = {
 			8239 15 #Boise
+		}
+		victory_points = {
+			7776 10 #Meridian
+		}
+		victory_points = {
+			848 10 #Nampa
+		}
+		victory_points = {
+			7972 2 #Mountain Home AFB
 		}
 		victory_points = {
 			1354 1 #McCall
@@ -23,10 +32,10 @@ state={
 			3439 1 #Payette 
 		}
 		victory_points = {
-			1902 1 #Jerome
+			1092 1 #Jerome
 		}
 		victory_points = {
-			8276 1 #Mountain Home
+			8276 3 #Mountain Home
 		}
 		buildings = {
 			infrastructure = 6

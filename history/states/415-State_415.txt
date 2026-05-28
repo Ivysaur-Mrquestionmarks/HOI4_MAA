@@ -12,7 +12,10 @@ state={
 			2271 5 #Twin Falls 
 		}
 		victory_points = {
-			1079 8 #Pocatello 
+			940 8 #Pocatello 
+		}
+		victory_points = {
+			1079 2 #Blackfoot
 		}
 		victory_points = {
 			887 1 #Burley
@@ -28,7 +31,7 @@ state={
 	}
 
 	provinces={
-		175 628 887 940 1079 1468 2271 3020 4736 8448 
+		175 628 887 940 1079 1468 2271 3020 4736 8448 12118
 	}
 	manpower=229239
 	buildings_max_level_factor=1.000
