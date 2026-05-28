@@ -3,7 +3,7 @@ state={
 	id=195
 	name="STATE_195"
 	provinces={
-		4408 5859 6284 8341 8397 
+		4408 5859 6284 7519 7734 8341 8397 8610 8811
 	}
 
 	resources={
@@ -17,13 +17,16 @@ state={
 		add_core_of = KMT
 
 		victory_points = {
-			8341 20 #Milwaukee
+			8341 25 #Milwaukee
 		}
 		victory_points = {
 			4408 6 #Waukesha
 		}
 		victory_points = {
-			5859 5 #Kenosha
+			8397 8 #Racine
+		}
+		victory_points = {
+			5859 9 #Kenosha
 		}
 		buildings = {
 			infrastructure = 8

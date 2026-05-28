@@ -3,7 +3,7 @@ state={
 	id=239
 	name="STATE_239"
 	provinces={
-		1139 1877 2298 2446 2454 3017 4164 5562 9434 9512 9565 9626 9682 
+		1139 1877 2298 2446 2454 3017 3667 4164 5562 9434 9512 9565 9626 9682 
 	}
 		history={
 		owner = USA
@@ -16,6 +16,12 @@ state={
 		victory_points = {
 			4164 6 #Joplin
 		}
+		victory_points = {
+			9682 2 #Branson
+		}
+		victory_points = {
+			5562 1 #Bolivar
+		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3
@@ -24,6 +30,6 @@ state={
 	}
 
  state_category=large_city
- manpower=842500
+ manpower=1042500
 	buildings_max_level_factor=1.000
 }

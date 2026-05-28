@@ -5,20 +5,27 @@ state={
 		coal = 19
 	}
 	provinces={
-		1540 2255 3695 4257 
+		3130 4672 9310
 	}
 		history={
+		victory_points = {
+			4672 25 #St. Louis
+		}
+		victory_points = {
+			9310 5 #Chesterfield
+		}
 		owner = USA
 		add_core_of = USA
 		add_core_of = NPA
 
 		buildings = {
-			infrastructure = 7
-			arms_factory = 1
+			infrastructure = 6
+			industrial_complex = 4
+			arms_factory = 2
 		}
 	}
 
- state_category=rural
- manpower=52700
+ state_category=metropolis
+ manpower=1505702
 	buildings_max_level_factor=1.000
 }

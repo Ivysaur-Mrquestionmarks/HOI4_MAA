@@ -6,7 +6,7 @@ state={
 		coal = 9
 	}
 	provinces={
-		359 393 587 3581 4352 8977 
+		359 393 587 1540 2255 3581 3695 4257 4352 8977 
 	}
 		history={
 		owner = USA
@@ -14,7 +14,7 @@ state={
 		add_core_of = NPA
 
 		victory_points = {
-			359 4 #St. Joseph
+			359 7 #St. Joseph
 		}
 		buildings = {
 			infrastructure = 7
@@ -23,6 +23,6 @@ state={
 	}
 
  state_category=large_town
- manpower=596800
+ manpower=648018
 	buildings_max_level_factor=1.000
 }
