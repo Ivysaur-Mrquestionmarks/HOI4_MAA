@@ -10,8 +10,11 @@ state={
 		add_core_of = GLA
 
 		victory_points = { #Toledo
-                    	8702 15
-                 }
+			8702 15
+		}
+		victory_points = { #Toledo
+			902 3
+		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 1

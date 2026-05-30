@@ -3,21 +3,38 @@ state={
 	id=241
 	name="STATE_241"
 	provinces={
-		12144 
+		2345 3570 3892 4391 5540 9548 6105 9570 9596 9609 9640 9641 9660 9679 9691 9709
 	}
 	history={
-		owner = PAC
+		owner = PRA
 		add_core_of = PRA
-		add_core_of = PAC 
 		buildings = {
 			infrastructure = 3
-			12144 = {
-				naval_base = 3
-			}
+		}
+		victory_points = {
+			9691 20 #Fresno
+		}
+		victory_points = {
+			3892 2 #Madera
+		}
+		victory_points = {
+			9596 1 #Chowchilla
+		}
+		victory_points = {
+			6105 5 #Clovis
+		}
+		victory_points = {
+			9709 2 #Sanger
+		}
+		victory_points = {
+			3570 1 #Kerman
+		}
+		victory_points = {
+			9640 1 #Mendota
 		}
 	}
  
- state_category= pastoral
- manpower=312
+ state_category=large_city
+ manpower=1159639
 	buildings_max_level_factor=1.000
 }

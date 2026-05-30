@@ -3,7 +3,7 @@ state={
 	id=429
 	name="STATE_429"
 	provinces={
-		684 2345 2504 2634 3475 3539 3570 3892 4302 4391 4517 4522 4662 5006 5463 5540 5819 6105 6342 9322 9341 9357 9377 9398 9420 9425 9454 9459 9477 9481 9516 9548 9570 9596 9603 9609 9612 9640 9641 9660 9679 9691 9709 
+		684 2504 2634 3475 3539 4302 4517 4522 4662 5006 5463 5819 6342 9322 9341 9357 9377 9398 9420 9425 9454 9459 9477 9481 9516 9603 9612
 	}
 
 	resources={
@@ -26,9 +26,6 @@ state={
 			4662 10 #Modesto
 		}
 		victory_points = {
-			9691 20 #Fresno
-		}
-		victory_points = {
 			9425 10 #Antioch
 		}
 		victory_points = {
@@ -36,9 +33,6 @@ state={
 		}
 		victory_points = {
 			684 3 #Merced
-		}
-		victory_points = {
-			3892 2 #Madera
 		}
 		victory_points = {
 			9477 4 #Tracy
@@ -53,18 +47,6 @@ state={
 			4517 1 #Patterson
 		}
 		victory_points = {
-			9596 1 #Chowchilla
-		}
-		victory_points = {
-			6105 5 #Clovis
-		}
-		victory_points = {
-			9709 2 #Sanger
-		}
-		victory_points = {
-			3570 1 #Kerman
-		}
-		victory_points = {
 			9420 1 #Manteca
 		}
 		victory_points = {
@@ -73,12 +55,9 @@ state={
 		victory_points = {
 			9288 3 #Lodi
 		}
-		victory_points = {
-			9640 1 #Mendota
-		}
 	}
  
  state_category=city 
- manpower=2103549
+ manpower=1765142
 	buildings_max_level_factor=1.000
 }
