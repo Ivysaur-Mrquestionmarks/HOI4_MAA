@@ -947,8 +947,8 @@ ideas = {
 		FRA_affirmative_action_codified = {  
 			allowed = { original_tag = FRA }
 			modifier = {
-				research_speed_factor = 0.1
-				political_power_factor = -0.05
+				research_speed_factor = -0.05
+				political_power_factor = 0.1
 			}
 		}
 		FRA_die_fillibuster = {  

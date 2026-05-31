@@ -11,7 +11,7 @@ country_event = {
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
-			set_global_flag = war_independence_over
+			set_global_flag = global_west_coast_war_over
 		}
 	}
 	#coup succeeds
@@ -136,7 +136,9 @@ country_event = {
 		}
 	}
 }
+
 # Cascadia.2 and Cascadia.3 were Seattle events and have been removed #
+
 #what to do with the army? Neo-Nazi Coup
 country_event = {
 	id = cascadia.4

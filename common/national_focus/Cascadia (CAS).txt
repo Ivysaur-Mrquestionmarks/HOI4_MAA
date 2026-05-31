@@ -23,7 +23,7 @@ focus_tree = {
 		y = 0
 		available = {
 			has_war_with = PRA
-			NOT = { has_global_flag = war_independence_over }
+			NOT = { has_global_flag = global_west_coast_war_over }
 		}
 		allow_branch = {
 			NOT = {
@@ -48,7 +48,7 @@ focus_tree = {
 		relative_position_id = CAS_guerilla_warfare
 		available = {
 			has_war_with = PRA
-			NOT = { has_global_flag = war_independence_over }
+			NOT = { has_global_flag = global_west_coast_war_over }
 		}
 		completion_reward = {
 			CAS_up_guerilla_war_idea = yes
@@ -68,7 +68,7 @@ focus_tree = {
 		relative_position_id = CAS_learn_from_americas_past
 		available = {
 			has_war_with = PRA
-			NOT = { has_global_flag = war_independence_over }
+			NOT = { has_global_flag = global_west_coast_war_over }
 		}
 		completion_reward = {
 			CAS_up_guerilla_war_idea = yes
@@ -88,7 +88,7 @@ focus_tree = {
 		relative_position_id = CAS_learn_from_americas_past
 		available = {
 			has_war_with = PRA
-			NOT = { has_global_flag = war_independence_over }
+			NOT = { has_global_flag = global_west_coast_war_over }
 		}
 		completion_reward = {
 			CAS_up_guerilla_war_idea = yes
@@ -111,7 +111,7 @@ focus_tree = {
 		relative_position_id = CAS_taliban
 		available = {
 			has_war_with = PRA
-			NOT = { has_global_flag = war_independence_over }
+			NOT = { has_global_flag = global_west_coast_war_over }
 		}
 		completion_reward = {
 			CAS_up_guerilla_war_idea = yes
@@ -271,6 +271,32 @@ focus_tree = {
 	
 	
 	
+	
+	
+	
+	#### POST WCW POLITICAL INFIGHTING
+	focus = {
+		id = CAS_a_house_of_dynamite
+		icon = GFX_goal_CAS_Cascadian_Military
+		cost = 2.00
+		x = 20
+		y = 0
+		available = {
+			has_global_flag = global_west_coast_war_over
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = CAS_successful_nazi_coup_flag
+			}
+		}
+		completion_reward = {
+		}
+
+	}
+	
+	
+	
+	
 	#### Military ####
 	focus = {
 		id = CAS_the_cascadian_military
@@ -283,7 +309,7 @@ focus_tree = {
 		y = 5
 		
 		available = {
-			has_global_flag = war_independence_over
+			has_global_flag = global_west_coast_war_over
 		}
 		completion_reward = {
 			army_experience = 5
