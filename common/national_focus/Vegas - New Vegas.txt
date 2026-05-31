@@ -11,6 +11,7 @@ focus_tree = {
 			#tag = LAS
 		}
 	}
+	continuous_focus_position = { x = 900 y = 700 }
 	default = no
 	focus = {
 		id = LAS_declare_new_vegas
@@ -292,7 +293,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		relative_position_id = LAS_our_direction
-		x = -20
+		x = -19
 		y = 1
 		mutually_exclusive = {
 			focus = LAS_cold_cold_heart
@@ -1112,6 +1113,9 @@ focus_tree = {
 		prerequisite = {
 			focus = LAS_for_the_republic
 		}
+		available = {
+			has_completed_focus = LAS_governance_restored
+		}
 		completion_reward = {
 			
 		}
@@ -1339,6 +1343,9 @@ focus_tree = {
 		prerequisite = {
 			focus = LAS_for_the_republic
 		}
+		available = {
+			has_completed_focus = LAS_governance_restored
+		}
 		completion_reward = {
 			
 		}
@@ -1537,13 +1544,1389 @@ focus_tree = {
 			
 		}
 	}
+		focus = {
+		id = LAS_conflict_in_paradise
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_independent_vegas
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_independent_vegas
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_yes_man_faction
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_conflict_in_paradise
+		x = -6
+		y = 1
+		prerequisite = {
+			focus = LAS_conflict_in_paradise
+		}
+		mutually_exclusive = {
+			focus = LAS_extremist_faction
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_restore_sanity
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_yes_man_faction
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_yes_man_faction
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_purge_the_extremists
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_restore_sanity
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_restore_sanity
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_build_the_lucky_38
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_restore_sanity
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_restore_sanity
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_work_with_democratic_remnants
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_restore_sanity
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_restore_sanity
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_trial_of_the_false_courier
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_purge_the_extremists
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_purge_the_extremists
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_question_work_with_mob_remnants
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_work_with_democratic_remnants
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_work_with_democratic_remnants
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_form_the_provisonal_government
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_trial_of_the_false_courier
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_trial_of_the_false_courier
+		}
+		prerequisite = {
+			focus = LAS_question_work_with_mob_remnants
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_strengthen_the_executive_branch
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_form_the_provisonal_government
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_form_the_provisonal_government
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_learn_fallout_lore
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_form_the_provisonal_government
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_form_the_provisonal_government
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_exert_emergency_powers
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_form_the_provisonal_government
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_form_the_provisonal_government
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_call_the_constitutional_conference
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_learn_fallout_lore
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_strengthen_the_executive_branch
+		}
+		prerequisite = {
+			focus = LAS_learn_fallout_lore
+		}
+		prerequisite = {
+			focus = LAS_exert_emergency_powers
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_the_executive_question
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_call_the_constitutional_conference
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_call_the_constitutional_conference
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_the_legislative_question
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_call_the_constitutional_conference
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_call_the_constitutional_conference
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_the_judicial_question
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_call_the_constitutional_conference
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_call_the_constitutional_conference
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_write_the_new_constitution
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_the_legislative_question
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_the_executive_question
+		}
+		prerequisite = {
+			focus = LAS_the_legislative_question
+		}
+		prerequisite = {
+			focus = LAS_the_judicial_question
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_election_inde
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_write_the_new_constitution
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_write_the_new_constitution
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_new_vegas_republican_party_victory
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_election_inde
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = LAS_election_inde
+		}
+		mutually_exclusive = {
+			focus = LAS_peoples_democratic_party_of_new_vegas_victory
+			focus = LAS_new_vegas_freedom_party_victory
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_promote_traditional_values
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_new_vegas_republican_party_victory
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_new_vegas_republican_party_victory
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_business_subsidies
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_new_vegas_republican_party_victory
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_new_vegas_republican_party_victory
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_trade_with_denver
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_promote_traditional_values
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_promote_traditional_values
+		}
+		prerequisite = {
+			focus = LAS_business_subsidies
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_reach_out_to_denver
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_trade_with_denver
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_trade_with_denver
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_become_trumps_man_in_the_west
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_reach_out_to_denver
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_reach_out_to_denver
+		} #this will send a request to trump to annex wcz#
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_paint_the_rockies_red
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_become_trumps_man_in_the_west
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_become_trumps_man_in_the_west
+		} #if you don't get WCZ then tree stops here#
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_prepare_for_california
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_paint_the_rockies_red
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_paint_the_rockies_red
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_connect_with_pacific_patriots
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_paint_the_rockies_red
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_paint_the_rockies_red
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_undermine_the_commies
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_prepare_for_california
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_prepare_for_california
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_utilize_fallout_fans
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_connect_with_pacific_patriots
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_connect_with_pacific_patriots
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_found_the_enclave
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_undermine_the_commies
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_undermine_the_commies
+		}
+		prerequisite = {
+			focus = LAS_utilize_fallout_fans
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_retake_the_pacific
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_found_the_enclave
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_found_the_enclave
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_the_march_east
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_retake_the_pacific
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_retake_the_pacific
+		}
+		available = {
+			NOT = {
+				country_exists = PRA
+			}
+			NOT = { 
+				country_exists = CAS
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_peoples_democratic_party_of_new_vegas_victory
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_election_inde
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = LAS_election_inde
+		}
+		mutually_exclusive = {
+			focus = LAS_new_vegas_republican_party_victory
+			focus = LAS_new_vegas_freedom_party_victory
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_state_owned_industry
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_peoples_democratic_party_of_new_vegas_victory
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_peoples_democratic_party_of_new_vegas_victory
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_rebuild_welfare_system
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_peoples_democratic_party_of_new_vegas_victory
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_peoples_democratic_party_of_new_vegas_victory
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_trade_with_california
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_state_owned_industry
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_state_owned_industry
+		}
+		prerequisite = {
+			focus = LAS_rebuild_welfare_system
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_reach_out_to_washington
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_trade_with_california
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_trade_with_california
+		}
+		mutually_exclusive = {
+			focus = LAS_reach_out_to_san_francisco
+		}
+		available = {
+			NOT = {
+				PRA = {
+					has_government = democrat
+				}
+			}
+			FRA = {
+				has_government = democrat
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_reach_out_to_san_francisco
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_trade_with_california
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_trade_with_california
+		}
+		mutually_exclusive = {
+			focus = LAS_reach_out_to_washington
+		}
+		available = {
+			PRA = {
+				has_government = democrat
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_liberate_the_rockies_ind
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_reach_out_to_washington
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_reach_out_to_washington
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_liberate_california
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_liberate_the_rockies_ind
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_liberate_the_rockies_ind
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_the_western_bulwark
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_liberate_california
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_liberate_california
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_support_california
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_reach_out_to_san_francisco
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_reach_out_to_san_francisco
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_new_vegas_freedom_party_victory
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_election_inde
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_election_inde
+		}
+		mutually_exclusive = {
+			focus = LAS_new_vegas_republican_party_victory
+			focus = LAS_peoples_democratic_party_of_new_vegas_victory
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_the_right_to_bear_arms
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_new_vegas_freedom_party_victory
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_new_vegas_freedom_party_victory
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_casino_autonomy
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_new_vegas_freedom_party_victory
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_new_vegas_freedom_party_victory
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_garuntee_freedoms
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_the_right_to_bear_arms
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_the_right_to_bear_arms
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_abolish_casino_and_bar_taxes
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_casino_autonomy
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_casino_autonomy
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_connect_with_gla
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_garuntee_freedoms
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_garuntee_freedoms
+		}
+		prerequisite = { 
+			focus = LAS_abolish_casino_and_bar_taxes
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_assemble_the_families
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_connect_with_gla
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_connect_with_gla
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_secure_the_future_of_vegas
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_assemble_the_families
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_assemble_the_families
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_bring_freedom_to_california
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_secure_the_future_of_vegas
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_secure_the_future_of_vegas
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_up_north_in_montana
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_secure_the_future_of_vegas
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_secure_the_future_of_vegas
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_freedom_from_communism
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_bring_freedom_to_california
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_bring_freedom_to_california
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_liberty_restored_in_montana
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_up_north_in_montana
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_up_north_in_montana
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_march_to_seattle
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_freedom_from_communism
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_freedom_from_communism
+		}
+		prerequisite = {
+			focus = LAS_liberty_restored_in_montana
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_freedom_in_the_northwest
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_march_to_seattle
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_march_to_seattle
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_bring_freedom_back_to_texas
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_freedom_in_the_northwest
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_freedom_in_the_northwest
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_liberty_in_lone_star
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_bring_freedom_back_to_texas
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_bring_freedom_back_to_texas
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_liberate_the_plains
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_freedom_in_the_northwest
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_freedom_in_the_northwest
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_liberty_brought_to_the_plains
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_liberate_the_plains
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_liberate_the_plains
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_bring_freedom_to_the_land_of_chattles
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_liberty_in_lone_star
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_liberty_in_lone_star
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_a_land_of_freedom
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_bring_freedom_to_the_land_of_chattles
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_bring_freedom_to_the_land_of_chattles
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_liberate_the_great_lakes
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_liberty_brought_to_the_plains
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_liberty_brought_to_the_plains
+		}
+		mutually_exclusive = {
+			focus = LAS_offer_unity_to_gla
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_offer_unity_to_gla
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_liberty_brought_to_the_plains
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_liberty_brought_to_the_plains
+		}
+		mutually_exclusive = {
+			focus = LAS_liberate_the_great_lakes
+		}
+		available = {
+			GLA = {
+				has_government = libertarian
+			}
+			country_exists = GLA
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_carry_the_torch_of_freedom_and_liberty
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_liberate_the_great_lakes
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_liberate_the_great_lakes
+			focus = LAS_offer_unity_to_gla
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_carry_freedom_to_dc
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_a_land_of_freedom
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_a_land_of_freedom
+		}
+		prerequisite = {
+			focus = LAS_carry_the_torch_of_freedom_and_liberty
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_a_free_america
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_carry_freedom_to_dc
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_carry_freedom_to_dc
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_declare_new_america
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_a_free_america
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_a_free_america
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_rebuild_vegas 
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_conflict_in_paradise
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_conflict_in_paradise
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = LAS_extremist_faction
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_conflict_in_paradise
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = LAS_conflict_in_paradise
+		}
+		mutually_exclusive = {
+			focus = LAS_yes_man_faction
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_remove_the_traitors
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_extremist_faction
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_extremist_faction
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_all_hail_the_courier
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_remove_the_traitors
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_remove_the_traitors
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_the_new_families
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_all_hail_the_courier
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_all_hail_the_courier
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_ban_subversive_media
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_all_hail_the_courier
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_all_hail_the_courier
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_send_a_message_to_todd
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_all_hail_the_courier
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_all_hail_the_courier
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_distribute_propaganda
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_the_new_families
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_the_new_families
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_provide_approved_media
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_distribute_propaganda
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_distribute_propaganda
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_every_day_is_new_vegas_day
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_distribute_propaganda
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_distribute_propaganda
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_cult_of_the_courier
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_provide_approved_media
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_provide_approved_media
+		}
+		prerequisite = {
+			focus = LAS_every_day_is_new_vegas_day
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_the_courier_is_always_watching
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_cult_of_the_courier
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_cult_of_the_courier
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_the_courier_knows_all
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_the_courier_is_always_watching
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_the_courier_is_always_watching
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_prepare_the_raid
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_ban_subversive_media
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_ban_subversive_media
+		}
+		prerequisite = {
+			focus = LAS_send_a_message_to_todd
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_aint_that_a_kick_in_the_head
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_prepare_the_raid
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_prepare_the_raid
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_find_todd_howard
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_aint_that_a_kick_in_the_head
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_aint_that_a_kick_in_the_head
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_catching_the_worm
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_find_todd_howard
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_find_todd_howard
+		}
+		mutually_exclusive = {
+			focus = LAS_showdown_at_the_lucky_38
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_showdown_at_the_lucky_38
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_find_todd_howard
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_find_todd_howard
+		}
+		mutually_exclusive = {
+			focus = LAS_catching_the_worm
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_the_house_always_wins_2
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_showdown_at_the_lucky_38
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_showdown_at_the_lucky_38
+		}
+		mutually_exclusive = {
+			focus = LAS_it_just_works
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_begin_the_conquest
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_the_courier_knows_all
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_the_courier_knows_all
+		}
+		prerequisite = {
+			focus = LAS_catching_the_worm
+			focus = LAS_the_house_always_wins_2
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_ 
+		x = 
+		y = 
+		prerequisite = {
+			focus = LAS_
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_it_just_works
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_showdown_at_the_lucky_38
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_showdown_at_the_lucky_38
+		}
+		mutually_exclusive = {
+			focus = LAS_the_house_always_wins_2
+		}
+		completion_reward = {
+			
+		}
+	}
+	
 	#Legion Path#
 	focus = {
 		id = LAS_cold_cold_heart
 		icon = GFX_goal_unknown
 		cost = 5
 		relative_position_id = LAS_our_direction
-		x = 20
+		x = 26
 		y = 1
 		mutually_exclusive = {
 			focus = LAS_for_the_republic
