@@ -7,7 +7,7 @@ focus_tree = {
 			tag = LAS
 		}
 		modifier = {
-			#add = 20
+			#add = 25
 			#tag = LAS
 		}
 	}
@@ -718,6 +718,16 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = LAS_the_west_saved
+		}
+		available = {
+			FRA = {
+			has_government = democrat
+			}
+			country_exists = FRA
+			has_opinion = {
+				target = FRA
+				value > 49
+			}
 		}
 		completion_reward = {
 			
@@ -1467,6 +1477,9 @@ focus_tree = {
 		prerequisite = {
 			focus = LAS_privatize_unessasary_assets
 		}
+		available = {
+			has_war = yes
+		}
 		completion_reward = {
 			
 		}
@@ -1480,6 +1493,9 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = LAS_war_bonds
+		}
+		available = {
+			has_war = yes
 		}
 		completion_reward = {
 			
@@ -1952,16 +1968,613 @@ focus_tree = {
 			
 		}
 	}
-	
+	focus = {
+		id = LAS_purify_texas
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_nova_roma
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_nova_roma
+		}
+		available = {
+			has_completed_focus = LAS_purify_utah
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_tex_round_up_slaves
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_purify_texas
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_purify_texas
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_tex_purge_the_weak
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_purify_texas 
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_purify_texas
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_purify_the_south
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_purify_texas
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_tex_purge_the_weak
+		}
+		prerequisite = {
+			focus = LAS_tex_round_up_slaves
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_south_round_up_slaves
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_tex_round_up_slaves
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_purify_the_south
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_south_purge_the_weak
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_tex_purge_the_weak
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_purify_the_south
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_purify_the_plains
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_nova_roma
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = LAS_nova_roma
+		}
+		available = {
+			has_completed_focus = LAS_purify_texas
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_plains_round_up_slaves
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_purify_the_plains
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_purify_the_plains
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_plains_purge_the_weak
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_purify_the_plains
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_purify_the_plains
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_purify_the_great_lakes
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_purify_the_plains
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_plains_round_up_slaves
+		}
+		prerequisite = {
+			focus = LAS_plains_purge_the_weak
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_gla_round_up_slaves
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_plains_round_up_slaves
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_purify_the_great_lakes
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_gla_purge_the_weak
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_plains_purge_the_weak
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_purify_the_great_lakes
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_purify_the_northeast
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_purify_the_great_lakes
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_gla_purge_the_weak
+		}
+		prerequisite = {
+			focus = LAS_gla_round_up_slaves
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_ne_round_up_slaves
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_gla_round_up_slaves
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_purify_the_northeast
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_ne_purge_the_weak
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_gla_purge_the_weak
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_purify_the_northeast
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_purify_north_america
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_purify_texas
+		x = 0
+		y = 6
+		prerequisite = {
+			focus = LAS_rock_round_up_slaves
+		}
+		prerequisite = {
+			focus = LAS_rock_purge_the_weak
+		}
+		prerequisite = {
+			focus = LAS_south_round_up_slaves
+		}
+		prerequisite = {
+			focus = LAS_south_purge_the_weak
+		}
+		prerequisite = {
+			focus = LAS_ne_round_up_slaves
+		}
+		prerequisite = {
+			focus = LAS_ne_purge_the_weak
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_from_legion_to_empire
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_purify_north_america
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_purify_north_america
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_a_triumphant_legion
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_from_legion_to_empire
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_from_legion_to_empire
+		}
+		completion_reward = {
+			
+		}
+	}
 	focus = {
 		id = LAS_establish_the_consul_offciorium_ab_famulatus
 		icon = GFX_goal_unknown
 		cost = 1
 		relative_position_id = LAS_the_legion_reborn
-		x = -8
+		x = -10
 		y = 1
 		prerequisite = {
 			focus = LAS_the_legion_reborn
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_round_up_the_profligates
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_establish_the_consul_offciorium_ab_famulatus
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_establish_the_consul_offciorium_ab_famulatus
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_make_them_farm
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_round_up_the_profligates
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_round_up_the_profligates
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_make_them_build
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_round_up_the_profligates
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_round_up_the_profligates
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_make_them_work_in_workshop
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_round_up_the_profligates
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_round_up_the_profligates
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_break_their_backs
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_make_them_build
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_make_them_farm
+			focus = LAS_make_them_build
+			focus = LAS_make_them_work_in_workshop
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_expand_farming_infrastructure
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_make_them_farm
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_make_them_farm
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_expand_the_workshops
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_make_them_work_in_workshop
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_make_them_work_in_workshop
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_business_is_booming
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_expand_farming_infrastructure
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_expand_farming_infrastructure
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_a_supplied_legion
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_expand_the_workshops
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_expand_the_workshops
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_find_more_slaves
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_business_is_booming
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_business_is_booming
+		}
+		prerequisite = {
+			focus = LAS_a_supplied_legion
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_look_for_refugees
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_find_more_slaves
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_find_more_slaves
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_send_the_frumentarii
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_find_more_slaves
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_find_more_slaves
+		}
+		available = {
+			has_completed_focus = LAS_found_the_frumentarii
+			}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_expand_the_consul_offciorium_ab_famulatus
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_look_for_refugees
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_look_for_refugees
+		}
+		prerequisite = {
+			focus = LAS_send_the_frumentarii
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_expand_slave_infrastructure
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_expand_the_consul_offciorium_ab_famulatus
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_expand_the_consul_offciorium_ab_famulatus
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_promote_more_slave_masters
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_expand_the_consul_offciorium_ab_famulatus
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_expand_the_consul_offciorium_ab_famulatus
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_expand_slave_pens
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_expand_the_consul_offciorium_ab_famulatus
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_expand_the_consul_offciorium_ab_famulatus
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_outsource_work_to_slaves
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_expand_slave_infrastructure
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_expand_slave_infrastructure
+		}
+		prerequisite = { 
+			focus = LAS_promote_more_slave_masters
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_expand_slave_healthcare
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_promote_more_slave_masters
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_promote_more_slave_masters
+		}
+		prerequisite = {
+			focus = LAS_expand_slave_pens
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_set_up_training_centers
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_outsource_work_to_slaves
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_outsource_work_to_slaves
+			focus = LAS_expand_slave_healthcare
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_soldiers_pensions
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_expand_slave_healthcare
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_outsource_work_to_slaves
+			focus = LAS_expand_slave_healthcare
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_a_legionary_economy
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_set_up_training_centers
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_set_up_training_centers
+		}
+		prerequisite = {
+			focus = LAS_soldiers_pensions
 		}
 		completion_reward = {
 			
@@ -1972,10 +2585,457 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 1
 		relative_position_id = LAS_the_legion_reborn
-		x = 8
+		x = 10
 		y = 1
 		prerequisite = {
 			focus = LAS_the_legion_reborn
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_seize_all_guns
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_from_militia_to_legion
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_from_militia_to_legion
+		}
+		mutually_exclusive = {
+			focus = LAS_promote_martial_prowess
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_only_the_strong
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_seize_all_guns
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_seize_all_guns
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_build_more_weapons
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_seize_all_guns
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_seize_all_guns
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_performance_enhancing_drugs_1
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_seize_all_guns
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_only_the_strong
+			focus = LAS_build_more_weapons
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_may_survive
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_only_the_strong
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_only_the_strong
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_utilize_the_frumentarii
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_build_more_weapons
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_build_more_weapons
+		}
+		prerequisite = {
+			focus = LAS_found_the_frumentarii
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_power_through_strength
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_may_survive
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_may_survive
+		}
+		prerequisite = {
+			focus = LAS_utilize_the_frumentarii
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_found_the_frumentarii
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_build_more_weapons
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_build_more_weapons
+			focus = LAS_expand_weapon_production
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_promote_martial_prowess
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_from_militia_to_legion
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_from_militia_to_legion
+		}
+		mutually_exclusive = {
+			focus = LAS_seize_all_guns
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_expand_weapon_production
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_promote_martial_prowess
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_promote_martial_prowess
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_combined_arms
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_promote_martial_prowess
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_promote_martial_prowess
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_performance_enhancing_drugs_2
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_expand_weapon_production
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_expand_weapon_production
+			focus = LAS_combined_arms
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_utilize_the_frumentarii_2
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_expand_weapon_production
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_expand_weapon_production
+		}
+		prerequisite = {
+			focus = LAS_found_the_frumentarii
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_issue_bayonets
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_combined_arms
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_combined_arms
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_build_body_armor
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_utilize_the_frumentarii_2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_utilize_the_frumentarii_2
+		}
+		prerequisite = {
+			focus = LAS_issue_bayonets
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_rebirth_of_the_legionnaires
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_power_through_strength
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_power_through_strength
+			focus = LAS_build_body_armor
+		}
+		mutually_exclusive = {
+			focus = LAS_rebirth_of_the_equites_cataphractarii
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_a_problem
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_rebirth_of_the_legionnaires
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_rebirth_of_the_legionnaires
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_with_a_solution
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_a_problem
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_a_problem
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_fund_alternative_medicine
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_rebirth_of_the_legionnaires
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_rebirth_of_the_legionnaires
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_war_propoganda
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_fund_alternative_medicine
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_fund_alternative_medicine
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_the_legion_of_vegas
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_with_a_solution
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_with_a_solution
+		}
+		prerequisite = {
+			focus = LAS_war_propoganda
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_rebirth_of_the_equites_cataphractarii
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_build_body_armor
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_power_through_strength
+			focus = LAS_build_body_armor
+		}
+		mutually_exclusive = {
+			focus = LAS_rebirth_of_the_legionnaires
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_equites_cataphractarii
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_rebirth_of_the_equites_cataphractarii
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_rebirth_of_the_equites_cataphractarii
+		}
+		mutually_exclusive = {
+			focus = LAS_novae_cataphractae
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_study_tactics
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_equites_cataphractarii
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_equites_cataphractarii
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_legio_equites
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_study_tactics
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_study_tactics
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_novae_cataphractae
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_rebirth_of_the_equites_cataphractarii
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_rebirth_of_the_equites_cataphractarii
+		}
+		mutually_exclusive = {
+			focus = LAS_equites_cataphractarii
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_study_blitzkreig_tactics
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_novae_cataphractae
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_novae_cataphractae
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_build_the_novae_cataphractae
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_novae_cataphractae
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_novae_cataphractae
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_legio_ferri_et_ignis
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_novae_cataphractae
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAS_study_blitzkreig_tactics
+		}
+		prerequisite = {
+			focus = LAS_build_the_novae_cataphractae
 		}
 		completion_reward = {
 			
@@ -1990,6 +3050,28 @@ focus_tree = {
 		y = 
 		prerequisite = {
 			focus = LAS_
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_expand_horse_breeding
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_expand_farming_infrastructure
+		x = -1
+		y = 1
+	#allow_branch = {
+			has_completed_focus = {
+				focus = LAS_equites_cataphractarii
+			}
+	#}
+		prerequisite = {
+			focus = LAS_expand_farming_infrastructure
+		}
+		available = {
+			has_completed_focus = LAS_equites_cataphractarii
 		}
 		completion_reward = {
 			
