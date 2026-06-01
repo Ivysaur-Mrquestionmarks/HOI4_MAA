@@ -528,7 +528,7 @@ focus_tree = {
 			    #grand_doctrine = mass_assault
 			    sub_doctrine = large_unit_tactics
 			    #track = infantry
-			    index = 1
+			    #index = 1
 			}
 		}
 	}
@@ -590,7 +590,7 @@ focus_tree = {
 			    #grand_doctrine = mass_assault
 			    sub_doctrine = infiltration_tactics
 			    #track = infantry
-			    index = 1
+			    #index = 1
 			}
 		}
 	}
@@ -622,7 +622,7 @@ focus_tree = {
 			    grand_doctrine = mass_assault
 			   #sub_doctrine = large_unit_tactics
 			    #track = infantry
-			    index = 1
+			    #index = 1
 			}
 		}
 	}
@@ -745,7 +745,7 @@ focus_tree = {
 			    amount = 50
 			    # FILTERS:
 			    grand_doctrine = new_mobile_warfare
-			    index = 1
+			    #index = 1
 			}
 			swap_ideas = {
 				remove_idea = SEM_new_military
@@ -823,7 +823,7 @@ focus_tree = {
 			IF = {
 				LIMIT = {
 					NOT = {
-						has_technology = early_ship_hull_carrier
+						has_tech = early_ship_hull_carrier
 					}
 				}
 				set_technology = {
@@ -880,7 +880,7 @@ focus_tree = {
 			    amount = 50
 			    # FILTERS:
 			    grand_doctrine = new_mobile_warfare
-			    index = 1
+			    #index = 1
 			}
 			swap_ideas = {
 				remove_idea = SEM_new_military_1
@@ -913,7 +913,7 @@ focus_tree = {
 			    amount = 100
 			    # FILTERS:
 			    grand_doctrine = new_mobile_warfare
-			    index = 1
+			    #index = 1
 			}
 		}
 	}
@@ -1444,101 +1444,7 @@ focus_tree = {
 			add_to_variable = { SEM_stability_factor = 0.10 tooltip = stability_factor_tt }
 		}
 	}
-	focus = {
-		id = SEM_embrace_christianity
-		icon = GFX_goal_SEM_embrace_christianity
-		cost = 5.00
-		x = 1
-		y = 1
-		relative_position_id = SEM_continue_seminole_tourism
-		ai_will_do = { 
-			factor = 300
-		}
-		mutually_exclusive = {
-			focus = SEM_recognize_the_israel_connection
-			focus = SEM_return_to_animistic_tradition
-		}
-		prerequisite = {
-			focus = SEM_continue_seminole_tourism
-			#focus = SEM_end_the_rape_of_culture
-		}
-		completion_reward = {
-			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
-			add_to_variable = { SEM_stability_factor = 0.1 tooltip = stability_factor_tt }
-			add_to_variable = { SEM_political_power_factor = 0.05 tooltip = political_power_factor_tt }
-		}
-	}
-	focus = {
-		id = SEM_return_to_animistic_tradition
-		icon = GFX_goal_SEM_return_to_animistic_tradition
-		cost = 4.00
-		x = 5
-		y = 1
-		relative_position_id = SEM_continue_seminole_tourism
-		ai_will_do = { 
-			factor = 300
-		}
-		mutually_exclusive = {
-			focus = SEM_recognize_the_israel_connection
-			focus = SEM_embrace_christianity
-		}
-		prerequisite = {
-			#focus = SEM_continue_seminole_tourism
-			focus = SEM_end_the_rape_of_culture
-		}
-		completion_reward = {
-			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
-			add_to_variable = { SEM_war_support_factor = 0.05 tooltip = war_support_factor_tt }
-			add_to_variable = { SEM_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt }
-			add_to_variable = { SEM_monthly_population = 0.07 tooltip = monthly_population_tt }
-		}
-	}
-	focus = {
-		id = SEM_recognize_the_israel_connection
-		icon = GFX_goal_SEM_recognize_the_israeli_condition
-		cost = 5.00
-		x = 3
-		y = 1
-		relative_position_id = SEM_continue_seminole_tourism
-		ai_will_do = { 
-			factor = 300
-		}
-		available = {
-			ZIO = {
-				exists = yes
-			}
-		}
-		mutually_exclusive = {
-			focus = SEM_return_to_animistic_tradition
-			focus = SEM_embrace_christianity
-		}
-		prerequisite = {
-			focus = SEM_continue_seminole_tourism
-			focus = SEM_end_the_rape_of_culture
-		}
-		completion_reward = {
-			country_event = sem_israel.1
-
-			IF = {
-				LIMIT = {
-					ZIO = {
-						exists = yes
-					}
-				}
-				ZIO = {
-					add_opinion_modifier = {
-					    target = SEM
-					    modifier = large_increase
-					}
-				}
-			}
-
-			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
-			add_to_variable = { SEM_stability_factor = -0.20 tooltip = stability_factor_tt }
-			add_to_variable = { SEM_political_power_factor = 0.10 tooltip = political_power_factor_tt }
-
-		}
-	}
+	
 	focus = {
 		id = SEM_annual_green_corn_ceremony
 		icon = GFX_goal_SEM_green_corn_dance
@@ -1722,6 +1628,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 		id = SEM_end_the_rape_of_culture
 		icon = GFX_goal_SEM_end_the_rape_of_culture
@@ -1785,6 +1692,101 @@ focus_tree = {
 			    value = 0.1
 			    #tooltip_side = my_bop_side
 			}
+		}
+	}
+	focus = {
+		id = SEM_embrace_christianity
+		icon = GFX_goal_SEM_embrace_christianity
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = SEM_continue_seminole_tourism
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = SEM_recognize_the_israel_connection
+			focus = SEM_return_to_animistic_tradition
+		}
+		prerequisite = {
+			focus = SEM_continue_seminole_tourism
+			#focus = SEM_end_the_rape_of_culture
+		}
+		completion_reward = {
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_stability_factor = 0.1 tooltip = stability_factor_tt }
+			add_to_variable = { SEM_political_power_factor = 0.05 tooltip = political_power_factor_tt }
+		}
+	}
+	focus = {
+		id = SEM_return_to_animistic_tradition
+		icon = GFX_goal_SEM_return_to_animistic_tradition
+		cost = 4.00
+		x = 5
+		y = 1
+		relative_position_id = SEM_continue_seminole_tourism
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = SEM_recognize_the_israel_connection
+			focus = SEM_embrace_christianity
+		}
+		prerequisite = {
+			#focus = SEM_continue_seminole_tourism
+			focus = SEM_end_the_rape_of_culture
+		}
+		completion_reward = {
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_war_support_factor = 0.05 tooltip = war_support_factor_tt }
+			add_to_variable = { SEM_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt }
+			add_to_variable = { SEM_monthly_population = 0.07 tooltip = monthly_population_tt }
+		}
+	}
+	focus = {
+		id = SEM_recognize_the_israel_connection
+		icon = GFX_goal_SEM_recognize_the_israeli_condition
+		cost = 5.00
+		x = 3
+		y = 1
+		relative_position_id = SEM_continue_seminole_tourism
+		ai_will_do = { 
+			factor = 300
+		}
+		available = {
+			ZIO = {
+				exists = yes
+			}
+		}
+		mutually_exclusive = {
+			focus = SEM_return_to_animistic_tradition
+			focus = SEM_embrace_christianity
+		}
+		prerequisite = {
+			focus = SEM_continue_seminole_tourism
+			focus = SEM_end_the_rape_of_culture
+		}
+		completion_reward = {
+			country_event = sem_israel.1
+
+			IF = {
+				LIMIT = {
+					ZIO = {
+						exists = yes
+					}
+				}
+				ZIO = {
+					add_opinion_modifier = {
+					    target = SEM
+					    modifier = large_increase
+					}
+				}
+			}
+
+			custom_effect_tooltip = SEM_modify_tradition_modifier_tt
+			add_to_variable = { SEM_stability_factor = -0.20 tooltip = stability_factor_tt }
+			add_to_variable = { SEM_political_power_factor = 0.10 tooltip = political_power_factor_tt }
+
 		}
 	}
 	focus = {
@@ -2590,7 +2592,7 @@ focus_tree = {
 				limit = {
 					has_idea = SEM_native_people_be_like
 				}
-				remove_ideas = has_idea = SEM_native_people_be_like
+				remove_ideas = SEM_native_people_be_like
 			}
 			IF = {
 				limit = {
@@ -2608,7 +2610,7 @@ focus_tree = {
 				limit = {
 					has_idea = SEM_white_people_be_like_happy
 				}
-				remove_ideas = has_idea = SEM_white_people_be_like_happy
+				remove_ideas = SEM_white_people_be_like_happy
 			}
 			add_ideas = SEM_racial_harmony
 		}
@@ -3971,17 +3973,14 @@ focus_tree = {
 				LIMIT = {
 					has_global_flag = Dixie_Collapse_Global
 				}
-				all_country = {
-					LIMIT = {
-						tag = CSA
-						tag = ZIO
-						tag = LGB
-						tag = KKK
-						tag = APA
-						tag = AFR
-						tag = CSB
-					}
-					exists = no
+				NOT = {
+					country_exists = CSA
+					country_exists = ZIO
+					country_exists = LGB
+					country_exists = KKK
+					country_exists = APA
+					country_exists = AFR
+					country_exists = CSB
 				}
 			}
 			ELSE = {

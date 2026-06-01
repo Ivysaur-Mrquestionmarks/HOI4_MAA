@@ -367,13 +367,15 @@ characters={
 				anti_communist_crusader
 			}
 			on_add = {
-				if = {
-					limit = {
-						has_government = libertarian_left
-					}
-					add_popularity = {
-						ideology = libertarian_left
-						popularity = 0.05
+				ROOT = {
+					if = {
+						limit = {
+							has_government = libertarian_left
+						}
+						add_popularity = {
+							ideology = libertarian_left
+							popularity = 0.05
+						}
 					}
 				}
 				add_power_balance_value = {

@@ -2387,7 +2387,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AFS_begin_the_plot
 		mutually_exclusive = { 
-			focus = AFS_mattiss_ohio
+			focus = AFS_mattiss_victory
 		}
 		prerequisite = {
 			focus = AFS_begin_the_plot
@@ -3562,7 +3562,42 @@ focus_tree = {
 			}
 		}
 	}
-
+	focus = {
+		id = AFS_anything_and_everything_for_mother_nature
+		icon = GFX_goal_AFS_anything_and_everything_for_mother_nature
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = AFS_natures_strongest_soldiers
+		prerequisite = {
+			focus = AFS_natures_strongest_soldiers
+		}
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+			army_experience = 35
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.35
+				uses = 2
+				category = land_doctrine
+			}
+			add_mastery_bonus = {
+				bonus = 0.1
+				days = 300
+				name = AFS_anything_and_everything_for_mother_nature
+				track = infantry
+			}
+			add_mastery_bonus = {
+				bonus = 0.1
+				days = 300
+				name = AFS_anything_and_everything_for_mother_nature
+				track = armor
+			}
+		}
+	}
 	focus = {
 		id = AFS_train_the_children
 		icon = GFX_goal_AFS_train_the_children
@@ -3635,42 +3670,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = AFS_anything_and_everything_for_mother_nature
-		icon = GFX_goal_AFS_anything_and_everything_for_mother_nature
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = AFS_natures_strongest_soldiers
-		prerequisite = {
-			focus = AFS_natures_strongest_soldiers
-		}
-		select_effect = {  }
-		allow_branch = {
-		}
-		available = {
-		}
-		completion_reward = {
-			army_experience = 35
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.35
-				uses = 2
-				category = land_doctrine
-			}
-			add_mastery_bonus = {
-				bonus = 0.1
-				days = 300
-				name = AFS_anything_and_everything_for_mother_nature
-				track = infantry
-			}
-			add_mastery_bonus = {
-				bonus = 0.1
-				days = 300
-				name = AFS_anything_and_everything_for_mother_nature
-				track = armor
-			}
-		}
-	}
+	
 
 	focus = {
 		id = AFS_a_green_internationale
@@ -7593,7 +7593,29 @@ focus_tree = {
             }
 		}
 	}
-
+	focus = {
+		id = AFS_serve_the_duke
+		icon = GFX_goal_AFS_serve_the_duke
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = AFS_the_dukes_guard
+		prerequisite = {
+			focus = AFS_the_dukes_guard
+		}
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+		    add_to_variable = {
+				var = AFS.var_conscription_level
+				value = 0.02
+				tooltip = conscription_factor_tt
+			}
+		}
+	}
 	focus = {
 		id = AFS_the_dukes_royal_airforce
 		icon = GFX_goal_AFS_the_dukes_royal_airforce
@@ -7674,29 +7696,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = AFS_serve_the_duke
-		icon = GFX_goal_AFS_serve_the_duke
-		cost = 5
-		x = -2
-		y = 1
-		relative_position_id = AFS_the_dukes_guard
-		prerequisite = {
-			focus = AFS_the_dukes_guard
-		}
-		select_effect = {  }
-		allow_branch = {
-		}
-		available = {
-		}
-		completion_reward = {
-		    add_to_variable = {
-				var = AFS.var_conscription_level
-				value = 0.02
-				tooltip = conscription_factor_tt
-			}
-		}
-	}
+	
 
 	focus = {
 		id = AFS_follow_mike_dewines_path
@@ -8020,6 +8020,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = AFS_enforce_vances_government_policies
+		mutually_exclusive = {
+			focus = AFS_right_wing_dominance_over_the_government
+		}
 		prerequisite = {
 			focus = AFS_enforce_vances_government_policies
 		}

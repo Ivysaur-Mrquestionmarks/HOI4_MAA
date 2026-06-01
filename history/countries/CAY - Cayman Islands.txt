@@ -38,6 +38,7 @@ if = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
 		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
 		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
@@ -57,6 +58,33 @@ if = {
 		improved_secondary_battery = 1
 		basic_fire_control_system = 1
 	}
+	create_equipment_variant = {
+		name = "Dart Management Class"				
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Dart Enterprises Class"
+		type = ship_hull_submarine_1
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	set_naval_oob = "CAY_navy_mtg"
 }
 
 set_convoys = 200
@@ -121,37 +149,5 @@ if = {
 		}
 	}
 	set_naval_oob = "CAY_navy"
-}
-if = {
-	limit = { 
-		has_dlc = "Man the Guns" 
-	}
-	create_equipment_variant = {
-		name = "Dart Management Class"				
-		type = ship_hull_light_1
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_depth_charge_1
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Dart Enterprises Class"
-		type = ship_hull_submarine_1
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_torpedo_sub_1
-		}
-	}
-	set_naval_oob = "CAY_navy_mtg"
 }
 country_event = { id = cayman.1 days = 215 }

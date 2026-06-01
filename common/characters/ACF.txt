@@ -41,7 +41,6 @@ characters={
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 2
-			legacy_id = 10002
 			visible = { NOT = { has_completed_focus = Visigothic_Kingdom }}
 		}
 	}
@@ -69,7 +68,6 @@ characters={
 			defense_skill = 1
 			planning_skill = 3
 			logistics_skill = 1
-			legacy_id = 10001
 			visible = { NOT = { has_completed_focus = Visigothic_Kingdom }}
 		}
 	}
@@ -98,7 +96,6 @@ characters={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 4
-			legacy_id = 10006
 			visible = { has_completed_focus = Visigothic_Kingdom }
 		}
 	}
@@ -141,7 +138,6 @@ characters={
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 10000
 			visible = { NOT = { has_completed_focus = Visigothic_Kingdom }}
 		}
 	}
@@ -163,7 +159,6 @@ characters={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 1
-			legacy_id = 10007
 			visible = { has_completed_focus = Visigothic_Kingdom }
 		}
 	}
@@ -182,7 +177,6 @@ characters={
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 1
-			legacy_id = 10008
 			visible = { has_completed_focus = Visigothic_Kingdom }
 		}
 	}
@@ -201,7 +195,6 @@ characters={
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 2
-			legacy_id = 10009
 			visible = { has_completed_focus = Visigothic_Kingdom }
 		}
 	}
@@ -222,7 +215,6 @@ characters={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 4
-			legacy_id = 10005
 			visible = { NOT = { has_completed_focus = Visigothic_Kingdom }}
 		}
 	}
@@ -241,7 +233,6 @@ characters={
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 2
-			legacy_id = 10004
 			visible = { NOT = { has_completed_focus = Visigothic_Kingdom }}
 		}
 	}
@@ -260,7 +251,6 @@ characters={
 			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id = 10003
 			visible = { NOT = { has_completed_focus = Visigothic_Kingdom }}
 		}
 	}

@@ -12,9 +12,9 @@ focus_tree = {
 		reset_on_civilwar = no
 	
 	continuous_focus_position = { x = 2250 y = 25 }
-    initial_show_position = {
-		focus = KMT_prision_election
-	}
+    #initial_show_position = {
+	#	focus = KMT_prision_election
+	#}
 
 	 ######  ########    ###    ########  ######## #### ##    ##  ######      ########  #######   ######  ##     ##  ######  ########  ######  
 	##    ##    ##      ## ##   ##     ##    ##     ##  ###   ## ##    ##     ##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
@@ -1473,7 +1473,10 @@ focus_tree = {
 			factor = 300
 		}
 		available = {
-			SIN_theodore_kaczynski = { is_country_leader = yes }
+			has_country_leader = {
+                character = SIN_theodore_kaczynski
+                ruling_only = yes
+            }
 		}
 		completion_reward = {
 			add_stability = 0.02

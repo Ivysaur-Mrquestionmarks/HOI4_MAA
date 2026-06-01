@@ -52,7 +52,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = military_dictatorship
-			traits = PEN_aloof_authority
+			traits = { PEN_aloof_authority }
 			expire = "2060.1.1.1"
 			id = -1
 		}

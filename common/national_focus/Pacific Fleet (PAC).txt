@@ -1801,7 +1801,7 @@ focus_tree = {
 		allow_branch = {
 		}
 		mutually_exclusive = {
-			focus = PAC_forever_with_the_militias
+			focus = PAC_forever_with_the_guardians
 		}
 		prerequisite = { focus = PAC_privatization }
 		prerequisite = { focus = PAC_restoring_old_liberties }
@@ -2948,7 +2948,12 @@ focus_tree = {
 		bypass = { NOT = { country_exists = TEX } }
 		available = {
 			TEX = { has_government = libertarian_right }
-			TEX = { has_country_leader = TEX_ted_cruz }
+			TEX = { 
+				has_country_leader = {
+					character = TEX_ted_cruz
+					ruling_only = yes
+				} 	
+			}
 			NOT = {
 			    has_war_with = TEX
 			}

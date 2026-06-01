@@ -215,7 +215,7 @@ armored_infantry_support = {
         }
         maintenance_routines = {
         #3
-            armored_maintenance = {
+            mechanized = {
                 battalion_mult = {
                     category = category_all_armor
                     max_strength = 0.15

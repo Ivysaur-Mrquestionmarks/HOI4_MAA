@@ -25,7 +25,7 @@ characters={
 			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id = 10029
+			
 		}
 	}
 	ABG_doug_ducey = {
@@ -74,7 +74,6 @@ characters={
 			defense_skill = 3
 			planning_skill = 4
 			logistics_skill = 2
-			legacy_id = 10031
 			visible = { NOT = { has_cosmetic_tag = Pheonix_AZ } }
 		}
 	}
@@ -94,7 +93,6 @@ characters={
 			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 1
-			legacy_id = 10030
 			visible = { NOT = { has_cosmetic_tag = Pheonix_AZ } }
 		}
 	}
@@ -113,7 +111,6 @@ characters={
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 2
-			legacy_id = 10032
 			visible = { NOT = { has_cosmetic_tag = Pheonix_AZ } }
 		}
 	}
@@ -132,7 +129,6 @@ characters={
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id = 10033
 			visible = { NOT = { has_cosmetic_tag = Pheonix_AZ } }
 		}
 	}
@@ -151,7 +147,6 @@ characters={
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 10034
 			visible = { NOT = { has_cosmetic_tag = Pheonix_AZ } }
 		}
 	}
@@ -170,7 +165,6 @@ characters={
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 2
-			legacy_id = 10035
 			visible = { NOT = { has_cosmetic_tag = Pheonix_AZ } }
 		}
 	}

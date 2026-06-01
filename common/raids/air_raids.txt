@@ -20,7 +20,7 @@ types = {
 			}
 			modifier = {
 				factor = 0
-				date < 2024.5.1 # No one probably does anything interesting before this anyway :)
+				date < 1939.5.1 # No one probably does anything interesting before this anyway :)
 			}
 			modifier = {
 				# Don't target anyone who is not a potential enemy
@@ -71,10 +71,13 @@ types = {
 		arrow = {
 		    type = air
 		}
-        unit_model = {
-            type = equipment
-        }
 
+		unit_requirements = {
+			equipment = {
+				type = { tactical_bomber }
+				amount = { min = 70 }
+			}
+		}
 		unit_requirements = {
 			equipment = {
 				type = { strategic_bomber }
@@ -314,10 +317,13 @@ types = {
 		arrow = {
 		    type = air
 		}
-        unit_model = {
-            type = equipment
-        }
 
+		unit_requirements = {
+			equipment = {
+				type = { tactical_bomber }
+				amount = { min = 70  }
+			}
+		}
 
 		unit_requirements = {
 			equipment = {
@@ -516,9 +522,7 @@ types = {
 
 		command_power = 20 # command power allocation cost
 
-		ai_will_do = {
-			base = 1
-		}
+		
 
 		allowed = {
 			has_dlc = "Gotterdammerung"
@@ -555,9 +559,6 @@ types = {
 		arrow = {
 		    type = air
 		}
-        unit_model = {
-            type = equipment
-        }
 
 		unit_requirements = {
 			equipment = {
@@ -801,7 +802,7 @@ types = {
 
 	oilfield_raid = {
 		days_to_prepare = 90
-
+		
 		ai_will_do = {
 			base = 1
 			modifier = {
@@ -821,6 +822,7 @@ types = {
 					has_war_with = FROM
 				}
 			}
+			
 		}
 
 		category = air_raids
@@ -877,9 +879,6 @@ types = {
 		arrow = {
 		    type = air
 		}
-        unit_model = {
-            type = equipment
-        }
 		launch_sound = raid_launch_air
 
 		unit_requirements = {
@@ -1117,9 +1116,6 @@ types = {
 		arrow = {
 		    type = air
 		}
-        unit_model = {
-            type = equipment
-        }
 
 		unit_requirements = {
 			equipment = {
@@ -1343,9 +1339,6 @@ types = {
 		arrow = {
 		    type = air
 		}
-        unit_model = {
-            type = equipment
-        }
 
 		unit_requirements = {
 			equipment = {

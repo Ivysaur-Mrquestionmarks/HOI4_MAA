@@ -3196,9 +3196,9 @@ focus_tree = {
 		prerequisite = {
 			focus = IDA_War_Plan_White
 		}
-		mutually_exclusive = {
-			focus = IDA_Operation_Wolverine
-		}
+		#mutually_exclusive = {
+		#	focus = IDA_Operation_Wolverine
+		#}
 		ai_will_do = {
 			factor = 50
 		}

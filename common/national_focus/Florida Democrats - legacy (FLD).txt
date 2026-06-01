@@ -170,7 +170,7 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			has_war = NO
+			has_war = no
 		}
 		prerequisite = {
 			focus = FLI_attack_nasa
@@ -360,19 +360,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FLI_crypto_economy
-		icon = GFX_goal_FLD_internal_matters
-		cost = 5
-		prerequisite = { 
-			focus = FLI_invite_tech_companies
-		}
-		relative_position_id = FLI_invite_tech_companies
-		x = -1
-		y = 1
-		completion_reward = {
-		}
-	}
-	focus = {
 		id = FLI_invite_tech_companies
 		icon = GFX_goal_FLD_internal_matters
 		cost = 5
@@ -385,6 +372,20 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	focus = {
+		id = FLI_crypto_economy
+		icon = GFX_goal_FLD_internal_matters
+		cost = 5
+		prerequisite = { 
+			focus = FLI_invite_tech_companies
+		}
+		relative_position_id = FLI_invite_tech_companies
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+	}
+	
 	focus = {
 		id = FLI_miamicoin
 		icon = GFX_goal_FLD_internal_matters

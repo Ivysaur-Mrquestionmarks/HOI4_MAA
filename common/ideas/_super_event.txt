@@ -18,9 +18,12 @@ ideas = {
 			modifier = {
 
 				political_power_gain = 0.1
-				news_event = { Remember to add the event :3
+				
+			}
+			on_add = {
+				news_event = { #Remember to add the event :3
     				id = gkj.21
-				}
+				}			
 			}
 		}
 

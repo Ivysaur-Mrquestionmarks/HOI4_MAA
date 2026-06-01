@@ -4,10 +4,10 @@ focus_tree = {
 	
 	country = {
 		factor = 0
-		#modifier = {
-		#	add = 10
-		#	tag = TEX
-		#}
+		modifier = {
+			add = 0
+			tag = TEX
+		}
 	}
 	shared_focus = TEX_economy
 	
@@ -4181,19 +4181,19 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = TEX_rework_bring_monarchism_to_cascadia }
 		available = {
-				CAS = {
-						has_completed_focus = CAS_the_crown
-				}
-				has_completed_focus = TEX_rework_international_diplo
+			CAS = {
+				has_completed_focus = CAS_the_crown
+			}
+			has_completed_focus = TEX_rework_international_diplo
 		}
 		completion_reward = {
-				TEX = { add_to_faction = CAS }
-				CAS = {
-						declare_war_on = {
-							target = LIB
-							type = annex_everything
-						}
-				}
+			TEX = { add_to_faction = CAS }
+			CAS = {
+					declare_war_on = {
+						target = LIB
+						type = annex_everything
+					}
+			}
 		}
 	}
 	focus = {

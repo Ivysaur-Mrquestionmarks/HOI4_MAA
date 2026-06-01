@@ -629,25 +629,13 @@ ideas = {
 			}
 			ai_will_do = {
 				factor = 1
-			}
-		}
-
-		operational_reserve_spirit = {
-			ledger = army
-			available = { has_doctrine = mass_assault }
-			modifier = {
-				tactic_relentless_assault_preferred_weight_factor = 1
-				army_strength_factor = 0.1
-			}
-			ai_will_do = {
-				base = 1
-
+				
 				modifier = {
 					factor = 0
 					NOT = { has_dlc = "No Step Back" }
 				}
-
 			}
+			
 		}
 		all_arms_at_defense_army_spirit = {
 			ledger = army

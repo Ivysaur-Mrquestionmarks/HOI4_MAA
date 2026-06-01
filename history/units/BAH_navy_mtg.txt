@@ -6,17 +6,17 @@ units = {
 		task_force = {				
 			name = "Royal Bahamas Defence Force"			
 			location = 2714
-			ship = { name = "HMBS Bahamas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAY version_name = "Bahamas Class" } } }
-			ship = { name = "HMBS Nassau" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAY version_name = "Bahamas Class" } } }
-			ship = { name = "HMBS Arthur Dion Hanna" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAY version_name = "Legend Class" } } }
-			ship = { name = "HMBS Durward Knowles" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAY version_name = "Legend Class" } } }
-			ship = { name = "HMBS Leon Livingstone Smith" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAY version_name = "Legend Class" } } }
-			ship = { name = "HMBS Rolly Gray" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAY version_name = "Missile boat" } } }
-			ship = { name = "HMBS Lignum Vitae" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAY version_name = "Floral Class" } } }
-			ship = { name = "HMBS Cascarilla" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAY version_name = "Floral Class" } } }
-			ship = { name = "HMBS Kamalame" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAY version_name = "Missile boat" } } }
-			ship = { name = "HMBS Madeira" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAY version_name = "Missile boat" } } }
-			ship = { name = "HMBS Lawrence Major" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAY version_name = "Damen Stan Class" } } }
+			ship = { name = "HMBS Bahamas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAH version_name = "Bahamas Class" } } }
+			ship = { name = "HMBS Nassau" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAH version_name = "Bahamas Class" } } }
+			ship = { name = "HMBS Arthur Dion Hanna" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAH version_name = "Legend Class" } } }
+			ship = { name = "HMBS Durward Knowles" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAH version_name = "Legend Class" } } }
+			ship = { name = "HMBS Leon Livingstone Smith" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAH version_name = "Legend Class" } } }
+			ship = { name = "HMBS Rolly Gray" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAH version_name = "Missile boat" } } }
+			ship = { name = "HMBS Lignum Vitae" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAH version_name = "Floral Class" } } }
+			ship = { name = "HMBS Cascarilla" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAH version_name = "Floral Class" } } }
+			ship = { name = "HMBS Kamalame" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAH version_name = "Missile boat" } } }
+			ship = { name = "HMBS Madeira" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAH version_name = "Missile boat" } } }
+			ship = { name = "HMBS Lawrence Major" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BAH version_name = "Damen Stan Class" } } }
 		}
 	}
 }

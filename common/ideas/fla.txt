@@ -39,7 +39,7 @@ ideas = {
 					NOT = {
 						country_exists = NSA
 					}
-					has_war = NO
+					has_war = no
 				}
 			}
 			targeted_modifier = { tag = NSA attack_bonus_against = 0.15 }
@@ -50,7 +50,7 @@ ideas = {
 					NOT = {
 						country_exists = FLD
 					}
-					has_war = NO
+					has_war = no
 				}
 			}
 			targeted_modifier = { tag = FLD attack_bonus_against = 0.15 }
@@ -61,14 +61,14 @@ ideas = {
 					NOT = {
 						country_exists = SEM
 					}
-					has_war = NO
+					has_war = no
 				}
 			}
 			targeted_modifier = { tag = SEM attack_bonus_against = 0.15 }
 		}
 		FLA_final_push_idea = {
 			cancel = {
-				has_war = NO
+				has_war = no
 			}
 			modifier = { army_attack_factor = 0.10 army_defence_factor = 0.10 }
 		}
@@ -78,7 +78,7 @@ ideas = {
 					NOT = {
 						country_exists = FLA
 					}
-					has_war = NO
+					has_war = no
 				}
 			}
 			targeted_modifier = { tag = FLA attack_bonus_against = 0.15 }

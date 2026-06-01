@@ -166,7 +166,7 @@ ideas = {
 				non_core_manpower = 0.1
 				army_core_defence_factor = 0.3
 				army_core_attack_factor = 0.15
-				autocrat_drift = -0.1
+				autocratic_drift = -0.1
 			}
 		}
 		SEM_tribal_education = {
@@ -235,7 +235,7 @@ ideas = {
 			}
 		}
 		SEM_taking_back_what_is_ours = {
-			allowed = { origin al_tag = SEM }
+			allowed = { original_tag = SEM }
 			picture = SEM_seminolization
 			modifier = {
 				production_speed_buildings_factor = -0.1
