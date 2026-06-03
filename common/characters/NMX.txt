@@ -59,4 +59,35 @@ characters={
 			visible = { has_government = authoritarian_left }
 		}
 	}
+
+	NMX_greggory_d_hull = {
+		name = "Gregg Hull"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TEX/gregg_hull.tga"
+			}
+		}
+		country_leader = {
+			ideology = conservative
+			traits = {
+				#mayor_of_rio_rancho
+			}
+		}
+	}
+
+	NMX_duke_rodriguez = {
+		name = "Duke Rodriguez"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TEX/duke_rodriguez.tga"
+			}
+		}
+		country_leader = {
+			ideology = Jeffersonianism
+			traits = {
+				#the_duke
+			}
+		}
+	}
+
 }
