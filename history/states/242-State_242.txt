@@ -3,7 +3,7 @@ state={
 	id=242
 	name="STATE_242"
 	provinces={
-		3690 9246 
+		3690 9246 12146 12148
 	}
 
 	
@@ -16,6 +16,9 @@ state={
 		}
 		victory_points = {
 			3690 30
+		}
+		victory_points = {
+			12146 8
 		}
 
 		buildings = {

@@ -3,7 +3,7 @@ state={
 	id=244
 	name="STATE_244"
 	provinces={
-		1545 2233 2566 3415 3719 4200 4971 6156 9078 9084 9089 9115 9121 9159 9205 9218 9281 9300 9301 9334 9338 
+		1545 2233 2566 3415 3719 4200 4835 4971 6156 9078 9084 9089 9115 9121 9159 9205 9218 9281 9300 9301 9334 9338 12145 12147 
 	}
 
 	resources={
@@ -21,10 +21,34 @@ state={
 			3415 20 #Baltimore
 		}
 		victory_points = {
-			6156 2 #Annapolis
+			9218 5 #Annapolis
 		}
 		victory_points = {
-			3719 4 #Ellicott City
+			6156 4 #Laurel
+		}
+		victory_points = {
+			9121 3 #Havre de Grace
+		}
+		victory_points = {
+			12145 3 #Joint Base Andrews
+		}
+		victory_points = {
+			4835 5 #Camp David
+		}
+		victory_points = {
+			2233 6 #Towson
+		}
+		victory_points = {
+			9281 6 #Bowie
+		}
+		victory_points = {
+			1545 7 #Glen Burnie
+		}
+		victory_points = {
+			3719 8 #Ellicott City
+		}
+		victory_points = {
+			9300 8 #Waldorf
 		}
 		
 		buildings = {

@@ -15,7 +15,11 @@ state={
 			infrastructure = 5
 		}
 		victory_points = {  #Tuba City
-		3967 1 }
+			3967 1 
+		}
+		victory_points = { Window Rock
+		 	2368 5
+		}
 	}
 	manpower=178967
 	buildings_max_level_factor=1.000
