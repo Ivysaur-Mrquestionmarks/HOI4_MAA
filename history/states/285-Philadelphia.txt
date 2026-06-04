@@ -3,7 +3,7 @@ state={
 	id=285
 	name="STATE_285"
 	provinces={
-		1272 4703 4807 8999 9022 9041 9056 
+		1272 4703 4807 7159 7209 7287 7288 8999 9022 9041 9056 12100
 	}
 
 	resources={
@@ -22,14 +22,20 @@ state={
 		victory_points = { #WestChester
 			9022 3 
 		}
+		victory_points = { #BalaCynwyd
+			7209 2 
+		}
+		victory_points = { #Quakertown
+			7159 1 
+		}
 		victory_points = { #KOP
 			8999 5 
 		}
-		victory_points = { #Bensalem
+		victory_points = { #Levittown
 			4703 6 
 		}
 		victory_points = { #UpperDarby
-			9041 7 
+			12100 7 
 		}
 
 		buildings = {
