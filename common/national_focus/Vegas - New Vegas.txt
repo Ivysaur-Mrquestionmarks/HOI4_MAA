@@ -11,15 +11,15 @@ focus_tree = {
 			#tag = LAS
 		}
 	}
-	continuous_focus_position = { x = 900 y = 700 }
+	continuous_focus_position = { x = 1950 y = 1210 }
 	default = no
 	focus = {
 		id = LAS_declare_new_vegas
 		icon = GFX_goal_unknown
 		cost = 5.00
-		x = 11
+		relative_position_id = LAS_mormon_war
+		x = 24
 		y = 0
-		#relative_position_id = 
 		prerequisite = {
 			#focus = 
 		}
@@ -2600,6 +2600,200 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = LAS_rebuild_consumer_industry
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_rebuild_vegas
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_rebuild_vegas
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_rebuild_military_industry
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_rebuild_vegas
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_rebuild_vegas
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_repair_infrastructure
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_rebuild_consumer_industry
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_rebuild_consumer_industry
+		}
+		prerequisite = {
+			focus = LAS_rebuild_military_industry
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_employment_scheme
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_repair_infrastructure 
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_repair_infrastructure
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_resource_exploitation
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_repair_infrastructure
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_repair_infrastructure
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_industrial_expansion
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_employment_scheme
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_employment_scheme
+		}
+		prerequisite = {
+			focus = LAS_resource_exploitation
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_consumer_expansion_1
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_industrial_expansion 
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_industrial_expansion
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_consumer_expansion_2
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_consumer_expansion_1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_consumer_expansion_1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_military_expansion_1
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_industrial_expansion
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_industrial_expansion
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_military_expansion_2
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_military_expansion_1 
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_military_expansion_1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_boost_effeciantcy
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_industrial_expansion 
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_industrial_expansion
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_small_but_mighty
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_boost_effeciantcy 
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_boost_effeciantcy
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_an_industrial_vegas
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_small_but_mighty
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_consumer_expansion_2
+		}
+		prerequisite = {
+			focus = LAS_small_but_mighty
+		}
+		prerequisite = {
+			focus = LAS_military_expansion_2
+		}
+		completion_reward = {
+			
+		}
+	}
 		focus = {
 		id = LAS_extremist_faction
 		icon = GFX_goal_unknown
@@ -2889,14 +3083,205 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LAS_
+		id = LAS_trouble_in_zion
 		icon = GFX_goal_unknown
 		cost = 1
-		relative_position_id = LAS_ 
-		x = 
-		y = 
+		relative_position_id = LAS_begin_the_conquest 
+		x = -1
+		y = 1
 		prerequisite = {
-			focus = LAS_
+			focus = LAS_begin_the_conquest
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_render_unto_ceasar
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_begin_the_conquest 
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_begin_the_conquest
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_big_trouble_in_little_california
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_trouble_in_zion
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_trouble_in_zion
+		}
+		prerequisite = {
+			focus = LAS_render_unto_ceasar
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_finish_the_job
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_big_trouble_in_little_california 
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_big_trouble_in_little_california
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_a_storm_upon_the_plains
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_finish_the_job
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_finish_the_job
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_lakemens_folly
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_a_storm_upon_the_plains 
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_a_storm_upon_the_plains
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_secure_energy_supply
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_finish_the_job
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_finish_the_job
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_across_the_gulf
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_secure_energy_supply 
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_secure_energy_supply
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_depose_kimball
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_lakemens_folly 
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_lakemens_folly
+		}
+		prerequisite = {
+			focus = LAS_across_the_gulf
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_america_under_the_courier
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_depose_kimball
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_depose_kimball
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_annex_canada
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_america_under_the_courier 
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_america_under_the_courier
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_annex_mexico
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_annex_canada 
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_annex_canada
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_prepare_for_the_end
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_america_under_the_courier
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_america_under_the_courier
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_the_great_war
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_america_under_the_courier 
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = LAS_annex_mexico
+		}
+		prerequisite = {
+			focus = LAS_prepare_for_the_end
 		}
 		completion_reward = {
 			
@@ -2919,7 +3304,20 @@ focus_tree = {
 			
 		}
 	}
-	
+	focus = {
+		id = LAS_
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_ 
+		x = 
+		y = 
+		prerequisite = {
+			focus = LAS_
+		}
+		completion_reward = {
+			
+		}
+	}
 	#Legion Path#
 	focus = {
 		id = LAS_cold_cold_heart
@@ -4425,14 +4823,249 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LAS_
+		id = LAS_mormon_war
 		icon = GFX_goal_unknown
 		cost = 1
-		relative_position_id = LAS_ 
-		x = 
-		y = 
+		x = 10
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_emergency_conscription
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_mormon_war
+		x = -3
+		y = 1
 		prerequisite = {
-			focus = LAS_
+			focus = LAS_mormon_war
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_raise_more_militia
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_emergency_conscription
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_emergency_conscription
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_war_propoganda_mw
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_emergency_conscription
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_emergency_conscription
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_defend_vegas_at_all_costs
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_emergency_conscription
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_emergency_conscription
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_fanatical_defence
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_war_propoganda_mw
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_raise_more_militia
+		}
+		prerequisite = { 
+			focus = LAS_war_propoganda_mw
+		}
+		prerequisite = {
+			focus = LAS_defend_vegas_at_all_costs
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_the_offensive
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_fanatical_defence 
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_fanatical_defence
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_legion_of_joshua_graham
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_mormon_war
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = LAS_the_offensive
+		}
+		prerequisite = {
+			focus = LAS_strenghen_supression
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_race_for_salt_lake_city
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_legion_of_joshua_graham
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_legion_of_joshua_graham
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_victory
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_race_for_salt_lake_city
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_race_for_salt_lake_city
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_war_industry
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_mormon_war
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = LAS_mormon_war
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_break_open_the_cashes
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_war_industry 
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_war_industry
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_emergency_war_economy
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_war_industry
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_war_industry
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_suspend_workers_rights
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_war_industry
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_war_industry
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_mass_production
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_break_open_the_cashes
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_break_open_the_cashes
+		}
+		prerequisite = {
+			focus = LAS_emergency_war_economy
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_temporary_factories
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_suspend_workers_rights
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_suspend_workers_rights
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_strenghen_supression
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_mass_production
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_mass_production
+		}
+		prerequisite = {
+			focus = LAS_temporary_factories
 		}
 		completion_reward = {
 			
