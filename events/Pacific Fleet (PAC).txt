@@ -660,7 +660,7 @@ country_event = {
 }
 
 country_event = {
-	id = fleet_P.25 #Anarchists Purged
+	id = fleet_P.25 #Battle of San Francisco
 	title = fleet_P.25.t
 	desc = fleet_P.25.d
 	#picture = 
@@ -698,7 +698,7 @@ country_event = {
 		hidden_effect = {
 		    country_event = {
   			    id = pacific_libertarians.2
-    		    days = 15
+    		    days = 25
 		    }
 		}
 	}
@@ -721,6 +721,98 @@ country_event = {
             ideology = libertarian_left
             popularity = -0.15
         }
+	}
+}
+
+country_event = {
+	id = pacific_libertarians.3 #Growth in Zehr's Approval Rating
+	title = pacific_libertarians.3.t
+	desc = pacific_libertarians.3.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pacific_libertarians.3.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = pacific_libertarians.4 #Zehr's San Francisco Speech
+	title = pacific_libertarians.4.t
+	desc = pacific_libertarians.4.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pacific_libertarians.4.a
+		ai_chance = {
+			factor = 100
+		}
+		add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = pacific_libertarians.5 #Zehr's Declaration of The Pacific Republic
+	title = pacific_libertarians.5.t
+	desc = pacific_libertarians.5.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pacific_libertarians.5.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = -200
+	}
+}
+
+country_event = {
+	id = pacific_libertarians.6 #The Third Purge
+	title = pacific_libertarians.6.t
+	desc = pacific_libertarians.6.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pacific_libertarians.6.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = -200
+		add_stability = -0.05
+		add_war_support = 0.05
+		add_popularity = {
+            ideology = authoritarian_left
+            popularity = -0.15
+        }
+		add_popularity = {
+            ideology = libertarian_left
+            popularity = -0.15
+        }
+		add_popularity = {
+            ideology = democrat
+            popularity = -0.15
+        }
+	}
+}
+
+country_event = {
+	id = pacific_libertarians.7 #Zehr Meets With Silicon Valley
+	title = pacific_libertarians.7.t
+	desc = pacific_libertarians.7.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pacific_libertarians.7.a
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 

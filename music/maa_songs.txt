@@ -1125,6 +1125,15 @@ music = {
 		}
 	}
 }
+#GLAR on_actions track
+music = {
+	song = "money"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
 music = {
 	song = "tanks_went_out_today"
 	chance = {
