@@ -1755,6 +1755,10 @@ focus_tree = {
 				remove_idea = PAC_unpopular_coup_5
 				add_idea = PAC_unpopular_coup_6
 			}
+			country_event = {
+  				id = pacific_libertarians.3
+    			days = 0
+			}
 		}
 	}
 
@@ -1843,7 +1847,11 @@ focus_tree = {
 			}	
 			remove_ideas = PAC_unpopular_coup_6
 			unlock_decision_tooltip = PAC_legitimize_the_republic
-			unlock_decision_tooltip = PAC_democracy_restoration	
+			unlock_decision_tooltip = PAC_democracy_restoration
+			country_event = {
+  				id = pacific_libertarians.5
+    			days = 0
+			}	
 			hidden_effect = {
 			    set_country_flag = PAC_political_decision_5
 			    set_country_flag = PAC_political_decision_6
@@ -1908,6 +1916,10 @@ focus_tree = {
 			remove_ideas = PAC_unpopular_coup_6
 			unlock_decision_tooltip = PAC_fight_against_anti_americanism
 			unlock_decision_tooltip = PAC_call_to_liberty
+			country_event = {
+  				id = pacific_libertarians.4
+    			days = 0
+			}
 			hidden_effect = {
 			    set_country_flag = PAC_political_decision_3
 			    set_country_flag = PAC_political_decision_4
@@ -2297,7 +2309,11 @@ focus_tree = {
 				var = PAC.var_libertarian_right_level
 				value = 0.01
 				tooltip = libertarian_right_drift_factor_tt
-			}			
+			}
+			country_event = {
+  				id = pacific_libertarians.6
+    			days = 0
+			}	
 		}
 	}
 
@@ -2475,6 +2491,10 @@ focus_tree = {
 				tooltip = research_speed_factor_tt
 			}
 			add_research_slot = 1
+			country_event = {
+  				id = pacific_libertarians.7
+    			days = 0
+			}
 		}
 	}
 
