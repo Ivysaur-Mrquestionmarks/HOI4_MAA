@@ -477,4 +477,29 @@ characters = {
 			legacy_id = 14051623
 		}
 	}
+
+	#ADVISORS
+	VIR_john_kiriakou = {
+		name = "John Kiriakou"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/VIR/john_kiriakou_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = VIR_john_kiriakou_advisor
+			cost = 150
+			available  = {
+				has_intelligence_agency  = yes 
+			}
+			allowed  = {
+				has_dlc = "La Resistance"
+				original_tag = VIR #if VIR is destroyed, he will move to RVR
+			}
+			traits = {
+				 head_of_intelligence
+			}
+		}
+	}	
 }

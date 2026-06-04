@@ -193,6 +193,9 @@ recruit_character = VIR_jeffery_hathaway
 recruit_character = VIR_john_burhoe
 recruit_character = VIR_soviet_fuentes
 
+### Advisors ###
+recruit_character = VIR_john_kiriakou
+
 if = {
 	limit = {
 		NOT = { has_dlc = "Man the Guns" }

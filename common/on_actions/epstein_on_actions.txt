@@ -786,6 +786,35 @@ on_actions = {
 					remove_core_of = CUC
 				}
 			}
+			if = {
+				limit = {
+					original_tag = RVR #winner
+					FROM = { original_tag = VIR } #loser
+					has_dlc = "La Resistance"
+				}
+				VIR = {
+					VIR_john_kiriakou = {
+						set_nationality = RVR
+					}
+				}
+				RVR = {
+					VIR_john_kiriakou = {
+						add_advisor_role = {
+						    advisor = {
+						        slot = political_advisor
+						        cost = 150
+						        idea_token = RVR_john_kiriakou
+							available = {
+								has_intelligence_agency  = yes
+							}
+						        traits = {
+						            head_of_intelligence
+						        }
+						    }
+						}
+					}
+				}
+			}
 		}
 	}
 	on_civil_war_end = { 
