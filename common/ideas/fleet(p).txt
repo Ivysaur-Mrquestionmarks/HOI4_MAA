@@ -535,5 +535,302 @@ ideas = {
 		
 			}
 		}
+
+		#Military Democracy Ideas
+
+		PAC_liberal_continuation = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.05
+				consumer_goods_expected_value = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_oil_factor = 0.05
+				global_building_slots = 1
+			}
+		}
+
+		PAC_liberal_continuation_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.1
+				consumer_goods_expected_value = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_oil_factor = 0.05
+				global_building_slots = 1
+			}
+		}
+
+		PAC_liberal_continuation_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.15
+				consumer_goods_expected_value = -0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_oil_factor = 0.1
+				global_building_slots = 1
+			}
+		}
+
+		PAC_liberal_continuation_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.2
+				consumer_goods_expected_value = -0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				production_oil_factor = 0.1
+				global_building_slots = 1
+			}
+		}
+
+		PAC_liberal_continuation_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = 0.25
+				consumer_goods_expected_value = -0.3
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+				production_oil_factor = 0.15
+				global_building_slots = 1
+			}
+		}
+
+		PAC_social_economy = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = -0.05
+				consumer_goods_expected_value = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				monthly_population = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		PAC_social_economy_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = -0.05
+				consumer_goods_expected_value = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				monthly_population = 0.1
+				stability_factor = 0.05
+			}
+		}
+
+		PAC_social_economy_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = -0.1
+				consumer_goods_expected_value = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				monthly_population = 0.15
+				stability_factor = 0.05
+			}
+		}
+
+		PAC_social_economy_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = -0.1
+				consumer_goods_expected_value = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				monthly_population = 0.15
+				stability_factor = 0.05
+			}
+		}
+
+		PAC_social_economy_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+                production_speed_buildings_factor = -0.1
+				consumer_goods_expected_value = 0.25
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				monthly_population = 0.2
+				stability_factor = 0.1
+			}
+		}
+
+		PAC_federal_west_coast_military = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_attack_speed_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.03
+				army_strength_factor = 0.05
+				planning_speed = 0.05
+				experience_gain_army_unit = 0.05
+			}
+		}
+
+		PAC_federal_west_coast_military_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_attack_speed_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.05
+				army_strength_factor = 0.07
+				planning_speed = 0.07
+				experience_gain_army_unit = 0.07
+			}
+		}
+
+		PAC_federal_west_coast_military_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				army_attack_factor = 0.15
+				army_attack_speed_factor = 0.1
+				army_defence_factor = 0.15
+				army_org_factor = 0.07
+				army_strength_factor = 0.1
+				planning_speed = 0.1
+				experience_gain_army_unit = 0.1
+			}
+		}
+
+		PAC_federal_west_coast_military_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				army_attack_factor = 0.15
+				army_attack_speed_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_factor = 0.1
+				army_strength_factor = 0.1
+				planning_speed = 0.15
+				experience_gain_army_unit = 0.1
+			}
+		}
+
+		PAC_federal_west_coast_military_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = PAC_sky_supplies
+
+			
+			modifier = {
+				army_attack_factor = 0.2
+				army_attack_speed_factor = 0.15
+				army_defence_factor = 0.2
+				army_org_factor = 0.1
+				army_strength_factor = 0.1
+				planning_speed = 0.2
+				experience_gain_army_unit = 0.1
+			}
+		}
 	}
 }

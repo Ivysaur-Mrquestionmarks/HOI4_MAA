@@ -4558,7 +4558,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PAC_in_the_defense_of_workers
+		id = PAC_working_class_protections
 		icon = GFX_goal_SCA_FRA_the_legitimist_cause
 		cost = 5
 		x = -1
@@ -4696,10 +4696,10 @@ focus_tree = {
 		cost = 5
 		x = 1
 		y = 1
-		relative_position_id = PAC_in_the_defense_of_workers
+		relative_position_id = PAC_working_class_protections
 		allow_branch = {
 		}
-		prerequisite = { focus = PAC_in_the_defense_of_workers }
+		prerequisite = { focus = PAC_working_class_protections }
 		prerequisite = { focus = PAC_raise_the_capital_gains_tax }
 		available = {
 			

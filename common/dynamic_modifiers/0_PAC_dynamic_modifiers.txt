@@ -18,3 +18,22 @@ PAC_bastion_of_liberty_dynamic_modifier = { #NATIONAL SPIRIT, balls.
 	local_resources_factor = PAC.var_local_resources_level
 }
 
+#### Military Democracy ####
+PAC_federal_pacific_dynamic_modifier = { #NATIONAL SPIRIT, balls.
+	enable = { always = yes }
+
+	icon = GFX_idea_PAC_a_land_to_be_free_dynamic_modifier
+	
+	political_power_gain = PAC.var_pp_level
+	compliance_growth = PAC.var_compliance_level
+	resistance_activity = PAC.var_resistance_activity_level
+	stability_factor = PAC.var_stability_level
+	war_support_factor = PAC.var_war_support_level
+	democrat_drift = PAC.var_democrat_level
+
+	army_attack_factor = PAC.var_attack_level
+	army_speed_factor = PAC.var_army_speed_level
+	
+	research_speed_factor = PAC.var_research_speed_level
+}
+
