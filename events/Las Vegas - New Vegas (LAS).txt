@@ -1,0 +1,71 @@
+add_namespace = new_vegas
+
+country_event = {
+	id = new_vegas.1
+	title = new_vegas.1.t
+	desc = new_vegas.1.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	#Viva New Vegas
+	option = {
+		name = new_vegas.1.a
+		ai_chance = {
+			factor = 100
+		}
+		set_cosmetic_tag = LAS_new_vegas
+		46 = { set_state_name = "New Vegas" }
+		set_province_name = {
+			id = 252
+			name = "New Vegas"
+		}
+	}
+}
+country_event = {
+	id = new_vegas.2
+	title = new_vegas.2.t
+	desc = new_vegas.2.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.2.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.3
+	title = new_vegas.3.t
+	desc = new_vegas.3.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.3.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.~
+	title = new_vegas.~.t
+	desc = new_vegas.~.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.~.a
+		ai_chance = {
+			factor = 
+		}
+		
+	}
+}

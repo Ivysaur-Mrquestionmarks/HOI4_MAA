@@ -817,3 +817,105 @@ country_event = {
 		}
 	}
 }
+#Wynn's Plot
+country_event = {
+	id = viva_las_vegas.22
+	title = viva_las_vegas.22.t
+	desc = viva_las_vegas.22.d
+	picture = 
+	is_triggered_only = yes
+	trigger = {
+		original_tag = LAS
+		has_completed_focus = LAS_fear_and_loathing
+		days = 35-70
+		}
+	fire_only_once = yes
+	option = { 
+		name = viva_las_vegas.22.a
+		ai_chance = {
+			factor = 5
+		}
+		country_event = viva_las_vegas.23
+		days = 30
+	}
+	option = {
+		name = viva_las_vegas.22.b
+		ai_chance = {
+			factor = 95
+		}
+	}
+}
+country_event = {
+	id = viva_las_vegas.23
+	title = viva_las_vegas.23.t
+	desc = viva_las_vegas.23.d
+	picture = 
+	is_triggered_only = yes
+	trigger = {
+		original_tag = LAS
+		}
+	fire_only_once = yes
+	option = { 
+		name = viva_las_vegas.23.a
+		ai_chance = {
+			factor = 33
+		}
+		
+	}
+	option = {
+		name = viva_las_vegas.23.b
+		ai_chance = {
+			factor = 33
+		}
+		
+	}
+	option = {
+		name = viva_las_vegas.23.c
+		ai_chance = {
+			factor = 33
+		}
+		
+	}
+}
+country_event = {
+	id = viva_las_vegas.24
+	title = viva_las_vegas.24.t
+	desc = viva_las_vegas.24.d
+	picture = 
+	is_triggered_only = yes
+	trigger = {
+		original_tag = LAS
+		
+		}
+	fire_only_once = yes
+	option = { 
+		name = viva_las_vegas.24.a
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = viva_las_vegas.24.b
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+country_event = {
+	id = viva_las_vegas.25
+	title = viva_las_vegas.25.t
+	desc = viva_las_vegas.25.d
+	picture = 
+	is_triggered_only = yes
+	trigger = {
+		original_tag = LAS
+		
+		}
+	fire_only_once = yes
+	option = { 
+		name = viva_las_vegas.25.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

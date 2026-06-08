@@ -1217,6 +1217,22 @@ LAS_grand_orange_kingdom_ct = {
 	color = rgb { 202 89 4 }
 	color_ui = rgb { 202 89 4 }
 }
+LAS_new_vegas = {
+	color = rgb { 66 113 69 }
+	color_ui = rgb { 66 113 69 }
+}
+LAS_new_vegas_ind = {
+	color = { 66 113 69 }
+	color_ui { 66 113 69 }
+}
+LAS_new_vegas_ncr = { 
+	color = { 153 76 0 }
+	color_ui = { 153 76 0 }
+}
+LAS_new_vegas_legion = { 
+	color = { 174 39 39 }
+	color_ui = { 174 39 39 }
+}
 
 LGB_hatsunia = {
 	color = rgb { 255 153 255 }

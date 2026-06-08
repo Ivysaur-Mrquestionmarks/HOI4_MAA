@@ -27,6 +27,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			country_event = new_vegas.1
 		}
 
 	}
@@ -41,7 +42,7 @@ focus_tree = {
 		}
 		cost = 5
 		completion_reward = {
-			
+			country_event = new_vegas.2
 		}
 	}
 	focus = {
@@ -55,7 +56,7 @@ focus_tree = {
 			focus = LAS_the_meeting
 		}
 		completion_reward = {
-			
+			country_event = new_vegas.3
 		}
 	}
 	focus = {
