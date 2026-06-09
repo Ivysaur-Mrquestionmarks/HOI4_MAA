@@ -21,7 +21,7 @@ PAC_army_militia_balance_of_power_category = {
 	}
 }
 
-PAC_anarchy_in_the_pacific = {
+PAC_yellow_and_black_government = {
 	#icon = hol_war_on_pacifism
 	
 	allowed = {
@@ -32,8 +32,8 @@ PAC_anarchy_in_the_pacific = {
 	}
 }
 
-PAC_yellow_and_black_government = {
-	#icon = hol_war_on_pacifism
+PAC_military_democracy_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
 	
 	allowed = {
 		tag = PAC

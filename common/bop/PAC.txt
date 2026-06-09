@@ -57,3 +57,80 @@ army_militia_bop = {
 	}
 }
 
+military_democracy_bop = {
+	initial_value = 1
+	left_side = democracy_control
+	right_side = military_control
+	decision_category = PAC_military_democracy_balance_of_power_category
+	range = {
+		id = military_democracy_middle
+		min = -0.2
+		max = 0.2
+		modifier = {
+			
+		}
+	}
+	side = {
+		id = democracy_control
+		icon = GFX_bop_PAC_militia_control
+		range = {
+			id = democracy_low_control
+			min = -0.4
+			max = -0.2
+			modifier = {
+			}
+			on_activate = {
+			}
+		}
+		range = {
+			id = democracy_medium_control
+			min = -0.7
+			max = -0.4
+			modifier = {
+			}
+			on_activate = {
+			}
+		}
+		range = {
+			id = democracy_high_control
+			min = -1
+			max = -0.7
+			modifier = {
+			}
+			on_activate = {
+			}
+		}
+	}
+	side = {
+		id = military_control
+		icon = GFX_bop_PAC_military_control
+		range = {
+			id = military_low_control
+			min = 0.2
+			max = 0.4
+			modifier = {
+			}
+			on_activate = {
+			}
+		}
+		range = {
+			id = military_medium_control
+			min = 0.4
+			max = 0.7
+			modifier = {
+			}
+			on_activate = {
+			}
+		}
+		range = {
+			id = military_high_control
+			min = 0.7
+			max = 1
+			modifier = {
+			}
+			on_activate = {
+			}
+		}
+	}
+}
+

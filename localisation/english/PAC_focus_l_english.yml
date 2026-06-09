@@ -421,20 +421,16 @@
  PAC_industrial_rebuilding_desc:0 ""
  PAC_working_class_protections:0 "Working Class Protections"
  PAC_working_class_protections_desc:0 ""
- PAC_raise_the_capital_gains_tax:0 "Raise The Capital Gains Tax"
- PAC_raise_the_capital_gains_tax_desc:0 ""
+ PAC_corporate_relegation:0 "Corporate Relegation"
+ PAC_corporate_relegation_desc:0 ""
  PAC_silicon_revival:0 "Silicon Revival"
  PAC_silicon_revival_desc:0 ""
- PAC_revive_the_tourism_industry:0 "Revive The Tourism Industry"
- PAC_revive_the_tourism_industry_desc:0 ""
  PAC_work_with_military_corporations:0 "Work With Military Corporations"
  PAC_work_with_military_corporations_desc:0 ""
  PAC_the_war_industry_in_our_hands:0 "The War Industry In Our Hands"
  PAC_the_war_industry_in_our_hands_desc:0 ""
  PAC_welfare_for_all:0 "Welfare For All"
  PAC_welfare_for_all_desc:0 "" 
- PAC_corporate_relegation:0 "Corporate Relegation"
- PAC_corporate_relegation_desc:0 ""
  PAC_get_back_investments:0 "Get Back Investments"
  PAC_get_back_investments_desc:0 ""
  PAC_new_skyscrapers:0 "New Skyscrapers"
@@ -522,6 +518,24 @@
  PAC_the_guard_of_pacific_freedom_3:0 "The Guard of Pacific Freedom"
  PAC_the_guard_of_pacific_freedom_4:0 "The Guard of Pacific Freedom"
  
+ #Military Democracy Ideas
+ PAC_federal_pacific_dynamic_modifier:0 "Federal Pacific"
+
+ PAC_liberal_continuation:0 "Liberal Continuation"
+ PAC_liberal_continuation_2:0 "Liberal Continuation"
+ PAC_liberal_continuation_3:0 "Liberal Continuation"
+ PAC_liberal_continuation_4:0 "Liberal Continuation"
+ PAC_liberal_continuation_5:0 "Liberal Continuation"
+ PAC_social_economy:0 "Social Economy"
+ PAC_social_economy_2:0 "Social Economy"
+ PAC_social_economy_3:0 "Social Economy"
+ PAC_social_economy_4:0 "Social Economy"
+ PAC_social_economy_5:0 "Social Economy"
+ PAC_federal_west_coast_military:0 "Federal West Coast Military"
+ PAC_federal_west_coast_military_2:0 "Federal West Coast Military"
+ PAC_federal_west_coast_military_3:0 "Federal West Coast Military"
+ PAC_federal_west_coast_military_4:0 "Federal West Coast Military"
+ PAC_federal_west_coast_military_5:0 "Federal West Coast Military"
 
  ################################ PAC - DECISIONS ################################
 
@@ -569,7 +583,21 @@
  militia_high_control:0 "Militia High Control"
 
  army_medium_control:0 "Army Medium Control"
- vermin_very_high_power:0 "Army High Control"
+ army_high_control:0 "Army High Control"
+
+ military_democracy_bop:0 "Fate of Democracy in The West Coast"
+ military_democracy_bop_desc:0 ""
+ democracy_control:0 "Democracy Control"
+ army_militia_middle:0 "Army-Militia Middle"
+ military_control:0 "Military Control"
+
+ democracy_low_control:0 "Democracy Low Control"
+ democracy_medium_control:0 "Democracy Medium Control"
+ democracy_high_control:0 "Democracy High Control"
+
+ military_low_control:0 "Military Medium Low"
+ military_medium_control:0 "Military Medium Control"
+ military_high_control:0 "Military High Control"
 
  PAC_libertarian_economic_pact:0 "Libertarian Economic Pact"
 
