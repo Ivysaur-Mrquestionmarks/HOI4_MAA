@@ -2,6 +2,21 @@ characters={
 
 	### Country Leaders ###
 	# Americans #
+	ALA_mike_dunleavy = {
+		name = ALA_mike_dunleavy
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALA/Mike_Dunleavy.tga"
+			}
+		}
+		country_leader = {
+			ideology = conservative
+			desc = DESC_LEADER_MIKE_DUNLEAVY
+			traits = { ALA_dunleavy_sellout }
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
 	ALA_sarah_palin = {
 		name = ALA_sarah_palin
 		gender = female
@@ -13,32 +28,32 @@ characters={
 				small = "GFX_idea_ALA_Sarah_Palin_Advisor"
 			}
 		}
-		country_leader = {
-			ideology = trumpist
-			traits = { Annoying_Bitch }
-			expire = "2060.1.1.1"
-			id = -1
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ALA_Sarah_Palin
-			cost = 150
-			allowed = {
-				tag = ALA
-			}
-			visible = {
-				has_completed_focus = ALA_Vice_President_Palin
-			}
-			available = {
-			
-			}
-			traits = {
-				Sarah_Palin 
-			}
-			ai_will_do = {
-				factor = 5
-			}
-		}
+#		country_leader = {
+#			ideology = trumpist
+#			traits = { Annoying_Bitch }
+#			expire = "2060.1.1.1"
+#			id = -1
+#		}
+#		advisor = {
+#			slot = political_advisor
+#			idea_token = ALA_Sarah_Palin
+#			cost = 150
+#			allowed = {
+#				tag = ALA
+#			}
+#			visible = {
+#				has_completed_focus = ALA_Vice_President_Palin
+#			}
+#			available = {
+#			
+#			}
+#			traits = {
+#				Sarah_Palin 
+#			}
+#			ai_will_do = {
+#				factor = 5
+#			}
+#		}
 	}
 	ALA_joshua_vo = {
 		name = ALA_joshua_vo

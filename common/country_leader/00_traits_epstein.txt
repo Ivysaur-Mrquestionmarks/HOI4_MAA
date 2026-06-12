@@ -958,9 +958,14 @@ leader_traits = {
 		republican_acceptance = 40
 		libertarian_right_acceptance = 40
 	}
+	### ALASKA TRAITS ###
 	Annoying_Bitch = {
 		stability_factor = -0.05
 		non_core_manpower = -0.1
+	}
+	ALA_dunleavy_sellout = {
+		stability_factor = -0.1
+		republican_drift = -0.03
 	}
 	#Perry Trait
 	NEW_Libertarian = {

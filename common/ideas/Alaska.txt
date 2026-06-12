@@ -1,257 +1,71 @@
 ideas = {
 	country = {
-		ALA_Isolation = {
-			picture = prc_the_long_march2
+		ALA_apf = {
+			#picture = prc_the_long_march2
 			modifier = {
-				stability_factor = -0.05
-				army_leader_cost_factor = 0.5
-				military_leader_cost_factor = 0.5
-				navy_leader_cost_factor = 0.5
-				local_supplies = -0.05
-				local_resources = -0.05
-				production_speed_buildings_factor = -0.1 
+				stability_factor = 0.15
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.05
 			}
 		}
-		ALA_Russian_Investors_idea = {
-			picture = generic_economic_increase
+		ALA_inuit_poverty = {
+			#picture = prc_the_long_march2
 			modifier = {
-				military_factory_donations = 15
-				industrial_factory_donations = 20
-				dockyard_donations = 5
+				stability_factor = -0.1
+				monthly_population = -0.1
+				consumer_goods_factor = 0.08
+				authoritarian_left_drift = 0.02
 			}
 		}
-		Russian_Language_Cirriculum = {
-			picture = MON_Tribute_For_Russia
+		ALA_tourism_recession = {
+			#picture = prc_the_long_march2
 			modifier = {
-				stability_factor = -0.05
-				research_speed_factor = -0.1
-				political_power_cost = -0.05
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.1
 			}
 		}
-		Counter_terrorism_offensive = {
-			picture = generic_secret_police
+		ALA_alaskan_powder_keg = {
+			#picture = prc_the_long_march2
 			modifier = {
-				compliance_growth_on_our_occupied_states = 0.02
-				#occupation_cost = -0.05
-				stability_weekly = 0.01
-			}
-		}
-		Bering_pipeline = {
-			picture = generic_refining_concern_1
-			modifier = {
-				min_export = -0.03
-				fuel_gain_factor = 0.20
-				local_resources = 0.25
-			}
-		}
-		ALA_Russian_Bots = {
-			picture = SPR_political_violence
-			modifier = {
-				stability_factor = -0.05
-			}
-		}
-		Putinism = {
-			picture = ROM_king_carol_ii_hedonist
-			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.1
 				autocratic_drift = 0.05
-				consumer_goods_factor = -0.05
-			}
-		}
-		Industrial_Reorganization = {
-			picture = generic_flexible_foreign_policy2
-			modifier = {
-				production_speed_buildings_factor = -0.35 
-				authoritarian_left_drift = 0.01
-				stability_factor = -0.15
-			}
-		}
-		ALA_Perestroika = {
-			picture = generic_flexible_foreign_policy2
-			modifier = {
-				production_speed_buildings_factor = 0.05
 				authoritarian_left_drift = 0.05
-				stability_factor = 0.05
-			}
-		}
-		ALA_Semi_Free_Speech = {
-			picture = generic_disjointed_gov
-			modifier = {
-				authoritarian_left_drift = 0.03
-				libertarian_left_drift = 0.01
-				stability_factor = 0.05
-			}
-		}
-		ALA_Greater_Alaska = {
-			picture = FRA_national_mobilization_focus
-			modifier = {
-				war_support_factor = 0.15
-			}
-		}
-		Strengthened_Alaskan_Orthodox_Church = {
-			picture = YUG_orthodox_church_support
-			modifier = {
-				consumer_goods_factor = -0.05
-			}
-		}
-		Legacy_of_Tsar_Nicholas = {
-			picture = generic_oppression
-			modifier = {
-				authoritarian_left_drift = -0.05
-				libertarian_left_drift = -0.05
-				libertarian_right_drift = -0.05
-				republican_drift = -0.05
-				democrat_drift = -0.05
-				army_morale_factor = 0.05
-				war_support_weekly = 0.01
-			}
-		}
-		Russo_Alaskan_Nobility = {
-			picture = ROM_king_carol_ii_hedonist
-			modifier = {
-				autocratic_drift = 0.05
-				consumer_goods_factor = -0.10
-			}
-		}
-		ALA_Russian_Angered = {
-			picture = PB_RUS_Russian_Civil_War
-			modifier = {
-				stability_factor = -0.15
-			}
-		}
-		ALA_Russian_Compliance = {
-			picture = PB_PRS_Russian_Minority
-			modifier = {
-				stability_factor = 0.03
-			}
-		}
-		ALA_Cashing_checks = {
-			picture = KTG_Gold_Trade
-			modifier = {
-				military_factory_donations = 5
-				industrial_factory_donations = 5
-			}
-		}
-		ALA_Russian_Adverts = {
-			picture = PB_PRS_Russian_Minority
-			modifier = {
-				weekly_manpower = 100
-			}
-		}
-		ALA_Tidy_up_Military = {
-			picture = FST_spirit_forced_demilitarization
-			modifier = {
-				army_leader_cost_factor = -2.5
-				experience_gain_army_factor = -1.5
-			}
-		}
-		ALA_Prussian_Militarism = {
-			picture = TEX_Prussian_Discipline
-			modifier = {
-				army_org_factor = 0.15
-				conscription = 0.005
-			}
-		}
-		ALA_Inuit_Assistance = {
-			picture = The_Red_Cross
-			modifier = {
-				consumer_goods_factor = -0.03
-			}
-		}
-		ALA_Inuit_Reperations = {
-			picture = PB_BUL_war_reperations
-			modifier = {
-				consumer_goods_factor = 0.10
-				conscription = 0.02
-			}
-		}
-		ALA_Pink_Alaska = {
-			picture = PB_ITA_Socialist
-			modifier = {
-				conscription = 0.01
-				stability_factor = 0.05
 				libertarian_left_drift = 0.05
-			}
-		}
-		ALA_Helping_Alaska = {
-			picture = SPR_relocate_the_gold_reserves
-			modifier = {
-				political_power_gain = -0.07
-			}
-		}
-		ALA_Native_Volunteers = {
-			picture = ast_volunteer_defence_corps
-			modifier = {
-				local_manpower = 0.07
-			}
-		}
-		ALA_Infrastructure_Improvement = {
-			picture = generic_build_infrastructure
-			modifier = {
-				production_speed_infrastructure_factor = 0.15
-				political_power_gain = -0.15
-				stability_factor = 0.05
-			}
-		}
-		ALA_Civil_War_Refugees = {
-			picture = MOL_refugees
-			modifier = {
-				weekly_manpower = 300
-			}
-		}
-		ALA_America_by_Heart = {
-			picture = PB_USA_fighting_for_america
-			modifier = {
-				political_power_gain = 0.10
-				republican_drift = 0.05
-
-			}
-		}
-		ALA_Oil_Ties = {
-			picture = PB_CAL_Oil_Boom
-			modifier = {
-				local_resources_factor = 0.05
-			}
-		}
-		ALA_Taxation_Returns = {
-			picture = ITA_De_Stefani_Plan
-			modifier = {
-				consumer_goods_factor = 0.15
-			}
-		}
-		ALA_Frontierism = {
-			picture = PB_Untamed_Frontier
-			modifier = {
-				political_power_gain = 0.10
 				libertarian_right_drift = 0.05
-				army_morale_factor = 0.10
 			}
 		}
-		ALA_2nd_Pacific_Fleet = {
-			picture = PB_NZL_spectre_of_the_royal_navy
+		ALA_shadow_of_pac = {
+			#picture = prc_the_long_march2
 			modifier = {
-				special_forces_cap = 1.5
-			}
-			targeted_modifier = { tag = PRA attack_bonus_against = 0.2 }
-			targeted_modifier = { tag = PRA defense_bonus_against = 0.2 }
-		}
-		United_Nations_Membership = {
-			picture = PUE_un_mandate
-			modifier = {
-				consumer_goods_factor = 0.03
-				political_power_gain = -0.03
-			}
-		}
-		ALA_Scorched_Earth_Bombers = {
-			picture = PB_GER_Fire_Bombs
-			modifier = {
-				army_morale_factor = -0.05
-				air_strategic_bomber_bombing_factor = 0.25
+				war_support_factor = -0.2
+				conscription = -0.01
+				experience_gain_navy_factor = -0.5
+				experience_gain_air_factor = -0.15
+				experience_gain_army_factor = -0.3
+				naval_coordination = -0.2
+				naval_morale_factor = -0.3
+				industrial_capacity_dockyard = -0.25
+				navy_leader_cost_factor = 0.5
+				army_leader_cost_factor = 0.3
 			}
 		}
-		Swiss_Mountain_Forts = {
-			picture = PB_SWI_neutrality_idea
+		ALA_collapsed_oil_industry = {
+			#picture = prc_the_long_march2
 			modifier = {
-				production_speed_bunker_factor = 0.25
+				country_resource_oil = -50
+				fuel_gain_factor_from_states = -0.25
+				max_fuel_factor = -0.25
+				consumer_goods_factor = 0.35
+				stability_factor = -0.25 
+			}
+		}
+		ALA_alaska_native_corporations = {
+			#picture = prc_the_long_march2
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.1
+				
 			}
 		}
 	}

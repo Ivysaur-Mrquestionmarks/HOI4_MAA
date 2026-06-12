@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = Alaska_tree
 	country = {
 		factor = 0
@@ -10,7 +10,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 50 }
 	default = no
 	focus = {
-		id = ALA_Isolation_from_America
+		id = ALA_the_alaskan_experiment
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 15
@@ -19,3038 +19,1240 @@ focus_tree = {
 			factor = 300
 		}
 		completion_reward = {
-			add_ideas = ALA_Isolation
+			
 		}
 	}
 	focus = {
-		id = ALA_Legacy_of_the_Dictatorship
-		icon = GFX_goal_focus_battlefleet
+		id = ALA_reaffirm_inuit_commitments
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		relative_position_id = ALA_the_alaskan_experiment
 		cost = 5.00
-		x = 15
+		x = 1
 		y = 1
-		prerequisite = {
-			focus = ALA_Isolation_from_America
-		}
 		ai_will_do = { 
 			factor = 300
 		}
+		prerequisite = {
+			focus = ALA_the_alaskan_experiment
+		}
 		completion_reward = {
-			add_stability = -0.1
-			country_event = { id = Alaska.1 days = 1 }
+			
 		}
 	}
 	focus = {
-		id = ALA_Imprison_former_Fleet_Personnel
-		icon = GFX_goal_pc_battle
+		id = ALA_mobilize_the_national_guard
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		relative_position_id = ALA_the_alaskan_experiment
 		cost = 5.00
-		x = 14
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_alaskan_experiment
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_trial_of_the_pacific_fleet
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		relative_position_id = ALA_the_alaskan_experiment
+		cost = 5.00
+		x = 0
 		y = 2
-		prerequisite = {
-			focus = ALA_Legacy_of_the_Dictatorship
-		}
-		mutually_exclusive = {
-			focus = ALA_Palins_Pardons
-		}
-		available = {
-			has_country_flag = No_Pardons
-		}
 		ai_will_do = { 
 			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_mobilize_the_national_guard
+		}
+		prerequisite = {
+			focus = ALA_reaffirm_inuit_commitments
 		}
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = ALA_Search_for_foreign_mercs
-		icon = GFX_goal_Military_Unity
-		cost = 10.00
-		x = 14
-		y = 3
-		prerequisite = {
-			focus = ALA_Imprison_former_Fleet_Personnel
-		}
+		id = ALA_stem_the_bleeding
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_the_trial_of_the_pacific_fleet
 		ai_will_do = { 
 			factor = 300
 		}
-		completion_reward = {
-			country_event = { id = Alaska.2 days = 10 }
-		}
-	}
-	focus = {
-		id = ALA_Wagner_Coup
-		icon = GFX_goal_Repeal_Gun_Laws
-		cost = 10.00
-		x = 14
-		y = 4
 		prerequisite = {
-			focus = ALA_Search_for_foreign_mercs
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			country_event = { id = Alaska.3 days = 10 }
-		}
-	}
-	focus = {
-		id = ALA_the_Soldier_Coup
-		icon = GFX_goal_Generic_Crouched_Soldier
-		cost = 10.00
-		x = 20
-		y = 5
-		prerequisite = {
-			focus = ALA_Wagner_Coup
-		}
-		mutually_exclusive = {
-			focus = ALA_Reach_out_to_Gorbachev
-			focus = ALA_Putins_Puppet
-			focus = ALA_The_First_Emperors_of_Alaska
-		}
-		ai_will_do = { 
-			factor = 300
-			modifier = {
-      			factor = 0
-      			OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_EMP
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_SOV
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_PUTIN
-          			}
-      			}
-   			}
-		}
-		completion_reward = {
-			ALA_dmitry_utkin = {
-				promote_character = {
-					ideology = military_dictatorship 
-				}
-			}
-		}
-	}
-	focus = {
-		id = ALA_Throw_off_the_Russian_Shackles
-		icon = GFX_goal_Generic_Russian_Volunteers
-		cost = 10.00
-		x = 20
-		y = 6
-		prerequisite = {
-			focus = ALA_the_Soldier_Coup
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Russian_Angered
-		}
-	}
-	focus = {
-		id = ALA_Cash_in_our_Checks
-		icon = GFX_goal_Generic_Cash_and_Carry
-		cost = 10.00
-		x = 19
-		y = 7
-		prerequisite = {
-			focus = ALA_Throw_off_the_Russian_Shackles
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = ALA_Cashing_checks
-				days = 365
-			}
-		}
-	}
-	focus = {
-		id = ALA_Sit_down_with_Putin
-		icon = GFX_goal_focus_deal_with_russia
-		cost = 10.00
-		x = 19
-		y = 8
-		prerequisite = {
-			focus = ALA_Cash_in_our_Checks
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ALA_Russian_Angered
-				add_idea = ALA_Russian_Compliance
-			}
-		}
-	}
-	focus = {
-		id = ALA_Return_the_Soldiers
-		icon = GFX_goal_Allagash_or_War
-		cost = 10.00
-		x = 21
-		y = 7
-		prerequisite = {
-			focus = ALA_Throw_off_the_Russian_Shackles
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_manpower = 15000
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.03
-			}
-		}
-	}
-	focus = {
-		id = ALA_Call_upon_Russian_Soldiers
-		icon = GFX_goal_Generic_Liberty_Calling
-		cost = 10.00
-		x = 21
-		y = 8
-		available = {
-			has_completed_focus = ALA_Sit_down_with_Putin
-		}
-		prerequisite = {
-			focus = ALA_Return_the_Soldiers
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Russian_Adverts
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.05
-			}
-		}
-	}
-	focus = {
-		id = ALA_Profits_From_Damascus_Siege
-		icon = GFX_goal_Generic_Increase_Profits
-		cost = 10.00
-		x = 23
-		y = 8
-		prerequisite = {
-			focus = ALA_Return_the_Soldiers
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_political_power = 150
-			add_offsite_building = { type = arms_factory level = 3 }
-			add_offsite_building = { type = industrial_complex level = 3 }
-		}
-	}
-	focus = {
-		id = ALA_Retreat_from_Donbas
-		icon = GFX_goal_SPR_Urban_Warfare
-		cost = 10.00
-		x = 25
-		y = 8
-		prerequisite = {
-			focus = ALA_Return_the_Soldiers
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_manpower = 30000
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.03
-			}
-		}
-	}
-	focus = {
-		id = ALA_Hold_Local_Elections
-		icon = GFX_Focus_Generic_Democratic_Election
-		cost = 10.00
-		x = 23
-		y = 9
-		mutually_exclusive = {
-			focus = ALA_Republic_in_name_Only
-		}
-		prerequisite = {
-			focus = ALA_Sit_down_with_Putin
-		}
-		prerequisite = {
-			focus = ALA_Call_upon_Russian_Soldiers
-		}
-		prerequisite = {
-			focus = ALA_Profits_From_Damascus_Siege
-		}
-		prerequisite = {
-			focus = ALA_Retreat_from_Donbas
-		}
-		ai_will_do = { 
-			factor = 300
-			modifier = {
-      			factor = 0
-      			OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_MERC
-          			}
-      			}
-   			}
-		}
-		completion_reward = {
-			set_politics = {
-				ruling_party = republican
-			}
-			add_popularity = {
-				ideology = republican
-				popularity = 0.35
-			}
-			hidden_effect = {
-				ALA_dmitry_utkin = {
-					promote_character = {
-						ideology = conservative 
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = ALA_Vice_President_Palin
-		icon = GFX_goal_Work_with_Republicans
-		cost = 10.00
-		x = 24
-		y = 10
-		prerequisite = {
-			focus = ALA_Hold_Local_Elections
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Sarah_Palin
-		}
-	}
-	focus = {
-		id = ALA_Tidy_up_the_Army
-		icon = GFX_goal_Generic_Army_Officers
-		cost = 10.00
-		x = 24
-		y = 11
-		prerequisite = {
-			focus = ALA_Vice_President_Palin
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_timed_idea = {
-    			idea = ALA_Tidy_up_Military
-    			days = 180
-			}
-			army_experience = -35
-			add_command_power = 25
-		}
-	}
-	focus = {
-		id = ALA_Petition_for_Independence
-		icon = GFX_Focus_Sign_Constitution
-		cost = 10.00
-		x = 24
-		y = 12
-		prerequisite = {
-			focus = ALA_Tidy_up_the_Army
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			news_event = { id = News_Events.7 days = 82 }
-		}
-	}
-	focus = {
-		id = ALA_Republic_in_name_Only
-		icon = GFX_goal_generic_election_rigged
-		cost = 10.00
-		x = 21
-		y = 9
-		mutually_exclusive = {
-			focus = ALA_Hold_Local_Elections
-		}
-		prerequisite = {
-			focus = ALA_Sit_down_with_Putin
-		}
-		prerequisite = {
-			focus = ALA_Call_upon_Russian_Soldiers
-		}
-		prerequisite = {
-			focus = ALA_Profits_From_Damascus_Siege
-		}
-		prerequisite = {
-			focus = ALA_Retreat_from_Donbas
-		}
-		ai_will_do = { 
-			factor = 300
-			modifier = {
-      			factor = 0
-      				OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_MERC_DEM
-          			}
-      			}
-   			}
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.15
-			}
-			add_war_support = 0.2
-		}
-	}
-	focus = {
-		id = ALA_Generalship_of_Alaska
-		icon = GFX_goal_focus_rus_white_guard
-		cost = 10.00
-		x = 20
-		y = 10
-		prerequisite = {
-			focus = ALA_Republic_in_name_Only
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			set_cosmetic_tag = Generalship_of_Alaska
-		}
-	}
-	focus = {
-		id = ALA_Alaskan_Army_State
-		icon = GFX_goal_PRS_State_Issues
-		cost = 10.00
-		x = 20
-		y = 11
-		prerequisite = {
-			focus = ALA_Generalship_of_Alaska
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_command_power = 25
-			army_experience = 50
-			add_political_power = 120
-		}
-	}
-	focus = {
-		id = ALA_Alaska_is_the_New_Prussia
-		icon = GFX_goal_PRS_For_Prussia
-		cost = 10.00
-		x = 20
-		y = 12
-		prerequisite = {
-			focus = ALA_Alaskan_Army_State
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Prussian_Militarism
-		}
-	}
-	focus = {
-		id = ALA_Rehire_the_old_Admiralty
-		icon = GFX_Focus_Admirals_Perch
-		cost = 10.00
-		x = 22
-		y = 10
-		prerequisite = {
-			focus = ALA_Republic_in_name_Only
-			focus = ALA_Hold_Local_Elections
-		}
-		ai_will_do = { 
-			factor = 300
+			focus = ALA_the_trial_of_the_pacific_fleet
 		}
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = ALA_Bring_Hawaii_back_into_the_fold
-		icon = GFX_Focus_Play_Our_Hand
-		cost = 10.00
-		x = 22
-		y = 11
-		prerequisite = {
-			focus = ALA_Rehire_the_old_Admiralty
-		}
+		id = ALA_a_necessary_evil
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		relative_position_id = ALA_the_trial_of_the_pacific_fleet
+		cost = 5.00
+		x = 20
+		y = 1
 		ai_will_do = { 
 			factor = 300
 		}
-		completion_reward = {
-			create_wargoal = {
-				target = PAC
-				type = annex_everything
-			}
-		}
-		will_lead_to_war_with = PAC
-	}
-	focus = {
-		id = ALA_Putins_Puppet
-		icon = GFX_focus_CZE_german_puppet
-		cost = 5.00
-		x = 14
-		y = 5
 		prerequisite = {
-			focus = ALA_Wagner_Coup
+			focus = ALA_the_trial_of_the_pacific_fleet
 		}
 		mutually_exclusive = {
-			focus = ALA_Reach_out_to_Gorbachev
-			focus = ALA_The_First_Emperors_of_Alaska
-			focus = ALA_the_Soldier_Coup
-		}
-		ai_will_do = { 
-			factor = 300
-			modifier = {
-      			factor = 0
-      			OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_EMP
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_SOV
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_MERC
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_MERC_DEM
-          			}
-      			}
-   			}
+			focus = ALA_a_miscarriage_of_justice
 		}
 		completion_reward = {
-			set_cosmetic_tag = RUSAlaskan_Federation
-			set_party_name = { ideology = autocratic long_name = ALA_Putin_Long name = ALA_Putin }
-			ALA_arkady_rotenberg = {
-				promote_character = yes
-			}
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.35
-			}
+			
 		}
 	}
 	focus = {
-		id = ALA_Let_the_oil_flow
-		icon = GFX_goal_pc_oil
-		cost = 5.00
-		x = 14
-		y = 6
-		prerequisite = {
-			focus = ALA_Putins_Puppet
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = { ROOT = { has_full_control_of_state = PREV } }
-				add_resource = {
-   					type = oil
-    				amount = 55
-				}
-			}
-		}
-	}
-	focus = {
-		id = ALA_Russian_Investors
-		icon = GFX_focus_mex_privatisation
-		cost = 5.00
-		x = 14
-		y = 7
-		prerequisite = {
-			focus = ALA_Let_the_oil_flow
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Russian_Investors_idea
-		}
-	}
-	focus = {
-		id = ALA_Strengthen_wagner
-		icon = GFX_goal_focus_army_is_ready
-		cost = 5.00
-		x = 13
-		y = 8
-		prerequisite = {
-			focus = ALA_Russian_Investors
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_command_power = 35
-			army_experience = 50
-		}
-	}
-	focus = {
-		id = ALA_Counter_the_terrorists
-		icon = GFX_goal_Establish_Untermenshen_Laws
-		cost = 5.00
-		x = 13
-		y = 9
-		prerequisite = {
-			focus = ALA_Strengthen_wagner
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = Counter_terrorism_offensive
-		}
-	}
-	focus = {
-		id = ALA_The_Bering_pipeline
-		icon = GFX_goal_generic_oil_refinery
-		cost = 5.00
-		x = 11
-		y = 9
-		prerequisite = {
-			focus = ALA_Strengthen_wagner
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = Bering_pipeline
-		}
-	}
-	focus = {
-		id = ALA_Secure_our_hold_on_Alaska
-		icon = GFX_goal_Secure_the_border
-		cost = 5.00
-		x = 12
-		y = 10
-		prerequisite = {
-			focus = ALA_Counter_the_terrorists
-		}
-		prerequisite = {
-			focus = ALA_The_Bering_pipeline
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = 0.15
-		}
-	}
-	focus = {
-		id = ALA_Return_of_the_Snowden
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 5.00
-		x = 15
-		y = 8
-		prerequisite = {
-			focus = ALA_Russian_Investors
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = 0.15
-			country_event = { id = Alaska.5 days = 2 }
-			create_intelligence_agency = yes
-			create_operative_leader = {
-				name = "Edward Snowden"
-				GFX = GFX_portrait_Edward_Snowden
-				traits = { operative_linguist }
-				bypass_recruitment = no
-				available_to_spy_master = yes
-				nationalities = { USA ALA FRA }
-			}
-		}
-	}
-	focus = {
-		id = ALA_Reveal_Trump_Dependencies_on_Russia
-		icon = GFX_goal_Trump_TV
-		cost = 5.00
-		x = 15
-		y = 9
-		prerequisite = {
-			focus = ALA_Return_of_the_Snowden
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			IDA = { add_stability = -0.05 }
-			USA = { add_stability = -0.15 }
-		}
-	}
-	focus = {
-		id = ALA_Reveal_Hunters_ties_to_Ukraine
-		icon = GFX_goal_Operation_Hunter
-		cost = 5.00
-		x = 17
-		y = 9
-		prerequisite = {
-			focus = ALA_Return_of_the_Snowden
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			FRA = { add_stability = -0.05 }
-			VIR = { add_stability = -0.15 }
-		}
-	}
-	focus = {
-		id = ALA_Use_the_bots
-		icon = GFX_goal_Ally_Big_Tech
-		cost = 5.00
-		x = 16
-		y = 10
-		prerequisite = {
-			focus = ALA_Reveal_Hunters_ties_to_Ukraine
-		}
-		prerequisite = {
-			focus = ALA_Reveal_Trump_Dependencies_on_Russia
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			USA = {
-				add_timed_idea = {
-					idea = ALA_Russian_Bots
-					days = 180
-				}
-			}
-			FRA = {
-				add_timed_idea = {
-					idea = ALA_Russian_Bots
-					days = 180
-				}
-			}
-		}
-	}
-	focus = {
-		id = ALA_Reintegration_with_Russia
-		icon = GFX_goal_focus_deal_with_russia
-		cost = 15.00
-		x = 14
-		y = 11
-		prerequisite = {
-			focus = ALA_Secure_our_hold_on_Alaska
-		}
-		prerequisite = {
-			focus = ALA_Use_the_bots
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			set_cosmetic_tag = ALA_Russia
-			ALA_vladimir_putin = {
-				promote_character = yes
-			}
-			if =  {
-				limit = {
-					is_ai = no
-				}
-				play_song = "tanks_went_out_today"
-			}
-			country_event = { id = Alaska.57 }
-
-		}
-	}
-	focus = {
-		id = ALA_Putinist_cirriculum
-		icon = GFX_focus_generic_military_academy
-		cost = 	10.00
-		x = 14
-		y = 12
-		prerequisite = {
-			focus = ALA_Reintegration_with_Russia
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = Putinism
-		}
-	}
-	focus = {
-		id = ALA_Reach_out_to_Gorbachev
-		icon = GFX_goal_Communist_Loyalty
-		cost = 5.00
-		x = 8
-		y = 5
-		prerequisite = {
-			focus = ALA_Wagner_Coup
-		}
-		mutually_exclusive = {
-			focus = ALA_Putins_Puppet
-			focus = ALA_The_First_Emperors_of_Alaska
-			focus = ALA_the_Soldier_Coup
-		}
-		ai_will_do = { 
-			factor = 300
-			modifier = {
-      			factor = 0
-      			OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_EMP
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_PUTIN
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_MERC
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_MERC_DEM
-          			}
-      			}
-   			}
-		}
-		completion_reward = {
-			set_politics = {
-				ruling_party = authoritarian_left
-			}
-			drop_cosmetic_tag = yes
-			set_party_name = { ideology = authoritarian_left long_name = ALA_Gorbachev_Long name = ALA_Gorbachev }
-			ALA_gennady_zyuganov = {
-				promote_character = yes
-			}
-			add_popularity = {
-				ideology = authoritarian_left
-				popularity = 0.35
-			}
-		}
-	}
-	focus = {
-		id = ALA_All_Alaskan_Soviet
-		icon = GFX_focus_generic_soviet_politics
-		cost = 5.00
-		x = 8
-		y = 6
-		prerequisite = {
-			focus = ALA_Reach_out_to_Gorbachev
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_country_leader_trait = Premier_of_Alaska
-		}
-	}
-	focus = {
-		id = ALA_issues_with_glasnost
-		icon = GFX_focus_generic_strike_at_democracy2
-		cost = 2.00
-		x = 7
-		y = 7
-		prerequisite = {
-			focus = ALA_All_Alaskan_Soviet
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = -0.05
-			add_political_power = -25
-		}
-	}
-	focus = {
-		id = ALA_issues_with_perestroika
-		icon = GFX_goal_focus_dead_economy
-		cost = 2.00
-		x = 9
-		y = 7
-		prerequisite = {
-			focus = ALA_All_Alaskan_Soviet
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = Industrial_Reorganization
-		}
-	}
-	focus = {
-		id = ALA_Soviet_style_Democracy
-		icon = GFX_goal_focus_soviet_congress
-		cost = 11.00
-		x = 8
-		y = 8
-		prerequisite = {
-			focus = ALA_issues_with_perestroika
-		}
-		prerequisite = {
-			focus = ALA_issues_with_glasnost
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = authoritarian_left
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = libertarian_left
-				popularity = 0.10
-			}
-			add_popularity = {
-				ideology = democrat
-				popularity = 0.05
-			}
-		}
-	}
-	focus = {
-		id = ALA_Plan_our_Economy
-		icon = GFX_goal_focus_seven_year_plan
-		cost = 5.00
-		x = 10
-		y = 8
-		prerequisite = {
-			focus = ALA_issues_with_perestroika
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			swap_ideas = {
-			    remove_idea = Industrial_Reorganization
-			    add_idea = ALA_Perestroika
-			}
-		}
-	}
-	focus = {
-		id = ALA_Tortoise_of_Free_Speech
-		icon = GFX_goal_generic_propaganda
+		id = ALA_a_miscarriage_of_justice
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		relative_position_id = ALA_the_trial_of_the_pacific_fleet
 		cost = 5.00
 		x = 6
-		y = 8
-		prerequisite = {
-			focus = ALA_issues_with_glasnost
-		}
+		y = 1
 		ai_will_do = { 
 			factor = 300
 		}
-		completion_reward = {
-			add_ideas = ALA_Semi_Free_Speech
-		}
-	}
-	focus = {
-		id = ALA_tear_up_the_Belovezha_Accords
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		cost = 10.00
-		x = 8
-		y = 9
 		prerequisite = {
-			focus = ALA_Soviet_style_Democracy
-		}
-		prerequisite = {
-			focus = ALA_Plan_our_Economy
-		}
-		prerequisite = {
-			focus = ALA_Tortoise_of_Free_Speech
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.25
-		}
-	}
-	focus = {
-		id = ALA_USSR_in_Exile
-		icon = GFX_focus_chi_mission_to_the_soviet_union
-		cost = 10.00
-		x = 7
-		y = 10
-		prerequisite = {
-			focus = ALA_tear_up_the_Belovezha_Accords
+			focus = ALA_the_trial_of_the_pacific_fleet
 		}
 		mutually_exclusive = {
-			focus = ALA_Union_of_Alaskan_Soviet_Socialist_Republics
-		}
-		ai_will_do = { 
-			factor = 300
+			focus = ALA_a_necessary_evil
 		}
 		completion_reward = {
-			set_cosmetic_tag = USSR_In_Exile
+			
 		}
 	}
 	focus = {
-		id = ALA_Union_of_Alaskan_Soviet_Socialist_Republics
-		icon = GFX_goal_Alaska_SSR
-		cost = 10.00
-		x = 9
-		y = 10
-		prerequisite = {
-			focus = ALA_tear_up_the_Belovezha_Accords
-		}
-		mutually_exclusive = {
-			focus = ALA_USSR_in_Exile
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			set_cosmetic_tag = ALA_UASSR
-		}
-	}
-	focus = {
-		id = ALA_Liberate_Canadians
-		icon = GFX_focus_por_workers_of_iberia
+		id = ALA_down_with_tyrants
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		relative_position_id = ALA_a_miscarriage_of_justice
 		cost = 5.00
-		x = 8
-		y = 11
-		prerequisite = {
-			focus = ALA_USSR_in_Exile
-			focus = ALA_Union_of_Alaskan_Soviet_Socialist_Republics
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = VAN
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = TEM
-			}
-		}
-		will_lead_to_war_with = VAN
-		will_lead_to_war_with = TEM
-	}
-	focus = {
-		id = ALA_Workers_of_Greater_Alaska
-		icon = GFX_goal_focus_worker_culture
-		cost = 5.00
-		x = 8
-		y = 12
-		prerequisite = {
-			focus = ALA_Liberate_Canadians
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = CAS
-			}
-			add_stability = 0.15
-			add_ideas = ALA_Greater_Alaska
-		}
-		will_lead_to_war_with = CAS
-	}
-	focus = {
-		id = ALA_The_First_Emperors_of_Alaska
-		icon = GFX_goal_Russian_Alaska
-		cost = 10.00
-		x = 2
-		y = 5
-		prerequisite = {
-			focus = ALA_Wagner_Coup
-		}
-		mutually_exclusive = {
-			focus = ALA_Reach_out_to_Gorbachev
-			focus = ALA_Putins_Puppet
-			focus = ALA_the_Soldier_Coup
-		}
-		ai_will_do = { 
-			factor = 300
-			modifier = {
-      			factor = 0
-      			OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_SOV
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_PUTIN
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_MERC
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_MERC_DEM
-          			}
-      			}
-   			}
-		}
-		completion_reward = {
-			add_stability = 0.05
-			set_politics = {
-				ruling_party = autocratic
-			}
-			set_party_name = { ideology = autocratic long_name = ALA_Romanov_Dynasty_Long name = ALA_Romanov_Dynasty }
-			ALA_maria_vladimirovna = {
-				promote_character = yes
-			}
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.35
-			}
-			set_cosmetic_tag = Russo_Alaskan_Empire
-		}
-	}
-	focus = {
-		id = ALA_Crown_Ekaterina_III
-		icon = GFX_goal_Alaskan_Coronation
-		cost = 10.00
-		x = 2
-		y = 6
-		prerequisite = {
-			focus = ALA_The_First_Emperors_of_Alaska
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			ALA_maria_vladimirovna = {
-				set_character_name = "Ekaterina III"
-			}
-			add_country_leader_trait = Tsarina_of_Alaska
-		}
-	}
-	focus = {
-		id = ALA_Recognize_the_Romanov_Suffering
-		icon = GFX_PB_RUS_Romanovs
-		cost = 5.00
-		x = 2
-		y = 7
-		prerequisite = {
-			focus = ALA_Crown_Ekaterina_III
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = 0.05
-			country_event = { id = Alaska.4 days = 2 }
-		}
-	}
-	focus = {
-		id = ALA_Preach_Orthadoxy
-		icon = GFX_goal_Focus_RUS_Cult
-		cost = 5.00
-		x = 0
-		y = 8
-		prerequisite = {
-			focus = ALA_Recognize_the_Romanov_Suffering
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = Strengthened_Alaskan_Orthodox_Church
-		}
-	}
-	focus = {
-		id = ALA_Sponser_Slavic_Refugees_from_Cascadia
-		icon = GFX_goal_Cascadian_Slavs
-		cost = 5.00
-		x = 0
-		y = 9
-		prerequisite = {
-			focus = ALA_Preach_Orthadoxy
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_manpower = 25000
-		}
-	}
-	focus = {
-		id = ALA_Legacy_of_Tsar_Nicholas_II
-		icon = GFX_goal_focus_rus_resist_the_duma
-		cost = 5.00
-		x = 4
-		y = 8
-		prerequisite = {
-			focus = ALA_Recognize_the_Romanov_Suffering
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = Legacy_of_Tsar_Nicholas
-		}
-	}
-	focus = {
-		id = ALA_Eliminate_Opposition
-		icon = GFX_PB_RUS_Off_With_Their_Heads
-		cost = 5.00
-		x = 4
-		y = 9
-		prerequisite = {
-			focus = ALA_Legacy_of_Tsar_Nicholas_II
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = -0.1
-			add_popularity = {
-				ideology = authoritarian_left
-				popularity = -0.15
-			}
-			add_popularity = {
-				ideology = republican
-				popularity = -0.15
-			}
-			add_popularity = {
-				ideology = democrat
-				popularity = -0.35
-			}
-			add_manpower = -5000
-		}
-	}
-	focus = {
-		id = ALA_Land_owner_Nobility
-		icon = GFX_goal_CEO_Gang
-		cost = 5.00
-		x = 2
-		y = 8
-		prerequisite = {
-			focus = ALA_Recognize_the_Romanov_Suffering
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = Russo_Alaskan_Nobility
-		}
-	}
-	focus = {
-		id = ALA_Declare_Russian_as_a_State_Language
-		icon = GFX_goal_Russian_Lingual
-		cost = 5.00
-		x = 2
-		y = 9
-		prerequisite = {
-			focus = ALA_Land_owner_Nobility
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = Russian_Language_Cirriculum
-		}
-	}
-	focus = {
-		id = ALA_Restoration_of_all_the_Russian_Titles
-		icon = GFX_goal_Russian_Titles
-		cost = 15.00
-		x = 2
-		y = 10
-		prerequisite = {
-			focus = ALA_Sponser_Slavic_Refugees_from_Cascadia
-		}
-		prerequisite = {
-			focus = ALA_Eliminate_Opposition
-		}
-		prerequisite = {
-			focus = ALA_Declare_Russian_as_a_State_Language
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			swap_ruler_traits = {
-				remove = Tsarina_of_Alaska
-				add = Tsarina_of_Russia
-			}
-		}
-	}
-	focus = {
-		id = ALA_Unite_the_American_Slavs
-		icon = GFX_goal_Russian_American_War
-		cost = 15.00
-		x = 1
-		y = 11
-		prerequisite = {
-			focus = ALA_Restoration_of_all_the_Russian_Titles
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = CAS
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = IDA
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = MON
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = FRA
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = USA
-			}
-			hidden_effect = {
-				create_wargoal = {
-					type = annex_everything
-					target = DAK
-				}
-			}
-		}
-		will_lead_to_war_with = CAS
-		will_lead_to_war_with = TEM
-		will_lead_to_war_with = IDA
-		will_lead_to_war_with = MON
-		will_lead_to_war_with = FRA
-		will_lead_to_war_with = USA
-		will_lead_to_war_with = DAK
-	}
-	focus = {
-		id = ALA_Unite_the_Canadian_Slavs
-		icon = GFX_goal_Russian_Crush_Canada
-		cost = 15.00
 		x = 3
-		y = 11
-		prerequisite = {
-			focus = ALA_Restoration_of_all_the_Russian_Titles
-		}
+		y = 1
 		ai_will_do = { 
 			factor = 300
 		}
-		will_lead_to_war_with = VAN
-		will_lead_to_war_with = BRC
-		will_lead_to_war_with = ARY
-		will_lead_to_war_with = ALT
+		mutually_exclusive = {
+			focus = ALA_fighting_for_a_red_alaska
+		}
+		prerequisite = {
+			focus = ALA_a_miscarriage_of_justice
+		}
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = VAN
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = TEM
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = BRC
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = ARY
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = ALT
-			}
+			
 		}
 	}
 	focus = {
-		id = ALA_Russian_Empire_in_Exile
-		icon = GFX_goal_Russia_in_Exile
-		cost = 20.00
-		x = 2
-		y = 12
-		prerequisite = {
-			focus = ALA_Unite_the_Canadian_Slavs
-		}
-		prerequisite = {
-			focus = ALA_Unite_the_American_Slavs
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			set_cosmetic_tag = Russian_Empire_in_Exile
-		}
-	}
-	focus = {
-		id = ALA_Palins_Pardons
-		icon = GFX_Goal_generic_jury
+		id = ALA_ally_the_inuit_corporations
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		relative_position_id = ALA_down_with_tyrants
 		cost = 5.00
-		x = 36
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_rally_libertarian_sentiment
+		}
+		prerequisite = {
+			focus = ALA_down_with_tyrants
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_rally_libertarian_sentiment
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		relative_position_id = ALA_down_with_tyrants
+		cost = 5.00
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_ally_the_inuit_corporations
+		}
+		prerequisite = {
+			focus = ALA_down_with_tyrants
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_organize_the_boogaloo
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
 		y = 2
-		prerequisite = {
-			focus = ALA_Legacy_of_the_Dictatorship
-		}
-		mutually_exclusive = {
-			focus = ALA_Imprison_former_Fleet_Personnel
-		}
-		available = {
-			has_country_flag = Pardoned_Fleet_Personnel
-		}
+		relative_position_id = ALA_down_with_tyrants
 		ai_will_do = { 
 			factor = 300
 		}
+		prerequisite = {
+			focus = ALA_rally_libertarian_sentiment
+			focus = ALA_ally_the_inuit_corporations
+		}
+
 		completion_reward = {
-			add_stability = -0.07
+			
 		}
 	}
 	focus = {
-		id = ALA_Speak_out_against_the_Commies
-		icon = GFX_goal_Palin_owns_Commies
+		id = ALA_freedom_is_our_watchword
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 38
+		x = 0
+		y = 1
+		relative_position_id = ALA_organize_the_boogaloo
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_organize_the_boogaloo
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_fighting_for_a_red_alaska
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		relative_position_id = ALA_a_miscarriage_of_justice
+		cost = 5.00
+		x = -3
+		y = 1
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_down_with_tyrants
+		}
+		prerequisite = {
+			focus = ALA_a_miscarriage_of_justice
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_gain_the_support_of_the_inuit_tribes
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains		
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_fighting_for_a_red_alaska
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_the_workers_of_anchorage
+		}
+		prerequisite = {
+			focus = ALA_fighting_for_a_red_alaska
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_workers_of_anchorage
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains		
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_fighting_for_a_red_alaska
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_gain_the_support_of_the_inuit_tribes
+		}
+		prerequisite = {
+			focus = ALA_fighting_for_a_red_alaska
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_red_guard
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains		
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_fighting_for_a_red_alaska
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_workers_of_anchorage
+			focus = ALA_gain_the_support_of_the_inuit_tribes
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_up_with_the_hammer_and_star
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains		
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_the_red_guard
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_red_guard
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_preparing_the_resistance
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		relative_position_id = ALA_a_miscarriage_of_justice
+		cost = 5.00
+		x = 0
+		y = 2
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_down_with_tyrants
+			focus = ALA_fighting_for_a_red_alaska
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_sabotage_communications
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_preparing_the_resistance
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_preparing_the_resistance
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_entrench_our_cells
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_preparing_the_resistance
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_preparing_the_resistance
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_choke_the_anchorage_garrison
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_preparing_the_resistance
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_entrench_our_cells
+		}
+		prerequisite = {
+			focus = ALA_sabotage_communications
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_strike_the_capital
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_choke_the_anchorage_garrison
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_choke_the_anchorage_garrison
+		}
+		prerequisite = {
+			focus = ALA_freedom_is_our_watchword
+			focus = ALA_up_with_the_hammer_and_star
+		}
+		completion_reward = {
+			
+		}
+	}
+	#NATIVE ALASKA PATH
+	focus = {
+		id = ALA_alaaskaq
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -23
+		y = 1
+		relative_position_id = ALA_strike_the_capital
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_the_frontier_state
+			focus = ALA_peoples_republic_of_alaska
+			focus = ALA_corporation_with_a_state
+		}
+		prerequisite = {
+			focus = ALA_strike_the_capital
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_what_of_the_white_man
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 4.00
+		x = 2
+		y = 1
+		relative_position_id = ALA_alaaskaq
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_alaaskaq
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_forgiveness
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 4.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_what_of_the_white_man
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_vengeance
+		}
+		prerequisite = {
+			focus = ALA_what_of_the_white_man
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_vengeance
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 4.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_what_of_the_white_man
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_forgiveness
+		}
+		prerequisite = {
+			focus = ALA_what_of_the_white_man
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_condemn_the_icc
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -5
+		y = 1
+		relative_position_id = ALA_alaaskaq
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_alaaskaq
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_pan_inuit_ideology
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_condemn_the_icc
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_condemn_the_icc
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_prepare_to_liberate_canada
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_pan_inuit_ideology
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_pan_inuit_ideology
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_strike_the_west_coast
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_prepare_to_liberate_canada
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_prepare_to_liberate_canada
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_break_the_plains
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_prepare_to_liberate_canada
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_prepare_to_liberate_canada
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_nunavut_unification
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_prepare_to_liberate_canada
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_strike_the_west_coast
+		}
+		prerequisite = {
+			focus = ALA_break_the_plains
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_rest_of_canada
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_nunavut_unification
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_nunavut_unification
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_inuit_allies_in_greenland
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_the_rest_of_canada
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_rest_of_canada
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_liberate_greenland
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_the_rest_of_canada
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_rest_of_canada
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_embrace_pan_native_ideology
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_the_rest_of_canada
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_liberate_greenland
+		}
+		prerequisite = {
+			focus = ALA_inuit_allies_in_greenland
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_revitalize_the_inuit_people
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_alaaskaq
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_alaaskaq
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_reembrace_animism_and_shamanism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 2
+		relative_position_id = ALA_revitalize_the_inuit_people
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_revitalize_the_inuit_people
+		}
+		prerequisite = {
+			focus = ALA_pan_inuit_ideology
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_keep_christian_syncretism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_reembrace_animism_and_shamanism
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_reverse_the_colonialist_stain
+		}
+		prerequisite = {
+			focus = ALA_reembrace_animism_and_shamanism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_reverse_the_colonialist_stain
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_reembrace_animism_and_shamanism
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_keep_christian_syncretism
+		}
+		prerequisite = {
+			focus = ALA_reembrace_animism_and_shamanism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_appropiate_church_property
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_reverse_the_colonialist_stain
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_reverse_the_colonialist_stain
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_undo_cultural_genocide
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_reembrace_animism_and_shamanism
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_reverse_the_colonialist_stain
+			focus = ALA_keep_christian_syncretism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_end_the_overcrowding
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_revitalize_the_inuit_people
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_revitalize_the_inuit_people
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_inuit_healthcare
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_end_the_overcrowding
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_end_the_overcrowding
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_stop_the_rampant_crime
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_inuit_healthcare
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_inuit_healthcare
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_five_year_plan
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 9
+		y = 1
+		relative_position_id = ALA_alaaskaq
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_alaaskaq
+			focus = ALA_peoples_republic_of_alaska
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_liquidate_the_permanent_fund
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_the_five_year_plan
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_five_year_plan
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_nationalize_the_inuit_corporations
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -3
+		y = 1
+		relative_position_id = ALA_the_five_year_plan
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_five_year_plan
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_strengthen_environmental_protections
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_nationalize_the_inuit_corporations
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_nationalize_the_inuit_corporations
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_land_back
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_strengthen_environmental_protections
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_strengthen_environmental_protections
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_redistribute_the_wealth_to_inuit_communities
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -0
+		y = 1
+		relative_position_id = ALA_nationalize_the_inuit_corporations
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_nationalize_the_inuit_corporations
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_complete_resource_sovereignty
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ALA_nationalize_the_inuit_corporations
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_nationalize_the_inuit_corporations
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_end_the_trans_alaska_pipeline
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_redistribute_the_wealth_to_inuit_communities
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_the_peoples_pipeline
+		}
+		prerequisite = {
+			focus = ALA_redistribute_the_wealth_to_inuit_communities
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_peoples_pipeline
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_complete_resource_sovereignty
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_end_the_trans_alaska_pipeline
+		}
+		prerequisite = {
+			focus = ALA_complete_resource_sovereignty
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_anchorage_industrial_zone
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 3
+		y = 1
+		relative_position_id = ALA_the_five_year_plan
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_five_year_plan
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_consolidate_the_fisheries
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ALA_anchorage_industrial_zone
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_anchorage_industrial_zone
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_expand_the_fisheries_in_the_kenai_peninsula
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_consolidate_the_fisheries
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_consolidate_the_fisheries
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_full_employment
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_anchorage_industrial_zone
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_anchorage_industrial_zone
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_central_council_of_trade_unions
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_full_employment
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_full_employment
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_state_gauranteed_housing
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_anchorage_industrial_zone
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_anchorage_industrial_zone
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_densification_program
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_state_gauranteed_housing
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_state_gauranteed_housing
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_bring_alaskas_healthcare_into_modernity
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
 		y = 3
-		prerequisite = {
-			focus = ALA_Palins_Pardons
-		}
+		relative_position_id = ALA_liquidate_the_permanent_fund
 		ai_will_do = { 
 			factor = 300
 		}
+		prerequisite = {
+			focus = ALA_densification_program
+			focus = ALA_central_council_of_trade_unions
+			focus = ALA_expand_the_fisheries_in_the_kenai_peninsula
+		}
+		prerequisite = {
+			focus = ALA_land_back
+			focus = ALA_end_the_trans_alaska_pipeline
+			focus = ALA_the_peoples_pipeline
+		}
 		completion_reward = {
-			add_popularity = {
-				ideology = libertarian_left
-				popularity = -0.07
-			}
-			add_popularity = {
-				ideology = authoritarian_left
-				popularity = -0.07
-			}
+			
 		}
 	}
 	focus = {
-		id = ALA_Reach_out_to_the_Majors
-		icon = GFX_goal_ALA_Secret_Alliance
+		id = ALA_free_universal_education
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 40
+		x = 1
+		y = 3
+		relative_position_id = ALA_liquidate_the_permanent_fund
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_densification_program
+			focus = ALA_central_council_of_trade_unions
+			focus = ALA_expand_the_fisheries_in_the_kenai_peninsula
+		}
+		prerequisite = {
+			focus = ALA_land_back
+			focus = ALA_end_the_trans_alaska_pipeline
+			focus = ALA_the_peoples_pipeline
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_peoples_economy
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
 		y = 4
-		prerequisite = {
-			focus = ALA_Speak_out_against_the_Commies
-		}
+		relative_position_id = ALA_liquidate_the_permanent_fund
 		ai_will_do = { 
 			factor = 300
 		}
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = ALA_Secret_treaty_with_Trump
-		icon = GFX_goal_trump_blue_lives_matter
-		cost = 5.00
-		x = 40
-		y = 5
 		prerequisite = {
-			focus = ALA_Reach_out_to_the_Majors
+			focus = ALA_free_universal_education
 		}
-		ai_will_do = { 
-			factor = 300
+		prerequisite = {
+			focus = ALA_bring_alaskas_healthcare_into_modernity
 		}
 		completion_reward = {
-			USA = {
-				country_event = { id = Alaska.20 days = 5 }
-			}
-		}
-	}
-	focus = {
-		id = ALA_Secret_treaty_with_Biden
-		icon = GFX_goal_Biden_Handshake
-		cost = 5.00
-		x = 38
-		y = 5
-		prerequisite = {
-			focus = ALA_Reach_out_to_the_Majors
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			FRA = {
-				country_event = { id = Alaska.21 days = 5 }
-			}
-		}
-	}
-	focus = {
-		id = ALA_Secret_treaty_with_GLA
-		icon = GFX_goal_ALA_Libertarian_Friends
-		cost = 5.00
-		x = 42
-		y = 5
-		prerequisite = {
-			focus = ALA_Reach_out_to_the_Majors
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			GLA = {
-				country_event = { id = Alaska.22 days = 5 }
-			}
-		}
-	}
-	focus = {
-		id = ALA_Always_on_top
-		icon = GFX_goal_Celebration_of_Anarchism
-		cost = 5.00
-		x = 40
-		y = 6
-		prerequisite = {
-			focus = ALA_Secret_treaty_with_Trump
-		}
-		prerequisite = {
-			focus = ALA_Secret_treaty_with_Biden
-		}
-		prerequisite = {
-			focus = ALA_Secret_treaty_with_GLA
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			country_event = { id = Alaska.23 days = 1 }
-		}
-	}
-	focus = {
-		id = ALA_Alaskan_UDI
-		icon = GFX_Focus_Generic_Accept_Treaty
-		cost = 5.00
-		x = 43
-		y = 7
-		prerequisite = {
-			focus = ALA_Always_on_top
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			news_event = { id = News_events.7 days = 5 }
-		}
-	}
-	focus = {
-		id = ALA_Hold_our_Elections
-		icon = GFX_Focus_Generic_Democratic_Election
-		cost = 5.00
-		x = 46
-		y = 8
-		prerequisite = {
-			focus = ALA_Alaskan_UDI
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			country_event = { id = Alaska.25 days = 5 }
-		}
-	}
-	focus = {
-		id = ALA_President_Vo
-		icon = GFX_goal_Joshua_Vo
-		cost = 5.00
-		x = 32
-		y = 9
-		prerequisite = {
-			focus = ALA_Hold_our_Elections
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		available = {
-			has_country_flag = ALA_President_Vo_Elected
-		}
-		completion_reward = {
-			set_politics = {
-				ruling_party = libertarian_left
-			}
-			add_popularity = {
-				ideology = libertarian_left
-				popularity = 0.10
-			}
-		}
-	}
-	focus = {
-		id = ALA_Address_Allegations_of_Sanders_Ties
-		icon = GFX_goal_Bernie_sad_moment
-		cost = 5.00
-		x = 34
-		y = 10
-		prerequisite = {
-			focus = ALA_President_Vo
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			country_event = { id = Alaska.26 days = 1 }
-		}
-	}
-	focus = {
-		id = ALA_Provide_aid_to_Iniut_northerners
-		icon = GFX_goal_SCA_Support_The_National_Ministry_Of_Health
-		cost = 5.00
-		x = 30
-		y = 10
-		prerequisite = {
-			focus = ALA_President_Vo
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Inuit_Assistance
-		}
-	}
-	focus = {
-		id = ALA_Alaska_is_Strong_Together
-		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		cost = 5.00
-		x = 32
-		y = 11
-		prerequisite = {
-			focus = ALA_Address_Allegations_of_Sanders_Ties
-			focus = ALA_Provide_aid_to_Iniut_northerners
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			add_political_power = 25
-		}
-	}
-	focus = {
-		id = ALA_Inuit_Reperations
-		icon = GFX_goal_Generic_Loadsamoney
-		cost = 5.00
-		x = 30
-		y = 11
-		prerequisite = {
-			focus = ALA_Provide_aid_to_Iniut_northerners
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Inuit_Reperations
-		}
-	}
-	focus = {
-		id = ALA_Grant_Inuit_Federal_Lands
-		icon = GFX_goal_Generic_Land_Reform
-		cost = 5.00
-		x = 30
-		y = 12
-		prerequisite = {
-			focus = ALA_Inuit_Reperations
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 1 }
-			add_offsite_building = { type = industrial_complex level = 2 }
-		}
-	}
-	focus = {
-		id = ALA_denounce_hardcore_leftists
-		icon = GFX_goal_Generic_Arrests
-		cost = 5.00
-		x = 34
-		y = 11
-		prerequisite = {
-			focus = ALA_Address_Allegations_of_Sanders_Ties
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = authoritarian_left
-				popularity = -0.02
-			}
-		}
-	}
-	focus = {
-		id = ALA_Fate_of_ACP
-		icon = GFX_goal_Generic_Communist_Revolution
-		cost = 5.00
-		x = 34
-		y = 12
-		prerequisite = {
-			focus = ALA_denounce_hardcore_leftists
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			country_event = { id = Alaska.27 days = 1 }
-		}
-	}
-	focus = {
-		id = ALA_Pink_Alaska
-		icon = GFX_goal_Generic_Social_Democracy
-		cost = 5.00
-		x = 32
-		y = 13
-		prerequisite = {
-			focus = ALA_Fate_of_ACP
-		}
-		prerequisite = {
-			focus = ALA_Grant_Inuit_Federal_Lands
-		}
-		prerequisite = {
-			focus = ALA_Alaska_is_Strong_Together
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = libertarian_left
-				popularity = 0.10
-			}
-			add_ideas = ALA_Pink_Alaska
-		}
-	}
-	focus = {
-		id = ALA_President_Begich
-		icon = GFX_goal_Tom_Begich
-		cost = 5.00
-		x = 40
-		y = 9
-		prerequisite = {
-			focus = ALA_Hold_our_Elections
-		}
-		available = {
-			has_country_flag = ALA_President_Begich_Elected
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			set_politics = {
-				ruling_party = democrat
-			}
-			add_popularity = {
-				ideology = democrat
-				popularity = 0.07
-			}
-		}
-	}
-	focus = {
-		id = ALA_An_Appeal_to_Normality
-		icon = GFX_goal_Generic_Radio_Broadcast
-		cost = 5.00
-		x = 38
-		y = 10
-		prerequisite = {
-			focus = ALA_President_Begich
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = 0.05
-			add_popularity = {
-				ideology = libertarian_left
-				popularity = -0.10
-			}
-			add_popularity = {
-				ideology = libertarian_right
-				popularity = -0.10
-			}
-			add_popularity = {
-				ideology = authoritarian_left
-				popularity = -0.10
-			}
-			add_popularity = {
-				ideology = autocratic
-				popularity = -0.10
-			}
-		}
-	}
-	focus = {
-		id = ALA_Bidenist_Ties
-		icon = GFX_goal_Biden_and_cop_saluting
-		cost = 5.00
-		x = 38
-		y = 11
-		prerequisite = {
-			focus = ALA_An_Appeal_to_Normality
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 2 }
-			add_offsite_building = { type = industrial_complex level = 2 }
-			FRA = {
-				add_timed_idea = {
-    				idea = ALA_Helping_Alaska
-    				days = 180
-				}
-				add_to_faction = ALA
-			}
-		}
-	}
-	focus = {
-		id = ALA_Repeal_UDI
-		icon = GFX_Focus_Generic_Refuse_Treaty
-		cost = 5.00
-		x = 38
-		y = 12
-		prerequisite = {
-			focus = ALA_Bidenist_Ties
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			country_event = { id = Alaska.28 days = 1 }
-		}
-	}
-	focus = {
-		id = ALA_Recognize_Iniut_Ownership
-		icon = GFX_goal_texas_natives
-		cost = 5.00
-		x = 42
-		y = 10
-		prerequisite = {
-			focus = ALA_President_Begich
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Native_Volunteers
-		}
-	}
-	focus = {
-		id = ALA_American_Democracy
-		icon = GFX_goal_American_Flag
-		cost = 5.00
-		x = 40
-		y = 11
-		prerequisite = {
-			focus = ALA_Recognize_Iniut_Ownership
-			focus = ALA_An_Appeal_to_Normality
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_American_Democracy
-		}
-	}
-	focus = {
-		id = ALA_End_the_Fronteir_myth
-		icon = GFX_PB_JAP_Hashimoto_Breakneck_Industrialization
-		cost = 5.00
-		x = 42
-		y = 11
-		prerequisite = {
-			focus = ALA_Recognize_Iniut_Ownership
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Infrastructure_Improvement
-		}
-	}
-	focus = {
-		id = ALA_Town_Hall_Democracy
-		icon = GFX_Focus_PB_Democratic_Government
-		cost = 5.00
-		x = 42
-		y = 12
-		prerequisite = {
-			focus = ALA_End_the_Fronteir_myth
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = 0.03
-			add_political_power = 75
-		}
-	}
-	focus = {
-		id = ALA_Bidenist_Integration
-		icon = GFX_goal_Unite_with_Biden
-		cost = 5.00
-		x = 40
-		y = 13
-		prerequisite = {
-			focus = ALA_Town_Hall_Democracy
-		}
-		prerequisite = {
-			focus = ALA_American_Democracy
-		}
-		prerequisite = {
-			focus = ALA_Repeal_UDI
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			FRA = {
-				annex_country = {
-    				target = ALA
-				    transfer_troops = yes
-				}
-				add_state_core = 2
-				add_state_core = 11
-				add_state_core = 14
-				add_state_core = 16
-				add_state_core = 19
-				add_state_core = 404
-				add_state_core = 96
-			}
-			transfer_navy = {
-    			target = FRA
-			}
-		}
-	}
-	focus = {
-		id = ALA_President_Palin
-		icon = GFX_goal_Sarah_Palin
-		cost = 5.00
-		x = 46
-		y = 9
-		prerequisite = {
-			focus = ALA_Hold_our_Elections
-		}
-		available = {
-			has_country_flag = ALA_President_Palin_Elected
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = republican
-				popularity = 0.15
-			}
-		}
-	}
-	focus = {
-		id = ALA_Appeal_to_UN
-		icon = GFX_goal_United_Nations
-		cost = 5.00
-		x = 44
-		y = 10
-		prerequisite = {
-			focus = ALA_President_Palin
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			PUE = {
-				country_event = { id = Alaska.50 days = 5 }
-			}
-		}
-	}
-	focus = {
-		id = ALA_Appeal_to_NATO
-		icon = GFX_goal_NATO
-		cost = 5.00
-		x = 44
-		y = 11
-		prerequisite = {
-			focus = ALA_Appeal_to_UN
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			set_rule = {
-    			can_create_factions = yes
-			}
-			#create_faction = ALA_NATO #need to replace since its defunct
-		}
-	}
-	focus = {
-		id = ALA_Alaskan_International_Refugee_Zone
-		icon = GFX_goal_Generic_Refugees
-		cost = 5.00
-		x = 44
-		y = 12
-		prerequisite = {
-			focus = ALA_Appeal_to_NATO
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Civil_War_Refugees
-		}
-	}
-	focus = {
-		id = ALA_Tea_Party_Idealism
-		icon = GFX_goal_KFC_tea_party
-		cost = 5.00
-		x = 48
-		y = 10
-		prerequisite = {
-			focus = ALA_President_Palin
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = republican
-				popularity = 0.05
-			}
-		}
-	}
-	focus = {
-		id = ALA_Meet_with_Mr_Trump
-		icon = GFX_focus_MON_Meeting_With_The_Trump
-		cost = 5.00
-		x = 46
-		y = 11
-		prerequisite = {
-			focus = ALA_Tea_Party_Idealism
-			focus = ALA_Appeal_to_UN
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			USA = {
-				country_event = { id = Alaska.51 days = 10 }
-			}
-		}
-	}
-	focus = {
-		id = ALA_America_By_Heart
-		icon = GFX_goal_The_Return_of_America
-		cost = 5.00
-		x = 48
-		y = 11
-		prerequisite = {
-			focus = ALA_Tea_Party_Idealism
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_America_by_Heart
-		}
-	}
-	focus = {
-		id = ALA_Friends_with_Big_Oil
-		icon = GFX_goal_Generic_Oil_Production
-		cost = 5.00
-		x = 48
-		y = 12
-		prerequisite = {
-			focus = ALA_America_By_Heart
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Oil_Ties
-		}
-	}
-	focus = {
-		id = ALA_Truly_Independent_Alaska
-		icon = GFX_goal_Alaskan_Independence
-		cost = 5.00
-		x = 46
-		y = 13
-		prerequisite = {
-			focus = ALA_Friends_with_Big_Oil
-		}
-		prerequisite = {
-			focus = ALA_Meet_with_Mr_Trump
-		}
-		prerequisite = {
-			focus = ALA_Alaskan_International_Refugee_Zone
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = 0.1
-			add_war_support = 0.1
-		}
-	}
-	focus = {
-		id = ALA_President_Watts
-		icon = GFX_goal_Jon_Briggs_Watts
-		cost = 5.00
-		x = 52
-		y = 9
-		prerequisite = {
-			focus = ALA_Hold_our_Elections
-		}
-		available = {
-			has_country_flag = ALA_President_Watts_Elected
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			set_politics = {
-				ruling_party = libertarian_right
-			}
-			add_popularity = {
-				ideology = libertarian_right
-				popularity = 0.15
-			}
-		}
-	}
-	focus = {
-		id = ALA_The_Land_of_Preppers_and_Hunters
-		icon = GFX_goal_Hunters
-		cost = 5.00
-		x = 54
-		y = 10
-		prerequisite = {
-			focus = ALA_President_Watts
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = MON_Rifleland
-		}
-	}
-	focus = {
-		id = ALA_Abolish_Taxation
-		icon = GFX_goal_Denounce_Big_Money
-		cost = 5.00
-		x = 50
-		y = 10
-		prerequisite = {
-			focus = ALA_President_Watts
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = Minimal_Taxes
-		}
-	}
-	focus = {
-		id = ALA_Self_Governance_to_the_Communities
-		icon = GFX_focus_generic_self_management
-		cost = 5.00
-		x = 52
-		y = 11
-		prerequisite = {
-			focus = ALA_Abolish_Taxation
-			focus = ALA_The_Land_of_Preppers_and_Hunters
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = -0.05
-			add_ideas = volunteer_only
-		}
-	}
-	focus = {
-		id = ALA_Hand_out_Government_Spendings
-		icon = GFX_goal_SPR_clean_hands
-		cost = 5.00
-		x = 50
-		y = 11
-		prerequisite = {
-			focus = ALA_Abolish_Taxation
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Taxation_Returns
-		}
-	}
-	focus = {
-		id = ALA_Self_Preservationism
-		icon = GFX_goal_generic_political_pressure
-		cost = 5.00
-		x = 50
-		y = 12
-		prerequisite = {
-			focus = ALA_Hand_out_Government_Spendings
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_political_power = 30
-			add_equipment_to_stockpile = {
-			    type = infantry_equipment
-			    amount = 500
-			    producer = ALA
-			}
-		}
-	}
-	focus = {
-		id = ALA_Encourage_Boogaloo_Militias
-		icon = GFX_goal_Boog_Tank
-		cost = 5.00
-		x = 54
-		y = 11
-		prerequisite = {
-			focus = ALA_The_Land_of_Preppers_and_Hunters
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			division_template = {
-				name = "Boogaloo Militias"
-				is_locked = no
-				priority = 2
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 0 y = 3 }
-					infantry = { x = 0 y = 4 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 1 y = 3 }
-					infantry = { x = 1 y = 4 }
-				}
-				support = {
-					recon = { x = 0 y = 0 }
-				}
-			}
-			random_owned_controlled_state = {
-				limit = { ROOT = { has_full_control_of_state = PREV } }
-				create_unit = {
-					division = "name = \"Juneau Boogaloo Boys\" division_template = \"Boogaloo Militias\" start_experience_factor = 0.6" 
-					owner = ALA
-				}
-				create_unit = {
-					division = "name = \"Anchorage Boogaloo Boys\" division_template = \"Boogaloo Militias\" start_experience_factor = 0.6" 
-					owner = ALA
-				}
-			}
-		}
-	}
-	focus = {
-		id = ALA_Stop_Identity_Politics
-		icon = GFX_goal_Anti_Biden
-		cost = 5.00
-		x = 54
-		y = 12
-		prerequisite = {
-			focus = ALA_Encourage_Boogaloo_Militias
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = democrat
-				popularity = -0.07
-			}
-			add_popularity = {
-				ideology = republican
-				popularity = -0.07
-			}
-		}
-	}
-	focus = {
-		id = ALA_The_Frontierist_State
-		icon = GFX_goal_Fronteir
-		cost = 5.00
-		x = 52
-		y = 13
-		prerequisite = {
-			focus = ALA_Self_Governance_to_the_Communities
-		}
-		prerequisite = {
-			focus = ALA_Self_Preservationism
-		}
-		prerequisite = {
-			focus = ALA_Stop_Identity_Politics
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Frontierism
-		}
-	}
-	focus = {
-		id = ALA_President_Krumm
-		icon = GFX_goal_David_Krumm
-		cost = 5.00
-		x = 58
-		y = 9
-		prerequisite = {
-			focus = ALA_Hold_our_Elections
-		}
-		available = {
-			has_country_flag = ALA_President_Krumm_Elected
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			set_politics = {
-				ruling_party = autocratic
-			}
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.30
-			}
-		}
-	}
-	focus = {
-		id = ALA_Reach_out_to_Hawaii
-		icon = GFX_goal_tripartite_pact
-		cost = 5.00
-		x = 56
-		y = 10
-		prerequisite = {
-			focus = ALA_President_Krumm
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			PAC = {
-				country_event = { id = Alaska.52 days = 10 }
-			}
-		}
-	}
-	focus = {
-		id = ALA_Rally_the_Vets
-		icon = GFX_goal_Generic_Army_Officers
-		cost = 5.00
-		x = 60
-		y = 10
-		prerequisite = {
-			focus = ALA_President_Krumm
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = service_by_requirement
-		}
-	}
-	focus = {
-		id = ALA_Pardon_Aquilino
-		icon = GFX_Focus_Admirals_Perch
-		cost = 5.00
-		x = 58
-		y = 11
-		prerequisite = {
-			focus = ALA_Reach_out_to_Hawaii
-			focus = ALA_Rally_the_Vets
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			country_event = { id = Alaska.53 days = 5 }
-		}
-	}
-	focus = {
-		id = ALA_Launchpoint_into_America
-		icon = GFX_goal_Generic_Invasion
-		cost = 5.00
-		x = 60
-		y = 11
-		prerequisite = {
-			focus = ALA_Rally_the_Vets
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			create_wargoal = {
-				target = VAN
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = BRC
-				type = annex_everything
-			}
-		}
-		will_lead_to_war_with = BRC
-		will_lead_to_war_with = VAN
-	}
-	focus = {
-		id = ALA_Alaskan_Columbia
-		icon = GFX_goal_AME_Hail_Columbia
-		cost = 5.00
-		x = 60
-		y = 12
-		prerequisite = {
-			focus = ALA_Launchpoint_into_America
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		available = {
-			NOT = {
-				country_exists = VAN
-				country_exists = BRC
-			}
-		}
-		completion_reward = {
-			Every_state = {
-    			Limit = { is_controlled_by = ALA }
-				Add_core_of = ALA
-			}
-		}
-	}
-	focus = {
-		id = ALA_Restore_the_Navy
-		icon = GFX_Naval_Upgrade
-		cost = 5.00
-		x = 56
-		y = 11
-		prerequisite = {
-			focus = ALA_Reach_out_to_Hawaii
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			PAC = {
-				transfer_navy = {
-    				target = ALA
-				}
-			}
-			annex_country = {
-    			target = ALA
-     			transfer_troops = yes
- 			}
-		}
-	}
-	focus = {
-		id = ALA_New_Tactics
-		icon = GFX_goal_Focus_Generic_Maritime_Trade
-		cost = 5.00
-		x = 56
-		y = 12
-		prerequisite = {
-			focus = ALA_Restore_the_Navy
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
-		}
-	}
-	focus = {
-		id = ALA_The_Second_Pacific_Fleet
-		icon = GFX_goal_focus_battlefleet
-		cost = 5.00
-		x = 58
-		y = 13
-		prerequisite = {
-			focus = ALA_New_Tactics
-		}
-		prerequisite = {
-			focus = ALA_Alaskan_Columbia
-		}
-		prerequisite = {
-			focus = ALA_Pardon_Aquilino
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_2nd_Pacific_Fleet
-			set_cosmetic_tag = ALA_Pacific_Fleet
-		}
-	}
-	focus = {
-		id = ALA_Alaskan_Expansion
-		icon = GFX_goal_Generic_Bad_Expansionism
-		cost = 5.00
-		x = 100
-		y = 7
-		prerequisite = {
-			focus = ALA_Always_on_top
-		}
-		available = {
-			OR = {
-				has_completed_focus = ALA_The_Second_Pacific_Fleet
-				has_completed_focus = ALA_Pink_Alaska
-				has_completed_focus = ALA_Truly_Independent_Alaska
-			}
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_war_support = 0.05
-			add_political_power = 25
-		}
-	}
-	focus = {
-		id = ALA_Peaceful_Reintegration
-		icon = GFX_goal_Make_Peace
-		cost = 5.00
-		x = 95
-		y = 8
-		prerequisite = {
-			focus = ALA_Alaskan_Expansion
-		}
-		mutually_exclusive = {
-			focus = ALA_True_Alaskan_Borders
-		}
-		available = {
-			OR = {
-				has_completed_focus = ALA_Pink_Alaska
-				has_completed_focus = ALA_Truly_Independent_Alaska	
-			}
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_stability = 0.15
-			add_war_support = -0.1
-		}
-	}
-	focus = {
-		id = ALA_Reach_out_to_Vancouver_Socialists
-		icon = GFX_goal_Generic_Socialism
-		cost = 5.00
-		x = 94
-		y = 9
-		prerequisite = {
-			focus = ALA_Peaceful_Reintegration
-		}
-		mutually_exclusive = {
-			focus = ALA_Reach_out_to_BRC_Conservatives
-		}
-		available = {
-			has_government = libertarian_left
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			VAN = {
-				country_event = { id = Alaska.54 days = 1 } #Alaskan ANnexation
-			}
-		}
-	}
-	focus = {
-		id = ALA_Reach_out_to_BRC_Conservatives
-		icon = GFX_goal_AME_Hail_Columbia
-		cost = 5.00
-		x = 96
-		y = 9
-		prerequisite = {
-			focus = ALA_Peaceful_Reintegration
-		}
-		mutually_exclusive = {
-			focus = ALA_Reach_out_to_Vancouver_Socialists
-		}
-		available = {
-			has_government = republican
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			BRC = {
-				country_event = { id = Alaska.54 days = 1 } #Alaskan ANnexation
-			}
-		}
-	}
-	focus = {
-		id = ALA_Land_for_Subjugation
-		icon = GFX_goal_Conservative_Party
-		cost = 5.00
-		x = 95
-		y = 10
-		prerequisite = {
-			focus = ALA_Reach_out_to_Vancouver_Socialists
-			focus = ALA_Reach_out_to_BRC_Conservatives
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			CAS = {
-				country_event = { id = Alaska.55 days = 1 } #
-			}
-		}
-	}
-	focus = {
-		id = ALA_Integrate_Cascadia
-		icon = GFX_Focus_Sign_Constitution
-		cost = 5.00
-		x = 95
-		y = 11
-		prerequisite = {
-			focus = ALA_Land_for_Subjugation
-		}
-		available = {
-			CAS = {
-				OR = {
-					is_puppet_of = ALA
-					exists = no
-				}
-			}
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			IF = {
-				LIMIT = {
-					CAS = {
-						is_ai = yes
-					}
-				}
-				annex_country = {
-    				target = CAS
-    				transfer_troops = yes
-				}
-				else = {
-					CAS = {
-					country_event = { id = Alaska.56 days = 1 } #
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = ALA_Remove_American_Identity
-		icon = GFX_goal_USA_Flag_down
-		cost = 5.00
-		x = 95
-		y = 12
-		prerequisite = {
-			focus = ALA_Integrate_Cascadia
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			Every_owned_state = {
-				Clr_state_flag = part_of_america
-			}
-			set_cosmetic_tag = ALA_Greater_Alaska
-		}
-	}
-	focus = {
-		id = ALA_True_Alaskan_Borders
-		icon = GFX_goal_Generic_Redraw_Borders
-		cost = 5.00
-		x = 105
-		y = 8
-		prerequisite = {
-			focus = ALA_Alaskan_Expansion
-		}
-		mutually_exclusive = {
-			focus = ALA_Peaceful_Reintegration
-		}
-		available = {
-			OR = {
-				has_completed_focus = ALA_The_Second_Pacific_Fleet
-				has_completed_focus = ALA_Truly_Independent_Alaska	
-			}
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			Every_state = {
-    			Limit = { 
-    				is_owned_by = VAN
-    			}
-    			add_core_of = ALA
-    		}
-    		Every_state = {
-    			Limit = { 
-    				is_owned_by = BRC
-    			}
-    			add_core_of = ALA
-    		}
-    		Every_state = {
-    			Limit = { 
-    				is_owned_by = LIB
-    			}
-    			add_core_of = ALA
-    		}
-    		Every_state = {
-    			Limit = { 
-    				is_owned_by = CAS
-    			}
-    			add_core_of = ALA
-    		}
-    		Every_state = {
-    			Limit = { 
-    				is_owned_by = MON
-    			}
-    			add_core_of = ALA
-    		}
-    		IF = {
-    			LIMIT = {
-    				has_cosmetic_tag = ALA_Pacific_Fleet
-    			}
-    			add_war_support = 0.05
-    			else = {
-    				set_cosmetic_tag = ALA_Greater_Alaska
-    			}
-    		}
-		}
-	}
-	focus = {
-		id = ALA_March_to_the_Mountains
-		icon = GFX_goal_Generic_Mountain_Warfare
-		cost = 5.00
-		x = 105
-		y = 9
-		prerequisite = {
-			focus = ALA_True_Alaskan_Borders
-		}
-		available = {
 			
 		}
-		bypass = {
-			has_completed_focus = ALA_Launchpoint_into_America
-		}
+	}
+	#COMMUNIST ALASKA PATH
+	focus = {
+		id = ALA_peoples_republic_of_alaska
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -5
+		y = 1
+		relative_position_id = ALA_strike_the_capital
 		ai_will_do = { 
 			factor = 300
 		}
-		completion_reward = {
-			create_wargoal = {
-				target = VAN
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = BRC
-				type = annex_everything
-			}
+		mutually_exclusive = {
+			focus = ALA_corporation_with_a_state
+			focus = ALA_the_frontier_state
+			focus = ALA_alaaskaq
 		}
-		will_lead_to_war_with = BRC
-		will_lead_to_war_with = VAN
-	}
-	focus = {
-		id = ALA_Cascadia_IS_Alaska
-		icon = GFX_goal_Cascadian_War_Cry
-		cost = 5.00
-		x = 105
-		y = 10
 		prerequisite = {
-			focus = ALA_March_to_the_Mountains
+			focus = ALA_strike_the_capital
 		}
-		available = {
+		completion_reward = {
 			
 		}
-		bypass = {
-		}
+	}
+	#CORPORATE ALASKA PATH
+	focus = {
+		id = ALA_corporation_with_a_state
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_strike_the_capital
 		ai_will_do = { 
 			factor = 300
 		}
-		completion_reward = {
-			create_wargoal = {
-				target = CAS
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = LIB
-				type = annex_everything
-			}
+		mutually_exclusive = {
+			focus = ALA_the_frontier_state
+			focus = ALA_peoples_republic_of_alaska
+			focus = ALA_alaaskaq
 		}
-		will_lead_to_war_with = LIB
-		will_lead_to_war_with = CAS
-	}
-	focus = {
-		id = ALA_End_Montana
-		icon = GFX_goal_Hunters
-		cost = 5.00
-		x = 105
-		y = 11
 		prerequisite = {
-			focus = ALA_Cascadia_IS_Alaska
+			focus = ALA_strike_the_capital
 		}
-		available = {
+		completion_reward = {
 			
 		}
-		bypass = {
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			create_wargoal = {
-				target = MON
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = LYM
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = BKF
-				type = annex_everything
-			}
-		}
-		will_lead_to_war_with = MON
-		will_lead_to_war_with = LYM
-		will_lead_to_war_with = BKF
 	}
+	#LIBERTARIAN RIGHT ALASKA PATH
 	focus = {
-		id = ALA_Reunite_America
-		icon = GFX_goal_Generic_Americanism
+		id = ALA_the_frontier_state
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 105
-		y = 12
-		prerequisite = {
-			focus = ALA_End_Montana
-		}
-		available = {
-			has_completed_focus = ALA_The_Second_Pacific_Fleet
-		}
-		bypass = {
-		}
+		x = 3
+		y = 1
+		relative_position_id = ALA_strike_the_capital
 		ai_will_do = { 
 			factor = 300
 		}
-		completion_reward = {
-			unlock_decision_category_tooltip = American_reunification
-			unlock_decision_tooltip = reunification_ultimatum
-			unlock_decision_tooltip = reunification_wars
-			unlock_decision_tooltip = integrate_state
-			set_country_flag = {
-    				flag = reunification_start
-				value = 2
-			}
+		mutually_exclusive = {
+			focus = ALA_corporation_with_a_state
+			focus = ALA_peoples_republic_of_alaska
+			focus = ALA_alaaskaq
 		}
-	}
-	focus = {
-		id = ALA_Alaskan_Armed_Forces
-		icon = GFX_Focus_Volunteer_Army
-		cost = 5.00
-		x = 80
-		y = 7
 		prerequisite = {
-			focus = ALA_Always_on_top
-		}
-		ai_will_do = { 
-			factor = 300
+			focus = ALA_strike_the_capital
 		}
 		completion_reward = {
-			army_experience = 50
-			add_command_power = 25
-		}
-	}
-	focus = {
-		id = ALA_Expand_USCG_Kodiak
-		icon = GFX_goal_Generic_Coastal_Focus_Navy
-		cost = 5.00
-		x = 74
-		y = 8
-		prerequisite = {
-			focus = ALA_Alaskan_Armed_Forces
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			16 = {
-				add_building_construction = {
-    				type = naval_base
-   					level = 4
-    				instant_build = yes
-    				province = 1067
-				}
-			}
-		}
-	}
-	focus = {
-		id = ALA_Use_Fishing_Vessels_for_Cargo
-		icon = GFX_goal_Generic_Canned_Fish
-		cost = 5.00
-		x = 74
-		y = 9
-		prerequisite = {
-			focus = ALA_Expand_USCG_Kodiak
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-    			type = convoy
-    			amount = 250
-    			producer = ALA
-			}
-		}
-	}
-	focus = {
-		id = ALA_Trade_Portection_Doctrine
-		icon = GFX_ENG_Expand_Trade_Fleet
-		cost = 5.00
-		x = 74
-		y = 10
-		prerequisite = {
-			focus = ALA_Use_Fishing_Vessels_for_Cargo
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.3
-				uses = 2
-				category = new_fleet_in_being
-			}
-		}
-	}
-	focus = {
-		id = ALA_Create_Island_Landing_Strips
-		icon = GFX_goal_generic_air_production
-		cost = 5.00
-		x = 80
-		y = 8
-		prerequisite = {
-			focus = ALA_Alaskan_Armed_Forces
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			11 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-    			}
-			}
-		}
-	}
-	focus = {
-		id = ALA_Enhance_Bomber_Research
-		icon = GFX_goal_Generic_Strategic_Bombing
-		cost = 5.00
-		x = 80
-		y = 9
-		prerequisite = {
-			focus = ALA_Create_Island_Landing_Strips
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_tech_bonus = {
-    			bonus = 0.3
-    			uses = 1
-    			category = cat_strategic_bomber
-			}
-		}
-	}
-	focus = {
-		id = ALA_Scorched_Earth_Bomber_Doctrine
-		icon = GFX_goal_Generic_Firebombing
-		cost = 5.00
-		x = 80
-		y = 10
-		prerequisite = {
-			focus = ALA_Enhance_Bomber_Research
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = ALA_Scorched_Earth_Bombers
-		}
-	}
-	focus = {
-		id = ALA_Expand_National_Guard_Outposts
-		icon = GFX_goal_National_Guard_Smaller
-		cost = 5.00
-		x = 86
-		y = 8
-		prerequisite = {
-			focus = ALA_Alaskan_Armed_Forces
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_manpower = 2500
-			show_unit_leaders_tooltip = ALA_joe_ewers
-			show_unit_leaders_tooltip = ALA_james_jarrard
-			show_unit_leaders_tooltip = ALA_jeffrey_a_vanantwerp
-		}
-	}
-	focus = {
-		id = ALA_Open_Officer_Schools
-		icon = GFX_focus_generic_military_mission
-		cost = 5.00
-		x = 86
-		y = 9
-		prerequisite = {
-			focus = ALA_Expand_National_Guard_Outposts
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			army_experience = 10
-		}
-	}
-	focus = {
-		id = ALA_Swiss_Defensive_Strategems
-		icon = GFX_goal_GER_Warning_Swiss
-		cost = 5.00
-		x = 86
-		y = 10
-		prerequisite = {
-			focus = ALA_Open_Officer_Schools
-		}
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			add_ideas = Swiss_Mountain_Forts
+			
 		}
 	}
 }

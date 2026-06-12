@@ -21,6 +21,14 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+add_ideas = {
+	ALA_apf
+	ALA_inuit_poverty
+	ALA_tourism_recession
+	ALA_alaskan_powder_keg
+	ALA_shadow_of_pac
+	ALA_collapsed_oil_industry
+}
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -53,15 +61,17 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	autocratic = 7
-	republican = 45
+	autocratic = 5
+	republican = 35
 	democrat = 18
-	authoritarian_left = 10
-	libertarian_right = 20
+	authoritarian_left = 15
+	libertarian_right = 17
+	libertarian_left = 10
 }
 
 ### Country Leaders ###
 # Americans #
+recruit_character = ALA_mike_dunleavy
 recruit_character = ALA_sarah_palin
 recruit_character = ALA_joshua_vo
 recruit_character = ALA_thomas_begich
