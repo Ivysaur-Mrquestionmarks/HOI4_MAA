@@ -42,3 +42,14 @@ PAC_military_democracy_balance_of_power_category = {
 	visible = {
 	}
 }
+
+PAC_federal_pacific = {
+	#icon = hol_war_on_pacifism
+	
+	allowed = {
+		tag = PAC
+	}
+
+	visible = {
+	}
+}

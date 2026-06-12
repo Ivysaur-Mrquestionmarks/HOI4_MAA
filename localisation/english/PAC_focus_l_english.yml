@@ -144,6 +144,30 @@
  pacific_democrats.1.d:0 ""
  pacific_democrats.1.a:0 "Great News!"
 
+ pacific_democrats.2.t:0 "Freedom Will Ring!"
+ pacific_democrats.2.d:0 ""
+ pacific_democrats.2.a:0 "The Return of Democracy Will Come!"
+
+ pacific_democrats.3.t:0 "The Law Will Be Upheld"
+ pacific_democrats.3.d:0 ""
+ pacific_democrats.3.a:0 "Order And Stability is Needed."
+
+ pacific_democrats.4.t:0 "Rusty Hicks Meets With Opposition"
+ pacific_democrats.4.d:0 ""
+ pacific_democrats.4.a:0 "A United Democracy!"
+
+ pacific_democrats.5.t:0 "The First Elections"
+ pacific_democrats.5.d:0 ""
+ pacific_democrats.5.a:0 "Rusty Hicks Wins in a Landslide!"
+
+ pacific_democrats.6.t:0 "Rusty Hicks Ends Military Authority"
+ pacific_democrats.6.d:0 ""
+ pacific_democrats.6.a:0 "Democracy Returns!"
+
+ pacific_democrats.7.t:0 "Continuing Their Rule"
+ pacific_democrats.7.d:0 ""
+ pacific_democrats.7.a:0 "The Military is Here To Stay"
+
  #Junta Events
 
  pacific_junta.1.t:0 "Aquilino Declares National Emergency"
@@ -439,10 +463,10 @@
  PAC_healthcare_for_the_common_people_desc:0 ""
  PAC_move_out_the_unwanted:0 "Move Out The Unwanted"
  PAC_move_out_the_unwanted_desc:0 ""
- PAC_housing_market_reform:0 ""
+ PAC_housing_market_reform:0 "Housing Market Reform"
  PAC_housing_market_reform_desc:0 ""
 
- PAC_militia_integration:0 ""
+ PAC_militia_integration:0 "Militia Integration"
  PAC_militia_integration_desc:0 ""
  PAC_update_training_standards:0 "Update Training Standards"
  PAC_update_training_standards_desc:0 ""
@@ -548,6 +572,10 @@
  PAC_the_old_harbor_incident:0 "The Old Harbor Incident"
  PAC_the_old_harbor_incident_desc:0 "Aquilino's war against California was never a popular one, especially among many military officers. As such, there have been many plans to remove Aquilino from power. Though many remain cautious of actually enacting these plans, all it takes is a couple of ambitious upstarts to put them in to motion.\n\n§YThis will prematurely cause the collapse of the Pacific Fleet.§! §RCausing the collapse too early will give the People's Republic a significant advantage in the future.§!"
 
+ PAC_the_inauguration:0 "The Inauguration"
+ PAC_give_power_to_the_militias:0 "Give Power To The Militias"
+ PAC_give_power_to_the_army:0 "Give Power To The Army"
+
  PAC_yellow_and_black_government:0 "Yellow And Black Government"
  PAC_yellow_and_black_government_desc:0 ""
 
@@ -563,6 +591,25 @@
  PAC_rally_the_youth:0 "Rally The Youth"
  PAC_spread_the_ideals_of_liberty:0 "Spread The Ideals of Liberty"
 
+ PAC_federal_pacific:0 "Federalist Pacific"
+ PAC_federal_pacific_desc:0 ""
+
+ PAC_reliberalization:0 "Re-Liberalization"
+ PAC_joint_federal_training:0 "Joint Federal Training"
+ PAC_federal_reconnecting:0 "Federal Reconnecting"
+ PAC_ensure_democrat_rule:0 "Ensure Democrat Rule"
+ PAC_as_americans:0 "As Americans"
+ PAC_anti_separatist_propaganda:0 "Anti Separatist Propaganda"
+ PAC_serving_democracy:0 "Serving Democracy"
+ PAC_military_glorification:0 "Military Glorification"
+
+ PAC_push_for_democratization:0 "Push For Democratization"
+ PAC_sweep_away_military_control:0 "Sweep Away Military Control"
+ PAC_work_with_protesters:0 "Work With Protesters"
+ PAC_government_militarization:0 "Government Militarization"
+ PAC_normalize_military_authority:0 "Normalize Military Authority"
+ PAC_build_up_surveillance:0 "Build Up Surveillance"
+
  ################################ PAC - OTHER  ################################
 
  diplomatic_exchange:0 "Diplomatic Exchange"
@@ -570,6 +617,8 @@
  PAC_inauguration_tooltip:0 "§HThe Inauguration Will Commence...§!"
 
  PAC_bastion_of_liberty_modify_tt: "Modify §Y$PAC_bastion_of_liberty_dynamic_modifier$§! by"
+
+ PAC_federal_pacific_modify_tt: "Modify §Y$PAC_federal_pacific_dynamic_modifier$§! by"
 
  PAC_nicholas_zehr:0 "Nicholas Zehr"
 
@@ -588,7 +637,7 @@
  military_democracy_bop:0 "Fate of Democracy in The West Coast"
  military_democracy_bop_desc:0 ""
  democracy_control:0 "Democracy Control"
- army_militia_middle:0 "Army-Militia Middle"
+ military_democracy_middle:0 "Military Democracy Middle"
  military_control:0 "Military Control"
 
  democracy_low_control:0 "Democracy Low Control"

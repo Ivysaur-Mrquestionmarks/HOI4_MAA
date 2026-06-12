@@ -928,6 +928,9 @@ focus_tree = {
                 ruling_party = democrat
                 elections_allowed = no
             }
+			remove_power_balance = {
+                id = army_militia_bop
+            }
 			add_dynamic_modifier = {
 				modifier = PAC_federal_pacific_dynamic_modifier
 			}
@@ -4043,8 +4046,7 @@ focus_tree = {
 				var = PAC.var_democrat_level
 				value = 0.01
 				tooltip = democrat_drift_factor_tt
-			}	
-			#add event here :)	
+			}
 		}
 	}
 
@@ -4095,7 +4097,12 @@ focus_tree = {
 				value = -0.05
 				tooltip_side = democracy_control
 			}
-			#add event here :)		
+			unlock_decision_tooltip = PAC_sweep_away_military_control
+			unlock_decision_tooltip = PAC_work_with_protesters
+			country_event = {
+  				id = pacific_democrats.2
+    			days = 0
+			}
 		}
 	}
 
@@ -4146,7 +4153,12 @@ focus_tree = {
 				value = 0.05
 				tooltip_side = military_control
 			}
-			#add event here :)		
+			unlock_decision_tooltip = PAC_normalize_military_authority
+			unlock_decision_tooltip = PAC_build_up_surveillance
+			country_event = {
+  				id = pacific_democrats.3
+    			days = 0
+			}
 		}
 	}
 
@@ -4234,7 +4246,10 @@ focus_tree = {
 				value = -0.05
 				tooltip_side = democracy_control
 			}
-			#add event here :)			
+		    country_event = {
+  				id = pacific_democrats.4
+    			days = 0
+			}	
 		}
 	}
 
@@ -4274,7 +4289,17 @@ focus_tree = {
 				var = PAC.var_democrat_level
 				value = 0.01
 				tooltip = democrat_drift_factor_tt
-			}			
+			}	
+			unlock_decision_tooltip = PAC_reliberalization
+			unlock_decision_tooltip = PAC_joint_federal_training
+			unlock_decision_tooltip = PAC_federal_reconnecting
+			unlock_decision_tooltip = PAC_ensure_democrat_rule
+			hidden_effect = {
+			    set_country_flag = PAC_political_decision_1
+			    set_country_flag = PAC_political_decision_2
+				set_country_flag = PAC_political_decision_3
+			    set_country_flag = PAC_political_decision_4
+			}
 		}
 	}
 
@@ -4477,7 +4502,13 @@ focus_tree = {
 				id = military_democracy_bop
 				value = -0.05
 				tooltip_side = democracy_control
-			}			
+			}
+			unlock_decision_tooltip = PAC_as_americans
+			unlock_decision_tooltip = PAC_anti_separatist_propaganda
+			hidden_effect = {
+			    set_country_flag = PAC_political_decision_5
+			    set_country_flag = PAC_political_decision_6
+			}		
 		}
 	}
 
@@ -4620,7 +4651,13 @@ focus_tree = {
 				id = military_democracy_bop
 				value = 0.05
 				tooltip_side = military_control
-			}		
+			}
+			unlock_decision_tooltip = PAC_serving_democracy
+			unlock_decision_tooltip = PAC_military_glorification
+			hidden_effect = {
+			    set_country_flag = PAC_political_decision_7
+			    set_country_flag = PAC_political_decision_8
+			}
 		}
 	}
 
@@ -4724,7 +4761,10 @@ focus_tree = {
 				value = 0.01
 				tooltip = democrat_drift_factor_tt
 			}
-			#add event here :)		
+			country_event = {
+  				id = pacific_democrats.5
+    			days = 0
+			}
 		}
 	}
 
@@ -4740,9 +4780,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PAC_keep_their_grip
 		}
+		prerequisite = { focus = PAC_unite_the_pacific }
 		prerequisite = { focus = PAC_elections_in_the_pacific }
 		available = {
-			
+			power_balance_value = {
+                id = military_democracy_bop
+                value > 0.95
+            }
 		}
 		ai_will_do = {
 			factor = 5
@@ -4770,12 +4814,13 @@ focus_tree = {
 				value = 0.01
 				tooltip = democrat_drift_factor_tt
 			}
-			add_power_balance_value = {
-				id = military_democracy_bop
-				value = -0.1
-				tooltip_side = democracy_control
+			remove_power_balance = {
+                id = military_democracy_bop
+            }
+			country_event = {
+  				id = pacific_democrats.6
+    			days = 0
 			}
-			#add event here :)	
 		}
 	}
 
@@ -4792,8 +4837,12 @@ focus_tree = {
 			focus = PAC_end_military_authority
 		}
 		prerequisite = { focus = PAC_elections_in_the_pacific }
+		prerequisite = { focus = PAC_national_militarization }
 		available = {
-			
+			power_balance_value = {
+                id = military_democracy_bop
+                value > 0.95
+            }
 		}
 		ai_will_do = {
 			factor = 5
@@ -4821,12 +4870,13 @@ focus_tree = {
 				value = -0.02
 				tooltip = resistance_activity_factor_tt
 			}
-			add_power_balance_value = {
-				id = military_democracy_bop
-				value = 0.1
-				tooltip_side = military_control
-			}	
-			#add event here :)		
+			remove_power_balance = {
+                id = military_democracy_bop
+            }	
+			country_event = {
+  				id = pacific_democrats.7
+    			days = 0
+			}
 		}
 	}
 
@@ -4873,7 +4923,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			add_idea = PAC_social_economy
+			add_ideas = PAC_social_economy
 		}
 	}
 
@@ -4898,7 +4948,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			add_idea = PAC_liberal_continuation
+			add_ideas = PAC_liberal_continuation
 		}
 	}
 

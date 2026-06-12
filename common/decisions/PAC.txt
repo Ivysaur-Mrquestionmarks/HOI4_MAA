@@ -80,16 +80,10 @@ PAC_army_militia_balance_of_power_category = {
 			custom_effect_tooltip = PAC_inauguration_tooltip
 			if = {
 				limit = { 
-					OR = {
-					    is_power_balance_in_range = {
-                            id = army_militia_bop
-                            range > militia_medium_control
-                        }
-						is_power_balance_in_range = {
-                            id = army_militia_bop
-                            range > militia_high_control
-                        }
-					}
+					is_power_balance_side_active = {
+                        id = army_militia_bop
+                        side = militia_control
+                    }
 			    }
 				hidden_effect = {
 				    country_event = {
@@ -114,16 +108,10 @@ PAC_army_militia_balance_of_power_category = {
 			}
 			if = {
 				limit = {
-					OR = {
-					    is_power_balance_in_range = {
-                            id = army_militia_bop
-                            range > army_medium_control
-                        }
-						is_power_balance_in_range = {
-                            id = army_militia_bop
-                            range > militia_high_control
-                        }
-					}
+					is_power_balance_side_active = {
+                        id = army_militia_bop
+                        side = army_control
+                    }
 			    }
 				hidden_effect = {
 				    country_event = {
@@ -826,7 +814,7 @@ PAC_yellow_and_black_government = {
 	}
 }
 
-PAC_army_militia_balance_of_power_category = {
+PAC_military_democracy_balance_of_power_category = {
     PAC_push_for_democratization = {
 		priority = 100
 		icon = GFX_decision_generic_political_rally
@@ -835,6 +823,74 @@ PAC_army_militia_balance_of_power_category = {
 		}
 		visible = {
 			has_completed_focus = PAC_government_unity
+		}
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_BOP_action
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 35
+		days_remove = 35
+		cost = 75
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_BOP_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+		    add_power_balance_value = {
+				id = military_democracy_bop
+				value = -0.05
+				tooltip_side = democracy_control
+			}
+		}
+	}
+
+	PAC_sweep_away_military_control = {
+		priority = 100
+		icon = GFX_decision_generic_political_rally
+		allowed = {
+			original_tag = PAC
+		}
+		visible = {
+			has_completed_focus = PAC_let_freedom_ring
+		}
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_BOP_action
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 35
+		days_remove = 35
+		cost = 75
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_BOP_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+		    add_power_balance_value = {
+				id = military_democracy_bop
+				value = -0.05
+				tooltip_side = democracy_control
+			}
+		}
+	}
+
+	PAC_work_with_protesters = {
+		priority = 100
+		icon = GFX_decision_generic_political_rally
+		allowed = {
+			original_tag = PAC
+		}
+		visible = {
+			has_completed_focus = PAC_let_freedom_ring
 		}
 		available = {
 			NOT = {
@@ -892,6 +948,524 @@ PAC_army_militia_balance_of_power_category = {
 				value = 0.05
 				tooltip_side = military_control
 			}
+		}
+	}
+
+	PAC_normalize_military_authority = {
+		priority = 100
+		icon = GFX_decision_generic_political_rally
+		allowed = {
+			original_tag = PAC
+		}
+		visible = {
+			has_completed_focus = PAC_ensure_law_and_order
+		}
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_BOP_action
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 35
+		days_remove = 35
+		cost = 75
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_BOP_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+		    add_power_balance_value = {
+				id = military_democracy_bop
+				value = 0.05
+				tooltip_side = military_control
+			}
+		}
+	}
+
+	PAC_build_up_surveillance = {
+		priority = 100
+		icon = GFX_decision_generic_political_rally
+		allowed = {
+			original_tag = PAC
+		}
+		visible = {
+			has_completed_focus = PAC_ensure_law_and_order
+		}
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_BOP_action
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 35
+		days_remove = 35
+		cost = 75
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_BOP_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+		    add_power_balance_value = {
+				id = military_democracy_bop
+				value = 0.05
+				tooltip_side = military_control
+			}
+		}
+	}
+}
+
+PAC_federal_pacific = {
+    PAC_reliberalization = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_a_westcoast_federal_government
+			has_country_flag = {
+                flag = PAC_political_decision_1
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 30
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_federal_pacific_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.01
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.01
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_democrat_level
+				value = 0.01
+				tooltip = democrat_drift_factor_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_1
+                value = 1
+            }
+		}
+	}
+	PAC_joint_federal_training = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_a_westcoast_federal_government
+			has_country_flag = {
+                flag = PAC_political_decision_2
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 30
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			army_experience = 15
+			air_experience = 15
+			modify_country_flag = {
+                flag = PAC_political_decision_2
+                value = 1
+            }
+		}
+	}
+	PAC_federal_reconnecting = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_a_westcoast_federal_government
+			has_country_flag = {
+                flag = PAC_political_decision_3
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 30
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_federal_pacific_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.01
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.01
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_democrat_level
+				value = 0.01
+				tooltip = democrat_drift_factor_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_3
+                value = 1
+            }
+		}
+	}
+	PAC_ensure_democrat_rule = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_a_westcoast_federal_government
+			has_country_flag = {
+                flag = PAC_political_decision_4
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 30
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_federal_pacific_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.01
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_democrat_level
+				value = 0.01
+				tooltip = democrat_drift_factor_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_4
+                value = 1
+            }
+		}
+	}
+
+	PAC_as_americans = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_unite_the_pacific
+			has_country_flag = {
+                flag = PAC_political_decision_5
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 30
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_federal_pacific_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.01
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.01
+				tooltip = compliance_growth_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_5
+                value = 1
+            }
+		}
+	}
+
+	PAC_anti_separatist_propaganda = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_unite_the_pacific
+			has_country_flag = {
+                flag = PAC_political_decision_6
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 30
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_federal_pacific_modify_tt
+			add_to_variable = {
+				var = PAC.var_stability_level
+				value = 0.01
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.01
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				var = PAC.var_compliance_level
+				value = 0.01
+				tooltip = compliance_growth_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_6
+                value = 1
+            }
+		}
+	}
+	PAC_serving_democracy = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_national_militarization
+			has_country_flag = {
+                flag = PAC_political_decision_7
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 30
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		modifier = {
+			weekly_manpower = 25
+			training_time_factor = -0.1
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_federal_pacific_modify_tt
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.01
+				tooltip = war_support_factor_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_7
+                value = 1
+            }
+		}
+	}
+	PAC_military_glorification = {
+		priority = 25
+		#icon = GFX_decision_generic_welfare
+
+		allowed = {
+			original_tag = PAC
+		}
+
+		visible = {
+			has_completed_focus = PAC_national_militarization
+			has_country_flag = {
+                flag = PAC_political_decision_8
+                value < 3
+            }
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = PAC_doing_political_action
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 25
+
+		days_remove = 30
+		
+		cost = 30
+
+		complete_effect = {
+			set_country_flag = {
+				flag = PAC_doing_political_action
+				days = 35
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = PAC_federal_pacific_modify_tt
+			add_to_variable = {
+				var = PAC.var_pp_level
+				value = 0.01
+				tooltip = political_power_gain_tt
+			}
+			add_to_variable = {
+				var = PAC.var_war_support_level
+				value = 0.01
+				tooltip = war_support_factor_tt
+			}
+			modify_country_flag = {
+                flag = PAC_political_decision_8
+                value = 1
+            }
 		}
 	}
 }
