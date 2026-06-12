@@ -5861,13 +5861,33 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_contact_the_federal_government
 		}
+		will_lead_to_war_with = CAS
+		will_lead_to_war_with = LIB
+		bypass = { 
+			NOT = { country_exists = CAS country_exists = LIB } 
+		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = CAS
+			    type = annex_everything
+		    }
+		    if = {
+		        limit = { country_exists = LIB }
+		        create_wargoal = {
+			        target = LIB
+			        type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -5883,13 +5903,81 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_contact_the_federal_government
 		}
+		will_lead_to_war_with = NAV
+		will_lead_to_war_with = UTA
+		will_lead_to_war_with = HOP
+		will_lead_to_war_with = AFO
+		will_lead_to_war_with = SIN
+		will_lead_to_war_with = LAS
+		will_lead_to_war_with = MOL
+		bypass = { 
+			NOT = { 
+				country_exists = NAV
+				country_exists = UTA 
+			    country_exists = HOP
+				country_exists = AFO
+				country_exists = SIN
+				country_exists = LAS
+				country_exists = MOL
+			} 
+		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = UTA
+			    type = annex_everything
+		    }
+			if = {
+			    limit = { country_exists = NAV }
+				create_wargoal = {
+					target = NAV
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = HOP }
+				create_wargoal = {
+					target = HOP
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = AFO }
+				create_wargoal = {
+					target = AFO
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = SIN }
+				create_wargoal = {
+					target = SIN
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = LAS }
+				create_wargoal = {
+					target = LAS
+					type = annex_everything
+			    }
+		    }
+		    if = {
+			    limit = { country_exists = MOL }
+				create_wargoal = {
+					target = MOL
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -5905,13 +5993,36 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_contact_the_federal_government
 		}
+		will_lead_to_war_with = MON
+		will_lead_to_war_with = IDA
+		bypass = { 
+			NOT = { 
+				country_exists = MON
+				country_exists = IDA
+			} 
+		}
 		available = {
+		    if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = MON
+			    type = annex_everything
+		    }
+		    if = { 
+		        limit = { country_exists = IDA }
+		        create_wargoal = {
+			        target = IDA
+			        type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -5934,12 +6045,39 @@ focus_tree = {
 			focus = PAC_secure_the_rockies
 		}
 		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+				OR = {
+				    is_neighbor_of = USA
+					is_neighbor_of = NPA
+				}
+			}
 		}
+		will_lead_to_war_with = USA
+		will_lead_to_war_with = NPA
+		bypass = { NOT = { country_exists = USA country_exists = NPA } }
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+		    create_wargoal = {
+			    target = USA
+			    type = annex_everything
+		    }
+		    if = {
+			    limit = { 
+					country_exists = NPA
+					NOT = {
+						is_ally_with = NPA
+					}
+				}
+				create_wargoal = {
+					target = NPA
+					type = annex_everything
+			    }
+		    }
 		}
 	}
 
@@ -5947,7 +6085,7 @@ focus_tree = {
 		id = PAC_reunite_with_the_federals
 		icon = GFX_goal_SCA_FRA_the_legitimist_cause
 		cost = 2
-		x = 0
+		x = -2
 		y = 2
 		relative_position_id = PAC_a_war_on_both_sides
 		allow_branch = {
@@ -5956,12 +6094,395 @@ focus_tree = {
 			focus = PAC_a_war_on_both_sides
 		}
 		available = {
+			is_neighbor_of = FRA
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		completion_reward = {				
+		completion_reward = {
+			FRA = {
+			    annex_country = {
+                    target = PAC
+                    transfer_troops = yes
+                }
+			}		
+		}
+	}
+
+	focus = {
+		id = PAC_washington_lost
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 1
+		x = 1
+		y = 2
+		relative_position_id = PAC_a_war_on_both_sides
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_a_war_on_both_sides
+		}
+		available = {
+			NOT = {
+			    country_exists = FRA
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = PAC_southern_federalization
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = PAC_washington_lost
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_washington_lost
+		}
+		will_lead_to_war_with = TEX
+		will_lead_to_war_with = CSA
+		will_lead_to_war_with = FLO
+		#bypass = { NOT = { country_exists = TEX } }
+		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+		    War_on_texas_collapse_tags = yes
+			if = { 
+				limit = { country_exists = CSA }
+				create_wargoal = {
+					target = CSA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = KKK }
+				create_wargoal = {
+					target = KKK
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = LGB }
+				create_wargoal = {
+					target = LGB
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = SCA }
+				create_wargoal = {
+					target = SCA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = ZIO }
+				create_wargoal = {
+					target = ZIO
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = ARK }
+				create_wargoal = {
+					target = ARK
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = AFR }
+				create_wargoal = {
+					target = AFR
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = CSB }
+				create_wargoal = {
+					target = CSB
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FLO }
+				create_wargoal = {
+					target = FLO
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = NSA }
+				create_wargoal = {
+					target = NSA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = GKJ }
+				create_wargoal = {
+					target = GKJ
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FLD }
+				create_wargoal = {
+					target = FLD
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FLA }
+				create_wargoal = {
+					target = FLA
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = SEM }
+				create_wargoal = {
+					target = SEM
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PAC_rust_belt_federalization
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = PAC_washington_lost
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_washington_lost
+		}
+		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
+		}
+		will_lead_to_war_with = GLA
+		will_lead_to_war_with = KMT
+		will_lead_to_war_with = DET
+		will_lead_to_war_with = MIL
+		will_lead_to_war_with = MNS
+		will_lead_to_war_with = MIN
+		will_lead_to_war_with = AFS
+		will_lead_to_war_with = KFC
+		will_lead_to_war_with = NRA
+		bypass = { 
+			NOT = { 
+			    country_exists = GLA 
+			    country_exists = KMT 
+			    country_exists = DET 
+			    country_exists = MIL 
+			    country_exists = MNS 
+			    country_exists = MIN
+				country_exists = AFS
+				country_exists = KFC
+				country_exists = NRA
+		    } 
+	    }
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+		    if = {
+			    limit = { country_exists = GLA }
+				create_wargoal = {
+					target = GLA
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = KMT }
+				create_wargoal = {
+					target = KMT
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = DET }
+				create_wargoal = {
+					target = DET
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = MIL }
+				create_wargoal = {
+					target = MIL
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = MNS }
+				create_wargoal = {
+					target = MNS
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = MIN }
+				create_wargoal = {
+					target = MIN
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = AFS }
+				create_wargoal = {
+					target = AFS
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = KFC }
+				create_wargoal = {
+					target = KFC
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = NRA }
+				create_wargoal = {
+					target = NRA
+					type = annex_everything
+			    }
+		    }
+			if = {
+			    limit = { country_exists = TIM }
+				create_wargoal = {
+					target = TIM
+					type = annex_everything
+			    }
+		    }
+		}
+	}
+
+	focus = {
+		id = PAC_washington_ours
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = PAC_rust_belt_federalization
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_rust_belt_federalization
+		}
+		available = {
+			if = {
+				limit = { is_ai = yes }
+			    has_war = no
+			}
+		}
+		will_lead_to_war_with = NEW
+		will_lead_to_war_with = NAB
+		will_lead_to_war_with = WAB
+		bypass = { NOT = { country_exists = NEW country_exists = NAB country_exists = WAB } }
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = { country_exists = NEW }
+                create_wargoal = {
+			        target = NEW
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = NAB }
+                create_wargoal = {
+			        target = NAB
+			        type = annex_everything
+		        }
+			}
+			if = {
+				limit = { country_exists = WAB }
+                create_wargoal = {
+			        target = WAB
+			        type = annex_everything
+		        }
+			}
+		}
+	}
+
+	focus = {
+		id = PAC_under_the_american_banner
+		icon = GFX_goal_SCA_FRA_the_legitimist_cause
+		cost = 1
+		x = 0
+		y = 2
+		relative_position_id = PAC_washington_ours
+		allow_branch = {
+		}
+		prerequisite = { 
+			focus = PAC_washington_ours
+		}
+		available = {
+			all_state = {	
+			    OR = {
+			        NOT = { has_state_flag = part_of_america }
+			        is_owned_by = ROOT
+			        owner = { is_ally_with = ROOT } #Checks for territory controlled by indpendent faction members/puppets
+			    }		
+		    }
+		    ROOT = {
+			    if = {
+			        limit = {
+				        is_in_faction = yes
+				    }
+				    is_faction_leader = yes
+				}
+				is_subject = no
+			}
+		    has_war = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+            #news_event = {
+			#	id = vermin.16
+			#	days = 0
+			#}
+		    hidden_effect = {
+			    every_state = {
+			        limit = { 
+			            is_owned_by = ROOT
+			            has_state_flag = part_of_america
+			        }
+			        add_core_of = ROOT
+			    }
+			}
 		}
 	}
 
