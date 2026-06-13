@@ -444,11 +444,6 @@ leader_traits = {
 		local_resources_factor = 0.15
 
 	}
-	Oil_Baron = {
-		random = no
-		local_resources_factor = 0.03
-
-	}
 	Strongest_man_in_Eurasia = {
 		random = no
 		stability_factor = 0.25
@@ -966,6 +961,43 @@ leader_traits = {
 	ALA_dunleavy_sellout = {
 		stability_factor = -0.1
 		republican_drift = -0.03
+	}
+	Oil_Baron = {
+		random = no
+		local_resources_factor = 0.15
+		consumer_goods_factor = 0.05
+		stability_factor = -0.05
+	}
+	ALA_inuit_activist = {
+		research_speed_factor = 0.03
+		stability_factor = 0.05
+		libertarian_left_drift = 0.01
+	}
+	ALA_economic_strategist = {
+		consumer_goods_factor = -0.08
+		production_speed_buildings_factor = 0.1
+		local_resources_factor = -0.05
+		production_oil_factor = -0.1 
+	}
+	ALA_intelligence_officer = {
+		sprite = 15
+		operative_slot = 1
+		agency_upgrade_time = -0.15
+	}
+	ALA_baked_alaska = {
+		autocratic_drift = 0.05
+		political_power_factor = -0.1
+		stability_factor = -0.05
+	}
+	ALA_anti_trump_republican = {
+		republican_drift = 0.02
+		democrat_drift = 0.01
+		political_power_factor = 0.05
+	}
+	ALA_guns_and_oil = {
+		republican_drift = 0.03
+		industrial_capacity_factory = 0.07
+		fuel_gain_factor = 0.1
 	}
 	#Perry Trait
 	NEW_Libertarian = {

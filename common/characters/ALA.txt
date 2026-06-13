@@ -156,8 +156,8 @@ characters={
 		name = ALA_brian_kile
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/brian_kile_small.tga"
-				large = "gfx/leaders/ALA/Brian_Kile.tga"
+				small = "gfx/interface/ideas/ALA/generals/brian_kile_small.tga"
+				large = "gfx/leaders/ALA/generals/Brian_Kile.tga"
 			}
 		}
 		corps_commander = {
@@ -171,10 +171,11 @@ characters={
 	}
 	ALA_julie_a_small = { 
 		name = ALA_julie_a_small
+		gender = female
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/julie_a_small_small.tga"
-				large = "gfx/leaders/ALA/Julie_A_Small.tga"
+				small = "gfx/interface/ideas/ALA/generals/julie_a_small_small.tga"
+				large = "gfx/leaders/ALA/generals/Julie_A_Small.tga"
 			}
 		}
 		corps_commander = {
@@ -190,8 +191,8 @@ characters={
 		name = ALA_kenneth_radford
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/kenneth_radford_small.tga"
-				large = "gfx/leaders/ALA/Kenneth_Radford.tga"
+				small = "gfx/interface/ideas/ALA/generals/kenneth_radford_small.tga"
+				large = "gfx/leaders/ALA/generals/Kenneth_Radford.tga"
 			}
 		}
 		corps_commander = {
@@ -207,8 +208,8 @@ characters={
 		name = ALA_keolani_bailey
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/keolani_bailey_small.tga"
-				large = "gfx/leaders/ALA/Keolani_Bailey.tga"
+				small = "gfx/interface/ideas/ALA/generals/keolani_bailey_small.tga"
+				large = "gfx/leaders/ALA/generals/Keolani_Bailey.tga"
 			}
 		}
 		corps_commander = {
@@ -224,8 +225,8 @@ characters={
 		name = ALA_reginald_harper
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/reginald_harper_small.tga"
-				large = "gfx/leaders/ALA/Reginald_Harper.tga"
+				small = "gfx/interface/ideas/ALA/generals/reginald_harper_small.tga"
+				large = "gfx/leaders/ALA/generals/Reginald_Harper.tga"
 			}
 		}
 		corps_commander = {
@@ -241,8 +242,8 @@ characters={
 		name = ALA_simon_brown
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/simon_brown_small.tga"
-				large = "gfx/leaders/ALA/Simon_Brown.tga"
+				small = "gfx/interface/ideas/ALA/generals/simon_brown_small.tga"
+				large = "gfx/leaders/ALA/generals/Simon_Brown.tga"
 			}
 		}
 		corps_commander = {
@@ -258,8 +259,8 @@ characters={
 		name = ALA_wayne_don
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/wayne_don_small.tga"
-				large = "gfx/leaders/ALA/Wayne_Don.tga"
+				small = "gfx/interface/ideas/ALA/generals/wayne_don_small.tga"
+				large = "gfx/leaders/ALA/generals/Wayne_Don.tga"
 			}
 		}
 		corps_commander = {
@@ -273,10 +274,11 @@ characters={
 	}
 	ALA_tracy_smith = { 
 		name = ALA_tracy_smith
+		gender = female
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/tracy_smith_small.tga"
-				large = "gfx/leaders/ALA/Tracy_Smith.tga"
+				small = "gfx/interface/ideas/ALA/generals/tracy_smith_small.tga"
+				large = "gfx/leaders/ALA/generals/Tracy_Smith.tga"
 			}
 		}
 		corps_commander = {
@@ -292,8 +294,8 @@ characters={
 		name = ALA_vincent_k_brooks
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/vincent_k_brooks_small.tga"
-				large = "gfx/leaders/ALA/Vincent_K_Brooks.tga"
+				small = "gfx/interface/ideas/ALA/generals/vincent_k_brooks_small.tga"
+				large = "gfx/leaders/ALA/generals/Vincent_K_Brooks.tga"
 			}
 		}
 		field_marshal = {
@@ -434,12 +436,99 @@ characters={
 	}
 	### Military Staff and Political Advisors ###
 	# Political Advisors #
+	ALA_pat_pitney = {
+		name = ALA_pat_pitney
+		gender = female
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ALA/advisors/pat_pitney.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALA_pat_pitney
+			cost = 150
+			allowed = {
+				tag = ALA
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				ALA_economic_strategist
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	ALA_lisa_murkowksi = {
+		name = ALA_lisa_murkowksi
+		gender = female
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ALA/advisors/lisa_murkowksi.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALA_lisa_murkowksi
+			cost = 150
+			allowed = {
+				tag = ALA
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				ALA_anti_trump_republican
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	ALA_dan_sullivan = {
+		name = ALA_dan_sullivan
+		gender = female
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ALA/advisors/dan_sullivan.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALA_dan_sullivan
+			cost = 150
+			allowed = {
+				tag = ALA
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				ALA_guns_and_oil
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
 	ALA_valerie_davidson = {
 		name = ALA_valerie_davidson
 		gender = female
 		portraits = {
 			army = {
-				small = "GFX_idea_ALA_Valerie_Davidson_Advisor"
+				small = "gfx/interface/ideas/ALA/advisors/valerie_davidson_ADV.tga"
 			}
 		}
 		advisor = {
@@ -456,7 +545,7 @@ characters={
 				
 			}
 			traits = {
-				Native_Educator 
+				ALA_inuit_activist 
 			}
 			ai_will_do = {
 				factor = 5
@@ -467,7 +556,7 @@ characters={
 		name = ALA_donald_young
 		portraits = {
 			army = {
-				small = "GFX_idea_ALA_Donald_Young_Advisor"
+				small = "gfx/interface/ideas/ALA/advisors/Don_Young_ADV.tga"
 			}
 		}
 		advisor = {
@@ -495,7 +584,7 @@ characters={
 		name = ALA_bill_walker
 		portraits = {
 			army = {
-				small = "GFX_idea_ALA_Bill_Walker_Advisor"
+				small = "gfx/interface/ideas/ALA/advisors/Bill_Walker_ADV.tga"
 			}
 		}
 		advisor = {
@@ -523,7 +612,7 @@ characters={
 		name = ALA_anthime_joseph_gionet
 		portraits = {
 			army = {
-				small = "GFX_idea_ALA_Baked_Alaska_Advisor"
+				small = "gfx/interface/ideas/ALA/advisors/Baked_Alaska_ADV.tga"
 			}
 		}
 		advisor = {
@@ -540,7 +629,7 @@ characters={
 				
 			}
 			traits = {
-				Baked_Alaska 
+				ALA_baked_alaska 
 			}
 			ai_will_do = {
 				factor = 5
@@ -551,7 +640,7 @@ characters={
 		name = ALA_brigham_mccown
 		portraits = {
 			army = {
-				small = "GFX_idea_ALA_Brighman_McCown_Advisor"
+				small = "gfx/interface/ideas/ALA/advisors/McCown_ADV.tga"
 			}
 		}
 		advisor = {
@@ -569,6 +658,119 @@ characters={
 			}
 			traits = {
 				Oil_Baron 
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	ALA_crawford_patkotak = {
+		name = ALA_crawford_patkotak
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ALA/advisors/crawford_patkotak.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALA_crawford_patkotak
+			cost = 150
+			allowed = {
+				tag = ALA
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				captain_of_industry
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	ALA_mark_lester = {
+		name = ALA_mark_lester
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ALA/advisors/mark_lester.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALA_mark_lester
+			cost = 150
+			allowed = {
+				tag = ALA
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				war_industrialist
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	ALA_john_m_raso = {
+		name = ALA_john_m_raso
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ALA/advisors/john_m_raso.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALA_john_m_raso
+			cost = 150
+			allowed = {
+				tag = ALA
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				fortification_engineer
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	ALA_laura_terry = {
+		name = ALA_laura_terry
+		gender = female
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ALA/advisors/laura_terry.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALA_laura_terry
+			cost = 150
+			allowed = {
+				tag = ALA
+			}
+			visible = {
+				
+			}
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = {
+				ALA_intelligence_officer
 			}
 			ai_will_do = {
 				factor = 5
