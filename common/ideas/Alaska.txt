@@ -67,6 +67,88 @@ ideas = {
 				consumer_goods_factor = -0.1
 				
 			}
+		}		
+	}
+	industrial_concern = {
+		ALA_aidea = {
+
+			picture = ALA_aidea
+			allowed = {
+				original_tag = ALA
+			}
+				
+			research_bonus = {
+				industry = 0.10
+			}
+				
+			traits = { industrial_concern }
+				
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05 
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		ALA_ahtna = {
+
+			picture = ALA_ahtna
+			allowed = {
+				original_tag = ALA
+			}
+			cost = 150
+
+			research_bonus = {
+				industry = 0.05
+			}
+				
+			traits = { construction_company }
+				
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		ALA_koniag = {
+
+			picture = ALA_koniag
+			allowed = {
+				original_tag = ALA
+			}
+			available = {
+				
+			}
+			cost = 150
+
+			research_bonus = {
+				electronics = 0.1
+			}
+				
+			traits = { electronics_concern }
+				
+			modifier = {
+				
+			}
+		}
+		ALA_hilcorp = {
+
+			picture = ALA_hilcorp
+			allowed = {
+				original_tag = ALA
+			}
+			available = {
+				
+			}
+			cost = 150
+
+			research_bonus = {
+				synth_resources = 0.1
+			}
+				
+			traits = { refinery_concern }
+				
+			modifier = {
+				production_oil_factor = 0.2
+			}
 		}
 	}
 }

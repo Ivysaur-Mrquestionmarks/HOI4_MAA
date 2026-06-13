@@ -2047,6 +2047,9 @@ generic_escort_ship_organization = {
 		NOT = {
 		    OR = {
 			    tag = AFO
+			    tag = ALA
+			    tag = USA
+			    tag = FRA
 			}
 		}
 	}
@@ -3482,6 +3485,7 @@ generic_general_aircraft_organization = {
 				tag = USA
 				tag = FRA
 				tag = AFO
+				tag = ALA
 			}
 		}
 	}
@@ -6232,6 +6236,7 @@ generic_artillery_organization = {
 				tag = USA
 				tag = FRA
 				tag = AFO
+				tag = ALA
 			}
 		}
 	}
@@ -6547,6 +6552,9 @@ generic_infantry_equipment_organization = {
 		NOT = {
 		    OR = {
 			    tag = AFO
+			    tag = ALA
+			    tag = USA
+			    tag = FRA
 			}
 		}
 	}
@@ -7107,6 +7115,7 @@ generic_motorized_mechanized_organization = {
 				tag = USA
 				tag = FRA
 				tag = AFO
+				tag = ALA
 			}
 		}
 	}

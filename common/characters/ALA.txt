@@ -144,12 +144,17 @@ characters={
 			id = -1
 		}
 		corps_commander = {
-			traits = { old_guard }
+			traits = { old_guard national_guard_member air_force_ties }
 			skill = 3
 			attack_skill = 1
 			defense_skill = 3
 			planning_skill = 4
 			logistics_skill = 4
+		}
+		advisor = {
+			slot = army_chief
+			traits = { army_chief_drill_2 }
+			cost = 75
 		}
 	}
 	ALA_brian_kile = { 
@@ -162,11 +167,16 @@ characters={
 		}
 		corps_commander = {
 			traits = { national_guard_member air_force_ties }
-			skill = 2
+			skill = 1
 			attack_skill = 1
-			defense_skill = 2
+			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 2
+		}
+		advisor = {
+			slot = air_chief
+			traits = { air_chief_reform_1 }
+			cost = 75
 		}
 	}
 	ALA_julie_a_small = { 
@@ -185,6 +195,11 @@ characters={
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			traits = { army_chief_organizational_2 }
+			cost = 75
 		}
 	}
 	ALA_kenneth_radford = { 
@@ -214,11 +229,11 @@ characters={
 		}
 		corps_commander = {
 			traits = { national_guard_member air_force_ties }
-			skill = 2
-			attack_skill = 2
+			skill = 1
+			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			logistics_skill = 2
+			logistics_skill = 1
 		}
 	}
 	ALA_reginald_harper = { 
@@ -231,11 +246,11 @@ characters={
 		}
 		corps_commander = {
 			traits = { national_guard_member air_force_ties }
-			skill = 3
-			attack_skill = 3
+			skill = 2
+			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 2
-			logistics_skill = 4
+			logistics_skill = 3
 		}
 	}
 	ALA_simon_brown = { 
@@ -271,6 +286,11 @@ characters={
 			planning_skill = 1
 			logistics_skill = 2
 		}
+		advisor = {
+			slot = high_command
+			traits = { army_infantry_1 }
+			cost = 50
+		}
 	}
 	ALA_tracy_smith = { 
 		name = ALA_tracy_smith
@@ -283,11 +303,100 @@ characters={
 		}
 		corps_commander = {
 			traits = { national_guard_member air_force_ties }
-			skill = 3
+			skill = 1
 			attack_skill = 1
-			defense_skill = 4
-			planning_skill = 4
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			traits = { air_pilot_training_1 }
+			cost = 50
+		}
+	}
+	ALA_joshua_armstrong = { 
+		name = ALA_joshua_armstrong
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/ALA/generals/joshua_armstrong_small.tga"
+				large = "gfx/leaders/ALA/generals/Joshua_Armstrong.tga"
+			}
+		}
+		corps_commander = {
+			traits = { national_guard_member air_force_ties }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = army_chief
+			traits = { air_chief_safety_1 }
+			cost = 75
+		}
+	}
+	ALA_matthew_komatsu = { 
+		name = ALA_matthew_komatsu
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/ALA/generals/matthew_komatsu_small.tga"
+				large = "gfx/leaders/ALA/generals/Matthew_Komatsu.tga"
+			}
+		}
+		corps_commander = {
+			traits = { national_guard_member air_force_ties }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+	}
+	ALA_thomas_h_katkus = { 
+		name = ALA_thomas_h_katkus
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/ALA/generals/thomas_katkus_small.tga"
+				large = "gfx/leaders/ALA/generals/Thomas_H_Katkus.tga"
+			}
+		}
+		corps_commander = {
+			traits = { national_guard_member cavalry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
 			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			traits = { army_CombinedArms_2 }
+			cost = 50
+		}
+	}
+	ALA_craig_n_christensen = { 
+		name = ALA_craig_n_christensen
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/ALA/generals/craig_christensen_small.tga"
+				large = "gfx/leaders/ALA/generals/Craig_N_Christensen.tga"
+			}
+		}
+		corps_commander = {
+			traits = { national_guard_member armor_officer}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			traits = { army_armored_2 }
+			cost = 50
 		}
 	}
 	ALA_vincent_k_brooks = { 
@@ -305,6 +414,11 @@ characters={
 			defense_skill = 4
 			planning_skill = 5
 			logistics_skill = 5
+		}
+		advisor = {
+			slot = army_chief
+			traits = { army_chief_maneuver_2 }
+			cost = 75
 		}
 	}
 	###

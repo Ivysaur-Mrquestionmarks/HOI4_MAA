@@ -9,6 +9,13 @@ generic_drone_organization = {
 
 	allowed = {
 		always  = yes #>:3
+		NOT = {
+			OR = {
+				tag = USA
+				tag = FRA
+				tag = ALA
+			}
+		}
 	}
 
 	equipment_type = {

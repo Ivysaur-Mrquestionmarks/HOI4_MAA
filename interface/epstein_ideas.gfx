@@ -1,5 +1,46 @@
 spriteTypes = {
 
+### MIOS ###
+    spriteType = {
+        name = "GFX_idea_mio_boeing"
+        texturefile = "gfx/interface/ideas/Generic/mios/boeing.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_mio_bae"
+        texturefile = "gfx/interface/ideas/Generic/mios/bae.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_mio_general_dynamics"
+        texturefile = "gfx/interface/ideas/Generic/mios/general_dynamics.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_mio_lockheed_martin"
+        texturefile = "gfx/interface/ideas/Generic/mios/lockheed_martin.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_mio_sig_sauer"
+        texturefile = "gfx/interface/ideas/Generic/mios/sig_sauer.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_mio_vigor"
+        texturefile = "gfx/interface/ideas/Generic/mios/vigor.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_mio_huntington"
+        texturefile = "gfx/interface/ideas/Generic/mios/huntington.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_mio_oshkosh"
+        texturefile = "gfx/interface/ideas/Generic/mios/oshkosh.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_mio_toyota"
+        texturefile = "gfx/interface/ideas/Generic/mios/toyota.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_mio_aerovironment"
+        texturefile = "gfx/interface/ideas/Generic/mios/aerovironment.dds"
+    }
 ### NATO ###
     spriteType = {
         name = "GFX_idea_NATO_NATO_idea"
@@ -3990,27 +4031,27 @@ spriteTypes = {
         name = "GFX_idea_ALA_Sarah_Palin_Advisor"
         texturefile = "gfx/interface/ideas/ALA/Sarah_Palin_ADV.tga"
     }
+
 	spriteType = {
-        name = "GFX_idea_ALA_Valerie_Davidson_Advisor"
-        texturefile = "gfx/interface/ideas/ALA/valerie_davidson_ADV.tga"
+        name = "GFX_idea_ALA_ahtna"
+        texturefile = "gfx/interface/ideas/ALA/companies/ahtna.dds"
     }
-	spriteType = {
-        name = "GFX_idea_ALA_Donald_Young_Advisor"
-        texturefile = "gfx/interface/ideas/ALA/Don_Young_ADV.tga"
+    spriteType = {
+        name = "GFX_idea_ALA_aidea"
+        texturefile = "gfx/interface/ideas/ALA/companies/aidea.dds"
     }
-	spriteType = {
-        name = "GFX_idea_ALA_Bill_Walker_Advisor"
-        texturefile = "gfx/interface/ideas/ALA/Bill_Walker_ADV.tga"
+    spriteType = {
+        name = "GFX_idea_ALA_koniag"
+        texturefile = "gfx/interface/ideas/ALA/companies/koniag.dds"
     }
-	spriteType = {
-        name = "GFX_idea_ALA_Baked_Alaska_Advisor"
-        texturefile = "gfx/interface/ideas/ALA/Baked_Alaska_ADV.tga"
+    spriteType = {
+        name = "GFX_idea_ALA_hilcorp"
+        texturefile = "gfx/interface/ideas/ALA/companies/hilcorp.dds"
     }
-	spriteType = {
-        name = "GFX_idea_ALA_Brighman_McCown_Advisor"
-        texturefile = "gfx/interface/ideas/ALA/McCown_ADV.tga"
+    spriteType = {
+        name = "GFX_idea_ALA_alaska_aerospace"
+        texturefile = "gfx/interface/ideas/ALA/companies/alaska_aerospace.dds"
     }
-	
 ### MEXICO (MEX) ###
 	spriteType = {
         name = "GFX_idea_MEX_church_power_5"

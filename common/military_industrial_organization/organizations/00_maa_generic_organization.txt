@@ -1,0 +1,242 @@
+generic_general_dynamics = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_mio_general_dynamics
+	
+	allowed = {	
+		OR = {
+			tag = ALA
+			tag = USA
+			tag = FRA
+		}
+		has_dlc = "No Step Back"	
+	}
+
+	visible = {
+
+	}
+	
+	available = {
+
+	}
+
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		equipment_bonus = {
+			maximum_speed = 0.1
+			reliability = 0.05
+			armor_value = 0.05
+		}
+	}
+}
+generic_boeing = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_mio_boeing
+	
+	allowed = {	
+		OR = {
+			tag = ALA
+			tag = USA
+			tag = FRA
+		}
+		has_dlc = "No Step Back"	
+	}
+
+	visible = {
+
+	}
+	
+	available = {
+
+	}
+}
+generic_lockheed_martin = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_mio_lockheed_martin
+	
+	allowed = {	
+		OR = {
+			tag = ALA
+			tag = USA
+			tag = FRA
+		}
+		has_dlc = "No Step Back"	
+	}
+
+	visible = {
+
+	}
+	
+	available = {
+
+	}
+}
+generic_bae = {
+	include = generic_artillery_organization
+	icon = GFX_idea_mio_bae
+	
+	allowed = {	
+		OR = {
+			tag = ALA
+			tag = USA
+			tag = FRA
+		}
+		has_dlc = "No Step Back"	
+	}
+
+	visible = {
+
+	}
+	
+	available = {
+
+	}
+}
+generic_sig_sauer = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_mio_sig_sauer
+	
+	allowed = {	
+		OR = {
+			tag = ALA
+			tag = USA
+			tag = FRA
+		}
+		has_dlc = "No Step Back"	
+	}
+
+	visible = {
+
+	}
+	
+	available = {
+
+	}
+}
+generic_oshkosh = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_mio_oshkosh
+	
+	allowed = {	
+		OR = {
+			tag = ALA
+			tag = USA
+			tag = FRA
+		}
+		has_dlc = "No Step Back"	
+	}
+
+	visible = {
+
+	}
+	
+	available = {
+
+	}
+}
+generic_toyota = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_mio_toyota
+	
+	allowed = {	
+		OR = {
+			tag = ALA
+			tag = USA
+			tag = FRA
+		}
+		has_dlc = "No Step Back"	
+	}
+
+	visible = {
+
+	}
+	
+	available = {
+
+	}
+}
+generic_aerovironment = {
+	include = generic_drone_organization
+	icon = GFX_idea_mio_aerovironment
+	
+	allowed = {	
+		OR = {
+			tag = ALA
+			tag = USA
+			tag = FRA
+		}
+		has_dlc = "No Step Back"	
+	}
+
+	visible = {
+
+	}
+	
+	available = {
+
+	}
+}
+generic_sig_sauer = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_mio_sig_sauer
+	
+	allowed = {	
+		OR = {
+			tag = ALA
+			tag = USA
+			tag = FRA
+		}
+		has_dlc = "No Step Back"	
+	}
+
+	visible = {
+
+	}
+	
+	available = {
+
+	}
+}
+generic_vigor = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_mio_vigor
+	
+	allowed = {	
+		OR = {
+			tag = ALA
+			tag = USA
+			tag = FRA
+		}
+		has_dlc = "No Step Back"	
+	}
+
+	visible = {
+
+	}
+	
+	available = {
+
+	}
+}
+generic_huntington = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_mio_huntington
+	
+	allowed = {	
+		OR = {
+			tag = ALA
+			tag = USA
+			tag = FRA
+		}
+		has_dlc = "No Step Back"	
+	}
+
+	visible = {
+
+	}
+	
+	available = {
+
+	}
+}
