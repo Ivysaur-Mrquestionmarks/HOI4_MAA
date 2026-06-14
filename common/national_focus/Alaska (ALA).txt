@@ -425,7 +425,7 @@
 		id = ALA_alaaskaq
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = -23
+		x = -29
 		y = 1
 		relative_position_id = ALA_strike_the_capital
 		ai_will_do = { 
@@ -447,7 +447,7 @@
 		id = ALA_what_of_the_white_man
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 4.00
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = ALA_alaaskaq
 		ai_will_do = { 
@@ -806,44 +806,10 @@
 		}
 	}
 	focus = {
-		id = ALA_inuit_healthcare
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = 1
-		y = 1
-		relative_position_id = ALA_end_the_overcrowding
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_end_the_overcrowding
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_stop_the_rampant_crime
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = 0
-		y = 1
-		relative_position_id = ALA_inuit_healthcare
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_inuit_healthcare
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = ALA_the_five_year_plan
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 9
+		x = 13
 		y = 1
 		relative_position_id = ALA_alaaskaq
 		ai_will_do = { 

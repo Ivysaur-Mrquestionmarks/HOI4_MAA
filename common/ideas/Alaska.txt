@@ -3,9 +3,9 @@ ideas = {
 		ALA_apf = {
 			#picture = prc_the_long_march2
 			modifier = {
-				stability_factor = 0.15
-				consumer_goods_factor = 0.1
-				industrial_capacity_factory = 0.05
+				stability_factor = 0.10
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.03
 			}
 		}
 		ALA_inuit_poverty = {
@@ -35,21 +35,6 @@ ideas = {
 				libertarian_right_drift = 0.05
 			}
 		}
-		ALA_shadow_of_pac = {
-			#picture = prc_the_long_march2
-			modifier = {
-				war_support_factor = -0.2
-				conscription = -0.01
-				experience_gain_navy_factor = -0.5
-				experience_gain_air_factor = -0.15
-				experience_gain_army_factor = -0.3
-				naval_coordination = -0.2
-				naval_morale_factor = -0.3
-				industrial_capacity_dockyard = -0.25
-				navy_leader_cost_factor = 0.5
-				army_leader_cost_factor = 0.3
-			}
-		}
 		ALA_collapsed_oil_industry = {
 			#picture = prc_the_long_march2
 			modifier = {
@@ -67,7 +52,7 @@ ideas = {
 				consumer_goods_factor = -0.1
 				
 			}
-		}		
+		}	
 	}
 	industrial_concern = {
 		ALA_aidea = {

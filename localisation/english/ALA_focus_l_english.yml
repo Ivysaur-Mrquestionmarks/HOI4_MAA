@@ -20,12 +20,16 @@
  ALA_collapsed_oil_industry:0 "Collapsed Oil Industry"
  ALA_collapsed_oil_industry_desc:0 "Under normal circumstances, our oil would exported abroad, but our nation is extremely new with zero recognition from the outside community. The painful truth is that no one wants to buy oil from us."
  
+ ALA_northern_alaska:0 "Northern Alaska"
+ ALA_northern_alaska_desc:0 "Northern Alaska contains substantial industries related to gas and oil, and plenty of untapped resources."
+
  # COMPANIES & MIOS #
 
  ALA_aidea:0 "Alaska Industrial Development and Export Authority"
  ALA_ahtna:0 "Ahtna"
  ALA_koniag:0 "Koniag Energy and Water"
  ALA_hilcorp:0 "Hilcorp"
+
  ### EVENTS ### 
 
  ### CHARACTERS ###
@@ -46,8 +50,12 @@
  ALA_matthew_komatsu:0 "Matthew Komatsu"
  ALA_joshua_armstrong:0 "Joshua Armstrong"
  ALA_craig_n_christensen:0 "Craig N. Christensen"
+ 
+ ALA_megan_dean:0 "Megan Dean"
+ ALA_bob_little:0 "Bob Little"
 
  # ADVISORS #
+
  ALA_crawford_patkotak:0 "Crawford Patkotak"
  ALA_valerie_davidson:0 "Valerie Davidson"
  ALA_mark_lester:0 "Mark Lester"
@@ -56,9 +64,13 @@
  ALA_laura_terry:0 "Laura Terry"
  ALA_lisa_murkowksi:0 "Lisa Murkowski"
  ALA_dan_sullivan:0 "Dan Sullivan"
+ ALA_mark_begich:0 "Mark Begich"
+ ALA_quinn_christopherson:0 "Quinn Christopherson"
+ ALA_ryan_binkley:0 "Ryan Binkley"
 
-# LEGACY ALASKA CHARACTERS/ADVISORS #
-ALA_sarah_palin:0 "Sarah Palin"
+ # LEGACY ALASKA CHARACTERS/ADVISORS #
+
+ ALA_sarah_palin:0 "Sarah Palin"
  ALA_joshua_vo:0 "Joshua Vo"
  ALA_thomas_begich:0 "Thomas Begich"
  ALA_jon_briggs_watts:0 "Jon Briggs Watts"
@@ -82,7 +94,6 @@ ALA_sarah_palin:0 "Sarah Palin"
  ALA_james_jarrard:0 "James Jarrard"
  ALA_jeffrey_a_vanantwerp:0 "Jeffrey A. VanAntwerp"
 
-
  ### TRAITS ###
  
  ALA_dunleavy_sellout:0 "The Betrayer"
@@ -93,6 +104,10 @@ ALA_sarah_palin:0 "Sarah Palin"
  ALA_baked_alaska:0 "Baked Alaska"
  ALA_anti_trump_republican:0 "Anti-Trump Republican"
  ALA_guns_and_oil:0 "Guns and Oil"
+ ALA_failed_visionary:0 "Populist Visionary"
+ ALA_democratic_kingmaker:0 "Democratic Kingmaker"
+ ALA_socialist_singer:0 "Socialist Singer"
+ ALA_media_mogul:0 "Media Mogul"
 
  ### PARTIES ###
 

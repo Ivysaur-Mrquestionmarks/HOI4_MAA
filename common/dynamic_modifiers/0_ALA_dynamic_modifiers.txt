@@ -1,0 +1,28 @@
+ALA_shadow_of_pac = {
+	icon = "GFX_idea_"
+
+	war_support_factor = ALA_war_support_factor
+	conscription = ALA_conscription
+	experience_gain_navy_factor = ALA_experience_gain_navy_factor
+	experience_gain_air_factor = ALA_experience_gain_air_factor
+	experience_gain_army_factor = ALA_experience_gain_army_factor
+	naval_coordination = ALA_naval_coordination
+	naval_morale_factor = ALA_naval_morale_factor
+	industrial_capacity_dockyard = ALA_industrial_capacity_dockyard
+	navy_leader_cost_factor = ALA_navy_leader_cost_factor 
+	army_leader_cost_factor = ALA_army_leader_cost_factor
+}
+ALA_northern_alaska = {
+	icon = "GFX_idea_"
+
+	industrial_factory_donations = ALA_industrial_factory_donations
+	military_factory_donations = ALA_military_factory_donations
+	country_resource_steel = ALA_northern_steel
+	country_resource_tungsten = ALA_northern_tungsten
+	country_resource_oil = ALA_northern_oil
+	country_resource_rubber = ALA_northern_rubber
+	country_resource_chromium = ALA_northern_chromium
+	country_resource_aluminium = ALA_northern_aluminium
+	country_resource_coal = ALA_northern_coal
+	weekly_manpower = ALA_northern_weekly_manpower
+}

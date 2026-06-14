@@ -28,32 +28,23 @@ characters={
 				small = "GFX_idea_ALA_Sarah_Palin_Advisor"
 			}
 		}
-#		country_leader = {
-#			ideology = trumpist
-#			traits = { Annoying_Bitch }
-#			expire = "2060.1.1.1"
-#			id = -1
-#		}
-#		advisor = {
-#			slot = political_advisor
-#			idea_token = ALA_Sarah_Palin
-#			cost = 150
-#			allowed = {
-#				tag = ALA
-#			}
-#			visible = {
-#				has_completed_focus = ALA_Vice_President_Palin
-#			}
-#			available = {
-#			
-#			}
-#			traits = {
-#				Sarah_Palin 
-#			}
-#			ai_will_do = {
-#				factor = 5
-#			}
-#		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALA_Sarah_Palin
+			cost = 150
+			allowed = {
+				tag = ALA
+			}
+			available = {
+			
+			}
+			traits = {
+				ALA_failed_visionary 
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
 	}
 	ALA_joshua_vo = {
 		name = ALA_joshua_vo
@@ -154,14 +145,14 @@ characters={
 		advisor = {
 			slot = army_chief
 			traits = { army_chief_drill_2 }
-			cost = 75
+			cost = 50
 		}
 	}
 	ALA_brian_kile = { 
 		name = ALA_brian_kile
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/brian_kile_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/brian_kile_small.dds"
 				large = "gfx/leaders/ALA/generals/Brian_Kile.tga"
 			}
 		}
@@ -176,7 +167,7 @@ characters={
 		advisor = {
 			slot = air_chief
 			traits = { air_chief_reform_1 }
-			cost = 75
+			cost = 50
 		}
 	}
 	ALA_julie_a_small = { 
@@ -184,7 +175,7 @@ characters={
 		gender = female
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/julie_a_small_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/julie_a_small_small.dds"
 				large = "gfx/leaders/ALA/generals/Julie_A_Small.tga"
 			}
 		}
@@ -199,14 +190,14 @@ characters={
 		advisor = {
 			slot = army_chief
 			traits = { army_chief_organizational_2 }
-			cost = 75
+			cost = 50
 		}
 	}
 	ALA_kenneth_radford = { 
 		name = ALA_kenneth_radford
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/kenneth_radford_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/kenneth_radford_small.dds"
 				large = "gfx/leaders/ALA/generals/Kenneth_Radford.tga"
 			}
 		}
@@ -223,7 +214,7 @@ characters={
 		name = ALA_keolani_bailey
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/keolani_bailey_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/keolani_bailey_small.dds"
 				large = "gfx/leaders/ALA/generals/Keolani_Bailey.tga"
 			}
 		}
@@ -240,7 +231,7 @@ characters={
 		name = ALA_reginald_harper
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/reginald_harper_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/reginald_harper_small.dds"
 				large = "gfx/leaders/ALA/generals/Reginald_Harper.tga"
 			}
 		}
@@ -257,7 +248,7 @@ characters={
 		name = ALA_simon_brown
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/simon_brown_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/simon_brown_small.dds"
 				large = "gfx/leaders/ALA/generals/Simon_Brown.tga"
 			}
 		}
@@ -274,7 +265,7 @@ characters={
 		name = ALA_wayne_don
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/wayne_don_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/wayne_don_small.dds"
 				large = "gfx/leaders/ALA/generals/Wayne_Don.tga"
 			}
 		}
@@ -297,7 +288,7 @@ characters={
 		gender = female
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/tracy_smith_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/tracy_smith_small.dds"
 				large = "gfx/leaders/ALA/generals/Tracy_Smith.tga"
 			}
 		}
@@ -319,7 +310,7 @@ characters={
 		name = ALA_joshua_armstrong
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/joshua_armstrong_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/joshua_armstrong_small.dds"
 				large = "gfx/leaders/ALA/generals/Joshua_Armstrong.tga"
 			}
 		}
@@ -334,14 +325,14 @@ characters={
 		advisor = {
 			slot = army_chief
 			traits = { air_chief_safety_1 }
-			cost = 75
+			cost = 50
 		}
 	}
 	ALA_matthew_komatsu = { 
 		name = ALA_matthew_komatsu
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/matthew_komatsu_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/matthew_komatsu_small.dds"
 				large = "gfx/leaders/ALA/generals/Matthew_Komatsu.tga"
 			}
 		}
@@ -359,7 +350,7 @@ characters={
 		name = ALA_thomas_h_katkus
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/thomas_katkus_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/thomas_katkus_small.dds"
 				large = "gfx/leaders/ALA/generals/Thomas_H_Katkus.tga"
 			}
 		}
@@ -381,7 +372,7 @@ characters={
 		name = ALA_craig_n_christensen
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/craig_christensen_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/craig_christensen_small.dds"
 				large = "gfx/leaders/ALA/generals/Craig_N_Christensen.tga"
 			}
 		}
@@ -403,7 +394,7 @@ characters={
 		name = ALA_vincent_k_brooks
 		portraits = {
 			army={
-				small = "gfx/interface/ideas/ALA/generals/vincent_k_brooks_small.tga"
+				small = "gfx/interface/ideas/ALA/generals/vincent_k_brooks_small.dds"
 				large = "gfx/leaders/ALA/generals/Vincent_K_Brooks.tga"
 			}
 		}
@@ -416,8 +407,46 @@ characters={
 			logistics_skill = 5
 		}
 		advisor = {
-			slot = army_chief
-			traits = { army_chief_maneuver_2 }
+			slot = theorist
+			traits = { mobile_warfare_expert }
+			cost = 150
+		}
+	}
+	# ADMIRALS #
+	ALA_megan_dean = { 
+		name = ALA_megan_dean
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/ALA/generals/megan_dean_small.dds"
+				large = "gfx/leaders/ALA/generals/Megan_Dean.tga"
+			}
+		}
+		navy_leader = {
+		    skill = 2
+		    attack_skill = 1
+		    defense_skill = 2
+		    maneuvering_skill = 2
+		    coordination_skill = 2
+		}
+	}
+	ALA_bob_little = { 
+		name = ALA_bob_little
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/ALA/generals/bob_little_small.dds"
+				large = "gfx/leaders/ALA/generals/Bob_Little.tga"
+			}
+		}
+		navy_leader = {
+		    skill = 2
+		    attack_skill = 2
+		    defense_skill = 2
+		    maneuvering_skill = 1
+		    coordination_skill = 2
+		}
+		advisor = {
+			slot = navy_chief
+			traits = { navy_chief_reform_1 }
 			cost = 75
 		}
 	}
@@ -610,7 +639,6 @@ characters={
 	}
 	ALA_dan_sullivan = {
 		name = ALA_dan_sullivan
-		gender = female
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ALA/advisors/dan_sullivan.tga"
@@ -631,6 +659,90 @@ characters={
 			}
 			traits = {
 				ALA_guns_and_oil
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	ALA_mark_begich = {
+		name = ALA_mark_begich
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ALA/advisors/mark_begich.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALA_mark_begich
+			cost = 150
+			allowed = {
+				tag = ALA
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				ALA_democratic_kingmaker
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	ALA_quinn_christopherson = {
+		name = ALA_quinn_christopherson
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ALA/advisors/quinn_christopherson.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALA_quinn_christopherson
+			cost = 150
+			allowed = {
+				tag = ALA
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				ALA_socialist_singer
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	ALA_ryan_binkley = {
+		name = ALA_ryan_binkley
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ALA/advisors/ryan_binkley.tga"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALA_ryan_binkley
+			cost = 150
+			allowed = {
+				tag = ALA
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				ALA_media_mogul
 			}
 			ai_will_do = {
 				factor = 5

@@ -954,9 +954,10 @@ leader_traits = {
 		libertarian_right_acceptance = 40
 	}
 	### ALASKA TRAITS ###
-	Annoying_Bitch = {
-		stability_factor = -0.05
-		non_core_manpower = -0.1
+	ALA_failed_visionary = {
+		republican_drift = 0.05
+		drift_defence_factor = 0.25
+		stability_factor = -0.1
 	}
 	ALA_dunleavy_sellout = {
 		stability_factor = -0.1
@@ -965,6 +966,7 @@ leader_traits = {
 	Oil_Baron = {
 		random = no
 		local_resources_factor = 0.15
+		trade_opinion_factor = 0.25
 		consumer_goods_factor = 0.05
 		stability_factor = -0.05
 	}
@@ -992,12 +994,26 @@ leader_traits = {
 	ALA_anti_trump_republican = {
 		republican_drift = 0.02
 		democrat_drift = 0.01
+		democrat_acceptance = 25
 		political_power_factor = 0.05
 	}
 	ALA_guns_and_oil = {
 		republican_drift = 0.03
 		industrial_capacity_factory = 0.07
 		fuel_gain_factor = 0.1
+	}
+	ALA_democratic_kingmaker = {
+		democratic_drift = 0.03
+		political_power_factor = 0.1
+		political_advisor_cost_factor = -0.3
+	}
+	ALA_socialist_singer = {
+		authoritarian_left_drift = 0.02
+		political_power_factor = 0.05
+	}
+	ALA_media_mogul = {
+		political_power_factor = 0.15
+		drift_defence_factor = 0.25
 	}
 	#Perry Trait
 	NEW_Libertarian = {

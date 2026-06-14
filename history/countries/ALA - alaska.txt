@@ -28,6 +28,7 @@ add_ideas = {
 	ALA_alaskan_powder_keg
 	ALA_shadow_of_pac
 	ALA_collapsed_oil_industry
+	ALA_northern_alaska
 }
 if = {
 	limit = {
@@ -69,6 +70,36 @@ set_popularities = {
 	libertarian_left = 10
 }
 
+### DYNAMIC MODIFIERS ##
+
+# Shadow of the Pacific Fleet #
+set_variable = { ALA_war_support_factor = -0.2}
+set_variable = { ALA_conscription = -0.01}
+set_variable = { ALA_experience_gain_navy_factor = -0.5}
+set_variable = { ALA_experience_gain_air_factor = -0.15}
+set_variable = { ALA_experience_gain_army_factor = -0.3}
+set_variable = { ALA_naval_coordination = -0.2}
+set_variable = { ALA_naval_morale_factor = -0.3}
+set_variable = { ALA_industrial_capacity_dockyard = -0.25}
+set_variable = { ALA_navy_leader_cost_factor = 0.5}
+set_variable = { ALA_army_leader_cost_factor = 0.3}
+
+add_dynamic_modifier = { modifier = ALA_shadow_of_pac }
+
+# Northern Alaska #
+set_variable = { ALA_industrial_factory_donations = 3}
+set_variable = { ALA_military_factory_donations = 2}
+set_variable = { ALA_northern_steel = 4}
+set_variable = { ALA_northern_tungsten = 4}
+set_variable = { ALA_northern_oil = 0}
+set_variable = { ALA_northern_rubber = 0}
+set_variable = { ALA_northern_chromium = 0}
+set_variable = { ALA_northern_aluminium = 0}
+set_variable = { ALA_northern_coal = 0}
+set_variable = { ALA_northern_weekly_manpower = 100}
+
+add_dynamic_modifier = { modifier = ALA_northern_alaska }
+
 ### Country Leaders ###
 # Americans #
 recruit_character = ALA_mike_dunleavy
@@ -102,7 +133,9 @@ recruit_character = ALA_pat_pitney
 recruit_character = ALA_laura_terry
 recruit_character = ALA_lisa_murkowksi
 recruit_character = ALA_dan_sullivan
-
+recruit_character = ALA_ryan_binkley
+recruit_character = ALA_quinn_christopherson
+recruit_character = ALA_mark_begich
 ### Generals ###
 recruit_character = ALA_brian_kile
 recruit_character = ALA_julie_a_small
@@ -120,3 +153,5 @@ recruit_character = ALA_joshua_armstrong
 recruit_character = ALA_matthew_komatsu
 recruit_character = ALA_thomas_h_katkus
 recruit_character = ALA_craig_n_christensen
+recruit_character = ALA_megan_dean
+recruit_character = ALA_bob_little
