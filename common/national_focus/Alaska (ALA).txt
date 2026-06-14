@@ -444,142 +444,424 @@
 		}
 	}
 	focus = {
-		id = ALA_what_of_the_white_man
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 4.00
-		x = 4
-		y = 1
-		relative_position_id = ALA_alaaskaq
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_alaaskaq
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_forgiveness
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 4.00
-		x = 1
-		y = 1
-		relative_position_id = ALA_what_of_the_white_man
-		ai_will_do = { 
-			factor = 300
-		}
-		mutually_exclusive = {
-			focus = ALA_vengeance
-		}
-		prerequisite = {
-			focus = ALA_what_of_the_white_man
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_vengeance
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 4.00
-		x = -1
-		y = 1
-		relative_position_id = ALA_what_of_the_white_man
-		ai_will_do = { 
-			factor = 300
-		}
-		mutually_exclusive = {
-			focus = ALA_forgiveness
-		}
-		prerequisite = {
-			focus = ALA_what_of_the_white_man
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_condemn_the_icc
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = -5
-		y = 1
-		relative_position_id = ALA_alaaskaq
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_alaaskaq
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_pan_inuit_ideology
+		id = ALA_rebuke_the_icc
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 0
 		y = 1
-		relative_position_id = ALA_condemn_the_icc
+		relative_position_id = ALA_alaaskaq
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = ALA_condemn_the_icc
+			focus = ALA_alaaskaq
 		}
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = ALA_prepare_to_liberate_canada
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = -2
-		y = 1
-		relative_position_id = ALA_pan_inuit_ideology
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_pan_inuit_ideology
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_strike_the_west_coast
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = -1
-		y = 1
-		relative_position_id = ALA_prepare_to_liberate_canada
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_prepare_to_liberate_canada
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_break_the_plains
+		id = ALA_forging_the_new_inuit_man
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 1
 		y = 1
-		relative_position_id = ALA_prepare_to_liberate_canada
+		relative_position_id = ALA_rebuke_the_icc
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = ALA_prepare_to_liberate_canada
+			focus = ALA_rebuke_the_icc
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_reembrace_animism_and_shamanism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_forging_the_new_inuit_man
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_forging_the_new_inuit_man
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_secure_the_next_generation_of_inuits
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_forging_the_new_inuit_man
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_forging_the_new_inuit_man
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_socialist_wisdom
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_forging_the_new_inuit_man
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_secure_the_next_generation_of_inuits
+		}
+		prerequisite = {
+			focus = ALA_reembrace_animism_and_shamanism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_ilisagvik_model
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_socialist_wisdom
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_socialist_wisdom
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_set_the_historical_record_straight
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 2
+		relative_position_id = ALA_socialist_wisdom
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_socialist_wisdom
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_reintroduce_our_native_tongue
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 2
+		relative_position_id = ALA_socialist_wisdom
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_socialist_wisdom
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_supremacy_of_native_spirit
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 3
+		relative_position_id = ALA_socialist_wisdom
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_reintroduce_our_native_tongue
+		}
+		prerequisite = {
+			focus = ALA_set_the_historical_record_straight
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_what_of_the_white_man
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 5
+		y = 1
+		relative_position_id = ALA_rebuke_the_icc
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_rebuke_the_icc
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_what_of_the_white_man
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 5
+		y = 1
+		relative_position_id = ALA_rebuke_the_icc
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_rebuke_the_icc
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_coexistance_and_cooperation
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 2
+		relative_position_id = ALA_what_of_the_white_man
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_no_forgiveness_for_genocide
+		}
+		prerequisite = {
+			focus = ALA_what_of_the_white_man
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_inuit_tourism_ministry
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_coexistance_and_cooperation
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_coexistance_and_cooperation
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_enshrine_the_equality_article
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_inuit_tourism_ministry
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_inuit_tourism_ministry
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_no_forgiveness_for_genocide
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 2
+		relative_position_id = ALA_what_of_the_white_man
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_coexistance_and_cooperation
+		}
+		prerequisite = {
+			focus = ALA_what_of_the_white_man
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_treacherous_christianity
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_no_forgiveness_for_genocide
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_no_forgiveness_for_genocide
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_put_the_final_nail_in_white_tourism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_no_forgiveness_for_genocide
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_no_forgiveness_for_genocide
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_this_land_is_my_land
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_no_forgiveness_for_genocide
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_treacherous_christianity
+			focus = ALA_put_the_final_nail_in_white_tourism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_this_land_is_not_your_land
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_this_land_is_my_land
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_this_land_is_my_land
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_form_the_arctic_council_of_communes
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_rebuke_the_icc
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_rebuke_the_icc
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_prepare_canadian_liberation
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_form_the_arctic_council_of_communes
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_form_the_arctic_council_of_communes
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_fortune_from_sedna
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_prepare_canadian_liberation
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_prepare_canadian_liberation
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_wakashan_campaign
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_prepare_canadian_liberation
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_prepare_canadian_liberation
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_great_plains_offensive
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_prepare_canadian_liberation
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_wakashan_campaign
+		}
+		prerequisite = { 
+			focus = ALA_fortune_from_sedna
 		}
 		completion_reward = {
 			
@@ -590,23 +872,20 @@
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 0
-		y = 2
-		relative_position_id = ALA_prepare_to_liberate_canada
+		y = 1
+		relative_position_id = ALA_great_plains_offensive
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = ALA_strike_the_west_coast
-		}
-		prerequisite = {
-			focus = ALA_break_the_plains
+			focus = ALA_great_plains_offensive
 		}
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = ALA_the_rest_of_canada
+		id = ALA_end_the_canadian_experiment
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 0
@@ -623,188 +902,47 @@
 		}
 	}
 	focus = {
-		id = ALA_inuit_allies_in_greenland
+		id = the_native_vanguard_of_the_north
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = -1
+		x = 4
 		y = 1
-		relative_position_id = ALA_the_rest_of_canada
+		relative_position_id = ALA_end_the_canadian_experiment
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = ALA_the_rest_of_canada
+			focus = ALA_end_the_canadian_experiment
+		}
+		prerequisite = {
+			focus = ALA_supremacy_of_native_spirit
+		}
+		prerequisite = {
+			focus = ALA_this_land_is_not_your_land
+			focus = ALA_enshrine_the_equality_article
 		}
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = ALA_liberate_greenland
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = 1
-		y = 1
-		relative_position_id = ALA_the_rest_of_canada
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_the_rest_of_canada
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_embrace_pan_native_ideology
+		id = anti_imperialist_crusade
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 0
-		y = 2
-		relative_position_id = ALA_the_rest_of_canada
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_liberate_greenland
-		}
-		prerequisite = {
-			focus = ALA_inuit_allies_in_greenland
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_revitalize_the_inuit_people
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = -2
 		y = 1
-		relative_position_id = ALA_alaaskaq
+		relative_position_id = the_native_vanguard_of_the_north
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = ALA_alaaskaq
+			focus = the_native_vanguard_of_the_north
 		}
 		completion_reward = {
 			
 		}
 	}
-	focus = {
-		id = ALA_reembrace_animism_and_shamanism
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = -1
-		y = 2
-		relative_position_id = ALA_revitalize_the_inuit_people
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_revitalize_the_inuit_people
-		}
-		prerequisite = {
-			focus = ALA_pan_inuit_ideology
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_keep_christian_syncretism
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = -1
-		y = 1
-		relative_position_id = ALA_reembrace_animism_and_shamanism
-		ai_will_do = { 
-			factor = 300
-		}
-		mutually_exclusive = {
-			focus = ALA_reverse_the_colonialist_stain
-		}
-		prerequisite = {
-			focus = ALA_reembrace_animism_and_shamanism
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_reverse_the_colonialist_stain
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = 1
-		y = 1
-		relative_position_id = ALA_reembrace_animism_and_shamanism
-		ai_will_do = { 
-			factor = 300
-		}
-		mutually_exclusive = {
-			focus = ALA_keep_christian_syncretism
-		}
-		prerequisite = {
-			focus = ALA_reembrace_animism_and_shamanism
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_appropiate_church_property
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = 1
-		y = 1
-		relative_position_id = ALA_reverse_the_colonialist_stain
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_reverse_the_colonialist_stain
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_undo_cultural_genocide
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = 0
-		y = 2
-		relative_position_id = ALA_reembrace_animism_and_shamanism
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_reverse_the_colonialist_stain
-			focus = ALA_keep_christian_syncretism
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_end_the_overcrowding
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = 1
-		y = 1
-		relative_position_id = ALA_revitalize_the_inuit_people
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_revitalize_the_inuit_people
-		}
-		completion_reward = {
-			
-		}
-	}
+	# SHARED INDUSTRY TREE (Inuit/Commie) #
 	focus = {
 		id = ALA_the_five_year_plan
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
