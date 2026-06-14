@@ -954,6 +954,10 @@ leader_traits = {
 		libertarian_right_acceptance = 40
 	}
 	### ALASKA TRAITS ###
+	Annoying_Bitch = {
+		stability_factor = -0.05
+		non_core_manpower = -0.1
+	}
 	ALA_failed_visionary = {
 		republican_drift = 0.05
 		drift_defence_factor = 0.25
