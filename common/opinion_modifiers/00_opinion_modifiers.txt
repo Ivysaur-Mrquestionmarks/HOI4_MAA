@@ -1139,6 +1139,9 @@ opinion_modifiers = {
 	AFS_diplomacy = {
 		value = 50 
 	}
+	LAS_diplomacy = {
+		value = 25
+	}
 	kmt_rejected_meeting = {
 		value = -75
 	}

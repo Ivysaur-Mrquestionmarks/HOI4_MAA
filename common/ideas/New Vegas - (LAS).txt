@@ -1,0 +1,321 @@
+ideas = {
+	country = {
+		LAS_post_coup_instability_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.75
+				war_support_factor = -0.5
+				political_power_gain = -1
+				consumer_goods_factor = 0.25
+			}
+		}
+		LAS_post_coup_instability_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.65
+				war_support_factor = -0.45
+				political_power_gain = -0.5
+				consumer_goods_factor = 0.30
+				production_speed_buildings_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.10
+			}
+		}
+		LAS_post_coup_instability_3 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.50
+				war_support_factor = -0.40
+				political_power_gain = -0.6
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.15
+			}
+		}
+		LAS_post_coup_instability_4 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				political_power_gain = -0.75
+				consumer_goods_factor = 0.40
+				production_speed_buildings_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				industrial_capacity_factory = -0.2
+			}
+		}
+		LAS_post_coup_instability_5 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.50
+				war_support_factor = -0.40
+				political_power_gain = -1
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.1
+			}
+		}
+		LAS_post_coup_instability_6 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.40
+				war_support_factor = -0.30
+				political_power_gain = -0.5
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.1
+			}
+		}
+		LAS_post_coup_instability_7 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.10
+				political_power_gain = -0.25
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.1
+			}
+		}
+		LAS_post_coup_instability_8 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.05
+				political_power_gain = -0.10
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.04
+				production_factory_efficiency_gain_factor = -0.03
+				industrial_capacity_factory = -0.075
+			}
+		}
+		LAS_continuing_instability_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.025
+				political_power_gain = -0.075
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.04
+				production_factory_efficiency_gain_factor = -0.03
+				industrial_capacity_factory = -0.075
+			}
+		}
+		LAS_continuing_instability_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.025
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.02
+				industrial_capacity_factory = -0.05
+			}
+		}
+		LAS_continuing_instability_3 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				political_power_gain = -0.025
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				industrial_capacity_factory = -0.05
+			}
+		}
+		LAS_continuing_instability_4 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.025
+				political_power_gain = -0.05
+				industrial_capacity_factory = 0.025
+			}
+		}
+		LAS_continuing_instability_5 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+				industrial_capacity_factory = 0.05
+			}
+		}
+		LAS_continuing_instability_6 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.10
+				political_power_gain = 0.025
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		LAS_military_joint = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				army_org_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+		LAS_lacking_government_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.1
+				political_power_gain = -0.1
+			}
+		}
+		LAS_lacking_government_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.08
+				political_power_gain = -0.08
+			}
+		}
+		LAS_lacking_government_3 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.06
+				political_power_gain = -0.06
+			}
+		}
+		LAS_lacking_government_4 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+		LAS_lacking_government_5 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+		LAS_lacking_government_6 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		LAS_lacking_government_7 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.2
+			}
+		}
+		LAS_lacking_government_8 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+		LAS_ncr_government = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_gain = 0.5
+			}
+		}
+		LAS_mojave_campaign
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_destroyed_economy_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_new_vegas_militia_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_ = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_ = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_ = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_ = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_ = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_ = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_ = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_ = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_ = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_ = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+		LAS_ = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				
+			}
+		}
+	}
+}

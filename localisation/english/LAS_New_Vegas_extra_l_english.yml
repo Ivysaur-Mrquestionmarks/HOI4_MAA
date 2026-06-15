@@ -3,7 +3,7 @@
  #Events
  
  new_vegas.1.t:0 "Declaration of New Vegas"
- new_vegas.1.d:0 "Wynn declares New Vegas with the Courier (keep courier ambiguous so i dont have to code 3 different events thx)"
+ new_vegas.1.d:0 "Wynn declares New Vegas with the Courier (keep courier ambiguous through event 5 so i dont have to code 3 different events for the entire starting tree thx)"
  new_vegas.1.a:0 "Viva New Vegas"
  
  new_vegas.2.t:0 "The Meeting"
@@ -14,9 +14,114 @@
  new_vegas.3.d:0 "Wynn meets with organized crime and other casino owners to form an alliance"
  new_vegas.3.a:0 "This is much better than some nerds"
  
+ new_vegas.4.t:0 "The Showdown in Wynn Casino"
+ new_vegas.4.d:0 "Courier kills Wynn in a great battle (This should be characterized as a great feat by the courier (Like Dickride them almost))
+ new_vegas.4.a:0 "The Courier cheats death once again"
+ 
+ new_vegas.5.t:0 "New Vegas under the Courier's Thumb"
+ new_vegas.5.d:0 "something something opponents of the courier have been rounded up and no longer pose a threat"
+ new_vegas.5.a:0 "A New Age Begins - The Age of New Vegas"
+ 
+ new_vegas.6.t:0 "For the Republic"
+ new_vegas.6.d:0 "wallis adresses his troops, make it sound cool, ncr larp, etc"
+ new_vegas.6.a:0 "FOR THE REPUBLIC!!!!!"
+ 
+ new_vegas.7.t:0 "The Executive Branch"
+ new_vegas.7.d:0 "describe the executive branch of the NVR government (look at focus description for details)"
+ new_vegas.7.a:0 "you can do this too"
+ 
+ new_vegas.8.t:0 "The Legislative Branch"
+ new_vegas.8.d:0 "describe the legislative branch of the NVR government (look at focus description for details)"
+ new_vegas.8.a:0 "you can do this too"
+ 
+ new_vegas.9.t:0 "The Judicial Branch"
+ new_vegas.9.d:0 "describe the judicial branch of the NVR government (look at focus description for details)"
+ new_vegas.9.a:0 "you can do this too"
+ 
+ new_vegas.10.t:0 "New Departments"
+ new_vegas.10.d:0 "Wirtie something about the establishment of government departments ex: Department of Defense, Justice, Interior, etc"
+ new_vegas.10.a:0 "Another Step Closer to a Real Govenment"
+ 
+ new_vegas.11.t:0 "New Judges"
+ new_vegas.11.d:0 "Write about Wallis appointing judges"
+ new_vegas.11.a:0 "A Step Closer to Civilization"
+ 
+ new_vegas.12.t:0 "Governance Restored"
+ new_vegas.12.d:0 "Wallis opens the new congress and makes a speech"
+ new_vegas.12.a:0 "The Whole Room Cheers"
+ 
+ new_vegas.13.t:0 "Election Day"
+ new_vegas.13.d:0 "describe wallis's New Vegas Party and the opposing Independence Party New vegas Party wants to expand independ doesnt both will keep wallis as leader"
+ new_vegas.13.a:0 "The New Vegas Party!"
+ new_vegas.13.b:0 "The Independence Party!"
+ 
+ new_vegas.~.t:0 " "
+ new_vegas.~.d:0 " "
+ new_vegas.~.a:0 " "
+ 
  #Ideas
  
+ LAS_post_coup_instability_1:0 "Courier's Resistance"
+ LAS_post_coup_instability_1_desc:0 "The Courier has backed out of our deal and has begun to resist our rule... how quaint."
+ LAS_post_coup_instability_2:0 "Courier's Resistance"
+ LAS_post_coup_instability_2_desc:0 "Even with new allies that fool so-called 'courier' still continues to be a thorn in our side. Perhaps we have underestimated him..."
+ LAS_post_coup_instability_3:0 "Courier's Resistance"
+ LAS_post_coup_instability_3_desc:0 "While weakened that fool so-called 'courier' still continues to be a thorn in our side. I just hope we havent made a horrible mistake..."
+ LAS_post_coup_instability_4:0 "Victory?"
+ LAS_post_coup_instability_4_desc:0 "That fool has fled before our men and we will soon have full control over Vegas, perfection."
+ LAS_post_coup_instability_5:0 "The Ghost of Wynn"
+ LAS_post_coup_instability_5_desc:0 "Even with his death in his Casino the ghost of that bloated old fool continues to haunt us"
+ LAS_post_coup_instability_6:0 "The Ghost of Wynn"
+ LAS_post_coup_instability_6_desc:0 "Even with his death in his Casino the ghost of that bloated old fool continues to haunt us"
+ LAS_post_coup_instability_7:0 "Unstable Jewel"
+ LAS_post_coup_instability_7_desc:0 "The Jewel of Vegas is now fully in our grasp, however it continues to remain in a state of instability."
+ LAS_post_coup_instability_8:0 "Unstable Jewel"
+ LAS_post_coup_instability_8_desc:0 "The Jewel of Vegas is now fully in our grasp, however it continues to remain in a state of instability."
  
+ LAS_continuing_instability_1:0 "Restoring Stability"
+ LAS_continuing_instability_1_desc:0 "It is our duty to restore stability to New Vegas"
+ LAS_continuing_instability_2:0 "Restoring Stability"
+ LAS_continuing_instability_2_desc:0 "It is our duty to restore stability to New Vegas"
+ LAS_continuing_instability_3:0 "Restoring Stability"
+ LAS_continuing_instability_3_desc:0 "It is our duty to restore stability to New Vegas"
+ LAS_continuing_instability_4:0 "Restoring Stability"
+ LAS_continuing_instability_4_desc:0 "It is our duty to restore stability to New Vegas"
+ LAS_continuing_instability_5:0 "Restoring Stability"
+ LAS_continuing_instability_5_desc:0 "It is our duty to restore stability to New Vegas"
+ LAS_continuing_instability_6:0 "Vegas under the Courier"
+ LAS_continuing_instability_6_desc:0 "The Courier has been granted the will of the people of New Vegas!"
+ 
+ LAS_military_joint:0 "Militia of Vegas"
+ LAS_military_joint_desc:0 "Our militia has brought us great victories against the old vegas, and is deserving of great rewards"
+ 
+ LAS_lacking_government_1:0 "Destroyed Government Institutions"
+ LAS_lacking_government_1_desc:0 "Our government institutions were destroyed by Wynn and his goons. A problem we must solve"
+ LAS_lacking_government_2:0 "Damaged Government Institutions"
+ LAS_lacking_government_2_desc:0 "Now that the chaos of the early days is over we can begin to build a proper government"
+ LAS_lacking_government_3:0 "Damaged Government Institutions"
+ LAS_lacking_government_3_desc:0 "Now that the chaos of the early days is over we can begin to build a proper government"
+ LAS_lacking_government_4:0 "Damaged Government Institutions"
+ LAS_lacking_government_4_desc:0 "Now that the chaos of the early days is over we can begin to build a proper government"
+ LAS_lacking_government_5:0 "Rebuilding Government Institutions"
+ LAS_lacking_government_5_desc:0 "Now that the chaos of the early days is over we have begun to build a proper government"
+ LAS_lacking_government_6:0 "Rebuilding Government Institutions"
+ LAS_lacking_government_6_desc:0 "Now that the chaos of the early days is over we have begun to build a proper government"
+ LAS_lacking_government_7:0 "Nearly Rebuilt Government Institutions"
+ LAS_lacking_government_7_desc:0 "Our government institutions are nearly rebuilt."
+ LAS_lacking_government_8:0 "Nearly Rebuilt Government Institutions"
+ LAS_lacking_government_8_desc:0 "Our government institutions are nearly rebuilt."
+ 
+ LAS_ncr_government:0 "NVR Government"
+ LAS_ncr_government_desc:0 "The Republic of New Vegas has a robust tricameral government that provides services to the people of New Vegas"
+ 
+ LAS_mojave_campaign:0 "Mojave Campaign Planning"
+ LAS_mojave_campaign_desc:0 "A plan is nessesary before any attack"
+ 
+ LAS_destroyed_economy_1:0 "Destroyed Economy"
+ LAS_destroyed_economy_1_desc:0 "Coups, War, and Sociatal Collapse is not good for the economy. A lot of work is needed to rebuild our economy"
+ 
+ LAS_new_vegas_militia_1:0 "New Vegas Militia"
+ LAS_new_vegas_militia_1_desc:0 "While our militias have won us a great many battles, they are still far from a proper military. This needs to be remedied."
  
  #Cosmetic Tags
  

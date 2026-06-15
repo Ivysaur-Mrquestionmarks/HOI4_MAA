@@ -34,7 +34,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		
+		add_ideas = LAS_post_coup_instability_1
 	}
 }
 country_event = {
@@ -44,11 +44,198 @@ country_event = {
 	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
-	#
 	option = {
 		name = new_vegas.3.a
 		ai_chance = {
 			factor = 100
+		}
+		swap_ideas = {
+			remove_idea = LAS_post_coup_instability_1
+			add_idea = LAS_post_coup_instability_2
+		}
+	}
+}
+country_event = {
+	id = new_vegas.4
+	title = new_vegas.4.t
+	desc = new_vegas.4.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.4.a
+		ai_chance = {
+			factor = 100
+		}
+		swap_ideas = {
+			remove_idea = LAS_post_coup_instability_4
+			add_idea = LAS_post_coup_instability_5
+		}
+		if = {
+			limit = { has_country_flag = LAS_courier_wallis_chosen }
+			promote_character = LAS_sean_wallis
+		}
+		if = {
+			limit = { has_country_flag = LAS_courier_brown_chosen }
+			promote_character = LAS_clancy_brown
+		}
+		if = {
+			limit = { has_country_flag = LAS_courier_spisak_chosen }
+			promote_character = LAS_jason_spisak
+		}
+	}
+}
+country_event = {
+	id = new_vegas.5
+	title = new_vegas.5.t
+	desc = new_vegas.5.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.5.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.6
+	title = new_vegas.6.t
+	desc = new_vegas.6.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.6.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.7
+	title = new_vegas.7.t
+	desc = new_vegas.7.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.7.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = 0.5
+		add_political_power = 100
+	}
+}
+country_event = {
+	id = new_vegas.8
+	title = new_vegas.8.t
+	desc = new_vegas.8.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.8.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = 0.5
+		add_political_power = 100
+	}
+}
+country_event = {
+	id = new_vegas.9
+	title = new_vegas.9.t
+	desc = new_vegas.9.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.9.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = 0.5
+		add_political_power = 100
+	}
+}
+country_event = {
+	id = new_vegas.10
+	title = new_vegas.10.t
+	desc = new_vegas.10.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.10.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.11
+	title = new_vegas.11.t
+	desc = new_vegas.11.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.11.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.12
+	title = new_vegas.12.t
+	desc = new_vegas.12.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.12.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.13
+	title = new_vegas.13.t
+	desc = new_vegas.13.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.13.a
+		ai_chance = {
+			factor = 95
+		}
+		
+	}
+	option = {
+		name = new_vegas.13.b
+		ai_chance = {
+			factor = 5
 		}
 		
 	}
@@ -64,7 +251,7 @@ country_event = {
 	option = {
 		name = new_vegas.~.a
 		ai_chance = {
-			factor = 
+			factor = 100
 		}
 		
 	}
