@@ -80,10 +80,16 @@ PAC_army_militia_balance_of_power_category = {
 			custom_effect_tooltip = PAC_inauguration_tooltip
 			if = {
 				limit = { 
-					is_power_balance_side_active = {
-                        id = army_militia_bop
-                        side = militia_control
-                    }
+					OR = {
+					    is_power_balance_in_range = {
+                            id = army_militia_bop
+                            range = militia_medium_control
+                        }
+						is_power_balance_in_range = {
+                            id = army_militia_bop
+                            range = militia_high_control
+                        }
+					}
 			    }
 				hidden_effect = {
 				    country_event = {
@@ -96,7 +102,7 @@ PAC_army_militia_balance_of_power_category = {
 				limit = {
 					is_power_balance_in_range = {
                         id = army_militia_bop
-                        range > army_militia_middle
+                        range = army_militia_middle
                     }
 			    }
 				hidden_effect = {
@@ -108,10 +114,16 @@ PAC_army_militia_balance_of_power_category = {
 			}
 			if = {
 				limit = {
-					is_power_balance_side_active = {
-                        id = army_militia_bop
-                        side = army_control
-                    }
+					OR = {
+					    is_power_balance_in_range = {
+                            id = army_militia_bop
+                            range = army_medium_control
+                        }
+						is_power_balance_in_range = {
+                            id = army_militia_bop
+                            range = army_high_control
+                        }
+					}
 			    }
 				hidden_effect = {
 				    country_event = {

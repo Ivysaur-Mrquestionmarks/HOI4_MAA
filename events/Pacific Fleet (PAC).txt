@@ -831,6 +831,7 @@ country_event = {
 			factor = 100
 		}
 		add_stability = 0.05
+		remove_ideas = PAC_army_militia_rivalry
 	}
 }
 

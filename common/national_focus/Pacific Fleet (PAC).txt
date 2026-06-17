@@ -545,7 +545,7 @@ focus_tree = {
 	focus = {
 		id = PAC_pacific_victory
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 5
+		cost = 1
 		x = 0
 		y = 2
 		relative_position_id = PAC_CRUSH_BERNIE
@@ -2261,7 +2261,7 @@ focus_tree = {
 		prerequisite = { focus = PAC_coastal_liberty }
 		prerequisite = { focus = PAC_guardians_of_pacific_liberty }
 		available = {
-			
+			has_completed_focus = PAC_forever_with_the_guardians
 		}
 		ai_will_do = {
 			factor = 5
@@ -2431,7 +2431,7 @@ focus_tree = {
 		prerequisite = { focus = PAC_coastal_liberty }
 		prerequisite = { focus = PAC_guardians_of_pacific_liberty }
 		available = {
-			
+			has_completed_focus = PAC_form_the_pacific_republic
 		}
 		ai_will_do = {
 			factor = 5
@@ -3644,9 +3644,9 @@ focus_tree = {
 		        }
 			}
 			if = {
-				limit = { country_exists = WAB }
+				limit = { country_exists = WBK }
                 create_wargoal = {
-			        target = WAB
+			        target = WBK
 			        type = annex_everything
 		        }
 			}
@@ -4785,7 +4785,7 @@ focus_tree = {
 		available = {
 			power_balance_value = {
                 id = military_democracy_bop
-                value > 0.95
+                value < -0.95
             }
 		}
 		ai_will_do = {
@@ -6395,6 +6395,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = PAC_rust_belt_federalization
 		}
+		prerequisite = { 
+			focus = PAC_southern_federalization
+		}
 		available = {
 			if = {
 				limit = { is_ai = yes }
@@ -6403,8 +6406,8 @@ focus_tree = {
 		}
 		will_lead_to_war_with = NEW
 		will_lead_to_war_with = NAB
-		will_lead_to_war_with = WAB
-		bypass = { NOT = { country_exists = NEW country_exists = NAB country_exists = WAB } }
+		will_lead_to_war_with = WBK
+		bypass = { NOT = { country_exists = NEW country_exists = NAB country_exists = WBK } }
 		ai_will_do = {
 			factor = 5
 		}
@@ -6425,9 +6428,9 @@ focus_tree = {
 		        }
 			}
 			if = {
-				limit = { country_exists = WAB }
+				limit = { country_exists = WBK }
                 create_wargoal = {
-			        target = WAB
+			        target = WBK
 			        type = annex_everything
 		        }
 			}
