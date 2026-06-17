@@ -80,8 +80,8 @@
  LAS_appoint_judges:0 "Appointing Judges"
  LAS_appoint_judges_desc:0 "Unfortunately, our new judicial branch is currently lacking in judges to staff it, and since our nation as a whole lacks many judges as is, we'll have to appoint and train lawyers and anyone else with legal experience to the positions we desperately need."
  
- LAS_send_an_ambassador_to_bidone:0 "Send an Ambassador to Washington"
- LAS_send_an_ambassador_to_bidone_desc:0 "To our east, the Federal Republic is clearly the most legitimate successor to the United States of old, and it embodies the democratic ideals of the New California Republic. We will try to be friendly with them, and hopefully acquire their support for our cause."
+ LAS_send_an_ambassador_to_bidone:0 "Send an Ambassador to [FRA.GetName]"
+ LAS_send_an_ambassador_to_bidone_desc:0 "To our east, the [FRA.GetName] is clearly the most legitimate successor to the United States of old, and it embodies the democratic ideals of the New California Republic. We will try to be friendly with them, and hopefully acquire their support for our cause."
  
  LAS_build_election_infrastructure:0 "Build Election Infrastructure"
  LAS_build_election_infrastructure_desc:0 "We can't simply declare an election season open and wing it from there. No, we must establish legal and also physical infrastructure to ensure our democratic system in the future. From determining polling places, campaigning regulations, regulating political advertisements and donations, it will take some time before everything is in place for our first proper elections."
@@ -96,68 +96,71 @@
  
  #Independent Path
  
+ LAS_independent_vegas:0 "Independent Vegas"
+ LAS_independent_vegas_desc:0 " "
+ 
  
  
  #Legion Path
  
- LAS_cold_cold_heart:0 “Cold Cold Heart”
- LAS_cold_cold_heart_desc:0 “The state of Vegas is everything we stand against, a den of vice, hedonism, prostitutes, whores and modernism. If we are to create a truly great Empire, great big changes must come.”
+ LAS_cold_cold_heart:0 "Cold Cold Heart"
+ LAS_cold_cold_heart_desc:0 "The state of Vegas is everything we stand against, a den of vice, hedonism, prostitutes, whores and modernism. If we are to create a truly great Empire, great big changes must come."
 
- LAS_burn_the_casinos:0 “Burn The Casinos”
- LAS_burn_the_casinos_desc:0 “The Casinos of Vegas. The symbol of vice and immorality. These bases of degenerates will be burned down to the ground. It will be our signal to all who reside in this territory that the age of corruption and immorality is no longer.”
+ LAS_burn_the_casinos:0 "Burn The Casinos"
+ LAS_burn_the_casinos_desc:0 "The Casinos of Vegas. The symbol of vice and immorality. These bases of degenerates will be burned down to the ground. It will be our signal to all who reside in this territory that the age of corruption and immorality is no longer."
 
- LAS_destroy_hedonism:0 “Destroy Hedonism”
- LAS_destroy_hedonism_desc:0 “Hedonism doesnt just destroy the self. But also brings down great nations. A hedonist does not have discipline nor professionalism; their heads only full with thoughts of debauchery and all sorts of immoral and degenerative thoughts. People like these have no place within our new state and will be purged mercilessly and efficiently ”
+ LAS_destroy_hedonism:0 "Destroy Hedonism"
+ LAS_destroy_hedonism_desc:0 "Hedonism doesnt just destroy the self. But also brings down great nations. A hedonist does not have discipline nor professionalism; their heads only full with thoughts of debauchery and all sorts of immoral and degenerative thoughts. People like these have no place within our new state and will be purged mercilessly and efficiently "
 
- LAS_the_legion_reborn:0 “The Legion Reborn”
- LAS_the_legion_reborn_desc:0 “The degenerates and heathens within our territory have been cleansed for now. And to everyone here, our goals are clear. Today, we will proclaim the rebirth of the Legion. Based on the foundations and virtues of Rome.
+ LAS_the_legion_reborn:0 "The Legion Reborn"
+ LAS_the_legion_reborn_desc:0 "The degenerates and heathens within our territory have been cleansed for now. And to everyone here, our goals are clear. Today, we will proclaim the rebirth of the Legion. Based on the foundations and virtues of Rome.
 
- LAS_legio_aeterna:0 “Legio Aeterna”
- LAS_legio_aeterna_desc:0 “The Legion is Eternal, the legion stands strong and alone. We are destined to conquer and rule. The wasteland will be purified. The Continent United and we will exist to see it all.”
+ LAS_legio_aeterna:0 "Legio Aeterna"
+ LAS_legio_aeterna_desc:0 "The Legion is Eternal, the legion stands strong and alone. We are destined to conquer and rule. The wasteland will be purified. The Continent United and we will exist to see it all."
 
- LAS_aeterna_victrix:0 “Aeterna Victrix”
- LAS_aeterna_victrix_desc:0 “Nothing less than victory is acceptable to our legion. We will no longer just be happy with half-measures, capitulation and partial successes. Half-measures and compromise is the reason why America had rotted and collapsed, and the Legion does not intend to follow in its footsteps.”
+ LAS_aeterna_victrix:0 "Aeterna Victrix"
+ LAS_aeterna_victrix_desc:0 "Nothing less than victory is acceptable to our legion. We will no longer just be happy with half-measures, capitulation and partial successes. Half-measures and compromise is the reason why America had rotted and collapsed, and the Legion does not intend to follow in its footsteps."
 
- LAS_martial_our_men:0 “Martial our Men”
- LAS_martial_our_men_desc:0 “Our legion does not exist to only cling upon this thin slice of land. It exists to expand and conquer. And for this monumental task, we will need men, much more men. Every able bodied man will be recruited into the legion as the main bulk of our fighting force. 
+ LAS_martial_our_men:0 "Martial our Men"
+ LAS_martial_our_men_desc:0 "Our legion does not exist to only cling upon this thin slice of land. It exists to expand and conquer. And for this monumental task, we will need men, much more men. Every able bodied man will be recruited into the legion as the main bulk of our fighting force. 
 
- LAS_establish_the_cult_of_mars:0 “Establish the Cult of Mars”
- LAS_establish_the_cult_of_mars_desc:0 “Mars, the God of war. He is the symbol of legionary military might. Mars represents the ideal legionary. Strong, powerful and ready for conquest. All within the legions rank will revere Mars and his ideals.”
+ LAS_establish_the_cult_of_mars:0 "Establish the Cult of Mars"
+ LAS_establish_the_cult_of_mars_desc:0 "Mars, the God of war. He is the symbol of legionary military might. Mars represents the ideal legionary. Strong, powerful and ready for conquest. All within the legions rank will revere Mars and his ideals."
 
- LAS_instill_loyalty:0 “Instill Loyalty”
- LAS_instill_loyalty_desc:0 “Those who work for us must be completely and utterly loyal to our cause. Unknowingly handing weapons and teachings onto people with dubious loyalty will come back to bite us later, not thinking twice before betraying us. We will make this doesnt happen, under any circumstance.”
+ LAS_instill_loyalty:0 "Instill Loyalty"
+ LAS_instill_loyalty_desc:0 "Those who work for us must be completely and utterly loyal to our cause. Unknowingly handing weapons and teachings onto people with dubious loyalty will come back to bite us later, not thinking twice before betraying us. We will make this doesnt happen, under any circumstance."
 
- LAS_a_living_god:0 “A Living God”
- LAS_a_living_god_desc:0 “Modernism has stripped man of meaning in life, a man who doesnt have anything to look beyond himself only dwells upon himself and falls into a deep fit of self pity, corruption and beauchary. The disease is going to be cut out from our legion. The legionaries will not fight for petty self improvements, they fight for the Legion, for Caesar, for conquest.”
+ LAS_a_living_god:0 "A Living God"
+ LAS_a_living_god_desc:0 "Modernism has stripped man of meaning in life, a man who doesnt have anything to look beyond himself only dwells upon himself and falls into a deep fit of self pity, corruption and beauchary. The disease is going to be cut out from our legion. The legionaries will not fight for petty self improvements, they fight for the Legion, for Caesar, for conquest."
 
- LAS_teachings_of_the_malpais_legate:0 “Teachings of the Malpais Legate”
- LAS_teachings_of_the_malpais_legate_desc:0 “The Malpais Legate teaches us that tasks should not be delayed without reason. Overlooking any small detail or error will only lead to it growing into a bigger problem. We will learn from example, that without foresight and planning a battle is already lost.”
+ LAS_teachings_of_the_malpais_legatus:0 "Teachings of the Malpais Legate"
+ LAS_teachings_of_the_malpais_legatus_desc:0 "The Malpais Legate teaches us that tasks should not be delayed without reason. Overlooking any small detail or error will only lead to it growing into a bigger problem. We will learn from example, that without foresight and planning a battle is already lost."
 
- LAS_teachings_of_legate_lanius:0 “Teachings of the Legate Lanius”
- LAS_teachings_of_legate_lanius_desc:0 “Legate Lanius, the butcher, teaches us we must not show quarter to our enemies and also to not underestimate them. Enemies of the legion should be crushed brutally and efficiently. Those who are equal in strength shouldnt be tought of as easy game because being cocky also spells doom for the attacker.”
+ LAS_teachings_of_legatus_lanius:0 "Teachings of the Legate Lanius"
+ LAS_teachings_of_legatus_lanius_desc:0 "Legate Lanius, the butcher, teaches us we must not show quarter to our enemies and also to not underestimate them. Enemies of the legion should be crushed brutally and efficiently. Those who are equal in strength shouldnt be tought of as easy game because being cocky also spells doom for the attacker."
 
- LAS_hold_a_census:0 “Hold a Census”
- LAS_hold_a_census_desc:0 “To get a better idea of what we have to work with, the legionary command will hold a nationwide census to figure out and plan the best and most effective ways of restructuring society, industry and the military. It will also help us from overextending ourselves or leaving weak points the proflegates might exploit.”
+ LAS_hold_a_census:0 "Hold a Census"
+ LAS_hold_a_census_desc:0 "To get a better idea of what we have to work with, the legionary command will hold a nationwide census to figure out and plan the best and most effective ways of restructuring society, industry and the military. It will also help us from overextending ourselves or leaving weak points the proflegates might exploit."
 
- LAS_find_infiltrators:0 “Find infiltrators”
- LAS_find_infiltrators_desc:0 “To defeat your enemy, first you must know them. We can’t expect the legion to simply go ahead and bang their heads on an enemy we know nothing about. It is stupid and suicidal. Across the country, we will find existing and recruit new agents and informants who’s task will be to infiltrate enemy society andt the frontlines. Feeding us crucial information, laying out sabotage and even taking down any personnel who might cause a problem for us.”
+ LAS_find_infiltrators:0 "Find infiltrators"
+ LAS_find_infiltrators_desc:0 "To defeat your enemy, first you must know them. We can’t expect the legion to simply go ahead and bang their heads on an enemy we know nothing about. It is stupid and suicidal. Across the country, we will find existing and recruit new agents and informants who’s task will be to infiltrate enemy society andt the frontlines. Feeding us crucial information, laying out sabotage and even taking down any personnel who might cause a problem for us."
 
- LAS_crucify_the_disobedient:0 “Crucify the Disobedient”
- LAS_crucify_the_disobedient_desc:0 “Many think they can disobey our commands and get away with it. But they will be proven wrong. They will be punished for their insolence, but not in private, no. Their fate will be shown across the nation as their bodies stay stuck upon the pole for all to see. To strike fear into the hearts of any opportunist who may dare to think about crossing the path of the Legion.”
+ LAS_crucify_the_disobedient:0 "Crucify the Disobedient"
+ LAS_crucify_the_disobedient_desc:0 "Many think they can disobey our commands and get away with it. But they will be proven wrong. They will be punished for their insolence, but not in private, no. Their fate will be shown across the nation as their bodies stay stuck upon the pole for all to see. To strike fear into the hearts of any opportunist who may dare to think about crossing the path of the Legion."
 
- LAS_send_a_message:0 “Send a Message”
- LAS_send_a_message_desc:0 “Its not mindless savagery, its about striking fear in their hearts and minds. To show them what lies for any proligate heathen. No crime will go unpunished, and their fates will be etched into the minds of all to make sure they are constantly reminded.”
+ LAS_send_a_message:0 "Send a Message"
+ LAS_send_a_message_desc:0 "Its not mindless savagery, its about striking fear in their hearts and minds. To show them what lies for any proligate heathen. No crime will go unpunished, and their fates will be etched into the minds of all to make sure they are constantly reminded."
 
- LAS_enforce_loyalty:0 “Enforce Loyalty”
- LAS_enforce_loyalty:0 “A loyal legionary fights for the Legion till his last breath, an unloyal one will betray it the moment the opportunity arises. This simply cannot do, any doubt, question or fatigue must be hammered out. Their hearts and minds must be fine tuned to serve the legion wholeheartedly. Loyalty training will be enforced throughout their entire career, remind them of what they are and who they serve, or else.”
+ LAS_enforce_loyalty:0 "Enforce Loyalty"
+ LAS_enforce_loyalty_desc:0 "A loyal legionary fights for the Legion till his last breath, an unloyal one will betray it the moment the opportunity arises. This simply cannot do, any doubt, question or fatigue must be hammered out. Their hearts and minds must be fine tuned to serve the legion wholeheartedly. Loyalty training will be enforced throughout their entire career, remind them of what they are and who they serve, or else."
 
- LAS_a_loyal_legion:0 “A Loyal Legion”
- LAS_a_loyal_legion_desc:0 “All are loyal under the banner of the Legion. Heart void of fear and doubt, men marching in unison, completely servile and primed to follow the Legions will. They know better than to betray us or to be corrupted by the lies of profligates. Together we are strong and a force to be reckoned with.”
+ LAS_a_loyal_legion:0 "A Loyal Legion"
+ LAS_a_loyal_legion_desc:0 "All are loyal under the banner of the Legion. Heart void of fear and doubt, men marching in unison, completely servile and primed to follow the Legions will. They know better than to betray us or to be corrupted by the lies of profligates. Together we are strong and a force to be reckoned with."
 
- LAS_from_vulpes_to_caesar:0 “From Vulpes to Caesar”
- LAS_from_vulpes_to_caesar_desc:0 “Vulpes is known for his cunningness and ability to infiltrate and relay information from the enemy, and his absolute devotion to the legion. But the Legion needs a Caesar, not an infiltrator. Vulpes qualifies for all the great qualities an Emperor needs. Smartness, ability to plan beyond simple things, diplomatic skill and most importantly, to whim up men into a blind frenzy, ready to follow any and all commands that he demands. Under our new Caesar, the Legion will not only conquer but also prosper.”
+ LAS_from_vulpes_to_caesar:0 "From Vulpes to Caesar"
+ LAS_from_vulpes_to_caesar_desc:0 "Vulpes is known for his cunningness and ability to infiltrate and relay information from the enemy, and his absolute devotion to the legion. But the Legion needs a Caesar, not an infiltrator. Vulpes qualifies for all the great qualities an Emperor needs. Smartness, ability to plan beyond simple things, diplomatic skill and most importantly, to whim up men into a blind frenzy, ready to follow any and all commands that he demands. Under our new Caesar, the Legion will not only conquer but also prosper."
 
- LAS_nova_roma:0 “Nova Roma”
- LAS_nova_roma_desc:0 “Many people used to call America the new Rome due to many of its similarities, not only in its successes but also in its failures. But America never Rome, its establishment rotted, its morals corrupt, its population degenerate and hedonistic, its army nothing more than bumbling fools carrying the weapons of titans. And now, as America has collapsed under its own rotting carcass. Like a phoenix from the ashes, we rise. Not a copy of America clinging to a forlorn legacy. But something new and old, Rome. A new mightier Rome, strong and profound for a modern millennium.”
+ LAS_nova_roma:0 "Nova Roma"
+ LAS_nova_roma_desc:0 "Many people used to call America the new Rome due to many of its similarities, not only in its successes but also in its failures. But America never Rome, its establishment rotted, its morals corrupt, its population degenerate and hedonistic, its army nothing more than bumbling fools carrying the weapons of titans. And now, as America has collapsed under its own rotting carcass. Like a phoenix from the ashes, we rise. Not a copy of America clinging to a forlorn legacy. But something new and old, Rome. A new mightier Rome, strong and profound for a modern millennium."
 
 

@@ -860,21 +860,21 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		
+		set_country_flag = LAS_courier_wallis_chosen
 	}
 	option = {
 		name = viva_las_vegas.23.b
 		ai_chance = {
 			factor = 33
 		}
-		
+		set_country_flag = LAS_courier_brown_chosen
 	}
 	option = {
 		name = viva_las_vegas.23.c
 		ai_chance = {
 			factor = 33
 		}
-		
+		set_country_flag = LAS_courier_spisak_chosen
 	}
 }
 country_event = {

@@ -55,6 +55,11 @@
  new_vegas.13.a:0 "The New Vegas Party!"
  new_vegas.13.b:0 "The Independence Party!"
  
+ new_vegas.14.t:0 "New Vegas Requests Aid"
+ new_vegas.14.d:0 "This event is sent to fra new vegas requests some equipment"
+ new_vegas.14.a:0 "Anything to Help!"
+ new_vegas.14.b:0 "We have our own problems"
+ 
  new_vegas.~.t:0 " "
  new_vegas.~.d:0 " "
  new_vegas.~.a:0 " "
@@ -122,6 +127,32 @@
  
  LAS_new_vegas_militia_1:0 "New Vegas Militia"
  LAS_new_vegas_militia_1_desc:0 "While our militias have won us a great many battles, they are still far from a proper military. This needs to be remedied."
+ 
+ #Political Parties
+ 
+ LAS_courier_loyalists_long:0 "Courier Loyalists"
+ LAS_courier_loyalists:0 "Courier Loyalists"
+ 
+ LAS_new_vegas_democratic_party_long:0 "New Vegas Democratic Party"
+ LAS_new_vegas_democratic_party:0 "Democratic Party"
+ 
+ LAS_new_vegas_republican_party_long:0 "New Vegas Republican Party"
+ LAS_new_vegas_republican_party:0 "Republican Party"
+ 
+ LAS_new_vegas_peoples_party_left_long:0 "New Vegas People's Party Leftist Faction"
+ LAS_new_vegas_peoples_party:0 "People's Party (Left)"
+ 
+ LAS_new_vegas_peoples_party_right_long:0 "New Vegas People's Party Rightist Faction"
+ LAS_new_vegas_peoples_party_right:0 "People's Party (Right)
+ 
+ LAS_new_vegas_courier_party_long:0 "New Vegas Republican Authority and Presidential Loyalist Party"
+ LAS_new_vegas_courier_party:0 "Republican Authority Party"
+ 
+ LAS_new_vegas_party_long:0 "New Vegas Party"
+ LAS_new_vegas_party:0 "New Vegas Party"
+ 
+ LAS_independence_party_long:0 "New Vegas Independence Party"
+ LAS_independence_party:0 "Independence Party"
  
  #Cosmetic Tags
  

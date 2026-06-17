@@ -72,6 +72,41 @@ country_event = {
 			remove_idea = LAS_post_coup_instability_4
 			add_idea = LAS_post_coup_instability_5
 		}
+		add_ideas = LAS_new_vegas_militia_1
+		hidden_effect = {
+			set_party_name = {
+				ideology = autocrat
+				long_name = LAS_courier_loyalists_long
+				name = LAS_courier_loyalists
+			}
+			set_party_name = {
+				ideology = democrat
+				long_name = LAS_new_vegas_democratic_party_long
+				name = LAS_new_vegas_democratic_party
+			}
+			set_party_name = {
+				ideology = republican
+				long_name = LAS_new_vegas_republican_party_long
+				name = LAS_new_vegas_republican_party
+			}
+			set_party_name = {
+				ideology = left_libertarian
+				long_name = LAS_new_vegas_peoples_party_left_long
+				name = LAS_new_vegas_peoples_party_left
+			}
+			set_party_name = {
+				ideology = right_libertarian
+				long_name = LAS_new_vegas_peoples_party_right_long
+				name = LAS_new_vegas_peoples_party_right
+			}
+			set_popularities = {
+				autocrat = 30
+				democrat = 30
+				republican = 15
+				left_libertarian = 10
+				right_libertarian = 15
+			}
+		}
 		if = {
 			limit = { has_country_flag = LAS_courier_wallis_chosen }
 			promote_character = LAS_sean_wallis
@@ -99,7 +134,6 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		
 	}
 }
 country_event = {
@@ -115,7 +149,6 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		
 	}
 }
 country_event = {
@@ -182,7 +215,8 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		
+		add_stability = 0.1
+		add_political_power = 250
 	}
 }
 country_event = {
@@ -198,7 +232,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		
+		add_stability = 0.05
 	}
 }
 country_event = {
@@ -214,7 +248,6 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		
 	}
 }
 country_event = {
@@ -228,12 +261,58 @@ country_event = {
 	option = {
 		name = new_vegas.13.a
 		ai_chance = {
+			factor = 40
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			last_election = "2021.4.1"
+			election_frequency = 48
+		}
+		set_popularities = {
+			democratic = 60
+			right_libertarian = 20
+			autocrat = 10
+			republican = 5
+			left_libertarian = 5
+	}
+	option = {
+		name = new_vegas.13.b
+		ai_chance = {
+			factor = 60
+		}
+		set_politics = {
+			ruling_party = right_libertarian
+			elections_allowed = no
+			last_election = "2021.4.1"
+			election_frequency = 48
+		}
+		set_popularities = {
+			democratic = 20
+			right_libertarian = 60
+			autocrat = 10
+			republican = 5
+			left_libertarian = 5
+		}
+	}
+}
+country_event = {
+	id = new_vegas.14
+	title = new_vegas.14.t
+	desc = new_vegas.14.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.14.a
+		ai_chance = {
 			factor = 95
 		}
 		
 	}
 	option = {
-		name = new_vegas.13.b
+		name = new_vegas.14.b
 		ai_chance = {
 			factor = 5
 		}

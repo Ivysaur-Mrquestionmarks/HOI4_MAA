@@ -509,6 +509,13 @@ focus_tree = {
 			add_ideas = LAS_lacking_government_1
 			add_ideas = LAS_destroyed_economy_1
 			country_event = new_vegas.6
+			hidden_effect = {
+				set_party_name = {
+					ideology = autocrat
+					name_long = LAS_new_vegas_courier_party_long
+					name = LAS_new_vegas_courier_party_long
+				}
+			}
 		}
 	}
 	focus = {
@@ -696,6 +703,9 @@ focus_tree = {
 			add_opinion_modifier = {
 				target = FRA
 				modifier = LAS_diplomacy
+			}
+			add_opinion_modifier = {
+				target = FRA
 				modifier = diplomatic_exchange_trade
 			}
 		}
@@ -762,7 +772,7 @@ focus_tree = {
 	focus = {
 		id = LAS_reach_out_to_the_legitimists
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_send_an_ambassador_to_bidone
 		x = 0
 		y = 2
@@ -772,9 +782,13 @@ focus_tree = {
 		completion_reward = {
 			add_opinion_modifier = {
 				target = FRA
-				modifier = LAS_diplomacy
+				modifier = LAS_diplomacy 
+			}
+			add_opinion_modifier = {
+				target = FRA
 				modifier = diplomatic_exchange_trade
 			}
+			FRA = { country_event = new_vegas.14 }
 		}
 	}
 	focus = {
@@ -810,12 +824,24 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 100
+			hidden_effect = {
+				set_party_name = {
+					ideology = democrat
+					long_name = LAS_new_vegas_party_long
+					name = LAS_new_vegas_party
+				}
+				set_party_name = {
+					ideology = right_libertarian
+					long_name = LAS_independence_party_long
+					name = LAS_independence_party
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_liberate_the_mojave
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_build_departments
 		x = 0
 		y = 4
@@ -826,7 +852,26 @@ focus_tree = {
 			focus = LAS_plan_the_mojave_campaign
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = AFO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MOL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NAV
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HOP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIN
+			}
 		}
 	}
 	focus = {
