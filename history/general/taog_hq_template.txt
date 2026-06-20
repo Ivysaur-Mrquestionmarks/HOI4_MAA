@@ -101,7 +101,7 @@ every_possible_country = {
 		limit = {
 			NOT = { tag = USA }
 			NOT = { tag = CAN }
-			NOT = { tag = HOP }
+			#NOT = { tag = HOP } #HOP struggles to build tanks at the start of the game
 			NOT = { tag = ENG }
 			NOT = { tag = FRA }
 			NOT = { tag = FFR }
