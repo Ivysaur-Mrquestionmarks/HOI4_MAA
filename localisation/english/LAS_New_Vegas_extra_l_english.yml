@@ -60,6 +60,14 @@
  new_vegas.14.a:0 "Anything to Help!"
  new_vegas.14.b:0 "We have our own problems"
  
+ new_vegas.15.t:0 "[FRA.GetName] Sends Aid"
+ new_vegas.15.d:0 "FRA sends equipment to LAS"
+ new_vegas.15.a:0 "A Thanks to [FRA.GetName]"
+ 
+ new_vegas.16.t:0 "[FRA.GetName] Rejects our Plea"
+ new_vegas.16.d:0 "FRA Doesn't send aid"
+ new_vegas.16.a:0 "Basterds"
+ 
  new_vegas.~.t:0 " "
  new_vegas.~.d:0 " "
  new_vegas.~.a:0 " "
@@ -122,6 +130,9 @@
  LAS_mojave_campaign:0 "Mojave Campaign Planning"
  LAS_mojave_campaign_desc:0 "A plan is nessesary before any attack"
  
+ LAS_oasis_secured:0 "Our Oasis Secured"
+ LAS_oasis_secured_desc:0 "With our diligent planning we have secured our oasis from those who wish harm upon her"
+ 
  LAS_destroyed_economy_1:0 "Destroyed Economy"
  LAS_destroyed_economy_1_desc:0 "Coups, War, and Sociatal Collapse is not good for the economy. A lot of work is needed to rebuild our economy"
  
@@ -167,6 +178,10 @@
  LAS_new_vegas_ncr_libertarian_right_ADJ:0 "NVR"
  LAS_new_vegas_ncr_libertarian_right_DEF:0 "New Vegas Republic"
  
+ LAS_new_vegas_mojave_libertarian_right:0 "Mojave Republic"
+ LAS_new_vegas_mojave_libertarian_right_ADJ:0 "Mojave"
+ LAS_new_vegas_mojave_libertarian_right_DEF:0 "Independent Republic of the Mojave"
+ 
  LAS_new_vegas_ind_republican:0 "New Vegas"
  LAS_new_vegas_ind_republican_ADJ:0 "New Vegas"
  LAS_new_vegas_ind_republican_DEF:0 "Republic of New Vegas"
@@ -175,7 +190,7 @@
  LAS_new_vegas_ind_libertarian_right_DEF:0 "Republic of New Vegas"
  LAS_new_vegas_ind_democat:0 "New Vegas"
  LAS_new_vegas_ind_democat_ADJ:0 "New Vegas"
- LAS_new_vegas_ncr_democrat_DEF:0 "People's Republic of New Vegas"
+ LAS_new_vegas_ind_democrat_DEF:0 "People's Republic of New Vegas"
  
  LAS_new_vegas_legion_autocratic:0 "Caesar's Legion"
  LAS_new_vegas_legion_autocratic_ADJ:0 "Legion"

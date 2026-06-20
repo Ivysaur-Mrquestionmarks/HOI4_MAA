@@ -515,6 +515,7 @@ focus_tree = {
 					name_long = LAS_new_vegas_courier_party_long
 					name = LAS_new_vegas_courier_party_long
 				}
+				set_cosmetic_tag = LAS_new_vegas_ncr
 			}
 		}
 	}
@@ -947,7 +948,8 @@ focus_tree = {
 			focus = LAS_victory_independence_party
 		}
 		completion_reward = {
-			
+			add_stability = 0.2
+			add_war_support = -1
 		}
 	}
 	focus = {
@@ -964,7 +966,7 @@ focus_tree = {
 			focus = LAS_declare_neutrality
 		}
 		completion_reward = {
-			
+			set_cosmetic_tag = LAS_new_vegas_mojave
 		}
 	}
 	focus = {
@@ -978,7 +980,7 @@ focus_tree = {
 			focus = LAS_declare_neutrality
 		}
 		completion_reward = {
-			
+			#Add forts to border and add a fort building buff
 		}
 	}
 	focus = {
@@ -995,7 +997,7 @@ focus_tree = {
 			focus = LAS_build_forts
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_oasis_secured
 		}
 	}
 	focus = {
@@ -1898,7 +1900,9 @@ focus_tree = {
 			focus = LAS_our_direction
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				set_cosmetic_tag = LAS_new_vegas_ind
+			}
 		}
 	}
 		focus = {
@@ -3700,7 +3704,9 @@ focus_tree = {
 			has_country_leader = LAS_jason_spisak
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				set_cosmetic_tag = LAS_new_vegas_legion
+			}
 		}
 	}
 	focus = {
@@ -3981,7 +3987,10 @@ focus_tree = {
 			focus = LAS_from_vulpes_to_caesar
 		}
 		completion_reward = {
-			
+			46 = { set_state_name = "Nova Roma" }
+		set_province_name = {
+			id = 252
+			name = "Nova Roma"
 		}
 	}
 	focus = {

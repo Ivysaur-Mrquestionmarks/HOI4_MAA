@@ -261,7 +261,7 @@ country_event = {
 	option = {
 		name = new_vegas.13.a
 		ai_chance = {
-			factor = 40
+			factor = 95
 		}
 		set_politics = {
 			ruling_party = democratic
@@ -279,7 +279,7 @@ country_event = {
 	option = {
 		name = new_vegas.13.b
 		ai_chance = {
-			factor = 60
+			factor = 5
 		}
 		set_politics = {
 			ruling_party = right_libertarian
@@ -307,16 +307,67 @@ country_event = {
 	option = {
 		name = new_vegas.14.a
 		ai_chance = {
-			factor = 95
+			factor = 60
 		}
-		
+		LAS = { country_event = new_vegas.15 }
 	}
 	option = {
 		name = new_vegas.14.b
 		ai_chance = {
-			factor = 5
+			factor = 40
 		}
-		
+		LAS = { country_event = new_vegas.16 }
+	}
+}
+country_event = {
+	id = new_vegas.15
+	title = new_vegas.15.t
+	desc = new_vegas.15.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.15.a
+		ai_chance = {
+			factor = 100
+		}
+		FRA = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 1000
+				target = LAS
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 500
+				target = LAS
+			}
+			send_equipment = {
+				equipment = artillery_equipment
+				amount = 500
+				target = LAS
+			}
+		}
+	}
+}
+country_event = {
+	id = new_vegas.16
+	title = new_vegas.16.t
+	desc = new_vegas.16.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.16.a
+		ai_chance = {
+			factor = 100
+		}
+		add_opinion_modifier = {
+				target = FRA
+				modifier = refused_help
+			}
 	}
 }
 country_event = {
