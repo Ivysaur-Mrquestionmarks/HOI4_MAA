@@ -5,7 +5,7 @@ every_possible_country = {
 
 	# USA
 	if = {
-		limit = { tag = USA }
+		limit = { OR = { tag = USA tag = FRA tag = NPA tag = PRA tag = CSA tag = TEX } }
 		division_template = {
 			name = "Field Army Headquarters"
 			template_counter = 121
@@ -26,31 +26,11 @@ every_possible_country = {
 		}
 	}
 
-	# SOV
-	if = {
-		limit = { tag = SOV }
-		division_template = {
-			name = "Shtab Armii"
-			template_counter = 121
-			is_army_hq = yes
 
-			regiments = {
-				hq_infantry = { x = 0 y = 0 }
-				hq_infantry = { x = 0 y = 1 }
-				hq_infantry = { x = 0 y = 2 }
-				hq_infantry = { x = 0 y = 3 }
-			}
-
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-				# hq_logistics added via on_research_complete on tech_logistics_company
-			}
-		}
-	}
 
 	# GER
 	if = {
-		limit = { tag = GER }
+		limit = { tag = HOP }
 		division_template = {
 			name = "AOK"
 			template_counter = 121
@@ -71,7 +51,7 @@ every_possible_country = {
 
 	# ENG
 	if = {
-		limit = { tag = ENG }
+		limit = { OR = { tag = ENG tag = CAN } }
 		division_template = {
 			name = "Army Headquarters"
 			template_counter = 121
@@ -94,7 +74,7 @@ every_possible_country = {
 
 	# FRA
 	if = {
-		limit = { tag = FRA }
+		limit = { tag = FFR }
 		division_template = {
 			name = "Quartier General d'Armee"
 			template_counter = 121
@@ -114,37 +94,21 @@ every_possible_country = {
 		}
 	}
 
-	# JAP
-	if = {
-		limit = { tag = JAP }
-		division_template = {
-			name = "Gun Shireibu"
-			template_counter = 121
-			is_army_hq = yes
 
-			regiments = {
-				hq_infantry = { x = 0 y = 0 }
-				hq_infantry = { x = 0 y = 1 }
-				hq_infantry = { x = 0 y = 2 }
-			}
-
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-				hq_naval_liaison = { x = 0 y = 1 }
-				hq_recon = { x = 0 y = 2 }
-			}
-		}
-	}
 
 	# Generic fallback for every other TAOG country
 	if = {
 		limit = {
 			NOT = { tag = USA }
-			NOT = { tag = SOV }
-			NOT = { tag = GER }
+			NOT = { tag = CAN }
+			NOT = { tag = HOP }
 			NOT = { tag = ENG }
 			NOT = { tag = FRA }
-			NOT = { tag = JAP }
+			NOT = { tag = FFR }
+			NOT = { tag = NPA }
+			NOT = { tag = PRA }
+			NOT = { tag = CSA }
+			NOT = { tag = TEX }
 		}
 		division_template = {
 			localization_key = "ARMY_HQ_TEMPLATE_NAME"
