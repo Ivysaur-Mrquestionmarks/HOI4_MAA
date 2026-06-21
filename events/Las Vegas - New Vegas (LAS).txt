@@ -371,6 +371,92 @@ country_event = {
 	}
 }
 country_event = {
+	id = new_vegas.17
+	title = new_vegas.17.t
+	desc = new_vegas.17.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.17.a
+		ai_chance = {
+			factor = 30
+		}
+		PRA = { country_event = new_vegas.18 }
+	}
+	option = {
+		name = new_vegas.17.b
+		ai_chance = {
+			factor = 70
+		}
+		add_war_support = 0.05
+	}
+}
+country_event = {
+	id = new_vegas.18
+	title = new_vegas.18.t
+	desc = new_vegas.18.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.18.a
+		ai_chance = {
+			factor = 30
+		}
+		diplomatic_relation = {
+			country = LAS
+			relation = non_aggression_pact
+			active = yes
+		}
+		LAS = { country_event = new_vegas.19 }
+	}
+	option = {
+		name = new_vegas.18.b
+		ai_chance = {
+			factor = 70
+		}
+		LAS = { country_event = new_vegas.20 }
+	}
+}
+country_event = {
+	id = new_vegas.19
+	title = new_vegas.19.t
+	desc = new_vegas.19.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.19.a
+		ai_chance = {
+			factor = 100
+		}
+		add_opinion_modifier = {
+			target = PRA
+			modifier = LAS_diplomacy 
+		}
+	}
+}
+country_event = {
+	id = new_vegas.20
+	title = new_vegas.20.t
+	desc = new_vegas.20.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.20.a
+		ai_chance = {
+			factor = 100
+		}
+		add_war_support = 0.05
+	}
+}
+country_event = {
 	id = new_vegas.~
 	title = new_vegas.~.t
 	desc = new_vegas.~.d

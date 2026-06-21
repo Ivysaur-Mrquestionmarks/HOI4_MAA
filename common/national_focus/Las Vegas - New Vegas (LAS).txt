@@ -900,7 +900,7 @@ focus_tree = {
 			focus = LAS_liberate_the_mojave
 		}
 		completion_reward = {
-			
+			country_event = new.vegas.17
 		}
 	}
 	focus = {
@@ -1014,7 +1014,14 @@ focus_tree = {
 			focus = LAS_victory_new_vegas_party
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = IDA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MON
+			}
 		}
 	}
 	focus = {
@@ -1028,7 +1035,10 @@ focus_tree = {
 			focus = LAS_liberate_the_rockies
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = PRA
+			}
 		}
 	}
 	focus = {
@@ -1042,7 +1052,14 @@ focus_tree = {
 			focus = LAS_liberate_the_rockies
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = CAS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LIB
+			}
 		}
 	}
 	focus = {
@@ -1148,8 +1165,15 @@ focus_tree = {
 			focus = LAS_declare_ourselves_new_america
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
 		}
+		create_wargoal = {
+				type = annex_everything
+				target = TEX
+			}
 	}
 	focus = {
 		id = LAS_sic_semper_tyrannis
@@ -1162,7 +1186,10 @@ focus_tree = {
 			focus = LAS_march_east
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+			}
 		}
 	}
 	focus = {
@@ -1176,7 +1203,58 @@ focus_tree = {
 			focus = LAS_march_east
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = ALA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PAC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MIL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MNS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KMT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = GLA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KFC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KEN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = DET
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = WBK
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = FLO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+			}
 		}
 	}
 	focus = {
@@ -3988,9 +4066,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			46 = { set_state_name = "Nova Roma" }
-		set_province_name = {
+			set_province_name = {
 			id = 252
 			name = "Nova Roma"
+			}
 		}
 	}
 	focus = {

@@ -68,6 +68,24 @@
  new_vegas.16.d:0 "FRA Doesn't send aid"
  new_vegas.16.a:0 "Basterds"
  
+ new_vegas.17.t:0 "Non-Aggression Pact with [PRA.GetName]?"
+ new_vegas.17.d:0 "asking player if they want a Non-Aggression pact with PRA"
+ new_vegas.17.a:0 "They are too much of a threat"
+ new_vegas.17.b:0 "We don't wish to negotiate with them"
+ 
+ new_vegas.18.t:0 "Non-Aggression Pact with [LAS.GetName]?"
+ new_vegas.18.d:0 "ask pra player if they want a Non-Aggression Pact with LAS"
+ new_vegas.18.a:0 "Of Course" 
+ new_vegas.18.b:0 "We don't negotiate with them"
+ 
+ new_vegas.19.t:0 "[PRA.GetName] Accepts Non-Aggression Pact"
+ new_vegas.19.d:0 "pra Accepts Non-Aggression Pact"
+ new_vegas.19.a:0 "sweet"
+ 
+ new_vegas.20.t:0 "[PRA.GetName] Rejects Non-Aggression Pact"
+ new_vegas.20.d:0 "pra rejects Non-Aggression Pact"
+ new_vegas.20.a:0 "balls"
+ 
  new_vegas.~.t:0 " "
  new_vegas.~.d:0 " "
  new_vegas.~.a:0 " "
