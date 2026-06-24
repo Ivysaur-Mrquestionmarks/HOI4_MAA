@@ -1362,7 +1362,7 @@ focus_tree = {
     				days = 2
     				random_hours = 10
 			}
-			hidden_effect = { 
+			hidden_effect = {
 				country_event = {
     					id = maga.93
     					days = 36
@@ -1373,7 +1373,8 @@ focus_tree = {
     					days = 120
     					random_hours = 50
 				}
-			}			
+				scoped_play_song = "rooster"
+			}
 		}
 	}
 
@@ -5136,7 +5137,7 @@ focus_tree = {
     				days = 7
     				random_hours = 8
 			}
-			add_threat = 15
+			add_threat = 15'
 		}
 
 	}

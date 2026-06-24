@@ -429,20 +429,20 @@ music = {
 	}
 }
 music = {
-	song = "dont_stop_believing"
-	
-	chance = {
-		modifier = {
-			factor = 4
-		}
-	}
-}
-music = {
 	song = "rebellion"
 	
 	chance = {
 		modifier = {
 			factor = 6
+		}
+	}
+}
+music = {
+	song = "dont_stop_believing"
+	
+	chance = {
+		modifier = {
+			factor = 4
 		}
 	}
 }
@@ -525,6 +525,15 @@ music = {
 	}
 }
 music = {
+	song = "the_pretender"
+	
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
 	song = "two_minutes_to_midnight"
 	
 	chance = {
@@ -570,6 +579,22 @@ music = {
 	chance = {
 		modifier = {
 			factor = 5
+		}
+	}
+}
+music = {
+	song = "territorial_pissings"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			OR = {
+				original_tag = SIN
+				original_tag = HAM
+				original_tag = PRA
+				original_tag = TOH
+				original_tag = NAV
+			}
 		}
 	}
 }
@@ -634,6 +659,16 @@ music = {
 	chance = {
 		modifier = {
 			factor = 9
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = rooster
+	
+	chance = {
+		modifier = {
+			factor = 5
 			has_war = yes
 		}
 	}
