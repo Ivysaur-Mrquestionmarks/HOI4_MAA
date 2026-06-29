@@ -6,7 +6,22 @@ bookmarks = {
 		picture = "GFX_select_date_good_friday"
 		default_country = "USA"
 		default = yes
+		
+		
+		filters = { new_content label maa_bookmark_america_tag }
+		# filters can also contain 'label'
+		# in that case the countries below can have 'label = { label_1 }' or 'label = { label_1 label_2 }'
+		# all these labels will be gathered and displayed as filter buttons
 
+		# sort_unplayed_first = no            # defaults to yes: countries with unplayed content are listed first
+		# include_majors_in_minor_list = no   # defaults to yes: when a filter is active, majors also show in the mini list
+		# apply_filter_to_majors = yes        # defaults to no: when yes, the major row also respects the filter (only majors matching it are shown)
+		# apply_filter_to_other_country = yes # defaults to no: by default the "other" (---) entry is always shown; when yes it respects the filter too
+		# label_order = { label_1 label_2 }   # optional: forces the label filter button order; a warning is logged for
+		#                                     # any label used by a country that is missing from this list
+		# scrollable_country_list = yes       # defaults to no: scroll the minor list with its vertical scrollbar instead of the overflow dropdown
+		
+		
 		#MAJORS
 		"USA"={
 			history = "USA_GOOD_FRIDAY_DESC"
@@ -21,6 +36,7 @@ bookmarks = {
 				USA_make_america_again
 				USA_reasses_army
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"FRA"={
 			history = "FRA_GOOD_FRIDAY_DESC"
@@ -35,6 +51,7 @@ bookmarks = {
 				FRA_union_restored
 				FRA_bidenomics
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"PRA"={
 			history = "PRA_GOOD_FRIDAY_DESC"
@@ -49,6 +66,7 @@ bookmarks = {
 				Amazing_Grace
 				Chairman_Sanders
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"CSA"={
 			history = "CSA_GOOD_FRIDAY_DESC"
@@ -63,6 +81,7 @@ bookmarks = {
 				CSA_Glorify_the_csa
 				CSA_Lee_doctrine
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"TEX"={
 			history = "TEX_GOOD_FRIDAY_DESC"
@@ -77,6 +96,7 @@ bookmarks = {
 				TEX_constitution
 				TEX_monarchist_party_usa
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"NPA"={
 			history = "NPA_GOOD_FRIDAY_DESC"
@@ -91,6 +111,7 @@ bookmarks = {
 				NPA_old_republican_party_reshuffle
 				NPA_necessary_measures
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"GLA"={
 			history = "GLA_GOOD_FRIDAY_DESC"
@@ -105,6 +126,7 @@ bookmarks = {
 				GLA_the_boogaloo_militias
 				GLA_our_broken_economy
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"---"={
 			history = "OTHER_GOOD_FRIDAY_DESC"
@@ -123,6 +145,7 @@ bookmarks = {
 			    AFS_hawkins_victory
 				AFS_mattiss_victory
 			}
+			label = { maa_bookmark_america_tag }
 		}	
 		"FLO"={
 			history = "FLO_GOOD_FRIDAY_DESC"
@@ -138,6 +161,7 @@ bookmarks = {
 				FLO_Strike_At_Jeb
 				FLO_two_trumps
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"VIR"={
 			history = "VIR_GOOD_FRIDAY_DESC"
@@ -155,6 +179,7 @@ bookmarks = {
 				FRA_VIR_expand_operations_into_west_va
 				FRA_VIR_unify_covert_ops
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"PAC"={
 			history = "PAC_GOOD_FRIDAY_DESC"
@@ -169,6 +194,7 @@ bookmarks = {
 				PAC_call_marines
 				PAC_China
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"CAS"={
 			history = "CAS_GOOD_FRIDAY_DESC"
@@ -182,6 +208,7 @@ bookmarks = {
 				CAS_american_cromwell
 				CAS_new_order
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"KFC"={
 			history = "KFC_GOOD_FRIDAY_DESC"
@@ -196,6 +223,7 @@ bookmarks = {
 				KFC_labor_government
 				KFC_washington_of_kentucky
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"NRA"={
 			history = "NRA_GOOD_FRIDAY_DESC"
@@ -209,6 +237,7 @@ bookmarks = {
 				NRA_Comrade_Tucker_Ideas
 				NRA_The_NRA_March
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"HOP"={
 			history = "HOP_GOOD_FRIDAY_DESC"
@@ -221,6 +250,7 @@ bookmarks = {
 				HOP_Reunite_Amerika
 				HOP_Ally_the_Klan
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"UTA"={
 			history = "UTA_GOOD_FRIDAY_DESC"
@@ -232,6 +262,7 @@ bookmarks = {
 			focuses = {
 				UTA_God_Is_On_Our_Side
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"MON"={
 			history = "MON_GOOD_FRIDAY_DESC"
@@ -246,6 +277,7 @@ bookmarks = {
 				MON_Permanent_Curfew
 				MON_Montanian_Sovereign_Army
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"IDA"={
 			history = "IDA_GOOD_FRIDAY_DESC"
@@ -261,6 +293,7 @@ bookmarks = {
 				IDA_Dig_In
 				IDA_The_Lincoln_Declaration
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"SIN"={
 			history = "SIN_GOOD_FRIDAY_DESC"
@@ -273,6 +306,7 @@ bookmarks = {
 				The_Meeting
 				Work_with_Republicans
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"LIB"={
 			history = "LIB_GOOD_FRIDAY_DESC"
@@ -285,6 +319,7 @@ bookmarks = {
 				LIB_if_i_forget_thou
 				LIB_let_them_come
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"MOL"={
 			history = "MOL_GOOD_FRIDAY_DESC"
@@ -300,6 +335,7 @@ bookmarks = {
 				MOL_molossian_republic
 				MOL_imperial_presidency
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"AFO"={
 			history = "AFO_GOOD_FRIDAY_DESC"
@@ -314,6 +350,7 @@ bookmarks = {
 				AFO_push_to_the_limit
 				AFO_eye_of_sauron
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"CAY"={
 			history = "CAY_GOOD_FRIDAY_DESC"
@@ -327,6 +364,7 @@ bookmarks = {
 				CAY_Virgin_state_ltd
 				CAY_kenneth_dart_cayman_bastion
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"BAH"={
 			history = "BAH_GOOD_FRIDAY_DESC"
@@ -340,6 +378,7 @@ bookmarks = {
 				BAH_caribbean_economic_miracle
 				BAH_snap_elections
 			}
+			label = { maa_bookmark_america_tag }
 		}
 		"GRL"={
 			history = "GRL_GOOD_FRIDAY_DESC"
@@ -377,6 +416,7 @@ bookmarks = {
 				NAV_holding_out_for_hero
 				NAV_form_USLR
 			}
+			label = { maa_bookmark_america_tag }
 		}
 
 		"KMT"={
@@ -393,6 +433,7 @@ bookmarks = {
 				KMT_hold_elections
 				KMT_weathermen_coup
 			}
+			label = { maa_bookmark_america_tag }
 		}
 
 		#"LAS"={
