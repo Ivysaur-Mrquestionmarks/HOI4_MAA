@@ -279,7 +279,7 @@ focus_tree = {
 		id = CAS_a_house_of_dynamite
 		icon = GFX_goal_CAS_Cascadian_Military
 		cost = 2.00
-		x = 20
+		x = 40
 		y = 0
 		available = {
 			has_global_flag = global_west_coast_war_over
@@ -288,6 +288,364 @@ focus_tree = {
 			NOT = {
 				has_country_flag = CAS_successful_nazi_coup_flag
 			}
+		}
+		completion_reward = {
+		}
+
+	}
+	
+	
+	focus = {
+		id = CAS_supporting_the_conspiracy
+		icon = GFX_goal_VIR_open_up_to_the_alt_right
+		cost = 2.00
+		x = -6
+		y = 1
+		relative_position_id = CAS_a_house_of_dynamite
+		prerequisite = {
+			focus = CAS_a_house_of_dynamite
+		}
+		available = {
+			has_global_flag = global_west_coast_war_over
+			always = no
+		}
+		completion_reward = {
+		}
+
+	}
+	
+	focus = {
+		id = CAS_broaden_our_base_of_support
+		icon = GFX_goal_VIR_open_up_to_the_alt_right
+		cost = 2.00
+		x = -3
+		y = 1
+		relative_position_id = CAS_supporting_the_conspiracy
+		prerequisite = {
+			focus = CAS_supporting_the_conspiracy
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_gain_support_of_ecofascists_and_mike_ma
+		icon = GFX_goal_VIR_open_up_to_the_alt_right
+		cost = 2.00
+		x = 1
+		y = 1
+		relative_position_id = CAS_broaden_our_base_of_support
+		prerequisite = {
+			focus = CAS_broaden_our_base_of_support
+		}
+		mutually_exclusive = { focus = CAS_maintain_libertarian_loyalty }
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_maintain_libertarian_loyalty
+		icon = GFX_goal_VIR_open_up_to_the_alt_right
+		cost = 2.00
+		x = 3
+		y = 1
+		relative_position_id = CAS_broaden_our_base_of_support
+		prerequisite = {
+			focus = CAS_broaden_our_base_of_support
+		}
+		mutually_exclusive = { focus = CAS_gain_support_of_ecofascists_and_mike_ma }
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_uniting_the_altright_council
+		icon = GFX_goal_VIR_open_up_to_the_alt_right
+		cost = 2.00
+		x = -1
+		y = 1
+		relative_position_id = CAS_broaden_our_base_of_support
+		prerequisite = {
+			focus = CAS_broaden_our_base_of_support
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_radicalize_GOP_remnants
+		icon = GFX_goal_VIR_open_up_to_the_alt_right
+		cost = 2.00
+		x = 1
+		y = 1
+		relative_position_id = CAS_uniting_the_altright_council
+		prerequisite = {
+			focus = CAS_uniting_the_altright_council
+		}
+		completion_reward = {
+		}
+
+	}
+	
+	focus = {
+		id = CAS_take_advantage_of_soldier_grievences
+		icon = GFX_goal_VIR_open_up_to_the_alt_right
+		cost = 2.00
+		x = 3
+		y = 1
+		relative_position_id = CAS_supporting_the_conspiracy
+		prerequisite = {
+			focus = CAS_supporting_the_conspiracy
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_accept_all_anti_pra_militias
+		icon = GFX_goal_VIR_open_up_to_the_alt_right
+		cost = 2.00
+		x = 1
+		y = 1
+		relative_position_id = CAS_take_advantage_of_soldier_grievences
+		prerequisite = {
+			focus = CAS_take_advantage_of_soldier_grievences
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_the_disastrous_jefferson_and_seattle_campaign
+		icon = GFX_goal_VIR_open_up_to_the_alt_right
+		cost = 2.00
+		x = -1
+		y = 1
+		relative_position_id = CAS_take_advantage_of_soldier_grievences
+		prerequisite = {
+			focus = CAS_take_advantage_of_soldier_grievences
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_incorporate_the_militias
+		icon = GFX_goal_VIR_open_up_to_the_alt_right
+		cost = 2.00
+		x = -1
+		y = 1
+		relative_position_id = CAS_the_disastrous_jefferson_and_seattle_campaign
+		prerequisite = {
+			focus = CAS_the_disastrous_jefferson_and_seattle_campaign
+		}
+		prerequisite = {
+			focus = CAS_uniting_the_altright_council
+		}
+		completion_reward = {
+		}
+
+	}
+	
+	focus = {
+		id = CAS_launch_the_coup
+		icon = GFX_goal_VIR_open_up_to_the_alt_right
+		cost = 2.00
+		x = 0
+		y = 1
+		relative_position_id = CAS_supporting_the_conspiracy
+		prerequisite = {
+			focus = CAS_supporting_the_conspiracy
+		}
+		completion_reward = {
+		}
+
+	}
+	
+	
+	focus = {
+		id = CAS_thwarting_the_plot
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = 6
+		y = 1
+		relative_position_id = CAS_a_house_of_dynamite
+		prerequisite = {
+			focus = CAS_a_house_of_dynamite
+		}
+		available = {
+			has_global_flag = global_west_coast_war_over
+			always = no
+		}
+		completion_reward = {
+		}
+
+	}
+	
+	focus = {
+		id = CAS_secure_administration_antiplot
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = -3
+		y = 1
+		relative_position_id = CAS_thwarting_the_plot
+		prerequisite = {
+			focus = CAS_thwarting_the_plot
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_increase_investigations
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = -0
+		y = 1
+		relative_position_id = CAS_secure_administration_antiplot
+		prerequisite = {
+			focus = CAS_secure_administration_antiplot
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_reconcile_the_DSA
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = 1
+		y = 1
+		relative_position_id = CAS_increase_investigations
+		prerequisite = {
+			focus = CAS_increase_investigations
+		}
+		mutually_exclusive = { focus = CAS_secure_support_from_corporate_benefactors }
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_secure_support_from_corporate_benefactors
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = -1
+		y = 1
+		relative_position_id = CAS_increase_investigations
+		prerequisite = {
+			focus = CAS_increase_investigations
+		}
+		mutually_exclusive = { focus = CAS_reconcile_the_DSA }
+		completion_reward = {
+		}
+
+	}
+	
+	focus = {
+		id = CAS_secure_military_antiplot
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = 3
+		y = 1
+		relative_position_id = CAS_thwarting_the_plot
+		prerequisite = {
+			focus = CAS_thwarting_the_plot
+		}
+		completion_reward = {
+		}
+
+	}
+	
+	focus = {
+		id = CAS_reign_in_military_autonomy
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = -4
+		y = 1
+		relative_position_id = CAS_secure_military_antiplot
+		prerequisite = {
+			focus = CAS_secure_administration_antiplot
+		}
+		prerequisite = {
+			focus = CAS_secure_military_antiplot
+		}
+		mutually_exclusive = { focus = CAS_empower_marshal_rees }
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_empower_marshal_rees
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = 4
+		y = 1
+		relative_position_id = CAS_secure_administration_antiplot
+		prerequisite = {
+			focus = CAS_secure_administration_antiplot
+		}
+		mutually_exclusive = { focus = CAS_reign_in_military_autonomy }
+		completion_reward = {
+		}
+
+	}
+	
+	focus = {
+		id = CAS_strategic_reassignments
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = 0
+		y = 1
+		relative_position_id = CAS_secure_military_antiplot
+		prerequisite = {
+			focus = CAS_secure_military_antiplot
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_increase_veteran_benefits
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = 2
+		y = 1
+		relative_position_id = CAS_secure_military_antiplot
+		prerequisite = {
+			focus = CAS_secure_military_antiplot
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = CAS_warhero_propaganda
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = 1
+		y = 1
+		relative_position_id = CAS_strategic_reassignments
+		prerequisite = {
+			focus = CAS_strategic_reassignments
+		}
+		prerequisite = {
+			focus = CAS_increase_veteran_benefits
+		}
+		completion_reward = {
+		}
+
+	}
+	
+	
+	focus = {
+		id = CAS_flush_out_the_ringleaders_endcrisis
+		icon = GFX_goal_FLD_purge_altright_and_extremists_from_military
+		cost = 2.00
+		x = 0
+		y = 1
+		relative_position_id = CAS_thwarting_the_plot
+		prerequisite = {
+			focus = CAS_thwarting_the_plot
 		}
 		completion_reward = {
 		}
