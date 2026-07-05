@@ -6178,4 +6178,21 @@ leader_traits = {
 		training_time_factor =  -0.35
 		mobilization_laws_cost_factor = 0.6
 	}
+
+
+	RED_donbass_cowboy = { #Russell Bentley's trait. Combines effects of Expert Army Organizer and Communist Revolutionary
+		sprite = 12
+		army_org_factor = 0.08
+		authoritarian_left_drift = 0.1
+
+		experience_gain_army = @chief_experience_gain_medium
+
+		command_cap_increase = @tier2_cp_cap_increase
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}	
+
+
 }

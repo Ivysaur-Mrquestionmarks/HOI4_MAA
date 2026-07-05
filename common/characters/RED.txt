@@ -19,7 +19,7 @@ characters={
 			id = -1
 		}
 		field_marshal = {
-			traits = { politically_connected } 
+			traits = { old_guard politically_connected } 
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -46,6 +46,60 @@ characters={
 		}
 		field_marshal = {
 			traits = { politically_connected } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	RED_russell_bonner_bentley = {
+		name = "Russell Bentley"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TEX/russell_bentley.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/TEX/russell_bentley_general.dds"
+				large = "gfx/leaders/TEX/russell_bentley.tga"
+			}
+		}
+		corps_commander = {
+			traits = { media_personality war_hero expeditionary_leader_trait } 
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = RED_russell_bonner_bentley_chief
+			cost = 75
+			allowed = {
+				original_tag = RED
+			}
+			available = {
+				has_government = authoritarian_left
+			}
+			traits = {
+				 RED_donbass_cowboy #essentially army org expert + authleft drift.
+			}
+		}
+	}
+	RED_jared_roark = {
+		name = "Jared Roark" #LEADER OF TEXAS MAOISTS
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TEX/jared_roark_balaclava.tga"
+			}
+			army = {
+				small = "gfx/interface/ideas/TEX/jared_roark_general.dds"
+				large = "gfx/leaders/TEX/jared_roark_balaclava.tga"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected harsh_leader trickster organizer } 
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
