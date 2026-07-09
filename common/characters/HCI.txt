@@ -19,7 +19,7 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { media_personality war_hero trait_reckless militias_officer brave trickster }
+			traits = { media_personality war_hero trait_reckless militias_officer expeditionary_leader_trait brave trickster }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 2
@@ -46,7 +46,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { politically_connected trait_reckless harsh_leader militias_officer }
+			traits = { politically_connected trait_reckless harsh_leader militias_officer expeditionary_leader_trait }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -104,7 +104,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { politically_connected media_personality militias_officer }
+			traits = { politically_connected media_personality militias_officer expeditionary_leader_trait }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
