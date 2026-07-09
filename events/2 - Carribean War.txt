@@ -631,6 +631,7 @@ country_event = {
 			    add = HAI_lord_miles_1
 			    ideology = Christian_Libertarianism
 			}
+			remove_unit_leader_trait = expeditionary_leader_trait
 			effect_tooltip = {
 				add_country_leader_role = {
 				    promote_leader = yes
@@ -691,7 +692,7 @@ country_event = {
 		    ruling_party = autocratic
 		    elections_allowed = no
 		}
-		HCI_kenny_smith = { add_country_leader_trait = supreme_leader }
+		HCI_kenny_smith = { add_country_leader_trait = supreme_leader remove_unit_leader_trait = expeditionary_leader_trait }
 		add_advisor_role = {
 		    character = HCI_lord_miles
 		    activate = yes
@@ -704,7 +705,7 @@ country_event = {
 		        }
 		    }
 		}
-		HCI_lord_miles = { set_character_name = "Faustin III" }
+		HCI_lord_miles = { set_character_name = "Faustin III" remove_unit_leader_trait = expeditionary_leader_trait }
 	}
 }
 #news event for above
