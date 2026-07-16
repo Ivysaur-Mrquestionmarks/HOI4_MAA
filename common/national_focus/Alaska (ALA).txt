@@ -1173,7 +1173,7 @@
 		id = ALA_bolster_aquaculture
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = ALA_southern_development_scheme
 		ai_will_do = { 
@@ -1190,7 +1190,7 @@
 		id = ALA_mussels_and_fish
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ALA_bolster_aquaculture
 		ai_will_do = { 
@@ -1207,7 +1207,7 @@
 		id = ALA_sustainable_fishing_industries
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ALA_mussels_and_fish
 		ai_will_do = { 
@@ -1224,7 +1224,7 @@
 		id = ALA_seaweed_and_kelp_farming
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = ALA_bolster_aquaculture
 		ai_will_do = { 
@@ -1241,24 +1241,7 @@
 		id = ALA_tap_into_bioplastics
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 1
-		y = 1
-		relative_position_id = ALA_seaweed_and_kelp_farming
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_seaweed_and_kelp_farming
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_the_seaweed_campaign
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ALA_seaweed_and_kelp_farming
 		ai_will_do = { 
@@ -1275,14 +1258,11 @@
 		id = ALA_mariculture_research_and_development
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 1
-		y = 1
-		relative_position_id = ALA_the_seaweed_campaign
+		x = 0
+		y = 2
+		relative_position_id = ALA_seaweed_and_kelp_farming
 		ai_will_do = { 
 			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_the_seaweed_campaign
 		}
 		prerequisite = {
 			focus = ALA_tap_into_bioplastics
@@ -1295,19 +1275,15 @@
 		id = ALA_no_famine_under_communism
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = -1
+		x = 0
 		y = 1
-		relative_position_id = ALA_the_seaweed_campaign
+		relative_position_id = ALA_sustainable_fishing_industries
 		ai_will_do = { 
 			factor = 300
 		}
 		prerequisite = {
-			focus = ALA_the_seaweed_campaign
-		}
-		prerequisite = {
 			focus = ALA_sustainable_fishing_industries
 		}
-
 		completion_reward = {
 			
 		}
@@ -1647,10 +1623,309 @@
 		}
 	}
 	focus = {
-		id = ALA_personality_of_patterson
+		id = ALA_connection_lost
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -3
+		y = 1
+		relative_position_id = ALA_communism_on_ice
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_christian_communism
+		}
+		prerequisite = {
+			focus = ALA_communism_on_ice
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_christian_communism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -5
+		y = 1
+		relative_position_id = ALA_communism_on_ice
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_connection_lost
+		}
+		prerequisite = {
+			focus = ALA_communism_on_ice
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_export_the_revolution
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ALA_communism_on_ice
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_socialism_in_one_country
+		}
+		prerequisite = {
+			focus = ALA_communism_on_ice
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_canadian_corridor
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 0
+		y = 1
+		relative_position_id = ALA_export_the_revolution
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_export_the_revolution
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_denazify_cascadia
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_the_canadian_corridor
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_usurp_cascadias_title
+		}
+		prerequisite = {
+			focus = ALA_the_canadian_corridor
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_usurp_cascadias_title
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ALA_the_canadian_corridor
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_denazify_cascadia
+		}
+		prerequisite = {
+			focus = ALA_the_canadian_corridor
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_red_flag_over_big_sky_country
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_denazify_cascadia
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_denazify_cascadia
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_crush_the_revisionists
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_denazify_cascadia
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_denazify_cascadia
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_long_march_to_the_rockies
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_denazify_cascadia
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_crush_the_revisionists
+		}
+		prerequisite = {
+			focus = ALA_red_flag_over_big_sky_country
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_lone_red_star
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_long_march_to_the_rockies
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_long_march_to_the_rockies
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_southern_offensive
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_the_lone_red_star
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_lone_red_star
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_end_trumps_clique
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_long_march_to_the_rockies
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_long_march_to_the_rockies
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_paint_the_northeast_red
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_end_trumps_clique
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_end_trumps_clique
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_usca
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_southern_offensive
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_paint_the_northeast_red
+		}
+		prerequisite = {
+			focus = ALA_southern_offensive
+		}
+		prerequisite = {
+			focus = ALA_a_good_leader_leads_from_the_front
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_socialism_in_one_country
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 4
+		y = 1
+		relative_position_id = ALA_communism_on_ice
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_export_the_revolution
+		}
+		prerequisite = {
+			focus = ALA_communism_on_ice
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_align_with_bernie
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_socialism_in_one_country
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_socialism_in_one_country
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_personality_of_patterson
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
 		y = 1
 		relative_position_id = ALA_communism_on_ice
 		ai_will_do = { 
@@ -1658,6 +1933,419 @@
 		}
 		prerequisite = {
 			focus = ALA_communism_on_ice
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_continuation_of_marx
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_personality_of_patterson
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_personality_of_patterson
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_alaskan_youth_league
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_personality_of_patterson
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_personality_of_patterson
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_root_out_traitors
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_alaskan_youth_league
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_alaskan_youth_league
+		}
+		prerequisite = {
+			focus = ALA_the_continuation_of_marx
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_maintain_control_of_the_interior
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_root_out_traitors
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_root_out_traitors
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_collectivization_and_centralization
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_maintain_control_of_the_interior
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_maintain_control_of_the_interior
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_supreme_protector_of_alaska
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_maintain_control_of_the_interior
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_mobilize_alaska
+		}
+		prerequisite = {
+			focus = ALA_collectivization_and_centralization
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_a_good_leader_leads_from_the_front
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_supreme_protector_of_alaska
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_supreme_protector_of_alaska
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_mobilize_alaska
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_maintain_control_of_the_interior
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_maintain_control_of_the_interior
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_rehabilitate_the_army
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 7
+		y = 1
+		relative_position_id = ALA_communism_on_ice
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_communism_on_ice
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_invite_chinese_advisors
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_rehabilitate_the_army
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_invite_russian_advisors
+		}
+		prerequisite = {
+			focus = ALA_rehabilitate_the_army
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_invite_russian_advisors
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_rehabilitate_the_army
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_invite_chinese_advisors
+		}
+		prerequisite = {
+			focus = ALA_rehabilitate_the_army
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_building_up_the_red_army
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_rehabilitate_the_army
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_invite_russian_advisors
+			focus = ALA_invite_chinese_advisors
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_alaskas_flying_heritage
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ALA_building_up_the_red_army
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_building_up_the_red_army
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_bad_weather_no_problem
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_alaskas_flying_heritage
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_alaskas_flying_heritage
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_sky_of_the_motherland_is_protected
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_bad_weather_no_problem
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_bad_weather_no_problem
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_surface_of_the_sea
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_building_up_the_red_army
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_building_up_the_red_army
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_underneath_the_sea
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_the_surface_of_the_sea
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_surface_of_the_sea
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_red_navy_is_everywhere
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_underneath_the_sea
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_underneath_the_sea
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_break_fascist_steel
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_building_up_the_red_army
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_building_up_the_red_army
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_a_red_storm_of_armor
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_break_fascist_steel
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_break_fascist_steel
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_snowmobiles_and_atvs
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_break_fascist_steel
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_break_fascist_steel
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_everyone_must_do_their_part
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_break_fascist_steel
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_snowmobiles_and_atvs
+		}
+		prerequisite = {
+			focus = ALA_a_red_storm_of_armor
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_alaskan_red_army_is_invincible
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_everyone_must_do_their_part
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_everyone_must_do_their_part
+		}
+		prerequisite = {
+			focus = ALA_the_red_navy_is_everywhere
+		}
+		prerequisite = {
+			focus = ALA_the_sky_of_the_motherland_is_protected
 		}
 		completion_reward = {
 			
