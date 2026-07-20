@@ -996,11 +996,11 @@ characters={
 		portraits = {
 			army={
 				small = "gfx/interface/ideas/AFS/ollie_north_General.dds"
-				large= "gfx/leaders/AFS/ollie_north_advisor.tga"
+				large= "gfx/leaders/AFS/ollie_north.tga"
 			}
 		}
 		corps_commander = {
-			traits={ career_officer mattis_loyalist_trait infantry_leader commando } 
+			traits={ media_personality mattis_loyalist_trait naval_invader commando } 
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2
