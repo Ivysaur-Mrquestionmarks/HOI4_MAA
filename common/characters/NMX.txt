@@ -38,9 +38,11 @@ characters={
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/TEX/greg_seeley.tga"
+				small = "gfx/interface/ideas/NMX/greg_seeley_advisor.dds"
 			}
 			army = {
 				large = "gfx/leaders/TEX/greg_seeley.tga"
+				small = "gfx/interface/ideas/NMX/greg_seeley_advisor.dds"
 			}
 		}
 		country_leader = {
@@ -86,6 +88,22 @@ characters={
 			ideology = Jeffersonianism
 			traits = {
 				#the_duke
+			}
+		}
+	}
+
+	NMX_keith_russell_judd = {
+		name = "Keith Judd"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TEX/keith_judd.tga"
+				small = "gfx/interface/ideas/NMX/keith_judd_advisor.dds"
+			}
+		}
+		country_leader = {
+			ideology = Religious_Anarchism
+			traits = {
+				#the_dark_priest
 			}
 		}
 	}
