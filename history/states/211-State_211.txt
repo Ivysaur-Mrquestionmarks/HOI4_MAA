@@ -3,7 +3,7 @@ state={
 	id=211
 	name="STATE_211"
 	provinces={
-		5497 8596 8643 8667 8678
+		5497 8050 8596 8643 8667 8678
 	}
 
 	resources={
@@ -16,10 +16,13 @@ state={
 		add_core_of = FRA
 		#add_core_of = WMS
                 victory_points = { #Fall River
-                    8643 3
+                    8643 8
                  }
                 victory_points = { #New Bedford
-                    8667 3
+                    8667 9
+                 }
+				 victory_points = { #Brockton
+                    8050 9
                  }
                 victory_points = {
                     5497 5
