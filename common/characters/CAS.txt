@@ -241,6 +241,20 @@ characters={
 			id = -1
 		}
 	}
+	CAS_martin_ward = {
+		name = "Martin Ward"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAS/martin_ward.tga"
+			}
+		}
+		country_leader = {
+			ideology = nazbol #maybe juche
+			traits = { 
+				###
+			}
+		}
+	}
 	### Military Leaders ###
 	# Army #
 	CAS_alek_skarlatos = {
