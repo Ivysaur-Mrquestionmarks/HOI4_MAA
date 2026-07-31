@@ -225,12 +225,20 @@ ideas = {
 				political_power_gain = 0.5
 			}
 		}
-		LAS_ncr_government = {
+		LAS_ncr_government_1 = {
 			allowed = { original_tag = LAS }
 			modifier = {
 				stability_factor = 0.15
 				war_support_factor = 0.15
 				political_power_gain = 0.5
+			}
+		}
+		LAS_ncr_government_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.15
+				political_power_gain = 0.75
 			}
 		}
 		LAS_mojave_campaign = {

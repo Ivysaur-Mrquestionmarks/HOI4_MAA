@@ -1222,20 +1222,44 @@ LAS_new_vegas = {
 	color_ui = rgb { 66 113 69 }
 }
 LAS_new_vegas_ind = {
-	color = { 66 113 69 }
-	color_ui { 66 113 69 }
+	color = rgb { 66 113 69 }
+	color_ui rgb { 66 113 69 }
 }
 LAS_new_vegas_ncr = { 
-	color = { 153 76 0 }
-	color_ui = { 153 76 0 }
+	color = rgb { 153 76 0 }
+	color_ui = rgb { 153 76 0 }
+}
+LAS_NCR_new_california = { 
+	color = rgb { 153 76 0 }
+	color_ui = rgb { 153 76 0 }
+}
+LAS_NCR_new_pacifica = { 
+	color = rgb { 153 76 0 }
+	color_ui = rgb { 153 76 0 }
+}
+LAS_NCR_new_rockonia = { 
+	color = rgb { 153 76 0 }
+	color_ui = rgb { 153 76 0 }
+}
+LAS_NCR_greater_new_vegas = { 
+	color = rgb { 153 76 0 }
+	color_ui = rgb { 153 76 0 }
+}
+LAS_new_american_republic = { 
+	color = rgb { 111 76 131 }
+	color_ui = rgb { 111 76 131 }
+}
+LAS_NCR_VEGAS = { 
+	color = rgb { 111 76 131 }
+	color_ui = rgb { 111 76 131 }
 }
 LAS_new_vegas_mojave = {
-	color = { 236 216 185 }
-	color_ui = { 236 216 185 }
+	color = rgb { 236 216 185 }
+	color_ui = rgb { 236 216 185 }
 }
 LAS_new_vegas_legion = { 
-	color = { 174 39 39 }
-	color_ui = { 174 39 39 }
+	color = rgb { 174 39 39 }
+	color_ui = rgb { 174 39 39 }
 }
 
 LGB_hatsunia = {

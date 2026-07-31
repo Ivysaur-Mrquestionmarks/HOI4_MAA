@@ -181,8 +181,8 @@
  LAS_cal_purge_the_weak:0 "Purge The Profligates"
  LAS_cal_purge_the_weak_desc:0 "California is the land of hedonists, profligates, degenerates and whatever adjective we can bring up. They are debased. These degenerates give no benefit to the Legion and thus these wealings are to be purged to cleanse our newly acquired territory. Their corpses strung upon the crosses lining roads and highways will remind everyone living under us what new world they live under now."
 
- LAS_purify_rockies:0 "Purify The Rockies "
- LAS_purify_rockies_desc:0 "The North West of America, like every other territory of the former country, has broken off into independent states. Their forest and mountainous regions give them a great vantage for guerillas and underground fighters who may use the territory to launch attacks on our positions. This is not something we can let happen."
+ LAS_purify_the_rockies:0 "Purify The Rockies "
+ LAS_purify_the_rockies_desc:0 "The North West of America, like every other territory of the former country, has broken off into independent states. Their forest and mountainous regions give them a great vantage for guerillas and underground fighters who may use the territory to launch attacks on our positions. This is not something we can let happen."
 
  LAS_rock_round_up_slaves:0 "Enslave the Mountaineers"
  LAS_rock_round_up_slaves_desc:0 "The vast wilderness of the American North East and Cascadia has made it a region prime for hunters, scavengers, lumberjacks, carpenters, and mountaineers. By Legion laws, many of these men will be turned to slaves, and their expertise is to be used for our benefits. Their young enrolled into Legionary schools to be trained and indoctrinated."
@@ -235,12 +235,82 @@
  LAS_ne_purge_the_weak:0 "Purge The Establishment"
  LAS_ne_purge_the_weak_desc:0 "Simply conquering a territory is not enough. You must destroy any ideas of rebellion and hope. Simply keeping any resemblance of the old world here is dangerous and continues feeding the profligates the false hope of rebellion and freedom. The Legion will make sure to utterly destroy and erase any traces of the old world. Be it monuments, locations, government personnel, bureaucrats, or oligarchs. All must go."
 
- LAS_purify_the_north_america:0 "Purify North America"
- LAS_purify_the_north_america_desc:0 "Rome did not become an Empire simply by standing idly by. No, it took initiative, and so must we. Keeping contenders and neighbours who despise you is not good for security. Not to mention how dissidents can escape and seek shelter from your enemies and plot your demise while not looking. Rome made sure this did not happen. And so will the Legion."
+ LAS_purify_north_america:0 "Purify North America"
+ LAS_purify_north_america_desc:0 "Rome did not become an Empire simply by standing idly by. No, it took initiative, and so must we. Keeping contenders and neighbours who despise you is not good for security. Not to mention how dissidents can escape and seek shelter from your enemies and plot your demise while not looking. Rome made sure this did not happen. And so will the Legion."
 
  LAS_from_legion_to_empire:0 "From Legion to Empire"
  LAS_from_legion_to_empire_desc:0 "Now America lies under the heel of Almighty Caesar, with no one left to oppose his enlightened rule. The need for the legion is at an end, and now we are truly the Roman Empire."
 
  LAS_a_triumphant_legion:0 "A Triumphant Legion"
  LAS_a_triumphant_legion_desc:0 "A new Golden Age dawned for the West. One of strength, devotion and servitude. We are free from the corruption and debasedness of the profligates before us. We have shown the world what true willpower and strength look like, and they know better than to anger or pester the bull. The banner of the Bull soars on top of everyone and will do so for centuries beyond."
+
+ LAS_establish_the_consul_offciorium_ab_famulatus:0 "Establish the Consul Officiorum ab Famulatus"
+ LAS_establish_the_consul_offciorium_ab_famulatus_desc:0 "To manage the number of slaves we currently have and we will gain through our conquests, the Consul Officiorum ab Famulatus will be created. Run by professional legionaries well educated on human resource management, it will allow for max efficiency and much better uses of the slaves."
+
+ LAS_round_up_the_profligates:0 "Round up the Profligates"
+ LAS_round_up_the_profligates_desc:0 "Now that we have secured our control over New Vegas we will round up all the profligates remaining in our territory. They can make up for their degeneracy and hedonism by serving as the toilers of the Legion."
+
+ LAS_make_them_farm:0 "Make them Farm"
+ LAS_make_them_farm_desc:0 "The Legion cannot march forward with an empty stomach. And using normal farming would overwhelm our subjects in the countryside, no. This issue can be solved by using the vast number of slaves we have accumulated from our takeover and conquests."
+
+ LAS_make_them_build:0 "Make them Build"
+ LAS_make_them_build_desc:0 "Many of the slaves we have are able bodied men and many of them are healthy enough to work in manual labor. While our Legionaries are busy conquering, these slaves will meanwhile work to build new infrastructure within our land and repair those from our conquests."
+
+ LAS_make_them_work_in_workshop:0 "Make them work in the Workshops"
+ LAS_make_them_work_in_workshop_desc:0 "Of course, with the use of slaves within other sectors of our industry, they can also be put to work within our workshops to produce plenty of military equipment for us free from any forms of stagnation and slowing down production."
+
+ LAS_expand_farming_infrastructure:0 "Expand Farming Infrastructure"
+ LAS_expand_farming_infrastructure_desc:0 "The use of slaves for farming has born fruits, allowing our legionaries to be supplied with free food and vegetables, keeping them well fed. In conclusion, this system has worked splendidly and thus will be expanded more across our territories to make use of the continuous influx of slaves."
+
+ LAS_break_their_backs:0 "Break their Backs"
+ LAS_break_their_backs_desc:0 "Just because we have shown them mercy by letting them be slaves instead of slaughtering them outright, does not mean we are weak. If we do not assert our control over the slaves and make it clear who holds the power, they may start plotting against us. Such a sensitive part of our economy cannot be allowed to fall into chaos. Plus cracking down on them will help to increase their productivity. We will make sure to keep them weak and servile enough to know not to mess with Legion."
+
+ LAS_expand_the_workshops:0 "Expand the Workshops"
+ LAS_expand_the_workshops_desc:0 "The production of weaponry and supplies has exploded since our use of slaves within our factories. As we conquer more and more land, we receive more slaves and have a need for more equipment to conquer and punish the profligates. Expanding our current methods of production will continuously supply us with a steady amount of goods. A perfect balance will be achieved."
+
+ LAS_expand_horse_breeding:0 "Expand Horse Breeding"
+ LAS_expand_horse_breeding_desc:0 "Although the modern may have left cavalry behind, it doesn't mean they have become obsolete. We are not the type to rely on modern military equipment that continues to break down and needs constant fueling. Cavalry, meanwhile, are low maintenance without needing so much to keep them running. Not to mention horses have played major roles within the history of countless Empires and conquerors."
+
+ LAS_business_is_booming:0 "Business is Booming"
+ LAS_business_is_booming_desc:0 "Thanks to our proper utilisation of slaves and expanded infrastructure to optimise slave labour output, our economy has reached new heights we did not even know possible. Across the empire, our farms yield crops to feed the entire Legion, industry and infrastructure are built rapidly and without delay, and our factories create endless amounts of goods. Our Legionaries do not have to worry about a lack of food, supplies, or weaponry. Our great economy is fully subservient to us and benefits us greatly."
+
+ LAS_a_supplied_legion:0 "A Supplied Legion"
+ LAS_a_supplied_legion_desc:0 "Even the most seasoned Centurion without proper weaponry and medical supplies will get worn out and eventually defeated after continuous combat. Logistics for an army is as important as the weapons they wield and the willpower of each soldier. Our economy is capable of handling this very task and will be utilised to the fullest extent."
+
+ LAS_find_more_slaves:0 "Find More Slaves"
+ LAS_find_more_slaves_desc:0 "As our ever growing Legion marches across the former territories of the United States, we gain new lands with more population and industry. Many profligates hide from us in every nook and cranny. These cowards will no longer hide from our legion. We will track them down and put them to work."
+
+ LAS_look_for_refugees:0 "Look for Refugees"
+ LAS_look_for_refugees_desc:0 "The raging civil war across the Americas has created an influx of refugees coming from any and all parts of the country. It would be unwise not to allow these whelps in and put them to work. It would be far more beneficial to have them instead of the enemy. And lets not forget how the original Rome was forged. We are simply following in the footsteps of Rome."
+
+ LAS_send_the_frumentarii:0 "Send the Frumentarii"
+ LAS_send_the_frumentarii_desc:0 "Getting slaves and laborers is easy, but finding those with exceptional capabilities in more complex and industrial positions will be hard to find. This is where our Frumentarii come in. Letting our enemy have people doing complex work only hurts us. But having those people work for us instead of them is a great plan. Our Frumentarii will go deep into enemy territory and capture enemy operatives and personnel, bringing them back to us. So we can put them to work and put their skills to good use for the Legions benefit."
+
+ LAS_expand_the_consul_offciorium_ab_famulatus:0 "Expand the Consul Officiorum ab Famulatus" 
+ LAS_expand_the_consul_offciorium_ab_famulatus_desc:0 "To the creation of Consul Officiorum ab Famulatus has come a long way and has served us well so far, but as our Legion grows, the number of slaves we obtain grows too. Such numbers of slaves is be too much for them to manage; thus, we will expand the Consul Officiorum ab Famulatus without further delay. The faster we do this, the faster we can put these whelps to use."
+
+ LAS_expand_slave_infrastructure:0 "Expand Slave Infrastructure"
+ LAS_expand_slave_infrastructure_desc:0 "The system that manages the transport, usage and housing of slaves must be expanded and built up in our new territories and future ones too if we are to utilize their full potential. Vast swathes of American land hold great amounts of resources and farmland. Not using them to their full potential will be shameful for us."
+
+ LAS_promote_more_slave_masters:0 "Promote more Slave Masters"
+ LAS_promote_more_slave_masters_desc:0 "The Consul Officiorum ab Famulatus is great and all, but the agency itself cannot directly manage every single slave. There must be a middleman for those. Junior Legionaries and those working in the existing Consul Officiorum ab Famulatus will be given new positions and promoted as slave masters to manage the slaves more intimately. Of course, local loyalists will also be given this rank, lowering pressure from our own Legionaries."
+
+ LAS_expand_slave_pens:0 "Expand Slave Pens"
+ LAS_expand_slave_pens_desc:0 "More slaves are always good but cramming them into one small place like sardines only brings more insufficiencies. It also makes them easily get sick and become a burden. The pens where slaves are stored need to be made bigger and expanded so they can be kept there without much issue. This allows us to also be more effective in picking and choosing slaves."
+
+ LAS_outsource_work_to_slaves:0 "Outsource more work to the Slaves"
+ LAS_outsource_work_to_slaves_desc:0 "There are many jobs within society that are well more iffy for normal people to work. But they are still necessary. But this isnt a problem for us. We have slaves for these types of usually unsanitary jobs. While our Legionaries and citizens can live normal and civil lives, the slaves will work in the shadow so our society may always function and our citizens can enjoy the prosperity they deserve."
+
+ LAS_expand_slave_healthcare:0 "Expand Slave Healthcare"
+ LAS_expand_slave_healthcare_desc:0 "A dead slave is a useless slave, a sick slave is a burden. The Legion may want to keep slaves submissive and servile, but it doesnt mean we will let them kneel over and die, it would be a waste and a drain on our resources. A portion of supplies will be saved up to treat the slaves and keep them healthy so they may continue working. Of course we wont give them the same healthcare as citizens and legionaries; we cant have them getting too strong and rising up."
+
+ LAS_set_up_training_centers:0 "Set up Training Centers"
+ LAS_set_up_training_centers_desc:0 "Most people in modern times have no knowledge on how to work in the field or how to do laborious work. Without at least a basic knowledge on how to do things, the slaves are as good as useless. Newly gained slaves who do not have experience or knowledge will get sent to our newly made training centers to be taught how to do tasks they will be assigned to in the future."
+
+ LAS_soldiers_pensions:0 "Soldiers Pensions"
+ LAS_soldiers_pensions_desc:0 "One of the main goals of our Legion is to burn the slate clean and bring upon a new Golden Age under the Banner of the Bull. And the builders of this dream are our Legionaries. It would be hypocritical for us not to provide rewards to our soldiers after they have completed their task of conquest. We will set aside funds and rewards for Legionaries who have served the Legion well and for those who have come back from service. The Legionnaire is the backbone of our Empire, and thus he will be compensated greatly."
+
+ LAS_a_legionary_economy:0 "A Legionary Economy"
+ LAS_a_legionary_economy_desc:0 "Our economy has soared new heights never imagined by us, we are unshackled by the bondage of globalist market thoughts. We run on efficiency and without delay. While the profligates continue to dwell in their entanglements of a multi-layered, overly complicated system, we live in prosperity, and most importantly, we do not forget our humanity, our oneness with Earth and Nature. We stand free from the profligate vices and illnesses. Our Golden Age is secured and may it never end!"
+
 

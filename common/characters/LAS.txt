@@ -338,6 +338,62 @@ characters={
 		}
 	}
 
+	LAS_steve_wynn = {
+		name = "Steve Wynn"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/LAS/Steve_Wynn.png
+			}
+			army = {
+				large = gfx/leaders/LAS/Steve_Wynn
+			}
+		}
+	}
+	LAS_sean_wallis = {
+		name = "Sean Wallis"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/LAS/Sean_Wallis.png
+			}
+			army = {
+				large = gfx/leaders/LAS/Sean_Wallis.png
+			}
+		}
+	}
+	LAS_clancy_brown = {
+		name = "Clancy Brown"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/LAS/Clancy_Brown.png
+			}
+			army = {
+				large = gfx/leaders/LAS/Clancy_Brown.png
+			}
+		}
+	}
+	LAS_the_courier = {
+		name = "THE COURIER"
+		portraits = {
+			civilian = {
+				large = 
+			}
+			army = {
+				large = 
+			}
+		}
+	}
+	LAS_jason_spisak = {
+		name = "Jason Spisak"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/LAS/Jason_Courier.png
+			}
+			army = {
+				large = gfx/leaders/LAS/Jason_Courier.png
+			}
+		}
+	}
+	
 	### Military Leaders ###
 	## Army ##
 	# Nellis Air Force Base #

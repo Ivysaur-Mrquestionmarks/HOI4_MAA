@@ -86,9 +86,21 @@
  new_vegas.20.d:0 "pra rejects Non-Aggression Pact"
  new_vegas.20.a:0 "balls"
  
- new_vegas.~.t:0 " "
- new_vegas.~.d:0 " "
- new_vegas.~.a:0 " "
+ new_vegas.21.t:0 "The Future of The New Vegas Republic"
+ new_vegas.21.d:0 "we gotta choose to join fra or not"
+ new_vegas.21.a:0 "[FRA.GetName] is the Legitimate Government"
+ new_vegas.21.b:0 "All shall bow to our Kimball!"
+ 
+ new_vegas.22.t:0 "A New Name for our Nation"
+ new_vegas.22.d:0 "we get to choose a new name"
+ new_vegas.22.a:0 "The New California Republic of Course!"
+ new_vegas.22.b:0 "The New Pacifican Republic to Showcase the other States!"
+ new_vegas.22.c:0 "The New Rockonian Republic to Showcase the other States!"
+ new_vegas.22.d:0 "Greater New Vegas!"
+ 
+ new_vegas..t:0 " "
+ new_vegas..d:0 " "
+ new_vegas..a:0 " "
  
  #Ideas
  
@@ -142,8 +154,10 @@
  LAS_lacking_government_8:0 "Nearly Rebuilt Government Institutions"
  LAS_lacking_government_8_desc:0 "Our government institutions are nearly rebuilt."
  
- LAS_ncr_government:0 "NVR Government"
- LAS_ncr_government_desc:0 "The Republic of New Vegas has a robust tricameral government that provides services to the people of New Vegas"
+ LAS_ncr_government_1:0 "NVR Government"
+ LAS_ncr_government_1_desc:0 "The New Vegas Republic has a robust tricameral government that provides services to the people of New Vegas"
+ LAS_ncr_government_2:0 "NAR Government"
+ LAS_ncr_government_2_desc:0 "The New American Republic has a robust tricameral government that provides services to all Americans"
  
  LAS_mojave_campaign:0 "Mojave Campaign Planning"
  LAS_mojave_campaign_desc:0 "A plan is nessesary before any attack"
@@ -157,13 +171,19 @@
  LAS_new_vegas_militia_1:0 "New Vegas Militia"
  LAS_new_vegas_militia_1_desc:0 "While our militias have won us a great many battles, they are still far from a proper military. This needs to be remedied."
  
+ #Country Flags
+ 
+ LAS_fra_bitch:0 "Submitted to [FRA.GetName]"
+ 
+ LAS_kimballing:0 "Decided to Persue our own Path"
+ 
  #Political Parties
  
  LAS_courier_loyalists_long:0 "Courier Loyalists"
  LAS_courier_loyalists:0 "Courier Loyalists"
  
- LAS_new_vegas_democratic_party_long:0 "New Vegas Democratic Party"
- LAS_new_vegas_democratic_party:0 "Democratic Party"
+ LAS_new_vegas_democrat_party_long:0 "New Vegas Democratic Party"
+ LAS_new_vegas_democrat_party:0 "Democratic Party"
  
  LAS_new_vegas_republican_party_long:0 "New Vegas Republican Party"
  LAS_new_vegas_republican_party:0 "Republican Party"
@@ -196,6 +216,42 @@
  LAS_new_vegas_ncr_libertarian_right_ADJ:0 "NVR"
  LAS_new_vegas_ncr_libertarian_right_DEF:0 "New Vegas Republic"
  
+ LAS_NCR_new_california_democrat:0 "New California Republic"
+ LAS_NCR_new_california_democrat_ADJ:0 "NCR"
+ LAS_NCR_new_california_democrat_DEF:0 "New California Republic"
+ LAS_NCR_new_rockonia_democrat:0 "New Rockonia Republic"
+ LAS_NCR_new_rockonia_democrat_ADJ:0 "NRR"
+ LAS_NCR_new_rockonia_democrat_DEF:0 "New Rockonia Republic"
+ LAS_NCR_new_pacifica_democrat:0 "New Pacifica Republic"
+ LAS_NCR_new_pacifica_democrat_ADJ:0 "NPR"
+ LAS_NCR_new_pacifica_democrat_DEF:0 "New Pacifica Republic"
+ LAS_NCR_greater_new_vegas_democrat:0 "Greater New Vegas Republic"
+ LAS_NCR_greater_new_vegas_democrat_ADJ:0 "Greater NVR"
+ LAS_NCR_greater_new_vegas_democrat_DEF:0 "Greater New Vegas Republic"
+ 
+ LAS_NCR_VEGAS_democrat:0 "VEGAS"
+ LAS_NCR_VEGAS_democrat_ADJ:0 "VEGAS"
+ LAS_NCR_VEGAS_democrat_DEF:0 "The Very Egalitarian Greater American State"
+ 
+ LAS_new_american_republic_autocratic:0 "New American Republic"
+ LAS_new_american_republic_autocratic_ADJ:0 "NAR"
+ LAS_new_american_republic_autocratic_DEF:0 "New American Republic"
+ LAS_new_american_republic_republican:0 "New American Republic
+ LAS_new_american_republic_republican_ADJ:0 "NAR"
+ LAS_new_american_republic_republican_DEF:0 "New American Republic"
+ LAS_new_american_republic_democrat:0 "New American Republic"
+ LAS_new_american_republic_democrat_ADJ:0 "NAR"
+ LAS_new_american_republic_democrat_DEF:0 "New American Republic"
+ LAS_new_american_republic_libertarian_right:0 "New American Republic"
+ LAS_new_american_republic_libertarian_right_ADJ:0 "NAR"
+ LAS_new_american_republic_libertarian_right_DEF:0 "New American Republic"
+ LAS_new_american_republic_libertarian_left:0 "New American Republic"
+ LAS_new_american_republic_libertarian_left_ADJ:0 "NAR"
+ LAS_new_american_republic_libertarian_left_DEF:0 "New American Republic"
+ LAS_new_american_republic_authoritarian_left:0 "New American Republic"
+ LAS_new_american_republic_authoritarian_left_ADJ:0 "NAR"
+ LAS_new_american_republic_authoritarian_left_DEF:0 "New American Republic"
+ 
  LAS_new_vegas_mojave_libertarian_right:0 "Mojave Republic"
  LAS_new_vegas_mojave_libertarian_right_ADJ:0 "Mojave"
  LAS_new_vegas_mojave_libertarian_right_DEF:0 "Independent Republic of the Mojave"
@@ -206,8 +262,8 @@
  LAS_new_vegas_ind_libertarian_right:0 "New Vegas"
  LAS_new_vegas_ind_libertarian_right_ADJ:0 "New Vegas"
  LAS_new_vegas_ind_libertarian_right_DEF:0 "Republic of New Vegas"
- LAS_new_vegas_ind_democat:0 "New Vegas"
- LAS_new_vegas_ind_democat_ADJ:0 "New Vegas"
+ LAS_new_vegas_ind_democrat:0 "New Vegas"
+ LAS_new_vegas_ind_democrat_ADJ:0 "New Vegas"
  LAS_new_vegas_ind_democrat_DEF:0 "People's Republic of New Vegas"
  
  LAS_new_vegas_legion_autocratic:0 "Caesar's Legion"

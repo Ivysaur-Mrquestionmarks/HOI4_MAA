@@ -264,17 +264,19 @@ country_event = {
 			factor = 95
 		}
 		set_politics = {
-			ruling_party = democratic
+			ruling_party = democrat
 			elections_allowed = no
 			last_election = "2021.4.1"
 			election_frequency = 48
 		}
 		set_popularities = {
-			democratic = 60
+			democrat = 60
 			right_libertarian = 20
 			autocrat = 10
 			republican = 5
 			left_libertarian = 5
+		}
+		complete_national_focus = LAS_victory_new_vegas_party
 	}
 	option = {
 		name = new_vegas.13.b
@@ -294,6 +296,7 @@ country_event = {
 			republican = 5
 			left_libertarian = 5
 		}
+		complete_national_focus = LAS_victory_independence_party
 	}
 }
 country_event = {
@@ -367,7 +370,7 @@ country_event = {
 		add_opinion_modifier = {
 				target = FRA
 				modifier = refused_help
-			}
+		}
 	}
 }
 country_event = {
@@ -454,6 +457,72 @@ country_event = {
 			factor = 100
 		}
 		add_war_support = 0.05
+	}
+}
+country_event = {
+	id = new_vegas.21
+	title = new_vegas.21.t
+	desc = new_vegas.21.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.21.a
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = LAS_fra_bitch
+	}
+	option = {
+		name = new_vegas.21.b
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = LAS_kimballing
+		hidden_effect = {
+				country_event = {
+					id = new_vegas.22
+					days = 7
+				}
+			}
+	}
+}
+country_event = {
+	id = new_vegas.22
+	title = new_vegas.22.t
+	desc = new_vegas.22.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.22.a
+		ai_chance = {
+			factor = 25
+		}
+		set_cosmetic_tag = LAS_NCR_new_california
+	}
+	option = {
+		name = new_vegas.22.b
+		ai_chance = {
+			factor = 25
+		}
+		set_cosmetic_tag = LAS_NCR_new_pacifica
+	}
+	option = {
+		name = new_vegas.22.c
+		ai_chance = {
+			factor = 25
+		}
+		set_cosmetic_tag = LAS_NCR_new_rockonia
+	}
+	option = {
+		name = new_vegas.22.d
+		ai_chance = {
+			factor = 25
+		}
+		 set_cosmetic_tag = LAS_NCR_greater_new_vegas
 	}
 }
 country_event = {
