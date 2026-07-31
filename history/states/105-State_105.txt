@@ -7,10 +7,19 @@ state={
 		owner = CAN
 		add_core_of = CAN
 		victory_points = {
-			2315 20 
+			2315 30 
 		}
 		victory_points = {
-			6963 15 
+			6963 25 
+		}
+		victory_points = {
+			12055 20 
+		}
+		victory_points = {
+			12054 18 
+		}
+		victory_points = {
+			6763 12 
 		}
 		buildings = {
 			infrastructure = 8
@@ -31,7 +40,7 @@ state={
 	}
 
 	provinces={
-		2315 5600 6931 6963 
+		2315 5600 6763 6931 6963 12054 12055
 	}
 	manpower=2642825
 	buildings_max_level_factor=8.000

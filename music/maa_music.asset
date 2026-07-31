@@ -805,15 +805,25 @@ music = {
 	file = "forty_six_and_2.ogg"
 	volume = 0.65
 }
+music = {
+	name = "sludge_factory"
+	file = "sludge_factory.ogg"
+	volume = 0.65
+}
+music = {
+	name = "jesus_christ_pose"
+	file = "jesus_christ_pose.ogg"
+	volume = 0.65
+}
+music = {
+	name = "another_brick_in_the_wall_part_2"
+	file = "another_brick_in_the_wall_part_2.ogg"
+	volume = 0.65
+}
 #Trump on_actions music
 music = {
 	name = "reagan_speech"
 	file = "reagan.ogg"
-	volume = 0.65
-}
-music = {
-	name = "money"
-	file = "money.ogg"
 	volume = 0.65
 }
 music = {
@@ -824,6 +834,12 @@ music = {
 music = {
 	name = "vote_for_trump"
 	file = "vote_for_trump.ogg"
+	volume = 0.65
+}
+#GLA on_actions music
+music = {
+	name = "money"
+	file = "money.ogg"
 	volume = 0.65
 }
 #Florida on_actions music

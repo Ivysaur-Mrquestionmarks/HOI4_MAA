@@ -2,7 +2,7 @@ state={
 	id=558
 	name="STATE_558"
 	provinces={
-		3094 4035 5485 6225 9165 9224 9258 9264 9302 9323 9339 9292
+		3094 4035 5485 6225 9165 9224 9258 9264 9302 9323 9339 9292 9629
 	}
 		history={
 			owner = FRA
@@ -13,6 +13,9 @@ state={
 			}
 			victory_points = { #Seaford
 				9302 2 
+			}
+			victory_points = { #Middletown
+				9629 3 
 			}
 			victory_points = {
 				9339 1 

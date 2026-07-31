@@ -14,11 +14,14 @@ state={
 		buildings={
 			infrastructure = 5
 		}
-		victory_points = {  #Tuba City
-			3967 1 
+		victory_points = { 
+			3967 1 #Tuba City
 		}
-		victory_points = { #Window Rock
-		 	2368 5
+		victory_points = {
+			4126 1 #Page
+		}
+		victory_points = {
+		 	2368 5 #Window Rock
 		}
 	}
 	manpower=178967

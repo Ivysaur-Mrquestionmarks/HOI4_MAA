@@ -203,6 +203,22 @@ music = {
 	}
 }
 music = {
+	song = "jesus_christ_pose"
+	
+	chance = {
+		modifier = {
+			factor = 6
+			NOT = {
+				OR = {
+					has_government = libertarian_right
+					has_government = autocratic
+					has_government = republican
+				}
+			}
+		}
+	}
+}
+music = {
 	song = "karma_police"
 
 	chance = {
@@ -244,6 +260,21 @@ music = {
 					has_government = libertarian_left
 					has_government = democrat
 					has_government = republican
+				}
+			}
+		}
+	}
+}
+music = {
+	song = "another_brick_in_the_wall_part_2"
+	
+	chance = {
+		modifier = {
+			factor = 7
+			NOT = {
+				OR = {
+					has_government = libertarian_left
+					has_government = democrat
 				}
 			}
 		}
@@ -756,6 +787,22 @@ music = {
 	chance = {
 		modifier = {
 			factor = 10
+		}
+	}
+}
+music = {
+	song = "sludge_factory"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			NOT = {
+				OR = {
+					has_government = libertarian_right
+					has_government = democrat
+					has_government = republican
+				}
+			}
 		}
 	}
 }
