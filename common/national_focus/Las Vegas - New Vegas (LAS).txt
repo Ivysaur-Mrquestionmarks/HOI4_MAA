@@ -962,7 +962,24 @@ focus_tree = {
 			focus = LAS_declare_neutrality
 		}
 		completion_reward = {
-			#Add forts to border and add a fort building buff
+			add_building_construction = {
+			type = bunker
+				level = 4
+				instant_build = yes
+				province = {
+				all_provinces = yes
+				limit_to_border = yes
+				}
+			}
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_victory_point > 0
+				}
+			}
 		}
 	}
 	focus = {
@@ -1105,7 +1122,7 @@ focus_tree = {
 	focus = {
 		id = LAS_a_new_constitution
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_our_kimball 
 		x = -1
 		y = 1
@@ -1122,7 +1139,7 @@ focus_tree = {
 	focus = {
 		id = LAS_declare_ourselves_new_america
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_our_kimball
 		x = 1
 		y = 1
@@ -1131,12 +1148,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_cosmetic_tag = LAS_new_american_republic
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 	focus = {
 		id = LAS_march_east
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_our_kimball
 		x = 0
 		y = 2
@@ -1151,16 +1170,20 @@ focus_tree = {
 				type = annex_everything
 				target = USA
 			}
-		}
 		create_wargoal = {
 				type = annex_everything
 				target = TEX
 			}
+			create_wargoal = {
+				type = annex_everything
+				target = AFS
+			}
+		}
 	}
 	focus = {
 		id = LAS_sic_semper_tyrannis
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_march_east
 		x = -1
 		y = 1
@@ -1177,7 +1200,7 @@ focus_tree = {
 	focus = {
 		id = LAS_reunite_america
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 12
 		relative_position_id = LAS_march_east
 		x = 1
 		y = 1
@@ -1242,7 +1265,7 @@ focus_tree = {
 	focus = {
 		id = LAS_remove_symbols_of_opression
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_sic_semper_tyrannis
 		x = -1
 		y = 1
@@ -1250,13 +1273,16 @@ focus_tree = {
 			focus = LAS_sic_semper_tyrannis
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = LAS_removing_symbols_of_opression
+				days = 70
+			}
 		}
 	}
 	focus = {
 		id = LAS_expand_the_senate
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_sic_semper_tyrannis
 		x = 1
 		y = 1
@@ -1267,13 +1293,14 @@ focus_tree = {
 			focus = LAS_reunite_america
 		}
 		completion_reward = {
-			
+			add_political_power = 250
+			country_event = new_vegas.23
 		}
 	}
 	focus = {
 		id = LAS_make_new_currency
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_reunite_america
 		x = 1
 		y = 1
@@ -1281,13 +1308,13 @@ focus_tree = {
 			focus = LAS_reunite_america
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_ncr_currency
 		}
 	}
 	focus = {
 		id = LAS_follow_dharma
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_expand_the_senate 
 		x = 0
 		y = 1
@@ -1301,13 +1328,14 @@ focus_tree = {
 			focus = LAS_make_new_currency
 		}
 		completion_reward = {
-			
+			add_stability = 0.5
+			add_war_support = -1
 		}
 	}
 	focus = {
 		id = LAS_rebuild_america
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 10
 		relative_position_id = LAS_follow_dharma 
 		x = -2
 		y = 1
@@ -1315,13 +1343,64 @@ focus_tree = {
 			focus = LAS_follow_dharma
 		}
 		completion_reward = {
-			
+			every_state = { 
+				limit = { is_core_of = USA }
+				add_core_of = LAS
+			}
+		every_state = { 
+				limit = { is_core_of = TEX }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MIL }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = KMT }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = GLA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = AFS }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = CSA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = KFC }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = NRA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = VIR }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = FRA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = FLO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = NEW }
+				add_core_of = LAS
+			}
 		}
 	}
 	focus = {
 		id = LAS_remove_term_limits
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_follow_dharma
 		x = 0
 		y = 1
@@ -1329,13 +1408,14 @@ focus_tree = {
 			focus = LAS_follow_dharma
 		}
 		completion_reward = {
-			
+			add_stability = -0.05
+			add_political_power = 500
 		}
 	}
 	focus = {
 		id = LAS_legalize_all_gambling
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_follow_dharma
 		x = 2
 		y = 1
@@ -1343,13 +1423,13 @@ focus_tree = {
 			focus = LAS_follow_dharma
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_legalized_gambling
 		}
 	}
 	focus = {
 		id = LAS_the_new_american_republic
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_remove_term_limits
 		x = 0
 		y = 1
