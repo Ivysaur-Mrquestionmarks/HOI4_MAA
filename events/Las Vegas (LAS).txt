@@ -923,6 +923,19 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
+		add_country_leader_role = {
+    			character = LAS_steve_wynn
+    			promote_leader = yes
+    			country_leader = {
+    			    ideology = corporatocracy
+					expire = "2065.1.1.1"
+    			    traits = {}
+    			}
+		}
+		set_politics = {
+			ruling_party = autocratic
+			elections_allowed = no
+		}
 		load_focus_tree = new_vegas
 		hidden_effect = {
 			#remove all spirits - will have to consult on how to do mormon war

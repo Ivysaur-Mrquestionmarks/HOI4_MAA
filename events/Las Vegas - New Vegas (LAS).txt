@@ -109,15 +109,39 @@ country_event = {
 		}
 		if = {
 			limit = { has_country_flag = LAS_courier_wallis_chosen }
-			promote_character = LAS_sean_wallis
+			add_country_leader_role = {
+    			character = LAS_sean_wallis
+    			promote_leader = yes
+    			country_leader = {
+    			    ideology = despotism
+					expire = "2065.1.1.1"
+    			    traits = {}
+    			}
+			}
 		}
 		if = {
 			limit = { has_country_flag = LAS_courier_brown_chosen }
-			promote_character = LAS_clancy_brown
+			add_country_leader_role = {
+    			character = LAS_clancy_brown
+    			promote_leader = yes
+    			country_leader = {
+    			    ideology = despotism
+					expire = "2065.1.1.1"
+    			    traits = {}
+    			}
+			}
 		}
 		if = {
 			limit = { has_country_flag = LAS_courier_spisak_chosen }
-			promote_character = LAS_jason_spisak
+			add_country_leader_role = {
+    			character = LAS_jason_spisak
+    			promote_leader = yes
+    			country_leader = {
+    			    ideology = despotism
+					expire = "2065.1.1.1"
+    			    traits = {}
+    			}
+			}
 		}
 	}
 }
