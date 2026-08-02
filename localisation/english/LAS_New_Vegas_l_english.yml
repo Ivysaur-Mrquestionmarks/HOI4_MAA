@@ -19,7 +19,7 @@
  LAS_break_their_knees_desc:0 "What do they know about actual violence? What do they know about what it takes to rule and control people? Who the hell do they think they are? They want to play a game? Fine, let's show them what our new friends know about playing it."
  
  LAS_showdown_at_wynn_casino:0 "Showdown at the Wynn Casino"
- LAS_showdown_at_wynn_casino_desc:0 "Wynn and his mob allies have utterly failed to curtail the New Vegas Militias. Now the courier, who had cheated fate once in the Las Vegas City Hall, will attempt to cheat fate once again, and the Mojave will forever be changed."
+ LAS_showdown_at_wynn_casino_desc:0 "Wynn and his mob allies have utterly failed to curtail the New Vegas Militias. Now the courier, will attempt to cheat fate once again, and prove the House too, can lose."
  
  LAS_render_unto_courier:0 "Render unto Courier"
  LAS_render_unto_courier_desc:0 "And so the Courier, who had cheated fate once in the Las Vegas City Hall, cheated fate once again, and the Mojave was forever changed."
@@ -92,8 +92,100 @@
  LAS_governance_restored:0 "Governance Restored"
  LAS_governance_restored_desc:0 "We finally have a true, functional, and soon to be democratic government in place here in New Vegas. Even when faced with challenges and threats, the people have risen up to the task and beaten these challenges to the ground. Our nation and our people are excited and at long last, hopeful for the future."
  
+ LAS_reach_out_to_the_legitimists:0 "Reach out To the Legitimists"
+ LAS_reach_out_to_the_legitimists_desc:0 "The Legitimists in Washington are of course, the rightful American government. If we hope for both legitimacy and support, we must reach out to them for help."
  
+ LAS_plan_the_mojave_campaign:0 "Plan the Mojave campaign"
+ LAS_plan_the_mojave_campaign_desc:0 "To our east lie the great deserts of the American Southwest. Sadly, they are ravaged by violence and chaos. We must go forth and free their people from fear and violence in the name of liberty and democracy."
+
+ LAS_plan_elections:0 "Planning the Elections"
+ LAS_plan_elections_desc:0 "We must start organizing and readying the nation for our elections. Defining polling places and speech and debate days is important to ready our nation for this momentous day."
+
+ LAS_liberate_the_mojave:0 "Liberate the Mojave"
+ LAS_liberate_the_mojave_desc:0 "Today, we are the waves of the Pacific, pushing ever eastwards. We are the sequoias rising from the Sierra Nevada, defiant and enduring. We must now go, and liberate the people who call the Mojave home."
+
+ LAS_election_ncr:0 "Election Day!"
+ LAS_election_ncr_desc:0 "At long last, we can fulfill our democratic promises to the people of New Vegas."
+
+ LAS_question_non_aggro_pact_pra:0 "Non-Aggression Pact with the West?"
+ LAS_question_non_aggro_pact_pra_desc:0 "To our west, the communist of the [PRA.get.name] are clearly our greatest threat and could probably march into New Vegas with little we could do to stop them.By ensuring a mutual non aggression treaty, we can focus on our true threats without constantly worrying about our backside being attacked, but it might still prove an unpopular move with those who wish to reclaim California itself first and foremost."
+
+ LAS_victory_new_vegas_party:0 "Victory of the New Vegas Party"
+ LAS_victory_new_vegas_party_desc:0 "The New Vegas Party has won the election! Running a campaign based on reclaiming the lands of the Republic and strengthening our nation. With their victory at the ballot box, now comes the hard part, achieving victory in the battlefield."
+
+ LAS_victory_independence_party:0 "Victory of the Independence Party"
+ LAS_victory_independence_party_desc:0 "The Independence Party has won the elections! With a campaign focused on declaring true independence from the rest of the country and ensuring neutrality and peace in the greater civil war, it easily won over the war-weary population of the city, who want nothing more than peace and development."
+
+ LAS_declare_neutrality:0 "Declaration of Neutrality"
+ LAS_declare_neutrality_desc:0 "The people of our young republic don’t want war, they’ve seen enough of it for several lifetimes already. By officially declaring our policy of neutrality we can make one thing clear: No New Vegans will fight and die for a pointless cause anymore."
+
+ LAS_declare_independ_republic_mojave:0 "Declare the Independent Republic of the Mojave"
+ LAS_declare_independ_republic_mojave_desc:0 "For too long we’ve only focused on Las Vegas as our core identity, however we’ve long held many lands which share almost nothing with the city itself. To better represent an important part of our people, as well as distinguishing ourselves from the previous government, we shall take a new name for ourselves. From now on, we shall be known as the Independent Republic of the Mojave!"
+
+ LAS_build_forts:0 "Building Fortifications"
+ LAS_build_forts_desc:0 "To ensure our independence against the large threats around us, we will greatly invest into building strategic fortifications around our borders. We will become the American Switzerland, an impregnable fortress too costly to be worth invading."
+
+ LAS_our_oasis_secured:0 "Our Oasis Secured"
+ LAS_our_oasis_secured_desc:0 "Any enemy who might dare strike into our deserts will rest eternally in the Mojave. Every cliff will become a fortress, and every citizen an experienced soldier. Our home, our Oasis in the American wasteland, shall never again be prey to another power."
+
+ LAS_liberate_the_rockies:0 "Liberation of the Rockies"
+ LAS_liberate_the_rockies_desc:0 "Our clearest target now is directly to our north. The Rocky Mountains are currently occupied by several warlord states which greatly threaten our position. Defeating them and ensuring our position across the mountains will be a crucial step for our plans."
+
+ LAS_retake_california:0 "Retaking our Homeland"
+ LAS_retake_california_desc:0 "At long last, we are ready to go back to our true home, California. The battle will be harsh, but we will inevitably prevail. From New Vegas to San Francisco, we are the New California Republic!"
+
+ LAS_capture_the_frontier:0 "Capturing the Frontier"
+ LAS_capture_the_frontier_desc:0 "Some things are better left unsaid."
+
+ LAS_the_west_saved:0 "The West is Saved"
+ LAS_the_west_saved_desc:0 "From Bellingham to San Diego, and from San Francisco to Salt Lake City, the west is united. The flag of our Republic stands tall and proud, for it has achieved what many thought a fantasy. Now however, we must face what our future holds now that our immediate goals have been achieved."
+
+ LAS_join_fra:0 "Joining the Legitimists"
+ LAS_join_fra_desc:0 "The legitimists of the east stand as the rightful government over the whole of the old United States of America, and have proven supportive of our government in the past. We shall salute our rightful commander in chief and work with them to restore Liberty and Democracy to the rest of the nation."
+
+ LAS_our_kimball:0 "Our Kimball"
+ LAS_our_kimball_desc:0 "While we agree with the [FRA.get.name] on many things, we must focus on our true goals. We will never bend the knee to a foreign ruler ever again!"
+
+ LAS_a_new_constitution:0 "A New Constitution"
+ LAS_a_new_constitution_desc:0 "If we hope to one day unite the rest of the nation under our banners, we must undertake great reforms in our government. Our current constitution will have to be entirely replaced with a new, more functional one."
+
+ LAS_declare_ourselves_new_america:0 "Declaring ourselves a New America"
+ LAS_declare_ourselves_new_america_desc:0 "We are no longer just the New California Republic, for we don’t represent just the people of the west. Instead, we will declare ourselves as the New American Republic, a new start for the whole country, free of the sins and mistakes of the past United States."
+
+ LAS_march_east:0 "Marching East"
+ LAS_march_east_desc:0 "We are ready to commence our reunification plan. The first obstacle in our way east are the statelets and claimants of the Great Plains and Texas. We shall march and drive over their great open grounds and fields and use them to fuel our own advance further east."
+
+ LAS_sic_semper_tyrannis:0 "Sic Semper Tyrannis"
+ LAS_sic_semper_tyrannis_desc:0 "In Washington, the tyrants of old America lay atop their marble palaces. Their rot was what led to the fall of the nation in the first place. To begin again, we must topple them from their high towers and establish ourselves as the true America!"
+
+ LAS_reunite_america:0 "Reuniting America"
+ LAS_reunite_america_desc:0 "There remain a lot of warlords and rival governments all across the nation. To truly bring peace and liberty to the union we must take down these groups. Any American living under oppression brings great grief to our whole nation."
+
+ LAS_remove_symbols_of_opression:0 "Remove the Symbols of Oppression"
+ LAS_remove_symbols_of_opression_desc:0 "There are many great symbols glorifying oppression throughout our lands. From Confederate statues to Trump’s towers, we must remove and reutilize these sites and materials for our own goals and motives."
  
+ LAS_expand_the_senate:0 "Expanding our Senate"
+ LAS_expand_the_senate_desc:0 "Our current Senate, established years ago, is far, far too small to represent the people of America. Using the old infrastructure of the Capitol building, we’ll be able to vastly expand the number of Senators representing our people."
+
+ LAS_make_new_currency:0 "Making a new Currency"
+ LAS_make_new_currency_desc:0 "To further distance ourselves from the failed United States, we will replace the US Dollar of old with a New American Dollar. Our new currency will also bring us a fresh start in other matters of the economy."
+ 
+ LAS_follow_dharma:0 "Follow the way of Dharma"
+ LAS_follow_dharma_desc:0 "Dharma, while unclear if a mythical figure or a philosopher within the world of Fallout, was established as a great inspiration to the founders of the New California Republic. Some of the moral teachings of Dharma are very much applicable to reality, as found in hinduism and buddhism. We will encourage ways of morality and pacifism in our weary and traumatized people."
+
+ LAS_rebuild_america:0 "Rebuild America"
+ LAS_rebuild_america_desc:0 "With the whole of America under our rule, we can now fully work towards rebuilding our old homes and cities. The American people, industrious as ever, will surely face this challenge head on like all others before it."
+
+ LAS_remove_term_limits:0 "Remove term limits"
+ LAS_remove_term_limits_desc:0 "Why would a great ruler be forced to step down simply because they’ve been ruling for a long time? Term limits are an inefficient and undemocratic regulation of our political system we shall do away with. Why change something when it works?"
+
+ LAS_legalize_all_gambling:0 "Legalize all Gambling"
+ LAS_legalize_all_gambling_desc:0 "We shouldn’t forget our humble origins from the city of Las Vegas. Gambling, while controversial as always, did become an important part of our economy in those early years, and it can still remain so. If only we do away with these pesky gaming regulations, profits will come rolling in!"
+
+ LAS_the_new_american_republic:0 "The New American Republic"
+ LAS_the_new_american_republic_desc:0 "The United States of America, with all its crimes and mistakes, has been swept away by history. In its place, the New American Republic rises. A nation that emerged from the Wastelands of the west to bring freedom and democracy to the entire country, a nation fit for a wholly new world."
+
+
  #Independent Path
  
  LAS_independent_vegas:0 "Independent Vegas"
