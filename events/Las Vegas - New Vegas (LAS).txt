@@ -188,7 +188,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_stability = 0.5
+		add_stability = 0.05
 		add_political_power = 100
 	}
 }
@@ -205,7 +205,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_stability = 0.5
+		add_stability = 0.05
 		add_political_power = 100
 	}
 }
@@ -222,7 +222,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_stability = 0.5
+		add_stability = 0.05
 		add_political_power = 100
 	}
 }
@@ -299,6 +299,7 @@ country_event = {
 			autocrat = 10
 			republican = 5
 			left_libertarian = 5
+			authoritarian_left = 0
 		}
 		complete_national_focus = LAS_victory_new_vegas_party
 	}
@@ -319,6 +320,7 @@ country_event = {
 			autocrat = 10
 			republican = 5
 			left_libertarian = 5
+			authoritarian_left = 0
 		}
 		complete_national_focus = LAS_victory_independence_party
 	}

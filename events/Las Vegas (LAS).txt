@@ -826,7 +826,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		original_tag = LAS
-		date < 2021.11.13
+		date = 2021.11.13
 		}
 	fire_only_once = yes
 	option = { 
@@ -849,9 +849,6 @@ country_event = {
 	desc = viva_las_vegas.23.d
 	picture = 
 	is_triggered_only = yes
-	trigger = {
-		original_tag = LAS
-		}
 	fire_only_once = yes
 	option = { 
 		name = viva_las_vegas.23.a
@@ -948,10 +945,6 @@ country_event = {
 	desc = viva_las_vegas.25.d
 	picture = 
 	is_triggered_only = yes
-	trigger = {
-		original_tag = LAS
-		
-		}
 	fire_only_once = yes
 	option = { 
 		name = viva_las_vegas.25.a
