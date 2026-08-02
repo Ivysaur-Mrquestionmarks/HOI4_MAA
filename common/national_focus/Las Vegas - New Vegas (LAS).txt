@@ -1038,6 +1038,10 @@ focus_tree = {
 				type = annex_everything
 				target = MOL
 			}
+			create_wargoal = {
+				type = annex_everything
+				target = HAM
+			}
 		}
 	}
 	focus = {

@@ -584,6 +584,10 @@ country_event = {
 				limit = { is_core_of = LIB }
 				add_core_of = LAS
 			}
+			every_state = { 
+				limit = { is_core_of = HAM }
+				add_core_of = LAS
+			}
 	}
 	option = {
 		name = new_vegas.22.b
@@ -645,6 +649,10 @@ country_event = {
 			}
 			every_state = { 
 				limit = { is_core_of = LIB }
+				add_core_of = LAS
+			
+			every_state = { 
+				limit = { is_core_of = HAM }
 				add_core_of = LAS
 			}
 	}
@@ -710,6 +718,10 @@ country_event = {
 				limit = { is_core_of = LIB }
 				add_core_of = LAS
 			}
+			every_state = { 
+				limit = { is_core_of = HAM }
+				add_core_of = LAS
+			}
 	}
 	option = {
 		name = new_vegas.22.d
@@ -771,6 +783,10 @@ country_event = {
 			}
 			every_state = { 
 				limit = { is_core_of = LIB }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = HAM }
 				add_core_of = LAS
 			}
 	}
