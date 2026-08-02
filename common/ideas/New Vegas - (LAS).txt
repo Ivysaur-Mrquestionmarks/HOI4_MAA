@@ -285,76 +285,254 @@ ideas = {
 				weekly_manpower = -500
 			}
 		}
+		LAS_ncr_mil_1_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				army_attack_factor = -0.10
+				army_defense_factor = -0.10
+				army_attack_speed_factor = 0.05
+				army_speed_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = -0.20
+				max_planning_factor = -0.25
+				planning_speed = -0.25
+			}
+		}
+		LAS_ncr_mil_1_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				weekly_manpower = 100
+				minimum_training_level = -0.5
+				max_training = -0.2
+				training_time_army_factor = -0.5
+				army_attack_factor = -0.15
+				army_defense_factor = -0.15
+				army_attack_speed_factor = 0.05
+				army_speed_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = -0.25
+				max_planning_factor = -0.2
+				planning_speed = -0.2
+			}
+		}
+		LAS_ncr_mil_1_3 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				weekly_manpower = 100
+				minimum_training_level = -0.5
+				max_training = -0.2
+				training_time_army_factor = -0.5
+				army_attack_factor = -0.10
+				army_defense_factor = -0.10
+				army_attack_speed_factor = 0.05
+				army_speed_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = -0.20
+				dig_in_speed_factor = 0.05
+				max_planning_factor = -0.2
+				planning_speed = -0.2
+			}
+		}
+		LAS_ncr_mil_1_4 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				weekly_manpower = 100
+				minimum_training_level = -0.25
+				max_training = -0.1
+				training_time_army_factor = -0.25
+				army_attack_factor = -0.05
+				army_defense_factor = -0.05
+				army_attack_speed_factor = 0.05
+				army_speed_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = -0.10
+				dig_in_speed_factor = 0.05
+				max_planning_factor = -0.1
+				planning_speed = -0.1
+			}
+		}
+		LAS_ncr_mil_2_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				max_planning_factor = 0.05
+				planning_speed = 0.1
+				command_power_gain_mult = 0.05
+				max_command_power_mult = 0.1
+				experience_gain_army_factor = 0.05
+			}
+		}
+		LAS_ncr_mil_2_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				max_planning_factor = 0.1
+				planning_speed = 0.15
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.2
+				experience_gain_army_factor = 0.1
+				land_reinforce_rate = 0.1
+			}
+		}
+		LAS_ncr_mil_3_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				minimum_training_level = 0.1
+				training_time_army_factor = -0.05
+			}
+		}
+		LAS_ncr_mil_combined_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				training_time_army_factor = -0.25
+				army_attack_factor = 0.1
+				army_defense_factor = 0.1
+				army_attack_speed_factor = 0.05
+				army_speed_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = 0.15
+				land_reinforce_rate = 0.1
+				dig_in_speed_factor = 0.1
+				max_planning_factor = 0.15
+				planning_speed = 0.15
+				command_power_gain_mult = 0.25
+				max_command_power_mult = 0.5
+				experience_gain_army_factor = 0.25
+			}
+		}
+		LAS_ncr_mil_combined_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				training_time_army_factor = 0.25
+				army_attack_factor = 0.2
+				army_defense_factor = 0.2
+				army_attack_speed_factor = 0.1
+				army_speed_factor = 0.15
+				army_morale_factor = 0.15
+				army_org_factor = 0.2
+				land_reinforce_rate = 0.15
+				dig_in_speed_factor = 0.1
+				max_planning_factor = 0.20
+				planning_speed = 0.20
+				command_power_gain_mult = 0.25
+				max_command_power_mult = 0.5
+				experience_gain_army_factor = 0.25
+				acclimatization_hot_climate_gain_factor = 0.5
+			}
+		}
 		LAS_destroyed_economy_1 = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_start_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.20
 			}
 		}
-		LAS_new_vegas_militia_1 = {
+		LAS_destroyed_economy_2 = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_start_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.15
 			}
 		}
-		LAS_ = {
+		LAS_destroyed_economy_3 = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_start_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.10
 			}
 		}
-		LAS_ = {
+		LAS_destroyed_economy_4 = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.05
 			}
 		}
-		LAS_ = {
+		LAS_destroyed_economy_5 = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				
+				consumer_goods_factor = 0.05
 			}
 		}
-		LAS_ = {
+		LAS_restored_economy_1 = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				
+				consumer_goods_factor = -0.05
 			}
 		}
-		LAS_ = {
+		LAS_restored_economy_2 = {
 			allowed = { original_tag = LAS }
-			modifier = {
-				
+			modifier = 
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
 			}
 		}
-		LAS_ = {
+		LAS_restored_economy_3 = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.10
 			}
 		}
-		LAS_ = {
+		LAS_restored_economy_4 = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.20
+				production_speed_buildings_factor = 0.15
 			}
 		}
-		LAS_ = {
+		LAS_restored_economy_5 = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.20
+				production_speed_buildings_factor = 0.15
 			}
 		}
-		LAS_ = {
+		LAS_restored_economy_6 = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				
+				production_factory_max_efficiency_factor = 0.20
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.20
+				consumer_goods_factor = -0.3
+				production_speed_buildings_factor = 0.25
 			}
 		}
-		LAS_ = {
+		LAS_war_bonds = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				
+				consumer_goods_factor = -0.15
+			}
+		}
+		LAS_war_taxes = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = -0.10
 			}
 		}
 		LAS_ = {

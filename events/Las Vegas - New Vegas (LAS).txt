@@ -502,6 +502,62 @@ country_event = {
 			factor = 25
 		}
 		set_cosmetic_tag = LAS_NCR_new_california
+					every_state = { 
+				limit = { is_core_of = PRA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = ORO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = FIR }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = CAS }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MOL }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = UTA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = AFO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = TOH }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = NAV }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = HOP }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = SIN }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = IDA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MON }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = LIB }
+				add_core_of = LAS
+			}
 	}
 	option = {
 		name = new_vegas.22.b
@@ -509,6 +565,62 @@ country_event = {
 			factor = 25
 		}
 		set_cosmetic_tag = LAS_NCR_new_pacifica
+					every_state = { 
+				limit = { is_core_of = PRA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = ORO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = FIR }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = CAS }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MOL }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = UTA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = AFO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = TOH }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = NAV }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = HOP }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = SIN }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = IDA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MON }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = LIB }
+				add_core_of = LAS
+			}
 	}
 	option = {
 		name = new_vegas.22.c
@@ -516,6 +628,62 @@ country_event = {
 			factor = 25
 		}
 		set_cosmetic_tag = LAS_NCR_new_rockonia
+					every_state = { 
+				limit = { is_core_of = PRA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = ORO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = FIR }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = CAS }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MOL }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = UTA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = AFO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = TOH }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = NAV }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = HOP }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = SIN }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = IDA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MON }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = LIB }
+				add_core_of = LAS
+			}
 	}
 	option = {
 		name = new_vegas.22.d
@@ -523,6 +691,62 @@ country_event = {
 			factor = 25
 		}
 		 set_cosmetic_tag = LAS_NCR_greater_new_vegas
+		 			every_state = { 
+				limit = { is_core_of = PRA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = ORO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = FIR }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = CAS }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MOL }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = UTA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = AFO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = TOH }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = NAV }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = HOP }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = SIN }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = IDA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MON }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = LIB }
+				add_core_of = LAS
+			}
 	}
 }
 country_event = {

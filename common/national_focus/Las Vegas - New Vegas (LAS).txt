@@ -217,15 +217,15 @@ focus_tree = {
 		completion_reward = {
 			if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_2
-						add_idea = LAS_continuing_instability_3
+						remove_idea = LAS_continuing_instability_1
+						add_idea = LAS_continuing_instability_2
 					}
 					add_political_power = 100
 			}
 			else_if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_1
-						add_idea = LAS_continuing_instability_2
+						remove_idea = LAS_continuing_instability_2
+						add_idea = LAS_continuing_instability_3
 					}
 					add_political_power = 100
 			}
@@ -244,15 +244,15 @@ focus_tree = {
 		completion_reward = {
 			if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_2
-						add_idea = LAS_continuing_instability_3
+						remove_idea = LAS_continuing_instability_1
+						add_idea = LAS_continuing_instability_2
 					}
 					add_political_power = 50
 			}
 			else_if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_1
-						add_idea = LAS_continuing_instability_2
+						remove_idea = LAS_continuing_instability_2
+						add_idea = LAS_continuing_instability_3
 					}
 					add_political_power = 50
 			}
@@ -271,20 +271,8 @@ focus_tree = {
 		completion_reward = {
 			if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_5
-						add_idea = LAS_continuing_instability_6
-					}
-			}
-			else_if = {
-					swap_ideas = {
-						remove_idea = LAS_continuing_instability_4
-						add_idea = LAS_continuing_instability_5
-					}
-			}
-			else_if = {
-					swap_ideas = {
-						remove_idea = LAS_continuing_instability_3
-						add_idea = LAS_continuing_instability_4
+						remove_idea = LAS_continuing_instability_1
+						add_idea = LAS_continuing_instability_2
 					}
 			}
 			else_if = {
@@ -295,8 +283,20 @@ focus_tree = {
 			}
 			else_if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_1
-						add_idea = LAS_continuing_instability_2
+						remove_idea = LAS_continuing_instability_3
+						add_idea = LAS_continuing_instability_4
+					}
+			}
+			else_if = {
+					swap_ideas = {
+						remove_idea = LAS_continuing_instability_4
+						add_idea = LAS_continuing_instability_5
+					}
+			}
+			else_if = {
+					swap_ideas = {
+						remove_idea = LAS_continuing_instability_5
+						add_idea = LAS_continuing_instability_6
 					}
 			}
 		}
@@ -314,22 +314,8 @@ focus_tree = {
 		completion_reward = {
 			if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_5
-						add_idea = LAS_continuing_instability_6
-					}
-					add_political_power = 50
-			}
-			else_if = {
-					swap_ideas = {
-						remove_idea = LAS_continuing_instability_4
-						add_idea = LAS_continuing_instability_5
-					}
-					add_political_power = 50
-			}
-			else_if = {
-					swap_ideas = {
-						remove_idea = LAS_continuing_instability_3
-						add_idea = LAS_continuing_instability_4
+						remove_idea = LAS_continuing_instability_1
+						add_idea = LAS_continuing_instability_2
 					}
 					add_political_power = 50
 			}
@@ -342,8 +328,22 @@ focus_tree = {
 			}
 			else_if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_1
-						add_idea = LAS_continuing_instability_2
+						remove_idea = LAS_continuing_instability_3
+						add_idea = LAS_continuing_instability_4
+					}
+					add_political_power = 50
+			}
+			else_if = {
+					swap_ideas = {
+						remove_idea = LAS_continuing_instability_4
+						add_idea = LAS_continuing_instability_5
+					}
+					add_political_power = 50
+			}
+			else_if = {
+					swap_ideas = {
+						remove_idea = LAS_continuing_instability_5
+						add_idea = LAS_continuing_instability_6
 					}
 					add_political_power = 50
 			}
@@ -362,20 +362,8 @@ focus_tree = {
 		completion_reward = {
 			if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_5
-						add_idea = LAS_continuing_instability_6
-					}
-			}
-			else_if = {
-					swap_ideas = {
-						remove_idea = LAS_continuing_instability_4
-						add_idea = LAS_continuing_instability_5
-					}
-			}
-			else_if = {
-					swap_ideas = {
-						remove_idea = LAS_continuing_instability_3
-						add_idea = LAS_continuing_instability_4
+						remove_idea = LAS_continuing_instability_1
+						add_idea = LAS_continuing_instability_2
 					}
 			}
 			else_if = {
@@ -386,8 +374,20 @@ focus_tree = {
 			}
 			else_if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_1
-						add_idea = LAS_continuing_instability_2
+						remove_idea = LAS_continuing_instability_3
+						add_idea = LAS_continuing_instability_4
+					}
+			}
+			else_if = {
+					swap_ideas = {
+						remove_idea = LAS_continuing_instability_4
+						add_idea = LAS_continuing_instability_5
+					}
+			}
+			else_if = {
+					swap_ideas = {
+						remove_idea = LAS_continuing_instability_5
+						add_idea = LAS_continuing_instability_6
 					}
 			}
 		}
@@ -405,22 +405,8 @@ focus_tree = {
 		completion_reward = {
 			if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_5
-						add_idea = LAS_continuing_instability_6
-					}
-					add_political_power = 25
-			}
-			else_if = {
-					swap_ideas = {
-						remove_idea = LAS_continuing_instability_4
-						add_idea = LAS_continuing_instability_5
-					}
-					add_political_power = 25
-			}
-			else_if = {
-					swap_ideas = {
-						remove_idea = LAS_continuing_instability_3
-						add_idea = LAS_continuing_instability_4
+						remove_idea = LAS_continuing_instability_1
+						add_idea = LAS_continuing_instability_2
 					}
 					add_political_power = 25
 			}
@@ -433,8 +419,22 @@ focus_tree = {
 			}
 			else_if = {
 					swap_ideas = {
-						remove_idea = LAS_continuing_instability_1
-						add_idea = LAS_continuing_instability_2
+						remove_idea = LAS_continuing_instability_3
+						add_idea = LAS_continuing_instability_4
+					}
+					add_political_power = 25
+			}
+			else_if = {
+					swap_ideas = {
+						remove_idea = LAS_continuing_instability_4
+						add_idea = LAS_continuing_instability_5
+					}
+					add_political_power = 25
+			}
+			else_if = {
+					swap_ideas = {
+						remove_idea = LAS_continuing_instability_5
+						add_idea = LAS_continuing_instability_6
 					}
 					add_political_power = 25
 			}
@@ -484,6 +484,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = LAS_lacking_government_1
 			add_ideas = LAS_destroyed_economy_1
+			add_ideas = LAS_ncr_mil_1_1
 			country_event = new_vegas.6
 			hidden_effect = {
 				set_party_name = {
@@ -525,8 +526,8 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				swap_ideas = {
-					remove_idea = LAS_lacking_government_4
-					add_idea = LAS_lacking_government_5
+					remove_idea = LAS_lacking_government_2
+					add_idea = LAS_lacking_government_3
 				}
 			}
 			else_if = {
@@ -537,8 +538,8 @@ focus_tree = {
 			}
 			else_if = {
 				swap_ideas = {
-					remove_idea = LAS_lacking_government_2
-					add_idea = LAS_lacking_government_3
+					remove_idea = LAS_lacking_government_4
+					add_idea = LAS_lacking_government_5
 				}
 			}
 			country_event = new_vegas.7
@@ -557,8 +558,8 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				swap_ideas = {
-					remove_idea = LAS_lacking_government_4
-					add_idea = LAS_lacking_government_5
+					remove_idea = LAS_lacking_government_2
+					add_idea = LAS_lacking_government_3
 				}
 			}
 			else_if = {
@@ -569,8 +570,8 @@ focus_tree = {
 			}
 			else_if = {
 				swap_ideas = {
-					remove_idea = LAS_lacking_government_2
-					add_idea = LAS_lacking_government_3
+					remove_idea = LAS_lacking_government_4
+					add_idea = LAS_lacking_government_5
 				}
 			}
 			country_event = new_vegas.8
@@ -589,8 +590,8 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				swap_ideas = {
-					remove_idea = LAS_lacking_government_4
-					add_idea = LAS_lacking_government_5
+					remove_idea = LAS_lacking_government_2
+					add_idea = LAS_lacking_government_3
 				}
 			}
 			else_if = {
@@ -601,8 +602,8 @@ focus_tree = {
 			}
 			else_if = {
 				swap_ideas = {
-					remove_idea = LAS_lacking_government_2
-					add_idea = LAS_lacking_government_3
+					remove_idea = LAS_lacking_government_4
+					add_idea = LAS_lacking_government_5
 				}
 			}
 			country_event = new_vegas.9
@@ -624,14 +625,14 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				swap_ideas = {
-					remove_idea = LAS_lacking_government_6
-					add_idea = LAS_lacking_government_7
+					remove_idea = LAS_lacking_government_5
+					add_idea = LAS_lacking_government_6
 				}
 			}
 			else_if = {
 				swap_ideas = {
-					remove_idea = LAS_lacking_government_5
-					add_idea = LAS_lacking_government_6
+					remove_idea = LAS_lacking_government_6
+					add_idea = LAS_lacking_government_7
 				}
 			}
 			country_event = new_vegas.10
@@ -653,14 +654,14 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				swap_ideas = {
-					remove_idea = LAS_lacking_government_6
-					add_idea = LAS_lacking_government_7
+					remove_idea = LAS_lacking_government_5
+					add_idea = LAS_lacking_government_6
 				}
 			}
 			else_if = {
 				swap_ideas = {
-					remove_idea = LAS_lacking_government_5
-					add_idea = LAS_lacking_government_6
+					remove_idea = LAS_lacking_government_6
+					add_idea = LAS_lacking_government_7
 				}
 			}
 			country_event = new_vegas.11
@@ -1021,6 +1022,22 @@ focus_tree = {
 				type = annex_everything
 				target = MON
 			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HOP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NAV
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MOL
+			}
 		}
 	}
 	focus = {
@@ -1258,7 +1275,7 @@ focus_tree = {
 			}
 			create_wargoal = {
 				type = annex_everything
-				target = FRA
+				target = PAC
 			}
 		}
 	}
@@ -1395,6 +1412,10 @@ focus_tree = {
 				limit = { is_core_of = NEW }
 				add_core_of = LAS
 			}
+			every_state = { 
+				limit = { is_core_of = PAC }
+				add_core_of = LAS
+			}
 		}
 	}
 	focus = {
@@ -1451,7 +1472,7 @@ focus_tree = {
 	focus = {
 		id = LAS_building_up_our_army
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_liberate_the_mojave
 		x = -4
 		y = 0
@@ -1459,13 +1480,16 @@ focus_tree = {
 			focus = LAS_governance_restored
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_ncr_mil_1_1
+				add_idea = LAS_ncr_mil_1_2
+			}
 		}
 	}
 	focus = {
 		id = LAS_arming_the_militias
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_building_up_our_army
 		x = -2
 		y = 1
@@ -1473,13 +1497,16 @@ focus_tree = {
 			focus = LAS_building_up_our_army
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_ncr_mil_1_2
+				add_idea = LAS_ncr_mil_1_3
+			}
 		}
 	}
 	focus = {
 		id = LAS_promoting_officers
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_building_up_our_army 
 		x = 0
 		y = 1
@@ -1487,13 +1514,21 @@ focus_tree = {
 			focus = LAS_building_up_our_army
 		}
 		completion_reward = {
-			
+			if = {
+				add_ideas = LAS_ncr_mil_2_1
+			}
+			else_if = {
+				swap_ideas = {
+					remove_idea = LAS_ncr_mil_2_1
+					add_idea = LAS_ncr_mil_2_2
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_new_military_structure
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_building_up_our_army 
 		x = 2
 		y = 1
@@ -1501,13 +1536,21 @@ focus_tree = {
 			focus = LAS_building_up_our_army
 		}
 		completion_reward = {
-			
+			if = {
+				add_ideas = LAS_ncr_mil_2_1
+			}
+			else_if = {
+				swap_ideas = {
+					remove_idea = LAS_ncr_mil_2_1
+					add_idea = LAS_ncr_mil_2_2
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_professionalizing_the_militias
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_promoting_officers
 		x = -1
 		y = 1
@@ -1518,13 +1561,16 @@ focus_tree = {
 			focus = LAS_promoting_officers
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_ncr_mil_1_3
+				add_idea = LAS_ncr_mil_1_4
+			}
 		}
 	}
 	focus = {
 		id = LAS_continue_expansion
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_promoting_officers 
 		x = 1
 		y = 1
@@ -1535,13 +1581,13 @@ focus_tree = {
 			focus = LAS_new_military_structure
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_ncr_mil_3_1
 		}
 	}
 	focus = {
 		id = LAS_a_true_army
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_promoting_officers
 		x = 0
 		y = 2
@@ -1552,13 +1598,20 @@ focus_tree = {
 			focus = LAS_professionalizing_the_militias
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_ncr_mil_1_4
+				add_idea = LAS_ncr_mil_combined_1
+			}
+			hidden_effect = {
+				remove_ideas = LAS_ncr_mil_2_2
+				remove_ideas = LAS_ncr_mil_3_1
+			}
 		}
 	}
 	focus = {
 		id = LAS_establish_a_miliary_research_department
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_a_true_army
 		x = -1
 		y = 1
@@ -1566,13 +1619,13 @@ focus_tree = {
 			focus = LAS_a_true_army
 		}
 		completion_reward = {
-			
+			add_research_slot = 1
 		}
 	}
 	focus = {
 		id = LAS_build_ranger_divisions
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_a_true_army
 		x = 1
 		y = 1
@@ -1586,7 +1639,7 @@ focus_tree = {
 	focus = {
 		id = LAS_patrolling_the_mojave_in_comfort
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_a_true_army
 		x = 0
 		y = 2
@@ -1597,13 +1650,16 @@ focus_tree = {
 			focus = LAS_build_ranger_divisions
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_ncr_mil_combined_1
+				add_idea = LAS_ncr_mil_combined_2
+			}
 		}
 	}
 	focus = {
 		id = LAS_rebuild_vegas_industry
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_for_the_republic
 		x = -8
 		y = 1
@@ -1620,7 +1676,7 @@ focus_tree = {
 	focus = {
 		id = LAS_get_casinos_running
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_rebuild_vegas_industry
 		x = -2
 		y = 1
@@ -1634,7 +1690,7 @@ focus_tree = {
 	focus = {
 		id = LAS_build_consumer_goods_factories
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_rebuild_vegas_industry
 		x = 0
 		y = 1
@@ -1648,7 +1704,7 @@ focus_tree = {
 	focus = {
 		id = LAS_expand_mining
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_rebuild_vegas_industry
 		x = 2
 		y = 1
@@ -1662,7 +1718,7 @@ focus_tree = {
 	focus = {
 		id = LAS_tourism_advertisements
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_build_consumer_goods_factories
 		x = -1
 		y = 1
@@ -1677,7 +1733,7 @@ focus_tree = {
 	focus = {
 		id = LAS_build_military_industry
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_build_consumer_goods_factories
 		x = 1
 		y = 1
@@ -1692,7 +1748,7 @@ focus_tree = {
 	focus = {
 		id = LAS_promote_immigration
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_tourism_advertisements
 		x = -1
 		y = 1
@@ -1706,7 +1762,7 @@ focus_tree = {
 	focus = {
 		id = LAS_expand_food_production
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_tourism_advertisements
 		x = 1
 		y = 1
@@ -1720,7 +1776,7 @@ focus_tree = {
 	focus = {
 		id = LAS_prepare_for_war
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_build_military_industry
 		x = 1
 		y = 1
@@ -1734,7 +1790,7 @@ focus_tree = {
 	focus = {
 		id = LAS_expand_our_workforce
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_tourism_advertisements
 		x = 0
 		y = 2
@@ -1751,7 +1807,7 @@ focus_tree = {
 	focus = {
 		id = LAS_a_new_industrial_revolution
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_build_military_industry
 		x = 0
 		y = 2
@@ -1768,7 +1824,7 @@ focus_tree = {
 	focus = {
 		id = LAS_industrial_research
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_expand_our_workforce
 		x = -1
 		y = 1
@@ -1782,7 +1838,7 @@ focus_tree = {
 	focus = {
 		id = LAS_expand_production_effciency
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_expand_our_workforce
 		x = 1
 		y = 1
@@ -1799,7 +1855,7 @@ focus_tree = {
 	focus = {
 		id = LAS_promote_unions
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_a_new_industrial_revolution
 		x = 1
 		y = 1
@@ -1813,7 +1869,7 @@ focus_tree = {
 	focus = {
 		id = LAS_a_restored_industry
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_expand_production_effciency
 		x = 0
 		y = 1
@@ -1833,7 +1889,7 @@ focus_tree = {
 	focus = {
 		id = LAS_the_state_of_our_economy
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_for_the_republic
 		x = 6
 		y = 1
@@ -1844,13 +1900,16 @@ focus_tree = {
 			has_completed_focus = LAS_governance_restored
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_destroyed_economy_1
+				add_idea = LAS_destroyed_economy_2
+			}
 		}
 	}
 	focus = {
 		id = LAS_raise_casino_taxes
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_the_state_of_our_economy
 		x = -2
 		y = 1
@@ -1858,13 +1917,30 @@ focus_tree = {
 			focus = LAS_the_state_of_our_economy
 		}
 		completion_reward = {
-			
+			if = {
+				swap_ideas = {
+					remove_idea = LAS_destroyed_economy_2
+					add_idea = LAS_destroyed_economy_3
+				}
+			}
+			else_if = {
+				swap_ideas = {
+					remove_idea = LAS_destroyed_economy_3
+					add_idea = LAS_destroyed_economy_4
+				}
+			}
+			else_if = {
+				swap_ideas = {
+					remove_idea = LAS_destroyed_economy_4
+					add_idea = LAS_destroyed_economy_5
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_seize_mob_assets
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_the_state_of_our_economy
 		x = 0
 		y = 1
@@ -1872,13 +1948,30 @@ focus_tree = {
 			focus = LAS_the_state_of_our_economy
 		}
 		completion_reward = {
-			
+			if = {
+				swap_ideas = {
+					remove_idea = LAS_destroyed_economy_2
+					add_idea = LAS_destroyed_economy_3
+				}
+			}
+			else_if = {
+				swap_ideas = {
+					remove_idea = LAS_destroyed_economy_3
+					add_idea = LAS_destroyed_economy_4
+				}
+			}
+			else_if = {
+				swap_ideas = {
+					remove_idea = LAS_destroyed_economy_4
+					add_idea = LAS_destroyed_economy_5
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_print_more_money
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_the_state_of_our_economy
 		x = 2
 		y = 1
@@ -1886,13 +1979,30 @@ focus_tree = {
 			focus = LAS_the_state_of_our_economy
 		}
 		completion_reward = {
-			
+			if = {
+				swap_ideas = {
+					remove_idea = LAS_destroyed_economy_2
+					add_idea = LAS_destroyed_economy_3
+				}
+			}
+			else_if = {
+				swap_ideas = {
+					remove_idea = LAS_destroyed_economy_3
+					add_idea = LAS_destroyed_economy_4
+				}
+			}
+			else_if = {
+				swap_ideas = {
+					remove_idea = LAS_destroyed_economy_4
+					add_idea = LAS_destroyed_economy_5
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_raise_corporate_taxes
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_seize_mob_assets
 		x = -1
 		y = 1
@@ -1903,13 +2013,24 @@ focus_tree = {
 			focus = LAS_seize_mob_assets
 		}
 		completion_reward = {
-			
+			if = {
+					swap_ideas = {
+						remove_idea = LAS_destroyed_economy_5
+						add_idea = LAS_restored_economy_1
+					}
+			}
+			else_if = {
+					swap_ideas = {
+						remove_idea = LAS_restored_economy_1
+						add_idea = LAS_restored_economy_2
+					}
+			}
 		}
 	}
 	focus = {
 		id = LAS_privatize_unessasary_assets
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_seize_mob_assets 
 		x = 1
 		y = 1
@@ -1920,27 +2041,52 @@ focus_tree = {
 			focus = LAS_print_more_money
 		}
 		completion_reward = {
-			
+			if = {
+					swap_ideas = {
+						remove_idea = LAS_destroyed_economy_5
+						add_idea = LAS_restored_economy_1
+					}
+			}
+			else_if = {
+					swap_ideas = {
+						remove_idea = LAS_restored_economy_1
+						add_idea = LAS_restored_economy_2
+					}
+			}
 		}
 	}
 	focus = {
 		id = LAS_raise_income_taxes
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_raise_corporate_taxes
 		x = -1
 		y = 1
 		prerequisite = {
 			focus = LAS_raise_corporate_taxes
 		}
+		prerequisite = {
+			focus = LAS_privatize_unessasary_assets
+		}
 		completion_reward = {
-			
+			if = {
+					swap_ideas = {
+						remove_idea = LAS_restored_economy_2
+						add_idea = LAS_restored_economy_3
+					}
+			}
+			else_if = {
+					swap_ideas = {
+						remove_idea = LAS_restored_economy_3
+						add_idea = LAS_restored_economy_4
+					}
+			}
 		}
 	}
 	focus = {
 		id = LAS_wealth_taxes
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_raise_corporate_taxes 
 		x = 1
 		y = 1
@@ -1951,13 +2097,24 @@ focus_tree = {
 			focus = LAS_privatize_unessasary_assets
 		}
 		completion_reward = {
-			
+			if = {
+				swap_ideas = {
+					remove_idea = LAS_restored_economy_2
+					add_idea = LAS_restored_economy_3
+				}
+			}
+			else_if = {
+				swap_ideas = {
+					remove_idea = LAS_restored_economy_3
+					add_idea = LAS_restored_economy_4
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_tax_breaks_for_the_lower_class
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_raise_income_taxes
 		x = 1
 		y = 1
@@ -1968,13 +2125,16 @@ focus_tree = {
 			focus = LAS_wealth_taxes
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+					remove_idea = LAS_restored_economy_4
+					add_idea = LAS_restored_economy_5
+				}
 		}
 	}
 	focus = {
 		id = LAS_war_bonds
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_privatize_unessasary_assets
 		x = 1
 		y = 1
@@ -1985,13 +2145,13 @@ focus_tree = {
 			has_war = yes
 		}
 		completion_reward = {
-			
+			#add decision add
 		}
 	}
 	focus = {
 		id = LAS_war_taxes
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_war_bonds 
 		x = -1
 		y = 1
@@ -2002,13 +2162,13 @@ focus_tree = {
 			has_war = yes
 		}
 		completion_reward = {
-			
+			#add decision add
 		}
 	}
 	focus = {
 		id = LAS_a_thriving_economy
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_tax_breaks_for_the_lower_class 
 		x = 1
 		y = 1
@@ -2019,7 +2179,10 @@ focus_tree = {
 			focus = LAS_war_taxes
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+					remove_idea = LAS_restored_economy_5
+					add_idea = LAS_restored_economy_6
+				}
 		}
 	}
 	#Independent Path#

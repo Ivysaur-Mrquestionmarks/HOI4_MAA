@@ -826,8 +826,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		original_tag = LAS
-		has_completed_focus = LAS_fear_and_loathing
-		days = 35-70
+		date < 2021.11.13
 		}
 	fire_only_once = yes
 	option = { 
@@ -836,7 +835,6 @@ country_event = {
 			factor = 5
 		}
 		country_event = viva_las_vegas.23
-		days = 30
 	}
 	option = {
 		name = viva_las_vegas.22.b
@@ -861,6 +859,13 @@ country_event = {
 			factor = 33
 		}
 		set_country_flag = LAS_courier_wallis_chosen
+		hidden_effect = {
+			set_global_flag = {
+				flag = LAS_wynn_coup
+				days = 30
+				value = 1
+			}
+		}
 	}
 	option = {
 		name = viva_las_vegas.23.b
@@ -868,6 +873,13 @@ country_event = {
 			factor = 33
 		}
 		set_country_flag = LAS_courier_brown_chosen
+		hidden_effect = {
+			set_global_flag = {
+				flag = LAS_wynn_coup
+				days = 30
+				value = 1
+			}
+		}
 	}
 	option = {
 		name = viva_las_vegas.23.c
@@ -875,6 +887,13 @@ country_event = {
 			factor = 33
 		}
 		set_country_flag = LAS_courier_spisak_chosen
+		hidden_effect = {
+			set_global_flag = {
+				flag = LAS_wynn_coup
+				days = 30
+				value = 1
+			}
+		}
 	}
 }
 country_event = {
@@ -885,19 +904,28 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		original_tag = LAS
-		
+		has_global_flag = {
+			flag = LAS_wynn_coup
+			days = 14
+			value = 1
 		}
+	}
 	fire_only_once = yes
 	option = { 
 		name = viva_las_vegas.24.a
 		ai_chance = {
 			factor = 90
 		}
+		country_event = viva_las_vegas.25
 	}
 	option = {
 		name = viva_las_vegas.24.b
 		ai_chance = {
 			factor = 10
+		}
+		load_focus_tree = new_vegas
+		hidden_effect = {
+			#remove all spirits - will have to consult on how to do mormon war
 		}
 	}
 }
@@ -917,5 +945,6 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		add_stability = 0.05
 	}
 }

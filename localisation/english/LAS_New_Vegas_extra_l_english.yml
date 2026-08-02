@@ -2,6 +2,26 @@
  
  #Events
  
+ viva_las_vegas.22.t:0 "A Celebration in Time of Sorrow"
+ viva_las_vegas.22.d:0 "Today is November 13th, also known by some as New Vegas Day, and its the start of the 3-day New Vegas Day celebrations in Goodsprings Nevada. Most would think the country falling apart would put a damper on the festivities, however its the biggest one to date. Thousands of Fallout Fans have decended upon the little town to celebrate like nothing is wrong, even celebrites who have settled in Vegas to avoid the government in California with some minor connections to Fallout have shown up. This has caught the attention of Steve Wynn, founder of Wynn Casinos and a man who likes power. To most hes old and on his way out, sidelined by the bigger fish in the Vegas pond, and they're right. This displeases him. If there was just a way to get power over the city Wynn could show them all and maybe even make them pay. He looks at the news on his IPad and sees an article about New Vegas Day and becomes interested. After a few safari searches a plan begins to develop. Fans of a game series about shooting your enemies and doing quests would love if the 'Real Life Mr.House' gave them a quest to overthrow the government, wouldn't they? Then again they are probably just a bunch of weak nerds anyway, and he'd have to supply them. After a couple hours of further research and pondering Wynn decides to:"
+ viva_las_vegas.22.a:0 "Might as well try my luck"
+ viva_las_vegas.22.b:0 "Nah, it wouldn't work"
+ 
+ viva_las_vegas.23.t:0 "Time to Wynn the Jackpot"
+ viva_las_vegas.23.d:0 "When Wynn's message was played to the crowd the reaction was initially mixed, but a voice of support from amoung the crowd rang out. The voice was of Sean Wallis, dressed as a NCR Trooper, he said 'That was cringe, but hes got a point that the government needs to go!' Some cheers followed, but it looked as if his idea was not the most popular. He continued, 'What does everyone think of us? Do they see our hard work on cosplay, our dedication to what we love, or do they see a bunch of nerds! Useless Nerds! This is our chance to show the world who we really are!' This time cheers rang out, but there were still a lot of skeptics. 'Hes right, you know' said another voice, one everyone recognised, the voice of Vulpes Inculta. Or as he goes by in real life, Jason Spisak. 'I am ready for a change of pace in life, why not?' Then a few more, less notable, individuals voiced their support for the plan. With the crowd convinced one man said they need a 'courier' to lead them, with everyone quickly agreeing. Wallis, who clearly wanted to lead the operation quickly won over the NCR fans behind his banner. This was opposed by the Legion Fans who acclaimed Spisak as their leader. Seeing conflict on the horizon a group of fans attempted to field a 'Unity Canidate', famous actor Clancy Brown. Brown only was there because he was bored with jobs being sparce with the situation in America and thought that New Vegas Day would be fun, and he did lend his voiced to Paladin Rhombus in Fallout 1, giving him acclaim with the more nerdy Brotherhood Fans. They did not ask him first. At an impasse the poor Wynn Employee sent to deliver the message was given the choice of leadership. He picked:"
+ viva_las_vegas.23.a:0 "The Fan - Sean Wallis and his NCR Faction"
+ viva_las_vegas.23.b:0 "The Compromise - Clancy Brown and the Unity Faction"
+ viva_las_vegas.23.c:0 "The Voice Actor - Jason Spisak and his Legion Faction"
+ 
+ viva_las_vegas.24.t:0 "Las Vegas in Chaos"
+ viva_las_vegas.24.d:0 "WHAT THE FUCK IS GOING ON! *gunshot* *gunshot* gunshot* Im hit, Im hit, who the fuck are these people!? Hzzt - All Units to City Hall - Armed Militia is Approaching - Hzzt Ahhh, fuck *gunshot* Omega Squadron, Advance! Legionaires, Fight! Ad Victorium! The fight has consolidated around City Hall as night falls, and the next morning it can easily be seen that:"
+ viva_las_vegas.24.a:0 "The Shoddy Militia is Destroyed"
+ viva_las_vegas.24.b:0 "A New Day Dawns in Vegas"
+ 
+ viva_las_vegas.25.t:0 "The Aftermath"
+ viva_las_vegas.25.d:0 "Vegas has been rocked, but it still stands. Police are rounding up survivors trying to hide from punishment and, most importantly, Wynn himself. The coward was still just in his house, sulking. We will rebuild from his foolish gamble."
+ viva_las_vegas.25.a:0 "Wynn has gone Bust"
+ 
  new_vegas.1.t:0 "Declaration of New Vegas"
  new_vegas.1.d:0 "Wynn declares New Vegas with the Courier (keep courier ambiguous through event 5 so i dont have to code 3 different events for the entire starting tree thx)"
  new_vegas.1.a:0 "Viva New Vegas"
@@ -172,8 +192,29 @@
  LAS_oasis_secured:0 "Our Oasis Secured"
  LAS_oasis_secured_desc:0 "With our diligent planning we have secured our oasis from those who wish harm upon her"
  
- LAS_destroyed_economy_1:0 "Destroyed Economy"
+ LAS_destroyed_economy_1:0 "Damaged Economy"
  LAS_destroyed_economy_1_desc:0 "Coups, War, and Sociatal Collapse is not good for the economy. A lot of work is needed to rebuild our economy"
+ LAS_destroyed_economy_2:0 "Damaged Economy"
+ LAS_destroyed_economy_2_desc:0 "Coups, War, and Sociatal Collapse is not good for the economy. A lot of work is needed to rebuild our economy"
+ LAS_destroyed_economy_3:0 "Damaged Economy"
+ LAS_destroyed_economy_3_desc:0 "Coups, War, and Sociatal Collapse is not good for the economy. A lot of work is needed to rebuild our economy"
+ LAS_destroyed_economy_4:0 "Damaged Economy"
+ LAS_destroyed_economy_4_desc:0 "Coups, War, and Sociatal Collapse is not good for the economy, however we are working to rebuild our economy"
+ LAS_destroyed_economy_5:0 "Damaged Economy"
+ LAS_destroyed_economy_5_desc:0 "Coups, War, and Sociatal Collapse is not good for the economy, however we are working to rebuild our economy"
+ 
+ LAS_restored_economy_1:0 "Rebuilding Economy"
+ LAS_restored_economy_1_desc:0 "Our economy is recovering well and we are soon on our way to full economic recovery"
+ LAS_restored_economy_2:0 "Rebuilding Economy"
+ LAS_restored_economy_2_desc:0 "Our economy is recovering well and we are soon on our way to full economic recovery"
+ LAS_restored_economy_3:0 "Rebuilding Economy"
+ LAS_restored_economy_3_desc:0 "Our economy is recovering well and we are soon on our way to full economic recovery"
+ LAS_restored_economy_4:0 "Rebuilding Economy"
+ LAS_restored_economy_4_desc:0 "Our economy is recovering well and we are soon on our way to full economic recovery"
+ LAS_restored_economy_5:0 "Rebuilding Economy"
+ LAS_restored_economy_5_desc:0 "Our economy is recovering well and we are soon on our way to full economic recovery"
+ LAS_restored_economy_6:0 "Booming Economy"
+ LAS_restored_economy_6_desc:0 "Through hard work and grit we have turned a shattered economy into a booming one"
  
  LAS_new_vegas_militia_1:0 "New Vegas Militia"
  LAS_new_vegas_militia_1_desc:0 "While our militias have won us a great many battles, they are still far from a proper military. This needs to be remedied."
@@ -186,6 +227,33 @@
  
  LAS_legalized_gambling:0 "Legalized Gambling"
  LAS_legalized_gambling_desc:0 "With the legalization of gambling tax revenues are through the roof, but so is addiction"
+
+ LAS_ncr_mil_1_1:0 "NVR Militia"
+ LAS_ncr_mil_1_1_desc:0 "Our Militias are disorganized and incapable of fighting advanced forces"
+ 
+ LAS_ncr_mil_1_2:0 "NVR Militia"
+ LAS_ncr_mil_1_2_desc:0 "Our Militias are disorganized and incapable of fighting advanced forces"
+ 
+ LAS_ncr_mil_1_3:0 "NVR Militia"
+ LAS_ncr_mil_1_3_desc:0 "Our Militias are disorganized and incapable of fighting advanced forces, but work is continuing to improve them."
+ 
+ LAS_ncr_mil_1_4:0 "NVR Militia"
+ LAS_ncr_mil_1_4_desc:0 "While partilily professonalized the militias still are subpar compared to regular armies"
+ 
+ LAS_ncr_mil_2_1:0 "NVR Officers"
+ LAS_ncr_mil_2_1_desc:0 "Our professional officer corps is the envy of the world"
+ 
+ LAS_ncr_mil_2_2:0 "NVR Officers"
+ LAS_ncr_mil_2_2_desc:0 "Our professional officer corps is the envy of the world"
+ 
+ LAS_ncr_mil_3_1:0 "NVR Training"
+ LAS_ncr_mil_3_1_desc:0 "Our efficent training programs are the envy of the world"
+ 
+ LAS_ncr_mil_combined_1:0 "NVR Army"
+ LAS_ncr_mil_combined_1_desc:0 "Our Reformed Forces are the Envy of the World"
+ 
+ LAS_ncr_mil_combined_2:0 "NVR Army"
+ LAS_ncr_mil_combined_2_desc:0 "Our Reformed Forces are the Envy of the World"
  
  #Country Flags
  
