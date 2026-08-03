@@ -650,7 +650,7 @@ country_event = {
 			every_state = { 
 				limit = { is_core_of = LIB }
 				add_core_of = LAS
-			
+			}
 			every_state = { 
 				limit = { is_core_of = HAM }
 				add_core_of = LAS
@@ -728,10 +728,10 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		 set_cosmetic_tag = LAS_NCR_greater_new_vegas
-		 			every_state = { 
-				limit = { is_core_of = PRA }
-				add_core_of = LAS
+			set_cosmetic_tag = LAS_NCR_greater_new_vegas
+		 	every_state = { 
+			limit = { is_core_of = PRA }
+			add_core_of = LAS
 			}
 			every_state = { 
 				limit = { is_core_of = ORO }

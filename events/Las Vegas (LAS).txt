@@ -856,12 +856,9 @@ country_event = {
 			factor = 33
 		}
 		set_country_flag = LAS_courier_wallis_chosen
-		hidden_effect = {
-			set_global_flag = {
-				flag = LAS_wynn_coup
-				days = 30
-				value = 1
-			}
+		country_event = {
+			id = viva_las_vegas.24
+			days = 14
 		}
 	}
 	option = {
@@ -870,12 +867,9 @@ country_event = {
 			factor = 33
 		}
 		set_country_flag = LAS_courier_brown_chosen
-		hidden_effect = {
-			set_global_flag = {
-				flag = LAS_wynn_coup
-				days = 30
-				value = 1
-			}
+		country_event = {
+			id = viva_las_vegas.24
+			days = 14
 		}
 	}
 	option = {
@@ -884,12 +878,9 @@ country_event = {
 			factor = 33
 		}
 		set_country_flag = LAS_courier_spisak_chosen
-		hidden_effect = {
-			set_global_flag = {
-				flag = LAS_wynn_coup
-				days = 30
-				value = 1
-			}
+		country_event = {
+			id = viva_las_vegas.24
+			days = 14
 		}
 	}
 }
@@ -899,14 +890,6 @@ country_event = {
 	desc = viva_las_vegas.24.d
 	picture = 
 	is_triggered_only = yes
-	trigger = {
-		original_tag = LAS
-		has_global_flag = {
-			flag = LAS_wynn_coup
-			days = 14
-			value = 1
-		}
-	}
 	fire_only_once = yes
 	option = { 
 		name = viva_las_vegas.24.a

@@ -108,7 +108,7 @@
  LAS_election_ncr_desc:0 "At long last, we can fulfill our democratic promises to the people of New Vegas."
 
  LAS_question_non_aggro_pact_pra:0 "Non-Aggression Pact with the [PRA.GetName]?"
- LAS_question_non_aggro_pact_pra_desc:0 "To our west, the communist of the [PRA.GetName] are clearly our greatest threat and could probably march into New Vegas with little we could do to stop them.By ensuring a mutual non aggression treaty, we can focus on our true threats without constantly worrying about our backside being attacked, but it might still prove an unpopular move with those who wish to reclaim California itself first and foremost."
+ LAS_question_non_aggro_pact_pra_desc:0 "To our west, the [PRA.GetName] are clearly our greatest threat and could probably march into New Vegas with little we could do to stop them. By ensuring a mutual non aggression treaty, we can focus on our true threats without constantly worrying about our backside being attacked, but it might still prove an unpopular move with those who wish to reclaim California itself first and foremost."
 
  LAS_victory_new_vegas_party:0 "Victory of the New Vegas Party"
  LAS_victory_new_vegas_party_desc:0 "The New Vegas Party has won the election! Running a campaign based on reclaiming the lands of the Republic and strengthening our nation. With their victory at the ballot box, now comes the hard part, achieving victory in the battlefield."
@@ -135,7 +135,7 @@
  LAS_retake_california_desc:0 "At long last, we are ready to go back to our true home, California. The battle will be harsh, but we will inevitably prevail. From New Vegas to San Francisco, we are the true heirs of the New California Republic!"
 
  LAS_capture_the_frontier:0 "Capturing the Frontier"
- LAS_capture_the_frontier_desc:0 "Some things are better left unsaid."
+ LAS_capture_the_frontier_desc:0 "Cascadia, or more specificly Portland has lived in infamy in our community or many years now. Its reputation will be improved by our liberation."
 
  LAS_the_west_saved:0 "The West is Saved"
  LAS_the_west_saved_desc:0 "From Bellingham to San Diego, and from San Francisco to Salt Lake City, the west is united. The flag of our Republic stands tall and proud, for it has achieved what many thought a fantasy. Now however, we must face what our future holds now that our immediate goals have been achieved."
@@ -149,14 +149,14 @@
  LAS_a_new_constitution:0 "A New Constitution"
  LAS_a_new_constitution_desc:0 "If we hope to one day unite the rest of the nation under our banners, we must undertake great reforms in our government. Our current constitution will have to be entirely replaced with a new, more functional one."
 
- LAS_declare_ourselves_new_america:0 "Declaring ourselves a New America"
- LAS_declare_ourselves_new_america_desc:0 "We are no longer just the [LAS.get.name], for we don’t represent just the people of the west. Instead, we will declare ourselves as the New American Republic, a new start for the whole country, free of the sins and mistakes of the past United States."
+ LAS_declare_ourselves_new_america:0 "Declaration of the New American Republic"
+ LAS_declare_ourselves_new_america_desc:0 "We are no longer just the [LAS.GetName], for we don’t represent just the people of the west. Instead, we will declare ourselves as the New American Republic, a new start for the whole country, free of the sins and mistakes of the past United States."
 
  LAS_march_east:0 "Marching East"
  LAS_march_east_desc:0 "We are ready to commence our reunification plan. The first obstacle in our way east are the statelets and claimants of the Great Plains and Texas. We shall march and drive over their great open grounds and fields and use them to fuel our own advance further east."
 
  LAS_sic_semper_tyrannis:0 "Sic Semper Tyrannis"
- LAS_sic_semper_tyrannis_desc:0 "In Washington, the tyrants of old America lay atop their marble palaces. Their rot was what led to the fall of the nation in the first place. To begin again, we must topple them from their high towers and establish ourselves as the true America!"
+ LAS_sic_semper_tyrannis_desc:0 "In Washington, the tyrants of old America lounge within their marble palaces. Their rot was what led to the fall of the nation in the first place. To begin again, we must topple them from their high towers and establish ourselves as the true America!"
 
  LAS_reunite_america:0 "Reuniting America"
  LAS_reunite_america_desc:0 "There remain a lot of warlords and rival governments all across the nation. To truly bring peace and liberty to the union we must take down these groups. Any American living under oppression brings great grief to our whole nation."
@@ -165,13 +165,13 @@
  LAS_remove_symbols_of_opression_desc:0 "There are many great symbols glorifying oppression throughout our lands. From Confederate statues to Trump’s towers, we must remove and reutilize these sites and materials for our own goals and motives."
  
  LAS_expand_the_senate:0 "Expanding our Senate"
- LAS_expand_the_senate_desc:0 "Our current Senate, established years ago, is far, far too small to represent the people of America. Using the old infrastructure of the Capitol building, we’ll be able to vastly expand the number of Senators representing our people."
+ LAS_expand_the_senate_desc:0 "Our current Senate, established years ago, is far, far too small to represent the people of America. By building a new capitol in New Vegas, we’ll be able to vastly expand the number of Senators representing our people and give representation to our new territories."
 
- LAS_make_new_currency:0 "Making a new Currency"
+ LAS_make_new_currency:0 "Making a New Currency"
  LAS_make_new_currency_desc:0 "To further distance ourselves from the failed United States, we will replace the US Dollar of old with a New American Dollar. Our new currency will also bring us a fresh start in other matters of the economy."
  
- LAS_follow_dharma:0 "Follow the way of Dharma"
- LAS_follow_dharma_desc:0 "Dharma, while unclear if a mythical figure or a philosopher within the world of Fallout, was established as a great inspiration to the founders of the New California Republic. Some of the moral teachings of Dharma are very much applicable to reality, as found in hinduism and buddhism. We will encourage ways of morality and pacifism in our weary and traumatized people."
+ LAS_follow_dharma:0 "Follow the Way of Dharma"
+ LAS_follow_dharma_desc:0 "Dharma, while unclear if a mythical figure or a philosopher within the world of Fallout, was established as a great inspiration to the founders of the New California Republic. Some of the moral teachings of Dharma are very much applicable to reality, as found in hinduism and buddhism. Making this religion a reality will encourage morality and pacifism in our weary and traumatized people."
 
  LAS_rebuild_america:0 "Rebuild America"
  LAS_rebuild_america_desc:0 "With the whole of America under our rule, we can now fully work towards rebuilding our old homes and cities. The American people, industrious as ever, will surely face this challenge head on like all others before it."
@@ -180,21 +180,21 @@
  LAS_remove_term_limits_desc:0 "Why would a great ruler be forced to step down simply because they’ve been ruling for a long time? Term limits are an inefficient and undemocratic regulation of our political system we shall do away with. Why change something when it works?"
 
  LAS_legalize_all_gambling:0 "Legalize all Gambling"
- LAS_legalize_all_gambling_desc:0 "We shouldn’t forget our humble origins from the city of Las Vegas. Gambling, while controversial as always, did become an important part of our economy in those early years, and it can still remain so. If only we do away with these pesky gaming regulations, profits will come rolling in!"
+ LAS_legalize_all_gambling_desc:0 "We shouldn’t forget our humble origins from the City of Las Vegas. Gambling, while controversial as always, did become an important part of our economy in those early years, and it can still remain so. If only we do away with these pesky gaming regulations, profits will come rolling in!"
 
  LAS_the_new_american_republic:0 "The New American Republic"
- LAS_the_new_american_republic_desc:0 "The United States of America, with all its crimes and mistakes, has been swept away by history. In its place, the New American Republic rises. A nation that emerged from the Wastelands of the west to bring freedom and democracy to the entire country, a nation fit for a wholly new world."
+ LAS_the_new_american_republic_desc:0 "The United States of America, with all its crimes and mistakes, has been swept away by history. In its place, the New American Republic rises. A nation that emerged from the Wastelands of the west to bring freedom and egalitarian democracy to the entire country, a nation fit for a wholly new world."
 
  LAS_building_up_our_army:0 "Building up our Army"
- LAS_building_up_our_army_desc:0 "Currently, our armed forces consist of ragtag militias, militarized police officers, and a few mercenaries and veterans to round it up. If we are to ensure the survival and prosperity of our nation, we must work to build a new army from the ground up."
+ LAS_building_up_our_army_desc:0 "Currently, our armed forces consist of ragtag militias, militarized police officers, and a few veterans to round it up. If we are to ensure the survival and prosperity of our nation, we must work to build a new army from the ground up."
 
  LAS_arming_the_militias:0 "Arming the Militias"
  LAS_arming_the_militias_desc:0 "Our current militias, while having some experience in tactics and small arms, are severely outgunned by our neighbors armed forces. Equipping and training even our most recent recruits with advanced weaponry will give us an edge in future conflicts."
 
- LAS_promoting_officers:0 "Promoting our Officers"
- LAS_promoting_officers_desc:0 "Our current officer corp, while capable, simply lacks much of the experience and rank needed to effectively command our new armed forces. By making changes across our command structure we can alleviate the pressure on our officers and further professionalize our young army."
+ LAS_promoting_officers:0 "Promote Officers"
+ LAS_promoting_officers_desc:0 "Our current officer corps, while capable, simply lacks much of the experience and rank needed to effectively command our new armed forces. By making changes across our command structure we can alleviate the pressure on our officers and further professionalize our young army."
 
- LAS_new_military_structure:0 "Build a new Military Structure"
+ LAS_new_military_structure:0 "Establishing a New Military Structure"
  LAS_new_military_structure_desc:0 "Our existing military apparatus is, plain and simple, outdated. As our neighbors' armies expand and develop, we must not only match but also surpass them if we are to have any hopes of victory."
 
  LAS_professionalizing_the_militias:0 "Professionalizing the Militias"
@@ -215,42 +215,72 @@
  LAS_patrolling_the_mojave_in_comfort:0 "Patrolling the Mojave in Comfort"
  LAS_patrolling_the_mojave_in_comfort_desc:0 "Patrolling the Mojave sure makes you wish for, I mean, not much really, all our soldiers are well equipped and supplied. Maybe a working coffee machine would be nice."
 
- LAS_the_state_of_our_economy:0 "The State of our Economy"
+ LAS_the_state_of_our_economy:0 "The State of Our Economy"
  LAS_the_state_of_our_economy_desc:0 "Frankly, our economy is ashes. With the power struggle, the civil war and the regular economic issues Vegas had even before the civil war. We’ll really have to get to work on fixing it before we can focus on anything else."
 
- LAS_raise_casino_taxes:0 "Raise the Casinos taxes"
- LAS_raise_casino_taxes_desc:0 "Despite it all, the Casinos remain profitable through it all. They have much more than they need, and we have much less than we need. It’s only fair that they contribute their fair amount."
+ LAS_raise_casino_taxes:0 "Raise the Casino Taxes"
+ LAS_raise_casino_taxes_desc:0 "Despite it all, the Casinos remain profitable. They have much more than they need, and we have much less than we need. It’s only fair that they contribute their fair amount."
 
- LAS_seize_mob_assets:0 "Seize the Mobs assets"
+ LAS_seize_mob_assets:0 "Seize the Mob Assets"
  LAS_seize_mob_assets_desc:0 "The infamous Vegas Mob. Vital in establishing a lot of the city itself back in the 40s and 50s, but their time has at last run out. Their influence and support for Wynn has put them directly at odds with our government, and their failure in the power struggle wasted a lot of their remaining power. Now we can simply mop up what remains and seize their resources for ourselves."
 
- LAS_print_more_money:0 "Print more Money"
+ LAS_print_more_money:0 "Print More Money"
  LAS_print_more_money_desc:0 "While inflation is something we’d generally rather avoid, there are times where it can be very useful to our economy. Increasing our money supply by printing more money to shore up our liquid assets is seen by most of our economists as a wise move at this time. "
 
- LAS_raise_corporate_taxes:0 "Raise the corporate Taxes"
+ LAS_raise_corporate_taxes:0 "Raise the Corporate Tax"
  LAS_raise_corporate_taxes_desc:0 "Many corporations took refuge in our city after the outbreak of the civil war, seeing us as an oasis of stability in the region. These corporations brought with them a great boon to our economy, but we can still do more by increasing our corporate taxes. After all, it’s not like they have anywhere else to go."
 
- LAS_privatize_unessasary_assets:0 "Privatizing unnecessary Assets"
- LAS_privatize_unessasary_assets_desc:0 "The pre-war government of Las Vegas and other nearby municipalities ran many institutions and sites throughout the area. Unfortunately, many of these sites serve no immediate function, and maintaining them running is eating up a large amount of the budget. Auctioning the more unimportant sites both reduces costs and earns us a good amount of money."
+ LAS_privatize_unessasary_assets:0 "Privatizing Unnecessary Assets"
+ LAS_privatize_unessasary_assets_desc:0 "We have seized a large number of assets from Casinos and Mob Warehouses to Factories and Infrastructure. Unfortunately, many of these sites serve no immediate function to us, and maintaining them running is eating up a large amount of the budget. Auctioning the more unimportant sites both reduces costs and earns us a good amount of money."
 
- LAS_raise_income_taxes:0 "Raise our Income Taxes"
+ LAS_raise_income_taxes:0 "Raise Income Taxes"
  LAS_raise_income_taxes_desc:0 "To increase our income, there is no simpler way than to raise taxes. Sure, increasing income taxes will probably be an unpopular move, but people will understand its necessity soon enough."
 
- LAS_wealth_taxes:0 "Establishing Wealth Taxes"
+ LAS_wealth_taxes:0 "Establishing a Wealth Tax"
  LAS_wealth_taxes_desc:0 "The wealthy population of our city, many of them refugees from their home states, has long remained untouched by taxes, keeping most of their wealth in assets rather than cash. This loophole has stayed open for long enough, and it’s high time they paid their fair share."
 
- LAS_tax_breaks_for_the_lower_class:0 "Tax breaks for the Lower Class"
+ LAS_tax_breaks_for_the_lower_class:0 "Tax Breaks for the Lower Class"
  LAS_tax_breaks_for_the_lower_class_desc:0 "With our recent rise in income, we have the financial stability to lower taxes for the lower brackets of earners in the city. This will prove widely popular and beneficial for the economy, as the more money they have the more they can spend."
 
  LAS_war_bonds:0 "Buy War Bonds!"
  LAS_war_bonds_desc:0 "With the nation in a state of war, we will start issuing war bonds and selling them to the public. This will help finance the costs of war while not raising taxes unpopularly. Do your part! Buy Vegan Victory Bonds!"
 
- LAS_war_taxes:0 "Establishing war taxes"
+ LAS_war_taxes:0 "Establishing War Taxes"
  LAS_war_taxes_desc:0 "To ensure our government can finance its military machine, we will raise temporary war taxes on the populace. While unpopular, these will help ensure victory on the battlefield. Surely people can’t be too opposed to that right?"
 
  LAS_a_thriving_economy:0 "A Thriving Economy"
  LAS_a_thriving_economy_desc:0 "Our economy is not only doing as well as before the war, but it has even surpassed it. More businesses are opening up, more people are employed and out of poverty, and more money is coming into the country. Not bad for a bunch of gamers."
 
+ LAS_rebuild_vegas_industry:0 "Rebuild Vegas' Industry"
+ LAS_rebuild_vegas_industry_desc:0 "Vegas has never been an indusrial city, and America's deindustrialization killed a lot that it did have. It is imperative we begin to rebuild our industrial base."
+ 
+ LAS_get_casinos_running:0 "Get the Casinos Running"
+ LAS_get_casinos_running_desc:0 "The Casinos were seized following our coup against Wynn, leaving them in a state of limbo. Their operation is nessassary for our economy and the profits can go towards economic diversification."
+ 
+ LAS_build_consumer_goods_factories:0 "Construct Consumer Goods Factories"
+ LAS_build_consumer_goods_factories_desc:0 "Our people have had to deal with many of their favorite good either being exorbitantly expensive or unavilable. This will be fixed by increasing domestic production."
+ 
+ LAS_expand_mining:0 "Expand the Mines"
+ LAS_expand_mining_desc:0 "Nevada has always been rich in resources, only needing to be exploited. We will utilize these resources for our people."
+ 
+ LAS_tourism_advertisements:0 "Tourism Advertisments"
+ LAS_tourism_advertisements_desc:0 "Just because the country is in civil war doesn't mean tourism is dead. In fact it can even increase it, especially if you let them stay."
+ 
+ LAS_build_military_industry:0 "Expand Military Industry"
+ LAS_build_military_industry_desc:0 "To supply our troops we must expand our military production."
+ 
+ LAS_promote_immigration:0 "Promote Immigration"
+ LAS_promote_immigration_desc:0 "Has your government stolen your house? Killed your family? Tried to Conscript You? Come to New Vegas, a land of Freedom!"
+ 
+ LAS_industrial_research:0 "Industrial Research"
+ LAS_industrial_research_desc:0 "Just building factories is one part of an industrial economy, it is also imperative to continue to discover new and better industrial technologies."
+ 
+ LAS_expand_production_effciency:0 "Expand Production Effciency"
+ LAS_expand_production_effciency_desc:0 "While expanding industry is great, if it is inefficient it is nearly useless. We cannot allow inefficentcies in our industry."
+ 
+ LAS_a_restored_industry:0 "An Industrialized Vegas"
+ LAS_a_restored_industry_desc:0 "New Vegas is now a modern, indusrial city fit to supply our people and military."
+ 
  #Independent Path
  
  LAS_independent_vegas:0 "Independent Vegas"
