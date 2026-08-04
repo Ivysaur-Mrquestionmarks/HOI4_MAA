@@ -167,6 +167,17 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
+			add_daily_mastery = {
+			    amount = 0.5
+			    days = 90
+			    name = focus_generic_army_manouvers
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = infantry
+			    #index = 1 #not sure what this one even does
+			}
 		}
 	}
 	
@@ -187,6 +198,17 @@ focus_tree = {
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
+			}
+			add_mastery_bonus = {
+			    bonus = 0.5
+			    days = 120
+			    name = focus_generic_army_manouvers_2
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = infantry
+			    #index = 1
 			}
 		}
 	}
@@ -409,6 +431,17 @@ focus_tree = {
 				uses = 1
 				category = air_doctrine
 			}	
+			add_daily_mastery = {
+			    amount = 0.5
+			    days = 120
+			    name = focus_generic_airforce_2
+			    # FILTERS:
+			    folder = air
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = fighter_aircraft
+			    #index = 1
+			}
 		}
 	}
 
@@ -428,6 +461,28 @@ focus_tree = {
 				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
+			}
+			add_mastery_bonus = {
+			    bonus = 0.5
+			    days = 120
+			    name = focus_generic_airforce_3
+			    # FILTERS:
+			    folder = air
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = fighter_aircraft
+			    #index = 1
+			}
+			add_mastery_bonus = {
+			    bonus = 0.25
+			    days = 120
+			    name = focus_generic_airforce_3
+			    # FILTERS:
+			    folder = air
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = medium_aircraft
+			    #index = 1
 			}	
 		}
 	}
@@ -547,6 +602,17 @@ focus_tree = {
 				technology = strategic_bomber2
 				technology = strategic_bomber3
 				category = tactical_bomber
+			}
+			add_daily_mastery = {
+			    amount = 0.75
+			    days = 200
+			    name = focus_generic_bomber_effort_2
+			    # FILTERS:
+			    folder = air
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = heavy_aircraft
+			    #index = 1
 			}	
 		}
 	}
@@ -1080,6 +1146,15 @@ focus = {
 				category = naval_doctrine
 			}
 
+			add_daily_mastery = {
+			    amount = 0.75
+			    days = 200
+			    name = focus_generic_navy_2
+			    # FILTERS:
+			    folder = naval
+			    track = capital_ships
+			}
+
 			}
 }
 
@@ -1099,6 +1174,14 @@ focus = {
 				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
+			}
+			add_daily_mastery = {
+			    amount = 0.75
+			    days = 200
+			    name = focus_generic_navy_3
+			    # FILTERS:
+			    folder = naval
+			    track = screens
 			}
 			}
 }
@@ -1121,6 +1204,14 @@ focus = {
 				uses = 1
 				category = ss_tech
 			}
+			add_daily_mastery = {
+			    amount = 0.75
+			    days = 200
+			    name = focus_generic_submarine_1
+			    # FILTERS:
+			    folder = naval
+			    track = submarines
+			}
 			}
 }
 
@@ -1141,6 +1232,14 @@ focus = {
 				ahead_reduction = 2
 				uses = 1
 				category = ss_tech
+			}
+			add_mastery_bonus = {
+			    bonus = 1.0
+			    days = 250
+			    name = focus_generic_submarine_2
+			    # FILTERS:
+			    folder = naval
+			    track = submarines
 			}
 			}
 }
@@ -1183,6 +1282,14 @@ focus = {
 				ahead_reduction = 2
 				uses = 1
 				category = dd_tech
+			}
+			add_mastery_bonus = {
+			    bonus = 1.0
+			    days = 250
+			    name = focus_generic_destroyer_2
+			    # FILTERS:
+			    folder = naval
+			    track = screens
 			}
 			}
 }
@@ -1273,6 +1380,14 @@ focus = {
 				category = bc_tech
 				category = bb_tech
 				category = cv_tech
+			}
+			add_mastery_bonus = {
+			    bonus = 1.0
+			    days = 250
+			    name = focus_generic_battleship_2
+			    # FILTERS:
+			    folder = naval
+			    track = capital_ships
 			}
 		}
 	}
