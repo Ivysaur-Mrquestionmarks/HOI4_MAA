@@ -70,22 +70,22 @@ country_event = {
 		}
 		if = {
 			limit = { has_country_flag = LAS_courier_wallis_chosen }
-			promote_charater = {
-				name = LAS_sean_wallis
-				ideology = kemalist
+			promote_character  = {
+				character  = LAS_sean_wallis
+				ideology = kemalism
 			}
 		}
 		else_if = {
 			limit = { has_country_flag = LAS_courier_brown_chosen }
-			promote_charater = {
-				name = LAS_clancy_brown
+			promote_character  = {
+				character  = LAS_clancy_brown
 				ideology = despotic
 			}
 		}
 		else_if = {
 			limit = { has_country_flag = LAS_courier_spisak_chosen }
-			promote_charater = {
-				name = LAS_jason_spisak
+			promote_character  = {
+				character  = LAS_jason_spisak
 				ideology = despotic
 			}
 		}
