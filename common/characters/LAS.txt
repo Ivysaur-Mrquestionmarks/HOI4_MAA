@@ -410,8 +410,8 @@ characters={
             logistics_skill = 1
         }
 	}
-	LAS_the_courier = {
-		name = LAS_the_courier
+	#LAS_the_courier = {
+		#name = LAS_the_courier
 		#portraits = {
 			#civilian = {
 				#large = " "
@@ -421,22 +421,22 @@ characters={
 				#large = " "
 			#}
 		#}
-		country_leader = {
-			ideology = despotism
-			desc = LAS_the_courier_desc
-			traits = {
+		#country_leader = {
+			#ideology = despotism
+			#desc = LAS_the_courier_desc
+			#traits = {
 				###
-			}
-		}
-		corps_commander = {
-            traits = {  }
-            skill = 6
-            attack_skill = 8
-            defense_skill = 4
-            planning_skill = 6
-            logistics_skill = 5
-        }
-	}
+			#}
+		#}
+		#corps_commander = {
+            #traits = {  }
+            #skill = 6
+            #attack_skill = 8
+            #defense_skill = 4
+            #planning_skill = 6
+            #logistics_skill = 5
+        #}
+	#}
 	LAS_jason_spisak = {
 		name = LAS_jason_spisak
 		portraits = {
