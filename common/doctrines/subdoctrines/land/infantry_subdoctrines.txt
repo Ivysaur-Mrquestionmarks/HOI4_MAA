@@ -40,6 +40,9 @@ mobile_infantry = {
             category_cavalry = {
                 breakthrough = 0.20
             }
+            IFV = {
+                breakthrough = 0.1
+            }
         }
         combined_arms_planning = {
             category_all_infantry = {
@@ -63,7 +66,11 @@ mobile_infantry = {
                 max_organisation = 10
                 maximum_speed = 0.2
             }
+            IFV = {
+                maximum_speed = 0.05
+            }
         }
+        
 
     }
 }
@@ -271,6 +278,10 @@ assault_infantry = {
                     add = yes
                 }
             }
+            IFV = {
+                max_organisation = 5
+                breakthrough = 0.05
+            }
             mot_recon = {
                 max_organisation = 20
                 battalion_mult = {
@@ -386,16 +397,19 @@ mounted_infantry = {
             category_cavalry = {
                 hard_attack = 0.2
                 ap_attack = 0.2
-            }
-
-        
-}        beasts_of_war = {
+            }        
+        }
+        beasts_of_war = {
             category_cavalry = {
                 maximum_speed = 0.5 
                 max_strength = 0.05 
             }
             recon = {
                 maximum_speed = 0.5
+            }
+            IFV = {
+                maximum_speed = 0.05
+                max_strength = 0.05 
             }
         }
         limbered_combat_support = {

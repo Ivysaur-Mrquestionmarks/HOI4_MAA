@@ -457,6 +457,10 @@ armored_cavalry = {
             armored_car = {
                 suppression_factor = 0.2
             }
+            IFV = {
+                maximum_speed = 0.1
+                soft_attack = 0.2
+            }
         }
         speed_as_armour = {
             light_armor = {
