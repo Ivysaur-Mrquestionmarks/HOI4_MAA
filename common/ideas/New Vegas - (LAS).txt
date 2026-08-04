@@ -535,6 +535,68 @@ ideas = {
 				consumer_goods_factor = -0.10
 			}
 		}
+		LAS_ncr_industry_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				production_factory_max_efficiency_factor = -0.10
+				production_factory_start_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_factory = -0.10
+			}
+		}
+		LAS_ncr_industry_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.05
+			}
+		}
+		LAS_ncr_industry_3 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		LAS_ncr_industry_4 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				monthly_population = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		LAS_ncr_industry_5 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				monthly_population = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		LAS_ncr_industry_6 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				monthly_population = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		LAS_ncr_industry_7 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				monthly_population = 0.15
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.10
+			}
+		}
 		LAS_ = {
 			allowed = { original_tag = LAS }
 			modifier = {

@@ -131,6 +131,7 @@
  
  #Ideas
  
+ #NCR
  LAS_post_coup_instability_1:0 "Courier's Resistance"
  LAS_post_coup_instability_1_desc:0 "The Courier has backed out of our deal and has begun to resist our rule... how quaint."
  LAS_post_coup_instability_2:0 "Courier's Resistance"
@@ -255,6 +256,26 @@
  LAS_ncr_mil_combined_2:0 "NVR Army"
  LAS_ncr_mil_combined_2_desc:0 "Our Reformed Forces are the Envy of the World"
  
+ #Independent
+ 
+ 
+ #Characters
+
+ LAS_steve_wynn:0 "Steve Wynn"
+ LAS_steve_wynn_desc:0 "Steve Wynn Placeholder"
+ 
+ LAS_sean_wallis:0 "Sean Wallis"
+ LAS_sean_wallis_desc:0 "Sean Wallis Placeholder"
+ 
+ LAS_clancy_brown:0 "Clancy Brown"
+ LAS_clancy_brown_desc:0 "Clancy Brown Placeholder"
+ 
+ LAS_the_courier:0 "THE COURIER"
+ LAS_the_courier_desc:0 "A Mysterious Figure who never removes his helmet 'THE COURIER' is best described as a madman of great charisma and opinion. The type of character who before the civil war would rant on his 5 subscriber Youtube channel. Now hes got a whole country at his command, God Help Us All."
+
+ LAS_jason_spisak:0 "Jason Spisak"
+ LAS_jason_spisak_desc:0 "Jason Spisak Placeholder"
+ 
  #Country Flags
  
  LAS_fra_bitch:0 "Submitted to [FRA.GetName]"
@@ -266,17 +287,20 @@
  LAS_courier_loyalists_long:0 "Courier Loyalists"
  LAS_courier_loyalists:0 "Courier Loyalists"
  
- LAS_new_vegas_democrat_party_long:0 "New Vegas Democratic Party"
- LAS_new_vegas_democrat_party:0 "Democratic Party"
+ LAS_new_vegas_democratic_party_long:0 "New Vegas Democratic Party"
+ LAS_new_vegas_democratic_party:0 "Democratic Party"
  
  LAS_new_vegas_republican_party_long:0 "New Vegas Republican Party"
  LAS_new_vegas_republican_party:0 "Republican Party"
  
  LAS_new_vegas_peoples_party_left_long:0 "New Vegas People's Party Leftist Faction"
- LAS_new_vegas_peoples_party:0 "People's Party (Left)"
+ LAS_new_vegas_peoples_party_left:0 "People's Party (Left)"
  
  LAS_new_vegas_peoples_party_right_long:0 "New Vegas People's Party Rightist Faction"
- LAS_new_vegas_peoples_party_right:0 "People's Party (Right)
+ LAS_new_vegas_peoples_party_right:0 "People's Party (Right)"
+ 
+ LAS_new_vegas_peoples_party_farleft_long:0 "New Vegas People's Party Leftist Faction (Extremists)"
+ LAS_new_vegas_peoples_party_farleft:0 "People's Party (Farleft)"
  
  LAS_new_vegas_courier_party_long:0 "New Vegas Republican Authority and Presidential Loyalist Party"
  LAS_new_vegas_courier_party:0 "Republican Authority Party"

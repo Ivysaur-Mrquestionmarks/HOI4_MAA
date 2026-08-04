@@ -856,12 +856,9 @@ country_event = {
 			factor = 33
 		}
 		set_country_flag = LAS_courier_wallis_chosen
-		hidden_effect = {
-			set_global_flag = {
-				flag = LAS_wynn_coup
-				days = 30
-				value = 1
-			}
+		country_event = {
+			id = viva_las_vegas.24
+			days = 14
 		}
 	}
 	option = {
@@ -870,12 +867,9 @@ country_event = {
 			factor = 33
 		}
 		set_country_flag = LAS_courier_brown_chosen
-		hidden_effect = {
-			set_global_flag = {
-				flag = LAS_wynn_coup
-				days = 30
-				value = 1
-			}
+		country_event = {
+			id = viva_las_vegas.24
+			days = 14
 		}
 	}
 	option = {
@@ -884,12 +878,9 @@ country_event = {
 			factor = 33
 		}
 		set_country_flag = LAS_courier_spisak_chosen
-		hidden_effect = {
-			set_global_flag = {
-				flag = LAS_wynn_coup
-				days = 30
-				value = 1
-			}
+		country_event = {
+			id = viva_las_vegas.24
+			days = 14
 		}
 	}
 }
@@ -899,14 +890,6 @@ country_event = {
 	desc = viva_las_vegas.24.d
 	picture = 
 	is_triggered_only = yes
-	trigger = {
-		original_tag = LAS
-		has_global_flag = {
-			flag = LAS_wynn_coup
-			days = 14
-			value = 1
-		}
-	}
 	fire_only_once = yes
 	option = { 
 		name = viva_las_vegas.24.a
@@ -920,20 +903,12 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		add_country_leader_role = {
-    			character = LAS_steve_wynn
-    			promote_leader = yes
-    			country_leader = {
-    			    ideology = corporatocracy
-					expire = "2065.1.1.1"
-    			    traits = {}
-    			}
-		}
+		load_focus_tree = new_vegas
+		promote_character = LAS_steve_wynn
 		set_politics = {
 			ruling_party = autocratic
 			elections_allowed = no
 		}
-		load_focus_tree = new_vegas
 		hidden_effect = {
 			#remove all spirits - will have to consult on how to do mormon war
 		}
