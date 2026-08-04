@@ -344,6 +344,9 @@ characters={
 		country_leader = {
 			ideology = corporatocracy
 			desc = LAS_steve_wynn_desc
+			traits = {
+				###
+			}
 		}
 	}
 	LAS_sean_wallis = {
@@ -368,10 +371,16 @@ characters={
 		country_leader = {
 			ideology = kemalism
 			desc = LAS_sean_wallis_desc
+			traits = {
+				###
+			}
 		}
 		country_leader = {
 			ideology = progressive
 			desc = LAS_sean_wallis_desc
+			traits = {
+				###
+			}
 		}
 	}
 	LAS_clancy_brown = {
@@ -388,6 +397,9 @@ characters={
 		country_leader = {
 			ideology = despotism
 			desc = LAS_clancy_brown_desc
+			traits = {
+				###
+			}
 		}
 		corps_commander = {
             traits = {  }
@@ -400,18 +412,21 @@ characters={
 	}
 	LAS_the_courier = {
 		name = LAS_the_courier
-		portraits = {
-			civilian = {
-				large = " "
-			}
-			army = {
-				small = 
-				large = " "
-			}
-		}
+		#portraits = {
+			#civilian = {
+				#large = " "
+			#}
+			#army = {
+				#small = " "
+				#large = " "
+			#}
+		#}
 		country_leader = {
 			ideology = despotism
 			desc = LAS_the_courier_desc
+			traits = {
+				###
+			}
 		}
 		corps_commander = {
             traits = {  }
@@ -426,7 +441,7 @@ characters={
 		name = LAS_jason_spisak
 		portraits = {
 			civilian = {
-				"large = gfx/leaders/LAS/Jason_Courier.png"
+				large = "gfx/leaders/LAS/Jason_Courier.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/LAS/piff_the_magic_dragon" #placeholder
@@ -436,6 +451,9 @@ characters={
 		country_leader = {
 			ideology = despotism
 			desc = LAS_jason_spisak_desc
+			traits = {
+				###
+			}
 		}
 		corps_commander = {
             traits = {  }
