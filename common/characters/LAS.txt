@@ -297,7 +297,6 @@ characters={
 			ideology = syndicalism
 		}
 	}
-
 	LAS_paul_kim = {
 		name = "Paul Kim" #Tesla Firebomber- card carrying member of CPUSA
 		portraits = {
@@ -312,7 +311,6 @@ characters={
 			ideology = maoism
 		}
 	}
-
 	LAS_david_armstrong_jones_second_earl_of_snowdon = {
 		name = "Viscount Linley"
 		portraits = {
@@ -324,7 +322,6 @@ characters={
 			}
 		}
 	}
-
 	LAS_tristan_morrow = { #SECRET PATH
 		name = "Tristan Morrow"
 		gender = female #transgender
@@ -337,61 +334,117 @@ characters={
 			}
 		}
 	}
-
 	LAS_steve_wynn = {
-		name = "Steve Wynn"
+		name = LAS_steve_wynn
 		portraits = {
 			civilian = {
-				large = gfx/leaders/LAS/Steve_Wynn.png
+				large = "gfx/leaders/LAS/Steve_Wynn.png"
 			}
-			army = {
-				large = gfx/leaders/LAS/Steve_Wynn.png
-			}
+		}
+		country_leader = {
+			ideology = corporatocracy
+			desc = LAS_steve_wynn_desc
 		}
 	}
 	LAS_sean_wallis = {
-		name = "Sean Wallis"
+		name = LAS_sean_wallis
 		portraits = {
 			civilian = {
-				large = gfx/leaders/LAS/Sean_Wallis.png
+				large = "gfx/leaders/LAS/Sean_Wallis.png"
 			}
 			army = {
-				large = gfx/leaders/LAS/Sean_Wallis.png
+				small = 
+				large = "gfx/leaders/LAS/Sean_Wallis.png"
 			}
+		}
+		corps_commander = {
+            traits = {  }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 2
+        }
+		country_leader = {
+			ideology = kemalism
+			desc = LAS_sean_wallis_desc
+		}
+		country_leader = {
+			ideology = progressive
+			desc = LAS_sean_wallis_desc
 		}
 	}
 	LAS_clancy_brown = {
-		name = "Clancy Brown"
+		name = LAS_clancy_brown
 		portraits = {
 			civilian = {
-				large = gfx/leaders/LAS/Clancy_Brown.png
+				large = "gfx/leaders/LAS/Clancy_Brown.png"
 			}
 			army = {
-				large = gfx/leaders/LAS/Clancy_Brown.png
+				small = 
+				large = "gfx/leaders/LAS/Clancy_Brown.png"
 			}
 		}
+		country_leader = {
+			ideology = despotism
+			desc = LAS_clancy_brown_desc
+		}
+		corps_commander = {
+            traits = {  }
+            skill = 1
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+        }
 	}
 	LAS_the_courier = {
-		name = "THE COURIER"
+		name = LAS_the_courier
 		portraits = {
 			civilian = {
-				large = 
+				large = " "
 			}
 			army = {
-				large = 
+				small = 
+				large = " "
 			}
 		}
+		country_leader = {
+			ideology = despotism
+			desc = LAS_the_courier_desc
+		}
+		corps_commander = {
+            traits = {  }
+            skill = 6
+            attack_skill = 8
+            defense_skill = 4
+            planning_skill = 6
+            logistics_skill = 5
+        }
 	}
 	LAS_jason_spisak = {
-		name = "Jason Spisak"
+		name = LAS_jason_spisak
 		portraits = {
 			civilian = {
-				large = gfx/leaders/LAS/Jason_Courier.png
+				"large = gfx/leaders/LAS/Jason_Courier.png"
 			}
 			army = {
-				large = gfx/leaders/LAS/Jason_Courier.png
+				small = 
+				large = "gfx/leaders/LAS/Jason_Courier.png"
 			}
 		}
+		country_leader = {
+			ideology = despotism
+			desc = LAS_jason_spisak_desc
+		}
+		corps_commander = {
+            traits = {  }
+            skill = 1
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+        }
 	}
 	
 	### Military Leaders ###

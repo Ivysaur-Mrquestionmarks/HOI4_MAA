@@ -68,14 +68,34 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		if = {
+			limit = { has_country_flag = LAS_courier_wallis_chosen }
+			promote_charater = {
+				name = LAS_sean_wallis
+				ideology = kemalist
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = LAS_courier_brown_chosen }
+			promote_charater = {
+				name = LAS_clancy_brown
+				ideology = despotic
+			}
+		}
+		else_if = {
+			limit = { has_country_flag = LAS_courier_spisak_chosen }
+			promote_charater = {
+				name = LAS_jason_spisak
+				ideology = despotic
+			}
+		}
 		swap_ideas = {
 			remove_idea = LAS_post_coup_instability_4
 			add_idea = LAS_post_coup_instability_5
 		}
-		add_ideas = LAS_new_vegas_militia_1
 		hidden_effect = {
 			set_party_name = {
-				ideology = autocrat
+				ideology = autocratic
 				long_name = LAS_courier_loyalists_long
 				name = LAS_courier_loyalists
 			}
@@ -90,57 +110,27 @@ country_event = {
 				name = LAS_new_vegas_republican_party
 			}
 			set_party_name = {
-				ideology = left_libertarian
+				ideology = libertarian_left
 				long_name = LAS_new_vegas_peoples_party_left_long
 				name = LAS_new_vegas_peoples_party_left
 			}
 			set_party_name = {
-				ideology = right_libertarian
+				ideology = libertarian_right
 				long_name = LAS_new_vegas_peoples_party_right_long
 				name = LAS_new_vegas_peoples_party_right
 			}
+			set_party_name = {
+				ideology = authoritarian_left
+				long_name = LAS_new_vegas_peoples_party_farleft_long
+				name = LAS_new_vegas_peoples_party_farleft
+			}
 			set_popularities = {
-				autocrat = 30
-				democrat = 30
+				autocratic = 35
+				democrat = 25
 				republican = 15
-				left_libertarian = 10
-				right_libertarian = 15
-			}
-		}
-		if = {
-			limit = { has_country_flag = LAS_courier_wallis_chosen }
-			add_country_leader_role = {
-    			character = LAS_sean_wallis
-    			promote_leader = yes
-    			country_leader = {
-    			    ideology = despotism
-					expire = "2065.1.1.1"
-    			    traits = {}
-    			}
-			}
-		}
-		if = {
-			limit = { has_country_flag = LAS_courier_brown_chosen }
-			add_country_leader_role = {
-    			character = LAS_clancy_brown
-    			promote_leader = yes
-    			country_leader = {
-    			    ideology = despotism
-					expire = "2065.1.1.1"
-    			    traits = {}
-    			}
-			}
-		}
-		if = {
-			limit = { has_country_flag = LAS_courier_spisak_chosen }
-			add_country_leader_role = {
-    			character = LAS_jason_spisak
-    			promote_leader = yes
-    			country_leader = {
-    			    ideology = despotism
-					expire = "2065.1.1.1"
-    			    traits = {}
-    			}
+				libertarian_left = 10
+				libertarian_right = 13
+				authoritarian_left = 2
 			}
 		}
 	}
@@ -295,10 +285,10 @@ country_event = {
 		}
 		set_popularities = {
 			democrat = 60
-			right_libertarian = 20
-			autocrat = 10
+			libertarian_right = 20
+			autocratic = 10
 			republican = 5
-			left_libertarian = 5
+			libertarian_left = 5
 			authoritarian_left = 0
 		}
 		complete_national_focus = LAS_victory_new_vegas_party
@@ -309,17 +299,17 @@ country_event = {
 			factor = 5
 		}
 		set_politics = {
-			ruling_party = right_libertarian
+			ruling_party = libertarian_right
 			elections_allowed = no
 			last_election = "2021.4.1"
 			election_frequency = 48
 		}
 		set_popularities = {
 			democratic = 20
-			right_libertarian = 60
-			autocrat = 10
+			libertarian_right = 60
+			autocratic = 10
 			republican = 5
-			left_libertarian = 5
+			libertarian_left = 5
 			authoritarian_left = 0
 		}
 		complete_national_focus = LAS_victory_independence_party

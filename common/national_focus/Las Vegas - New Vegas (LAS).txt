@@ -550,7 +550,7 @@ focus_tree = {
 			country_event = new_vegas.6
 			hidden_effect = {
 				set_party_name = {
-					ideology = autocrat
+					ideology = autocratic
 					name_long = LAS_new_vegas_courier_party_long
 					name = LAS_new_vegas_courier_party_long
 				}
@@ -896,7 +896,7 @@ focus_tree = {
 					name = LAS_new_vegas_party
 				}
 				set_party_name = {
-					ideology = right_libertarian
+					ideology = libertarian_right
 					long_name = LAS_independence_party_long
 					name = LAS_independence_party
 				}
