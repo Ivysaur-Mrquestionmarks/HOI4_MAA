@@ -42,6 +42,8 @@
  new_vegas.5.d:0 "something something opponents of the courier have been rounded up and no longer pose a threat"
  new_vegas.5.a:0 "A New Age Begins - The Age of New Vegas"
  
+ #NCR
+ 
  new_vegas.6.t:0 "For the Republic"
  new_vegas.6.d:0 "wallis adresses his troops, make it sound cool, ncr larp, etc"
  new_vegas.6.a:0 "FOR THE REPUBLIC!!!!!"
@@ -123,11 +125,39 @@
  new_vegas.23.a:0 "Ron Perlman" #We All know who he is
  new_vegas.23.b:0 "Kirsten Potter" #Voiced Cornel Moore
  new_vegas.23.c:0 "Emerson Brooks" #Voiced nearly the entire NCR Faction
- new_vegas.23.d:0 "Jeremy Elbertson" #You can guess...
+ new_vegas.23.e:0 "Jeremy Elbertson" #You can guess...
  
- new_vegas..t:0 " "
- new_vegas..d:0 " "
- new_vegas..a:0 " "
+ #Independent
+ 
+ new_vegas.24.t:0 "Declaration of the New New Vegas"
+ new_vegas.24.d:0 "Brown is declaring his new government blah blah blah when THE COURIER interupts and claims to be the true courier, not some 'random actor' and is removed by security"
+ new_vegas.24.a:0 "What a Loon"
+ 
+ new_vegas.25.t:0 "A Dark Night"
+ new_vegas.25.d:0 "Brown and 2 guards are walking back from the bar at night when THE COURIER some to kill him and seize power with a small posse"
+ new_vegas.25.a:0 "While intoxicated, Ranger Davis shoots this loon in the leg, dispersing the posse"
+ new_vegas.25.b:0 "Nuntius delendus est."
+
+ new_vegas.26.t:0 "The People of New Vegas v John Doe"
+ new_vegas.26.d:0 "Write a court drama about the trial of THE COURIER (John Doe) He refuses to give his real name, is given a public defender, public defender convinces him to plead insanity, he wins and gets sent to a mental hospital"
+ new_vegas.26.a:0 "Such a Sad Tale"
+ 
+ new_vegas.27.t:0 "A Secret Meeting"
+ new_vegas.27.d:0 "Brown meets with the last remnants of the vegas mob and must choos wether to use their influence for himself or destroy them once and for all (make it sound like something out of the godfather)"
+ new_vegas.27.a:0 "A Secret Pact is Formed"
+ new_vegas.27.b:0 "Rangers, Arrest these Fools"
+ 
+ new_vegas.28.t:0 "The People of New Vegas v Vegas Waste Disposal Inc."
+ new_vegas.28.d:0 "another court case against the mob this time"
+ new_vegas.28.a:0 "Guilty"
+ 
+ new_vegas.29.t:0 "Formation of the Provisional Government"
+ new_vegas.29.d:0 "Brown forms a Provisional Govenment"
+ new_vegas.29.a:0 "Placeholder"
+ 
+ new_vegas.30.t:0 " "
+ new_vegas.30.d:0 " "
+ new_vegas.30.a:0 " "
  
  #Ideas
  
@@ -258,6 +288,17 @@
  
  #Independent
  
+ LAS_factionalism_1:0 "Factionalism"
+ LAS_factionalism_1_desc:0 "A Man known as THE COURIER has formed an anti-government faction hellbent on seizing power"
+ LAS_factionalism_2:0 "Factionalism"
+ LAS_factionalism_2_desc:0 "A Man known as THE COURIER has formed an anti-government faction hellbent on seizing power"
+ LAS_factionalism_3:0 "Factionalism"
+ LAS_factionalism_3_desc:0 "Even with our enemies defeated their supporters still stand."
+ LAS_factionalism_4:0 "Factionalism"
+ LAS_factionalism_4_desc:0 "Even with our enemies defeated their supporters still stand."
+ 
+ LAS_mob_pact:0 "Pact with the Mob"
+ LAS_mob_pact_desc:0 "Our secret pact with the mob allows some 'nessesary crime' in exchange for some union busting, just like the good old days."
  
  #Characters
 
@@ -310,6 +351,18 @@
  
  LAS_independence_party_long:0 "New Vegas Independence Party"
  LAS_independence_party:0 "Independence Party"
+ 
+ LAS_new_vegas_peoples_democratic_party_long:0 "New Vegas People's Democratic Party"
+ LAS_new_vegas_peoples_democratic_party:0 "People's Democratic Party"
+ 
+ LAS_new_vegas_peoples_democratic_party_left_long:0 "New Vegas People's Democratic Party Leftist Faction"
+ LAS_new_vegas_peoples_democratic_party_left:0 "People's Democratic Party (Left)"
+ 
+ LAS_new_vegas_peoples_democratic_party_farleft_long:0 "New Vegas People's Democratic Party Leftist Faction (Extremists)"
+ LAS_new_vegas_peoples_democrat_party_farleft:0 "People's Democratic Party (Farleft)"
+ 
+ LAS_new_vegas_freedom_party_long:0 "New Vegas Freedom Party"
+ LAS_new_vegas_freedom_party:0 "Freedom Party"
  
  #Cosmetic Tags
  

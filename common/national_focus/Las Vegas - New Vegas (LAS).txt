@@ -2322,7 +2322,7 @@ focus_tree = {
 	focus = {
 		id = LAS_independent_vegas
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 0
 		relative_position_id = LAS_our_direction
 		x = 0
 		y = 1
@@ -2338,6 +2338,7 @@ focus_tree = {
 			focus = LAS_our_direction
 		}
 		completion_reward = {
+			country_event = new_vegas.24
 			hidden_effect = {
 				set_cosmetic_tag = LAS_new_vegas_ind
 			}
@@ -2354,7 +2355,7 @@ focus_tree = {
 			focus = LAS_independent_vegas
 		}
 		completion_reward = {
-			
+			country_event = new_vegas.25
 		}
 	}
 		focus = {
@@ -2380,7 +2381,7 @@ focus_tree = {
 		focus = {
 		id = LAS_restore_sanity
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_yes_man_faction
 		x = 0
 		y = 1
@@ -2388,13 +2389,16 @@ focus_tree = {
 			focus = LAS_yes_man_faction
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+			remove_idea = LAS_factionalism_2
+			add_idea = LAS_factionalism_3
+			}
 		}
 	}
 		focus = {
 		id = LAS_purge_the_extremists
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_restore_sanity
 		x = -2
 		y = 1
@@ -2402,13 +2406,16 @@ focus_tree = {
 			focus = LAS_restore_sanity
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+			remove_idea = LAS_factionalism_3
+			add_idea = LAS_factionalism_4
+			}
 		}
 	}
 		focus = {
 		id = LAS_build_the_lucky_38
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_restore_sanity
 		x = 0
 		y = 1
@@ -2416,13 +2423,13 @@ focus_tree = {
 			focus = LAS_restore_sanity
 		}
 		completion_reward = {
-			
+			#plz gfx artists make me a lucky 38 landmark
 		}
 	}
 		focus = {
 		id = LAS_work_with_democratic_remnants
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_restore_sanity
 		x = 2
 		y = 1
@@ -2430,13 +2437,16 @@ focus_tree = {
 			focus = LAS_restore_sanity
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.1
+			}
 		}
 	}
 		focus = {
 		id = LAS_trial_of_the_false_courier
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 10
 		relative_position_id = LAS_purge_the_extremists
 		x = 1
 		y = 1
@@ -2444,13 +2454,14 @@ focus_tree = {
 			focus = LAS_purge_the_extremists
 		}
 		completion_reward = {
-			
+			remove_ideas = LAS_factionalism_4
+			country_event = new_vegas.26
 		}
 	}
 		focus = {
 		id = LAS_question_work_with_mob_remnants
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_work_with_democratic_remnants
 		x = -1
 		y = 1
@@ -2458,13 +2469,13 @@ focus_tree = {
 			focus = LAS_work_with_democratic_remnants
 		}
 		completion_reward = {
-			
+			country_event = new_vegas.27
 		}
 	}
 		focus = {
 		id = LAS_form_the_provisonal_government
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_trial_of_the_false_courier
 		x = 1
 		y = 1
@@ -2475,13 +2486,13 @@ focus_tree = {
 			focus = LAS_question_work_with_mob_remnants
 		}
 		completion_reward = {
-			
+			country_event = new_vegas.29
 		}
 	}
 	focus = {
 		id = LAS_strengthen_the_executive_branch
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_form_the_provisonal_government
 		x = -2
 		y = 1
@@ -2495,7 +2506,7 @@ focus_tree = {
 		focus = {
 		id = LAS_learn_fallout_lore
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_form_the_provisonal_government
 		x = 0
 		y = 1
@@ -2509,7 +2520,7 @@ focus_tree = {
 		focus = {
 		id = LAS_exert_emergency_powers
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_form_the_provisonal_government
 		x = 2
 		y = 1
@@ -2523,7 +2534,7 @@ focus_tree = {
 		focus = {
 		id = LAS_call_the_constitutional_conference
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 10
 		relative_position_id = LAS_learn_fallout_lore
 		x = 0
 		y = 1

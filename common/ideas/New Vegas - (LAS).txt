@@ -597,6 +597,42 @@ ideas = {
 				industrial_capacity_factory = 0.10
 			}
 		}
+		LAS_factionalism_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.50
+				war_support_factor = -0.25
+			}
+		}LAS_factionalism_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.75
+				war_support_factor = -0.50
+			}
+		}
+		LAS_factionalism_3 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.10
+			}
+		}
+		LAS_factionalism_4 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+		LAS_mob_pact = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
 		LAS_ = {
 			allowed = { original_tag = LAS }
 			modifier = {
