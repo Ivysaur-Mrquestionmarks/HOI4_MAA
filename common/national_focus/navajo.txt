@@ -1210,6 +1210,17 @@ focus_tree = {
     				instant_build = yes
 				}
 			}
+			add_daily_mastery = {
+			    amount = 0.5
+			    days = 365
+			    name = focus_generic_airforce_2
+			    # FILTERS:
+			    folder = air
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = fighter_aircraft
+			    #index = 1
+			}
 		}
 
 	}
@@ -1297,6 +1308,17 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
+			add_mastery_bonus = {
+			    bonus = 0.75
+			    days = 740
+			    name = NAV_lessons_of_fascist_war
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = infantry
+			    #index = 1 #not sure what this one even does
+			}
 		}
 
 	}
@@ -1313,9 +1335,20 @@ focus_tree = {
 			army_experience = 20
 			add_doctrine_cost_reduction = {
 				name = NAV_wild_west
-				cost_reduction = 0.2
-				uses = 3
+				cost_reduction = 0.4
+				uses = 2
 				category = land_doctrine
+			}
+			add_daily_mastery = {
+			    amount = 0.25
+			    days = 100
+			    name = focus_generic_army_manouvers
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    #track = infantry
+			    #index = 1 #not sure what this one even does
 			}
 		}
 
@@ -1335,6 +1368,17 @@ focus_tree = {
     			uses = 2
     			category = infantry_weapons
 			}
+			add_daily_mastery = {
+			    amount = 0.20
+			    days = 120
+			    name = focus_generic_army_manouvers
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = combat_support
+			    #index = 1 #not sure what this one even does
+			}
 		}
 
 	}
@@ -1352,6 +1396,17 @@ focus_tree = {
     			bonus = 1.0
     			uses = 4
     			category = armor
+			}
+			add_mastery_bonus = {
+			    bonus = 0.75
+			    days = 365
+			    name = NAV_lessons_of_fascist_war
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = armor
+			    #index = 1 #not sure what this one even does
 			}
 			#TODO: ADD REALLY GOOD PRODUCTION BUFFS FOR ARMOUR!!!
 		}
@@ -2473,6 +2528,17 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 			load_oob = "NAV_valkyries"
+			add_daily_mastery = {
+			    amount = 0.5
+			    days = 90
+			    name = focus_generic_army_manouvers
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = armor
+			    #index = 1 #not sure what this one even does
+			}
 		}
 
 	}
@@ -2606,6 +2672,17 @@ focus_tree = {
     			category = cat_strategic_bomber
 			}
 			add_ideas = NAV_bomb_the_shit_out_of_them
+			add_daily_mastery = {
+			    amount = 0.75
+			    days = 300
+			    name = focus_generic_bomber_effort_2
+			    # FILTERS:
+			    folder = air
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = heavy_aircraft
+			    #index = 1
+			}
 		}
 
 	}
@@ -3212,9 +3289,23 @@ focus_tree = {
 				cost_reduction = 0.5
 				name = NAV_army_research_bonus
 				cost_reduction = 0.5
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_mastery_bonus = {
+			    bonus = 0.5
+			    days = 365
+			    name = focus_generic_army_manouvers_2
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = infantry
+			    #index = 1
+			}			
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -3281,12 +3372,8 @@ focus_tree = {
 					nuclear_facility < 1
 					naval_facility < 1
 				}
-				prioritize = { 1011 }
-				add_building_construction = {
-					type = land_facility
-					level = 1
-					instant_build = yes
-					province = 2004 
+				construct_building_in_random_province = {
+					land_facility = 1
 				}
 			}
 
