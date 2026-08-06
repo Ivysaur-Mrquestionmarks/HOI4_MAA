@@ -32,6 +32,12 @@ focus_tree = {
 			air_experience = 50
 			navy_experience = 50
 			add_manpower = 10000
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.75
+				uses = 3
+				category = land_doctrine
+			}
 			division_template = {
 				name = "Strawhats"
 				regiments = {
@@ -1136,6 +1142,17 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			add_daily_mastery = {
+			    amount = 0.5
+			    days = 150
+			    name = focus_generic_army_manouvers
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    #track = infantry
+			    #index = 1 #not sure what this one even does
+			}			
 		}
 
 	}
@@ -1157,6 +1174,17 @@ focus_tree = {
     				level = 1
     				instant_build = yes
 				}
+			}
+			add_mastery_bonus = {
+			    bonus = 0.5
+			    days = 365
+			    name = focus_generic_army_manouvers_2
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = infantry
+			    #index = 1
 			}
 		}
 
@@ -1230,10 +1258,21 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
+				name = BAH_pirates_of_skies
 				cost_reduction = 0.7
 				uses = 3
 				category = air_doctrine
+			}
+			add_daily_mastery = {
+			    amount = 0.5
+			    days = 120
+			    name = focus_generic_airforce_2
+			    # FILTERS:
+			    folder = air
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = fighter_aircraft
+			    #index = 1
 			}
 		}
 
@@ -1486,6 +1525,22 @@ focus_tree = {
     				instant_build = yes
 				}
 			}
+			add_daily_mastery = {
+			    amount = 0.75
+			    days = 200
+			    name = focus_generic_navy_2
+			    # FILTERS:
+			    folder = naval
+			    track = capital_ships
+			}
+			add_daily_mastery = {
+			    amount = 0.75
+			    days = 200
+			    name = focus_generic_navy_3
+			    # FILTERS:
+			    folder = naval
+			    track = screens
+			}
 		}
 
 	}
@@ -1542,6 +1597,14 @@ focus_tree = {
 					province = 11269
 					instant_build = yes
 				}
+			}
+			add_mastery_bonus = {
+			    bonus = 1.0
+			    days = 365
+			    name = focus_generic_battleship_2
+			    # FILTERS:
+			    folder = naval
+			    track = capital_ships
 			}
 		}
 
