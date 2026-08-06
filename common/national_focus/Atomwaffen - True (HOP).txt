@@ -191,6 +191,17 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_ideas = Totalen_Kreig
+			add_daily_mastery = {
+			    amount = 0.5
+			    days = 100
+			    name = focus_generic_army_manouvers
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = infantry
+			    #index = 1 #not sure what this one even does
+			}
 		}
 
 	}
@@ -934,6 +945,17 @@ focus_tree = {
 					}
 				}
 			}
+			add_daily_mastery = {
+			    amount = 0.20
+			    days = 175
+			    name = focus_generic_army_manouvers
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = infantry
+			    #index = 1 #not sure what this one even does
+			}
 		}
 
 	}
@@ -1074,6 +1096,17 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			add_mastery_bonus = {
+			    bonus = 0.5
+			    days = 120
+			    name = HOP_foundation_of_doctrine
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = infantry
+			    #index = 1
+			}
 		}
 
 	}
@@ -1116,6 +1149,14 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				} 
+			}
+			add_mastery_bonus = {
+			    bonus = 0.75
+			    days = 730
+			    name = HOP_american_luftwaffe
+			    # FILTERS:
+			    folder = air
+			    #track = fighter_aircraft #don't think track is necessary? if this causes errors just uncomment it out
 			}
 		}
 
@@ -1172,6 +1213,17 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_ideas = Neue_Blitzkreig
+			add_mastery_bonus = {
+			    bonus = 0.75
+			    days = 795
+			    name = HOP_highway_blitz
+			    # FILTERS:
+			    folder = land
+			    #grand_doctrine = mobile_warfare
+			    #sub_doctrine = mobile_infantry
+			    track = armor
+			    #index = 1
+			}
 		}
 
 	}
@@ -1510,6 +1562,13 @@ focus_tree = {
 				country_exists = NPA
 			}
 		}
+		will_lead_to_war_with = GLA
+		will_lead_to_war_with = MIL
+		will_lead_to_war_with = MNS
+		will_lead_to_war_with = MIN
+		will_lead_to_war_with = DET
+		will_lead_to_war_with = ISA
+		will_lead_to_war_with = KMT
 		completion_reward = {
 			create_wargoal = {
 				target = GLA
@@ -1559,6 +1618,9 @@ focus_tree = {
 				country_exists = NPA
 			}
 		}
+		will_lead_to_war_with = AFS
+		will_lead_to_war_with = NRA
+		will_lead_to_war_with = KFC
 		completion_reward = {
 			create_wargoal = {
 				target = AFS
@@ -1600,6 +1662,9 @@ focus_tree = {
 				country_exists = MIN
 			}
 		}
+		will_lead_to_war_with = FRA
+		will_lead_to_war_with = VIR
+		will_lead_to_war_with = NEW
 		completion_reward = {
 			create_wargoal = {
 				target = FRA
@@ -1693,6 +1758,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = HOP_Ally_the_Klan
 		}
+		will_lead_to_war_with = CSA
 		completion_reward = {
 			create_wargoal = {
 				target = CSA
@@ -1760,6 +1826,11 @@ focus_tree = {
 		available = {
 			has_global_flag = Dixie_Collapse_Global
 		}
+		will_lead_to_war_with = CSA
+		will_lead_to_war_with = AFR
+		will_lead_to_war_with = ZIO
+		will_lead_to_war_with = LGB
+		will_lead_to_war_with = CSB
 		completion_reward = {
 			if = {
 				limit = {
@@ -1959,6 +2030,9 @@ focus_tree = {
 			focus = HOP_Ally_the_Klan
 			focus = HOP_Use_the_Klan
 		}
+		will_lead_to_war_with = FLO
+		will_lead_to_war_with = JEB
+		will_lead_to_war_with = RMV
 		completion_reward = {
 			create_wargoal = {
 				target = FLO
