@@ -4031,7 +4031,6 @@ spriteTypes = {
         name = "GFX_idea_ALA_Sarah_Palin_Advisor"
         texturefile = "gfx/interface/ideas/ALA/Sarah_Palin_ADV.tga"
     }
-
 	spriteType = {
         name = "GFX_idea_ALA_ahtna"
         texturefile = "gfx/interface/ideas/ALA/companies/ahtna.dds"
@@ -4052,6 +4051,45 @@ spriteTypes = {
         name = "GFX_idea_ALA_alaska_aerospace"
         texturefile = "gfx/interface/ideas/ALA/companies/alaska_aerospace.dds"
     }
+
+
+    spriteType = {
+        name = "GFX_idea_ALA_apf"
+        texturefile = "gfx/interface/ideas/ALA/ALA_apf.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ALA_brain_drain"
+        texturefile = "gfx/interface/ideas/ALA/ALA_brain_drain.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ALA_neglected_infrastructure"
+        texturefile = "gfx/interface/ideas/ALA/ALA_neglected_infrastructure.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ALA_extreme_inuit_poverty"
+        texturefile = "gfx/interface/ideas/ALA/ALA_extreme_inuit_poverty.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ALA_tourism_recession"
+        texturefile = "gfx/interface/ideas/ALA/ALA_tourism_recession.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ALA_alaskan_powderkeg"
+        texturefile = "gfx/interface/ideas/ALA/ALA_alaskan_powderkeg.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ALA_collapsed_oil_industry"
+        texturefile = "gfx/interface/ideas/ALA/ALA_collapsed_oil_industry.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ALA_northern_alaska"
+        texturefile = "gfx/interface/ideas/ALA/ALA_northern_alaska.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ALA_shadow_of_pac"
+        texturefile = "gfx/interface/ideas/ALA/ALA_shadow_of_pac.dds"
+    }
+
 ### MEXICO (MEX) ###
 	spriteType = {
         name = "GFX_idea_MEX_church_power_5"

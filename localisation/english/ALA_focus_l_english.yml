@@ -1,6 +1,60 @@
 ﻿l_english:
  ### FOCUS TREE ###
 
+ ALA_the_alaskan_economy:0 "The Alaskan Economy"
+ ALA_the_alaskan_economy_desc:0 ""
+
+ ALA_managing_the_oil_crisis:0 "Managing the Oil Crisis"
+ ALA_managing_the_oil_crisis_desc:0 ""
+
+ ALA_without_oil_theres_no_alaska:0 "Without Oil There's No Alaska"
+ ALA_without_oil_theres_no_alaska_desc:0 ""
+
+ ALA_temporarily_scale_back_production:0 "Temporarily Scale Back Production"
+ ALA_temporarily_scale_back_production_desc:0 ""
+
+ ALA_gaining_international_trust:0 "Gain International Trust"
+ ALA_gaining_international_trust_desc:0 ""
+
+ ALA_reopen_trade_deal_negotiations:0 "Reopen Trade Deal Negotiations"
+ ALA_reopen_trade_deal_negotiations_desc:0 ""
+
+ ALA_the_taps_flow_once_again:0 "The Tap Flows Once Again"
+ ALA_the_taps_flow_once_again_desc:0 ""
+
+ ALA_fate_of_the_alaskan_permanent_fund:0 "Fate of the Alaskan Permanent Fund"
+ ALA_fate_of_the_alaskan_permanent_fund_desc:0 ""
+
+ ALA_the_radical_option:0 "The Radical Option"
+ ALA_the_radical_option_desc:0 ""
+
+ ALA_the_microgrid_solution:0 "The Microgrid Solution"
+ ALA_the_microgrid_solution_desc:0 ""
+
+ ALA_invest_in_the_big_three:0 "Invest in the Big Three"
+ ALA_invest_in_the_big_three_desc:0 ""
+
+ ALA_leap_into_renewable_energy:0 "Leap Into Renewable Energy"
+ ALA_leap_into_renewable_energy_desc:0 ""
+
+ ALA_the_cutting_edge_of_energy_technology:0 "The Cutting Edge of Energy"
+ ALA_the_cutting_edge_of_energy_technology_desc:0 ""
+
+ ALA_the_alaskan_experiment:0 "The Alaskan Calamity"
+ ALA_the_alaskan_experiment_desc:0 ""
+
+ ALA_mobilize_the_national_guard:0 "Mobilize the National Guard"
+ ALA_mobilize_the_national_guard_desc:0 ""
+
+ ALA_stem_the_bleeding:0 "Stem the Bleeding"
+ ALA_stem_the_bleeding_desc:0 ""
+
+ ALA_reaffirm_inuit_commitments:0 "Reaffirm Inuit Commitments"
+ ALA_reaffirm_inuit_commitments_desc:0 ""
+
+ ALA_the_trial_of_the_pacific_fleet:0 "The Trial of the Pacific Fleet"
+ ALA_the_trial_of_the_pacific_fleet_desc:0 ""
+ 
  ### IDEAS ###
  ALA_apf:0 "Alaska Permanent Fund"
  ALA_apf_desc:0 "The Alaska Permanent Fund was created to hold and invest the surplus value created by our Trans-Atlantic Pipeline. While it was temporarily disrupted due to the occupation by the Pacific Fleet, it is now back in effect, giving Alaskans everywhere a yearly stipend of cash."
@@ -11,7 +65,7 @@
  ALA_tourism_recession:0 "Tourism Recession"
  ALA_tourism_recession_desc:0 "Tourism has been the backbone of the Alaskan economy, but that has all but disintegrated due to recent events. The legacy of the Pacific Fleet, combined with growing political instability, and the fact that our would be customers are fighting each other, has made sure no one is visiting."
  
- ALA_alaskan_powder_keg:0 "The Alaskan Powder Keg"
+ ALA_alaskan_powder_keg:0 "The Alaskan Powderkeg"
  ALA_alaskan_powder_keg_desc:0 "A perfect storm of poverty, political radicalism, and the scars of militarism have tipped our fledgling state to the edge of utter collapse."
 
  ALA_shadow_of_pac:0 "Shadow of the Pacific Fleet"
@@ -22,6 +76,18 @@
  
  ALA_northern_alaska:0 "Northern Alaska"
  ALA_northern_alaska_desc:0 "Northern Alaska contains substantial industries related to gas and oil, and plenty of untapped resources."
+ 
+ ALA_neglected_infrastructure:0 "Neglected Infrastructure"
+ ALA_neglected_infrastructure_desc:0 "It's bleak."
+
+ ALA_brain_drain:0 "Brain Drain"
+ ALA_brain_drain_desc:0 "Our education system is extremely underfunded with many opting to flee the country to other places with more opportunity."
+
+ ALA_liechtenstein_deal:0 "Liechtenstein Trade Deal"
+ ALA_liechtenstein_deal_desc:0 ""
+
+ ALA_the_trial_riots:0 ""The Trial Riots""
+ ALA_the_trial_riots_desc:0 ""
 
  # COMPANIES & MIOS #
 
@@ -31,11 +97,58 @@
  ALA_hilcorp:0 "Hilcorp"
 
  ### EVENTS ### 
+ 
+ alaska.1.t:0 "The Final Frontier in Chaos"
+ alaska.1.d:0 "The occupation by the Pacific Fleet has done a number on our fledgling nation. The oil that flowed to fuel the war machine has stopped, causing the entire economy to freeze up. Extreme poverty, most notably in the Inuit community, has caused intense social unrest and has fueled separatism in the North. Our already neglected Infrastructure has decayed even further under the junta, with many towns disconnected and lacking clean drinking water.\n\nOur state barely functions and is held together by some of the few brave national guard soldiers still left on duty. Worst of all is the complete lack of trust that the average Alaskan has in Dunleavy or the establishment in general. In order to keep this state alive, we must show the Alaskan people we are not impotent, then we can deal with the imprisoned Pacific Fleet."
+ alaska.1.a:0 "All eyes on Dunleavy"
 
+ alaska.2.t:0 "Alaskan Oil Trade Deal?"
+ alaska.2.d:0 " "
+ alaska.2.a:0 "They're too unstable to be relied upon"
+ 
+ alaska.3.t:0 "Europe Rebuffs Us"
+ alaska.3.d:0 " "
+ alaska.3.a:0 "We are betrayed!"
+
+ alaska.4.t:0 "Swiss-Alaskan Oil Deal?"
+ alaska.4.d:0 " "
+ alaska.4.a:0 "Better than nothing"
+ alaska.4.b:0 "A waste of time!"
+
+ alaska.5.t:0 "Liechtenstein's Trade Agreement"
+ alaska.5.d:0 " "
+ alaska.5.a:0 "Unexpected but welcome!"
+ alaska.5.b:0 "Who are you again?"
+
+ alaska.6.t:0 "Formation of the Communist Party of Alaska"
+ alaska.6.d:0 " "
+ alaska.6.a:0 "Opportunistic dogs"
+
+ alaska.7.t:0 "Protestors Gather Outside the Court Room"
+ alaska.7.d:0 " "
+ alaska.7.a:0 "Let them protest"
+ 
+ alaska.8.t:0 "The Secret Meeting"
+ alaska.8.d:0 " "
+ alaska.8.a:0 "We must keep this conversation under wraps"
+ 
+ alaska.9.t:0 "A Leak!"
+ alaska.9.d:0 " "
+ alaska.9.a:0 "Damnit!"
+
+ alaska.10.t:0 "Protests Devolve Into Riots!"
+ alaska.10.d:0 " "
+ alaska.10.a:0 "Let's hope we can get this over with and fast"
+ 
+ alaska.11.t:0 "The Trial Ends"
+ alaska.11.d:0 " "
+ alaska.11.a:0 "The court has spoken!"
+ alaska.11.b:0 "We need them! Pardon them!"
+ 
  ### CHARACTERS ###
 
  ALA_mike_dunleavy:0 "Mike Dunleavy"
- DESC_LEADER_MIKE_DUNLEAVY:0 "Few politicians have squandered their borderline pristine reputations like Mike Dunleavy. Despite serving Alaska as a very popular and effective governor, after the collapse of the United States, he quickly became the lapdog of the Pacific Fleet. Their troops were at first allowed to base in Anchorage, and then the airfields, and then soon all of Alaska came under the grip of the fleet. Without so much of a word or angry letter, Dunleavy stepped down and allowed the Pacific Fleet to take control and mobilize the population and its resources for its war aims.\n\nNow after the whimper that was the collapse of the Pacific Fleet, he has used whatever remains of his popularity to catapult himself back into the driver's seat. While the people are relieved that the junta is over, few have forgotten about the 'Great Alaskan Capitulation'. With trust already at an all time low, it will be an uphill battle for Dunleavy to win back the Alaskan people."
+ DESC_LEADER_MIKE_DUNLEAVY:0 "Mike Dunleavy was once a popular and effective governor of Alaska. He was praised for strengthening education, cracking down on crime, and for his fast COVID response. But many things have changed since the American Civil War.\n\nThe Pacific Fleet took control of Hawaii in the early phases and soon demanded Alaska surrender without bloodshed. Despite bipartisan opposition to junta control, Dunleavy capitulated, shocking Alaskans.\n\nFor his cooperation, the fleet allowed him to keep the mostly ceremonial role of governor of Alaska, staining his reputation as the war effort dragged on.\n\nNow that the Pacific Fleet has collapsed, he is left in control of a withering state that distrusts his rule, with many calling for him to step down. Winning back the trust of the Alaskan people will be a Herculean task."
  
  ALA_brian_kile:0 "Brian Kile"
  ALA_julie_a_small:0 "Julie A. Small"

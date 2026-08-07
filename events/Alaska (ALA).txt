@@ -1,624 +1,205 @@
-add_namespace = Alaska
+add_namespace = alaska
 
-#Alaskan Pardons
+#The Final Frontier in Chaos
 country_event = {
-	id = Alaska.1
-	title = Alaska.1.t
-	desc = Alaska.1.d
+	id = alaska.1
+	title = alaska.1.t
+	desc = alaska.1.d
 	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = Alaska.1.a
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0
-      				OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_EMP
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_SOV
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_PUTIN
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_MERC
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_RUS_MERC_DEM
-          			}
-      			}
-   			}
-		}
-		add_war_support = -0.10
-		add_stability = -0.10
-		set_country_flag = Pardoned_Fleet_Personnel
-	}
-	option = {
-		name = Alaska.1.b
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0
-      				OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_NATIVE
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_DEMOCRAT
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_PALIN
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_FRONTIER
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_FLEET
-          			}
-      			}
-   			}
-		}
-		add_war_support = 0.10
-		add_stability = -0.25
-		set_country_flag = No_Pardons
-	}
-}
-country_event = {
-	id = Alaska.2
-	title = Alaska.2.t
-	desc = Alaska.2.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.2.a
-		add_ideas = Wagner
+		name = alaska.1.a
+		add_political_power = 10
 		
 	}
 }
+
+#[FRA, ENG, HOL] Alaskan Trade Deal?
 country_event = {
-	id = Alaska.3
-	title = Alaska.3.t
-	desc = Alaska.3.d
+	id = alaska.2
+	title = alaska.2.t
+	desc = alaska.2.d
 	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = Alaska.3.a
-			set_cosmetic_tag = Wagner_Group
-			set_politics = {
-				ruling_party = autocratic
-			}
-			ALA_yevgeny_prigozhin = {
-				promote_character = yes
-			}
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.10
+		name = alaska.2.a
+		add_political_power = 10
+		
+	}
+}
+
+#Europe Fucking HATES Us
+country_event = {
+	id = alaska.3
+	title = alaska.3.t
+	desc = alaska.3.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska.3.a
+		add_political_power = -25
+
+		hidden_effect = {
+			country_event = {
+				id = alaska.4
+				days = 3
 			}
 			
-	}
-}
-country_event = {
-	id = Alaska.4
-	title = Alaska.4.t
-	desc = Alaska.4.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.4.a
-		add_stability = 0.01
-		add_political_power = 25
-	}
-}
-country_event = {
-	id = Alaska.5
-	title = Alaska.5.t
-	desc = Alaska.5.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.5.a
-		add_war_support = 0.03
-	}
-}
-country_event = {
-	id = Alaska.20
-	title = Alaska.20.t
-	desc = Alaska.20.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.20.a
-		give_military_access = ALA
-		give_guarantee = ALA
-	}
-}
-country_event = {
-	id = Alaska.21
-	title = Alaska.21.t
-	desc = Alaska.21.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.21.a
-		give_military_access = ALA
-		give_guarantee = ALA
-	}
-}
-country_event = {
-	id = Alaska.22
-	title = Alaska.22.t
-	desc = Alaska.22.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.22.a
-		give_military_access = ALA
-		give_guarantee = ALA
-	}
-}
-country_event = {
-	id = Alaska.23
-	title = Alaska.23.t
-	desc = Alaska.23.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.23.a
-		add_political_power = 30
-	}
-}
-country_event = {
-	id = Alaska.24
-	title = Alaska.24.t
-	desc = Alaska.24.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.24.a
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0
-      			OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_NATIVE
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_DEMOCRAT
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_FRONTIER
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_FLEET
-          			}
-      			}
-   			}
-		}
-		set_country_flag = ALA_President_Palin_Elected
-		add_popularity = {
-			ideology = republican
-			popularity = 0.03
-		}
-	}
-	option = {
-		name = Alaska.24.b
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0
-      			OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_NATIVE
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_DEMOCRAT
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_PALIN
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_FLEET
-          			}
-      			}
-   			}
-		}
-		set_country_flag = ALA_President_Watts_Elected
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.03
 		}
 	}
 }
+
+#Swiss-Alaskan Trade Deal
 country_event = {
-	id = Alaska.241
-	title = Alaska.241.t
-	desc = Alaska.241.d
+	id = alaska.4
+	title = alaska.4.t
+	desc = alaska.4.d
 	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = Alaska.241.a
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0
-      			OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_NATIVE
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_PALIN
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_FRONTIER
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_FLEET
-          			}
-      			}
-   			}
+		name = alaska.4.a
+		add_stability = 0.03
+		add_political_power = -10
+		add_resource = {
+		    type = oil
+		    amount = -5
+		    state = 2
 		}
-		set_country_flag = ALA_President_Begich_Elected
-		add_popularity = {
-				ideology = democrat
-				popularity = 0.03
+		hidden_effect = {
+			country_event = {
+				days = 3
+				id = alaska.5
 			}
+		}	
 	}
 	option = {
-		name = Alaska.241.b
-		ai_chance = {
-			factor = 10
-			modifier = {
-      			factor = 0
-      			OR = {
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_DEMOCRAT
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_PALIN
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_FRONTIER
-          			}
-					has_game_rule = {
-              			rule = ALA_path
-             			option = ALA_PATH_REP_FLEET
-          			}
-      			}
-   			}
-		}
-		set_country_flag = ALA_President_Vo_Elected
-		add_popularity = {
-				ideology = libertarian_left
-				popularity = 0.03
-			}
+		name = alaska.4.b
+		add_political_power = 20	
 	}
 }
+#Liechtenstein Reaches Out to Us
 country_event = {
-	id = Alaska.25
-	title = Alaska.25.t
-	desc = Alaska.25.d
+	id = alaska.5
+	title = alaska.5.t
+	desc = alaska.5.d
 	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = Alaska.25.a
-		country_event = { id = Alaska.24 days = 5 }
+		name = alaska.5.a
+		add_ideas = ALA_liechtenstein_deal
 	}
 	option = {
-		name = Alaska.25.b
-		country_event = { id = Alaska.241 days = 5 }
+		name = alaska.5.b
+		add_political_power = 15	
 	}
+}
+#Patterson Forms CPA
+country_event = {
+	id = alaska.6
+	title = alaska.6.t
+	desc = alaska.6.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
-		name = Alaska.25.c
-		set_country_flag = ALA_President_Krumm_Elected
+		name = alaska.6.a
+		set_party_name = {
+		    ideology = authoritarian_left
+		    long_name = "Communist Party of Alaska"
+		    name = "CPA"
+		}
+		add_popularity = {
+			ideology = authoritarian_left
+			popularity = 0.02
+		}
+		add_stability = -0.01
+		add_political_power = -10
+	}
+}
+#Pacific Fleet Event Chain #
+
+#Protestors Gather Outside Court Room
+country_event = {
+	id = alaska.7
+	title = alaska.7.t
+	desc = alaska.7.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska.7.a
+		add_stability = -0.01
+	}
+}
+#The Secret Meeting
+country_event = {
+	id = alaska.8
+	title = alaska.8.t
+	desc = alaska.8.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska.8.a
+		
+	}
+}
+#A Leak!
+country_event = {
+	id = alaska.9
+	title = alaska.9.t
+	desc = alaska.9.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska.9.a
+		add_political_power = -50
 		add_stability = -0.05
 	}
 }
+#Protests Devolve Into Riots
 country_event = {
-	id = Alaska.26
-	title = Alaska.26.t
-	desc = Alaska.26.d
+	id = alaska.10
+	title = alaska.10.t
+	desc = alaska.10.d
 	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = Alaska.26.a
-		add_stability = -0.03
+		name = alaska.10.a
+		add_popularity = {
+		    ideology = republican
+		    popularity = -0.1
+		}
+		add_ideas = ALA_the_trial_riots
 	}
 }
+#The Trial
 country_event = {
-	id = Alaska.27
-	title = Alaska.27.t
-	desc = Alaska.27.d
+	id = alaska.11
+	title = alaska.11.t
+	desc = alaska.11.d
 	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = Alaska.27.a
-		add_stability = -0.1
+		name = alaska.11.a
 		add_popularity = {
-			ideology = authoritarian_left
-			popularity = 0.05
+		    ideology = republican
+		    popularity = 0.05
 		}
-	}
-	option = {
-		name = Alaska.27.b
 		add_stability = 0.1
-		add_popularity = {
-			ideology = authoritarian_left
-			popularity = -0.85
-		}
-	}
-}
-country_event = {
-	id = Alaska.28
-	title = Alaska.28.t
-	desc = Alaska.28.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.28.a
-		add_stability = -0.15
-		add_political_power = -35
-	}
-}
-country_event = {
-	id = Alaska.50
-	title = Alaska.50.t
-	desc = Alaska.50.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.50.a
-		ALA = {
-			add_ideas = United_Nations_Membership
-			add_stability = 0.1
-		}
-	}
-}
-country_event = {
-	id = Alaska.51
-	title = Alaska.51.t
-	desc = Alaska.51.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.51.a
-		ALA = {
-			give_guarantee = USA
-			diplomatic_relation = {
-			    country = USA
-			    relation = non_aggression_pact
-			    active = yes
-			}
-		}
-	}
-}
-country_event = {
-	id = Alaska.52
-	title = Alaska.52.t
-	desc = Alaska.52.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.52.a
-		ALA = {
-			puppet = PAC
-		}
+		add_political_power = 100
+		remove_ideas = ALA_the_trial_riots
 	}
 	option = {
-		name = Alaska.52.b
-		ALA = {
-			create_wargoal = {
-    			type = puppet_wargoal_focus
-    			target = PAC
-			}
-		}
-	}
-}
-country_event = {
-	id = Alaska.53
-	title = Alaska.53.t
-	desc = Alaska.53.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.53.a
-		add_war_support = -0.1
-		
-	}
-	option = {
-		name = Alaska.53.b
-		PAC_john_c_aquilino = {
-			set_nationality = ALA
-		}
-	}
-}
-country_event = {
-	id = Alaska.54
-	title = Alaska.54.t
-	desc = Alaska.54.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.54.a
-		ALA = {
-			annex_country = {
-    			target = ROOT
-    			transfer_troops = yes
-			}
-		}
-	}
-	option = {
-		name = Alaska.54.b
-		ALA = {
-			create_wargoal = {
-    			type = puppet_wargoal_focus
-    			target = ROOT
-			}
-		}
-	}
-}
-country_event = {
-	id = Alaska.55
-	title = Alaska.55.t
-	desc = Alaska.55.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.55.a
-		ALA = {
-			puppet = CAS
-		}
-		set_cosmetic_tag = Alaskan_Cascadia
-		set_politics = {
-			ruling_party = autocratic
-		}
-		CAS_ronald_hewitt = {
-			promote_character = yes
-		}
-		If = {
-			Limit = {
-				105 = {
-					is_controlled_by = ALA
-				}
-			}
-			transfer_state = 105
-		}
-		If = {
-			Limit = {
-				78 = {
-					is_controlled_by = ALA
-				}
-			}
-			transfer_state = 78
-		}
-		If = {
-			Limit = {
-				68 = {
-					is_controlled_by = ALA
-				}
-			}
-			transfer_state = 68
-		}
-		If = {
-			Limit = {
-				75 = {
-					is_controlled_by = ALA
-				}
-			}
-			transfer_state = 75
-		}
-		load_focus_tree = generic_focus
-		
-	}
-	option = {
-		name = Alaska.55.b
-		ALA = {
-			create_wargoal = {
-    			type = puppet_wargoal_focus
-    			target = CAS
-			}
-		}
-	}
-}
-country_event = {
-	id = Alaska.56
-	title = Alaska.56.t
-	desc = Alaska.56.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = Alaska.56.a
-		ALA = {
-			annex_country = {
-    			target = CAS
-    			transfer_troops = yes
-			}
-		}
-		
-	}
-	option = {
-		name = Alaska.56.b
-		add_stability = 0.05
-	}
-}
-
-
-#Lukashenkopilled??
-country_event = {
-	id = Alaska.57
-	title = Alaska.57.t
-	desc = Alaska.57.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	#da!
-	option = {
-		name = Alaska.57.a
-		ALA_aleksandr_lukashenko = {
-			promote_character = yes
-		}
-	}
-	#nyet!
-	option = {
-		name = Alaska.57.b
-		add_political_power = -50
+		name = alaska.11.b
+		add_stability = -0.5
 	}
 }

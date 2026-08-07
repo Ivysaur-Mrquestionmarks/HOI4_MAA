@@ -1,31 +1,64 @@
 ideas = {
 	country = {
+		ALA_the_trial_riots = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.5
+			}
+		}
+		ALA_liechtenstein_deal = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				consumer_goods_factor = 0.02
+				production_factory_max_efficiency_factor = 0.03
+				research_speed_factor = 0.02
+			}
+		}
 		ALA_apf = {
-			#picture = prc_the_long_march2
+			picture = GFX_idea_ALA_apf
 			modifier = {
 				stability_factor = 0.10
 				consumer_goods_factor = 0.05
 				industrial_capacity_factory = 0.03
 			}
 		}
-		ALA_inuit_poverty = {
-			#picture = prc_the_long_march2
+		ALA_brain_drain = {
+			picture = GFX_idea_ALA_brain_drain
 			modifier = {
-				stability_factor = -0.1
-				monthly_population = -0.1
-				consumer_goods_factor = 0.08
+				research_speed_factor = -0.15
+				special_project_speed_factor = -0.2
+				monthly_population = -0.05
+			}
+		}
+		ALA_neglected_infrastructure = {
+			picture = GFX_idea_ALA_neglected_infrastructure
+			modifier = {
+				army_speed_factor = -0.2
+				production_speed_buildings_factor = -0.15 
+				production_speed_infrastructure_factor = -0.4 
+				global_building_slots_factor = -0.2
+			}
+		}
+		ALA_inuit_poverty = {
+			picture = ALA_extreme_inuit_poverty
+			modifier = {
+				stability_factor = -0.15
+				monthly_population = -0.2
+				consumer_goods_factor = 0.12
 				authoritarian_left_drift = 0.02
+				libertarian_left_drift = 0.02
 			}
 		}
 		ALA_tourism_recession = {
-			#picture = prc_the_long_march2
+			picture = ALA_tourism_recession
 			modifier = {
 				industrial_capacity_factory = -0.15
 				consumer_goods_factor = 0.1
 			}
 		}
 		ALA_alaskan_powder_keg = {
-			#picture = prc_the_long_march2
+			picture = ALA_alaskan_powderkeg
 			modifier = {
 				political_power_factor = -0.2
 				stability_factor = -0.1
@@ -36,12 +69,12 @@ ideas = {
 			}
 		}
 		ALA_collapsed_oil_industry = {
-			#picture = prc_the_long_march2
+			picture = GFX_idea_ALA_collapsed_oil_industry
 			modifier = {
-				country_resource_oil = -50
-				fuel_gain_factor_from_states = -0.25
-				max_fuel_factor = -0.25
-				consumer_goods_factor = 0.35
+				country_resource_oil = -80
+				fuel_gain_factor = -0.5
+				max_fuel_factor = 0.3
+				consumer_goods_factor = 0.5
 				stability_factor = -0.25 
 			}
 		}

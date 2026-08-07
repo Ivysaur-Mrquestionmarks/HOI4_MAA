@@ -233829,4 +233829,184 @@ SpriteType = {
         legacy_lazy_load = no
 
     }
+    SpriteType = {
+        name = "GFX_goal_ALA_the_alaskan_experiment"
+        texturefile = "gfx/interface/goals/ALA_the_alaskan_experiment.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_ALA_the_alaskan_experiment_shine"
+        texturefile = "gfx/interface/goals/ALA_the_alaskan_experiment.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ALA_the_alaskan_experiment.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ALA_the_alaskan_experiment.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_ALA_reaffirm_inuit_commitments"
+        texturefile = "gfx/interface/goals/ALA_reaffirm_inuit_commitments.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_ALA_reaffirm_inuit_commitments_shine"
+        texturefile = "gfx/interface/goals/ALA_reaffirm_inuit_commitments.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ALA_reaffirm_inuit_commitments.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ALA_reaffirm_inuit_commitments.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_ALA_mobilize_the_national_guard"
+        texturefile = "gfx/interface/goals/ALA_mobilize_the_national_guard.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_ALA_mobilize_the_national_guard_shine"
+        texturefile = "gfx/interface/goals/ALA_mobilize_the_national_guard.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ALA_mobilize_the_national_guard.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ALA_mobilize_the_national_guard.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_ALA_stem_the_bleeding"
+        texturefile = "gfx/interface/goals/ALA_stem_the_bleeding.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_ALA_stem_the_bleeding_shine"
+        texturefile = "gfx/interface/goals/ALA_stem_the_bleeding.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ALA_stem_the_bleeding.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ALA_stem_the_bleeding.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
+    SpriteType = {
+        name = "GFX_goal_ALA_trial_of_the_pacific_fleet"
+        texturefile = "gfx/interface/goals/ALA_trial_of_the_pacific_fleet.dds"
+    }
+    SpriteType = {
+        name = "GFX_goal_ALA_trial_of_the_pacific_fleet_shine"
+        texturefile = "gfx/interface/goals/ALA_trial_of_the_pacific_fleet.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ALA_trial_of_the_pacific_fleet.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ALA_trial_of_the_pacific_fleet.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+    }
 }
