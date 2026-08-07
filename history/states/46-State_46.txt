@@ -44,6 +44,9 @@ state={
 	provinces={
 		229 252 1066 1178 1794 2678 3015 3801 5182 5996 9860 9922 11256 11343 11356 11373 11374
 	}
+	resources={
+		coal = 30
+	}
 	manpower=2286001
 	buildings_max_level_factor=1.000
 	state_category=metropolis
