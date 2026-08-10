@@ -1,5 +1,67 @@
 ideas = {
 	country = {
+		ALA_broadband_investments = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.1
+				coordination_bonus = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		ALA_nationwide_broadband = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.15
+				coordination_bonus = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		ALA_nationwide_broadband_1 = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				stability_factor = 0.2
+				consumer_goods_factor = 0.15
+				coordination_bonus = 0.1
+				research_speed_factor = 0.2
+			}
+		}
+		ALA_alaskan_mariculture = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				monthly_population = 0.2
+				supply_consumption_factor = -0.25
+				conscription_factor = 0.15
+			}
+		}
+		ALA_kelp_market = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
+		ALA_bioplastics = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_lack_of_resource_penalty_factor = -0.1 
+			}
+		}
+		ALA_rally_the_inuits = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				authoritarian_left_drift = 0.1
+				political_power_factor = 0.05
+			}
+		}
+		ALA_rally_the_workers = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				authoritarian_left_drift = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
 		ALA_the_trial_riots = {
 			picture = GFX_idea_ALA_apf
 			modifier = {
@@ -15,12 +77,30 @@ ideas = {
 				research_speed_factor = 0.02
 			}
 		}
+		ALA_apf_liquidated = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				stability_factor = -0.25
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
 		ALA_apf = {
 			picture = GFX_idea_ALA_apf
 			modifier = {
 				stability_factor = 0.10
 				consumer_goods_factor = 0.05
 				industrial_capacity_factory = 0.03
+			}
+		}
+		ALA_apf_better = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				stability_factor = 0.2
+				weekly_stability = 0.01
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.1
 			}
 		}
 		ALA_brain_drain = {
@@ -31,6 +111,41 @@ ideas = {
 				monthly_population = -0.05
 			}
 		}
+		ALA_brain_drain_1 = {
+			picture = GFX_idea_ALA_brain_drain
+			modifier = {
+				consumer_goods_factor = 0.1
+				research_speed_factor = -0.12
+				special_project_speed_factor = -0.15
+				monthly_population = -0.03
+			}
+		}
+		ALA_brain_drain_2 = {
+			picture = GFX_idea_ALA_brain_drain
+			modifier = {
+				consumer_goods_factor = 0.1
+				research_speed_factor = -0.06
+				special_project_speed_factor = -0.1
+				monthly_population = -0.02
+			}
+		}
+		ALA_brain_drain_3 = {
+			picture = GFX_idea_ALA_brain_drain
+			modifier = {
+				consumer_goods_factor = 0.1
+				research_speed_factor = -0.03
+				special_project_speed_factor = -0.05
+			}
+		}
+		ALA_brain_drain_4 = {
+			picture = GFX_idea_ALA_brain_drain
+			modifier = {
+				research_speed_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.1
+				special_project_speed_factor = 0.1
+				monthly_population = 0.1
+			}
+		}
 		ALA_neglected_infrastructure = {
 			picture = GFX_idea_ALA_neglected_infrastructure
 			modifier = {
@@ -38,6 +153,74 @@ ideas = {
 				production_speed_buildings_factor = -0.15 
 				production_speed_infrastructure_factor = -0.4 
 				global_building_slots_factor = -0.2
+				supply_combat_penalties_on_core_factor = 0.3
+				industry_repair_factor = -0.25
+			}
+		}
+		ALA_neglected_infrastructure_1 = {
+			picture = GFX_idea_ALA_neglected_infrastructure
+			modifier = {
+				army_speed_factor = -0.15
+				production_speed_buildings_factor = -0.1 
+				production_speed_infrastructure_factor = -0.35 
+				global_building_slots_factor = -0.2
+				supply_combat_penalties_on_core_factor = 0.25
+				industry_repair_factor = -0.25
+			}
+		}
+		ALA_neglected_infrastructure_2 = {
+			picture = GFX_idea_ALA_neglected_infrastructure
+			modifier = {
+				army_speed_factor = -0.15
+				production_speed_buildings_factor = -0.1 
+				production_speed_infrastructure_factor = -0.3 
+				global_building_slots_factor = -0.15
+				supply_combat_penalties_on_core_factor = 0.2
+				industry_repair_factor = -0.25
+			}
+		}
+		ALA_neglected_infrastructure_3 = {
+			picture = GFX_idea_ALA_neglected_infrastructure
+			modifier = {
+				army_speed_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				production_speed_infrastructure_factor = -0.25 
+				global_building_slots_factor = -0.15
+				supply_combat_penalties_on_core_factor = 0.15
+				industry_repair_factor = -0.15
+			}
+		}
+		ALA_neglected_infrastructure_4 = {
+			picture = GFX_idea_ALA_neglected_infrastructure
+			modifier = {
+				army_speed_factor = -0.1
+				production_speed_buildings_factor = -0.05 
+				production_speed_infrastructure_factor = -0.2 
+				global_building_slots_factor = -0.1
+				supply_combat_penalties_on_core_factor = 0.1
+				industry_repair_factor = -0.15
+			}
+		}
+		ALA_neglected_infrastructure_5 = {
+			picture = GFX_idea_ALA_neglected_infrastructure
+			modifier = {
+				army_speed_factor = -0.05
+				production_speed_buildings_factor = -0.05 
+				production_speed_infrastructure_factor = -0.15 
+				global_building_slots_factor = -0.2
+				supply_combat_penalties_on_core_factor = 0.05
+				industry_repair_factor = -0.15
+			}
+		}
+		ALA_neglected_infrastructure_6 = {
+			picture = GFX_idea_ALA_neglected_infrastructure
+			modifier = {
+				army_speed_factor = -0.05
+				production_speed_buildings_factor = -0.05 
+				production_speed_infrastructure_factor = -0.1 
+				global_building_slots_factor = -0.05
+				supply_combat_penalties_on_core_factor = 0.05
+				industry_repair_factor = -0.15
 			}
 		}
 		ALA_inuit_poverty = {
@@ -71,11 +254,118 @@ ideas = {
 		ALA_collapsed_oil_industry = {
 			picture = GFX_idea_ALA_collapsed_oil_industry
 			modifier = {
-				country_resource_oil = -80
 				fuel_gain_factor = -0.5
 				max_fuel_factor = 0.3
 				consumer_goods_factor = 0.5
-				stability_factor = -0.25 
+				stability_factor = -0.3
+				min_export = -0.30
+			}
+		}
+		ALA_collapsed_oil_industry_1 = {
+			picture = GFX_idea_ALA_collapsed_oil_industry
+			modifier = {
+				fuel_gain_factor = -0.5
+				max_fuel_factor = 0.3
+				consumer_goods_factor = 0.45
+				stability_factor = -0.25
+				min_export = -0.30 
+			}
+		}
+		ALA_collapsed_oil_industry_2_renewable = {
+			picture = GFX_idea_ALA_collapsed_oil_industry
+			modifier = {
+				political_power_factor = -0.1
+				country_resource_oil = -100
+				fuel_gain_factor = -0.75
+				consumer_goods_factor = 0.6
+				stability_factor = -0.35
+				min_export = -0.65 
+			}
+		}
+		ALA_collapsed_oil_industry_3_renewable = {
+			picture = GFX_idea_ALA_collapsed_oil_industry
+			modifier = {
+				political_power_factor = -0.05
+				factory_energy_consumption = -0.1
+				country_resource_oil = -100
+				fuel_gain_factor = -0.35
+				consumer_goods_factor = 0.6
+				stability_factor = -0.15
+				min_export = -0.65 
+			}
+		}
+		ALA_collapsed_oil_industry_4_renewable = {
+			picture = GFX_idea_ALA_collapsed_oil_industry
+			modifier = {
+				factory_energy_consumption = -0.2
+				country_resource_oil = -100
+				fuel_gain_factor = -0.35
+				consumer_goods_factor = 0.2
+				stability_factor = -0.05
+				min_export = -0.35 
+			}
+		}
+		ALA_collapsed_oil_industry_5_renewable = {
+			picture = GFX_idea_ALA_collapsed_oil_industry
+			modifier = {
+				factory_energy_consumption = -0.3
+				country_resource_oil = -100
+				fuel_gain_factor = -0.25
+				stability_factor = 0.25
+				research_speed_factor = 0.1
+			}
+		}
+		ALA_collapsed_oil_industry_2_oil = {
+			picture = GFX_idea_ALA_collapsed_oil_industry
+			modifier = {
+				country_resource_oil = -80
+				fuel_gain_factor = -0.5
+				max_fuel_factor = 0.3
+				consumer_goods_factor = 0.35
+				stability_factor = -0.2
+				min_export = -0.4 
+			}
+		}
+		ALA_collapsed_oil_industry_3_oil = {
+			picture = GFX_idea_ALA_collapsed_oil_industry
+			modifier = {
+				country_resource_oil = -60
+				fuel_gain_factor = -0.5
+				max_fuel_factor = 0.2
+				consumer_goods_factor = 0.25
+				stability_factor = -0.15
+				min_export = -0.3 
+			}
+		}
+		ALA_collapsed_oil_industry_4_oil = {
+			picture = GFX_idea_ALA_collapsed_oil_industry
+			modifier = {
+				country_resource_oil = -40
+				fuel_gain_factor = -0.5
+				max_fuel_factor = 0.1
+				consumer_goods_factor = 0.15
+				stability_factor = -0.1
+				min_export = -0.2 
+			}
+		}
+		ALA_collapsed_oil_industry_5_oil = {
+			picture = GFX_idea_ALA_collapsed_oil_industry
+			modifier = {
+				country_resource_oil = -20
+				fuel_gain_factor = -0.5
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+				min_export = -0.1
+			}
+		}
+
+		ALA_collapsed_oil_industry_6_oil = {
+			picture = GFX_idea_ALA_collapsed_oil_industry
+			modifier = {
+				consumer_goods_factor = -0.1
+				fuel_gain_factor = 0.2
+				stability_factor = 0.1
+				min_export = 0.15
 			}
 		}
 		ALA_alaska_native_corporations = {

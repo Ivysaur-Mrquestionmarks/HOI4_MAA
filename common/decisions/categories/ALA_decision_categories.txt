@@ -1,0 +1,27 @@
+ALA_oil_crisis = {
+	icon = generic_propaganda
+	
+	allowed = {
+		OR = {
+			original_tag = ALA
+		}
+		has_completed_focus = ALA_managing_the_oil_crisis
+		NOT = {
+			OR = {
+				has_completed_focus = ALA_the_taps_flow_once_again
+				has_completed_focus = ALA_the_cutting_edge_of_energy_technology
+			}
+		}
+	}
+	visible_when_empty = yes
+
+}
+ALA_fix_it_felix = {
+	allowed = {
+		OR = {
+			original_tag = ALA
+		}
+		has_completed_focus = ALA_fix_the_infrastructure
+		
+	}
+}

@@ -1,0 +1,527 @@
+ALA_oil_crisis = {
+
+	ALA_petition_for_recognition = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			
+		}
+		available = {
+			#has_completed_focus = ALA_gain_international_trust
+		}
+		visible = {
+			has_completed_focus = ALA_gain_international_trust
+		}
+
+		targets = { HOL FFR ENG}
+
+		target_trigger = {
+			FROM = {
+				NOT = {
+					has_country_flag = ALA_recognizes_alaska
+				}
+			}
+		}
+		cost = 25
+				
+		days_remove = 30
+		days_re_enable = 60
+
+		modifier = {
+			political_power_factor = -0.2
+		}
+		complete_effect = {
+		    FROM = {
+		    	country_event = {
+		    		id =  alaska_oil.1
+		    		days = 5
+		    	}
+		    }
+		}
+	}
+	ALA_negotiate_trade_deals = {
+
+		icon = oil
+
+		allowed = {
+			
+		}
+		available = {
+			#has_completed_focus = ALA_gain_international_trust
+		}
+		visible = {
+			has_completed_focus = ALA_gain_international_trust
+		}
+
+		targets = { HOL FFR ENG}
+		cost = 25
+				
+		days_remove = 70
+
+		modifier = {
+			political_power_factor = -0.1
+		}
+		complete_effect = {
+		    FROM = {
+		    	capital_scope = {
+		    		add_resource = {
+					    type = oil
+					    amount = 25
+					}
+		    	}
+		    }
+		    2 = {
+		    	add_resource = {
+					type = oil
+					amount = -25
+				}
+		    }
+		    IF = {
+		    	LIMIT = {
+		    		has_idea = ALA_collapsed_oil_industry_2_oil
+		    	}
+		    	swap_ideas = {
+		    		remove_idea = ALA_collapsed_oil_industry_2_oil
+		    		add_idea = ALA_collapsed_oil_industry_3_oil
+		    	}
+		    }
+		    IF = {
+		    	LIMIT = {
+		    		has_idea = ALA_collapsed_oil_industry_3_oil
+		    	}
+		    	swap_ideas = {
+		    		remove_idea = ALA_collapsed_oil_industry_3_oil
+		    		add_idea = ALA_collapsed_oil_industry_4_oil
+		    	}
+		    }
+		    IF = {
+		    	LIMIT = {
+		    		has_idea = ALA_collapsed_oil_industry_4_oil
+		    	}
+		    	swap_ideas = {
+		    		remove_idea = ALA_collapsed_oil_industry_4_oil
+		    		add_idea = ALA_collapsed_oil_industry_5_oil
+		    	}
+		    }
+		}
+	}
+	ALA_kodiak_wind_farms = {
+
+		icon = generic_electricity
+
+		allowed = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = ALA_building_farm
+			}
+		}
+		visible = {
+			has_completed_focus = ALA_invest_in_the_big_three
+		}
+
+		state_target = yes
+		targets = { 
+			state = 16
+		}
+		cost = 50
+				
+		days_remove = 70
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		complete_effect = {
+			set_country_flag = ALA_building_farm
+		}
+		remove_effect = {
+		    16 = {
+		    	add_resource = {
+					type = coal
+					amount = 25
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+		    }
+		    custom_effect_tooltip = generic_skip_one_line_tt
+
+		    custom_effect_tooltip = ALA_energy_phase_tt
+		    
+		    custom_effect_tooltip = generic_skip_one_line_tt
+
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_1
+		    	}
+		    	clr_country_flag = ALA_renewable_1
+		    	set_country_flag = ALA_renewable_2
+		    }
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_2
+		    	}
+		    	clr_country_flag = ALA_renewable_2
+		    	set_country_flag = ALA_renewable_3
+		    }
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_3
+		    	}
+		    	clr_country_flag = ALA_renewable_3
+		    	set_country_flag = ALA_renewable_4
+		    }
+		    ELSE = {
+		    	set_coutnry_flag = ALA_renewable_1
+		    }
+		    clr_country_flag = ALA_building_farm
+		}
+	}
+	ALA_anchorage_solar_farms = {
+
+		icon = generic_electricity
+
+		allowed = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = ALA_building_farm
+			}
+		}
+		visible = {
+			has_completed_focus = ALA_invest_in_the_big_three
+		}
+		
+		state_target = yes
+		targets = { 
+			state = 2
+		}
+		cost = 50
+				
+		days_remove = 70
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		complete_effect = {
+			set_country_flag = ALA_building_farm
+		}
+		remove_effect = {
+		    2 = {
+		    	add_resource = {
+					type = coal
+					amount = 15
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+		    }
+		    custom_effect_tooltip = generic_skip_one_line_tt
+
+		    custom_effect_tooltip = ALA_energy_phase_tt
+		    
+		    custom_effect_tooltip = generic_skip_one_line_tt
+
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_3
+		    	}
+		    	clr_country_flag = ALA_renewable_3
+		    	set_country_flag = ALA_renewable_4
+		    }
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_2
+		    	}
+		    	clr_country_flag = ALA_renewable_2
+		    	set_country_flag = ALA_renewable_3
+		    }
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_1
+		    	}
+		    	clr_country_flag = ALA_renewable_1
+		    	set_country_flag = ALA_renewable_2
+		    }
+		    ELSE = {
+		    	set_country_flag = ALA_renewable_1
+		    }
+		    clr_country_flag = ALA_building_farm
+		}
+	}
+	ALA_expand_black_bear_lake_project = {
+
+		icon = generic_construction
+
+		allowed = {
+			
+		}
+		available = {
+			#has_completed_focus = ALA_gain_international_trust
+			NOT = {
+				has_country_flag = ALA_building_dam
+			}
+		}
+		visible = {
+			has_completed_focus = ALA_invest_in_the_big_three
+		}
+		
+		state_target = yes
+		targets = { 
+			state = 14
+		}
+		cost = 100
+				
+		days_remove = 140
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		complete_effect = {
+			set_country_flag = ALA_building_dam
+		}
+		remove_effect = {
+		   14 = {
+		    	add_resource = {
+					type = coal
+					amount = 40
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
+		    }
+		    custom_effect_tooltip = generic_skip_one_line_tt
+
+		    custom_effect_tooltip = ALA_energy_phase_tt
+
+		    custom_effect_tooltip = generic_skip_one_line_tt
+
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_3
+		    	}
+		    	clr_country_flag = ALA_renewable_3
+		    	set_country_flag = ALA_renewable_4
+		    }
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_2
+		    	}
+		    	clr_country_flag = ALA_renewable_2
+		    	set_country_flag = ALA_renewable_3
+		    }
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_1
+		    	}
+		    	clr_country_flag = ALA_renewable_1
+		    	set_country_flag = ALA_renewable_2
+		    }
+		    ELSE = {
+		    	set_country_flag = ALA_renewable_1
+		    }
+		}
+	}
+	ALA_thayer_creek_hydroelectric_project = {
+
+		icon = generic_construction
+
+		allowed = {
+			
+		}
+		available = {
+			#has_completed_focus = ALA_gain_international_trust
+			NOT = {
+				has_country_flag = ALA_building_dam
+			}
+		}
+		visible = {
+			has_completed_focus = ALA_invest_in_the_big_three
+		}
+		
+		state_target = yes
+		targets = { 
+			state = 11
+		}
+		cost = 100
+				
+		days_remove = 280
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		complete_effect = {
+			set_country_flag = ALA_building_dam
+		}
+		remove_effect = {
+		   11 = {
+		    	add_resource = {
+					type = coal
+					amount = 50
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
+		    }
+		    custom_effect_tooltip = generic_skip_one_line_tt
+
+		    custom_effect_tooltip = ALA_energy_phase_tt
+
+		    custom_effect_tooltip = generic_skip_one_line_tt
+
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_3
+		    	}
+		    	clr_country_flag = ALA_renewable_3
+		    	set_country_flag = ALA_renewable_4
+		    }
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_2
+		    	}
+		    	clr_country_flag = ALA_renewable_2
+		    	set_country_flag = ALA_renewable_3
+		    }
+		    IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_1
+		    	}
+		    	clr_country_flag = ALA_renewable_1
+		    	set_country_flag = ALA_renewable_2
+		    }
+		    ELSE = {
+		    	set_country_flag = ALA_renewable_1
+		    }
+		}
+	}
+}
+ALA_fix_it_felix = {
+	ALA_fix_the_roads = {
+
+		icon = generic_trucks
+
+		allowed = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = ALA_investing_infrastructure
+			}
+		}
+		visible = {
+			#has_completed_focus = ALA_gain_international_trust
+		}
+
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				AND = {
+					is_owned_and_controlled_by = ALA
+					is_core_of = ALA
+				}	
+				OR = {
+					state = 96
+					state = 404
+					state = 19
+					state = 2
+					state = 14
+					state = 11
+				}			
+			}
+
+		}
+
+		cost = 10
+				
+		days_remove = 70
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		remove_effect = {
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = infrastructure
+				    level = 2
+				    instant_build = yes
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_neglected_infrastructure_5
+				}
+				swap_ideas = {
+					remove_idea = ALA_neglected_infrastructure_5
+					add_idea = ALA_neglected_infrastructure_6
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_neglected_infrastructure_4
+				}
+				swap_ideas = {
+					remove_idea = ALA_neglected_infrastructure_4
+					add_idea = ALA_neglected_infrastructure_5
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_neglected_infrastructure_3
+				}
+				swap_ideas = {
+					remove_idea = ALA_neglected_infrastructure_3
+					add_idea = ALA_neglected_infrastructure_4
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_neglected_infrastructure_2
+				}
+				swap_ideas = {
+					remove_idea = ALA_neglected_infrastructure_2
+					add_idea = ALA_neglected_infrastructure_3
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_neglected_infrastructure_1
+				}
+				swap_ideas = {
+					remove_idea = ALA_neglected_infrastructure_1
+					add_idea = ALA_neglected_infrastructure_2
+				}
+			}
+
+			ELSE = {
+				swap_ideas = {
+					remove_idea = ALA_neglected_infrastructure
+					add_idea = ALA_neglected_infrastructure_1
+				}
+			}
+			FROM = {
+				set_state_flag = ALA_state_fixed
+			}
+			set_country_flag = ALA_investing_infrastructure
+		}
+		complete_effect = {
+		    
+		}
+	}
+}

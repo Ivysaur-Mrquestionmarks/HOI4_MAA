@@ -8,51 +8,25 @@
 		}
 	}
 	continuous_focus_position = { x = 50 y = 50 }
-	default = no
+	default = no	
+	focus = {
+		id = ALA_the_alaskan_economy
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 70
+		y = 0
+		ai_will_do = { 
+			factor = 300
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
 	focus = {
 		id = ALA_north_alaskan_incursions
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 50
-		y = 7
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_the_alaskan_economy
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = 50
-		y = 0
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_the_alaskan_economy
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = 50
-		y = 0
-		ai_will_do = { 
-			factor = 300
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_nurture_the_tech_industry
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = 8
+		x = 11
 		y = 1
 		relative_position_id = ALA_the_alaskan_economy
 		ai_will_do = { 
@@ -63,6 +37,273 @@
 		}
 		completion_reward = {
 			
+		}
+	}
+	focus = {
+		id = ALA_tackle_inuit_poverty
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_north_alaskan_incursions
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_north_alaskan_incursions
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_increase_housing
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_tackle_inuit_poverty
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_tackle_inuit_poverty
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_assist_local_industries
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_tackle_inuit_poverty
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_tackle_inuit_poverty
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_inuit_revival
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_tackle_inuit_poverty
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_assist_local_industries
+		}
+		prerequisite = {
+			focus = ALA_increase_housing
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_strike_deep_beneath_the_crust
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ALA_north_alaskan_incursions
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_north_alaskan_incursions
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_ambler_road_project
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_strike_deep_beneath_the_crust
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_strike_deep_beneath_the_crust
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_brooks_range_mining
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_strike_deep_beneath_the_crust
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_strike_deep_beneath_the_crust
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_exploit_klukwan_deposit
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_strike_deep_beneath_the_crust
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_ambler_road_project
+			focus = ALA_brooks_range_mining	
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_fix_the_infrastructure
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 5
+		y = 1
+		relative_position_id = ALA_the_alaskan_economy
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_alaskan_economy
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = ALA_fix_it_felix
+		}
+	}
+	focus = {
+		id = ALA_mine_bear_mountain
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_fix_the_infrastructure
+		ai_will_do = { 
+			factor = 300
+		}
+		available = {
+			2 = {
+				has_state_flag = ALA_state_fixed
+			}
+		}
+		prerequisite = {
+			focus = ALA_boulder_creek_deposit
+			focus = ALA_build_pebble_mine
+		}
+		completion_reward = {
+			2 = {
+				add_resource = {
+				    type = tungsten
+				    amount = 35
+				}
+			}
+		}
+	}
+	focus = {
+		id = ALA_boulder_creek_deposit
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_fix_the_infrastructure
+		ai_will_do = { 
+			factor = 300
+		}
+		available = {
+			19 = {
+				has_state_flag = ALA_state_fixed
+			}
+		}
+		prerequisite = {
+			focus = ALA_fix_the_infrastructure
+		}
+		prerequisite = {
+			focus = ALA_north_alaskan_incursions
+		}
+		completion_reward = {
+			19 = {
+				add_resource = {
+				    type = chromium
+				    amount = 40
+				}
+			}
+		}
+	}
+	focus = {
+		id = ALA_build_pebble_mine
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_fix_the_infrastructure
+		ai_will_do = { 
+			factor = 300
+		}
+		available = {
+			404 = {
+				has_state_flag = ALA_state_fixed
+			}
+		}
+		prerequisite = {
+			focus = ALA_fix_the_infrastructure
+		}
+		completion_reward = {
+			404 = {
+				add_resource = {
+				    type = steel
+				    amount = 21
+				}
+				add_resource = {
+				    type = tungsten
+				    amount = 8
+				}
+			}
+		}
+	}
+	focus = {
+		id = ALA_nurture_the_tech_industry
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_the_alaskan_economy
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_alaskan_economy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 3
+			    category = electronics
+			}
 		}
 	}
 	focus = {
@@ -79,7 +320,13 @@
 			focus = ALA_nurture_the_tech_industry
 		}
 		completion_reward = {
-			
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = ALA_brain_drain
+				add_idea = ALA_brain_drain_1
+			}
+			set_country_flag = { flag = ALA_brain_drain_cooldown value = 1 days = 180 }
+			custom_effect_tooltip = ALA_brain_drain_cooldown_tt
 		}
 	}
 	focus = {
@@ -96,7 +343,11 @@
 			focus = ALA_fund_the_university_of_alaska
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+			    bonus = 2
+			    uses = 1
+			    category = radar_tech
+			}
 		}
 	}
 	focus = {
@@ -113,7 +364,16 @@
 			focus = ALA_fund_the_university_of_alaska
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 2
+			    category = construction_tech
+			}
+			add_tech_bonus = {
+			    bonus = 0.5
+			    uses = 2
+			    category = cat_production
+			}
 		}
 	}
 	focus = {
@@ -126,11 +386,19 @@
 		ai_will_do = { 
 			factor = 300
 		}
+		available = {
+			not = { has_country_flag = ALA_brain_drain_cooldown }
+		}
 		prerequisite = {
 			focus = ALA_fund_the_university_of_alaska
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_brain_drain_1
+				add_idea = ALA_brain_drain_2
+			}
+			set_country_flag = { flag = ALA_brain_drain_cooldown value = 1 days = 180 }
+			custom_effect_tooltip = ALA_brain_drain_cooldown_tt
 		}
 	}
 	focus = {
@@ -143,6 +411,9 @@
 		ai_will_do = { 
 			factor = 300
 		}
+		available = {
+			not = { has_country_flag = ALA_brain_drain_cooldown }
+		}
 		prerequisite = {
 			focus = ALA_invigorate_the_stem_movement
 		}
@@ -150,7 +421,10 @@
 			focus = ALA_the_science_pipeline
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_brain_drain_2
+				add_idea = ALA_brain_drain_3
+			}
 		}
 	}
 	focus = {
@@ -166,8 +440,11 @@
 		prerequisite = {
 			focus = ALA_nurture_the_tech_industry
 		}
+		prerequisite = {
+			focus = ALA_fix_the_infrastructure
+		}
 		completion_reward = {
-			
+			add_ideas = ALA_broadband_investments
 		}
 	}
 	focus = {
@@ -175,23 +452,29 @@
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ALA_develop_broadband_infrastructure
 		ai_will_do = { 
 			factor = 300
+		}
+		available = {
+			industrial_complex > 9
 		}
 		prerequisite = {
 			focus = ALA_develop_broadband_infrastructure
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_broadband_investments
+				add_idea = ALA_nationwide_broadband
+			}
 		}
 	}
 	focus = {
-		id = ALA_reverse_the_brain_drain
+		id = ALA_online_schooling
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = ALA_rural_internetification
 		ai_will_do = { 
@@ -200,25 +483,49 @@
 		prerequisite = {
 			focus = ALA_rural_internetification
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ALA_nationwide_broadband
+				add_idea = ALA_nationwide_broadband_1
+			}
+		}
+	}
+	focus = {
+		id = ALA_reverse_the_brain_drain
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_online_schooling
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_online_schooling
+		}
 		prerequisite = {
 			focus = ALA_the_need_for_constant_innovation
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_brain_drain_3
+				add_idea = ALA_brain_drain_4
+			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
 		id = ALA_alaskan_data_centers
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = ALA_develop_broadband_infrastructure
+		relative_position_id = ALA_north_alaskan_incursions
 		ai_will_do = { 
 			factor = 300
 		}
-		prerequisite = {
-			focus = ALA_develop_broadband_infrastructure
+		prerequisite = {	
+			focus = ALA_north_alaskan_incursions
 		}
 		completion_reward = {
 			
@@ -228,8 +535,8 @@
 		id = ALA_pivot_into_ai_research
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = ALA_alaskan_data_centers
 		ai_will_do = { 
 			factor = 300
@@ -242,10 +549,33 @@
 		}
 	}
 	focus = {
-		id = ALA_cultivate_the_aquaculture_industry
+		id = ALA_north_alaskan_prosperity
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 0
+		y = 1
+		relative_position_id = ALA_pivot_into_ai_research
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_inuit_revival
+		}
+		prerequisite = {
+			focus = ALA_pivot_into_ai_research
+		}
+		prerequisite = {
+			focus = ALA_exploit_klukwan_deposit
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_cultivate_the_aquaculture_industry
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -8
 		y = 1
 		relative_position_id = ALA_the_alaskan_economy
 		ai_will_do = { 
@@ -255,7 +585,38 @@
 			focus = ALA_the_alaskan_economy
 		}
 		completion_reward = {
-			
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = infrastructure
+				    level = 2
+				    instant_build = yes
+				}
+			}
+			2 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = infrastructure
+				    level = 2
+				    instant_build = yes
+				}
+			}
+			404 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = infrastructure
+				    level = 2
+				    instant_build = yes
+				}
+			}
+			14 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = infrastructure
+				    level = 2
+				    instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -272,11 +633,18 @@
 			focus = ALA_cultivate_the_aquaculture_industry
 		}
 		completion_reward = {
-			
+			2 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = ALA_strengthen_freight_logistics
+		id = ALA_oyster_and_mussels
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 1
@@ -289,7 +657,14 @@
 			focus = ALA_shellfish_farming
 		}
 		completion_reward = {
-			
+			14 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -306,7 +681,14 @@
 			focus = ALA_cultivate_the_aquaculture_industry
 		}
 		completion_reward = {
-			
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -323,7 +705,7 @@
 			focus = ALA_bolster_kelp_industries_in_kodiak
 		}
 		completion_reward = {
-			
+			add_ideas = ALA_bioplastics
 		}
 	}
 	focus = {
@@ -340,11 +722,12 @@
 			focus = ALA_bolster_kelp_industries_in_kodiak
 		}
 		completion_reward = {
-			
+			add_ideas = ALA_kelp_market
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 	focus = {
-		id = ALA_solidify_alaskan_mariculture
+		id = ALA_strengthen_freight_logistics
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 0
@@ -357,20 +740,66 @@
 			focus = ALA_foster_a_bioplastics_industry
 		}
 		prerequisite = {
-			focus = ALA_strengthen_freight_logistics
+			focus = ALA_oyster_and_mussels
 		}
 		prerequisite = {
 			focus = ALA_enter_the_asian_kelp_market
 		}
 		completion_reward = {
+			add_equipment_to_stockpile = {
+			    type = convoy
+			    amount = 200
+			}
+			2 = {
+				add_building_construction = {
+				    type = naval_base
+				    level = 2
+				    instant_build = yes
+				    province = 6016
+				}
+			}
+			16 = {
+				add_building_construction = {
+				    type = naval_base
+				    level = 2
+				    instant_build = yes
+				    province = 1067
+				}
+
+			}
+			14 = {
+				add_building_construction = {
+				    type = naval_base
+				    level = 2
+				    instant_build = yes
+				    province = 6465
+				}
+			}
 			
+		}
+	}
+	focus = {
+		id = ALA_the_forefront_of_mariculture
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_strengthen_freight_logistics
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_strengthen_freight_logistics
+		}
+		completion_reward = {
+			add_ideas = ALA_alaskan_mariculture
 		}
 	}
 	focus = {
 		id = ALA_managing_the_oil_crisis
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = -8
+		x = -16
 		y = 1
 		relative_position_id = ALA_the_alaskan_economy
 		ai_will_do = { 
@@ -380,7 +809,12 @@
 			focus = ALA_the_alaskan_economy
 		}
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = ALA_oil_crisis
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = ALA_collapsed_oil_industry
+				add_idea = ALA_collapsed_oil_industry_1
+			}
 		}
 	}
 	focus = {
@@ -400,7 +834,15 @@
 			focus = ALA_the_radical_option
 		}
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_popularity = {
+			    ideology = republican
+			    popularity = 0.03
+			}
+			add_popularity = {
+			    ideology = libertarian_right
+			    popularity = 0.03
+			}
 		}
 	}
 	focus = {
@@ -417,7 +859,11 @@
 			focus = ALA_without_oil_theres_no_alaska
 		}
 		completion_reward = {
-			
+			add_political_power = -50
+			swap_ideas = {
+				remove_idea = ALA_collapsed_oil_industry_1
+				add_idea = ALA_collapsed_oil_industry_2_oil
+			}
 		}
 	}
 	focus = {
@@ -434,7 +880,20 @@
 			focus = ALA_without_oil_theres_no_alaska
 		}
 		completion_reward = {
-			
+			every_country = {
+				limit = {
+					OR = {
+						tag = FFR
+						tag = ENG
+						tag = HOL
+					}
+				}
+				add_opinion_modifier = {
+				    target = ALA
+				    modifier = ala_gained_trust
+				}
+			}
+			custom_effect_tooltip = ALA_petition_for_recognition_tt
 		}
 	}
 	focus = {
@@ -447,6 +906,17 @@
 		ai_will_do = { 
 			factor = 300
 		}
+		available = {
+			FFR = {
+				has_country_flag = ALA_recognizes_alaska
+			}
+			ENG = {
+				has_country_flag = ALA_recognizes_alaska
+			}
+			HOL = {
+				has_country_flag = ALA_recognizes_alaska
+			}
+		}
 		prerequisite = {
 			focus = ALA_gaining_international_trust
 		}
@@ -454,7 +924,7 @@
 			focus = ALA_temporarily_scale_back_production
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = ALA_negotiate_trade_deals_tt
 		}
 	}
 	focus = {
@@ -467,11 +937,28 @@
 		ai_will_do = { 
 			factor = 300
 		}
+		available = {
+			has_idea = ALA_collapsed_oil_industry_5_oil
+		}
 		prerequisite = {
 			focus = ALA_reopen_trade_deal_negotiations
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_collapsed_oil_industry_5_oil
+				add_idea = 	ALA_collapsed_oil_industry_6_oil
+			}
+			404 = {
+				add_resource = {
+					type = oil
+					amount = 40
+				}
+				add_building_construction = {
+				    type = infrastructure
+				    level = 2
+				    instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -491,13 +978,25 @@
 			focus = ALA_without_oil_theres_no_alaska
 		}
 		completion_reward = {
-			
+			add_political_power = 75
+			add_popularity = {
+			    ideology = democrat
+			    popularity = 0.03
+			}
+			add_popularity = {
+			    ideology = libertarian_left
+			    popularity = 0.03
+			}
+			swap_ideas = {
+				remove_idea = ALA_collapsed_oil_industry_1
+				add_idea = ALA_collapsed_oil_industry_2_renewable
+			}
 		}
 	}
 	focus = {
 		id = ALA_invest_in_the_big_three
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
+		cost = 10.00
 		x = 1
 		y = 1
 		relative_position_id = ALA_the_radical_option
@@ -508,13 +1007,25 @@
 			focus = ALA_the_radical_option
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+		    	bonus = 0.5
+		    	uses = 3
+		    	category = electronics
+			}
+			16 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province =  1067
+				}	
+			}
 		}
 	}
 	focus = {
 		id = ALA_the_microgrid_solution
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
+		cost = 10.00
 		x = -1
 		y = 1
 		relative_position_id = ALA_the_radical_option
@@ -525,7 +1036,23 @@
 			focus = ALA_the_radical_option
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_collapsed_oil_industry_2_renewable
+				add_idea = ALA_collapsed_oil_industry_3_renewable
+			}
+			every_core_state = {
+				add_building_construction = {
+				    type = infrastructure
+				    level = 1
+				    instant_build = yes
+				}
+				add_building_construction = {
+				    type = energy_infrastructure
+				    level = 1
+				    instant_build = yes
+				}		
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	focus = {
@@ -545,7 +1072,10 @@
 			focus = ALA_invest_in_the_big_three
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_collapsed_oil_industry_3_renewable
+				add_idea = ALA_collapsed_oil_industry_4_renewable
+			}
 		}
 	}
 	focus = {
@@ -558,11 +1088,18 @@
 		ai_will_do = { 
 			factor = 300
 		}
+		available = {
+			has_country_flag = ALA_renewable_4
+		}
 		prerequisite = {
 			focus = ALA_leap_into_renewable_energy
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_collapsed_oil_industry_4_renewable
+				add_idea = ALA_collapsed_oil_industry_5_renewable
+			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -575,6 +1112,12 @@
 		ai_will_do = { 
 			factor = 300
 		}
+		available = {
+			OR = {
+				has_completed_focus = ALA_the_cutting_edge_of_energy_technology
+				has_completed_focus = ALA_the_taps_flow_once_again
+			}
+		}
 		prerequisite = {
 			focus = ALA_the_radical_option
 			focus = ALA_without_oil_theres_no_alaska
@@ -583,7 +1126,7 @@
 			focus = ALA_the_radical_option
 		}
 		completion_reward = {
-			
+			country_event = alaska_apf.1
 		}
 	}
 	focus = {
@@ -645,7 +1188,7 @@
 			division_template = {
 			    name = "Alaskan National Guard"
 			    is_locked = no
-			    priority = 0
+			    priority = 1
 			    template_counter = 0
 			    regiments = {
 			        infantry = { x = 0 y = 0 }
@@ -664,6 +1207,7 @@
 				    owner = ALA
 				}
 			}
+			add_stability = 0.03
 			add_war_support = -0.05
 		}
 	}
@@ -781,7 +1325,14 @@
 			focus = ALA_a_necessary_evil
 		}
 		completion_reward = {
-			
+			add_popularity = {
+			    ideology = authoritarian_left
+			    popularity = 0.05
+			}
+			add_popularity = {
+			    ideology = libertarian_right
+			    popularity = 0.05
+			}
 		}
 	}
 	focus = {
@@ -898,7 +1449,10 @@
 			focus = ALA_a_miscarriage_of_justice
 		}
 		completion_reward = {
-			
+			add_popularity = {
+			    ideology = authoritarian_left
+			    popularity = 0.1
+			}
 		}
 	}
 	focus = {
@@ -918,7 +1472,12 @@
 			focus = ALA_fighting_for_a_red_alaska
 		}
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = ALA_rally_the_inuits
+				days = 365
+			}
+			custom_effect_tooltip = ALA_inuit_tt
 		}
 	}
 	focus = {
@@ -938,7 +1497,11 @@
 			focus = ALA_fighting_for_a_red_alaska
 		}
 		completion_reward = {
-			
+			add_war_support = 0.05
+			add_timed_idea = {
+				idea = ALA_rally_the_workers
+				days = 365
+			}
 		}
 	}
 	focus = {
@@ -957,7 +1520,33 @@
 		}
 
 		completion_reward = {
-			
+			division_template = {
+			    name = "Red Guards"
+			    is_locked = no
+			    priority = 0
+			    template_counter = 69
+			    regiments = {
+			        militia = { x = 0 y = 0 }
+			        militia = { x = 0 y = 1 }
+			    }
+			}
+			404 = {
+				create_unit = {
+				    division = "name = \"Alaskan National Guard\" division_template = \"Alaskan National Guard\" start_experience_factor = 0.2"
+				    owner = ALA
+				}
+			}
+			16 = {
+				create_unit = {
+				    division = "name = \"Alaskan National Guard\" division_template = \"Alaskan National Guard\" start_experience_factor = 0.2"
+				    owner = ALA
+				}
+			}
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 200
+			    producer = ALA
+			}
 		}
 	}
 	focus = {
@@ -975,7 +1564,7 @@
 		}
 
 		completion_reward = {
-			
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -993,7 +1582,7 @@
 			focus = ALA_fighting_for_a_red_alaska
 		}
 		completion_reward = {
-			
+			add_command_power = 25
 		}
 	}
 	focus = {
@@ -1010,7 +1599,13 @@
 			focus = ALA_preparing_the_resistance
 		}
 		completion_reward = {
-			
+			2 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 3
+				}
+			}
+			add_political_power = 30
 		}
 	}
 	focus = {
@@ -1027,7 +1622,26 @@
 			focus = ALA_preparing_the_resistance
 		}
 		completion_reward = {
-			
+			add_war_support = 0.05
+			add_manpower = 1000
+			IF = {
+				LIMIT = {
+					has_completed_focus = ALA_down_with_tyrants
+				}
+				add_popularity = {
+			    	ideology = libertarian_right
+			    	popularity = 0.05
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_completed_focus = ALA_fighting_for_a_red_alaska
+				}
+				add_popularity = {
+			    	ideology = authoritarian_left
+			    	popularity = 0.05
+				}
+			}
 		}
 	}
 	focus = {
@@ -1047,7 +1661,13 @@
 			focus = ALA_sabotage_communications
 		}
 		completion_reward = {
-			
+			add_stability = -0.1
+			2 = {
+				set_demilitarized_zone = yes
+			}
+			delete_unit_template_and_units  = {
+    			division_template = "Alaskan National Guard"
+			}
 		}
 	}
 	focus = {
@@ -1060,6 +1680,20 @@
 		ai_will_do = { 
 			factor = 300
 		}
+		available = {
+			IF = {
+				LIMIT = {
+					has_completed_focus = ALA_down_with_tyrants
+				}
+				libertarian_right > 0.5
+			}
+			IF = {
+				LIMIT = {
+					has_completed_focus = ALA_fighting_for_a_red_alaska
+				}
+				authoritarian_left > 0.5
+			}
+		}
 		prerequisite = {
 			focus = ALA_choke_the_anchorage_garrison
 		}
@@ -1068,7 +1702,18 @@
 			focus = ALA_up_with_the_hammer_and_star
 		}
 		completion_reward = {
-			
+			IF = {
+				LIMIT = {
+					has_completed_focus = ALA_down_with_tyrants
+				}
+				country_event = alaska_lolbert.1
+			}
+			IF = {
+				LIMIT = {
+					has_completed_focus = ALA_fighting_for_a_red_alaska
+				}
+				country_event = alaska_commie.1
+			}
 		}
 	}
 	#NATIVE ALASKA PATH
