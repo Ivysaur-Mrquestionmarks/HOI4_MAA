@@ -107,6 +107,54 @@ ideas = {
 			}
 		}
 
+		SIN_utah_bombing_campaigns = {
+			allowed = { original_tag = UTA }
+			modifier = {
+				war_support_factor = -0.15
+				stability_factor = -0.3
+				industrial_capacity_factory = -0.1
+				production_factory_efficiency_gain_factor = -0.2
+			}
+		}
+
+		SIN_anarcho_primitivism = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            	NOT = { has_ideology_group = libertarian_right }
+            }
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				experience_gain_army_factor = 0.25
+				custom_modifier_tooltip = SIN_cancel_no_anprim_tt
+			}
+		}
+
+		SIN_anarcho_primitivism_1 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            	NOT = { has_ideology_group = libertarian_right }
+            }
+			modifier = {
+				research_speed_factor = 0.05
+				custom_modifier_tooltip = SIN_cancel_no_anprim_tt
+			}
+		}
+
+		SIN_anarcho_primitivism_2 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            	NOT = { has_ideology_group = libertarian_right }
+            }
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				experience_gain_army_factor = 0.25
+				research_speed_factor = 0.05
+				custom_modifier_tooltip = SIN_cancel_no_anprim_tt
+			}
+		}
+
 
 	
 

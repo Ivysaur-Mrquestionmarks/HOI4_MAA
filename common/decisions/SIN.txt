@@ -1,8 +1,22 @@
 SIN_internal_factions = {
-	SIN_placeholder = {
-		icon = GFX_decision_hol_attract_foreign_investors
+	SIN_ease_the_mood = {
+		icon = GFX_decision_decision_generic_decision
 		priority = 100
+		ai_will_do = {
+			base = 4
+		}
+
+		allowed = { 
+			original_tag = SIN
+		}
+
+		cost = SIN_faction_interaction_cost_standard
+
+		complete_effect = {
+		}
+
 		remove_effect = {
+			add_stability = 0.025
 		}
 	}
 

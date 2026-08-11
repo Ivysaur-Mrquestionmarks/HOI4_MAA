@@ -67,6 +67,40 @@ country_event = {
 	}
 }
 
+# Independent Workshops
+country_event = {
+	id = colorado.3
+	title = colorado.3.t
+	desc = colorado.3.d
+	picture = event_SIN_event_3
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.3.a
+		ai_chance = {
+			factor = 1
+		}
+		add_offsite_building = { type = arms_factory level = 5 }
+	}
+
+	option = {
+		name = colorado.3.b
+		ai_chance = {
+			factor = 1
+		}
+		add_offsite_building = { type = industrial_complex level = 5 }
+	}
+
+	option = {
+		name = colorado.3.c
+		ai_chance = {
+			factor = 1
+		}
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = industrial_complex level = 2 }
+	}
+}
+
 
 
 

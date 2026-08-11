@@ -469,7 +469,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-    			amount = 1000
+    			amount = 5000
     			producer = MEX
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -561,7 +561,7 @@ focus_tree = {
 		x = -4
 		y = 5
 
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			
 		}
@@ -576,7 +576,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 		prerequisite = {
 			focus = SIN_train_the_anprims
@@ -604,7 +606,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            UTA = {
+				add_timed_idea = {
+				    idea = SIN_utah_bombing_campaigns
+				    days = 365
+				}
+			}
+			remove_ideas = SIN_streamlining_bombs
 		}
 		prerequisite = {
 			focus = SIN_the_mormon_war
@@ -1105,7 +1113,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            add_popularity = {
+				ideology = libertarian_right
+				popularity = 0.1
+			}
+			add_political_power = 50
 		}
 		prerequisite = {
 			focus = SIN_train_the_anprims
@@ -1121,7 +1133,7 @@ focus_tree = {
 		x = 0
 		y = 6
 
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			
 		}
@@ -1136,7 +1148,18 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            if = {
+				limit = {
+					has_idea = SIN_anarcho_primitivism_1
+				}
+				swap_ideas = {
+					remove_idea = SIN_anarcho_primitivism_1
+					add_idea = SIN_anarcho_primitivism_2
+				}
+			}
+			else = {
+				add_ideas = SIN_anarcho_primitivism
+			}
 		}
 		prerequisite = {
 			focus = SIN_return_to_monke
@@ -1149,7 +1172,7 @@ focus_tree = {
 		x = 2
 		y = 6
 
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			
 		}
@@ -1164,7 +1187,18 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            if = {
+				limit = {
+					has_idea = SIN_anarcho_primitivism
+				}
+				swap_ideas = {
+					remove_idea = SIN_anarcho_primitivism
+					add_idea = SIN_anarcho_primitivism_2
+				}
+			}
+			else = {
+				add_ideas = SIN_anarcho_primitivism_1
+			}
 		}
 		prerequisite = {
 			focus = SIN_return_to_monke
@@ -1177,7 +1211,7 @@ focus_tree = {
 		x = 1
 		y = 7
 
-		cost = 3
+		cost = 6
 		ai_will_do = {
 			
 		}
@@ -1192,7 +1226,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            country_event = colorado.3
 		}
 		prerequisite = {
 			focus = SIN_strong_tribe
@@ -1208,7 +1242,7 @@ focus_tree = {
 		x = 0
 		y = 8
 
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			
 		}
@@ -1223,7 +1257,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            add_equipment_to_stockpile = {
+				type = infantry_equipment
+    			amount = 500
+    			producer = SIN
+			}
+			army_experience = 50
 		}
 		prerequisite = {
 			focus = SIN_strong_tribe
@@ -1236,7 +1275,7 @@ focus_tree = {
 		x = 2
 		y = 8
 
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			
 		}
@@ -1251,7 +1290,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            add_research_slot = 1
 		}
 		prerequisite = {
 			focus = SIN_smart_tribe

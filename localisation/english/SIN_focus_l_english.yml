@@ -10,6 +10,7 @@
    ##     #######   #######  ########    ##    #### ##         ######  
 
  SIN_cancel_no_utah_tt:0 "§YThis idea will be removed once [UTA.GetNameDef] ceases to exist.§!"
+ SIN_cancel_no_anprim_tt:0 "§YThis idea will be removed if we stop following the Anarcho-Primitivist ideology.§!"
  SIN_faction_management_tt:0 "Unlocks decisions to cooperate with the [GetIslamistsName] and the [GetDtName].\nUnlocks decisions to repress the [GetIslamistsName] and the [GetDtName]."
  SIN_antagonize_the_cartel_tt:0 "Unlocks decisions to repress with the [GetCartelName]."
  SIN_work_with_the_cartel_tt:0 "Unlocks decisions to cooperate with the [GetCartelName]."
@@ -72,7 +73,19 @@
  #event 1: Kaczynski comes to power
  colorado.1.t:0 "The Prisioner Election"
  colorado.1.d:0 "After Joaquin "El Chapo" Guzmán, the most powerful man in the land, called for the prisioners to go back to ADX Florence in order to vote for a leader, to form legitimate a government, few believed that something would come of it. How wrong they were!\n\nAs the prisioners were gathering, some were skeptical that this may be a trap or a move from Guzmán to consolidate power, but as the election progressed, he simply stood back, silently. As the votes were being counted it was evident that a pattern was emerging - Each prisioner was voting for himself, no one had more than one vote.\n\nThen came the last vote to be opened: it read "Ted Kaczynski". Gasps were heard across the room as someone finally had a plurality of the votes. However it was clear who was the only one not to vote for himself: The only one with zero votes was El Chapo himself.\n\nWhy would he vote for the Unabomber?"
- colorado.1.a:0 "Long Live Primitivia"~
+ colorado.1.a:0 "Long Live Primitivia"
+
+ #event 2: The Meeting
+ colorado.2.t:0 "A Meeting in the Shadows"
+ colorado.2.d:0 "The election has settled, but the question of what comes next remains unanswered. In a secluded room far from the eyes of the public, Joaquín Guzmán meets with Theodore Kaczynski. To the world, Kaczynski is a ghost from another age, a man whose name is whispered more often than it is spoken. To Guzmán, however, he represents something useful: an ideology, a symbol, and a leader who need never stand in front of a podium.\n\nThe arrangement is simple. Kaczynski will assume leadership from the shadows, while Guzmán and his organization provide the money, networks, and protection necessary to keep the new order functioning. The Unabomber will lead, but the world will never know where his hand truly lies."
+ colorado.2.a:0 "Let the Unabomber lead from the shadows."
+
+ #event 3: Independent Workshops
+ colorado.3.t:0 "Funding Independent Workshops"
+ colorado.3.d:0 "In order to deindustrialize the factories that dictate the rhythm of our lives, we must feed our communities tools, weapons, and the means to survive. Across the countryside, independent workshops are emerging in barns, abandoned buildings, and village halls. We must decide what these workshops should produce. Perhaps, in the ruins of the old world, we can learn to live without it."
+ colorado.3.a:0 "We need weapons"
+ colorado.3.b:0 "We need to build"
+ colorado.3.c:0 "Maybe a mix wouldn't hurt"
 
  #event 1000: Kaczynski comes to power
  colorado.1000.t:0 "Anarcho-Primitivists in the Rockies"
@@ -407,12 +420,12 @@
  SIN_establishment_name_and_icon:0 "£faction_sin_establishment §YEstablishment§!"
  SIN_mob_name_and_icon:0 "£faction_sin_mob §YMob§!"
 
- SIN_CARTEL_TOOLTIP:0 "The £faction_sin_cartel §YCartel§! placeholder. \nThe £faction_sin_cartel §YNacrotrafickers§! placeholder."
- SIN_MOB_TOOLTIP:0 "The £faction_sin_mob §YMafia§! placeholder. \nThe £faction_sin_mob §YMobsters§! placeholder."
- SIN_ANPRIMS_TOOLTIP:0 "The £faction_sin_anprims §YAnarcho-Primitivists§! placeholder. \nThe £faction_sin_anprims §YAnarcho-Primitivists§! placeholder."
- SIN_ISLAMISTS_TOOLTIP:0 "The £faction_sin_islamists §YIslamists§! placeholder. \nThe £faction_sin_islamists §YIslamists§! placeholder."
- SIN_DT_TOOLTIP:0 "The £faction_sin_dt §YDomestic Terrorists§! placeholder. \nThe £faction_sin_dt §YDomestic Terrorists§! placeholder."
- SIN_ESTABLISHMENT_TOOLTIP:0 "The £faction_sin_establishment §YEstablishment§! placeholder. \nThe £faction_sin_establishment §YPoliticians§! placeholder."
+ SIN_CARTEL_TOOLTIP:0 "The £faction_sin_cartel §YCartel§! are the representatives of the Mexican Sinaloa Cartel within our territory, mostly based around drug trafficking but also smuggling, firearms and human trafficking. \nThe £faction_sin_cartel §YNarcotrafickers§! want an operating base within American soil to expand their products reach and influence within the United States."
+ SIN_MOB_TOOLTIP:0 "The £faction_sin_mob §YMafia§! are the members of American organized crime, focused on acquiring money by any means necessary, including drugs, loans, and protection rackets. \nThe £faction_sin_mob §YMobsters§! wish for a nation where they run behind the scenes, extracting as much money as possible from the nation."
+ SIN_ANPRIMS_TOOLTIP:0 "The £faction_sin_anprims §YAnarcho-Primitivists§! are those who believe industrial society and its consequences have gone too far, and wish for a return to a simple lifestyle. \nThe £faction_sin_anprims §YAnarcho-Primitivists§! will try to destroy all signs of modern industrial society, freeing the planet from technology which destroys both the Earth and the human spirit."
+ SIN_ISLAMISTS_TOOLTIP:0 "The £faction_sin_islamists §YIslamists§! are members of Islamic terrorist organizations who were imprisoned inside ADX Florence. \nThe £faction_sin_islamists §YIslamists§! want a Jihad, a great holy war against America and to spread Islam throughout the nation by any means necessary."
+ SIN_DT_TOOLTIP:0 "The £faction_sin_dt §YDomestic Terrorists§! are Americans convicted of acts of terror, from shootings to bombing and kidnappings for various reasons. \nThe £faction_sin_dt §YDomestic Terrorists§! want chaos and fear to spread among the American people to establish their control over them."
+ SIN_ESTABLISHMENT_TOOLTIP:0 "The £faction_sin_establishment §YEstablishment§! represents those who oppose the current rule of the criminals from ADX Florence, Republican and Democrat alike. \nThe £faction_sin_establishment §YPoliticians§! want a return to American democracy, order and stability to Colorado, and if need be the rest of the nation."
 
  SIN_LOYALTY_TOOLTIP:0 "§YLoyalty§! represents the faction's desire to cooperate with our leader. \nThe higher the §YLoyalty§!, the less likely it is that a faction will confront him. \nBefore integrating a faction into our Criminal System, it is necessary to complete certain decisions to align their members with us and increase their §YLoyalty§! to 100."
  SIN_POPULARITY_TOOLTIP:0 "§YInfluence§! represents the influence a faction receives from inside ADX Florence. \nThe higher the §YInfluence§!, the more likely it is that a faction will take bold actions. \nBefore destroying a faction, it is necessary to complete certain decisions to weaken it and reduce its §YInfluence§! to 0."
@@ -431,6 +444,8 @@
  SIN_high_popularity_decrease_tt:0 "§R[?SIN.SIN_faction_high_decrease]§! faction influence."
 
  ### DECISIONS ###
+ SIN_ease_the_mood:0 "Ease the Mood"
+
  #coop islamists
  SIN_cooperation_islamists_operation:0 "Allow [GetIslamistsName] Operations"
  SIN_cooperation_islamists_operation_desc:0 "We will allow the Islamists to organize themselves to realize operations across our land."
