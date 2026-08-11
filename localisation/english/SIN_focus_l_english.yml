@@ -17,6 +17,8 @@
  SIN_work_with_the_politicians_tt:0 "Unlocks decisions to cooperate with the [GetEstablishmentName]."
  SIN_antagonize_the_politicians_tt:0 "Unlocks decisions to repress with the [GetEstablishmentName]."
  SIN_handle_the_mafia_tt:0 "Unlocks decisions to cooperate with the [GetMobName].\nUnlocks decisions to repress the  [GetMobName]."
+ SIN_work_with_the_anprims_tt:0 "Unlocks decisions to cooperate with the [GetAnprimsName]."
+ SIN_antagonize_the_anprims_tt:0 "Unlocks decisions to repress with the [GetAnprimsName]."
 
 
  SIN_islamists_tt:0 "[GetIslamistsName]: "
@@ -563,6 +565,32 @@
 
  SIN_oppression_mob_destroy:0 "Crush the [GetMobName]"
  SIN_oppression_mob_destroy_desc:0 "We have been persecuting the Mob so far, and it is time to finally destroy them for good."
+
+ #coop anprims
+ SIN_cooperation_anprims_invest_in_primitive_tech:0 "Invest in [GetAnprimsName] Tech"
+ SIN_cooperation_anprims_invest_in_primitive_tech_desc:0 "Modern industry has brought us dependency, alienation, and ecological ruin. By supporting  sustainable technologies, we can build a society less dependent on the industrial machine."
+
+ SIN_cooperation_anprims_combat_social_alienation:0 "Help the [GetAnprimsName] fight Social Alienation"
+ SIN_cooperation_anprims_combat_social_alienation_desc:0 "Supporting efforts to restore local ties and communal life may help heal the social wounds left by industrial civilization."
+
+ SIN_cooperation_anprims_go_on_a_hunt:0 "Send the [GetAnprimsName] on a Hunt"
+ SIN_cooperation_anprims_go_on_a_hunt_desc:0 "Hunting is more than a means of acquiring food. It is a return to a more direct relationship with nature, free from the alienation of modern industrial life."
+
+ SIN_cooperation_anprims_integrate:0 "Integrate the [GetAnprimsName]"
+ SIN_cooperation_anprims_integrate_desc:0 "We have been cooperating with the Anprim entities so far, and it is time to finally integrate them into our system."
+
+ #opp anprims
+ SIN_oppression_anprims_slander_the_anprims:0 "Slander the [GetAnprimsName]"
+ SIN_oppression_anprims_slander_the_anprims_desc:0 "The Anprims preach the abandonment of the civilization we have built. By exposing their beliefs as dangerous romanticism, we can turn the public against their vision of a world without industry."
+
+ SIN_oppression_anprims_boycott_deindustrialization:0 "Boycott [GetAnprimsName] Deindustrialization"
+ SIN_oppression_anprims_boycott_deindustrialization_desc:0 "The Anprims seek to dismantle the industrial foundations of our society. We will oppose their efforts at every turn."
+
+ SIN_oppression_anprims_ambush_the_hunters:0 "Ambush [GetAnprimsName] Hunters"
+ SIN_oppression_anprims_ambush_the_hunters_desc:0 "The Anprims have taken to the wilderness in pursuit of their primitive ideal. If they insist on treating the forests as their territory, we will make sure the hunters become the prey."
+
+ SIN_oppression_anprims_destroy:0 "Crush the [GetAnprimsName]"
+ SIN_oppression_anprims_destroy_desc:0 "We have been persecuting the Anprims so far, and it is time to finally destroy them for good."
 
 
 

@@ -1113,6 +1113,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			SIN_anprims_medium_loyalty_increase_effect = yes
+			SIN_anprims_medium_popularity_increase_effect = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = SIN_work_with_the_anprims_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
             add_popularity = {
 				ideology = libertarian_right
 				popularity = 0.1
@@ -1159,6 +1164,12 @@ focus_tree = {
 			}
 			else = {
 				add_ideas = SIN_anarcho_primitivism
+			}	
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_power_balance_value = {
+				id = SIN_ted_chapo_bop
+				value = 0.05
+				tooltip_side = ted_side
 			}
 		}
 		prerequisite = {
@@ -1199,6 +1210,12 @@ focus_tree = {
 			else = {
 				add_ideas = SIN_anarcho_primitivism_1
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_power_balance_value = {
+				id = SIN_ted_chapo_bop
+				value = 0.05
+				tooltip_side = ted_side
+			}
 		}
 		prerequisite = {
 			focus = SIN_return_to_monke
@@ -1216,7 +1233,7 @@ focus_tree = {
 			
 		}
 		available = {
-			
+			has_government = libertarian_right
 		}
 		
 		bypass = {
@@ -1227,6 +1244,9 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
             country_event = colorado.3
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SIN_anprims_high_loyalty_increase_effect = yes
+			SIN_anprims_high_popularity_increase_effect = yes
 		}
 		prerequisite = {
 			focus = SIN_strong_tribe
@@ -1389,7 +1409,15 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            if = {
+				limit = {
+					NOT = { has_country_flag = SIN_anprims_integrated_flag }
+				}
+				SIN_anprims_medium_loyalty_decrease_effect = yes
+				SIN_anprims_medium_popularity_decrease_effect = yes
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = SIN_antagonize_the_anprims_tt
+			}
 		}
 		prerequisite = {
 			focus = SIN_victorious_ted
@@ -1422,7 +1450,15 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+			if = {
+				limit = {
+					NOT = { has_country_flag = SIN_anprims_integrated_flag }
+				}
+				SIN_anprims_medium_loyalty_decrease_effect = yes
+				SIN_anprims_medium_popularity_decrease_effect = yes
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = SIN_antagonize_the_anprims_tt
+			}
 		}
 		prerequisite = {
 			focus = SIN_victorious_ted
