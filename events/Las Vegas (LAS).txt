@@ -929,3 +929,125 @@ country_event = {
 		add_stability = 0.05
 	}
 }
+#Las Vegas declares independence -- PORTED OVER FROM MORMON WAR FILE
+country_event = {
+	id = viva_las_vegas.26
+	title = viva_las_vegas.26.t
+	desc = viva_las_vegas.26.d
+	picture = event_las_vegas_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = viva_las_vegas.26.a
+		set_autonomy = {
+		    target = LAS
+		    autonomous_state = autonomy_free
+		    end_wars = yes
+		    end_civil_wars = yes
+		}
+		LAS = {
+			country_event = viva_las_vegas.27
+			leave_faction = yes
+		}
+		every_country = {
+			limit = {
+				has_war_with = LAS
+			}
+			white_peace = LAS
+		}
+		hidden_effect = {
+			LAS = {
+				country_event = {
+					id = viva_las_vegas.28
+					days = 3
+				}
+			}
+		}
+	}
+#	option = {
+#		name = viva_las_vegas.26.b
+#		release = LAS
+#		LAS = { change_tag_from = PRA }
+#		LAS = {
+#			transfer_state = 33
+#			add_state_core = 46
+#			add_state_core = 33
+#		}
+#		hidden_effect = {
+#			LAS = {
+#				country_event = {
+#					id = viva_las_vegas.28
+#					days = 2
+#				}
+#			}
+#		}
+#	}
+}
+#LAS is informed they are now independent -- PORTED FROM MORMON WAR FILE
+country_event = {
+	id = viva_las_vegas.27
+	title = viva_las_vegas.27.t
+	desc = viva_las_vegas.27.d
+	picture = event_las_vegas_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = viva_las_vegas.27.a
+		remove_ideas = LAS_tributary_status
+		remove_country_leader_trait = aloof_authority_alt
+		set_party_name = {
+		    ideology = libertarian_left
+		    long_name = LAS_dsa_party_long
+		    name = LAS_dsa_party
+		}
+		remove_country_leader_role = {
+		    character = LAS_john_lee #this guy only became a Repub because he didn't like that the Dems were socialist
+		    ideology = neocon
+		}
+		custom_effect_tooltip = las_indie_prepare_war_tt
+	}
+}
+#Las Vegas declares WAR on the Mormons!! -- PORTED FROM MORMON WAR FILE
+country_event = {
+	id = viva_las_vegas.28
+	title = viva_las_vegas.28.t
+	desc = viva_las_vegas.28.d
+	picture = event_las_vegas_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = viva_las_vegas.28.a
+		declare_war_on = {
+		    target = UTA
+		    type = annex_everything
+		}
+		SIN = {
+			add_to_faction = LAS
+		}
+		division_template = {
+		    name = "Las Vegas Guard"
+		#    division_names_group =
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+			}
+		}
+		46 = {
+			create_unit = {
+				division = "name = \"Las Vegas Metropolitan Police\" division_template = \"Las Vegas Guard\" start_experience_factor = 0.1" 
+				owner = LAS
+			}
+			create_unit = {
+				division = "name = \"LVMPD SWAT\" division_template = \"Las Vegas Guard\" start_experience_factor = 0.0" 
+				owner = LAS
+			}
+			create_unit = {
+				division = "name = \"Casino Militia\" division_template = \"Las Vegas Guard\" start_experience_factor = 0.2" 
+				owner = LAS
+			}
+		}
+	}
+}

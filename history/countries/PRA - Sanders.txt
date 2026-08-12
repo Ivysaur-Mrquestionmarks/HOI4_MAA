@@ -285,6 +285,12 @@ LAS = { #I believe I need to do this or LAS will start LibLeft?
 
 }
 
+#Vegas Independence
+country_event = {
+	id = viva_las_vegas.26
+	days = 85 #feel free to tweak as appropriate
+}
+
 set_research_slots = 4
 
 ### Country Leaders ###
