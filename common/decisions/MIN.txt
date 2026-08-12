@@ -202,13 +202,8 @@ MIN_balance_of_power_category = {
 		available = {
 			OR = {
 				any_country = {
-					limit = {
-						AND = {
-							original_tag = AFS
-							has_government = authoritarian_left
-						}
-					}
-					exists = yes
+					original_tag = AFS
+					has_government = authoritarian_left
 				}
 				NOT = { has_global_flag = ohio_civil_war_global }
 			}
@@ -281,5 +276,49 @@ MIN_balance_of_power_category = {
 			}
 		}
 	}
+
+	MIN_research_green_army_bop = {
+		#priority = 100
+		icon = generic_research
+
+		allowed = {
+			original_tag = MIN
+		}
+
+		visible = {
+		}
+
+		available = {
+			any_country = {
+				original_tag = AFS
+				has_government = authoritarian_left
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+
+		ai_will_do = {
+			base = 250
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = MIN_ventura_vs_green_army_bop
+				value = -0.10
+				tooltip_side = green_army_favored
+			}
+			add_to_tech_sharing_group = green_army_research_group
+			every_country = {
+				limit = {
+					original_tag = AFS
+					has_government = authoritarian_left
+				}
+				add_to_tech_sharing_group = green_army_research_group
+			}
+			set_global_flag = MIN_HAS_FORMED_GREEN_ARMY_TECH_GROUP
+		}
+	}	
 
 }
