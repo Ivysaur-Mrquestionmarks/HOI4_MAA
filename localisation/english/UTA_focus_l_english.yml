@@ -1,4 +1,293 @@
 ﻿l_english:
+
+########  #######   #######  ##       ######## #### ########   ######  
+   ##    ##     ## ##     ## ##          ##     ##  ##     ## ##    ## 
+   ##    ##     ## ##     ## ##          ##     ##  ##     ## ##       
+   ##    ##     ## ##     ## ##          ##     ##  ########   ######  
+   ##    ##     ## ##     ## ##          ##     ##  ##              ## 
+   ##    ##     ## ##     ## ##          ##     ##  ##        ##    ## 
+   ##     #######   #######  ########    ##    #### ##         ###### 
+
+
+#### ########  ########    ###     ######  
+ ##  ##     ## ##         ## ##   ##    ## 
+ ##  ##     ## ##        ##   ##  ##       
+ ##  ##     ## ######   ##     ##  ######  
+ ##  ##     ## ##       #########       ## 
+ ##  ##     ## ##       ##     ## ##    ## 
+#### ########  ######## ##     ##  ######  
+
+
+######## ##     ## ######## ##    ## ########  ######  
+##       ##     ## ##       ###   ##    ##    ##    ## 
+##       ##     ## ##       ####  ##    ##    ##       
+######   ##     ## ######   ## ## ##    ##     ######  
+##        ##   ##  ##       ##  ####    ##          ## 
+##         ## ##   ##       ##   ###    ##    ##    ## 
+########    ###    ######## ##    ##    ##     ###### 
+
+ #event 1: Mormon Coup
+ utah.1.t:0 "Out of the Frying Pan..."
+ utah.1.d:0 "During a typical session of the Utahn government, members of the Unified Police Department of Greater Salt Lake entered the government building and arrested several pro-Trump politicians and other collaborators. Though those who didn't attend today's session attempted to flee, they were quickly located and aprehended in the hours following the start of the coup. Following these areests, a new government was organized which immedialty set about cutting diplomatic ties with President Donald Trump and aligning itself with the LDS Church. Though the new government has assured local Utahns that its actions won't change their daily lives, many remain wary of what the future has to hold."
+ utah.1.a:0 "...and into the fire."
+
+ #event 2: Mormon War (SIN prespective)
+ utah.2.t:0 "The Anti-Mormon Appeal"
+ utah.2.d:0 "The situation in Utah has deteriorated rapidly since the Latter-day Saints seized control of the state one month ago. The new Mormon government has severed its ties with Trump and begun making increasingly aggressive moves along its borders. For those who oppose the new order, there is little room left to remain. A group of anti-Mormon dissidents has now crossed into our territory, seeking refuge and, more importantly, our help.\n\nThey claim that their homes have been taken from them and that Utah's new rulers will not stop at the state border. Their leaders have offered to raise an army from among the exiles and fight alongside us. It is an opportunity to strike at a threat that could get a lot bigger. Let us warn and invite the leaderships of Molossia and Las Vegas to this party too!"
+ utah.2.a:0 "Dare and the World yields"
+
+ #event 3: Molossia Joins (MOL prespective)
+ utah.3.t:0 "The Mormon War"
+ utah.3.d:0 "The worst has come to pass. Primitivia has declared war on Utah, and the conflict now threatens to engulf the entire region. The Mormon government has already demonstrated its willingness to antagonize its neighbours, and allowing it to defeat the Primitivists would leave Molossia facing an emboldened power on its doorstep.\n\nPrimitivia has called upon us to join the fight. We may have little interest in Utah's internal affairs, but waiting for the Mormons to come knocking on our own borders would be foolish."
+ utah.3.a:0 "We cannot allow Utah to grow unchecked."
+
+ #event 4: Vegas Joins (LAS prespective)
+ utah.4.t:0 "War on the Mormon Border"
+ utah.4.d:0 "The war between Primitivia and the Mormon government has begun, and the conflict is far closer to Las Vegas than anyone would like. Utah's recent conduct has already caused considerable alarm, and its growing hostility towards its neighbours cannot simply be ignored.\n\nPrimitivia has asked us to join the war. If Utah is allowed to defeat its enemies one by one, Las Vegas may eventually find itself standing alone against the Mormon state. Our police and local militias may not have been raised for a war of this magnitude, but they may soon have no choice but to fight."
+ utah.4.a:0 "Chips on the table, all or nothing."
+
+ #news event 1000: Mormon Coup
+ utah.1000.t:0 "The LDS Church Establishes Control Over Utah"
+ utah.1000.d:0 "Tensions within the Utah Republican Party boiled over today as key pro-Trump members were put under house arrest, and a new government was established. This follows President Trump's actions to curb Utahn autonomy, with the creation of the Western Command Zone being seen by many as the final nail in the coffin. With the new government rallying behind the LDS Church and its doctrine as a symbol of unity, to many, it seems that Utah has returned to its theocratic roots."
+ utah.1000.a:0 "The Morning Breaks, The Shadows Flee"
+
+ #news event 1001: Mormon War
+ utah.1001.t:0 "The Mormon War"
+ utah.1001.d:0 "Residents of Grand Junction, Colorado had their mornings interrupted today, as fire from Utahn artillery batteries repelled several waves of armed assaliants coming from Colorado. Though no one is entirely sure who is responsible for these attacks, reports suggest they are the forces Joaquin Guzman and Ted Kaczynski seeking to take advantage of the choas surrounding Utah's recent split from President Trump. Though the inital incursion from Colorado has seemingly been repelled, fighting between Utahn forces and their Coloradan invaders continue with no end in sight."
+ utah.1001.a:0 "Bye, bye, Miss American Pie..."
+
+
+
+
+
+ utah.62.t:0 "Volunteers Arrive"
+ utah.62.d:0 "At exactly 4 in the afternoon, a small caravan of 12 black suvs approached the state capitol building. Exiting those vans were men wearing black military uniforms carrying machine guns and explosives. They did not come to overthrow the government, rather they are here to assist it. Inside they met with Deseret state officials and army commanders to debrief them and welcome them. These men are elite mormon fighters from Mexico, who have come here to volunteer to fight for the state in exchange for permanent residency. After the presentation they dispersed from the buildings and drove to the barracks to be integrated with the National Guard the following morning."
+ utah.62.a:0 "Welcome, Brothers."
+ utah.63.t:0 "The Utah National Guard Deposes The Mormons"
+ utah.63.d:0 "The Utah National Guard was trained to do anything and everything to defend and help their state. While this state's sole existence is because of Mormons, their influence in politics is extremely dangerous and by order of the state is to be removed. National Guard units have been sent in to take over every church and building owned by the Church of LDS. Like the trained soldiers they are, they seized control of Salt Lake Temple and arrested every higher up member including church officials. This state and country were founded upon the ideals of a separation between church and state, sometimes the state needs to remind the church of this by force."
+ utah.63.a:0 "Down with the Mormons!"
+ 
+ utah.9.t:0 ""
+ utah.9.d:0 ""
+ utah.9.a:0 ""
+ utah.10.t:0 "Jeff Burton Comes to Power"
+ utah.10.d:0 "Retired Utah National Guard Commander Jeff Burton is set to replace the Military Junta in Utah. Jeff Burton was noted for his military tacticalness and ableness to adapt to attacks from Holy Mormon Militias."
+ utah.10.a:0 "Dark Times.."
+ utah.11.t:0 "Charlene Dalto Comes to Power"
+ utah.11.d:0 "Charlene Dalto nicknamed the Butcher has been granted leader status by the Military Junta. General Dalto is noted for her extreme cruelness of Mormon prisoners, burning and pillaging of Mormon towns, and countless massacres across the nation during the Counter coup. This all but assures everyone the sun will never rise again on the beehive nation."
+ utah.11.a:0 "Very Dark Times.."
+ utah.12.t:0 "Trial of Mormon Rebels"
+ utah.12.d:0 "Captured Mormon rebels are standing trial, their fight shall be decided today."
+ utah.12.a:0 "Deaht they shall have death"
+ utah.12.b:0 "Imprison them for life"
+ utah.12.c:0 "Pardon them"
+ utah.13.t:0 "Trial of Russel M. Nelson"
+ utah.13.d:0 "Russel M. Nelson, leader of the Church of Latter Day Saints, instigator of the Mormon coup, hero of the Mormon war stands trial today. Radical members have decided death, some house arrests, others imprisonment and some who feel sympathy think he should be pardoned. What is his senetence?"
+ utah.13.a:0 "Death"
+ utah.13.b:0 "House Arrest"
+ utah.13.c:0 "Imprisonment"
+ utah.13.d:0 "Pardon Him"
+ utah.14.t:0 "Border Conflict Won"
+ utah.14.d:0 "Utah has dominated her adversaries in her most resent border conflict."
+ utah.14.a:0 "Yeehaw"
+ utah.15.t:0 "Border Conflict Lost"
+ utah.15.d:0 "Utah has lost her border conflict with a rival nation putting her military ineptitude on full display."
+ utah.15.a:0 "Dammit"
+ utah.16.t:0 "Area 51 Raid"
+ utah.16.d:0 "Our troops have raided the military base Area 51 and have stolen military equipment and blueprints that will surely help out our nation in the future."
+ utah.16.a:0 "They couldn't stop us all."
+ utah.17.t:0 "Nevadans Protest"
+ utah.17.d:0 "Nevadans have been protesting the unjust occupation in their land and unfair treatment, what should we do to stop the protesting?"
+ utah.17.a:0 "We have nothing to say to them"
+ utah.17.b:0 "We must concede to their demands"
+ utah.17.c:0 "Send in the National Guard"
+ utah.18.t:0 "Riots"
+ utah.18.d:0 "Riots have broken out in major cities, these riots are led by secessionists who have frankly had enough with our government."
+ utah.18.a:0 "Stop them!"
+ utah.19.t:0 "Separatist Militias Form"
+ utah.19.d:0 "We have gotten reports from our agents that separatists have formed local paramilitary groups and militias."
+ utah.19.a:0 "Wipe them out!"
+ utah.20.t:0 "The Las Vegas Massacre"
+ utah.20.d:0 "At around 9:47 PM the Utah National guard, who were getting rocks, glass bottles, and an array of numerous objects thrown at them, fired upon the crowd of secessionists protesters. Some reports say local secessionist militias returned fire but were quickly overrun by the National Guard. Some observers are drawing parallels to the Boston massacre, whatever the case may be this will cause furthur unrest and resistance in secessionist states."
+ utah.20.a:0 "A tragedy"
+ utah.21.t:0 "Arizonian Democrats Protest"
+ utah.21.d:0 "Arizonian Democrats have protested that our ways of extracting resources from their land and the seizure of factories and businesses is unconstitutional. Though Arizonian Republicans have remained silent we shoud realize they feel the same way out of loyalty to their state."
+ utah.21.a:0 "Arrest them all!"
+ utah.21.b:0 "Do nothing"
+ utah.22.t:0 "Antifa Break Democrats out of Jail"
+ utah.22.d:0 "Reports are coming in Antifa infiltrated the jail where we held Arizonian Democrats and freed them, their current whereabouts are unknown."
+ utah.22.a:0 "Send out a search party"
+ utah.23.t:0 "Military Base Raided"
+ utah.23.d:0 "Reports are coming in a small guarded Military base was raided by armed individuals. When reinforcements arrived they found most of the bases supply and equipment were gone. The identities of the perpentrators or the group their associated with is currently unknown."
+ utah.23.a:0 "Find them!"
+ utah.24.t:0 "Arizonian Republicans Have an Offer.."
+ utah.24.d:0 "Arizonian Republicans have approached us asking for autonomy. In return we have their loyalty and help against Arizonian democrats."
+ utah.24.a:0 "No we don't negotiate with incels"
+ utah.24.b:0 "Sure"
+ utah.25.t:0 "Riots"
+ utah.25.d:0 "One peaceful protests have devolved into riots by angry secessionists who want freedom for their states."
+ utah.25.a:0 "Damn"
+ utah.26.t:0 "Clashes"
+ utah.26.d:0 "Armed clashes have begun between local paramilitary groups like the Boogaloo boys and the Utah National Guard along with assistance from local police and militia forces."
+ utah.26.a:0 "What"
+ utah.27.t:0 "Coloradan Workers Strike"
+ utah.27.d:0 "The Workers of Colorado have gone on strike to protest the unfair treatment they have been receiving from the wealthy Utahan upper class."
+ utah.27.a:0 "Don't concede"
+ utah.27.b:0 "An agreement on our terms"
+ utah.27.c:0 "We will never concede"
+ utah.28.t:0 "Conservatives and Libertarians disapprove"
+ utah.28.d:0 "Coloradan conservatives and Libertarians are disappointed by our agreement and have even labeled it as exploitative of Coloradan workers."
+ utah.28.a:0 "Their opinions don't matter to us"
+ utah.29.t:0 "Autonomous Communities"
+ utah.29.d:0 "In the face of our weakness Right Wing and Libertarian Right paramilitary groups have set up autonomous areas in occupied territory."
+ utah.29.a:0 "Stop.."
+ utah.30.t:0 "Martial Law Declared!"
+ utah.30.d:0 "Seeing the political instability because of separatists, the Utah State Government has declared martial law. Curfew was to be in effect from 8pm to 5am, telephone lines and internet connectivity was blacked out and the National Guard patrolled the streets. Utah effectively had shut down like how they did back in March of 2020, only this time rather than enforcing masks, they are enforcing state security. Instead of asking people to stay inside to avoid getting covid, they are making people stay inside to avoid revolts."
+ utah.30.a:0 "Dear God."
+ utah.31.t:0 "The First Raids"
+ utah.31.d:0 "Mark Houston joined the National Guard to avoid college. He wasn't smart enough like those city slickers to get in but his folks wanted him to get an education. When he enlisted, he expected adventure, he expected to help people; he did not expect to be part of the state's counter terrorist organization. He and every other CTO in the state had orders to raid select buildings in areas considered to be controlled by Arizonian, Nevadan and Coloradan separatists. Raids would be carried out every night, in every part of the state and would end up in gunfights and arrests. Most of the time it would lead to separatists getting killed or arrested, only to make headlines on the news to boost the morale of people to native Utahans and lower it for everyone else. But there are other times where the separatists end up winning the gunfights and escaping the scene. That is at least what happened in one of the first raids held in Arizona. The news line after the following day talked about how there were 5 dead and 11 injured National Guard who took part in a raid in Arizona. The news put out a moment of silence for the men killed including John Dewalt, Hugh Bernstein, Samuel Clarkson, Peter Collins and Mark Houston."
+ utah.31.a:0 "We won't stop until every single one of those terrorists are behind bars or six feet under. "
+ utah.32.t:0 "Negotiating with Separatist Officials"
+ utah.32.d:0 "Fortunately, some of the separatists were still reasonable people. Many of the captured separatists were bribed with probation and Utah citizenship for selling out their sepratist cells and brethren. Some groups were even willing to lay down their arms for simple bribes of autonomy and investments. Not every single separatist is a bloodthirsty separatist, they are just misguided people fighting for what they believe is their land. Just like how the United States gave us Mormons autonomy, we Utahans can easily work out a deal with some of these men before it's too late."
+ utah.32.a:0 "One man's freedom fighter is another man's terrorist."
+ utah.33.t:0 "The Las Vegas Riots"
+ utah.33.d:0 "BREAKING NEWS: This just in riots in the Las Vegas Strip has occured after Utah Liquor laws were implemented in Casinos. The banning of gambling in the city in accordance with state law saw the city descend into anarchy. Mormon churches have been lit on fire, crowds have burned and looted most of the city and many of the LVPD have even joined the protestors. The Utah State Government has deployed the National Guard to deal with the unrest, though many fear that little can be done. Details to follow more at 6. The television sets then cut to commercial as many lost hope for control in the city of sin."
+ utah.33.a:0 "It only gets worse from here."
+ utah.34.t:0 "Obediance"
+ utah.34.d:0 "Because of the instability in the state, most of Utah state TV has been non stop news about separatism and martial law. A local television show was talking about the issues at hand when it then turned to the youth. Homosexuality, socialism, liberalism, premartial sex, drugs and alchol are extremely present in this new generation of kids. There are less and less kids showing up for church services and obeying state orders. Nearly all of the violations of martial law have been from Generation Z children throwing parties... " the announcer was cut off by the click of a button. The man holding that remote was born in 2002, he sat in an apartment he could barely afford even with his job, on a couch he got from his parents, while cuddling with his boyfriend. \nHow the fuck do they expect us to obey when they treat us like this", he said to his partner. \nIt will work on most kids but I know it won't work on us", his partner said looking up while half asleep."
+ utah.34.a:0 "We will not give up our values."
+ utah.34.b:0 "Kids these days."
+ utah.35.t:0 "Guns from the Chinese Bullets from Beijing"
+ utah.35.d:0 "While many of our citizens privately own guns, we simply do not have enough to convert our National Guard into a proper army. So just like those clothes on our backs and everything else we own, we turned to the Chinese. While reluctant, they did offer us a good price on a bulk shipment of various guns and weapons for our military. It may not be popular, but in order to survive on this continent you need to have a piece of metal that slings lead. It does not matter if it was made in Salt Lake City or Shanghai, so long as it shoots and so long as it kills it does not matter."
+ utah.35.a:0 "The Utah Elk and the Beijing Dragon shake hands for the first time. "
+ utah.36.t:0 "Choosing a House Leader"
+ utah.36.d:0 "The time has now come for our administration to choose a leader of the House. There were various options, both liberal and conservative, but we can only choose one. After various debates we have decided to choose..."
+ utah.36.a:0 "Karen Kwan"
+ utah.36.b:0 "Francis Gibson"
+ utah.36.c:0 "Brad Wilson"
+ utah.37.t:0 "Choosing a Senate Leader"
+ utah.37.d:0 "The time has now come for our administration to choose a leader of the Senate. There were various options, both liberal and conservative, but we can only choose one. After various debates we have decided to choose..."
+ utah.37.a:0 "J Stuart Adams"
+ utah.37.b:0 "Evan Vickers"
+ utah.37.c:0 "Karen Mayne"
+ utah.38.t:0 "Choosing the Supreme Commander of the Armed Forces"
+ utah.38.d:0 "The time has now come for our administration to choose a leader of the Supreme Commander of the Armed Forces. There were various options, both pacifist and expansionist, but we can only choose one. After various debates we have decided to choose..."
+ utah.38.a:0 "Charlene Dalto"
+ utah.38.b:0 "Jefferson Burton"
+ utah.38.c:0 "Michael Turley"
+ utah.39.t:0 "Selecting a Vice President"
+ utah.39.d:0 "The time has now come for our administration to choose a Vice President. There were various options, both liberal and conservative, but we can only choose one. After various debates we have decided to choose..."
+ utah.39.a:0 "Deidre Henderson"
+ utah.39.b:0 "Luz Escamilla"
+ utah.40.t:0 "A phone call with Utah"
+ utah.40.d:0 "Mr. President, We have just received an email asking for support in the state of Utah. While they collectively speak Republican, they do have a lot of liberals there like Mitt Romney. In exchange for building back a dialogue between your rightful administration and them, they ask for supplies. It is your call to help them."
+ utah.40.a:0 "Mormons are Christian right? Sure, let's help them."
+ utah.40.b:0 "Mitt was a loser and so are Mormons. Tell them to eat shit.."
+ utah.41.t:0 "Trump refuses to lend support"
+ utah.41.d:0 "Today we received an email from Mr. Trump telling us to eat shit. There will be no supplies or aid and we are essentially left on our own."
+ utah.41.a:0 "Send back a email telling that one eyed bastard to go fuck himself."
+ utah.42.t:0 "Trump sends aid"
+ utah.42.d:0 "We were successful in getting supplies from the Trump administration. These supplies will help both the lives of our people as well as better our military. This is a good day for our nation, despite liberal protestors outside of our capital."
+ utah.42.a:0 "Now that right there is the art of the deal!"
+ utah.43.t:0 "Aid from Morocco"
+ utah.43.d:0 "We have decided to reach out to an unlikely ally in Morocco. Before the civil war, our National Guard helped train their military in paratrooping. We hope that based on our positive history we can get some aid from the kingdom."
+ utah.43.a:0 "A toast to our Morccocan friends"
+ utah.44.t:0 "Utah asks us for federal aid"
+ utah.44.d:0 "We have received a call from the administration in Utah asking for federal aid. In exchange for what looks like establishing ties with our administration they can get some form of aid or supplies. How do you want to respond sir?"
+ utah.44.a:0 "We could always use some friends out there.."
+ utah.44.b:0 "Utah is too far away to deal with right now"
+ utah.45.t:0 "Biden refuses to send us federal aid"
+ utah.45.d:0 "Sadly, the Biden Administration has decided not to give us aid. There will be no supplies or aid and we are essentially left on our own."
+ utah.45.a:0 "Fuck them, we don't need them anyway"
+ utah.46.t:0 "Biden sends us aid"
+ utah.46.d:0 "We have successfully gotten aid from the Biden administration! While they may be half the country away from us, Bidenist planes had dropped off key supplies as well as sending various loans to our government."
+ utah.46.a:0 "It looks like we have a friend in DC!"
+ utah.47.t:0 "Secessionists Rise up"
+ utah.47.d:0 "It appears our attempts to settle the separatist issue were not good enough. State separatists and radical extremists have risen up to tear apart our great nation. The time has come to make our move for the future of the region."
+ utah.47.a:0 "Nevada battle born!"
+ utah.47.b:0 "Arizonians rise up!"
+ utah.47.c:0 "Coloradans defend your freedom!"
+ utah.47.e:0 "Death to traitors!"
+ utah.48.t:0 "Aid from the Peoples Republic of America"
+ utah.48.d:0 "We have successfully gotten aid from Bernie Sanders. The Chairman has given us a significant amount of aid and supplies to help our nation grow. We are expected to see the benefits from this in the following months of this investment."
+ utah.48.a:0 "Thank you Sanders"
+ utah.49.t:0 "Military Breathroughs"
+ utah.49.d:0 "We have successfully gotten aid from Bernie Sanders. The Chairman has given us a significant amount of aid and supplies to help our nation grow. We are expected to see the benefits from this in the following months of this investment."
+ utah.49.a:0 "Night Vision"
+ utah.49.b:0 "Robo Dogs"
+ utah.49.c:0 "Both to some extent"
+ utah.50.t:0 "Choosing a Military Budget"
+ utah.50.d:0 "After recent advancements in our technologies we have a new public debate over our military spending. Expansionists and Republicans are fighting for a large budget whereas Democrats wish to see a moderate budget. Progressives are the only ones fighting to see a small budget. After a voting session, the legislature has voted on..."
+ utah.50.a:0 "A massive budget!"
+ utah.50.b:0 "A moderate budget!"
+ utah.50.c:0 "A minuscule budget!"
+ utah.51.t:0 "Arms Deals"
+ utah.51.d:0 "We have recently been contacted by various international organizations and countries regarding arms deals. The countries that have given us offers so far come from Russia, China, Brazil and Venezuela. Usually states would be barred from making international arms deals with foreign countries, two of which are adversaries of the United States, but these aren't usual circumstances... nor is there a United States. Who shall we go with?"
+ utah.51.a:0 "Take the Russian Offer"
+ utah.51.b:0 "The Brazilian Deal"
+ utah.51.c:0 "Chinas Offer"
+ utah.51.e:0 "Venezuelas Offer"
+ utah.52.t:0 "Choosing a side"
+ utah.52.d:0 "We have come so far as a nation. Rising from the ruins of what was the United States we have grown a formidable army, secured our borders and established a proper political environment. Many in the international community are using Utah as an ideal model for what many other former US states could be. The time has now come to choose our alignment on this continent. Do we go with the Magapedes and Trump? Do we go with the Democrats and Biden? Or do we simply just go with the closest and safest neutral option; ourselves?"
+ utah.52.a:0 " Utah for Trump! Utah for the United States of America!"
+ utah.52.b:0 "Utah for Biden! Utah for the Federal Republic of America!"
+ utah.52.c:0 "Utah for Utah"
+ utah.53.t:0 "Nevadan Army Units"
+ utah.53.d:0 "Reports from Nevada show the organization of armed militia groups. Similar to the Proud boys or Black Nationalist Militias, Nevada civilians have taken to the streets patrolling areas with guns and Kevlar. Nevada state flags and other speratrist flags can be seen either spray painted on a wall or carried in a mob group. The area has grown extremely contentious."
+ utah.53.a:0 "Nevadans Battle Born"
+ utah.54.t:0 "Arizonian Army Units"
+ utah.54.d:0 "Reports from Arizona show the organization of armed militia groups. Similar to the Proud boys or the Black Nationalist Militias, Nevada civilians have taken to the streets patrolling areas with guns and Kevlar. Nevada state flags and other speratrist flags can be seen either spray painted on a wall or carried in a mob group. The area has grown extremely contentious."
+ utah.54.a:0 "Ditas Deus"
+ utah.55.t:0 "Coloradan Army Units"
+ utah.55.d:0 "Reports from Colorado show the organization of armed militia groups. Similar to the Proud boys or the Black Nationalist Militias, Nevada civilians have taken to the streets patrolling areas with guns and Kevlar. Nevada state flags and other speratrist flags can be seen either spray painted on a wall or carried in a mob group. The area has grown extremely contentious."
+ utah.55.a:0 "Coloradans nothing without Coloradao"
+ utah.56.t:0 "The Secessionist Problem"
+ utah.56.d:0 "One of the main issues of the state is ironically the same issues of the former United States of America; secessionists. Utah's borders have grown significantly since the fall of the union. The areas of Arizona, Nevada and Colorado which at the time had weaker governments and industries were simply absorbed to form a greater state of Utah. To this end, the governments may have joined us but the people absolutely despise our rule. Arizonans hate us for our tax policies, Coloradans hate us for going after marijuana and Nevadans hate us for banning gambling. So in all of these territories we own every bar and street corner is filled with talks of secession in forms of small talk or rioting. Something must be done.."
+ utah.56.a:0 "Fucking Secessionists!"
+ utah.57.t:0 "The Utahan Iron Curtain"
+ utah.57.d:0 "The new socialist regime may seem radical to the people of Utah but the people of Nevada, Arizona and Colorado could care less. They still saw themselves as being occupied by a foreign force and could care less what their system of government was. Nevadans still can't gamble, taxes are still higher for Arizona's and Coloradans still couldn't get their weed. It did not matter if they were under the beehive or if they were under a red star, it was still occupation."
+ utah.57.a:0 "New regime, same treatment. "
+ utah.60.t:0 "Arizonian Branch of the National Guard Deserts"
+ utah.60.d:0 "Arizonians serving in the National Guard have deserted and stolen equipment, they have most likely gone to join the many secessionist resistance groups."
+ utah.60.a:0 "Find them!"
+ utah.58.t:0 "The Prophet is Dead!"
+ utah.58.d:0 "President Russell Nelson of the Church of Latter Day Saints has died peacefully in his sleep today at the ripe old age of 101.\n\nThe nation is in a period of mourning, as the Church elders begin the process to select a new President.\n\nIn all likelihood, the successor will be long-time Nelson loyalist and theological conservative, Dallin H. Oaks."
+ utah.58.a:0 "The Cycle Continues"
+ utah.58.b:0 "How sad."
+ utah.59.t:0 "Russell M. Nelson Dead at 101!"
+ utah.59.d:0 "Long-time President of the Latter Day Saints, Russell Nelson, has died today.\n\nA controversial figure across America, he led the coup against the elected Cox government in Utah, and began a transformative theocratic rule that ultimately resulted in the Mormon War against the so-called 'Freedom Coalition'.\n\nHis successor, Dallin H. Oaks, is a hardcore Nelson loyalist and will likely continue the status quo of what government under Nelson was like."
+ utah.59.a:0 "Long Live the Prophet!"
+ utah.59.b:0 "End of an era."
+
+########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
+##     ##   ## ##   ##     ##    ##     ##  ##       ##    ##    ###   ##   ## ##   ###   ### ##       ##    ## 
+##     ##  ##   ##  ##     ##    ##     ##  ##       ##          ####  ##  ##   ##  #### #### ##       ##       
+########  ##     ## ########     ##     ##  ######    ######     ## ## ## ##     ## ## ### ## ######    ######  
+##        ######### ##   ##      ##     ##  ##             ##    ##  #### ######### ##     ## ##             ## 
+##        ##     ## ##    ##     ##     ##  ##       ##    ##    ##   ### ##     ## ##     ## ##       ##    ## 
+##        ##     ## ##     ##    ##    #### ########  ######     ##    ## ##     ## ##     ## ########  ###### 
+
+ UTA_autocratic_party_long:0 "Church of Jesus Christ of Latter-day Saints"
+ UTA_autocratic_party:0 "LDS"
+ UTA_libertarian_right_party_long:0 "Libertarian Party of Utah"
+ UTA_libertarian_right_party:0 "UTLP"
+ UTA_republican_party_long:0 "Utah Republican Party"
+ UTA_republican_party:0 "U-GOP"
+ UTA_democrat_party_long:0 "Utah Democratic Party"
+ UTA_democrat_party:0 "U-DEM"
+ UTA_libertarian_left_party_long:0 "GGreen Party of Utah"
+ UTA_libertarian_left_party:0 "UTGP"
+ UTA_authoritarian_left_party_long:0 "Mormon Socialist Party"
+ UTA_authoritarian_left_party:0 "MSP"
+
+########  #######   ######  ##     ##  ######  ########  ######  
+##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
+##       ##     ## ##       ##     ## ##       ##       ##       
+######   ##     ## ##       ##     ##  ######  ######    ######  
+##       ##     ## ##       ##     ##       ## ##             ## 
+##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
+##        #######   ######   #######   ######  ########  ###### 
+
  UTA_God_Is_On_Our_Side:0 "God on our Side"
  UTA_God_Is_On_Our_Side_desc:0 "With the spirit of God on our side we'll survive this storm!"
  UTA_Raid_US_Armories:0 "Raid US Armories"
@@ -769,3 +1058,21 @@
  UTA_Recognize_Secessionist_Nations_desc:0 "Life, liberty, and the pursuit of happiness is a right entitled to everyone even secessionists."
  UTA_Reintegrate_Secessionists:0 "Reintegrate Secessionists"
  UTA_Reintegrate_Secessionists_desc:0 "Now is the time to reintegrate the secessionist states for good."
+
+########  ########  ######  ####  ######  ####  #######  ##    ##  ######  
+##     ## ##       ##    ##  ##  ##    ##  ##  ##     ## ###   ## ##    ## 
+##     ## ##       ##        ##  ##        ##  ##     ## ####  ## ##       
+##     ## ######   ##        ##   ######   ##  ##     ## ## ## ##  ######  
+##     ## ##       ##        ##        ##  ##  ##     ## ##  ####       ## 
+##     ## ##       ##    ##  ##  ##    ##  ##  ##     ## ##   ### ##    ## 
+########  ########  ######  ####  ######  ####  #######  ##    ##  ######  
+
+
+ #######  ######## ##     ## ######## ########      ######  ######## ##     ## ######## ######## 
+##     ##    ##    ##     ## ##       ##     ##    ##    ##    ##    ##     ## ##       ##       
+##     ##    ##    ##     ## ##       ##     ##    ##          ##    ##     ## ##       ##       
+##     ##    ##    ######### ######   ########      ######     ##    ##     ## ######   ######   
+##     ##    ##    ##     ## ##       ##   ##            ##    ##    ##     ## ##       ##       
+##     ##    ##    ##     ## ##       ##    ##     ##    ##    ##    ##     ## ##       ##       
+ #######     ##    ##     ## ######## ##     ##     ######     ##     #######  ##       ##     
+

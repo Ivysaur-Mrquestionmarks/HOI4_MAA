@@ -1,0 +1,13 @@
+UTA_mormon_coup = {
+	priority = 10
+
+	icon = generic_crisis
+
+	visible = {
+		has_country_flag = UTA_coup_in_preparation
+	}
+
+	allowed = {
+		original_tag = UTA
+	}
+}

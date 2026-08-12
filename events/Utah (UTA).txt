@@ -1,16 +1,249 @@
 add_namespace = utah
 
-#Mormon Volunteers from Mexico
+#Mormon Coup
 country_event = {
 	id = utah.1
 	title = utah.1.t
 	desc = utah.1.d
+	picture = event_mormon_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = utah.1.a
+		add_stability = -0.25
+		add_political_power = -100
+		set_politics = {
+			ruling_party = autocratic
+		}
+		add_popularity = {
+		    ideology = autocratic
+		    popularity = 0.2
+		}
+		hidden_effect = {
+			AFO = { 
+				set_politics = {
+					ruling_party = autocratic
+				}
+				if = {
+					limit = {
+						is_subject_of = UTA
+					}
+					UTA = {
+						set_autonomy = {
+						    target = AFO
+						    autonomy_state = autonomy_free
+						}
+					}
+				}
+				leave_faction = yes
+				every_country = {
+					limit = {
+						has_war_with = AFO
+					}
+					white_peace = AFO
+				}
+			 }
+			news_event = { id = utah.1000 hours = 12 }
+			SIN = { country_event = { id = utah.2 days = 30 } }
+		}
+		if = {
+			limit = {
+				is_subject_of = USA
+			}
+			USA = {
+				set_autonomy = {
+				    target = UTA
+				    autonomy_state = autonomy_free
+				}
+			}
+		}
+		leave_faction = yes
+		every_country = {
+			limit = {
+				has_war_with = UTA
+			}
+			white_peace = UTA
+		}
+	}
+}
+
+#Anti Mormons ask Kazcynski for help (SIN prespective)
+country_event = {
+	id = utah.2
+	title = utah.2.t
+	desc = utah.2.d
+	picture = event_revolt_put_down_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = utah.2.a
+		add_popularity = {
+		    ideology = republican
+		    popularity = 0.05
+		}
+		add_popularity = {
+		    ideology = democrat
+		    popularity = 0.05
+		}
+		division_template = {
+			name = "Utahn Anti-Mormon Brigade"
+			#division_names_group = TODO
+			priority = 1
+			#template_counter = 81
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+			}
+		}
+		348 = {
+			create_unit = {
+				division = "name = \"Dehlin Brigade\" division_template = \"Utahn Anti-Mormon Brigade\" start_experience_factor = 0.8" 
+				owner = SIN
+			}
+			create_unit = {
+				division = "name = \"Decker Brigade\" division_template = \"Utahn Anti-Mormon Brigade\" start_experience_factor = 0.2" 
+				owner = SIN
+			}
+		}
+		declare_war_on = {
+		    target = UTA
+		    type = annex_everything
+		}
+		MOL = { country_event = { id = utah.3 days = 5 } }
+		LAS = { country_event = { id = utah.4 days = 5 } }
+		add_ideas = SIN_war_escalation
+		create_faction = MORMON_WAR_ANPRIM_ALLIANCE
+		hidden_effect = { 
+			set_global_flag = mormon_war_begun 
+			#add_state_core = 348 
+			news_event = { id = utah.1001 days = 1 } 
+			UTA = { create_faction = MORMON_WAR_MORMON_ALLIANCE } 
+		}
+	}
+}
+
+#Molossia joins the war (MOL prespective)
+country_event = {
+	id = utah.3
+	title = utah.3.t
+	desc = utah.3.d
+	picture = event_revolt_put_down_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = utah.3.a
+		declare_war_on = {
+		    target = UTA
+		    type = annex_everything
+		}
+		SIN = {
+			add_to_faction = MOL
+		}
+	}
+}
+
+#Las Vegas joins the war (LAS prespective)
+country_event = {
+	id = utah.4
+	title = utah.4.t
+	desc = utah.4.d
+	picture = event_las_vegas_01
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = utah.4.a
+		declare_war_on = {
+		    target = UTA
+		    type = annex_everything
+		}
+		SIN = {
+			add_to_faction = LAS
+		}
+		division_template = {
+		    name = "Las Vegas Guard"
+		#    division_names_group =
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+			}
+		}
+		46 = {
+			create_unit = {
+				division = "name = \"Las Vegas Metropolitan Police\" division_template = \"Las Vegas Guard\" start_experience_factor = 0.1" 
+				owner = LAS
+			}
+			create_unit = {
+				division = "name = \"LVMPD SWAT\" division_template = \"Las Vegas Guard\" start_experience_factor = 0.0" 
+				owner = LAS
+			}
+			create_unit = {
+				division = "name = \"Casino Militia\" division_template = \"Las Vegas Guard\" start_experience_factor = 0.2" 
+				owner = LAS
+			}
+		}
+	}
+}
+
+
+
+
+
+#Mormon Coup news event
+news_event = {
+	id = utah.1000
+	title = utah.1000.t
+	desc = utah.1000.d
+	picture = event_news_mormons_01
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = utah.1000.a
+	}
+}
+
+#news event for Mormon War
+news_event = {
+	id = utah.1001
+	title = utah.1001.t
+	desc = utah.1001.d
+	picture = event_news_mormons_02
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = utah.1001.a
+		if = {
+			limit = {NOT = {is_ai = yes}}
+			set_country_flag = {
+    				flag = super_event
+    				value = 1
+			}
+			if = { 
+				limit = { has_global_flag = SuperEventsWillBePlayed_flag }
+				if = { limit = { NOT= { any_other_country = {has_country_flag = super_event}}}
+					sound_effect = 	"mormon_war"
+					play_song = "one_minute_of_silence"
+				}
+			}
+		}
+	}
+}
+
+#Mormon Volunteers from Mexico
+country_event = {
+	id = utah.62
+	title = utah.62.t
+	desc = utah.62.d
 	picture = event_last_election
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = utah.1.a
+		name = utah.62.a
 		
 	create_corps_commander = {
 	name = "Julian LeBaron"
@@ -56,159 +289,18 @@ country_event = {
 
 #National Guard Coup
 country_event = {
-	id = utah.2
-	title = utah.2.t
-	desc = utah.2.d
+	id = utah.63
+	title = utah.63.t
+	desc = utah.63.d
 	picture = event_last_election
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = utah.2.a
+		name = utah.63.a
 		retire_country_leader = yes
 		set_party_name = { ideology = autocratic  long_name = UTA_Military_Junta name = UTA_Military_Junta }
 		set_cosmetic_tag = UTA_PGT
-	}
-}
-
-#Romney
-country_event = {
-	id = utah.3
-	title = utah.3.t
-	desc = utah.3.d
-	picture = event_last_election
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = utah.3.a
-		create_country_leader = {
-	    name = "Mitt Romney"
-	    picture = "gfx/leaders/UTA/romney.dds"
-	    expire = "2060.1.1"
-	    ideology = rino
-	    traits = {
-	    }
-    }
-		
-  }
-}
-
-#King
-country_event = {
-	id = utah.4
-	title = utah.4.t
-	desc = utah.4.d
-	picture = event_last_election
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-	name = utah.4.a
-	create_country_leader = {
-	name = "Brian King"
-	picture = "gfx/leaders/UTA/king.dds"
-	expire = "2060.1.1"
-	ideology = liberal
-	traits = {
-	}
-    }
-		
-	}
-}
-
-#Bennion
-country_event = {
-	id = utah.5
-	title = utah.5.t
-	desc = utah.5.d
-	picture = event_last_election
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-	name = utah.5.a
-	create_country_leader = {
-	name = "Gay Lynn Bennion"
-	picture = "gfx/leaders/UTA/bennion.dds"
-	expire = "2060.1.1"
-	ideology = liberal
-	traits = {
-		
-	}
-}
-		
-	}
-}
-
-#Cox
-country_event = {
-	id = utah.6
-	title = utah.6.t
-	desc = utah.6.d
-	picture = event_last_election
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-	name = utah.6.a
-	create_country_leader = {
-	name = "Spencer Cox"
-	picture = "gfx/leaders/UTA/cox.dds"
-	expire = "2060.1.1"
-	ideology = conservative
-	traits = {
-		
-	}
-}
-		
-	}
-}
-
-#Glines
-country_event = {
-	id = utah.7
-	title = utah.7.t
-	desc = utah.7.d
-	picture = event_last_election
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-	name = utah.7.a
-	create_country_leader = {
-	name = "Allen Glines"
-	picture = "gfx/leaders/UTA/glines.dds"
-	expire = "2060.1.1"
-	ideology = liberal
-	traits = {
-		
-	}
-}
-		
-	}
-}
-
-#Lee
-country_event = {
-	id = utah.8
-	title = utah.8.t
-	desc = utah.8.d
-	picture = event_last_election
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-	name = utah.8.a
-	create_country_leader = {
-	name = "Mike Lee"
-	picture = "gfx/leaders/UTA/lee.dds"
-	expire = "2060.1.1"
-	ideology = conservative
-	traits = {
-	}
-    }
-		
 	}
 }
 

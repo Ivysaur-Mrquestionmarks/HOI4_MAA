@@ -955,14 +955,6 @@ country_event = {
 			}
 			white_peace = LAS
 		}
-		hidden_effect = {
-			LAS = {
-				country_event = {
-					id = viva_las_vegas.28
-					days = 3
-				}
-			}
-		}
 	}
 #	option = {
 #		name = viva_las_vegas.26.b
@@ -1005,49 +997,5 @@ country_event = {
 		    ideology = neocon
 		}
 		custom_effect_tooltip = las_indie_prepare_war_tt
-	}
-}
-#Las Vegas declares WAR on the Mormons!! -- PORTED FROM MORMON WAR FILE
-country_event = {
-	id = viva_las_vegas.28
-	title = viva_las_vegas.28.t
-	desc = viva_las_vegas.28.d
-	picture = event_las_vegas_01
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = viva_las_vegas.28.a
-		declare_war_on = {
-		    target = UTA
-		    type = annex_everything
-		}
-		SIN = {
-			add_to_faction = LAS
-		}
-		division_template = {
-		    name = "Las Vegas Guard"
-		#    division_names_group =
-			regiments = {
-				infantry = { x = 0 y = 0 }
-				infantry = { x = 0 y = 1 }
-				infantry = { x = 0 y = 2 }
-				infantry = { x = 0 y = 3 }
-				infantry = { x = 0 y = 4 }
-			}
-		}
-		46 = {
-			create_unit = {
-				division = "name = \"Las Vegas Metropolitan Police\" division_template = \"Las Vegas Guard\" start_experience_factor = 0.1" 
-				owner = LAS
-			}
-			create_unit = {
-				division = "name = \"LVMPD SWAT\" division_template = \"Las Vegas Guard\" start_experience_factor = 0.0" 
-				owner = LAS
-			}
-			create_unit = {
-				division = "name = \"Casino Militia\" division_template = \"Las Vegas Guard\" start_experience_factor = 0.2" 
-				owner = LAS
-			}
-		}
 	}
 }

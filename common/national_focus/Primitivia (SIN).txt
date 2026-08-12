@@ -274,7 +274,7 @@ focus_tree = {
 		completion_reward = {
 			348 = { add_compliance = 30 add_resistance = -30 }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_political_power = 50
+			add_political_power = 10
             add_stability = 0.1
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = limited_conscription
@@ -576,7 +576,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            add_political_power = 50
+            add_political_power = 20
 			add_stability = 0.05
 			add_war_support = 0.05
 		}
@@ -678,7 +678,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
 			add_manpower = 2000
 			add_collaboration = {
 				target = UTA
@@ -824,7 +824,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            add_political_power = 100
+            add_political_power = 50
 			add_stability = 0.05
 		}
 		prerequisite = {

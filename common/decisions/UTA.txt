@@ -1,0 +1,37 @@
+UTA_mormon_coup = {
+
+	UTA_coup_timer = {
+	
+		icon = GFX_decision_generic_speech
+
+		priority = 10
+
+		allowed = { 
+			original_tag = UTA
+		}
+
+		available = {
+			always = no
+		}
+
+		days_mission_timeout = 81
+
+		fire_only_once = yes
+
+		activation = {
+		}
+
+		is_good = yes
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			country_event = utah.1
+		}
+
+		cancel_effect = {
+		}
+	}
+
+}
