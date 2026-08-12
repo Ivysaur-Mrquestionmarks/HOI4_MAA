@@ -208,6 +208,17 @@ ideas = {
 			}
 		}
 
+		SIN_a_war_with_the_devil_idea = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			targeted_modifier = {
+			    tag = HOP
+				attack_bonus_against = 0.1
+			    defense_bonus_against = 0.1
+			}
+		}
+
 
 	
 
