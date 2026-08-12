@@ -11,6 +11,8 @@
 
  SIN_cancel_no_utah_tt:0 "§YThis idea will be removed once [UTA.GetNameDef] ceases to exist.§!"
  SIN_cancel_no_anprim_tt:0 "§YThis idea will be removed if we stop following the Anarcho-Primitivist ideology.§!"
+ SIN_cancel_recover_tt:0 "§ROnce this idea runs out, it will take one year for our army to regain its fighting strength.§!"
+
  SIN_faction_management_tt:0 "Unlocks decisions to cooperate with the [GetIslamistsName] and the [GetDtName].\nUnlocks decisions to repress the [GetIslamistsName] and the [GetDtName]."
  SIN_antagonize_the_cartel_tt:0 "Unlocks decisions to repress with the [GetCartelName]."
  SIN_work_with_the_cartel_tt:0 "Unlocks decisions to cooperate with the [GetCartelName]."
@@ -63,6 +65,45 @@
  SIN_anprim_influx:0 "AnPrim Influx"
  SIN_anprim_influx_desc:0 "Anarcho-Primitivists intellectuals and militants are coming from all across america to join our cause! Now to defend Primitivia!"
 
+ SIN_many_factions:0 "Many Factions"
+ SIN_many_factions_desc:0 "Our society is fractured between many competing factions, each pursuing its own interests. This political fragmentation makes effective governance increasingly difficult."
+
+ SIN_many_factions_1:0 "Many Factions"
+ SIN_many_factions_1_desc:0 "Our society is fractured between many competing factions, each pursuing its own interests. This political fragmentation makes effective governance increasingly difficult."
+
+ SIN_many_factions_2:0 "Many Factions"
+ SIN_many_factions_2_desc:0 "Our society is fractured between many competing factions, each pursuing its own interests. This political fragmentation makes effective governance increasingly difficult."
+
+ SIN_many_factions_3:0 "Many Factions"
+ SIN_many_factions_3_desc:0 "Our society is fractured between many competing factions, each pursuing its own interests. This political fragmentation makes effective governance increasingly difficult."
+
+ SIN_many_factions_4:0 "Many Factions"
+ SIN_many_factions_4_desc:0 "Our society is fractured between many competing factions, each pursuing its own interests. This political fragmentation makes effective governance increasingly difficult."
+
+ SIN_many_factions_5:0 "Many Factions"
+ SIN_many_factions_5_desc:0 "Our society is fractured between many competing factions, each pursuing its own interests. This political fragmentation makes effective governance increasingly difficult."
+
+ SIN_utah_bombing_campaigns:0 "Enemy Bombing Campaign"
+ SIN_utah_bombing_campaigns_desc:0 "Our enemies have brought their way of war to our cities and industries. The relentless bombing campaign is damaging morale, disrupting production, and placing immense strain on the state."
+
+ SIN_anarcho_primitivism:0 "Anarcho-Primitivism"
+ SIN_anarcho_primitivism_desc:0 "The rejection of industrial civilization has brought our society closer to the natural world. Though our methods may be unconventional, the experience of living outside the structures of modern society has forged a people accustomed to hardship and self-reliance."
+
+ SIN_anarcho_primitivism_1:0 "Anarcho-Primitivism"
+ SIN_anarcho_primitivism_1_desc:0 "The rejection of industrial civilization has brought our society closer to the natural world. Though our methods may be unconventional, the experience of living outside the structures of modern society has forged a people accustomed to hardship and self-reliance."
+
+ SIN_anarcho_primitivism_2:0 "Anarcho-Primitivism"
+ SIN_anarcho_primitivism_2_desc:0 "The rejection of industrial civilization has brought our society closer to the natural world. Though our methods may be unconventional, the experience of living outside the structures of modern society has forged a people accustomed to hardship and self-reliance."
+
+ SIN_united_against_mormonism_idea:0 "United Against Mormonism"
+ SIN_united_against_mormonism_idea_desc:0 "Despite our differences, we share a common enemy in the Mormon state of Utah. Until it is defeated, our forces have a reason to stand together."
+
+ SIN_crack_fueled_soldiers:0 "Crack-Fueled Soldiers"
+ SIN_crack_fueled_soldiers_desc:0 "Our soldiers have been supplied with all kinds of drugs to make them fighting beyond the limits of human endurance. The drugs make them faster, more aggressive, and seemingly fearless, but the cost is a severe deterioration in discipline, judgment, and long-term combat effectiveness."
+
+ SIN_army_recovering:0 "Army Recovering"
+ SIN_army_recovering_desc:0 "The effects of the drugs have worn off, leaving our soldiers exhausted and struggling to recover. After pushing their bodies far beyond their natural limits, they require time to regain their strength and return to normal combat readiness."
+
 
 ######## ##     ## ######## ##    ## ########  ######  
 ##       ##     ## ##       ###   ##    ##    ##    ## 
@@ -93,6 +134,23 @@
  colorado.1000.t:0 "Anarcho-Primitivists in the Rockies"
  colorado.1000.d:0 "After somehow the prisioners elected a leader in the long-abandoned USP Florence Supermax, the former bomber who roamed under an unknown name during the 1990s, Ted Kaczynski was chosen. Guided by Ted's ideas that the industrial revolution was a mistake and one of the main factors in the decline of civilization, a de facto state was formed under the ideals of anarcho-primitivism. This combination of militaristic drug gangsterism and the primitiveness of ideology was a shock to all participants in the Civil War, and the emerging factions continue to amaze us. What the future holds for this once great country remains to be seen."
  colorado.1000.a:0 "Paint The Town Green"
+
+ # Deal with the Devil (HOP perspective)
+ colorado.4.t:0 "A Message from ADX Florence"
+ colorado.4.d:0 "The situation in the West has created the most unexpected situation. The Mormon forces stand between us and our ambitions, and defeating them will require cooperation that would have been unthinkable only months ago. The primitivists to the North are everything we claim to despise, yet they too have a reason to see the Mormons defeated. A temporary arrangement could allow our forces to coordinate against a common enemy. It is an alliance with terrorists, but perhaps they have some use."
+ colorado.4.a:0 "The enemy of my enemy..."
+ colorado.4.b:0 "We will never bargain with them."
+
+ # Deal with the Devil Accepted
+ colorado.5.t:0 "A Deal with the Devil"
+ colorado.5.d:0 "The deal is done. For the first time, our forces will coordinate with the Nazi regime to our south against the Mormon armies. Neither side trusts the other, and neither should. This is not friendship, nor is it an ideological alliance. It is a temporary marriage of convenience born from the necessities of war. For now, that is enough."
+ colorado.5.a:0 "Let us destroy our common enemy."
+
+
+ # Deal with the Devil Rejected
+ colorado.6.t:0 "The Devil Refuses"
+ colorado.6.d:0 "Our offer has been rejected. The Nazis would rather face the enemy alone than sully themselves by cooperating with us. Perhaps this is fortunate; there are some lines that should not be crossed. Whatever the reason, the opportunity for coordination is gone, and we will have to face the Mormon threat on our own."
+ colorado.6.a:0 "We don't need the Devil."
 
 
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  

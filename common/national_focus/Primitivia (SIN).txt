@@ -612,6 +612,7 @@ focus_tree = {
 				    days = 365
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = SIN_streamlining_bombs
 		}
 		prerequisite = {
@@ -634,16 +635,22 @@ focus_tree = {
 		}
 		available = {
 			has_war_with = UTA
+			HOP = { has_war_with = UTA }
 		}
 		
 		bypass = {
-			UTA = { exists = no }
+			OR = {
+				UTA = { exists = no }
+				HOP = { exists = no }
+			}
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            HOP = {
+				country_event = colorado.4
+			}
 		}
 		prerequisite = {
 			focus = SIN_the_mormon_war
@@ -671,7 +678,17 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+			add_political_power = 50
+			add_manpower = 2000
+			add_collaboration = {
+				target = UTA
+				value = 0.15
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+            UTA = {
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
 		}
 		prerequisite = {
 			focus = SIN_bombing_campaign
@@ -687,7 +704,7 @@ focus_tree = {
 		x = -5
 		y = 8
 
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			
 		}
@@ -702,7 +719,39 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            add_ideas = SIN_united_against_mormonism_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					MOL = {
+						exists = yes
+					}
+				}
+				MOL = { add_ideas = SIN_united_against_mormonism_idea }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					LAS = {
+						exists = yes
+					}
+				}
+				LAS = { add_ideas = SIN_united_against_mormonism_idea }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					HOP = {
+						exists = yes
+					}
+					HOP = {
+						NOT = {
+							has_country_flag = SIN_rejected_deal_with_the_devil
+						}
+					}
+				}
+				HOP = { add_ideas = SIN_united_against_mormonism_idea }
+			}
 		}
 		prerequisite = {
 			focus = SIN_infiltrate_salt_lake_city
@@ -718,7 +767,7 @@ focus_tree = {
 		x = -3
 		y = 8
 
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			
 		}
@@ -733,7 +782,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            add_timed_idea = { idea = SIN_crack_fueled_soldiers days = 30 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SIN_cartel_medium_popularity_increase_effect = yes
+			SIN_mob_medium_popularity_increase_effect = yes
 		}
 		prerequisite = {
 			focus = SIN_infiltrate_salt_lake_city
@@ -1122,7 +1174,7 @@ focus_tree = {
 				ideology = libertarian_right
 				popularity = 0.1
 			}
-			add_political_power = 50
+			add_political_power = 10
 		}
 		prerequisite = {
 			focus = SIN_train_the_anprims
@@ -1323,12 +1375,12 @@ focus_tree = {
 		x = 1
 		y = 9
 
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			
 		}
 		available = {
-			
+			UTA = { exists = no }
 		}
 		
 		bypass = {
@@ -1338,7 +1390,17 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            add_stability = 0.1
+			add_popularity = {
+				ideology = libertarian_right
+				popularity = 0.1
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_power_balance_value = {
+				id = SIN_ted_chapo_bop
+				value = 0.15
+				tooltip_side = ted_side
+			}
 		}
 		prerequisite = {
 			focus = SIN_united_against_mormonism

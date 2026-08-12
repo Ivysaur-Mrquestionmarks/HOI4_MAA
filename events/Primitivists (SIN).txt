@@ -101,6 +101,75 @@ country_event = {
 	}
 }
 
+# Deal with the Devil (HOP prespective)
+country_event = {
+	id = colorado.4
+	title = colorado.4.t
+	desc = colorado.4.d
+	picture = event_SIN_event_4
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.4.a
+		ai_chance = {
+			factor = 200
+		}
+		HOP = { give_military_access = SIN }
+		SIN = { give_military_access = HOP }
+		SIN = {
+            country_event = { id = colorado.5 days = 1}
+        }
+	}
+
+	option = {
+		name = colorado.4.b
+		ai_chance = {
+			factor = 1
+		}
+		add_stability = -0.05
+		set_country_flag = SIN_rejected_deal_with_the_devil
+		SIN = {
+            country_event = { id = colorado.6 days = 1}
+        }
+	}
+}
+
+# Deal with the Devil Accepted
+country_event = {
+	id = colorado.5
+	title = colorado.5.t
+	desc = colorado.5.d
+	picture = event_SIN_event_5
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.5.a
+		ai_chance = {
+			factor = 200
+		}
+		add_war_support = 0.05
+	}
+}
+
+# Deal with the Devil Rejected
+country_event = {
+	id = colorado.6
+	title = colorado.6.t
+	desc = colorado.6.d
+	picture = event_SIN_event_6
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.6.a
+		ai_chance = {
+			factor = 200
+		}
+		add_stability = 0.05
+	}
+}
+
+
+
 
 
 

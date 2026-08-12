@@ -107,7 +107,7 @@ ideas = {
 			}
 		}
 
-		SIN_utah_bombing_campaigns = {
+		SIN_utah_bombing_campaigns = { #UTAH PRESPECTIVE
 			allowed = { original_tag = UTA }
 			modifier = {
 				war_support_factor = -0.15
@@ -152,6 +152,59 @@ ideas = {
 				experience_gain_army_factor = 0.25
 				research_speed_factor = 0.05
 				custom_modifier_tooltip = SIN_cancel_no_anprim_tt
+			}
+		}
+
+		SIN_united_against_mormonism_idea = {
+			allowed = {
+				OR = {
+					original_tag = SIN
+					original_tag = MOL
+					original_tag = LAS
+					original_tag = HOP
+				}
+			}
+			cancel = {
+            	NOT = { country_exists = UTA }
+            }
+			targeted_modifier = {
+			    tag = UTA
+				attack_bonus_against = 0.05
+			    defense_bonus_against = 0.05
+			}
+			modifier = {
+				custom_modifier_tooltip = SIN_cancel_no_utah_tt
+			}
+		}
+
+		SIN_crack_fueled_soldiers = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			on_remove = {
+                add_timed_idea = { idea = SIN_army_recovering days = 360 }
+            }
+			modifier = {
+				army_attack_factor = 0.5
+				breakthrough_factor = 0.25
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.1
+				army_defence_factor = -0.25
+				experience_gain_army_factor = -0.5
+				custom_modifier_tooltip = SIN_cancel_recover_tt
+			}
+		}
+
+		SIN_army_recovering = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				army_attack_factor = -0.15
+				breakthrough_factor = -0.15
+				army_speed_factor = -0.15
+				army_defence_factor = -0.15
+				experience_gain_army_factor = -0.25
 			}
 		}
 
