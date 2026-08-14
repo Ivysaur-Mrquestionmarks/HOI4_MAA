@@ -200,21 +200,6 @@ characters = {
 		
 	}
 
-	SIN_john_zerzan = {
-		name = SIN_john_zerzan
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/SIN/John_Zerzan.tga"
-			}
-		}
-		country_leader = {
-			traits = {  }
-			ideology = anarcho_primitivism
-			expire = "2060.1.1.1"
-			id = -1
-		}
-	}
-
 	SIN_El_Chapo = {
 		name = SIN_El_Chapo
 		portraits = {
@@ -316,47 +301,6 @@ characters = {
 			traits = { SIN_the_man_advisor }
 			ai_will_do = {
 				factor = 1
-			}
-		}
-	}
-
-	# Republicans #
-	SIN_mitt_romney = {
-		name = SIN_mitt_romney
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/UTA/romney.dds"
-			}
-			army = {
-				small = "GFX_idea_Mitt_Romney_ADV"
-			}
-		}
-		country_leader = {
-			traits = {}
-			ideology = rino
-			expire = "2060.1.1.1"
-			id = -1
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = SIN_Mitt_Romney_Advisor
-			cost = 150
-			allowed = {
-				original_tag = SIN
-			}
-			visible = {
-				has_completed_focus = Meet_with_Romney
-			}
-			available = {
-				NOT = {
-					has_country_flag = Banned_Radicals
-				}
-			}
-			traits = {
-				Romney_Advisor 
-			}
-			ai_will_do = {
-				factor = 5
 			}
 		}
 	}
@@ -1061,10 +1005,191 @@ characters = {
 		}
 	}
 
+	# AnPrims Characters
+
+	SIN_John_Zerzan = {
+		name = SIN_John_Zerzan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/John_Zerzan.dds"
+				small = "gfx/interface/ideas/SIN/advisor_John_Zerzan.dds" 
+			}
+		}
+		country_leader = {
+			traits = { SIN_rewilder_in_chief }
+			ideology = anarcho_primitivism
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_John_Zerzan
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
+			}
+			available = {
+				has_completed_focus = SIN_bring_forth_the_anprims
+				is_country_leader = no
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
+			}
+			traits = { SIN_rewilder }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Steven_Best = {
+		name = SIN_Steven_Best
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SIN/advisor_Steven_Best.dds" 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Steven_Best
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_anprims_integrated_flag
+				is_country_leader = no
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
+			}
+			traits = { SIN_animal_rights_activist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Janet_Biehl = {
+		name = SIN_Janet_Biehl
+		gender = female
+
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SIN/advisor_Janet_Biehl.dds" 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Janet_Biehl
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_anprims_integrated_flag
+				is_country_leader = no
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
+			}
+			traits = { SIN_social_ecologist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Chellis_Glendinning = {
+		name = SIN_Chellis_Glendinning
+		gender = female
+
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SIN/advisor_Chellis_Glendinning.dds" 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Chellis_Glendinning
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_anprims_integrated_flag
+				is_country_leader = no
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
+			}
+			traits = { SIN_ecopsychologist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Richard_Heinberg = {
+		name = SIN_Richard_Heinberg
+
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SIN/advisor_Richard_Heinberg.dds" 
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = advisor_Richard_Heinberg
+			cost = 150
+			allowed = {
+				original_tag = SIN
+			}
+			visible = {
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
+			}
+			available = {
+				has_country_flag = SIN_anprims_integrated_flag
+				is_country_leader = no
+				NOT = {
+					has_country_flag = SIN_anprims_destroyed_flag
+				}
+			}
+			traits = { SIN_post_carbonist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 	# Establishment Characters
 	# gop
 	SIN_Lauren_Boebert = {
 		name = SIN_Lauren_Boebert
+		gender = female
+
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/SIN/Lauren_Boebert.dds"

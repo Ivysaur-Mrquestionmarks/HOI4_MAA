@@ -39,10 +39,8 @@ set_research_slots = 1
 recruit_character = SIN_Keith_Laube
 recruit_character = SIN_Ted_Kaczynski
 recruit_character = SIN_Alfredo_Beltran_Leyva
-recruit_character = SIN_john_zerzan
 recruit_character = SIN_El_Chapo
 recruit_character = SIN_James_Marcello
-#recruit_character = SIN_mitt_romney
 
 ### Advisors ###
 recruit_character = SIN_robert_p_hanssen
@@ -61,7 +59,7 @@ recruit_character = SIN_Glendon_Scott_Crawford
 recruit_character = SIN_Perry_Roark
 recruit_character = SIN_Terry_Nichols
 
-#Cartel
+#Mob
 recruit_character = SIN_Luis_Felipe
 recruit_character = SIN_Fotios_Geas
 recruit_character = SIN_Dairo_Antonio_Usuga
@@ -73,6 +71,13 @@ recruit_character = SIN_Ivan_Guzman
 recruit_character = SIN_Alfredo_Guzman
 recruit_character = SIN_Joaquin_Guzman
 recruit_character = SIN_Ovidio_Guzman
+
+#Anprims
+recruit_character = SIN_John_Zerzan
+recruit_character = SIN_Steven_Best
+recruit_character = SIN_Janet_Biehl
+recruit_character = SIN_Chellis_Glendinning
+recruit_character = SIN_Richard_Heinberg
 
 #Establishment
 recruit_character = SIN_Lauren_Boebert

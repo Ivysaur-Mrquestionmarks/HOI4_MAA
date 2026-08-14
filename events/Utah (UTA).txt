@@ -127,7 +127,7 @@ country_event = {
 		SIN_establishment_high_popularity_increase_effect = yes
 		hidden_effect = { 
 			set_global_flag = mormon_war_begun
-			news_event = { id = utah.1001 days = 1 } 
+			news_event = { id = utah.1001 days = 10 } 
 			#UTA = { create_faction = MORMON_WAR_MORMON_ALLIANCE }
 			add_named_threat = {
 				threat = 5

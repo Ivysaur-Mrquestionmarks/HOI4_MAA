@@ -175,6 +175,9 @@ focus_tree = {
 				tooltip_side = ted_side
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = advisor_John_Zerzan
+			custom_effect_tooltip = generic_skip_one_line_tt
 			SIN_anprims_low_popularity_increase_effect = yes
 			SIN_anprims_low_loyalty_increase_effect = yes
 		}
