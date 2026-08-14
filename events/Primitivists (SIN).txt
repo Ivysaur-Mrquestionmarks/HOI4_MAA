@@ -14,15 +14,14 @@ country_event = {
 			factor = 1
 		}
 
-		promote_character = SIN_Ted_Kaczynski
-		set_party_name = {
-			ideology = libertarian_right
-			long_name = SIN_libertarian_right_party_anprim_long
-			name = SIN_libertarian_right_party_anprim
+		SIN_Ted_Kaczynski = {
+			promote_character = yes
 		}
 		custom_effect_tooltip = generic_skip_one_line_tt
 		set_politics = {
 			ruling_party = libertarian_right
+			long_name = SIN_libertarian_right_party_anprim_long
+			name = SIN_libertarian_right_party_anprim
 		}
 		add_popularity = {
 		    ideology = libertarian_right

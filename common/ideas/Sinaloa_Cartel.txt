@@ -117,10 +117,10 @@ ideas = {
 			}
 		}
 
-		SIN_anarcho_primitivism = {
+		SIN_anarcho_primitivism_idea = {
 			allowed = { original_tag = SIN }
 			cancel = {
-            	NOT = { has_ideology_group = libertarian_right }
+            	NOT = { has_ideology = anarcho_primitivism }
             }
 			modifier = {
 				army_attack_factor = 0.05
@@ -130,10 +130,10 @@ ideas = {
 			}
 		}
 
-		SIN_anarcho_primitivism_1 = {
+		SIN_anarcho_primitivism_idea_1 = {
 			allowed = { original_tag = SIN }
 			cancel = {
-            	NOT = { has_ideology_group = libertarian_right }
+            	NOT = { has_ideology = anarcho_primitivism }
             }
 			modifier = {
 				research_speed_factor = 0.05
@@ -141,10 +141,10 @@ ideas = {
 			}
 		}
 
-		SIN_anarcho_primitivism_2 = {
+		SIN_anarcho_primitivism_idea_2 = {
 			allowed = { original_tag = SIN }
 			cancel = {
-            	NOT = { has_ideology_group = libertarian_right }
+            	NOT = { has_ideology = anarcho_primitivism }
             }
 			modifier = {
 				army_attack_factor = 0.05
@@ -216,6 +216,21 @@ ideas = {
 			    tag = HOP
 				attack_bonus_against = 0.1
 			    defense_bonus_against = 0.1
+			}
+		}
+
+		SIN_war_escalation = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            	NOT = { country_exists = UTA }
+            }
+			modifier = {
+				mobilization_speed = 0.15
+				conscription_factor = 0.05
+				non_core_manpower = 0.1
+				army_core_defence_factor = 0.15
+				dig_in_speed_factor = 0.5
+				custom_modifier_tooltip = SIN_cancel_no_utah_tt
 			}
 		}
 
@@ -403,5 +418,23 @@ ideas = {
 				libertarian_right_drift = 0.02
 			}
 		}
+
+
+
+		SIN_territorial_guard = {
+			allowed = { original_tag = SIN }
+			picture = SIN_war_escalation
+			modifier = {
+				recruitable_population = 0.03
+				army_core_defence_factor = 0.20
+				army_defence_factor = 0.10
+				dig_in_speed = 0.20
+				army_speed_factor = 0.18
+				land_reinforce_rate = 0.12
+			}
+		}
+
+
+
 	}
 }

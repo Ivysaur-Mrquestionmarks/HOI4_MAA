@@ -207,6 +207,8 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 			custom_effect_tooltip = generic_skip_one_line_tt
+			set_technology = { infantry_AA_equipment_1 = 1 }
+			custom_effect_tooltip = generic_skip_one_line_tt
             division_template = {
     			name = "AnPrim Brigade"
     			#division_names_group = TODO
@@ -428,7 +430,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_stability = 0.2
+			add_stability = 0.15
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = { idea = SIN_deindustrialization days = 360 }
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -537,6 +539,9 @@ focus_tree = {
 			else = {
             	remove_ideas = SIN_anarchy_1	
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+            SIN_establishment_low_loyalty_increase_effect = yes
+			SIN_establishment_high_popularity_increase_effect = yes
 		}
 		prerequisite = {
 			focus = SIN_anti_industrialism
@@ -576,8 +581,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            add_political_power = 20
-			add_stability = 0.05
+			add_state_core = 518
+			add_state_claim = 414
+			add_state_claim = 411
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_war_support = 0.05
 		}
 		prerequisite = {
@@ -1207,15 +1214,15 @@ focus_tree = {
 		completion_reward = {
             if = {
 				limit = {
-					has_idea = SIN_anarcho_primitivism_1
+					has_idea = SIN_anarcho_primitivism_idea_1
 				}
 				swap_ideas = {
-					remove_idea = SIN_anarcho_primitivism_1
-					add_idea = SIN_anarcho_primitivism_2
+					remove_idea = SIN_anarcho_primitivism_idea_1
+					add_idea = SIN_anarcho_primitivism_idea_2
 				}
 			}
 			else = {
-				add_ideas = SIN_anarcho_primitivism
+				add_ideas = SIN_anarcho_primitivism_idea
 			}	
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_power_balance_value = {
@@ -1252,15 +1259,15 @@ focus_tree = {
 		completion_reward = {
             if = {
 				limit = {
-					has_idea = SIN_anarcho_primitivism
+					has_idea = SIN_anarcho_primitivism_idea
 				}
 				swap_ideas = {
-					remove_idea = SIN_anarcho_primitivism
-					add_idea = SIN_anarcho_primitivism_2
+					remove_idea = SIN_anarcho_primitivism_idea
+					add_idea = SIN_anarcho_primitivism_idea_2
 				}
 			}
 			else = {
-				add_ideas = SIN_anarcho_primitivism_1
+				add_ideas = SIN_anarcho_primitivism_idea_1
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_power_balance_value = {
@@ -1331,7 +1338,7 @@ focus_tree = {
 		completion_reward = {
             add_equipment_to_stockpile = {
 				type = infantry_equipment
-    			amount = 500
+    			amount = 1000
     			producer = SIN
 			}
 			army_experience = 50
@@ -1382,6 +1389,7 @@ focus_tree = {
 		available = {
 			UTA = { exists = no }
 			has_war = no
+			owns_state = 411
 		}
 		
 		bypass = {
@@ -1430,7 +1438,6 @@ focus_tree = {
 		}
 		available = {
 			UTA = { exists = no }
-			has_war_with = HOP
 		}
 		
 		bypass = {
@@ -1440,6 +1447,54 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = HOP
+					}
+				}
+				declare_war_on = {
+					target = HOP
+					type = annex_everything
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			division_template = {
+    			name = "Anti-Nazi Brigade"
+    			#division_names_group = TODO
+    			priority = 1
+    			#template_counter = 95
+    			regiments = {
+       				infantry = { x = 0 y = 0 }
+        			infantry = { x = 0 y = 1 }
+        			infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+        			infantry = { x = 1 y = 1 }
+        			infantry = { x = 1 y = 2 }
+    			}
+    			support = {
+					artillery = { x = 0 y = 0 }
+    			}
+			}
+			348 = {
+				create_unit = {
+					division = "name = \"Mormon Defectors\" division_template = \"Anti-Nazi Brigade\" start_experience_factor = 0.7" 
+					owner = SIN
+				}
+				create_unit = {
+					division = "name = \"Organised Refugee Brigade\" division_template = \"Anti-Nazi Brigade\" start_experience_factor = 0.2" 
+					owner = SIN
+				}
+				create_unit = {
+					division = "name = \"Volunteer Guard\" division_template = \"Anti-Nazi Brigade\" start_experience_factor = 0.1" 
+					owner = SIN
+				}
+				create_unit = {
+					division = "name = \"Antifas\" division_template = \"Anti-Nazi Brigade\" start_experience_factor = 0.2" 
+					owner = SIN
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
             add_timed_idea = { idea = SIN_a_war_with_the_devil_idea days = 100 }
 		}
 		prerequisite = {

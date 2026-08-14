@@ -1,3 +1,7 @@
+
+### ALL THESE EVENTS HAVE BEEN MIGRATED OR IMPLEMENTED ON DIFFERENT WAYS FOR THE RESPECTIVE NATIONS
+
+
 add_namespace = mormon
 
 #Kazcynski Takes over
@@ -394,104 +398,104 @@ country_event = {
 #	}
 #}
 #Nazis join the Mormon War
-country_event = {
-	id = mormon.11
-	title = mormon.11.t
-	desc = mormon.11.d
-	picture = event_fascists_01
-	trigger = {
-		tag = HOP
-		has_war = no
-		has_country_leader = {
-       		name = "James Mason"
-        	ruling_only = yes
-		}
-		OR = {
-		SIN = {
-			exists = yes
-		}
-		MOL = {
-			exists = yes
-		}
-		LAS = {
-			exists = yes
-		}
-		SIN = {
-			exists = no
-		}
-		MOL = {
-			exists = no
-		}
-		LAS = {
-			exists = no
-		}
-		}
-	}
-	fire_only_once = yes
-	option = {
-		name = mormon.11.a
-		declare_war_on = {
-		    target = UTA
-		    type = annex_everything
-		}
-		hidden_effect = {LAS = {give_military_access = HOP}}
-	}
-}
+#country_event = {
+#	id = mormon.11
+#	title = mormon.11.t
+#	desc = mormon.11.d
+#	picture = event_fascists_01
+#	trigger = {
+#		tag = HOP
+#		has_war = no
+#		has_country_leader = {
+#       		name = "James Mason"
+#        	ruling_only = yes
+#		}
+#		OR = {
+#		SIN = {
+#			exists = yes
+#		}
+#		MOL = {
+#			exists = yes
+#		}
+#		LAS = {
+#			exists = yes
+#		}
+#		SIN = {
+#			exists = no
+#		}
+#		MOL = {
+#			exists = no
+#		}
+#		LAS = {
+#			exists = no
+#		}
+#		}
+#	}
+#	fire_only_once = yes
+#	option = {
+#		name = mormon.11.a
+#		declare_war_on = {
+#		    target = UTA
+#		    type = annex_everything
+#		}
+#		hidden_effect = {LAS = {give_military_access = HOP}}
+#	}
+#}
 #mfw Second Mormon War
-country_event = {
-	id = mormon.12
-	title = mormon.12.t
-	desc = mormon.12.d
-	picture = event_fascists_01
-	trigger = {
-		tag = SIN
-		HOP = {
-			owns_state = 411
-		}
-	}
-	fire_only_once = yes
-	option = {
-		name = mormon.12.a
-		transfer_state = 414
-		transfer_state = 411
-		declare_war_on = {
-		    target = HOP
-		    type = annex_everything
-		}
-		348 = {
-			create_unit = {
-				division = "name = \"Mormon Defectors\" division_template = \"Escaped Prisoners\" start_experience_factor = 0.7" 
-				owner = SIN
-			}
-			create_unit = {
-				division = "name = \"Organised Refugee Brigade\" division_template = \"Escaped Prisoners\" start_experience_factor = 0.2" 
-				owner = SIN
-			}
-			create_unit = {
-				division = "name = \"1st Anti-Nazi Volunteer Guard\" division_template = \"Escaped Prisoners\" start_experience_factor = 0.1" 
-				owner = SIN
-			}
-			create_unit = {
-				division = "name = \"2nd Anti-Nazi Volunteer Guard\" division_template = \"Escaped Prisoners\" start_experience_factor = 0.2" 
-				owner = SIN
-			}
-		}
-		hidden_effect = {
-		40 = {
-			create_unit = {
-				division = "name = \"Navajo SS\" division_template = \"SS Division\" start_experience_factor = 0.3" 
-				owner = HOP
-			}
-		}
-		352 = {
-			create_unit = {
-				division = "name = \"Tohono SS\" division_template = \"SS Division\" start_experience_factor = 0.3" 
-				owner = HOP
-			}
-		}
-		}
-	}
-}
+#country_event = {
+#	id = mormon.12
+#	title = mormon.12.t
+#	desc = mormon.12.d
+#	picture = event_fascists_01
+#	trigger = {
+#		tag = SIN
+#		HOP = {
+#			owns_state = 411
+#		}
+#	}
+#	fire_only_once = yes
+#	option = {
+#		name = mormon.12.a
+#		transfer_state = 414
+#		transfer_state = 411
+#		declare_war_on = {
+#		    target = HOP
+#		    type = annex_everything
+#		}
+#		348 = {
+#			create_unit = {
+#				division = "name = \"Mormon Defectors\" division_template = \"Escaped Prisoners\" start_experience_factor = 0.7" 
+#				owner = SIN
+#			}
+#			create_unit = {
+#				division = "name = \"Organised Refugee Brigade\" division_template = \"Escaped Prisoners\" start_experience_factor = 0.2" 
+#				owner = SIN
+#			}
+#			create_unit = {
+#				division = "name = \"1st Anti-Nazi Volunteer Guard\" division_template = \"Escaped Prisoners\" start_experience_factor = 0.1" 
+#				owner = SIN
+#			}
+#			create_unit = {
+#				division = "name = \"2nd Anti-Nazi Volunteer Guard\" division_template = \"Escaped Prisoners\" start_experience_factor = 0.2" 
+#				owner = SIN
+#			}
+#		}
+#		hidden_effect = {
+#		40 = {
+#			create_unit = {
+#				division = "name = \"Navajo SS\" division_template = \"SS Division\" start_experience_factor = 0.3" 
+#				owner = HOP
+#			}
+#		}
+#		352 = {
+#			create_unit = {
+#				division = "name = \"Tohono SS\" division_template = \"SS Division\" start_experience_factor = 0.3" 
+#				owner = HOP
+#			}
+#		}
+#		}
+#	}
+#}
 
 #LAS is informed they are now independent
 #country_event = {

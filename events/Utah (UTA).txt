@@ -5,7 +5,7 @@ country_event = {
 	id = utah.1
 	title = utah.1.t
 	desc = utah.1.d
-	picture = event_mormon_01
+	picture = event_UTA_event_1
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -72,7 +72,7 @@ country_event = {
 	id = utah.2
 	title = utah.2.t
 	desc = utah.2.d
-	picture = event_revolt_put_down_01
+	picture = event_UTA_event_2
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -85,6 +85,8 @@ country_event = {
 		    ideology = democrat
 		    popularity = 0.05
 		}
+		
+		custom_effect_tooltip = generic_skip_one_line_tt
 		division_template = {
 			name = "Utahn Anti-Mormon Brigade"
 			#division_names_group = TODO
@@ -111,15 +113,26 @@ country_event = {
 		    target = UTA
 		    type = annex_everything
 		}
+		
+		custom_effect_tooltip = generic_skip_one_line_tt
 		MOL = { country_event = { id = utah.3 days = 5 } }
 		LAS = { country_event = { id = utah.4 days = 5 } }
+		
+		custom_effect_tooltip = generic_skip_one_line_tt
 		add_ideas = SIN_war_escalation
 		create_faction = MORMON_WAR_ANPRIM_ALLIANCE
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+        SIN_establishment_low_loyalty_increase_effect = yes
+		SIN_establishment_high_popularity_increase_effect = yes
 		hidden_effect = { 
-			set_global_flag = mormon_war_begun 
-			#add_state_core = 348 
+			set_global_flag = mormon_war_begun
 			news_event = { id = utah.1001 days = 1 } 
-			UTA = { create_faction = MORMON_WAR_MORMON_ALLIANCE } 
+			#UTA = { create_faction = MORMON_WAR_MORMON_ALLIANCE }
+			add_named_threat = {
+				threat = 5
+				name = "Mormon War"
+			}
 		}
 	}
 }
@@ -129,7 +142,7 @@ country_event = {
 	id = utah.3
 	title = utah.3.t
 	desc = utah.3.d
-	picture = event_revolt_put_down_01
+	picture = event_UTA_event_3
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -149,7 +162,7 @@ country_event = {
 	id = utah.4
 	title = utah.4.t
 	desc = utah.4.d
-	picture = event_las_vegas_01
+	picture = event_UTA_event_4
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -189,16 +202,40 @@ country_event = {
 	}
 }
 
+#Nazis join the Mormon War (HOP prespective)
+country_event = {
+	id = utah.5
+	title = utah.5.t
+	desc = utah.5.d
+	picture = event_UTA_event_5
+	trigger = {
+		tag = HOP
+		has_war = no
+		has_government = autocratic
+		SIN = {
+			has_war_with = UTA
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = utah.5.a
+		declare_war_on = {
+		    target = UTA
+		    type = annex_everything
+		}
+	}
+}
 
 
 
 
+# NEWS EVENTS
 #Mormon Coup news event
 news_event = {
 	id = utah.1000
 	title = utah.1000.t
 	desc = utah.1000.d
-	picture = event_news_mormons_01
+	picture = event_UTA_event_1000
 	is_triggered_only = yes
 	major = yes
 	option = {
@@ -211,7 +248,7 @@ news_event = {
 	id = utah.1001
 	title = utah.1001.t
 	desc = utah.1001.d
-	picture = event_news_mormons_02
+	picture = event_UTA_event_1001
 	is_triggered_only = yes
 	major = yes
 	option = {
@@ -232,6 +269,11 @@ news_event = {
 		}
 	}
 }
+
+
+
+
+
 
 #Mormon Volunteers from Mexico
 country_event = {
