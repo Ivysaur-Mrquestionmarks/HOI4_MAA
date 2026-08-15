@@ -167,6 +167,127 @@ country_event = {
 	}
 }
 
+# Boebert offers help
+country_event = {
+	id = colorado.7
+	title = colorado.7.t
+	desc = colorado.7.d
+	picture = event_SIN_event_7
+	
+	fire_only_once = yes
+
+	
+	trigger = {
+		original_tag = SIN
+		has_war_with = UTA
+	}
+
+	option = {
+		name = colorado.7.a
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = SIN_accepted_boebert_help
+		custom_effect_tooltip = SIN_accepted_boebert_help_tt
+		custom_effect_tooltip = generic_skip_one_line_tt
+		division_template = {
+			name = "Republican Militia"
+			#division_names_group = TODO
+			priority = 1
+			#template_counter = 81
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+			}
+		}
+		348 = {
+			create_unit = {
+				division = "name = \"Rifle Battalion\" division_template = \"Republican Militia\" start_experience_factor = 0.25" 
+				owner = SIN
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		SIN_establishment_medium_popularity_increase_effect = yes
+		hidden_effect = {
+			country_event  = { id = colorado.8 days = 10}
+		}
+	}
+
+	option = {
+		name = colorado.7.b
+		ai_chance = {
+			factor = 1
+		}
+
+		hidden_effect = {
+			country_event  = { id = colorado.8 days = 10}
+		}
+
+	}
+}
+
+# Nighthorse offers help
+country_event = {
+	id = colorado.8
+	title = colorado.8.t
+	desc = colorado.8.d
+	picture = event_SIN_event_8
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.8.a
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = SIN_accepted_nighthorse_help
+		custom_effect_tooltip = SIN_accepted_nighthorse_help_tt
+		custom_effect_tooltip = generic_skip_one_line_tt
+		division_template = {
+			name = "Cheyenne Cavalry"
+			#division_names_group = TODO
+			priority = 1
+			#template_counter = 81
+			regiments = {
+				cavalry = { x = 0 y = 0 }
+				cavalry = { x = 0 y = 1 }
+			}
+		}
+		348 = {
+			create_unit = {
+				division = "name = \"Nighthorses\" division_template = \"Cheyenne Cavalry\" start_experience_factor = 0.8" 
+				owner = SIN
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		SIN_establishment_medium_popularity_increase_effect = yes
+	}
+
+	option = {
+		name = colorado.8.b
+		ai_chance = {
+			factor = 1
+		}
+
+	}
+}
+
+# Nighthorse dies
+country_event = {
+	id = colorado.9
+	title = colorado.9.t
+	desc = colorado.9.d
+	picture = event_SIN_event_9
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.9.a
+		ai_chance = {
+			factor = 1
+		}
+		retire_character = SIN_Ben_Campbell
+	}
+}
+
 
 
 

@@ -1534,5 +1534,54 @@ characters = {
 		}
 	}
 
+	### MISC ###
+	SIN_Ben_Campbell = {
+		name = SIN_Ben_Campbell
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Ben_Campbell.dds"
+				small = "gfx/interface/ideas/SIN/military_Ben_Campbell.dds"
+			}
+		}
+		country_leader = {
+			traits = { SIN_populist_firebrand }
+			ideology = trumpist
+			expire = "2060.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { SIN_establishment_trait politically_connected cavalry_officer cavalry_leader }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				has_country_flag = SIN_accepted_nighthorse_help
+				NOT = {
+					has_country_flag = SIN_establishment_destroyed_flag
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Ben_Campbell
+			ledger = army
+			cost = 50
+			visible = {
+				original_tag = SIN
+			}
+			available = {
+				has_country_flag = SIN_accepted_nighthorse_help
+			}
+			traits = { army_cavalry_1 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 
 }

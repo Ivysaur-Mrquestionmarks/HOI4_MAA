@@ -90,6 +90,7 @@ recruit_character = SIN_Michael_Bennet
 recruit_character = SIN_Ken_Salazar
 
 ### Generals ###
+recruit_character = SIN_Ben_Campbell
 
 ### Admirals ###
 
@@ -166,3 +167,8 @@ set_country_flag = SIN_factions_unlocked_flag
 	set_variable = { SIN_faction_low_decrease = -5 }
 	set_variable = { SIN_faction_medium_decrease = -10 }
 	set_variable = { SIN_faction_high_decrease = -15 }
+
+	country_event = {
+		id = colorado.9
+		days = 1823
+	}

@@ -11,7 +11,7 @@ focus_tree = {
 	}
 		reset_on_civilwar = no
 	
-	continuous_focus_position = { x = 2250 y = 25 }
+	continuous_focus_position = { x = 2900 y = 100 }
     #initial_show_position = {
 	#	focus = KMT_prision_election
 	#}
@@ -1687,6 +1687,1592 @@ focus_tree = {
 			focus = SIN_the_mob_compromise
 		}
 	}
+
+
+	#### ##    ## ########  ##     ##  ######  ######## ########  ##    ## 
+	 ##  ###   ## ##     ## ##     ## ##    ##    ##    ##     ##  ##  ##  
+	 ##  ####  ## ##     ## ##     ## ##          ##    ##     ##   ####   
+	 ##  ## ## ## ##     ## ##     ##  ######     ##    ########     ##    
+	 ##  ##  #### ##     ## ##     ##       ##    ##    ##   ##      ##    
+	 ##  ##   ### ##     ## ##     ## ##    ##    ##    ##    ##     ##    
+	#### ##    ## ########   #######   ######     ##    ##     ##    ##    
+
+	focus = {
+		id = SIN_industrialize_adx
+		icon = TODO
+		x = -14
+		y = 0
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = SIN_force_industrialization
+		icon = TODO
+		x = -16
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_industrialize_adx
+		}
+	}
+
+	focus = {
+		id = SIN_fort_adx
+		icon = TODO
+		x = -14
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_industrialize_adx
+		}
+	}
+
+	focus = {
+		id = SIN_agriculture_focus
+		icon = TODO
+		x = -12
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_industrialize_adx
+		}
+	}
+
+	focus = {
+		id = SIN_kleptocratic_economy
+		icon = TODO
+		x = -17
+		y = 2
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_force_industrialization
+		}
+		prerequisite = {
+			focus = SIN_fort_adx
+		}
+		prerequisite = {
+			focus = SIN_agriculture_focus
+		}
+		mutually_exclusive = {
+			focus = SIN_back_to_normalcy
+		}
+	}
+
+	focus = {
+		id = SIN_back_to_normalcy
+		icon = TODO
+		x = -11
+		y = 2
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_force_industrialization
+		}
+		prerequisite = {
+			focus = SIN_fort_adx
+		}
+		prerequisite = {
+			focus = SIN_agriculture_focus
+		}
+		mutually_exclusive = {
+			focus = SIN_kleptocratic_economy
+		}
+	}
+
+	focus = {
+		id = SIN_we_take_it_all
+		icon = TODO
+		x = -18
+		y = 3
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_kleptocratic_economy
+		}
+		mutually_exclusive = {
+			focus = SIN_give_somethings_back
+		}
+	}
+
+	focus = {
+		id = SIN_give_somethings_back
+		icon = TODO
+		x = -16
+		y = 3
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_kleptocratic_economy
+		}
+		mutually_exclusive = {
+			focus = SIN_we_take_it_all
+		}
+	}
+
+	focus = {
+		id = SIN_the_financial_market
+		icon = TODO
+		x = -11
+		y = 3
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_back_to_normalcy
+		}
+	}
+
+	focus = {
+		id = SIN_apropriate_palantir
+		icon = TODO
+		x = -14
+		y = 3
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_kleptocratic_economy
+			focus = SIN_back_to_normalcy
+		}
+	}
+	
+	focus = {
+		id = SIN_expand_cartel_mob_operations
+		icon = TODO
+		x = -17
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_we_take_it_all
+			focus = SIN_give_somethings_back
+		}
+		mutually_exclusive = {
+			focus = SIN_expand_palantir
+			focus = SIN_local_industries
+		}
+	}
+
+	focus = {
+		id = SIN_expand_palantir
+		icon = TODO
+		x = -14
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_apropriate_palantir
+		}
+		mutually_exclusive = {
+			focus = SIN_expand_cartel_mob_operations
+			focus = SIN_local_industries
+		}
+	}
+
+	focus = {
+		id = SIN_local_industries
+		icon = TODO
+		x = -11
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_the_financial_market
+		}
+		prerequisite = {
+			focus = SIN_subsidize_the_farmers
+		}
+		mutually_exclusive = {
+			focus = SIN_expand_cartel_mob_operations
+			focus = SIN_expand_palantir
+		}
+	}
+
+	focus = {
+		id = SIN_the_universities
+		icon = TODO
+		x = -14
+		y = 5
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_expand_cartel_mob_operations
+			focus = SIN_expand_palantir
+			focus = SIN_local_industries
+		}
+	}
+
+	focus = {
+		id = SIN_expand_corn_plantations
+		icon = TODO
+		x = -9
+		y = 2
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_agriculture_focus
+		}
+	}
+
+	focus = {
+		id = SIN_subsidize_the_farmers
+		icon = TODO
+		x = -9
+		y = 3
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_expand_corn_plantations
+		}
+	}
+
+	focus = {
+		id = SIN_fight_the_drought
+		icon = TODO
+		x = -9
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_subsidize_the_farmers
+		}
+	}
+
+	focus = {
+		id = SIN_food_processing
+		icon = TODO
+		x = -20
+		y = 2
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_force_industrialization
+		}
+	}
+
+	focus = {
+		id = SIN_advance_with_the_primitive_project
+		icon = TODO
+		x = -19
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_food_processing
+		}
+		mutually_exclusive = {
+			focus = SIN_coloradan_energy
+		}
+	}
+
+	focus = {
+		id = SIN_coloradan_energy
+		icon = TODO
+		x = -21
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_food_processing
+		}
+		mutually_exclusive = {
+			focus = SIN_advance_with_the_primitive_project
+		}
+	}
+
+	focus = {
+		id = SIN_gold_mining
+		icon = TODO
+		x = -20
+		y = 3
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_food_processing
+		}
+	}
+
+
+
+	focus = {
+		id = SIN_military_affairs
+		icon = TODO
+		x = 23
+		y = 0
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+	}
+
+	focus = {
+		id = SIN_military_training
+		icon = TODO
+		x = 22
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_military_affairs
+		}
+	}
+
+	focus = {
+		id = SIN_military_infraestructure
+		icon = TODO
+		x = 24
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_military_affairs
+		}
+	}
+
+	focus = {
+		id = SIN_test_idaho
+		icon = TODO
+		x = 23
+		y = 2
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_military_training
+		}
+		prerequisite = {
+			focus = SIN_military_infraestructure
+		}
+	}
+
+	focus = {
+		id = SIN_the_ragtag_group
+		icon = TODO
+		x = 19
+		y = 3
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_test_idaho
+		}
+		mutually_exclusive = {
+			focus = SIN_a_standing_army
+		}
+	}
+
+	focus = {
+		id = SIN_a_standing_army
+		icon = TODO
+		x = 27
+		y = 3
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_test_idaho
+		}
+		mutually_exclusive = {
+			focus = SIN_the_ragtag_group
+		}
+	}
+
+	focus = {
+		id = SIN_controlling_our_skies
+		icon = TODO
+		x = 22
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_the_ragtag_group
+			focus = SIN_a_standing_army
+		}
+	}
+
+	focus = {
+		id = SIN_legacy_of_db_cooper
+		icon = TODO
+		x = 20
+		y = 5
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_controlling_our_skies
+		}
+		prerequisite = {
+			focus = SIN_the_ragtag_group
+		}
+	}
+
+	focus = {
+		id = SIN_pilot_training
+		icon = TODO
+		x = 22
+		y = 5
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_controlling_our_skies
+		}
+	}
+
+	focus = {
+		id = SIN_air_bases
+		icon = TODO
+		x = 21
+		y = 6
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_pilot_training
+		}
+	}
+
+	focus = {
+		id = SIN_develop_air_industry
+		icon = TODO
+		x = 23
+		y = 6
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_pilot_training
+		}
+	}
+
+	focus = {
+		id = SIN_a_great_airforce
+		icon = TODO
+		x = 22
+		y = 7
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_develop_air_industry
+		}
+		
+		prerequisite = {
+			focus = SIN_air_bases
+		}
+	}
+
+	focus = {
+		id = SIN_mountain_training
+		icon = TODO
+		x = 24
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_the_ragtag_group
+			focus = SIN_a_standing_army
+		}
+	}
+
+	focus = {
+		id = SIN_dominate_the_rockies
+		icon = TODO
+		x = 24
+		y = 5
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_mountain_training
+		}
+	}
+
+	focus = {
+		id = SIN_asymmetric_warfare
+		icon = TODO
+		x = 18
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_the_ragtag_group
+		}
+	}
+
+	focus = {
+		id = SIN_scavenging_the_field
+		icon = TODO
+		x = 18
+		y = 5
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_asymmetric_warfare
+		}
+	}
+
+	focus = {
+		id = SIN_a_tank_for_a_primitive_age
+		icon = TODO
+		x = 19
+		y = 6
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_scavenging_the_field
+		}
+		mutually_exclusive = {
+			focus = SIN_motorize_the_army
+		}
+	}
+
+	focus = {
+		id = SIN_motorize_the_army
+		icon = TODO
+		x = 17
+		y = 6
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_scavenging_the_field
+		}
+		mutually_exclusive = {
+			focus = SIN_a_tank_for_a_primitive_age
+		}
+	}
+
+	focus = {
+		id = SIN_drown_the_battlefield
+		icon = TODO
+		x = 18
+		y = 7
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_motorize_the_army
+			focus = SIN_a_tank_for_a_primitive_age
+		}
+	}
+
+	focus = {
+		id = SIN_a_pirate_navy
+		icon = TODO
+		x = 15
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_the_ragtag_group
+		}
+	}
+
+	focus = {
+		id = SIN_steal_some_ships
+		icon = TODO
+		x = 15
+		y = 5
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_a_pirate_navy
+		}
+	}
+
+	focus = {
+		id = SIN_new_bases
+		icon = TODO
+		x = 15
+		y = 6
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_steal_some_ships
+		}
+	}
+
+	focus = {
+		id = SIN_raid_it_all
+		icon = TODO
+		x = 15
+		y = 7
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_new_bases
+		}
+	}
+
+	focus = {
+		id = SIN_armor_investments
+		icon = TODO
+		x = 26
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_a_standing_army
+		}
+		mutually_exclusive = {
+			focus = SIN_classic_infantry
+		}
+	}
+
+	focus = {
+		id = SIN_classic_infantry
+		icon = TODO
+		x = 28
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_a_standing_army
+		}
+		mutually_exclusive = {
+			focus = SIN_armor_investments
+		}
+	}
+
+	focus = {
+		id = SIN_reestablish_national_guard
+		icon = TODO
+		x = 27
+		y = 5
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_armor_investments
+			focus = SIN_classic_infantry
+		}
+	}
+
+	focus = {
+		id = SIN_the_heavy_guns
+		icon = TODO
+		x = 26
+		y = 6
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_armor_investments
+			focus = SIN_classic_infantry
+		}
+	}
+
+	focus = {
+		id = SIN_invest_in_professioanlism
+		icon = TODO
+		x = 28
+		y = 6
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_armor_investments
+			focus = SIN_classic_infantry
+		}
+	}
+
+	focus = {
+		id = SIN_a_true_american_army
+		icon = TODO
+		x = 27
+		y = 7
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_the_heavy_guns
+		}
+		prerequisite = {
+			focus = SIN_invest_in_professioanlism
+		}
+		prerequisite = {
+			focus = SIN_reestablish_national_guard
+		}
+	}
+
+	focus = {
+		id = SIN_call_for_admirals
+		icon = TODO
+		x = 30
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_a_standing_army
+		}
+	}
+
+	focus = {
+		id = SIN_set_the_blueprints
+		icon = TODO
+		x = 30
+		y = 5
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_call_for_admirals
+		}
+	}
+
+	focus = {
+		id = SIN_a_naval_industry
+		icon = TODO
+		x = 30
+		y = 6
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_set_the_blueprints
+		}
+	}
+
+	focus = {
+		id = SIN_total_domination
+		icon = TODO
+		x = 30
+		y = 7
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_a_naval_industry
+		}
+	}
+
+	focus = {
+		id = SIN_a_nuclear_program
+		icon = TODO
+		x = 23
+		y = 8
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_a_great_airforce
+		}
+		prerequisite = {
+			focus = SIN_drown_the_battlefield
+			focus = SIN_a_true_american_army
+		}
+	}
+
+
+
 
 }
 
