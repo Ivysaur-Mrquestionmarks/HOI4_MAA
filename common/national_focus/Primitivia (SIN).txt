@@ -11,7 +11,7 @@ focus_tree = {
 	}
 		reset_on_civilwar = no
 	
-	continuous_focus_position = { x = 2900 y = 100 }
+	continuous_focus_position = { x = 3000 y = 100 }
     #initial_show_position = {
 	#	focus = KMT_prision_election
 	#}
@@ -584,7 +584,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_state_core = 518
+			add_state_claim = 518
 			add_state_claim = 414
 			add_state_claim = 411
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1518,6 +1518,7 @@ focus_tree = {
 		}
 		available = {
 			has_war = no
+			owns_state = 518
 		}
 		
 		bypass = {
@@ -1526,6 +1527,16 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						518 = {
+							is_core_of = SIN
+						}
+					}
+				}
+				add_state_core = 518
+			}
             add_stability = 0.1
 			add_political_power = 10
 		}
@@ -1688,6 +1699,76 @@ focus_tree = {
 		}
 	}
 
+	   ###    ##    ## ########  ########  #### ##     ##  ######  
+	  ## ##   ###   ## ##     ## ##     ##  ##  ###   ### ##    ## 
+	 ##   ##  ####  ## ##     ## ##     ##  ##  #### #### ##       
+	##     ## ## ## ## ########  ########   ##  ## ### ##  ######  
+	######### ##  #### ##        ##   ##    ##  ##     ##       ## 
+	##     ## ##   ### ##        ##    ##   ##  ##     ## ##    ## 
+	##     ## ##    ## ##        ##     ## #### ##     ##  ######  
+
+	focus = {
+		id = SIN_unga_bunga
+		icon = TODO
+		x = -9
+		y = 12
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_no_compromise_on_primitivism
+		}
+		mutually_exclusive = {
+			focus = SIN_to_reform_oneself
+		}
+	}
+
+	focus = {
+		id = SIN_to_reform_oneself
+		icon = TODO
+		x = -13
+		y = 12
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_no_compromise_on_primitivism
+		}
+		mutually_exclusive = {
+			focus = SIN_unga_bunga
+		}
+	}
+
+
+
 
 	#### ##    ## ########  ##     ##  ######  ######## ########  ##    ## 
 	 ##  ###   ## ##     ## ##     ## ##    ##    ##    ##     ##  ##  ##  
@@ -1703,11 +1784,12 @@ focus_tree = {
 		x = -14
 		y = 0
 
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			
 		}
 		available = {
+			controls_state = 486
 		}
 		
 		bypass = {
@@ -1717,7 +1799,25 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            486 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+			    	type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+				add_building_construction = {
+			    	type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+    			bonus = 0.5
+			    uses = 1
+ 			   category = industry
+			}
 		}
 	}
 
@@ -1727,11 +1827,18 @@ focus_tree = {
 		x = -16
 		y = 1
 
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			
 		}
 		available = {
+			controls_state = 348
+			OR = {
+				has_completed_focus = SIN_cartel_rule
+				has_completed_focus = SIN_the_mob_compromise
+				has_completed_focus = SIN_to_reform_oneself
+				has_completed_focus = SIN_the_establishment_coup
+			}
 		}
 		
 		bypass = {
@@ -1741,10 +1848,26 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            348 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+			    	type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+				add_building_construction = {
+			    	type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			add_timed_idea = { idea = SIN_forcing_industrialization days = 360 }
 		}
 		prerequisite = {
 			focus = SIN_industrialize_adx
+		}
+		mutually_exclusive = {
+			focus = SIN_focus_on_suatainable_methods
 		}
 	}
 
@@ -1754,11 +1877,12 @@ focus_tree = {
 		x = -14
 		y = 1
 
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			
 		}
 		available = {
+			controls_state = 486
 		}
 		
 		bypass = {
@@ -1768,7 +1892,20 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            486 = {
+				add_building_construction = {
+			    	type = bunker
+    				level = 3
+    				instant_build = yes
+    				province = 510
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+            add_equipment_to_stockpile = {
+				type = infantry_equipment
+    			amount = 500
+    			producer = SIN
+			}
 		}
 		prerequisite = {
 			focus = SIN_industrialize_adx
@@ -1781,11 +1918,15 @@ focus_tree = {
 		x = -12
 		y = 1
 
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			
 		}
 		available = {
+			348 = {
+				is_core_of = SIN
+			}
+			controls_state = 348
 		}
 		
 		bypass = {
@@ -1813,6 +1954,10 @@ focus_tree = {
 			
 		}
 		available = {
+			OR = {
+				has_completed_focus = SIN_cartel_rule
+				has_completed_focus = SIN_the_mob_compromise
+			}
 		}
 		
 		bypass = {
@@ -1849,6 +1994,10 @@ focus_tree = {
 			
 		}
 		available = {
+			OR = {
+				has_completed_focus = SIN_to_reform_oneself
+				has_completed_focus = SIN_the_establishment_coup
+			}
 		}
 		
 		bypass = {
@@ -1972,6 +2121,10 @@ focus_tree = {
 			
 		}
 		available = {
+			OR = {
+				is_subject_of = USA
+				owns_state = 416
+			}
 		}
 		
 		bypass = {
@@ -2000,6 +2153,10 @@ focus_tree = {
 			
 		}
 		available = {
+			OR = {
+				has_country_flag = SIN_cartel_integrated_flag
+				has_country_flag = SIN_mob_integrated_flag
+			}
 		}
 		
 		bypass = {
@@ -2207,6 +2364,7 @@ focus_tree = {
 			
 		}
 		available = {
+			has_idea = SIN_coloradan_industry
 		}
 		
 		bypass = {
@@ -2221,12 +2379,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SIN_force_industrialization
 		}
+		prerequisite = {
+			focus = SIN_agriculture_focus
+		}
 	}
 
 	focus = {
 		id = SIN_advance_with_the_primitive_project
 		icon = TODO
-		x = -19
+		x = -21
 		y = 4
 
 		cost = 3
@@ -2234,6 +2395,7 @@ focus_tree = {
 			
 		}
 		available = {
+			has_country_flag = SIN_anprims_integrated_flag
 		}
 		
 		bypass = {
@@ -2247,6 +2409,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SIN_food_processing
+			focus = SIN_expand_independent_workshops
 		}
 		mutually_exclusive = {
 			focus = SIN_coloradan_energy
@@ -2256,7 +2419,7 @@ focus_tree = {
 	focus = {
 		id = SIN_coloradan_energy
 		icon = TODO
-		x = -21
+		x = -19
 		y = 4
 
 		cost = 3
@@ -2310,13 +2473,45 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SIN_focus_on_suatainable_methods
+		icon = TODO
+		x = -22
+		y = 1
 
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+			OR = {
+				has_completed_focus = SIN_to_reform_oneself
+				has_completed_focus = SIN_unga_bunga
+			}
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_industrialize_adx
+		}
+		mutually_exclusive = {
+			focus = SIN_force_industrialization
+		}
+	}
 
 	focus = {
-		id = SIN_military_affairs
+		id = SIN_renewables
 		icon = TODO
-		x = 23
-		y = 0
+		x = -22
+		y = 2
 
 		cost = 3
 		ai_will_do = {
@@ -2334,12 +2529,103 @@ focus_tree = {
 		completion_reward = {
             
 		}
+		prerequisite = {
+			focus = SIN_focus_on_suatainable_methods
+		}
+	}
+
+	focus = {
+		id = SIN_expand_independent_workshops
+		icon = TODO
+		x = -22
+		y = 3
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_renewables
+		}
+	}
+
+	focus = {
+		id = SIN_primitive_inovations
+		icon = TODO
+		x = -23
+		y = 4
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_expand_independent_workshops
+		}
+	}
+
+	##     ## #### ##       #### ########    ###    ########  ##    ## 
+	###   ###  ##  ##        ##     ##      ## ##   ##     ##  ##  ##  
+	#### ####  ##  ##        ##     ##     ##   ##  ##     ##   ####   
+	## ### ##  ##  ##        ##     ##    ##     ## ########     ##    
+	##     ##  ##  ##        ##     ##    ######### ##   ##      ##    
+	##     ##  ##  ##        ##     ##    ##     ## ##    ##     ##    
+	##     ## #### ######## ####    ##    ##     ## ##     ##    ##    
+
+
+	focus = {
+		id = SIN_military_affairs
+		icon = TODO
+		x = 22
+		y = 0
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+			has_completed_focus = SIN_reorganize_the_territory
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
 	}
 
 	focus = {
 		id = SIN_military_training
 		icon = TODO
-		x = 22
+		x = 21
 		y = 1
 
 		cost = 3
@@ -2366,7 +2652,7 @@ focus_tree = {
 	focus = {
 		id = SIN_military_infraestructure
 		icon = TODO
-		x = 24
+		x = 23
 		y = 1
 
 		cost = 3
@@ -2393,7 +2679,7 @@ focus_tree = {
 	focus = {
 		id = SIN_test_idaho
 		icon = TODO
-		x = 23
+		x = 22
 		y = 2
 
 		cost = 3
@@ -2423,7 +2709,7 @@ focus_tree = {
 	focus = {
 		id = SIN_the_ragtag_group
 		icon = TODO
-		x = 19
+		x = 17
 		y = 3
 
 		cost = 3
@@ -2431,6 +2717,11 @@ focus_tree = {
 			
 		}
 		available = {
+			OR = {
+				has_completed_focus = SIN_unga_bunga
+				has_completed_focus = SIN_cartel_rule
+				has_completed_focus = SIN_the_mob_compromise
+			}
 		}
 		
 		bypass = {
@@ -2461,6 +2752,10 @@ focus_tree = {
 			
 		}
 		available = {
+			OR = {
+				has_completed_focus = SIN_to_reform_oneself
+				has_completed_focus = SIN_the_establishment_coup
+			}
 		}
 		
 		bypass = {
@@ -3243,7 +3538,7 @@ focus_tree = {
 	focus = {
 		id = SIN_a_nuclear_program
 		icon = TODO
-		x = 23
+		x = 22
 		y = 8
 
 		cost = 3
