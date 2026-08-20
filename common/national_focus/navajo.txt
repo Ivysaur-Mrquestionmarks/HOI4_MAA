@@ -642,6 +642,21 @@ focus_tree = {
 		x = 16
 		y = 1
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_character = NAV_wahsayah_whitebird
+					}
+				}
+				create_country_leader = { #tooltip chicanery
+					name = "Wahsayah Whitebird"
+					picture = "gfx/leaders/NAV/Wahsayah_Whitebird_President.png"
+					ideology = maoism
+					traits = {
+						###
+					}
+				}				
+			}
 			add_ideas = NAV_whitebird_faction
 			NAV_wahsayah_whitebird = {
 				promote_leader = yes
