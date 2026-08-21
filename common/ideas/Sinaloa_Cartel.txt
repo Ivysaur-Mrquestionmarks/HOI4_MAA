@@ -262,6 +262,88 @@ ideas = {
 			}
 		}
 
+		SIN_coloradan_industry_1 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		SIN_coloradan_industry_2 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
+				global_building_slots = 1
+			}
+		}
+
+		SIN_coloradan_industry_3 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = -0.05
+				consumer_goods_factor = -0.20
+				global_building_slots = 1
+			}
+		}
+
+		SIN_coloradan_agro = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				political_power_gain = 0.05
+				supply_factor = 0.1
+			}
+		}
+
+		SIN_coloradan_agro_1 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				political_power_gain = 0.1
+				supply_factor = 0.1
+				attrition = -0.05
+				monthly_population = 0.05
+			}
+		}
+
+		SIN_coloradan_agro_2 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				political_power_gain = 0.1
+				supply_factor = 0.1
+				attrition = -0.1
+				monthly_population = 0.1
+			}
+		}
+
+		SIN_gold_mining_idea = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
+
+
 
 	
 
@@ -462,7 +544,82 @@ ideas = {
 			}
 		}
 
+	
 
+
+	}
+
+
+
+	industrial_concern = {
+	
+		SIN_cffa = {
+			#picture = TODO
+			allowed = {
+				original_tag = SIN
+			}
+			available = {
+			    has_completed_focus = SIN_subsidize_the_farmers
+			}			
+			cost = 150
+			removal_cost = 0			
+			research_bonus = {
+				industry = 0.05
+				electronics = 0.05
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.2
+				stability_factor = 0.1
+				factory_energy_consumption = -0.15
+			}
+			traits = { clean_agricultural_concern }
+		}
+
+		SIN_jbs_usa = {
+			#picture = TODO
+			allowed = {
+				original_tag = SIN
+			}
+			available = {
+			    has_completed_focus = SIN_food_processing
+			}			
+			cost = 150
+			removal_cost = 0			
+			research_bonus = {
+				industry = 0.15
+			}
+			modifier = {
+				attrition = -0.15
+			}
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			traits = { clean_industrial_concern }
+		}
+	
+		SIN_ovintiv = {
+			#picture = TODO
+			allowed = {
+				original_tag = SIN
+			}
+			available = {
+			    has_completed_focus = SIN_coloradan_energy
+			}			
+			cost = 150
+			removal_cost = 0			
+			research_bonus = {
+				synth_resources = 0.15
+			}
+			modifier = {
+				country_resource_oil = 30
+				max_fuel_factor = 0.1
+				base_fuel_gain = 50
+			}
+			traits = { clean_refinery_concern }
+		}
 
 	}
 }

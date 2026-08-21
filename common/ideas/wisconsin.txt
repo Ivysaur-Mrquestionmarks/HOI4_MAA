@@ -1690,10 +1690,10 @@ ideas = {
 				consumer_goods_factor = 0.15
 				political_power_gain = 0.1
 			}
-			traits = { industrial_concern }
+			traits = { clean_agricultural_concern }
 		}
 
-		KMT_kohler = {			
+		KMT_kohler = {
 			picture = kohler
 			allowed = {
 				original_tag = KMT
@@ -1706,10 +1706,10 @@ ideas = {
 			research_bonus = {
 				industry = 0.15
 			}			
-			traits = { industrial_concern }
+			traits = { clean_industrial_concern }
 		}
 
-		KMT_milwaukee_tool = {			
+		KMT_milwaukee_tool = {
 			picture = milwaukee_tool
 			allowed = {
 				original_tag = KMT
@@ -1723,10 +1723,10 @@ ideas = {
 				electronics = 0.15
 				industry = 0.05
 			}			
-			traits = { electronics_concern }
+			traits = { clean_electronics_concern }
 		}
 
-		KMT_wec_energy = {			
+		KMT_wec_energy = {
 			picture = wec_energy
 			allowed = {
 				original_tag = KMT
@@ -1743,7 +1743,7 @@ ideas = {
 			research_bonus = {
 				synth_resources = 0.15
 			}			
-			traits = { refinery_concern }
+			traits = { clean_refinery_concern }
 		}
 
 	}

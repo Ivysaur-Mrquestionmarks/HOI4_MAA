@@ -3,6 +3,43 @@
 @tier3_cp_cap_increase = 30
 
 leader_traits = {
+
+	#Clean Industrial Concerns
+	clean_agricultural_concern = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	clean_industrial_concern = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	clean_electronics_concern = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	clean_refinery_concern = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
 	#Trump traits
 	punished_trump = {
 		random = no
