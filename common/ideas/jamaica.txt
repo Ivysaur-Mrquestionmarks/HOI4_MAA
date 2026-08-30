@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+		JAM_hemisphere_crisis = {
+			picture = PB_YUC_Agrarian_Army
+			available = {
+				is_subject = no
+			}
+			modifier = {
+				conscription = 0.08
+				dockyard_donations = 2
+				industrial_capacity_dockyard = 0.33
+			}
+		}
+
+		JAM_heirs_of_empire = {
+			picture = USA_military_overconfidence
+			available = {
+				has_government = democrat
+			}
+			modifier = {
+				send_volunteer_divisions_required = -1.0
+				send_volunteers_tension = -1.0
+				send_volunteer_size = 2
+			}
+		}
+	}
+}

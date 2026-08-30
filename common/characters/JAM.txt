@@ -75,4 +75,185 @@ characters={
 			traits = {  }
 		}
 	}
+
+	#UNIT LEADERS
+	JAM_rocky_ricardo_meade = {
+		name = "Rocky Meade"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAM/rocky_meade.tga"
+				small = "gfx/interface/ideas/JAM/rocky_meade_GEN.dds"
+			}
+			army = {
+				large = "gfx/leaders/JAM/rocky_meade.tga"
+				small = "gfx/interface/ideas/JAM/rocky_meade_GEN.dds"
+			}
+		}
+		field_marshal = {
+			traits = { politically_connected trait_cautious organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	JAM_antonettte_wemyss_gorman = {
+		name = "Antonette Gorman"
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAM/antonette_gorman.tga"
+				small = "gfx/interface/ideas/JAM/antonette_gorman_GEN.dds"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			traits = {
+				ironside safety_first ground_pounder
+			}
+		}		
+	}
+	JAM_d_i_creary = {
+		name = "Dameon Creary"
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAM/dameon_creary.tga"
+				small = "gfx/interface/ideas/JAM/dameon_creary_GEN.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	JAM_mahatma_e_williams = {
+		name = "Mahatma Williams"
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAM/mahatma_williams.tga"
+				small = "gfx/interface/ideas/JAM/mahatma_williams_GEN.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer expeditionary_leader_trait naval_invader }
+			skill = 2
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	JAM_maxwell_gordon = {
+		name = "Maxwell Gordon"
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAM/maxwell_gordon.tga"
+				small = "gfx/interface/ideas/JAM/maxwell_gordon_GEN.dds"
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	JAM_andres_o_pierce = {
+		name = "Andres Pierce"
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAM/andres_pierce.tga"
+				small = "gfx/interface/ideas/JAM/andres_pierce_GEN.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	JAM_c_a_henry = {
+		name = "Champlini Henry"
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAM/ca_henry.tga"
+				small = "gfx/interface/ideas/JAM/ca_henry_GEN.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer expeditionary_leader_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	JAM_ricardo_standford_blidgen = {
+		name = "Ricardo Blidgen"
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAM/ricardo_blidgen.tga"
+				small = "gfx/interface/ideas/JAM/ricardo_blidgen_GEN.dds"
+			}
+		}
+		corps_commander = {
+			traits = { engineer_officer armor_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	JAM_kerry_ann_foulkes = {
+		name = "Kerry-Ann Foulkes"
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAM/kerry_foulkes.tga"
+				small = "gfx/interface/ideas/JAM/kerry_foulkes_GEN.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/JAM/kerry_foulkes.tga"
+				small = "gfx/interface/ideas/JAM/kerry_foulkes_GEN.dds"
+			}
+		}
+		gender = female
+		corps_commander = {
+			traits = { career_officer organizer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = JAM_kerry_ann_foulkes_advisor
+			cost = 150
+			available  = {
+				has_intelligence_agency  = yes 
+			}
+			allowed  = {
+				has_dlc = "La Resistance"
+			}
+			traits = {
+				 head_of_intelligence #note to self- this trait might be called "Illusive Gentleman". If so needs to be changed: she's a lady!
+			}
+		}
+	}	
 }

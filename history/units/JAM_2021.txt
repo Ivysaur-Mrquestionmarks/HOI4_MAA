@@ -1,0 +1,95 @@
+
+division_template = {
+    name = "Jamaica Regiment"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+    name = "Emergency Conscription"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	template_counter = 1
+	priority = 0
+}
+
+
+########################################################
+
+units = {
+
+	division = {
+		name = "Headquarters JDF"
+		location = 11861
+		division_template = "Jamaica Regiment"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "The Jamaica Regiment"
+		location = 11861
+		division_template = "Jamaica Regiment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Sp Bde Regular Force"
+		location = 11861
+		division_template = "Jamaica Regiment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Jamaica National Reserve"
+		location = 11861
+		division_template = "Jamaica Regiment"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.4
+		start_manpower_factor = 0.8
+	}
+	#WEAK ASS
+	division = {
+		name = "1st Mobilised Task Force"
+		location = 11861
+		division_template = "Emergency Conscription"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.5
+	}
+	division = {
+		name = "2nd Mobilised Task Force"
+		location = 11861
+		division_template = "Emergency Conscription"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.5
+	}
+	division = {
+		name = "3rd Mobilised Task Force"
+		location = 11861
+		division_template = "Emergency Conscription"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+		start_manpower_factor = 0.5
+	}
+}

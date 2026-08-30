@@ -141,3 +141,27 @@ bahamas_intervention = {
 	    value = 100
 	}
 }
+give_biden_a_spliff = {
+	allowed = {
+		original_tag = JAM
+	}
+	enable = {
+		has_war = no
+	}
+	abort = {
+		NOT = {
+			has_government = democrat
+		}
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "FRA"
+		value = 500
+	}
+	ai_strategy = {
+		type = support
+		id = "FRA"
+		value = 200
+	}
+}
