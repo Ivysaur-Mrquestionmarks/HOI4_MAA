@@ -4,8 +4,13 @@ ideas = {
 			picture = PB_YUC_Agrarian_Army
 			available = {
 				is_subject = no
+				OR = {
+					country_exists = USA
+					has_government = republican
+				}
 			}
 			modifier = {
+				stability_factor = -0.10
 				conscription = 0.08
 				dockyard_donations = 2
 				industrial_capacity_dockyard = 0.33
@@ -21,6 +26,13 @@ ideas = {
 				send_volunteer_divisions_required = -1.0
 				send_volunteers_tension = -1.0
 				send_volunteer_size = 2
+			}
+		}
+
+		JAM_smoke_weed_every_day = {
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = -0.10
 			}
 		}
 	}
