@@ -7221,7 +7221,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RVR_The_Bloody_Crown_of_Virginia
 		available = {
-			RVR_malcolm_murray = { is_country_leader = yes }
+			##RVR_malcolm_murray = { is_country_leader = yes }
 		}
 		prerequisite = {
 			focus = RVR_The_Bloody_Crown_of_Virginia
@@ -7241,7 +7241,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RVR_Restore_the_Earl_of_Dunmore
 		available = {
-			RVR_malcolm_murray = { is_country_leader = yes }
+			##RVR_malcolm_murray = { is_country_leader = yes }
 		}
 		prerequisite = {
 			focus = RVR_Restore_the_Earl_of_Dunmore
@@ -7261,7 +7261,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RVR_Redistribute_Land
 		available = {
-			RVR_malcolm_murray = { is_country_leader = yes }
+			#RVR_malcolm_murray = { is_country_leader = yes }
 		}
 		prerequisite = {
 			focus = RVR_Redistribute_Land
@@ -7280,7 +7280,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RVR_Reach_out_to_our_Great_Monarch
 		available = {
-			RVR_malcolm_murray = { is_country_leader = yes }
+			#RVR_malcolm_murray = { is_country_leader = yes }
 			has_country_flag = Britain_Denied_Help
 		}
 		prerequisite = {
@@ -7298,7 +7298,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RVR_The_Last_Bastion_of_the_Empire
 		available = {
-			RVR_malcolm_murray = { is_country_leader = yes }
+			#RVR_malcolm_murray = { is_country_leader = yes }
 		}
 		prerequisite = {
 			focus = RVR_The_Last_Bastion_of_the_Empire
@@ -7316,7 +7316,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RVR_Feign_the_British_support
 		available = {
-			RVR_malcolm_murray = { is_country_leader = yes }
+			#RVR_malcolm_murray = { is_country_leader = yes }
 		}
 		prerequisite = {
 			focus = RVR_Feign_the_British_support
@@ -7333,7 +7333,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RVR_Reach_out_to_our_Great_Monarch
 		available = {
-			RVR_malcolm_murray = { is_country_leader = yes }
+			#RVR_malcolm_murray = { is_country_leader = yes }
 			has_country_flag = Britain_Helps_Us
 		}
 		prerequisite = {
@@ -7352,7 +7352,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RVR_the_British_dominion
 		available = {
-			RVR_malcolm_murray = { is_country_leader = yes }
+			#RVR_malcolm_murray = { is_country_leader = yes }
 		}
 		prerequisite = {
 			focus = RVR_the_British_dominion
@@ -7371,7 +7371,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RVR_British_Virginian_Ties
 		available = {
-			RVR_malcolm_murray = { is_country_leader = yes }
+			#RVR_malcolm_murray = { is_country_leader = yes }
 		}
 		prerequisite = {
 			focus = RVR_British_Virginian_Ties

@@ -191,7 +191,7 @@ focus_tree = {
 		id = VIR_The_Revolution_has_Begun
 		icon = GFX_goal_VIR_The_Revolution_has_Begun
 		cost = 1.00
-		x = 92
+		x = 112
 		y = 0
 		prerequisite = {
 			
@@ -4403,6 +4403,28 @@ focus_tree = {
 			add_ideas = VIR_the_nuclear_power_plants
 		}
 	}
+	focus = {
+		id = VIR_bidens_virginia
+		icon = GFX_goal_VIR_The_Good_Governor
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = VIR_The_Good_Governor
+		prerequisite = {
+			focus = VIR_The_Good_Governor
+		}
+		prerequisite = {
+			focus = VIR_the_nuclear_alternative
+		}
+		prerequisite = {
+			focus = VIR_Rebuild_Fast_Food_Infrastructure
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
 	
 	
 	
@@ -4518,7 +4540,7 @@ focus_tree = {
 		id = VIR_The_Blue_Wave_Flows
 		icon = GFX_goal_VIR_The_Blue_Wave_Flows
 		cost = 5.00
-		x = -5
+		x = 10
 		y = 1
 		relative_position_id = VIR_Ban_Right_Parties
 		prerequisite = {
@@ -4526,9 +4548,10 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = VIR_An_End_to_Leftist_Unity
+			focus = VIR_lockheed_martin_libs
 		}
 		bypass = {
-			always = yes
+			has_completed_focus = VIR_the_Governor_of_Virginia
 		}
 		available = {
 			has_completed_focus = VIR_the_Governor_of_Virginia
@@ -4541,7 +4564,7 @@ focus_tree = {
 		id = VIR_appease_the_left
 		icon = GFX_goal_VIR_appease_the_left
 		cost = 5.00
-		x = 2
+		x = 6
 		y = 1
 		relative_position_id = VIR_The_Blue_Wave_Flows
 		prerequisite = {
@@ -4560,7 +4583,7 @@ focus_tree = {
 		id = VIR_industrial_investments
 		icon = GFX_goal_VIR_industrial_investments
 		cost = 5.00
-		x = 9
+		x = 10
 		y = 1
 		relative_position_id = VIR_appease_the_left
 		prerequisite = {
@@ -4643,7 +4666,7 @@ focus_tree = {
 		id = VIR_free_school_meals
 		icon = GFX_goal_VIR_free_school_meals
 		cost = 5.00
-		x = 6
+		x = 7
 		y = 1
 		relative_position_id = VIR_appease_the_left
 		prerequisite = {
@@ -4775,8 +4798,8 @@ focus_tree = {
 		id = VIR_follow_bidens_economic_plan
 		icon = GFX_goal_VIR_follow_bidens_economic_plan
 		cost = 5.00
-		x = -2
-		y = 1
+		x = -3
+		y = 2
 		relative_position_id = VIR_The_Blue_Wave_Flows
 		prerequisite = {
 			focus = VIR_The_Blue_Wave_Flows
@@ -4871,12 +4894,12 @@ focus_tree = {
 	}
 	
 	
-	#### End to leftist unity
+	#### Lockheed Martin Liberals
 	focus = {
-		id = VIR_An_End_to_Leftist_Unity
-		icon = GFX_goal_VIR_An_End_to_Leftist_Unity
+		id = VIR_lockheed_martin_libs
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
 		cost = 0.00
-		x = 18
+		x = -4
 		y = 1
 		relative_position_id = VIR_Ban_Right_Parties
 		prerequisite = {
@@ -4884,6 +4907,221 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = VIR_The_Blue_Wave_Flows
+			focus = VIR_An_End_to_Leftist_Unity
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = VIR_push_out_the_dsa
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 0.00
+		x = -3
+		y = 1
+		relative_position_id = VIR_lockheed_martin_libs
+		prerequisite = {
+			focus = VIR_lockheed_martin_libs
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = VIR_token_social_reforms
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 0.00
+		x = -1
+		y = 1
+		relative_position_id = VIR_push_out_the_dsa
+		prerequisite = {
+			focus = VIR_push_out_the_dsa
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = VIR_ending_progress_for_the_sake_of_progress
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 0.00
+		x = 0
+		y = 1
+		relative_position_id = VIR_token_social_reforms
+		prerequisite = {
+			focus = VIR_token_social_reforms
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = VIR_form_the_abundance_coalition
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 0.00
+		x = -1
+		y = 1
+		relative_position_id = VIR_lockheed_martin_libs
+		prerequisite = {
+			focus = VIR_lockheed_martin_libs
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = VIR_cut_out_red_tape
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 0.00
+		x = 0
+		y = 1
+		relative_position_id = VIR_form_the_abundance_coalition
+		prerequisite = {
+			focus = VIR_form_the_abundance_coalition
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = VIR_cyber_corporate_democracy
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 0.00
+		x = 2
+		y = 1
+		relative_position_id = VIR_cut_out_red_tape
+		prerequisite = {
+			focus = VIR_cut_out_red_tape
+		}
+		prerequisite = {
+			focus = VIR_cozy_up_to_big_tech
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = VIR_destroy_evil_left_and_right_populism
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 0.00
+		x = -1
+		y = 2
+		relative_position_id = VIR_form_the_abundance_coalition
+		prerequisite = {
+			focus = VIR_form_the_abundance_coalition
+		}
+		prerequisite = {
+			focus = VIR_push_out_the_dsa
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = VIR_concessions_to_the_MIC
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 0.00
+		x = 3
+		y = 1
+		relative_position_id = VIR_lockheed_martin_libs
+		prerequisite = {
+			focus = VIR_lockheed_martin_libs
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = VIR_cease_military_budget_audits
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 0.00
+		x = 1
+		y = 1
+		relative_position_id = VIR_concessions_to_the_MIC
+		prerequisite = {
+			focus = VIR_concessions_to_the_MIC
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = VIR_cozy_up_to_big_tech
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 0.00
+		x = -1
+		y = 1
+		relative_position_id = VIR_concessions_to_the_MIC
+		prerequisite = {
+			focus = VIR_concessions_to_the_MIC
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = VIR_virginia_perfected_and_unchanging
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 0.00
+		x = 1
+		y = 1
+		relative_position_id = VIR_destroy_evil_left_and_right_populism
+		prerequisite = {
+			focus = VIR_destroy_evil_left_and_right_populism
+		}
+		prerequisite = {
+			focus = VIR_ending_progress_for_the_sake_of_progress
+		}
+		prerequisite = {
+			focus = VIR_cyber_corporate_democracy
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	#### End to leftist unity
+	focus = {
+		id = VIR_An_End_to_Leftist_Unity
+		icon = GFX_goal_VIR_An_End_to_Leftist_Unity
+		cost = 0.00
+		x = 38
+		y = 1
+		relative_position_id = VIR_Ban_Right_Parties
+		prerequisite = {
+			focus = VIR_Ban_Right_Parties
+		}
+		mutually_exclusive = {
+			focus = VIR_The_Blue_Wave_Flows
+			focus = VIR_lockheed_martin_libs
 		}
 		available = {
 			has_country_leader = {
@@ -5590,20 +5828,13 @@ focus_tree = {
 		id = VIR_reopen_trade
 		icon = GFX_goal_VIR_reopen_trade
 		cost = 5.00
-		x = 0
-		y = 2
-		relative_position_id = VIR_The_Good_Governor
+		x = 3
+		y = 3
+		relative_position_id = VIR_bidens_virginia
 		prerequisite = {
-			focus = VIR_The_Good_Governor
-			focus = VIR_tax_reform
-		}
-		prerequisite = {
-			focus = VIR_Rebuild_Fast_Food_Infrastructure
-			focus = VIR_rebuild_infrastructure
-		}
-		prerequisite = {
-			focus = VIR_the_nuclear_alternative
-			focus = VIR_rebuild_infrastructure
+			focus = VIR_bidens_virginia
+			focus = VIR_virginian_chips_Act
+			focus = VIR_virginia_perfected_and_unchanging
 		}
 		available = {
 			
