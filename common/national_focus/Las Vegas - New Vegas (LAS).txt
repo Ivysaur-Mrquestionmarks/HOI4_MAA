@@ -540,7 +540,10 @@ focus_tree = {
 			focus = LAS_our_direction
 		}
 		available = {
-			has_country_leader = LAS_sean_wallis
+			has_country_leader = {
+				name = "Sean Wallis"
+				ruling_party = autocratic
+			}
 		}
 		completion_reward = {
 			add_ideas = LAS_lacking_government_1
@@ -2332,7 +2335,10 @@ focus_tree = {
 		}
 		
 		available = {
-			has_country_leader = LAS_clancy_brown
+			has_country_leader = {
+				name = "Clancy Brown"
+				ruling_party = autocratic
+			}
 		}
 		prerequisite = { 
 			focus = LAS_our_direction
@@ -3608,7 +3614,7 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = LAS_extremist_faction
+		id = LAS_extremist_faction #efe plz dont push this to open beta
 		icon = GFX_goal_unknown
 		cost = 1
 		relative_position_id = LAS_conflict_in_paradise
