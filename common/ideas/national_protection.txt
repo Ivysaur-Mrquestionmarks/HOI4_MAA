@@ -394,63 +394,63 @@ ideas = {
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				stability_factor = 0.5
-				war_support_factor = 0.5
+				stability_factor = 0.1
+				war_support_factor = 0.1
 			}
 		}
 		NPA_roman_military = {
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				army_morale_factor = 0.1
+				army_morale_factor = 0.05
 			}
 		}
 		NPA_roman_military2 = {
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				army_morale_factor = 0.15
-				army_org_Factor = 0.05
+				army_morale_factor = 0.05
+				army_org_factor = 0.05
 			}
 		}
 		NPA_sixth_rome = {
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				political_power_factor = 0.1
-				autocratic_drift = 0.2
+				political_power_factor = 0.05
+				autocratic_drift = 0.05
 			}
 		}
 		NPA_sixth_rome2 = {
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				political_power_factor = 0.1
-				autocratic_drift = 0.25
-				army_attack_factor = 0.1
+				political_power_factor = 0.05
+				autocratic_drift = 0.1
+				army_attack_factor = 0.05
 			}
 		}
 		NPA_united_faith = {
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				stability_factor = 0.2
-				army_morale_factor = 0.05
+				stability_factor = 0.05
+				army_morale_factor = 0.01
 			}
 		}
 		NPA_united_faith2 = {
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				stability_factor = 0.25
-				army_morale_factor = 0.1
+				stability_factor = 0.05
+				army_morale_factor = 0.05
 			}
 		}
 		NPA_christian_state = {
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = 0.05
 			}
 		}
@@ -481,7 +481,7 @@ ideas = {
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				army_attack_factor = 0.1
+				army_attack_factor = 0.05
 				experience_loss_factor = 0.5
 			}
 		}
@@ -490,14 +490,14 @@ ideas = {
 			allowed = { original_tag = NPA }
 			modifier = {
 				operative_slot = 1
-				agency_upgrade_time = -0.25
+				agency_upgrade_time = -0.05
 			}
 		}
 		NPA_spy_merger2 = { 
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				operative_slot = 2
+				operative_slot = 1
 				agency_upgrade_time = -0.3
 			}
 		}
@@ -505,34 +505,34 @@ ideas = {
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				intel_network_gain = 0.2
-				operation_cost = -0.25
-				boost_resistance_factor = 0.25
-				propaganda_mission_factor = 0.25
+				intel_network_gain = 0.1
+				operation_cost = -0.1
+				boost_resistance_factor = 0.1
+				propaganda_mission_factor = 0.1
 			}
 		}
 		NPA_more_cover_operations2 = { 
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				intel_network_gain = 0.5
-				operation_cost = -0.75
-				boost_resistance_factor = 0.4
-				propaganda_mission_factor = 0.4
+				intel_network_gain = 0.25
+				operation_cost = -0.25
+				boost_resistance_factor = 0.25
+				propaganda_mission_factor = 0.25
 			}
 		}
 		NPA_illuminate = { 
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				operative_slot = 3
+				operative_slot = 2
 			}
 		}
 		NPA_iron_dome = { 
 			#picture = 
 			allowed = { original_tag = NPA }
 			modifier = {
-				enemy_army_bonus_air_superiority_factor = -0.5
+				enemy_army_bonus_air_superiority_factor = -0.1
 			}
 		}
 		NPA_secret_polices = { 
@@ -540,7 +540,7 @@ ideas = {
 			allowed = { original_tag = NPA }
 			modifier = {
 				operative_slot = 1
-				stability_factor = 0.25
+				stability_factor = 0.1
 			}
 		}
 		NPA_militarized_police = { 
@@ -565,8 +565,8 @@ ideas = {
 			modifier = {
 				resistance_growth = -0.15
 				resistance_decay = 0.15
-				compliance_growth = 0.05
-				compliance_gain = 0.05
+				compliance_growth = 0.025
+				compliance_gain = 0.01
 			}
 		}
 		NPA_militarized_police4 = { 
@@ -575,8 +575,8 @@ ideas = {
 			modifier = {
 				resistance_growth = -0.15
 				resistance_decay = 0.15
-				compliance_growth = 0.2
-				compliance_gain = 0.1
+				compliance_growth = 0.05
+				compliance_gain = 0.01
 			}
 		}
 		NPA_rogue_police = {
