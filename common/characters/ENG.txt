@@ -188,7 +188,26 @@ characters={
 			visible = {
 				has_country_flag = ENG_lewis_retired_flag
 			}
-			removal_cost = -1
+			#removal_cost = -1 #this makes him unfireable
+		}
+	}
+
+	ENG_callums_corner = {
+		name = "Sanjay Adams"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ENG/ENG_callum_adams_adviser.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_sir_lewis_hamilton_advisor
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				ENG_callum_from_the_corner
+			}
 		}
 	}
 
