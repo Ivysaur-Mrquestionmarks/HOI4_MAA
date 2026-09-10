@@ -223,14 +223,45 @@ ideas = {
 				industry_repair_factor = -0.15
 			}
 		}
+		ALA_neglected_infrastructure_7 = {
+			picture = GFX_idea_ALA_neglected_infrastructure
+			modifier = {
+				consumer_goods_factor = -0.1
+				army_speed_factor = 0.05
+				production_speed_buildings_factor = 0.1 
+				production_speed_infrastructure_factor = 0.1 
+				global_building_slots_factor = 0.2
+			}
+		}
 		ALA_inuit_poverty = {
 			picture = ALA_extreme_inuit_poverty
 			modifier = {
 				stability_factor = -0.15
 				monthly_population = -0.2
+				conscription_factor = -0.1
 				consumer_goods_factor = 0.12
 				authoritarian_left_drift = 0.02
 				libertarian_left_drift = 0.02
+			}
+		}
+		ALA_inuit_poverty_1 = {
+			picture = ALA_extreme_inuit_poverty
+			modifier = {
+				stability_factor = -0.10
+				monthly_population = -0.15
+				conscription_factor = -0.05
+				consumer_goods_factor = 0.16
+				authoritarian_left_drift = 0.02
+				libertarian_left_drift = 0.02
+			}
+		}
+		ALA_inuit_poverty_2 = {
+			picture = ALA_extreme_inuit_poverty
+			modifier = {
+				stability_factor = 0.10
+				monthly_population = 0.15
+				conscription_factor = 0.1
+				consumer_goods_factor = 0.05
 			}
 		}
 		ALA_tourism_recession = {

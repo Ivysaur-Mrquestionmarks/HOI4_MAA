@@ -412,6 +412,38 @@ ALA_oil_crisis = {
 	}
 }
 ALA_fix_it_felix = {
+	ALA_infrastructure_revolution = {
+
+		icon = generic_trucks
+
+		allowed = {
+			
+		}
+		available = {
+			has_idea = ALA_neglected_infrastructure_6
+		}
+		visible = {
+			#has_completed_focus = ALA_gain_international_trust
+		}
+
+
+		cost = 10
+				
+		days_remove = 100
+
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+		remove_effect = {
+			
+		}
+		complete_effect = {
+		    swap_ideas = {
+		    	remove_idea = ALA_neglected_infrastructure_6
+		    	add_idea = ALA_neglected_infrastructure_7
+		    }
+		}
+	}
 	ALA_fix_the_roads = {
 
 		icon = generic_trucks
@@ -453,6 +485,7 @@ ALA_fix_it_felix = {
 
 		modifier = {
 			consumer_goods_factor = 0.1
+			production_speed_infrastructure_factor = 0.3
 		}
 		remove_effect = {
 			FROM = {

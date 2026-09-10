@@ -89,6 +89,9 @@ set_variable = { ALA_army_leader_cost_factor = 0.3}
 add_dynamic_modifier = { modifier = ALA_shadow_of_pac }
 
 # Northern Alaska #
+
+set_variable = { ALA_local_resources_factor = 0 }
+set_variable = { ALA_consumer_goods_factor = 0 }
 set_variable = { ALA_industrial_factory_donations = 3}
 set_variable = { ALA_military_factory_donations = 2}
 set_variable = { ALA_northern_steel = 4}

@@ -14,7 +14,9 @@ ALA_shadow_of_pac = {
 }
 ALA_northern_alaska = {
 	icon = "GFX_idea_ALA_northern_alaska"
-
+    
+    local_resources_factor = ALA_local_resources_factor
+    consumer_goods_factor = ALA_consumer_goods_factor
 	industrial_factory_donations = ALA_industrial_factory_donations
 	military_factory_donations = ALA_military_factory_donations
 	country_resource_steel = ALA_northern_steel

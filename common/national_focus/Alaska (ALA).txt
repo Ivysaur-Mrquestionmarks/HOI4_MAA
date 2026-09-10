@@ -36,7 +36,9 @@
 			focus = ALA_the_alaskan_economy
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = ALA_modify_north_alaska_modifier_tt
+			add_to_variable = { ALA_consumer_goods_factor = 0.08 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { ALA_local_resources_factor = 0.12 tooltip =local_resources_factor_tt }
 		}
 	}
 	focus = {
@@ -53,7 +55,10 @@
 			focus = ALA_north_alaskan_incursions
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_inuit_poverty
+				add_idea = ALA_inuit_poverty_1
+			}
 		}
 	}
 	focus = {
@@ -70,7 +75,8 @@
 			focus = ALA_tackle_inuit_poverty
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = ALA_modify_north_alaska_modifier_tt
+			add_to_variable = { ALA_weekly_manpower = 100 tooltip = weekly_manpower_tt }
 		}
 	}
 	focus = {
@@ -87,7 +93,8 @@
 			focus = ALA_tackle_inuit_poverty
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = ALA_modify_north_alaska_modifier_tt
+			add_to_variable = { ALA_industrial_factory_donations = 3 tooltip = industrial_factory_donations_tt }
 		}
 	}
 	focus = {
@@ -107,7 +114,10 @@
 			focus = ALA_increase_housing
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_inuit_poverty_1
+				add_idea = ALA_inuit_poverty_2
+			}
 		}
 	}
 	focus = {
@@ -124,7 +134,8 @@
 			focus = ALA_north_alaskan_incursions
 		}
 		completion_reward = {
-			
+			add_stability = -0.2
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -141,7 +152,9 @@
 			focus = ALA_strike_deep_beneath_the_crust
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = ALA_modify_north_alaska_modifier_tt
+			add_to_variable = { ALA_consumer_goods_factor = -0.2 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { ALA_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
 		}
 	}
 	focus = {
@@ -158,7 +171,10 @@
 			focus = ALA_strike_deep_beneath_the_crust
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = ALA_modify_north_alaska_modifier_tt
+			add_to_variable = { ALA_northern_steel = 25 tooltip = country_resource_steel_tt }
+			add_to_variable = { ALA_northern_aluminum = 10 tooltip = country_resource_aluminium_tt }
+			add_to_variable = { ALA_northern_tungsten = 15 tooltip = country_resource_tungsten_tt }
 		}
 	}
 	focus = {
@@ -176,7 +192,9 @@
 			focus = ALA_brooks_range_mining	
 		}
 		completion_reward = {
-			
+			add_stability = -0.1
+			custom_effect_tooltip = ALA_modify_north_alaska_modifier_tt
+			add_to_variable = { ALA_northern_steel = 50 tooltip = country_resource_steel_tt }
 		}
 	}
 	focus = {
@@ -1122,9 +1140,7 @@
 			focus = ALA_the_radical_option
 			focus = ALA_without_oil_theres_no_alaska
 		}
-		mutually_exclusive = {
-			focus = ALA_the_radical_option
-		}
+		
 		completion_reward = {
 			country_event = alaska_apf.1
 		}
@@ -1730,7 +1746,7 @@
 		mutually_exclusive = {
 			focus = ALA_the_frontier_state
 			focus = ALA_peoples_republic_of_alaska
-			focus = ALA_corporation_with_a_state
+			focus = ALA_corporations_with_a_state
 		}
 		prerequisite = {
 			focus = ALA_strike_the_capital
@@ -1846,7 +1862,7 @@
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = ALA_aluetian_island_training
 		ai_will_do = { 
 			factor = 300
@@ -2344,8 +2360,7 @@
 			
 		}
 	}
-	# SHARED INDUSTRY TREE (Inuit/Commie) #
-	
+
 
 	#COMMUNIST ALASKA PATH
 	focus = {
@@ -2359,7 +2374,7 @@
 			factor = 300
 		}
 		mutually_exclusive = {
-			focus = ALA_corporation_with_a_state
+			focus = ALA_corporations_with_a_state
 			focus = ALA_the_frontier_state
 			focus = ALA_alaaskaq
 		}
@@ -2926,7 +2941,7 @@
 	}
 	#CORPORATE ALASKA PATH
 	focus = {
-		id = ALA_corporation_with_a_state
+		id = ALA_corporations_with_a_state
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
 		x = 1
@@ -2947,24 +2962,1223 @@
 			
 		}
 	}
+	focus = {
+		id = ALA_gather_the_alaskan_native_corporations
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_corporations_with_a_state
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_corporations_with_a_state
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_board_of_corporate_cooperation
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_gather_the_alaskan_native_corporations
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_gather_the_alaskan_native_corporations
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_amend_the_ansca
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_gather_the_alaskan_native_corporations
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_gather_the_alaskan_native_corporations
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_great_merger
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_gather_the_alaskan_native_corporations
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_amend_the_ansca
+		}
+		prerequisite = {
+			focus = ALA_board_of_corporate_cooperation
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_people_are_our_shareholders
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -4
+		y = 1
+		relative_position_id = ALA_the_great_merger
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_great_merger
+		}
+		mutually_exclusive = {
+			focus = ALA_alaska_is_our_plaything
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_company_controlled_unions
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -3
+		y = 1
+		relative_position_id = ALA_the_people_are_our_shareholders
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_people_are_our_shareholders
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_no_need_to_strike
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_company_controlled_unions
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_company_controlled_unions
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_a_lower_the_minimum_wage
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_the_people_are_our_shareholders
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_people_are_our_shareholders
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_means_a_lower_price
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_a_lower_the_minimum_wage
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_a_lower_the_minimum_wage
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_token_healthcare_packages
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_the_people_are_our_shareholders
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_people_are_our_shareholders
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_a_healthy_worker_is_a_productive_one
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_token_healthcare_packages
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_token_healthcare_packages
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_glorification_of_the_consumer
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 3
+		y = 1
+		relative_position_id = ALA_the_people_are_our_shareholders
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_people_are_our_shareholders
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_poverty_is_a_moral_failing
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_glorification_of_the_consumer
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_glorification_of_the_consumer
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_company_culture
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_poverty_is_a_moral_failing
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_no_need_to_strike
+		}
+		prerequisite = {
+			focus = ALA_means_a_lower_price
+		}
+		prerequisite = {
+			focus = ALA_poverty_is_a_moral_failing
+		}
+		prerequisite = {
+			focus = ALA_a_healthy_worker_is_a_productive_one
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_guiding_hand_of_alaska
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_means_a_lower_price
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_a_healthy_worker_is_a_productive_one
+		}
+		prerequisite = {
+			focus = ALA_poverty_is_a_moral_failing
+		}
+		prerequisite = {
+			focus = ALA_means_a_lower_price
+		}
+		prerequisite = {
+			focus = ALA_no_need_to_strike
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_paternal_corporatocracy
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 4
+		relative_position_id = ALA_the_people_are_our_shareholders
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_guiding_hand_of_alaska
+		}
+		prerequisite = {
+			focus = ALA_company_culture
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	#EVIL CORPO
+	focus = {
+		id = ALA_alaska_is_our_plaything
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 4
+		y = 1
+		relative_position_id = ALA_the_great_merger
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_great_merger
+		}
+		mutually_exclusive = {
+			focus = ALA_the_people_are_our_shareholders
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_police_the_poor
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_alaska_is_our_plaything
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_alaska_is_our_plaything
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_go_flock_yourself
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_police_the_poor
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_police_the_poor
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_worker_protections_are_anticapitalist
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_alaska_is_our_plaything
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_alaska_is_our_plaything
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_eternal_enemy_of_capitalism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_worker_protections_are_anticapitalist
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_worker_protections_are_anticapitalist
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_abolish_the_minimum_wage
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_worker_protections_are_anticapitalist
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_worker_protections_are_anticapitalist
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_free_association_capitalism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_worker_protections_are_anticapitalist
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_abolish_the_minimum_wage
+		}
+		prerequisite = {
+			focus = ALA_the_eternal_enemy_of_capitalism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_working_for_the_black_gas
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ALA_alaska_is_our_plaything
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_alaska_is_our_plaything
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_tear_up_environmental_protections
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_working_for_the_black_gas
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_working_for_the_black_gas
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_crackdown_on_the_greens
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_working_for_the_black_gas
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_working_for_the_black_gas
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_rentier_republic
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_working_for_the_black_gas
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_crackdown_on_the_greens
+		}
+		prerequisite = {
+			focus = ALA_tear_up_environmental_protections
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_unrestrained_capitalism_unrestrained_profits
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_go_flock_yourself
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_go_flock_yourself
+		}
+		prerequisite = {
+			focus = ALA_free_association_capitalism
+		}
+		prerequisite = {
+			focus = ALA_the_rentier_republic
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ALA_profits_to_be_made_elsewhere
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 6
+		relative_position_id = ALA_the_great_merger
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_unrestrained_capitalism_unrestrained_profits
+			focus = ALA_paternal_corporatocracy
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_party_in_the_gla
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_profits_to_be_made_elsewhere
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_spread_the_true_form_of_capitalism
+		}
+		prerequisite = {
+			focus = ALA_profits_to_be_made_elsewhere
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_spread_the_true_form_of_capitalism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_profits_to_be_made_elsewhere
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_party_in_the_gla
+		}
+		prerequisite = {
+			focus = ALA_profits_to_be_made_elsewhere
+		}
+		completion_reward = {
+			
+		}
+	}
 	#LIBERTARIAN RIGHT ALASKA PATH
 	focus = {
 		id = ALA_the_frontier_state
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 3
+		x = 21
 		y = 1
 		relative_position_id = ALA_strike_the_capital
 		ai_will_do = { 
 			factor = 300
 		}
 		mutually_exclusive = {
-			focus = ALA_corporation_with_a_state
+			focus = ALA_corporations_with_a_state
 			focus = ALA_peoples_republic_of_alaska
 			focus = ALA_alaaskaq
 		}
 		prerequisite = {
 			focus = ALA_strike_the_capital
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_calming_the_moderates
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_the_frontier_state
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_frontier_state
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_reform_the_boogaloo
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_the_frontier_state
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_frontier_state
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_future_of_alaskan_libertarianism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_the_frontier_state
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_reform_the_boogaloo
+		}
+		prerequisite = {
+			focus = ALA_calming_the_moderates
+		}
+		completion_reward = {
+			
+		}
+	}
+	# JOHN BRIGG WATTS
+	focus = {
+		id = ALA_the_wattsians_hold_on
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_the_future_of_alaskan_libertarianism
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_the_serpent_strikes
+			focus = ALA_howes_surprise_victory
+		}
+		prerequisite = {
+			focus = ALA_the_future_of_alaskan_libertarianism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_respectable_libertarianism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_the_wattsians_hold_on
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_wattsians_hold_on
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_laissez_faire_economics
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ALA_respectable_libertarianism
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_respectable_libertarianism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_climate_responsible_capitalism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 2
+		y = 2
+		relative_position_id = ALA_laissez_faire_economics
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_laissez_faire_economics
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_encourage_immigrant_labor
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_laissez_faire_economics
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_laissez_faire_economics
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_open_up_the_drug_and_prostitution_markets
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_laissez_faire_economics
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_laissez_faire_economics
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_blight_of_minimum_wage
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_laissez_faire_economics
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_encourage_immigrant_labor
+		}
+		prerequisite = {
+			focus = ALA_open_up_the_drug_and_prostitution_markets
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_cryptoization_of_the_economy
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_the_blight_of_minimum_wage
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_blight_of_minimum_wage
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_wilting_state
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_respectable_libertarianism
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_respectable_libertarianism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_direct_democracy
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_the_wilting_state
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_wilting_state
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_complete_alaskas_tax_abolition
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_the_wilting_state
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_wilting_state
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_free_choice_for_everything
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_the_wilting_state
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_direct_democracy
+		}
+		prerequisite = {
+			focus = ALA_complete_alaskas_tax_abolition
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_end_the_surveillance_state
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_free_choice_for_everything
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_free_choice_for_everything
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_watts_alaska_secured
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 2
+		y = 3
+		relative_position_id = ALA_free_choice_for_everything
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_end_the_surveillance_state
+		}
+		prerequisite = {
+			focus = ALA_the_cryptoization_of_the_economy
+		}
+		completion_reward = {
+			
+		}
+	}
+	# BAKED ALASKA
+	focus = {
+		id = ALA_the_serpent_strikes
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -8
+		y = 1
+		relative_position_id = ALA_the_future_of_alaskan_libertarianism
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_the_wattsians_hold_on
+			focus = ALA_howes_surprise_victory
+		}
+		prerequisite = {
+			focus = ALA_the_future_of_alaskan_libertarianism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_embrace_hoppeanism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_the_serpent_strikes
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_serpent_strikes
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_property_dictates_a_mans_worth
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = ALA_embrace_hoppeanism
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_embrace_hoppeanism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_private_borders_and_private_police
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 2
+		relative_position_id = ALA_property_dictates_a_mans_worth
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_property_dictates_a_mans_worth
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_freedom_of_association
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALA_embrace_hoppeanism
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_embrace_hoppeanism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_cult_of_the_market
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 2
+		relative_position_id = ALA_freedom_of_association
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_freedom_of_association
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_court_of_the_anarcho_king
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_embrace_hoppeanism
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_embrace_hoppeanism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_the_guide_of_pure_libertarianism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_the_court_of_the_anarcho_king
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_court_of_the_anarcho_king
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_remove_the_undesirables_from_society
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_the_court_of_the_anarcho_king
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_court_of_the_anarcho_king
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_encourage_local_covenants
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_the_court_of_the_anarcho_king
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_guide_of_pure_libertarianism
+		}
+		prerequisite = {
+			focus = ALA_remove_the_undesirables_from_society
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_stop_the_immigrant_invaders
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 3
+		y = 1
+		relative_position_id = ALA_encourage_local_covenants
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_encourage_local_covenants
+		}
+		prerequisite = {
+			focus = ALA_private_borders_and_private_police
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_minorities_need_not_apply
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -3
+		y = 1
+		relative_position_id = ALA_encourage_local_covenants
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_encourage_local_covenants
+		}
+		prerequisite = {
+			focus = ALA_the_cult_of_the_market
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_let_loose_the_dogs_of_capitalism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_encourage_local_covenants
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_private_borders_and_private_police
+		}
+		prerequisite = {
+			focus = ALA_encourage_local_covenants
+		}
+		prerequisite = {
+			focus = ALA_the_cult_of_the_market
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_plunder_the_natural_resources
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_let_loose_the_dogs_of_capitalism
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_let_loose_the_dogs_of_capitalism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_unrestrained_oil_production
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_let_loose_the_dogs_of_capitalism
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_let_loose_the_dogs_of_capitalism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_guided_by_the_almighty_dollar
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_let_loose_the_dogs_of_capitalism
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_let_loose_the_dogs_of_capitalism
+		}
+		completion_reward = {
+			
+		}
+	}
+	# HOWE
+	focus = {
+		id = ALA_howes_surprise_victory
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 8
+		y = 1
+		relative_position_id = ALA_the_future_of_alaskan_libertarianism
+		ai_will_do = { 
+			factor = 300
+		}
+		mutually_exclusive = {
+			focus = ALA_the_wattsians_hold_on
+			focus = ALA_the_serpent_strikes
+		}
+		prerequisite = {
+			focus = ALA_the_future_of_alaskan_libertarianism
 		}
 		completion_reward = {
 			

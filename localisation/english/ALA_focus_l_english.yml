@@ -200,6 +200,10 @@
  ALA_inuit_poverty:0 "Extreme Inuit Poverty"
  ALA_inuit_poverty_desc:0 "Before the Second American Civil War, the Inuit were already suffering from overcrowding and poverty. With the occupation by the Pacific Fleet and the collapse of any semblance of safety, the Inuit have been plunged into far worse conditions. Radicalism has gripped the Inuit community and Inuit separatism has already begun to shake the North."
  
+ ALA_inuit_poverty_1:0 "Slow Inuit Recovery"
+
+ ALA_inuit_poverty_2:0 "Inuit Revival"
+
  ALA_tourism_recession:0 "Tourism Recession"
  ALA_tourism_recession_desc:0 "Tourism has been the backbone of the Alaskan economy, but that has all but disintegrated due to recent events. The legacy of the Pacific Fleet, combined with growing political instability, and the fact that our would be customers are fighting each other, has made sure no one is visiting."
  
@@ -236,7 +240,7 @@
  ALA_northern_alaska_desc:0 "Northern Alaska contains substantial industries related to gas and oil, and plenty of untapped resources."
  
  ALA_neglected_infrastructure:0 "Neglected Infrastructure"
- ALA_neglected_infrastructure_desc:0 "It's bleak."
+ ALA_neglected_infrastructure_desc:0 "Our infrastructure was already quite bad before the American Civil War, but now its far, far worse. Many cities are virtually unconnected to each other due to the poor quality of the roads, with basic things like clean drinking water being a rare sighting in many towns. This country is rotting."
  
  ALA_neglected_infrastructure_1:0 "Neglected Infrastructure"
 
@@ -250,6 +254,7 @@
 
  ALA_neglected_infrastructure_6:0 "Neglected Infrastructure"
 
+ ALA_neglected_infrastructure_7:0 "Revolutionized Infrastructure" 
 
  ALA_brain_drain:0 "Brain Drain"
  ALA_brain_drain_desc:0 "Our education system is extremely underfunded with many opting to flee the country to other places with more opportunity."
@@ -281,9 +286,8 @@
  ALA_brain_drain_3:0 "Plugging the Brain Drain"
 
  ALA_brain_drain_4:0 "The Great Brain Gain"
-
-
- # DECISIONS #
+ 
+  # DECISIONS #
 
  ALA_oil_crisis:0 "The Oil Crisis"
  ALA_oil_crisis_desc:0 "In order to get our oil industry back on track, we need to fix our international reputation and start petitioning for international recognition. Once we are recognized, we can finally strike some oil deals to repair our sinking oil industry."
@@ -298,6 +302,8 @@
 
  ALA_fix_it_felix:0 "Fixing the Infrastructure"
  ALA_fix_the_roads:0 "Repair Infrastructure in [FROM.GetName]"
+
+ ALA_infrastructure_revolution:0 "§GInfrastructural Revolution§!"
  # TOOLTIPS #
  
  ALA_petition_for_recognition_tt:0 "Unlocks Decisions: §YPetition For Recognition§!"
@@ -307,6 +313,10 @@
  ALA_inuit_tt:0 "§YThis will dramatically strengthen Inuit influence§!"
 
  ALA_brain_drain_cooldown_tt:0 "We will have to wait §Y180 days§! to let the schools catch up to the new policy."
+
+ ALA_modify_north_alaska_modifier_tt:0 "Modify §Y$ALA_northern_alaska$§! by:"
+
+ industrial_factory_donations_tt:0 "Industrial Factory Donations: §G+3§!"
 
  # RELATIONSHIP MODIFIERS #
 
@@ -355,8 +365,8 @@
  alaska.6.d:0 "Political instability seems to be reaching a boiling point. Today, the newly formed Communist Party of Alaska held a rally in Anchorage, opening to crowds of supporters. Right-wing counter protestors also showed up, but were kept under wraps by the heavy police presence.\n\nThe man at the head of this was the ex-Party for Socialism and Liberation member, Michael Patterson. His arrest by the Pacific Fleet earned him plenty of sympathy from the left-wing, and he has used that to catapult his political career, seemingly aspiring for the role of chairman of Alaska.\n\nDuring the rally, he agitated for class war, calling for the end of fossil capitalism and the destruction of the bourgeoisie. He had specific vitriol for Mike Dunleavy, calling him a "flaccid puppet of the oil barons". Even though they are communist dogs, we cannot deny their growing influence in Alaskan politics."
  alaska.6.a:0 "Better dead than red!"
 
- alaska.7.t:0 "Protestors Gather Outside the Court Room"
- alaska.7.d:0 "Protestors have gathered outside the courtroom to vent their frustrations over the lengthy proceedings, with many believing that the courts are dragging out the trial for as long as possible, and some even claiming that the trial is rigged for the defendants. While they are mostly small scale and peaceful, the media has noted the potential for it to turn into a full scale riot if the trial does not wrap up soon."
+ alaska.7.t:0 "Protestors Gather Outside the Courtroom"
+ alaska.7.d:0 "Expectedly, the trial of the Pacific Fleet has attracted the attention of disgruntled Alaskan citizens, and now they've gathered outside the courtroom to make their voices heard. Many clammor for the death penalty, with some stating that anything less would be no justice at all. Others have gathered to try and sway the protests into a political direction, whether it be the communists or libertarians. Some fights and scuffles have even broken out between the two sides, but the police have been quick in stablizing the situation. For now, the protests seem to be mostly peaceful, but there is a fear that things could get out of hand very quickly if something dramatic happens."
  alaska.7.a:0 "Let them protest"
  
  alaska.8.t:0 "The Secret Meeting"
@@ -364,17 +374,17 @@
  alaska.8.a:0 "This is getting dangerous... destroy any records of this meeting and keep it under wraps!"
  
  alaska.9.t:0 "A Leak!"
- alaska.9.d:0 "Somehow word of our secret meeting has leaked to the press. It is clear that someone is trying to destabilize us, but the question of who remains a mystery."
- alaska.9.a:0 "Damnit!"
+ alaska.9.d:0 "Despite our best efforts, somehow information regarding the secret meeting has leaked to the media. Anchorage Daily News ran the headline "Military Conspiracy In the Pacific Fleet Trial?" while pushing its release at full throttle through magazines and online posts, detailing snippets of the meeting. Thankfully, whoever the leaker was did not know any specifics, which has given us just enough wriggle room to deny the accusations. However, it is unlikely this will be enough to stop the already agitated and disgruntled Alaskan population from taking things farther."
+ alaska.9.a:0 "It could be worse, right?"
 
  alaska.10.t:0 "Protests Devolve Into Riots!"
- alaska.10.d:0 "The consequences of the leak have made themselves very clear in Anchorage. The peaceful protests have devolved into full scaled riots. Police response has been bolstered, with some in the intelligence agencies citing high risks for terrorist attacks on the courtroom building. Nonetheless, the media has dubbed these riots "the Trial Riots"."
- alaska.10.a:0 "Let's hope we can get this over with and fast"
- 
+ alaska.10.d:0 "The leak has given the protestors just enough fuel to ignite into a wildfire of unfocused rage and anger. While a combined national guard and police presence has secured a perimeter around the courtroom, the rioters have turned their attention to the city itself, torching and burning cars and buildings. The military has been urging us in the background to secure the city by force and use the opportunity to pardon the Pacific Fleet, however any wrong step could destroy the entire country."
+ alaska.10.a:0 "Only a guilty verdict will calm them down."
+
  alaska.11.t:0 "The Trial Ends"
  alaska.11.d:0 "To no one's surprise, the jury has delivered a guilty verdict in the case of the Pacific Fleet. The evidence presented was overwhelming, with many admirals and captains admitting to atrocities and war crimes. The military is outraged at this result as expected, and now some are pressuring Dunleavy into a full pardon. While this is unlikely to gover well, it may be the best to salvage our high command."
  alaska.11.a:0 "The court has spoken!"
- alaska.11.b:0 "We need them! Pardon them!"
+ alaska.11.b:0 "On second thought, we need them. Pardon them and lockdown Anchorage!"
  
  alaska_oil.1.t:0 "Alaska Pleads For Recognition"
  alaska_oil.1.d:0 " "
@@ -416,7 +426,7 @@
  ### CHARACTERS ###
 
  ALA_mike_dunleavy:0 "Mike Dunleavy"
- DESC_LEADER_MIKE_DUNLEAVY:0 "Mike Dunleavy was once a popular and effective governor of Alaska. He was praised for strengthening education, cracking down on crime, and for his fast COVID response. But many things have changed since the American Civil War.\n\nThe Pacific Fleet took control of Hawaii in the early phases and soon demanded Alaska surrender without bloodshed. Despite bipartisan opposition to junta control, Dunleavy capitulated, shocking Alaskans.\n\nFor his cooperation, the fleet allowed him to keep the mostly ceremonial role of governor of Alaska, staining his reputation as the war effort dragged on.\n\nNow that the Pacific Fleet has collapsed, he is left in control of a withering state that distrusts his rule, with many calling for him to step down. Winning back the trust of the Alaskan people will be a Herculean task."
+ DESC_LEADER_MIKE_DUNLEAVY:0 "Mike Dunleavy was once a popular and effective governor of Alaska. He was praised for strengthening education, cracking down on crime, and for his fast COVID response. But many things have changed since the American Civil War.\n\nHis reputation has been marred by this reluctant support of the Pacific Fleet, in what many had viewed as a "deal with the devil". He had clung onto the title of governor of Alaska, a role made mostly ceremonial under the junta, trying to mitigate the junta's strangehold over Alaska to no avail.\n\nNow that the junta has collapsed and its perpetrators either dead or imprisoned, one man is left standing at the center of the Alaskan ire. That man is Mike Dunleavy. Whether or not it is misguided, the Alaskans have blamed him for the steep decline in quality of life, with some accusing him of not having done more to prevent the Pacific Fleet's takeover.\n\nTo win back the Alaskan people's trust will be a Herculean task. But the people is not his only worry. The remnant military, many who are sympathetic towards the Pacific Fleet, have been instrumental in allowing him to keep his role of governor. And they are not doing it out of charity either..."
  
  ALA_brian_kile:0 "Brian Kile"
  ALA_julie_a_small:0 "Julie A. Small"
