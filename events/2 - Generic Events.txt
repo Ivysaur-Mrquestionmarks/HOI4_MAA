@@ -82,5 +82,17 @@ country_event = { #invite to faction
 	}
 }
 
+#BETA WARNING EVENT
+country_event = {
+	id = _zzz.4
+	title = _zzz.4.t
+	desc = _zzz.4.d
+	picture = event_sam_hyde_01
+	is_triggered_only = yes
+	option = {
+		name = _zzz.4.a
+	}
+}
+
 
 
