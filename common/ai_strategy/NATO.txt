@@ -1,10 +1,12 @@
 NATO_stay_in_NATO = {
     allowed = {
-        original_tag = GRL
-        original_tag = FFR
-        original_tag = ENG
-        original_tag = HOL
-        original_tag = CAN
+	OR = {
+        	original_tag = GRL
+        	original_tag = FFR
+        	original_tag = ENG
+        	original_tag = HOL
+        	original_tag = CAN
+	}
     }
     enable = {
         has_idea = NATO_NATO_idea
