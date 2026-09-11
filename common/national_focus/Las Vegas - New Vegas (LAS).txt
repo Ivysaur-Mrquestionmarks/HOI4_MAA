@@ -4156,7 +4156,10 @@ focus_tree = {
 			focus = LAS_our_direction
 		}
 		available = {
-			has_country_leader = LAS_jason_spisak
+			has_country_leader = {
+				name = "Jason Spisak"
+				ruling_party = autocratic
+			}
 		}
 		completion_reward = {
 			hidden_effect = {
