@@ -203,6 +203,7 @@ focus_tree = {
 			has_completed_focus = VIR_the_End_of_the_Revolt
 		}
 		completion_reward = {
+			custom_effect_tooltip = unfinished_content_warning_tooltip
 			clr_country_flag = VIR_stayed_loyal_to_biden_flag
 			add_political_power = 15
 		}
@@ -590,6 +591,9 @@ focus_tree = {
 			focus = VIR_american_antifascist_workers_revolution
 			focus = VIR_olive_branch_to_antifa
 		}
+		allow_branch = {
+			always = no
+		}
 		completion_reward = {
 			
 		}
@@ -808,6 +812,9 @@ focus_tree = {
 		prerequisite = {
 			focus = VIR_american_antifascist_workers_revolution
 		}
+		allow_branch = {
+			always = no
+		}
 		completion_reward = {
 			
 		}
@@ -969,6 +976,9 @@ focus_tree = {
 		relative_position_id = VIR_american_antifascist_workers_revolution
 		prerequisite = {
 			focus = VIR_american_antifascist_workers_revolution
+		}
+		allow_branch = {
+			always = no
 		}
 		completion_reward = {
 			
@@ -1269,6 +1279,9 @@ focus_tree = {
 		prerequisite = {
 			focus = VIR_american_antifascist_workers_revolution
 		}
+		allow_branch = {
+			always = no
+		}
 		completion_reward = {
 			
 		}
@@ -1473,6 +1486,9 @@ focus_tree = {
 		prerequisite = {
 			focus = VIR_convene_the_workers_congress
 		}
+		allow_branch = {
+			always = no
+		}
 		mutually_exclusive = { focus = VIR_comrade_hinkle_triumphs } 
 		completion_reward = {
 			
@@ -1651,7 +1667,6 @@ focus_tree = {
 			focus = VIR_mass_democracy
 		}
 		completion_reward = {
-			
 		}
 	}
 	
@@ -1917,6 +1932,9 @@ focus_tree = {
 		relative_position_id = VIR_convene_the_workers_congress
 		prerequisite = {
 			focus = VIR_convene_the_workers_congress
+		}
+		allow_branch = {
+			always = no
 		}
 		mutually_exclusive = { focus = VIR_triumph_of_the_polittburo }
 		completion_reward = {
@@ -2836,6 +2854,7 @@ focus_tree = {
 			focus = VIR_revolutionary_order
 		}
 		completion_reward = {
+			custom_effect_tooltip = unfinished_content_warning_tooltip
 		}
 	}
 	focus = {
@@ -3177,6 +3196,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			custom_effect_tooltip = unfinished_content_warning_tooltip
 			clr_country_flag = VIR_stayed_loyal_to_biden_flag
 			unlock_decision_category_tooltip = VIR_crack_king
 		}
@@ -3415,6 +3435,9 @@ focus_tree = {
 		}
 		available = {
 			
+		}
+		allow_branch = {
+			always = no
 		}
 		mutually_exclusive = { focus = VIR_the_american_cartel }
 		completion_reward = {
@@ -3859,6 +3882,9 @@ focus_tree = {
 					}
 				}
 			}
+		}
+		allow_branch = {
+			always = no
 		}
 		mutually_exclusive = { focus = VIR_keep_our_fiefdom }
 		completion_reward = {
@@ -4913,6 +4939,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			
+			custom_effect_tooltip = unfinished_content_warning_tooltip
 		}
 	}
 	
@@ -5132,6 +5159,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			clr_country_flag = VIR_stayed_loyal_to_biden_flag
+			custom_effect_tooltip = unfinished_content_warning_tooltip
 			
 		}
 	}
@@ -5220,6 +5248,9 @@ focus_tree = {
 		relative_position_id = VIR_purge_the_bidenites
 		prerequisite = {
 			focus = VIR_purge_the_bidenites
+		}
+		allow_branch = {
+			always = no
 		}
 		completion_reward = {
 			
@@ -5515,6 +5546,9 @@ focus_tree = {
 		relative_position_id = VIR_purge_the_bidenites
 		prerequisite = {
 			focus = VIR_purge_the_bidenites
+		}
+		allow_branch = {
+			always = no
 		}
 		completion_reward = {
 			
@@ -6510,6 +6544,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = {
+			custom_effect_tooltip = unfinished_content_warning_tooltip
 			add_popularity = {
 				ideology = autocratic
 				popularity = 0.25

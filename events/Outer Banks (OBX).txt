@@ -1,1253 +1,6240 @@
-add_namespace = obx
-
-
-#tag switch to OBX for dem virginia
-country_event = {
-	id = obx.1
-	title = obx.1.t
-	desc = obx.1.d
-	picture = event_outer_banks_virginia
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.1.a
-	}
-	option = {
-		name = obx.1.b
-		OBX = { change_tag_from = VIR }
-		hidden_effect = { 
-			OBX = {
-				load_oob = OBX_2021
-				inherit_technology = VIR
-			}
+focus_tree = {
+	id = obx
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OBX
 		}
 	}
-}
+	default = no
+	continuous_focus_position = { x = 200 y = 1800 }
 
-#we are an isolated community
-country_event = {
-	id = obx.2
-	title = obx.2.t
-	desc = obx.2.d
-	picture = event_outer_banks_isolated_community
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.2.a
-	}
-}
+	###############Starting situation###############
 
-#we reject independence
-country_event = {
-	id = obx.3
-	title = obx.3.t
-	desc = obx.3.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.3.a
-	}
-}
-
-#a meeting to decide our future
-country_event = {
-	id = obx.4
-	title = obx.4.t
-	desc = obx.4.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.4.a
-		country_event = {
-			id = obx.5
+	focus = {
+		id = OBX_an_isolated_community
+		icon = GFX_goal_OBX_an_isolated_community
+		cost = 1
+		x = 5
+		y = 1
+		ai_will_do = { 
+			factor = 5
 		}
-	}
-}
-
-#pirates attack us
-country_event = {
-	id = obx.5
-	title = obx.5.t
-	desc = obx.5.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.5.a
-		country_event = {
-			id = obx.7
-		}
-	}
-	option = {
-		name = obx.5.b
-		country_event = {
-			id = obx.6
-		}
-	}
-}
-
-#pirates take over
-country_event = {
-	id = obx.6
-	title = obx.6.t
-	desc = obx.6.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.6.a
-		OBX_carl_cannon_jr = { promote_character = yes }
-		hidden_effect = { 
-			set_country_flag = pirate_takeover
-		}
-	}
-}
-
-#pirate attack repelled
-country_event = {
-	id = obx.7
-	title = obx.7.t
-	desc = obx.7.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.7.a
-		country_event = {
-			id = obx.8
-		}
-	}
-}
-
-#our future, pirates were repelled so we kinda have to start again/finish up
-country_event = {
-	id = obx.8
-	title = obx.8.t
-	desc = obx.8.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.8.a
-	}
-}
-
-#OBX captures atlanta event (for obx)
-country_event = {
-	id = obx.9
-	title = obx.9.t
-	desc = obx.9.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.9.a
-		hidden_effect = {
+		completion_reward = {
 			country_event = {
-				id = obx.25
-				days = 3
+				id = obx.2
 			}
 		}
 	}
-}
 
-#Militia disband
-country_event = {
-	id = obx.10
-	title = obx.10.t
-	desc = obx.10.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.10.a
-		hidden_effect = {
-			delete_unit_template_and_units = {
-    			division_template = "Carolina Revolutionaries"
-    			disband = yes #will refund equipment and manpower
+	focus = {
+		id = OBX_reject_independence
+		icon = GFX_goal_OBX_reject_independence
+		cost = 2
+		relative_position_id = OBX_an_isolated_community
+		x = -3
+		y = 1
+		ai_will_do = { 
+			base = 50
+		}
+		prerequisite = {
+			focus = OBX_an_isolated_community
+		}
+		mutually_exclusive = {
+			focus = OBX_our_own_path
+		}
+		completion_reward = {
+			country_event = {
+				id = obx.3
 			}
-			delete_unit_template_and_units = {
-    			division_template = "Carolina Revolutionaries 2"
-    			disband = yes #will refund equipment and manpower
-			}
-			delete_unit_template_and_units = {
-    			division_template = "Carolina Revolutionaries 3"
-    			disband = yes #will refund equipment and manpower
-			}
-    		remove_ideas = OBX_gun_production
-    		remove_ideas = OBX_marsh_masters
 		}
 	}
-}
 
-#GOP primary
-country_event = {
-	id = obx.11
-	title = obx.11.t
-	desc = obx.11.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.11.a
-		hidden_effect = {
-			set_country_flag = haley_win_primary
-			country_event = {
-				id = obx.12
-				days = 7
+	focus = {
+		id = OBX_rejoin_virginia
+		icon = GFX_goal_OBX_rejoin_virginia
+		cost = 3
+		relative_position_id = OBX_reject_independence
+		x = -1
+		y = 1
+		ai_will_do = { 
+			base = 95
+		}
+		prerequisite = {
+			focus = OBX_reject_independence
+		}
+		mutually_exclusive = {
+			focus = OBX_north_carolina_is_home
+		}
+		completion_reward = {
+			VIR = {
+				annex_country = {
+    				target = OBX
+    				transfer_troops = no
+				}
 			}
 		}
 	}
-	option = {
-		name = obx.11.b
-		hidden_effect = {
-			set_country_flag = scott_win_primary
-			country_event = {
-				id = obx.12
-				days = 7
-			}
-		}
-	}
-	option = {
-		name = obx.11.c
-		hidden_effect = {
-			set_country_flag = robinson_win_primary
-			country_event = {
-				id = obx.12
-				days = 7
-			}
-		}
-	}
-}
 
-#democrat primary
-country_event = {
-	id = obx.12
-	title = obx.12.t
-	desc = obx.12.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.12.a
-		hidden_effect = {
-			set_country_flag = jackson_win_primary
-			country_event = {
-				id = obx.13
-				days = 7
+	focus = {
+		id = OBX_north_carolina_is_home
+		icon = GFX_goal_OBX_north_carolina_is_home
+		cost = 3
+		relative_position_id = OBX_reject_independence
+		x = 1
+		y = 1
+		ai_will_do = { 
+			base = 5
+		}
+		prerequisite = {
+			focus = OBX_reject_independence
+		}
+		mutually_exclusive = {
+			focus = OBX_rejoin_virginia
+		}
+		completion_reward = {
+			CSA = {
+				annex_country = {
+    				target = OBX
+    				transfer_troops = no
+				}
 			}
 		}
 	}
-	option = {
-		name = obx.12.b
-		hidden_effect = {
-			set_country_flag = cooper_win_primary
-			country_event = {
-				id = obx.13
-				days = 7
-			}
-		}
-	}
-	option = {
-		name = obx.12.c
-		hidden_effect = {
-			set_country_flag = clyburn_win_primary
-			country_event = {
-				id = obx.13
-				days = 7
-			}
-		}
-	}
-}
-#earnhardt jr enters the race
-country_event = {
-	id = obx.13
-	title = obx.13.t
-	desc = obx.13.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.13.a
-		hidden_effect = {
-			country_event = {
-				id = obx.14
-				days = 7
-			}
-		}
-	}
-}
 
-#buffett enters the race
-country_event = {
-	id = obx.14
-	title = obx.14.t
-	desc = obx.14.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.14.a
+	focus = {
+		id = OBX_our_own_path
+		icon = GFX_goal_OBX_our_own_path
+		cost = 2
+		relative_position_id = OBX_an_isolated_community
+		x = 3
+		y = 1
+		ai_will_do = { 
+			base = 50
+		}
+		prerequisite = {
+			focus = OBX_an_isolated_community
+		}
+		mutually_exclusive = {
+			focus = OBX_reject_independence
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = OBX_an_interim_leader
+		icon = GFX_goal_OBX_an_interim_leader
+		cost = 1
+		relative_position_id = OBX_our_own_path
+		x = -2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_our_own_path
+		}
+		completion_reward = {
+			OBX_donald_mcree = { promote_character = yes }
+		}
+	}
+
+	focus = {
+		id = OBX_a_meeting_for_our_future
+		icon = GFX_goal_OBX_a_meeting_for_our_future
+		cost = 1
+		relative_position_id = OBX_our_own_path
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = { has_completed_focus = OBX_an_interim_leader }
+		prerequisite = {
+			focus = OBX_our_own_path
+		}
+		completion_reward = {
+			country_event = {
+				id = obx.4
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_prepare_for_liberation
+		icon = GFX_goal_OBX_prepare_for_liberation
+		cost = 2
+		relative_position_id = OBX_our_own_path
+		x = 2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = { has_completed_focus = OBX_a_meeting_for_our_future }
+		prerequisite = {
+			focus = OBX_our_own_path
+		}
+		completion_reward = {
+			custom_effect_tooltip = OBX_preparing_for_liberation_tooltip
+			hidden_effect = { 
+				set_country_flag = unlock_preparing_for_liberation_decisions
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_arm_fellow_oppressed_carolinians
+		icon = GFX_goal_OBX_arm_fellow_oppressed_carolinians
+		cost = 2
+		relative_position_id = OBX_a_meeting_for_our_future
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_an_interim_leader
+		}
+		prerequisite = {
+			focus = OBX_a_meeting_for_our_future
+		}
+		prerequisite = {
+			focus = OBX_prepare_for_liberation
+		}
+		completion_reward = {
+			add_ideas = OBX_gun_production
+		}
+	}
+
+	focus = {
+		id = OBX_reach_out_to_nc_leaders
+		icon = GFX_goal_OBX_reach_out_to_nc_leaders
+		cost = 3
+		relative_position_id = OBX_arm_fellow_oppressed_carolinians
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_arm_fellow_oppressed_carolinians
+		}
+		completion_reward = {
+			custom_effect_tooltip = OBX_reach_out_to_nc_leaders_unlocked_tooltip
+		}
+	}
+
+	focus = {
+		id = OBX_reach_out_to_sc_leaders
+		icon = GFX_goal_OBX_reach_out_to_sc_leaders
+		cost = 3
+		relative_position_id = OBX_arm_fellow_oppressed_carolinians
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_arm_fellow_oppressed_carolinians
+		}
+		completion_reward = {
+			custom_effect_tooltip = OBX_reach_out_to_sc_leaders_unlocked_tooltip
+		}
+	}
+
+	focus = {
+		id = OBX_fighting_against_evil
+		icon = GFX_goal_OBX_fighting_against_evil
+		cost = 4
+		relative_position_id = OBX_reach_out_to_nc_leaders
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_reach_out_to_nc_leaders
+		}
+		prerequisite = {
+			focus = OBX_reach_out_to_sc_leaders
+		}
+		completion_reward = {
+			custom_effect_tooltip = OBX_fighting_against_evil_tooltip
+		}
+	}
+
+	###############Democracy###############
+
+	focus = {
+		id = OBX_reform_government
+		icon = GFX_goal_OBX_Reform_the_Government
+		cost = 5
+		relative_position_id = OBX_an_isolated_community
+		x = 24
+		y = 0
+		ai_will_do = { 
+			factor = 5
+		}
+		available = { 
+			has_country_flag = carolinian_victory 
+		}
+		completion_reward = {
+			country_event = {
+				id = OBX.45
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_democratic_tradition
+		icon = GFX_goal_OBX_Democratic_Tradition 
+		cost = 2
+		relative_position_id = OBX_reform_government
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_reform_government
+		}
+		completion_reward = {
+			country_event = {
+				id = obx.11
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_jeff_jackson
+		icon = GFX_goal_OBX_Jeffrey_Jackson 
+		cost = 1
+		relative_position_id = OBX_democratic_tradition
+		x = -15
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jeff_jackson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_democratic_tradition
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+				id = obx.26
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_connect_with_the_people
+		icon = GFX_goal_OBX_Connect_with_the_People
+		cost = 5
+		relative_position_id = OBX_jeff_jackson
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jeff_jackson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_jeff_jackson
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.1
+			}
+			country_event = {
+				id = obx.27
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_transparency
+		icon = GFX_goal_OBX_Transparency
+		cost = 5
+		relative_position_id = OBX_jeff_jackson
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jeff_jackson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_jeff_jackson
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = OBX_root_out_corruption
+		icon = GFX_goal_OBX_Root_Out_Corruption
+		cost = 5
+		relative_position_id = OBX_connect_with_the_people
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jeff_jackson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_connect_with_the_people
+		}
+		prerequisite = {
+			focus = OBX_transparency
+		}
+		completion_reward = {
+			add_ideas = {
+				OBX_anticorruption
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_reform_criminal_justice
+		icon = GFX_goal_OBX_Reform_the_Criminal_Justice
+		cost = 5
+		relative_position_id = OBX_transparency
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jeff_jackson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_connect_with_the_people
+		}
+		prerequisite = {
+			focus = OBX_transparency
+		}
+		completion_reward = {
+			add_manpower = 10000
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = OBX_by_the_people_for_the_people
+		icon = GFX_goal_OBX_For_the_People_by_the_People
+		cost = 5
+		relative_position_id = OBX_root_out_corruption
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jeff_jackson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_root_out_corruption
+		}
+		prerequisite = {
+			focus = OBX_reform_criminal_justice
+		}
+		completion_reward = {
+			add_ideas = OBX_for_the_people
+			country_event = {
+				id = obx.28
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_roy_cooper
+		icon = GFX_goal_OBX_Roy_Cooper 
+		cost = 1
+		relative_position_id = OBX_democratic_tradition
+		x = -10
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_roy_cooper
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_democratic_tradition
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+				id = obx.29
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_combat_opioid_epidemic
+		icon = GFX_goal_OBX_Combat_the_Opioid_Epidemic
+		cost = 5
+		relative_position_id = OBX_roy_cooper
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_roy_cooper
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_roy_cooper
+		}
+		completion_reward = {
+			add_ideas = OBX_opioid_crisis
+		}
+	}
+
+	focus = {
+		id = OBX_fight_for_equality
+		icon = GFX_goal_OBX_Fight_for_Equality
+		cost = 5
+		relative_position_id = OBX_roy_cooper
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_roy_cooper
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_roy_cooper
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = OBX_fund_public_healthcare
+		icon = GFX_goal_OBX_Fund_Public_Healthcare
+		cost = 5
+		relative_position_id = OBX_combat_opioid_epidemic
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_roy_cooper
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_combat_opioid_epidemic
+		}
+		prerequisite = {
+			focus = OBX_fight_for_equality
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OBX_opioid_crisis
+				add_idea = OBX_opioid_crisis2
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_work_to_combat_climate_change
+		icon = GFX_goal_OBX_Work_to_Combat_Cimate_Change
+		cost = 5
+		relative_position_id = OBX_fight_for_equality
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_roy_cooper
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_combat_opioid_epidemic
+		}
+		prerequisite = {
+			focus = OBX_fight_for_equality
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
+	}
+
+	focus = {
+		id = OBX_carolina_is_for_all
+		icon = GFX_goal_OBX_Carolina_is_for_All
+		cost = 5
+		relative_position_id = OBX_fund_public_healthcare
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_roy_cooper
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_fund_public_healthcare
+		}
+		prerequisite = {
+			focus = OBX_work_to_combat_climate_change
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.1
+			}
+			country_event = {
+				id = obx.30
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_jim_clyburn
+		icon = GFX_goal_OBX_Jim_Clyburn 
+		cost = 1
+		relative_position_id = OBX_democratic_tradition
+		x = -5
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jim_clyburn
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_democratic_tradition
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+				id = obx.31
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_protect_organized_labor
+		icon = GFX_goal_OBX_Protect_Organized_Labor
+		cost = 5
+		relative_position_id = OBX_jim_clyburn
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jim_clyburn
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_jim_clyburn
+		}
+		completion_reward = {
+			add_ideas = OBX_organized_labor
+		}
+	}
+
+	focus = {
+		id = OBX_expand_our_ports
+		icon = GFX_goal_OBX_Expand_Our_Ports
+		cost = 5
+		relative_position_id = OBX_jim_clyburn
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jim_clyburn
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_jim_clyburn
+		}
+		completion_reward = {
+			532 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            325 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+            }
+		}
+	}
+
+	focus = {
+		id = OBX_support_minority_groups
+		icon = GFX_goal_OBX_Support_Minority_Groups
+		cost = 5
+		relative_position_id = OBX_protect_organized_labor
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jim_clyburn
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_protect_organized_labor
+		}
+		prerequisite = {
+			focus = OBX_expand_our_ports
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = OBX_nuclear_energy_incentives
+		icon = GFX_goal_OBX_Nuclear_Incentives
+		cost = 5
+		relative_position_id = OBX_expand_our_ports
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jim_clyburn
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_protect_organized_labor
+		}
+		prerequisite = {
+			focus = OBX_expand_our_ports
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_equity_and_progress
+		icon = GFX_goal_OBX_Equity_and_Progress
+		cost = 5
+		relative_position_id = OBX_support_minority_groups
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jim_clyburn
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_support_minority_groups
+		}
+		prerequisite = {
+			focus = OBX_nuclear_energy_incentives
+		}
+		completion_reward = {
+			add_ideas = OBX_progress
+			country_event = {
+				id = obx.32
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_nikki_haley
+		icon = GFX_goal_OBX_Nikki_Haley
+		cost = 1
+		relative_position_id = OBX_democratic_tradition
+		x = 5
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_nikki_haley
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_democratic_tradition
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+				id = obx.33
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_modern_reaganomics
+		icon = GFX_goal_OBX_Reaganomics
+		cost = 5
+		relative_position_id = OBX_nikki_haley
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_nikki_haley
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_nikki_haley
+		}
+		completion_reward = {
+			add_ideas = OBX_reaganomics
+		}
+	}
+
+	focus = {
+		id = OBX_reach_out_to_european_allies
+		icon = GFX_goal_OBX_Reach_Out_to_European_Allies
+		cost = 5
+		relative_position_id = OBX_nikki_haley
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_nikki_haley
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_nikki_haley
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 1000
+    			producer = BEF
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 1000
+    			producer = FFR
+			}
+			country_event = {
+				id = obx.34
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_support_the_mic
+		icon = GFX_goal_OBX_Support_the_Military_Industrial_Complex
+		cost = 5
+		relative_position_id = OBX_modern_reaganomics
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_nikki_haley
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_modern_reaganomics
+		}
+		prerequisite = {
+			focus = OBX_reach_out_to_european_allies
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            swap_ideas = {
+            	remove_idea = OBX_reaganomics
+            	add_idea = OBX_reaganomics2
+            }
+		}
+	}
+
+	focus = {
+		id = OBX_apply_for_un_membership
+		icon = GFX_goal_OBX_Apply_for_UN_Membership
+		cost = 5
+		relative_position_id = OBX_reach_out_to_european_allies
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_nikki_haley
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_modern_reaganomics
+		}
+		prerequisite = {
+			focus = OBX_reach_out_to_european_allies
+		}
+		completion_reward = {
+			add_ideas = OBX_un_member
+			country_event = {
+				id = obx.35
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_carolina_on_world_stage
+		icon = GFX_goal_OBX_Carolina_on_the_World_Stage
+		cost = 5
+		relative_position_id = OBX_support_the_mic
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_nikki_haley
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus =OBX_support_the_mic
+		}
+		prerequisite = {
+			focus = OBX_apply_for_un_membership
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+			country_event = {
+				id = obx.37
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_tim_scott
+		icon = GFX_goal_OBX_Tim_Scott
+		cost = 1
+		relative_position_id = OBX_democratic_tradition
+		x = 10
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_tim_scott
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_democratic_tradition
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+				id = obx.38
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_balanced_budget
+		icon = GFX_goal_OBX_A_Balanced_Budget
+		cost = 5
+		relative_position_id = OBX_tim_scott
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_tim_scott
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_tim_scott
+		}
+		completion_reward = {
+			add_ideas = OBX_balanced_budget
+		}
+	}
+
+	focus = {
+		id = OBX_promote_10_commandments
+		icon = GFX_goal_OBX_Promote_the_Ten_Commandments
+		cost = 5
+		relative_position_id = OBX_tim_scott
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_tim_scott
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_tim_scott
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = -0.15
+		}
+	}
+
+	focus = {
+		id = OBX_abortion_ban
+		icon = GFX_goal_OBX_Abortion_Ban
+		cost = 5
+		relative_position_id = OBX_balanced_budget
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_tim_scott
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_balanced_budget
+		}
+		prerequisite = {
+			focus = OBX_promote_10_commandments
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = republican
+				popularity = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_put_god_back_in_schools
+		icon = GFX_goal_OBX_Put_God_Back_in_Schools
+		cost = 5
+		relative_position_id = OBX_promote_10_commandments
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_tim_scott
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_balanced_budget
+		}
+		prerequisite = {
+			focus = OBX_promote_10_commandments
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = OBX_faith_fueled_stewardship
+		icon = GFX_goal_OBX_Faith_fueled_Stewardship
+		cost = 5
+		relative_position_id = OBX_abortion_ban
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_tim_scott
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_abortion_ban
+		}
+		prerequisite = {
+			focus = OBX_put_god_back_in_schools
+		}
+		completion_reward = {
+			add_ideas = OBX_servant_of_the_lord
+			country_event = {
+				id = obx.39
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_mark_robinson
+		icon = GFX_goal_OBX_Mark_Robinson
+		cost = 1
+		relative_position_id = OBX_democratic_tradition
+		x = 15
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_mark_robinson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_democratic_tradition
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+				id = obx.40
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_move_away_from_science
+		icon = GFX_goal_OBX_Stay_Away_from_Science
+		cost = 5
+		relative_position_id = OBX_mark_robinson
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_mark_robinson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_mark_robinson
+		}
+		completion_reward = {
+			add_ideas = OBX_science_denial
+		}
+	}
+
+	focus = {
+		id = OBX_take_down_jews_commies
+		icon = GFX_goal_OBX_Take_Down_Jews_and_Communists
+		cost = 5
+		relative_position_id = OBX_mark_robinson
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_mark_robinson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_mark_robinson
+		}
+		completion_reward = {
+			add_manpower = -10000
+			add_stability = 0.2
+			add_war_support = 0.2
+			country_event = {
+				id = obx.39
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_ban_socialism
+		icon = GFX_goal_OBX_Ban_Soclialism
+		cost = 5
+		relative_position_id = OBX_move_away_from_science
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_mark_robinson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_move_away_from_science
+		}
+		prerequisite = {
+			focus = OBX_take_down_jews_commies
+		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = authoritarian_left
+    			popularity = -0.05
+			}
+			add_popularity = {
+    			ideology = libertarian_right
+    			popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_criminalize_godless_activities
+		icon = GFX_goal_OBX_Criminalize_Godless_Activities
+		cost = 5
+		relative_position_id = OBX_take_down_jews_commies
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_mark_robinson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_move_away_from_science
+		}
+		prerequisite = {
+			focus = OBX_take_down_jews_commies
+		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = libertarian_left
+    			popularity = -0.05
+			}
+			add_popularity = {
+    			ideology = libertarian_right
+    			popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_cleansing_carolina_of_heathens
+		icon = GFX_goal_OBX_Cleansing_Carolina_of_Heathens
+		cost = 5
+		relative_position_id = OBX_ban_socialism
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_mark_robinson
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = OBX_ban_socialism
+		}
+		prerequisite = {
+			focus = OBX_criminalize_godless_activities
+		}
+		completion_reward = {
+			add_ideas = OBX_pure_carolina
+			country_event = {
+				id = obx.41
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_begin_reconstruction
+		icon = GFX_goal_OBX_Begin_Reconstruction
+		cost = 5
+		relative_position_id = OBX_democratic_tradition
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_democratic_tradition
+		}
+		completion_reward = {
+			add_timed_idea = {
+    			idea = OBX_rebuilding_carolina
+    			days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_protect_rights_of_all_carolinians
+		icon = GFX_goal_OBX_Protect_the_Rights_of_all_Carolinians
+		cost = 5
+		relative_position_id = OBX_begin_reconstruction
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_begin_reconstruction
+		}
+		completion_reward = {
+			add_ideas = OBX_carolinian_bill_of_rights
+		}
+	}
+
+	focus = {
+		id = OBX_agriculture_grants
+		icon = GFX_goal_OBX_Agricultural_Grants
+		cost = 5
+		relative_position_id = OBX_protect_rights_of_all_carolinians
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_protect_rights_of_all_carolinians
+		}
+		completion_reward = {
+			add_state_core = 263
+			add_state_core = 283
+			add_state_core = 532
+		}
+	}
+
+	focus = {
+		id = OBX_bring_jobs_to_cities
+		icon = GFX_goal_OBX_Bring_Jobs_to_Cities
+		cost = 5
+		relative_position_id = OBX_agriculture_grants
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_agriculture_grants
+		}
+		completion_reward = {
+			add_state_core = 656
+			add_state_core = 534
+			add_state_core = 282
+		}
+	}
+
+	focus = {
+		id = OBX_carolinian_universities
+		icon = GFX_goal_OBX_Carolinian_Universities
+		cost = 5
+		relative_position_id = OBX_agriculture_grants
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_agriculture_grants
+		}
+		completion_reward = {
+			add_state_core = 264
+			add_state_core = 284
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = OBX_mountain_development
+		icon = GFX_goal_OBX_Mountain_Development
+		cost = 5
+		relative_position_id = OBX_bring_jobs_to_cities
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_bring_jobs_to_cities
+		}
+		prerequisite = {
+			focus = OBX_carolinian_universities
+		}
+		completion_reward = {
+			add_state_core = 266
+			add_state_core = 331
+			add_resource = {
+    			type = steel
+    			amount = 25
+    			state = 266
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_look_out_for_overlooked_regions
+		icon = GFX_goal_OBX_Look_Out_for_Overlooked_Regions
+		cost = 5
+		relative_position_id = OBX_bring_jobs_to_cities
+		x = 2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_bring_jobs_to_cities
+		}
+		prerequisite = {
+			focus = OBX_carolinian_universities
+		}
+		completion_reward = {
+			add_state_core = 308
+			add_state_core = 533
+			add_state_core = 325
+			add_state_core = 275
+			add_state_core = 293
+		}
+	}
+
+	focus = {
+		id = OBX_carolina_united_once_more
+		icon = GFX_goal_OBX_Carolina_United_Once_More
+		cost = 2
+		relative_position_id = OBX_mountain_development
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_mountain_development
+		}
+		prerequisite = {
+			focus = OBX_look_out_for_overlooked_regions
+		}
+		completion_reward = {
+			country_event = {
+				id = obx.42
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_side_with_biden
+		icon = GFX_goal_OBX_Side_with_Biden
+		cost = 3
+		relative_position_id = OBX_carolina_united_once_more
+		x = -9
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		mutually_exclusive = {
+			focus = OBX_side_with_trump
+			focus = OBX_on_our_own
+		}
+		prerequisite = {
+			focus = OBX_carolina_united_once_more
+		}
+		completion_reward = {
+			add_opinion_modifier = { 
+				target = FRA 
+				modifier = huge_increase 
+			}
+			FRA = {
+				add_opinion_modifier = { 
+				target = OBX 
+				modifier = huge_increase 
+				}
+			}
+			country_event = {
+				id = obx.43
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_join_the_legitimists
+		icon = GFX_goal_OBX_Join_the_Legitimists
+		cost = 5
+		relative_position_id = OBX_side_with_biden
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_side_with_biden
+		}
+		completion_reward = {
+			FRA = {
+				add_to_faction = OBX
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_prepare_for_war_with_trump
+		icon = GFX_goal_OBX_Prepare_for_War_with_Trump
+		cost = 5
+		relative_position_id = OBX_join_the_legitimists
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_join_the_legitimists
+		}
+		completion_reward = {
+			add_ideas = OBX_fight_against_trumpism
+		}
+	}
+
+	focus = {
+		id = OBX_on_our_own
+		icon = GFX_goal_OBX_On_Our_Own
+		cost = 5
+		relative_position_id = OBX_carolina_united_once_more
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		mutually_exclusive = {
+			focus = OBX_side_with_trump
+			focus = OBX_side_with_biden
+		}
+		prerequisite = {
+			focus = OBX_carolina_united_once_more
+		}
+		completion_reward = {
+			country_event = {
+				id = obx.46
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_regional_identity
+		icon = GFX_goal_OBX_Regional_Identity
+		cost = 5
+		relative_position_id = OBX_on_our_own
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_on_our_own
+		}
+		completion_reward = {
+			add_war_support = 0.3
+		}
+	}
+
+	focus = {
+		id = OBX_carolina_our_home
+		icon = GFX_goal_OBX_Carolina_Our_Home
+		cost = 3
+		relative_position_id = OBX_regional_identity
+		x = -2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_regional_identity
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = OBX_stability
+		icon = GFX_goal_OBX_Stability
+		cost = 3
+		relative_position_id = OBX_carolina_our_home
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_carolina_our_home
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = OBX_sanity
+		icon = GFX_goal_OBX_Sanity
+		cost = 3
+		relative_position_id = OBX_carolina_our_home
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_carolina_our_home
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_animis_opibusque_parati
+		icon = GFX_goal_OBX_Animis_Opibusque_Parati
+		cost = 5
+		relative_position_id = OBX_stability
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_stability
+		}
+		prerequisite = {
+			focus = OBX_sanity
+		}
+		completion_reward = {
+			add_ideas = OBX_animis_opibusque_parati_idea
+		}
+	}
+
+	focus = {
+		id = OBX_liberate_virginia
+		icon = GFX_goal_OBX_Liberate_Virginia
+		cost = 5
+		relative_position_id = OBX_regional_identity
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_regional_identity
+		}
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = VIR
+			}
+			hidden_effect = {
+				FRA = {
+					remove_from_faction = VIR
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_integrate_virginia
+		icon = GFX_goal_OBX_Intergrate_Virginia
+		cost = 5
+		relative_position_id = OBX_liberate_virginia
+		x = 2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_liberate_virginia
+		}
+		available = {
+			NOT = {
+				country_exists = VIR
+				country_exists = RVR
+			}
+		}
+		completion_reward = {
+			add_state_core = 169
+			add_state_core = 188 
+			add_state_core = 332
+			add_state_core = 371
+			add_state_core = 375
+			add_state_core = 380
+			add_state_core = 477
+			add_state_core = 500
+			add_state_core = 501
+			add_state_core = 502
+			add_state_core = 654
+			add_state_core = 655
+			hidden_effect = {
+				country_event = {
+					id = obx.48
+					days = 7
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_liberate_georgia
+		icon = GFX_goal_OBX_Liberate_Georgia
+		cost = 5
+		relative_position_id = OBX_liberate_virginia
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_liberate_virginia
+		}
+		available = {
+			has_completed_focus = OBX_integrate_virginia
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = CSA
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_integrate_georgia
+		icon = GFX_goal_OBX_Integrate_Georgia
+		cost = 5
+		relative_position_id = OBX_liberate_georgia
+		x = 2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_liberate_georgia
+		}
+		available = {
+			NOT = {
+				country_exists = CSA
+			}
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		completion_reward = {
+			add_state_core = 290
+			add_state_core = 299
+			add_state_core = 300
+			add_state_core = 309
+			add_state_core = 328
+			add_state_core = 329
+			add_state_core = 506
+			add_state_core = 507
+			add_state_core = 508
+			add_state_core = 509
+			add_state_core = 602
+			add_state_core = 324
+			add_state_core = 603
+			add_state_core = 327
+			hidden_effect = {
+				if = {
+					every_owned_state = {
+						limit = {
+							AND = {
+								is_core_of = CSA
+								is_core_of = OBX
+							}
+						}
+						remove_core_of = CSA
+					}
+				}
+			}
+			release = CSA
+        	if = {
+            	limit = {
+                	OR = {
+                    	has_dlc = "Together for Victory"
+                    	has_dlc = "Man the Guns"
+                	}
+            	}
+            	set_autonomy = {
+                	target = CSA
+                	autonomous_state = autonomy_integrated_puppet
+                	freedom_level = 0.2
+            	}
+            }
+            else = {
+                puppet = CSA
+            }
+		}
+	}
+
+	focus = {
+		id = OBX_liberate_florida
+		icon = GFX_goal_OBX_Liberate_Florida
+		cost = 5
+		relative_position_id = OBX_liberate_georgia
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_completed_focus = OBX_integrate_georgia
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_liberate_georgia
+		}
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = FLO
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_integrate_florida
+		icon = GFX_goal_OBX_Integrate_Florida
+		cost = 5
+		relative_position_id = OBX_liberate_florida
+		x = 2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_liberate_florida
+		}
+		available = {
+			NOT = {
+				country_exists = FLO
+			}
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		completion_reward = {
+			add_state_core = 322
+			add_state_core = 323
+			add_state_core = 324
+			add_state_core = 327
+			add_state_core = 339 
+			add_state_core = 345
+			add_state_core = 346
+			add_state_core = 353
+			add_state_core = 397
+			add_state_core = 577
+			add_state_core = 578
+			add_state_core = 579
+			add_state_core = 580
+			add_state_core = 581
+			add_state_core = 582
+			add_state_core = 583
+			add_state_core = 584
+			add_state_core = 602
+			add_state_core = 603
+		}
+	}
+
+	focus = {
+		id = OBX_establish_the_south_atlantic_republic
+		icon = GFX_goal_OBX_Establish_the_South_Atlantic_Republic
+		cost = 3
+		relative_position_id = OBX_integrate_florida
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			owns_state = 188
+			owns_state = 506
+			owns_state = 580
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_integrate_virginia
+		}
+		prerequisite = {
+			focus = OBX_integrate_georgia
+		}
+		prerequisite = {
+			focus = OBX_integrate_florida
+		}
+		completion_reward = {
+			country_event = {
+				id = obx.47
+			}
+			set_cosmetic_tag = OBX_South_Atlantic_Republic
+			hidden_effect = {
+				set_party_name = {
+    				ideology = republican
+    				long_name = OBX_SAR_GOP_long
+    				name = OBX_SAR_GOP
+				}
+				set_party_name = {
+    				ideology = democrat
+    				long_name = OBX_SAR_DEM_long
+    				name = OBX_SAR_DEM
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_side_with_trump
+		icon = GFX_goal_OBX_Side_with_Trump
+		cost = 3
+		relative_position_id = OBX_carolina_united_once_more
+		x = 9
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		mutually_exclusive = {
+			focus = OBX_side_with_biden
+			focus = OBX_on_our_own
+		}
+		prerequisite = {
+			focus = OBX_carolina_united_once_more
+		}
+		completion_reward = {
+			country_event = {
+				id = obx.44
+			}
+			add_opinion_modifier = { 
+				target = USA 
+				modifier = huge_increase 
+			}
+			USA = {
+				add_opinion_modifier = { 
+				target = OBX 
+				modifier = huge_increase 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_join_the_loyalists
+		icon = GFX_goal_OBX_Join_the_Loyalists
+		cost = 5
+		relative_position_id = OBX_side_with_trump
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_side_with_trump
+		}
+		completion_reward = {
+			USA = {
+				add_to_faction = OBX
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_prepare_for_war_with_biden
+		icon = GFX_goal_OBX_Prepare_for_War_with_Biden
+		cost = 5
+		relative_position_id = OBX_join_the_loyalists
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_join_the_loyalists
+		}
+		completion_reward = {
+			add_ideas = OBX_fight_against_wokeness
+		}
+	}
+
+	focus = {
+		id = OBX_invest_in_armed_forces
+		icon = GFX_goal_OBX_Invest_in_Armed_Forces
+		cost = 5
+		relative_position_id = OBX_carolina_united_once_more
+		x = -6
+		y = 2
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_side_with_biden
+			focus = OBX_on_our_own
+			focus = OBX_side_with_trump
+		}
+		completion_reward = {
+			army_experience = 100
+			add_command_power = 30
+		}
+	}
+
+	focus = {
+		id = OBX_research_new_aircraft
+		icon = GFX_goal_OBX_Research_New_Aircrafts
+		cost = 5
+		relative_position_id = OBX_invest_in_armed_forces
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_invest_in_armed_forces
+		}
+		completion_reward = {
+			534 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 5
+                    instant_build = yes
+                }
+            }
+            add_tech_bonus = {
+				name = air_bonus
+				bonus = 1.0
+				uses = 1
+				category = medium_air
+			}
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_sea_power
+		icon = GFX_goal_OBX_Sea_Power
+		cost = 5
+		relative_position_id = OBX_research_new_aircraft
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_research_new_aircraft
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ship_bonus
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_equip_our_infantry
+		icon = GFX_goal_OBX_Equip_Our_Infantry
+		cost = 5
+		relative_position_id = OBX_invest_in_armed_forces
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_invest_in_armed_forces
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_provide_heavy_equipment
+		icon = GFX_goal_OBX_Provide_Heavy_Weaponry
+		cost = 5
+		relative_position_id = OBX_equip_our_infantry
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_equip_our_infantry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_revitalize_carolinian_industry
+		icon = GFX_goal_OBX_Revitalize_Carolinian_Industries
+		cost = 5
+		relative_position_id = OBX_carolina_united_once_more
+		x = 6
+		y = 2
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_side_with_biden
+			focus = OBX_on_our_own
+			focus = OBX_side_with_trump
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_restart_civilian_industries
+		icon = GFX_goal_OBX_Restart_Civilian_Industries
+		cost = 5
+		relative_position_id = OBX_revitalize_carolinian_industry
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_revitalize_carolinian_industry
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = OBX_increase_military_production
+		icon = GFX_goal_OBX_Increase_Military_Production
+		cost = 5
+		relative_position_id = OBX_restart_civilian_industries
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_restart_civilian_industries
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
+	}
+
+	focus = {
+		id = OBX_carolinian_ports
+		icon = GFX_goal_OBX_Carolinian_Ports
+		cost = 5
+		relative_position_id = OBX_revitalize_carolinian_industry
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_revitalize_carolinian_industry
+		}
+		completion_reward = {
+			265 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            308 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            283 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            532 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
+	}
+
+	focus = {
+		id = OBX_develop_our_land_for_industry
+		icon = GFX_goal_OBX_Develop_Land_for_Industries
+		cost = 5
+		relative_position_id = OBX_carolinian_ports
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = nato_agreement }
+			}
+		}
+		prerequisite = {
+			focus = OBX_carolinian_ports
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
+	}
+
+	###############NATO Intervention###############
+
+	focus = {
+		id = OBX_a_general_from_europe
+		icon = GFX_goal_OBX_A_General_from_Europe
+		cost = 8
+		relative_position_id = OBX_an_isolated_community
+		x = 55
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_flag = nato_agreement
+		}
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = OBX_ramp_up_industrial_production
+		icon = GFX_goal_OBX_Ramp_up_Industrial_Production
+		cost = 8
+		relative_position_id = OBX_a_general_from_europe
+		x = -7
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_a_general_from_europe
+		}
+		completion_reward = {
+			add_ideas = OBX_NATO_industrial_idea
+		}
+	}
+
+	focus = {
+		id = OBX_job_and_skill_development_training
+		icon = GFX_goal_OBX_Job_and_Development_Training
+		cost = 8
+		relative_position_id = OBX_ramp_up_industrial_production
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_ramp_up_industrial_production
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OBX_NATO_industrial_idea
+				add_idea = OBX_NATO_industrial_idea2
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_buisness_partnerships
+		icon = GFX_goal_OBX_Business_Partnerships
+		cost = 8
+		relative_position_id = OBX_job_and_skill_development_training
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_job_and_skill_development_training
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OBX_NATO_industrial_idea2
+				add_idea = OBX_NATO_industrial_idea3
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_infrastructure_investment
+		icon = GFX_goal_OBX_Infrastructure_Investments
+		cost = 8
+		relative_position_id = OBX_job_and_skill_development_training
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_job_and_skill_development_training
+		}
+		completion_reward = {
+			add_ideas = OBX_NATO_industrial_idea_infrastructure
+		}
+	}
+
+	focus = {
+		id = OBX_economic_prosperity_accord
+		icon = GFX_goal_OBX_Economic_Prosperity_Accord
+		cost = 8
+		relative_position_id = OBX_buisness_partnerships
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_buisness_partnerships
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OBX_NATO_industrial_idea3
+				add_idea = OBX_NATO_industrial_idea4
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_technology_grants
+		icon = GFX_goal_OBX_Technology_Grants
+		cost = 8
+		relative_position_id = OBX_infrastructure_investment
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_infrastructure_investment
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = OBX_economic_reniassance
+		icon = GFX_goal_OBX_Economic_Renaissance
+		cost = 8
+		relative_position_id = OBX_economic_prosperity_accord
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_economic_prosperity_accord
+		}
+		prerequisite = {
+			focus = OBX_technology_grants
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OBX_NATO_industrial_idea4
+				add_idea = OBX_NATO_industrial_idea5
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_nato_standards
+		icon = GFX_goal_OBX_NATO_Standards
+		cost = 8
+		relative_position_id = OBX_a_general_from_europe
+		x = -3
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_a_general_from_europe
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = OBX_NATO_training_Army
+				set_variable = {
+					var = OBX.var_army_improvement
+					value = 0.01
+				}
+				set_variable = {
+					var = OBX.var_army_improvement_supply
+					value = -0.01
+				}
+				set_variable = {
+					var = OBX.var_army_improvement_negatives
+					value = 0.01
+				}
+				set_variable = {
+					var = OBX.var_army_improvement_speed
+					value = 0.01
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = OBX_NATO_army_idea
+			}
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = OBX_nato_style_training
+		icon = GFX_goal_OBX_NATO_style_Training
+		cost = 8
+		relative_position_id = OBX_nato_standards
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_nato_standards
+		}
+		completion_reward = {
+			army_experience = 15
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+			custom_effect_tooltip = OBX_nato_army_upgrade_tt
+		}
+	}
+
+	focus = {
+		id = OBX_subsidize_defense_contractors
+		icon = GFX_goal_OBX_Subsidize_Military_Contractors
+		cost = 8
+		relative_position_id = OBX_nato_style_training
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_nato_style_training
+		}
+		completion_reward = {
 			if = {
-				limit = { 
-					has_country_flag = haley_win_primary
-					has_country_flag = jackson_win_primary
-				}
-				country_event = {
-					id = obx.15
-					days = 10
+				limit = { has_dlc = "Arms Against Tyranny" }
+				every_military_industrial_organization = {
+					add_mio_funds = 500
 				}
 			}
-			else_if = {	
-				limit = { 
-					has_country_flag = haley_win_primary
-					has_country_flag = cooper_win_primary
-				}
-				country_event = {
-					id = obx.16
-					days = 10
-				}
-			}
-			else_if = {	
-				limit = { 
-					has_country_flag = haley_win_primary
-					has_country_flag = clyburn_win_primary
-				}
-				country_event = {
-					id = obx.17
-					days = 10
-				}
-			}
-			else_if = {	
-				limit = { 
-					has_country_flag = scott_win_primary
-					has_country_flag = jackson_win_primary
-				}
-				country_event = {
-					id = obx.18
-					days = 10
-				}
-			}
-			else_if = {	
-				limit = { 
-					has_country_flag = scott_win_primary
-					has_country_flag = cooper_win_primary
-				}
-				country_event = {
-					id = obx.19
-					days = 10
-				}
-			}
-			else_if = {	
-				limit = { 
-					has_country_flag = scott_win_primary
-					has_country_flag = clyburn_win_primary
-				}
-				country_event = {
-					id = obx.20
-					days = 10
-				}
-			}
-			else_if = {	
-				limit = { 
-					has_country_flag = robinson_win_primary
-					has_country_flag = jackson_win_primary
-				}
-				country_event = {
-					id = obx.21
-					days = 10
-				}
-			}
-			else_if = {	
-				limit = { 
-					has_country_flag = robinson_win_primary
-					has_country_flag = cooper_win_primary
-				}
-				country_event = {
-					id = obx.22
-					days = 10
-				}
-			}
-			else_if = {	
-				limit = { 
-					has_country_flag = robinson_win_primary
-					has_country_flag = clyburn_win_primary
-				}
-				country_event = {
-					id = obx.23
-					days = 10
-				}
-			}
-	}
-}
-
-#election nikki/jackson
-country_event = {
-	id = obx.15
-	title = obx.15.t
-	desc = obx.15.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.15.a
-		OBX_nikki_haley = { promote_character = yes }
-	}
-	option = {
-		name = obx.15.b
-		OBX_jeff_jackson = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.15.c
-		OBX_dale_earnhardt_jr = { promote_character = yes }
-		set_politics = { ruling_party = libertarian_right }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.15.d
-		OBX_jimmy_buffett = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-}
-
-#election nikki/cooper
-country_event = {
-	id = obx.16
-	title = obx.16.t
-	desc = obx.16.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.16.a
-		OBX_nikki_haley = { promote_character = yes }
-	}
-	option = {
-		name = obx.16.b
-		OBX_roy_cooper = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.16.c
-		OBX_dale_earnhardt_jr = { promote_character = yes }
-		set_politics = { ruling_party = libertarian_right }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.16.d
-		OBX_jimmy_buffett = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-}
-
-#election nikki/clyburn
-country_event = {
-	id = obx.17
-	title = obx.17.t
-	desc = obx.17.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.17.a
-		OBX_nikki_haley = { promote_character = yes }
-	}
-	option = {
-		name = obx.17.b
-		OBX_jim_clyburn = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.17.c
-		OBX_dale_earnhardt_jr = { promote_character = yes }
-		set_politics = { ruling_party = libertarian_right }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.17.d
-		OBX_jimmy_buffett = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-}
-
-#election scott/jackson
-country_event = {
-	id = obx.18
-	title = obx.18.t
-	desc = obx.18.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.18.a
-		OBX_tim_scott = { promote_character = yes }
-	}
-	option = {
-		name = obx.18.b
-		OBX_jeff_jackson = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.18.c
-		OBX_dale_earnhardt_jr = { promote_character = yes }
-		set_politics = { ruling_party = libertarian_right }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.18.d
-		OBX_jimmy_buffett = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-}
-
-#election scott/cooper
-country_event = {
-	id = obx.19
-	title = obx.19.t
-	desc = obx.19.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.19.a
-		OBX_tim_scott = { promote_character = yes }
-	}
-	option = {
-		name = obx.19.b
-		OBX_roy_cooper = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.19.c
-		OBX_dale_earnhardt_jr = { promote_character = yes }
-		set_politics = { ruling_party = libertarian_right }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.19.d
-		OBX_jimmy_buffett = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-}
-
-#election scott/clyburn
-country_event = {
-	id = obx.20
-	title = obx.20.t
-	desc = obx.20.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.20.a
-		OBX_tim_scott = { promote_character = yes }
-	}
-	option = {
-		name = obx.20.b
-		OBX_jim_clyburn = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.20.c
-		OBX_dale_earnhardt_jr = { promote_character = yes }
-		set_politics = { ruling_party = libertarian_right }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.20.d
-		OBX_jimmy_buffett = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-}
-
-#election robinson/jackson
-country_event = {
-	id = obx.21
-	title = obx.21.t
-	desc = obx.21.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.21.a
-		OBX_mark_robinson = { promote_character = yes }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.21.b
-		OBX_jeff_jackson = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.21.c
-		OBX_dale_earnhardt_jr = { promote_character = yes }
-		set_politics = { ruling_party = libertarian_right }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.21.d
-		OBX_jimmy_buffett = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-}
-
-#election robinson/cooper
-country_event = {
-	id = obx.22
-	title = obx.22.t
-	desc = obx.22.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.23.a
-		OBX_mark_robinson = { promote_character = yes }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.23.b
-		OBX_roy_cooper = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.23.c
-		OBX_dale_earnhardt_jr = { promote_character = yes }
-		set_politics = { ruling_party = libertarian_right }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.23.d
-		OBX_jimmy_buffett = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-}
-
-#election robinson/clyburn
-country_event = {
-	id = obx.23
-	title = obx.23.t
-	desc = obx.23.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.23.a
-		OBX_mark_robinson = { promote_character = yes }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.23.b
-		OBX_jim_clyburn = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.23.c
-		OBX_dale_earnhardt_jr = { promote_character = yes }
-		set_politics = { ruling_party = libertarian_right }
-		add_popularity = {
-			ideology = libertarian_right
-			popularity = 0.4
-		}
-	}
-	option = {
-		name = obx.23.d
-		OBX_jimmy_buffett = { promote_character = yes }
-		set_politics = { ruling_party = democrat }
-		add_popularity = {
-			ideology = democrat
-			popularity = 0.4
-		}
-	}
-}
-
-#international atlanta taken by carolinian rebels event
-news_event = {
-	id = obx.24
-	title = obx.24.t
-	desc = obx.24.d
-	picture = event_news_war_with_canada
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = obx.24.a
-	}
-}
-
-#Atlanta Peace Accord
-country_event = {
-	id = obx.25
-	title = obx.25.t
-	desc = obx.25.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.25.a
-		hidden_effect = {
-			white_peace = { tag = CSA }
-			clr_country_flag = carolina_revolt_occuring
-			OBX = {
-				transfer_state = 263
-				transfer_state = 264
-				transfer_state = 265
-				transfer_state = 266
-				transfer_state = 275
-				transfer_state = 308
-				transfer_state = 331
-				transfer_state = 516
-				transfer_state = 534
-				transfer_state = 282
-				transfer_state = 283
-				transfer_state = 284
-				transfer_state = 293
-				transfer_state = 325
-				transfer_state = 532
-				transfer_state = 533
-				transfer_state = 656
-				transfer_state = 293
-			}
-			APA = {
-				transfer_state = 260
-				transfer_state = 261
-				transfer_state = 262
-				transfer_state = 271
-				transfer_state = 280
-				transfer_state = 333
-				transfer_state = 591
-				transfer_state = 592
-				transfer_state = 593
-				add_state_core = 260
-				add_state_core = 261
-				add_state_core = 262
-				add_state_core = 271
-				add_state_core = 280
-				add_state_core = 333
-				add_state_core = 591
-				add_state_core = 592
-				add_state_core = 593
-			}
-			APA = {
-				load_focus_tree	= generic_focus
-				set_capital = {state = 260}
-			}
-			country_event = {
-				id = obx.10
-				days = 7
-			}
-			set_country_flag = carolinian_victory
-			add_ideas = OBX_broken_nation
-		}
-	}
-}
-
-#jeff jackson elected
-country_event = {
-	id = obx.26
-	title = obx.26.t
-	desc = obx.26.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.26.a
-	}
-}
-
-#jeff jackson connecting with the people, idk
-country_event = {
-	id = obx.27
-	title = obx.27.t
-	desc = obx.27.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.27.a
-	}
-}
-
-#jeff jackson has created a country for the people, by the people
-country_event = {
-	id = obx.28
-	title = obx.28.t
-	desc = obx.28.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.28.a
-	}
-}
-
-#roy cooper elected
-country_event = {
-	id = obx.29
-	title = obx.29.t
-	desc = obx.29.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.29.a
-	}
-}
-
-#carolina is for all
-country_event = {
-	id = obx.30
-	title = obx.30.t
-	desc = obx.30.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.30.a
-	}
-}
-
-#jim clyburn elected
-country_event = {
-	id = obx.31
-	title = obx.31.t
-	desc = obx.31.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.31.a
-	}
-}
-
-#jim clyburn is supporting progress (social and science and all that stuff)
-country_event = {
-	id = obx.32
-	title = obx.32.t
-	desc = obx.32.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.32.a
-	}
-}
-
-#nikki haley elected
-country_event = {
-	id = obx.33
-	title = obx.33.t
-	desc = obx.33.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.33.a
-	}
-}
-
-#haley reaching out to european allies
-country_event = {
-	id = obx.34
-	title = obx.34.t
-	desc = obx.34.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.34.a
-	}
-}
-
-#haley UN speech to apply
-country_event = {
-	id = obx.35
-	title = obx.35.t
-	desc = obx.35.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.35.a
-		country_event = {
-			id = obx.36
-			days = 10
-		}
-	}
-}
-
-#haley gets into UN
-country_event = {
-	id = obx.36
-	title = obx.36.t
-	desc = obx.36.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.36.a
-	}
-}
-
-#carolina is a member of the global communtiy now, success for globalism!!!
-country_event = {
-	id = obx.37
-	title = obx.37.t
-	desc = obx.37.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.37.a
-	}
-}
-
-#tim scott elected
-country_event = {
-	id = obx.38
-	title = obx.38.t
-	desc = obx.38.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.38.a
-	}
-}
-
-#tim scott has succeeded in bringing carolina closer to god
-country_event = {
-	id = obx.39
-	title = obx.39.t
-	desc = obx.39.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.39.a
-	}
-}
-
-#mark robinson elected
-country_event = {
-	id = obx.40
-	title = obx.40.t
-	desc = obx.40.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.40.a
-	}
-}
-
-#carolina has been cleansed of heathans by robinson
-country_event = {
-	id = obx.41
-	title = obx.41.t
-	desc = obx.41.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.41.a
-	}
-}
-
-#carolina united once more
-country_event = {
-	id = obx.42
-	title = obx.42.t
-	desc = obx.42.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.42.a
-		set_cosmetic_tag = OBX_United_Carolina
-		hidden_effect = {
-			set_party_name = {
-    			ideology = republican
-    			long_name = OBX_UC_GOP_long
-    			name = OBX_UC_GOP
-			}
-			set_party_name = {
-    			ideology = democrat
-    			long_name = OBX_UC_DEM_long
-    			name = OBX_UC_DEM
+			else = {
+				add_ideas = OBX_NATO_military_industrial_complex
 			}
 		}
 	}
-}
 
-#sidin wit bidin
-country_event = {
-	id = obx.43
-	title = obx.43.t
-	desc = obx.43.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.43.a
-	}
-}
-
-#siding with trump
-country_event = {
-	id = obx.44
-	title = obx.44.t
-	desc = obx.44.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.44.a
-	}
-}
-
-#reform government
-country_event = {
-	id = obx.45
-	title = obx.45.t
-	desc = obx.45.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.45.a
-		set_capital = {state = 534}
-	}
-}
-
-#on our own pt 2
-country_event = {
-	id = obx.46
-	title = obx.46.t
-	desc = obx.46.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.46.a
-	}
-}
-
-#SAR established
-country_event = {
-	id = obx.47
-	title = obx.47.t
-	desc = obx.47.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.47.a
-	}
-}
-
-#reports of issues in norfolk, do we send a scouting party?
-country_event = {
-	id = obx.48
-	title = obx.48.t
-	desc = obx.48.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.48.a
-		hidden_effect = {
-			country_event = {
-				id = obx.49
-				days = 1
+	focus = {
+		id = OBX_rapid_response_readiness
+		icon = GFX_goal_OBX_Rapid_Response_Readiness
+		cost = 8
+		relative_position_id = OBX_nato_style_training
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_nato_style_training
+		}
+		completion_reward = {
+			add_to_variable = {
+				var = OBX.var_army_improvement_speed
+				value = 0.05
+				tooltip = add_05_to_speed_var_tt
 			}
 		}
 	}
-	option = {
-		name = obx.48.b
-	}
-}
 
-#expedition sent
-country_event = {
-	id = obx.49
-	title = obx.49.t
-	desc = obx.49.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.49.a
-		country_event = {
-			id = obx.50
-			days = 3
+	focus = {
+		id = OBX_embrace_military_innovation
+		icon = GFX_goal_OBX_Embrace_Military_Innovation
+		cost = 8
+		relative_position_id = OBX_subsidize_defense_contractors
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_subsidize_defense_contractors
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+			add_to_variable = {
+				var = OBX.var_army_improvement
+				value = 0.05
+				tooltip = add_05_to_army_var_tt
+			}
+			
 		}
 	}
-}
 
-#we found a bunker in abandoned norfolk naval base... let's go look inside
-country_event = {
-	id = obx.50
-	title = obx.50.t
-	desc = obx.50.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.50.a
-		country_event = {
-			id = obx.51
-			hours = 12
+	focus = {
+		id = OBX_logistics_and_supply_chains
+		icon = GFX_goal_OBX_Logistic_and_Supply_Chains
+		cost = 8
+		relative_position_id = OBX_rapid_response_readiness
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
 		}
-	}
-}
-
-#wow cool we found some nato dudes
-country_event = {
-	id = obx.51
-	title = obx.51.t
-	desc = obx.51.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.51.a
-		hidden_effect = {
-			set_party_name = {
-    			ideology = autocratic
-    			long_name = OBX_NATO_autocratic_name_long
-    			name = OBX_NATO_autocratic_name
+		prerequisite = {
+			focus = OBX_rapid_response_readiness
+		}
+		completion_reward = {
+			subtract_from_variable = {
+				var = OBX.var_army_improvement_supply
+				value = 0.05
+				tooltip = add_05_to_supply_var_tt
 			}
 		}
-		country_event = {
-			id = obx.52
-			hours = 12
+	}
+
+	focus = {
+		id = OBX_strategic_mobility
+		icon = GFX_goal_Icon_Strategic_Mobility_MAA_copy
+		cost = 8
+		relative_position_id = OBX_embrace_military_innovation
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_embrace_military_innovation
+		}
+		prerequisite = {
+			focus = OBX_logistics_and_supply_chains
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+			add_to_variable = {
+				var = OBX.var_army_improvement_speed
+				value = 0.05
+				tooltip = add_05_to_speed_var_tt
+			}
+			subtract_from_variable = {
+				var = OBX.var_army_improvement_supply
+				value = 0.05
+				tooltip = add_05_to_supply_var_tt
+			}
 		}
 	}
-}
-
-#nato dudes wanna take over and reunify america. seems pretty chill ig. just a temporary military government.
-country_event = {
-	id = obx.52
-	title = obx.52.t
-	desc = obx.52.d
-	#picture =
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = obx.52.a
-		set_politics = { ruling_party = autocratic }
-		add_popularity = {
-			ideology = autocratic
-			popularity = 0.5
+	
+	focus = {
+		id = OBX_unified_military_strategy
+		icon = GFX_goal_OBX_Unified_Military_Strategy
+		cost = 8
+		relative_position_id = OBX_strategic_mobility
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
 		}
-		OBX_tod_wolters = { promote_character = yes }
-		set_cosmetic_tag = OBX_NATO
-		set_capital = {state = 654}
-		hidden_effect = {
-			set_country_flag = nato_agreement
+		prerequisite = {
+			focus = OBX_strategic_mobility
+		}
+		completion_reward = {
+			add_to_variable = {
+				var = OBX.var_army_improvement
+				value = 0.05
+				tooltip = add_05_to_army_var_tt
+			}
+			subtract_from_variable = {
+				var = OBX.var_army_improvement_negatives
+				value = 0.1
+				tooltip = subtract_01_to_negative_var_tt
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_fight_the_appalachians
+		icon = GFX_goal_OBX_fight_the_appalachians
+		cost = 8
+		relative_position_id = OBX_a_general_from_europe
+		x = 2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_a_general_from_europe
+		}
+		will_lead_to_war_with = NRA
+		completion_reward = {
+			create_wargoal = {
+				target = NRA
+				type = annex_everything
+			}
+			
+		}
+	}
+
+	focus = {
+		id = OBX_take_down_bidenist_regime
+		icon = GFX_goal_OBX_take_down_bidenist_regime
+		cost = 8
+		relative_position_id = OBX_fight_the_appalachians
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_fight_the_appalachians
+		}
+		will_lead_to_war_with = FRA
+		will_lead_to_war_with = TIM
+		will_lead_to_war_with = NAB
+		will_lead_to_war_with = WBK
+		will_lead_to_war_with = NEW
+		completion_reward = {
+			create_wargoal = {
+				target = FRA 
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = TIM 
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = WBK 
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NEW 
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NAB 
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_end_the_free_state
+		icon = GFX_goal_OBX_end_the_free_state
+		cost = 8
+		relative_position_id = OBX_take_down_bidenist_regime
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_take_down_bidenist_regime
+		}
+		will_lead_to_war_with = AFS
+		will_lead_to_war_with = KFC
+		completion_reward = {
+			every_country = {
+				limit = { original_tag = KFC }
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			create_wargoal = {
+				target = AFS
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_bring_order_to_the_great_lakes
+		icon = GFX_goal_OBX_bring_order_to_the_great_lakes
+		cost = 8
+		relative_position_id = OBX_take_down_bidenist_regime
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_take_down_bidenist_regime
+		}
+		will_lead_to_war_with = GLA
+		will_lead_to_war_with = DET
+		will_lead_to_war_with = KMT
+		will_lead_to_war_with = ISA
+		completion_reward = {
+			create_wargoal = {
+				target = GLA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KMT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ISA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = DET
+				type = annex_everything
+			}
+			
+		}
+	}
+
+	focus = {
+		id = OBX_end_southern_unrest
+		icon = GFX_goal_OBX_end_southern_unrest
+		cost = 8
+		relative_position_id = OBX_end_the_free_state
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_end_the_free_state
+		}
+		prerequisite = {
+			focus = OBX_bring_order_to_the_great_lakes
+		}
+		will_lead_to_war_with = CSA
+		will_lead_to_war_with = CSB
+		will_lead_to_war_with = KKK
+		will_lead_to_war_with = LGB
+		will_lead_to_war_with = SCA
+		will_lead_to_war_with = ZIO
+		will_lead_to_war_with = AFR
+		will_lead_to_war_with = ARK
+		completion_reward = {
+				create_wargoal = {
+					target = CSA
+					type = annex_everything
+				}
+				IF = { 
+					limit = { country_exists = KKK }
+					create_wargoal = {
+						target = KKK
+						type = annex_everything
+					}
+				}
+				if = { 
+					limit = { country_exists = LGB }
+					create_wargoal = {
+						target = LGB
+						type = annex_everything
+					}
+				}
+				if = { 
+					limit = { country_exists = sca }
+					create_wargoal = {
+						target = sca
+						type = annex_everything
+					}
+				}
+				if = { 
+					limit = { country_exists = ZIO }
+					create_wargoal = {
+						target = ZIO
+						type = annex_everything
+					}
+				}
+				if = { 
+					limit = { country_exists = ARK }
+					create_wargoal = {
+						target = ARK
+						type = annex_everything
+					}
+				}
+				if = { 
+					limit = { country_exists = AFR }
+					create_wargoal = {
+						target = AFR
+						type = annex_everything
+					}
+				}
+				if = { 
+					limit = { country_exists = CSB }
+					create_wargoal = {
+						target = CSB
+						type = annex_everything
+					}
+				}
+			
+		}
+	}
+
+	focus = {
+		id = OBX_restore_normalcy_in_florida
+		icon = GFX_goal_OBX_restore_normalcy_in_florida
+		cost = 8
+		relative_position_id = OBX_end_the_free_state
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_end_the_free_state
+		}
+		prerequisite = {
+			focus = OBX_bring_order_to_the_great_lakes
+		}
+		will_lead_to_war_with = FLO
+		completion_reward = {
+			create_wargoal = {
+				target = FLO
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_defeat_texas_secession
+		icon = GFX_goal_OBX_defeat_texas_secession
+		cost = 8
+		relative_position_id = OBX_end_the_free_state
+		x = 3
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_end_the_free_state
+		}
+		prerequisite = {
+			focus = OBX_bring_order_to_the_great_lakes
+		}
+		completion_reward = {
+			War_on_texas_collapse_tags = yes
+		}
+	}
+
+	focus = {
+		id = OBX_bring_minnesota_in_the_fold
+		icon = GFX_goal_OBX_bring_minnesota_in_the_fold
+		cost = 8
+		relative_position_id = OBX_end_southern_unrest
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_end_southern_unrest
+		}
+		prerequisite = {
+			focus = OBX_restore_normalcy_in_florida
+		}
+		prerequisite = {
+			focus = OBX_defeat_texas_secession
+		}
+		will_lead_to_war_with = MIN
+		will_lead_to_war_with = MNS
+		will_lead_to_war_with = MIL
+		completion_reward = {
+			create_wargoal = {
+				target = MIL
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MNS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MIN
+				type = annex_everything
+			}
+			
+		}
+	}
+
+	focus = {
+		id = OBX_defeat_trumpism
+		icon = GFX_goal_OBX_defeat_trumpism
+		cost = 8
+		relative_position_id = OBX_end_southern_unrest
+		x = 2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_end_southern_unrest
+		}
+		prerequisite = {
+			focus = OBX_restore_normalcy_in_florida
+		}
+		prerequisite = {
+			focus = OBX_defeat_texas_secession
+		}
+		will_lead_to_war_with = USA
+		will_lead_to_war_with = IDA
+		completion_reward = {
+			create_wargoal = {
+				target = USA
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_invade_montana
+		icon = GFX_goal_OBX_invade_montana
+		cost = 8
+		relative_position_id = OBX_end_southern_unrest
+		x = 4
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_end_southern_unrest
+		}
+		prerequisite = {
+			focus = OBX_restore_normalcy_in_florida
+		}
+		prerequisite = {
+			focus = OBX_defeat_texas_secession
+		}
+		will_lead_to_war_with = MON
+		completion_reward = {
+			create_wargoal = {
+				target = MON
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_stabilize_the_southwest
+		icon = GFX_goal_OBX_stabilize_the_southwest
+		cost = 8
+		relative_position_id = OBX_bring_minnesota_in_the_fold
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_bring_minnesota_in_the_fold
+		}
+		prerequisite = {
+			focus = OBX_defeat_trumpism
+		}
+		prerequisite = {
+			focus = OBX_invade_montana
+		}
+		will_lead_to_war_with = MON
+		will_lead_to_war_with = SIN
+		will_lead_to_war_with = IDA
+		will_lead_to_war_with = UTA
+		will_lead_to_war_with = LAS
+		completion_reward = {
+				create_wargoal = {
+					target = MON
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = MOL
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = AFO
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = IDA
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = UTA
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = SIN
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = HAM
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = LAS
+					type = annex_everything
+				}
+			
+		}
+	}
+
+	focus = {
+		id = OBX_fight_cascadia
+		icon = GFX_goal_OBX_fight_cascadia
+		cost = 8
+		relative_position_id = OBX_bring_minnesota_in_the_fold
+		x = 3
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_bring_minnesota_in_the_fold
+		}
+		prerequisite = {
+			focus = OBX_defeat_trumpism
+		}
+		prerequisite = {
+			focus = OBX_invade_montana
+		}
+		will_lead_to_war_with = CAS
+		will_lead_to_war_with = LIB
+		completion_reward = {
+			create_wargoal = {
+				target = CAS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LIB
+				type = annex_everything
+			}
+			
+		}
+	}
+
+	focus = {
+		id = OBX_conquer_california
+		icon = GFX_goal_OBX_conquer_california
+		cost = 8
+		relative_position_id = OBX_stabilize_the_southwest
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_stabilize_the_southwest
+		}
+		prerequisite = {
+			focus = OBX_fight_cascadia
+		}
+		will_lead_to_war_with = CAS
+		completion_reward = {
+			create_wargoal = {
+			    target = PRA
+			    type = annex_everything
+			}
+			if = { 
+				limit = { country_exists = JFR }
+				create_wargoal = {
+					target = JFR
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = PRC }
+				create_wargoal = {
+					target = PRC
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = HLY }
+				create_wargoal = {
+					target = HLY
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = CST }
+				create_wargoal = {
+					target = CST
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = ACF }
+				create_wargoal = {
+					target = ACF
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = SAC }
+				create_wargoal = {
+					target = SAC
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = ABG }
+				create_wargoal = {
+					target = ABG
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = NVD }
+				create_wargoal = {
+					target = NVD
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = SIL }
+				create_wargoal = {
+					target = SIL
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = FIR }
+				create_wargoal = {
+					target = FIR
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = ORO }
+				create_wargoal = {
+					target = ORO
+					type = annex_everything
+				}
+			}
+			if = { 
+				limit = { country_exists = BJC }
+				create_wargoal = {
+					target = BJC
+					type = annex_everything
+				}
+			}
+			
+		}
+	}
+
+	focus = {
+		id = OBX_support_from_european_allies
+		icon = GFX_goal_OBX_Reach_Out_to_European_Allies_2
+		cost = 8
+		relative_position_id = OBX_a_general_from_europe
+		x = 7
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_a_general_from_europe
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = OBX_reached_out_to_NATO_flag
+				set_variable = {
+					var = OBX.var_low_cost
+					value = 50
+				}
+				set_variable = {
+					var = OBX.var_med_cost
+					value = 75
+				}
+				set_variable = {
+					var = OBX.var_high_cost
+					value = 100
+				}
+				set_variable = {
+					var = OBX.low_cost_cg
+					value = 0.1
+				}
+				set_variable = {
+					var = OBX.med_cost_cg
+					value = 0.15
+				}
+				set_variable = {
+					var = OBX.high_cost_cg
+					value = 0.2
+				}
+				set_variable = {
+					var = OBX.var_delivery_time
+					value = 50
+				}
+			}
+			unlock_decision_category_tooltip = OBX_NATO_equipment_cat
+		}
+	}
+
+	focus = {
+		id = OBX_trust_building_measures
+		icon = GFX_goal_OBX_Trust-building_Measures
+		cost = 8
+		relative_position_id = OBX_support_from_european_allies
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_support_from_european_allies
+		}
+		completion_reward = {
+			hidden_effect = {
+				subtract_from_variable = {
+					var = OBX.var_low_cost
+					value = 15
+				}
+				subtract_from_variable = {
+					var = OBX.low_cost_cg
+					value = 0.05
+				}
+				subtract_from_variable = {
+					var = OBX.var_med_cost
+					value = 25
+				}
+				subtract_from_variable = {
+					var = OBX.med_cost_cg
+					value = 0.05
+				}
+				subtract_from_variable = {
+					var = OBX.var_high_cost
+					value = 25
+				}
+				subtract_from_variable = {
+					var = OBX.high_cost_cg
+					value = 0.05
+				}
+			}
+			custom_effect_tooltip = OBX_cost_pp_lower_for_eq_tt
+		}
+	}
+
+	focus = {
+		id = OBX_intelligence_exchanges
+		icon = GFX_goal_OBX_Intelligence_Sharing
+		cost = 8
+		relative_position_id = OBX_trust_building_measures
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_trust_building_measures
+		}
+		bypass = { NOT = { has_dlc = "La Resistance" } }
+		completion_reward = {
+			add_ideas = OBX_NATO_operatives
+			if = {	
+				limit = { NOT = { has_intelligence_agency = yes } }
+				create_intelligence_agency = {
+					name = "A.G.E.N.C.Y"
+					icon = GFX_intelligence_agency_logo_agency
+				}
+			}
+			upgrade_intelligence_agency = upgrade_form_department
+		}
+	}
+
+	focus = {
+		id = OBX_transatlantic_economic_cooperation
+		icon = GFX_goal_OBX_Transatlantic_Economic_Cooperation
+		cost = 8
+		relative_position_id = OBX_intelligence_exchanges
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_intelligence_exchanges
+		}
+		completion_reward = {
+			hidden_effect = {
+				subtract_from_variable = {
+					var = OBX.var_low_cost
+					value = 15
+				}
+				subtract_from_variable = {
+					var = OBX.var_med_cost
+					value = 15
+				}
+				subtract_from_variable = {
+					var = OBX.var_high_cost
+					value = 15
+				}
+				subtract_from_variable = {
+					var = OBX.var_delivery_time
+					value = 20
+				}
+			}
+			custom_effect_tooltip = OBX_cost_pp_and_days_lower_for_eq_tt
+		}
+	}
+
+	focus = {
+		id = OBX_european_weapon_procurement
+		icon = GFX_goal_OBX_European_Weapon_Procurement
+		cost = 8
+		relative_position_id = OBX_intelligence_exchanges
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_intelligence_exchanges
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_variable = {
+					var = OBX.air_general_modifier
+					value = 0
+				}
+				set_variable = {
+					var = OBX.air_fighter_modifier
+					value = 0
+				}
+				set_variable = {
+					var = OBX.air_cas_modifier
+					value = 0
+				}
+				set_variable = {
+					var = OBX.air_tac_modifier
+					value = 0
+				}
+				set_variable = {
+					var = OBX.air_drones_modifier
+					value = 0
+				}
+				set_variable = {
+					var = OBX.air_drones_modifier_positive
+					value = 0
+				}
+			}
+			add_dynamic_modifier = { modifier = OBX_NATO_air_idea }
+			custom_effect_tooltip = OBX_more_xpensive_eq_tt
+		}
+	}
+
+	focus = {
+		id = OBX_strengthen_transatlantic_ties
+		icon = GFX_goal_OBX_Strenghten_Transatlantic_Ties
+		cost = 8
+		relative_position_id = OBX_transatlantic_economic_cooperation
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_transatlantic_economic_cooperation
+		}
+		prerequisite = {
+			focus = OBX_european_weapon_procurement
+		}
+		completion_reward = {
+			hidden_effect = {
+				subtract_from_variable = {
+					var = OBX.low_cost_cg
+					value = 0.05
+				}
+				subtract_from_variable = {
+					var = OBX.med_cost_cg
+					value = 0.1
+				}
+				subtract_from_variable = {
+					var = OBX.high_cost_cg
+					value = 0.15
+				}
+			}
+			custom_effect_tooltip = OBX_cg_cost_for_eq_eliminated_tt
+		}
+	}
+
+	focus = {
+		id = OBX_reinforce_democratic_foundations
+		icon = GFX_goal_OBX_Reinforce_Democratic_Foundations
+		cost = 8
+		relative_position_id = OBX_a_general_from_europe
+		x = 11
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_a_general_from_europe
+		}
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = OBX_western_values
+		icon = GFX_goal_OBX_Western_Values
+		cost = 8
+		relative_position_id = OBX_reinforce_democratic_foundations
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_reinforce_democratic_foundations
+		}
+		completion_reward = {
+			add_ideas = OBX_NATO_western_values_idea
+		}
+	}
+
+	focus = {
+		id = OBX_support_our_veterans
+		icon = GFX_goal_OBX_Support_Our_Veterans
+		cost = 8
+		relative_position_id = OBX_western_values
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_western_values
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OBX_NATO_western_values_idea
+				add_idea = OBX_NATO_western_values_idea2
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_strengthen_the_police
+		icon = GFX_goal_OBX_Strengthen_the_Police
+		cost = 8
+		relative_position_id = OBX_support_our_veterans
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_support_our_veterans
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OBX_NATO_western_values_idea2
+				add_idea = OBX_NATO_western_values_idea3
+			}
+		}
+	}
+
+	focus = {
+		id = OBX_bridging_the_divide
+		icon = GFX_goal_OBX_Bridging_the_Divide
+		cost = 8
+		relative_position_id = OBX_reinforce_democratic_foundations
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_reinforce_democratic_foundations
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = OBX_cultural_unity
+		icon = GFX_goal_OBX_Cultural_Unity
+		cost = 8
+		relative_position_id = OBX_bridging_the_divide
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_bridging_the_divide
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = OBX_civic_engagement
+		icon = GFX_goal_OBX_Civic_Engagement
+		cost = 8
+		relative_position_id = OBX_cultural_unity
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_cultural_unity
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = OBX_homefront_unity
+		icon = GFX_goal_OBX_United_on_the_Homefront
+		cost = 8
+		relative_position_id = OBX_strengthen_the_police
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_strengthen_the_police
+		}
+		prerequisite = {
+			focus = OBX_civic_engagement
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OBX_NATO_western_values_idea3
+				add_idea = OBX_NATO_western_values_idea4
+			}
+
+		}
+	}
+
+	###############Colonial Order###############
+
+	focus = {
+		id = OBX_restoration_of_royal_colonial_governance
+		icon = GFX_goal_OBX_restoration_of_royal_colonial_governance
+		cost = 8
+		relative_position_id = OBX_an_isolated_community
+		x = 80
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		allow_branch = {
+			always = no
+		}
+		available = {
+			has_country_flag = colonial_governance_restored
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_royal_trade_charter
+		icon = GFX_goal_OBX_Royal_Trade_Charter
+		cost = 8
+		relative_position_id = OBX_restoration_of_royal_colonial_governance
+		x = -4
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_restoration_of_royal_colonial_governance
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_revive_plantations
+		icon = GFX_goal_OBX_Revive_Plantations
+		cost = 8
+		relative_position_id = OBX_royal_trade_charter
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_royal_trade_charter
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_timber_logging
+		icon = GFX_goal_OBX_Timber_Logging
+		cost = 8
+		relative_position_id = OBX_revive_plantations
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_revive_plantations
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_rum_distilleries
+		icon = GFX_goal_OBX_Rum_Distilleries
+		cost = 8
+		relative_position_id = OBX_timber_logging
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_timber_logging
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_overseas_trading_companies
+		icon = GFX_goal_OBX_Overseas_Trading_Compagnies
+		cost = 8
+		relative_position_id = OBX_royal_trade_charter
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_royal_trade_charter
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_maritime_trade
+		icon = GFX_goal_OBX_Maritime_Trade
+		cost = 8
+		relative_position_id = OBX_overseas_trading_companies
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_overseas_trading_companies
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_mercantile_networks
+		icon = GFX_goal_OBX_Mercantile_Networks
+		cost = 8
+		relative_position_id = OBX_maritime_trade
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_maritime_trade
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_colonial_prosperity
+		icon = GFX_goal_OBX_Colonial_Prosperity
+		cost = 8
+		relative_position_id = OBX_rum_distilleries
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_rum_distilleries
+		}
+		prerequisite = {
+			focus = OBX_mercantile_networks
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_ties_with_europe
+		icon = GFX_goal_OBX_Ties_with_Europe
+		cost = 8
+		relative_position_id = OBX_restoration_of_royal_colonial_governance
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_restoration_of_royal_colonial_governance
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_cultural_exchange
+		icon = GFX_goal_OBX_Cultural_Exchange
+		cost = 8
+		relative_position_id = OBX_ties_with_europe
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_ties_with_europe
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_royal_visits
+		icon = GFX_goal_OBX_Royal_Visits
+		cost = 8
+		relative_position_id = OBX_cultural_exchange
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_cultural_exchange
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_noble_lineage_recognition
+		icon = GFX_goal_OBX_Noble_Lineage_Recognition
+		cost = 8
+		relative_position_id = OBX_royal_visits
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_royal_visits
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_expand_colonial_territories
+		icon = GFX_goal_OBX_Expand_Colonial_Territories
+		cost = 8
+		relative_position_id = OBX_restoration_of_royal_colonial_governance
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_restoration_of_royal_colonial_governance
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_west_over_the_appalachians
+		icon = GFX_goal_OBX_West_Over_the_Appalachians
+		cost = 8
+		relative_position_id = OBX_expand_colonial_territories
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_expand_colonial_territories
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_reclaim_bahamian_islands
+		icon = GFX_goal_OBX_Reclaim_the_Bahamas
+		cost = 8
+		relative_position_id = OBX_west_over_the_appalachians
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_west_over_the_appalachians
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_carolinian_colonial_empire
+		icon = GFX_goal_OBX_Carolinian_Colonial_Empire
+		cost = 8
+		relative_position_id = OBX_reclaim_bahamian_islands
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_reclaim_bahamian_islands
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_colonial_heritage_restoration
+		icon = GFX_goal_OBX_Cultural_Heritage_Restoration
+		cost = 8
+		relative_position_id = OBX_restoration_of_royal_colonial_governance
+		x = 5
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_restoration_of_royal_colonial_governance
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_colonial_education_system
+		icon = GFX_goal_OBX_Colonial_Education_System
+		cost = 8
+		relative_position_id = OBX_colonial_heritage_restoration
+		x = -2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_colonial_heritage_restoration
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_encourage_rural_migration
+		icon = GFX_goal_OBX_Encourage_Local_Migration
+		cost = 8
+		relative_position_id = OBX_colonial_education_system
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_colonial_education_system
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_royal_patronage_and_support
+		icon = GFX_goal_OBX_Royal_Patronage_and_Support
+		cost = 8
+		relative_position_id = OBX_colonial_heritage_restoration
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_colonial_heritage_restoration
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_land_grants_for_nobility
+		icon = GFX_goal_OBX_Land_Grants_for_Nobility
+		cost = 8
+		relative_position_id = OBX_royal_patronage_and_support
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_royal_patronage_and_support
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_promote_aristocratic_values
+		icon = GFX_goal_OBX_Promote_Aristocratic_Values
+		cost = 8
+		relative_position_id = OBX_land_grants_for_nobility
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_land_grants_for_nobility
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_royal_court_system
+		icon = GFX_goal_OBX_Royal_Court_System
+		cost = 8
+		relative_position_id = OBX_promote_aristocratic_values
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_promote_aristocratic_values
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_royal_militias
+		icon = GFX_goal_OBX_Royal_Militias
+		cost = 8
+		relative_position_id = OBX_restoration_of_royal_colonial_governance
+		x = 7
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_restoration_of_royal_colonial_governance
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_rebuild_maritime_fleet
+		icon = GFX_goal_OBX_Rebuild_the_Maritime_Fleet
+		cost = 8
+		relative_position_id = OBX_royal_militias
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_royal_militias
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_coastal_defense
+		icon = GFX_goal_OBX_Coastal_Defense
+		cost = 8
+		relative_position_id = OBX_rebuild_maritime_fleet
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_rebuild_maritime_fleet
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_colonial_artillery_workshops
+		icon = GFX_goal_OBX_Colonial_Artillery_Workshops
+		cost = 8
+		relative_position_id = OBX_royal_militias
+		x = 2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_royal_militias
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_cavalry_drills
+		icon = GFX_goal_OBX_Cavalry_Drills
+		cost = 8
+		relative_position_id = OBX_colonial_artillery_workshops
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_colonial_artillery_workshops
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	###############Pirates###############
+
+	focus = {
+		id = OBX_ahoy_mateys
+		icon = GFX_goal_OBX_Ahoy_Mateys
+		cost = 8
+		relative_position_id = OBX_an_isolated_community
+		x = 105
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_flag = pirate_takeover
+		}
+		allow_branch = {
+			always = no
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_seize_southern_obx
+		icon = GFX_goal_OBX_Seize_the_Southern_Outer_Banks
+		cost = 8
+		relative_position_id = OBX_ahoy_mateys
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_ahoy_mateys
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_somolian_pirates
+		icon = GFX_goal_OBX_Somalian_Pirates
+		cost = 8
+		relative_position_id = OBX_seize_southern_obx
+		x = -8
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_seize_southern_obx
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_buccaneers_council
+		icon = GFX_goal_OBX_Buccaneers_Council
+		cost = 8
+		relative_position_id = OBX_somolian_pirates
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_somolian_pirates
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_invite_pirates_from_world
+		icon = GFX_goal_OBX_Invite_All_the_Pirates_of_the_World
+		cost = 8
+		relative_position_id = OBX_somolian_pirates
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_somolian_pirates
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_international_piracy_haven
+		icon = GFX_goal_OBX_International_Pirate_Heaven
+		cost = 8
+		relative_position_id = OBX_buccaneers_council
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_buccaneers_council
+		}
+		prerequisite = {
+			focus = OBX_invite_pirates_from_world
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_smuggler_economy
+		icon = GFX_goal_OBX_Smuggler_Economy
+		cost = 8
+		relative_position_id = OBX_seize_southern_obx
+		x = -4
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_seize_southern_obx
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_hidden_harbors_and_coves
+		icon = GFX_goal_OBX_Hidden_Harbors_and_Coves
+		cost = 8
+		relative_position_id = OBX_smuggler_economy
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_smuggler_economy
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_smuggling_routes
+		icon = GFX_goal_OBX_Smuggling_Routes
+		cost = 8
+		relative_position_id = OBX_hidden_harbors_and_coves
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_hidden_harbors_and_coves
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_coastal_defenses
+		icon = GFX_goal_OBX_Coastal_Defenses
+		cost = 8
+		relative_position_id = OBX_smuggler_economy
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_smuggler_economy
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_hidden_treasures
+		icon = GFX_goal_OBX_Hidden_Treasures
+		cost = 8
+		relative_position_id = OBX_coastal_defenses
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_coastal_defenses
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_conquer_the_keys
+		icon = GFX_goal_OBX_Conquer_the_Keys
+		cost = 8
+		relative_position_id = OBX_seize_southern_obx
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_seize_southern_obx
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_launch_an_attack_on_bahamas
+		icon = GFX_goal_OBX_Launch_an_Attack_on_the_Bahamas
+		cost = 8
+		relative_position_id = OBX_conquer_the_keys
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_conquer_the_keys
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_raid_lesser_antilles
+		icon = GFX_goal_OBX_Raid_the_Lesser_Antilles
+		cost = 8
+		relative_position_id = OBX_launch_an_attack_on_bahamas
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_launch_an_attack_on_bahamas
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_seize_cayman_islands
+		icon = GFX_goal_OBX_Seize_the_Cayman_Islands
+		cost = 8
+		relative_position_id = OBX_raid_lesser_antilles
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_raid_lesser_antilles
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_conquer_hispanola
+		icon = GFX_goal_OBX_Conquer_Hispaniola
+		cost = 8
+		relative_position_id = OBX_seize_cayman_islands
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_seize_cayman_islands
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_invade_cuba
+		icon = GFX_goal_OBX_Invade_Cuba
+		cost = 8
+		relative_position_id = OBX_conquer_hispanola
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_conquer_hispanola
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_liberate_florida_pirates
+		icon = GFX_goal_OBX_Liberate_Florida_Pirates
+		cost = 8
+		relative_position_id = OBX_invade_cuba
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_invade_cuba
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_a_new_era_of_piracy
+		icon = GFX_goal_OBX_A_New_Era_of_Piracy
+		cost = 8
+		relative_position_id = OBX_liberate_florida_pirates
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_liberate_florida_pirates
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_capture_jamacia
+		icon = GFX_goal_OBX_Capture_Jamaica
+		cost = 8
+		relative_position_id = OBX_raid_lesser_antilles
+		x = -2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_raid_lesser_antilles
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_port_royale
+		icon = GFX_goal_OBX_Port_Royale
+		cost = 8
+		relative_position_id = OBX_capture_jamacia
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_capture_jamacia
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_puerto_rico
+		icon = GFX_goal_OBX_Puerto_Rico
+		cost = 8
+		relative_position_id = OBX_raid_lesser_antilles
+		x = 2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_raid_lesser_antilles
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_infamy_and_fear
+		icon = GFX_goal_OBX_Infamy_and_Fear
+		cost = 8
+		relative_position_id = OBX_seize_southern_obx
+		x = 4
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_seize_southern_obx
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_scouting_parties
+		icon = GFX_goal_OBX_Scouting_Parties
+		cost = 8
+		relative_position_id = OBX_infamy_and_fear
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_infamy_and_fear
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_coastal_raids
+		icon = GFX_goal_OBX_Coastal_Raids
+		cost = 8
+		relative_position_id = OBX_scouting_parties
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_scouting_parties
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_comandeer_ships
+		icon = GFX_goal_OBX_Comandeer_Ships
+		cost = 8
+		relative_position_id = OBX_scouting_parties
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_scouting_parties
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_maritime_supremacy
+		icon = GFX_goal_OBX_Maritime_Supremacy
+		cost = 8
+		relative_position_id = OBX_coastal_raids
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_coastal_raids
+		}
+		prerequisite = {
+			focus = OBX_comandeer_ships
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_pirate_crew_recruitment
+		icon = GFX_goal_OBX_Pirate_Crew_Recruitment
+		cost = 8
+		relative_position_id = OBX_seize_southern_obx
+		x = 8
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_seize_southern_obx
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_shipbuilding_culture
+		icon = GFX_goal_OBX_Shipbuilding_Culture
+		cost = 8
+		relative_position_id = OBX_pirate_crew_recruitment
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_pirate_crew_recruitment
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_fleet_expansion
+		icon = GFX_goal_OBX_Fleet_Expansion
+		cost = 8
+		relative_position_id = OBX_shipbuilding_culture
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_shipbuilding_culture
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_crew_training
+		icon = GFX_goal_OBX_Crew_Training
+		cost = 8
+		relative_position_id = OBX_fleet_expansion
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_fleet_expansion
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_harbor_construction
+		icon = GFX_goal_OBX_Harbor_Construction
+		cost = 8
+		relative_position_id = OBX_crew_training
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_crew_training
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_rum_and_rations
+		icon = GFX_goal_OBX_Rum_and_Rations
+		cost = 8
+		relative_position_id = OBX_pirate_crew_recruitment
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_pirate_crew_recruitment
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_navigation_and_cartography
+		icon = GFX_goal_OBX_Navigation_and_Cartography
+		cost = 8
+		relative_position_id = OBX_rum_and_rations
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_rum_and_rations
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_privateering
+		icon = GFX_goal_OBX_Privateering
+		cost = 8
+		relative_position_id = OBX_fleet_expansion
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_fleet_expansion
+		}
+		prerequisite = {
+			focus = OBX_navigation_and_cartography
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_pirate_code_of_honor
+		icon = GFX_goal_OBX_Pirate_Code_of_Honor
+		cost = 8
+		relative_position_id = OBX_privateering
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_privateering
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	###############Margaritaville###############
+
+	focus = {
+		id = OBX_five_oclock_somewhere
+		icon = GFX_goal_OBX_five_oclock_somewhere
+		cost = 8
+		relative_position_id = OBX_an_isolated_community
+		x = 50
+		y = 10
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_jimmy_buffett
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = unfinished_content_warning_tooltip
+			
+		}
+	}
+
+	focus = {
+		id = OBX_conquer_southern_beaches
+		icon = GFX_goal_OBX_conquer_southern_beaches
+		cost = 8
+		relative_position_id = OBX_five_oclock_somewhere
+		x = -8
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_five_oclock_somewhere
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_take_over_florida_paradise
+		icon = GFX_goal_OBX_take_over_florida_paradise
+		cost = 8
+		relative_position_id = OBX_conquer_southern_beaches
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_conquer_southern_beaches
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_invade_texan_gulf_beaches
+		icon = GFX_goal_OBX_invade_texan_gulf_beaches
+		cost = 8
+		relative_position_id = OBX_take_over_florida_paradise
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_take_over_florida_paradise
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_caribbean_beaches
+		icon = GFX_goal_OBX_caribbean_beaches
+		cost = 8
+		relative_position_id = OBX_invade_texan_gulf_beaches
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_invade_texan_gulf_beaches
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_margaritaville_mariners
+		icon = GFX_goal_OBX_margaritaville_mariners
+		cost = 8
+		relative_position_id = OBX_five_oclock_somewhere
+		x = -4
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_five_oclock_somewhere
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_island_lookout_brigade
+		icon = GFX_goal_OBX_island_lookout_brigade
+		cost = 8
+		relative_position_id = OBX_margaritaville_mariners
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_margaritaville_mariners
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_coastal_guardian_training
+		icon = GFX_goal_OBX_coastal_guardian_training
+		cost = 8
+		relative_position_id = OBX_island_lookout_brigade
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_island_lookout_brigade
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_air_pirates_defense
+		icon = GFX_goal_OBX_air_pirates_defense
+		cost = 8
+		relative_position_id = OBX_margaritaville_mariners
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_margaritaville_mariners
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_fins_up_military_drills
+		icon = GFX_goal_OBX_fins_up_military_drills
+		cost = 8
+		relative_position_id = OBX_air_pirates_defense
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_air_pirates_defense
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_parrothead_navy_command
+		icon = GFX_goal_OBX_parrothead_navy_command
+		cost = 8
+		relative_position_id = OBX_coastal_guardian_training
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_coastal_guardian_training
+		}
+		prerequisite = {
+			focus = OBX_fins_up_military_drills
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_cultural_festivals
+		icon = GFX_goal_OBX_cultural_festivals
+		cost = 8
+		relative_position_id = OBX_five_oclock_somewhere
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_five_oclock_somewhere
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_education_and_arts
+		icon = GFX_goal_OBX_education_and_arts
+		cost = 8
+		relative_position_id = OBX_cultural_festivals
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_cultural_festivals
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_subsidize_alcohol
+		icon = GFX_goal_OBX_subsidize_alcohol
+		cost = 8
+		relative_position_id = OBX_education_and_arts
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_education_and_arts
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_relaxation_and_wellness
+		icon = GFX_goal_OBX_relaxation_and_wellness
+		cost = 8
+		relative_position_id = OBX_cultural_festivals
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_cultural_festivals
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_recreational_drug_usage
+		icon = GFX_goal_OBX_recreational_drug_usage
+		cost = 8
+		relative_position_id = OBX_relaxation_and_wellness
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_relaxation_and_wellness
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_margaritaville_resturants
+		icon = GFX_goal_OBX_margaritaville_resturants
+		cost = 8
+		relative_position_id = OBX_subsidize_alcohol
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_subsidize_alcohol
+		}
+		prerequisite = {
+			focus = OBX_recreational_drug_usage
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_cheeseburger_in_paradise
+		icon = GFX_goal_OBX_cheeseburger_in_paradise
+		cost = 8
+		relative_position_id = OBX_margaritaville_resturants
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_margaritaville_resturants
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_environmental_conservation
+		icon = GFX_goal_OBX_environmental_conservation
+		cost = 8
+		relative_position_id = OBX_five_oclock_somewhere
+		x = 4
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_five_oclock_somewhere
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_tropical_agriculture
+		icon = GFX_goal_OBX_tropical_agriculture
+		cost = 8
+		relative_position_id = OBX_environmental_conservation
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_environmental_conservation
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_marine_conservation
+		icon = GFX_goal_OBX_marine_conservation
+		cost = 8
+		relative_position_id = OBX_tropical_agriculture
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_tropical_agriculture
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_renewable_energy
+		icon = GFX_goal_OBX_renewable_energy
+		cost = 8
+		relative_position_id = OBX_environmental_conservation
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_environmental_conservation
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_coral_reefs
+		icon = GFX_goal_OBX_coral_reefs
+		cost = 8
+		relative_position_id = OBX_renewable_energy
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_renewable_energy
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_livin_off_the_land_and_sea
+		icon = GFX_goal_OBX_livin_off_the_land_and_sea
+		cost = 8
+		relative_position_id = OBX_marine_conservation
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_marine_conservation
+		}
+		prerequisite = {
+			focus = OBX_coral_reefs
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_caribbean_trade
+		icon = GFX_goal_OBX_caribbean_trade
+		cost = 8
+		relative_position_id = OBX_five_oclock_somewhere
+		x = 8
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_five_oclock_somewhere
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_island_roads
+		icon = GFX_goal_OBX_island_roads
+		cost = 8
+		relative_position_id = OBX_caribbean_trade
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_caribbean_trade
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_island_hopper_airfields
+		icon = GFX_goal_OBX_island_hopper_airfields
+		cost = 8
+		relative_position_id = OBX_caribbean_trade
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_caribbean_trade
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_one_particular_harbor
+		icon = GFX_goal_OBX_one_particular_harbor
+		cost = 8
+		relative_position_id = OBX_island_roads
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_island_roads
+		}
+		prerequisite = {
+			focus = OBX_island_hopper_airfields
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_margaritaville
+		icon = GFX_goal_OBX_margaritaville
+		cost = 8
+		relative_position_id = OBX_cheeseburger_in_paradise
+		x = 6
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_caribbean_beaches
+		}
+		prerequisite = {
+			focus = OBX_parrothead_navy_command
+		}
+		prerequisite = {
+			focus = OBX_cheeseburger_in_paradise
+		}
+		prerequisite = {
+			focus = OBX_livin_off_the_land_and_sea
+		}
+		prerequisite = {
+			focus = OBX_one_particular_harbor
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	###############NASCAR Earnhardt###############
+
+	focus = {
+		id = OBX_the_intimidator
+		icon = GFX_goal_OBX_The_Intimidator
+		cost = 8
+		relative_position_id = OBX_an_isolated_community
+		x = 150
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		available = {
+			has_country_leader = {
+				character = OBX_dale_earnhardt_jr
+				ruling_only = yes
+			}
+		}
+		allow_branch = {
+			always = no
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_economic_acceleration_strategy
+		icon = GFX_goal_OBX_Economic_Acceleration_Strategy
+		cost = 8
+		relative_position_id = OBX_the_intimidator
+		x = -5
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_the_intimidator
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_aggressive_job_creation
+		icon = GFX_goal_OBX_Aggressive_Job_Creation
+		cost = 8
+		relative_position_id = OBX_economic_acceleration_strategy
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_economic_acceleration_strategy
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_trade_skills_education
+		icon = GFX_goal_OBX_Trade_Skill_Education
+		cost = 8
+		relative_position_id = OBX_aggressive_job_creation
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_aggressive_job_creation
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_fair_trade_for_local_industries
+		icon = GFX_goal_OBX_Fair_Trade_for_Local_Industries
+		cost = 8
+		relative_position_id = OBX_economic_acceleration_strategy
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_economic_acceleration_strategy
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_domestic_energy_production
+		icon = GFX_goal_OBX_Domestic_Energy_Production
+		cost = 8
+		relative_position_id = OBX_fair_trade_for_local_industries
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_fair_trade_for_local_industries
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_promote_domestic_auto_industry
+		icon = GFX_goal_OBX_Promote_Domestic_Auto_Industries
+		cost = 8
+		relative_position_id = OBX_trade_skills_education
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_trade_skills_education
+		}
+		prerequisite = {
+			focus = OBX_domestic_energy_production
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_support_blue_collar_families
+		icon = GFX_goal_OBX_Support_Blue_Collar_Families
+		cost = 8
+		relative_position_id = OBX_the_intimidator
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_the_intimidator
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_traditional_family_values
+		icon = GFX_goal_OBX_Traditional_Family_Values
+		cost = 8
+		relative_position_id = OBX_support_blue_collar_families
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_support_blue_collar_families
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_fight_substance_abuse
+		icon = GFX_goal_OBX_Fight_Substance_Abuse
+		cost = 8
+		relative_position_id = OBX_traditional_family_values
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_traditional_family_values
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_community_safety
+		icon = GFX_goal_OBX_Community_Safety
+		cost = 8
+		relative_position_id = OBX_support_blue_collar_families
+		x = -2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_support_blue_collar_families
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_2a_rights
+		icon = GFX_goal_OBX_The_Second_Amendment
+		cost = 8
+		relative_position_id = OBX_community_safety
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_community_safety
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_support_small_buisness
+		icon = GFX_goal_OBX_Support_Small_Businesses
+		cost = 8
+		relative_position_id = OBX_traditional_family_values
+		x = 2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_traditional_family_values
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_racing_influence_on_military
+		icon = GFX_goal_OBX_Racing_Influence_in_the_Military
+		cost = 8
+		relative_position_id = OBX_the_intimidator
+		x = 5
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_the_intimidator
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_tech_innovation_through_racing
+		icon = GFX_goal_OBX_Innovation_Through_Racing
+		cost = 8
+		relative_position_id = OBX_racing_influence_on_military
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_racing_influence_on_military
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_influence_tank_design
+		icon = GFX_goal_OBX_Influence_Tank_Designs
+		cost = 8
+		relative_position_id = OBX_tech_innovation_through_racing
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_tech_innovation_through_racing
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_fast
+		icon = GFX_goal_OBX_Fast
+		cost = 8
+		relative_position_id = OBX_racing_influence_on_military
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_racing_influence_on_military
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_aggressive
+		icon = GFX_goal_OBX_Aggressive
+		cost = 8
+		relative_position_id = OBX_racing_influence_on_military
+		x = 3
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_racing_influence_on_military
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_earnhardt_racing_corps
+		icon = GFX_goal_OBX_Earnhardt_Racing_Corps
+		cost = 8
+		relative_position_id = OBX_fast
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_fast
+		}
+		prerequisite = {
+			focus = OBX_aggressive
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_secure_southern_raceways
+		icon = GFX_goal_OBX_Secure_Southern_Raceways
+		cost = 8
+		relative_position_id = OBX_earnhardt_racing_corps
+		x = 0
+		y = 2
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_earnhardt_racing_corps
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_martinsville_speedway
+		icon = GFX_goal_OBX_Martinsville_Speedway
+		cost = 8
+		relative_position_id = OBX_secure_southern_raceways
+		x = -2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_secure_southern_raceways
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_bristol_motor_speedway
+		icon = GFX_goal_OBX_Bristol_Motor_Speedway
+		cost = 8
+		relative_position_id = OBX_secure_southern_raceways
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_secure_southern_raceways
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_atlanta_talladega_and_more
+		icon = GFX_goal_OBX_Atlanta_Talladega_and_More
+		cost = 8
+		relative_position_id = OBX_secure_southern_raceways
+		x = 2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_secure_southern_raceways
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_daytona_500
+		icon = GFX_goal_OBX_Daytona_International_Speedway
+		cost = 8
+		relative_position_id = OBX_bristol_motor_speedway
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_martinsville_speedway
+		}
+		prerequisite = {
+			focus = OBX_bristol_motor_speedway
+		}
+		prerequisite = {
+			focus = OBX_atlanta_talladega_and_more
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_indy_500
+		icon = GFX_goal_OBX_Indianapolis_Motor_Speedway
+		cost = 8
+		relative_position_id = OBX_bristol_motor_speedway
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_martinsville_speedway
+		}
+		prerequisite = {
+			focus = OBX_bristol_motor_speedway
+		}
+		prerequisite = {
+			focus = OBX_atlanta_talladega_and_more
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_motorsport_tourism
+		icon = GFX_goal_OBX_Motorsport_Tourism
+		cost = 8
+		relative_position_id = OBX_the_intimidator
+		x = 15
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_the_intimidator
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_memorialize_earnhardt_sr
+		icon = GFX_goal_OBX_Memoralize_Dale_Earnhardt_Sr
+		cost = 8
+		relative_position_id = OBX_motorsport_tourism
+		x = -1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_motorsport_tourism
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_find_number_3_car
+		icon = GFX_goal_OBX_Find_the_Number_3_Car
+		cost = 8
+		relative_position_id = OBX_memorialize_earnhardt_sr
+		x = -2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_memorialize_earnhardt_sr
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_embrace_racism
+		icon = GFX_goal_OBX_Embrace_Racism
+		cost = 8
+		relative_position_id = OBX_find_number_3_car
+		x = -2
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_find_number_3_car
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_a_new_south
+		icon = GFX_goal_OBX_A_New_South
+		cost = 8
+		relative_position_id = OBX_find_number_3_car
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_find_number_3_car
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_booze_cruising
+		icon = GFX_goal_OBX_Booze_Cruisin
+		cost = 8
+		relative_position_id = OBX_motorsport_tourism
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_motorsport_tourism
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_restart_national_racing_events
+		icon = GFX_goal_OBX_Restart_National_Racing_Events
+		cost = 8
+		relative_position_id = OBX_memorialize_earnhardt_sr
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_memorialize_earnhardt_sr
+		}
+		prerequisite = {
+			focus = OBX_booze_cruising
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_motorsport_culture
+		icon = GFX_goal_OBX_Motorsport_Culture
+		cost = 8
+		relative_position_id = OBX_booze_cruising
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_memorialize_earnhardt_sr
+		}
+		prerequisite = {
+			focus = OBX_booze_cruising
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_southern_heritage
+		icon = GFX_goal_OBX_Southern_Heritage
+		cost = 8
+		relative_position_id = OBX_restart_national_racing_events
+		x = 1
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_restart_national_racing_events
+		}
+		prerequisite = {
+			focus = OBX_motorsport_culture
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = OBX_carolinas_racing_spirit
+		icon = GFX_goal_OBX_Carolinas_Racing_Spirit
+		cost = 8
+		relative_position_id = OBX_southern_heritage
+		x = 0
+		y = 1
+		ai_will_do = { 
+			factor = 5
+		}
+		prerequisite = {
+			focus = OBX_southern_heritage
+		}
+		completion_reward = {
+			
 		}
 	}
 }
