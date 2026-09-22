@@ -91,6 +91,40 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = _zzz.4.a
+		hidden_effect = {
+			if = {
+				limit = { tag = CAS }
+				country_event = _zzz.5
+			}
+			if = {
+				limit = { tag = VIR }
+				country_event = _zzz.6
+			}
+		}
+	}
+}
+
+#BETA WARNING EVENT - CAS
+country_event = {
+	id = _zzz.5
+	title = _zzz.5.t
+	desc = _zzz.5.d
+	picture = event_sam_hyde_01
+	is_triggered_only = yes
+	option = {
+		name = _zzz.4.a
+	}
+}
+
+#BETA WARNING EVENT - VIR
+country_event = {
+	id = _zzz.6
+	title = _zzz.6.t
+	desc = _zzz.6.d
+	picture = event_sam_hyde_01
+	is_triggered_only = yes
+	option = {
+		name = _zzz.4.a
 	}
 }
 
