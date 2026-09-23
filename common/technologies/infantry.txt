@@ -1043,6 +1043,11 @@ technologies = {
 	}
 	
 	support_weapons = {
+	
+		enable_subunits = {
+			fire_support
+			mot_fire_support
+		}
 
 		infantry = {
 			defense = 0.05
@@ -1126,7 +1131,19 @@ technologies = {
 	}
 	
 	support_weapons2 = {
+		
+		fire_support = {
+			defense = 0.15
+			breakthrough = 0.15
+			soft_attack = 0.1
+		}
 
+		mot_fire_support = {
+			defense = 0.15
+			breakthrough = 0.05
+			soft_attack = 0.1
+		}
+		
 		infantry = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1194,6 +1211,18 @@ technologies = {
 	
 	support_weapons3 = {
 
+		fire_support = {
+			defense = 0.15
+			breakthrough = 0.15
+			soft_attack = 0.1
+		}
+
+		mot_fire_support = {
+			defense = 0.15
+			breakthrough = 0.05
+			soft_attack = 0.1
+		}
+		
 		infantry = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1256,6 +1285,17 @@ technologies = {
 	
 	support_weapons4 = {
 
+		fire_support = {
+			defense = 0.15
+			breakthrough = 0.15
+			soft_attack = 0.1
+		}
+		mot_fire_support = {
+			defense = 0.15
+			breakthrough = 0.05
+			soft_attack = 0.1
+		}
+		
 		infantry = {
 			defense = 0.05
 			breakthrough = 0.05
