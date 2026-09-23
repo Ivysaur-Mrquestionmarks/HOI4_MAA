@@ -916,6 +916,34 @@ ideas = {
 		}
 		
 		
+		VIR_northamomics = {
+			modifier = {
+				political_power_cost = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		VIR_northamomics1 = {
+			modifier = {
+				political_power_cost = 0.05
+				production_factory_max_efficiency_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_dockyard = -0.025
+				industrial_capacity_factory = -0.025
+			}
+		}
+		VIR_northamomics2 = {
+			modifier = {
+				political_power_cost = 0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		
 		
 		FRA_VIR_united_general_staf = {
 			modifier = {

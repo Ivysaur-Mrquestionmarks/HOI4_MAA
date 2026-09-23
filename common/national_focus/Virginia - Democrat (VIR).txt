@@ -4587,6 +4587,107 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = VIR_expanding_animal_welfare
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = VIR_The_Blue_Wave_Flows
+		prerequisite = {
+			focus = VIR_The_Blue_Wave_Flows
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = VIR_raise_minimum_wage
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 5.00
+		x = 2
+		y = 1
+		relative_position_id = VIR_The_Blue_Wave_Flows
+		prerequisite = {
+			focus = VIR_The_Blue_Wave_Flows
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = VIR_northamomics
+		}
+	}
+	focus = {
+		id = VIR_cut_rural_business_tax
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = VIR_raise_minimum_wage
+		prerequisite = {
+			focus = VIR_raise_minimum_wage
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = VIR_northamomics1
+				}
+				swap_ideas = {
+					remove_idea = VIR_northamomics1
+					add_idea = VIR_northamomics2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = VIR_northamomics
+					add_idea = VIR_northamomics1
+				}
+			}
+		}
+	}
+	focus = {
+		id = VIR_reppeal_the_grocery_tax
+		icon = GFX_goal_VIR_The_Blue_Wave_Flows
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = VIR_raise_minimum_wage
+		prerequisite = {
+			focus = VIR_raise_minimum_wage
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = VIR_northamomics1
+				}
+				swap_ideas = {
+					remove_idea = VIR_northamomics1
+					add_idea = VIR_northamomics2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = VIR_northamomics
+					add_idea = VIR_northamomics1
+				}
+			}
+		}
+	}
+	
+	focus = {
 		id = VIR_appease_the_left
 		icon = GFX_goal_VIR_appease_the_left
 		cost = 5.00

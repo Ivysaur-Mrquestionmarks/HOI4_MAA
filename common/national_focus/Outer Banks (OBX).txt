@@ -3841,6 +3841,9 @@ focus_tree = {
 		ai_will_do = { 
 			factor = 5
 		}
+		allow_branch = {
+			always = no
+		}
 		available = {
 			has_country_flag = colonial_governance_restored
 		}
@@ -4370,6 +4373,9 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = pirate_takeover
+		}
+		allow_branch = {
+			always = no
 		}
 		completion_reward = {
 			
@@ -5022,8 +5028,8 @@ focus_tree = {
 		icon = GFX_goal_OBX_five_oclock_somewhere
 		cost = 8
 		relative_position_id = OBX_an_isolated_community
-		x = 130
-		y = 1
+		x = 50
+		y = 10
 		ai_will_do = { 
 			factor = 5
 		}
@@ -5034,6 +5040,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = unfinished_content_warning_tooltip
 			
 		}
 	}
@@ -5583,6 +5590,9 @@ focus_tree = {
 				character = OBX_dale_earnhardt_jr
 				ruling_only = yes
 			}
+		}
+		allow_branch = {
+			#always = no
 		}
 		completion_reward = {
 			
