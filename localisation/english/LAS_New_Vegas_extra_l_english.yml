@@ -155,9 +155,47 @@
  new_vegas.29.d:0 "Brown forms a Provisional Govenment"
  new_vegas.29.a:0 "Placeholder"
  
- new_vegas.30.t:0 " "
- new_vegas.30.d:0 " "
- new_vegas.30.a:0 " "
+ new_vegas.36.t:0 "Placeholder name"
+ new_vegas.36.d:0 "Brown learning fallout lore to better acclimatize with the fallout fans"
+ new_vegas.36.a:0 "placeholder"
+ 
+ new_vegas.35.t:0 "The Constitutional Conference"
+ new_vegas.35.d:0 "All the smartest political people in vegas are summoned to write a new constitution for new vegas"
+ new_vegas.35.a:0 "Good Luck"
+ 
+ new_vegas.30.t:0 "Debate on Executive Powers"
+ new_vegas.30.d:0 "the convention debates what powers the executive should have"
+ new_vegas.30.a:0 "A Figurehead President"
+ new_vegas.30.b:0 "An Empowered President"
+ 
+ new_vegas.31.t:0 "Debate on Legislative Power"
+ new_vegas.31.d:0 "the convention debates on what powers the legislature should have"
+ new_vegas.31.a:0 "A Supreme Legislature"
+ new_vegas.31.b:0 "An Advisory Legislature"
+ 
+ new_vegas.32.t:0 "Debate on Judicial Power"
+ new_vegas.32.d:0 "the convention debates on what powers the judiciary should have"
+ new_vegas.32.a:0 "A Strong Supreme Court with Judicial Review"
+ new_vegas.32.b:0 "The Judiciary should be Subordinate to the Government"
+ 
+ new_vegas.33.t:0 "The New Constitution"
+ new_vegas.33.d:0 "write about how the constitution is freedom lovin"
+ new_vegas.33.a:0 "Hooray"
+ 
+ new_vegas.34.t:0 "The New Constitution"
+ new_vegas.34.d:0 "write about how the Constitution is autocratic"
+ new_vegas.34.a:0 "Hooray"
+ 
+ new_vegas.37.t:0 "Election Day"
+ new_vegas.37.d:0 "its election day"
+ new_vegas.37.a:0 "The Republicans!"
+ new_vegas.37.b:0 "The Freedom Party"
+ new_vegas.37.c:0 "The People's Democratic Party"
+ 
+ new_vegas.38.t:0 "Election Day"
+ new_vegas.38.d:0 "its election day also mention that the People's Democratic Party was banned for extremism"
+ new_vegas.38.a:0 "The Republicans!"
+ new_vegas.38.b:0 "The Freedom Party"
  
  #Ideas
  
@@ -325,6 +363,9 @@
  
  #Political Parties
  
+ LAS_wynn_junta_long:0 "Wynn Junta"
+ LAS_wynn_junta:0 "Wynn Junta"
+ 
  LAS_courier_loyalists_long:0 "Courier Loyalists"
  LAS_courier_loyalists:0 "Courier Loyalists"
  
@@ -363,6 +404,9 @@
  
  LAS_new_vegas_freedom_party_long:0 "New Vegas Freedom Party"
  LAS_new_vegas_freedom_party:0 "Freedom Party"
+ 
+ LAS_presidential_power_long:0 "Power of the Executive Branch"
+ LAS_presidential_power:0 "Executive Power"
  
  #Cosmetic Tags
  

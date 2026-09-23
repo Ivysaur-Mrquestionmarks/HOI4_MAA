@@ -1,0 +1,97 @@
+division_template = {
+    name = "Rangers"
+    is_locked = no
+    priority = 2
+    template_counter = 0
+	override_model = infantry_entity
+    regiments = {
+        mountaineers = { x = 0 y = 0 }
+        mountaineers = { x = 0 y = 1 }
+        mountaineers = { x = 0 y = 2 }
+        mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+        mountaineers = { x = 1 y = 1 }
+        mountaineers = { x = 1 y = 2 }
+        mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 2 y = 0 }
+        mountaineers = { x = 2 y = 1 }
+        mountaineers = { x = 2 y = 2 }
+        mountaineers = { x = 2 y = 3 }
+    }
+    regimental_support = {
+        field_guns = { x = 0 y = 0 }
+		field_guns = { x = 0 y = 1 }
+		field_guns = { x = 0 y = 2 }
+    }
+    support = {
+        inf_AT = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+    }
+}
+
+###############################################
+
+units = {
+	#1
+	division = {
+		name = "Cazador Company"
+		location = 252
+		division_template = "Rangers"
+		start_experience_factor = 0.95
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+
+	#2
+	division = {
+		name = "2nd Ranger Company"
+		location = 252
+		division_template = "Rangers"
+		start_experience_factor = 0.9
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+
+	#3
+	division = {
+		name = "3rd Ranger Company"
+		location = 252
+		division_template = "Rangers"
+		start_experience_factor = 0.85
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+
+	#4
+	division = {
+		name = "Alpha Company"
+		location = 5996
+		division_template = "Rangers"
+		start_experience_factor = 0.95
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	
+	#5
+	division = {
+		name = "5th Ranger Company"
+		location = 5996
+		division_template = "Rangers"
+		start_experience_factor = 0.9
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	
+	#6
+	division = {
+		name = "6th Ranger Company"
+		location = 5996
+		division_template = "Rangers"
+		start_experience_factor = 0.85
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+}

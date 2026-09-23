@@ -1,0 +1,148 @@
+LAS_start_restoring_stability = {
+		if = {
+		limit = { has_idea = LAS_continuing_instability_6 }
+			add_stability = 0.05
+			add_political_power = 100
+		}
+		else_if = {
+			limit = { has_idea = LAS_continuing_instability_5 }
+			swap_ideas = {
+				remove_idea = LAS_continuing_instability_5
+				add_idea = LAS_continuing_instability_6
+			}
+		}
+		else_if = {
+			limit = { has_idea = LAS_continuing_instability_4 }
+			swap_ideas = {
+				remove_idea = LAS_continuing_instability_4
+				add_idea = LAS_continuing_instability_5
+			}
+		}
+		else_if = {
+			limit = { has_idea = LAS_continuing_instability_3 }
+			swap_ideas = {
+				remove_idea = LAS_continuing_instability_3
+				add_idea = LAS_continuing_instability_4
+			}
+		}
+		else_if = {
+			limit = { has_idea = LAS_continuing_instability_2 }
+			swap_ideas = {
+				remove_idea = LAS_continuing_instability_2
+				add_idea = LAS_continuing_instability_3
+			}
+		}
+		else_if = {
+			limit = { has_idea = LAS_continuing_instability_1 }
+			swap_ideas = {
+				remove_idea = LAS_continuing_instability_1
+				add_idea = LAS_continuing_instability_2
+			}
+		}
+	}
+LAS_NCR_GOV_1 = {
+	if = {
+		limit = { has_idea = LAS_lacking_government_4 }
+			swap_ideas = {
+			remove_idea = LAS_lacking_government_4
+			add_idea = LAS_lacking_government_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = LAS_lacking_government_3 }
+		swap_ideas = {
+		remove_idea = LAS_lacking_government_3
+		add_idea = LAS_lacking_government_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = LAS_lacking_government_2 }
+		swap_ideas = {
+		remove_idea = LAS_lacking_government_2
+		add_idea = LAS_lacking_government_3
+		}
+	}	
+}
+LAS_NCR_GOV_2 = {
+	if = {
+		limit = { has_ideas = LAS_lacking_government_6 }
+			swap_ideas = {
+				remove_idea = LAS_lacking_government_6
+				add_idea = LAS_lacking_government_7
+				}
+		}
+		else_if = {
+			limit = { has_ideas = LAS_lacking_government_5 }
+				swap_ideas = {
+				remove_idea = LAS_lacking_government_5
+				add_idea = LAS_lacking_government_6
+				}
+		}
+}
+LAS_NCR_MIL_1 = {
+	if = {
+		limit = { has_idea = LAS_ncr_mil_2_1 }
+			swap_ideas = {
+			remove_idea = LAS_ncr_mil_2_1
+			add_idea = LAS_ncr_mil_2_2
+			}
+	}
+	else_if = {
+		add_ideas = LAS_ncr_mil_2_1
+	}
+}
+LAS_NCR_ECO_1 = {
+	if = {
+	limit = { has_idea = LAS_destroyed_economy_4 }
+		swap_ideas = {
+			remove_idea = LAS_destroyed_economy_4
+			add_idea = LAS_destroyed_economy_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = LAS_destroyed_economy_3 }
+		swap_ideas = {
+		remove_idea = LAS_destroyed_economy_3
+		add_idea = LAS_destroyed_economy_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = LAS_destroyed_economy_2 }
+		swap_ideas = {
+		remove_idea = LAS_destroyed_economy_2
+		add_idea = LAS_destroyed_economy_3
+		}
+	}
+}
+LAS_NCR_ECO_2 = {
+	if = {
+		limit = { has_idea = LAS_restored_economy_1 }
+		swap_ideas = {
+		remove_idea = LAS_restored_economy_1
+		add_idea = LAS_restored_economy_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = LAS_destroyed_economy_5 }
+		swap_ideas = {
+		remove_idea = LAS_destroyed_economy_5
+		add_idea = LAS_restored_economy_1
+		}
+	}
+}
+LAS_NCR_ECO_3 = {
+	if = {
+		limit = { has_idea = LAS_restored_economy_3 }
+		swap_ideas = {
+		remove_idea = LAS_restored_economy_3
+		add_idea = LAS_restored_economy_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = LAS_restored_economy_2 }
+		swap_ideas = {
+		remove_idea = LAS_restored_economy_2
+		add_idea = LAS_restored_economy_3
+		}
+	}
+}
