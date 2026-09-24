@@ -822,12 +822,8 @@ country_event = {
 	id = viva_las_vegas.22
 	title = viva_las_vegas.22.t
 	desc = viva_las_vegas.22.d
-	picture = 
+	#picture = 
 	is_triggered_only = yes
-	trigger = {
-		original_tag = LAS
-		date = 2021.11.13
-		}
 	fire_only_once = yes
 	option = { 
 		name = viva_las_vegas.22.a
@@ -847,7 +843,7 @@ country_event = {
 	id = viva_las_vegas.23
 	title = viva_las_vegas.23.t
 	desc = viva_las_vegas.23.d
-	picture = 
+	#picture = 
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
@@ -888,7 +884,7 @@ country_event = {
 	id = viva_las_vegas.24
 	title = viva_las_vegas.24.t
 	desc = viva_las_vegas.24.d
-	picture = 
+	#picture = 
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
@@ -914,7 +910,8 @@ country_event = {
 					ideology = autocratic
 					long_name = LAS_wynn_junta_long
 					name = LAS_wynn_junta
-				}
+			}
+			set_country_flag = LAS_fallout_coup
 			#remove all spirits - will have to consult on how to do mormon war
 		}
 	}
@@ -923,7 +920,7 @@ country_event = {
 	id = viva_las_vegas.25
 	title = viva_las_vegas.25.t
 	desc = viva_las_vegas.25.d
-	picture = 
+	#picture = 
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = { 
