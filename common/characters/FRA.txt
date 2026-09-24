@@ -2083,11 +2083,11 @@ characters={
 		}
 		corps_commander = {
 			traits = { war_hero media_personality inflexible_strategist guerilla_fighter } 
-			skill = 1
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 5
 			visible = {
 				has_country_flag = fra_ukraine_in_exile
 			}
@@ -2106,7 +2106,7 @@ characters={
 		scientist = {
 			traits = { scientist_trait_fast_learner }
 			skills = {
-				specialization_land = 1
+				specialization_land = 3
 			}
 		}
 	}
