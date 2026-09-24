@@ -292,6 +292,10 @@ country_event = {
 			libertarian_left = 5
 			authoritarian_left = 0
 		}
+		promote_character  = {
+			character  = LAS_sean_wallis
+			ideology = progressive
+		}
 		complete_national_focus = LAS_victory_new_vegas_party
 	}
 	option = {
@@ -312,6 +316,10 @@ country_event = {
 			republican = 5
 			libertarian_left = 5
 			authoritarian_left = 0
+		}
+		promote_character  = {
+			character  = LAS_sean_wallis
+			ideology = populist_conservatism
 		}
 		complete_national_focus = LAS_victory_independence_party
 	}
