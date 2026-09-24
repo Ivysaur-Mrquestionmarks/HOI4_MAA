@@ -1354,6 +1354,17 @@ technologies = {
 	motorised_infantry = {
 
 		enable_subunits = {
+			mot_anti_tank_brigade
+			mot_artillery_brigade
+			mot_anti_air_brigade
+
+		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_motorized
+		}
+
+		enable_subunits = {
 			motorized
 		}
 
@@ -1363,6 +1374,10 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_wheeled_suspension
+		}
+
+		mot_fire_support = {
+			breakthrough = 0.1
 		}
 
 		on_research_complete_limit = {

@@ -23,6 +23,7 @@ sub_units = {
 
 
 		combat_width = 0
+		regimental = no
 
 		need = {
 			artillery_equipment = 12
@@ -68,6 +69,7 @@ sub_units = {
 		}		
 
 		combat_width = 0
+		regimental = no
 
 		need = {
 			rocket_artillery_equipment = 12

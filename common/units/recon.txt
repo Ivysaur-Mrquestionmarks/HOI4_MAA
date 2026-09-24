@@ -23,6 +23,7 @@ sub_units = {
 
 	
 		combat_width = 0
+		regimental = no
 	
 		#Size Definitions
 		max_strength = 2
@@ -116,6 +117,7 @@ sub_units = {
 		}
 	
 		combat_width = 0
+		regimental = no
 	
 		#Size Definitions
 		max_strength 		= 2
@@ -205,6 +207,7 @@ sub_units = {
 		}
 		
 		combat_width = 0
+		regimental = no
 	
 		#Size Definitions
 		max_strength = 2
@@ -291,6 +294,7 @@ sub_units = {
 
 	
 		combat_width = 0
+		regimental = no
 	
 		#Size Definitions
 		max_strength = 2
@@ -464,6 +468,7 @@ sub_units = {
 
 	
 		combat_width = 0
+		regimental = no
 	
 		#Size Definitions
 		max_strength = 2
@@ -529,6 +534,7 @@ sub_units = {
 		}
 		
 		group = support
+		regimental = no
 		
 		categories = {
 			category_front_line
@@ -598,6 +604,7 @@ sub_units = {
 		}
 		
 		group = support
+		regimental = no
 		
 		categories = {
 			category_front_line
@@ -704,6 +711,7 @@ sub_units = {
 		}
 		
 		group = support
+		regimental = no
 		
 		categories = {
 			category_support_battalions

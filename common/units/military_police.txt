@@ -21,6 +21,7 @@ sub_units = {
 
 	
 		combat_width = 0
+		regimental = no
 	
 		#Size Definitions
 		max_strength = 1
@@ -35,7 +36,7 @@ sub_units = {
 		can_be_parachuted = yes
 		
 		# Important Ability
-		suppression_factor = 0.20
+		suppression_factor = 0.4
 
 		essential = {
 			infantry_equipment
