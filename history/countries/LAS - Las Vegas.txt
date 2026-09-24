@@ -74,6 +74,14 @@ country_event = {
 	days = 1792
 }
 
+
+
+#New Vegas Starting chain
+country_event = {
+	id = viva_las_vegas.22
+	days = 225
+}
+
 add_ideas = {
 	#laws
 	low_economic_mobilisation
