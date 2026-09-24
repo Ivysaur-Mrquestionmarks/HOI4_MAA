@@ -65,18 +65,18 @@ LAS_NCR_GOV_1 = {
 }
 LAS_NCR_GOV_2 = {
 	if = {
-		limit = { has_ideas = LAS_lacking_government_6 }
+		limit = { has_idea = LAS_lacking_government_6 }
 			swap_ideas = {
 				remove_idea = LAS_lacking_government_6
 				add_idea = LAS_lacking_government_7
 				}
 		}
 		else_if = {
-			limit = { has_ideas = LAS_lacking_government_5 }
+			limit = { has_idea = LAS_lacking_government_5 }
 				swap_ideas = {
 				remove_idea = LAS_lacking_government_5
 				add_idea = LAS_lacking_government_6
-				}
+			}
 		}
 }
 LAS_NCR_MIL_1 = {

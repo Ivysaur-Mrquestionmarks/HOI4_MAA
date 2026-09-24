@@ -1144,6 +1144,10 @@ country_event = {
 			libertarian_left = 10
 			authoritarian_left = 5
 		}
+		promote_character  = {
+			character  = LAS_clancy_brown
+			ideology = trumpist
+		}
 	}
 	option = {
 		name = new_vegas.37.b
@@ -1164,6 +1168,10 @@ country_event = {
 			libertarian_left = 10
 			authoritarian_left = 5
 		}
+		promote_character  = {
+			character  = LAS_clancy_brown
+			ideology = libertarian_ideology
+		}
 	}
 	option = {
 		name = new_vegas.37.c
@@ -1183,6 +1191,14 @@ country_event = {
 			republican = 20
 			libertarian_left = 20
 			authoritarian_left = 5
+		}
+		promote_character  = {
+			character  = LAS_clancy_brown
+			ideology = progressive
+		}
+		promote_character  = {
+			character  = LAS_clancy_brown
+			ideology = democratic_socialism
 		}
 	}
 }
@@ -1213,6 +1229,10 @@ country_event = {
 			libertarian_left = 10
 			authoritarian_left = 5
 		}
+		promote_character  = {
+			character  = LAS_clancy_brown
+			ideology = trumpist
+		}
 	}
 	option = {
 		name = new_vegas.38.b
@@ -1232,6 +1252,10 @@ country_event = {
 			republican = 15
 			libertarian_left = 15
 			authoritarian_left = 7
+		}
+		promote_character  = {
+			character  = LAS_clancy_brown
+			ideology = Jeffersonianism
 		}
 	}
 }

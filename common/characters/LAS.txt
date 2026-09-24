@@ -367,7 +367,9 @@ characters={
             defense_skill = 1
             planning_skill = 3
             logistics_skill = 2
-        }
+        } 
+		has_country_flag = LAS_courier_wallis_chosen
+		has_country_flag = LAS_fallout_coup
 		country_leader = {
 			ideology = kemalism
 			desc = LAS_sean_wallis_desc
@@ -401,6 +403,41 @@ characters={
 				###
 			}
 		}
+		country_leader = {
+			ideology = trumpist
+			desc = LAS_clancy_brown_desc
+			traits = {
+				###
+			}
+		}
+		country_leader = {
+			ideology = progressive
+			desc = LAS_clancy_brown_desc
+			traits = {
+				###
+			}
+		}
+		country_leader = {
+			ideology = Jeffersonianism
+			desc = LAS_clancy_brown_desc
+			traits = {
+				###
+			}
+		}
+		country_leader = {
+			ideology = libertarian_ideology
+			desc = LAS_clancy_brown_desc
+			traits = {
+				###
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			desc = LAS_clancy_brown_desc
+			traits = {
+				###
+			}
+		}
 		corps_commander = {
             traits = {  }
             skill = 1
@@ -409,6 +446,8 @@ characters={
             planning_skill = 2
             logistics_skill = 1
         }
+		has_country_flag = LAS_courier_brown_chosen
+		has_country_flag = LAS_fallout_coup
 	}
 	#LAS_the_courier = {
 		#name = LAS_the_courier
@@ -463,6 +502,8 @@ characters={
             planning_skill = 2
             logistics_skill = 1
         }
+		has_country_flag = LAS_courier_spisak_chosen
+		has_country_flag = LAS_fallout_coup
 	}
 	
 	### Military Leaders ###
