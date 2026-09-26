@@ -112,6 +112,15 @@ country_event = {
 				create_unit = {
 					division = "name = \"SS Division 'Geronimo'\" division_template = \"SS Division\" start_experience_factor = 0.4" 
 					owner = HOP
+					officer = {
+						name = "Chief Kickabitch"
+						portraits = {
+							army = {
+								large = "gfx/leaders/HOP/slapahoe.tga"
+								small = "gfx/interface/ideas/HOP/slapahoe_general.dds"
+							}
+						}
+					}
 				}
 				create_unit = {
 					division = "name = \"SS Division 'Rockwell'\" division_template = \"SS Division\" start_experience_factor = 0.4" 
@@ -136,14 +145,41 @@ country_event = {
 				create_unit = {
 					division = "name = \"Nordic Brotherhood Division\" division_template = \"Volkssturm Militia\" start_experience_factor = 0.1"
 					owner = HOP
+					officer = {
+						name = "Klas Lund"
+						portraits = {
+							army = {
+								large = "gfx/leaders/HOP/klas_lund.tga"
+								small = "gfx/interface/ideas/HOP/klas_lund_general.dds"
+							}
+						}
+					}
 				}
 				create_unit = {
 					division = "name = \"National Front Division\" division_template = \"Volkssturm Militia\" start_experience_factor = 0.1"
 					owner = HOP
+					officer = {
+						name = "Tony Martin"
+						portraits = {
+							army = {
+								large = "gfx/leaders/HOP/tony_martin.tga"
+								small = "gfx/interface/ideas/HOP/tony_martin_general.dds"
+							}
+						}
+					}
 				}
 				create_unit = {
 					division = "name = \"Casapound Division\" division_template = \"Volkssturm Militia\" start_experience_factor = 0.1"
 					owner = HOP
+					officer = {
+						name = "Simone Di Stefano"
+						portraits = {
+							army = {
+								large = "gfx/leaders/HOP/simone_di_stefano.tga"
+								small = "gfx/interface/ideas/HOP/simone_di_stefano_general.dds"
+							}
+						}
+					}
 				}
 				create_unit = {
 					division = "name = \"2nd Hopi Auxiliary Conscripts\" division_template = \"Volkssturm Militia\" start_experience_factor = 0.1"
@@ -275,10 +311,28 @@ country_event = {
 				create_unit = {
 					division = "name = \"1st Auxillery Division\" division_template = \"SS Division\" start_experience_factor = 0.0" 
 					owner = HOP
+					officer = {
+						name = "Steve Laws"
+						portraits = {
+							army = {
+								large = "gfx/leaders/HOP/steve_laws.tga"
+								small = "gfx/interface/ideas/HOP/steve_laws_general.dds"
+							}
+						}
+					}
 				}
 				create_unit = {
 					division = "name = \"2nd Auxillery Division\" division_template = \"SS Division\" start_experience_factor = 0.0" 
 					owner = HOP
+					officer = {
+						name = "Barkley Walsh"
+						portraits = {
+							army = {
+								large = "gfx/leaders/HOP/kai_stephens.tga"
+								small = "gfx/interface/ideas/HOP/kai_stephens_general.dds"
+							}
+						}
+					}
 				}
 				create_unit = {
 					division = "name = \"3rd Auxillery Division\" division_template = \"SS Division\" start_experience_factor = 0.0" 
