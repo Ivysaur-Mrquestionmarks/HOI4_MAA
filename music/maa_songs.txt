@@ -76,7 +76,39 @@ music = {
 	}
 }
 music = {
+	song = "holy_wars_the_punishment_is_due"
+
+	chance = {
+		modifier = {
+			factor = 7
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "hangar_18"
+	chance = {
+		modifier = {
+			factor = 5
+			NOT = { has_country_leader = { name = "Wladimir" ruling_only = yes } }
+		}
+		modifier = {
+			factor = 20
+			has_country_leader = { name = "Wladimir" ruling_only = yes }
+		}
+	}
+}
+music = {
 	song = "pnuema"
+
+	chance = {
+		modifier = {
+			factor = 8
+		}
+	}
+}
+music = {
+	song = "7empest"
 
 	chance = {
 		modifier = {
@@ -518,6 +550,31 @@ music = {
 	chance = {
 		modifier = {
 			factor = 4
+			OR = {
+				has_government = autocratic
+			}
+		}
+	}
+}
+music = {
+	song = "feuer_frei"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "links234"
+
+	chance = {
+		modifier = {
+			factor = 4
+			OR = {
+				has_government = libertarian_left
+				has_government = authoritarian_left
+			}
 		}
 	}
 }

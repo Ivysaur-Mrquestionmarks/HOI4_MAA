@@ -109,6 +109,16 @@ music = {
 	}
 }
 music = {
+	song = "peace_sells"
+
+	chance = {
+		modifier = {
+			factor = 5
+			has_war = yes
+		}
+	}
+}
+music = {
 	song = "i_need_a_pinochet"
 
 	chance = {
@@ -152,6 +162,15 @@ music = {
 					has_government = democrat
 				}
 			}
+		}
+	}
+}
+music = {
+	song = "war_pigs_lukes_wall"
+
+	chance = {
+		modifier = {
+			factor = 8
 		}
 	}
 }
@@ -228,6 +247,35 @@ music = {
 				OR = {
 					has_government = autocratic
 					has_government = republican
+				}
+			}
+		}
+	}
+}
+music = {
+	song = "wma"
+
+	chance = {
+		modifier = {
+			factor = 8
+			NOT = {
+				OR = {
+					has_government = autocratic
+					has_government = republican
+				}
+			}
+		}
+	}
+}
+music = {
+	song = "eternal_life"
+
+	chance = {
+		modifier = {
+			factor = 6
+			NOT = {
+				OR = {
+					has_government = autocratic
 				}
 			}
 		}
@@ -337,6 +385,36 @@ music = {
 		modifier = {
 			factor = 6
 			has_war = yes
+		}
+	}
+}
+music = {
+	song = "taxman"
+	
+	chance = {
+		modifier = {
+			factor = 6
+			has_government = libertarian_right
+		}
+	}
+}
+music = {
+	song = "freewill"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			has_government = libertarian_right
+		}
+	}
+}
+music = {
+	song = "dont_tread_on_me"
+	
+	chance = {
+		modifier = {
+			factor = 8
+			has_government = libertarian_right
 		}
 	}
 }
@@ -565,6 +643,15 @@ music = {
 	}
 }
 music = {
+	song = "monster"
+	
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
 	song = "two_minutes_to_midnight"
 	
 	chance = {
@@ -750,6 +837,14 @@ music = {
 	}
 }
 music = {
+	song = even_flow
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
 	song = hardcore_american_cowboy
 	chance = {
 		modifier = {
@@ -811,6 +906,16 @@ music = {
 	chance = {
 		modifier = {
 			factor = 5
+		}
+	}
+}
+music = {
+	song = "crazy_train"
+	
+	chance = {
+		modifier = {
+			factor = 5
+			has_war = yes
 		}
 	}
 }
