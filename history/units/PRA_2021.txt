@@ -132,6 +132,15 @@ units = {
 	division = {
 		name = "3rd 'Red Guard' People's Army Division"
 		location = 8627
+		officer = {
+			name = "Tom Tuttle" #Tom Tuttle from Tacoma
+			portraits = {
+				army = {
+					large = "gfx/leaders/PRA/tom_tuttle.tga"
+					small = "gfx/interface/ideas/PRA/tom_tuttle_general.dds"
+				}
+			}
+		}
 		division_template = "People's Army Division"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.8
