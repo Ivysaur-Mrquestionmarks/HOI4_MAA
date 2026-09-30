@@ -951,7 +951,7 @@ WAG = {
 	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
 }
 
-#Mercenaries
+#
 ZIO = {
 	male = {
 		names = { 
@@ -964,4 +964,64 @@ ZIO = {
 	
 	}
 	callsigns = { "Son of Cherry" "Yahweh One" "Cry White Boi" }
+}
+
+ISA = {
+	male = {
+		names = { 
+			Abdallah "Abd al-Rahman" "Abd al-Quddus" Afzal Ahmad Akbar Akram   Ayyub
+			Fath "Firuz al-Din" "Habib Alllah" Haydar Humayun "Inayat Allah" Ishaq Jamal Kamran Kohandil
+			Mahmud Mahsud Mihrdil Muhammad Murad Nadir "Nasr Allah" Omar
+			Qaysar Shahpur "Sher Ali" Shuja Suleyman Timur Yaqub Zaman
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" Ahmad Ali
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Jamal Kamil Khalid
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
+			Abbas Abdolazim Abdolhossein Abdolsamad Abolghasem Afshin Ahmad Ali Amir Ammar
+			Arash Ardashir Aria Arman Armand Arshad Arvin Atash Aziz Babak Bahram Bardia
+			Basir Bijan Dalir Dariush Derafsh Ebrahim Ehsan Ervin Esmail Farbod Farhad
+			Farrokh Farshid Fazlollah Hamid Hamzeh Hasan Hassan Hormuzd Hossein Iman Izad
+			Jamshid Kamran Karim Kasra Khashayar Khosrow Kourosh Mahmoud Manuchehr Marzban
+			Massoud Mazdak Mazdan Maziar Mehdi Mehran Mehrdad Milad Mir Mohammad Muhsin Murad
+			Nosret Omid Papak Parsa Parviz Payam Pedram Piruz Pouria Ramin Rexa Reza Rostam
+			Sadegh Sassan Sepehr Shahin Shahryar Shams Shapour Shervin Sohrab Soroush Turan
+			Vahid Vandad Yousef Zand Zartosh Zurvan
+		}
+	}
+
+	female = {
+		names = {
+			Adan Adar Ara Ardil Arezo Arezu Ariyan Badil Bahar Bawan Baziyan Befraw Belqis
+			Bihar Binar Binav Biyan Bohar Burandoxt Pourandokht
+			Derav Desmal Devken Dilar Dilaram Dilare Dilawaz Dilber Dilcan Dildar Dilgerm
+			Esmerxan Nawal Ezcan Felek Fener Gerdengaz Gozel
+			Mehrnaz Farnaz Afsaneh Ahu Arghavan Azarmidokht Asa Azadeh Bahar Banafsheh Behnaz Burandokht Darya Delaram
+			Delbar Dinah Donya Elham Elnaz Farah Fareedeh Farnaz Farrin Farva Furuzan Ghamze Ghazal
+			Ghoncheh Ghoncheh Golbahar Golbahar Golnaz Golnaz Golpari Golshan Hamdam Hurmat Irandokht
+			Jamileh Javaneh Leila Mahdokht Mahtab Mariam Mariam Navvaba Nazgol Nazgol Nazilla Noor Parvaneh
+			Parvaneh Parvin Pertevniyal Pourandokht Pourandokht Roshanora Roxana Salomeh Shahrzad Shahzadeh
+			Shirin Soraya Touran Tourandokht Yasaman Yekta Zarrindokht Zeynab Zohreh Atiya
+		}
+	}
+	
+	surnames = { 
+		Khan Nuristani Sattari Sherkhanzai Yasin Abdul Ahmadi Aziz Karzai Nawabi Poya Shahnawaz
+		Muammar "al-Baghdadi" "al-Basri" "al-Ghazzawi" "al-Halabi" "al-Hamawi" "al-Himsi"
+				"al-Mawsili" "al-Nablusi" "al-Qudsi" "al-Shami"
+				"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
+				"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid"
+				"ibn Muhammad" "ibn Mustafa" "ibn Salim"
+				"ibn Umar" "ibn Uthman" "ibn Yusuf"
+Abed Ahura Airom Ansari Ayrum Buzarjomehri Davallu Ebrahimi Esfahani Esfandiari
+		Faghihinejad Farahmand Farhani Farrokhzad Ghademi Ghorbani Homayoun Hooshang
+		Jahanbani Jahandar Jahandideh Jahangir Jahanshah Jamshidi Jorjani Kashani Kavoosi
+		Khadem Khiabni Khorasani Khorram-din Khuzai Lajani Madani Mazandarani Mazdaki
+		Mazdani Mehregan Meshhedi Mohsen Mokri Nakhchevani Paria Parsi Pesyan Pouran
+		Rahbar Rajavi Rezaei Rokni Rostamian Sassani Shafaei Shahbakhti Shamshiri
+		Shir-Del Shirazi Tabrizi Tahmasebi Tehrani Turani Zahedi
+	
+	}
+	callsigns = {
+		###"Hammer of Allah"
+	}
 }
