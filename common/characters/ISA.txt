@@ -84,4 +84,38 @@ characters={
 			legacy_id = 1018573
 		}
 	}
+	ISA_nidal_malik_hasan = {
+		name = "Nidal Hasan"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/AFS/ISA/nidal_hasan_adv.dds"
+				large = "gfx/leaders/ISA/nidal_hasan.tga"
+			}
+		}
+		corps_commander = {
+			traits={ career_officer infantry_officer guerilla_fighter } 
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ISA_nidal_hasan_adviser
+			cost = 100
+			allowed = {
+				original_tag = ISA
+			}
+			visible = {
+
+			}
+			available = {
+				has_government = autocratic
+			}
+			traits = {
+				 army_chief_maneuver_2
+			}
+		}
+	}
 }
