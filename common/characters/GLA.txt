@@ -1038,6 +1038,36 @@ characters={
 			}
 		}
 	}
+	GLA_ken_bone = {
+		name = "Ken Bone"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GLA/ken_bone.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GLA_ken_bone_advisor
+			cost = 150
+			allowed = {
+				tag = GLA
+			}
+			visible = { 
+				tag = GLA
+			}
+			available = {
+			    NOT = {
+				has_government = autocratic
+			    }
+			}
+			traits = {
+				popular_figurehead
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
 
 	#scientist
 	GLA_kenneth_p_rockwell = {
