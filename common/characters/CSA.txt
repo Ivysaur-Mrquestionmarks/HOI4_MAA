@@ -286,6 +286,7 @@ characters={
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/CSA/Tom_Cotton.tga"
+				small = "gfx/interface/ideas/CSA/tom_cotton_adviser.dds"
 			}
 		}
 		country_leader = {
@@ -295,6 +296,20 @@ characters={
 			}
 			expire = "2060.1.1.1"
 			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CSA_tom_cotton
+			cost = 150
+			allowed = {
+				tag = CSA
+			}
+			traits = {
+				captain_of_industry
+			}
+			ai_will_do = {
+				factor = 5
+			}
 		}
 	}
 	
@@ -382,6 +397,29 @@ characters={
 	
 	### Military Staff and Political Advisors ###
 	# Political Advisors #
+
+	CSA_digger_rockwell = {
+		name = "Digger Rockwell"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/CSA/digger_rockwell.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CSA_digger_rockwell
+			cost = 150
+			allowed = {
+				tag = CSA
+			}
+			traits = {
+				CSA_fossil_fool
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
 	
 	### Military Leaders ###
 	# Army #

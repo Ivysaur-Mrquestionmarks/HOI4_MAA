@@ -2180,6 +2180,15 @@ leader_traits = {
 		industrial_capacity_dockyard = 0.05
 		military_industrial_organization_funds_gain = 0.10 #subject to testing- not sure if this works outside of MIO scope
 	}
+
+	CSA_fossil_fool = {
+		random = no
+		sprite = 10
+		stability_factor = -0.25
+		industrial_capacity_factory = 0.05
+		local_resources_factor = 0.45
+		fuel_gain = 250
+	}
 	
 	#VANCOUVER
 	
