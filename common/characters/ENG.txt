@@ -211,6 +211,86 @@ characters={
 		}
 	}
 
+	ENG_alan_sugar = {
+		name = "Lord Sugar"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ENG/ENG_lord_sugar.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_alan_sugar
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+
+	ENG_duncan_bannatyne = {
+		name = "Duncan Bannatyne"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ENG/ENG_duncan_bannatyne.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_duncan_valentine
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				fortification_engineer 
+			}
+		}
+	}
+
+	ENG_john_rankin = {
+		name = "John Rankin"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ENG/ENG_john_rankin.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_john_rankin
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				war_industrialist
+			}
+		}
+	}
+
+	ENG_sir_richard_peter_moore = {
+		name = "Richard Moore"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ENG/ENG_richard_moore.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_richard_moore
+			cost = 150
+			available  = {
+				has_intelligence_agency  = yes 
+			}
+			allowed  = {
+				has_dlc = "La Resistance"
+			}
+			traits = {
+				 head_of_intelligence
+			}
+		}
+	}
+
 	#generals
 	ENG_mark_carleton_smith = {
 		name = BEF_mark_carleton_smith
