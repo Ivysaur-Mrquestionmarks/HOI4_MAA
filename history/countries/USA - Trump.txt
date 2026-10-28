@@ -297,6 +297,14 @@ if = {
 		available_to_spy_master = yes
 		nationalities = { USA HOP GLA NMX }
 	}
+	create_operative_leader = {
+		name = "Dog"
+		GFX = GFX_portrait_dog_the_bounty_hunter
+		traits = { operative_master_interrogator operative_infiltrator operative_commando }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { USA FRA CSA PRA GLA AFS }
+	}
 }
 
 if = {
