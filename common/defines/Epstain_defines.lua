@@ -77,3 +77,6 @@ NResistance = {
 	MAXIMUM_GARRISON_HARDNESS_WHEN_ATTACKED = 0.90,   -- Cap to be sure that garrison will suffer lost in attack, even with a almost 100% hardness
 
 },
+NDoctrines = {
+        BASE_MASTERY_GAIN_TARGET_MANPOWER = 10000.0,           -- Beyond this amount of manpower contributing to mastery, mastery gain will start having diminishing returns (see doctrines documentation)
+},
