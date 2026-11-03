@@ -1533,6 +1533,19 @@ news_event = {
 	is_triggered_only = yes
 	major = yes
 	option = {
-		name = News_events.43.a
+		name = News_events.44.a
+	}
+}
+
+#It is revealed that the Mexican goberment has been making deals where they let Cartels control a significan portion of northen Mexico, to "preserve the peace" and focus the budget in other areas. 
+news_event = {
+	id = News_events.45
+	title = News_events.45.t
+	desc = News_events.45.d
+	picture = news_event_2038_world_cup
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = News_events.45.a
 	}
 }

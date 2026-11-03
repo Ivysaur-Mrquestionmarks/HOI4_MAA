@@ -29,6 +29,43 @@ MEX_retake_paso = {
 
 }
 
+CAR_faction_loyalty = {
+	allowed = {
+		tag = CAR
+	}
+	enable = {
+		RMX = {
+			exists = yes
+		}
+	}
+
+	ai_strategy = {
+	    	type = alliance
+    		id = MEX
+    		value = 200
+	}
+}
+
+WMX_faction_loyalty = {
+	allowed = {
+		OR = {
+			tag = WMX
+			tag = ADF
+		}
+	}
+	enable = {
+		MEX = {
+			exists = yes
+		}
+	}
+
+	ai_strategy = {
+	    	type = alliance
+    		id = RMX
+    		value = 200
+	}
+}
+
 VEN_ZAP_support = {
         allowed = {
                 original_tag = VEN

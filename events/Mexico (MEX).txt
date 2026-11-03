@@ -50,19 +50,21 @@ country_event = {
 	title = mexico.2.t
 	desc = mexico.2.d
 	#picture =
-	trigger = {
-		tag = MEX
-		date > 2021.09.02
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
-			country_event = { id = mexico.5 days = 14 }
-			ZAP = { 	
+			
+			country_event = { id = mexico.26 days = 7 }
+			YUC = {
+				country_event = { id = mexico.27 days = 7 }
+			}
+			ZAP = { 
+					
 				transfer_state = 351
 				add_state_core = 351
-				#transfer_state = 321
-				#add_state_core = 321
+				transfer_state = 482
+				add_state_core = 482
 				division_template = {
 				    name = "Revolutionary Guard"
 				#    division_names_group =
@@ -91,8 +93,9 @@ country_event = {
 						division = "name = \"Guerreos\" division_template = \"Revolutionary Guard\" start_experience_factor = 0.1" 
 						owner = ZAP
 					}
+					set_demilitarized_zone = no
 				}
-				351 = {
+				482 = {
 					create_unit = {
 						division = "name = \"1st Chiapas Revolutionary Infantry\" division_template = \"Revolutionary Guard\" start_experience_factor = 0.2" 
 						owner = ZAP
@@ -105,6 +108,12 @@ country_event = {
 						division = "name = \"Maximistas\" division_template = \"Revolutionary Guard\" start_experience_factor = 0.1" 
 						owner = ZAP
 					}
+					teleport_armies = {
+    						limit = {
+        						tag = MEX
+    						}
+						to_state = 326
+					}
 				}
 			}
 		}
@@ -112,7 +121,7 @@ country_event = {
 	option = {
 		name = mexico.2.a
 		start_border_war = {
-    		change_state_after_war = yes
+    		change_state_after_war = no
     		attacker = {
     		    state = 326
     		    num_provinces = 4
@@ -799,5 +808,615 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+#Civil war rework starts here.
+
+#Nueva leon's gobernor starts an offensive to keep cartels out of his state (event is from the nationalist/gobernor's pov).
+country_event = {
+	id = mexico.13
+	title = mexico.13.t
+	desc = mexico.13.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.13.a
+		start_border_war = {
+    			change_state_after_war = no
+    			attacker = {
+    		    		state = 644
+    		    		num_provinces = 3
+    		    		on_win = mexico.14
+		    		on_lose = mexico.14
+		        	on_cancel = mexico.14
+		    	}
+				
+		    	defender = {
+		        	state = 645
+		        	num_provinces = 3
+		        	on_win = mexico.14
+		        	on_lose = mexico.14
+		        	on_cancel = mexico.14
+		    	}
+		}
+		RMX = {
+			country_event = { id = mexico.15 days = 90 }
+		}		
+	}
+}
+
+#Clashes between the goberment and the cartels have cooled down.
+country_event = {
+	id = mexico.14
+	title = mexico.14.t
+	desc = mexico.14.d
+	#picture =
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = mexico.14.a
+		army_experience = 5
+	}
+}
+
+#Sinaloa (POV) we do an offensive against the cartels.
+country_event = {
+	id = mexico.15
+	title = mexico.15.t
+	desc = mexico.15.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.15.a
+		start_border_war = {
+    			change_state_after_war = no
+    			attacker = {
+    		    		state = 341
+    		    		num_provinces = 3
+    		    		on_win = mexico.14
+		    		on_lose = mexico.14
+		        	on_cancel = mexico.14
+		    	}
+				
+		    	defender = {
+		        	state = 658
+		        	num_provinces = 3
+		        	on_win = mexico.14
+		        	on_lose = mexico.14
+		        	on_cancel = mexico.14
+		    	}
+		}
+		MEX = {
+			country_event = { id = mexico.16 days = 60 }
+		}	
+		YUC = {
+			country_event = { id = mexico.17 days = 60 }
+		}	
+	}
+}
+
+#Yucatan protest lead by indiginous people asking for autonomy and better living conditions (Mexico pov).
+country_event = {
+	id = mexico.16
+	title = mexico.16.t
+	desc = mexico.16.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.16.a
+		country_event = { id = mexico.18 days = 30 }
+	}
+}
+
+#Yucatan protest lead by indiginous people asking for autonomy and better living conditions (Yucatan pov).
+country_event = {
+	id = mexico.17
+	title = mexico.17.t
+	desc = mexico.17.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.17.a
+
+	}
+}
+
+#A journalist leaks secret deals the goberment has been making with cartels
+country_event = {
+	id = mexico.18
+	title = mexico.18.t
+	desc = mexico.18.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.18.a
+		news_event = { id = News_events.45 days = 1 }
+		country_event = { id = mexico.19 days = 3 }
+		WMX = {
+			country_event = { id = mexico.20 days = 4 }
+		}
+	}
+}
+
+#Nationalist protest errupt in the east
+country_event = {
+	id = mexico.19
+	title = mexico.19.t
+	desc = mexico.19.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.19.a
+
+		151 = {
+			add_core_of = wmx
+			set_demilitarized_zone = yes
+		}
+
+		334 = {
+			add_core_of = WMX
+			set_demilitarized_zone = yes
+		}
+		392= {
+			add_core_of = WMX
+			set_demilitarized_zone = yes
+		}
+		389 = {
+			add_core_of = WMX
+			set_demilitarized_zone = yes
+		}
+		660 = {
+			add_core_of = WMX
+			set_demilitarized_zone = yes
+		}
+		147 = {
+			add_core_of = WMX
+			set_demilitarized_zone = yes
+		}
+		643 = {
+			add_core_of = WMX
+			set_demilitarized_zone = yes
+		}
+		384 = {
+			add_core_of = WMX
+			set_demilitarized_zone = yes
+		}
+		79 = {
+			add_core_of = WMX
+			set_demilitarized_zone = yes
+		}
+		641 = {
+			add_core_of = WMX
+			set_demilitarized_zone = yes
+		}
+		659 = {
+			add_core_of = WMX
+			set_demilitarized_zone = yes
+		}
+		642 = {
+			add_core_of = WMX
+			set_demilitarized_zone = yes
+		}
+
+
+		country_event = { id = mexico.21 days = 14 }
+		ADF = {
+			country_event = { id = mexico.22 days = 14 }
+		}
+	}
+}
+
+#(Nationalist POV) The Gobernor joins the on going protest against the goberment's deal with Cartels
+country_event = {
+	id = mexico.20
+	title = mexico.20.t
+	desc = mexico.20.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.20.a
+
+	}
+}
+
+#Paramilitaries Expand their precense in the south west, we pull out the military for safety reasons.
+country_event = {
+	id = mexico.21
+	title = mexico.21.t
+	desc = mexico.21.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.21.a
+		country_event = { id = mexico.23 days = 14 }
+		RMX = {
+			country_event = { id = mexico.24 days = 14 }
+		}
+
+	}
+}
+
+#(ADF POV) We manage to take advantage of the the current crisis to expand our zone of control.
+country_event = {
+	id = mexico.22
+	title = mexico.22.t
+	desc = mexico.22.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.22.a
+		395 = {
+			add_core_of = ADF
+			transfer_state_to = ADF
+			remove_core_of = MEX
+			teleport_armies = {
+    				limit = {
+        				tag = MEX
+    				}
+				to_state = 374
+			}
+		}
+		662 = {
+			add_core_of = ADF
+			transfer_state_to = ADF
+			remove_core_of = MEX
+			teleport_armies = {
+    				limit = {
+        				tag = MEX
+    				}
+				to_state = 374
+			}
+		}
+		load_oob = "ADF_CW"
+	}
+}
+
+#Protest spread to western Mexico
+country_event = {
+	id = mexico.23
+	title = mexico.23.t
+	desc = mexico.23.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.23.a
+		92 = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		636 = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		338 = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		148 = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		638 = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		148 = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		337 = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		137 = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		38 = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		22 = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		15  = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		311 = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+		653  = {
+			add_core_of = RMX
+			set_demilitarized_zone = yes
+		}
+
+		country_event = { id = mexico.2 days = 60 }
+		ZAP = {
+			country_event = { id = mexico.25 days = 59 }
+		}
+
+	}
+}
+
+#(Sinaloa state pov) The anti goberment protest reach our state.
+country_event = {
+	id = mexico.24
+	title = mexico.24.t
+	desc = mexico.24.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.24.a
+
+	}
+}
+
+#(Zapatista POV) We are taking advantage of the current crisis to do an ofensive and to consolidate our power in the south.
+country_event = {
+	id = mexico.25
+	title = mexico.25.t
+	desc = mexico.25.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.25.a
+		create_faction_from_template = faction_template_mexican_zapatistas
+	}
+}
+
+#Yucatan declares independence, with support from the zapatistias.
+country_event = {
+	id = mexico.26
+	title = mexico.26.t
+	desc = mexico.26.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.26.a
+		country_event = { id = mexico.28 days = 7 }
+		WMX = {
+			country_event = { id = mexico.29 days = 7 }
+		}
+	}
+}
+
+#(Yucatan POV) we declare our independence from the federal goberment, and ally with the zapatistas.
+country_event = {
+	id = mexico.27
+	title = mexico.27.t
+	desc = mexico.27.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.27.a
+		drop_cosmetic_tag = yes
+		set_autonomy = {
+    			target = YUC
+    			autonomous_state = autonomy_free
+    			end_wars = yes
+    			end_civil_wars = no
+    			keep_subjects = no
+		}
+		ZAP = {
+			add_to_faction = YUC
+		}
+	}
+}
+
+#The nationalist declare independence.
+country_event = {
+	id = mexico.28
+	title = mexico.28.t
+	desc = mexico.28.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		#every_owned_state = {
+		#	limit = {is_core_of = WMX}
+		#	transfer_state_to = WMX
+		#	remove_core_of = MEX
+		#}
+		release = WMX
+		set_autonomy = {
+    			target = WMX
+    			autonomous_state = autonomy_free
+    			end_wars = yes
+    			end_civil_wars = no
+    			keep_subjects = no
+		}
+	}
+	option = {
+		name = mexico.28.a
+		country_event = { id = mexico.30 days = 7 }
+		RMX = {
+			country_event = { id = mexico.31 days = 7 }
+		} 
+	}
+}
+
+#(Nationalist POV) We have managed to consolidate our control over north eastern Mexico.
+country_event = {
+	id = mexico.29
+	title = mexico.29.t
+	desc = mexico.29.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = mexico.29.a
+		drop_cosmetic_tag = yes
+		add_popularity = {
+		    ideology = autocratic
+		    popularity = 0.35
+		}
+		set_politics = {
+			ruling_party = autocratic
+    			elections_allowed = no
+		}
+		every_owned_state = {
+			set_demilitarized_zone = no
+		}
+		load_oob = "WMX_CW"
+		set_autonomy = {
+    			target = WMX
+    			autonomous_state = autonomy_free
+    			end_wars = yes
+    			end_civil_wars = no
+    			keep_subjects = no
+		}
+	}
+}
+
+#The Liberals declare independence.
+country_event = {
+	id = mexico.30
+	title = mexico.30.t
+	desc = mexico.30.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		#every_owned_state = {
+		#	limit = {is_core_of = WMX}
+		#	transfer_state_to = WMX
+		#	remove_core_of = MEX
+		#}
+		release = RMX
+		set_autonomy = {
+    			target = RMX
+    			autonomous_state = autonomy_free
+    			end_wars = yes
+    			end_civil_wars = no
+    			keep_subjects = no
+		}
+	}
+	option = {
+		name = mexico.28.a
+		country_event = { id = mexico.32 days = 7 }
+		CAR = {
+			country_event = { id = mexico.33 days = 7 }
+		} 
+	}
+}
+
+#(Liberals POV) We have managed to consolidate our control over north western Mexico.
+#We have allied with the nationalist and paramilitaries, against the goberment.
+country_event = {
+	id = mexico.31
+	title = mexico.31.t
+	desc = mexico.31.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = mexico.31.a
+		drop_cosmetic_tag = yes
+
+		set_politics = {
+			ruling_party = democrat
+    			elections_allowed = no
+		}
+		every_owned_state = {
+			set_demilitarized_zone = no
+		}
+		load_oob = "RMX_CW"
+		set_autonomy = {
+    			target = RMX
+    			autonomous_state = autonomy_free
+    			end_wars = yes
+    			end_civil_wars = no
+    			keep_subjects = no
+		}
+		create_faction_from_template = faction_template_mexican_revolucionarios
+		add_to_faction = WMX
+		add_to_faction = ADF
+	}
+}
+
+#We ally with the Cartels, against the splinter groups.
+country_event = {
+	id = mexico.32
+	title = mexico.32.t
+	desc = mexico.32.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.32.a
+		create_faction_from_template = faction_template_mexican_federales
+		add_to_faction = CAR
+		country_event = { id = mexico.34 days = 7 }
+		news_event = { id = mexico.8 days = 7 }
+	}
+}
+
+#(Cartel POV) we formalise our alliance with the Mexican goberment.
+country_event = {
+	id = mexico.33
+	title = mexico.33.t
+	desc = mexico.33.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = mexico.33.a
+	}
+}
+
+#The civil war, begins.
+country_event = {
+	id = mexico.34
+	title = mexico.34.t
+	desc = mexico.34.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+
+		for_each_scope_loop = { #This loops declare the wars
+    			array = global.mexican_collapse_countries
+			for_each_scope_loop = {
+				array = global.mexican_collapse_countries
+				if = { limit = {Not = { OR = {has_war_with = PREV is_in_faction_with = PREV}}}
+					declare_war_on = {
+    						target = PREV
+    						type = annex_everything
+					}
+				}
+			}
+		}
+
+		for_each_scope_loop = { #This loops creates the modifier
+    			array = global.mexican_states
+			add_dynamic_modifier = {
+    				modifier = MEX_annarchic_society
+			}
+		}
+		
+	} #MEX_annarchic_society
+	option = {
+		name = mexico.34.a
 	}
 }

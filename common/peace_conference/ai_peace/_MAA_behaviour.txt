@@ -23,6 +23,18 @@ peace_ai_desires = {
 }
 
 peace_ai_desires = {
+	MEXICO = {
+        	peace_action_type = { liberate force_government puppet }
+        	enable = {
+       	    	 	ROOT = { capital_scope = { has_state_flag = part_of_mexico_flag}}
+       	    	 	FROM.FROM.FROM = {has_state_flag = part_of_mexico_flag}           		
+                }
+
+        	ai_desire = -2000
+	}
+}
+
+peace_ai_desires = {
 	PRA_annex_BJC  = {
         	peace_action_type = { liberate force_government puppet }
         	enable = {

@@ -43,4 +43,25 @@ peace_action_modifiers = {
 	cost_multiplier = 0.75
 	}
 
+
+	MAA_mexican_land1 = {
+        	category = treaties_or_conferences
+        	peace_action_type = {puppet liberate force_government }	
+       	 	enable = {
+       	    	 	ROOT = { capital_scope = { has_state_flag = part_of_mexico_flag}}
+       	    	 	FROM.FROM.FROM = {has_state_flag = part_of_mexico_flag}
+    	    	}
+	cost_multiplier = 50.0	
+	}
+	#Misma mierda pero con Mexico.
+	MAA_mexican_land2 = {
+        	category = treaties_or_conferences
+        	peace_action_type = {take_states }	
+       	 	enable = {
+       	    	 	ROOT = { capital_scope = { has_state_flag = part_of_mexico_flag}}
+       	    	 	FROM.FROM.FROM = {has_state_flag = part_of_mexico_flag}
+    	    	}
+	cost_multiplier = 0.75
+	}
+
 }
