@@ -312,4 +312,23 @@ characters={
 			logistics_skill = 4
 		}
 	}
+
+	### SCIENTISTS ###
+
+	ENG_alastair_mellon = { #founder of Coventry Arsenal (and a personal friend of mine lol)
+		name = "Alastair Mellon"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ENG/alastair_mellon.tga"
+				#small = GFX_idea_heisenberg #do scientists even use small portraits? idk
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_artillery_specialist scientist_trait_fast_learner }
+			skills = {
+				specialization_land = 1
+			}
+		}
+	}
 }
