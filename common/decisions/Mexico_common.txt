@@ -72,7 +72,9 @@ Mexican_reunification = {
 				NOT = {
 					is_controlled_by = ROOT
 				}
-
+				controller = { 
+					has_war_with = ROOT
+				}
 			}
 		}
 
