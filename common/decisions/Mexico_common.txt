@@ -36,6 +36,7 @@ Mexican_reunification = {
 			FROM = {
 				is_controlled_by = ROOT
 				NOT = {is_core_of = ROOT}
+				
 			}
 		}
 		available = {
@@ -48,8 +49,14 @@ Mexican_reunification = {
 		}
 		remove_effect = {
 			FROM = {
+				OWNER = {
+					FROM = {
+						remove_core_of = PREV
+					}
+				}			
 				add_core_of = ROOT
 				set_state_owner_to = ROOT
+
 			}
 		}
 	}
@@ -60,10 +67,12 @@ Mexican_reunification = {
 		
 		visible = {
 			FROM = { 
+				is_owned_by = ROOT
 				has_state_flag = part_of_mexico_flag
 				NOT = {
 					is_controlled_by = ROOT
-				} 
+				}
+
 			}
 		}
 
