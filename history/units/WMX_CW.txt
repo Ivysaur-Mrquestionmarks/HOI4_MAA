@@ -53,7 +53,7 @@ units = {
 	division = {
 		name = "Milicias"
 		location = 3617
-		division_template = "Milicia armada""
+		division_template = "Milicia armada"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.65
 		start_manpower_factor = 0.75
@@ -68,14 +68,5 @@ units = {
 		start_manpower_factor = 0.75
 	}
 
-
-	division = {
-		name = "Milicias"
-		location = 1290
-		division_template = "Milicia armada"
-		start_experience_factor = 0.0
-		start_equipment_factor = 0.6
-		start_manpower_factor = 0.75
-	}
 
 }
