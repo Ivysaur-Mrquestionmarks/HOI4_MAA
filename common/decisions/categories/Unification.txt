@@ -4,11 +4,18 @@ American_reunification = {
 	allowed = {
 		NOT = {
 			tag = MEX
+			tag = RMX
+			tag = WMX
+			tag = CAR
+			tag = ADF
+			tag = ZAP
+			tag = YUC
 			tag = BAH
 			#tag = CUB #CUB has a formable under this cat, too, now!
 			tag = BER
 			tag = GUA
 			tag = BLZ
+
 			tag = ELS
 			tag = HON
 			tag = JAM
@@ -29,7 +36,26 @@ American_reunification = {
 			tag = TEX
 			tag = FLA
 			tag = GKJ
+			tag = PVB
 		}
 	}
 
+}
+
+Mexican_reunification = {
+	#icon = usa_congress
+	
+	allowed = {
+		OR = {
+			tag = MEX
+			tag = RMX
+			tag = WMX
+			tag = CAR
+			tag = ADF
+			tag = ZAP
+			tag = YUC
+			tag = BAH
+			tag = PVB
+		}
+	}
 }

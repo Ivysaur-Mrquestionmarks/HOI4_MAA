@@ -1,0 +1,53 @@
+Mexican_reunification = {
+	MEX_undermine_rule = {
+		target_array = ROOT.owned_states
+
+		allowed = {
+			FROM = {
+				has_state_flag = part_of_mexico_flag
+			}
+		}
+
+		visible = {
+			FROM = { NOT = {
+				is_controlled_by = ROOT
+			}}
+		}
+		cost = 20
+		days_remove = 27
+		ai_will_do = {
+			base = 30
+		}
+		remove_effect = {
+			FROM = {
+				add_resistance = 5
+				add_compliance = -3
+			}
+		}
+	}
+
+	MEX_core = {
+		target_array = global.mexican_states
+
+		visible = {
+			FROM = {
+				is_controlled_by = ROOT
+				NOT = {is_core_of = ROOT}
+			}
+		}
+		available = {
+			FROM = {compliance > 25}
+		}
+		cost = 60
+		days_remove = 35
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+	}
+
+}

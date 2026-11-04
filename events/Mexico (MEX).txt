@@ -65,6 +65,7 @@ country_event = {
 				add_state_core = 351
 				transfer_state = 482
 				add_state_core = 482
+				set_capital = {state = 351}
 				division_template = {
 				    name = "Revolutionary Guard"
 				#    division_names_group =
