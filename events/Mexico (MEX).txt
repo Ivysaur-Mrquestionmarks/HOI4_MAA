@@ -1396,8 +1396,25 @@ country_event = {
 
 	immediate = {
 
+		set_global_flag = Mexican_CW
+
 		for_each_scope_loop = { #This loops declare the wars
     			array = global.mexican_collapse_countries
+
+			division_template = {
+			    	name = "guerrillas"
+				is_locked = yes
+			#	division_names_group =
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+			}
+
 			for_each_scope_loop = {
 				array = global.mexican_collapse_countries
 				if = { limit = {Not = { OR = {has_war_with = PREV is_in_faction_with = PREV}}}

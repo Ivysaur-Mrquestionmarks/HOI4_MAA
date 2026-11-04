@@ -1,18 +1,18 @@
 Mexican_reunification = {
-	MEX_undermine_rule = {
-		target_array = ROOT.owned_states
 
-		allowed = {
-			FROM = {
+	MEX_undermine_rule = {
+		state_target = yes
+		state_target = any_owned_state
+		
+		visible = {
+			FROM = { 
 				has_state_flag = part_of_mexico_flag
+				NOT = {
+					is_controlled_by = ROOT
+				} 
 			}
 		}
 
-		visible = {
-			FROM = { NOT = {
-				is_controlled_by = ROOT
-			}}
-		}
 		cost = 20
 		days_remove = 27
 		ai_will_do = {
@@ -27,6 +27,9 @@ Mexican_reunification = {
 	}
 
 	MEX_core = {
+
+		state_target = yes
+
 		target_array = global.mexican_states
 
 		visible = {
@@ -36,7 +39,7 @@ Mexican_reunification = {
 			}
 		}
 		available = {
-			FROM = {compliance > 25}
+			FROM = {compliance > 20}
 		}
 		cost = 60
 		days_remove = 35
@@ -46,6 +49,50 @@ Mexican_reunification = {
 		remove_effect = {
 			FROM = {
 				add_core_of = ROOT
+				set_state_owner_to = ROOT
+			}
+		}
+	}
+
+	MEX_uprising  = {
+		state_target = yes
+		state_target = any_owned_state
+		
+		visible = {
+			FROM = { 
+				has_state_flag = part_of_mexico_flag
+				NOT = {
+					is_controlled_by = ROOT
+				} 
+			}
+		}
+
+		available = {
+			FROM = {resistance > 20}
+		}
+
+		cost = 50
+		days_remove = 40
+		ai_will_do = {
+			base = 50
+		}
+		remove_effect = {
+			set_temp_variable = {
+    				var = size
+    				value = from.resistance
+			}
+			divide_temp_variable = {
+				var = size
+    				value = 20
+			}
+			round_temp_variable = size
+			FROM = {
+				create_unit = {
+					division = "division_template = \"guerrillas\"	start_experience_factor = 0.25	start_equipment_factor = 1"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = yes
+					count = size
+				}				
 			}
 		}
 	}

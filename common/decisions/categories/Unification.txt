@@ -45,6 +45,10 @@ American_reunification = {
 Mexican_reunification = {
 	#icon = usa_congress
 	
+	visible = {
+		has_global_flag = Mexican_CW
+	}
+
 	allowed = {
 		OR = {
 			tag = MEX

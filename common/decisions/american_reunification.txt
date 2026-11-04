@@ -10,6 +10,9 @@ American_reunification = {
 		}
 		#state_target = any_owned_state
 		target_array = global.part_of_USA
+
+		state_target = yes
+
 		visible = {
 
 			has_country_flag = {
