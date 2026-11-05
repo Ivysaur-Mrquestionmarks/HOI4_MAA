@@ -39,6 +39,12 @@ ideas = {
        				conscription_factor = 0.1
        				compliance_growth = -0.05
       			}
+			available = {
+				controls_state = 385
+			}
+			on_remove = {
+				add_faction_influence_score = -100
+			}
   		}
   		CAR_shadow_army = {
       			#picture =
@@ -47,6 +53,12 @@ ideas = {
         			resistance_growth_on_our_occupied_states = 0.3
         			compliance_growth = -0.1
       			}
+			available = {
+				has_capitulated = no
+			}
+			on_remove = {
+				add_faction_influence_score = -100
+			}
 		}
 		RMX_reformist = {
       			#picture =

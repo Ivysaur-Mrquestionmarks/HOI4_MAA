@@ -36,7 +36,6 @@ Mexican_reunification = {
 			FROM = {
 				is_controlled_by = ROOT
 				NOT = {is_core_of = ROOT}
-				
 			}
 		}
 		available = {
@@ -49,14 +48,8 @@ Mexican_reunification = {
 		}
 		remove_effect = {
 			FROM = {
-				OWNER = {
-					FROM = {
-						remove_core_of = PREV
-					}
-				}			
 				add_core_of = ROOT
 				set_state_owner_to = ROOT
-
 			}
 		}
 	}
@@ -67,14 +60,10 @@ Mexican_reunification = {
 		
 		visible = {
 			FROM = { 
-				is_owned_by = ROOT
 				has_state_flag = part_of_mexico_flag
 				NOT = {
 					is_controlled_by = ROOT
-				}
-				controller = { 
-					has_war_with = ROOT
-				}
+				} 
 			}
 		}
 
@@ -108,4 +97,65 @@ Mexican_reunification = {
 		}
 	}
 
+
+	MEX_claim_leadership = {
+
+		visible = {
+			is_in_faction = yes
+			 is_faction_leader = no
+		}
+		available = {
+			faction_influence_ratio > 0.5
+		}
+		cost = 50
+		days_remove = 30
+		ai_will_do = {
+			base = 300
+		}
+		remove_effect = {
+			set_faction_leader = yes
+		}
+	}
+
+
+	MEX_faction_dominance = {
+
+		visible = {
+			is_faction_leader = yes
+		}
+		available = {
+			faction_influence_ratio > 0.7
+		}
+		cost = 100
+		days_remove = 62
+		ai_will_do = {
+			base = 400
+		}
+		remove_effect = {
+			 every_allied_country = { ROOT = {
+				puppet = PREV
+			}}
+		}
+	}
+
+
+	MEX_break_free = {
+
+		visible = {
+			is_faction_leader = yes
+		}
+		available = {
+			faction_influence_ratio > 0.4
+		}
+		cost = 45
+		days_remove = 61
+		ai_will_do = {
+			base = 400
+		}
+		remove_effect = {
+			 overlord = {
+				 end_puppet = ROOT
+			}
+		}
+	}
 }

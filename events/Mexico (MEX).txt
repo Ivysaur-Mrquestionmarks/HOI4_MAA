@@ -233,7 +233,7 @@ country_event = {
 		}
 		set_politics = {
 			ruling_party = autocratic
-    		elections_allowed = no
+    			elections_allowed = no
 		}
 	}
 }
@@ -1352,6 +1352,9 @@ country_event = {
 		create_faction_from_template = faction_template_mexican_revolucionarios
 		add_to_faction = WMX
 		add_to_faction = ADF
+		WMX = {
+			add_faction_influence_score = 100
+		}
 	}
 }
 
@@ -1367,6 +1370,10 @@ country_event = {
 		name = mexico.32.a
 		create_faction_from_template = faction_template_mexican_federales
 		add_to_faction = CAR
+		CAR = {
+			add_faction_influence_score = 100
+		}
+
 		country_event = { id = mexico.34 days = 7 }
 		news_event = { id = mexico.8 days = 7 }
 	}
