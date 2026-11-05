@@ -142,6 +142,7 @@ Mexican_reunification = {
 	MEX_break_free = {
 
 		visible = {
+			is_puppet = yes
 			is_faction_leader = yes
 		}
 		available = {
