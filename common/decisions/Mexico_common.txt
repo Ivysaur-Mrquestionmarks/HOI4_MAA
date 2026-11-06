@@ -152,7 +152,6 @@ Mexican_reunification = {
 
 		visible = {
 			is_puppet = yes
-			is_faction_leader = yes
 		}
 		available = {
 			faction_influence_ratio > 0.4
@@ -168,4 +167,120 @@ Mexican_reunification = {
 			}
 		}
 	}
+
+	#Second phase of the civil war
+	MEX_demand_reunification = {
+
+		visible = {
+			OR = {
+				is_faction_leader = yes
+				is_in_faction = no
+			}
+		}
+		available = {
+			has_war = no
+		}
+		cost = 200
+
+		days_re_enable = 512
+		ai_will_do = {
+			base = 300
+		}
+		complete_effect = {
+			for_each_scope_loop = {
+				array = global.mexican_collapse_countries
+				if = {
+					limit = {
+						is_subject_of = ROOT
+					}
+					ROOT = {
+						annex_country = {
+    							target = PREV
+    							transfer_troops = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						tag = ROOT
+					}
+				}
+				else_if = {
+					limit = {
+						is_ally_with = ROOT
+					}
+					country_event = { id = mexico.35 days = 3 }
+				}
+				else = {
+					ROOT = {
+						create_wargoal = {
+    							type = annex_everything
+    							target = PREV
+						}
+					}
+				}
+			}
+			dismantle_faction = yes			
+		}
+	}
+
+	MEX_demand_land = {
+
+		target_array = ROOT.neighbors
+
+		visible = {
+			is_in_faction = no
+			FROM = {
+				any_controlled_state = {
+					has_state_flag = part_of_mexico_flag
+				}
+				NOT = {
+					is_in_array = {
+    						array = global.mexican_collapse_countries
+    						value = THIS.id
+					}
+				}
+			}
+		}
+		available = {
+			has_war = no
+		}
+		cost = 50
+		days_re_enable = 100
+		ai_will_do = {
+			base = 299
+		}
+		complete_effect = {
+			FROM = {
+				country_event = { id = mexico.36 days = 1 }
+			}
+		} 
+	}
+
+	MEX_reunfication = {
+
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = generic_we_control_all_mexican_states_tt
+				all_of_scopes = {
+    					array = global.mexican_states
+					is_owned_by = ROOT
+				}
+			}
+		}
+		fire_only_once = yes 
+
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			for_each_scope_loop = {
+    				array = global.mexican_states
+    				add_core_of = ROOT
+    			}	
+			clr_global_flag = Mexican_CW		
+		} 
+	}
+
 }

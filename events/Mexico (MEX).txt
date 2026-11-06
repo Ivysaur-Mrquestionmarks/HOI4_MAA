@@ -1392,7 +1392,7 @@ country_event = {
 	}
 }
 
-#The civil war, begins.
+#The civil war begins.
 country_event = {
 	id = mexico.34
 	title = mexico.34.t
@@ -1443,5 +1443,80 @@ country_event = {
 	} #MEX_annarchic_society
 	option = {
 		name = mexico.34.a
+	}
+}
+
+#Our faction leader asks to annex us, to reunify Mexico.
+country_event = {
+	id = mexico.35
+	title = mexico.35.t
+	desc = mexico.35.d
+	#picture =
+	is_triggered_only = yes
+	#fire_only_once = yes
+	#Deny.
+	option = {
+		name = mexico.35.a
+		ai_chance = {
+			factor = 3
+		}
+		FROM = {
+			create_wargoal = {
+    				type = annex_everything
+    				target = ROOT
+			}
+		}
+	}
+	#Accept.
+	option = {
+		name = mexico.35.a
+		ai_chance = {
+			factor = 1
+		}
+		FROM = {
+			annex_country = {
+				target = ROOT
+    				transfer_troops = yes
+			}
+		}
+	}
+}
+
+#This is the event non mexican tags (realisticly only USA tags, but centro american and 
+country_event = {
+	id = mexico.36
+	title = mexico.36.t
+	desc = mexico.36.d
+	#picture =
+	is_triggered_only = yes
+	#fire_only_once = yes
+	#Accept.
+	option = {
+		name = mexico.36.a
+		ai_chance = {
+			factor = 1
+		}
+		every_controlled_state = {
+			limit = {
+				is_in_array = {
+    					array = global.mexican_states
+    					value = THIS.id
+				}
+			}
+			transfer_state_to = FROM
+		}
+	}
+	#Deny.
+	option = {
+		name = mexico.36.a
+		ai_chance = {
+			factor = 1
+		}
+		FROM = {
+			create_wargoal = {
+    				type = annex_everything
+    				target = ROOT
+			}
+		}		
 	}
 }
