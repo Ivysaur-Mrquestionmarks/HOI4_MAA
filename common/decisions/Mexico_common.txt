@@ -10,6 +10,7 @@ Mexican_reunification = {
 				NOT = {
 					is_controlled_by = ROOT
 				} 
+				is_core_of = ROOT
 			}
 		}
 
@@ -48,10 +49,16 @@ Mexican_reunification = {
 		}
 		remove_effect = {
 			FROM = {
+				OWNER = {
+					FROM = {
+						remove_core_of = PREV
+					}
+				}
 				add_core_of = ROOT
 				set_state_owner_to = ROOT
+
 			}
-		}
+		} 
 	}
 
 	MEX_uprising  = {
@@ -64,6 +71,7 @@ Mexican_reunification = {
 				NOT = {
 					is_controlled_by = ROOT
 				} 
+				is_core_of = ROOT
 			}
 		}
 
@@ -128,7 +136,7 @@ Mexican_reunification = {
 		}
 		cost = 100
 		days_remove = 62
-		days_re_enable = 250
+		days_re_enable = 512
 		ai_will_do = {
 			base = 400
 		}
