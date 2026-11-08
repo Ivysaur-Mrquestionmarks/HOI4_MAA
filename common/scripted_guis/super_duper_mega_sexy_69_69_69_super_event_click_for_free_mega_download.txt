@@ -463,6 +463,13 @@ scripted_gui = {
 					value = 56
 				}
 			}
+
+			57_Mexican_reunification_generic_visible  = {
+				has_country_flag = {
+					flag = super_event
+					value = 57
+				}
+			}
 		}
 	}
 	

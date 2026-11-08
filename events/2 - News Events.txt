@@ -1549,3 +1549,29 @@ news_event = {
 		name = News_events.45.a
 	}
 }
+
+news_event = {
+	id = News_events.46
+	title = News_events.46.t
+	desc = News_events.46.d
+	#picture = event_news_Pacific_Fleet
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = News_events.81.a
+		if = {
+			limit = {NOT = {is_ai = yes}}
+			set_country_flag = {
+    				flag = super_event
+    				value = 57
+			}
+			if = { 
+				limit = { has_global_flag = SuperEventsWillBePlayed_flag }
+				if = { limit = { NOT= { any_other_country = {has_country_flag = super_event}}}
+					sound_effect = 	"MEX_generic"
+					play_song = "one_minute_of_silence"
+				}
+			}
+		}
+	}
+}

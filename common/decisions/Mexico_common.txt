@@ -279,7 +279,22 @@ Mexican_reunification = {
     				array = global.mexican_states
     				add_core_of = ROOT
     			}	
-			clr_global_flag = Mexican_CW		
+			clr_global_flag = Mexican_CW	
+
+			if = {
+				limit = {
+					has_variable = super_event
+				}
+				add_ideas = var:super_event
+			}
+			else = {
+				add_stability = 0.10
+
+				news_event = {
+    					id = News_events.46
+				}
+			}
+	
 		} 
 	}
 

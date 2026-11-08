@@ -646,6 +646,17 @@ defined_text = {
 		}
 		localization_key = button_56
 	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    				flag = super_event
+    				value = 57
+			}
+		}
+		localization_key = button_57
+	}
+
 }
 
 defined_text = {
@@ -1295,6 +1306,16 @@ defined_text = {
 			}
 		}
 		localization_key = war_super_56
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    				flag = super_event
+    				value = 57
+			}
+		}
+		localization_key = war_super_57
 	}
 }
 
@@ -1951,5 +1972,15 @@ defined_text = {
 			}
 		}
 		localization_key = quote_56
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = {
+    			flag = super_event
+    			value = 57
+			}
+		}
+		localization_key = quote_57
 	}
 }
