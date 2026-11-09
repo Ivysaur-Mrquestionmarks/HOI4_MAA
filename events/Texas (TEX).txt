@@ -475,6 +475,10 @@ country_event = {
 					target = ROOT
 					type = annex_everything
 				}
+				country_event = {
+					id = texas.124
+					hours = 4
+				}
 			}
 	}
 }
@@ -4897,6 +4901,22 @@ country_event = {
 			}
 			add_resistance = 30
 			add_compliance = -50
+		}
+	}
+}
+
+#texas.22 - player is notified that tags rejected
+country_event = {
+	id = texas.124
+	title = texas.124.t
+	desc = texas.124.d
+	picture = event_paratrooper_prep
+	is_triggered_only = yes
+	option = {
+		name = texas.124.a
+		create_wargoal = {
+		    type = annex_everything
+		    target = FROM
 		}
 	}
 }
