@@ -820,4 +820,33 @@ faction_template_dominican_sphere_faction = { #
 	
 }
 
+faction_template_bukele_haiti = { # 
+	name = "Tropical Axis"
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	color = { 150 110 45 }
+	icon = GFX_faction_logo_generic_fascist
+	visible = {
+		always = no
+	}
+	available = {
+	}
+
+	goals = {
+		# Short term goals
+		faction_goal_unlock_military
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		faction_goal_resource_control
+	}
+
+	default_rules = {
+		joining_rule_non_left_wing
+	}
+	
+}
+
 

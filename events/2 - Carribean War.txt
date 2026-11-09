@@ -666,6 +666,22 @@ country_event = {
 				ideology = democrat
 				popularity = 0.10
 			}
+			if = {
+				limit = {
+					country_exists = ELS
+					ELS = {
+						has_government = autocratic
+						is_subject = no
+						surrender_progress < 0.2
+					}
+				}
+				ELS = {
+					country_event = {
+						id = carribean.26
+						days = 3
+					}
+				}
+			}
 		}
 		set_politics = {
 		    ruling_party = autocratic
@@ -712,6 +728,24 @@ country_event = {
 		    }
 		}
 		HCI_lord_miles = { set_character_name = "Faustin III" remove_unit_leader_trait = expeditionary_leader_trait }
+		hidden_effect = {
+			if = {
+				limit = {
+					country_exists = ELS
+					ELS = {
+						has_government = autocratic
+						is_subject = no
+						surrender_progress < 0.2
+					}
+				}
+				ELS = {
+					country_event = {
+						id = carribean.26
+						days = 3
+					}
+				}
+			}
+		}
 	}
 }
 #news event for above
@@ -959,6 +993,60 @@ unit_leader_event = {
 		name = carribean.25.a
 		HCI_kenny_smith = {
 			add_unit_leader_trait = glutton
+		}
+	}
+}
+
+#Bukele maybe wants to make faction with Lord Miles?
+country_event = {
+	id = carribean.26
+	title = carribean.26.t
+	desc = carribean.26.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = event_lord_miles
+	option = {
+		name = carribean.26.a
+		HCI = {
+			country_event = carribean.27
+		}
+		effect_tooltip = {
+			create_faction_from_template = faction_template_bukele_haiti
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = carribean.26.b
+		add_political_power = -5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+#Lord Miles gets event for faction with Bukele
+country_event = {
+	id = carribean.27
+	title = carribean.27.t
+	desc = carribean.27.d
+	picture = event_lord_miles
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = carribean.27.a
+		ai_chance = {
+			factor = 100
+		}
+		ELS = {
+			create_faction_from_template = faction_template_bukele_haiti
+			add_to_faction = ROOT
+		}		
+	}
+	option = {
+		name = carribean.27.b
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
