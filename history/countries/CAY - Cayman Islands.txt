@@ -90,7 +90,6 @@ if = {
 set_convoys = 200
 
 add_ideas = {
-	CAY_caymanian_coast_guard
 	International_Vaccines
 }
 
@@ -109,18 +108,6 @@ set_popularities = {
 	libertarian_left = 0
 }
 
-### Country Leaders ###
-recruit_character = CAY_kenneth_dart
-recruit_character = CAY_richard_branson
-recruit_character = CAY_prince_andrew
-
-### Political Advisors and Military Staff ###
-recruit_character = CAY_ghislaine_maxwell
-recruit_character = CAY_robert_dart
-
-### Generals ###
-recruit_character = CAY_robert_scotland
-recruit_character = CAY_leo_anglin
 
 if = {
 	limit = {
@@ -150,4 +137,3 @@ if = {
 	}
 	set_naval_oob = "CAY_navy"
 }
-country_event = { id = cayman.1 days = 215 }
