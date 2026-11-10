@@ -352,20 +352,20 @@ bookmarks = {
 			}
 			label = { maa_bookmark_america_tag }
 		}
-		"CAY"={
-			history = "CAY_GOOD_FRIDAY_DESC"
-			ideology = libertarian_right
-			minor = yes
-			ideas = {
-				CAY_caymanian_coast_guard
-			}
-			focuses = {
-				CAY_instant_citizenship_for_2mil
-				CAY_Virgin_state_ltd
-				CAY_kenneth_dart_cayman_bastion
-			}
-			label = { maa_bookmark_america_tag }
-		}
+		#"CAY"={
+		#	history = "CAY_GOOD_FRIDAY_DESC"
+		#	ideology = libertarian_right
+		#	minor = yes
+		#	ideas = {
+		#		CAY_caymanian_coast_guard
+		#	}
+		#	focuses = {
+		#		CAY_instant_citizenship_for_2mil
+		#		CAY_Virgin_state_ltd
+		#		CAY_kenneth_dart_cayman_bastion
+		#	}
+		#	label = { maa_bookmark_america_tag }
+		#}
 		"BAH"={
 			history = "BAH_GOOD_FRIDAY_DESC"
 			ideology = republican
