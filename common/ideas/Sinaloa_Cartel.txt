@@ -343,6 +343,44 @@ ideas = {
 			}
 		}
 
+		SIN_primitive_economy = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				consumer_goods_factor = -0.05
+				factory_energy_consumption = -0.1
+				stability_factor = 0.05
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		SIN_primitive_economy_1 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				consumer_goods_factor = -0.1
+				factory_energy_consumption = -0.2
+				stability_factor = 0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		SIN_primitive_economy_2 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				consumer_goods_factor = -0.2
+				factory_energy_consumption = -0.3
+				stability_factor = 0.15
+				production_speed_buildings_factor = -0.1
+				industry_free_repair_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
 
 
 	
