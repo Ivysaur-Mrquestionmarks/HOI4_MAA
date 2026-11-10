@@ -13724,16 +13724,16 @@ spriteTypes = {
 
  }
  SpriteType = {
-        name = "GFX_goal_RVR_Trannies_are_Gross"
-        texturefile = "gfx/interface/goals/RVR_Trannies_are_Gross.dds"
+        name = "GFX_goal_RVR_only_lgb_not_t"
+        texturefile = "gfx/interface/goals/RVR_only_lgb_not_t.dds"
     }
 
     SpriteType = {
-        name = "GFX_goal_RVR_Trannies_are_Gross_shine"
-        texturefile = "gfx/interface/goals/RVR_Trannies_are_Gross.dds"
+        name = "GFX_goal_RVR_only_lgb_not_t_shine"
+        texturefile = "gfx/interface/goals/RVR_only_lgb_not_t.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/RVR_Trannies_are_Gross.dds"
+            animationmaskfile = "gfx/interface/goals/RVR_only_lgb_not_t.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -13746,7 +13746,7 @@ spriteTypes = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/RVR_Trannies_are_Gross.dds"
+            animationmaskfile = "gfx/interface/goals/RVR_only_lgb_not_t.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
