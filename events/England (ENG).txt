@@ -488,10 +488,6 @@ country_event = {
 		add_war_support = -0.15
 		hidden_effect = { 
 			country_event = { 
-				id = english_colonies.21 
-				days = 1830 
-			} 
-			country_event = { 
 				id = english_colonies.22 
 				days = 672 
 			} 
@@ -524,58 +520,6 @@ country_event = {
 		}
 	}
 }
-
-#easter egg event. MERF DICTATORSHIP!
-country_event = {
-	id = english_colonies.21
-	title = english_colonies.21.t
-	desc = english_colonies.21.d
-	#picture =
-	is_triggered_only = yes
-	trigger = {
-		has_idea = ENG_labour_pm
-	}
-	fire_only_once = yes
-	#sadly it's not to be...
-	option = {
-		name = english_colonies.21.a
-		add_political_power = 5
-		ai_chance = {
-			factor = 99
-		}
-	}
-	#YEEEAAHHH SDP GOVT LETS GOOOOO
-	option = {
-		name = english_colonies.21.b
-		add_country_leader_role = {
-		    character = ENG_matthew_murphy
-		    promote_leader = yes
-		    country_leader = {
-		        ideology = kemalism
-		        traits = { ENG_minister_for_colonies }
-		    }
-		}
-		add_popularity = {
-			ideology = autocratic
-			popularity = 0.45
-		}
-		set_politics = {
-		    ruling_party = autocratic
-		    elections_allowed = yes
-		    last_election = "2029.06.04"
-		    long_name = ENG_sdp_party_long
-		    name = ENG_sdp_party
-		}
-		swap_ideas = {
-			remove_idea = ENG_labour_pm
-			add_idea = ENG_sdp_pm
-		}
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
 #MANDELSON SCANDAL
 country_event = {
 	id = english_colonies.22
