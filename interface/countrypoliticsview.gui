@@ -241,7 +241,7 @@ guiTypes = {
 						alwaystransparent = yes
 					}
 				}
-			}	
+			}
 
 			containerWindowType = {
 				name = "power_balance_button"
@@ -617,8 +617,6 @@ guiTypes = {
 				max_slots_horizontal = 1
 				format = "UPPER_LEFT"
 			}
-
-
 		}
 
 		iconType ={
@@ -840,7 +838,7 @@ guiTypes = {
 					position = { x = 10 y = 10 }
 					size = { width = 500 height = 1 }
 					slotsize = { width = 231 height = 74 }
-					max_slots_horizontal = 2
+					max_slots_horizontal = 1
 					add_horizontal = yes
 					format = "UPPER_LEFT"
 				}
@@ -943,7 +941,7 @@ guiTypes = {
 			frame = 1
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "industrial_org_entry"
 		size = { width = 53 height = 53 }
@@ -956,7 +954,7 @@ guiTypes = {
 			centerposition = yes
 			clicksound = click_default
 		}
-	}	
+	}
 	
 	containerWindowType = {
 		name = "political_selectable_idea_entry_grid"
@@ -966,7 +964,7 @@ guiTypes = {
 		buttonType = {
 			name = "idea_entry_bg"
 			position = { x = 3 y = 0 }
-			spriteType = "GFX_idea_entry_bg_2"
+			spriteType = "GFX_idea_entry_bg_3"
 		}
 			
 		iconType = {
@@ -1019,12 +1017,12 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "cost"
-			position = { x = 80 y = 47 }
+			position = { x = 200 y = 32 }
 			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 142
 			maxHeight = 10
-			format = right
+			format = center
 			alwaystransparent = yes
 		}
 
@@ -1125,7 +1123,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "political_party_info_entry"
-		size = { width = 330 height = 18  } 
+		size = { width = 330 height = 18 }
 		clipping = no
 
 		iconType = {
@@ -1136,13 +1134,13 @@ guiTypes = {
 		
 		iconType = {
 			name = "color_block_bg"
-			position = { x = 60 y = 2 } #y=2
+			position = { x = 60 y = 2 }
 			spriteType = "GFX_pol_party_colour_bg"
 		}
 		
 		iconType = {
 			name = "color_block"
-			position = { x = 64 y = 6 } #y = 6
+			position = { x = 64 y = 6 }
 			spriteType = "GFX_pol_party_colour"
 		}
 		
