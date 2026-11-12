@@ -168,7 +168,7 @@ set_country_flag = SIN_factions_unlocked_flag
 	set_variable = { SIN_faction_medium_decrease = -10 }
 	set_variable = { SIN_faction_high_decrease = -15 }
 
-	#country_event = {
-	#	id = colorado.9
-	#	days = 1823
-	#}
+	country_event = {
+		id = colorado.9
+		days = 1823
+	}

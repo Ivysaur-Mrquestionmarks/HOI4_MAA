@@ -18,13 +18,13 @@
  SIN_cancel_industry_tt:0 "§GOnce this idea runs out, we will get the§! §CColoradan Industry§! §Gidea.§!"
 
  SIN_faction_management_tt:0 "Unlocks decisions to cooperate with the [GetIslamistsName] and the [GetDtName].\nUnlocks decisions to repress the [GetIslamistsName] and the [GetDtName]."
- SIN_antagonize_the_cartel_tt:0 "Unlocks decisions to repress with the [GetCartelName]."
+ SIN_antagonize_the_cartel_tt:0 "Unlocks decisions to repress the [GetCartelName]."
  SIN_work_with_the_cartel_tt:0 "Unlocks decisions to cooperate with the [GetCartelName]."
  SIN_work_with_the_politicians_tt:0 "Unlocks decisions to cooperate with the [GetEstablishmentName]."
- SIN_antagonize_the_politicians_tt:0 "Unlocks decisions to repress with the [GetEstablishmentName]."
+ SIN_antagonize_the_politicians_tt:0 "Unlocks decisions to repress the [GetEstablishmentName]."
  SIN_handle_the_mafia_tt:0 "Unlocks decisions to cooperate with the [GetMobName].\nUnlocks decisions to repress the  [GetMobName]."
  SIN_work_with_the_anprims_tt:0 "Unlocks decisions to cooperate with the [GetAnprimsName]."
- SIN_antagonize_the_anprims_tt:0 "Unlocks decisions to repress with the [GetAnprimsName]."
+ SIN_antagonize_the_anprims_tt:0 "Unlocks decisions to repress the [GetAnprimsName]."
 
 
  SIN_islamists_tt:0 "[GetIslamistsName]: "
@@ -150,6 +150,24 @@
 
  SIN_primitive_economy_2:0 "Primitive Economy"
  SIN_primitive_economy_2_desc:0 "Rejecting the industrial system means rebuilding our economy around local communities, subsistence agriculture, hunting, and traditional craftsmanship. Production is no longer measured by industrial output, but by our ability to provide for ourselves without relying on the machinery of modern civilisation."
+
+ SIN_kleptocratic_economy_idea:0 "Kleptocratic Economy"
+ SIN_kleptocratic_economy_idea_desc:0 "The economy has become little more than an instrument for enriching those in power. Public funds, resources and lucrative opportunities are routinely diverted into the pockets of the ruling elite. While corruption undermines public confidence and economic efficiency, the system ensures the loyalty of those who benefit from it."
+
+ SIN_kleptocratic_economy_idea_1:0 "Kleptocratic Economy"
+ SIN_kleptocratic_economy_idea_1_desc:0 "The economy has become little more than an instrument for enriching those in power. Public funds, resources and lucrative opportunities are routinely diverted into the pockets of the ruling elite. While corruption undermines public confidence and economic efficiency, the system ensures the loyalty of those who benefit from it."
+
+ SIN_kleptocratic_economy_idea_2:0 "Kleptocratic Economy"
+ SIN_kleptocratic_economy_idea_2_desc:0 "The economy has become little more than an instrument for enriching those in power. Public funds, resources and lucrative opportunities are routinely diverted into the pockets of the ruling elite. While corruption undermines public confidence and economic efficiency, the system ensures the loyalty of those who benefit from it."
+
+ SIN_coloradan_economy:0 "Coloradan Economy"
+ SIN_coloradan_economy_desc:0 "Colorado's economy is built around its local industries, agricultural communities and natural resources. Despite the challenges of governing a fragmented society, the state has developed an economic model that sustains its population and strengthens the authority of its institutions."
+
+ SIN_coloradan_economy_1:0 "Coloradan Economy"
+ SIN_coloradan_economy_1_desc:0 "Colorado's economy is built around its local industries, agricultural communities and natural resources. Despite the challenges of governing a fragmented society, the state has developed an economic model that sustains its population and strengthens the authority of its institutions."
+
+ SIN_coloradan_economy_2:0 "Coloradan Economy"
+ SIN_coloradan_economy_2_desc:0 "Colorado's economy is built around its local industries, agricultural communities and natural resources. Despite the challenges of governing a fragmented society, the state has developed an economic model that sustains its population and strengthens the authority of its institutions."
 
 
 
@@ -380,6 +398,8 @@
  SIN_cffa:0 "Colorado Farm & Food Alliance"
  SIN_jbs_usa:0 "JBS USA"
  SIN_ovintiv:0 "Ovintiv"
+ SIN_palantir:0 "Palantir"
+ SIN_palantir_improved:0 "Palantir"
 
 
 
