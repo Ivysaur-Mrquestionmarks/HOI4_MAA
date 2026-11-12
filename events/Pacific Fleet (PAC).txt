@@ -943,5 +943,95 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		country_event = {
+    		id = pacific_junta.2
+    		days = 3
+		}
+	}
+}
+
+country_event = {
+	id = pacific_junta.2 #Martial Law Declared
+	title = pacific_junta.2.t
+	desc = pacific_junta.2.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pacific_junta.2.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = pacific_junta.3 #Militias Go Into Hiding
+	title = pacific_junta.3.t
+	desc = pacific_junta.3.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pacific_junta.3.a
+		ai_chance = {
+			factor = 100
+		}
+		swap_ideas = {
+			remove_idea = PAC_militia_rebellion
+			add_idea = PAC_militia_rebellion_2
+		}
+	}
+}
+
+country_event = {
+	id = pacific_junta.4 #Political Establishment Silenced
+	title = pacific_junta.4.t
+	desc = pacific_junta.4.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pacific_junta.4.a
+		ai_chance = {
+			factor = 100
+		}
+		swap_ideas = {
+			remove_idea = PAC_PAC_failed_promise
+			add_idea = PAC_PAC_failed_promise_2
+		}
+	}
+}
+
+country_event = {
+	id = pacific_junta.5 #LGBTQ+ Rights Restored
+	title = pacific_junta.5.t
+	desc = pacific_junta.5.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = pacific_junta.5.a
+		ai_chance = {
+			factor = 100
+		}
+		custom_effect_tooltip = PAC_federal_pacific_modify_tt
+		add_to_variable = {
+			var = PAC.var_stability_level
+			value = 0.01
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			var = PAC.var_morale_level
+			value = 0.01
+			tooltip = army_morale_factor_tt
+		}
+		every_owned_state = {
+			add_state_modifier = {
+                modifier = {
+                    recruitable_population = 0.01
+                }
+            }
+		}
 	}
 }

@@ -37,3 +37,22 @@ PAC_federal_pacific_dynamic_modifier = { #NATIONAL SPIRIT, balls.
 	research_speed_factor = PAC.var_research_speed_level
 }
 
+#### Military Dictatorship ####
+PAC_authority_of_the_military_dynamic_modifier = { #NATIONAL SPIRIT, balls.
+	enable = { always = yes }
+
+	icon = GFX_idea_PAC_a_land_to_be_free_dynamic_modifier
+	
+	political_power_gain = PAC.var_pp_level
+	resistance_activity = PAC.var_resistance_activity_level
+	stability_factor = PAC.var_stability_level
+	war_support_factor = PAC.var_war_support_level
+	autocratic_drift = PAC.var_autocratic_level
+
+	army_attack_factor = PAC.var_attack_level
+	army_morale_factor = PAC.var_morale_level
+	army_defence_factor = PAC.var_defense_level
+	
+	research_speed_factor = PAC.var_research_speed_level
+}
+

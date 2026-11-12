@@ -166,13 +166,29 @@
 
  pacific_democrats.7.t:0 "Continuing Their Rule"
  pacific_democrats.7.d:0 ""
- pacific_democrats.7.a:0 "The Military is Here To Stay"
+ pacific_democrats.7.a:0 "The Military is Here To Stay."
 
  #Junta Events
 
  pacific_junta.1.t:0 "Aquilino Declares National Emergency"
  pacific_junta.1.d:0 ""
- pacific_junta.1.a:0 "We Will Keep Everyone Safe"
+ pacific_junta.1.a:0 "We Will Keep Everyone Safe."
+
+ pacific_junta.2.t:0 "Martial Law Declared"
+ pacific_junta.2.d:0 ""
+ pacific_junta.2.a:0 "Swift Action is Needed!"
+
+ pacific_junta.3.t:0 "Militias Go Into Hiding"
+ pacific_junta.3.d:0 ""
+ pacific_junta.3.a:0 "They Can't Hide Forever..."
+
+ pacific_junta.4.t:0 "Political Establishment Sidelined"
+ pacific_junta.4.d:0 ""
+ pacific_junta.4.a:0 "Let Us Do The Work."
+
+ pacific_junta.5.t:0 "LGBTQ+ Rights Restored"
+ pacific_junta.5.d:0 ""
+ pacific_junta.5.a:0 "Can They Serve Now?"
 
  #Path Guide Events
 
@@ -544,8 +560,8 @@
  PAC_embrace_stratocracy_desc:0 ""
  PAC_traitors_in_the_military:0 "Traitors In The Military"
  PAC_traitors_in_the_military_desc:0 ""
- PAC_unamerican_propaganda:0 "Unamerican Propaganda"
- PAC_unamerican_propaganda_desc:0 ""
+ PAC_patriot_coalition:0 "Patriot Coalition"
+ PAC_patriot_coalition_desc:0 ""
  PAC_a_salvation_government:0 "A Salvation Government"
  PAC_a_salvation_government_desc:0 ""
  PAC_allow_limited_freedoms:0 "Allow Limited Freedoms"
@@ -580,7 +596,7 @@
  PAC_economic_control_desc:0 ""
  PAC_put_up_the_strings:0 "Put Up The Strings"
  PAC_put_up_the_strings_desc:0 ""
- PAC_a_deal:0 "Continue The Complex"
+ PAC_a_deal:0 "Useful Pigs"
  PAC_a_deal_desc:0 ""
  PAC_industrial_nationalization:0 "Industrial Nationalization"
  PAC_industrial_nationalization_desc:0 ""
@@ -598,7 +614,7 @@
  PAC_the_riches_of_the_pacific_desc:0 ""
  PAC_reconstruct_urban_areas:0 "Reconstruct Urban Areas"
  PAC_reconstruct_urban_areas_desc:0 ""
- PAC_focus_on_metal_extraction:0 ""
+ PAC_focus_on_metal_extraction:0 "Focus On Metal Extraction"
  PAC_focus_on_metal_extraction_desc:0 ""
 
  PAC_national_threats:0 "National Threats"
@@ -609,7 +625,7 @@
  PAC_chaos_to_the_east_desc:0 ""
  PAC_climb_up:0 "Climb Up"
  PAC_climb_up_desc:0 ""
- PAC_maga_isnt_patriotism:0 "Maga Isn't Patriotism"
+ PAC_maga_isnt_patriotism:0 "MAGA Isn't Patriotism"
  PAC_maga_isnt_patriotism_desc:0 ""
  PAC_return_texas_to_the_union:0 "Return Texas to The Union"
  PAC_return_texas_to_the_union_desc:0 ""
@@ -684,16 +700,47 @@
  PAC_liberal_continuation_3:0 "Liberal Continuation"
  PAC_liberal_continuation_4:0 "Liberal Continuation"
  PAC_liberal_continuation_5:0 "Liberal Continuation"
+
  PAC_social_economy:0 "Social Economy"
  PAC_social_economy_2:0 "Social Economy"
  PAC_social_economy_3:0 "Social Economy"
  PAC_social_economy_4:0 "Social Economy"
  PAC_social_economy_5:0 "Social Economy"
+
  PAC_federal_west_coast_military:0 "Federal West Coast Military"
  PAC_federal_west_coast_military_2:0 "Federal West Coast Military"
  PAC_federal_west_coast_military_3:0 "Federal West Coast Military"
  PAC_federal_west_coast_military_4:0 "Federal West Coast Military"
  PAC_federal_west_coast_military_5:0 "Federal West Coast Military"
+
+ #Military Dictatorship Ideas
+ PAC_authority_of_the_military_dynamic_modifier:0 "Authority of The Military"
+
+ PAC_militia_rebellion:0 "Militia Rebellion"
+ PAC_militia_rebellion_2:0 "Militia Rebellion"
+ PAC_militia_rebellion_3:0 "Militia Rebellion"
+
+ PAC_failed_promise:0 "Failed Promise"
+ PAC_failed_promise_2:0 "Failed Promise"
+ PAC_failed_promise_3:0 "Failed Promise"
+
+ PAC_puppet_capitalism:0 "Puppet Capitalism"
+ PAC_puppet_capitalism_2:0 "Puppet Capitalism"
+ PAC_puppet_capitalism_3:0 "Puppet Capitalism"
+ PAC_puppet_capitalism_4:0 "Puppet Capitalism"
+ PAC_puppet_capitalism_5:0 "Puppet Capitalism"
+
+ PAC_military_capitalism:0 "Military Capitalism"
+ PAC_military_capitalism_2:0 "Military Capitalism"
+ PAC_military_capitalism_3:0 "Military Capitalism"
+ PAC_military_capitalism_4:0 "Military Capitalism"
+ PAC_military_capitalism_5:0 "Military Capitalism"
+
+ PAC_semper_fortis:0 "Semper Fortis"
+ PAC_semper_fortis_2:0 "Semper Fortis"
+ PAC_semper_fortis_3:0 "Semper Fortis"
+ PAC_semper_fortis_4:0 "Semper Fortis"
+ PAC_semper_fortis_5:0 "Semper Fortis"
 
  ################################ PAC - DECISIONS ################################
 
@@ -753,6 +800,8 @@
  PAC_bastion_of_liberty_modify_tt: "Modify §Y$PAC_bastion_of_liberty_dynamic_modifier$§! by"
 
  PAC_federal_pacific_modify_tt: "Modify §Y$PAC_federal_pacific_dynamic_modifier$§! by"
+
+ PAC_authority_of_the_military_modify_tt: "Modify §Y$PAC_authority_of_the_military_dynamic_modifier$§! by"
 
  PAC_nicholas_zehr:0 "Nicholas Zehr"
 
