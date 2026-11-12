@@ -1268,6 +1268,125 @@ country_event = {
 	}
 }
 country_event = {
+	id = new_vegas.39
+	title = new_vegas.39.t
+	desc = new_vegas.39.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.39.a
+		ai_chance = {
+			factor = 99
+		}
+		LAS = { country_event = new_vegas.40 }
+	}
+	option = {
+		name = new_vegas.39.b
+		ai_chance = {
+			factor = 1
+		}
+		LAS = { country_event = new_vegas.41 }
+	}
+}
+	country_event = {
+	id = new_vegas.40
+	title = new_vegas.40.t
+	desc = new_vegas.40.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.40.a
+		ai_chance = {
+			factor = 100
+		}
+		USA = { add_to_faction = LAS }
+	}
+	}
+	country_event = {
+	id = new_vegas.41
+	title = new_vegas.41.t
+	desc = new_vegas.41.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.41.a
+		ai_chance = {
+			factor = 100
+		}
+		add_opinion_modifier = {
+			target = USA
+			modifier = refused_help
+		}
+	}
+	}
+	country_event = {
+	id = new_vegas.42
+	title = new_vegas.42.t
+	desc = new_vegas.42.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.42.a
+		ai_chance = {
+			factor = 100
+		}
+		LAS = { 
+			annex_country = { 
+				target = IDA
+				transfer_troops = yes
+			}
+			country_event = new_vegas.43
+		}
+	}
+	option = {
+		name = new_vegas.42.b
+		ai_chance = {
+			factor = 0
+		}
+		country_event = new_vegas.44
+		}
+	}
+	country_event = {
+	id = new_vegas.43
+	title = new_vegas.43.t
+	desc = new_vegas.43.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.43.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+	}
+	country_event = {
+	id = new_vegas.44
+	title = new_vegas.44.t
+	desc = new_vegas.44.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.44.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+	}
+country_event = {
 	id = new_vegas.~
 	title = new_vegas.~.t
 	desc = new_vegas.~.d
@@ -1282,4 +1401,5 @@ country_event = {
 		}
 		
 	}
+}
 }

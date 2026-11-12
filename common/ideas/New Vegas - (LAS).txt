@@ -633,6 +633,31 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.1
 			}
 		}
+		LAS_trad_af = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.05
+				
+			}
+		}
+		LAS_bussin_with_biz = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		LAS_denver_trade = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_start_efficiency_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
 		LAS_ = {
 			allowed = { original_tag = LAS }
 			modifier = {

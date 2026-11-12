@@ -900,7 +900,7 @@ focus_tree = {
 			has_country_flag = LAS_fra_bitch
 		}
 		completion_reward = {
-			
+			FRA = { add_to_faction = LAS }
 		}
 	}
 	focus = {
@@ -2297,7 +2297,7 @@ focus_tree = {
 		focus = {
 		id = LAS_promote_traditional_values
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_new_vegas_republican_party_victory
 		x = -1
 		y = 1
@@ -2305,13 +2305,13 @@ focus_tree = {
 			focus = LAS_new_vegas_republican_party_victory
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_trad_af
 		}
 	}
 		focus = {
 		id = LAS_business_subsidies
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_new_vegas_republican_party_victory
 		x = 1
 		y = 1
@@ -2319,13 +2319,13 @@ focus_tree = {
 			focus = LAS_new_vegas_republican_party_victory
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_bussin_with_biz
 		}
 	}
 		focus = {
 		id = LAS_trade_with_denver
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_promote_traditional_values
 		x = 1
 		y = 1
@@ -2336,13 +2336,13 @@ focus_tree = {
 			focus = LAS_business_subsidies
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_denver_trade
 		}
 	}
 		focus = {
 		id = LAS_reach_out_to_denver
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_trade_with_denver
 		x = 0
 		y = 1
@@ -2350,33 +2350,36 @@ focus_tree = {
 			focus = LAS_trade_with_denver
 		}
 		completion_reward = {
-			
+			USA = { country_event = new_vegas.39 }
 		}
 	}
 		focus = {
 		id = LAS_become_trumps_man_in_the_west
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_reach_out_to_denver
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_reach_out_to_denver
-		} #this will send a request to trump to annex wcz#
+		}
 		completion_reward = {
-			
+			USA = { country_event = new_vegas.42 }
 		}
 	}
 	focus = {
 		id = LAS_paint_the_rockies_red
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_become_trumps_man_in_the_west
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_become_trumps_man_in_the_west
-		} #if you don't get WCZ then tree stops here#
+		} 
+		available = {
+			not = {country_exists = IDA}
+		}
 		completion_reward = {
 			
 		}
@@ -2384,7 +2387,7 @@ focus_tree = {
 	focus = {
 		id = LAS_prepare_for_california
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_paint_the_rockies_red
 		x = -1
 		y = 1
@@ -2398,7 +2401,7 @@ focus_tree = {
 	focus = {
 		id = LAS_connect_with_pacific_patriots
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_paint_the_rockies_red
 		x = 1
 		y = 1
@@ -2412,7 +2415,7 @@ focus_tree = {
 	focus = {
 		id = LAS_undermine_the_commies
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_prepare_for_california
 		x = 0
 		y = 1
@@ -2426,7 +2429,7 @@ focus_tree = {
 	focus = {
 		id = LAS_utilize_fallout_fans
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_connect_with_pacific_patriots
 		x = 0
 		y = 1
@@ -2440,7 +2443,7 @@ focus_tree = {
 	focus = {
 		id = LAS_found_the_enclave
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_undermine_the_commies
 		x = 1
 		y = 1
@@ -2457,7 +2460,7 @@ focus_tree = {
 	focus = {
 		id = LAS_retake_the_pacific
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 10
 		relative_position_id = LAS_found_the_enclave
 		x = 0
 		y = 1
@@ -2471,7 +2474,7 @@ focus_tree = {
 	focus = {
 		id = LAS_the_march_east
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_retake_the_pacific
 		x = 0
 		y = 1
@@ -2493,7 +2496,7 @@ focus_tree = {
 		focus = {
 		id = LAS_peoples_democratic_party_of_new_vegas_victory
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 0
 		relative_position_id = LAS_election_inde
 		x = 4
 		y = 1
