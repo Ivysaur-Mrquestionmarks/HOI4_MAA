@@ -12,9 +12,9 @@ focus_tree = {
 		reset_on_civilwar = no
 	
 	continuous_focus_position = { x = 3000 y = 100 }
-    #initial_show_position = {
-	#	focus = KMT_prision_election
-	#}
+    initial_show_position = {
+		focus = SIN_prision_election
+	}
 
 	 ######  ########    ###    ########  ######## #### ##    ##  ######      ########  #######   ######  ##     ##  ######  ########  ######  
 	##    ##    ##      ## ##   ##     ##    ##     ##  ###   ## ##    ##     ##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
@@ -1976,7 +1976,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            add_ideas = SIN_kleptocratic_economy_idea
 		}
 		prerequisite = {
 			focus = SIN_force_industrialization
@@ -2052,7 +2052,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+            swap_ideas = {
+				remove_idea = SIN_kleptocratic_economy_idea
+				add_idea = SIN_kleptocratic_economy_idea_1
+			}
 		}
 		prerequisite = {
 			focus = SIN_kleptocratic_economy
@@ -2082,7 +2087,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+			add_stability = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
+            swap_ideas = {
+				remove_idea = SIN_kleptocratic_economy_idea
+				add_idea = SIN_kleptocratic_economy_idea_2
+			}
 		}
 		prerequisite = {
 			focus = SIN_kleptocratic_economy
@@ -2175,7 +2185,22 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 50
+			add_war_support = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		prerequisite = {
 			focus = SIN_we_take_it_all

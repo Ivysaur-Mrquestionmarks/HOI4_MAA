@@ -381,6 +381,42 @@ ideas = {
 			}
 		}
 
+		SIN_kleptocratic_economy_idea = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.05
+				local_resources_factor = -0.1
+			}
+		}
+
+		SIN_kleptocratic_economy_idea_1 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = 0.25
+				consumer_goods_factor = -0.1
+				local_resources_factor = -0.15
+			}
+		}
+
+		SIN_kleptocratic_economy_idea_2 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.1
+				local_resources_factor = -0.05
+			}
+		}
+
 
 
 	
