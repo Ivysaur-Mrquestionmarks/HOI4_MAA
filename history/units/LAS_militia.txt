@@ -1,0 +1,46 @@
+division_template = {
+	name = "Militia"
+	regiments = {
+		militia= { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	template_counter = 3
+}
+
+###############################################
+
+units = {
+	#1
+	division = {
+		name = "1st Militia Battalion"
+		location = 252
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "2nd Militia Battalion"
+		location = 252
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "3rd Militia Battalion"
+		location = 252
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "4th Militia Battalion"
+		location = 252
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+}

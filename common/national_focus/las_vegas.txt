@@ -12,7 +12,7 @@ focus_tree = {
 		id = LAS_sin_city
 		icon = GFX_goal_LAS_city_of_sin
 		cost = 1.00
-		x = 8
+		x = 14
 		y = 0
 		completion_reward = {
 			add_political_power = 10
@@ -41,13 +41,70 @@ focus_tree = {
 				popularity = 0.05
 			}
 		}
+	}
+	focus = {
+		id = LAS_business_is_pleasure
+		icon = GFX_goal_LAS_business_is_pleasure
+		cost = 4.00
+		prerequisite = {
+			focus = LAS_sin_city
+		}
+		relative_position_id = LAS_sin_city
+		x = 0
+		y = 1
+		completion_reward = {
+			set_power_balance = {
+				id = LAS_casinos_vs_people_bop
+			}
+		}
+
+	}
+	focus = {
+		id = LAS_enlist_casino_security
+		icon = GFX_goal_LAS_recruit_cas_sec
+		cost = 4.00
+		prerequisite = {
+			focus = LAS_business_is_pleasure
+		}
+		relative_position_id = LAS_business_is_pleasure
+		x = -1
+		y = 1
+		completion_reward = {
+			add_ideas = LAS_casino_security_levies
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = -0.10
+    			tooltip_side = casino_favored
+			}
+		}
+
+	}
+	focus = {
+		id = LAS_raise_militias
+		icon = GFX_goal_LAS_raise_militias
+		cost = 4.00
+		prerequisite = {
+			focus = LAS_business_is_pleasure
+		}
+		relative_position_id = LAS_business_is_pleasure
+		x = 1
+		y = 1
+		completion_reward = {
+			add_ideas = LAS_las_vegas_militiamen
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = 0.10
+    			tooltip_side = people_favored
+			}
+		}
 
 	}
 	focus = {
 		id = LAS_institute_casino_tax
 		icon = GFX_goal_LAS_casino_tax
 		cost = 5.00
-		x = 11
+		relative_position_id = LAS_sin_city
+		x = 3
 		y = 0
 		available = {
 			has_completed_focus = LAS_viva_las_vegas
@@ -63,10 +120,88 @@ focus_tree = {
 
 	}
 	focus = {
+		id = LAS_public_works
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LAS_institute_casino_tax
+		}
+		relative_position_id = LAS_institute_casino_tax
+		x = 0
+		y = 1
+		completion_reward = {
+			46 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+				    instant_build = yes
+				}
+			}
+			33 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+				    instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = LAS_invite_arms_dealers
+		icon = GFX_goal_LAS_invite_arms_dealers
+		cost = 5.00
+		prerequisite = {
+			focus = LAS_public_works
+		}
+		relative_position_id = LAS_public_works
+		x = 0
+		y = 1
+		completion_reward = {
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = -0.15
+    			tooltip_side = casino_favored
+			}
+			46 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+				    instant_build = yes
+				}
+			}
+			add_ideas = LAS_arms_dealers
+			PRA = {
+				add_timed_idea = {
+					idea = LAS_PRA_has_crime_issues
+					days = 170
+				}
+				country_event = {
+					id = viva_las_vegas.3
+				}
+			}
+		}
+
+	}
+	focus = {
 		id = LAS_develop_south
 		icon = GFX_goal_unknown
 		cost = 5.00
-		x = 13
+		relative_position_id = LAS_institute_casino_tax
+		x = 2
 		y = 0
 		available = {
 			has_completed_focus = LAS_viva_las_vegas
@@ -89,210 +224,80 @@ focus_tree = {
 
 	}
 	focus = {
-		id = LAS_great_mormon_war
-		icon = GFX_goal_unknown
-		cost = 1.00
-		x = 3
-		y = 0
-		available = {
-			always = no
-		}
-		bypass = {
-			has_war_with = UTA
-		}
-
-	}
-	focus = {
-		id = LAS_las_vegas_airforce
+		id = LAS_build_more_casinos
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = LAS_great_mormon_war
+			focus = LAS_develop_south
 		}
-		x = 1
+		relative_position_id = LAS_develop_south
+		x = 0
 		y = 1
 		completion_reward = {
-			air_experience = 100
-			add_tech_bonus = {
-    			bonus = 0.85
-    			uses = 3
-    			category = air_equipment
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = -0.15
+    			tooltip_side = casino_favored
+			}
+			33 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+				    instant_build = yes
+				}
 			}
 		}
 
 	}
 	focus = {
-		id = LAS_lessons_of_mormon_war
+		id = LAS_colorado_river_irrigation_programme
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
-			focus = LAS_great_mormon_war
+			focus = LAS_build_more_casinos
 		}
-		x = 3
+		relative_position_id = LAS_build_more_casinos
+		x = 0
 		y = 1
 		completion_reward = {
-			army_experience = 50
-			air_experience = 25
-			add_doctrine_cost_reduction = {
-				cost_reduction = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-		}
-
-	}
-	focus = {
-		id = LAS_doctrinal_hegemony
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = LAS_lessons_of_mormon_war
-		}
-		prerequisite = {
-			focus = LAS_las_vegas_airforce
-		}
-		x = 2
-		y = 2
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.90
-				uses = 2
-				category = land_doctrine
-			}
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.90
-				uses = 2
-				category = air_doctrine
-			}
-		}
-
-	}
-	focus = {
-		id = LAS_desert_rats
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = LAS_great_mormon_war
-		}
-		x = 5
-		y = 1
-		completion_reward = {
-			LAS_joe_lombardo = {
-				add_unit_leader_trait = desert_fox
-			}
-			LAS_case_cunningham = {
-				add_unit_leader_trait = desert_fox
-			}
-			LAS_michael_butler = {
-				add_unit_leader_trait = desert_fox
-			}
-		}
-
-	}
-	focus = {
-		id = LAS_create_minutemen
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = LAS_lessons_of_mormon_war
-		}
-		prerequisite = {
-			focus = LAS_desert_rats
-		}
-		x = 4
-		y = 2
-		completion_reward = {
-			add_manpower = 1000
-			load_oob = "LAS_minutemen"
 			add_power_balance_value = {
     			id = LAS_casinos_vs_people_bop
     			value = 0.05
     			tooltip_side = people_favored
 			}
+			33 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 10029
+					}
+				}
+			}
 		}
 
 	}
 	focus = {
-		id = LAS_business_is_pleasure
-		icon = GFX_goal_LAS_business_is_pleasure
-		cost = 4.00
+		id = LAS_bright_light_of_mojave
+		icon = GFX_goal_LAS_shining_vegas
+		cost = 10.00
 		prerequisite = {
-			focus = LAS_sin_city
+			focus = LAS_colorado_river_irrigation_programme
+			focus = LAS_invite_arms_dealers
 		}
-		x = 8
+		relative_position_id = LAS_invite_arms_dealers
+		x = 1
 		y = 1
 		completion_reward = {
-			set_power_balance = {
-				id = LAS_casinos_vs_people_bop
-			}
+			add_research_slot = 1
 		}
-
-	}
-	focus = {
-		id = LAS_enlist_casino_security
-		icon = GFX_goal_LAS_recruit_cas_sec
-		cost = 4.00
-		prerequisite = {
-			focus = LAS_business_is_pleasure
-		}
-		x = 7
-		y = 2
-		completion_reward = {
-			add_ideas = LAS_casino_security_levies
-			add_power_balance_value = {
-    			id = LAS_casinos_vs_people_bop
-    			value = -0.10
-    			tooltip_side = casino_favored
-			}
-		}
-
-	}
-	focus = {
-		id = LAS_bolster_casino_seecurity
-		icon = GFX_goal_LAS_casino_security
-		cost = 5.00
-		prerequisite = {
-			focus = LAS_doctrinal_hegemony
-		}
-		prerequisite = {
-			focus = LAS_create_minutemen
-		}
-		prerequisite = {
-			focus = LAS_enlist_casino_security
-		}
-		x = 3
-		y = 3
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = LAS_casino_security_levies
-				add_idea = LAS_casino_security_levies_1
-			}
-			add_power_balance_value = {
-    			id = LAS_casinos_vs_people_bop
-    			value = -0.05
-    			tooltip_side = casino_favored
-			}
-		}
-
-	}
-	focus = {
-		id = LAS_raise_militias
-		icon = GFX_goal_LAS_raise_militias
-		cost = 4.00
-		prerequisite = {
-			focus = LAS_business_is_pleasure
-		}
-		x = 9
-		y = 2
-		completion_reward = {
-			add_ideas = LAS_las_vegas_militiamen
-			add_power_balance_value = {
-    			id = LAS_casinos_vs_people_bop
-    			value = 0.10
-    			tooltip_side = people_favored
-			}
-		}
-
 	}
 	focus = {
 		id = LAS_viva_las_vegas
@@ -302,7 +307,8 @@ focus_tree = {
 			focus = LAS_raise_militias
 			focus = LAS_enlist_casino_security
 		}
-		x = 8
+		relative_position_id = LAS_sin_city
+		x = 0
 		y = 3
 		completion_reward = {
 
@@ -311,7 +317,6 @@ focus_tree = {
 				#####################################
 
 		}
-
 	}
 	focus = {
 		id = LAS_fear_and_loathing
@@ -320,8 +325,9 @@ focus_tree = {
 		prerequisite = {
 			focus = LAS_viva_las_vegas
 		}
-		x = 4
-		y = 4
+		relative_position_id = LAS_viva_las_vegas
+		x = -4
+		y = 1
 		continue_if_invalid = yes
 		available = {
 			power_balance_value = {
@@ -342,8 +348,9 @@ focus_tree = {
 		prerequisite = {
 			focus = LAS_fear_and_loathing
 		}
-		x = 2
-		y = 5
+		relative_position_id = LAS_fear_and_loathing
+		x = -2
+		y = 1
 		available = {
 			power_balance_value = {
     			id = LAS_casinos_vs_people_bop 
@@ -365,14 +372,141 @@ focus_tree = {
 
 	}
 	focus = {
+		id = LAS_gangster_army
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LAS_assemble_families
+		}
+		relative_position_id = LAS_assemble_families
+		x = 0
+		y = 1
+		completion_reward = {
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = -0.35
+    			tooltip_side = casino_favored
+			}
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.12
+			}
+			load_oob = "LAS_gangsters"
+		}
+
+	}
+	focus = {
+		id = LAS_prepare_the_coup
+		icon = GFX_goal_LAS_ocean_11
+		cost = 3.00
+		prerequisite = {
+			focus = LAS_gangster_army
+		}
+		relative_position_id = LAS_gangster_army
+		x = 0
+		y = 1
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value < -0.60
+			}
+		}
+		completion_reward = {
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = -0.20
+    			tooltip_side = casino_favored
+			}
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.15
+			}
+		}
+
+	}
+	focus = {
+		id = LAS_the_coup
+		icon = GFX_goal_LAS_coup
+		cost = 5.00
+		prerequisite = {
+			focus = LAS_prepare_the_coup
+		}
+		mutually_exclusive = {
+			focus = LAS_the_compromise
+			focus = LAS_pass_the_torch
+			focus = LAS_force_election
+			focus = LAS_magical_strike
+		}
+		relative_position_id = LAS_prepare_the_coup
+		x = 0
+		y = 1
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value < -0.85
+			}
+		}
+		continue_if_invalid = yes
+		completion_reward = {
+			add_country_leader_role = {
+    			character = LAS_council_of_families
+    			promote_leader = yes
+    			country_leader = {
+    			    ideology = corporatocracy
+    			    traits = { divided_interests }
+    			}
+			}
+			set_politics = {
+			    ruling_party = autocratic
+			    elections_allowed = no
+			    long_name = LAS_casino_rule_party
+			    name = LAS_casino_rule_party
+			}
+			add_political_power = 200
+		}
+
+	}
+	focus = {
+		id = LAS_business_as_usual
+		icon = GFX_goal_LAS_business_as_usual
+		cost = 5.00
+		prerequisite = {
+			focus = LAS_entertainment_industry
+			focus = LAS_assemble_families
+		}
+		relative_position_id = LAS_assemble_families
+		x = 2
+		y = 1
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value < -0.15
+			}
+		}
+		completion_reward = {
+			add_stability = 0.10
+			add_political_power = 100
+			add_popularity = {
+				ideology = authoritarian_left
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.10
+			}
+		}
+
+	}
+	focus = {
 		id = LAS_entertainment_industry
 		icon = GFX_goal_unknown
 		cost = 4.00
 		prerequisite = {
 			focus = LAS_fear_and_loathing
 		}
-		x = 6
-		y = 5
+		relative_position_id = LAS_fear_and_loathing
+		x = 2
+		y = 1
 		continue_if_invalid = yes
 		available = {
 			power_balance_value = {
@@ -390,14 +524,146 @@ focus_tree = {
 
 	}
 	focus = {
+		id = LAS_honouring_elvis
+		icon = GFX_goal_LAS_elvis
+		cost = 4.00
+		prerequisite = {
+			focus = LAS_business_as_usual
+		}
+		relative_position_id = LAS_business_as_usual
+		x = 0
+		y = 1
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value < -0.20
+			}
+		}
+		completion_reward = {
+			add_ideas = LAS_statue_of_elvis
+		}
+
+	}
+	focus = {
+		id = LAS_wizard_unions
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LAS_entertainment_industry
+		}
+		relative_position_id = LAS_entertainment_industry
+		x = 0
+		y = 1
+		continue_if_invalid = yes
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value < -0.25
+			}
+		}
+		completion_reward = {
+			add_country_leader_role = {
+			    character = LAS_penn_and_teller
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = eco_fascism
+			        traits = { LAS_magic_men }
+			    }
+			}
+			set_party_name = {
+    			ideology = authoritarian_left
+    			long_name = LAS_penn_and_teller_party
+    			name = LAS_penn_and_teller_party
+			}
+			add_popularity = {
+				ideology = authoritarian_left
+				popularity = 0.10
+			}
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = 0.15
+    			tooltip_side = people_favored
+			}
+		}
+
+	}
+	focus = {
+		id = LAS_win_over_people
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LAS_wizard_unions
+		}
+		relative_position_id = LAS_wizard_unions
+		x = 0
+		y = 1
+		continue_if_invalid = yes
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value < -0.45
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = authoritarian_left
+				popularity = 0.15
+			}
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = 0.25
+    			tooltip_side = people_favored
+			}
+		}
+
+	}
+	focus = {
+		id = LAS_magical_strike
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LAS_win_over_people
+		}
+		mutually_exclusive = {
+			focus = LAS_sixteen_ninety
+			focus = LAS_the_compromise
+			focus = LAS_pass_the_torch
+			focus = LAS_force_election
+			focus = LAS_the_coup
+		}
+		relative_position_id = LAS_win_over_people
+		x = 0
+		y = 1
+		continue_if_invalid = yes
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value < 0.1
+			}
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value > -0.1
+			}
+		}
+		completion_reward = {
+			set_politics = {
+			    ruling_party = authoritarian_left
+			    elections_allowed = no
+			}
+			set_cosmetic_tag = LAS_wizard_aids
+		}
+
+	}
+	focus = {
 		id = LAS_fortify_southern_border
 		icon = GFX_goal_LAS_fortify_border
 		cost = 5.00
 		prerequisite = {
 			focus = LAS_viva_las_vegas
 		}
-		x = 8
-		y = 4
+		relative_position_id = LAS_viva_las_vegas
+		x = 0
+		y = 1
 		completion_reward = {
 			46 = {
 				add_building_construction = {
@@ -448,8 +714,9 @@ focus_tree = {
 		prerequisite = {
 			focus = LAS_viva_las_vegas
 		}
-		x = 12
-		y = 4
+		relative_position_id = LAS_viva_las_vegas
+		x = 4
+		y = 1
 		bypass = {
 			NOT = {
 				has_government = democrat
@@ -466,14 +733,256 @@ focus_tree = {
 
 	}
 	focus = {
+		id = LAS_prepare_the_successor
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = LAS_twenty_two_years
+		}
+		relative_position_id = LAS_twenty_two_years
+		x = 0
+		y = 1
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value > 0.15
+			}
+		}
+		completion_reward = {
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = 0.10
+    			tooltip_side = people_favored
+			}
+			activate_advisor = LAS_ross_goodman_advisor
+		}
+
+	}
+	focus = {
+		id = LAS_calling_in_a_favour
+		icon = GFX_goal_LAS_favor
+		cost = 4.00
+		prerequisite = {
+			focus = LAS_prepare_the_successor
+		}
+		relative_position_id = LAS_prepare_the_successor
+		x = 0
+		y = 1
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value > 0.15
+			}
+		}
+		completion_reward = {
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = -0.25
+    			tooltip_side = casino_favored
+			}
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.03
+			}
+			load_oob = "LAS_hells_angels"
+		}
+
+	}
+	focus = {
+		id = LAS_entrench_goodmanism
+		icon = GFX_goal_LAS_entrench_goodman
+		cost = 4.00
+		prerequisite = {
+			focus = LAS_calling_in_a_favour
+		}
+		relative_position_id = LAS_calling_in_a_favour
+		x = 0
+		y = 1
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value > 0.65
+			}
+		}
+		completion_reward = {
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = 0.20
+    			tooltip_side = people_favored
+			}
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.10
+			}
+			add_stability = 0.10
+		}
+
+	}
+	focus = {
+		id = LAS_pass_the_torch
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LAS_entrench_goodmanism
+		}
+		mutually_exclusive = {
+			focus = LAS_the_compromise
+			focus = LAS_force_election
+			focus = LAS_magical_strike
+			focus = LAS_the_coup
+		}
+		relative_position_id = LAS_entrench_goodmanism
+		x = 0
+		y = 1
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value > 0.85
+			}
+		}
+		completion_reward = {
+			retire_character = LAS_carolyn_goodman
+			add_country_leader_role = {
+			    character = LAS_ross_goodman
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = liberal
+			        traits = { sharp_tongued_lawyer legitimate_heir }
+			    }
+			}
+		}
+
+	}
+	focus = {
+		id = LAS_casino_monarchism
+		icon = GFX_goal_LAS_casino_monarchism
+		cost = 4.00
+		prerequisite = {
+			focus = LAS_prepare_the_successor
+		}
+		relative_position_id = LAS_prepare_the_successor
+		x = 2
+		y = 1
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value > 0.15
+			}
+			has_country_leader = {
+				character = LAS_carolyn_goodman
+				ruling_only = yes
+			}
+		}
+		bypass = {
+			NOT = {
+				has_country_leader = {
+					character = LAS_carolyn_goodman
+					ruling_only = yes
+				}
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.05
+			}
+			LAS_carolyn_goodman = {
+				add_country_leader_trait = LAS_dynastic_dreams_carolyn
+			}
+		}
+
+	}
+	focus = {
+		id = LAS_monarcho_biden_synthesis
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LAS_casino_monarchism
+		}
+		relative_position_id = LAS_casino_monarchism
+		x = 0
+		y = 1
+		available = {
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value < 0.1
+			}
+			power_balance_value = {
+    			id = LAS_casinos_vs_people_bop 
+    			value > -0.1
+			}			
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = autocratic
+				popularity = 0.17
+			}
+			add_popularity = {
+				ideology = democrat
+				popularity = 0.17
+			}
+		}
+
+	}
+	focus = {
+		id = LAS_the_compromise
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LAS_entrench_goodmanism
+			focus = LAS_control_people
+		}
+		prerequisite = {
+			focus = LAS_monarcho_biden_synthesis
+		}
+		mutually_exclusive = {
+			focus = LAS_pass_the_torch
+			focus = LAS_force_election
+			focus = LAS_magical_strike
+			focus = LAS_the_coup
+		}
+		relative_position_id = LAS_monarcho_biden_synthesis
+		x = 0
+		y = 1
+		available = {
+			has_government = democrat
+		}
+		completion_reward = {
+			retire_character = LAS_carolyn_goodman
+			add_country_leader_role = {
+			    character = LAS_ross_goodman
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = establishment
+			        traits = { sharp_tongued_lawyer legitimate_heir }
+			    }
+			}
+			set_character_name = {
+				character = LAS_ross_goodman
+				name = "Ross I"
+			}
+			set_party_name = {
+    			ideology = democrat
+    			long_name = LAS_house_goodman_party
+    			name = LAS_house_goodman_party
+			}
+		}
+
+	}
+	focus = {
 		id = LAS_orthodox_approach
 		icon = GFX_goal_LAS_orthodox_approach
 		cost = 4.00
 		prerequisite = {
 			focus = LAS_twenty_two_years
 		}
-		x = 8
-		y = 5
+		relative_position_id = LAS_twenty_two_years
+		x = -4
+		y = 1
 		available = {
 			power_balance_value = {
     			id = LAS_casinos_vs_people_bop 
@@ -529,8 +1038,9 @@ focus_tree = {
 		prerequisite = {
 			focus = LAS_orthodox_approach
 		}
-		x = 8
-		y = 6
+		relative_position_id = LAS_orthodox_approach
+		x = 0
+		y = 1
 		available = {
 			power_balance_value = {
     			id = LAS_casinos_vs_people_bop 
@@ -560,8 +1070,9 @@ focus_tree = {
 		prerequisite = {
 			focus = LAS_covert_loyalism
 		}
-		x = 8
-		y = 7
+		relative_position_id = LAS_covert_loyalism
+		x = 0
+		y = 1
 		available = {
 			NOT = {
 				has_war_with = USA
@@ -583,27 +1094,36 @@ focus_tree = {
 
 	}
 	focus = {
-		id = LAS_prepare_the_successor
-		icon = GFX_goal_unknown
-		cost = 3.00
+		id = LAS_force_election
+		icon = GFX_goal_LAS_force_elections
+		cost = 5.00
 		prerequisite = {
-			focus = LAS_twenty_two_years
+			focus = LAS_overt_loyalism
 		}
-		x = 12
-		y = 5
+		mutually_exclusive = {
+			focus = LAS_the_compromise
+			focus = LAS_pass_the_torch
+			focus = LAS_magical_strike
+			focus = LAS_the_coup
+		}
+		relative_position_id = LAS_overt_loyalism
+		x = 0
+		y = 1
 		available = {
 			power_balance_value = {
     			id = LAS_casinos_vs_people_bop 
-    			value > 0.15
+    			value > 0.40
 			}
 		}
 		completion_reward = {
-			add_power_balance_value = {
-    			id = LAS_casinos_vs_people_bop
-    			value = 0.10
-    			tooltip_side = people_favored
+			add_popularity = {
+				ideology = republican
+				popularity = 0.10
 			}
-			activate_advisor = LAS_ross_goodman_advisor
+			set_politics = {
+			    ruling_party = republican
+    			elections_allowed = no
+			}
 		}
 
 	}
@@ -615,8 +1135,9 @@ focus_tree = {
 			focus = LAS_orthodox_approach
 			focus = LAS_prepare_the_successor
 		}
-		x = 10
-		y = 6
+		relative_position_id = LAS_twenty_two_years
+		x = -2
+		y = 2
 		available = {
 			power_balance_value = {
     			id = LAS_casinos_vs_people_bop 
@@ -648,8 +1169,9 @@ focus_tree = {
 		prerequisite = {
 			focus = LAS_safeguard_democracy
 		}
-		x = 10
-		y = 7
+		relative_position_id = LAS_safeguard_democracy
+		x = 0
+		y = 1
 		available = {
 			power_balance_value = {
     			id = LAS_casinos_vs_people_bop 
@@ -667,644 +1189,329 @@ focus_tree = {
 
 	}
 	focus = {
-		id = LAS_public_works
+		id = LAS_conscript_casino_security
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 0
 		prerequisite = {
-			focus = LAS_institute_casino_tax
+			focus = LAS_enlist_casino_security
 		}
-		x = 11
+		relative_position_id = LAS_enlist_casino_security
+		x = -1
 		y = 1
-		completion_reward = {
-			46 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-				    instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-				    instant_build = yes
-				}
-			}
-			33 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-				    instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-				    instant_build = yes
-				}
-			}
+		available = {
+			has_war_with = UTA
 		}
-
-	}
-	focus = {
-		id = LAS_invite_arms_dealers
-		icon = GFX_goal_LAS_invite_arms_dealers
-		cost = 5.00
-		prerequisite = {
-			focus = LAS_public_works
-		}
-		x = 11
-		y = 2
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAS_casino_security_levies
+				add_idea = LAS_casino_security_levies_1
+			}
 			add_power_balance_value = {
     			id = LAS_casinos_vs_people_bop
-    			value = -0.15
+    			value = -0.05
     			tooltip_side = casino_favored
 			}
-			46 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-    				type = arms_factory
-    				level = 2
-				    instant_build = yes
-				}
-			}
-			add_ideas = LAS_arms_dealers
-			PRA = {
-				add_timed_idea = {
-					idea = LAS_PRA_has_crime_issues
-					days = 170
-				}
-				country_event = {
-					id = viva_las_vegas.3
-				}
-			}
 		}
-
 	}
 	focus = {
-		id = LAS_build_more_casinos
+		id = LAS_mormon_war
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 4
+		y = 0
+		available = {
+			always = no
+		}
+		bypass = {
+			has_war_with = UTA
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_las_vegas_airforce
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = LAS_develop_south
+			focus = LAS_mormon_war
 		}
-		x = 13
+		relative_position_id = LAS_mormon_war
+		x = 0
 		y = 1
 		completion_reward = {
-			add_power_balance_value = {
-    			id = LAS_casinos_vs_people_bop
-    			value = -0.15
-    			tooltip_side = casino_favored
+			air_experience = 100
+			add_tech_bonus = {
+    			bonus = 0.85
+    			uses = 3
+    			category = air_equipment
 			}
-			33 = {
-				add_building_construction = {
-    				type = infrastructure
-    				level = 1
-				    instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-				    instant_build = yes
-				}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.90
+				uses = 2
+				category = air_doctrine
 			}
 		}
 
 	}
 	focus = {
-		id = LAS_colorado_river_irrigation_programme
+		id = LAS_emergency_conscription
 		icon = GFX_goal_unknown
-		cost = 7.00
+		cost = 1
+		relative_position_id = LAS_mormon_war
+		x = -3
+		y = 1
 		prerequisite = {
-			focus = LAS_build_more_casinos
+			focus = LAS_mormon_war
 		}
-		x = 13
-		y = 2
 		completion_reward = {
+			add_manpower = 1000
+			load_oob = "LAS_conscripts"
 			add_power_balance_value = {
     			id = LAS_casinos_vs_people_bop
     			value = 0.05
     			tooltip_side = people_favored
 			}
-			33 = {
-				add_building_construction = {
-					type = dam
-					level = 1
-					instant_build = yes
-					province = {
-						id = 10029
-					}
-				}
-			}
 		}
-
 	}
 	focus = {
-		id = LAS_bright_light_of_mojave
-		icon = GFX_goal_LAS_shining_vegas
-		cost = 10.00
-		prerequisite = {
-			focus = LAS_colorado_river_irrigation_programme
-			focus = LAS_invite_arms_dealers
-		}
-		x = 12
-		y = 3
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = LAS_casino_monarchism
-		icon = GFX_goal_LAS_casino_monarchism
-		cost = 4.00
-		prerequisite = {
-			focus = LAS_prepare_the_successor
-		}
-		x = 14
-		y = 6
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value > 0.15
-			}
-			has_country_leader = {
-				character = LAS_carolyn_goodman
-				ruling_only = yes
-			}
-		}
-		bypass = {
-			NOT = {
-				has_country_leader = {
-					character = LAS_carolyn_goodman
-					ruling_only = yes
-				}
-			}
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = democrat
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.05
-			}
-			LAS_carolyn_goodman = {
-				add_country_leader_trait = LAS_dynastic_dreams_carolyn
-			}
-		}
-
-	}
-	focus = {
-		id = LAS_monarcho_biden_synthesis
+		id = LAS_raise_more_militia
 		icon = GFX_goal_unknown
-		cost = 4.00
+		cost = 1
+		relative_position_id = LAS_emergency_conscription
+		x = -2
+		y = 1
 		prerequisite = {
-			focus = LAS_casino_monarchism
-		}
-		x = 14
-		y = 7
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value < 0.1
-			}
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value > -0.1
-			}			
+			focus = LAS_emergency_conscription
 		}
 		completion_reward = {
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.17
+			load_oob = "LAS_militia"
+			LAS_joe_lombardo = {
+				add_unit_leader_trait = desert_fox
 			}
-			add_popularity = {
-				ideology = democrat
-				popularity = 0.17
+			LAS_case_cunningham = {
+				add_unit_leader_trait = desert_fox
+			}
+			LAS_michael_butler = {
+				add_unit_leader_trait = desert_fox
 			}
 		}
-
 	}
 	focus = {
-		id = LAS_gangster_army
+		id = LAS_war_propoganda_mw
 		icon = GFX_goal_unknown
-		cost = 4.00
+		cost = 1
+		relative_position_id = LAS_emergency_conscription
+		x = 0
+		y = 1
 		prerequisite = {
-			focus = LAS_assemble_families
+			focus = LAS_emergency_conscription
 		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_defend_vegas_at_all_costs
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_emergency_conscription
 		x = 2
-		y = 6
-		completion_reward = {
-			add_power_balance_value = {
-    			id = LAS_casinos_vs_people_bop
-    			value = -0.35
-    			tooltip_side = casino_favored
-			}
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.12
-			}
-			load_oob = "LAS_gangsters"
-		}
-
-	}
-	focus = {
-		id = LAS_business_as_usual
-		icon = GFX_goal_LAS_business_as_usual
-		cost = 5.00
+		y = 1
 		prerequisite = {
-			focus = LAS_entertainment_industry
-			focus = LAS_assemble_families
-		}
-		x = 4
-		y = 6
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value < -0.15
-			}
+			focus = LAS_emergency_conscription
 		}
 		completion_reward = {
-			add_stability = 0.10
-			add_political_power = 100
-			add_popularity = {
-				ideology = authoritarian_left
-				popularity = 0.10
-			}
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.10
-			}
+			
 		}
-
 	}
 	focus = {
-		id = LAS_wizard_unions
+		id = LAS_fanatical_defence
 		icon = GFX_goal_unknown
-		cost = 4.00
+		cost = 1
+		relative_position_id = LAS_war_propoganda_mw
+		x = 0
+		y = 1
 		prerequisite = {
-			focus = LAS_entertainment_industry
+			focus = LAS_raise_more_militia
 		}
-		x = 6
-		y = 6
-		continue_if_invalid = yes
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value < -0.25
-			}
+		prerequisite = { 
+			focus = LAS_war_propoganda_mw
+		}
+		prerequisite = {
+			focus = LAS_defend_vegas_at_all_costs
 		}
 		completion_reward = {
-			add_country_leader_role = {
-			    character = LAS_penn_and_teller
-			    promote_leader = yes
-			    country_leader = {
-			        ideology = eco_fascism
-			        traits = { LAS_magic_men }
-			    }
-			}
-			set_party_name = {
-    			ideology = authoritarian_left
-    			long_name = LAS_penn_and_teller_party
-    			name = LAS_penn_and_teller_party
-			}
-			add_popularity = {
-				ideology = authoritarian_left
-				popularity = 0.10
-			}
-			add_power_balance_value = {
-    			id = LAS_casinos_vs_people_bop
-    			value = 0.15
-    			tooltip_side = people_favored
-			}
+			
 		}
-
 	}
 	focus = {
-		id = LAS_calling_in_a_favour
-		icon = GFX_goal_LAS_favor
-		cost = 4.00
+		id = LAS_the_offensive
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_fanatical_defence 
+		x = 0
+		y = 1
 		prerequisite = {
-			focus = LAS_prepare_the_successor
-		}
-		x = 12
-		y = 6
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value > 0.15
-			}
+			focus = LAS_fanatical_defence
 		}
 		completion_reward = {
-			add_power_balance_value = {
-    			id = LAS_casinos_vs_people_bop
-    			value = -0.25
-    			tooltip_side = casino_favored
-			}
-			add_popularity = {
-				ideology = democrat
-				popularity = 0.03
-			}
-			load_oob = "LAS_hells_angels"
+			
 		}
-
 	}
 	focus = {
-		id = LAS_prepare_the_coup
-		icon = GFX_goal_LAS_ocean_11
-		cost = 3.00
+		id = LAS_legion_of_joshua_graham
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_mormon_war
+		x = 0
+		y = 5
 		prerequisite = {
-			focus = LAS_gangster_army
+			focus = LAS_the_offensive
 		}
+		prerequisite = {
+			focus = LAS_strenghen_supression
+		}
+		completion_reward = {
+			load_oob = "LAS_mw_legions"
+		}
+	}
+	focus = {
+		id = LAS_race_for_salt_lake_city
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_legion_of_joshua_graham
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_legion_of_joshua_graham
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_victory
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_race_for_salt_lake_city
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_race_for_salt_lake_city
+		}
+		completion_reward = {
+			army_experience = 100
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = LAS_war_industry
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_mormon_war
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = LAS_mormon_war
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_break_open_the_cashes
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_war_industry 
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_war_industry
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_emergency_war_economy
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_war_industry
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_war_industry
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LAS_suspend_workers_rights
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_war_industry
 		x = 2
-		y = 7
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value < -0.60
-			}
-		}
-		completion_reward = {
-			add_power_balance_value = {
-    			id = LAS_casinos_vs_people_bop
-    			value = -0.20
-    			tooltip_side = casino_favored
-			}
-			add_popularity = {
-				ideology = autocratic
-				popularity = 0.15
-			}
-		}
-
-	}
-	focus = {
-		id = LAS_honouring_elvis
-		icon = GFX_goal_LAS_elvis
-		cost = 4.00
+		y = 1
 		prerequisite = {
-			focus = LAS_business_as_usual
-		}
-		x = 4
-		y = 7
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value < -0.20
-			}
+			focus = LAS_war_industry
 		}
 		completion_reward = {
-			add_ideas = LAS_statue_of_elvis
+			
 		}
-
 	}
 	focus = {
-		id = LAS_win_over_people
+		id = LAS_mass_production
 		icon = GFX_goal_unknown
-		cost = 4.00
+		cost = 1
+		relative_position_id = LAS_break_open_the_cashes
+		x = 1
+		y = 1
 		prerequisite = {
-			focus = LAS_wizard_unions
+			focus = LAS_break_open_the_cashes
 		}
-		x = 6
-		y = 7
-		continue_if_invalid = yes
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value < -0.45
-			}
+		prerequisite = {
+			focus = LAS_emergency_war_economy
 		}
 		completion_reward = {
-			add_popularity = {
-				ideology = authoritarian_left
-				popularity = 0.15
-			}
-			add_power_balance_value = {
-    			id = LAS_casinos_vs_people_bop
-    			value = 0.25
-    			tooltip_side = people_favored
-			}
+			
 		}
-
 	}
 	focus = {
-		id = LAS_entrench_goodmanism
-		icon = GFX_goal_LAS_entrench_goodman
-		cost = 4.00
-		prerequisite = {
-			focus = LAS_calling_in_a_favour
-		}
-		x = 12
-		y = 7
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value > 0.65
-			}
-		}
-		completion_reward = {
-			add_power_balance_value = {
-    			id = LAS_casinos_vs_people_bop
-    			value = 0.20
-    			tooltip_side = people_favored
-			}
-			add_popularity = {
-				ideology = democrat
-				popularity = 0.10
-			}
-			add_stability = 0.10
-		}
-
-	}
-	focus = {
-		id = LAS_the_coup
-		icon = GFX_goal_LAS_coup
-		cost = 5.00
-		prerequisite = {
-			focus = LAS_prepare_the_coup
-		}
-		mutually_exclusive = {
-			focus = LAS_sixteen_ninety
-			focus = LAS_the_compromise
-			focus = LAS_pass_the_torch
-			focus = LAS_force_election
-			focus = LAS_magical_strike
-		}
-		x = 2
-		y = 8
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value < -0.85
-			}
-		}
-		continue_if_invalid = yes
-		completion_reward = {
-			add_country_leader_role = {
-    			character = LAS_council_of_families
-    			promote_leader = yes
-    			country_leader = {
-    			    ideology = corporatocracy
-    			    traits = { divided_interests }
-    			}
-			}
-			set_politics = {
-			    ruling_party = autocratic
-			    elections_allowed = no
-			    long_name = LAS_casino_rule_party
-			    name = LAS_casino_rule_party
-			}
-			add_political_power = 200
-		}
-
-	}
-	focus = {
-		id = LAS_magical_strike
+		id = LAS_temporary_factories
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 1
+		relative_position_id = LAS_suspend_workers_rights
+		x = 0
+		y = 1
 		prerequisite = {
-			focus = LAS_win_over_people
-		}
-		mutually_exclusive = {
-			focus = LAS_sixteen_ninety
-			focus = LAS_the_compromise
-			focus = LAS_pass_the_torch
-			focus = LAS_force_election
-			focus = LAS_the_coup
-		}
-		x = 6
-		y = 8
-		continue_if_invalid = yes
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value < 0.1
-			}
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value > -0.1
-			}
+			focus = LAS_suspend_workers_rights
 		}
 		completion_reward = {
-			set_politics = {
-			    ruling_party = authoritarian_left
-			    elections_allowed = no
-			}
-			set_cosmetic_tag = LAS_wizard_aids
+			
 		}
-
 	}
 	focus = {
-		id = LAS_force_election
-		icon = GFX_goal_LAS_force_elections
-		cost = 5.00
-		prerequisite = {
-			focus = LAS_overt_loyalism
-		}
-		mutually_exclusive = {
-			focus = LAS_the_compromise
-			focus = LAS_pass_the_torch
-			focus = LAS_magical_strike
-			focus = LAS_the_coup
-		}
-		x = 8
-		y = 8
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value > 0.40
-			}
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = republican
-				popularity = 0.10
-			}
-			set_politics = {
-			    ruling_party = republican
-    			elections_allowed = no
-			}
-		}
-
-	}
-	focus = {
-		id = LAS_pass_the_torch
+		id = LAS_strenghen_supression
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 1
+		relative_position_id = LAS_mass_production
+		x = 1
+		y = 1
 		prerequisite = {
-			focus = LAS_entrench_goodmanism
+			focus = LAS_mass_production
 		}
-		mutually_exclusive = {
-			focus = LAS_the_compromise
-			focus = LAS_force_election
-			focus = LAS_magical_strike
-			focus = LAS_the_coup
-		}
-		x = 12
-		y = 8
-		available = {
-			power_balance_value = {
-    			id = LAS_casinos_vs_people_bop 
-    			value > 0.85
-			}
+		prerequisite = {
+			focus = LAS_temporary_factories
 		}
 		completion_reward = {
-			retire_character = LAS_carolyn_goodman
-			add_country_leader_role = {
-			    character = LAS_ross_goodman
-			    promote_leader = yes
-			    country_leader = {
-			        ideology = liberal
-			        traits = { sharp_tongued_lawyer legitimate_heir }
-			    }
-			}
+			
 		}
-
-	}
-	focus = {
-		id = LAS_the_compromise
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = LAS_entrench_goodmanism
-			focus = LAS_control_people
-		}
-		prerequisite = {
-			focus = LAS_monarcho_biden_synthesis
-		}
-		mutually_exclusive = {
-			focus = LAS_pass_the_torch
-			focus = LAS_force_election
-			focus = LAS_magical_strike
-			focus = LAS_the_coup
-		}
-		x = 14
-		y = 8
-		available = {
-			has_government = democrat
-		}
-		completion_reward = {
-			retire_character = LAS_carolyn_goodman
-			add_country_leader_role = {
-			    character = LAS_ross_goodman
-			    promote_leader = yes
-			    country_leader = {
-			        ideology = establishment
-			        traits = { sharp_tongued_lawyer legitimate_heir }
-			    }
-			}
-			set_character_name = {
-				character = LAS_ross_goodman
-				name = "Ross I"
-			}
-			set_party_name = {
-    			ideology = democrat
-    			long_name = LAS_house_goodman_party
-    			name = LAS_house_goodman_party
-			}
-		}
-
 	}
 }

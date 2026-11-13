@@ -1,0 +1,54 @@
+division_template = {
+	name = "Legions"
+	regiments = {
+		infantry= { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	regimental_support = {
+        field_guns = { x = 0 y = 0 }
+    }
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+	template_counter = 3
+}
+
+###############################################
+
+units = {
+	division = {
+		name = "1st Las Vegas Legion"
+		location = 252
+		division_template = "Legions"
+		start_experience_factor = 3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2nd Las Vegas Legion"
+		location = 252
+		division_template = "Legions"
+		start_experience_factor = 3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3rd Las Vegas Legion"
+		location = 252
+		division_template = "Legions"
+		start_experience_factor = 3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4th Las Vegas Legion"
+		location = 252
+		division_template = "Legions"
+		start_experience_factor = 3
+		start_equipment_factor = 1
+	}
+}

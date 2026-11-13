@@ -1,0 +1,58 @@
+division_template = {
+	name = "Conscripts"
+	regiments = {
+		militia= { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	template_counter = 3
+}
+
+###############################################
+
+units = {
+	#1
+	division = {
+		name = "1st Conscript Battalion"
+		location = 252
+		division_template = "Conscripts"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "2nd Conscript Battalion"
+		location = 252
+		division_template = "Conscripts"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "3rd Conscript Battalion"
+		location = 252
+		division_template = "Conscripts"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "4th Conscript Battalion"
+		location = 252
+		division_template = "Conscripts"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "5th Conscript Battalion"
+		location = 252
+		division_template = "Conscripts"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "6th Conscript Battalion"
+		location = 252
+		division_template = "Conscripts"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+}
