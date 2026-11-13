@@ -187,8 +187,8 @@
 
  #event 2: The Meeting
  colorado.2.t:0 "A Meeting in the Shadows"
- colorado.2.d:0 "The election has settled, but the question of what comes next remains unanswered. In a secluded room far from the eyes of the public, Joaquín Guzmán meets with Theodore Kaczynski. To the world, Kaczynski is a ghost from another age, a man whose name is whispered more often than it is spoken. To Guzmán, however, he represents something useful: an ideology, a symbol, and a leader who need never stand in front of a podium.\n\nThe arrangement is simple. Kaczynski will assume leadership from the shadows, while Guzmán and his organization provide the money, networks, and protection necessary to keep the new order functioning. The Unabomber will lead, but the world will never know where his hand truly lies."
- colorado.2.a:0 "Let the Unabomber lead from the shadows."
+ colorado.2.d:0 "The election has settled, but the question of what comes next remains unanswered. In a secluded cell far from the eyes of the public, Joaquín Guzmán meets with Theodore Kaczynski. To the world, Kaczynski is a ghost from another age, a man whose name is whispered more often than it is spoken. To Guzmán, however, he represents something useful: an ideology, a symbol, and a leader who could rally both criminal and common folk to his principles.\n\nThe arrangement is simple. Kaczynski will assume leadership, while, from the shadows, Guzmán and his organization provide the money, networks, and protection necessary to keep the new order functioning. The Unabomber will lead, but the world will never know who is calling the shots."
+ colorado.2.a:0 "Let the Unabomber play the lead role"
 
  #event 3: Independent Workshops
  colorado.3.t:0 "Funding Independent Workshops"
@@ -197,27 +197,30 @@
  colorado.3.b:0 "We need to build"
  colorado.3.c:0 "Maybe a mix wouldn't hurt"
 
+ #event 4: Deal with the Devil (HOP perspective)
+ colorado.4.t:0 "A Message from ADX Florence"
+ colorado.4.d:0 "The situation in the West has created the most unexpected situation. The Mormon forces stand between us and our ambitions, and defeating them will require cooperation that would have been unthinkable only months ago. The primitivists to the North are everything we claim to despise, yet they too have a reason to see the Mormons defeated. A temporary arrangement could allow our forces to coordinate against a common enemy. It is an alliance with terrorists, but perhaps they have some use."
+ colorado.4.a:0 "The enemy of my enemy..."
+ colorado.4.b:0 "We will never bargain with them"
+
+ #event 5: Deal with the Devil Accepted
+ colorado.5.t:0 "A Deal with the Devil"
+ colorado.5.d:0 "The deal is done. For the first time, our forces will coordinate with the Nazi regime to our south against the Mormon armies. Neither side trusts the other, and neither should. This is not friendship, nor is it an ideological alliance. It is a temporary marriage of convenience born from the necessities of war. For now, that is enough."
+ colorado.5.a:0 "Let us destroy our common enemy"
+
+
+ #event 6: Deal with the Devil Rejected
+ colorado.6.t:0 "The Devil Refuses"
+ colorado.6.d:0 "Our offer has been rejected. The Nazis would rather face the enemy alone than sully themselves by cooperating with us. Perhaps this is fortunate; there are some lines that should not be crossed. Whatever the reason, the opportunity for coordination is gone, and we will have to face the Mormon threat on our own."
+ colorado.6.a:0 "We don't need the Devil"
+
+
+
+
  #event 1000: Kaczynski comes to power
  colorado.1000.t:0 "Anarcho-Primitivists in the Rockies"
  colorado.1000.d:0 "After somehow the prisioners elected a leader in the long-abandoned USP Florence Supermax, the former bomber who roamed under an unknown name during the 1990s, Ted Kaczynski was chosen. Guided by Ted's ideas that the industrial revolution was a mistake and one of the main factors in the decline of civilization, a de facto state was formed under the ideals of anarcho-primitivism. This combination of militaristic drug gangsterism and the primitiveness of ideology was a shock to all participants in the Civil War, and the emerging factions continue to amaze us. What the future holds for this once great country remains to be seen."
  colorado.1000.a:0 "Paint The Town Green"
-
- # Deal with the Devil (HOP perspective)
- colorado.4.t:0 "A Message from ADX Florence"
- colorado.4.d:0 "The situation in the West has created the most unexpected situation. The Mormon forces stand between us and our ambitions, and defeating them will require cooperation that would have been unthinkable only months ago. The primitivists to the North are everything we claim to despise, yet they too have a reason to see the Mormons defeated. A temporary arrangement could allow our forces to coordinate against a common enemy. It is an alliance with terrorists, but perhaps they have some use."
- colorado.4.a:0 "The enemy of my enemy..."
- colorado.4.b:0 "We will never bargain with them."
-
- # Deal with the Devil Accepted
- colorado.5.t:0 "A Deal with the Devil"
- colorado.5.d:0 "The deal is done. For the first time, our forces will coordinate with the Nazi regime to our south against the Mormon armies. Neither side trusts the other, and neither should. This is not friendship, nor is it an ideological alliance. It is a temporary marriage of convenience born from the necessities of war. For now, that is enough."
- colorado.5.a:0 "Let us destroy our common enemy."
-
-
- # Deal with the Devil Rejected
- colorado.6.t:0 "The Devil Refuses"
- colorado.6.d:0 "Our offer has been rejected. The Nazis would rather face the enemy alone than sully themselves by cooperating with us. Perhaps this is fortunate; there are some lines that should not be crossed. Whatever the reason, the opportunity for coordination is gone, and we will have to face the Mormon threat on our own."
- colorado.6.a:0 "We don't need the Devil."
 
 
 ########     ###    ########  ######## #### ########  ######     ##    ##    ###    ##     ## ########  ######  
@@ -238,8 +241,8 @@
  SIN_democrat_party:0 "C-DEM"
  SIN_libertarian_left_party_long:0 "Green Party of Colorado"
  SIN_libertarian_left_party:0 "GPCO"
- SIN_authoritarian_left_party_long:0 "Syndicalist Movement"
- SIN_authoritarian_left_party:0 "Syndicalists"
+ SIN_authoritarian_left_party_long:0 "Colorado Springs Socialists - Democratic Socialists of America"
+ SIN_authoritarian_left_party:0 "CSS-DSA"
 
  SIN_libertarian_right_party_anprim_long:0 "Primitive Future"
  SIN_libertarian_right_party_anprim:0 "AnPrim"
@@ -356,9 +359,9 @@
  SIN_kleptocratic_economy_desc:0 "Our nation is built on the back of thieves and criminals, and our economy must reflect this. Instead of regular taxes, we'll simply take whatever it is we want or need from the people beneath us under threat of violence. Sure, it's not the most advanced system of economics around, but it sure does work for us."
  SIN_back_to_normalcy:0 "Back to Normalcy"
  SIN_back_to_normalcy_desc:0 "With regular governance back in fashion at long last, we must get to work on rebuilding a real, American economic system. We'll invest in agriculture, services and industry, becoming self reliant and fully capable of standing on our own two feet."
- SIN_we_take_it_all:0 "We'll take it all"
+ SIN_we_take_it_all:0 "We'll Take it All"
  SIN_we_take_it_all_desc:0 "Who gives a damn what these people moan or whine about? We have the guns, we do whatever the hell we please!"
- SIN_give_somethings_back:0 "Give a bit Back"
+ SIN_give_somethings_back:0 "Give a Bit Back"
  SIN_give_somethings_back_desc:0 "Okay fine, maybe it is for the best if we don't steal our own citizens blind daily. They can have some stuff in return for us taking their food and money."
  SIN_the_financial_market:0 "The Financial Market"
  SIN_the_financial_market_desc:0 "A modern economy is more than simple supply and demand. We must reestablish a proper financial system if we truly want to survive as a newly born state in the chaos that is America."
@@ -394,6 +397,7 @@
  SIN_expand_independent_workshops_desc:0 "Our current system of independent workshops functions, but it's simply not enough at this point. We'll greatly expand the system nationwide, with many new industries opening up to provide for everyone. Of course, we'll make sure their impact on the environment is absolutely minimal."
  SIN_primitive_inovations:0 "Primitive Innovations"
  SIN_primitive_inovations_desc:0 "We don't need fancy laboratories or massive campuses to develop our society, for we have everything we need right in our heads. Our people areindependent thinkers, they are creative and passionate, and their minds can match and surpass anyone corporation or university."
+
 
 ########  ########  ######  ####  ######  ####  #######  ##    ##  ######  
 ##     ## ##       ##    ##  ##  ##    ##  ##  ##     ## ###   ## ##    ## 

@@ -17,26 +17,6 @@ characters = {
 			expire = "2060.1.1.1"
 			id = -1
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = advisor_Keith_Laube
-			cost = 150
-			allowed = {
-				original_tag = SIN
-			}
-			visible = {
-
-			}
-			available = {
-				has_completed_focus = SIN_the_establishment_coup
-			}
-			traits = {
-				
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 
 	SIN_Ted_Kaczynski = {
@@ -302,6 +282,36 @@ characters = {
 			ai_will_do = {
 				factor = 1
 			}
+		}
+	}
+
+	SIN_Collective_Leadership = {
+		name = SIN_Collective_Leadership
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/CSS_DSA.dds"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			ideology = communism
+			expire = "2060.1.1.1"
+			id = -1
+		}
+	}
+
+	SIN_Art_Goodtimes = {
+		name = SIN_Art_Goodtimes
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Art_Goodtimes.dds"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			ideology = Agrarian_Socialism
+			expire = "2060.1.1.1"
+			id = -1
 		}
 	}
 
