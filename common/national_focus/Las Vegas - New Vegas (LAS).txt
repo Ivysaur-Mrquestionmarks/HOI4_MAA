@@ -4226,7 +4226,7 @@ focus_tree = {
 	focus = {
 		id = LAS_extremist_faction #efe plz dont push this to open beta
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 0
 		relative_position_id = LAS_conflict_in_paradise
 		x = 6
 		y = 1
@@ -4237,7 +4237,10 @@ focus_tree = {
 			focus = LAS_yes_man_faction
 		}
 		available = {
-			has_country_leader = LAS_the_courier
+			has_country_leader = {
+				character = LAS_the_courier
+				ruling_only = yes
+			}
 		}
 		completion_reward = {
 			
@@ -4246,7 +4249,7 @@ focus_tree = {
 	focus = {
 		id = LAS_remove_the_traitors
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_extremist_faction
 		x = 0
 		y = 1
@@ -4254,13 +4257,13 @@ focus_tree = {
 			focus = LAS_extremist_faction
 		}
 		completion_reward = {
-			
+			#will change generals/advisors when we get that far
 		}
 	}
 	focus = {
 		id = LAS_all_hail_the_courier
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_remove_the_traitors
 		x = 0
 		y = 1
@@ -4268,13 +4271,13 @@ focus_tree = {
 			focus = LAS_remove_the_traitors
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_the_courier_idea_1
 		}
 	}
 	focus = {
 		id = LAS_the_new_families
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_all_hail_the_courier
 		x = -2
 		y = 1
@@ -4282,13 +4285,13 @@ focus_tree = {
 			focus = LAS_all_hail_the_courier
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_tc_new_fam
 		}
 	}
 	focus = {
 		id = LAS_ban_subversive_media
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_all_hail_the_courier
 		x = 0
 		y = 1
@@ -4296,7 +4299,7 @@ focus_tree = {
 			focus = LAS_all_hail_the_courier
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_tc_media_ban_1
 		}
 	}
 	focus = {
@@ -4310,27 +4313,56 @@ focus_tree = {
 			focus = LAS_all_hail_the_courier
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_new_fallout_1
+			hidden_effect = {
+				country_event = {
+					id = new_vegas.55
+					days = 80
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_distribute_propaganda
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_the_new_families
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_the_new_families
 		}
+		prerequisite = {
+			focus = LAS_ban_subversive_media
+		}
 		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = LAS_tc_media_ban_1
+				add_idea = LAS_tc_media_ban_2
+			}
 		}
 	}
 	focus = {
 		id = LAS_provide_approved_media
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
+		relative_position_id = LAS_distribute_propaganda
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_distribute_propaganda
+		}
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = LAS_tc_media_ban_2
+				add_idea = LAS_tc_media_ban_3
+			}
+		}
+	}
+	focus = {
+		id = LAS_every_day_is_new_vegas_day
+		icon = GFX_goal_unknown
+		cost = 2
 		relative_position_id = LAS_distribute_propaganda
 		x = -1
 		y = 1
@@ -4338,29 +4370,18 @@ focus_tree = {
 			focus = LAS_distribute_propaganda
 		}
 		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_every_day_is_new_vegas_day
-		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_distribute_propaganda
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = LAS_distribute_propaganda
-		}
-		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = LAS_the_courier_idea_1
+				add_idea = LAS_the_courier_idea_2
+			}
 		}
 	}
 	focus = {
 		id = LAS_cult_of_the_courier
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_provide_approved_media
-		x = 1
+		x = -1
 		y = 1
 		prerequisite = {
 			focus = LAS_provide_approved_media
@@ -4369,13 +4390,16 @@ focus_tree = {
 			focus = LAS_every_day_is_new_vegas_day
 		}
 		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = LAS_the_courier_idea_2
+				add_idea = LAS_the_courier_idea_3
+			}
 		}
 	}
 	focus = {
 		id = LAS_the_courier_is_always_watching
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_cult_of_the_courier
 		x = 0
 		y = 1
@@ -4383,13 +4407,16 @@ focus_tree = {
 			focus = LAS_cult_of_the_courier
 		}
 		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = LAS_the_courier_idea_3
+				add_idea = LAS_the_courier_idea_4
+			}
 		}
 	}
 	focus = {
 		id = LAS_the_courier_knows_all
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_the_courier_is_always_watching
 		x = 0
 		y = 1
@@ -4397,13 +4424,16 @@ focus_tree = {
 			focus = LAS_the_courier_is_always_watching
 		}
 		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = LAS_the_courier_idea_4
+				add_idea = LAS_the_courier_idea_5
+			}
 		}
 	}
 	focus = {
-		id = LAS_prepare_the_raid
+		id = LAS_decannonize_bethesda
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_ban_subversive_media
 		x = 1
 		y = 1
@@ -4414,27 +4444,33 @@ focus_tree = {
 			focus = LAS_send_a_message_to_todd
 		}
 		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = LAS_new_fallout_1
+				add_idea = LAS_new_fallout_2
+			}
 		}
 	}
 	focus = {
 		id = LAS_aint_that_a_kick_in_the_head
 		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_prepare_the_raid
+		cost = 4
+		relative_position_id = LAS_decannonize_bethesda
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = LAS_prepare_the_raid
+			focus = LAS_decannonize_bethesda
 		}
 		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = LAS_new_fallout_2
+				add_idea = LAS_new_fallout_3
+			}
 		}
 	}
 	focus = {
-		id = LAS_find_todd_howard
+		id = LAS_only_the_pure
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_aint_that_a_kick_in_the_head
 		x = 0
 		y = 1
@@ -4442,73 +4478,81 @@ focus_tree = {
 			focus = LAS_aint_that_a_kick_in_the_head
 		}
 		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = LAS_new_fallout_3
+				add_idea = LAS_new_fallout_4
+			}
 		}
 	}
 	focus = {
-		id = LAS_catching_the_worm
+		id = LAS_ban_bethesda_games
 		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_find_todd_howard
+		cost = 5
+		relative_position_id = LAS_only_the_pure
 		x = -1
 		y = 1
 		prerequisite = {
-			focus = LAS_find_todd_howard
+			focus = LAS_only_the_pure
 		}
-		mutually_exclusive = {
-			focus = LAS_showdown_at_the_lucky_38
+		prerequisite = {
+			focus = LAS_provide_approved_media
 		}
 		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = LAS_tc_media_ban_3
+				add_idea = LAS_tc_media_ban_4
+			}
 		}
 	}
 	focus = {
-		id = LAS_showdown_at_the_lucky_38
+		id = LAS_teach_fallout_in_school
 		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_find_todd_howard
+		cost = 5
+		relative_position_id = LAS_only_the_pure
 		x = 1
 		y = 1
 		prerequisite = {
-			focus = LAS_find_todd_howard
-		}
-		mutually_exclusive = {
-			focus = LAS_catching_the_worm
+			focus = LAS_only_the_pure
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_fallout_schooling
 		}
 	}
 	focus = {
-		id = LAS_the_house_always_wins_2
+		id = LAS_cult_of_fallout
 		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_showdown_at_the_lucky_38
+		cost = 5
+		relative_position_id = LAS_teach_fallout_in_school
 		x = -1
 		y = 1
 		prerequisite = {
-			focus = LAS_showdown_at_the_lucky_38
+			focus = LAS_teach_fallout_in_school
 		}
-		mutually_exclusive = {
-			focus = LAS_it_just_works
+		prerequisite = {
+			focus = LAS_ban_bethesda_games
 		}
 		completion_reward = {
-			
+			swap_ideas = { 
+				remove_idea = LAS_new_fallout_4
+				add_idea = LAS_tc_the_cult_of_fallout
+			}
+			hidden_effect = {
+				remove_ideas = LAS_fallout_schooling
+			}
 		}
 	}
 	focus = {
 		id = LAS_begin_the_conquest
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_the_courier_knows_all
-		x = 1
+		x = 2
 		y = 1
 		prerequisite = {
 			focus = LAS_the_courier_knows_all
 		}
 		prerequisite = {
-			focus = LAS_catching_the_worm
-			focus = LAS_the_house_always_wins_2
+			focus = LAS_cult_of_fallout
 		}
 		completion_reward = {
 			
@@ -4723,9 +4767,8 @@ focus_tree = {
 		id = LAS_it_just_works
 		icon = GFX_goal_unknown
 		cost = 1
-		relative_position_id = LAS_showdown_at_the_lucky_38
-		x = 1
-		y = 1
+		x = 43
+		y = 28
 		prerequisite = {
 			focus = LAS_showdown_at_the_lucky_38
 		}

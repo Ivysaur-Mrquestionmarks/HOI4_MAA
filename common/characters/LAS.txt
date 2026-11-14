@@ -339,6 +339,7 @@ characters={
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/LAS/Steve_Wynn.png"
+				small = "gfx/interface/ideas/LAS/Political_Advisor_Wynn.png"
 			}
 		}
 		country_leader = {
@@ -356,21 +357,21 @@ characters={
 				large = "gfx/leaders/LAS/Sean_Wallis.png"
 			}
 			army = {
-				small = "gfx/interface/ideas/LAS/piff_the_magic_dragon" #placeholder
+				small = "gfx/interface/ideas/LAS/Political_Advisor_Wallis.png"
 				large = "gfx/leaders/LAS/Sean_Wallis.png"
 			}
 		}
 		corps_commander = {
+			visible = {
+				has_country_flag = LAS_courier_wallis_chosen
+				has_country_flag = LAS_fallout_coup
+			}
             traits = {  }
             skill = 2
             attack_skill = 2
             defense_skill = 1
             planning_skill = 3
             logistics_skill = 2
-			available = {
-				has_country_flag = LAS_courier_wallis_chosen
-				has_country_flag = LAS_fallout_coup
-			}
         } 
 		country_leader = {
 			ideology = kemalism
@@ -401,7 +402,7 @@ characters={
 				large = "gfx/leaders/LAS/Clancy_Brown.png"
 			}
 			army = {
-				small = "gfx/interface/ideas/LAS/piff_the_magic_dragon" #placeholder
+				small = "gfx/interface/ideas/LAS/Political_Advisor_Brown_Courier.png"
 				large = "gfx/leaders/LAS/Clancy_Brown.png"
 			}
 		}
@@ -455,45 +456,49 @@ characters={
 			}
 		}
 		corps_commander = {
+			visible = {
+				has_country_flag = LAS_courier_brown_chosen
+				has_country_flag = LAS_fallout_coup
+			}
             traits = {  }
             skill = 1
             attack_skill = 2
             defense_skill = 1
             planning_skill = 2
             logistics_skill = 1
-			available = {
-				has_country_flag = LAS_courier_brown_chosen
-				has_country_flag = LAS_fallout_coup
-			}
 		}
 	}
-	#LAS_the_courier = {
-		#name = LAS_the_courier
-		#portraits = {
-			#civilian = {
-				#large = " "
-			#}
-			#army = {
-				#small = " "
-				#large = " "
-			#}
-		#}
-		#country_leader = {
-			#ideology = despotism
-			#desc = LAS_the_courier_desc
-			#traits = {
+	LAS_the_courier = {
+		name = LAS_the_courier
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAS/THE_COURIER.png"
+			}
+			army = {
+				small = "gfx/interface/ideas/LAS/Political_Advisor_Courier.png"
+				large = "gfx/leaders/LAS/THE_COURIER.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = LAS_the_courier_desc
+			traits = {
 				###
-			#}
-		#}
-		#corps_commander = {
-            #traits = {  }
-            #skill = 6
-            #attack_skill = 8
-            #defense_skill = 4
-            #planning_skill = 6
-            #logistics_skill = 5
-        #}
-	#}
+			}
+		}
+		corps_commander = {
+			visible = { 
+				has_country_flag = LAS_the_courier_coup
+				has_country_flag = LAS_fallout_coup
+			}
+            traits = {  }
+            skill = 6
+            attack_skill = 8
+            defense_skill = 4
+            planning_skill = 6
+            logistics_skill = 5
+		}
+	}
 	LAS_jason_spisak = {
 		name = LAS_jason_spisak
 		portraits = {
@@ -501,7 +506,7 @@ characters={
 				large = "gfx/leaders/LAS/Jason_Courier.png"
 			}
 			army = {
-				small = "gfx/interface/ideas/LAS/piff_the_magic_dragon" #placeholder
+				small = "gfx/interface/ideas/LAS/Political_Advisor_Jason_Courier.png"
 				large = "gfx/leaders/LAS/Jason_Courier.png"
 			}
 		}
@@ -513,16 +518,16 @@ characters={
 			}
 		}
 		corps_commander = {
+			visible = {
+				has_country_flag = LAS_courier_spisak_chosen
+				has_country_flag = LAS_fallout_coup
+			}
             traits = {  }
             skill = 1
             attack_skill = 2
             defense_skill = 1
             planning_skill = 2
             logistics_skill = 1
-			available = {
-				has_country_flag = LAS_courier_spisak_chosen
-				has_country_flag = LAS_fallout_coup
-			}
         }
 	}
 	

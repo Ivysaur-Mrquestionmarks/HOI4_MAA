@@ -283,11 +283,15 @@
  
  #Independent Path
  
+ #Yes Man Faction
+ 
  LAS_independent_vegas:0 "Independent Vegas"
  LAS_independent_vegas_desc:0 "New Vegas’ future is not one where it becomes merely part of another state or empire, but one where it stands tall and proud by itself. Only our courier, Clancy Brown, can bring the future to us."
  
  LAS_conflict_in_paradise:0 "Conflict in Paradise"
  LAS_conflict_in_paradise_desc:0 "This weirdo calling himself the Courier is certainly an odd figure. Unfortunately, an odd figure who has also begun amassing a great deal of support amongst our troops. Many are bracing for another coup, and we must prepare for such a possibility."
+ 
+ #Industry Tree
  
  LAS_rebuild_vegas:0 "Rebuild Vegas"
  LAS_rebuild_vegas_desc:0 "The chaos of the civil war and the coup have left Vegas a mess to say the least. Rebuilding is a crucial process we should begin as soon as possible, or else our state will lag behind our neighbors."
@@ -331,6 +335,64 @@
  LAS_an_industrial_vegas:0 "An Industrial Vegas"
  LAS_an_industrial_vegas_desc:0 "Vegas was never known as an industrial city. There were a few factories and plants here and there, but nothing close to Detroit or Milwaukee. Now however, we’ve grown into a genuine industrial giant, making much more products than we ourselves need. Vegas is entering a new phase of its history, and if it goes the way it’s been going so far, it shall be a real golden age."
 
+ #Extremist Faction
+ 
+ LAS_extremist_faction:0 "Extremist Faction"
+ LAS_extremist_faction_desc:0  "The Extremist Faction, led by an enigmatic figure called "The Courier" has taken power following the grisly murder of the former Courier, Clancy Brown."
+
+ LAS_remove_the_traitors:0 "Remove the Traitors"
+ LAS_remove_the_traitors_desc:0 "Traitors, Traitors EVERYWHERE! Everyone who followed the false "courier" shall DIE! They were all working for him, I KNOW IT! Damn you Todd, DAMN YOU! Your agents shall meet their fate."
+
+ LAS_all_hail_the_courier:0 "All Hail The Courier"
+ LAS_all_hail_the_courier_desc:0 "ALL SHALL BOW TO ME!! Everyone WILL sing my praises. Thats the only way to flush out Todd's Agents. They hate me, they hate Fallout, they only know greed. They will refuse to hail me, and they shall die."
+
+ LAS_the_new_families:0 "The New Families"
+ LAS_the_new_families_desc:0 "Now that the traitors have been dealt with, its time to reward the loyal. The Casinos will be our bases of power, our source of income, and our shining symbol of power."
+
+ LAS_ban_subversive_media:0 "Ban Subversive Media"
+ LAS_ban_subversive_media_desc:0 "The media is controlled by him, its infestation WILL NOT spread here, only we know the truth, and only we can share it."
+
+ LAS_send_a_message_to_todd:0 "Send a Message to Todd"
+ LAS_send_a_message_to_todd_desc:0 "Todd is scared of my BRILLIANCE! We will send him a message, we are coming for him. We WILL get him, we WILL kill him, and we WILL drag his body through the streets of New Vegas. He WILL tremble before my might."
+
+ LAS_distribute_propaganda:0 "Distribute Propaganda"
+ LAS_distribute_propaganda_desc:0 "ONLY I KNOW THE TRUTH, ONLY ME!! Those shit-brained sheep WILL know my GENIUS! My words will be ALL they hear. They WILL know the truth, and they WILL thank me."
+
+ LAS_provide_approved_media:0 "Provide Approved Media"
+ LAS_provide_approved_media_desc:0 "My advisors tell me the sheep want more of their shepherd. They want my voice, my genius. The old tv station will brodcast it to them 24/7, so they may worship their savior."
+  
+ LAS_every_day_is_new_vegas_day:0 "Every Day is New Vegas Day"
+ LAS_every_day_is_new_vegas_day_desc:0 "Every Day from now on WILL be New Vegas Day, for we are all the citizens of New Vegas, are we not? Every day shall celebrate our glory! Every day shall be our day!"
+
+ LAS_cult_of_the_courier:0 "Cult of the Courier"
+ LAS_cult_of_the_courier_desc:0 "I AM THEIR SAVIOR, I AM THEIR GOD!!! All the churches, temples, and other houses of profligate decedance shall be repourposed into the only thing that matters, the worship of their GOD. If it wasn't for me they would still be at the mercy of Todd, but I have freed them and they shall worship their savior."
+
+ LAS_the_courier_is_always_watching:0 "The Courier is Always Watching"
+ LAS_the_courier_is_always_watching_desc:0 "The agents lurk, but I see them. I see them everywhere, they are not human. The demons will not hide from me. Anyone who dares to disobey shall be killed, and I WILL know who they are, for I am GOD."
+
+ LAS_the_courier_knows_all:0 "The Courier Knows All"
+ LAS_the_courier_knows_all_desc:0 "I am OMNIPOTENT, I am ALL POWERFULL, I am GOD! I know EVERYTHING that HAS BEEN or WILL BE! I am TIME and SPACE, I am the ALPHA and the OMEGA, the BEGINNING and the END!"
+
+ LAS_decannonize_bethesda:0 "Decannonize Bethesda"
+ LAS_decannonize_bethesda_desc:0 "Bethesda Softworks is mearly the front company for the DEVIL, and his INCARNATION, TODD HOWARD! Their works serve evil, and they only destroy. So called Fallouts 3, 4, and 76 are nothing but EVIL works meant to DESTROY Fallout. THEIR FILTH WILL NOT PERMEATE OUR WALLS FOR I AM YOUR SAVIOR AND PROTECTOR, BOW BEFORE MY GLORY!!"
+
+ LAS_aint_that_a_kick_in_the_head:0 "Aint that a Kick in the Head"
+ LAS_aint_that_a_kick_in_the_head_desc:0 "BURN BURN BURN!!! MHAHAHAHAHAHA BETHESDA'S EVIL SHALL BURN!! All the copies of "Fallout" 3, "Fallout" 4, and "Fallout" 76 MUST be BURNED! For it is the command of your GOD to destroy them!"
+ 
+ LAS_only_the_pure:0 "Only the Pure"
+ LAS_only_the_pure_desc:0 "Only the PURE Fallouts, free from corruption shall be worshipped. Fallout 1, Fallout 2, and Fallout New Vegas. They are holy works, our Bible. Playing and learning about them is a HOLY ACT. Their worship shall be equal to mine, for they are also HOLY."
+ 
+ LAS_ban_bethesda_games:0 "Ban Bethesda Games"
+ LAS_ban_bethesda_games_desc:0 "Bethesda's evil spreads beyond the corrupted Fallout. Their evil comes labelled under many different titles. All of it is EVIL and SHALL BE DESTROYED, for it is the WILL of your GOD!"
+ 
+ LAS_teach_fallout_in_school:0 "Teach Fallout in School"
+ LAS_teach_fallout_in_school_desc:0 "What is more important than Fallout? More important than worship? NOTHING! All schools SHALL TEACH Fallout, for it is HOLY."
+ 
+ LAS_cult_of_fallout:0 "The Cult of Fallout"
+ LAS_cult_of_fallout_desc:0 "All temples shall WORSHIP the HOLY FALLOUT as the WORD of their GOD."
+ 
+  
+  
  
  #Legion Path
  

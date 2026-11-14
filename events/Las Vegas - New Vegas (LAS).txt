@@ -310,7 +310,7 @@ country_event = {
 			election_frequency = 48
 		}
 		set_popularities = {
-			democratic = 20
+			democrat = 20
 			libertarian_right = 60
 			autocratic = 10
 			republican = 5
@@ -867,9 +867,10 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		swap_ideas = {
-			remove_idea = LAS_factionalism_1
-			add_idea = LAS_factionalism_2
+		promote_character = LAS_the_courier
+		add_stability = -0.25
+		hidden_effect = {
+			set_country_flag = LAS_the_courier_coup
 		}
 	}
 }
@@ -1584,6 +1585,110 @@ country_event = {
 	#
 	option = {
 		name = new_vegas.54.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.55
+	title = new_vegas.55.t
+	desc = new_vegas.55.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.55.a
+		ai_chance = {
+			factor = 99
+		}
+		add_stability = 10
+		country_event = new_vegas.59
+	}
+	option = {
+		name = new_vegas.55.b
+		ai_chance = {
+			factor = 1
+		}
+		country_event = new_vegas.56
+	}
+}
+country_event = {
+	id = new_vegas.56
+	title = new_vegas.56.t
+	desc = new_vegas.56.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.56.a
+		ai_chance = {
+			factor = 99
+		}
+		add_stability = 10
+		country_event = new_vegas.59
+	}
+	option = {
+		name = new_vegas.56.b
+		ai_chance = {
+			factor = 1
+		}
+		country_event = new_vegas.57
+	}
+}
+country_event = {
+	id = new_vegas.57
+	title = new_vegas.57.t
+	desc = new_vegas.57.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.57.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = 10
+		country_event = new_vegas.59
+	}
+	option = {
+		name = new_vegas.56.b
+		ai_chance = {
+			factor = 0
+		}
+		country_event = new_vegas.58
+	}
+}
+country_event = {
+	id = new_vegas.58
+	title = new_vegas.58.t
+	desc = new_vegas.58.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.58.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.59
+	title = new_vegas.59.t
+	desc = new_vegas.59.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.59.a
 		ai_chance = {
 			factor = 100
 		}

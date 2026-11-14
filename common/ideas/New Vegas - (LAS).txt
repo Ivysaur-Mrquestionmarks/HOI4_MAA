@@ -1012,6 +1012,128 @@ ideas = {
 				industrial_capacity_factory = 0.25
 			}
 		}
+		LAS_the_courier_idea_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = 0.05
+				political_power_factor = 0.1
+			}
+		}
+		LAS_the_courier_idea_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.10
+				political_power_factor = 0.15
+			}
+		}
+		LAS_the_courier_idea_3 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.15
+				political_power_factor = 0.25
+			}
+		}
+		LAS_the_courier_idea_4 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.25
+				political_power_factor = 0.25
+				monthly_population = -0.25
+			}
+		}
+		LAS_the_courier_idea_5 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.5
+				war_support_factor = 0.5
+				political_power_factor = 0.5
+				monthly_population = -0.5
+			}
+		}
+		LAS_tc_new_fam = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		LAS_tc_media_ban_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.10
+			}
+		}
+		LAS_tc_media_ban_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.15
+			}
+		}
+		LAS_tc_media_ban_3 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.20
+				political_power_factor = 0.20
+			}
+		}
+		LAS_tc_media_ban_4 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.25
+				political_power_factor = 0.25
+			}
+		}
+		LAS_new_fallout_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		LAS_new_fallout_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.10
+			}
+		}
+		LAS_new_fallout_3 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.15
+			}
+		}
+		LAS_new_fallout_4 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.25
+				political_power_factor = 0.25
+			}
+		}
+		LAS_fallout_schooling = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				research_speed_factor = -0.05
+			}
+		}
+		LAS_tc_the_cult_of_fallout = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.50
+				political_power_factor = 0.50
+				research_speed_factor = -0.05
+			}
+		}
 		LAS_ = {
 			allowed = { original_tag = LAS }
 			modifier = {

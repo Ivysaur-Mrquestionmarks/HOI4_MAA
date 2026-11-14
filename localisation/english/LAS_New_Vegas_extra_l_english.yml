@@ -265,6 +265,33 @@
  new_vegas.54.d:0 "write some epic about how LAS is now carrying the torch of liberty"
  new_vegas.54.a:0 "blah"
  
+ #Extremist Faction
+ 
+ new_vegas.55.t:0 "Bethesda Raid"
+ new_vegas.55.d:0 "Shots ring out as a group of a dozen armed men dressed in Desert Ranger gear have broke into the Headquarters of Bethesda Softworks. "Everyone on the ground! We just want Todd Howard! yelled the leader of the group. The armed men combed the building taking everyone inside hostage as the police surrounded the building. The leader radios in..."
+ new_vegas.55.a:0 "Sir, we got him"
+ new_vegas.55.b:0 "Sir, he got away"
+ 
+ new_vegas.56.t:0 "The Search for Todd Howard"
+ new_vegas.56.d:0 "I knew that he would get away, I did, but I know everything, including his hiding spots. Sure sir, but the crews have yet to find him. They will. I have a good feeling about Hagerstown. Sir, we alre...STOP! WE WILL FIND HIM NO MATTER WHAT, YOU UNDERSTAND ME!! Y-Yes, sir! Just then theres a knock on he door. Come in..."
+ new_vegas.56.a:0 "We found him, sir"
+ new_vegas.56.b:0 "We can't find him, sir"
+ 
+ new_vegas.57.t:0 "Showdown at the Lucky 38"
+ new_vegas.57.d:0 "Hes here, sir. WHAT?! N-No nononononononono h-he can't be, he can't be here. Capture him, NOW! Todd approaches the Lucky 38 as once again the ruler of Vegas finds his rule at threat. As dawn breaks..."
+ new_vegas.57.a:0 "Todd is finally captured"
+ new_vegas.57.b:0 "It Just Works..."
+ 
+ new_vegas.59.t:0 "The Execution of Todd Howard"
+ new_vegas.59.d:0 "Todd was brought upon a wooden platform in front of the Lucky 38, and his crimes were read personally by The Courier. "Devilry, Disparaging the HOLY FALLOUT, Mind Control, and Attempting to Take the Life of our GOD. Your crimes are of the highest order. How do you plead?" "Not Guilty" Todd said through gritted teeth "I find you guilty on all charges and sentence you to death!" proclaimed The Courier. Todd was then dragged over to a cross and nailed upon it and lifted high for all to see. "This is the fate of those who cross the HOLY FALLOUT" preached The Courier "I SHALL see to it that they all WILL pay for their crimes against us". Todd lasted 5 days upon that cross before dying, his corpse left to rot for months before being burned and the ashes dumped into the sewer. The Courier had won."
+ new_vegas.59.a:0 "Bethesda Delenda Est." 
+ 
+ #It Just Works
+ 
+ new_vegas.58.t:0 "It Just Works..."
+ new_vegas.58.d:0 "Todd Howard approached New Vegas with no more than the clothes on his back. He had no where else to go as the goons of that maniac "courier" were closing in. It was time to end this charade. He pulled up to the entrence of the Lucky 38 and was immediatly recognized. "Stop right there Todd!" screamed one of the guards brandishing a AR-15. Todd knew they wanted him alive and sprigned into action disarming the guard and taking his gun for himself. He opened fire on the other guards quickly dispatching them as he entered the 38. He went to the elevator suprised there were no guards to stop him, but cautious at what awaited him at the top. He only found "The Courier" frozen in fear mumbling about demons or whatever. Todd felt sorry for him for a split second until the memory of his friends being slaughtered in Bethesda came flooding back. He ended the maniac where he laid. As he walked outside he found a crowd had formed to thank him for liberating them from "The Courier". They wanted him to lead them, and with his studio dead he had nothing better to do. They paraded him around the city all night. Todd "The Liberator" Howard had saved a city from tyranny."
+ new_vegas.58.a:0 "It Just Works"
+ 
  #Ideas
  
  #NCR
@@ -415,6 +442,8 @@
  
  #Independent
  
+ #Yes Man Faction
+ 
  LAS_factionalism_1:0 "Factionalism"
  LAS_factionalism_1_desc:0 "A Man known as THE COURIER has formed an anti-government faction hellbent on seizing power"
  LAS_factionalism_2:0 "Factionalism"
@@ -502,6 +531,8 @@
  LAS_gun:0 "The Right to Bear Arms"
  LAS_gun_desc:0 "A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed."
  
+ #Industry Tree
+ 
  LAS_tourist_economy_1:0 "Tourist Economy"
  LAS_tourist_economy_1_desc:0 "The [LAS.GetName] Economy is mainly tourist based. Its best to tap into that market as much as possible."
  LAS_tourist_economy_2:0 "Tourist Economy"
@@ -526,6 +557,46 @@
  LAS_IND_ECON_6:0 "An Industrial Vegas"
  LAS_IND_ECON_6_desc:0 "Vegas is now a modern industrial state"
  
+ #Extremist Faction
+ 
+ LAS_the_courier_idea_1:0 "Cult of Personality"
+ LAS_the_courier_idea_1_desc:0 "The Courier has established a Cult of Personality around himself"
+ LAS_the_courier_idea_2:0 "Cult of Personality"
+ LAS_the_courier_idea_2_desc:0 "The Courier has established a Cult of Personality around himself"
+ LAS_the_courier_idea_3:0 "Cult of the Courier"
+ LAS_the_courier_idea_3_desc:0 "I AM THE ALPHA AND THE OMEGA, THE BEGINNING AND THE END. ALL SHALL BOW BEFORE MY MIGHT, FOR HOLY FALLOUT WE WILL FIGHT AND DIE. - Vault 13 1:1"
+ LAS_the_courier_idea_4:0 "Cult of the Courier"
+ LAS_the_courier_idea_4_desc:0 "I AM THE ALPHA AND THE OMEGA, THE BEGINNING AND THE END. ALL SHALL BOW BEFORE MY MIGHT, FOR HOLY FALLOUT WE WILL FIGHT AND DIE. - Vault 13 1:1"
+ LAS_the_courier_idea_5:0 "Cult of the Courier"
+ LAS_the_courier_idea_5_desc:0 "I AM THE ALPHA AND THE OMEGA, THE BEGINNING AND THE END. ALL SHALL BOW BEFORE MY MIGHT, FOR HOLY FALLOUT WE WILL FIGHT AND DIE. - Vault 13 1:1"
+ 
+ LAS_tc_new_fam:0 "The New Families"
+ LAS_tc_new_fam_desc:0 "The New Families provide New Vegas with security and enrichment"
+ 
+ LAS_tc_media_ban_1:0 "Media Ban"
+ LAS_tc_media_ban_1_desc:0 "All media that disparages our glorius Courier shall be banned"
+ LAS_tc_media_ban_2:0 "Media Ban"
+ LAS_tc_media_ban_2_desc:0 "All media that disparages our glorius Courier shall be banned"
+ LAS_tc_media_ban_3:0 "State Media"
+ LAS_tc_media_ban_3_desc:0 "The state provides the word of the HOLY COURIER free of charge for all citizens of NEW VEGAS"
+ LAS_tc_media_ban_4:0 "State Media"
+ LAS_tc_media_ban_4_desc:0 "The state provides the word of the HOLY COURIER free of charge for all citizens of NEW VEGAS"
+ 
+ LAS_new_fallout_1:0 "Decannonized Bethesda"
+ LAS_new_fallout_1_desc:0 "All of the Bethesda "Fallouts" have been decannonized"
+ LAS_new_fallout_2:0 "Decannonized Bethesda"
+ LAS_new_fallout_2_desc:0 "All of the Bethesda "Fallouts" have been decannonized"
+ LAS_new_fallout_3:0 "Decannonized Bethesda"
+ LAS_new_fallout_3_desc:0 "All of the Bethesda "Fallouts" have been decannonized"
+ LAS_new_fallout_4:0 "Holy Fallout"
+ LAS_new_fallout_4_desc:0 "The HOLY TRINITY is the only FALLOUT"
+ 
+ LAS_fallout_schooling:0 "Fallout Schooling"
+ LAS_fallout_schooling_desc:0 "Schools SHALL teach the HOLY word of HOLY FALLOUT"
+ 
+ LAS_tc_the_cult_of_fallout:0 "The Cult of Fallout"
+ LAS_tc_the_cult_of_fallout_desc:0 "THE HOLY WORD IS FALLOUT. THE HOLY 1, THE HOLY 2, AND THE HOLY NEW VEGAS. THE HOLY TRINITY GUIDES US AND TEACHES US. - Vault 13 2:1"
+ 
  #Characters
 
  LAS_steve_wynn:0 "Steve Wynn"
@@ -538,7 +609,7 @@
  LAS_clancy_brown_desc:0 "Clancy Brown Placeholder"
  
  LAS_the_courier:0 "THE COURIER"
- LAS_the_courier_desc:0 "A Mysterious Figure who never removes his helmet 'THE COURIER' is best described as a madman of great charisma and opinion. The type of character who before the civil war would rant on his 5 subscriber Youtube channel. Now hes got a whole country at his command, God Help Us All."
+ LAS_the_courier_desc:0 "A Mysterious Figure who never removes his helmet "THE COURIER" is best described as a madman of great charisma and opinion. The type of character who before the civil war would rant on his 5 subscriber Youtube channel. Now hes got a whole country at his command, God Help Us All."
 
  LAS_jason_spisak:0 "Jason Spisak"
  LAS_jason_spisak_desc:0 "Jason Spisak Placeholder"
