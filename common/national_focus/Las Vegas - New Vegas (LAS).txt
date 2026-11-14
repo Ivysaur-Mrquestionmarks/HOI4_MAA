@@ -17,7 +17,7 @@ focus_tree = {
 		id = LAS_declare_new_vegas
 		icon = GFX_goal_unknown
 		cost = 0
-		relative_position_id = LAS_mormon_war
+		relative_position_id = LAS_great_mormon_war
 		x = 24
 		y = 0
 		prerequisite = {
@@ -832,10 +832,7 @@ focus_tree = {
 			focus = LAS_liberate_the_rockies
 		}
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = PRA
-			}
+			effect_kill_the_PRA = YES
 		}
 	}
 	focus = {
@@ -974,14 +971,12 @@ focus_tree = {
 				type = annex_everything
 				target = USA
 			}
-		create_wargoal = {
-				type = annex_everything
-				target = TEX
-			}
 			create_wargoal = {
 				type = annex_everything
 				target = AFS
 			}
+		War_on_texas_collapse_tags = YES
+		RVR_kill_the_CSA = YES
 		}
 	}
 	focus = {
@@ -1167,7 +1162,7 @@ focus_tree = {
 				limit = { is_core_of = USA }
 				add_core_of = LAS
 			}
-		every_state = { 
+			every_state = { 
 				limit = { is_core_of = TEX }
 				add_core_of = LAS
 			}
@@ -1292,6 +1287,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			#super event
+			#thanks for playing event
 			hidden_effect = { 
 				set_cosmetic_tag = LAS_NCR_VEGAS
 			}
@@ -1722,6 +1719,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			LAS_NCR_ECO_1 = yes
+			custom_effect_tooltip = LAS_NCR_eco_tt
 		}
 	}
 	focus = {
@@ -1736,6 +1734,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			LAS_NCR_ECO_1 = yes
+			custom_effect_tooltip = LAS_NCR_eco_tt
 		}
 	}
 	focus = {
@@ -1750,6 +1749,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			LAS_NCR_ECO_1 = yes
+			custom_effect_tooltip = LAS_NCR_eco_tt
 		}
 	}
 	focus = {
@@ -1767,6 +1767,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			LAS_NCR_ECO_2 = yes
+			custom_effect_tooltip = LAS_NCR_eco_tt
 		}
 	}
 	focus = {
@@ -1784,6 +1785,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			LAS_NCR_ECO_2 = yes
+			custom_effect_tooltip = LAS_NCR_eco_tt
 		}
 	}
 	focus = {
@@ -1801,6 +1803,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			LAS_NCR_ECO_3 = yes
+			custom_effect_tooltip = LAS_NCR_eco_tt
 		}
 	}
 	focus = {
@@ -1818,6 +1821,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			LAS_NCR_ECO_3 = yes
+			custom_effect_tooltip = LAS_NCR_eco_tt
 		}
 	}
 	focus = {
@@ -1837,7 +1841,7 @@ focus_tree = {
 			swap_ideas = {
 					remove_idea = LAS_restored_economy_4
 					add_idea = LAS_restored_economy_5
-				}
+			}
 		}
 	}
 	focus = {
@@ -1918,6 +1922,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = new_vegas.24
+			add_ideas = LAS_IND_ECON_1
 			hidden_effect = {
 				set_cosmetic_tag = LAS_new_vegas_ind
 			}
@@ -2381,7 +2386,34 @@ focus_tree = {
 			not = {country_exists = IDA}
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = AFO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MOL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NAV
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HOP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HAM
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MON
+			}
 		}
 	}
 	focus = {
@@ -2395,7 +2427,10 @@ focus_tree = {
 			focus = LAS_paint_the_rockies_red
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = LAS_california_prep
+				days = 365
+			}
 		}
 	}
 	focus = {
@@ -2409,7 +2444,16 @@ focus_tree = {
 			focus = LAS_paint_the_rockies_red
 		}
 		completion_reward = {
-			
+			PRA = { 
+				add_timed_idea = {
+					idea = LAS_desertions_1
+					days = 365
+				}
+			}
+			add_timed_idea = {
+					idea = LAS_good_desertions_1
+					days = 365
+			}
 		}
 	}
 	focus = {
@@ -2423,7 +2467,12 @@ focus_tree = {
 			focus = LAS_prepare_for_california
 		}
 		completion_reward = {
-			
+			PRA = { 
+				add_timed_idea = {
+					idea = LAS_republican_sabotage
+					days = 365
+				}
+			}
 		}
 	}
 	focus = {
@@ -2437,7 +2486,18 @@ focus_tree = {
 			focus = LAS_connect_with_pacific_patriots
 		}
 		completion_reward = {
-			
+			PRA = { 
+				remove_ideas = LAS_desertions_1
+				add_timed_idea = {
+					idea = LAS_desertions_2
+					days = 365
+				}
+			}
+			remove_ideas = LAS_good_desertions_1
+			add_timed_idea = {
+					idea = LAS_good_desertions_2
+					days = 365
+			}
 		}
 	}
 	focus = {
@@ -2454,7 +2514,10 @@ focus_tree = {
 			focus = LAS_utilize_fallout_fans
 		}
 		completion_reward = {
-			
+			#custom tooltip or something idk
+			#hidden_effect = {
+				#add_ideas = 
+			#}
 		}
 	}
 	focus = {
@@ -2468,7 +2531,14 @@ focus_tree = {
 			focus = LAS_found_the_enclave
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = PRA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CAS
+			}
 		}
 	}
 	focus = {
@@ -2498,7 +2568,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0
 		relative_position_id = LAS_election_inde
-		x = 4
+		x = 5
 		y = 1
 		prerequisite = {
 			focus = LAS_election_inde
@@ -2514,7 +2584,7 @@ focus_tree = {
 	focus = {
 		id = LAS_state_owned_industry
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_peoples_democratic_party_of_new_vegas_victory
 		x = -1
 		y = 1
@@ -2522,13 +2592,29 @@ focus_tree = {
 			focus = LAS_peoples_democratic_party_of_new_vegas_victory
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_state_owned_ind
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_rebuild_welfare_system
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_peoples_democratic_party_of_new_vegas_victory
 		x = 1
 		y = 1
@@ -2536,13 +2622,13 @@ focus_tree = {
 			focus = LAS_peoples_democratic_party_of_new_vegas_victory
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_welfare
 		}
 	}
 	focus = {
 		id = LAS_trade_with_california
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_state_owned_industry
 		x = 1
 		y = 1
@@ -2553,15 +2639,15 @@ focus_tree = {
 			focus = LAS_rebuild_welfare_system
 		}
 		completion_reward = {
-			
+			PRA = { country_event = new_vegas.45 }
 		}
 	}
 	focus = {
 		id = LAS_reach_out_to_washington
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_trade_with_california
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = {
 			focus = LAS_trade_with_california
@@ -2572,23 +2658,23 @@ focus_tree = {
 		available = {
 			NOT = {
 				PRA = {
-					has_government = democrat
+					has_government = ROOT
 				}
 			}
 			FRA = {
-				has_government = democrat
+				has_government = ROOT
 			}
 		}
 		completion_reward = {
-			
+			FRA = { add_to_faction = LAS }
 		}
 	}
 	focus = {
 		id = LAS_reach_out_to_san_francisco
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_trade_with_california
-		x = 1
+		x = 2
 		y = 1
 		prerequisite = {
 			focus = LAS_trade_with_california
@@ -2598,59 +2684,231 @@ focus_tree = {
 		}
 		available = {
 			PRA = {
-				has_government = democrat
+				has_government = ROOT
 			}
 		}
 		completion_reward = {
-			
+			PRA = { add_to_faction = LAS }
 		}
 	}
 	focus = {
-		id = LAS_liberate_the_rockies_ind
+		id = LAS_ridin_with_biden
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_reach_out_to_washington
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = {
 			focus = LAS_reach_out_to_washington
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_riding_with_biden
 		}
 	}
 	focus = {
-		id = LAS_liberate_california
+		id = LAS_bulwark_of_democracy
 		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_liberate_the_rockies_ind
-		x = 0
+		cost = 4
+		relative_position_id = LAS_reach_out_to_washington
+		x = 1
 		y = 1
 		prerequisite = {
-			focus = LAS_liberate_the_rockies_ind
+			focus = LAS_reach_out_to_washington
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = democrat
+				popularity = 10
+			}
+			add_ideas = LAS_dem_bulwark
 		}
 	}
 	focus = {
-		id = LAS_the_western_bulwark
+		id = LAS_rocky_mountain_high
 		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_liberate_california
+		cost = 3
+		relative_position_id = LAS_bulwark_of_democracy
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = LAS_liberate_california
+			focus = LAS_bulwark_of_democracy
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = AFO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MOL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NAV
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HOP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HAM
+			}
+		}
+	}
+	focus = {
+		id = LAS_bombing_with_brown
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = LAS_ridin_with_biden
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_ridin_with_biden
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAS_riding_with_biden
+				add_idea = LAS_bombin_with_brown
+			}
+		}
+	}
+	focus = {
+		id = LAS_eradicate_california
+		icon = GFX_goal_unknown
+		cost = 2
+		relative_position_id = LAS_bombing_with_brown
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_bombing_with_brown
+		}
+		prerequisite = {
+			focus = LAS_rocky_mountain_high
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRA
+			}
+		}
+	}
+	focus = {
+		id = LAS_march_north
+		icon = GFX_goal_unknown
+		cost = 2
+		relative_position_id = LAS_eradicate_california
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_eradicate_california
+		}
+		available = {
+				NOT = { 
+					country_exists = PRA
+					has_war_with = PRA
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MON
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CAS
+			}
+		}
+	}
+	focus = {
+		id = LAS_restoration_of_liberty
+		icon = GFX_goal_unknown
+		cost = 10
+		relative_position_id = LAS_march_north
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = LAS_march_north
+		}
+		available = {
+			has_war = no
+			controls_state = 304
+			controls_state = 496
+			controls_state = 86
+			controls_state = 411
+		}
+		completion_reward = {
+			add_ideas = LAS_restore_lib
+			every_state = { 
+				limit = { is_core_of = PRA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = ORO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = FIR }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = CAS }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MOL }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = UTA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = AFO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = TOH }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = NAV }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = HOP }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = SIN }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = IDA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MON }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = LIB }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = HAM }
+				add_core_of = LAS
+			}
 		}
 	}
 	focus = {
 		id = LAS_support_california
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_reach_out_to_san_francisco
 		x = 0
 		y = 1
@@ -2658,13 +2916,245 @@ focus_tree = {
 			focus = LAS_reach_out_to_san_francisco
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_california_support
+			hidden_effect = {
+				PRA = { country_event = new_vegas.48 }
+			}
 		}
 	}
-		focus = {
+	focus = {
+		id = LAS_socialize_medicine
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = LAS_support_california
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAS_support_california
+		}
+		completion_reward = {
+			add_ideas = LAS_socialist_medicine
+		}
+	}
+	focus = {
+		id = LAS_nationalize_military_industry
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = LAS_support_california
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_support_california
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LAS_decriminalize_drugs
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = LAS_socialize_medicine
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_socialize_medicine
+		}
+		completion_reward = {
+			add_ideas = LAS_drug_decriminalization
+		}
+	}
+	focus = {
+		id = LAS_national_military_industrial_complex
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = LAS_nationalize_military_industry
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_nationalize_military_industry
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LAS_abolish_police
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = LAS_decriminalize_drugs
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_decriminalize_drugs
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAS_drug_decriminalization
+				add_idea = LAS_complete_anarchy
+			}
+		}
+	}
+	focus = {
+		id = LAS_socialist_militarism
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = LAS_national_military_industrial_complex
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_national_military_industrial_complex
+		}
+		completion_reward = {
+			add_ideas = LAS_soc_militarism
+		}
+	}
+	focus = {
+		id = LAS_request_bailout
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = LAS_abolish_police
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_abolish_police
+		}
+		prerequisite = {
+			focus = LAS_socialist_militarism
+		}
+		completion_reward = {
+			PRA = {
+				puppet = LAS
+			}
+			if = {
+				limit = {
+					PRA = {
+						has_government = authoritarian_left
+					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_left
+				}
+				remove_ideas = LAS_complete_anarchy
+				swap_ideas = {
+					remove_idea = LAS_soc_militarism
+					add_idea = LAS_red_army_rule
+				}
+			}
+			else = { 
+				remove_ideas = LAS_complete_anarchy
+				swap_ideas = {
+					remove_idea = LAS_socialist_medicine
+					add_idea = LAS_socialist_paradise
+				}
+			}
+		}
+	}
+	focus = {
+		id = LAS_new_mojave
+		icon = GFX_goal_unknown
+		cost = 10
+		relative_position_id = LAS_request_bailout
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_request_bailout
+		}
+		completion_reward = {
+			every_state = { 
+				limit = { is_core_of = MOL }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = UTA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = AFO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = TOH }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = NAV }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = HOP }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = SIN }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = IDA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = MON }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = HAM }
+				add_core_of = LAS
+			}
+		}
+	}
+	focus = {
 		id = LAS_new_vegas_freedom_party_victory
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 0
 		relative_position_id = LAS_election_inde
 		x = 0
 		y = 1
@@ -2682,7 +3172,7 @@ focus_tree = {
 	focus = {
 		id = LAS_the_right_to_bear_arms
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_new_vegas_freedom_party_victory
 		x = -1
 		y = 1
@@ -2690,13 +3180,13 @@ focus_tree = {
 			focus = LAS_new_vegas_freedom_party_victory
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_gun
 		}
 	}
 	focus = {
 		id = LAS_casino_autonomy
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_new_vegas_freedom_party_victory
 		x = 1
 		y = 1
@@ -2704,13 +3194,13 @@ focus_tree = {
 			focus = LAS_new_vegas_freedom_party_victory
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_tourist_economy_1
 		}
 	}
 	focus = {
 		id = LAS_garuntee_freedoms
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_the_right_to_bear_arms
 		x = 0
 		y = 1
@@ -2718,13 +3208,13 @@ focus_tree = {
 			focus = LAS_the_right_to_bear_arms
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_garunteed_freedoms
 		}
 	}
 	focus = {
 		id = LAS_abolish_casino_and_bar_taxes
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_casino_autonomy
 		x = 0
 		y = 1
@@ -2732,13 +3222,16 @@ focus_tree = {
 			focus = LAS_casino_autonomy
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_tourist_economy_1
+				add_idea = LAS_tourist_economy_2
+			}
 		}
 	}
 	focus = {
 		id = LAS_connect_with_gla
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_garuntee_freedoms
 		x = 1
 		y = 1
@@ -2749,13 +3242,15 @@ focus_tree = {
 			focus = LAS_abolish_casino_and_bar_taxes
 		}
 		completion_reward = {
-			
+			GLA = {
+				country_event = new_vegas.49
+			}
 		}
 	}
 	focus = {
 		id = LAS_assemble_the_families
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_connect_with_gla
 		x = 0
 		y = 1
@@ -2763,13 +3258,13 @@ focus_tree = {
 			focus = LAS_connect_with_gla
 		}
 		completion_reward = {
-			
+			country_event = new_vegas.52
 		}
 	}
 	focus = {
 		id = LAS_secure_the_future_of_vegas
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 10
 		relative_position_id = LAS_assemble_the_families
 		x = 0
 		y = 1
@@ -2777,13 +3272,77 @@ focus_tree = {
 			focus = LAS_assemble_the_families
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_the_future_of_nv
+			create_wargoal = {
+				type = annex_everything
+				target = AFO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MOL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NAV
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HOP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = IDA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HAM
+			}
+			every_state = { 
+				limit = { is_core_of = MOL }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = UTA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = AFO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = TOH }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = NAV }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = HOP }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = SIN }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = IDA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = HAM }
+				add_core_of = LAS
+			}
 		}
 	}
 	focus = {
 		id = LAS_bring_freedom_to_california
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_secure_the_future_of_vegas
 		x = -1
 		y = 1
@@ -2791,13 +3350,13 @@ focus_tree = {
 			focus = LAS_secure_the_future_of_vegas
 		}
 		completion_reward = {
-			
+			effect_kill_the_PRA = YES
 		}
 	}
 	focus = {
 		id = LAS_up_north_in_montana
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_secure_the_future_of_vegas
 		x = 1
 		y = 1
@@ -2805,41 +3364,62 @@ focus_tree = {
 			focus = LAS_secure_the_future_of_vegas
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = MON
+			}
 		}
 	}
 	focus = {
 		id = LAS_freedom_from_communism
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_bring_freedom_to_california
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_bring_freedom_to_california
 		}
+		available = {
+			NOT = {
+				has_war_with = PRA
+			}
+			owns_state = 304
+		}
 		completion_reward = {
-			
+			every_state = { 
+				limit = { is_core_of = PRA }
+				add_core_of = LAS
+			}
 		}
 	}
 	focus = {
 		id = LAS_liberty_restored_in_montana
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_up_north_in_montana
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_up_north_in_montana
 		}
+		available = {
+			NOT = {
+				has_war_with = MON
+			}
+			owns_state = 86
+		}
 		completion_reward = {
-			
+			every_state = { 
+				limit = { is_core_of = MON }
+				add_core_of = LAS
+			}
 		}
 	}
 	focus = {
 		id = LAS_march_to_seattle
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_freedom_from_communism
 		x = 1
 		y = 1
@@ -2850,55 +3430,96 @@ focus_tree = {
 			focus = LAS_liberty_restored_in_montana
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = CAS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LIB
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SAZ
+			}
 		}
 	}
 	focus = {
 		id = LAS_freedom_in_the_northwest
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_march_to_seattle
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_march_to_seattle
 		}
+		available = {
+			NOT = {
+				has_war_with = CAS
+				has_war_with = LIB
+				has_war_with = SAZ
+			}
+			owns_state = 492
+			owns_state = 496
+			owns_state = 125
+		}
 		completion_reward = {
-			
+			every_state = { 
+				limit = { is_core_of = CAS }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = LIB }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = LIB }
+				add_core_of = SAZ
+			}
 		}
 	}
 	focus = {
 		id = LAS_bring_freedom_back_to_texas
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_freedom_in_the_northwest
-		x = -2
+		x = -1
 		y = 1
 		prerequisite = {
 			focus = LAS_freedom_in_the_northwest
 		}
 		completion_reward = {
-			
+			War_on_texas_collapse_tags = YES
 		}
 	}
 	focus = {
 		id = LAS_liberty_in_lone_star
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_bring_freedom_back_to_texas
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_bring_freedom_back_to_texas
 		}
+		available = {
+			NOT = {
+				has_war_with = TEX
+			}
+			owns_state = 143
+		}
 		completion_reward = {
-			
+			every_state = { 
+				limit = { is_core_of = TEX }
+				add_core_of = LAS
+			}
 		}
 	}
 	focus = {
 		id = LAS_liberate_the_plains
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_freedom_in_the_northwest
 		x = 2
 		y = 1
@@ -2906,27 +3527,52 @@ focus_tree = {
 			focus = LAS_freedom_in_the_northwest
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NPA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = AFS
+			}
 		}
 	}
 	focus = {
 		id = LAS_liberty_brought_to_the_plains
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_liberate_the_plains
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_liberate_the_plains
 		}
+		available = {
+			NOT = {
+				has_war_with = USA
+				has_war_with = AFS
+			}
+			owns_state = 416
+		}
 		completion_reward = {
-			
+			every_state = { 
+				limit = { is_core_of = USA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = AFS }
+				add_core_of = LAS
+			}
 		}
 	}
 	focus = {
 		id = LAS_bring_freedom_to_the_land_of_chattles
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_liberty_in_lone_star
 		x = 0
 		y = 1
@@ -2934,27 +3580,50 @@ focus_tree = {
 			focus = LAS_liberty_in_lone_star
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = KFC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KEN
+			}
+			RVR_kill_the_CSA = YES
 		}
 	}
 	focus = {
 		id = LAS_a_land_of_freedom
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_bring_freedom_to_the_land_of_chattles
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_bring_freedom_to_the_land_of_chattles
 		}
+		available = {
+			NOT = {
+				has_war_with = CSA
+			}
+			owns_state = 506
+			owns_state = 605
+			owns_state = 316
+			owns_state = 552
+			owns_state = 592
+			owns_state = 320
+		}
 		completion_reward = {
-			
+			for_each_scope_loop = {
+				array = global.south_collapse
+				every_core_state = { add_core_of = LAS }
+			}
+			custom_effect_tooltip = LAS_south_core_tt
 		}
 	}
 	focus = {
 		id = LAS_liberate_the_great_lakes
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_liberty_brought_to_the_plains
 		x = -1
 		y = 1
@@ -2965,13 +3634,32 @@ focus_tree = {
 			focus = LAS_offer_unity_to_gla
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = GLA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KMT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MIL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MNS
+			}
 		}
 	}
 	focus = {
 		id = LAS_offer_unity_to_gla
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_liberty_brought_to_the_plains
 		x = 1
 		y = 1
@@ -2983,18 +3671,35 @@ focus_tree = {
 		}
 		available = {
 			GLA = {
-				has_government = libertarian
+				has_government = libertarian_right
 			}
 			country_exists = GLA
+			has_country_flag = LAS_gla_submit
 		}
 		completion_reward = {
-			
+			GLA = { country_event = new_vegas.53 }
+			create_wargoal = {
+				type = annex_everything
+				target = KMT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MIL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MNS
+			}
 		}
 	}
 	focus = {
 		id = LAS_carry_the_torch_of_freedom_and_liberty
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_liberate_the_great_lakes
 		x = 1
 		y = 1
@@ -3003,13 +3708,17 @@ focus_tree = {
 			focus = LAS_offer_unity_to_gla
 		}
 		completion_reward = {
-			
+			every_state = { 
+				limit = { is_core_of = GLA }
+				add_core_of = LAS
+			}
+			country_event = new_vegas.54
 		}
 	}
 	focus = {
 		id = LAS_carry_freedom_to_dc
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_a_land_of_freedom
 		x = 1
 		y = 1
@@ -3020,41 +3729,137 @@ focus_tree = {
 			focus = LAS_carry_the_torch_of_freedom_and_liberty
 		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NRA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = VRR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = VIR
+			}
 		}
 	}
 	focus = {
 		id = LAS_a_free_america
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_carry_freedom_to_dc
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_carry_freedom_to_dc
 		}
+		available = {
+			NOT = {
+				has_war_with = FRA
+			}
+			owns_state = 242
+		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = ALA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PAC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = DET
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = WBK
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = FLO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PAC
+			}
 		}
 	}
 	focus = {
 		id = LAS_declare_new_america
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 10
 		relative_position_id = LAS_a_free_america
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_a_free_america
 		}
+		available = { 
+			has_war = no
+			all_state = {	
+				OR = {
+					NOT = {has_state_flag = part_of_america}
+					is_owned_by = ROOT
+					owner = { is_ally_with = ROOT } #Checks for territory controlled by indpendent faction members/puppets
+				}		
+			}
+		}
 		completion_reward = {
-			
+			set_cosmetic_tag = LAS_new_american_republic
+			every_state = { 
+				limit = { is_core_of = MIL }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = KMT }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = AFS }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = KFC }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = NRA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = VIR }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = FRA }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = FLO }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = NEW }
+				add_core_of = LAS
+			}
+			every_state = { 
+				limit = { is_core_of = PAC }
+				add_core_of = LAS
+			}
+			#super event
+			#thanks for playing event
 		}
 	}
 		focus = {
 		id = LAS_rebuild_vegas 
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_conflict_in_paradise
 		x = 0
 		y = 2
@@ -3062,13 +3867,24 @@ focus_tree = {
 			focus = LAS_conflict_in_paradise
 		}
 		completion_reward = {
-			
+			46 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = LAS_IND_ECON_1
+				add_idea = LAS_IND_ECON_2
+			}
 		}
 	}
 	focus = {
 		id = LAS_rebuild_consumer_industry
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_rebuild_vegas
 		x = -1
 		y = 1
@@ -3076,13 +3892,28 @@ focus_tree = {
 			focus = LAS_rebuild_vegas
 		}
 		completion_reward = {
-			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_rebuild_military_industry
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_rebuild_vegas
 		x = 1
 		y = 1
@@ -3090,13 +3921,28 @@ focus_tree = {
 			focus = LAS_rebuild_vegas
 		}
 		completion_reward = {
-			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_repair_infrastructure
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_rebuild_consumer_industry
 		x = 1
 		y = 1
@@ -3107,13 +3953,28 @@ focus_tree = {
 			focus = LAS_rebuild_military_industry
 		}
 		completion_reward = {
-			
+			46 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = infrastructure
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			36 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = infrastructure
+    				level = 2
+    				instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_employment_scheme
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_repair_infrastructure 
 		x = -1
 		y = 1
@@ -3121,13 +3982,16 @@ focus_tree = {
 			focus = LAS_repair_infrastructure
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_IND_ECON_2
+				add_idea = LAS_IND_ECON_3
+			}
 		}
 	}
 	focus = {
 		id = LAS_resource_exploitation
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_repair_infrastructure
 		x = 1
 		y = 1
@@ -3135,13 +3999,13 @@ focus_tree = {
 			focus = LAS_repair_infrastructure
 		}
 		completion_reward = {
-			
+			#give me minerals
 		}
 	}
 	focus = {
 		id = LAS_industrial_expansion
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_employment_scheme
 		x = 1
 		y = 1
@@ -3152,13 +4016,44 @@ focus_tree = {
 			focus = LAS_resource_exploitation
 		}
 		completion_reward = {
-			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_consumer_expansion_1
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_industrial_expansion 
 		x = -2
 		y = 1
@@ -3166,13 +4061,28 @@ focus_tree = {
 			focus = LAS_industrial_expansion
 		}
 		completion_reward = {
-			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_consumer_expansion_2
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_consumer_expansion_1
 		x = 0
 		y = 1
@@ -3180,13 +4090,28 @@ focus_tree = {
 			focus = LAS_consumer_expansion_1
 		}
 		completion_reward = {
-			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_military_expansion_1
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_industrial_expansion
 		x = 2
 		y = 1
@@ -3194,13 +4119,28 @@ focus_tree = {
 			focus = LAS_industrial_expansion
 		}
 		completion_reward = {
-			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_military_expansion_2
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_military_expansion_1 
 		x = 0
 		y = 1
@@ -3208,13 +4148,28 @@ focus_tree = {
 			focus = LAS_military_expansion_1
 		}
 		completion_reward = {
-			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = LAS_boost_effeciantcy
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_industrial_expansion 
 		x = 0
 		y = 1
@@ -3222,13 +4177,16 @@ focus_tree = {
 			focus = LAS_industrial_expansion
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_IND_ECON_3
+				add_idea = LAS_IND_ECON_4
+			}
 		}
 	}
 	focus = {
 		id = LAS_small_but_mighty
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		relative_position_id = LAS_boost_effeciantcy 
 		x = 0
 		y = 1
@@ -3236,13 +4194,16 @@ focus_tree = {
 			focus = LAS_boost_effeciantcy
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_IND_ECON_4
+				add_idea = LAS_IND_ECON_5
+			}
 		}
 	}
 	focus = {
 		id = LAS_an_industrial_vegas
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_small_but_mighty
 		x = 0
 		y = 1
@@ -3256,10 +4217,13 @@ focus_tree = {
 			focus = LAS_military_expansion_2
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_IND_ECON_5
+				add_idea = LAS_IND_ECON_6
+			}
 		}
 	}
-		focus = {
+	focus = {
 		id = LAS_extremist_faction #efe plz dont push this to open beta
 		icon = GFX_goal_unknown
 		cost = 1
@@ -5312,27 +6276,64 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LAS_mormon_war
+		id = LAS_great_mormon_war
 		icon = GFX_goal_unknown
-		cost = 1
-		x = 10
+		cost = 0
+		x = 8
 		y = 1
+		available = {
+			always = no
+		}
+		bypass = {
+			has_war_with = UTA
+		}
 		completion_reward = {
 			
 		}
 	}
 	focus = {
+		id = LAS_las_vegas_airforce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LAS_great_mormon_war
+		}
+		relative_position_id = LAS_great_mormon_war
+		x = 0
+		y = 1
+		completion_reward = {
+			air_experience = 100
+			add_tech_bonus = {
+    			bonus = 0.85
+    			uses = 3
+    			category = air_equipment
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.90
+				uses = 2
+				category = air_doctrine
+			}
+		}
+
+	}
+	focus = {
 		id = LAS_emergency_conscription
 		icon = GFX_goal_unknown
 		cost = 1
-		relative_position_id = LAS_mormon_war
+		relative_position_id = LAS_great_mormon_war
 		x = -3
 		y = 1
 		prerequisite = {
-			focus = LAS_mormon_war
+			focus = LAS_great_mormon_war
 		}
 		completion_reward = {
-			
+			add_manpower = 1000
+			load_oob = "LAS_conscripts"
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = 0.05
+    			tooltip_side = people_favored
+			}
 		}
 	}
 	focus = {
@@ -5346,7 +6347,16 @@ focus_tree = {
 			focus = LAS_emergency_conscription
 		}
 		completion_reward = {
-			
+			load_oob = "LAS_militia"
+			LAS_joe_lombardo = {
+				add_unit_leader_trait = desert_fox
+			}
+			LAS_case_cunningham = {
+				add_unit_leader_trait = desert_fox
+			}
+			LAS_michael_butler = {
+				add_unit_leader_trait = desert_fox
+			}
 		}
 	}
 	focus = {
@@ -5415,7 +6425,7 @@ focus_tree = {
 		id = LAS_legion_of_joshua_graham
 		icon = GFX_goal_unknown
 		cost = 1
-		relative_position_id = LAS_mormon_war
+		relative_position_id = LAS_great_mormon_war
 		x = 0
 		y = 5
 		prerequisite = {
@@ -5425,7 +6435,7 @@ focus_tree = {
 			focus = LAS_strenghen_supression
 		}
 		completion_reward = {
-			
+			load_oob = "LAS_mw_legions"
 		}
 	}
 	focus = {
@@ -5453,18 +6463,24 @@ focus_tree = {
 			focus = LAS_race_for_salt_lake_city
 		}
 		completion_reward = {
-			
+			army_experience = 100
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1.0
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
 		id = LAS_war_industry
 		icon = GFX_goal_unknown
 		cost = 1
-		relative_position_id = LAS_mormon_war
+		relative_position_id = LAS_great_mormon_war
 		x = 3
 		y = 1
 		prerequisite = {
-			focus = LAS_mormon_war
+			focus = LAS_great_mormon_war
 		}
 		completion_reward = {
 			

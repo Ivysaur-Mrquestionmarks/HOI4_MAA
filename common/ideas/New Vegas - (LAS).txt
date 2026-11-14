@@ -252,7 +252,7 @@ ideas = {
 			allowed = { original_tag = LAS }
 			modifier = {
 				army_attack_factor = 0.1
-				army_defense_factor = 0.05
+				army_defence_factor = 0.05
 				army_attack_speed_factor = 0.05
 				army_speed_factor = 0.05
 				army_org_factor = 0.1
@@ -263,7 +263,7 @@ ideas = {
 		LAS_oasis_secured = {
 			allowed = { original_tag = LAS }
 			modifier = {
-				army_defense_factor = 0.15
+				army_defence_factor = 0.15
 				army_core_defence_factor = 0.25
 				army_org_factor = 0.15
 				max_planning_factor = 0.15
@@ -289,7 +289,7 @@ ideas = {
 			allowed = { original_tag = LAS }
 			modifier = {
 				army_attack_factor = -0.10
-				army_defense_factor = -0.10
+				army_defence_factor = -0.10
 				army_attack_speed_factor = 0.05
 				army_speed_factor = 0.05
 				army_morale_factor = 0.1
@@ -306,7 +306,7 @@ ideas = {
 				max_training = -0.2
 				training_time_army_factor = -0.5
 				army_attack_factor = -0.15
-				army_defense_factor = -0.15
+				army_defence_factor = -0.15
 				army_attack_speed_factor = 0.05
 				army_speed_factor = 0.05
 				army_morale_factor = 0.1
@@ -323,7 +323,7 @@ ideas = {
 				max_training = -0.2
 				training_time_army_factor = -0.5
 				army_attack_factor = -0.10
-				army_defense_factor = -0.10
+				army_defence_factor = -0.10
 				army_attack_speed_factor = 0.05
 				army_speed_factor = 0.05
 				army_morale_factor = 0.1
@@ -341,7 +341,7 @@ ideas = {
 				max_training = -0.1
 				training_time_army_factor = -0.25
 				army_attack_factor = -0.05
-				army_defense_factor = -0.05
+				army_defence_factor = -0.05
 				army_attack_speed_factor = 0.05
 				army_speed_factor = 0.05
 				army_morale_factor = 0.1
@@ -384,7 +384,7 @@ ideas = {
 			modifier = {
 				training_time_army_factor = -0.25
 				army_attack_factor = 0.1
-				army_defense_factor = 0.1
+				army_defence_factor = 0.1
 				army_attack_speed_factor = 0.05
 				army_speed_factor = 0.05
 				army_morale_factor = 0.1
@@ -403,7 +403,7 @@ ideas = {
 			modifier = {
 				training_time_army_factor = 0.25
 				army_attack_factor = 0.2
-				army_defense_factor = 0.2
+				army_defence_factor = 0.2
 				army_attack_speed_factor = 0.1
 				army_speed_factor = 0.15
 				army_morale_factor = 0.15
@@ -656,6 +656,360 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_start_efficiency_factor = 0.05
 				political_power_gain = 0.05
+			}
+		}
+		LAS_california_prep = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				planning_speed = 0.25
+				max_planning_factor = 0.25
+				army_attack_factor = 0.1
+				army_attack_speed_factor 0.05
+				army_speed_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = 0.15
+			}
+		}
+		LAS_desertions_1 = {
+			allowed = { original_tag = PRA }
+			modifier = {
+				weekly_manpower = -1000
+				army_morale_factor = -0.1
+				army_attack_factor = -0.05
+				army_core_attack_factor = -0.05
+				army_core_defence_factor = -0.05
+			}
+		}
+		LAS_desertions_2 = {
+			allowed = { original_tag = PRA }
+			modifier = {
+				weekly_manpower = -5000
+				army_morale_factor = -0.25
+				army_attack_factor = -0.1
+				army_core_attack_factor = -0.1
+				army_core_defence_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.1
+				army_speed_factor = -0.05
+			}
+		}
+		LAS_republican_sabotage = {
+			allowed = { original_tag = PRA }
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_start_efficiency_factor = -0.05
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		LAS_good_desertions_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				weekly_manpower = 1000
+			}
+		}
+		LAS_good_desertions_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				weekly_manpower = 5000
+			}
+		}
+		LAS_state_owned_ind = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		LAS_welfare = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = 0.1
+				monthly_population = 0.1
+				stability_factor = 0.1
+			}
+		}
+		LAS_california_trade = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = 0.05
+				monthly_population = 0.05
+			}
+		}
+		LAS_california_trade_pra = {
+			allowed = { original_tag = PRA }
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = 0.05
+			}
+		}
+		LAS_riding_with_biden = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.05
+				
+			}
+		}
+		LAS_bombin_with_brown = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		LAS_dem_bulwark = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_morale_factor = 0.1
+				army_org_factor = 0.05
+				targeted_modifier = {
+					tag = PRA
+					attack_bonus_against = 0.15
+					defence_bonus_against = 0.15
+				}
+				targeted_modifier = {
+					tag = USA
+					attack_bonus_against = 0.15
+					defence_bonus_against = 0.15
+				}
+				targeted_modifier = {
+					tag = GLA
+					attack_bonus_against = 0.15
+					defence_bonus_against = 0.15
+				}
+			}
+		}
+		LAS_restore_lib = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.25
+				political_power_factor = 0.25
+				army_attack_factor = 0.1
+				army_attack_speed_factor = 0.05
+				army_defence_factor = 0.1
+				breakthrough_factor = 0.05
+				army_speed_factor = 0.05
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		LAS_california_support = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor -0.05
+				production_speed_buildings_factor = 0.05
+				planning_speed = 0.1
+				max_planning_factor = 0.15
+				army_org_factor = 0.05
+			}
+		}
+		LAS_california_support_pra = {
+			allowed = { original_tag = PRA }
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		LAS_socialist_medicine = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = 0.2
+				monthly_population = 0.1
+				stability_factor = 0.1
+			}
+		}
+		LAS_drug_decriminalization = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.2
+				monthly_population = -0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		LAS_complete_anarchy = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.5
+				monthly_population = -0.5
+				consumer_goods_factor = 0.2
+			}
+		}
+		LAS_red_army_rule = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.25
+				consumer_goods_factor = 0.10
+				monthly_population = 0.1
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.5
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.25
+				industrial_capacity_factory = 0.25
+				war_support_factor = 0.25
+				army_attack_factor = 0.25
+				army_attack_speed_factor = 0.1
+				breakthrough_factor = 0.15
+				army_defence_factor = 0.25
+				army_morale_factor = 0.5
+				army_org_factor = 0.25
+				army_speed_factor = 0.1
+			}
+		}
+		LAS_socialist_paradise = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = 0.15
+				monthly_population = 0.15
+				stability_factor = 0.15
+				war_support_factor -0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				
+			}
+		}
+		LAS_soc_militarism = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				war_support_factor = 0.25
+				army_attack_factor = 0.25
+				army_attack_speed_factor = 0.1
+				breakthrough_factor = 0.15
+				army_defence_factor = 0.25
+				army_morale_factor = 0.5
+				army_org_factor = 0.25
+				army_speed_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		LAS_gun = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				consumer_goods_factor = -0.05
+				custom_modifier_tooltip = LAS_gun_tt
+			}
+		}
+		LAS_tourist_economy_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_factor = 0.15
+			}
+		}
+		LAS_tourist_economy_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.25
+				monthly_population = 0.05
+				custom_modifier_tooltip = LAS_gun_tt
+			}
+		}
+		LAS_garunteed_freedoms = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.25
+				monthly_population = 0.2
+				custom_modifier_tooltip = LAS_gun_tt
+			}
+		}
+		LAS_the_future_of_nv = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				stability_factor = 0.25
+				consumer_goods_factor = -0.20
+				monthly_population = 0.25
+				production_factory_max_efficiency_factor = 0.5
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+				production_speed_buildings_factor = 0.50
+				industrial_capacity_factory = 0.25
+				war_support_factor = 0.25
+				army_attack_factor = 0.25
+				army_attack_speed_factor = 0.1
+				breakthrough_factor = 0.15
+				army_defence_factor = 0.25
+				army_morale_factor = 0.25
+				army_org_factor = 0.25
+				army_speed_factor = 0.1
+			}
+		}
+		LAS_IND_ECON_1 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_factory_max_efficiency_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.10
+				production_factory_start_efficiency_factor = -0.10
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		LAS_IND_ECON_2 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_start_efficiency_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		LAS_IND_ECON_3 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				monthly_population = 0.05
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		LAS_IND_ECON_4 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = -0.05
+				monthly_population = 0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.10
+			}
+		}
+		LAS_IND_ECON_5 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = -0.20
+				monthly_population = 0.10
+				production_factory_max_efficiency_factor = 0.20
+				production_factory_efficiency_gain_factor = 0.20
+				production_factory_start_efficiency_factor = 0.20
+				production_speed_buildings_factor = 0.25
+				industrial_capacity_factory = 0.20
+			}
+		}
+		LAS_IND_ECON_6 = {
+			allowed = { original_tag = LAS }
+			modifier = {
+				consumer_goods_factor = -0.25
+				monthly_population = 0.15
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+				production_speed_buildings_factor = 0.50
+				industrial_capacity_factory = 0.25
 			}
 		}
 		LAS_ = {

@@ -197,7 +197,7 @@
  new_vegas.38.a:0 "The Republicans!"
  new_vegas.38.b:0 "The Freedom Party"
  
- new_vegas.39.t:0 "New Vegas asks to Join the Loyalists"
+ new_vegas.39.t:0 "[LAS.GetName] asks to Join the Loyalists"
  new_vegas.39.d:0 "new vegas asks daddy trump to suckle his shuckle"
  new_vegas.39.a:0 "Ive always loved Clancy's Work"
  new_vegas.39.b:0 "This "New" Vegas is a joke"
@@ -222,6 +222,48 @@
  new_vegas.44.t:0 "Trump Rejects"
  new_vegas.44.d:0 "Trump wont let Vegas suckle his shuckle"
  new_vegas.44.a:0 "sad"
+ 
+ new_vegas.45.t:0 "[LAS.GetName] Requests Trade Corridor"
+ new_vegas.45.d:0 "vegas is asking pra for a trade corridor"
+ new_vegas.45.a:0 "Of Course, Friend"
+ new_vegas.45.b:0 "Never, Traitor"
+ 
+ new_vegas.46.t:0 "[PRA.GetName] Accepts"
+ new_vegas.46.d:0 "pra accepts trade"
+ new_vegas.46.a:0 "Excellent"
+ 
+ new_vegas.47.t:0 "[PRA.GetName] Rejects"
+ new_vegas.47.d:0 "pra rejects trade"
+ new_vegas.47.a:0 "Balls"
+ 
+ new_vegas.48.t:0 "[LAS.GetName] Requests Aid"
+ new_vegas.48.d:0 "las requests aid"
+ new_vegas.48.a:0 "Of Course"
+ 
+ new_vegas.49.t:0 "[LAS.GetName] Requests Cooperation"
+ new_vegas.49.d:0 "vegas is asking gla for cooperation"
+ new_vegas.49.a:0 "Of Course, Friend"
+ new_vegas.49.b:0 "Never, Traitor"
+ 
+ new_vegas.50.t:0 "[GLA.GetName] Accepts"
+ new_vegas.50.d:0 "gla accepts"
+ new_vegas.50.a:0 "Excellent"
+ 
+ new_vegas.51.t:0 "[GLA.GetName] Rejects"
+ new_vegas.51.d:0 "gla rejects"
+ new_vegas.51.a:0 "Balls" 
+ 
+ new_vegas.52.t:0 "Familial Assembly"
+ new_vegas.52.d:0 "casino owners, libertarian poltitians, and Clancy Brown meet to discuss the future. They decide to liberate all of america."
+ new_vegas.52.a:0 "writers put something here"
+ 
+ new_vegas.53.t:0 "Libertarian Unification" #writers dont bother doing this one
+ new_vegas.53.d:0 "LAS is annexing you lmao git rekt"
+ new_vegas.53.a:0 "shit"
+ 
+ new_vegas.54.t:0 "The Torch of Liberty"
+ new_vegas.54.d:0 "write some epic about how LAS is now carrying the torch of liberty"
+ new_vegas.54.a:0 "blah"
  
  #Ideas
  
@@ -371,17 +413,6 @@
  LAS_ncr_industry_7:0 "Rebuilt Industry"
  LAS_ncr_industry_7_desc:0 "Vegas's Industry has been rebuilt and now funds the reclimation of the United States"
  
- LAS_trad_af:0 "Traditional Values"
- LAS_trad_af_desc:0 "We have embraced those good old-fashioned values on which we used to rely"
- 
- LAS_bussin_with_biz:0 "Business Subsidies"
- LAS_bussin_with_biz_desc:0 "By subsidizing important strategic sectors we can improve our economy without the disasterous communism of the Democrats"
- 
- LAS_denver_trade:0 "Denver Trade"
- LAS_denver_trade_desc:0 "Our economy has been greatly improved by opening trade with Trump"
- 
- 
- 
  #Independent
  
  LAS_factionalism_1:0 "Factionalism"
@@ -395,6 +426,105 @@
  
  LAS_mob_pact:0 "Pact with the Mob"
  LAS_mob_pact_desc:0 "Our secret pact with the mob allows some 'nessesary crime' in exchange for some union busting, just like the good old days."
+ 
+ LAS_trad_af:0 "Traditional Values"
+ LAS_trad_af_desc:0 "We have embraced those good old-fashioned values on which we used to rely"
+ 
+ LAS_bussin_with_biz:0 "Business Subsidies"
+ LAS_bussin_with_biz_desc:0 "By subsidizing important strategic sectors we can improve our economy without the disasterous communism of the Democrats"
+ 
+ LAS_denver_trade:0 "Denver Trade"
+ LAS_denver_trade_desc:0 "Our economy has been greatly improved by opening trade with Trump"
+ 
+ LAS_california_prep:0 "California War Preperation"
+ LAS_california_prep_desc:0 "With Preparation for the war with California made we will be at an advantage over those godless savages"
+ 
+ LAS_desertions_1:0 "Republican Desertions"
+ LAS_desertions_1_desc:0 "Republicans are deserting to Vegas in droves"
+ 
+ LAS_desertions_2:0 "Mass Desertions"
+ LAS_desertions_2_desc:0 "Propoganda is spreading rapidly in our country and is causing many to desert"
+ 
+ LAS_republican_sabotage:0 "Republican Sabotage"
+ LAS_republican_sabotage_desc:0 "Republicans have lauched a sabotage campaign against us"
+
+ LAS_good_desertions_1:0 "California Desertions"
+ LAS_good_desertions_1_desc:0 "Due to our propoganda programs we are seeing an influx of deserters from California"
+ LAS_good_desertions_2:0 "California Desertions"
+ LAS_good_desertions_2_desc:0 "Due to our propoganda programs we are seeing an influx of deserters from California"
+ 
+ LAS_california_trade:0 "[PRA.GetName]-[LAS.GetName] Trade"
+ LAS_california_trade_desc:0 "The opening of trade with [PRA.GetName] has greatly benifited our economy and has even opened room for migration"
+ LAS_california_trade_pra:0 "[PRA.GetName]-[LAS.GetName] Trade"
+ LAS_california_trade_pra_desc:0 "The opening of trade with [LAS.GetName] has greatly benifited our economy"
+ 
+ LAS_state_owned_ind:0 "State-Owned Industry"
+ LAS_state_owned_ind_desc:0 "By establishing state-owned industry we can exert greater control over our economy"
+
+ LAS_welfare:0 "Welfare System"
+ LAS_welfare_desc:0 "We have reestablished the welfare system in Vegas for the benefit of its citizens"
+ 
+ LAS_riding_with_biden:0 "Ridin with Biden"
+ LAS_riding_with_biden_desc:0 "We are riding with Biden to restore the United States"
+ 
+ LAS_bombin_with_brown:0 "Ridin with Biden and Bombing with Brown"
+ LAS_bombin_with_brown_desc:0 "While we may be riding with Biden, we are Bombing with Brown to restore America to its former glory"
+
+ LAS_dem_bulwark:0 "Bulwark of Democracy"
+ LAS_dem_bulwark_desc:0 "We are the bulwark of democracy on the west coast"
+ 
+ LAS_restore_lib:0 "Restoration of Liberty"
+ LAS_restore_lib_desc:0 "We've done it! Freedom and Liberty has been restored after that traitor Trump destroyed our beutiful country."
+ 
+ LAS_california_support:0 "[PRA.GetName]/[LAS.GetName] Support"
+ LAS_california_support_desc:0 "[PRA.GetName] has sent us support."
+ LAS_california_support_pra:0 "[PRA.GetName]/[LAS.GetName] Support"
+ LAS_california_support_pra_desc:0 "We are sending support to [LAS.GetName]"
+ 
+ LAS_socialist_medicine:0 "Socialist Medicine"
+ LAS_socialist_medicine_desc:0 "Medicine has been socialised, providing better healhcare to the citizens of New Vegas"
+ 
+ LAS_drug_decriminalization:0 "Decriminalized Drugs"
+ LAS_drug_decriminalization_desc:0 "All drugs have been decriminalized, providing a great amount of revenue at the expense of higher crime and drug addiction"
+ 
+ LAS_complete_anarchy:0 "Complete Anarchy"
+ LAS_complete_anarchy_desc:0 "With the abolition of police and the rampant drug addiction order has broken down in New Vegas. The state can no longer enforce laws and Vegas is now on the brink of collapse"
+ 
+ LAS_red_army_rule:0 "Red Army Rule"
+ LAS_red_army_rule_desc:0 "With the intervention of the [PRA.GetName] Army, order has been restored in New Vegas with the Red Army taking control of the government"
+ 
+ LAS_socialist_paradise:0 "Socialist Paradise"
+ LAS_socialist_paradise_desc:0 "With the intervention of the [PRA.GetName] Army, order has been restored in New Vegas. The Police have been reinstated with strict controls and hard drugs have been recriminalized"
+ 
+ LAS_soc_militarism:0 "Socialist Militarism"
+ LAS_soc_militarism_desc:0 "Republicans love to frame socialists as pacifist hippies, but it was the Soviet Union who captured Berlin"
+ 
+ LAS_gun:0 "The Right to Bear Arms"
+ LAS_gun_desc:0 "A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed."
+ 
+ LAS_tourist_economy_1:0 "Tourist Economy"
+ LAS_tourist_economy_1_desc:0 "The [LAS.GetName] Economy is mainly tourist based. Its best to tap into that market as much as possible."
+ LAS_tourist_economy_2:0 "Tourist Economy"
+ LAS_tourist_economy_2_desc:0 "The [LAS.GetName] Economy is mainly tourist based. Its best to tap into that market as much as possible."
+ 
+ LAS_garunteed_freedoms:0 "Guaranteed Freedoms"
+ LAS_garunteed_freedoms_desc:0 "The inalienable rights provided to our people by god shall not be infringed."
+ 
+ LAS_the_future_of_nv:0 "Securing the Future of [LAS.GetName]"
+ LAS_the_future_of_nv_desc:0 "All hands must be on deck for this great cause. The future of Vegas, no America, no Humanity is at stake"
+
+ LAS_IND_ECON_1:0 "Postindustrial Society"
+ LAS_IND_ECON_1_desc:0 "We live in a society, a postindustrial one. Therefore, our industry is very lacking. We must remedy this."
+ LAS_IND_ECON_2:0 "Rebuilding Industry"
+ LAS_IND_ECON_2_desc:0 "We are in the process of rebuilding Vegas's industry"
+ LAS_IND_ECON_3:0 "Rebuilding Industry"
+ LAS_IND_ECON_3_desc:0 "We are in the process of rebuilding Vegas's industry"
+ LAS_IND_ECON_4:0 "Rebuilt Industry"
+ LAS_IND_ECON_4_desc:0 "We have mostly rebuilt Vegas's industry"
+ LAS_IND_ECON_5:0 "Rebuilt Industry"
+ LAS_IND_ECON_5_desc:0 "We have mostly rebuilt Vegas's industry"
+ LAS_IND_ECON_6:0 "An Industrial Vegas"
+ LAS_IND_ECON_6_desc:0 "Vegas is now a modern industrial state"
  
  #Characters
 
@@ -418,6 +548,16 @@
  LAS_fra_bitch:0 "Submitted to [FRA.GetName]"
  
  LAS_kimballing:0 "Decided to Persue our own Path"
+ 
+ LAS_gla_submit:0 "[GLA.GetName]/[LAS.GetName] Cooperation"
+ 
+ #Custom Tooltips
+ 
+ LAS_NCR_eco_tt:0 "The Economy Will Improve"
+ 
+ LAS_gun_tt:0 "Freedom §G+100%§!"
+ 
+ LAS_south_core_tt:0 "Gains Cores on the Entire Confederacy"
  
  #Political Parties
  
@@ -531,6 +671,12 @@
  LAS_new_vegas_ind_democrat:0 "New Vegas"
  LAS_new_vegas_ind_democrat_ADJ:0 "New Vegas"
  LAS_new_vegas_ind_democrat_DEF:0 "People's Republic of New Vegas"
+ LAS_new_vegas_ind_libertarian_left:0 "New Vegas"
+ LAS_new_vegas_ind_libertarian_left_ADJ:0 "New Vegas"
+ LAS_new_vegas_ind_libertarian_left_DEF:0 "People's Republic of New Vegas"
+ LAS_new_vegas_ind_authoritarian_left:0 "DPRNV"
+ LAS_new_vegas_ind_authoritarian_left_ADJ:0 "DPRNV"
+ LAS_new_vegas_ind_authoritarian_left_DEF:0 "Democratic People's Republic of New Vegas"
  
  LAS_new_vegas_legion_autocratic:0 "Caesar's Legion"
  LAS_new_vegas_legion_autocratic_ADJ:0 "Legion"

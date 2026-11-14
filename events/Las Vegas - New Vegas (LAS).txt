@@ -527,7 +527,7 @@ country_event = {
 			factor = 25
 		}
 		set_cosmetic_tag = LAS_NCR_new_california
-					every_state = { 
+			every_state = { 
 				limit = { is_core_of = PRA }
 				add_core_of = LAS
 			}
@@ -1208,6 +1208,12 @@ country_event = {
 			character  = LAS_clancy_brown
 			ideology = democratic_socialism
 		}
+		hidden_effect = {
+			promote_character  = {
+				character  = LAS_clancy_brown
+				ideology = Authoritarian_Liberalism
+			}
+		}
 	}
 }
 country_event = {
@@ -1354,7 +1360,7 @@ country_event = {
 		country_event = new_vegas.44
 		}
 	}
-	country_event = {
+country_event = {
 	id = new_vegas.43
 	title = new_vegas.43.t
 	desc = new_vegas.43.d
@@ -1369,8 +1375,8 @@ country_event = {
 		}
 		
 	}
-	}
-	country_event = {
+}
+country_event = {
 	id = new_vegas.44
 	title = new_vegas.44.t
 	desc = new_vegas.44.d
@@ -1385,7 +1391,205 @@ country_event = {
 		}
 		
 	}
+}
+country_event = {
+	id = new_vegas.45
+	title = new_vegas.45.t
+	desc = new_vegas.45.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.45.a
+		ai_chance = {
+			factor = 100
+		}
+		LAS = { country_event = new_vegas.46 }
+		add_ideas = LAS_california_trade_pra
 	}
+	option = {
+		name = new_vegas.45.b
+		ai_chance = {
+			factor = 0
+		}
+		LAS = { country_event = new_vegas.47 }
+	}
+}
+country_event = {
+	id = new_vegas.46
+	title = new_vegas.46.t
+	desc = new_vegas.46.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.46.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = LAS_california_trade
+		set_politics = {
+			ruling_party = libertarian_left
+			elections_allowed = no
+			last_election = "2021.4.1"
+			election_frequency = 48
+		}
+		add_popularity = {
+			ideology = libertarian_left
+			popularity = 20
+		}
+	}
+}
+country_event = {
+	id = new_vegas.47
+	title = new_vegas.47.t
+	desc = new_vegas.47.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.47.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.48
+	title = new_vegas.48.t
+	desc = new_vegas.48.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.48.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = LAS_california_support_pra
+	}
+}
+country_event = {
+	id = new_vegas.49
+	title = new_vegas.49.t
+	desc = new_vegas.49.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.49.a
+		ai_chance = {
+			factor = 100
+		}
+		LAS = { country_event = new_vegas.50 }
+		hidden_effect = {
+			set_country_flag = LAS_gla_submit
+		}
+	}
+	option = {
+		name = new_vegas.49.b
+		ai_chance = {
+			factor = 0
+		}
+		LAS = { country_event = new_vegas.51 }
+	}
+}
+country_event = {
+	id = new_vegas.50
+	title = new_vegas.50.t
+	desc = new_vegas.50.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.50.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.51
+	title = new_vegas.51.t
+	desc = new_vegas.51.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.51.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.52
+	title = new_vegas.52.t
+	desc = new_vegas.52.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.52.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.53
+	title = new_vegas.53.t
+	desc = new_vegas.53.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.53.a
+		ai_chance = {
+			factor = 100
+		}
+		transfer_units_fraction= {
+			target = LAS
+			size = 1
+			stockpile_ratio = 1
+			army_ratio = 1
+			navy_ratio = 1
+			air_ratio = 1
+		}
+		LAS = {
+			annex_country = GLA
+		}
+	}
+}
+country_event = {
+	id = new_vegas.54
+	title = new_vegas.54.t
+	desc = new_vegas.54.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.54.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
 country_event = {
 	id = new_vegas.~
 	title = new_vegas.~.t
@@ -1401,5 +1605,4 @@ country_event = {
 		}
 		
 	}
-}
 }
