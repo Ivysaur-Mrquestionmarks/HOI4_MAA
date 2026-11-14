@@ -295,6 +295,8 @@ focus_tree = {
 	}
 	
 	
+	
+	### Suporting the Conspiracy - FUTURE TURK: BASE THIS OFF OF PURGE BY GOV/REES MISSION
 	focus = {
 		id = CAS_supporting_the_conspiracy
 		icon = GFX_goal_VIR_open_up_to_the_alt_right
@@ -571,6 +573,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = CAS_empower_marshal_rees }
 		completion_reward = {
+			CAS_weaken_nazis_moderate_effect = yes
 		}
 
 	}
@@ -586,6 +589,9 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = CAS_reign_in_military_autonomy }
 		completion_reward = {
+			CAS_weaken_nazis_little_effect = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = CAS_required_for_rees_path_tt
 		}
 
 	}
@@ -648,6 +654,8 @@ focus_tree = {
 			focus = CAS_thwarting_the_plot
 		}
 		completion_reward = {
+			set_country_flag = CAS_nazis_purged_flag
+			custom_effect_tooltip = CAS_nazis_will_be_purged_tt
 		}
 
 	}
