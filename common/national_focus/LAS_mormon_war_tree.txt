@@ -1,0 +1,324 @@
+
+	shared_focus = {
+		id = LAS_mormon_war
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 4
+		y = 0
+		available = {
+			always = no
+		}
+		bypass = {
+			has_war_with = UTA
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_las_vegas_airforce
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = LAS_mormon_war
+		}
+		relative_position_id = LAS_mormon_war
+		x = 0
+		y = 1
+		completion_reward = {
+			air_experience = 100
+			add_tech_bonus = {
+    			bonus = 0.85
+    			uses = 3
+    			category = air_equipment
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.90
+				uses = 2
+				category = air_doctrine
+			}
+		}
+
+	}
+	shared_focus = {
+		id = LAS_emergency_conscription
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_mormon_war
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = LAS_mormon_war
+		}
+		completion_reward = {
+			add_manpower = 1000
+			load_oob = "LAS_conscripts"
+			add_power_balance_value = {
+    			id = LAS_casinos_vs_people_bop
+    			value = 0.05
+    			tooltip_side = people_favored
+			}
+		}
+	}
+	shared_focus = {
+		id = LAS_raise_more_militia
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_emergency_conscription
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_emergency_conscription
+		}
+		completion_reward = {
+			load_oob = "LAS_militia"
+			LAS_joe_lombardo = {
+				add_unit_leader_trait = desert_fox
+			}
+			LAS_case_cunningham = {
+				add_unit_leader_trait = desert_fox
+			}
+			LAS_michael_butler = {
+				add_unit_leader_trait = desert_fox
+			}
+		}
+	}
+	shared_focus = {
+		id = LAS_war_propoganda_mw
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_emergency_conscription
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_emergency_conscription
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_defend_vegas_at_all_costs
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_emergency_conscription
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_emergency_conscription
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_fanatical_defence
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_war_propoganda_mw
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_raise_more_militia
+		}
+		prerequisite = { 
+			focus = LAS_war_propoganda_mw
+		}
+		prerequisite = {
+			focus = LAS_defend_vegas_at_all_costs
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_the_offensive
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_fanatical_defence 
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_fanatical_defence
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_legion_of_joshua_graham
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_mormon_war
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = LAS_the_offensive
+		}
+		prerequisite = {
+			focus = LAS_strenghen_supression
+		}
+		completion_reward = {
+			load_oob = "LAS_mw_legions"
+		}
+	}
+	shared_focus = {
+		id = LAS_race_for_salt_lake_city
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_legion_of_joshua_graham
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_legion_of_joshua_graham
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_victory
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_race_for_salt_lake_city
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_race_for_salt_lake_city
+		}
+		completion_reward = {
+			army_experience = 100
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	shared_focus = {
+		id = LAS_war_industry
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_mormon_war
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = LAS_mormon_war
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_break_open_the_cashes
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_war_industry 
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAS_war_industry
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_emergency_war_economy
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_war_industry
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_war_industry
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_suspend_workers_rights
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_war_industry
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAS_war_industry
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_mass_production
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_break_open_the_cashes
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_break_open_the_cashes
+		}
+		prerequisite = {
+			focus = LAS_emergency_war_economy
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_temporary_factories
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_suspend_workers_rights
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAS_suspend_workers_rights
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_strenghen_supression
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_mass_production
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAS_mass_production
+		}
+		prerequisite = {
+			focus = LAS_temporary_factories
+		}
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = LAS_expand_horse_breeding
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LAS_expand_farming_infrastructure
+		x = -1
+		y = 1
+		allow_branch = {
+			has_completed_focus = {
+				focus = LAS_equites_cataphractarii
+			}
+		}
+		prerequisite = {
+			focus = LAS_expand_farming_infrastructure
+		}
+		available = {
+			has_completed_focus = LAS_equites_cataphractarii
+		}
+		completion_reward = {
+			
+		}
+	}
