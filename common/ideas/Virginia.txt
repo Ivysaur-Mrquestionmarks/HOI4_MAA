@@ -95,6 +95,13 @@ ideas = {
 		}
 		VIR_Hunter_Biden_needs_his_Shit = {
 			picture = PRS_PB_SZC_opium_monopoly
+			cancel = {
+				OR = {
+					has_war_with = VIR
+					has_completed_focus = SIN_to_reform_oneself
+					has_completed_focus = SIN_the_establishment_coup
+				}
+            }
 			modifier = {
 				consumer_goods_factor = -0.1
 			}
