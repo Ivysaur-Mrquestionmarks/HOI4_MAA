@@ -71,23 +71,26 @@ country_event = {
 		if = {
 			limit = { has_country_flag = LAS_courier_wallis_chosen }
 			promote_character  = {
-				character  = LAS_sean_wallis
+				character = LAS_sean_wallis
 				ideology = kemalism
 			}
+			LAS_sean_wallis = { promote_leader = yes }
 		}
 		else_if = {
 			limit = { has_country_flag = LAS_courier_brown_chosen }
 			promote_character  = {
-				character  = LAS_clancy_brown
-				ideology = despotic
+				character = LAS_clancy_brown
+				ideology = despotism
 			}
+			LAS_clancy_brown = { promote_leader = yes }
 		}
 		else_if = {
 			limit = { has_country_flag = LAS_courier_spisak_chosen }
 			promote_character  = {
-				character  = LAS_jason_spisak
-				ideology = despotic
+				character = LAS_jason_spisak
+				ideology = despotism
 			}
+			LAS_jason_spisak = { promote_leader = yes }
 		}
 		swap_ideas = {
 			remove_idea = LAS_post_coup_instability_4
