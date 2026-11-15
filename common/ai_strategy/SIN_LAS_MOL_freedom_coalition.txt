@@ -1,0 +1,152 @@
+SIN_LAS_MOL_freedom_coalition = {
+	allowed = { original_tag = SIN }
+	enable = {
+		OR = {
+			any_allied_country = {
+				original_tag = LAS
+			}
+			any_allied_country = {
+				original_tag = MOL
+			}
+		}
+	}
+	abort = {
+		AND = {
+			NOT = { country_exists = UTA }
+			NOT = { country_exists = HOP }
+		}
+		
+	}
+	ai_strategy = {
+		type = alliance
+		id = LAS
+		value = 5000
+	}
+	ai_strategy = {
+		type = alliance
+		id = MOL
+		value = 5000
+	}
+	ai_strategy = {
+	    type = befriend
+	    id = LAS
+	    value = 5000
+	}
+	ai_strategy = {
+	    type = befriend
+	    id = MOL
+	    value = 5000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = UTA
+		value = 5000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = MOL
+		value = 5000
+	}
+}
+
+LAS_SIN_MOL_freedom_coalition = {
+	allowed = { original_tag = LAS }
+	enable = {
+		OR = {
+			any_allied_country = {
+				original_tag = SIN
+			}
+			any_allied_country = {
+				original_tag = MOL
+			}
+		}
+	}
+	abort = {
+		AND = {
+			NOT = { country_exists = UTA }
+			NOT = { country_exists = HOP }
+		}
+		
+	}
+	ai_strategy = {
+		type = alliance
+		id = SIN
+		value = 5000
+	}
+	ai_strategy = {
+		type = alliance
+		id = MOL
+		value = 5000
+	}
+	ai_strategy = {
+	    type = befriend
+	    id = SIN
+	    value = 5000
+	}
+	ai_strategy = {
+	    type = befriend
+	    id = MOL
+	    value = 5000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = UTA
+		value = 5000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = MOL
+		value = 5000
+	}
+}
+
+MOL_SIN_LAS_freedom_coalition = {
+	allowed = { original_tag = MOL }
+	enable = {
+		OR = {
+			any_allied_country = {
+				original_tag = LAS
+			}
+			any_allied_country = {
+				original_tag = SIN
+			}
+		}
+	}
+	abort = {
+		AND = {
+			NOT = { country_exists = UTA }
+			NOT = { country_exists = HOP }
+		}
+		
+	}
+	ai_strategy = {
+		type = alliance
+		id = SIN
+		value = 5000
+	}
+	ai_strategy = {
+		type = alliance
+		id = LAS
+		value = 5000
+	}
+	ai_strategy = {
+	    type = befriend
+	    id = SIN
+	    value = 5000
+	}
+	ai_strategy = {
+	    type = befriend
+	    id = LAS
+	    value = 5000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = UTA
+		value = 5000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = MOL
+		value = 5000
+	}
+}

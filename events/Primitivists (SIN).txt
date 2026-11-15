@@ -288,8 +288,159 @@ country_event = {
 	}
 }
 
+# Islamists request
+country_event = {
+	id = colorado.10
+	title = colorado.10.t
+	desc = colorado.10.d
+	picture = event_SIN_event_10
+	is_triggered_only = yes
 
+	option = {
+		name = colorado.10.a
+		ai_chance = {
+			factor = 1
+		}
+		348 = {
+			add_dynamic_modifier = { modifier = sin_muslim_minority }
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		SIN_islamists_medium_loyalty_increase_effect = yes
+		SIN_islamists_medium_popularity_increase_effect = yes
+		custom_effect_tooltip = generic_skip_one_line_tt
+		add_stability = -0.05
+	}
 
+	option = {
+		name = colorado.10.b
+		ai_chance = {
+			factor = 1
+		}		
+		SIN_islamists_medium_loyalty_decrease_effect = yes
+		SIN_islamists_medium_popularity_decrease_effect = yes
+	}
+}
+
+# Who makes bombs
+country_event = {
+	id = colorado.11
+	title = colorado.11.t
+	desc = colorado.11.d
+	picture = event_SIN_event_11
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.11.a
+		ai_chance = {
+			factor = 1
+		}
+		SIN_anprims_medium_loyalty_increase_effect = yes
+		SIN_anprims_medium_popularity_increase_effect = yes
+		custom_effect_tooltip = generic_skip_one_line_tt
+		SIN_islamists_low_loyalty_decrease_effect = yes
+		custom_effect_tooltip = generic_skip_one_line_tt
+		SIN_dt_low_loyalty_decrease_effect = yes
+	}
+
+	option = {
+		name = colorado.11.b
+		ai_chance = {
+			factor = 1
+		}		
+		SIN_islamists_medium_loyalty_increase_effect = yes
+		SIN_islamists_medium_popularity_increase_effect = yes
+		custom_effect_tooltip = generic_skip_one_line_tt
+		SIN_anprims_low_loyalty_decrease_effect = yes
+		custom_effect_tooltip = generic_skip_one_line_tt
+		SIN_dt_low_loyalty_decrease_effect = yes
+	}
+
+	option = {
+		name = colorado.11.c
+		ai_chance = {
+			factor = 1
+		}		
+		SIN_dt_medium_loyalty_increase_effect = yes
+		SIN_dt_medium_popularity_increase_effect = yes
+		custom_effect_tooltip = generic_skip_one_line_tt
+		SIN_anprims_low_loyalty_decrease_effect = yes
+		custom_effect_tooltip = generic_skip_one_line_tt
+		SIN_islamists_low_loyalty_decrease_effect = yes
+	}
+}
+
+#border war victory
+country_event = {
+	id = colorado.12
+	title = colorado.12.t
+	desc = colorado.12.d
+	picture = event_SIN_event_12
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.12.a
+		ai_chance = {
+			factor = 1
+		}
+		army_experience = 10
+		add_stability = 0.05
+		add_war_support = 0.05
+		set_state_owner = 517
+	}
+}
+
+#border war defeat
+country_event = {
+	id = colorado.13
+	title = colorado.13.t
+	desc = colorado.13.d
+	picture = event_SIN_event_13
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.13.a
+		ai_chance = {
+			factor = 1
+		}
+		army_experience = 5
+	}
+}
+
+#border war victory (wcz prespective)
+country_event = {
+	id = colorado.14
+	title = colorado.14.t
+	desc = colorado.14.d
+	picture = event_SIN_event_12
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.14.a
+		ai_chance = {
+			factor = 1
+		}
+		army_experience = 10
+		add_political_power = 35
+	}
+}
+
+#border war defeat (wcz prespective)
+country_event = {
+	id = colorado.15
+	title = colorado.15.t
+	desc = colorado.15.d
+	picture = event_SIN_event_13
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.15.a
+		ai_chance = {
+			factor = 1
+		}
+		army_experience = 5
+		add_stability = -0.05
+	}
+}
 
 
 

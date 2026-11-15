@@ -1,0 +1,8 @@
+sin_muslim_minority = {
+	enable = { always = yes }
+
+	icon = GFX_idea_sin_muslim_minority
+	local_manpower = 0.15
+	local_resources = -0.1
+	compliance_growth = -0.05
+}

@@ -61,6 +61,12 @@
  SIN_anarchy_1:0 "Anarchy"
  SIN_anarchy_1_desc:0 "Criminals roam the streets, terrorizing natives. No semblance of a organized power structure whatsoever. The real Anarchy is being lived."
 
+ SIN_criminal_influx:0 "Criminal Influx"
+ SIN_criminal_influx_desc:0 "The collapse of law and order across the land has attracted criminals, fugitives and outcasts from far beyond our borders. While their arrival has increased the pool of available manpower, their presence has further destabilised an already fragile society."
+
+ SIN_mountainous_people:0 "People of the Mountains"
+ SIN_mountainous_people_desc:0 "Generations of life in Colorado's rugged mountain terrain have produced a population accustomed to harsh conditions and difficult landscapes. Our people are naturally suited to mountain warfare."
+
  SIN_deindustrialization:0 "Deindustrialization"
  SIN_deindustrialization_desc:0 "The AnPrim Manifesto shall begin with the slowing down of the destruction of Nature!"
 
@@ -169,6 +175,15 @@
  SIN_coloradan_economy_2:0 "Coloradan Economy"
  SIN_coloradan_economy_2_desc:0 "Colorado's economy is built around its local industries, agricultural communities and natural resources. Despite the challenges of governing a fragmented society, the state has developed an economic model that sustains its population and strengthens the authority of its institutions."
 
+ SIN_military_affairs_commission:0 "Military Affairs Commission"
+ SIN_military_affairs_commission_desc:0 "The Military Affairs Commission oversees the organisation and development of our armed forces. Bringing together representatives of the various factions, it coordinates military policy, recruitment and strategic planning. Though cooperation remains difficult, the commission provides a common framework for our military efforts."
+
+ SIN_military_affairs_commission_1:0 "Military Affairs Commission"
+ SIN_military_affairs_commission_1_desc:0 "The Military Affairs Commission oversees the organisation and development of our armed forces. Bringing together representatives of the various factions, it coordinates military policy, recruitment and strategic planning. Though cooperation remains difficult, the commission provides a common framework for our military efforts."
+
+
+
+
 
 
 
@@ -208,11 +223,60 @@
  colorado.5.d:0 "The deal is done. For the first time, our forces will coordinate with the Nazi regime to our south against the Mormon armies. Neither side trusts the other, and neither should. This is not friendship, nor is it an ideological alliance. It is a temporary marriage of convenience born from the necessities of war. For now, that is enough."
  colorado.5.a:0 "Let us destroy our common enemy"
 
-
  #event 6: Deal with the Devil Rejected
  colorado.6.t:0 "The Devil Refuses"
  colorado.6.d:0 "Our offer has been rejected. The Nazis would rather face the enemy alone than sully themselves by cooperating with us. Perhaps this is fortunate; there are some lines that should not be crossed. Whatever the reason, the opportunity for coordination is gone, and we will have to face the Mormon threat on our own."
  colorado.6.a:0 "We don't need the Devil"
+
+ #event 7: Boebert Offers Her Help
+ colorado.7.t:0 "Boebert Offers Her Help"
+ colorado.7.d:0 "With the war against the Mormons escalating, an unexpected offer of assistance has arrived from Lauren Boebert. The controversial Republican politician has proposed mobilising a militia of loyal supporters to fight alongside our forces. Though her political views and methods may prove divisive, her followers could provide much-needed manpower for the war effort."
+ colorado.7.a:0 "We welcome the Republicans into our ranks"
+ colorado.7.b:0 "That Crazy Bitch? No way"
+
+ #event 8: Nighthorse Offers His Help
+ colorado.8.t:0 "Nighthorse Offers His Help"
+ colorado.8.d:0 "Ben Nighthorse Campbell has approached our government with an offer of military assistance. Drawing upon his connections within Native American communities, he proposes raising a cavalry unit composed of experienced Cheyenne fighters. Their knowledge of the terrain and traditional horsemanship could prove invaluable against the Mormon forces."
+ colorado.8.a:0 "The Cheyenne will ride with us!"
+ colorado.8.b:0 "We can manage without them"
+
+ #event 9: The Death of Nighthorse
+ colorado.9.t:0 "The Death of Nighthorse"
+ colorado.9.d:0 "Ben Nighthorse Campbell, one of the most prominent figures among the Native American community, has passed away. His death marks the end of an important chapter in our efforts to secure Native American support for the war."
+ colorado.9.a:0 "May he rest in peace"
+
+ #event 10: Islamists convert
+ colorado.10.t:0 "Islamists Request Permission to Proselytize"
+ colorado.10.d:0 "Representatives of the Islamist movement have approached our government with a request for help in converting some of our population. They seek official acknowledgement of their presence and the freedom to organise their religious and political activities. Granting their demands could strengthen their loyalty, but risks provoking resentment among sections of the population."
+ colorado.10.a:0 "Grant them the help they seek"
+ colorado.10.b:0 "We will not accommodate their demands"
+
+ #event 11: Making bombs
+ colorado.11.t:0 "Who Makes the Bombs?"
+ colorado.11.d:0 "A dispute has emerged over who should be entrusted with overseeing the production of explosives for our war effort. The anarcho-primitivists, the Islamists and the Domestic Terrorists have each put forward their own proposals. Each faction claims that its approach is the most effective, but favouring one will inevitably come at the expense of the others."
+ colorado.11.a:0 "The [GetAnprimsName] know best"
+ colorado.11.b:0 "Let the [GetIslamistsName] handle it"
+ colorado.11.c:0 "The [GetDtName] should take charge"
+
+ #event 12: Border war victory
+ colorado.12.t:0 "Victory in the border"
+ colorado.12.d:0 "Our forces have achieved a decisive victory in the border conflict with [WCZ.GetNameDef]. The enemy's defences have collapsed, allowing our troops to secure the disputed territory and bring it under Coloradoan control. This triumph has strengthened public confidence in our military and demonstrated that our forces are ready to carry the revolution beyond our borders."
+ colorado.12.a:0 "Our army is victorious!"
+
+ #event 13: Border war defeat
+ colorado.13.t:0 "Defeat in the border"
+ colorado.13.d:0 "Our forces have suffered a setback in the border conflict with [WCZ.GetAdjective]. Despite their efforts, our troops were unable to secure the disputed territory and have been forced to withdraw. The defeat has exposed several weaknesses in our military organisation, but the experience gained will prove valuable in future campaigns."
+ colorado.13.a:0 "We will learn from this defeat"
+
+ #event 14: Border war victory (WCZ prespective)
+ colorado.14.t:0 "Victory Against the [SIN.GetAdjective] Incursion"
+ colorado.14.d:0 "Our forces have successfully repelled the [SIN.GetAdjective] offensive along the border. The enemy has been forced to retreat, leaving the disputed territory under our control. This victory demonstrates the strength of our defences and reinforces confidence in our government's ability to protect [WCZ.GetNameDef]."
+ colorado.14.a:0 "A victory for [WCZ.GetNameDef]!"
+
+ #event 15: Border war defeat (WCZ prespective)
+ colorado.15.t:0 "Defeat Against the [SIN.GetAdjective] Incursion"
+ colorado.15.d:0 "Our forces have failed to repel the [SIN.GetAdjective] offensive. The enemy has overwhelmed our border defences and secured the disputed territory. This humiliating setback has damaged public confidence in our government's ability to defend the nation and raised serious questions about our military preparedness."
+ colorado.15.a:0 "A dark day for the Cause"
 
 
 
@@ -295,6 +359,8 @@
  SIN_united_against_mormonism_desc:0 "We must collaborate further with all others who face destruction at the hands of the Utahns. By planning with them and sharing some intel, we'll be able to finally beat these tyrants back to their temples where they belong."
  SIN_crack_fuel_our_soldiers:0 "Crack as Fuel"
  SIN_crack_fuel_our_soldiers_desc:0 "We're just gonna start ripping off people's limbs, fuck it."
+ SIN_a_war_with_the_devil:0 "A War with the Devil"
+ SIN_a_war_with_the_devil_desc:0 "The Nazis were useful against the Mormons, but now it is time to end their bigotry. We might be criminals, but even we have standards."
  
  SIN_look_within:0 "Looking Within"
  SIN_look_within_desc:0 "Regardless of the goings on outside our borders, we must still focus on the internal politicking of our state. Deciding on our allies or enemies may very well decide our course for years to come."
@@ -398,6 +464,18 @@
  SIN_primitive_inovations:0 "Primitive Innovations"
  SIN_primitive_inovations_desc:0 "We don't need fancy laboratories or massive campuses to develop our society, for we have everything we need right in our heads. Our people areindependent thinkers, they are creative and passionate, and their minds can match and surpass anyone corporation or university."
 
+ SIN_military_affairs:0 "Military Affairs"
+ SIN_military_affairs_desc:0 "The incorporation of the High County has exposed the unreadiness of the population to join the armed forces. A dedicated commission must be established to coordinate military policy, reorganise the command structure and ensure that our various factions contribute to a common war effort."
+
+ SIN_military_training:0 "Military Training"
+ SIN_military_training_desc:0 "Our armed forces need more than volunteers and improvised militias. We must establish proper training programmes, recruit new personnel and develop a more disciplined fighting force capable of defending our interests."
+
+ SIN_military_infraestructure:0 "Military Infrastructure"
+ SIN_military_infraestructure_desc:0 "Our military ambitions cannot be sustained without adequate industrial infrastructure. Expanding our armaments production in Colorado will allow us to equip our troops and reduce our dependence on external suppliers."
+
+ SIN_test_idaho:0 "Test [IDA.GetNameDef]"
+ SIN_test_idaho_desc:0 "With our military reorganisation underway, it is time to test the capabilities of our armed forces beyond Colorado's borders. [IDA.GetNameDef] presents an opportunity to demonstrate our strength, challenge our neighbours and expand the reach of our project."
+
 
 ########  ########  ######  ####  ######  ####  #######  ##    ##  ######  
 ##     ## ##       ##    ##  ##  ##    ##  ##  ##     ## ###   ## ##    ## 
@@ -448,6 +526,13 @@
  SIN_ovintiv:0 "Ovintiv"
  SIN_palantir:0 "Palantir"
  SIN_palantir_improved:0 "Palantir"
+
+ sin_muslim_minority:0 "Significant Muslim Minority"
+ sin_muslim_minority_desc:0 "This Area has a significant Muslim minority, after the ADX Florence Islamists made an effort to convert the area."
+
+ sin_las_mol_alliance:0 "Freedom Coalition"
+
+
 
 
 

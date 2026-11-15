@@ -154,6 +154,20 @@ country_event = {
 		SIN = {
 			add_to_faction = MOL
 		}
+		hidden_effect = {
+			SIN = {
+				add_opinion_modifier = {
+					target = MOL
+					modifier = sin_las_mol_alliance
+				}
+			}
+			MOL = {
+				add_opinion_modifier = {
+					target = SIN
+					modifier = sin_las_mol_alliance
+				}
+			}
+		}
 	}
 }
 
@@ -197,6 +211,20 @@ country_event = {
 			create_unit = {
 				division = "name = \"Casino Militia\" division_template = \"Las Vegas Guard\" start_experience_factor = 0.2" 
 				owner = LAS
+			}
+		}
+		hidden_effect = {
+			SIN = {
+				add_opinion_modifier = {
+					target = LAS
+					modifier = sin_las_mol_alliance
+				}
+			}
+			LAS = {
+				add_opinion_modifier = {
+					target = SIN
+					modifier = sin_las_mol_alliance
+				}
 			}
 		}
 	}

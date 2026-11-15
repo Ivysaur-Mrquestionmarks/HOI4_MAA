@@ -13,6 +13,25 @@ ideas = {
 			}
 		}
 
+		SIN_criminal_influx = {
+			allowed = { original_tag = SIN }
+			modifier = {
+				weekly_manpower = 50
+				stability_factor = -0.1
+			}
+		}
+
+		SIN_mountainous_people = {
+			allowed = { original_tag = SIN }
+			modifier = {
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
+				modifier_army_sub_unit_mountaineers_defence_factor = 0.05
+				modifier_army_sub_unit_mountaineers_speed_factor = 0.05
+				mountaineers_special_forces_contribution_factor = -0.1
+			}
+		}
+
+
 
 	#### OTHER IDEAS ####
 
@@ -450,6 +469,27 @@ ideas = {
 				factory_energy_consumption = -0.1
 				local_resources = 0.1
 				local_supplies = 0.1
+			}
+		}
+
+		SIN_military_affairs_commission = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				experience_gain_army_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+
+		SIN_military_affairs_commission_1 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				experience_gain_army_factor = 0.05
+				conscription_factor = 0.05
+				training_time_factor = -0.1
 			}
 		}
 

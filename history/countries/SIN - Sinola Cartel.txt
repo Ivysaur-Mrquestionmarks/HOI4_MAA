@@ -117,6 +117,11 @@ add_ideas = {
 	isolation
 
 	SIN_anarchy
+	SIN_mountainous_people
+}
+add_timed_idea = {
+	idea = SIN_criminal_influx
+	days = 90
 }
 if = {
 	limit = { has_dlc = "La Resistance" }
@@ -173,4 +178,9 @@ set_country_flag = SIN_factions_unlocked_flag
 	country_event = {
 		id = colorado.9
 		days = 1823
+	}
+
+	country_event = {
+		id = colorado.10
+		days = 75
 	}

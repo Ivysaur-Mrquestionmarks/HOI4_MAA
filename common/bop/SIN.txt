@@ -11,13 +11,9 @@ SIN_ted_chapo_bop = {
             min = -1
             max = -0.9
             modifier = {
-                
-            }
-            on_activate = {
-                
-            }
-            on_deactivate = {
-                
+                war_support_factor = 0.2
+                political_power_factor = -0.2
+                non_core_manpower = 0.2
             }
         }
 		range = {
@@ -25,13 +21,9 @@ SIN_ted_chapo_bop = {
             min = -0.9
             max = -0.7
             modifier = {
-
-            }
-            on_activate = {
-                
-            }
-            on_deactivate = {
-                
+                war_support_factor = 0.15
+                political_power_factor = -0.15
+                non_core_manpower = 0.15
             }
         }
 		range = {
@@ -39,13 +31,9 @@ SIN_ted_chapo_bop = {
             min = -0.7
             max = -0.4
             modifier = {
-
-            }
-            on_activate = {
-                
-            }
-            on_deactivate = {
-                
+                war_support_factor = 0.1
+                political_power_factor = -0.1
+                non_core_manpower = 0.1
             }
         }
         range = {
@@ -53,13 +41,9 @@ SIN_ted_chapo_bop = {
             min = -0.4
             max = -0.15
             modifier = {
-                
-            }
-            on_activate = {
-                
-            }
-            on_deactivate = {
-                
+                war_support_factor = 0.05
+                political_power_factor = -0.05
+                non_core_manpower = 0.05
             }
         }
         range = {
@@ -67,13 +51,8 @@ SIN_ted_chapo_bop = {
             min = -0.15
             max = 0.15
             modifier = {
-                
-            }
-            on_activate = {
-                
-            }
-            on_deactivate = {
-                
+                stability_factor = -0.1
+                compliance_gain = 0.01  
             }
         }
     }
@@ -85,7 +64,9 @@ SIN_ted_chapo_bop = {
             min = 0.15
             max = 0.4
             modifier = {
-                
+                research_speed_factor = 0.025
+                production_speed_buildings_factor = -0.05
+                compliance_gain = 0.02
             }
         }
 		range = {
@@ -93,7 +74,9 @@ SIN_ted_chapo_bop = {
             min = 0.4
             max = 0.7
             modifier = {
-                
+                research_speed_factor = 0.05
+                production_speed_buildings_factor = -0.1
+                compliance_gain = 0.03
             }
         }
         range = {
@@ -101,7 +84,9 @@ SIN_ted_chapo_bop = {
             min = 0.7
             max = 0.9
             modifier = {
-                
+                research_speed_factor = 0.075
+                production_speed_buildings_factor = -0.15
+                compliance_gain = 0.04
             }
         }
         range = {
@@ -109,7 +94,9 @@ SIN_ted_chapo_bop = {
             min = 0.9
             max = 1
             modifier = {
-                
+                research_speed_factor = 0.1
+                production_speed_buildings_factor = -0.2
+                compliance_gain = 0.05
             }
         }
     }

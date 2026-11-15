@@ -1790,15 +1790,15 @@ country_event = {
 			attacker = {
 				state = 106
 				num_provinces = 1
-				on_win = wisconsin.45
-				on_lose = wisconsin.46
+				on_win = wisconsin.46
+				on_lose = wisconsin.47
 				modifier = 0.1
 			}	
 			defender = {
 				state = 676
 				num_provinces = 1
 				on_win = wisconsin.46
-				on_lose = wisconsin.45
+				on_lose = wisconsin.47
 			}
 		}
 	}
