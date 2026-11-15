@@ -3239,6 +3239,12 @@ focus_tree = {
 			GLA = {
 				country_event = new_vegas.49
 			}
+			hidden_effect = {
+				add_trait = {
+					character = LAS_clancy_brown
+					trait = LAS_the_liberator_2
+				}
+			}
 		}
 	}
 	focus = {
@@ -4802,6 +4808,7 @@ focus_tree = {
 			focus = LAS_america_under_the_courier
 		}
 		available = {
+			has_war = no
 			custom_trigger_tooltip = {
                 tooltip = generic_we_control_all_american_states_tt
                 all_of_scopes = {
@@ -4826,6 +4833,9 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = LAS_annex_canada
+		}
+		available = {
+			has_war = no
 		}
 		completion_reward = {
 			effect_kill_mexico = yes
@@ -4880,37 +4890,31 @@ focus_tree = {
 		id = LAS_it_just_works
 		icon = GFX_goal_unknown
 		cost = 1
-		x = 43
-		y = 28
-		prerequisite = {
-			focus = LAS_showdown_at_the_lucky_38
-		}
-		mutually_exclusive = {
-			focus = LAS_the_house_always_wins_2
-		}
+		x = 32
+		y = 30
 		completion_reward = {
 			
 		}
 	}
-	focus = {
-		id = LAS_
-		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_ 
-		x = 
-		y = 
-		prerequisite = {
-			focus = LAS_
-		}
-		completion_reward = {
+	#focus = {
+		#id = LAS_
+		#icon = GFX_goal_unknown
+		#cost = 1
+		#relative_position_id = LAS_ 
+		#x = 
+		#y = 
+		#prerequisite = {
+			#focus = LAS_
+		#}
+		#completion_reward = {
 			
-		}
-	}
+		#}
+	#}
 	#Legion Path#
 	focus = {
 		id = LAS_cold_cold_heart
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 0
 		relative_position_id = LAS_our_direction
 		x = 26
 		y = 1
@@ -4928,15 +4932,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			hidden_effect = {
-				set_cosmetic_tag = LAS_new_vegas_legion
-			}
 		}
 	}
 	focus = {
 		id = LAS_burn_the_casinos
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		relative_position_id = LAS_cold_cold_heart 
 		x = 0
 		y = 1
@@ -4944,7 +4945,7 @@ focus_tree = {
 			focus = LAS_cold_cold_heart
 		}
 		completion_reward = {
-			
+			add_ideas = LAS_legion_morality_1
 		}
 	}
 	focus = {
@@ -4958,13 +4959,16 @@ focus_tree = {
 			focus = LAS_burn_the_casinos
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = LAS_legion_morality_1
+				add_idea = LAS_legion_morality_2
+			}
 		}
 	}
 	focus = {
 		id = LAS_the_legion_reborn
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 10
 		relative_position_id = LAS_destroy_hedonism 
 		x = 0
 		y = 1
@@ -4972,7 +4976,18 @@ focus_tree = {
 			focus = LAS_destroy_hedonism
 		}
 		completion_reward = {
-			
+			set_portraits = { 
+				LAS_jason_spisak = {
+					civilian = {
+						large = "gfx/leaders/LAS/Jason_Kaiser.png"
+					}
+					army = {
+						large = "gfx/leaders/LAS/Jason_Kaiser.png"
+						small = "gfx/interface/ideas/LAS/Political_Advisor_Jason_Kaiser.png"
+					}
+				}
+			}
+			set_cosmetic_tag = LAS_new_vegas_legion
 		}
 	}
 	focus = {
@@ -5197,16 +5212,7 @@ focus_tree = {
 			focus = LAS_a_loyal_legion
 		}
 		completion_reward = {
-			set_portraits = { 
-				LAS_jason_spisak = {
-					civilian = {
-						large = gfx/leaders/LAS/Jason_Kaiser.png
-					}
-					army = {
-						large = gfx/leaders/LAS/Jason_Kaiser.png
-					}
-		}
-	}
+			
 		}
 	}
 	focus = {
