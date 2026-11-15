@@ -654,169 +654,55 @@ country_event = {
 		custom_effect_tooltip = LAS_orange_boys_are_coming_for_dat_ass_tt
 	}
 }
-
-#Johnny Adair Unification
-news_event = {
-	id = viva_las_vegas.17
-	title = viva_las_vegas.17.t
-	desc = viva_las_vegas.17.d
-	picture = event_news_Generic_American_Reunification #provisional
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = viva_las_vegas.17.a
-		if = {
-			limit = {NOT = {is_ai = yes}}
-			set_country_flag = {
-    				flag = super_event
-    				value = 50
-			}
-			if = { 
-				limit = { has_global_flag = SuperEventsWillBePlayed_flag }
-				if = { limit = { NOT= { any_other_country = {has_country_flag = super_event}}}
-					sound_effect = 	"american_troubles_track"
-					play_song = "one_minute_of_silence"
-				}
-			}
-		}	
-	}
-}
-
-#Regular Orange Unification
-news_event = {
-	id = viva_las_vegas.18
-	title = viva_las_vegas.18.t
-	desc = viva_las_vegas.18.d
-	picture = event_news_Generic_American_Reunification #provisional
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = viva_las_vegas.18.a
-		if = {
-			limit = {NOT = {is_ai = yes}}
-			set_country_flag = {
-    				flag = super_event
-    				value = 51
-			}
-			if = { 
-				limit = { has_global_flag = SuperEventsWillBePlayed_flag }
-				if = { limit = { NOT= { any_other_country = {has_country_flag = super_event}}}
-					sound_effect = 	"orange_america_track"
-					play_song = "one_minute_of_silence"
-				}
-			}
-		}	
-	}
-}
-
-#Tristan Morrow Coup (Easter Egg)
-country_event = {
-	id = viva_las_vegas.19
-	title = viva_las_vegas.19.t
-	desc = viva_las_vegas.19.d
-	picture = event_las_vegas_02
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = viva_las_vegas.19.a
-		add_popularity = {
-			ideology = autocratic
-			popularity = -0.33
-		}
-		add_popularity = {
-			ideology = libertarian_left
-			popularity = 0.25
-		}
-		set_politics = {
-		    ruling_party = libertarian_left
-		    elections_allowed = no
-		}
-	}
-}
-
-#Tristan Morrow unification
-news_event = {
-	id = viva_las_vegas.20
-	title = viva_las_vegas.20.t
-	desc = viva_las_vegas.20.d
-	picture = event_news_Generic_American_Reunification #provisional
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = viva_las_vegas.20.a
-		if = {
-			limit = {NOT = {is_ai = yes}}
-			set_country_flag = {
-    				flag = super_event
-    				value = 52
-			}
-			if = { 
-				limit = { has_global_flag = SuperEventsWillBePlayed_flag }
-				if = { limit = { NOT= { any_other_country = {has_country_flag = super_event}}}
-					sound_effect = 	"morrows_america_track"
-					play_song = "one_minute_of_silence"
-				}
-			}
-		}	
-	}
-}
-
 #Death of Bo Gritz
-country_event = {
-	id = viva_las_vegas.21
-	title = viva_las_vegas.21.t
-	desc = viva_las_vegas.21.d
-	picture = event_las_vegas_01
-	is_triggered_only = yes
-	trigger = {
-		original_tag = LAS
-		has_country_leader = {
-			character = LAS_bo_gritz
-			ruling_only = no
-		}
-	}
-	fire_only_once = yes
-	option = {
-		name = viva_las_vegas.21.a #Libertarians take over
-		effect_tooltip = { kill_ideology_leader = libertarian_right }
-		hidden_effect = {
-			retire_character = LAS_bo_gritz
-
-		}
-		add_country_leader_role = {
-		    character = LAS_george_stamper
-		    promote_leader = yes
-		    country_leader = {
-		        ideology = libertarian_ideology
-		        traits = {
+#country_event = {
+	#id = viva_las_vegas.21
+	#title = viva_las_vegas.21.t
+	#desc = viva_las_vegas.21.d
+	#picture = event_las_vegas_01
+	#is_triggered_only = yes
+	#trigger = {
+		#original_tag = LAS
+		#has_country_leader = {
+			#character = LAS_bo_gritz
+			#ruling_only = no
+		#}
+	#}
+	#fire_only_once = yes
+	#option = {
+		#name = viva_las_vegas.21.a #Libertarians take over
+			#retire_character = LAS_bo_gritz
+		#}
+		#add_country_leader_role = {
+		    #character = LAS_george_stamper
+		    #promote_leader = yes
+		    #country_leader = {
+		        #ideology = libertarian_ideology
+		        #traits = {
 				###
-			}
-		    }
-		}
-			set_party_name = {
-			    ideology = libertarian_right
-			    long_name = LAS_libertarian_party_of_nevada_long
-			    name = LAS_libertarian_party_of_nevada
-			}
-	}
-	option = {
-		name = viva_las_vegas.21.b #Populists keep "power"
-		effect_tooltip = { kill_ideology_leader = libertarian_right }
-		hidden_effect = {
-			retire_character = LAS_bo_gritz
-		}
-		add_country_leader_role = {
-		    character = LAS_adam_haman
-		    promote_leader = yes
-		    country_leader = {
-		        ideology = populist_conservatism
-		        traits = {
+			#}
+		    #}
+		#}
+			#set_party_name = {
+			    #ideology = libertarian_right
+			    #long_name = LAS_libertarian_party_of_nevada_long
+			    #name = LAS_libertarian_party_of_nevada
+			#}
+	#option = {
+		#name = viva_las_vegas.21.b #Populists keep "power"
+		#retire_character = LAS_bo_gritz
+		#add_country_leader_role = {
+		    #character = LAS_adam_haman
+		    #promote_leader = yes
+		    #country_leader = {
+		        #ideology = populist_conservatism
+		        #traits = {
 				###
-			}
-		    }
-		}
-	}
-}
+			#}
+		    #}
+		#}
+	#}
+#}
 #Wynn's Plot
 country_event = {
 	id = viva_las_vegas.22
