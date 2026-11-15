@@ -1160,6 +1160,14 @@ country_event = {
 			character  = LAS_clancy_brown
 			ideology = trumpist
 		}
+		set_portraits = { 
+			LAS_clancy_brown = {
+				civilian = {
+					large = "gfx/leaders/LAS/Clancy_Brown_Normie.png"
+				}
+			}
+		}
+		LAS_clancy_brown = { remove_unit_leader_role = yes }
 	}
 	option = {
 		name = new_vegas.37.b
@@ -1184,6 +1192,14 @@ country_event = {
 			character  = LAS_clancy_brown
 			ideology = libertarian_ideology
 		}
+		set_portraits = { 
+			LAS_clancy_brown = {
+				civilian = {
+					large = "gfx/leaders/LAS/Clancy_Brown_Normie.png"
+				}
+			}
+		}
+		LAS_clancy_brown = { remove_unit_leader_role = yes }
 	}
 	option = {
 		name = new_vegas.37.c
@@ -1212,6 +1228,14 @@ country_event = {
 			character  = LAS_clancy_brown
 			ideology = democratic_socialism
 		}
+		set_portraits = { 
+			LAS_clancy_brown = {
+				civilian = {
+					large = "gfx/leaders/LAS/Clancy_Brown_Normie.png"
+				}
+			}
+		}
+		LAS_clancy_brown = { remove_unit_leader_role = yes }
 		hidden_effect = {
 			promote_character  = {
 				character  = LAS_clancy_brown
@@ -1251,6 +1275,14 @@ country_event = {
 			character  = LAS_clancy_brown
 			ideology = trumpist
 		}
+		set_portraits = { 
+			LAS_clancy_brown = {
+				civilian = {
+					large = "gfx/leaders/LAS/Clancy_Brown_Normie.png"
+				}
+			}
+		}
+		LAS_clancy_brown = { remove_unit_leader_role = yes }
 	}
 	option = {
 		name = new_vegas.38.b
@@ -1275,6 +1307,14 @@ country_event = {
 			character  = LAS_clancy_brown
 			ideology = Jeffersonianism
 		}
+		set_portraits = { 
+			LAS_clancy_brown = {
+				civilian = {
+					large = "gfx/leaders/LAS/Clancy_Brown_Normie.png"
+				}
+			}
+		}
+		LAS_clancy_brown = { remove_unit_leader_role = yes }
 	}
 }
 country_event = {

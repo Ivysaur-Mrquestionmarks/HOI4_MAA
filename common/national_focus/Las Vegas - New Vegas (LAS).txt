@@ -917,7 +917,11 @@ focus_tree = {
 			has_country_flag = LAS_kimballing
 		}
 		completion_reward = {
-			
+			add_trait = {
+				character = LAS_sean_wallis
+				ideology = progressive
+				trait = LAS_the_liberator_1
+			}
 		}
 	}
 	focus = {
@@ -3242,6 +3246,12 @@ focus_tree = {
 			hidden_effect = {
 				add_trait = {
 					character = LAS_clancy_brown
+					ideology = libertarian_ideology
+					trait = LAS_the_liberator_2
+				}
+				add_trait = {
+					character = LAS_clancy_brown
+					ideology = Jeffersonianism
 					trait = LAS_the_liberator_2
 				}
 			}
