@@ -346,7 +346,7 @@ characters={
 			ideology = corporatocracy
 			desc = LAS_steve_wynn_desc
 			traits = {
-				###
+				LAS_the_house
 			}
 		}
 	}
@@ -377,21 +377,21 @@ characters={
 			ideology = kemalism
 			desc = LAS_sean_wallis_desc
 			traits = {
-				###
+				LAS_the_courier_trait
 			}
 		}
 		country_leader = {
 			ideology = progressive
 			desc = LAS_sean_wallis_desc
 			traits = {
-				###
+				LAS_the_courier_trait
 			}
 		}
 		country_leader = {
 			ideology = populist_conservatism
 			desc = LAS_sean_wallis_desc
 			traits = {
-				###
+				LAS_the_courier_trait
 			}
 		}
 	}
@@ -410,49 +410,49 @@ characters={
 			ideology = despotism
 			desc = LAS_clancy_brown_desc
 			traits = {
-				###
+				LAS_the_courier_trait
 			}
 		}
 		country_leader = {
 			ideology = trumpist
 			desc = LAS_clancy_brown_desc
 			traits = {
-				###
+				LAS_the_courier_trait
 			}
 		}
 		country_leader = {
 			ideology = progressive
 			desc = LAS_clancy_brown_desc
 			traits = {
-				###
+				LAS_the_courier_trait
 			}
 		}
 		country_leader = {
 			ideology = Jeffersonianism
 			desc = LAS_clancy_brown_desc
 			traits = {
-				###
+				LAS_the_courier_trait
 			}
 		}
 		country_leader = {
 			ideology = libertarian_ideology
 			desc = LAS_clancy_brown_desc
 			traits = {
-				###
+				LAS_the_courier_trait
 			}
 		}
 		country_leader = {
 			ideology = democratic_socialism
 			desc = LAS_clancy_brown_desc
 			traits = {
-				###
+				LAS_the_courier_trait
 			}
 		}
 		country_leader = {
 			ideology = Authoritarian_Liberalism
 			desc = LAS_clancy_brown_desc
 			traits = {
-				###
+				LAS_the_courier_trait
 			}
 		}
 		corps_commander = {
@@ -483,7 +483,8 @@ characters={
 			ideology = despotism
 			desc = LAS_the_courier_desc
 			traits = {
-				###
+				LAS_the_courier_trait
+				LAS_schizophrenic
 			}
 		}
 		corps_commander = {
@@ -514,7 +515,7 @@ characters={
 			ideology = despotism
 			desc = LAS_jason_spisak_desc
 			traits = {
-				###
+				LAS_the_courier_trait
 			}
 		}
 		corps_commander = {
