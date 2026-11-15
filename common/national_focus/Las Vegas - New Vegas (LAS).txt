@@ -12,14 +12,13 @@ focus_tree = {
 		}
 	}
 	shared_focus = LAS_mormon_war
-	continuous_focus_position = { x = 1950 y = 1210 }
+	continuous_focus_position = { x = 1500 y = 1100	}
 	default = no
 	focus = {
 		id = LAS_declare_new_vegas
 		icon = GFX_goal_unknown
 		cost = 0
-		#relative_position_id = LAS_great_mormon_war
-		x = 28
+		x = 18
 		y = 0
 		prerequisite = {
 			#focus = 
@@ -1270,22 +1269,16 @@ focus_tree = {
 		}
 		available = { 
 			has_war = no
-			all_state = {	
-				OR = {
-					NOT = {has_state_flag = part_of_america}
-					is_owned_by = ROOT
-					owner = { is_ally_with = ROOT } #Checks for territory controlled by indpendent faction members/puppets
-				}		
-			}
-			ROOT = {
-				if = {
-					limit = {
-						is_in_faction = yes
-					}
-					is_faction_leader = yes
-				}
-				is_subject = no
-			}
+			custom_trigger_tooltip = {
+                tooltip = generic_we_control_all_american_states_tt
+                all_of_scopes = {
+                        array = global.part_of_USA
+                    OR = {
+                        is_owned_by = ROOT
+                        owner = { is_ally_with = ROOT }
+                    }
+                }
+            }
 		}
 		completion_reward = {
 			#super event
@@ -3803,13 +3796,16 @@ focus_tree = {
 		}
 		available = { 
 			has_war = no
-			all_state = {	
-				OR = {
-					NOT = {has_state_flag = part_of_america}
-					is_owned_by = ROOT
-					owner = { is_ally_with = ROOT } #Checks for territory controlled by indpendent faction members/puppets
-				}		
-			}
+			custom_trigger_tooltip = {
+                tooltip = generic_we_control_all_american_states_tt
+                all_of_scopes = {
+                        array = global.part_of_USA
+                    OR = {
+                        is_owned_by = ROOT
+                        owner = { is_ally_with = ROOT }
+                    }
+                }
+            }
 		}
 		completion_reward = {
 			set_cosmetic_tag = LAS_new_american_republic
@@ -4556,128 +4552,202 @@ focus_tree = {
 			focus = LAS_cult_of_fallout
 		}
 		completion_reward = {
-			
+			country_event = new_vegas.60
+			add_ideas = LAS_holy_conquest
 		}
 	}
 	focus = {
 		id = LAS_trouble_in_zion
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_begin_the_conquest 
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_begin_the_conquest
 		}
 		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = LAS_render_unto_ceasar
-		icon = GFX_goal_unknown
-		cost = 1
-		relative_position_id = LAS_begin_the_conquest 
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = LAS_begin_the_conquest
-		}
-		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = AFO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MOL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NAV
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HOP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = IDA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HAM
+			}
 		}
 	}
 	focus = {
 		id = LAS_big_trouble_in_little_california
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_trouble_in_zion
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_trouble_in_zion
 		}
-		prerequisite = {
-			focus = LAS_render_unto_ceasar
+		available = {
+			has_war = no
+			owns_state = 45
+			owns_state = 411
+			owns_state = 487
+			owns_state = 491
 		}
 		completion_reward = {
-			
+			effect_kill_the_PRA = yes
 		}
 	}
 	focus = {
 		id = LAS_finish_the_job
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_big_trouble_in_little_california 
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_big_trouble_in_little_california
 		}
+		available = {
+			has_war = no
+			owns_state = 304
+			owns_state = 302
+		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = MON
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LIB
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CSA
+			}
 		}
 	}
 	focus = {
 		id = LAS_a_storm_upon_the_plains
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_finish_the_job
 		x = -1
 		y = 1
 		prerequisite = {
 			focus = LAS_finish_the_job
 		}
-		completion_reward = {
-			
+		available = {
+			has_war = no
+			owns_state = 86
+			owns_state = 496
+			owns_state = 492
 		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
+		}
+		create_wargoal = {
+				type = annex_everything
+				target = NPA
+			}
 	}
 	focus = {
 		id = LAS_lakemens_folly
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_a_storm_upon_the_plains 
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_a_storm_upon_the_plains
 		}
+		available = {
+			has_war = no
+			owns_state = 416
+		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = GLA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = AFS
+			}
 		}
 	}
 	focus = {
 		id = LAS_secure_energy_supply
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_finish_the_job
 		x = 1
 		y = 1
 		prerequisite = {
 			focus = LAS_finish_the_job
 		}
+		available = {
+			has_war = no
+			owns_state = 86
+			owns_state = 496
+			owns_state = 492
+		}
 		completion_reward = {
-			
+			War_on_texas_collapse_tags = yes
 		}
 	}
 	focus = {
 		id = LAS_across_the_gulf
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_secure_energy_supply 
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_secure_energy_supply
 		}
+		available = {
+			has_war = no
+			owns_state = 143
+			owns_state = 306
+			owns_state = 55
+		}
 		completion_reward = {
-			
+			RVR_kill_the_CSA = yes
+			create_wargoal = {
+				type = annex_everything
+				target = FLO
+			}
 		}
 	}
 	focus = {
 		id = LAS_depose_kimball
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_lakemens_folly 
 		x = 1
 		y = 1
@@ -4687,42 +4757,70 @@ focus_tree = {
 		prerequisite = {
 			focus = LAS_across_the_gulf
 		}
+		available = {
+			has_war = no
+			owns_state = 506
+			owns_state = 207
+			owns_state = 396
+			owns_state = 195
+			owns_state = 153
+		}
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+			}
 		}
 	}
 	focus = {
 		id = LAS_america_under_the_courier
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 3
 		relative_position_id = LAS_depose_kimball
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = LAS_depose_kimball
 		}
+		available = {
+			has_war = no
+			owns_state = 242
+		}
 		completion_reward = {
-			
+			country_event = new_vegas.61
+			effect_mop_up_america_wargoals = yes
 		}
 	}
 	focus = {
 		id = LAS_annex_canada
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_america_under_the_courier 
 		x = -1
 		y = 1
 		prerequisite = {
 			focus = LAS_america_under_the_courier
 		}
+		available = {
+			custom_trigger_tooltip = {
+                tooltip = generic_we_control_all_american_states_tt
+                all_of_scopes = {
+                        array = global.part_of_USA
+                    OR = {
+                        is_owned_by = ROOT
+                        owner = { is_ally_with = ROOT }
+                    }
+                }
+            }
+		}
 		completion_reward = {
-			
+			effect_kill_canadian_collapse = yes
 		}
 	}
 	focus = {
 		id = LAS_annex_mexico
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 2
 		relative_position_id = LAS_annex_canada 
 		x = 0
 		y = 1
@@ -4730,27 +4828,40 @@ focus_tree = {
 			focus = LAS_annex_canada
 		}
 		completion_reward = {
-			
+			effect_kill_mexico = yes
 		}
 	}
 	focus = {
 		id = LAS_prepare_for_the_end
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 25.8
 		relative_position_id = LAS_america_under_the_courier
 		x = 1
 		y = 1
 		prerequisite = {
 			focus = LAS_america_under_the_courier
 		}
+		available = {
+			custom_trigger_tooltip = {
+                tooltip = generic_we_control_all_american_states_tt
+                all_of_scopes = {
+                        array = global.part_of_USA
+                    OR = {
+                        is_owned_by = ROOT
+                        owner = { is_ally_with = ROOT }
+                    }
+                }
+            }
+		}
 		completion_reward = {
-			
+			country_event = new_vegas.62
+			add_ideas = LAS_the_end_is_nigh
 		}
 	}
 	focus = {
 		id = LAS_the_great_war
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 0.2
 		relative_position_id = LAS_america_under_the_courier 
 		x = 0
 		y = 3
@@ -4761,7 +4872,8 @@ focus_tree = {
 			focus = LAS_prepare_for_the_end
 		}
 		completion_reward = {
-			
+			#super event and distruction of earth
+			#thanks for playing event
 		}
 	}
 	focus = {

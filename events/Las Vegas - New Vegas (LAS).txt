@@ -1696,6 +1696,54 @@ country_event = {
 	}
 }
 country_event = {
+	id = new_vegas.60
+	title = new_vegas.60.t
+	desc = new_vegas.60.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.60.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.61
+	title = new_vegas.61.t
+	desc = new_vegas.61.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.61.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
+	id = new_vegas.62
+	title = new_vegas.62.t
+	desc = new_vegas.62.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	#
+	option = {
+		name = new_vegas.62.a
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
 	id = new_vegas.~
 	title = new_vegas.~.t
 	desc = new_vegas.~.d
