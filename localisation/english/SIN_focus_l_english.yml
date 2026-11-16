@@ -17,6 +17,8 @@
  SIN_accepted_nighthorse_help:0 "Has accepted Nighthorse's help"
  SIN_cancel_industry_tt:0 "§GOnce this idea runs out, we will get the§! §CColoradan Industry§! §Gidea.§!"
 
+ SIN_establishment_coup_tt:0 "§GThis focus will Destroy all Internal Factions, except for the [GetEstablishmentName].§!"
+
  SIN_faction_management_tt:0 "Unlocks decisions to cooperate with the [GetIslamistsName] and the [GetDtName].\nUnlocks decisions to repress the [GetIslamistsName] and the [GetDtName]."
  SIN_antagonize_the_cartel_tt:0 "Unlocks decisions to repress the [GetCartelName]."
  SIN_work_with_the_cartel_tt:0 "Unlocks decisions to cooperate with the [GetCartelName]."
@@ -98,13 +100,22 @@
  SIN_utah_bombing_campaigns_desc:0 "Our enemies have brought their way of war to our cities and industries. The relentless bombing campaign is damaging morale, disrupting production, and placing immense strain on the state."
 
  SIN_anarcho_primitivism_idea:0 "Anarcho-Primitivism"
- SIN_anarcho_primitivism_desc:0 "The rejection of industrial civilization has brought our society closer to the natural world. Though our methods may be unconventional, the experience of living outside the structures of modern society has forged a people accustomed to hardship and self-reliance."
+ SIN_anarcho_primitivism_idea_desc:0 "The rejection of industrial civilization has brought our society closer to the natural world. Though our methods may be unconventional, the experience of living outside the structures of modern society has forged a people accustomed to hardship and self-reliance."
 
  SIN_anarcho_primitivism_idea_1:0 "Anarcho-Primitivism"
- SIN_anarcho_primitivism_1_desc:0 "The rejection of industrial civilization has brought our society closer to the natural world. Though our methods may be unconventional, the experience of living outside the structures of modern society has forged a people accustomed to hardship and self-reliance."
+ SIN_anarcho_primitivism_idea_1_desc:0 "The rejection of industrial civilization has brought our society closer to the natural world. Though our methods may be unconventional, the experience of living outside the structures of modern society has forged a people accustomed to hardship and self-reliance."
 
  SIN_anarcho_primitivism_idea_2:0 "Anarcho-Primitivism"
- SIN_anarcho_primitivism_2_desc:0 "The rejection of industrial civilization has brought our society closer to the natural world. Though our methods may be unconventional, the experience of living outside the structures of modern society has forged a people accustomed to hardship and self-reliance."
+ SIN_anarcho_primitivism_idea_2_desc:0 "The rejection of industrial civilization has brought our society closer to the natural world. Though our methods may be unconventional, the experience of living outside the structures of modern society has forged a people accustomed to hardship and self-reliance."
+
+ SIN_anarcho_primitivism_idea_3:0 "Anarcho-Primitivism"
+ SIN_anarcho_primitivism_idea_3_desc:0 "The rejection of industrial civilization has brought our society closer to the natural world. Though our methods may be unconventional, the experience of living outside the structures of modern society has forged a people accustomed to hardship and self-reliance."
+
+ SIN_cartel_rule_idea:0 "Cartel Rule"
+ SIN_cartel_rule_idea_desc:0 "The cartels are the state's power structure. Our extensive networks, ruthless methods and control over illicit markets provide manpower and sustain popular support for the war effort."
+
+ SIN_mob_rule_idea:0 "Mob Rule"
+ SIN_mob_rule_idea_desc:0 "Organised crime has embedded itself within the machinery of government. Through patronage, intimidation and backroom deals, we maintain order and ensure loyalty. Political power is increasingly concentrated in the hands of those willing to enforce our authority through any means necessary."
 
  SIN_united_against_mormonism_idea:0 "United Against Mormonism"
  SIN_united_against_mormonism_idea_desc:0 "Despite our differences, we share a common enemy in the Mormon state of Utah. Until it is defeated, our forces have a reason to stand together."
@@ -310,6 +321,9 @@
 
  SIN_libertarian_right_party_anprim_long:0 "Primitive Future"
  SIN_libertarian_right_party_anprim:0 "AnPrim"
+
+ KMT_mob_party_long:0 "United Syndicates"
+ KMT_mob_party:0 "The Mob"
 
 
 ########  #######   ######  ##     ##  ######  ########  ######  

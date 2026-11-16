@@ -1310,8 +1310,13 @@ focus_tree = {
 		completion_reward = {
             country_event = colorado.3
 			custom_effect_tooltip = generic_skip_one_line_tt
-			SIN_anprims_high_loyalty_increase_effect = yes
-			SIN_anprims_high_popularity_increase_effect = yes
+			if = {
+				limit = {
+					has_country_flag = SIN_factions_unlocked_flag
+				}
+				SIN_anprims_high_loyalty_increase_effect = yes
+				SIN_anprims_high_popularity_increase_effect = yes
+			}
 		}
 		prerequisite = {
 			focus = SIN_strong_tribe
@@ -1566,6 +1571,10 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = SIN_anprims_integrated_flag
+			is_power_balance_in_range = {
+				id = SIN_ted_chapo_bop
+				range > balanced_power
+			}
 		}
 		
 		bypass = {
@@ -1575,7 +1584,24 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_country_flag = SIN_cartel_integrated_flag }
+						NOT = { has_country_flag = SIN_cartel_destroyed_flag }
+					}
+				}
+				SIN_cartel_medium_loyalty_decrease_effect = yes
+				SIN_cartel_medium_popularity_decrease_effect = yes
+			}
+            remove_power_balance = {
+				id = SIN_ted_chapo_bop
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = SIN_anarcho_primitivism_idea_2
+				add_idea = SIN_anarcho_primitivism_idea_3
+			}
 		}
 		prerequisite = {
 			focus = SIN_victorious_ted
@@ -1599,6 +1625,10 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = SIN_cartel_integrated_flag
+			is_power_balance_in_range = {
+				id = SIN_ted_chapo_bop
+				range < balanced_power
+			}
 		}
 		
 		bypass = {
@@ -1617,6 +1647,16 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 				custom_effect_tooltip = SIN_antagonize_the_anprims_tt
 			}
+            remove_power_balance = {
+				id = SIN_ted_chapo_bop
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_politics = {
+    			ruling_party = autocratic
+				elections_allowed = no
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = SIN_cartel_rule_idea
 		}
 		prerequisite = {
 			focus = SIN_victorious_ted
@@ -1640,6 +1680,10 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = SIN_mob_integrated_flag
+			is_power_balance_in_range = {
+				id = SIN_ted_chapo_bop
+				range = balanced_power
+			}
 		}
 		
 		bypass = {
@@ -1653,11 +1697,27 @@ focus_tree = {
 				limit = {
 					NOT = { has_country_flag = SIN_anprims_integrated_flag }
 				}
-				SIN_anprims_medium_loyalty_decrease_effect = yes
-				SIN_anprims_medium_popularity_decrease_effect = yes
-				custom_effect_tooltip = generic_skip_one_line_tt
 				custom_effect_tooltip = SIN_antagonize_the_anprims_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SIN_James_Marcello = { 
+				promote_character = yes
+			}
+            remove_power_balance = {
+				id = SIN_ted_chapo_bop
+			}
+			set_party_name = {
+				ideology = autocratic
+				long_name = KMT_mob_party_long
+				name = KMT_mob_party
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_politics = {
+    			ruling_party = autocratic
+				elections_allowed = no
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = SIN_mob_rule_idea
 		}
 		prerequisite = {
 			focus = SIN_victorious_ted
@@ -1690,7 +1750,60 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            remove_power_balance = {
+				id = SIN_ted_chapo_bop
+			}
+			clr_country_flag = SIN_factions_unlocked_flag
+			if = {
+				limit = {
+					has_country_flag = SIN_cartel_integrated_flag
+				}
+				clr_country_flag = SIN_cartel_integrated_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = SIN_mob_integrated_flag
+				}
+				clr_country_flag = SIN_mob_integrated_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = SIN_islamists_integrated_flag
+				}
+				clr_country_flag = SIN_islamists_integrated_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = SIN_dt_integrated_flag
+				}
+				clr_country_flag = SIN_dt_integrated_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = SIN_anprims_integrated_flag
+				}
+				clr_country_flag = SIN_anprims_integrated_flag
+			}
+			set_country_flag = SIN_cartel_destroyed_flag
+			set_country_flag = SIN_mob_destroyed_flag
+			set_country_flag = SIN_islamists_destroyed_flag
+			set_country_flag = SIN_dt_destroyed_flag
+			set_country_flag = SIN_anprims_destroyed_flag
+			custom_effect_tooltip = SIN_establishment_coup_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+            set_politics = {
+    			ruling_party = democrat
+				elections_allowed = no
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_stability = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = closed_economy
+				}
+				add_ideas = export_focus
+			}
 		}
 		prerequisite = {
 			focus = SIN_victorious_ted
