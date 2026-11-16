@@ -6,6 +6,8 @@ SIN_internal_factions = {
 			base = 4
 		}
 
+		days_re_enable = 30
+
 		allowed = { 
 			original_tag = SIN
 		}
@@ -13,10 +15,10 @@ SIN_internal_factions = {
 		cost = SIN_faction_interaction_cost_standard
 
 		complete_effect = {
+			add_stability = 0.025
 		}
 
 		remove_effect = {
-			add_stability = 0.025
 		}
 	}
 
@@ -2879,12 +2881,226 @@ SIN_internal_factions = {
 	}
 }
 
+SIN_ted_chapo_balance_of_power_category = {
+
+	SIN_ted_does_a_lecture = {
+		icon = GFX_decision_generic_speech
+		allowed = {
+			original_tag = SIN
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 20
+		ai_will_do = {
+			base = 50
+		}
+		visible = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = SIN_doing_bop
+			}
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = SIN_doing_bop
+				days = 20
+				value = 1
+			}
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = SIN_ted_chapo_bop
+				value = 0.15
+				tooltip_side = ted_side
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = libertarian_right
+				popularity = 0.02
+			}
+		}
+	}
+
+	SIN_chapo_smuggles_guns = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			original_tag = SIN
+		}
+		cost = 50
+		fire_only_once = no
+		days_remove = 50
+		ai_will_do = {
+			base = 50
+		}
+		visible = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = SIN_doing_bop
+			}
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = SIN_doing_bop
+				days = 50
+				value = 1
+			}
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = SIN_ted_chapo_bop
+				value = -0.05
+				tooltip_side = chapo_side
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+    			amount = 500
+    			producer = RMX
+			}
+		}
+	}
+
+	SIN_chapo_rally_cartel = {
+		icon = GFX_decision_generic_political_discourse
+		allowed = {
+			original_tag = SIN
+		}
+		cost = 35
+		fire_only_once = no
+		days_remove = 25
+		ai_will_do = {
+			base = 50
+		}
+		visible = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = SIN_doing_bop
+			}
+		}
+		modifier = {
+			power_balance_daily = -0.002
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = SIN_doing_bop
+				days = 25
+				value = 1
+			}
+		}
+		remove_effect = {
+			add_war_support = 0.05
+		}
+	}
+
+	SIN_ted_stabilize_the_land = {
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+		allowed = {
+			original_tag = SIN
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 50
+		ai_will_do = {
+			base = 50
+		}
+		visible = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = SIN_doing_bop
+			}
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = SIN_doing_bop
+				days = 50
+				value = 1
+			}
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = SIN_ted_chapo_bop
+				value = 0.1
+				tooltip_side = ted_side
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_stability = 0.05
+		}
+	}
+
+	SIN_work_together = {
+		icon = GFX_decision_CHL_grant_full_rights_to_the_mapuche
+		allowed = {
+			original_tag = SIN
+		}
+		#cost = 0
+		custom_cost_trigger = {
+			command_power > 29
+		}
+		custom_cost_text = decision_cost_CP_30
+		fire_only_once = no
+		days_re_enable = 100
+		ai_will_do = {
+			base = 50
+		}
+		visible = {
+			
+		}
+		available = {
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			add_political_power = 25
+		}
+		remove_effect = {
+		}
+	}
+
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #######  ##       ########      ######   #######  ##    ## ######## ######## ##    ## ######## 
+##     ## ##       ##     ##    ##    ## ##     ## ###   ##    ##    ##       ###   ##    ##    
+##     ## ##       ##     ##    ##       ##     ## ####  ##    ##    ##       ####  ##    ##    
+##     ## ##       ##     ##    ##       ##     ## ## ## ##    ##    ######   ## ## ##    ##    
+##     ## ##       ##     ##    ##       ##     ## ##  ####    ##    ##       ##  ####    ##    
+##     ## ##       ##     ##    ##    ## ##     ## ##   ###    ##    ##       ##   ###    ##    
+ #######  ######## ########      ######   #######  ##    ##    ##    ######## ##    ##    ##    
 
 
 Eastern_Expansion = {

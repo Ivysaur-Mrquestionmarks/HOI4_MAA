@@ -39,6 +39,11 @@ country_event = {
 				id = colorado.1000
 				days = 1
 			}
+			SIN = {
+				SIN = {
+					set_occupation_law = autonomous_occupation
+				}
+			}
 		}
 	}
 }

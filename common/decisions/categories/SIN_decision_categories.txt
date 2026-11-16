@@ -16,8 +16,34 @@ SIN_internal_factions = {
 	}
 }
 
+SIN_ted_chapo_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
+	
+	allowed = {
+	original_tag = SIN
+	}
+	
+	priority = 90
+	
+	visible = {
+	}
+}
 
 
+
+
+
+
+
+
+
+ #######  ##       ########      ######   #######  ##    ## ######## ######## ##    ## ######## 
+##     ## ##       ##     ##    ##    ## ##     ## ###   ##    ##    ##       ###   ##    ##    
+##     ## ##       ##     ##    ##       ##     ## ####  ##    ##    ##       ####  ##    ##    
+##     ## ##       ##     ##    ##       ##     ## ## ## ##    ##    ######   ## ## ##    ##    
+##     ## ##       ##     ##    ##       ##     ## ##  ####    ##    ##       ##  ####    ##    
+##     ## ##       ##     ##    ##    ## ##     ## ##   ###    ##    ##       ##   ###    ##    
+ #######  ######## ########      ######   #######  ##    ##    ##    ######## ##    ##    ##    
 Eastern_Expansion = {
 	icon = hol_war_on_pacifism
 	
