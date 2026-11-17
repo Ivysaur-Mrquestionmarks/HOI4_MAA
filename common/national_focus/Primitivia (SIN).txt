@@ -1562,7 +1562,7 @@ focus_tree = {
 	focus = {
 		id = SIN_no_compromise_on_primitivism
 		icon = TODO
-		x = -11
+		x = -13
 		y = 11
 
 		cost = 3
@@ -1616,7 +1616,7 @@ focus_tree = {
 	focus = {
 		id = SIN_cartel_rule
 		icon = TODO
-		x = -3
+		x = -4
 		y = 11
 
 		cost = 3
@@ -1671,7 +1671,7 @@ focus_tree = {
 	focus = {
 		id = SIN_the_mob_compromise
 		icon = TODO
-		x = 5
+		x = 6
 		y = 11
 
 		cost = 3
@@ -1732,7 +1732,7 @@ focus_tree = {
 	focus = {
 		id = SIN_the_establishment_coup
 		icon = TODO
-		x = 13
+		x = 15
 		y = 11
 
 		cost = 3
@@ -1826,7 +1826,7 @@ focus_tree = {
 	focus = {
 		id = SIN_unga_bunga
 		icon = TODO
-		x = -8
+		x = -10
 		y = 12
 
 		cost = 3
@@ -1856,7 +1856,7 @@ focus_tree = {
 	focus = {
 		id = SIN_to_reform_oneself
 		icon = TODO
-		x = -14
+		x = -16
 		y = 12
 
 		cost = 3
@@ -1880,6 +1880,1163 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = SIN_unga_bunga
+		}
+	}
+
+	 ######     ###    ########  ######## ######## ##       
+	##    ##   ## ##   ##     ##    ##    ##       ##       
+	##        ##   ##  ##     ##    ##    ##       ##       
+	##       ##     ## ########     ##    ######   ##       
+	##       ######### ##   ##      ##    ##       ##       
+	##    ## ##     ## ##    ##     ##    ##       ##       
+	 ######  ##     ## ##     ##    ##    ######## ######## 
+
+	focus = {
+		id = SIN_dealing_with_beltran
+		icon = TODO
+		x = -5
+		y = 12
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = SIN_cartel_rule
+		}
+	}
+
+	focus = {
+		id = SIN_break_salazar_out
+		icon = TODO
+		x = -3
+		y = 12
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_cartel_rule
+		}
+	}
+
+	focus = {
+		id = SIN_infiltrate_the_feds
+		icon = TODO
+		x = -5
+		y = 13
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_dealing_with_beltran
+		}
+		prerequisite = {
+			focus = SIN_break_salazar_out
+		}
+	}
+
+	focus = {
+		id = SIN_legacy_of_the_madrinas
+		icon = TODO
+		x = -3
+		y = 13
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_dealing_with_beltran
+		}
+		prerequisite = {
+			focus = SIN_break_salazar_out
+		}
+	}
+
+	focus = {
+		id = SIN_purge_dissenters
+		icon = TODO
+		x = -4
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_infiltrate_the_feds
+		}
+		prerequisite = {
+			focus = SIN_legacy_of_the_madrinas
+		}
+	}
+
+	focus = {
+		id = SIN_beltran_coup
+		icon = TODO
+		x = -5
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_purge_dissenters
+		}
+		mutually_exclusive = {
+			focus = SIN_rally_behind_chapo
+		}
+	}
+
+	focus = {
+		id = SIN_rally_behind_chapo
+		icon = TODO
+		x = -3
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_purge_dissenters
+		}
+		mutually_exclusive = {
+			focus = SIN_beltran_coup
+		}
+	}
+
+	##     ##  #######  ########  
+	###   ### ##     ## ##     ## 
+	#### #### ##     ## ##     ## 
+	## ### ## ##     ## ########  
+	##     ## ##     ## ##     ## 
+	##     ## ##     ## ##     ## 
+	##     ##  #######  ########  
+
+	focus = {
+		id = SIN_increase_loansharking
+		icon = TODO
+		x = 5
+		y = 12
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_the_mob_compromise
+		}
+	}
+
+	focus = {
+		id = SIN_bribe_everyone
+		icon = TODO
+		x = 7
+		y = 12
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_the_mob_compromise
+		}
+	}
+
+	focus = {
+		id = SIN_control_the_money
+		icon = TODO
+		x = 6
+		y = 13
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_bribe_everyone
+		}
+		prerequisite = {
+			focus = SIN_increase_loansharking
+		}
+	}
+
+	focus = {
+		id = SIN_romanticize_the_mob
+		icon = TODO
+		x = 5
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_control_the_money
+		}
+	}
+
+	focus = {
+		id = SIN_a_second_valentines_day_massacre
+		icon = TODO
+		x = 7
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_control_the_money
+		}
+	}
+
+	focus = {
+		id = SIN_godfather_of_the_midwest
+		icon = TODO
+		x = 6
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_romanticize_the_mob
+		}
+		prerequisite = {
+			focus = SIN_a_second_valentines_day_massacre
+		}
+	}
+
+	 ######  ##     ##    ###    ########  ######## ########  
+	##    ## ##     ##   ## ##   ##     ## ##       ##     ## 
+	##       ##     ##  ##   ##  ##     ## ##       ##     ## 
+	 ######  ######### ##     ## ########  ######   ##     ## 
+		  ## ##     ## ######### ##   ##   ##       ##     ## 
+	##    ## ##     ## ##     ## ##    ##  ##       ##     ## 
+	 ######  ##     ## ##     ## ##     ## ######## ########  
+
+	focus = {
+		id = SIN_annex_mol
+		icon = TODO
+		x = -1
+		y = 12
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_cartel_rule
+			focus = SIN_the_mob_compromise
+		}
+	}
+
+	focus = {
+		id = SIN_annex_afo
+		icon = TODO
+		x = 3
+		y = 12
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_cartel_rule
+			focus = SIN_the_mob_compromise
+		}
+	}
+
+	focus = {
+		id = SIN_expand_recruitment_operations
+		icon = TODO
+		x = 1
+		y = 12
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_cartel_rule
+			focus = SIN_the_mob_compromise
+		}
+	}
+
+	focus = {
+		id = SIN_poppy_productions
+		icon = TODO
+		x = -1
+		y = 13
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_expand_recruitment_operations
+		}
+	}
+
+	focus = {
+		id = SIN_drugs_for_all
+		icon = TODO
+		x = -1
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_poppy_productions
+		}
+	}
+
+	focus = {
+		id = SIN_endorse_gambling
+		icon = TODO
+		x = 1
+		y = 13
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_expand_recruitment_operations
+		}
+	}
+
+	focus = {
+		id = SIN_annex_las
+		icon = TODO
+		x = 1
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_endorse_gambling
+		}
+	}
+
+	focus = {
+		id = SIN_expand_breweries
+		icon = TODO
+		x = 3
+		y = 13
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_expand_recruitment_operations
+		}
+	}
+
+	focus = {
+		id = SIN_legalize_drunk_driving
+		icon = TODO
+		x = 3
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_expand_breweries
+		}
+	}
+
+	focus = {
+		id = SIN_become_the_crutch
+		icon = TODO
+		x = 1
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_drugs_for_all
+		}
+		prerequisite = {
+			focus = SIN_annex_las
+		}
+		prerequisite = {
+			focus = SIN_legalize_drunk_driving
+		}
+	}
+
+	focus = {
+		id = SIN_back_to_sinaloa
+		icon = TODO
+		x = 0
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_beltran_coup
+			focus = SIN_rally_behind_chapo
+		}
+		prerequisite = {
+			focus = SIN_become_the_crutch
+		}
+		mutually_exclusive = {
+			focus = SIN_land_of_opportunities
+		}
+	}
+
+	focus = {
+		id = SIN_land_of_opportunities
+		icon = TODO
+		x = 2
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_beltran_coup
+			focus = SIN_rally_behind_chapo
+			focus = SIN_godfather_of_the_midwest
+		}
+		prerequisite = {
+			focus = SIN_become_the_crutch
+		}
+		mutually_exclusive = {
+			focus = SIN_back_to_sinaloa
+		}
+	}
+
+	focus = {
+		id = SIN_kill_pra
+		icon = TODO
+		x = 1
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_back_to_sinaloa
+			focus = SIN_land_of_opportunities
+		}
+	}
+
+	focus = {
+		id = SIN_kill_car
+		icon = TODO
+		x = -3
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_back_to_sinaloa
+		}
+	}
+
+	focus = {
+		id = SIN_kill_mex
+		icon = TODO
+		x = -1
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_back_to_sinaloa
+		}
+	}
+
+	focus = {
+		id = SIN_integrate_mex
+		icon = TODO
+		x = -2
+		y = 19
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_kill_car
+		}
+		prerequisite = {
+			focus = SIN_kill_mex
+		}
+	}
+
+	focus = {
+		id = SIN_central_america
+		icon = TODO
+		x = -3
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_kill_car
+		}
+		prerequisite = {
+			focus = SIN_kill_mex
+		}
+	}
+
+	focus = {
+		id = SIN_caribbean
+		icon = TODO
+		x = -1
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_kill_car
+		}
+		prerequisite = {
+			focus = SIN_kill_mex
+		}
+	}
+
+	focus = {
+		id = SIN_march_north
+		icon = TODO
+		x = 5
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_land_of_opportunities
+		}
+	}
+
+	focus = {
+		id = SIN_march_east
+		icon = TODO
+		x = 3
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_land_of_opportunities
+		}
+	}
+
+	focus = {
+		id = SIN_march_south
+		icon = TODO
+		x = 5
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_march_north
+		}
+		prerequisite = {
+			focus = SIN_march_east
+		}
+	}
+
+	focus = {
+		id = SIN_the_lakes
+		icon = TODO
+		x = 3
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_march_north
+		}
+		prerequisite = {
+			focus = SIN_march_east
+		}
+	}
+
+	focus = {
+		id = SIN_end_american_police
+		icon = TODO
+		x = 4
+		y = 19
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_march_south
+		}
+		prerequisite = {
+			focus = SIN_the_lakes
+		}
+		prerequisite = {
+			focus = SIN_kill_pra
+		}
+	}
+
+	focus = {
+		id = SIN_relocate_to_sinaloa
+		icon = TODO
+		x = -2
+		y = 20
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_integrate_mex
+		}
+		mutually_exclusive = {
+			focus = SIN_a_new_capital
+			focus = SIN_the_windy_city
+		}
+	}
+
+	focus = {
+		id = SIN_a_new_capital
+		icon = TODO
+		x = 1
+		y = 20
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_end_american_police
+			focus = SIN_integrate_mex
+		}
+		mutually_exclusive = {
+			focus = SIN_relocate_to_sinaloa
+			focus = SIN_the_windy_city
+		}
+	}
+
+	focus = {
+		id = SIN_the_windy_city
+		icon = TODO
+		x = 4
+		y = 20
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_end_american_police
+		}
+		mutually_exclusive = {
+			focus = SIN_relocate_to_sinaloa
+			focus = SIN_a_new_capital
 		}
 	}
 
