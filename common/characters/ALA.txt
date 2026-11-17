@@ -102,6 +102,30 @@ characters={
 			id = -1
 		}
 	}
+	ALA_dalee_sambo_dorough = {
+		name = ALA_dalee_sambo_dorough
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALA/Dalee_Sambo_Dorough.tga"
+			}
+		}
+	}
+	ALA_jim_mcdermott = {
+		name = ALA_jim_mcdermott
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALA/Jim_Mcdermott.tga"
+			}
+		}
+	}
+	ALA_michael_peterson = {
+		name = ALA_michael_peterson
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALA/Michael_Peterson.tga"
+			}
+		}
+	}
 	ALA_alaskan_soviet = { #Placeholder leader to hide Gorbachev
 		name = ALA_alaskan_soviet
 		portraits = {

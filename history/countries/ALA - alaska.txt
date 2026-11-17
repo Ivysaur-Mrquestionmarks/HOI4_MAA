@@ -92,6 +92,7 @@ add_dynamic_modifier = { modifier = ALA_shadow_of_pac }
 
 set_variable = { ALA_local_resources_factor = 0 }
 set_variable = { ALA_consumer_goods_factor = 0 }
+set_variable = { ALA_research_speed_factor = 0 }
 set_variable = { ALA_industrial_factory_donations = 3}
 set_variable = { ALA_military_factory_donations = 2}
 set_variable = { ALA_northern_steel = 4}
@@ -113,6 +114,9 @@ recruit_character = ALA_joshua_vo
 recruit_character = ALA_thomas_begich
 recruit_character = ALA_jon_briggs_watts
 recruit_character = ALA_david_a_krumm
+recruit_character = ALA_dalee_sambo_dorough
+recruit_character = ALA_jim_mcdermott
+recruit_character = ALA_michael_peterson
 recruit_character = ALA_alaskan_soviet
 recruit_character = ALA_torrence_w_saxe #PRA puppet leader
 recruit_character = ALA_john_root_III #WCZ Uprising Leader

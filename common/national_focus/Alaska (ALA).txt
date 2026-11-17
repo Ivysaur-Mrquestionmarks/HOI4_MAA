@@ -546,7 +546,8 @@
 			focus = ALA_north_alaskan_incursions
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = ALA_modify_north_alaska_modifier_tt
+			add_to_variable = { ALA_research_speed_factor = 0.10 tooltip = research_speed_factor_tt }
 		}
 	}
 	focus = {
@@ -563,6 +564,9 @@
 			focus = ALA_alaskan_data_centers
 		}
 		completion_reward = {
+			custom_effect_tooltip = ALA_modify_north_alaska_modifier_tt
+			add_to_variable = { ALA_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
+			add_to_variable = { ALA_consumer_goods_factor = 0.10 tooltip = consumer_goods_factor_tt }
 			
 		}
 	}
@@ -586,7 +590,11 @@
 			focus = ALA_exploit_klukwan_deposit
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_inuit_poverty_2
+				add_idea = ALA_inuit_poverty_3
+			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1184,6 +1192,12 @@
 			    ideology = republican
 			    popularity = 0.01
 			}
+			hidden_effect = {
+				country_event = {
+					days = 5
+					id = alaska_hidden.1
+				}
+			}
 		}
 	}
 	focus = {
@@ -1223,8 +1237,14 @@
 				    owner = ALA
 				}
 			}
-			add_stability = 0.03
-			add_war_support = -0.05
+			add_stability = 0.05
+			
+			hidden_effect = {
+				country_event = {
+					days = 5
+					id = alaska_hidden.2
+				}
+			}
 		}
 	}
 	focus = {
@@ -1314,6 +1334,9 @@
 		ai_will_do = { 
 			factor = 300
 		}
+		available = {
+			has_country_flag = ALA_sided_with_dunleavy
+		}
 		prerequisite = {
 			focus = ALA_the_trial_of_the_pacific_fleet
 		}
@@ -1333,6 +1356,9 @@
 		y = 1
 		ai_will_do = { 
 			factor = 300
+		}
+		available = {
+			has_country_flag = ALA_sided_with_protestors
 		}
 		prerequisite = {
 			focus = ALA_the_trial_of_the_pacific_fleet
@@ -1493,6 +1519,7 @@
 				idea = ALA_rally_the_inuits
 				days = 365
 			}
+			country_event = alaska.14
 			custom_effect_tooltip = ALA_inuit_tt
 		}
 	}
@@ -1703,7 +1730,7 @@
 				}
 				libertarian_right > 0.5
 			}
-			IF = {
+			ELSE_IF = {
 				LIMIT = {
 					has_completed_focus = ALA_fighting_for_a_red_alaska
 				}
@@ -1724,11 +1751,14 @@
 				}
 				country_event = alaska_lolbert.1
 			}
-			IF = {
+			ELSE_IF = {
 				LIMIT = {
 					has_completed_focus = ALA_fighting_for_a_red_alaska
 				}
 				country_event = alaska_commie.1
+			}
+			ELSE = {
+				custom_effect_tooltip  = ALA_strike_the_capital_tt
 			}
 		}
 	}
@@ -1742,6 +1772,9 @@
 		relative_position_id = ALA_strike_the_capital
 		ai_will_do = { 
 			factor = 300
+		}
+		available = {
+			has_country_flag = ALA_borough_wins
 		}
 		mutually_exclusive = {
 			focus = ALA_the_frontier_state
@@ -3546,7 +3579,7 @@
 		id = ALA_the_frontier_state
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 21
+		x = 22
 		y = 1
 		relative_position_id = ALA_strike_the_capital
 		ai_will_do = { 
@@ -3661,7 +3694,7 @@
 		id = ALA_laissez_faire_economics
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 2
+		x = -3
 		y = 1
 		relative_position_id = ALA_respectable_libertarianism
 		ai_will_do = { 
@@ -3669,23 +3702,6 @@
 		}
 		prerequisite = {
 			focus = ALA_respectable_libertarianism
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ALA_climate_responsible_capitalism
-		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
-		cost = 5.00
-		x = 2
-		y = 2
-		relative_position_id = ALA_laissez_faire_economics
-		ai_will_do = { 
-			factor = 300
-		}
-		prerequisite = {
-			focus = ALA_laissez_faire_economics
 		}
 		completion_reward = {
 			
@@ -3746,10 +3762,27 @@
 		}
 	}
 	focus = {
+		id = ALA_climate_responsible_capitalism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_the_blight_of_minimum_wage
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_the_blight_of_minimum_wage
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = ALA_the_cryptoization_of_the_economy
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ALA_the_blight_of_minimum_wage
 		ai_will_do = { 
@@ -3766,7 +3799,7 @@
 		id = ALA_the_wilting_state
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = -2
+		x = 3
 		y = 1
 		relative_position_id = ALA_respectable_libertarianism
 		ai_will_do = { 
@@ -3774,6 +3807,7 @@
 		}
 		prerequisite = {
 			focus = ALA_respectable_libertarianism
+			focus = ALA_solid_conservative_libertarianism
 		}
 		completion_reward = {
 			
@@ -3854,9 +3888,9 @@
 		id = ALA_watts_alaska_secured
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 2
-		y = 3
-		relative_position_id = ALA_free_choice_for_everything
+		x = 4
+		y = 2
+		relative_position_id = ALA_the_cryptoization_of_the_economy
 		ai_will_do = { 
 			factor = 300
 		}
@@ -3865,6 +3899,9 @@
 		}
 		prerequisite = {
 			focus = ALA_the_cryptoization_of_the_economy
+		}
+		prerequisite = {
+			focus = ALA_climate_responsible_capitalism
 		}
 		completion_reward = {
 			
@@ -3875,7 +3912,7 @@
 		id = ALA_the_serpent_strikes
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = -8
+		x = -9
 		y = 1
 		relative_position_id = ALA_the_future_of_alaskan_libertarianism
 		ai_will_do = { 
@@ -4167,7 +4204,7 @@
 		id = ALA_howes_surprise_victory
 		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
 		cost = 5.00
-		x = 8
+		x = 6
 		y = 1
 		relative_position_id = ALA_the_future_of_alaskan_libertarianism
 		ai_will_do = { 
@@ -4179,6 +4216,190 @@
 		}
 		prerequisite = {
 			focus = ALA_the_future_of_alaskan_libertarianism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_solid_conservative_libertarianism
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALA_howes_surprise_victory
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_howes_surprise_victory
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_voluntary_government_funding
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 3
+		y = 1
+		relative_position_id = ALA_solid_conservative_libertarianism
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_solid_conservative_libertarianism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_uphold_conservative_values
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 1
+		relative_position_id = ALA_voluntary_government_funding
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_voluntary_government_funding
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_let_regions_decide_drug_policies
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALA_voluntary_government_funding
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_voluntary_government_funding
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_encourage_home_schooling
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_voluntary_government_funding
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_let_regions_decide_drug_policies
+		}
+		prerequisite = {
+			focus = ALA_uphold_conservative_values
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_dissolve_the_aidea
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -1
+		y = 3
+		relative_position_id = ALA_voluntary_government_funding
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_let_regions_decide_drug_policies
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_importance_of_christian_morality
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 1
+		y = 3
+		relative_position_id = ALA_voluntary_government_funding
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_let_regions_decide_drug_policies
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_voglers_dream_achieved
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = -2
+		y = 2
+		relative_position_id = ALA_dissolve_the_aidea
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_dissolve_the_aidea
+		}
+		prerequisite = {
+			focus = ALA_end_the_surveillance_state
+		}
+		prerequisite = {
+			focus = ALA_importance_of_christian_morality
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_discard_all_gun_regulations
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 0
+		y = 2
+		relative_position_id = ALA_the_wattsians_hold_on
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_respectable_libertarianism
+			focus = ALA_solid_conservative_libertarianism
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALA_abolish_federal_land
+		icon = GFX_goal_Send_the_Radicals_to_the_Mountains
+		cost = 5.00
+		x = 6
+		y = 2
+		relative_position_id = ALA_the_wattsians_hold_on
+		ai_will_do = { 
+			factor = 300
+		}
+		prerequisite = {
+			focus = ALA_respectable_libertarianism
+			focus = ALA_solid_conservative_libertarianism
 		}
 		completion_reward = {
 			

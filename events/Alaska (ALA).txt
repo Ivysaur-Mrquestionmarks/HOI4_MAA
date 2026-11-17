@@ -113,6 +113,14 @@ country_event = {
 		    long_name = "Communist Party of Alaska"
 		    name = "CPA"
 		}
+		add_country_leader_role = {
+		    character = ALA_michael_peterson
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = communism
+		        expire = "2080.1.1.1"
+		    }
+		}
 		add_popularity = {
 			ideology = authoritarian_left
 			popularity = 0.02
@@ -214,6 +222,90 @@ country_event = {
 				id = alaska_news.1
 				random_hours = 24
 			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = alaska.12
+				days = 3
+			}
+			country_event = {
+				id = alaska.13
+				days = 7
+			}
+		}
+	}
+}
+
+# Which side are you on?
+country_event = {
+	id = alaska.12
+	title = alaska.12.t
+	desc = alaska.12.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska.12.a
+		complete_national_focus = ALA_a_miscarriage_of_justice
+		set_country_flag = ALA_sided_with_protestors
+	}
+	option = {
+		name = alaska.12.b
+		complete_national_focus = ALA_a_necessary_evil
+		set_country_flag = ALA_sided_with_dunleavy
+	}
+}
+
+# Borough Steps down as Chair of ICC
+country_event = {
+	id = alaska.13
+	title = alaska.13.t
+	desc = alaska.13.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska.13.a
+		trigger = {
+			has_country_flag = ALA_sided_with_dunleavy
+		}
+
+		add_stability = -0.03
+		add_popularity = {
+		    ideology = authoritarian_left
+		    popularity = 0.02
+		}
+	}
+	option = {
+		name = alaska.13.b
+		trigger = {
+			has_country_flag = ALA_sided_with_protestors
+		}
+
+		add_stability = -0.03
+		add_popularity = {
+		    ideology = authoritarian_left
+		    popularity = 0.02
+		}
+	}
+}
+
+# Patterson meets with Borough 
+
+country_event = {
+	id = alaska.14
+	title = alaska.14.t
+	desc = alaska.14.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska.14.a
+
+		add_political_power = 50
+		add_popularity = {
+		    ideology = authoritarian_left
+		    popularity = 0.05
 		}
 	}
 }
@@ -371,6 +463,97 @@ country_event = {
 	option = {
 		name = alaska_commie.1.a
 		
+		set_politics = {
+		    ruling_party = authoritarian_left
+		    elections_allowed = no
+		}	
+		add_stability = 0.1
+
+
+		hidden_effect = {
+			IF = {
+				LIMIT = {
+					has_completed_focus = ALA_gain_the_support_of_the_inuit_tribes
+				}
+				country_event = {
+					id = alaska_nativecommie.1
+					days = 7
+				}
+			}
+		}
+	}
+}
+
+# NATIVE COMMIE EVENTS #
+
+add_namespace = alaska_nativecommie
+
+country_event = {
+	id = alaska_nativecommie.1
+	title = alaska_nativecommie.1.t
+	desc = alaska_nativecommie.1.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_nativecommie.1.a
+		
+		add_political_power = -25
+		add_stability = -0.05
+
+		hidden_effect = {
+			country_event = {
+				id = alaska_nativecommie.2
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = alaska_nativecommie.2
+	title = alaska_nativecommie.2.t
+	desc = alaska_nativecommie.2.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_nativecommie.2.a
+		
+		add_political_power = -50
+
+		hidden_effect = {
+			country_event = {
+				id = alaska_nativecommie.3
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = alaska_nativecommie.3
+	title = alaska_nativecommie.3.t
+	desc = alaska_nativecommie.3.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_nativecommie.3.a
+		
+		add_stability = 0.1
+		add_country_leader_role = {
+		    character = ALA_dalee_sambo_dorough
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = communism
+		        expire = "2080.1.1.1"
+		    }
+		}
+		set_cosmetic_tag = ALA_inuit
+		set_country_flag = ALA_borough_wins
+		complete_national_focus = ALA_alaaskaq
+
 	}
 }
 
@@ -388,5 +571,38 @@ country_event = {
 	option = {
 		name = alaska_lolbert.1.a
 		
+	}
+}
+
+# HIDDEN BEGINNING EVENTS #
+
+add_namespace = alaska_hidden
+
+
+country_event = { # ICC attacks Dunleavy
+	id = alaska_hidden.1
+	title = alaska_hidden.1.t
+	desc = alaska_hidden.1.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_hidden.1.a
+		
+		add_stability = -0.05
+	}
+}
+
+country_event = { # Protests over national guard
+	id = alaska_hidden.2
+	title = alaska_hidden.2.t
+	desc = alaska_hidden.2.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_hidden.2.a
+		
+		add_war_support = -0.05
 	}
 }

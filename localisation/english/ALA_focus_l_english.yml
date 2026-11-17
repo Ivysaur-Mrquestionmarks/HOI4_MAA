@@ -204,6 +204,8 @@
 
  ALA_inuit_poverty_2:0 "Inuit Revival"
 
+ ALA_inuit_poverty_3:0 "Northern Prosperity"
+
  ALA_tourism_recession:0 "Tourism Recession"
  ALA_tourism_recession_desc:0 "Tourism has been the backbone of the Alaskan economy, but that has all but disintegrated due to recent events. The legacy of the Pacific Fleet, combined with growing political instability, and the fact that our would be customers are fighting each other, has made sure no one is visiting."
  
@@ -261,7 +263,7 @@
 
  ALA_liechtenstein_deal:0 "Liechtenstein Trade Deal"
 
- ALA_the_trial_riots:0 ""The Trial Riots""
+ ALA_the_trial_riots:0 "The Trial Riots
  
  ALA_rally_the_workers:0 "Rally the Workers"
 
@@ -312,6 +314,8 @@
  
  ALA_inuit_tt:0 "§YThis will dramatically strengthen Inuit influence§!"
 
+ ALA_strike_the_capital_tt:0 "§YThe faction we pick determines the fate of Alaska§!"
+
  ALA_brain_drain_cooldown_tt:0 "We will have to wait §Y180 days§! to let the schools catch up to the new policy."
 
  ALA_modify_north_alaska_modifier_tt:0 "Modify §Y$ALA_northern_alaska$§! by:"
@@ -339,6 +343,14 @@
 
  ### EVENTS ### 
  
+ alaska_hidden.1.t:0 "Chair of ICC Attacks Dunleavy at the UN"
+ alaska_hidden.1.d:0 "Dalee Sambo Dorough, chair of the Inuit Circumpolar Council, recently gave a speech attacking Dunleavy for the horrible living conditions of the Inuit people at the UN Human Rights Council. This comes days after Dunleavy has claimed that he will attempt to improve the living conditions of the Inuit people and uphold the ANCSA.\n\n"The suffering of the Iñupiat, my people, has gone unanswered for too long," boomed Dorough. "While they suffer from starvation and lack of clean water, the man who promises to fix these issues is the man most responsible for their horrid conditions. It is a cruel promise."\n\nThis was just one snippet of the speech that eviscerated Dunleavy, which tied him to the atrocities committed under the junta. The speech has definitely riled up the Inuit people here, spurring independent protests across Northern Alaska and in Anchorage. The protestors also seem to be using Borough as a figurehead for the growing Inuit rights movement, as she is herself an Alaskan Inuit with deep ties to her homeland."
+ alaska_hidden.1.a:0 "One step forward, two steps back..."
+ 
+ alaska_hidden.2.t:0 "Protests Over National Guard Deployment"
+ alaska_hidden.2.d:0 "Over this past week, the deployment of the National Guard has not gone over well in the city of Anchorage. Protests broke out calling the deployment a "pseudo-occupation" and rumors even claim that this was urged by whatever free elements of the Pacific Fleet are left. Despite how grossly false these claims are, people have taken to them likes flies to honey. Morale for our troops is at an all time low, with some of our soldiers even going AWOL and refusing to show up for their assignments. It is not even worth the effort to track them down and discipline them, especially as that would most likely make the martyrs."
+ alaska_hidden.2.a:0 "We are trying to fix this goddamn nation and are hated for it"
+
  alaska.1.t:0 "The Final Frontier in Chaos"
  alaska.1.d:0 "The occupation by the Pacific Fleet has done a number on our fledgling nation. The oil that flowed to fuel the war machine has stopped, causing the entire economy to freeze up. Extreme poverty, most notably in the Inuit community, has caused intense social unrest and has fueled separatism in the North. Our already neglected Infrastructure has decayed even further under the junta, with many towns disconnected and lacking clean drinking water.\n\nOur state barely functions and is held together by some of the few brave national guard soldiers still left on duty. Worst of all is the complete lack of trust that the average Alaskan has in Dunleavy or the establishment in general. In order to keep this state alive, we must show the Alaskan people we are not impotent, then we can deal with the imprisoned Pacific Fleet."
  alaska.1.a:0 "All eyes on Dunleavy"
@@ -378,7 +390,7 @@
  alaska.9.a:0 "It could be worse, right?"
 
  alaska.10.t:0 "Protests Devolve Into Riots!"
- alaska.10.d:0 "The leak has given the protestors just enough fuel to ignite into a wildfire of unfocused rage and anger. While a combined national guard and police presence has secured a perimeter around the courtroom, the rioters have turned their attention to the city itself, torching and burning cars and buildings. The military has been urging us in the background to secure the city by force and use the opportunity to pardon the Pacific Fleet, however any wrong step could destroy the entire country."
+ alaska.10.d:0 "The leak has given the protestors just enough fuel to ignite into a wildfire of unfocused rage. While a combined national guard and police presence has secured a perimeter around the courtroom, the rioters have turned their attention to the city itself, torching and burning cars and buildings. The military has been urging us in the background to secure the city by force and use the opportunity to pardon the Pacific Fleet, but any wrong step could destroy the entire country."
  alaska.10.a:0 "Only a guilty verdict will calm them down."
 
  alaska.11.t:0 "The Trial Ends"
@@ -386,6 +398,20 @@
  alaska.11.a:0 "The court has spoken!"
  alaska.11.b:0 "On second thought, we need them. Pardon them and lockdown Anchorage!"
  
+ alaska.12.t:0 "Alaska On the Verge of Civil War!"
+ alaska.12.d:0 ""
+ alaska.12.a:0 "Down with Dunleavy!"
+ alaska.12.b:0 "We must secure the country!"
+
+ alaska.13.t:0 "Dalee Sambo Dorough Resigns from Chair of the ICC"
+ alaska.13.d:0 "A shocking turn of events have transpired as Dorough as resigned from her prestigious position as chair of the ICC, in order to (in her own words) pursue "further and more personal action for the Iñupiat people." It is no coincidence that this has come after the pardoning of the Pacific Fleet and further worsening tensions in our nation. Some intelligence officers have claimed that she might lead an Inuit revolt against our government or that she might ally herself to one of the many radical factions vying for control."
+ alaska.13.a:0 "Can someone shut this bitch up?"
+ alaska.13.b:0 "This can be an opportunity!"
+ 
+ alaska.14.t:0 "Patterson and Borough Ally Under the CPA"
+ alaska.14.d:0 ""
+ alaska.14.a:0 "A massive threat to the capitalist pigs"
+
  alaska_oil.1.t:0 "Alaska Pleads For Recognition"
  alaska_oil.1.d:0 " "
  alaska_oil.1.a:0 "It is smart to recognize them"
@@ -418,16 +444,31 @@
  alaska_commie.1.t:0 "The CPA Marches on Anchorage!"
  alaska_commie.1.d:0 ""
  alaska_commie.1.a:0 "Unfurl the red flags!"
+ 
+ alaska_nativecommie.1.t:0 "Power Struggle in the Committee"
+ alaska_nativecommie.1.d:0 ""
+ alaska_nativecommie.1.a:0 "Wait this wasn't supposed to happen!"
 
- alaska_lolbert.1.t:0 "The Frontierist Party Marches on Anchorage!"
+ alaska_nativecommie.2.t:0 "Support Behind Patterson Collapses"
+ alaska_nativecommie.2.d:0 ""
+ alaska_nativecommie.2.a:0 "Is it the end of the Alaskan Lenin already?"
+
+ alaska_nativecommie.3.t:0 "Dorough Reigns Supreme as Chairwoman"
+ alaska_nativecommie.3.d:0 ""
+ alaska_nativecommie.3.a:0 "The Inuit people have stood up!"
+
+ alaska_lolbert.1.t:0 "The FP Marches on Anchorage!"
  alaska_lolbert.d:0 ""
  alaska_lolbert.1.a:0 "Don't tread on us!"
 
  ### CHARACTERS ###
 
  ALA_mike_dunleavy:0 "Mike Dunleavy"
- DESC_LEADER_MIKE_DUNLEAVY:0 "Mike Dunleavy was once a popular and effective governor of Alaska. He was praised for strengthening education, cracking down on crime, and for his fast COVID response. But many things have changed since the American Civil War.\n\nHis reputation has been marred by this reluctant support of the Pacific Fleet, in what many had viewed as a "deal with the devil". He had clung onto the title of governor of Alaska, a role made mostly ceremonial under the junta, trying to mitigate the junta's strangehold over Alaska to no avail.\n\nNow that the junta has collapsed and its perpetrators either dead or imprisoned, one man is left standing at the center of the Alaskan ire. That man is Mike Dunleavy. Whether or not it is misguided, the Alaskans have blamed him for the steep decline in quality of life, with some accusing him of not having done more to prevent the Pacific Fleet's takeover.\n\nTo win back the Alaskan people's trust will be a Herculean task. But the people is not his only worry. The remnant military, many who are sympathetic towards the Pacific Fleet, have been instrumental in allowing him to keep his role of governor. And they are not doing it out of charity either..."
- 
+ DESC_LEADER_MIKE_DUNLEAVY:0 "Mike Dunleavy was once a popular and effective governor of Alaska. He was praised for strengthening education, cracking down on crime, and for his fast COVID response. But many things have changed since the American Civil War.\n\nHis reputation has been marred by this reluctant support of the Pacific Fleet, in what many had viewed as a "deal with the devil". He had clung onto the title of governor of Alaska, a role made mostly ceremonial under the junta, trying to mitigate the junta's strangehold over Alaska to no avail.\n\nNow that the junta has collapsed and its perpetrators either dead or imprisoned, one man is left standing at the center of the Alaskan ire. That man is Mike Dunleavy. Whether or not it is misguided, the Alaskans have blamed him for the steep decline in quality of life, with some accusing him of not having done more to prevent the Pacific Fleet's takeover.\n\nTo win back the Alaskan people's trust will be a Herculean task. But the people are not his only worry. The remnant military, many who are sympathetic towards the Pacific Fleet, have been instrumental in allowing him to keep his role of governor. And they are not doing it out of charity either..."
+ ALA_dalee_sambo_dorough:0 "Dalee Sambo Dorough"
+ ALA_michael_peterson:0 "Michael Patterson"
+ ALA_jim_mcdermott:0 "Jim McDermott"
+
  ALA_brian_kile:0 "Brian Kile"
  ALA_julie_a_small:0 "Julie A. Small"
  ALA_kenneth_radford:0 "Kenneth Radford"
@@ -500,14 +541,20 @@
  ALA_socialist_singer:0 "Socialist Singer"
  ALA_media_mogul:0 "Media Mogul"
 
+ ### FLAGS ###
+
+ ALA_borough_wins:0 "Dorough Reigns Supreme"
+ ALA_sided_with_protestors:0 "Sided With Protestors"
+ ALA_sided_with_dunleavy:0 "Sided With Dunleavy"
+
  ### PARTIES ###
 
  ALA_autocratic_party:0 "Alaskan Admiralty"
  ALA_autocratic_party_long:0 "Alaskan Admiralty"
- ALA_republican_party:0 "ASP"
- ALA_republican_party_long:0 "Alaskan Sovereignty Party"
- ALA_democrat_party:0 "AFFR"
- ALA_democrat_party_long:0 "Alaskans for Federal Reconciliation"
+ ALA_republican_party:0 "ARP"
+ ALA_republican_party_long:0 "Alaskan Republican Party"
+ ALA_democrat_party:0 "ADP"
+ ALA_democrat_party_long:0 "Alaskan Democratic Party"
  ALA_libertarian_left_party:0 "FEP"
  ALA_libertarian_left_party_long:0 "Free Inuit Party"
  ALA_libertarian_right_party:0 "FP"
