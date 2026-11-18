@@ -2555,9 +2555,42 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SIN_mop_up
+		icon = TODO
+		x = -16
+		y = 20
+
+		cost = 3
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+            
+		}
+		prerequisite = {
+			focus = SIN_kill_fra
+		}
+		prerequisite = {
+			focus = SIN_kill_cascadia
+		}
+		prerequisite = {
+			focus = SIN_kill_dixie
+		}
+	}
+
+	focus = {
 		id = SIN_dean_ted
 		icon = TODO
-		x = -15
+		x = -14
 		y = 20
 
 		cost = 3
