@@ -17,11 +17,21 @@ ALA_oil_crisis = {
 
 }
 ALA_fix_it_felix = {
+	icon = generic_industry
 	allowed = {
 		OR = {
 			original_tag = ALA
 		}
-		#has_completed_focus = ALA_fix_the_infrastructure
-		
+		has_completed_focus = ALA_fix_the_infrastructure
+	}
+}
+ALA_fuck_you_dunleavy_authleft = {
+	icon = SOV_civil_puppet_interaction
+
+	allowed = {
+		OR = {
+			original_tag = ALA
+		}
+		has_completed_focus = ALA_preparing_the_resistance
 	}
 }

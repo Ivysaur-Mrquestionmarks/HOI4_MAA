@@ -29,3 +29,18 @@ ALA_northern_alaska = {
 	country_resource_coal = ALA_northern_coal
 	weekly_manpower = ALA_northern_weekly_manpower
 }
+ALA_inuit_society = {
+	icon = "GFX_idea_ALA_northern_alaska"
+    
+    stability_factor = ALA_inuit_stability_factor
+    war_support_factor = ALA_inuit_war_support_factor
+    consumer_goods_factor = ALA_inuit_consumer_goods_factor
+    weekly_casualties_war_support = ALA_inuit_weekly_casualties_war_support
+    monthly_population = ALA_inuit_monthly_population
+    political_power_factor = ALA_inuit_political_power_factor
+    research_speed_factor = ALA_inuit_research_speed_factor
+    army_attack_factor = ALA_inuit_army_attack_factor	
+    authoritarian_left_drift = ALA_inuit_authoritarian_left_drift
+ 	surrender_limit = ALA_inuit_surrender_limit
+    encryption_factor = ALA_inuit_encrpytion_factor
+}

@@ -474,6 +474,29 @@ characters={
 			cost = 75
 		}
 	}
+
+	# SPECIAL NATIVE GENERALS #
+
+	ALA_laurel_foster = { 
+		name = ALA_laurel_foster
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/ALA/generals/craig_christensen_small.dds"
+				large = "gfx/leaders/ALA/generals/Laurel_Foster.tga"
+			}
+		}
+	}
+
+	ALA_walter_hotch_hill = { 
+		name = ALA_walter_hotch_hill
+		portraits = {
+			army={
+				small = "gfx/interface/ideas/ALA/generals/craig_christensen_small.dds"
+				large = "gfx/leaders/ALA/generals/Walter_Hotch_Hill.tga"
+			}
+		}
+	}
+
 	###
 	ALA_john_root_III = { #WCZ Uprising Leader
 		name = ALA_john_root_III

@@ -106,6 +106,11 @@ set_variable = { ALA_northern_weekly_manpower = 100}
 
 add_dynamic_modifier = { modifier = ALA_northern_alaska }
 
+# New Inuit Man #
+
+set_variable = { ALA_inuit_stability_factor = 0.10}
+set_variable = { ALA_inuit_authoritarian_left_drift = 0.05}
+
 ### Country Leaders ###
 # Americans #
 recruit_character = ALA_mike_dunleavy
@@ -162,5 +167,7 @@ recruit_character = ALA_joshua_armstrong
 recruit_character = ALA_matthew_komatsu
 recruit_character = ALA_thomas_h_katkus
 recruit_character = ALA_craig_n_christensen
+recruit_character = ALA_laurel_foster
+recruit_character = ALA_walter_hotch_hill
 recruit_character = ALA_megan_dean
 recruit_character = ALA_bob_little

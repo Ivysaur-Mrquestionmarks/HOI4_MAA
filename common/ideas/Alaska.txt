@@ -407,14 +407,75 @@ ideas = {
 				min_export = 0.15
 			}
 		}
-		ALA_alaska_native_corporations = {
-			#picture = prc_the_long_march2
+
+		# INUIT IDEAS #
+		ALA_arctic_council_of_communes = {
+			#picture = 
 			modifier = {
-				stability_factor = 0.05
-				consumer_goods_factor = -0.1
-				
+				compliance_growth = 0.25
+				resistance_growth = -0.1
 			}
-		}	
+		}
+		ALA_sednas_gift = {
+			#picture = 
+			modifier = {
+				naval_invasion_capacity = 5
+				naval_invasion_penalty = -0.25
+				naval_invasion_planning_bonus_speed = 0.1
+				invasion_preparation = -0.2
+			}
+		}
+		ALA_warrior_spirit_0 = {
+			#picture = 
+			modifier = {
+				army_org_factor = 0.1
+			}
+		}
+		ALA_warrior_spirit_1 = {
+			#picture = 
+			modifier = {
+				army_org_factor = 0.1
+				conscription = 0.02
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		ALA_warrior_spirit_2 = {
+			#picture = 
+			modifier = {
+				army_org_factor = 0.1
+				conscription = 0.02
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				terrain_penalty_reduction = 0.25
+				invasion_preparation = -0.1
+				special_forces_attack_factor = 0.15
+			}
+		}
+		ALA_warrior_spirit_3 = {
+			#picture = 
+			modifier = {
+				army_org_factor = 0.1
+				conscription = 0.03
+				cas_damage_reduction = 0.25
+				army_morale_factor = 0.1
+				army_attack_against_major_factor = 0.2
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				terrain_penalty_reduction = 0.25
+				invasion_preparation = -0.1
+				special_forces_attack_factor = 0.15
+			}
+		}
+		ALA_inuit_craftsmanship = {
+			#picture = 
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.08
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = -0.1 
+			}
+		}
 	}
 	industrial_concern = {
 		ALA_aidea = {
