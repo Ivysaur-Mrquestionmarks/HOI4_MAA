@@ -1549,6 +1549,171 @@ characters = {
 		}
 	}
 
+	#Criminal Army, Navy and Air
+	SIN_Robert_Bales = {
+		name = SIN_Robert_Bales
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Robert_Bales.dds"
+				small = "gfx/interface/ideas/SIN/military_Robert_Bales.dds"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist aggressive_assaulter desert_fox }
+			skill = 1
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_the_ragtag_group
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = command_Robert_Bales
+			ledger = army
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_a_standing_army
+				}
+			}
+			available = {
+				has_completed_focus = SIN_the_ragtag_group
+			}
+			traits = { army_chief_offensive_1 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_David_Berkowitz = {
+		name = SIN_David_Berkowitz
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/David_Berkowitz.dds"
+				small = "gfx/interface/ideas/SIN/military_David_Berkowitz.dds"
+			}
+		}
+		corps_commander = {
+			traits = { commando camouflage_expert }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_the_ragtag_group
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_David_Berkowitz
+			ledger = army
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_a_standing_army
+				}
+			}
+			available = {
+				has_completed_focus = SIN_the_ragtag_group
+			}
+			traits = { army_concealment_1 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Michael_Behenna = {
+		name = SIN_Michael_Behenna
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Michael_Behenna.dds"
+				small = "gfx/interface/ideas/SIN/military_Michael_Behenna.dds"
+			}
+		}
+		corps_commander = {
+			traits = { desert_fox commando paratrooper }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_the_ragtag_group
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Michael_Behenna
+			ledger = army
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_a_standing_army
+				}
+			}
+			available = {
+				has_completed_focus = SIN_the_ragtag_group
+			}
+			traits = { army_commando_1 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Russell_Williams = {
+		name = SIN_Russell_Williams
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Russell_Williams.dds"
+				small = "gfx/interface/ideas/SIN/military_Russell_Williams.dds"
+			}
+		}
+		corps_commander = {
+			traits = { expeditionary_leader_trait }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_the_ragtag_group
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = command_Russell_Williams
+			ledger = air
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_a_standing_army
+				}
+			}
+			available = {
+				has_completed_focus = SIN_the_ragtag_group
+			}
+			traits = { air_chief_all_weather_1 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 	### MISC ###
 	SIN_Ben_Campbell = {
 		name = SIN_Ben_Campbell

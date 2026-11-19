@@ -1708,8 +1708,8 @@ focus_tree = {
 			}
 			set_party_name = {
 				ideology = autocratic
-				long_name = KMT_mob_party_long
-				name = KMT_mob_party
+				long_name = SIN_mob_party_long
+				name = SIN_mob_party
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_politics = {
@@ -1741,6 +1741,8 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = SIN_establishment_integrated_flag
+			has_full_control_of_state = 518
+			owns_state = 518
 		}
 		
 		bypass = {
@@ -1803,6 +1805,25 @@ focus_tree = {
 					has_idea = closed_economy
 				}
 				add_ideas = export_focus
+			}
+			hidden_effect = {
+				SIN_Keith_Laube = { 
+					promote_character = yes
+				}
+				set_party_name = {
+					ideology = libertarian_right
+					long_name = SIN_libertarian_right_party_long
+					name = SIN_libertarian_right_party
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_capital = {
+				state = 518
+  				remember_old_capital = no
+			}
+			set_victory_points = {
+				province = 2682
+				value = 10
 			}
 		}
 		prerequisite = {
@@ -4017,6 +4038,222 @@ focus_tree = {
 		}
 	}
 
+	########  ######  ########    ###    ########  ##       ####  ######  ##     ## ##     ## ######## ##    ## ######## 
+	##       ##    ##    ##      ## ##   ##     ## ##        ##  ##    ## ##     ## ###   ### ##       ###   ##    ##    
+	##       ##          ##     ##   ##  ##     ## ##        ##  ##       ##     ## #### #### ##       ####  ##    ##    
+	######    ######     ##    ##     ## ########  ##        ##   ######  ######### ## ### ## ######   ## ## ##    ##    
+	##             ##    ##    ######### ##     ## ##        ##        ## ##     ## ##     ## ##       ##  ####    ##    
+	##       ##    ##    ##    ##     ## ##     ## ##        ##  ##    ## ##     ## ##     ## ##       ##   ###    ##    
+	########  ######     ##    ##     ## ########  ######## ####  ######  ##     ## ##     ## ######## ##    ##    ##    
+
+	focus = {
+		id = SIN_send_them_back_to_jail
+		icon = TODO
+		x = 15
+		y = 12
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_the_establishment_coup
+		}
+	}
+
+	focus = {
+		id = SIN_send_them_back_to_jail
+		icon = TODO
+		x = 15
+		y = 12
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_the_establishment_coup
+		}
+	}
+
+	focus = {
+		id = SIN_elections
+		icon = TODO
+		x = 15
+		y = 13
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_send_them_back_to_jail
+		}
+	}
+
+	focus = {
+		id = SIN_green_party_victory
+		icon = TODO
+		x = 9
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_elections
+		}
+		mutually_exclusive = {
+			focus = SIN_libertarian_party_victory
+			focus = SIN_democrat_party_victory
+			focus = SIN_republican_party_victory
+		}
+	}
+
+	focus = {
+		id = SIN_libertarian_party_victory
+		icon = TODO
+		x = 13
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_elections
+		}
+		mutually_exclusive = {
+			focus = SIN_green_party_victory
+			focus = SIN_democrat_party_victory
+			focus = SIN_republican_party_victory
+		}
+	}
+
+	focus = {
+		id = SIN_democrat_party_victory
+		icon = TODO
+		x = 17
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_elections
+		}
+		mutually_exclusive = {
+			focus = SIN_libertarian_party_victory
+			focus = SIN_green_party_victory
+			focus = SIN_republican_party_victory
+		}
+	}
+
+	focus = {
+		id = SIN_republican_party_victory
+		icon = TODO
+		x = 21
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_elections
+		}
+		mutually_exclusive = {
+			focus = SIN_libertarian_party_victory
+			focus = SIN_democrat_party_victory
+			focus = SIN_green_party_victory
+		}
+	}
 
 
 
@@ -5162,7 +5399,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+			swap_ideas = {
+				add_idea = SIN_the_ragtag_group_idea
+				remove_idea = SIN_military_affairs_commission_1
+			}
+            show_unit_leaders_tooltip = SIN_Robert_Bales
+			show_unit_leaders_tooltip = SIN_David_Berkowitz
+			show_unit_leaders_tooltip = SIN_Michael_Behenna
+			show_unit_leaders_tooltip = SIN_Russell_Williams
 		}
 		prerequisite = {
 			focus = SIN_test_idaho
@@ -5451,7 +5695,18 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+			swap_ideas = {
+				add_idea = SIN_the_ragtag_group_idea_1
+				remove_idea = SIN_the_ragtag_group_idea
+			}
+			set_technology = {
+	            camelry = 1
+	            popup = no
+	        }
+			set_technology = {
+	            militia_tech = 1
+	            popup = no
+	        }
 		}
 		prerequisite = {
 			focus = SIN_the_ragtag_group
@@ -5478,6 +5733,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			swap_ideas = {
+				add_idea = SIN_the_ragtag_group_idea_2
+				remove_idea = SIN_the_ragtag_group_idea_1
+			}
             
 		}
 		prerequisite = {
@@ -5496,6 +5755,7 @@ focus_tree = {
 			
 		}
 		available = {
+			has_completed_focus = SIN_no_compromise_on_primitivism
 		}
 		
 		bypass = {
@@ -5505,7 +5765,26 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+            set_technology = {
+	            elephantry = 1
+	            popup = no
+	        }
+			division_template = {
+				name = "Elephants"
+				regiments = {
+					elephantry = { x = 0 y = 0 }
+					elephantry = { x = 0 y = 1 }
+					elephantry = { x = 0 y = 2 }
+					elephantry = { x = 0 y = 3 }
+				}
+				#is_locked = yes
+			}
+			capital_scope = {
+				create_unit = {
+			    	division = "name = \"Elephants\" division_template = \"Elephants\" start_equipment_factor = 1 start_experience_factor = 1 "
+		 	   		owner = SIN
+				}
+			}
 		}
 		prerequisite = {
 			focus = SIN_scavenging_the_field
@@ -5526,6 +5805,7 @@ focus_tree = {
 			
 		}
 		available = {
+			NOT = { has_completed_focus = SIN_no_compromise_on_primitivism }
 		}
 		
 		bypass = {
@@ -5535,7 +5815,20 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+			swap_ideas = {
+				add_idea = SIN_the_ragtag_group_idea_3
+				remove_idea = SIN_the_ragtag_group_idea_2
+			}
+            add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = armor
+			}
 		}
 		prerequisite = {
 			focus = SIN_scavenging_the_field
@@ -5565,7 +5858,21 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-            
+			if = {
+				limit = {
+					has_idea = SIN_the_ragtag_group_idea_3
+				}
+				swap_ideas = {
+					add_idea = SIN_the_ragtag_group_idea_5
+					remove_idea = SIN_the_ragtag_group_idea_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					add_idea = SIN_the_ragtag_group_idea_4
+					remove_idea = SIN_the_ragtag_group_idea_2
+				}
+			}
 		}
 		prerequisite = {
 			focus = SIN_motorize_the_army

@@ -36,12 +36,12 @@
  SIN_establishment_tt:0 "[GetEstablishmentName]: "
  SIN_mob_tt:0 "[GetMobName]: "
 
- SIN_islamists_recruits_tt:0 "§GThis Desicion will unlock 5 [GetIslamistsName] Characters!§!"
- SIN_dt_recruits_tt:0 "§GThis Desicion will unlock 5 [GetDtName] Characters!§!"
- SIN_cartel_recruits_tt:0 "§GThis Desicion will unlock 5 [GetCartelName] Characters!§!"
- SIN_mob_recruits_tt:0 "§GThis Desicion will unlock 4 [GetMobName] Characters!§!"
+ SIN_islamists_recruits_tt:0 "§GThis Desicion will unlock [GetIslamistsName] Characters!§!"
+ SIN_dt_recruits_tt:0 "§GThis Desicion will unlock [GetDtName] Characters!§!"
+ SIN_cartel_recruits_tt:0 "§GThis Desicion will unlock [GetCartelName] Characters!§!"
+ SIN_mob_recruits_tt:0 "§GThis Desicion will unlock [GetMobName] Characters!§!"
  SIN_establishment_recruits_tt:0 "§GThis Desicion will unlock [GetEstablishmentName] Characters!§!"
- SIN_anprims_recruits_tt:0 "§GThis Desicion will unlock 4 [GetAnprimsName] Characters!§!"
+ SIN_anprims_recruits_tt:0 "§GThis Desicion will unlock [GetAnprimsName] Characters!§!"
 
 
  decision_cost_IE_500: "£infantry_equipment_text_icon  §Y500§!"
@@ -322,8 +322,8 @@
  SIN_libertarian_right_party_anprim_long:0 "Primitive Future"
  SIN_libertarian_right_party_anprim:0 "AnPrim"
 
- KMT_mob_party_long:0 "United Syndicates"
- KMT_mob_party:0 "The Mob"
+ SIN_mob_party_long:0 "United Syndicates"
+ SIN_mob_party:0 "The Mob"
 
 
 ########  #######   ######  ##     ##  ######  ########  ######  

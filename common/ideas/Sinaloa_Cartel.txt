@@ -532,6 +532,99 @@ ideas = {
 			}
 		}
 
+		SIN_the_ragtag_group_idea = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				experience_gain_army_factor = 0.05
+				conscription_factor = 0.05
+				training_time_factor = -0.1
+				weekly_manpower = 50
+				modifier_army_sub_unit_penal_battalion_attack_factor = 0.05
+				modifier_army_sub_unit_militia_attack_factor = 0.05
+			}
+		}
+
+		SIN_the_ragtag_group_idea_1 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				experience_gain_army_factor = 0.05
+				conscription_factor = 0.05
+				training_time_factor = -0.1
+				army_speed_factor = 0.05
+				weekly_manpower = 50
+				modifier_army_sub_unit_penal_battalion_attack_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+			}
+		}
+
+		SIN_the_ragtag_group_idea_2 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				experience_gain_army_factor = 0.05
+				conscription_factor = 0.05
+				training_time_factor = -0.1
+				army_speed_factor = 0.05
+				weekly_manpower = 50
+				modifier_army_sub_unit_penal_battalion_attack_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+				equipment_capture_factor  = 0.15
+			}
+		}
+
+		SIN_the_ragtag_group_idea_3 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				experience_gain_army_factor = 0.05
+				conscription_factor = 0.05
+				training_time_factor = -0.1
+				army_speed_factor = 0.15
+				weekly_manpower = 50
+				modifier_army_sub_unit_penal_battalion_attack_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+				equipment_capture_factor  = 0.15
+			}
+		}
+
+		SIN_the_ragtag_group_idea_4 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				experience_gain_army_factor = 0.1
+				conscription_factor = 0.15
+				training_time_factor = -0.2
+				army_speed_factor = 0.05
+				weekly_manpower = 100
+				modifier_army_sub_unit_penal_battalion_attack_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+				equipment_capture_factor  = 0.15
+			}
+		}
+
+		SIN_the_ragtag_group_idea_5 = {
+			allowed = { original_tag = SIN }
+			cancel = {
+            }
+			modifier = {
+				experience_gain_army_factor = 0.1
+				conscription_factor = 0.15
+				training_time_factor = -0.2
+				army_speed_factor = 0.15
+				weekly_manpower = 100
+				modifier_army_sub_unit_penal_battalion_attack_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+				equipment_capture_factor  = 0.15
+			}
+		}
+
 
 
 	
