@@ -530,6 +530,97 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
+
+		# COMMIE IDEAS #
+
+		ALA_spectre_over_the_arctic = {
+			picture = ALA_tourism_recession
+			modifier = {
+				political_power_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.15
+				authoritarian_left_drift = 0.1
+			}
+		}
+		ALA_spectre_over_the_arctic_1 = {
+			picture = ALA_tourism_recession
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				party_popularity_stability_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.15
+				authoritarian_left_drift = 0.15
+			}
+		}
+		ALA_spectre_over_the_arctic_2 = {
+			picture = ALA_tourism_recession
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				party_popularity_stability_factor = 0.1
+				industrial_capacity_factory = 0.2
+				consumer_goods_factor = 0.1
+				offensive_war_stability_factor = 0.2
+				acclimatization_cold_climate_gain_factor = 0.15
+				authoritarian_left_drift = 0.15
+			}
+		}
+		ALA_autonomous_boroughs = {
+			picture = ALA_tourism_recession
+			modifier = {
+				stability_factor = 0.2
+				political_power_factor = -0.05
+				compliance_growth = 0.1
+			}
+		}
+		ALA_autonomous_boroughs_1 = {
+			picture = ALA_tourism_recession
+			modifier = {
+				stability_factor = 0.2
+				conscription = 0.01
+				winter_attrition_factor = -0.1
+				political_power_factor = -0.05
+				compliance_growth = 0.1
+			}
+		}
+		
+		ALA_chinese_trade = {
+			picture = ALA_tourism_recession
+			modifier = {
+				consumer_goods_factor = -0.1
+				trade_opinion_factor = -0.15
+				min_export = 0.05
+				authoritarian_left_drift = 0.02
+			}
+		}
+		ALA_chinese_trade_1 = {
+			picture = ALA_tourism_recession
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.2
+				trade_opinion_factor = -0.3
+				min_export = 0.1
+				authoritarian_left_drift = 0.05
+			}
+		}
+		ALA_chinese_advisors = {
+			picture = ALA_tourism_recession
+			modifier = {
+				army_org_factor = 0.1
+				army_leader_cost_factor = 0.1
+				command_power_gain_mult = -0.1
+				experience_gain_army_factor = 0.12
+				experience_gain_air_factor = 0.08
+				experience_gain_navy_factor = 0.08
+			}
+		}
+		ALA_peoples_pipeline = {
+			picture = ALA_tourism_recession
+			modifier = {
+				consumer_goods_factor = -0.1
+				fuel_gain_factor = 0.2
+			}
+		}
 	}
 	industrial_concern = {
 		ALA_aidea = {

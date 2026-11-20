@@ -468,7 +468,9 @@ country_event = {
 		    elections_allowed = no
 		}	
 		add_stability = 0.1
-
+		2 = {
+			set_demilitarized_zone = no
+		}
 		remove_ideas = ALA_alaskan_powder_keg
 		remove_ideas = ALA_the_trial_riots
 

@@ -1093,6 +1093,12 @@ leader_traits = {
 		stability_factor = -0.05
 		non_core_manpower = -0.1
 	}
+	ALA_alaskan_lenin = {
+		authoritarian_left_drift = 0.05
+		stability_factor = -0.1
+		war_support_factor = 0.1
+		drift_defence_factor = 0.2
+	}
 	ALA_failed_visionary = {
 		republican_drift = 0.05
 		drift_defence_factor = 0.25
