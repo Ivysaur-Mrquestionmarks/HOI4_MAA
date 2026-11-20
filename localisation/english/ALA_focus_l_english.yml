@@ -296,7 +296,104 @@
 
  ALA_enshrine_the_equality_article:0 "The Dorough Constitution"
  ALA_enshrine_the_equality_article_desc:0 " "
+ 
+ # COMMIE TREE #
 
+ ALA_peoples_republic_of_alaska:0 "Alaskan Socialist Republic"
+ ALA_peoples_republic_of_alaska_desc:0 " "
+
+ ALA_communism_on_ice:0 "Communism on Ice"
+ ALA_communism_on_ice_desc:0 " "
+
+ ALA_the_dictatorship_of_the_proletariat:0 "Dictatorship of the Proletariat"
+ ALA_the_dictatorship_of_the_proletariat_desc:0 " "
+
+ ALA_dissolve_the_alaskan_congress:0 "Dissolve the Alaskan Congress"
+ ALA_dissolve_the_alaskan_congress_desc:0 " "
+
+ ALA_crush_the_fifth_columnists:0 "Crush the Fifth Columnists"
+ ALA_crush_the_fifth_columnists_desc:0 " "
+ 
+ ALA_bring_the_natives_into_the_fold:0 "Bring the Natives Into the Fold"
+ ALA_bring_the_natives_into_the_fold_desc:0 " "
+
+ ALA_the_alaskan_lenin:0 "The Alaskan Lenin"
+ ALA_the_alaskan_lenin_desc:0 " "
+
+ ALA_war_communism:0 "War Communism"
+ ALA_war_communism_desc:0 " "
+ 
+ ALA_fight_against_superstition:0 "Fight Against Superstition"
+ ALA_fight_against_superstition_desc:0 " "
+
+ ALA_marxist_education:0 "Marxist Education"
+ ALA_marxist_education_desc:0 " "
+
+ ALA_pattersonist_communist_youth_league:0 "Pattersonist-Communist Youth League"
+ ALA_pattersonist_communist_youth_league_desc:0 " "
+
+ ALA_look_to_the_stars:0 "Look to the Stars"
+ ALA_look_to_the_stars_desc:0 " "
+
+ ALA_no_god_up_here:0 "No God Up Here"
+ ALA_no_god_up_here_desc:0 " "
+
+ ALA_the_nuclear_defense:0 "The Nuclear Defense"
+ ALA_the_nuclear_defense_desc:0 " "
+
+ ALA_open_the_route_to_america:0 "Open the Route to America"
+ ALA_open_the_route_to_america_desc:0 " "
+
+ ALA_guns_tanks_artillery:0 "Alaskan 5 Year Plan"
+ ALA_guns_tanks_artillery_desc:0 " "
+
+ ALA_nationalize_the_inuit_corporations:0 "Nationalize the Inuit Corporations"
+ ALA_nationalize_the_inuit_corporations_desc:0 " "
+
+ ALA_the_peoples_pipeline:0 "The People's Pipeline"
+ ALA_the_peoples_pipeline_desc:0 " "
+
+ ALA_end_fossil_capitalism:0 "End Fossil Capitalism"
+ ALA_end_fossil_capitalism_desc:0 " "
+
+ ALA_collectivize_the_fisheries:0 "Collectivize the Fisheries"
+ ALA_collectivize_the_fisheries_desc:0 " "
+
+ ALA_production_quotas:0 "Production Quotas"
+ ALA_production_quotas_desc:0 " "
+
+ ALA_lift_up_the_inuits:0 "Lift Up the Inuits"
+ ALA_lift_up_the_inuits_desc:0 " "
+
+ ALA_national_inuit_marine_formations:0 "National Inuit Formations"
+ ALA_national_inuit_marine_formations_desc:0 " "
+ 
+ ALA_open_trade_to_china:0 "Open Trade to China"
+ ALA_open_trade_to_china_desc:0 " "
+
+ ALA_the_belt_and_road_across_the_berian_strait:0 "Belt and Road Across the Berian Strait"
+ ALA_the_belt_and_road_across_the_berian_strait_desc:0 " "
+
+ ALA_chinese_tourism:0 "Encourage Chinese Tourism"
+ ALA_chinese_tourism_desc:0 " "
+
+ ALA_chinese_advisors_and_armaments:0 "Sino-Alaskan Pact"
+ ALA_chinese_advisors_and_armaments_desc:0 " "
+ 
+ ALA_denazify_cascadia:0 "Denazify Cascadia"
+ ALA_denazify_cascadia_desc:0 " "
+
+ ALA_liberation_is_at_hand:0 "Liberation Is At Hand"
+ ALA_liberation_is_at_hand_desc:0 " "
+
+ ALA_united_communist_states_of_america:0 "United Socialist States of America"
+ ALA_united_communist_states_of_america_desc:0 " "
+
+ ALA_greater_cascadia:0 "Greater Cascadian Socialist Republic"
+ ALA_greater_cascadia_desc:0 " "
+
+ ALA_tolerate_the_bernieites:0 "Tolerate Bernieite Revisionism"
+ ALA_tolerate_the_bernieites_desc:0 " "
  ### IDEAS ###
  ALA_apf:0 "Alaska Permanent Fund"
  ALA_apf_desc:0 "The Alaska Permanent Fund was created to hold and invest the surplus value created by our Trans-Atlantic Pipeline. While it was temporarily disrupted due to the occupation by the Pacific Fleet, it is now back in effect, giving Alaskans everywhere a yearly stipend of cash."
@@ -407,7 +504,12 @@
  ALA_warrior_spirit_1:0 "Warrior Spirit"
  ALA_warrior_spirit_2:0 "Warrior Spirit"
  ALA_warrior_spirit_3:0 "The Breath of the Inuits"
+ 
+ ALA_tourism_stopped:0 ""
+ ALA_tourism_inuit:0 "Ministry of Inuit Tourism"
 
+ ALA_christian_resistance:0 "Christian Resistance"
+ ALA_dorough_constitution:0 "Dorough Constitution"
  ALA_sednas_gift:0 "Sedna's Gift"
 
   # DECISIONS #
@@ -436,7 +538,16 @@
  ALA_combat_libertarianism:0 "Combat Libertarianism"
  ALA_general_strike:0 "General Strike"
  ALA_organize_natives:0 "Organize Natives"
+ 
+ ALA_fight_christianity:0 "Break the Christian Stranglehold"
 
+ ALA_tear_down_churches:0 "Dismantle Churches"
+
+ ALA_fight_against_american_pedagogy:0 "Fight Against American Pedagogy"
+
+ ALA_council_of_religious_affairs:0 "Council of Christian Affairs"
+
+ ALA_increase_church_taxes:0 "Tax Christian Churches"
 
  # TOOLTIPS #
  
@@ -473,6 +584,7 @@
  ALA_investing_infrastructure:0 "Fixing §YInfrastructure§! in a state"
  ALA_state_fixed:0 "§YInfrastructure Fixed§!"
  ALA_creating_cell:0 "Creating Cell"
+ ALA_anti_christian_measures:0 "Employing Anti-Christian Measures"
  # COMPANIES & MIOS #
 
  ALA_aidea:0 "Alaska Industrial Development and Export Authority"

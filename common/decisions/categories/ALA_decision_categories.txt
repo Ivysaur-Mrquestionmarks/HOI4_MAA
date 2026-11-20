@@ -1,7 +1,7 @@
 ALA_oil_crisis = {
 	icon = generic_propaganda
 	
-	allowed = {
+	visible = {
 		OR = {
 			original_tag = ALA
 		}
@@ -18,7 +18,7 @@ ALA_oil_crisis = {
 }
 ALA_fix_it_felix = {
 	icon = generic_industry
-	allowed = {
+	visible = {
 		OR = {
 			original_tag = ALA
 		}
@@ -28,10 +28,20 @@ ALA_fix_it_felix = {
 ALA_fuck_you_dunleavy_authleft = {
 	icon = SOV_civil_puppet_interaction
 
-	allowed = {
+	visible = {
 		OR = {
 			original_tag = ALA
 		}
 		has_completed_focus = ALA_preparing_the_resistance
+	}
+}
+ALA_fight_christianity = {
+	icon = SOV_civil_puppet_interaction
+
+	visible = {
+		OR = {
+			original_tag = ALA
+		}
+		has_completed_focus = ALA_treacherous_christianity
 	}
 }

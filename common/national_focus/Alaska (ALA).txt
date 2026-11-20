@@ -2191,7 +2191,7 @@
 			focus = ALA_rebuke_the_icc
 		}
 		completion_reward = {
-			
+			add_stability = 0.1
 		}
 	}
 
@@ -2212,7 +2212,11 @@
 			focus = ALA_what_of_the_white_man
 		}
 		completion_reward = {
-			
+			add_popularity = {
+			    ideology = authoritarian_left
+			    popularity = 0.1
+			}
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -2229,7 +2233,10 @@
 			focus = ALA_coexistance_and_cooperation
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_tourism_recession
+				add_idea = ALA_tourism_inuit
+			}
 		}
 	}
 	focus = {
@@ -2246,7 +2253,7 @@
 			focus = ALA_inuit_tourism_ministry
 		}
 		completion_reward = {
-			
+			add_ideas = ALA_dorough_constitution
 		}
 	}
 	focus = {
@@ -2266,7 +2273,15 @@
 			focus = ALA_what_of_the_white_man
 		}
 		completion_reward = {
-			
+			add_popularity = {
+			    ideology = authoritarian_left
+			    popularity = -0.15
+			}
+			set_party_name = {
+			    ideology = authoritarian_left
+			    long_name = "Inuit Vanguard Party"
+			    name = "Inuit Vanguard Party"
+			}
 		}
 	}
 	focus = {
@@ -2283,7 +2298,8 @@
 			focus = ALA_no_forgiveness_for_genocide
 		}
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = ALA_fight_christianity
+			add_ideas = ALA_christian_resistance	
 		}
 	}
 	focus = {
@@ -2300,7 +2316,10 @@
 			focus = ALA_no_forgiveness_for_genocide
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_tourism_recession
+				add_idea = ALA_tourism_stopped
+			}
 		}
 	}
 	focus = {
@@ -2318,7 +2337,7 @@
 			focus = ALA_put_the_final_nail_in_white_tourism
 		}
 		completion_reward = {
-			
+			add_war_support = 0.2
 		}
 	}
 	focus = {
@@ -2335,7 +2354,9 @@
 			focus = ALA_this_land_is_my_land
 		}
 		completion_reward = {
-			
+			2 = {
+				add_manpower = -100000
+			}
 		}
 	}
 	focus = {
@@ -2608,7 +2629,7 @@
 			focus = ALA_strike_the_capital
 		}
 		completion_reward = {
-			
+			add_stability = 0.1
 		}
 	}
 	focus = {

@@ -15,7 +15,7 @@ ALA_oil_crisis = {
 		}
 
 		targets = { HOL FFR ENG}
-
+		#fire_only_once = yes
 		target_trigger = {
 			FROM = {
 				NOT = {
@@ -56,7 +56,7 @@ ALA_oil_crisis = {
 
 		targets = { HOL FFR ENG}
 		cost = 25
-				
+		fire_only_once = yes		
 		days_remove = 70
 
 		modifier = {
@@ -127,7 +127,8 @@ ALA_oil_crisis = {
 			state = 16
 		}
 		cost = 50
-				
+		
+		fire_only_once = yes
 		days_remove = 70
 
 		modifier = {
@@ -203,7 +204,7 @@ ALA_oil_crisis = {
 			state = 2
 		}
 		cost = 50
-				
+		fire_only_once = yes		
 		days_remove = 70
 
 		modifier = {
@@ -280,7 +281,7 @@ ALA_oil_crisis = {
 			state = 14
 		}
 		cost = 100
-				
+		fire_only_once = yes		
 		days_remove = 140
 
 		modifier = {
@@ -356,7 +357,7 @@ ALA_oil_crisis = {
 			state = 11
 		}
 		cost = 100
-				
+		fire_only_once = yes		
 		days_remove = 280
 
 		modifier = {
@@ -430,7 +431,7 @@ ALA_fix_it_felix = {
 		cost = 10
 				
 		days_remove = 100
-
+		fire_only_once = yes
 		modifier = {
 			consumer_goods_factor = 0.2
 		}
@@ -551,10 +552,10 @@ ALA_fix_it_felix = {
 			FROM = {
 				set_state_flag = ALA_state_fixed
 			}
-			set_country_flag = ALA_investing_infrastructure
+			clr_country_flag = ALA_investing_infrastructure
 		}
 		complete_effect = {
-		    
+		    set_country_flag = ALA_investing_infrastructure
 		}
 	}
 }
@@ -777,10 +778,264 @@ ALA_fuck_you_dunleavy_authleft = {
 			    ideology = authoritarian_left
 			    popularity = 0.02
 			}
-
+			clr_country_flag = ALA_creating_cell
 		}
 		complete_effect = {
 		    set_country_flag = ALA_creating_cell
+		}
+	}
+}
+ALA_fight_christianity = {
+	ALA_tear_down_churches = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = ALA_anti_christian_measures
+			}
+		}
+		visible = {
+
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = yes
+
+		modifier = {
+			political_power_factor = -0.10
+		}
+		remove_effect = {
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_3
+				}
+				remove_ideas = ALA_christian_resistance_3
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_2
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance_2
+					add_idea = ALA_christian_resistance_3
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_1
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance_1
+					add_idea = ALA_christian_resistance_2
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance
+					add_idea = ALA_christian_resistance_1
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			clr_country_flag = ALA_anti_christian_measures
+		}
+		complete_effect = {
+		    set_country_flag = ALA_anti_christian_measures
+		}
+	}
+	ALA_fight_against_american_pedagogy = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = ALA_anti_christian_measures
+			}
+		}
+		visible = {
+
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = yes
+
+		modifier = {
+			political_power_factor = 0.2
+			authoritarian_left_drift = 0.05
+		}
+		remove_effect = {
+			add_popularity = {
+			    ideology = authoritarian_left
+			    popularity = 0.02
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_3
+				}
+				remove_ideas = ALA_christian_resistance_3
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_2
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance_2
+					add_idea = ALA_christian_resistance_3
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_1
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance_1
+					add_idea = ALA_christian_resistance_2
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance
+					add_idea = ALA_christian_resistance_1
+				}
+			}
+			clr_country_flag = ALA_anti_christian_measures
+		}
+		complete_effect = {
+		    set_country_flag = ALA_anti_christian_measures
+		}
+	}
+	ALA_increase_church_taxes = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = ALA_anti_christian_measures
+			}
+		}
+		visible = {
+
+		}
+		
+		cost = 50
+		days_remove = 70
+		fire_only_once = yes
+
+		modifier = {
+			consumer_goods_factor = -0.2
+		}
+		remove_effect = {
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_3
+				}
+				remove_ideas = ALA_christian_resistance_3
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_2
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance_2
+					add_idea = ALA_christian_resistance_3
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_1
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance_1
+					add_idea = ALA_christian_resistance_2
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance
+					add_idea = ALA_christian_resistance_1
+				}
+			}
+			clr_country_flag = ALA_anti_christian_measures
+		}
+		complete_effect = {
+		    set_country_flag = ALA_anti_christian_measures
+		}
+	}
+	ALA_council_of_religious_affairs = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = ALA_anti_christian_measures
+			}
+		}
+		visible = {
+
+		}
+		
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_3
+				}
+				remove_ideas = ALA_christian_resistance_3
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_2
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance_2
+					add_idea = ALA_christian_resistance_3
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance_1
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance_1
+					add_idea = ALA_christian_resistance_2
+				}
+			}
+			IF = {
+				LIMIT = {
+					has_idea = ALA_christian_resistance
+				}
+				swap_ideas = {
+					remove_idea = ALA_christian_resistance
+					add_idea = ALA_christian_resistance_1
+				}
+			}
 		}
 	}
 }
