@@ -488,6 +488,19 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = alaska_commie.2
+	title = alaska_commie.2.t
+	desc = alaska_commie.2.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_commie.2.a
+		
+		add_political_power = 25
+	}
+}
 # NATIVE COMMIE EVENTS #
 
 add_namespace = alaska_nativecommie
@@ -629,6 +642,21 @@ country_event = { # Nunavut says no
 			type = annex_everything
 			target = NUN
 		}
+		
+	}
+}
+country_event = { # Nunavut says no
+	id = alaska_nativecommie.8
+	title = alaska_nativecommie.8.t
+	desc = alaska_nativecommie.8.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_nativecommie.8.a
+		
+		add_stability = 0.2
+		add_political_power = 200
 		
 	}
 }

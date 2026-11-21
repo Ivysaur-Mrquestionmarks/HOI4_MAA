@@ -564,6 +564,21 @@ ideas = {
 				authoritarian_left_drift = 0.15
 			}
 		}
+		ALA_spectre_over_the_arctic_3 = {
+			picture = ALA_tourism_recession
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.2
+				party_popularity_stability_factor = 0.1
+				industrial_capacity_factory = 0.2
+				consumer_goods_factor = 0.1
+				offensive_war_stability_factor = 0.2
+				compliance_growth = 0.2
+				acclimatization_cold_climate_gain_factor = 0.15
+
+				authoritarian_left_drift = 0.15
+			}
+		}
 		ALA_autonomous_boroughs = {
 			picture = ALA_tourism_recession
 			modifier = {
@@ -619,6 +634,49 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.1
 				fuel_gain_factor = 0.2
+			}
+		}
+		ALA_against_superstition = {
+			picture = ALA_tourism_recession
+			modifier = {
+				political_power_factor = -0.1
+				research_speed_factor = 0.1
+			}
+		}
+		ALA_against_superstition_1 = {
+			picture = ALA_tourism_recession
+			modifier = {
+				political_power_factor = -0.1
+				research_speed_factor = 0.15
+				drift_defence_factor = 0.1
+				authoritarian_left_drift = 0.05
+			}
+		}
+		ALA_production_quota_system = {
+			picture = ALA_tourism_recession
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = -0.08
+				production_factory_max_efficiency_factor = -0.05 
+				consumer_goods_factor = 0.08
+			}
+		}
+		ALA_pattersonist_youth_league = {
+			picture = ALA_tourism_recession
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		ALA_we_will_bury_you = {
+			picture = ALA_tourism_recession
+			modifier = {
+				weekly_manpower = 1000
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				industrial_capacity_factory = 0.25
+				consumer_goods_factor = -0.3
+				army_speed_factor = 0.1
+				authoritarian_left_drift = 0.2
 			}
 		}
 	}

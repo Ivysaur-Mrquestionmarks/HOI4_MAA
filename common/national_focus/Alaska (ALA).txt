@@ -3,7 +3,7 @@
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 100
 			tag = ALA
 		}
 	}
@@ -1491,6 +1491,7 @@
 			focus = ALA_a_miscarriage_of_justice
 		}
 		completion_reward = {
+			country_event = alaska_commie.2
 			add_popularity = {
 			    ideology = authoritarian_left
 			    popularity = 0.1
@@ -2724,7 +2725,23 @@
 			focus = ALA_collectivize_the_fisheries
 		}
 		completion_reward = {
-			
+			random_core_state = {
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_core_state = {
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_ideas = ALA_production_quota_system
 		}
 	}
 	focus = {
@@ -2780,6 +2797,8 @@
 				    amount = -50
 				}
 			}
+			add_stability = 0.2
+			add_political_power = 200
 		}
 	}
 	focus = {
@@ -2939,7 +2958,7 @@
 			focus = ALA_the_dictatorship_of_the_proletariat
 		}
 		completion_reward = {
-			
+			add_ideas = ALA_against_superstition
 		}
 	}
 	focus = {
@@ -2994,7 +3013,11 @@
 			focus = ALA_fight_against_superstition
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_against_superstition
+				add_idea = ALA_against_superstition_1
+			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -3011,7 +3034,7 @@
 			focus = ALA_marxist_education
 		}
 		completion_reward = {
-			
+			add_ideas = ALA_pattersonist_youth_league
 		}
 	}
 	focus = {
@@ -3120,6 +3143,8 @@
 			focus = ALA_the_alaskan_lenin
 		}
 		completion_reward = {
+			army_experience = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = ALA_spectre_over_the_arctic_1
 				add_idea = ALA_spectre_over_the_arctic_2
@@ -3184,6 +3209,10 @@
 				type = annex_everything
 				target = CAS
 			}
+			create_wargoal = {
+				type = annex_everything
+				target = LIB
+			}
 		}
 	}
 	focus = {
@@ -3203,6 +3232,7 @@
 			focus = ALA_liberation_is_at_hand
 		}
 		completion_reward = {
+			set_cosmetic_tag = ALA_communist_cascadia
 			every_state = {
 				limit = {
 					OR = {
@@ -3249,7 +3279,33 @@
 			focus = ALA_greater_cascadia
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ALA_spectre_over_the_arctic_2
+				add_idea = ALA_spectre_over_the_arctic_3
+			}
+			add_timed_idea = {
+				idea = ALA_we_will_bury_you
+				days = 720
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_state = {
+				limit = {
+					has_state_flag = part_of_america
+				}
+				add_claim_by = ALA
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_country = {
+				limit = {
+					any_owned_state = {
+						has_state_flag = part_of_america
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+				}
+			}
 		}
 	}
 	focus = {
@@ -3266,7 +3322,12 @@
 			focus = ALA_liberation_is_at_hand
 		}
 		completion_reward = {
-			
+			every_state = {
+				limit = {
+					has_state_flag = part_of_america
+				}
+				add_core_of = ALA
+			}
 		}
 	}
 	focus = {
@@ -3339,6 +3400,11 @@
 			    support = {
 			        engineer = { x = 0 y = 0 }
 			    }
+			}
+			add_tech_bonus = {
+			    bonus = 2
+			    uses = 1
+			    category = marine_tech
 			}
 			96 = {
 				create_unit = {

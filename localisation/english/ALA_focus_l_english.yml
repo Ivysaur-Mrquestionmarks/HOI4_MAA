@@ -359,7 +359,7 @@
  ALA_collectivize_the_fisheries:0 "Collectivize the Fisheries"
  ALA_collectivize_the_fisheries_desc:0 " "
 
- ALA_production_quotas:0 "Production Quotas"
+ ALA_production_quotas:0 "Planning the Alaskan Economy"
  ALA_production_quotas_desc:0 " "
 
  ALA_lift_up_the_inuits:0 "Lift Up the Inuits"
@@ -505,7 +505,7 @@
  ALA_warrior_spirit_2:0 "Warrior Spirit"
  ALA_warrior_spirit_3:0 "The Breath of the Inuits"
  
- ALA_tourism_stopped:0 ""
+ ALA_tourism_stopped:0 "Safeguarding the Culture"
  ALA_tourism_inuit:0 "Ministry of Inuit Tourism"
 
  ALA_christian_resistance:0 "Christian Resistance"
@@ -517,7 +517,8 @@
  ALA_spectre_over_the_arctic:0 "Spectre Over The Arctic"
  ALA_spectre_over_the_arctic_1:0 "Spectre Over The Arctic"
  ALA_spectre_over_the_arctic_2:0 "Spectre Over The Arctic"
-
+ ALA_spectre_over_the_arctic_3:0 "Spectre Over America"
+ 
  ALA_autonomous_boroughs:0 "Autonomous Boroughs"
  ALA_autonomous_boroughs_1:0 "Autonomous Boroughs"
  
@@ -528,6 +529,15 @@
  ALA_chinese_advisors:0 "Chinese Advisors"
 
  ALA_peoples_pipeline:0 "People's Pipeline"
+ 
+ ALA_against_superstition:0 "Against Superstition"
+ ALA_against_superstition_1:0 "Against Superstition"
+
+ ALA_pattersonist_youth_league:0 "Pattersonist Youth League"
+
+ ALA_production_quota_system:0 "Command Economy"
+ 
+ ALA_we_will_bury_you:0 "We Will Bury You!"
  # DECISIONS #
 
  ALA_oil_crisis:0 "The Oil Crisis"
@@ -547,7 +557,7 @@
  ALA_fuck_you_dunleavy_authleft:0 "The Leftist Struggle"
 
  ALA_infrastructure_revolution:0 "§GInfrastructural Revolution§!"
-
+ 
  ALA_entrench_commie_cells:0 "Entrench Cells in [FROM.GetName]"
  ALA_procure_support_from_china:0 "Procure Support From China"
  ALA_open_up_the_tent:0 "Open Up The Tent"
@@ -709,19 +719,23 @@
  alaska_apf.1.e:0 "Use increased energy revenues to increase APF payments"
  
  alaska_commie.1.t:0 "The CPA Marches on Anchorage!"
- alaska_commie.1.d:0 ""
+ alaska_commie.1.d:0 "Just a couple days ago, Dunleavy, and whatever remained of his administration, fled Alaska. This was obviously in anticipation to security reports of an impending coup by the Communist Party of Alaska. Facing zero resistance, the CPA held a performative march on Anchorage with Patterson leading the group to storm the governor's mansion. It seems like the revolution has been completed in rather anticlimatic fashion, much to dismay of moderates and libertarians."
  alaska_commie.1.a:0 "Unfurl the red flags!"
  
+ alaska_commie.2.t:0 "Patterson Addresses the Crowd"
+ alaska_commie.2.d:0 "A crowd gathered around the makeshift podium that Patterson and his Communist Party of Alaska had erected. Patterson looked around him, shocked with the amount of Alaskans had turned up but not shocked at the heavy police presence. Some in the crowd had a weary look about them, no doubt many of them tired from a long journey from the boroughs to meet Patterson in Anchorage, but they still beamed with energy.\n\n"Capitalism has failed Alaska, and of course it did. Capitalism is not a system for the benefit of the working class, but of the bourgeoisie who exploit us all," Patterson said. "Dunleavy is but a symptom of the problem, a spineless politician at the behest of the wealthy-"\n\nThe crowd interrupted with chants of "Down with Dunleavy!" People were beginning to get riled up.\n\n"Dunleavy is a coward of course, but if he had the fraction of the courage of the Alaskan proletariat, they would discard him and replace him with another snake. That is why the time is now for us to throw off our chains! We will rip Alaska from the jaws of the capitalists! The time of despair is over, the time for action is now!"\n\nThe crowd burst into cheers and a frenzy. Some even taunting the police keeping watch over the rally. Apparently Dunleavy had been hesistant in taking action against Patterson, out of fear that it would just bolster sympathy for him. However, it is beginning to look like his inaction is now becoming is undoing."
+ alaska_commie.2.a:0 "An agent of history, come to save Alaska from capitalism!"
+
  alaska_nativecommie.1.t:0 "Power Struggle in the Committee"
- alaska_nativecommie.1.d:0 ""
+ alaska_nativecommie.1.d:0 "The committee established by the Communist Party of Alaska after their successful coup has under gone quite the power struggle. While originally created so that Dorough and Patterson could share power and draft a constitution suitable to everyone, Inuits included, it seems like Dorough has other plans. Using the political capital gained from supporting the revolution, Dorough has begun rallying support and influence amongst CPA members."
  alaska_nativecommie.1.a:0 "Wait this wasn't supposed to happen!"
 
  alaska_nativecommie.2.t:0 "Support Behind Patterson Collapses"
- alaska_nativecommie.2.d:0 ""
+ alaska_nativecommie.2.d:0 "The power struggle has led to quite a black eye for Patterson, as once close allies abandon him for Dorough. The unexpected nature of Dorough's political maneuvering has paralyzed Patterson, and with little recourse he can turn to, it seems like his authority is rapidly dwindling. Inuit communities have shown up in full force for Dorough as well, with Anchorage workers wondering why they should support Patterson. After all, wasn't this more of an Inuit revolution than a worker one?"
  alaska_nativecommie.2.a:0 "Is it the end of the Alaskan Lenin already?"
 
  alaska_nativecommie.3.t:0 "Dorough Reigns Supreme as Chairwoman"
- alaska_nativecommie.3.d:0 ""
+ alaska_nativecommie.3.d:0 "Patterson has relinquished power to Dorough, and has instead been demoted to a powerless member of the Central Committee. From chair of the ICC to chair of Alaska has been quite a jump for Dorough, and with her now controlling the fates of hundreds of thousands of Alaskans, Inuit or otherwise. While the struggle has led to a general souring among public opinion, Dorough has promised to continue the promises of Patterson. Although no one can tell if she means for only the Inuits or for all of Alaska."
  alaska_nativecommie.3.a:0 "The Inuit people have stood up!"
  
  alaska_nativecommie.4.t:0 "The Liberation Speech"
@@ -740,6 +754,10 @@
  alaska_nativecommie.7.t:0 "Nunavut Rejects Unification"
  alaska_nativecommie.7.d:0 ""
  alaska_nativecommie.7.a:0 "It didn't have to come to this"
+ 
+ alaska_nativecommie.8.t:0 "Christian Resistance Shatters!"
+ alaska_nativecommie.8.d:0 ""
+ alaska_nativecommie.8.a:0 "Colonial religion has no place here"
 
  alaska_lolbert.1.t:0 "The FP Marches on Anchorage!"
  alaska_lolbert.d:0 ""

@@ -33,6 +33,9 @@ ALA_fuck_you_dunleavy_authleft = {
 			original_tag = ALA
 		}
 		has_completed_focus = ALA_preparing_the_resistance
+		NOT = {
+			has_completed_focus = ALA_strike_the_capital
+		}
 	}
 }
 ALA_fight_christianity = {
@@ -43,5 +46,11 @@ ALA_fight_christianity = {
 			original_tag = ALA
 		}
 		has_completed_focus = ALA_treacherous_christianity
+		OR = {
+			has_idea = ALA_christian_resistance
+			has_idea = ALA_christian_resistance_1
+			has_idea = ALA_christian_resistance_2
+			has_idea = ALA_christian_resistance_3
+		}
 	}
 }
