@@ -4125,12 +4125,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SIN_send_them_back_to_jail
 		}
+		mutually_exclusive = {
+			focus = SIN_npa_coup
+		}
 	}
 
 	focus = {
 		id = SIN_green_party_victory
 		icon = TODO
-		x = 9
+		x = 13
 		y = 14
 
 		cost = 5
@@ -4162,7 +4165,7 @@ focus_tree = {
 	focus = {
 		id = SIN_libertarian_party_victory
 		icon = TODO
-		x = 13
+		x = 17
 		y = 14
 
 		cost = 5
@@ -4194,7 +4197,7 @@ focus_tree = {
 	focus = {
 		id = SIN_democrat_party_victory
 		icon = TODO
-		x = 17
+		x = 9
 		y = 14
 
 		cost = 5
@@ -4254,6 +4257,1846 @@ focus_tree = {
 			focus = SIN_green_party_victory
 		}
 	}
+
+	focus = {
+		id = SIN_join_fra
+		icon = TODO
+		x = 9
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_democrat_party_victory
+		}
+	}
+
+	focus = {
+		id = SIN_join_gla
+		icon = TODO
+		x = 17
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_libertarian_party_victory
+		}
+	}
+
+	focus = {
+		id = SIN_join_pra
+		icon = TODO
+		x = 13
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_green_party_victory
+		}
+	}
+
+	focus = {
+		id = SIN_join_usa
+		icon = TODO
+		x = 21
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_republican_party_victory
+		}
+		mutually_exclusive = {
+			focus = SIN_fuck_them_magats
+		}
+	}
+
+	focus = {
+		id = SIN_fuck_them_magats
+		icon = TODO
+		x = 24
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_republican_party_victory
+		}
+		mutually_exclusive = {
+			focus = SIN_join_usa
+		}
+	}
+
+	focus = {
+		id = SIN_regulated_capitalism
+		icon = TODO
+		x = 7
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_join_fra
+		}
+	}
+
+	focus = {
+		id = SIN_strengthen_social_security
+		icon = TODO
+		x = 9
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_join_fra
+		}
+	}
+
+	focus = {
+		id = SIN_abortion_rights
+		icon = TODO
+		x = 11
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_join_fra
+			focus = SIN_join_pra
+		}
+	}
+
+	focus = {
+		id = SIN_carbon_tax
+		icon = TODO
+		x = 13
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_join_pra
+		}
+	}
+
+	focus = {
+		id = SIN_legalize_all_drugs
+		icon = TODO
+		x = 15
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_join_pra
+			focus = SIN_join_gla
+		}
+	}
+
+	focus = {
+		id = SIN_kill_food_stamps
+		icon = TODO
+		x = 17
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_join_gla
+		}
+	}
+
+	focus = {
+		id = SIN_the_right_to_carry
+		icon = TODO
+		x = 19
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_join_gla
+			focus = SIN_join_usa
+			focus = SIN_fuck_them_magats
+		}
+	}
+
+	focus = {
+		id = SIN_crackdown_on_abortion
+		icon = TODO
+		x = 21
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_join_usa
+			focus = SIN_fuck_them_magats
+		}
+	}
+
+	focus = {
+		id = SIN_abolish_dei
+		icon = TODO
+		x = 23
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_join_usa
+			focus = SIN_fuck_them_magats
+		}
+	}
+
+	focus = {
+		id = SIN_fight_economic_inequality
+		icon = TODO
+		x = 7
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_regulated_capitalism
+		}
+		prerequisite = {
+			focus = SIN_strengthen_social_security
+		}
+		prerequisite = {
+			focus = SIN_abortion_rights
+		}
+	}
+
+	focus = {
+		id = SIN_pathway_to_citizenship
+		icon = TODO
+		x = 9
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_regulated_capitalism
+		}
+		prerequisite = {
+			focus = SIN_strengthen_social_security
+		}
+		prerequisite = {
+			focus = SIN_abortion_rights
+		}
+	}
+
+	focus = {
+		id = SIN_increase_public_spending
+		icon = TODO
+		x = 11
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_regulated_capitalism
+			focus = SIN_carbon_tax
+		}
+		prerequisite = {
+			focus = SIN_strengthen_social_security
+			focus = SIN_legalize_all_drugs
+		}
+		prerequisite = {
+			focus = SIN_abortion_rights
+		}
+	}
+
+	focus = {
+		id = SIN_free_college
+		icon = TODO
+		x = 13
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_carbon_tax
+		}
+		prerequisite = {
+			focus = SIN_legalize_all_drugs
+		}
+		prerequisite = {
+			focus = SIN_abortion_rights
+		}
+	}
+
+	focus = {
+		id = SIN_lgbt_rights
+		icon = TODO
+		x = 15
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_carbon_tax
+			focus = SIN_kill_food_stamps
+		}
+		prerequisite = {
+			focus = SIN_legalize_all_drugs
+		}
+		prerequisite = {
+			focus = SIN_abortion_rights
+			focus = SIN_the_right_to_carry
+		}
+	}
+
+	focus = {
+		id = SIN_laissez_faire
+		icon = TODO
+		x = 17
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_kill_food_stamps
+		}
+		prerequisite = {
+			focus = SIN_legalize_all_drugs
+		}
+		prerequisite = {
+			focus = SIN_the_right_to_carry
+		}
+	}
+
+	focus = {
+		id = SIN_decrease_public_spending
+		icon = TODO
+		x = 19
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_kill_food_stamps
+			focus = SIN_abolish_dei
+		}
+		prerequisite = {
+			focus = SIN_legalize_all_drugs
+			focus = SIN_crackdown_on_abortion
+		}
+		prerequisite = {
+			focus = SIN_the_right_to_carry
+		}
+	}
+
+	focus = {
+		id = SIN_deport_illegals
+		icon = TODO
+		x = 21
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_abolish_dei
+		}
+		prerequisite = {
+			focus = SIN_crackdown_on_abortion
+		}
+		prerequisite = {
+			focus = SIN_the_right_to_carry
+		}
+	}
+
+	focus = {
+		id = SIN_unleash_coloradan_energy
+		icon = TODO
+		x = 23
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_abolish_dei
+		}
+		prerequisite = {
+			focus = SIN_crackdown_on_abortion
+		}
+		prerequisite = {
+			focus = SIN_the_right_to_carry
+		}
+	}
+
+	focus = {
+		id = SIN_ridin_with_biden
+		icon = TODO
+		x = 9
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_fight_economic_inequality
+		}
+		prerequisite = {
+			focus = SIN_pathway_to_citizenship
+		}
+		prerequisite = {
+			focus = SIN_increase_public_spending
+		}
+	}
+
+	focus = {
+		id = SIN_green_leadership
+		icon = TODO
+		x = 12
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_free_college
+		}
+		prerequisite = {
+			focus = SIN_lgbt_rights
+		}
+		prerequisite = {
+			focus = SIN_increase_public_spending
+		}
+		mutually_exclusive = {
+			focus = SIN_dsa_leadership
+		}
+	}
+
+	focus = {
+		id = SIN_dsa_leadership
+		icon = TODO
+		x = 14
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_free_college
+		}
+		prerequisite = {
+			focus = SIN_lgbt_rights
+		}
+		prerequisite = {
+			focus = SIN_increase_public_spending
+		}
+		mutually_exclusive = {
+			focus = SIN_green_leadership
+		}
+	}
+
+	focus = {
+		id = SIN_libertarian_paradise
+		icon = TODO
+		x = 17
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_laissez_faire
+		}
+		prerequisite = {
+			focus = SIN_lgbt_rights
+		}
+		prerequisite = {
+			focus = SIN_decrease_public_spending
+		}
+	}
+
+	focus = {
+		id = SIN_a_conservative_mountain
+		icon = TODO
+		x = 21
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_unleash_coloradan_energy
+		}
+		prerequisite = {
+			focus = SIN_deport_illegals
+		}
+		prerequisite = {
+			focus = SIN_decrease_public_spending
+		}
+	}
+
+	focus = {
+		id = SIN_reconquer_colorado
+		icon = TODO
+		x = 13
+		y = 19
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_ridin_with_biden
+			focus = SIN_green_leadership
+			focus = SIN_dsa_leadership
+			focus = SIN_libertarian_paradise
+		}
+	}
+
+	focus = {
+		id = SIN_request_coloradan_territory
+		icon = TODO
+		x = 21
+		y = 19
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_a_conservative_mountain
+		}
+	}
+
+	focus = {
+		id = SIN_long_live_the_constitution_party
+		icon = TODO
+		x = 24
+		y = 19
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_a_conservative_mountain
+		}
+		prerequisite = {
+			focus = SIN_fuck_them_magats
+		}
+	}
+
+	focus = {
+		id = SIN_unite_the_rockies
+		icon = TODO
+		x = 17
+		y = 20
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_reconquer_colorado
+			focus = SIN_request_coloradan_territory
+		}
+	}
+
+	focus = {
+		id = SIN_annexation
+		icon = TODO
+		x = 16
+		y = 21
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_unite_the_rockies
+		}
+		mutually_exclusive = {
+			focus = SIN_a_valuable_partner
+		}
+	}
+
+	focus = {
+		id = SIN_a_valuable_partner
+		icon = TODO
+		x = 18
+		y = 21
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_unite_the_rockies
+		}
+		mutually_exclusive = {
+			focus = SIN_annexation
+		}
+	}
+
+	focus = {
+		id = SIN_absorb_the_republican_party
+		icon = TODO
+		x = 24
+		y = 20
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_long_live_the_constitution_party
+		}
+	}
+
+	focus = {
+		id = SIN_a_true_conservative_america
+		icon = TODO
+		x = 24
+		y = 21
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_absorb_the_republican_party
+		}
+		prerequisite = {
+			focus = SIN_invade_fra
+		}
+	}
+
+	##    ## ########     ###     #######  
+	###   ## ##     ##   ## ##   ##     ## 
+	####  ## ##     ##  ##   ##         ## 
+	## ## ## ########  ##     ##  #######  
+	##  #### ##        ######### ##        
+	##   ### ##        ##     ## ##        
+	##    ## ##        ##     ## ######### 
+
+	focus = {
+		id = SIN_npa_coup
+		icon = TODO
+		x = 33
+		y = 13
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_send_them_back_to_jail
+		}
+		mutually_exclusive = {
+			focus = SIN_elections
+		}
+	}
+
+	focus = {
+		id = SIN_colorado_spring
+		icon = TODO
+		x = 32
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_npa_coup
+		}
+	}
+
+	focus = {
+		id = SIN_remember_2012
+		icon = TODO
+		x = 34
+		y = 14
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_npa_coup
+		}
+	}
+
+	focus = {
+		id = SIN_spies_in_denver
+		icon = TODO
+		x = 31
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_colorado_spring
+		}
+	}
+
+	focus = {
+		id = SIN_remake_the_ticket
+		icon = TODO
+		x = 35
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_remember_2012
+		}
+	}
+
+	focus = {
+		id = SIN_reach_out_to_old_npa
+		icon = TODO
+		x = 33
+		y = 15
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_colorado_spring
+		}
+		prerequisite = {
+			focus = SIN_remember_2012
+		}
+	}
+
+	focus = {
+		id = SIN_military_build_up
+		icon = TODO
+		x = 33
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_reach_out_to_old_npa
+		}
+	}
+
+	focus = {
+		id = SIN_a_new_political_class
+		icon = TODO
+		x = 33
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_military_build_up
+		}
+	}
+
+	focus = {
+		id = SIN_the_lincoln_project
+		icon = TODO
+		x = 33
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_a_new_political_class
+		}
+	}
+
+	focus = {
+		id = SIN_mission_complete
+		icon = TODO
+		x = 32
+		y = 19
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_the_lincoln_project
+		}
+	}
+
+	focus = {
+		id = SIN_purge_maga
+		icon = TODO
+		x = 34
+		y = 19
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_the_lincoln_project
+		}
+	}
+
+	focus = {
+		id = SIN_trump_trial
+		icon = TODO
+		x = 33
+		y = 20
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_mission_complete
+		}
+		prerequisite = {
+			focus = SIN_purge_maga
+		}
+	}
+
+	focus = {
+		id = SIN_long_live_the_new_order
+		icon = TODO
+		x = 32
+		y = 21
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_trump_trial
+		}
+		prerequisite = {
+			focus = SIN_invade_fra
+		}
+		mutually_exclusive = {
+			focus = SIN_back_democracy
+		}
+	}
+	
+	focus = {
+		id = SIN_back_democracy
+		icon = TODO
+		x = 34
+		y = 21
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_trump_trial
+		}
+		prerequisite = {
+			focus = SIN_invade_fra
+		}
+		mutually_exclusive = {
+			focus = SIN_long_live_the_new_order
+		}
+	}
+
+	focus = {
+		id = SIN_invade_north
+		icon = TODO
+		x = 27
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_fuck_them_magats
+			focus = SIN_spies_in_denver
+		}
+	}
+
+	focus = {
+		id = SIN_invade_mol_afo_las
+		icon = TODO
+		x = 29
+		y = 16
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_fuck_them_magats
+			focus = SIN_spies_in_denver
+		}
+	}
+
+	focus = {
+		id = SIN_invade_usa
+		icon = TODO
+		x = 28
+		y = 17
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_invade_north
+		}
+		prerequisite = {
+			focus = SIN_invade_mol_afo_las
+		}
+	}
+
+	focus = {
+		id = SIN_infiltrate_indianopolis
+		icon = TODO
+		x = 26
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_invade_usa
+		}
+	}
+
+	focus = {
+		id = SIN_march_harder
+		icon = TODO
+		x = 30
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_invade_usa
+		}
+	}
+
+	focus = {
+		id = SIN_to_unite_america
+		icon = TODO
+		x = 28
+		y = 18
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_invade_usa
+		}
+	}
+
+	focus = {
+		id = SIN_invade_west_coast
+		icon = TODO
+		x = 26
+		y = 19
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_to_unite_america
+		}
+	}
+
+	focus = {
+		id = SIN_invade_great_lakes
+		icon = TODO
+		x = 28
+		y = 19
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_to_unite_america
+		}
+	}
+
+	focus = {
+		id = SIN_invade_texas
+		icon = TODO
+		x = 30
+		y = 19
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_to_unite_america
+		}
+	}
+
+	focus = {
+		id = SIN_invade_fra
+		icon = TODO
+		x = 28
+		y = 20
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_invade_great_lakes
+		}
+	}
+
+	focus = {
+		id = SIN_invade_dixie
+		icon = TODO
+		x = 30
+		y = 20
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_invade_texas
+		}
+	}
+
+	focus = {
+		id = SIN_mop_up_remains
+		icon = TODO
+		x = 26
+		y = 20
+
+		cost = 5
+		ai_will_do = {
+			
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+		}
+		prerequisite = {
+			focus = SIN_invade_texas
+		}
+		prerequisite = {
+			focus = SIN_invade_west_coast
+		}
+		prerequisite = {
+			focus = SIN_invade_great_lakes
+		}
+	}
+
+
 
 
 
