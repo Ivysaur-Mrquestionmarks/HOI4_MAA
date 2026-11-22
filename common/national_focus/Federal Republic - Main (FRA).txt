@@ -2570,7 +2570,6 @@ focus_tree = {
 	}
 	
 	####### Progressive Administration #######
-	
 	focus = {
 		id = FRA_first_progressive_admin
 		icon = GFX_goal_FRA_first_progressive_administration
@@ -9885,6 +9884,187 @@ focus_tree = {
 		relative_position_id = FRA_rig_the_elections
 		completion_reward = {
 		}
+	}
+	
+	
+	
+	### Reworks
+	
+	
+	### Progressive President AOC
+	
+	focus = {
+		id = FRA_first_progressive_admin_rework
+		icon = GFX_goal_FRA_first_progressive_administration
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cost = 4.00
+		prerequisite = {
+			#focus = FRA_biden_admin
+		}
+		#x = 19
+		x = 95
+		y = 10
+		allow_branch = { has_country_flag = progressive_president }
+		available = { has_country_flag = progressive_president }
+		relative_position_id = FRA_biden_admin
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+
+	}
+	
+	focus = {
+		id = FRA_facing_reality #need to create a coalition in congress to work out shit
+		icon = GFX_goal_FRA_first_progressive_administration
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_first_progressive_admin_rework
+		}
+		x = 0
+		y = 1
+		relative_position_id = FRA_first_progressive_admin_rework
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = FRA_the_dems
+		icon = GFX_goal_FRA_first_progressive_administration
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_facing_reality
+		}
+		x = 2
+		y = 1
+		relative_position_id = FRA_facing_reality
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = FRA_the_progressives
+		icon = GFX_goal_FRA_first_progressive_administration
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_facing_reality
+		}
+		x = 0
+		y = 1
+		relative_position_id = FRA_facing_reality
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = FRA_the_dsa
+		icon = GFX_goal_FRA_first_progressive_administration
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_facing_reality
+		}
+		x = -2
+		y = 1
+		relative_position_id = FRA_facing_reality
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = FRA_statehood_for_dc
+		icon = GFX_goal_FRA_first_progressive_administration
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_the_progressives
+		}
+		prerequisite = {
+			focus = FRA_the_dems
+		}
+		prerequisite = {
+			focus = FRA_the_dsa
+		}
+		x = -1
+		y = 1
+		relative_position_id = FRA_the_progressives
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = FRA_fill_empty_supreme_court_seats
+		icon = GFX_goal_FRA_first_progressive_administration
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_the_progressives
+		}
+		prerequisite = {
+			focus = FRA_the_dems
+		}
+		prerequisite = {
+			focus = FRA_the_dsa
+		}
+		x = 1
+		y = 1
+		relative_position_id = FRA_the_progressives
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = FRA_pass_the_budget_for_the_year
+		icon = GFX_goal_FRA_first_progressive_administration
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cost = 15.00
+		prerequisite = {
+			focus = FRA_fill_empty_supreme_court_seats
+		}
+		prerequisite = {
+			focus = FRA_statehood_for_dc
+		}
+		x = 0
+		y = 2
+		relative_position_id = FRA_the_progressives
+		completion_reward = {
+		}
+
+	}
+	
+	focus = {
+		id = FRA_authorize_emergency_powers
+		icon = GFX_goal_FRA_first_progressive_administration
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cost = 0.00
+		prerequisite = {
+			#focus = FRA_pass_the_budget_for_the_year
+		}
+		x = 0
+		y = 2
+		relative_position_id = FRA_pass_the_budget_for_the_year
+		available = { always = no }
+		allow_branch = { has_country_flag = progressive_president }
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = FRA_temp_replace_congress_with_council
+		icon = GFX_goal_FRA_first_progressive_administration
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_authorize_emergency_powers
+		}
+		x = 0
+		y = 1
+		relative_position_id = FRA_authorize_emergency_powers
+		completion_reward = {
+		}
+
 	}
 }
 

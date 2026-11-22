@@ -1,6 +1,7 @@
 add_namespace = biden
 add_namespace = federal_republic
 add_namespace = bidone
+add_namespace = biden_debug
 
 #Biden retires/dies
 country_event = {
@@ -4409,5 +4410,36 @@ country_event = {
 			    elections_allowed = yes
 			}
 		}
+	}
+}
+
+
+# election
+country_event = {
+	id = biden_debug.1
+	title = biden_debug.1.t
+	desc = biden_debug.1.d
+	#picture =
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = { # progress
+		name = bidone_pathguides.1.a
+		set_country_flag = progressive_president
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = { # obama
+		name = bidone_pathguides.1.a
+		set_country_flag = president_obama
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = { # obama
+		name = bidone_pathguides.1.a
+		set_country_flag = president_kamala
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = { # obama
+		name = bidone_pathguides.1.a
+		set_country_flag = president_mcconnell
+		mark_focus_tree_layout_dirty = yes
 	}
 }

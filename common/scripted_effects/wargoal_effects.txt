@@ -83,6 +83,14 @@ RVR_kill_the_CSA = {
 		}
 	}
 }
+### CSA Collapse cores
+effect_core_the_csa = {
+	###custom_effect_tooltip = Wargoal_on_All_Confederates
+	for_each_scope_loop = {
+    	array = global.south_collapse
+		every_core_state = { add_core_of = ROOT }
+	}
+}
 
 
 
