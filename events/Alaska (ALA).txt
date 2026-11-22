@@ -645,7 +645,7 @@ country_event = { # Nunavut says no
 		
 	}
 }
-country_event = { # Nunavut says no
+country_event = { # Christian resistance shatters
 	id = alaska_nativecommie.8
 	title = alaska_nativecommie.8.t
 	desc = alaska_nativecommie.8.d
@@ -654,7 +654,7 @@ country_event = { # Nunavut says no
 	fire_only_once = yes
 	option = {
 		name = alaska_nativecommie.8.a
-		
+		add_ideas = ALA_victory_against_christianity
 		add_stability = 0.2
 		add_political_power = 200
 		

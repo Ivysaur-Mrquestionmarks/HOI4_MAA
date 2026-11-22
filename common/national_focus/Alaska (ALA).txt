@@ -2465,6 +2465,16 @@
 		ai_will_do = { 
 			factor = 300
 		}
+		bypass = {
+			AND = {
+				VAN = {
+					exists = no
+				}
+				BRC = {
+					exists = no
+				}
+			}
+		}
 		prerequisite = {
 			focus = ALA_prepare_canadian_liberation
 		}
@@ -2489,6 +2499,21 @@
 		ai_will_do = { 
 			factor = 300
 		}
+		bypass = {
+			WPC = {
+				exists = no
+			}
+		}
+		available = {
+			AND = {
+				VAN = {
+					exists = no
+				}
+				BRC = {
+					exists = no
+				}
+			}
+		}
 		prerequisite = {
 			focus = ALA_wakashan_campaign
 		}
@@ -2512,6 +2537,16 @@
 		ai_will_do = { 
 			factor = 300
 		}
+		bypass = {
+			NUN = {
+				exists = no
+			}
+		}
+		available = {
+			WPC = {
+				exists = no
+			}
+		}
 		prerequisite = {
 			focus = ALA_great_plains_offensive
 		}
@@ -2533,6 +2568,27 @@
 		relative_position_id = ALA_nunavut_unification
 		ai_will_do = { 
 			factor = 300
+		}
+		bypass = {
+			AND = {
+				ONT = {
+					exists = no
+				}
+				CAN = {
+					exists = no
+				}
+				QUE = {
+					exists = no
+				}
+				MRT = {
+					exists = no
+				}
+			}
+		}
+		available = {
+			NUN = {
+				exists = no
+			}
 		}
 		prerequisite = {
 			focus = ALA_nunavut_unification
@@ -2565,6 +2621,22 @@
 		relative_position_id = ALA_end_the_canadian_experiment
 		ai_will_do = { 
 			factor = 300
+		}
+		available = {
+			AND = {
+				ONT = {
+					exists = no
+				}
+				CAN = {
+					exists = no
+				}
+				QUE = {
+					exists = no
+				}
+				MRT = {
+					exists = no
+				}
+			}
 		}
 		prerequisite = {
 			focus = ALA_end_the_canadian_experiment
@@ -2996,7 +3068,7 @@
 			focus = ALA_look_to_the_stars
 		}
 		completion_reward = {
-			
+			add_political_power = 100
 		}
 	}
 	focus = {

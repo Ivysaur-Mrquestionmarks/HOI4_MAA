@@ -158,27 +158,27 @@ ALA_oil_crisis = {
 
 		    IF = {
 		    	LIMIT = {
-		    		has_country_flag = ALA_renewable_1
-		    	}
-		    	clr_country_flag = ALA_renewable_1
-		    	set_country_flag = ALA_renewable_2
-		    }
-		    IF = {
-		    	LIMIT = {
-		    		has_country_flag = ALA_renewable_2
-		    	}
-		    	clr_country_flag = ALA_renewable_2
-		    	set_country_flag = ALA_renewable_3
-		    }
-		    IF = {
-		    	LIMIT = {
 		    		has_country_flag = ALA_renewable_3
 		    	}
 		    	clr_country_flag = ALA_renewable_3
 		    	set_country_flag = ALA_renewable_4
 		    }
+		    ELSE_IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_2
+		    	}
+		    	clr_country_flag = ALA_renewable_2
+		    	set_country_flag = ALA_renewable_3
+		    }    
+		    ELSE_IF = {
+		    	LIMIT = {
+		    		has_country_flag = ALA_renewable_1
+		    	}
+		    	clr_country_flag = ALA_renewable_1
+		    	set_country_flag = ALA_renewable_2
+		    }
 		    ELSE = {
-		    	set_coutnry_flag = ALA_renewable_1
+		    	set_country_flag = ALA_renewable_1
 		    }
 		    clr_country_flag = ALA_building_farm
 		}
@@ -239,14 +239,14 @@ ALA_oil_crisis = {
 		    	clr_country_flag = ALA_renewable_3
 		    	set_country_flag = ALA_renewable_4
 		    }
-		    IF = {
+		    ELSE_IF = {
 		    	LIMIT = {
 		    		has_country_flag = ALA_renewable_2
 		    	}
 		    	clr_country_flag = ALA_renewable_2
 		    	set_country_flag = ALA_renewable_3
-		    }
-		    IF = {
+		    }    
+		    ELSE_IF = {
 		    	LIMIT = {
 		    		has_country_flag = ALA_renewable_1
 		    	}
@@ -316,14 +316,14 @@ ALA_oil_crisis = {
 		    	clr_country_flag = ALA_renewable_3
 		    	set_country_flag = ALA_renewable_4
 		    }
-		    IF = {
+		    ELSE_IF = {
 		    	LIMIT = {
 		    		has_country_flag = ALA_renewable_2
 		    	}
 		    	clr_country_flag = ALA_renewable_2
 		    	set_country_flag = ALA_renewable_3
-		    }
-		    IF = {
+		    }    
+		    ELSE_IF = {
 		    	LIMIT = {
 		    		has_country_flag = ALA_renewable_1
 		    	}
@@ -333,6 +333,7 @@ ALA_oil_crisis = {
 		    ELSE = {
 		    	set_country_flag = ALA_renewable_1
 		    }
+		    clr_country_flag = ALA_building_dam
 		}
 	}
 	ALA_thayer_creek_hydroelectric_project = {
@@ -392,14 +393,14 @@ ALA_oil_crisis = {
 		    	clr_country_flag = ALA_renewable_3
 		    	set_country_flag = ALA_renewable_4
 		    }
-		    IF = {
+		    ELSE_IF = {
 		    	LIMIT = {
 		    		has_country_flag = ALA_renewable_2
 		    	}
 		    	clr_country_flag = ALA_renewable_2
 		    	set_country_flag = ALA_renewable_3
-		    }
-		    IF = {
+		    }    
+		    ELSE_IF = {
 		    	LIMIT = {
 		    		has_country_flag = ALA_renewable_1
 		    	}
@@ -409,6 +410,7 @@ ALA_oil_crisis = {
 		    ELSE = {
 		    	set_country_flag = ALA_renewable_1
 		    }
+		    clr_country_flag = ALA_building_dam
 		}
 	}
 }
@@ -475,7 +477,10 @@ ALA_fix_it_felix = {
 					state = 2
 					state = 14
 					state = 11
-				}			
+				}	
+				NOT = {
+					has_state_flag = ALA_state_fixed
+				}		
 			}
 
 		}
@@ -496,6 +501,7 @@ ALA_fix_it_felix = {
 				    level = 2
 				    instant_build = yes
 				}
+				set_state_flag = ALA_state_fixed
 			}
 			IF = {
 				LIMIT = {
@@ -542,15 +548,14 @@ ALA_fix_it_felix = {
 					add_idea = ALA_neglected_infrastructure_2
 				}
 			}
-
-			ELSE = {
+			IF = {
+				LIMIT = {
+					has_idea = ALA_neglected_infrastructure_1
+				}
 				swap_ideas = {
 					remove_idea = ALA_neglected_infrastructure
 					add_idea = ALA_neglected_infrastructure_1
 				}
-			}
-			FROM = {
-				set_state_flag = ALA_state_fixed
 			}
 			clr_country_flag = ALA_investing_infrastructure
 		}
