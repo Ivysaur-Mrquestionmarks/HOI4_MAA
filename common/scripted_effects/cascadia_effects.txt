@@ -592,6 +592,34 @@ CAS_alt_right_takeover_effect = {
 	remove_dynamic_modifier = { modifier = CAS_altright_military_infiltration_modifier }
 }
 
+CAS_rees_coup_effect = {
+	add_threat = -3
+	retire_character = CAS_jack_donovan
+	set_country_flag = rees_coup
+	set_cosmetic_tag = CAS_army
+	set_party_name = { 
+	    ideology = autocratic
+	    long_name = CAS_military_party_long
+	    name = CAS_military_party
+	}
+	CAS_raymond_rees = {
+		promote_character = yes
+	}
+	delete_unit_template_and_units = {
+	    division_template = "SS Battalion"
+	    disband = no #will refund equipment and manpower if set to yes
+	}
+	hidden_effect = {
+		every_controlled_state = {
+			limit = {
+				is_fully_controlled_by = CAS
+				NOT = { state = 496 }
+			}
+			set_demilitarized_zone = yes
+		}
+	}
+}
+
 CAS_alt_right_change_power_vars_effect = {
 	set_country_flag = CAS_nazis_purged_flag
 	mark_focus_tree_layout_dirty = yes
