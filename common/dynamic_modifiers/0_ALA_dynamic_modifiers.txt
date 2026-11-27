@@ -6,11 +6,19 @@ ALA_shadow_of_pac = {
 	experience_gain_navy_factor = ALA_experience_gain_navy_factor
 	experience_gain_air_factor = ALA_experience_gain_air_factor
 	experience_gain_army_factor = ALA_experience_gain_army_factor
+	navy_org_factor = ALA_naval_org_factor
 	naval_coordination = ALA_naval_coordination
 	naval_morale_factor = ALA_naval_morale_factor
+	naval_defense_factor = ALA_naval_defense_factor
+	land_mastery_gain_factor = ALA_land_mastery_gain_factor
+	naval_mastery_gain_factor = ALA_naval_mastery_gain_factor
+	air_mastery_gain_factor = ALA_air_mastery_gain_factor
 	industrial_capacity_dockyard = ALA_industrial_capacity_dockyard
 	navy_leader_cost_factor = ALA_navy_leader_cost_factor 
 	army_leader_cost_factor = ALA_army_leader_cost_factor
+	air_ace_generation_chance_factor = ALA_air_ace_generation_chance_factor
+	air_accidents_factor = ALA_air_accidents_factor
+
 }
 ALA_northern_alaska = {
 	icon = "GFX_idea_ALA_northern_alaska"

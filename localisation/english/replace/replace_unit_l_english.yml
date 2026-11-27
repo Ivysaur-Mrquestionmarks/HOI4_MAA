@@ -588,14 +588,18 @@
  ARMY_COMPOSITION_HEADER:0 "§YComposition§!\n"
  ARMY_COMPOSITION_SPECIAL_HEADER:0 "\nIt also gets bonuses based on this:\n"
  ARMY_COMPOSITION_DELAYED:0 "The composition controls which bonuses are applied from advisors and commanders. Battalions lacking equipment contribute less than those that are fully equipped."
- air_assult_infantry:0 "Air assult infantry"
- air_assult_infantry_desc:0 "Helicopters are cool"
+ air_assult_infantry:0 "Air Assault Infantry"
+ air_assult_infantry_desc:0 "The ability to quickly deploy and redeploy troops on the battlefield presents a level of dynamism that will give us a large advantage over our foes."
+ 
+
  mechanized_air:0 "Airborn APC"
  mechanized_air_desc:0 " "
- drone_support:0 "Drone support"
+ drone_support:0 "Drone Support"
  drone_support_desc:0 " "
- transport_helicopter:0 "transport helicopter"
- IFV_airborn:0 "Airborne IFV"
 
+ transport_helicopter:0 "Transport Helicopter"
+ helicopters:0 "Helicopters"
+
+ IFV_airborn:0 "Airborne IFV"
  bus:0 "Popemobile"
  modifier_army_sub_unit_penal_battalion_attack_factor:0 "Penal Battalion Attack"

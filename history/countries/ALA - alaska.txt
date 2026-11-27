@@ -85,6 +85,13 @@ set_variable = { ALA_naval_morale_factor = -0.3}
 set_variable = { ALA_industrial_capacity_dockyard = -0.25}
 set_variable = { ALA_navy_leader_cost_factor = 0.5}
 set_variable = { ALA_army_leader_cost_factor = 0.3}
+set_variable = { ALA_naval_mastery_gain_factor = -0.5}
+set_variable = { ALA_land_mastery_gain_factor = -0.3}
+set_variable = { ALA_air_mastery_gain_factor = -0.15}
+set_variable = { ALA_air_ace_generation_chance_factor = -0.2}
+set_variable = { ALA_naval_defense_factor = -0.3 }
+set_variable = { ALA_naval_org_factor = -0.25 }
+set_variable = { ALA_air_accidents_factor = 0.3 }
 
 add_dynamic_modifier = { modifier = ALA_shadow_of_pac }
 

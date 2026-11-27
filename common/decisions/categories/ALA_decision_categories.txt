@@ -34,6 +34,7 @@ ALA_fuck_you_dunleavy_authleft = {
 			original_tag = ALA
 		}
 		has_completed_focus = ALA_preparing_the_resistance
+		has_completed_focus = ALA_fighting_for_a_red_alaska
 		NOT = {
 			has_completed_focus = ALA_strike_the_capital
 		}
@@ -52,6 +53,20 @@ ALA_fight_christianity = {
 			has_idea = ALA_christian_resistance_1
 			has_idea = ALA_christian_resistance_2
 			has_idea = ALA_christian_resistance_3
+		}
+	}
+}
+ALA_fuck_you_dunleavy_libright = {
+	icon = SOV_civil_puppet_interaction
+
+	visible = {
+		OR = {
+			original_tag = ALA
+		}
+		has_completed_focus = ALA_preparing_the_resistance
+		has_completed_focus = ALA_down_with_tyrants
+		NOT = {
+			has_completed_focus = ALA_strike_the_capital
 		}
 	}
 }

@@ -62,6 +62,20 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
+		ALA_rally_the_corporations = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				libertarian_right_drift = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		ALA_rally_the_libertarians = {
+			picture = GFX_idea_ALA_apf
+			modifier = {
+				libertarian_right_drift = 0.1
+				conscription_factor = 0.1
+			}
+		}
 		ALA_the_trial_riots = {
 			picture = GFX_idea_ALA_apf
 			modifier = {
@@ -687,6 +701,93 @@ ideas = {
 				consumer_goods_factor = -0.3
 				army_speed_factor = 0.1
 				authoritarian_left_drift = 0.2
+			}
+		}
+		# MILITARY TREE IDEAS #
+		ALA_bush_planes = {
+			#picture = 
+			modifier = {
+				air_range_factor = 0.1
+				supply_node_range = 0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		ALA_bush_planes_1 = {
+			#picture = 
+			modifier = {
+				air_range_factor = 0.1
+				supply_node_range = 0.15
+				consumer_goods_factor = 0.05
+				air_weather_penalty = -0.1
+				winter_attrition_factor = -0.1
+			}
+		}
+		ALA_helicopter_focus = {
+			#picture = 
+			modifier = {
+				
+			}
+			equipment_bonus = { 
+				helicopters = {
+					instant = yes
+       				build_cost_ic = -0.2
+       				soft_attack = 0.1
+				}
+			}
+		}
+		ALA_sherp = {
+			#picture = 
+			modifier = {
+				
+			}
+			equipment_bonus = { 
+				motorized_equipment = {
+					instant = yes
+       				build_cost_ic = 0.2
+       				maximum_speed = -0.15
+       				reliability = 0.2
+       				defense = 0.15
+       				hardness = 0.2
+				}
+			}
+		}
+		ALA_national_guard = {
+			#picture = 
+			modifier = {
+				conscription_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		ALA_national_guard_1 = {
+			#picture = 
+			modifier = {
+				conscription_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
+		}
+		ALA_national_guard_2 = {
+			#picture = 
+			modifier = {
+				conscription_factor = 0.1
+				army_core_defence_factor = 0.2
+				army_org_factor = 0.1
+				industrial_capacity_factory = 0.05
+				enemy_operative_detection_chance_factor = 0.25
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
 			}
 		}
 	}

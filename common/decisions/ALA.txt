@@ -786,6 +786,7 @@ ALA_fuck_you_dunleavy_authleft = {
 			clr_country_flag = ALA_creating_cell
 		}
 		complete_effect = {
+			add_command_power = -15
 		    set_country_flag = ALA_creating_cell
 		}
 	}
@@ -1041,6 +1042,225 @@ ALA_fight_christianity = {
 					add_idea = ALA_christian_resistance_1
 				}
 			}
+		}
+	}
+}
+ALA_fuck_you_dunleavy_libright = {
+
+	ALA_procure_support_from_inuits = {
+
+		icon = hol_attract_foreign_investors
+
+		allowed = {
+			
+		}
+		available = {
+
+		}
+		visible = {
+			
+		}
+				
+		days_remove = 14
+		fire_only_once = yes
+		modifier = {
+
+		}
+		remove_effect = {
+			add_popularity = {
+			    ideology = libertarian_left
+			    popularity = 0.02
+			}
+			add_political_power = 100
+		}
+		complete_effect = {
+
+		}
+	}
+	ALA_gain_republican_support = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			
+		}
+		available = {
+		
+		}
+		visible = {
+			
+		}
+		days_remove = 20
+		days_re_enable = 20
+
+		modifier = {
+			republic_drift = 0.04
+		}
+		remove_effect = {
+			add_popularity = {
+			    ideology = libertarian_right
+			    popularity = -0.01
+			}
+		}
+		complete_effect = {
+		    add_political_power = 75
+		}
+	}
+	ALA_combat_commies = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			
+		}
+		available = {
+			has_completed_focus = ALA_organize_the_boogaloo
+		}
+
+		cost = 25
+		days_remove = 7
+		days_re_enable = 14
+
+		modifier = {
+
+		}
+		remove_effect = {
+			add_popularity = {
+			    ideology = authoritarian_left
+			    popularity = -0.03
+			}
+		}
+		complete_effect = {
+		    
+		}
+	}
+	ALA_general_strike = {
+
+		icon = generic_political_rally
+
+		allowed = {
+			
+		}
+		available = {
+			has_completed_focus = ALA_the_workers_of_anchorage
+		}
+		visible = {
+			
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = yes
+
+		modifier = {
+			libertarian_right_drift = 0.1
+		}
+		remove_effect = {
+			add_popularity = {
+			    ideology = libertarian_right
+			    popularity = 0.02
+			}
+		}
+		complete_effect = {
+		    
+		}
+	}
+	ALA_siphon_corporation_funds = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			
+		}
+		available = {
+			has_completed_focus = ALA_ally_the_inuit_corporations
+		}
+		visible = {
+			#has_completed_focus = ALA_gain_international_trust
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = yes
+
+		modifier = {
+			political_power_factor = 0.15
+			libertarian_right_drift = 0.1
+		}
+		remove_effect = {
+			add_popularity = {
+			    ideology = libertarian_right
+			    popularity = 0.02
+			}
+		}
+		complete_effect = {
+		    
+		}
+	}
+	ALA_entrench_libright_cells = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			
+		}
+		available = {
+			NOT = {
+				has_country_flag = ALA_creating_cell
+			}
+		}
+		custom_cost_trigger = {
+		    command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_15
+
+		visible = {
+			#has_completed_focus = ALA_gain_international_trust
+		}
+
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				AND = {
+					is_owned_and_controlled_by = ALA
+					is_core_of = ALA
+				}	
+				OR = {
+					state = 96
+					state = 404
+					state = 19
+					state = 2
+					state = 14
+					state = 11
+				}
+				NOT = {
+					has_state_flag = ALA_commie_cell
+				}			
+			}
+
+		}
+
+		cost = 10
+				
+		days_remove = 10
+
+		modifier = {
+
+		}
+		remove_effect = {
+			FROM = {
+				set_state_flag = ALA_commie_cell
+			}
+			add_popularity = {
+			    ideology = authoritarian_right
+			    popularity = 0.02
+			}
+			clr_country_flag = ALA_creating_cell
+		}
+		complete_effect = {
+		    set_country_flag = ALA_creating_cell
+
+		    add_command_power = -15
 		}
 	}
 }

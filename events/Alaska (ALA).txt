@@ -484,11 +484,17 @@ country_event = {
 					days = 7
 				}
 			}
+			ELSE = {
+				country_event = {
+					id = alaska_commie.3
+					days = 7
+				}
+			}
 		}
 	}
 }
 
-country_event = {
+country_event = { # Patterson Addresses the Crowd
 	id = alaska_commie.2
 	title = alaska_commie.2.t
 	desc = alaska_commie.2.d
@@ -499,6 +505,22 @@ country_event = {
 		name = alaska_commie.2.a
 		
 		add_political_power = 25
+	}
+}
+
+country_event = { # Patterson Cements Power
+	id = alaska_commie.3
+	title = alaska_commie.3.t
+	desc = alaska_commie.3.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_commie.2.a
+		
+		add_stability = 0.1
+		set_country_flag = ALA_patterson_wins
+		complete_national_focus = ALA_peoples_republic_of_alaska
 	}
 }
 # NATIVE COMMIE EVENTS #
@@ -682,8 +704,85 @@ country_event = {
 
 		remove_ideas = ALA_alaskan_powder_keg
 		remove_ideas = ALA_the_trial_riots
+
+		hidden_effect = {
+			IF = {
+				LIMIT = {
+					has_completed_focus = ALA_gain_the_support_of_the_inuit_tribes
+				}
+				country_event = {
+					id = alaska_corporations.1
+					days = 7
+				}
+			}
+		}
 	}
 }
+
+
+# CORPORATION EVENTS #
+
+add_namespace = alaska_corporations
+
+country_event = { # Corporations begin grabbing power
+	id = alaska_corporations.1
+	title = alaska_corporations.1.t
+	desc = alaska_corporations.1.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_corporations.1.a
+		
+
+
+		hidden_effect = {
+			country_event = {
+				id = alaska_corporations.2
+				days = 7
+			}	
+		}
+	}
+}
+
+country_event = { # Corporations summon Watts
+	id = alaska_corporations.2
+	title = alaska_corporations.2.t
+	desc = alaska_corporations.2.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_corporations.2.a
+		
+
+
+		hidden_effect = {
+			country_event = {
+				id = alaska_corporations.3
+				days = 7
+			}	
+		}
+	}
+}
+
+country_event = { # Corporations take power
+	id = alaska_corporations.3
+	title = alaska_corporations.3.t
+	desc = alaska_corporations.3.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_corporations.3.a
+		
+
+	}
+}
+
+
+
+
 
 # HIDDEN BEGINNING EVENTS #
 
@@ -715,5 +814,19 @@ country_event = { # Protests over national guard
 		name = alaska_hidden.2.a
 		
 		add_war_support = -0.05
+	}
+}
+
+country_event = { # Inuit Corpos Making Moves
+	id = alaska_hidden.3
+	title = alaska_hidden.3.t
+	desc = alaska_hidden.3.d
+	#picture =
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alaska_hidden.3.a
+		
+		add_political_power = -30
 	}
 }
