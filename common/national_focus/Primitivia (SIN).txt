@@ -1507,6 +1507,17 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
             add_timed_idea = { idea = SIN_a_war_with_the_devil_idea days = 100 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						45 = {
+							is_core_of = SIN
+						}
+					}
+				}
+				add_state_core = 45
+			}
 		}
 		prerequisite = {
 			focus = SIN_united_against_mormonism
@@ -1825,6 +1836,12 @@ focus_tree = {
 				province = 2682
 				value = 10
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_state_core = 229
+			add_state_core = 413
+			add_state_core = 416
+			add_state_core = 424
+			add_state_core = 510
 		}
 		prerequisite = {
 			focus = SIN_victorious_ted
@@ -7223,7 +7240,7 @@ focus_tree = {
 		x = 17
 		y = 3
 
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			
 		}
@@ -7250,6 +7267,7 @@ focus_tree = {
 			show_unit_leaders_tooltip = SIN_David_Berkowitz
 			show_unit_leaders_tooltip = SIN_Michael_Behenna
 			show_unit_leaders_tooltip = SIN_Russell_Williams
+			show_unit_leaders_tooltip = SIN_Gary_Ridgway
 		}
 		prerequisite = {
 			focus = SIN_test_idaho
@@ -7265,7 +7283,7 @@ focus_tree = {
 		x = 27
 		y = 3
 
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			
 		}
@@ -7562,7 +7580,7 @@ focus_tree = {
 		x = 18
 		y = 5
 
-		cost = 3
+		cost = 2
 		ai_will_do = {
 			
 		}
@@ -7580,7 +7598,11 @@ focus_tree = {
 				add_idea = SIN_the_ragtag_group_idea_2
 				remove_idea = SIN_the_ragtag_group_idea_1
 			}
-            
+            add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = maintenance_company_tech
+			}
 		}
 		prerequisite = {
 			focus = SIN_asymmetric_warfare
@@ -7593,7 +7615,7 @@ focus_tree = {
 		x = 19
 		y = 6
 
-		cost = 3
+		cost = 6
 		ai_will_do = {
 			
 		}
@@ -7643,7 +7665,7 @@ focus_tree = {
 		x = 17
 		y = 6
 
-		cost = 3
+		cost = 6
 		ai_will_do = {
 			
 		}
@@ -7687,7 +7709,7 @@ focus_tree = {
 		x = 18
 		y = 7
 
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			
 		}
@@ -7743,6 +7765,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			show_unit_leaders_tooltip = SIN_Radullan_Sahiron
             
 		}
 		prerequisite = {

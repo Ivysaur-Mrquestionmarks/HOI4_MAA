@@ -1714,6 +1714,627 @@ characters = {
 		}
 	}
 
+	SIN_Gary_Ridgway = {
+		name = SIN_Gary_Ridgway
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Gary_Ridgway.dds"
+				small = "gfx/interface/ideas/SIN/military_Gary_Ridgway.dds"
+			}
+		}
+		navy_leader = {
+			traits = { spotter }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 1
+			visible = { has_completed_focus = SIN_the_ragtag_group }
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Gary_Ridgway
+			ledger = navy
+			cost = 100
+			available = {
+				has_completed_focus = SIN_the_ragtag_group
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_a_standing_army
+				}
+			}
+			traits = { navy_screen_1 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Radullan_Sahiron = {
+		name = SIN_Radullan_Sahiron
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Radullan_Sahiron.dds"
+				small = "gfx/interface/ideas/SIN/military_Radullan_Sahiron.dds"
+			}
+		}
+		navy_leader = {
+			traits = { ironside superior_tactician fleet_protector }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 2
+			visible = { has_completed_focus = SIN_a_pirate_navy }
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = chief_Radullan_Sahiron
+			ledger = navy
+			cost = 150	
+			available = {
+				has_completed_focus = SIN_a_pirate_navy
+			}
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_a_standing_army
+				}
+			}
+			traits = { navy_chief_decisive_battle_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	#national guard (https://web.archive.org/web/20201112191957/https://co.ng.mil/About/Executive-Leadership/)
+	SIN_Laura_Clellan = {
+		name = SIN_Laura_Clellan
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Laura_Clellan.dds"
+				small = "gfx/interface/ideas/SIN/military_Laura_Clellan.dds"
+			}
+		}
+		field_marshal = {
+			traits = { organizer organisational_leader skilled_staffer expert_delegator }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = command_Laura_Clellan
+			ledger = army
+			cost = 150
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_ragtag_group
+				}
+			}
+			available = {
+				has_completed_focus = SIN_a_standing_army
+			}
+			traits = { army_chief_organizational_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_William_D_Woods = {
+		name = SIN_William_D_Woods
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/William_D_Woods.dds"
+				small = "gfx/interface/ideas/SIN/military_William_D_Woods.dds"
+			}
+		}
+		corps_commander = {
+			traits = { organizer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_William_D_Woods
+			ledger = army
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_ragtag_group
+				}
+			}
+			available = {
+				has_completed_focus = SIN_a_standing_army
+			}
+			traits = { army_regrouping_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Brey_Hopkins = {
+		name = SIN_Brey_Hopkins
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Brey_Hopkins.dds"
+				small = "gfx/interface/ideas/SIN/military_Brey_Hopkins.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Brey_Hopkins
+			ledger = army
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_ragtag_group
+				}
+			}
+			available = {
+				has_completed_focus = SIN_a_standing_army
+			}
+			traits = { SIN_dmva_director }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Scott_Sherman = {
+		name = SIN_Scott_Sherman
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Scott_Sherman.dds"
+				small = "gfx/interface/ideas/SIN/military_Scott_Sherman.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer infantry_leader }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Scott_Sherman
+			ledger = army
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_ragtag_group
+				}
+			}
+			available = {
+				has_completed_focus = SIN_a_standing_army
+			}
+			traits = { army_infantry_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Patrick_Uschuk = {
+		name = SIN_Patrick_Uschuk
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Patrick_Uschuk.dds"
+				small = "gfx/interface/ideas/SIN/military_Patrick_Uschuk.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard inflexible_strategist trait_engineer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Patrick_Uschuk
+			ledger = army
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_ragtag_group
+				}
+			}
+			available = {
+				has_completed_focus = SIN_a_standing_army
+			}
+			traits = { army_entrenchment_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Michael_J_Bruno = {
+		name = SIN_Michael_J_Bruno
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Michael_J_Bruno.dds"
+				small = "gfx/interface/ideas/SIN/military_Michael_J_Bruno.dds"
+			}
+		}
+		corps_commander = {
+			traits = { hill_fighter }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = theorist_Michael_J_Bruno
+			ledger = army
+			cost = 150
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_ragtag_group
+				}
+			}
+			available = {
+				has_completed_focus = SIN_a_standing_army
+			}
+			traits = { military_theorist }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Doug_Paul = {
+		name = SIN_Doug_Paul
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Doug_Paul.dds"
+				small = "gfx/interface/ideas/SIN/military_Doug_Paul.dds"
+			}
+		}
+		field_marshal = {
+			traits = { offensive_doctrine brilliant_strategist aggressive_assaulter } 
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = command_Doug_Paul
+			ledger = army
+			cost = 150
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_ragtag_group
+				}
+			}
+			available = {
+				has_completed_focus = SIN_a_standing_army
+			}
+			traits = { army_chief_offensive_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SIN_Charles_Zanoff = {
+		name = SIN_Charles_Zanoff
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Charles_Zanoff.dds"
+				small = "gfx/interface/ideas/SIN/military_Charles_Zanoff.dds"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+	}
+
+	SIN_Edward_Macias = {
+		name = SIN_Edward_Macias
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Edward_Macias.dds"
+				small = "gfx/interface/ideas/SIN/military_Edward_Macias.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+	}
+
+	SIN_Floyd_W_Dunstan = {
+		name = SIN_Floyd_W_Dunstan
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIN/Floyd_W_Dunstan.dds"
+				small = "gfx/interface/ideas/SIN/military_Floyd_W_Dunstan.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious } 
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = chief_Floyd_W_Dunstan
+			ledger = air
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_ragtag_group
+				}
+			}
+			available = {
+				has_completed_focus = SIN_a_standing_army
+			}
+			traits = { air_chief_night_operations_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+
+	SIN_Troy_Cook = {
+		name = SIN_Troy_Cook
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIN/Troy_Cook.dds"
+				small = "gfx/interface/ideas/SIN/military_Troy_Cook.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = theorist_Troy_Cook
+			ledger = air
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_ragtag_group
+				}
+			}
+			available = {
+				has_completed_focus = SIN_a_standing_army
+			}
+			traits = { air_warfare_theorist }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+
+	SIN_Micah_Fesler = {
+		name = SIN_Micah_Fesler
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIN/Micah_Fesler.dds"
+				small = "gfx/interface/ideas/SIN/military_Micah_Fesler.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Micah_Fesler
+			ledger = air
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_ragtag_group
+				}
+			}
+			available = {
+				has_completed_focus = SIN_a_standing_army
+			}
+			traits = { air_air_superiority_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+
+	SIN_Lisa_E_Perry = {
+		name = SIN_Lisa_E_Perry
+		gender = female
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIN/Lisa_E_Perry.dds"
+				small = "gfx/interface/ideas/SIN/military_Lisa_E_Perry.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = command_Lisa_E_Perry
+			ledger = air
+			cost = 100
+			visible = {
+				original_tag = SIN
+				NOT = {
+					has_completed_focus = SIN_the_ragtag_group
+				}
+			}
+			available = {
+				has_completed_focus = SIN_a_standing_army
+			}
+			traits = { air_air_combat_training_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+	}
+
+	SIN_Bren_Rogers = {
+		name = SIN_Bren_Rogers
+		gender = female
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Bren_Rogers.dds"
+				small = "gfx/interface/ideas/SIN/military_Bren_Rogers.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+	}
+
+	SIN_Charles_Beatty = {
+		name = SIN_Charles_Beatty
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIN/Charles_Beatty.dds"
+				small = "gfx/interface/ideas/SIN/military_Charles_Beatty.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_completed_focus = SIN_a_standing_army
+			}
+		}
+	}
+
 	### MISC ###
 	SIN_Ben_Campbell = {
 		name = SIN_Ben_Campbell

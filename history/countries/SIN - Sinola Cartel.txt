@@ -92,13 +92,36 @@ recruit_character = SIN_Michael_Bennet
 recruit_character = SIN_Ken_Salazar
 
 ### Generals ###
+#criminals
 recruit_character = SIN_Ben_Campbell
 recruit_character = SIN_Robert_Bales
 recruit_character = SIN_David_Berkowitz
 recruit_character = SIN_Michael_Behenna
 recruit_character = SIN_Russell_Williams
 
+#national guard
+recruit_character = SIN_Laura_Clellan
+recruit_character = SIN_William_D_Woods
+recruit_character = SIN_Brey_Hopkins
+recruit_character = SIN_Scott_Sherman
+recruit_character = SIN_Patrick_Uschuk
+recruit_character = SIN_Michael_J_Bruno
+recruit_character = SIN_Doug_Paul
+recruit_character = SIN_Charles_Zanoff
+recruit_character = SIN_Edward_Macias
+recruit_character = SIN_Floyd_W_Dunstan
+recruit_character = SIN_Troy_Cook
+recruit_character = SIN_Micah_Fesler
+recruit_character = SIN_Lisa_E_Perry
+recruit_character = SIN_Bren_Rogers
+recruit_character = SIN_Charles_Beatty
+
+
+
+
 ### Admirals ###
+recruit_character = SIN_Gary_Ridgway
+recruit_character = SIN_Radullan_Sahiron
 
 set_politics = {
 	ruling_party = autocratic
